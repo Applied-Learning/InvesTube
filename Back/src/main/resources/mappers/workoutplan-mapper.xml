@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.Investube.mvc.model.dao.WorkoutPlanDao">
+
+	<!-- 전체 운동 계획 조회 -->
+	<select id="selectAll" resultType="WorkoutPlan">
+		SELECT * FROM workout_plans
+		ORDER BY created_at DESC
+	</select>
+	
+	<!-- 운동 계획 ID로 조회 -->
+	<select id="selectOne" parameterType="int" resultType="WorkoutPlan">
+		SELECT * FROM workout_plans
+		WHERE plan_id = #{planId}
+	</select>
+	
+	<!-- 사용자별 운동 계획 조회 -->
+	<select id="selectByUserId" parameterType="int" resultType="WorkoutPlan">
+		SELECT * FROM workout_plans
+		WHERE user_id = #{userId}
+		ORDER BY created_at DESC
+	</select>
+	
+	<!-- 운동 계획 등록 -->
+	<insert id="insertWorkoutPlan" parameterType="WorkoutPlan">
+		INSERT INTO workout_plans (user_id, plan_name, description, start_date, end_date, created_at)
+		VALUES (#{userId}, #{planName}, #{description}, #{startDate}, #{endDate}, NOW())
+	</insert>
+	
+	<!-- 운동 계획 수정 -->
+	<update id="updateWorkoutPlan" parameterType="WorkoutPlan">
+		UPDATE workout_plans
+		SET plan_name = #{planName},
+		    description = #{description},
+		    start_date = #{startDate},
+		    end_date = #{endDate}
+		WHERE plan_id = #{planId}
+	</update>
+	
+	<!-- 운동 계획 삭제 -->
+	<delete id="deleteWorkoutPlan" parameterType="int">
+		DELETE FROM workout_plans
+		WHERE plan_id = #{planId}
+	</delete>
+
+</mapper>
