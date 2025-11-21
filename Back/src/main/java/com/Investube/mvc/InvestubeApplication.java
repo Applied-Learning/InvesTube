@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @MapperScan(basePackages = "com.Investube.mvc.model.dao")
-public class SsafitApplication {
+public class InvestubeApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SsafitApplication.class, args);
+		SpringApplication.run(InvestubeApplication.class, args);
 	}
 
 }
