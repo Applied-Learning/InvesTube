@@ -34,7 +34,7 @@ public class VideoRestController {
 		return new ResponseEntity<>(videos, HttpStatus.OK);
 	}
 	
-	// 비디오 ID로 조회
+	// 비디오 ID로 조회 (영상 상세 조회)
 	@GetMapping("/{videoId}")
 	public ResponseEntity<Video> getVideo(@PathVariable int videoId) {
 		Video video = videoService.getVideo(videoId);
@@ -74,17 +74,10 @@ public class VideoRestController {
 		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	}
 	
-	// 운동 부위별 비디오 조회
-	@GetMapping("/part/{part}")
-	public ResponseEntity<List<Video>> getVideosByPart(@PathVariable String part) {
-		List<Video> videos = videoService.getVideosByPart(part);
-		return new ResponseEntity<>(videos, HttpStatus.OK);
-	}
-	
 	// 카테고리별 비디오 조회
-	@GetMapping("/category/{category}")
-	public ResponseEntity<List<Video>> getVideosByCategory(@PathVariable String category) {
-		List<Video> videos = videoService.getVideosByCategory(category);
+	@GetMapping("/category/{categoryId}")
+	public ResponseEntity<List<Video>> getVideosByCategory(@PathVariable int categoryId) {
+		List<Video> videos = videoService.getVideosByCategory(categoryId);
 		return new ResponseEntity<>(videos, HttpStatus.OK);
 	}
 	
