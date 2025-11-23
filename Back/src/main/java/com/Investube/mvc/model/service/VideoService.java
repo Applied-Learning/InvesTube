@@ -21,11 +21,8 @@ public interface VideoService {
 	// 비디오 삭제
 	boolean removeVideo(int videoId);
 	
-	// 운동 부위별 비디오 조회
-	List<Video> getVideosByPart(String part);
-	
 	// 카테고리별 비디오 조회
-	List<Video> getVideosByCategory(String category);
+	List<Video> getVideosByCategory(int categoryId);
 	
 	// 키워드로 비디오 검색
 	List<Video> searchVideos(String keyword);

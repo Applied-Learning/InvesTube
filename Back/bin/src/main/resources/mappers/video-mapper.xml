@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.Investube.mvc.model.dao.VideoDao">
+
+	<!-- 전체 비디오 조회 -->
+	<select id="selectAll" resultType="Video">
+		SELECT * FROM videos
+		ORDER BY upload_date DESC
+	</select>
+	
+	<!-- 비디오 ID로 조회 -->
+	<select id="selectOne" parameterType="int" resultType="Video">
+		SELECT * FROM videos
+		WHERE video_id = #{videoId}
+	</select>
+	
+	<!-- 비디오 등록 -->
+	<insert id="insertVideo" parameterType="Video">
+		INSERT INTO videos (title, channel_name, video_url, thumbnail_url, category, part, view_count, upload_date)
+		VALUES (#{title}, #{channelName}, #{videoUrl}, #{thumbnailUrl}, #{category}, #{part}, #{viewCount}, #{uploadDate})
+	</insert>
+	
+	<!-- 비디오 수정 -->
+	<update id="updateVideo" parameterType="Video">
+		UPDATE videos
+		SET title = #{title},
+		    channel_name = #{channelName},
+		    video_url = #{videoUrl},
+		    thumbnail_url = #{thumbnailUrl},
+		    category = #{category},
+		    part = #{part}
+		WHERE video_id = #{videoId}
+	</update>
+	
+	<!-- 비디오 삭제 -->
+	<delete id="deleteVideo" parameterType="int">
+		DELETE FROM videos
+		WHERE video_id = #{videoId}
+	</delete>
+	
+	<!-- 운동 부위별 비디오 조회 -->
+	<select id="selectByPart" parameterType="String" resultType="Video">
+		SELECT * FROM videos
+		WHERE part = #{part}
+		ORDER BY upload_date DESC
+	</select>
+	
+	<!-- 카테고리별 비디오 조회 -->
+	<select id="selectByCategory" parameterType="String" resultType="Video">
+		SELECT * FROM videos
+		WHERE category = #{category}
+		ORDER BY upload_date DESC
+	</select>
+	
+	<!-- 키워드로 비디오 검색 -->
+	<select id="searchByKeyword" parameterType="String" resultType="Video">
+		SELECT * FROM videos
+		WHERE title LIKE CONCAT('%', #{keyword}, '%')
+		   OR channel_name LIKE CONCAT('%', #{keyword}, '%')
+		ORDER BY upload_date DESC
+	</select>
+	
+	<!-- 조회수 증가 -->
+	<update id="updateViewCount" parameterType="int">
+		UPDATE videos
+		SET view_count = view_count + 1
+		WHERE video_id = #{videoId}
+	</update>
+
+</mapper>

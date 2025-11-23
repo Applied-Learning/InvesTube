@@ -42,13 +42,8 @@ public class VideoServiceImpl implements VideoService {
 	}
 
 	@Override
-	public List<Video> getVideosByPart(String part) {
-		return videoDao.selectByPart(part);
-	}
-
-	@Override
-	public List<Video> getVideosByCategory(String category) {
-		return videoDao.selectByCategory(category);
+	public List<Video> getVideosByCategory(int categoryId) {
+		return videoDao.selectByCategory(categoryId);
 	}
 
 	@Override

@@ -4,33 +4,49 @@
 
 <mapper namespace="com.Investube.mvc.model.dao.VideoDao">
 
+	<!-- Result Map for Video -->
+	<resultMap id="VideoResultMap" type="Video">
+		<id property="videoId" column="video_id"/>
+		<result property="userId" column="user_id"/>
+		<result property="youtubeVideoId" column="youtube_video_id"/>
+		<result property="title" column="title"/>
+		<result property="thumbnailUrl" column="thumbnail_url"/>
+		<result property="description" column="description"/>
+		<result property="categoryId" column="category_id"/>
+		<result property="viewCount" column="view_count"/>
+		<result property="wishCount" column="wish_count"/>
+		<result property="reviewCount" column="review_count"/>
+		<result property="avgRating" column="avg_rating"/>
+		<result property="createdAt" column="created_at"/>
+		<result property="updatedAt" column="updated_at"/>
+	</resultMap>
+
 	<!-- 전체 비디오 조회 -->
-	<select id="selectAll" resultType="Video">
+	<select id="selectAll" resultMap="VideoResultMap">
 		SELECT * FROM videos
-		ORDER BY upload_date DESC
+		ORDER BY updated_at DESC
 	</select>
 	
 	<!-- 비디오 ID로 조회 -->
-	<select id="selectOne" parameterType="int" resultType="Video">
+	<select id="selectOne" parameterType="int" resultMap="VideoResultMap">
 		SELECT * FROM videos
 		WHERE video_id = #{videoId}
 	</select>
 	
 	<!-- 비디오 등록 -->
 	<insert id="insertVideo" parameterType="Video">
-		INSERT INTO videos (title, channel_name, video_url, thumbnail_url, category, part, view_count, upload_date)
-		VALUES (#{title}, #{channelName}, #{videoUrl}, #{thumbnailUrl}, #{category}, #{part}, #{viewCount}, #{uploadDate})
+		INSERT INTO videos (user_id, youtube_video_id, title, thumbnail_url, description, category_id, view_count, created_at, updated_at)
+		VALUES (#{userId}, #{youtubeVideoId}, #{title}, #{thumbnailUrl}, #{description}, #{categoryId}, 0, NOW(), NOW())
 	</insert>
 	
 	<!-- 비디오 수정 -->
 	<update id="updateVideo" parameterType="Video">
 		UPDATE videos
 		SET title = #{title},
-		    channel_name = #{channelName},
-		    video_url = #{videoUrl},
 		    thumbnail_url = #{thumbnailUrl},
-		    category = #{category},
-		    part = #{part}
+		    description = #{description},
+		    category_id = #{categoryId},
+		    updated_at = NOW()
 		WHERE video_id = #{videoId}
 	</update>
 	
@@ -41,25 +57,27 @@
 	</delete>
 	
 	<!-- 운동 부위별 비디오 조회 -->
-	<select id="selectByPart" parameterType="String" resultType="Video">
+	<!-- 
+	<select id="selectByPart" parameterType="String" resultMap="VideoResultMap">
 		SELECT * FROM videos
 		WHERE part = #{part}
-		ORDER BY upload_date DESC
+		ORDER BY updated_at DESC
 	</select>
+	-->
 	
 	<!-- 카테고리별 비디오 조회 -->
-	<select id="selectByCategory" parameterType="String" resultType="Video">
+	<select id="selectByCategory" parameterType="int" resultMap="VideoResultMap">
 		SELECT * FROM videos
-		WHERE category = #{category}
-		ORDER BY upload_date DESC
+		WHERE category_id = #{categoryId}
+		ORDER BY updated_at DESC
 	</select>
 	
 	<!-- 키워드로 비디오 검색 -->
-	<select id="searchByKeyword" parameterType="String" resultType="Video">
+	<select id="searchByKeyword" parameterType="String" resultMap="VideoResultMap">
 		SELECT * FROM videos
 		WHERE title LIKE CONCAT('%', #{keyword}, '%')
-		   OR channel_name LIKE CONCAT('%', #{keyword}, '%')
-		ORDER BY upload_date DESC
+		   OR description LIKE CONCAT('%', #{keyword}, '%')
+		ORDER BY updated_at DESC
 	</select>
 	
 	<!-- 조회수 증가 -->
@@ -68,5 +86,24 @@
 		SET view_count = view_count + 1
 		WHERE video_id = #{videoId}
 	</update>
+	
+	<!-- 찜 여부 조회 -->
+	<select id="selectWish" resultType="VideoWish">
+		SELECT user_id as userId, video_id as videoId, created_at as createdAt
+		FROM video_wish
+		WHERE user_id = #{userId} AND video_id = #{videoId}
+	</select>
+	
+	<!-- 찜 추가 -->
+	<insert id="insertWish">
+		INSERT INTO video_wish (user_id, video_id, created_at)
+		VALUES (#{userId}, #{videoId}, NOW())
+	</insert>
+	
+	<!-- 찜 삭제 -->
+	<delete id="deleteWish">
+		DELETE FROM video_wish
+		WHERE user_id = #{userId} AND video_id = #{videoId}
+	</delete>
 
 </mapper>

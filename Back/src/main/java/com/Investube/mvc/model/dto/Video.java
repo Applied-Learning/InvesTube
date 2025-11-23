@@ -2,28 +2,37 @@ package com.Investube.mvc.model.dto;
 
 public class Video {
 	private int videoId;
+	private int userId;
+	private String youtubeVideoId;
 	private String title;
-	private String channelName;
-	private String videoUrl;
 	private String thumbnailUrl;
-	private String category;
-	private String part; // 운동 부위 (상체, 하체, 전신 등)
+	private String description;
+	private int categoryId;
 	private int viewCount;
-	private String uploadDate;
+	private int wishCount;
+	private int reviewCount;
+	private double avgRating;
+	private String createdAt;
+	private String updatedAt;
 	
 	public Video() {}
 	
-	public Video(int videoId, String title, String channelName, String videoUrl, String thumbnailUrl, 
-	             String category, String part, int viewCount, String uploadDate) {
+	public Video(int videoId, int userId, String youtubeVideoId, String title, String thumbnailUrl, 
+	             String description, int categoryId, int viewCount, int wishCount, int reviewCount, 
+	             double avgRating, String createdAt, String updatedAt) {
 		this.videoId = videoId;
+		this.userId = userId;
+		this.youtubeVideoId = youtubeVideoId;
 		this.title = title;
-		this.channelName = channelName;
-		this.videoUrl = videoUrl;
 		this.thumbnailUrl = thumbnailUrl;
-		this.category = category;
-		this.part = part;
+		this.description = description;
+		this.categoryId = categoryId;
 		this.viewCount = viewCount;
-		this.uploadDate = uploadDate;
+		this.wishCount = wishCount;
+		this.reviewCount = reviewCount;
+		this.avgRating = avgRating;
+		this.createdAt = createdAt;
+		this.updatedAt = updatedAt;
 	}
 
 	public int getVideoId() {
@@ -34,28 +43,28 @@ public class Video {
 		this.videoId = videoId;
 	}
 
+	public int getUserId() {
+		return userId;
+	}
+
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
+
+	public String getYoutubeVideoId() {
+		return youtubeVideoId;
+	}
+
+	public void setYoutubeVideoId(String youtubeVideoId) {
+		this.youtubeVideoId = youtubeVideoId;
+	}
+
 	public String getTitle() {
 		return title;
 	}
 
 	public void setTitle(String title) {
 		this.title = title;
-	}
-
-	public String getChannelName() {
-		return channelName;
-	}
-
-	public void setChannelName(String channelName) {
-		this.channelName = channelName;
-	}
-
-	public String getVideoUrl() {
-		return videoUrl;
-	}
-
-	public void setVideoUrl(String videoUrl) {
-		this.videoUrl = videoUrl;
 	}
 
 	public String getThumbnailUrl() {
@@ -66,20 +75,20 @@ public class Video {
 		this.thumbnailUrl = thumbnailUrl;
 	}
 
-	public String getCategory() {
-		return category;
+	public String getDescription() {
+		return description;
 	}
 
-	public void setCategory(String category) {
-		this.category = category;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
-	public String getPart() {
-		return part;
+	public int getCategoryId() {
+		return categoryId;
 	}
 
-	public void setPart(String part) {
-		this.part = part;
+	public void setCategoryId(int categoryId) {
+		this.categoryId = categoryId;
 	}
 
 	public int getViewCount() {
@@ -90,18 +99,52 @@ public class Video {
 		this.viewCount = viewCount;
 	}
 
-	public String getUploadDate() {
-		return uploadDate;
+	public int getWishCount() {
+		return wishCount;
 	}
 
-	public void setUploadDate(String uploadDate) {
-		this.uploadDate = uploadDate;
+	public void setWishCount(int wishCount) {
+		this.wishCount = wishCount;
+	}
+
+	public int getReviewCount() {
+		return reviewCount;
+	}
+
+	public void setReviewCount(int reviewCount) {
+		this.reviewCount = reviewCount;
+	}
+
+	public double getAvgRating() {
+		return avgRating;
+	}
+
+	public void setAvgRating(double avgRating) {
+		this.avgRating = avgRating;
+	}
+
+	public String getCreatedAt() {
+		return createdAt;
+	}
+
+	public void setCreatedAt(String createdAt) {
+		this.createdAt = createdAt;
+	}
+
+	public String getUpdatedAt() {
+		return updatedAt;
+	}
+
+	public void setUpdatedAt(String updatedAt) {
+		this.updatedAt = updatedAt;
 	}
 
 	@Override
 	public String toString() {
-		return "Video [videoId=" + videoId + ", title=" + title + ", channelName=" + channelName + ", videoUrl="
-				+ videoUrl + ", thumbnailUrl=" + thumbnailUrl + ", category=" + category + ", part=" + part
-				+ ", viewCount=" + viewCount + ", uploadDate=" + uploadDate + "]";
+		return "Video [videoId=" + videoId + ", userId=" + userId + ", youtubeVideoId=" + youtubeVideoId 
+				+ ", title=" + title + ", thumbnailUrl=" + thumbnailUrl + ", description=" + description 
+				+ ", categoryId=" + categoryId + ", viewCount=" + viewCount + ", wishCount=" + wishCount 
+				+ ", reviewCount=" + reviewCount + ", avgRating=" + avgRating + ", createdAt=" + createdAt 
+				+ ", updatedAt=" + updatedAt + "]";
 	}
 }
