@@ -1,7 +1,5 @@
 package com.Investube.mvc.controller;
 
-import java.util.List;
-
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -11,73 +9,80 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.Investube.mvc.model.dto.User;
 import com.Investube.mvc.model.service.UserService;
 
+
 @RestController
 @RequestMapping("/api/users")
 public class UserRestController {
-	
+
 	private final UserService userService;
-	
+
 	public UserRestController(UserService userService) {
 		this.userService = userService;
 	}
-	
-	// 전체 사용자 조회
-	@GetMapping
-	public ResponseEntity<List<User>> getAllUsers() {
-		List<User> users = userService.getAllUsers();
-		return new ResponseEntity<>(users, HttpStatus.OK);
-	}
-	
-	// 사용자 ID로 조회
+
+	// 업로더 정보 조회
 	@GetMapping("/{userId}")
-	public ResponseEntity<User> getUser(@PathVariable int userId) {
-		User user = userService.getUser(userId);
-		if (user != null) {
-			return new ResponseEntity<>(user, HttpStatus.OK);
+	public ResponseEntity<User> getUser(@PathVariable("userId") int userId) {
+		User result = userService.getUserByUserId(userId);
+
+		if (result == null) {
+			return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
 		}
-		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+
+		return new ResponseEntity<>(result, HttpStatus.OK);
 	}
-	
-	// 사용자 등록 (회원가입)
-	@PostMapping("/signup")
-	public ResponseEntity<Void> signup(@RequestBody User user) {
-		if (userService.createUser(user)) {
-			return new ResponseEntity<>(HttpStatus.CREATED);
+
+	// 내 정보 조회
+	@GetMapping("/me")
+	public ResponseEntity<User> getMyInfo(@RequestParam int userId) {
+		User result = userService.getMyInfo(userId);
+
+		if (result == null) {
+			return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
 		}
-		return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+
+		return new ResponseEntity<>(result, HttpStatus.OK);
 	}
-	
-	// 로그인
-	@PostMapping("/login")
-	public ResponseEntity<User> login(@RequestBody User user) {
-		User loginUser = userService.login(user.getUsername(), user.getPassword());
-		if (loginUser != null) {
-			return new ResponseEntity<>(loginUser, HttpStatus.OK);
-		}
-		return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
-	}
-	
-	// 사용자 정보 수정
-	@PutMapping("/{userId}")
-	public ResponseEntity<Void> updateUser(@PathVariable int userId, @RequestBody User user) {
+
+	// 내 정보 수정
+	@PutMapping("/me")
+	public ResponseEntity<Integer> updateMyInfo(@RequestParam int userId, @RequestBody User user) {
+
+		// body에는 nickname, profileImage만 들어와 있다고 가정
 		user.setUserId(userId);
-		if (userService.modifyUser(user)) {
-			return new ResponseEntity<>(HttpStatus.OK);
-		}
-		return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+
+		int result = userService.updateMyInfo(user);
+
+		return new ResponseEntity<>(result, HttpStatus.OK);
 	}
-	
-	// 사용자 삭제
-	@DeleteMapping("/{userId}")
-	public ResponseEntity<Void> deleteUser(@PathVariable int userId) {
-		if (userService.removeUser(userId)) {
-			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-		}
-		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+
+	// 비밀번호 변경
+	@PutMapping("/me/password")
+	public ResponseEntity<Integer> updatePassword(@RequestParam int userId, @RequestParam String password) {
+		int result = userService.updatePassword(userId, password);
+
+		return new ResponseEntity<>(result, HttpStatus.OK);
+	}
+
+	// 회원가입
+	@PostMapping
+	public ResponseEntity<Integer> register(@RequestBody User user) {
+		int result = userService.register(user);
+
+		return new ResponseEntity<>(result, HttpStatus.CREATED);
+	}
+
+	// 회원 탈퇴
+	@DeleteMapping("/me")
+	public ResponseEntity<Integer> deleteUser(@RequestParam int userId) {
+		int result = userService.deleteUser(userId);
+
+		return new ResponseEntity<>(result, HttpStatus.OK);
 	}
 }
