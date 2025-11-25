@@ -21,4 +21,6 @@ public interface UserService {
     int deleteUser(int userId);
 
     User getMyInfo(int userId);
+    
+    User login(User user);
 }

@@ -2,7 +2,10 @@ package com.Investube.mvc.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+import com.Investube.mvc.interceptor.AuthInterceptor;
 
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
@@ -16,4 +19,18 @@ public class WebConfig implements WebMvcConfigurer {
 				.allowCredentials(true)
 				.maxAge(3600);
 	}
+	
+	private final AuthInterceptor authInterceptor;
+
+    public WebConfig(AuthInterceptor authInterceptor) {
+        this.authInterceptor = authInterceptor;
+    }
+
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+
+        registry.addInterceptor(authInterceptor)
+                .addPathPatterns("/users/me/**", "/videos/**", "/boards/**")
+                .excludePathPatterns("/auth/**"); // 로그인/회원가입은 제외
+    }
 }

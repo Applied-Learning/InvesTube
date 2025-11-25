@@ -20,7 +20,9 @@ public interface UserDao {
 
 	int updateMyInfo(User user);
 
-	int updatePassword(@Param("userId") int userId, @Param("password") String password);
+	int updatePassword(int userId, String password);
 
 	int delete(int userId);
+	
+	User login(User user);
 }

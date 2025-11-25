@@ -1,88 +1,83 @@
 package com.Investube.mvc.controller;
 
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.Investube.mvc.model.dto.User;
 import com.Investube.mvc.model.service.UserService;
 
-
 @RestController
-@RequestMapping("/api/users")
+@RequestMapping("/users")
 public class UserRestController {
 
-	private final UserService userService;
+    private final UserService userService;
 
-	public UserRestController(UserService userService) {
-		this.userService = userService;
-	}
+    public UserRestController(UserService userService) {
+        this.userService = userService;
+    }
 
-	// 업로더 정보 조회
-	@GetMapping("/{userId}")
-	public ResponseEntity<User> getUser(@PathVariable("userId") int userId) {
-		User result = userService.getUserByUserId(userId);
+    // 업로더 정보 조회 (공개 프로필)
+    @GetMapping("/{userId}")
+    public ResponseEntity<User> getUser(@PathVariable("userId") int userId) {
+        User result = userService.getUserByUserId(userId);
 
-		if (result == null) {
-			return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
-		}
+        if (result == null) {
+            return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
+        }
 
-		return new ResponseEntity<>(result, HttpStatus.OK);
-	}
+        return new ResponseEntity<>(result, HttpStatus.OK);
+    }
 
-	// 내 정보 조회
-	@GetMapping("/me")
-	public ResponseEntity<User> getMyInfo(@RequestParam int userId) {
-		User result = userService.getMyInfo(userId);
+    // 내 정보 조회
+    @GetMapping("/me")
+    public ResponseEntity<User> getMyInfo(HttpServletRequest request) {
 
-		if (result == null) {
-			return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
-		}
+        int userId = (int) request.getAttribute("userId");  // JWT에서 가져옴
 
-		return new ResponseEntity<>(result, HttpStatus.OK);
-	}
+        User result = userService.getMyInfo(userId);
 
-	// 내 정보 수정
-	@PutMapping("/me")
-	public ResponseEntity<Integer> updateMyInfo(@RequestParam int userId, @RequestBody User user) {
+        if (result == null) {
+            return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
+        }
 
-		// body에는 nickname, profileImage만 들어와 있다고 가정
-		user.setUserId(userId);
+        return new ResponseEntity<>(result, HttpStatus.OK);
+    }
 
-		int result = userService.updateMyInfo(user);
+    // 내 정보 수정 (닉네임, 프로필 이미지)
+    @PutMapping("/me")
+    public ResponseEntity<Integer> updateMyInfo(HttpServletRequest request,
+                                                @RequestBody User user) {
 
-		return new ResponseEntity<>(result, HttpStatus.OK);
-	}
+        int userId = (int) request.getAttribute("userId");
+        user.setUserId(userId);
 
-	// 비밀번호 변경
-	@PutMapping("/me/password")
-	public ResponseEntity<Integer> updatePassword(@RequestParam int userId, @RequestParam String password) {
-		int result = userService.updatePassword(userId, password);
+        int result = userService.updateMyInfo(user);
 
-		return new ResponseEntity<>(result, HttpStatus.OK);
-	}
+        return new ResponseEntity<>(result, HttpStatus.OK);
+    }
 
-	// 회원가입
-	@PostMapping
-	public ResponseEntity<Integer> register(@RequestBody User user) {
-		int result = userService.register(user);
+    // 비밀번호 변경
+    @PutMapping("/me/password")
+    public ResponseEntity<Integer> updatePassword(HttpServletRequest request,
+                                                  @RequestParam String password) {
 
-		return new ResponseEntity<>(result, HttpStatus.CREATED);
-	}
+        int userId = (int) request.getAttribute("userId");
 
-	// 회원 탈퇴
-	@DeleteMapping("/me")
-	public ResponseEntity<Integer> deleteUser(@RequestParam int userId) {
-		int result = userService.deleteUser(userId);
+        int result = userService.updatePassword(userId, password);
 
-		return new ResponseEntity<>(result, HttpStatus.OK);
-	}
+        return new ResponseEntity<>(result, HttpStatus.OK);
+    }
+
+    // 회원 탈퇴
+    @DeleteMapping("/me")
+    public ResponseEntity<Integer> deleteUser(HttpServletRequest request) {
+
+        int userId = (int) request.getAttribute("userId");
+
+        int result = userService.deleteUser(userId);
+
+        return new ResponseEntity<>(result, HttpStatus.OK);
+    }
 }
