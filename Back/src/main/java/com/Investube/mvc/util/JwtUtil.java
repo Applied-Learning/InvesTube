@@ -5,6 +5,7 @@ import java.util.Date;
 import org.springframework.stereotype.Component;
 
 import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
@@ -48,15 +49,19 @@ public class JwtUtil {
     /**
      * 토큰에서 userId(subject) 추출
      */
-    public int getUserIdByToken(String token) {
-        Claims claims = Jwts.parserBuilder()
-                .setSigningKey(key)      // 최신 방식: parserBuilder()
-                .build()
-                .parseClaimsJws(token)
-                .getBody();
-
-        return Integer.parseInt(claims.getSubject());
+    public Integer getUserIdByToken(String token) {
+        try {
+            Claims claims = Jwts.parserBuilder()
+                    .setSigningKey(key)
+                    .build()
+                    .parseClaimsJws(token)
+                    .getBody();
+            return Integer.parseInt(claims.getSubject());  // JWT에서 userId 추출
+        } catch (JwtException | IllegalArgumentException e) {
+            return null; // 유효하지 않거나 잘못된 토큰일 경우 null 반환
+        }
     }
+
 
     /**
      * JWT 유효성 검증

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.Investube.mvc.model.dao.FollowDao">
+	
+	<!-- 팔로워 조회 -->
+	<select id="findFollowersByUserId" resultType="Follow" parameterType="int">
+		SELECT follower_id, following_id, created_at
+		FROM follow
+		WHERE following_id = #{userId}
+	</select>
+	
+	<!-- 팔로잉 조회 -->
+	<select id="findFollowingsByUserId" resultType="Follow" parameterType="int">
+		SELECT follower_id, following_id, created_at
+		FROM follow
+		WHERE follower_id = #{userId}
+	</select>
+	
+	<!-- 팔로우 여부 확인 -->
+	<select id="existsByFollowerIdAndFollowingId" resultType="boolean" parameterType="map">
+		SELECT COUNT(*)
+		FROM follow
+		WHERE follower_id = #{followerId} AND following_id = #{followingId}
+	</select>
+	
+	<!-- 팔로우 -->
+	<insert id="addFollow" parameterType="map">
+		INSERT INTO follow (follower_id, following_id)
+		VALUES (#{followerId}, #{followingId})
+	</insert>
+	
+	<!-- 언팔로우 -->
+	<delete id="removeFollow" parameterType="map">
+		DELETE FROM follow
+		WHERE follower_id = #{followerId} AND following_id = #{followingId}
+	</delete>
+	
+</mapper>
