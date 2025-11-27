@@ -4,45 +4,53 @@
 
 <mapper namespace="com.Investube.mvc.model.dao.UserDao">
 
-    <select id="selectAll" resultType="User">
-        SELECT *
-        FROM users
-        ORDER BY user_id DESC
-    </select>
+	<select id="login" parameterType="User" resultType="User">
+		SELECT *
+		FROM users
+		WHERE id = #{id}
+		AND password = #{password}
+	</select>
+	
+<!-- <select id="selectAll" resultType="User">
+		SELECT *
+		FROM users
+		ORDER BY user_id DESC
+	</select>
 
-    <select id="selectByUserId" parameterType="int" resultType="User">
-        SELECT *
-        FROM users
-        WHERE user_id = #{userId}
-    </select>
+	<select id="selectById" parameterType="String" resultType="User">
+		SELECT *
+		FROM users
+		WHERE id = #{id}
+	</select> -->
 
-    <select id="selectById" parameterType="string" resultType="User">
-        SELECT *
-        FROM users
-        WHERE id = #{id}
-    </select>
+	<select id="selectByUserId" parameterType="int"
+		resultType="User">
+		SELECT *
+		FROM users
+		WHERE user_id = #{userId}
+	</select>
+	
+	<insert id="insert" parameterType="User">
+		INSERT INTO users (id, password, email, nickname, profile_image)
+		VALUES (#{id}, #{password}, #{email}, #{nickname}, #{profileImage})
+	</insert>
 
-    <insert id="insert" parameterType="User">
-        INSERT INTO users (id, password, email, nickname, profile_image)
-        VALUES (#{id}, #{password}, #{email}, #{nickname}, #{profileImage})
-    </insert>
+	<update id="updateMyInfo" parameterType="User">
+		UPDATE users
+		SET nickname = #{nickname},
+		profile_image = #{profileImage}
+		WHERE user_id = #{userId}
+	</update>
 
-    <update id="updateMyInfo" parameterType="User">
-        UPDATE users
-        SET nickname = #{nickname},
-            profile_image = #{profileImage}
-        WHERE user_id = #{userId}
-    </update>
+	<update id="updatePassword" parameterType="User">
+		UPDATE users
+		SET password = #{password}
+		WHERE user_id = #{userId}
+	</update>
 
-    <update id="updatePassword">
-        UPDATE users
-        SET password = #{password}
-        WHERE user_id = #{userId}
-    </update>
-
-    <delete id="delete" parameterType="int">
-        DELETE FROM users
-        WHERE user_id = #{userId}
-    </delete>
+	<delete id="delete" parameterType="int">
+		DELETE FROM users
+		WHERE user_id = #{userId}
+	</delete>
 
 </mapper>

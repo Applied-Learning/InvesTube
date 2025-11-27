@@ -55,4 +55,9 @@ public class UserServiceImpl implements UserService {
     public User getMyInfo(int userId) {
         return userDao.selectByUserId(userId);
     }
+
+	@Override
+	public User login(User user) {
+		return userDao.login(user);
+	}
 }
