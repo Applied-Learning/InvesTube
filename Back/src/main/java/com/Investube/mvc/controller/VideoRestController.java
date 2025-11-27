@@ -16,9 +16,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.Investube.mvc.model.dto.Video;
 import com.Investube.mvc.model.service.VideoService;
+import jakarta.servlet.http.HttpServletRequest;
 
 @RestController
-@RequestMapping("/api/videos")
+@RequestMapping("/videos")
 public class VideoRestController {
 	
 	private final VideoService videoService;
@@ -46,32 +47,65 @@ public class VideoRestController {
 		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	}
 	
-	// 비디오 등록
+	// 비디오 등록 (인증 필요)
 	@PostMapping
-	public ResponseEntity<Void> createVideo(@RequestBody Video video) {
+	public ResponseEntity<Void> createVideo(@RequestBody Video video, HttpServletRequest request) {
+		Integer userId = getUserIdFromRequest(request);
+		if (userId == null) {
+			return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
+		}
+		
+		video.setUserId(userId);
 		if (videoService.createVideo(video)) {
 			return new ResponseEntity<>(HttpStatus.CREATED);
 		}
 		return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 	}
 	
-	// 비디오 수정
+	// 비디오 수정 (인증 + 소유자 검증)
 	@PutMapping("/{videoId}")
-	public ResponseEntity<Void> updateVideo(@PathVariable int videoId, @RequestBody Video video) {
+	public ResponseEntity<Void> updateVideo(@PathVariable int videoId, @RequestBody Video video, HttpServletRequest request) {
+		Integer userId = getUserIdFromRequest(request);
+		if (userId == null) {
+			return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
+		}
+		
+		Video existing = videoService.getVideo(videoId);
+		if (existing == null) {
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+		}
+		if (existing.getUserId() != userId) {
+			return new ResponseEntity<>(HttpStatus.FORBIDDEN);
+		}
+		
 		video.setVideoId(videoId);
+		video.setUserId(userId);
 		if (videoService.modifyVideo(video)) {
 			return new ResponseEntity<>(HttpStatus.OK);
 		}
 		return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 	}
 	
-	// 비디오 삭제
+	// 비디오 삭제 (인증 + 소유자 검증)
 	@DeleteMapping("/{videoId}")
-	public ResponseEntity<Void> deleteVideo(@PathVariable int videoId) {
+	public ResponseEntity<Void> deleteVideo(@PathVariable int videoId, HttpServletRequest request) {
+		Integer userId = getUserIdFromRequest(request);
+		if (userId == null) {
+			return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
+		}
+		
+		Video existing = videoService.getVideo(videoId);
+		if (existing == null) {
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+		}
+		if (existing.getUserId() != userId) {
+			return new ResponseEntity<>(HttpStatus.FORBIDDEN);
+		}
+		
 		if (videoService.removeVideo(videoId)) {
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		}
-		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+		return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 	}
 	
 	// 카테고리별 비디오 조회
@@ -86,5 +120,14 @@ public class VideoRestController {
 	public ResponseEntity<List<Video>> searchVideos(@RequestParam String keyword) {
 		List<Video> videos = videoService.searchVideos(keyword);
 		return new ResponseEntity<>(videos, HttpStatus.OK);
+	}
+	
+	// 유틸: request attribute에서 userId 안전하게 추출
+	private Integer getUserIdFromRequest(HttpServletRequest request) {
+		Object attr = request.getAttribute("userId");
+		if (attr instanceof Integer) {
+			return (Integer) attr;
+		}
+		return null;
 	}
 }
