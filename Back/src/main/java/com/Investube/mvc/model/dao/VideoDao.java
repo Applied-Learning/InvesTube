@@ -14,6 +14,12 @@ public interface VideoDao {
 	// 전체 비디오 조회
 	List<Video> selectAll();
 	
+	// 조회수순 비디오 조회
+	List<Video> selectByViews();
+	
+	// 평점순 비디오 조회
+	List<Video> selectByRating();
+	
 	// 비디오 ID로 조회
 	Video selectOne(int videoId);
 	
@@ -43,4 +49,7 @@ public interface VideoDao {
 	
 	// 찜 삭제
 	int deleteWish(@Param("userId") int userId, @Param("videoId") int videoId);
+	
+	// 찜한 영상 목록 조회
+	List<Video> selectWishedVideos(int userId);
 }
