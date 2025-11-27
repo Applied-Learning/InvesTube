@@ -22,6 +22,16 @@ public class VideoServiceImpl implements VideoService {
 	}
 
 	@Override
+	public List<Video> getVideosByViews() {
+		return videoDao.selectByViews();
+	}
+
+	@Override
+	public List<Video> getVideosByRating() {
+		return videoDao.selectByRating();
+	}
+
+	@Override
 	public Video getVideo(int videoId) {
 		return videoDao.selectOne(videoId);
 	}
@@ -54,5 +64,25 @@ public class VideoServiceImpl implements VideoService {
 	@Override
 	public boolean increaseViewCount(int videoId) {
 		return videoDao.updateViewCount(videoId) > 0;
+	}
+
+	@Override
+	public boolean isVideoWished(int userId, int videoId) {
+		return videoDao.selectWish(userId, videoId) != null;
+	}
+
+	@Override
+	public boolean addVideoWish(int userId, int videoId) {
+		return videoDao.insertWish(userId, videoId) > 0;
+	}
+
+	@Override
+	public boolean removeVideoWish(int userId, int videoId) {
+		return videoDao.deleteWish(userId, videoId) > 0;
+	}
+
+	@Override
+	public List<Video> getWishedVideos(int userId) {
+		return videoDao.selectWishedVideos(userId);
 	}
 }

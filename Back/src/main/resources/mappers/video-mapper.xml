@@ -27,6 +27,18 @@
 		ORDER BY updated_at DESC
 	</select>
 	
+	<!-- 조회수순 비디오 조회 -->
+	<select id="selectByViews" resultMap="VideoResultMap">
+		SELECT * FROM videos
+		ORDER BY view_count DESC
+	</select>
+	
+	<!-- 평점순 비디오 조회 -->
+	<select id="selectByRating" resultMap="VideoResultMap">
+		SELECT * FROM videos
+		ORDER BY avg_rating DESC
+	</select>
+	
 	<!-- 비디오 ID로 조회 -->
 	<select id="selectOne" parameterType="int" resultMap="VideoResultMap">
 		SELECT * FROM videos
@@ -55,15 +67,6 @@
 		DELETE FROM videos
 		WHERE video_id = #{videoId}
 	</delete>
-	
-	<!-- 운동 부위별 비디오 조회 -->
-	<!-- 
-	<select id="selectByPart" parameterType="String" resultMap="VideoResultMap">
-		SELECT * FROM videos
-		WHERE part = #{part}
-		ORDER BY updated_at DESC
-	</select>
-	-->
 	
 	<!-- 카테고리별 비디오 조회 -->
 	<select id="selectByCategory" parameterType="int" resultMap="VideoResultMap">
@@ -105,5 +108,14 @@
 		DELETE FROM video_wish
 		WHERE user_id = #{userId} AND video_id = #{videoId}
 	</delete>
+	
+	<!-- 찜한 영상 목록 조회 -->
+	<select id="selectWishedVideos" parameterType="int" resultMap="VideoResultMap">
+		SELECT v.*
+		FROM videos v
+		INNER JOIN video_wish vw ON v.video_id = vw.video_id
+		WHERE vw.user_id = #{userId}
+		ORDER BY vw.created_at DESC
+	</select>
 
 </mapper>

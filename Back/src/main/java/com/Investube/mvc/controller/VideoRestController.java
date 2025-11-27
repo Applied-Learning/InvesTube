@@ -28,10 +28,25 @@ public class VideoRestController {
 		this.videoService = videoService;
 	}
 	
-	// 전체 비디오 조회
+	// 전체 비디오 조회 (정렬 기능 포함)
 	@GetMapping
-	public ResponseEntity<List<Video>> getAllVideos() {
-		List<Video> videos = videoService.getAllVideos();
+	public ResponseEntity<List<Video>> getAllVideos(
+			@RequestParam(required = false, defaultValue = "latest") String sortBy) {
+		List<Video> videos;
+		
+		switch (sortBy) {
+			case "views":
+				videos = videoService.getVideosByViews();
+				break;
+			case "rating":
+				videos = videoService.getVideosByRating();
+				break;
+			case "latest":
+			default:
+				videos = videoService.getAllVideos();
+				break;
+		}
+		
 		return new ResponseEntity<>(videos, HttpStatus.OK);
 	}
 	
@@ -120,6 +135,51 @@ public class VideoRestController {
 	public ResponseEntity<List<Video>> searchVideos(@RequestParam String keyword) {
 		List<Video> videos = videoService.searchVideos(keyword);
 		return new ResponseEntity<>(videos, HttpStatus.OK);
+	}
+	
+	// 찜 여부 확인
+	@GetMapping("/{videoId}/wish")
+	public ResponseEntity<Boolean> checkWishStatus(@PathVariable int videoId, HttpServletRequest request) {
+		Integer userId = getUserIdFromRequest(request);
+		if (userId == null) {
+			return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
+		}
+		
+		boolean isWished = videoService.isVideoWished(userId, videoId);
+		return new ResponseEntity<>(isWished, HttpStatus.OK);
+	}
+	
+	// 찜 토글 (찜 추가/삭제)
+	@PostMapping("/{videoId}/wish")
+	public ResponseEntity<Boolean> toggleWish(@PathVariable int videoId, HttpServletRequest request) {
+		Integer userId = getUserIdFromRequest(request);
+		if (userId == null) {
+			return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
+		}
+		
+		boolean isWished = videoService.isVideoWished(userId, videoId);
+		
+		if (isWished) {
+			// 이미 찜한 상태면 찜 삭제
+			videoService.removeVideoWish(userId, videoId);
+			return new ResponseEntity<>(false, HttpStatus.OK);
+		} else {
+			// 찜하지 않은 상태면 찜 추가
+			videoService.addVideoWish(userId, videoId);
+			return new ResponseEntity<>(true, HttpStatus.OK);
+		}
+	}
+	
+	// 찜한 영상 목록 조회
+	@GetMapping("/wished")
+	public ResponseEntity<List<Video>> getWishedVideos(HttpServletRequest request) {
+		Integer userId = getUserIdFromRequest(request);
+		if (userId == null) {
+			return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
+		}
+		
+		List<Video> wishedVideos = videoService.getWishedVideos(userId);
+		return new ResponseEntity<>(wishedVideos, HttpStatus.OK);
 	}
 	
 	// 유틸: request attribute에서 userId 안전하게 추출
