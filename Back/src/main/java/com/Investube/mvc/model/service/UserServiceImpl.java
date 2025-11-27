@@ -9,49 +9,55 @@ import com.Investube.mvc.model.dto.User;
 
 @Service
 public class UserServiceImpl implements UserService {
-	
+
 	private final UserDao userDao;
-	
+
 	public UserServiceImpl(UserDao userDao) {
 		this.userDao = userDao;
 	}
+	
+	@Override
+    public List<User> getAllUsers() {
+        return userDao.selectAll();
+    }
+
+    @Override
+    public User getUserByUserId(int userId) {
+        return userDao.selectByUserId(userId);
+    }
+
+    @Override
+    public User getUserById(String id) {
+        return userDao.selectById(id);
+    }
+
+    @Override
+    public int register(User user) {
+        return userDao.insert(user);
+    }
+
+    @Override
+    public int updateMyInfo(User user) {
+        return userDao.updateMyInfo(user);
+    }
+
+    @Override
+    public int updatePassword(int userId, String password) {
+        return userDao.updatePassword(userId, password);
+    }
+
+    @Override
+    public int deleteUser(int userId) {
+        return userDao.delete(userId);
+    }
+
+    @Override
+    public User getMyInfo(int userId) {
+        return userDao.selectByUserId(userId);
+    }
 
 	@Override
-	public List<User> getAllUsers() {
-		return userDao.selectAll();
-	}
-
-	@Override
-	public User getUser(int userId) {
-		return userDao.selectOne(userId);
-	}
-
-	@Override
-	public User getUserByUsername(String username) {
-		return userDao.selectByUsername(username);
-	}
-
-	@Override
-	public boolean createUser(User user) {
-		return userDao.insertUser(user) > 0;
-	}
-
-	@Override
-	public boolean modifyUser(User user) {
-		return userDao.updateUser(user) > 0;
-	}
-
-	@Override
-	public boolean removeUser(int userId) {
-		return userDao.deleteUser(userId) > 0;
-	}
-
-	@Override
-	public User login(String username, String password) {
-		User user = userDao.selectByUsername(username);
-		if (user != null && user.getPassword().equals(password)) {
-			return user;
-		}
-		return null;
+	public User login(User user) {
+		return userDao.login(user);
 	}
 }

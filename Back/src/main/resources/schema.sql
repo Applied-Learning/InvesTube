@@ -14,8 +14,8 @@ CREATE TABLE IF NOT EXISTS users (
   email          VARCHAR(100) UNIQUE,
   nickname       VARCHAR(50),
   profile_image  VARCHAR(255),
-  created_at     DATETIME,
-  updated_at     DATETIME
+  created_at     DATETIME DEFAULT CURRENT_TIMESTAMP,
+  updated_at     DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
 INSERT INTO users (user_id, id, password, email, nickname, profile_image, created_at, updated_at) VALUES
@@ -55,8 +55,8 @@ CREATE TABLE IF NOT EXISTS videos (
   wish_count      INT DEFAULT 0,
   review_count    INT DEFAULT 0,
   avg_rating      DECIMAL(2,1) DEFAULT 0.0,
-  created_at      DATETIME,
-  updated_at      DATETIME,
+  created_at      DATETIME DEFAULT CURRENT_TIMESTAMP,
+  updated_at      DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   FOREIGN KEY (user_id) REFERENCES users(user_id),
   FOREIGN KEY (category_id) REFERENCES category(category_id)
 );
@@ -78,8 +78,8 @@ CREATE TABLE IF NOT EXISTS reviews (
   user_id       INT,
   content       TEXT,
   rating        DECIMAL(2,1),
-  created_at    DATETIME,
-  updated_at    DATETIME,
+  created_at    DATETIME DEFAULT CURRENT_TIMESTAMP,
+  updated_at    DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   FOREIGN KEY (video_id) REFERENCES videos(video_id),
   FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
@@ -98,7 +98,7 @@ INSERT INTO reviews (review_id, video_id, user_id, content, rating, created_at, 
 CREATE TABLE IF NOT EXISTS video_wish (
   user_id        INT,
   video_id       INT,
-  created_at     DATETIME,
+  created_at     DATETIME DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (user_id, video_id),
   FOREIGN KEY (user_id) REFERENCES users(user_id),
   FOREIGN KEY (video_id) REFERENCES videos(video_id)
@@ -120,8 +120,8 @@ CREATE TABLE IF NOT EXISTS board_post (
   user_id        INT,
   title          VARCHAR(200),
   content        TEXT,
-  created_at     DATETIME,
-  updated_at     DATETIME,
+  created_at     DATETIME DEFAULT CURRENT_TIMESTAMP,
+  updated_at     DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
 
@@ -140,7 +140,7 @@ CREATE TABLE IF NOT EXISTS board_post_images (
   image_id       INT AUTO_INCREMENT PRIMARY KEY,
   post_id        INT,
   image_url      VARCHAR(500),
-  created_at     DATETIME,
+  created_at     DATETIME DEFAULT CURRENT_TIMESTAMP,
   FOREIGN KEY (post_id) REFERENCES board_post(post_id)
 );
 
@@ -158,7 +158,7 @@ INSERT INTO board_post_images (image_id, post_id, image_url, created_at) VALUES
 CREATE TABLE IF NOT EXISTS follow (
   follower_id    INT,
   following_id   INT,
-  created_at     DATETIME,
+  created_at     DATETIME DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (follower_id, following_id),
   FOREIGN KEY (follower_id) REFERENCES users(user_id),
   FOREIGN KEY (following_id) REFERENCES users(user_id)
@@ -180,8 +180,8 @@ CREATE TABLE IF NOT EXISTS board_comments (
   post_id        INT,
   user_id        INT,
   content        TEXT,
-  created_at     DATETIME,
-  updated_at     DATETIME,
+  created_at     DATETIME DEFAULT CURRENT_TIMESTAMP,
+  updated_at     DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   FOREIGN KEY (post_id) REFERENCES board_post(post_id),
   FOREIGN KEY (user_id) REFERENCES users(user_id)
 );

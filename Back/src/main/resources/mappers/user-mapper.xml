@@ -1,44 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
-	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.Investube.mvc.model.dao.UserDao">
 
-	<!-- 전체 사용자 조회 -->
-	<select id="selectAll" resultType="User">
-		SELECT * FROM users
-		ORDER BY created_at DESC
+	<select id="login" parameterType="User" resultType="User">
+		SELECT *
+		FROM users
+		WHERE id = #{id}
+		AND password = #{password}
 	</select>
 	
-	<!-- 사용자 ID로 조회 -->
-	<select id="selectOne" parameterType="int" resultType="User">
-		SELECT * FROM users
+<!-- <select id="selectAll" resultType="User">
+		SELECT *
+		FROM users
+		ORDER BY user_id DESC
+	</select>
+
+	<select id="selectById" parameterType="String" resultType="User">
+		SELECT *
+		FROM users
+		WHERE id = #{id}
+	</select> -->
+
+	<select id="selectByUserId" parameterType="int"
+		resultType="User">
+		SELECT *
+		FROM users
 		WHERE user_id = #{userId}
 	</select>
 	
-	<!-- 사용자명으로 조회 -->
-	<select id="selectByUsername" parameterType="String" resultType="User">
-		SELECT * FROM users
-		WHERE username = #{username}
-	</select>
-	
-	<!-- 사용자 등록 -->
-	<insert id="insertUser" parameterType="User">
-		INSERT INTO users (username, password, email, nickname, created_at)
-		VALUES (#{username}, #{password}, #{email}, #{nickname}, NOW())
+	<insert id="insert" parameterType="User">
+		INSERT INTO users (id, password, email, nickname, profile_image)
+		VALUES (#{id}, #{password}, #{email}, #{nickname}, #{profileImage})
 	</insert>
-	
-	<!-- 사용자 정보 수정 -->
-	<update id="updateUser" parameterType="User">
+
+	<update id="updateMyInfo" parameterType="User">
 		UPDATE users
-		SET password = #{password},
-		    email = #{email},
-		    nickname = #{nickname}
+		SET nickname = #{nickname},
+		profile_image = #{profileImage}
 		WHERE user_id = #{userId}
 	</update>
-	
-	<!-- 사용자 삭제 -->
-	<delete id="deleteUser" parameterType="int">
+
+	<update id="updatePassword" parameterType="User">
+		UPDATE users
+		SET password = #{password}
+		WHERE user_id = #{userId}
+	</update>
+
+	<delete id="delete" parameterType="int">
 		DELETE FROM users
 		WHERE user_id = #{userId}
 	</delete>
