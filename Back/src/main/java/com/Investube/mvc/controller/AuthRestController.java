@@ -14,6 +14,13 @@ import com.Investube.mvc.model.dto.User;
 import com.Investube.mvc.model.service.UserService;
 import com.Investube.mvc.util.JwtUtil;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
+@Tag(name = "인증 API", description = "로그인, 회원가입 관련 API")
 @RestController
 @RequestMapping("/auth")
 public class AuthRestController {
@@ -26,8 +33,13 @@ public class AuthRestController {
         this.jwtUtil = jwtUtil;
     }
 
+    @Operation(summary = "로그인", description = "아이디와 비밀번호로 로그인하여 JWT 토큰을 발급받습니다")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "로그인 성공"),
+        @ApiResponse(responseCode = "401", description = "로그인 실패 - 아이디 또는 비밀번호 오류")
+    })
     @PostMapping("/login")
-    public ResponseEntity<?> login(@RequestBody User user) {
+    public ResponseEntity<?> login(@Parameter(description = "로그인 정보 (아이디, 비밀번호)") @RequestBody User user) {
 
         User loginUser = userService.login(user);
 
@@ -46,8 +58,13 @@ public class AuthRestController {
         return ResponseEntity.ok(result);
     }
 
+    @Operation(summary = "회원가입", description = "새로운 사용자를 등록합니다")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "201", description = "회원가입 성공"),
+        @ApiResponse(responseCode = "400", description = "회원가입 실패 - 중복된 아이디 등")
+    })
     @PostMapping("/signup")
-    public ResponseEntity<?> signup(@RequestBody User user) {
+    public ResponseEntity<?> signup(@Parameter(description = "회원가입 정보") @RequestBody User user) {
         int result = userService.register(user);
         return new ResponseEntity<>(result, HttpStatus.CREATED);
     }

@@ -11,7 +11,7 @@
 		AND password = #{password}
 	</select>
 	
-<!-- <select id="selectAll" resultType="User">
+	<select id="selectAll" resultType="User">
 		SELECT *
 		FROM users
 		ORDER BY user_id DESC
@@ -21,7 +21,7 @@
 		SELECT *
 		FROM users
 		WHERE id = #{id}
-	</select> -->
+	</select>
 
 	<select id="selectByUserId" parameterType="int"
 		resultType="User">
@@ -37,14 +37,26 @@
 
 	<update id="updateMyInfo" parameterType="User">
 		UPDATE users
-		SET nickname = #{nickname},
-		profile_image = #{profileImage}
+		<set>
+			<if test="nickname != null and nickname != ''">
+				nickname = #{nickname},
+			</if>
+			<if test="profileImage != null">
+				profile_image = #{profileImage},
+			</if>
+		</set>
 		WHERE user_id = #{userId}
 	</update>
 
-	<update id="updatePassword" parameterType="User">
+	<update id="updatePassword">
 		UPDATE users
 		SET password = #{password}
+		WHERE user_id = #{userId}
+	</update>
+
+	<update id="deleteProfileImage" parameterType="int">
+		UPDATE users
+		SET profile_image = NULL
 		WHERE user_id = #{userId}
 	</update>
 

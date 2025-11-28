@@ -47,6 +47,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public int deleteProfileImage(int userId) {
+        return userDao.deleteProfileImage(userId);
+    }
+
+    @Override
     public int deleteUser(int userId) {
         return userDao.delete(userId);
     }
