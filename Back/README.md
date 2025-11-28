@@ -26,16 +26,16 @@ InvesTube는 **주식 투자**와 관련된 **영상 콘텐츠**를 제공하는
 
 ## API
 
-![api1](.image/api1.png)
+![api1](.images/api1.png)
 
-![api2](.image/api2.png)
+![api2](.images/api2.png)
 
-![api3](.image/api3.png)
+![api3](.images/api3.png)
 
-![api4](.image/api4.png)
+![api4](.images/api4.png)
 
-![api5](.image/api5.png)
+![api5](.images/api5.png)
 
-![api6](.image/api6.png)
+![api6](.images/api6.png)
 
-![api7](.image/api7.png)
+![api7](.images/api7.png)
