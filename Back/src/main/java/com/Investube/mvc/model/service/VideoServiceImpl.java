@@ -135,4 +135,10 @@ public class VideoServiceImpl implements VideoService {
 	public int getWishedVideosCount(int userId) {
 		return videoDao.selectCountWishedVideos(userId);
 	}
+
+	@Override
+	public List<Video> getVideosByUser(int userId) {
+		List<Video> videos = videoDao.getVideosByUser(userId);
+	    return videos;
+	}
 }
