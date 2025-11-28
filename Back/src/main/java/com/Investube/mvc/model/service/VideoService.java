@@ -77,4 +77,7 @@ public interface VideoService {
 	
 	// 찜한 영상 개수 조회
 	int getWishedVideosCount(int userId);
+	
+	// 업로드한 영상 조회
+	List<Video> getVideosByUser(int userId);
 }

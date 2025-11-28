@@ -82,4 +82,7 @@ public interface VideoDao {
 	
 	// 찜한 영상 개수 조회
 	int selectCountWishedVideos(int userId);
+	
+	// 업로드한 영상 조회
+	List<Video> getVideosByUser(@Param("userId") int userId);
 }

@@ -3,6 +3,7 @@ package com.Investube.mvc.model.dao;
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import com.Investube.mvc.model.dto.Review;
 
@@ -26,4 +27,8 @@ public interface ReviewDao {
 	
 	// 리뷰 삭제
 	int deleteReview(int reviewId);
+	
+	// 작성한 리뷰 조회
+	List<Review> getReviewsByUser(@Param("userId") int userId);
+
 }

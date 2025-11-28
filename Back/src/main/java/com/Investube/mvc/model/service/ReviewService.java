@@ -23,4 +23,8 @@ public interface ReviewService {
 	
 	// 리뷰 삭제
 	boolean removeReview(int reviewId);
+	
+	// 작성한 리뷰 조회
+	List<Review> getReviewsByUser(int userId);
+
 }

@@ -1,83 +1,114 @@
 package com.Investube.mvc.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
+
+import java.util.List;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import com.Investube.mvc.model.dto.User;
+import com.Investube.mvc.model.dto.Video;
+import com.Investube.mvc.model.service.ReviewService;
 import com.Investube.mvc.model.service.UserService;
+import com.Investube.mvc.model.service.VideoService;
 
 @RestController
 @RequestMapping("/users")
 public class UserRestController {
 
-    private final UserService userService;
+	private final UserService userService;
+	private final VideoService videoService;
+	private final ReviewService reviewService;
 
-    public UserRestController(UserService userService) {
-        this.userService = userService;
-    }
+	public UserRestController(UserService userService, VideoService videoService, ReviewService reviewService) {
+		this.userService = userService;
+		this.videoService = videoService;
+		this.reviewService = reviewService;
+	}
 
-    // 업로더 정보 조회 (공개 프로필)
-    @GetMapping("/{userId}")
-    public ResponseEntity<User> getUser(@PathVariable("userId") int userId) {
-        User result = userService.getUserByUserId(userId);
+	// 업로더 정보 조회 (공개 프로필)
+	@GetMapping("/{userId}")
+	public ResponseEntity<User> getUser(@PathVariable("userId") int userId) {
+		User result = userService.getUserByUserId(userId);
 
-        if (result == null) {
-            return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
-        }
+		if (result == null) {
+			return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
+		}
 
-        return new ResponseEntity<>(result, HttpStatus.OK);
-    }
+		return new ResponseEntity<>(result, HttpStatus.OK);
+	}
 
-    // 내 정보 조회
-    @GetMapping("/me")
-    public ResponseEntity<User> getMyInfo(HttpServletRequest request) {
+	// 내 정보 조회
+	@GetMapping("/me")
+	public ResponseEntity<User> getMyInfo(HttpServletRequest request) {
 
-        int userId = (int) request.getAttribute("userId");  // JWT에서 가져옴
+		int userId = (int) request.getAttribute("userId"); // JWT에서 가져옴
 
-        User result = userService.getMyInfo(userId);
+		User result = userService.getMyInfo(userId);
 
-        if (result == null) {
-            return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
-        }
+		if (result == null) {
+			return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
+		}
 
-        return new ResponseEntity<>(result, HttpStatus.OK);
-    }
+		return new ResponseEntity<>(result, HttpStatus.OK);
+	}
 
-    // 내 정보 수정 (닉네임, 프로필 이미지)
-    @PutMapping("/me")
-    public ResponseEntity<Integer> updateMyInfo(HttpServletRequest request,
-                                                @RequestBody User user) {
+	// 내 정보 수정 (닉네임, 프로필 이미지)
+	@PutMapping("/me")
+	public ResponseEntity<Integer> updateMyInfo(HttpServletRequest request, @RequestBody User user) {
 
-        int userId = (int) request.getAttribute("userId");
-        user.setUserId(userId);
+		int userId = (int) request.getAttribute("userId");
+		user.setUserId(userId);
 
-        int result = userService.updateMyInfo(user);
+		int result = userService.updateMyInfo(user);
 
-        return new ResponseEntity<>(result, HttpStatus.OK);
-    }
+		return new ResponseEntity<>(result, HttpStatus.OK);
+	}
 
-    // 비밀번호 변경
-    @PutMapping("/me/password")
-    public ResponseEntity<Integer> updatePassword(HttpServletRequest request,
-                                                  @RequestParam String password) {
+	// 비밀번호 변경
+	@PutMapping("/me/password")
+	public ResponseEntity<Integer> updatePassword(HttpServletRequest request, @RequestParam String password) {
 
-        int userId = (int) request.getAttribute("userId");
+		int userId = (int) request.getAttribute("userId");
 
-        int result = userService.updatePassword(userId, password);
+		int result = userService.updatePassword(userId, password);
 
-        return new ResponseEntity<>(result, HttpStatus.OK);
-    }
+		return new ResponseEntity<>(result, HttpStatus.OK);
+	}
 
-    // 회원 탈퇴
-    @DeleteMapping("/me")
-    public ResponseEntity<Integer> deleteUser(HttpServletRequest request) {
+	// 회원 탈퇴
+	@DeleteMapping("/me")
+	public ResponseEntity<Integer> deleteUser(HttpServletRequest request) {
 
-        int userId = (int) request.getAttribute("userId");
+		int userId = (int) request.getAttribute("userId");
 
-        int result = userService.deleteUser(userId);
+		int result = userService.deleteUser(userId);
 
-        return new ResponseEntity<>(result, HttpStatus.OK);
-    }
+		return new ResponseEntity<>(result, HttpStatus.OK);
+	}
+	
+	// 내가 업로드한 영상
+	@GetMapping("/me/videos")
+	public ResponseEntity<List<Video>> getMyVideos(HttpServletRequest request) {
+	    int userId = (int) request.getAttribute("userId");
+	    
+	    List<Video> result = videoService.getVideosByUser(userId);
+	    return new ResponseEntity<>(result, HttpStatus.OK);
+	}
+
+	// 내가 찜한 영상
+	@GetMapping("/me/wishlist")
+	public ResponseEntity<?> getMyWishlist(HttpServletRequest request) {
+	    int userId = (int) request.getAttribute("userId");
+	    return ResponseEntity.ok(videoService.getWishedVideos(userId));
+	}
+
+	// 내가 쓴 리뷰
+	@GetMapping("/me/reviews")
+	public ResponseEntity<?> getMyReviews(HttpServletRequest request) {
+	    int userId = (int) request.getAttribute("userId");
+	    return ResponseEntity.ok(reviewService.getReviewsByUser(userId));
+	}
 }
