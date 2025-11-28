@@ -3,21 +3,19 @@ package com.Investube.mvc.model.dto;
 public class Review {
 	private int reviewId;
 	private int videoId;
-	private String writer;
-	private String title;
+	private int userId;
 	private String content;
-	private int rating;
+	private double rating;
 	private String createdAt;
 	private String updatedAt;
 	
 	public Review() {}
 	
-	public Review(int reviewId, int videoId, String writer, String title, String content, 
-	              int rating, String createdAt, String updatedAt) {
+	public Review(int reviewId, int videoId, int userId, String content, 
+	              double rating, String createdAt, String updatedAt) {
 		this.reviewId = reviewId;
 		this.videoId = videoId;
-		this.writer = writer;
-		this.title = title;
+		this.userId = userId;
 		this.content = content;
 		this.rating = rating;
 		this.createdAt = createdAt;
@@ -40,20 +38,12 @@ public class Review {
 		this.videoId = videoId;
 	}
 
-	public String getWriter() {
-		return writer;
+	public int getUserId() {
+		return userId;
 	}
 
-	public void setWriter(String writer) {
-		this.writer = writer;
-	}
-
-	public String getTitle() {
-		return title;
-	}
-
-	public void setTitle(String title) {
-		this.title = title;
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
 
 	public String getContent() {
@@ -64,11 +54,11 @@ public class Review {
 		this.content = content;
 	}
 
-	public int getRating() {
+	public double getRating() {
 		return rating;
 	}
 
-	public void setRating(int rating) {
+	public void setRating(double rating) {
 		this.rating = rating;
 	}
 
@@ -90,7 +80,7 @@ public class Review {
 
 	@Override
 	public String toString() {
-		return "Review [reviewId=" + reviewId + ", videoId=" + videoId + ", writer=" + writer + ", title=" + title
+		return "Review [reviewId=" + reviewId + ", videoId=" + videoId + ", userId=" + userId
 				+ ", content=" + content + ", rating=" + rating + ", createdAt=" + createdAt + ", updatedAt="
 				+ updatedAt + "]";
 	}

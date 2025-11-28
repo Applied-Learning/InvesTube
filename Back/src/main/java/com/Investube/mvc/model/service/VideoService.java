@@ -15,6 +15,18 @@ public interface VideoService {
 	// 평점순 비디오 조회
 	List<Video> getVideosByRating();
 	
+	// 페이징 - 전체 비디오 조회
+	List<Video> getAllVideos(int offset, int size);
+	
+	// 페이징 - 조회수순 비디오 조회
+	List<Video> getVideosByViews(int offset, int size);
+	
+	// 페이징 - 평점순 비디오 조회
+	List<Video> getVideosByRating(int offset, int size);
+	
+	// 전체 비디오 개수 조회
+	int getTotalVideoCount();
+	
 	// 비디오 ID로 조회
 	Video getVideo(int videoId);
 	
@@ -30,8 +42,20 @@ public interface VideoService {
 	// 카테고리별 비디오 조회
 	List<Video> getVideosByCategory(int categoryId);
 	
+	// 페이징 - 카테고리별 비디오 조회
+	List<Video> getVideosByCategory(int categoryId, int offset, int size);
+	
+	// 카테고리별 비디오 개수 조회
+	int getVideosCountByCategory(int categoryId);
+	
 	// 키워드로 비디오 검색
 	List<Video> searchVideos(String keyword);
+	
+	// 페이징 - 키워드로 비디오 검색
+	List<Video> searchVideos(String keyword, int offset, int size);
+	
+	// 검색 결과 개수 조회
+	int getSearchResultCount(String keyword);
 	
 	// 조회수 증가
 	boolean increaseViewCount(int videoId);
@@ -47,4 +71,10 @@ public interface VideoService {
 	
 	// 찜한 영상 목록 조회
 	List<Video> getWishedVideos(int userId);
+	
+	// 페이징 - 찜한 영상 목록 조회
+	List<Video> getWishedVideos(int userId, int offset, int size);
+	
+	// 찜한 영상 개수 조회
+	int getWishedVideosCount(int userId);
 }

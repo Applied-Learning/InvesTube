@@ -32,6 +32,26 @@ public class VideoServiceImpl implements VideoService {
 	}
 
 	@Override
+	public List<Video> getAllVideos(int offset, int size) {
+		return videoDao.selectAllWithPaging(offset, size);
+	}
+
+	@Override
+	public List<Video> getVideosByViews(int offset, int size) {
+		return videoDao.selectByViewsWithPaging(offset, size);
+	}
+
+	@Override
+	public List<Video> getVideosByRating(int offset, int size) {
+		return videoDao.selectByRatingWithPaging(offset, size);
+	}
+
+	@Override
+	public int getTotalVideoCount() {
+		return videoDao.selectTotalCount();
+	}
+
+	@Override
 	public Video getVideo(int videoId) {
 		return videoDao.selectOne(videoId);
 	}
@@ -57,8 +77,28 @@ public class VideoServiceImpl implements VideoService {
 	}
 
 	@Override
+	public List<Video> getVideosByCategory(int categoryId, int offset, int size) {
+		return videoDao.selectByCategoryWithPaging(categoryId, offset, size);
+	}
+
+	@Override
+	public int getVideosCountByCategory(int categoryId) {
+		return videoDao.selectCountByCategory(categoryId);
+	}
+
+	@Override
 	public List<Video> searchVideos(String keyword) {
 		return videoDao.searchByKeyword(keyword);
+	}
+
+	@Override
+	public List<Video> searchVideos(String keyword, int offset, int size) {
+		return videoDao.searchByKeywordWithPaging(keyword, offset, size);
+	}
+
+	@Override
+	public int getSearchResultCount(String keyword) {
+		return videoDao.selectCountByKeyword(keyword);
 	}
 
 	@Override
@@ -84,5 +124,15 @@ public class VideoServiceImpl implements VideoService {
 	@Override
 	public List<Video> getWishedVideos(int userId) {
 		return videoDao.selectWishedVideos(userId);
+	}
+
+	@Override
+	public List<Video> getWishedVideos(int userId, int offset, int size) {
+		return videoDao.selectWishedVideosWithPaging(userId, offset, size);
+	}
+
+	@Override
+	public int getWishedVideosCount(int userId) {
+		return videoDao.selectCountWishedVideos(userId);
 	}
 }

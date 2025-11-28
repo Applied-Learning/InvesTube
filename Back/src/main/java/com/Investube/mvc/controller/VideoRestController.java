@@ -1,6 +1,8 @@
 package com.Investube.mvc.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -28,26 +30,67 @@ public class VideoRestController {
 		this.videoService = videoService;
 	}
 	
-	// 전체 비디오 조회 (정렬 기능 포함)
+	// 전체 비디오 조회 (정렬 기능 + 페이징)
 	@GetMapping
-	public ResponseEntity<List<Video>> getAllVideos(
-			@RequestParam(required = false, defaultValue = "latest") String sortBy) {
+	public ResponseEntity<Map<String, Object>> getAllVideos(
+			@RequestParam(required = false, defaultValue = "latest") String sortBy,
+			@RequestParam(required = false) Integer page,
+			@RequestParam(required = false) Integer size) {
+		
+		// 페이징 파라미터가 없으면 기존 방식대로 전체 조회
+		if (page == null || size == null) {
+			List<Video> videos;
+			switch (sortBy) {
+				case "views":
+					videos = videoService.getVideosByViews();
+					break;
+				case "rating":
+					videos = videoService.getVideosByRating();
+					break;
+				case "latest":
+				default:
+					videos = videoService.getAllVideos();
+					break;
+			}
+			
+			Map<String, Object> response = new HashMap<>();
+			response.put("videos", videos);
+			return new ResponseEntity<>(response, HttpStatus.OK);
+		}
+		
+		// 페이징 파라미터 검증
+		if (page < 1) page = 1;
+		if (size < 1 || size > 100) size = 10;
+		
+		// offset 계산
+		int offset = (page - 1) * size;
+		
+		// 페이징 처리
 		List<Video> videos;
+		int totalCount = videoService.getTotalVideoCount();
 		
 		switch (sortBy) {
 			case "views":
-				videos = videoService.getVideosByViews();
+				videos = videoService.getVideosByViews(offset, size);
 				break;
-			case "rating":
-				videos = videoService.getVideosByRating();
+			case "rating":  
+				videos = videoService.getVideosByRating(offset, size);
 				break;
 			case "latest":
 			default:
-				videos = videoService.getAllVideos();
+				videos = videoService.getAllVideos(offset, size);
 				break;
 		}
 		
-		return new ResponseEntity<>(videos, HttpStatus.OK);
+		// 페이징 정보 포함한 응답
+		Map<String, Object> response = new HashMap<>();
+		response.put("videos", videos);
+		response.put("currentPage", page);
+		response.put("pageSize", size);
+		response.put("totalCount", totalCount);
+		response.put("totalPages", (int) Math.ceil((double) totalCount / size));
+		
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 	
 	// 비디오 ID로 조회 (영상 상세 조회)
@@ -123,18 +166,78 @@ public class VideoRestController {
 		return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 	}
 	
-	// 카테고리별 비디오 조회
+	// 카테고리별 비디오 조회 (페이징 지원)
 	@GetMapping("/category/{categoryId}")
-	public ResponseEntity<List<Video>> getVideosByCategory(@PathVariable int categoryId) {
-		List<Video> videos = videoService.getVideosByCategory(categoryId);
-		return new ResponseEntity<>(videos, HttpStatus.OK);
+	public ResponseEntity<Map<String, Object>> getVideosByCategory(
+			@PathVariable int categoryId,
+			@RequestParam(required = false) Integer page,
+			@RequestParam(required = false) Integer size) {
+		
+		// 페이징 파라미터가 없으면 전체 조회
+		if (page == null || size == null) {
+			List<Video> videos = videoService.getVideosByCategory(categoryId);
+			Map<String, Object> response = new HashMap<>();
+			response.put("videos", videos);
+			return new ResponseEntity<>(response, HttpStatus.OK);
+		}
+		
+		// 페이징 파라미터 검증
+		if (page < 1) page = 1;
+		if (size < 1 || size > 100) size = 10;
+		
+		// offset 계산
+		int offset = (page - 1) * size;
+		
+		// 페이징 처리
+		List<Video> videos = videoService.getVideosByCategory(categoryId, offset, size);
+		int totalCount = videoService.getVideosCountByCategory(categoryId);
+		
+		// 페이징 정보 포함한 응답
+		Map<String, Object> response = new HashMap<>();
+		response.put("videos", videos);
+		response.put("currentPage", page);
+		response.put("pageSize", size);
+		response.put("totalCount", totalCount);
+		response.put("totalPages", (int) Math.ceil((double) totalCount / size));
+		
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 	
-	// 키워드로 비디오 검색
+	// 키워드로 비디오 검색 (페이징 지원)
 	@GetMapping("/search")
-	public ResponseEntity<List<Video>> searchVideos(@RequestParam String keyword) {
-		List<Video> videos = videoService.searchVideos(keyword);
-		return new ResponseEntity<>(videos, HttpStatus.OK);
+	public ResponseEntity<Map<String, Object>> searchVideos(
+			@RequestParam String keyword,
+			@RequestParam(required = false) Integer page,
+			@RequestParam(required = false) Integer size) {
+		
+		// 페이징 파라미터가 없으면 전체 조회
+		if (page == null || size == null) {
+			List<Video> videos = videoService.searchVideos(keyword);
+			Map<String, Object> response = new HashMap<>();
+			response.put("videos", videos);
+			return new ResponseEntity<>(response, HttpStatus.OK);
+		}
+		
+		// 페이징 파라미터 검증
+		if (page < 1) page = 1;
+		if (size < 1 || size > 100) size = 10;
+		
+		// offset 계산
+		int offset = (page - 1) * size;
+		
+		// 페이징 처리
+		List<Video> videos = videoService.searchVideos(keyword, offset, size);
+		int totalCount = videoService.getSearchResultCount(keyword);
+		
+		// 페이징 정보 포함한 응답
+		Map<String, Object> response = new HashMap<>();
+		response.put("videos", videos);
+		response.put("currentPage", page);
+		response.put("pageSize", size);
+		response.put("totalCount", totalCount);
+		response.put("totalPages", (int) Math.ceil((double) totalCount / size));
+		
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 	
 	// 찜 여부 확인
@@ -170,19 +273,48 @@ public class VideoRestController {
 		}
 	}
 	
-	// 찜한 영상 목록 조회
+	// 찜한 영상 목록 조회 (페이징 지원)
 	@GetMapping("/wished")
-	public ResponseEntity<List<Video>> getWishedVideos(HttpServletRequest request) {
+	public ResponseEntity<Map<String, Object>> getWishedVideos(
+			HttpServletRequest request,
+			@RequestParam(required = false) Integer page,
+			@RequestParam(required = false) Integer size) {
 		Integer userId = getUserIdFromRequest(request);
 		if (userId == null) {
 			return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
 		}
 		
-		List<Video> wishedVideos = videoService.getWishedVideos(userId);
-		return new ResponseEntity<>(wishedVideos, HttpStatus.OK);
+		// 페이징 파라미터가 없으면 전체 조회
+		if (page == null || size == null) {
+			List<Video> wishedVideos = videoService.getWishedVideos(userId);
+			Map<String, Object> response = new HashMap<>();
+			response.put("videos", wishedVideos);
+			return new ResponseEntity<>(response, HttpStatus.OK);
+		}
+		
+		// 페이징 파라미터 검증
+		if (page < 1) page = 1;
+		if (size < 1 || size > 100) size = 10;
+		
+		// offset 계산
+		int offset = (page - 1) * size;
+		
+		// 페이징 처리
+		List<Video> wishedVideos = videoService.getWishedVideos(userId, offset, size);
+		int totalCount = videoService.getWishedVideosCount(userId);
+		
+		// 페이징 정보 포함한 응답
+		Map<String, Object> response = new HashMap<>();
+		response.put("videos", wishedVideos);
+		response.put("currentPage", page);
+		response.put("pageSize", size);
+		response.put("totalCount", totalCount);
+		response.put("totalPages", (int) Math.ceil((double) totalCount / size));
+		
+		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
 	
-	// 유틸: request attribute에서 userId 안전하게 추출
+	// request attribute에서 userId 안전하게 추출
 	private Integer getUserIdFromRequest(HttpServletRequest request) {
 		Object attr = request.getAttribute("userId");
 		if (attr instanceof Integer) {

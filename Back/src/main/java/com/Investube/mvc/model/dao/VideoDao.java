@@ -20,6 +20,18 @@ public interface VideoDao {
 	// 평점순 비디오 조회
 	List<Video> selectByRating();
 	
+	// 페이징 - 전체 비디오 조회
+	List<Video> selectAllWithPaging(@Param("offset") int offset, @Param("size") int size);
+	
+	// 페이징 - 조회수순 비디오 조회
+	List<Video> selectByViewsWithPaging(@Param("offset") int offset, @Param("size") int size);
+	
+	// 페이징 - 평점순 비디오 조회
+	List<Video> selectByRatingWithPaging(@Param("offset") int offset, @Param("size") int size);
+	
+	// 전체 비디오 개수 조회
+	int selectTotalCount();
+	
 	// 비디오 ID로 조회
 	Video selectOne(int videoId);
 	
@@ -35,8 +47,20 @@ public interface VideoDao {
 	// 카테고리별 비디오 조회
 	List<Video> selectByCategory(int categoryId);
 	
+	// 페이징 - 카테고리별 비디오 조회
+	List<Video> selectByCategoryWithPaging(@Param("categoryId") int categoryId, @Param("offset") int offset, @Param("size") int size);
+	
+	// 카테고리별 비디오 개수 조회
+	int selectCountByCategory(int categoryId);
+	
 	// 키워드로 비디오 검색
 	List<Video> searchByKeyword(String keyword);
+	
+	// 페이징 - 키워드로 비디오 검색
+	List<Video> searchByKeywordWithPaging(@Param("keyword") String keyword, @Param("offset") int offset, @Param("size") int size);
+	
+	// 검색 결과 개수 조회
+	int selectCountByKeyword(String keyword);
 	
 	// 조회수 증가
 	int updateViewCount(int videoId);
@@ -52,4 +76,10 @@ public interface VideoDao {
 	
 	// 찜한 영상 목록 조회
 	List<Video> selectWishedVideos(int userId);
+	
+	// 페이징 - 찜한 영상 목록 조회
+	List<Video> selectWishedVideosWithPaging(@Param("userId") int userId, @Param("offset") int offset, @Param("size") int size);
+	
+	// 찜한 영상 개수 조회
+	int selectCountWishedVideos(int userId);
 }
