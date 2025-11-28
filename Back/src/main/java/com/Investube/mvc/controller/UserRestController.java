@@ -125,7 +125,7 @@ public class UserRestController {
 
 		int result = userService.deleteUser(userId);
 
-<<<<<<< Back/src/main/java/com/Investube/mvc/controller/UserRestController.java
+
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
 
@@ -265,9 +265,9 @@ public class UserRestController {
             System.err.println("파일 삭제 실패: " + filePath + ", 오류: " + e.getMessage());
         }
     }
-=======
-		return new ResponseEntity<>(result, HttpStatus.OK);
-	}
+
+		
+	
 	
 	// 내가 업로드한 영상
 	@GetMapping("/me/videos")
@@ -291,5 +291,5 @@ public class UserRestController {
 	    int userId = (int) request.getAttribute("userId");
 	    return ResponseEntity.ok(reviewService.getReviewsByUser(userId));
 	}
->>>>>>> Back/src/main/java/com/Investube/mvc/controller/UserRestController.java
+
 }
