@@ -19,5 +19,6 @@ public interface BoardService {
 
     int insertImages(List<BoardImage> images);
     
+    // 게시글의 이미지 목록 조회 (파일 삭제용)
     List<BoardImage> getImagesByPostId(int postId);
 }

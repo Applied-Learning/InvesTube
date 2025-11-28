@@ -5,26 +5,50 @@
 
 <mapper namespace="com.Investube.mvc.model.dao.BoardDao">
 
-	<!-- 게시글 목록 / 검색 -->
-	<select id="getBoardList" parameterType="string"
-		resultType="com.Investube.mvc.model.dto.BoardPost">
-		SELECT post_id, user_id, title, content, created_at, updated_at
-		FROM board_post
+	<!-- ResultMap: 게시글 + 이미지 -->
+	<resultMap id="PostWithImages" type="com.Investube.mvc.model.dto.BoardPost">
+		<id property="postId" column="post_id"/>
+		<result property="userId" column="user_id"/>
+		<result property="title" column="title"/>
+		<result property="content" column="content"/>
+		<result property="createdAt" column="created_at"/>
+		<result property="updatedAt" column="updated_at"/>
+		
+		<collection property="images" ofType="com.Investube.mvc.model.dto.BoardImage">
+			<id property="imageId" column="image_id"/>
+			<result property="postId" column="post_id"/>
+			<result property="imageUrl" column="image_url"/>
+			<result property="createdAt" column="image_created_at"/>
+		</collection>
+	</resultMap>
+
+	<!-- 게시글 목록 / 검색 (이미지 포함) -->
+	<select id="getBoardList" parameterType="string" resultMap="PostWithImages">
+		SELECT 
+			p.post_id, p.user_id, p.title, p.content, 
+			p.created_at, p.updated_at,
+			i.image_id, i.image_url, i.created_at AS image_created_at
+		FROM board_post p
+		LEFT JOIN board_post_images i ON p.post_id = i.post_id
 		<where>
 			<if test="keyword != null and keyword != ''">
-				(title LIKE CONCAT('%', #{keyword}, '%')
-				OR content LIKE CONCAT('%', #{keyword}, '%'))
+				(p.title LIKE CONCAT('%', #{keyword}, '%')
+				OR p.content LIKE CONCAT('%', #{keyword}, '%'))
 			</if>
 		</where>
-		ORDER BY post_id DESC
+		ORDER BY p.post_id DESC, i.image_id ASC
 	</select>
 
-	<!-- 게시글 상세 -->
-	<select id="getPostById" parameterType="int"
-		resultType="com.Investube.mvc.model.dto.BoardPost">
-		SELECT *
-		FROM board_post
-		WHERE post_id = #{postId}
+	<!-- 게시글 상세 (이미지 포함) -->
+	<select id="getPostById" parameterType="int" resultMap="PostWithImages">
+		SELECT 
+			p.post_id, p.user_id, p.title, p.content, 
+			p.created_at, p.updated_at,
+			i.image_id, i.image_url, i.created_at AS image_created_at
+		FROM board_post p
+		LEFT JOIN board_post_images i ON p.post_id = i.post_id
+		WHERE p.post_id = #{postId}
+		ORDER BY i.image_id ASC
 	</select>
 
 	<!-- 게시글 등록 -->
@@ -58,13 +82,11 @@
 		</foreach>
 	</insert>
 
-	<!-- 이미지 조회 -->
-	<select id="getImagesByPostId" parameterType="int"
-		resultType="com.Investube.mvc.model.dto.BoardImage">
-		SELECT *
+	<!-- 게시글별 이미지 목록 조회 (파일 삭제용) -->
+	<select id="getImagesByPostId" parameterType="int" resultType="com.Investube.mvc.model.dto.BoardImage">
+		SELECT image_id, post_id, image_url, created_at
 		FROM board_post_images
 		WHERE post_id = #{postId}
-		ORDER BY image_id ASC
 	</select>
 
 </mapper>

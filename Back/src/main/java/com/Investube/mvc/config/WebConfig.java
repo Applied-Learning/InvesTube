@@ -3,6 +3,7 @@ package com.Investube.mvc.config;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import com.Investube.mvc.interceptor.AuthInterceptor;
@@ -32,5 +33,12 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addInterceptor(authInterceptor)
                 .addPathPatterns("/users/me/**", "/videos/**", "/reviews/**", "/boards/**")
                 .excludePathPatterns("/auth/**", "/reviews/video/*/"); // 로그인/회원가입, 리뷰 조회는 제외
+    }
+    
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        // 업로드된 파일에 접근할 수 있도록 설정
+        registry.addResourceHandler("/uploads/**")
+                .addResourceLocations("file:uploads/");
     }
 }
