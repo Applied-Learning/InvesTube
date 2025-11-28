@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.Investube.mvc.model.dao.BoardDao">
+
+	<!-- 게시글 목록 / 검색 -->
+	<select id="getBoardList" parameterType="string"
+		resultType="com.Investube.mvc.model.dto.BoardPost">
+		SELECT post_id, user_id, title, content, created_at, updated_at
+		FROM board_post
+		<where>
+			<if test="keyword != null and keyword != ''">
+				(title LIKE CONCAT('%', #{keyword}, '%')
+				OR content LIKE CONCAT('%', #{keyword}, '%'))
+			</if>
+		</where>
+		ORDER BY post_id DESC
+	</select>
+
+	<!-- 게시글 상세 -->
+	<select id="getPostById" parameterType="int"
+		resultType="com.Investube.mvc.model.dto.BoardPost">
+		SELECT *
+		FROM board_post
+		WHERE post_id = #{postId}
+	</select>
+
+	<!-- 게시글 등록 -->
+	<insert id="createPost"
+		parameterType="com.Investube.mvc.model.dto.BoardPost"
+		useGeneratedKeys="true" keyProperty="postId">
+		INSERT INTO board_post (user_id, title, content)
+		VALUES (#{userId}, #{title}, #{content})
+	</insert>
+
+	<!-- 게시글 수정 -->
+	<update id="updatePost"
+		parameterType="com.Investube.mvc.model.dto.BoardPost">
+		UPDATE board_post
+		SET title = #{title},
+		content = #{content}
+		WHERE post_id = #{postId}
+	</update>
+
+	<!-- 게시글 삭제 -->
+	<delete id="deletePost" parameterType="int">
+		DELETE FROM board_post WHERE post_id = #{postId}
+	</delete>
+
+	<!-- 이미지 여러개 저장 -->
+	<insert id="insertImages" parameterType="java.util.List">
+		INSERT INTO board_post_images (post_id, image_url)
+		VALUES
+		<foreach collection="list" item="img" separator=",">
+			(#{img.postId}, #{img.imageUrl})
+		</foreach>
+	</insert>
+
+	<!-- 이미지 조회 -->
+	<select id="getImagesByPostId" parameterType="int"
+		resultType="com.Investube.mvc.model.dto.BoardImage">
+		SELECT *
+		FROM board_post_images
+		WHERE post_id = #{postId}
+		ORDER BY image_id ASC
+	</select>
+
+</mapper>
