@@ -18,6 +18,8 @@ public interface UserService {
 
     int updatePassword(int userId, String password);
 
+    int deleteProfileImage(int userId);
+
     int deleteUser(int userId);
 
     User getMyInfo(int userId);

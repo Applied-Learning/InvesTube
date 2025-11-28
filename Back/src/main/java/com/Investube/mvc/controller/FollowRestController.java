@@ -16,6 +16,14 @@ import com.Investube.mvc.model.dto.Follow;
 import com.Investube.mvc.model.service.FollowService;
 import com.Investube.mvc.util.JwtUtil;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
+@Tag(name = "팔로우 API", description = "사용자 팔로우/언팔로우 기능")
 @RestController
 @RequestMapping("/follow")
 public class FollowRestController {
@@ -29,23 +37,34 @@ public class FollowRestController {
 	}
 
 	// 팔로워 목록
+	@Operation(summary = "팔로워 목록 조회", description = "특정 사용자의 팔로워 목록을 조회합니다")
+	@ApiResponse(responseCode = "200", description = "팔로워 목록 조회 성공")
 	@GetMapping("/{userId}/followers")
-	public ResponseEntity<List<Follow>> getFollowers(@PathVariable("userId") int userId) {
+	public ResponseEntity<List<Follow>> getFollowers(@Parameter(description = "사용자 ID") @PathVariable("userId") int userId) {
 		List<Follow> result = followService.getFollowers(userId);
 		return new ResponseEntity<>(result, HttpStatus.OK);
 	}
 
 	// 팔로잉 목록
+	@Operation(summary = "팔로잉 목록 조회", description = "특정 사용자의 팔로잉 목록을 조회합니다")
+	@ApiResponse(responseCode = "200", description = "팔로잉 목록 조회 성공")
 	@GetMapping("/{userId}/followings")
-	public ResponseEntity<List<Follow>> getFollowings(@PathVariable("userId") int userId) {
+	public ResponseEntity<List<Follow>> getFollowings(@Parameter(description = "사용자 ID") @PathVariable("userId") int userId) {
 		List<Follow> result = followService.getFollowings(userId);
 		return new ResponseEntity<>(result, HttpStatus.OK);
 	}
 
 	// 팔로우 토글
+	@Operation(summary = "팔로우/언팔로우 토글", description = "사용자를 팔로우하거나 언팔로우합니다")
+	@SecurityRequirement(name = "bearerAuth")
+	@ApiResponses(value = {
+		@ApiResponse(responseCode = "200", description = "팔로우/언팔로우 성공"),
+		@ApiResponse(responseCode = "401", description = "인증 필요")
+	})
 	@PostMapping("toggle/{followingId}")
-	public ResponseEntity<String> toggleFollow(@PathVariable("followingId") int followingId,
-			@RequestHeader(HttpHeaders.AUTHORIZATION) String authorizationHeader) {
+	public ResponseEntity<String> toggleFollow(
+			@Parameter(description = "팔로우할 사용자 ID") @PathVariable("followingId") int followingId,
+			@Parameter(description = "JWT 토큰") @RequestHeader(HttpHeaders.AUTHORIZATION) String authorizationHeader) {
 		// JWT 토큰에서 userId 추출
 		String token = authorizationHeader.replace("Bearer ", "");
 		Integer followerId = jwtUtil.getUserIdByToken(token); // JWT에서 userId 추출

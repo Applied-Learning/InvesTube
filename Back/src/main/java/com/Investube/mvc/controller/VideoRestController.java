@@ -20,6 +20,14 @@ import com.Investube.mvc.model.dto.Video;
 import com.Investube.mvc.model.service.VideoService;
 import jakarta.servlet.http.HttpServletRequest;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
+@Tag(name = "동영상 API", description = "동영상 조회, 등록, 수정, 삭제 및 찜 기능")
 @RestController
 @RequestMapping("/videos")
 public class VideoRestController {
@@ -31,10 +39,15 @@ public class VideoRestController {
 	}
 	
 	// 전체 비디오 조회 (정렬 기능 + 페이징)
+	@Operation(summary = "동영상 목록 조회", description = "전체 동영상을 조회합니다. 정렬 및 페이징 지원")
+	@ApiResponse(responseCode = "200", description = "동영상 목록 조회 성공")
 	@GetMapping
 	public ResponseEntity<Map<String, Object>> getAllVideos(
+			@Parameter(description = "정렬 기준 (latest, views, rating)", example = "latest") 
 			@RequestParam(required = false, defaultValue = "latest") String sortBy,
+			@Parameter(description = "페이지 번호", example = "1") 
 			@RequestParam(required = false) Integer page,
+			@Parameter(description = "페이지 크기", example = "10") 
 			@RequestParam(required = false) Integer size) {
 		
 		// 페이징 파라미터가 없으면 기존 방식대로 전체 조회
@@ -94,8 +107,13 @@ public class VideoRestController {
 	}
 	
 	// 비디오 ID로 조회 (영상 상세 조회)
+	@Operation(summary = "동영상 상세 조회", description = "동영상 ID로 특정 동영상의 상세 정보를 조회합니다. 조회수가 1 증가합니다")
+	@ApiResponses(value = {
+		@ApiResponse(responseCode = "200", description = "동영상 조회 성공"),
+		@ApiResponse(responseCode = "404", description = "동영상을 찾을 수 없음")
+	})
 	@GetMapping("/{videoId}")
-	public ResponseEntity<Video> getVideo(@PathVariable int videoId) {
+	public ResponseEntity<Video> getVideo(@Parameter(description = "동영상 ID") @PathVariable int videoId) {
 		Video video = videoService.getVideo(videoId);
 		if (video != null) {
 			// 조회수 증가
@@ -106,8 +124,15 @@ public class VideoRestController {
 	}
 	
 	// 비디오 등록 (인증 필요)
+	@Operation(summary = "동영상 등록", description = "새로운 동영상을 등록합니다")
+	@SecurityRequirement(name = "bearerAuth")
+	@ApiResponses(value = {
+		@ApiResponse(responseCode = "201", description = "동영상 등록 성공"),
+		@ApiResponse(responseCode = "400", description = "잘못된 요청"),
+		@ApiResponse(responseCode = "401", description = "인증 필요")
+	})
 	@PostMapping
-	public ResponseEntity<Void> createVideo(@RequestBody Video video, HttpServletRequest request) {
+	public ResponseEntity<Void> createVideo(@Parameter(description = "등록할 동영상 정보") @RequestBody Video video, HttpServletRequest request) {
 		Integer userId = getUserIdFromRequest(request);
 		if (userId == null) {
 			return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
@@ -121,8 +146,19 @@ public class VideoRestController {
 	}
 	
 	// 비디오 수정 (인증 + 소유자 검증)
+	@Operation(summary = "동영상 수정", description = "동영상 정보를 수정합니다. 본인이 등록한 동영상만 수정 가능합니다")
+	@SecurityRequirement(name = "bearerAuth")
+	@ApiResponses(value = {
+		@ApiResponse(responseCode = "200", description = "동영상 수정 성공"),
+		@ApiResponse(responseCode = "400", description = "잘못된 요청"),
+		@ApiResponse(responseCode = "401", description = "인증 필요"),
+		@ApiResponse(responseCode = "403", description = "권한 없음"),
+		@ApiResponse(responseCode = "404", description = "동영상을 찾을 수 없음")
+	})
 	@PutMapping("/{videoId}")
-	public ResponseEntity<Void> updateVideo(@PathVariable int videoId, @RequestBody Video video, HttpServletRequest request) {
+	public ResponseEntity<Void> updateVideo(@Parameter(description = "동영상 ID") @PathVariable int videoId, 
+											@Parameter(description = "수정할 동영상 정보") @RequestBody Video video, 
+											HttpServletRequest request) {
 		Integer userId = getUserIdFromRequest(request);
 		if (userId == null) {
 			return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
@@ -145,8 +181,17 @@ public class VideoRestController {
 	}
 	
 	// 비디오 삭제 (인증 + 소유자 검증)
+	@Operation(summary = "동영상 삭제", description = "동영상을 삭제합니다. 본인이 등록한 동영상만 삭제 가능합니다")
+	@SecurityRequirement(name = "bearerAuth")
+	@ApiResponses(value = {
+		@ApiResponse(responseCode = "204", description = "동영상 삭제 성공"),
+		@ApiResponse(responseCode = "400", description = "잘못된 요청"),
+		@ApiResponse(responseCode = "401", description = "인증 필요"),
+		@ApiResponse(responseCode = "403", description = "권한 없음"),
+		@ApiResponse(responseCode = "404", description = "동영상을 찾을 수 없음")
+	})
 	@DeleteMapping("/{videoId}")
-	public ResponseEntity<Void> deleteVideo(@PathVariable int videoId, HttpServletRequest request) {
+	public ResponseEntity<Void> deleteVideo(@Parameter(description = "동영상 ID") @PathVariable int videoId, HttpServletRequest request) {
 		Integer userId = getUserIdFromRequest(request);
 		if (userId == null) {
 			return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
@@ -167,11 +212,13 @@ public class VideoRestController {
 	}
 	
 	// 카테고리별 비디오 조회 (페이징 지원)
+	@Operation(summary = "카테고리별 동영상 조회", description = "특정 카테고리의 동영상을 조회합니다. 페이징 지원")
+	@ApiResponse(responseCode = "200", description = "카테고리별 동영상 조회 성공")
 	@GetMapping("/category/{categoryId}")
 	public ResponseEntity<Map<String, Object>> getVideosByCategory(
-			@PathVariable int categoryId,
-			@RequestParam(required = false) Integer page,
-			@RequestParam(required = false) Integer size) {
+			@Parameter(description = "카테고리 ID") @PathVariable int categoryId,
+			@Parameter(description = "페이지 번호", example = "1") @RequestParam(required = false) Integer page,
+			@Parameter(description = "페이지 크기", example = "10") @RequestParam(required = false) Integer size) {
 		
 		// 페이징 파라미터가 없으면 전체 조회
 		if (page == null || size == null) {
@@ -204,11 +251,13 @@ public class VideoRestController {
 	}
 	
 	// 키워드로 비디오 검색 (페이징 지원)
+	@Operation(summary = "동영상 검색", description = "키워드로 동영상을 검색합니다. 페이징 지원")
+	@ApiResponse(responseCode = "200", description = "동영상 검색 성공")
 	@GetMapping("/search")
 	public ResponseEntity<Map<String, Object>> searchVideos(
-			@RequestParam String keyword,
-			@RequestParam(required = false) Integer page,
-			@RequestParam(required = false) Integer size) {
+			@Parameter(description = "검색 키워드", example = "투자") @RequestParam String keyword,
+			@Parameter(description = "페이지 번호", example = "1") @RequestParam(required = false) Integer page,
+			@Parameter(description = "페이지 크기", example = "10") @RequestParam(required = false) Integer size) {
 		
 		// 페이징 파라미터가 없으면 전체 조회
 		if (page == null || size == null) {
@@ -241,8 +290,14 @@ public class VideoRestController {
 	}
 	
 	// 찜 여부 확인
+	@Operation(summary = "찜 상태 확인", description = "특정 동영상의 찜 상태를 확인합니다")
+	@SecurityRequirement(name = "bearerAuth")
+	@ApiResponses(value = {
+		@ApiResponse(responseCode = "200", description = "찜 상태 확인 성공"),
+		@ApiResponse(responseCode = "401", description = "인증 필요")
+	})
 	@GetMapping("/{videoId}/wish")
-	public ResponseEntity<Boolean> checkWishStatus(@PathVariable int videoId, HttpServletRequest request) {
+	public ResponseEntity<Boolean> checkWishStatus(@Parameter(description = "동영상 ID") @PathVariable int videoId, HttpServletRequest request) {
 		Integer userId = getUserIdFromRequest(request);
 		if (userId == null) {
 			return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
@@ -253,8 +308,14 @@ public class VideoRestController {
 	}
 	
 	// 찜 토글 (찜 추가/삭제)
+	@Operation(summary = "찜 토글", description = "동영상을 찜하거나 찜을 해제합니다. 토글 방식으로 동작합니다")
+	@SecurityRequirement(name = "bearerAuth")
+	@ApiResponses(value = {
+		@ApiResponse(responseCode = "200", description = "찜 토글 성공"),
+		@ApiResponse(responseCode = "401", description = "인증 필요")
+	})
 	@PostMapping("/{videoId}/wish")
-	public ResponseEntity<Boolean> toggleWish(@PathVariable int videoId, HttpServletRequest request) {
+	public ResponseEntity<Boolean> toggleWish(@Parameter(description = "동영상 ID") @PathVariable int videoId, HttpServletRequest request) {
 		Integer userId = getUserIdFromRequest(request);
 		if (userId == null) {
 			return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
@@ -274,11 +335,17 @@ public class VideoRestController {
 	}
 	
 	// 찜한 영상 목록 조회 (페이징 지원)
+	@Operation(summary = "찜한 동영상 목록 조회", description = "사용자가 찜한 동영상 목록을 조회합니다. 페이징 지원")
+	@SecurityRequirement(name = "bearerAuth")
+	@ApiResponses(value = {
+		@ApiResponse(responseCode = "200", description = "찜한 동영상 목록 조회 성공"),
+		@ApiResponse(responseCode = "401", description = "인증 필요")
+	})
 	@GetMapping("/wished")
 	public ResponseEntity<Map<String, Object>> getWishedVideos(
 			HttpServletRequest request,
-			@RequestParam(required = false) Integer page,
-			@RequestParam(required = false) Integer size) {
+			@Parameter(description = "페이지 번호", example = "1") @RequestParam(required = false) Integer page,
+			@Parameter(description = "페이지 크기", example = "10") @RequestParam(required = false) Integer size) {
 		Integer userId = getUserIdFromRequest(request);
 		if (userId == null) {
 			return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);

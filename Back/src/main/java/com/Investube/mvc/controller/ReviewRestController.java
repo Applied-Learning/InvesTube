@@ -18,6 +18,14 @@ import com.Investube.mvc.model.service.ReviewService;
 
 import jakarta.servlet.http.HttpServletRequest;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
+@Tag(name = "리뷰 API", description = "동영상 리뷰 작성, 조회, 수정, 삭제")
 @RestController
 @RequestMapping("/reviews")
 public class ReviewRestController {
@@ -29,15 +37,27 @@ public class ReviewRestController {
 	}
 	
 	// 비디오별 리뷰 목록 조회
+	@Operation(summary = "동영상 리뷰 목록 조회", description = "특정 동영상의 모든 리뷰를 조회합니다")
+	@ApiResponse(responseCode = "200", description = "리뷰 목록 조회 성공")
 	@GetMapping("/video/{videoId}")
-	public ResponseEntity<List<Review>> getVideoReviews(@PathVariable int videoId) {
+	public ResponseEntity<List<Review>> getVideoReviews(@Parameter(description = "동영상 ID") @PathVariable int videoId) {
 		List<Review> reviews = reviewService.getReviewsByVideoId(videoId);
 		return new ResponseEntity<>(reviews, HttpStatus.OK);
 	}
 	
 	// 리뷰 작성 (인증 필요)
+	@Operation(summary = "리뷰 작성", description = "동영상에 새로운 리뷰를 작성합니다")
+	@SecurityRequirement(name = "bearerAuth")
+	@ApiResponses(value = {
+		@ApiResponse(responseCode = "201", description = "리뷰 작성 성공"),
+		@ApiResponse(responseCode = "400", description = "잘못된 요청"),
+		@ApiResponse(responseCode = "401", description = "인증 필요")
+	})
 	@PostMapping("/video/{videoId}")
-	public ResponseEntity<Void> createReview(@PathVariable int videoId, @RequestBody Review review, HttpServletRequest request) {
+	public ResponseEntity<Void> createReview(
+			@Parameter(description = "동영상 ID") @PathVariable int videoId, 
+			@Parameter(description = "리뷰 정보") @RequestBody Review review, 
+			HttpServletRequest request) {
 		Integer userId = getUserIdFromRequest(request);
 		if (userId == null) {
 			return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
@@ -54,9 +74,21 @@ public class ReviewRestController {
 	}
 	
 	// 리뷰 수정 (인증 + 작성자 검증)
+	@Operation(summary = "리뷰 수정", description = "리뷰를 수정합니다. 본인이 작성한 리뷰만 수정 가능합니다")
+	@SecurityRequirement(name = "bearerAuth")
+	@ApiResponses(value = {
+		@ApiResponse(responseCode = "200", description = "리뷰 수정 성공"),
+		@ApiResponse(responseCode = "400", description = "잘못된 요청"),
+		@ApiResponse(responseCode = "401", description = "인증 필요"),
+		@ApiResponse(responseCode = "403", description = "권한 없음"),
+		@ApiResponse(responseCode = "404", description = "리뷰를 찾을 수 없음")
+	})
 	@PutMapping("/video/{videoId}/{reviewId}")
-	public ResponseEntity<Void> updateReview(@PathVariable int videoId, @PathVariable int reviewId, 
-	                                         @RequestBody Review review, HttpServletRequest request) {
+	public ResponseEntity<Void> updateReview(
+			@Parameter(description = "동영상 ID") @PathVariable int videoId, 
+			@Parameter(description = "리뷰 ID") @PathVariable int reviewId, 
+	        @Parameter(description = "수정할 리뷰 정보") @RequestBody Review review, 
+	        HttpServletRequest request) {
 		Integer userId = getUserIdFromRequest(request);
 		if (userId == null) {
 			return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
@@ -89,8 +121,20 @@ public class ReviewRestController {
 	}
 	
 	// 리뷰 삭제 (인증 + 작성자 검증)
+	@Operation(summary = "리뷰 삭제", description = "리뷰를 삭제합니다. 본인이 작성한 리뷰만 삭제 가능합니다")
+	@SecurityRequirement(name = "bearerAuth")
+	@ApiResponses(value = {
+		@ApiResponse(responseCode = "204", description = "리뷰 삭제 성공"),
+		@ApiResponse(responseCode = "400", description = "잘못된 요청"),
+		@ApiResponse(responseCode = "401", description = "인증 필요"),
+		@ApiResponse(responseCode = "403", description = "권한 없음"),
+		@ApiResponse(responseCode = "404", description = "리뷰를 찾을 수 없음")
+	})
 	@DeleteMapping("/video/{videoId}/{reviewId}")
-	public ResponseEntity<Void> deleteReview(@PathVariable int videoId, @PathVariable int reviewId, HttpServletRequest request) {
+	public ResponseEntity<Void> deleteReview(
+			@Parameter(description = "동영상 ID") @PathVariable int videoId, 
+			@Parameter(description = "리뷰 ID") @PathVariable int reviewId, 
+			HttpServletRequest request) {
 		Integer userId = getUserIdFromRequest(request);
 		if (userId == null) {
 			return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
