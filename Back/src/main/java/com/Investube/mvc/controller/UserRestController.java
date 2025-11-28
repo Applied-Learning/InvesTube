@@ -1,6 +1,9 @@
 package com.Investube.mvc.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
+
+import java.util.List;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -8,7 +11,10 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.Investube.mvc.model.dto.User;
+import com.Investube.mvc.model.dto.Video;
+import com.Investube.mvc.model.service.ReviewService;
 import com.Investube.mvc.model.service.UserService;
+import com.Investube.mvc.model.service.VideoService;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
@@ -28,12 +34,20 @@ import java.util.Map;
 @RequestMapping("/users")
 public class UserRestController {
 
+
     private final UserService userService;
     private static final String UPLOAD_DIR = "uploads/user/";
 
-    public UserRestController(UserService userService) {
-        this.userService = userService;
-    }
+	private final VideoService videoService;
+	private final ReviewService reviewService;
+
+
+	public UserRestController(UserService userService, VideoService videoService, ReviewService reviewService) {
+		this.userService = userService;
+		this.videoService = videoService;
+		this.reviewService = reviewService;
+	}
+
 
     // 업로더 정보 조회 (공개 프로필)
     @Operation(summary = "사용자 정보 조회", description = "특정 사용자의 공개 프로필 정보를 조회합니다")
@@ -41,12 +55,13 @@ public class UserRestController {
     public ResponseEntity<User> getUser(@Parameter(description = "사용자 ID") @PathVariable("userId") int userId) {
         User result = userService.getUserByUserId(userId);
 
-        if (result == null) {
-            return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
-        }
 
-        return new ResponseEntity<>(result, HttpStatus.OK);
-    }
+		if (result == null) {
+			return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
+		}
+
+		return new ResponseEntity<>(result, HttpStatus.OK);
+	}
 
     // 내 정보 조회
     @Operation(summary = "내 정보 조회", description = "현재 로그인한 사용자의 정보를 조회합니다")
@@ -54,16 +69,18 @@ public class UserRestController {
     @GetMapping("/me")
     public ResponseEntity<User> getMyInfo(HttpServletRequest request) {
 
-        int userId = (int) request.getAttribute("userId");  // JWT에서 가져옴
 
-        User result = userService.getMyInfo(userId);
+		int userId = (int) request.getAttribute("userId"); // JWT에서 가져옴
 
-        if (result == null) {
-            return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
-        }
+		User result = userService.getMyInfo(userId);
 
-        return new ResponseEntity<>(result, HttpStatus.OK);
-    }
+		if (result == null) {
+			return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
+		}
+
+		return new ResponseEntity<>(result, HttpStatus.OK);
+	}
+
 
     // 내 정보 수정 (닉네임, 프로필 이미지)
     @Operation(summary = "내 정보 수정", description = "닉네임 및 프로필 이미지를 수정합니다")
@@ -72,13 +89,14 @@ public class UserRestController {
     public ResponseEntity<Integer> updateMyInfo(HttpServletRequest request,
                                                 @RequestBody User user) {
 
-        int userId = (int) request.getAttribute("userId");
-        user.setUserId(userId);
+		int userId = (int) request.getAttribute("userId");
+		user.setUserId(userId);
 
-        int result = userService.updateMyInfo(user);
+		int result = userService.updateMyInfo(user);
 
-        return new ResponseEntity<>(result, HttpStatus.OK);
-    }
+		return new ResponseEntity<>(result, HttpStatus.OK);
+	}
+
 
     // 비밀번호 변경
     @Operation(summary = "비밀번호 변경", description = "현재 사용자의 비밀번호를 변경합니다")
@@ -87,12 +105,14 @@ public class UserRestController {
     public ResponseEntity<Integer> updatePassword(HttpServletRequest request,
                                                   @Parameter(description = "새 비밀번호") @RequestParam String password) {
 
-        int userId = (int) request.getAttribute("userId");
 
-        int result = userService.updatePassword(userId, password);
+		int userId = (int) request.getAttribute("userId");
 
-        return new ResponseEntity<>(result, HttpStatus.OK);
-    }
+		int result = userService.updatePassword(userId, password);
+
+		return new ResponseEntity<>(result, HttpStatus.OK);
+	}
+
 
     // 회원 탈퇴
     @Operation(summary = "회원 탈퇴", description = "현재 사용자의 계정을 삭제합니다")
@@ -100,10 +120,12 @@ public class UserRestController {
     @DeleteMapping("/me")
     public ResponseEntity<Integer> deleteUser(HttpServletRequest request) {
 
-        int userId = (int) request.getAttribute("userId");
 
-        int result = userService.deleteUser(userId);
+		int userId = (int) request.getAttribute("userId");
 
+		int result = userService.deleteUser(userId);
+
+<<<<<<< Back/src/main/java/com/Investube/mvc/controller/UserRestController.java
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
 
@@ -243,4 +265,31 @@ public class UserRestController {
             System.err.println("파일 삭제 실패: " + filePath + ", 오류: " + e.getMessage());
         }
     }
+=======
+		return new ResponseEntity<>(result, HttpStatus.OK);
+	}
+	
+	// 내가 업로드한 영상
+	@GetMapping("/me/videos")
+	public ResponseEntity<List<Video>> getMyVideos(HttpServletRequest request) {
+	    int userId = (int) request.getAttribute("userId");
+	    
+	    List<Video> result = videoService.getVideosByUser(userId);
+	    return new ResponseEntity<>(result, HttpStatus.OK);
+	}
+
+	// 내가 찜한 영상
+	@GetMapping("/me/wishlist")
+	public ResponseEntity<?> getMyWishlist(HttpServletRequest request) {
+	    int userId = (int) request.getAttribute("userId");
+	    return ResponseEntity.ok(videoService.getWishedVideos(userId));
+	}
+
+	// 내가 쓴 리뷰
+	@GetMapping("/me/reviews")
+	public ResponseEntity<?> getMyReviews(HttpServletRequest request) {
+	    int userId = (int) request.getAttribute("userId");
+	    return ResponseEntity.ok(reviewService.getReviewsByUser(userId));
+	}
+>>>>>>> Back/src/main/java/com/Investube/mvc/controller/UserRestController.java
 }
