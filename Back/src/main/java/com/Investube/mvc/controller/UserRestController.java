@@ -266,10 +266,9 @@ public class UserRestController {
         }
     }
 
-		
-	
-	
 	// 내가 업로드한 영상
+	@Operation(summary = "내가 업로드한 동영상 목록", description = "현재 사용자가 업로드한 모든 동영상을 조회합니다")
+	@SecurityRequirement(name = "bearerAuth")
 	@GetMapping("/me/videos")
 	public ResponseEntity<List<Video>> getMyVideos(HttpServletRequest request) {
 	    int userId = (int) request.getAttribute("userId");
@@ -279,6 +278,8 @@ public class UserRestController {
 	}
 
 	// 내가 찜한 영상
+	@Operation(summary = "내가 찜한 동영상 목록", description = "현재 사용자가 찜한 모든 동영상을 조회합니다")
+	@SecurityRequirement(name = "bearerAuth")
 	@GetMapping("/me/wishlist")
 	public ResponseEntity<?> getMyWishlist(HttpServletRequest request) {
 	    int userId = (int) request.getAttribute("userId");
@@ -286,6 +287,8 @@ public class UserRestController {
 	}
 
 	// 내가 쓴 리뷰
+	@Operation(summary = "내가 작성한 리뷰 목록", description = "현재 사용자가 작성한 모든 리뷰를 조회합니다")
+	@SecurityRequirement(name = "bearerAuth")
 	@GetMapping("/me/reviews")
 	public ResponseEntity<?> getMyReviews(HttpServletRequest request) {
 	    int userId = (int) request.getAttribute("userId");
