@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.Investube.mvc.model.dao.CommentDao">
+
+	<!-- 댓글 조회 -->
+	<select id="getCommentsByPostId" parameterType="int"
+		resultType="com.Investube.mvc.model.dto.BoardComment">
+		SELECT *
+		FROM board_comments
+		WHERE post_id = #{postId}
+		ORDER BY comment_id ASC
+	</select>
+
+	<!-- 댓글 등록 -->
+	<insert id="insertComment"
+		parameterType="com.Investube.mvc.model.dto.BoardComment"
+		useGeneratedKeys="true" keyProperty="commentId">
+		INSERT INTO board_comments (post_id, user_id, content)
+		VALUES (#{postId}, #{userId}, #{content})
+	</insert>
+
+	<!-- 댓글 수정 -->
+	<update id="updateComment"
+		parameterType="com.Investube.mvc.model.dto.BoardComment">
+		UPDATE board_comments
+		SET content = #{content}
+		WHERE comment_id = #{commentId}
+	</update>
+
+	<!-- 댓글 삭제 -->
+	<delete id="deleteComment" parameterType="int">
+		DELETE FROM board_comments WHERE comment_id = #{commentId}
+	</delete>
+
+</mapper>
