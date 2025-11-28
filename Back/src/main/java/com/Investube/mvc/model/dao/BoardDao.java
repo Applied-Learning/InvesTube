@@ -2,9 +2,12 @@ package com.Investube.mvc.model.dao;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Mapper;
+
 import com.Investube.mvc.model.dto.BoardImage;
 import com.Investube.mvc.model.dto.BoardPost;
 
+@Mapper
 public interface BoardDao {
 	
 	// 게시글

@@ -1,6 +1,7 @@
 -- Database Schema
 
 -- Create Database
+DROP DATABASE IF EXISTS investube;
 CREATE DATABASE IF NOT EXISTS investube;
 USE investube;
 
@@ -141,7 +142,7 @@ CREATE TABLE IF NOT EXISTS board_post_images (
   post_id        INT,
   image_url      VARCHAR(500),
   created_at     DATETIME DEFAULT CURRENT_TIMESTAMP,
-  FOREIGN KEY (post_id) REFERENCES board_post(post_id)
+  FOREIGN KEY (post_id) REFERENCES board_post(post_id) ON DELETE CASCADE
 );
 
 INSERT INTO board_post_images (image_id, post_id, image_url, created_at) VALUES
