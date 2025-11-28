@@ -25,15 +25,14 @@
 	
 	<!-- 리뷰 등록 -->
 	<insert id="insertReview" parameterType="Review">
-		INSERT INTO reviews (video_id, writer, title, content, rating, created_at)
-		VALUES (#{videoId}, #{writer}, #{title}, #{content}, #{rating}, NOW())
+		INSERT INTO reviews (video_id, user_id, content, rating, created_at)
+		VALUES (#{videoId}, #{userId}, #{content}, #{rating}, NOW())
 	</insert>
 	
 	<!-- 리뷰 수정 -->
 	<update id="updateReview" parameterType="Review">
 		UPDATE reviews
-		SET title = #{title},
-		    content = #{content},
+		SET content = #{content},
 		    rating = #{rating},
 		    updated_at = NOW()
 		WHERE review_id = #{reviewId}
