@@ -23,7 +23,7 @@
 
       <div class="info">
         <h3 class="title">{{ title }}</h3>
-        <p v-if="channelName" class="channel">{{ channelName }}</p>
+        <p v-if="uploaderName" class="channel">{{ uploaderName }}</p>
         <p v-if="metaText" class="meta">{{ metaText }}</p>
       </div>
 
