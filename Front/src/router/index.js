@@ -27,6 +27,12 @@ const router = createRouter({
       component: InvestView,
     },
     {
+      path: '/wishlist',
+      name: 'wishlist',
+      component: VideoListView,
+      meta: { isWishlist: true },
+    },
+    {
       path: '/login',
       name: 'login',
       component: LoginView,

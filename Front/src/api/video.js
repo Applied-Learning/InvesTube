@@ -35,3 +35,22 @@ export const toggleVideoWish = (videoId) => {
 export const searchVideos = (params) => {
   return http.get('/videos/search', { params })
 }
+
+/**
+ * 카테고리별 비디오 조회
+ * @param {number} categoryId
+ * @param {Object} params - { page, size }
+ * @returns {Promise}
+ */
+export const getVideosByCategory = (categoryId, params = {}) => {
+  return http.get(`/videos/category/${categoryId}`, { params })
+}
+
+/**
+ * 찜한 비디오 목록 조회
+ * @param {Object} params - { page, size }
+ * @returns {Promise}
+ */
+export const getWishedVideos = (params = {}) => {
+  return http.get('/videos/wished', { params })
+}

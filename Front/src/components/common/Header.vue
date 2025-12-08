@@ -10,9 +10,6 @@
             <span class="nav-item nav-item--text">
               {{ authStore.nickname }}님
             </span>
-            <button type="button" class="nav-item nav-item--ghost">
-              알림
-            </button>
             <button 
               type="button" 
               class="nav-item nav-item--primary"
