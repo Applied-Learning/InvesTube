@@ -47,6 +47,11 @@ const router = createRouter({
       name: 'videoCreate',
       component: () => import('../views/VideoCreateView.vue'),
     },
+    {
+      path: '/mypage',
+      name: 'mypage',
+      component: () => import('../views/MyPageView.vue'),
+    },
   ],
 })
 
