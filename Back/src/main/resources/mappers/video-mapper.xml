@@ -214,5 +214,19 @@
 	    ORDER BY created_at DESC
 	</select>
 	
+	<!-- 찜 수 증가 -->
+	<update id="incrementWishCount" parameterType="int">
+		UPDATE videos
+		SET wish_count = wish_count + 1
+		WHERE video_id = #{videoId}
+	</update>
+	
+	<!-- 찜 수 감소 -->
+	<update id="decrementWishCount" parameterType="int">
+		UPDATE videos
+		SET wish_count = wish_count - 1
+		WHERE video_id = #{videoId} AND wish_count > 0
+	</update>
+	
 
 </mapper>

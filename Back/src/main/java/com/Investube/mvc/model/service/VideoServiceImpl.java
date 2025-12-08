@@ -113,12 +113,20 @@ public class VideoServiceImpl implements VideoService {
 
 	@Override
 	public boolean addVideoWish(int userId, int videoId) {
-		return videoDao.insertWish(userId, videoId) > 0;
+		boolean result = videoDao.insertWish(userId, videoId) > 0;
+		if (result) {
+			videoDao.incrementWishCount(videoId);
+		}
+		return result;
 	}
 
 	@Override
 	public boolean removeVideoWish(int userId, int videoId) {
-		return videoDao.deleteWish(userId, videoId) > 0;
+		boolean result = videoDao.deleteWish(userId, videoId) > 0;
+		if (result) {
+			videoDao.decrementWishCount(videoId);
+		}
+		return result;
 	}
 
 	@Override

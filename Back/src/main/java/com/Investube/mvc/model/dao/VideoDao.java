@@ -85,4 +85,10 @@ public interface VideoDao {
 	
 	// 업로드한 영상 조회
 	List<Video> getVideosByUser(@Param("userId") int userId);
+	
+	// 찜 수 증가
+	int incrementWishCount(int videoId);
+	
+	// 찜 수 감소
+	int decrementWishCount(int videoId);
 }
