@@ -3,8 +3,36 @@
     <PageHeader v-if="isWishlistMode" title="찜한 영상" />
 
     <div class="controls" v-if="!isWishlistMode">
+      <!-- 검색바 -->
+      <div class="search-bar">
+        <div class="search-input-wrapper">
+          <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM18 18l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <input
+            v-model="searchKeyword"
+            type="text"
+            placeholder="영상 검색..."
+            @keyup.enter="handleSearch"
+            class="search-input"
+          />
+          <button v-if="searchKeyword" class="clear-btn" @click.stop="searchKeyword = ''">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 4L4 12M4 4l8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+        <button class="search-btn" @click="handleSearch" type="button">검색</button>
+      </div>
+      
+      <!-- 검색 결과 표시 -->
+      <div v-if="isSearchMode" class="search-result-info">
+        <span>"{{ searchKeyword }}" 검색 결과 ({{ totalCount }}개)</span>
+        <button class="clear-search-btn" @click="clearSearch" type="button">검색 취소</button>
+      </div>
+
       <!-- 카테고리 칩 (가로 스크롤) -->
-      <div class="category-scroll">
+      <div v-if="!isSearchMode" class="category-scroll">
         <button
           v-for="category in categories"
           :key="category.id"
@@ -117,7 +145,7 @@ import { ref, onMounted, computed, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import VideoCard from '../components/video/VideoCard.vue'
 import PageHeader from '../components/common/PageHeader.vue'
-import { getVideos, getVideosByCategory, getWishedVideos, toggleVideoWish } from '../api/video.js'
+import { getVideos, getVideosByCategory, getWishedVideos, toggleVideoWish, searchVideos } from '../api/video.js'
 import { useAuthStore } from '../stores/auth.js'
 
 const route = useRoute()
@@ -136,6 +164,10 @@ const currentPage = ref(1)
 const pageSize = ref(12)
 const totalPages = ref(0)
 const totalCount = ref(0)
+
+// 검색 관련
+const searchKeyword = ref('')
+const isSearchMode = ref(false)
 
 const categories = [
   { id: null, name: '전체' },
@@ -182,6 +214,9 @@ const fetchVideos = async () => {
     if (isWishlistMode.value) {
       // 찜 목록 조회
       response = await getWishedVideos(params)
+    } else if (isSearchMode.value && searchKeyword.value.trim()) {
+      // 검색 모드
+      response = await searchVideos({ ...params, keyword: searchKeyword.value.trim() })
     } else if (selectedCategory.value === null) {
       // 전체 조회
       response = await getVideos({ ...params, sortBy: sortBy.value })
@@ -227,6 +262,8 @@ const changeCategory = (categoryId) => {
 // 정렬 기준 변경
 const changeSortBy = (newSortBy) => {
   sortBy.value = newSortBy
+  isSearchMode.value = false // 검색 모드 해제
+  searchKeyword.value = '' // 검색어 초기화
   currentPage.value = 1 // 첫 페이지로 리셋
   fetchVideos()
 }
@@ -277,6 +314,8 @@ watch(() => route.path, () => {
   // 라우트 변경 시 필터 초기화 및 데이터 재로드
   selectedCategory.value = null
   sortBy.value = 'latest'
+  searchKeyword.value = ''
+  isSearchMode.value = false
   currentPage.value = 1
   fetchVideos()
 })
@@ -287,6 +326,28 @@ const goDetail = (id) => {
 
 const goCreateVideo = () => {
   router.push('/video/create')
+}
+
+// 검색 처리
+const handleSearch = () => {
+  const keyword = searchKeyword.value.trim()
+  
+  if (keyword) {
+    isSearchMode.value = true
+    selectedCategory.value = null
+    currentPage.value = 1
+    fetchVideos()
+  } else {
+    alert('검색어를 입력해주세요')
+  }
+}
+
+// 검색 취소
+const clearSearch = () => {
+  searchKeyword.value = ''
+  isSearchMode.value = false
+  currentPage.value = 1
+  fetchVideos()
 }
 
 const toggleWish = async (video) => {
@@ -315,6 +376,106 @@ const toggleWish = async (video) => {
 <style scoped>
 .controls {
   margin-bottom: 24px;
+}
+
+/* 검색바 */
+.search-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.search-input-wrapper {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  color: #9ca3af;
+  pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 40px 12px 40px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.clear-btn {
+  position: absolute;
+  right: 12px;
+  padding: 4px;
+  background: none;
+  border: none;
+  color: #9ca3af;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.clear-btn:hover {
+  color: #6b7280;
+}
+
+.search-btn {
+  padding: 12px 24px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.search-btn:hover {
+  background: #1d4ed8;
+}
+
+/* 검색 결과 정보 */
+.search-result-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #1e40af;
+}
+
+.clear-search-btn {
+  padding: 6px 12px;
+  background: white;
+  border: 1px solid #bfdbfe;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #2563eb;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.clear-search-btn:hover {
+  background: #dbeafe;
 }
 
 /* 카테고리 가로 스크롤 */
