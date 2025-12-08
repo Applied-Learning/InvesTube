@@ -321,7 +321,7 @@ watch(() => route.path, () => {
 })
 
 const goDetail = (id) => {
-  console.log('go video detail', id)
+  router.push(`/video/${id}`)
 }
 
 const goCreateVideo = () => {

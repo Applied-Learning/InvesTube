@@ -42,7 +42,7 @@
 	<!-- 페이징 - 전체 비디오 조회 -->
 	<select id="selectAllWithPaging" resultMap="VideoResultMap">
 		SELECT * FROM videos
-		ORDER BY updated_at DESC
+		ORDER BY created_at DESC
 		LIMIT #{size} OFFSET #{offset}
 	</select>
 	
@@ -98,14 +98,14 @@
 	<select id="selectByCategory" parameterType="int" resultMap="VideoResultMap">
 		SELECT * FROM videos
 		WHERE category_id = #{categoryId}
-		ORDER BY updated_at DESC
+		ORDER BY created_at DESC
 	</select>
 	
 	<!-- 페이징 - 카테고리별 비디오 조회 -->
 	<select id="selectByCategoryWithPaging" resultMap="VideoResultMap">
 		SELECT * FROM videos
 		WHERE category_id = #{categoryId}
-		ORDER BY updated_at DESC
+		ORDER BY created_at DESC
 		LIMIT #{size} OFFSET #{offset}
 	</select>
 	
