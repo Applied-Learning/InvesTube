@@ -232,8 +232,8 @@ const fetchVideos = async () => {
       youtubeVideoId: video.youtubeVideoId,
       title: video.title,
       thumbnailUrl: video.thumbnailUrl || `https://i.ytimg.com/vi/${video.youtubeVideoId}/hqdefault.jpg`,
-      uploaderName: video.uploaderName || '익명',
-      uploaderProfileImageUrl: video.uploaderProfileImageUrl || '',
+      uploaderName: video.uploaderNickname || `사용자 ${video.userId}`,
+      uploaderProfileImageUrl: video.uploaderProfileImage || '',
       views: video.viewCount,
       createdAtText: video.createdAt ? new Date(video.createdAt).toLocaleDateString() : '',
       duration: video.duration || '',
@@ -321,7 +321,7 @@ watch(() => route.path, () => {
 })
 
 const goDetail = (id) => {
-  console.log('go video detail', id)
+  router.push(`/video/${id}`)
 }
 
 const goCreateVideo = () => {

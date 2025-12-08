@@ -52,6 +52,11 @@ const router = createRouter({
       name: 'mypage',
       component: () => import('../views/MyPageView.vue'),
     },
+    {
+      path: '/video/:id',
+      name: 'videoDetail',
+      component: () => import('../views/VideoDetailView.vue'),
+    },
   ],
 })
 

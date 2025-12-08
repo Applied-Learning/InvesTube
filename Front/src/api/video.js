@@ -28,6 +28,24 @@ export const createVideo = (videoData) => {
 }
 
 /**
+ * 비디오 삭제
+ * @param {number} videoId
+ * @returns {Promise}
+ */
+export const deleteVideo = (videoId) => {
+  return http.delete(`/videos/${videoId}`)
+}
+
+/**
+ * 비디오 찜 상태 확인
+ * @param {number} videoId
+ * @returns {Promise<boolean>}
+ */
+export const checkWishStatus = (videoId) => {
+  return http.get(`/videos/${videoId}/wish`)
+}
+
+/**
  * 비디오 찜하기/취소
  * @param {number} videoId
  * @returns {Promise}
