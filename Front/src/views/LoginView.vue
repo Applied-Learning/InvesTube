@@ -18,13 +18,30 @@
 
         <div class="form-group">
           <label for="password">비밀번호</label>
-          <input
-            id="password"
-            v-model="credentials.password"
-            type="password"
-            placeholder="비밀번호를 입력하세요"
-            required
-          />
+          <div class="password-wrapper">
+            <input
+              id="password"
+              v-model="credentials.password"
+              :type="showPassword ? 'text' : 'password'"
+              placeholder="비밀번호를 입력하세요"
+              required
+            />
+            <button 
+              type="button" 
+              class="toggle-password-btn" 
+              @click="togglePasswordVisibility"
+              tabindex="-1"
+            >
+              <svg v-if="!showPassword" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 4.16667C5.83333 4.16667 2.275 6.73333 0.833333 10.4167C2.275 14.1 5.83333 16.6667 10 16.6667C14.1667 16.6667 17.725 14.1 19.1667 10.4167C17.725 6.73333 14.1667 4.16667 10 4.16667Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 13.75C12.0711 13.75 13.75 12.0711 13.75 10C13.75 7.92893 12.0711 6.25 10 6.25C7.92893 6.25 6.25 7.92893 6.25 10C6.25 12.0711 7.92893 13.75 10 13.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <svg v-else width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.95 14.95C13.5255 16.0358 11.7909 16.6374 10 16.6667C5.83333 16.6667 2.275 14.1 0.833333 10.4167C1.86953 8.0609 3.58333 6.07722 5.75 4.76667M8.25 3.53333C8.82321 3.39907 9.41073 3.33195 10 3.33333C14.1667 3.33333 17.725 5.9 19.1667 9.58333C18.6609 10.7857 17.9577 11.8963 17.0833 12.8667M11.7667 11.7667C11.5378 12.0123 11.2617 12.2093 10.9546 12.3459C10.6474 12.4825 10.3156 12.556 9.97885 12.562C9.64213 12.568 9.30781 12.5063 8.99597 12.3805C8.68414 12.2547 8.40096 12.0674 8.16307 11.8295C7.92518 11.5916 7.73791 11.3084 7.6121 10.9966C7.48629 10.6848 7.42464 10.3504 7.43061 10.0137C7.43659 9.67699 7.51008 9.34525 7.64667 9.0381C7.78327 8.73095 7.98026 8.45479 8.22583 8.22583" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M0.833333 0.833333L19.1667 19.1667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
         </div>
 
         <button type="submit" class="login-button" :disabled="loading">
@@ -56,6 +73,11 @@ const credentials = ref({
 
 const loading = ref(false)
 const errorMessage = ref('')
+const showPassword = ref(false)
+
+const togglePasswordVisibility = () => {
+  showPassword.value = !showPassword.value
+}
 
 const handleLogin = async () => {
   loading.value = true
@@ -126,17 +148,47 @@ const handleLogin = async () => {
   color: #333;
 }
 
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  flex: 1;
+  padding-right: 40px;
+}
+
 .form-group input {
   padding: 12px;
   border: 1px solid #ddd;
   border-radius: 6px;
   font-size: 14px;
   transition: border-color 0.3s;
+  width: 100%;
 }
 
 .form-group input:focus {
   outline: none;
   border-color: #1976d2;
+}
+
+.toggle-password-btn {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  transition: color 0.2s;
+}
+
+.toggle-password-btn:hover {
+  color: #1976d2;
 }
 
 .login-button {
