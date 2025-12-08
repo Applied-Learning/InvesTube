@@ -39,4 +39,9 @@ public class FollowServiceImpl implements FollowService {
 		}
 	}
 
+	@Override
+	public boolean isFollowing(int followerId, int followingId) {
+		return followDao.existsByFollowerIdAndFollowingId(followerId, followingId);
+	}
+
 }

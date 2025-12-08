@@ -15,6 +15,10 @@ public class Video {
 	private String createdAt;
 	private String updatedAt;
 	
+	// 사용자 정보 (JOIN용)
+	private String uploaderNickname;
+	private String uploaderProfileImage;
+	
 	public Video() {}
 	
 	public Video(int videoId, int userId, String youtubeVideoId, String title, String thumbnailUrl, 
@@ -137,6 +141,22 @@ public class Video {
 
 	public void setUpdatedAt(String updatedAt) {
 		this.updatedAt = updatedAt;
+	}
+
+	public String getUploaderNickname() {
+		return uploaderNickname;
+	}
+
+	public void setUploaderNickname(String uploaderNickname) {
+		this.uploaderNickname = uploaderNickname;
+	}
+
+	public String getUploaderProfileImage() {
+		return uploaderProfileImage;
+	}
+
+	public void setUploaderProfileImage(String uploaderProfileImage) {
+		this.uploaderProfileImage = uploaderProfileImage;
 	}
 
 	@Override

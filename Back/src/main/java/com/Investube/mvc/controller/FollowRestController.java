@@ -54,6 +54,29 @@ public class FollowRestController {
 		return new ResponseEntity<>(result, HttpStatus.OK);
 	}
 
+	// 팔로우 상태 확인
+	@Operation(summary = "팔로우 상태 확인", description = "특정 사용자를 팔로우하고 있는지 확인합니다")
+	@SecurityRequirement(name = "bearerAuth")
+	@ApiResponses(value = {
+		@ApiResponse(responseCode = "200", description = "팔로우 상태 확인 성공"),
+		@ApiResponse(responseCode = "401", description = "인증 필요")
+	})
+	@GetMapping("status/{followingId}")
+	public ResponseEntity<Boolean> checkFollowStatus(
+			@Parameter(description = "확인할 사용자 ID") @PathVariable("followingId") int followingId,
+			@Parameter(description = "JWT 토큰") @RequestHeader(HttpHeaders.AUTHORIZATION) String authorizationHeader) {
+		// JWT 토큰에서 userId 추출
+		String token = authorizationHeader.replace("Bearer ", "");
+		Integer followerId = jwtUtil.getUserIdByToken(token);
+
+		if (followerId == null) {
+			return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
+		}
+
+		boolean isFollowing = followService.isFollowing(followerId, followingId);
+		return new ResponseEntity<>(isFollowing, HttpStatus.OK);
+	}
+
 	// 팔로우 토글
 	@Operation(summary = "팔로우/언팔로우 토글", description = "사용자를 팔로우하거나 언팔로우합니다")
 	@SecurityRequirement(name = "bearerAuth")

@@ -81,7 +81,7 @@ CREATE TABLE IF NOT EXISTS reviews (
   rating        DECIMAL(2,1),
   created_at    DATETIME DEFAULT CURRENT_TIMESTAMP,
   updated_at    DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  FOREIGN KEY (video_id) REFERENCES videos(video_id),
+  FOREIGN KEY (video_id) REFERENCES videos(video_id) ON DELETE CASCADE,
   FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
 
@@ -102,7 +102,7 @@ CREATE TABLE IF NOT EXISTS video_wish (
   created_at     DATETIME DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (user_id, video_id),
   FOREIGN KEY (user_id) REFERENCES users(user_id),
-  FOREIGN KEY (video_id) REFERENCES videos(video_id)
+  FOREIGN KEY (video_id) REFERENCES videos(video_id) ON DELETE CASCADE
 );
 
 INSERT INTO video_wish (user_id, video_id, created_at) VALUES

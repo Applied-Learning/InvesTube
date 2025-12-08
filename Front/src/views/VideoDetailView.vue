@@ -19,15 +19,46 @@
       <div class="video-info">
         <div class="video-header">
           <h1 class="video-title">{{ video.title }}</h1>
-          <button 
-            class="wish-btn"
-            :class="{ active: isWished }"
-            @click="toggleWish"
+          <div class="header-actions">
+            <button 
+              class="wish-btn"
+              :class="{ active: isWished }"
+              @click="toggleWish"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 21L10.55 19.7051C5.4 15.1242 2 12.1029 2 8.39509C2 5.37384 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08651C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.37384 22 8.39509C22 12.1029 18.6 15.1242 13.45 19.7051L12 21Z" :fill="isWished ? 'currentColor' : 'none'" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              <span>{{ isWished ? '찜 해제' : '찜하기' }}</span>
+            </button>
+            <button 
+              v-if="isMyVideo"
+              class="delete-video-btn"
+              @click="removeVideo"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2M10 11v6M14 11v6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>영상 삭제</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 업로더 정보 -->
+        <div class="uploader-section">
+          <div class="uploader-info">
+            <div class="uploader-avatar">
+              <img v-if="video.uploaderProfileImage" :src="video.uploaderProfileImage" :alt="video.uploaderNickname" />
+              <div v-else class="avatar-fallback">{{ uploaderInitial }}</div>
+            </div>
+            <span class="uploader-name">{{ uploaderDisplayName }}</span>
+          </div>
+          <button
+            v-if="!isMyVideo && authStore.isAuthenticated"
+            class="follow-btn"
+            :class="{ following: isFollowing }"
+            @click="toggleFollowStatus"
           >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 21L10.55 19.7051C5.4 15.1242 2 12.1029 2 8.39509C2 5.37384 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08651C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.37384 22 8.39509C22 12.1029 18.6 15.1242 13.45 19.7051L12 21Z" :fill="isWished ? 'currentColor' : 'none'" stroke="currentColor" stroke-width="2"/>
-            </svg>
-            <span>{{ isWished ? '찜 해제' : '찜하기' }}</span>
+            {{ isFollowing ? '언팔로우' : '팔로우' }}
           </button>
         </div>
 
@@ -191,18 +222,21 @@
 
 <script setup>
 import { ref, onMounted, computed } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import PageHeader from '../components/common/PageHeader.vue'
-import { getVideoDetail, checkWishStatus, toggleVideoWish } from '../api/video.js'
+import { getVideoDetail, checkWishStatus, toggleVideoWish, deleteVideo } from '../api/video.js'
 import { getReviewsByVideoId, createReview, updateReview, deleteReview } from '../api/review.js'
+import { checkFollowStatus, toggleFollow } from '../api/follow.js'
 import { useAuthStore } from '../stores/auth.js'
 
 const route = useRoute()
+const router = useRouter()
 const authStore = useAuthStore()
 const video = ref(null)
 const loading = ref(false)
 const error = ref(null)
 const isWished = ref(false)
+const isFollowing = ref(false)
 
 // 리뷰 관련 상태
 const reviews = ref([])
@@ -226,6 +260,19 @@ const formatDate = (dateString) => {
   return date.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' })
 }
 
+const uploaderDisplayName = computed(() => {
+  if (!video.value) return ''
+  return video.value.uploaderNickname || video.value.userId.toString()
+})
+
+const uploaderInitial = computed(() => {
+  if (!video.value) return '?'
+  if (video.value.uploaderNickname) {
+    return video.value.uploaderNickname.trim().charAt(0).toUpperCase()
+  }
+  return video.value.userId
+})
+
 const fetchVideoDetail = async () => {
   loading.value = true
   error.value = null
@@ -246,6 +293,19 @@ const fetchVideoDetail = async () => {
           console.error('찜 상태 확인 실패:', wishErr)
         }
         isWished.value = false
+      }
+
+      // 팔로우 상태 확인 (본인이 아닌 경우만)
+      if (video.value && video.value.userId !== parseInt(authStore.userId)) {
+        try {
+          const followResponse = await checkFollowStatus(video.value.userId)
+          isFollowing.value = followResponse.data
+        } catch (followErr) {
+          if (followErr.response?.status !== 401) {
+            console.error('팔로우 상태 확인 실패:', followErr)
+          }
+          isFollowing.value = false
+        }
       }
     }
   } catch (err) {
@@ -275,6 +335,47 @@ const toggleWish = async () => {
   } catch (err) {
     console.error('찜하기 실패:', err)
     alert('찜하기에 실패했습니다.')
+  }
+}
+
+// 본인이 올린 영상인지 확인
+const isMyVideo = computed(() => {
+  return authStore.userId && video.value && video.value.userId === parseInt(authStore.userId)
+})
+
+// 영상 삭제
+const removeVideo = async () => {
+  if (!confirm('정말 이 영상을 삭제하시겠습니까?\n삭제된 영상은 복구할 수 없습니다.')) {
+    return
+  }
+
+  try {
+    await deleteVideo(video.value.videoId)
+    alert('영상이 삭제되었습니다.')
+    router.push('/videos')
+  } catch (err) {
+    console.error('영상 삭제 실패:', err)
+    if (err.response?.status === 403) {
+      alert('본인이 올린 영상만 삭제할 수 있습니다.')
+    } else {
+      alert('영상 삭제에 실패했습니다.')
+    }
+  }
+}
+
+// 팔로우 토글
+const toggleFollowStatus = async () => {
+  if (!authStore.isAuthenticated) {
+    alert('로그인이 필요합니다.')
+    return
+  }
+
+  try {
+    await toggleFollow(video.value.userId)
+    isFollowing.value = !isFollowing.value
+  } catch (err) {
+    console.error('팔로우 토글 실패:', err)
+    alert('팔로우 처리에 실패했습니다.')
   }
 }
 
@@ -437,6 +538,11 @@ onMounted(() => {
   color: #111827;
 }
 
+.header-actions {
+  display: flex;
+  gap: 8px;
+}
+
 .wish-btn {
   display: flex;
   align-items: center;
@@ -466,6 +572,104 @@ onMounted(() => {
 .wish-btn svg {
   width: 20px;
   height: 20px;
+}
+
+.delete-video-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  color: #dc2626;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.delete-video-btn:hover {
+  background: #fef2f2;
+  border-color: #dc2626;
+}
+
+.delete-video-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.uploader-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.uploader-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.uploader-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.uploader-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-fallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.uploader-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.follow-btn {
+  padding: 8px 24px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.follow-btn:hover {
+  background: #1d4ed8;
+}
+
+.follow-btn.following {
+  background: white;
+  color: #374151;
+  border: 2px solid #e5e7eb;
+}
+
+.follow-btn.following:hover {
+  background: #f3f4f6;
 }
 
 .video-meta {

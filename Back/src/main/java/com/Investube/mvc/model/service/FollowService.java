@@ -11,4 +11,6 @@ public interface FollowService {
 	public List<Follow> getFollowings(int userId);
 	
 	public String toggleFollow(int followerId, int followingId);
+	
+	public boolean isFollowing(int followerId, int followingId);
 }
