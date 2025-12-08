@@ -6,12 +6,26 @@
           <h1 class="logo">Investube</h1>
         </RouterLink>
         <nav class="nav">
-          <button type="button" class="nav-item nav-item--ghost">
-            알림
-          </button>
-          <RouterLink to="/login" class="nav-item nav-item--primary">
-            로그인
-          </RouterLink>
+          <template v-if="authStore.isAuthenticated">
+            <span class="nav-item nav-item--text">
+              {{ authStore.nickname }}님
+            </span>
+            <button type="button" class="nav-item nav-item--ghost">
+              알림
+            </button>
+            <button 
+              type="button" 
+              class="nav-item nav-item--primary"
+              @click="handleLogout"
+            >
+              로그아웃
+            </button>
+          </template>
+          <template v-else>
+            <RouterLink to="/login" class="nav-item nav-item--primary">
+              로그인
+            </RouterLink>
+          </template>
         </nav>
       </div>
     </Container>
@@ -19,8 +33,17 @@
 </template>
 
 <script setup>
-import { RouterLink } from 'vue-router'
+import { RouterLink, useRouter } from 'vue-router'
 import Container from './Container.vue'
+import { useAuthStore } from '../../stores/auth.js'
+
+const router = useRouter()
+const authStore = useAuthStore()
+
+const handleLogout = () => {
+  authStore.logout()
+  router.push('/login')
+}
 </script>
 
 <style scoped>
@@ -80,6 +103,12 @@ import Container from './Container.vue'
 
 .nav-item--primary:hover {
   background-color: #1d4ed8;
+}
+
+.nav-item--text {
+  background-color: transparent;
+  color: #e5e7eb;
+  cursor: default;
 }
 </style>
 

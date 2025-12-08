@@ -1,6 +1,8 @@
 <template>
   <div>
-    <div class="grid">
+    <div v-if="loading" class="loading">로딩 중...</div>
+    <div v-else-if="error" class="error">{{ error }}</div>
+    <div v-else class="grid">
       <VideoCard
         v-for="video in videos"
         :key="video.id"
@@ -13,79 +15,59 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import VideoCard from '../components/video/VideoCard.vue'
+import { getVideos, toggleVideoWish } from '../api/video.js'
 
-const videos = ref([
-  {
-    id: 1,
-    youtubeVideoId: 'nqbKOvQ8x1s',
-    title: '초등학생도 이해하는 주식투자 기초 개념',
-    thumbnailUrl: 'https://i.ytimg.com/vi/nqbKOvQ8x1s/hqdefault.jpg',
-    uploaderName: '유저 A',
-    uploaderProfileImageUrl: '',
-    views: 0,
-    createdAtText: '',
-    duration: '',
-    wished: false,
-  },
-  {
-    id: 2,
-    youtubeVideoId: 'ROLPR_eIrVg',
-    title: '잘 나가던 나스닥 수직낙하한 진짜 이유',
-    thumbnailUrl: 'https://i.ytimg.com/vi/ROLPR_eIrVg/hqdefault.jpg',
-    uploaderName: '유저 B',
-    uploaderProfileImageUrl: '',
-    views: 0,
-    createdAtText: '',
-    duration: '',
-    wished: false,
-  },
-  {
-    id: 3,
-    youtubeVideoId: 'hm-tW-O4YXw',
-    title:
-      '[#프리한닥터W] 주식 투자하기 전에 OO를 꼭 확인하세요🔍 알짜배기 주식 알아보는 방법 | #티전드',
-    thumbnailUrl: 'https://i.ytimg.com/vi/hm-tW-O4YXw/hqdefault.jpg',
-    uploaderName: '유저 C',
-    uploaderProfileImageUrl: '',
-    views: 0,
-    createdAtText: '',
-    duration: '',
-    wished: false,
-  },
-  {
-    id: 4,
-    youtubeVideoId: 'YWgI4_Az7f4',
-    title: "주식시장 조정이 오든 말든 '이 주식만' 계속 사모으세요 (신동준 교수)",
-    thumbnailUrl: 'https://i.ytimg.com/vi/YWgI4_Az7f4/hqdefault.jpg',
-    uploaderName: '유저 D',
-    uploaderProfileImageUrl: '',
-    views: 0,
-    createdAtText: '',
-    duration: '',
-    wished: false,
-  },
-  {
-    id: 5,
-    youtubeVideoId: '8H1B836CAcI',
-    title: '돈은 없고 돈 빌리려는 사람만 많다',
-    thumbnailUrl: 'https://i.ytimg.com/vi/8H1B836CAcI/hqdefault.jpg',
-    uploaderName: '유저 E',
-    uploaderProfileImageUrl: '',
-    views: 0,
-    createdAtText: '',
-    duration: '',
-    wished: false,
-  },
-])
+const videos = ref([])
+const loading = ref(false)
+const error = ref(null)
+
+// 비디오 목록 불러오기
+const fetchVideos = async () => {
+  loading.value = true
+  error.value = null
+  try {
+    const response = await getVideos({ sortBy: 'latest' })
+    // 백엔드 데이터를 VideoCard props 형식으로 변환
+    const videoList = response.data.videos || []
+    videos.value = videoList.map(video => ({
+      id: video.videoId,
+      youtubeVideoId: video.youtubeVideoId,
+      title: video.title,
+      thumbnailUrl: video.thumbnailUrl || `https://i.ytimg.com/vi/${video.youtubeVideoId}/hqdefault.jpg`,
+      uploaderName: video.uploaderName || '익명',
+      uploaderProfileImageUrl: video.uploaderProfileImageUrl || '',
+      views: video.viewCount,
+      createdAtText: video.createdAt ? new Date(video.createdAt).toLocaleDateString() : '',
+      duration: video.duration || '',
+      wished: video.wished || false,
+    }))
+  } catch (err) {
+    console.error('비디오 목록 조회 실패:', err)
+    error.value = '비디오 목록을 불러오는데 실패했습니다.'
+  } finally {
+    loading.value = false
+  }
+}
+
+// 컴포넌트 마운트 시 데이터 로드
+onMounted(() => {
+  fetchVideos()
+})
 
 const goDetail = (id) => {
   console.log('go video detail', id)
 }
 
-const toggleWish = (video) => {
-  video.wished = !video.wished
+const toggleWish = async (video) => {
+  try {
+    await toggleVideoWish(video.id)
+    video.wished = !video.wished
+  } catch (err) {
+    console.error('찜하기 실패:', err)
+    alert('찜하기에 실패했습니다.')
+  }
 }
 </script>
 
@@ -98,6 +80,17 @@ const toggleWish = (video) => {
   display: grid;
   gap: 16px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 40px;
+  font-size: 16px;
+}
+
+.error {
+  color: #d32f2f;
 }
 </style>
 

@@ -19,6 +19,11 @@ public class AuthInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
             throws Exception {
 
+        // CORS preflight OPTIONS 요청은 통과
+        if ("OPTIONS".equalsIgnoreCase(request.getMethod())) {
+            return true;
+        }
+
         // 1) 헤더에서 Authorization 가져오기
         String auth = request.getHeader("Authorization");
 
