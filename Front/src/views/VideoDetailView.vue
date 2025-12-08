@@ -65,11 +65,124 @@
         </div>
       </div>
 
-      <!-- 리뷰 섹션 (추후 구현) -->
+      <!-- 리뷰 섹션 -->
       <div class="reviews-section">
-        <h2>리뷰</h2>
-        <div class="no-reviews">
-          리뷰 기능은 준비 중입니다.
+        <h2>리뷰 ({{ reviews.length }})</h2>
+
+        <!-- 리뷰 작성 폼 -->
+        <div v-if="authStore.isAuthenticated" class="review-form">
+          <h3>리뷰 작성하기</h3>
+          <div class="rating-input">
+            <label>평점:</label>
+            <div class="star-rating">
+              <button
+                v-for="star in 5"
+                :key="star"
+                type="button"
+                class="star-btn"
+                :class="{ active: star <= newReview.rating }"
+                @click="newReview.rating = star"
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" 
+                    :fill="star <= newReview.rating ? 'currentColor' : 'none'" 
+                    stroke="currentColor" 
+                    stroke-width="2"/>
+                </svg>
+              </button>
+              <span class="rating-value">{{ newReview.rating }}</span>
+            </div>
+          </div>
+          <textarea
+            v-model="newReview.content"
+            placeholder="이 영상에 대한 평가를 남겨주세요..."
+            rows="4"
+            class="review-textarea"
+          ></textarea>
+          <button @click="submitReview" class="submit-btn">리뷰 등록</button>
+        </div>
+        <div v-else class="login-prompt">
+          <p>리뷰를 작성하려면 로그인이 필요합니다.</p>
+        </div>
+
+        <!-- 리뷰 목록 -->
+        <div v-if="reviewsLoading" class="loading">리뷰 로딩 중...</div>
+        <div v-else-if="reviews.length === 0" class="no-reviews">
+          아직 작성된 리뷰가 없습니다.
+        </div>
+        <div v-else class="reviews-list">
+          <div v-for="review in reviews" :key="review.reviewId" class="review-item">
+            <!-- 수정 모드 -->
+            <div v-if="editingReview && editingReview.reviewId === review.reviewId" class="review-edit">
+              <div class="rating-input">
+                <label>평점:</label>
+                <div class="star-rating">
+                  <button
+                    v-for="star in 5"
+                    :key="star"
+                    type="button"
+                    class="star-btn"
+                    :class="{ active: star <= editingReview.rating }"
+                    @click="editingReview.rating = star"
+                  >
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" 
+                        :fill="star <= editingReview.rating ? 'currentColor' : 'none'" 
+                        stroke="currentColor" 
+                        stroke-width="2"/>
+                    </svg>
+                  </button>
+                  <span class="rating-value">{{ editingReview.rating }}</span>
+                </div>
+              </div>
+              <textarea
+                v-model="editingReview.content"
+                rows="4"
+                class="review-textarea"
+              ></textarea>
+              <div class="edit-actions">
+                <button @click="submitEditReview" class="save-btn">저장</button>
+                <button @click="cancelEditReview" class="cancel-btn">취소</button>
+              </div>
+            </div>
+
+            <!-- 일반 표시 모드 -->
+            <div v-else class="review-content">
+              <div class="review-header">
+                <div class="review-author">
+                  <span class="author-name">사용자 {{ review.userId }}</span>
+                  <div class="review-rating">
+                    <template v-for="star in 5" :key="star">
+                      <svg v-if="star <= Math.floor(review.rating)" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2"/>
+                      </svg>
+                      <svg v-else-if="star === Math.ceil(review.rating) && review.rating % 1 !== 0" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                          <linearGradient :id="`half-${review.reviewId}-${star}`">
+                            <stop offset="50%" stop-color="currentColor"/>
+                            <stop offset="50%" stop-color="transparent"/>
+                          </linearGradient>
+                        </defs>
+                        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" :fill="`url(#half-${review.reviewId}-${star})`" stroke="currentColor" stroke-width="2"/>
+                      </svg>
+                      <svg v-else width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2"/>
+                      </svg>
+                    </template>
+                    <span class="rating-text">{{ review.rating }}</span>
+                  </div>
+                </div>
+                <div class="review-meta">
+                  <span class="review-date">{{ formatDate(review.createdAt) }}</span>
+                  <div v-if="isMyReview(review)" class="review-actions">
+                    <button @click="startEditReview(review)" class="action-btn edit-btn">수정</button>
+                    <button @click="removeReview(review.reviewId)" class="action-btn delete-btn">삭제</button>
+                  </div>
+                </div>
+              </div>
+              <p class="review-text">{{ review.content }}</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -81,6 +194,7 @@ import { ref, onMounted, computed } from 'vue'
 import { useRoute } from 'vue-router'
 import PageHeader from '../components/common/PageHeader.vue'
 import { getVideoDetail, checkWishStatus, toggleVideoWish } from '../api/video.js'
+import { getReviewsByVideoId, createReview, updateReview, deleteReview } from '../api/review.js'
 import { useAuthStore } from '../stores/auth.js'
 
 const route = useRoute()
@@ -89,6 +203,12 @@ const video = ref(null)
 const loading = ref(false)
 const error = ref(null)
 const isWished = ref(false)
+
+// 리뷰 관련 상태
+const reviews = ref([])
+const reviewsLoading = ref(false)
+const newReview = ref({ content: '', rating: 5 })
+const editingReview = ref(null)
 
 const categories = {
   1: '금융',
@@ -158,8 +278,101 @@ const toggleWish = async () => {
   }
 }
 
+// 리뷰 목록 조회
+const fetchReviews = async () => {
+  reviewsLoading.value = true
+  try {
+    const response = await getReviewsByVideoId(route.params.id)
+    reviews.value = response.data
+  } catch (err) {
+    console.error('리뷰 목록 조회 실패:', err)
+  } finally {
+    reviewsLoading.value = false
+  }
+}
+
+// 리뷰 작성
+const submitReview = async () => {
+  if (!authStore.isAuthenticated) {
+    alert('로그인이 필요합니다.')
+    return
+  }
+
+  if (!newReview.value.content.trim()) {
+    alert('리뷰 내용을 입력해주세요.')
+    return
+  }
+
+  try {
+    await createReview(route.params.id, newReview.value)
+    newReview.value = { content: '', rating: 5 }
+    await fetchReviews()
+    alert('리뷰가 작성되었습니다.')
+  } catch (err) {
+    console.error('리뷰 작성 실패:', err)
+    alert('리뷰 작성에 실패했습니다.')
+  }
+}
+
+// 리뷰 수정 모드
+const startEditReview = (review) => {
+  editingReview.value = { ...review }
+}
+
+// 리뷰 수정 취소
+const cancelEditReview = () => {
+  editingReview.value = null
+}
+
+// 리뷰 수정 제출
+const submitEditReview = async () => {
+  if (!editingReview.value.content.trim()) {
+    alert('리뷰 내용을 입력해주세요.')
+    return
+  }
+
+  try {
+    await updateReview(
+      route.params.id,
+      editingReview.value.reviewId,
+      {
+        content: editingReview.value.content,
+        rating: editingReview.value.rating
+      }
+    )
+    editingReview.value = null
+    await fetchReviews()
+    alert('리뷰가 수정되었습니다.')
+  } catch (err) {
+    console.error('리뷰 수정 실패:', err)
+    alert('리뷰 수정에 실패했습니다.')
+  }
+}
+
+// 리뷰 삭제
+const removeReview = async (reviewId) => {
+  if (!confirm('정말 이 리뷰를 삭제하시겠습니까?')) {
+    return
+  }
+
+  try {
+    await deleteReview(route.params.id, reviewId)
+    await fetchReviews()
+    alert('리뷰가 삭제되었습니다.')
+  } catch (err) {
+    console.error('리뷰 삭제 실패:', err)
+    alert('리뷰 삭제에 실패했습니다.')
+  }
+}
+
+// 본인이 작성한 리뷰인지 확인
+const isMyReview = (review) => {
+  return authStore.userId && review.userId === parseInt(authStore.userId)
+}
+
 onMounted(() => {
   fetchVideoDetail()
+  fetchReviews()
 })
 </script>
 
@@ -311,10 +524,259 @@ onMounted(() => {
 }
 
 .reviews-section h2 {
-  margin: 0 0 16px 0;
-  font-size: 18px;
+  margin: 0 0 24px 0;
+  font-size: 20px;
   font-weight: 700;
   color: #111827;
+}
+
+.reviews-section h3 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* 리뷰 작성 폼 */
+.review-form {
+  background: #f9fafb;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 32px;
+}
+
+.rating-input {
+  margin-bottom: 16px;
+}
+
+.rating-input label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.star-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.star-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #d1d5db;
+  transition: color 0.2s;
+}
+
+.star-btn.active {
+  color: #fbbf24;
+}
+
+.star-btn:hover {
+  color: #fbbf24;
+}
+
+.rating-value {
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.review-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+}
+
+.review-textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.submit-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit-btn:hover {
+  background: #1d4ed8;
+}
+
+.login-prompt {
+  background: #f9fafb;
+  padding: 32px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.login-prompt p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* 리뷰 목록 */
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.review-item {
+  background: #f9fafb;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.review-author {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.author-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.review-rating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #fbbf24;
+}
+
+.rating-text {
+  margin-left: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.review-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.review-date {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.review-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.edit-btn {
+  color: #2563eb;
+}
+
+.edit-btn:hover {
+  background: #dbeafe;
+}
+
+.delete-btn {
+  color: #dc2626;
+}
+
+.delete-btn:hover {
+  background: #fee2e2;
+}
+
+.review-text {
+  margin: 0;
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+/* 리뷰 수정 모드 */
+.review-edit {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.save-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.save-btn:hover {
+  background: #1d4ed8;
+}
+
+.cancel-btn {
+  background: #6b7280;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cancel-btn:hover {
+  background: #4b5563;
 }
 
 .no-reviews {
