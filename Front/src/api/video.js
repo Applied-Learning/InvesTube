@@ -19,6 +19,15 @@ export const getVideoDetail = (videoId) => {
 }
 
 /**
+ * 비디오 등록
+ * @param {Object} videoData - { youtubeVideoId, title, description, categoryId, thumbnailUrl }
+ * @returns {Promise}
+ */
+export const createVideo = (videoData) => {
+  return http.post('/videos', videoData)
+}
+
+/**
  * 비디오 찜하기/취소
  * @param {number} videoId
  * @returns {Promise}
