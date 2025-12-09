@@ -10,7 +10,7 @@
           </div>
           <div class="profile-info">
             <h2>{{ authStore.nickname }}님</h2>
-            <p class="user-id">{{ authStore.userId }}</p>
+            <p class="user-id">{{ authStore.id }}</p>
           </div>
         </div>
       </div>

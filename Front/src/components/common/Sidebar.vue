@@ -10,9 +10,6 @@
       <RouterLink to="/invest" class="nav-item" active-class="nav-item--active">
         투자 정보
       </RouterLink>
-      <RouterLink to="/mypage" class="nav-item" active-class="nav-item--active">
-        마이페이지
-      </RouterLink>
     </nav>
   </aside>
 </template>
@@ -50,4 +47,3 @@ import { RouterLink } from 'vue-router'
   font-weight: 600;
 }
 </style>
-

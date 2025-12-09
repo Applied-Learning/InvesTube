@@ -7,9 +7,6 @@
         </RouterLink>
         <nav class="nav">
           <template v-if="authStore.isAuthenticated">
-            <span class="nav-item nav-item--text">
-              {{ authStore.nickname }}님
-            </span>
             <button 
               type="button" 
               class="nav-item nav-item--notification"
@@ -24,10 +21,12 @@
             </button>
             <button 
               type="button" 
-              class="nav-item nav-item--primary"
-              @click="handleLogout"
+              class="nav-item nav-item--avatar"
+              @click="toggleUserMenu"
             >
-              로그아웃
+              <div class="avatar-circle">
+                {{ authStore.nickname?.charAt(0).toUpperCase() }}
+              </div>
             </button>
           </template>
           <template v-else>
@@ -48,7 +47,7 @@
         </div>
         <div class="notifications-body">
           <div v-if="notifications.length === 0" class="no-notifications">
-            알림이 없습니다
+            새로운 알림이 없습니다.
           </div>
           <div 
             v-for="notification in notifications" 
@@ -71,6 +70,27 @@
           </div>
         </div>
       </div>
+
+      <!-- 유저 메뉴 드롭다운 -->
+      <div v-if="showUserMenu && authStore.isAuthenticated" class="user-menu-dropdown">
+        <div class="user-menu-header">
+          <div class="avatar-circle avatar-circle--large">
+            {{ authStore.nickname?.charAt(0).toUpperCase() }}
+          </div>
+          <div class="user-info">
+            <p class="user-nickname">{{ authStore.nickname }}</p>
+            <p class="user-id">{{ authStore.id }}</p>
+          </div>
+        </div>
+        <div class="user-menu-body">
+          <RouterLink to="/mypage" class="user-menu-item" @click="closeUserMenu">
+            마이페이지
+          </RouterLink>
+          <button type="button" class="user-menu-item user-menu-item--danger" @click="handleLogoutFromMenu">
+            로그아웃
+          </button>
+        </div>
+      </div>
     </Container>
   </header>
 </template>
@@ -84,10 +104,9 @@ import { useAuthStore } from '../../stores/auth.js'
 const router = useRouter()
 const authStore = useAuthStore()
 const showNotifications = ref(false)
+const showUserMenu = ref(false)
 const notifications = ref([
-  // 임시 더미 데이터 - 추후 API 연동 필요
-  // { id: 1, message: '새로운 댓글이 달렸습니다', createdAt: new Date().toISOString(), isRead: false },
-  // { id: 2, message: '회원님의 영상이 좋아요를 받았습니다', createdAt: new Date().toISOString(), isRead: true },
+  // TODO: API 연동 예정
 ])
 
 const unreadCount = computed(() => {
@@ -99,14 +118,22 @@ const handleLogout = () => {
   router.push('/login')
 }
 
+const handleLogoutFromMenu = () => {
+  showUserMenu.value = false
+  handleLogout()
+}
+
 const toggleNotifications = () => {
   showNotifications.value = !showNotifications.value
 }
 
+const toggleUserMenu = () => {
+  showUserMenu.value = !showUserMenu.value
+}
+
 const handleNotificationClick = (notification) => {
   markAsRead(notification.id)
-  // 알림 클릭 시 해당 페이지로 이동하는 로직 추가 가능
-  // router.push(notification.link)
+  // 추후 알림 클릭 시 이동 로직 추가 가능
 }
 
 const markAsRead = (id) => {
@@ -117,7 +144,7 @@ const markAsRead = (id) => {
 }
 
 const markAllAsRead = () => {
-  notifications.value.forEach(n => n.isRead = true)
+  notifications.value.forEach(n => { n.isRead = true })
 }
 
 const formatTime = (dateString) => {
@@ -135,12 +162,33 @@ const formatTime = (dateString) => {
   return date.toLocaleDateString()
 }
 
-// 외부 클릭 시 드롭다운 닫기
+const closeUserMenu = () => {
+  showUserMenu.value = false
+}
+
+// 드롭다운 외부 클릭 시 닫기
 const handleClickOutside = (event) => {
-  const dropdown = document.querySelector('.notifications-dropdown')
-  const button = document.querySelector('.nav-item--notification')
-  if (dropdown && !dropdown.contains(event.target) && !button.contains(event.target)) {
+  const notificationsDropdown = document.querySelector('.notifications-dropdown')
+  const notificationsButton = document.querySelector('.nav-item--notification')
+  const userMenuDropdown = document.querySelector('.user-menu-dropdown')
+  const userMenuButton = document.querySelector('.nav-item--avatar')
+
+  if (
+    notificationsDropdown &&
+    !notificationsDropdown.contains(event.target) &&
+    notificationsButton &&
+    !notificationsButton.contains(event.target)
+  ) {
     showNotifications.value = false
+  }
+
+  if (
+    userMenuDropdown &&
+    !userMenuDropdown.contains(event.target) &&
+    userMenuButton &&
+    !userMenuButton.contains(event.target)
+  ) {
+    showUserMenu.value = false
   }
 }
 
@@ -197,12 +245,6 @@ onUnmounted(() => {
   text-decoration: none;
 }
 
-.nav-item--ghost {
-  background-color: transparent;
-  color: #e5e7eb;
-  border-color: #4b5563;
-}
-
 .nav-item--primary {
   background-color: #2563eb;
   color: #ffffff;
@@ -210,12 +252,6 @@ onUnmounted(() => {
 
 .nav-item--primary:hover {
   background-color: #1d4ed8;
-}
-
-.nav-item--text {
-  background-color: transparent;
-  color: #e5e7eb;
-  cursor: default;
 }
 
 .nav-item--notification {
@@ -359,5 +395,92 @@ onUnmounted(() => {
 .mark-read-btn:hover {
   background: #1d4ed8;
 }
-</style>
 
+/* 유저 메뉴 */
+.nav-item--avatar {
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.avatar-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.avatar-circle--large {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+}
+
+.user-menu-dropdown {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 220px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.user-menu-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-nickname {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.user-id {
+  margin: 2px 0 0 0;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.user-menu-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-menu-item {
+  padding: 10px 16px;
+  background: transparent;
+  border: none;
+  text-align: left;
+  font-size: 14px;
+  color: #111827;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.user-menu-item:hover {
+  background: #f3f4f6;
+}
+
+.user-menu-item--danger {
+  color: #dc2626;
+}
+</style>
