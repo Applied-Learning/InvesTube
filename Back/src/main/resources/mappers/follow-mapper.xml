@@ -11,6 +11,13 @@
 		WHERE following_id = #{userId}
 	</select>
 	
+	<!-- 팔로잉 조회 -->
+	<select id="findFollowingsByUserId" resultType="Follow" parameterType="int">
+		SELECT follower_id, following_id, created_at
+		FROM follow
+		WHERE follower_id = #{userId}
+	</select>
+	
 	<!-- 팔로우 여부 확인 -->
 	<select id="existsByFollowerIdAndFollowingId" resultType="boolean" parameterType="map">
 		SELECT COUNT(*)

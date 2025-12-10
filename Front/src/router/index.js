@@ -53,6 +53,21 @@ const router = createRouter({
       component: () => import('../views/MyPageView.vue'),
     },
     {
+      path: '/mypage/videos',
+      name: 'myVideos',
+      component: () => import('../views/MyVideosView.vue'),
+    },
+    {
+      path: '/mypage/reviews',
+      name: 'myReviewVideos',
+      component: () => import('../views/MyReviewedVideosView.vue'),
+    },
+    {
+      path: '/users/:userId',
+      name: 'userProfile',
+      component: () => import('../views/UserProfileView.vue'),
+    },
+    {
       path: '/video/:id',
       name: 'videoDetail',
       component: () => import('../views/VideoDetailView.vue'),
