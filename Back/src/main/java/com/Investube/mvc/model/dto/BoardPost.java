@@ -11,6 +11,10 @@ public class BoardPost {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
     
+    // 작성자 정보
+    private String authorNickname;
+    private String authorProfileImage;
+    
     private List<BoardImage> images;
 
 	public int getPostId() {
@@ -67,6 +71,22 @@ public class BoardPost {
 
 	public void setImages(List<BoardImage> images) {
 		this.images = images;
+	}
+
+	public String getAuthorNickname() {
+		return authorNickname;
+	}
+
+	public void setAuthorNickname(String authorNickname) {
+		this.authorNickname = authorNickname;
+	}
+
+	public String getAuthorProfileImage() {
+		return authorProfileImage;
+	}
+
+	public void setAuthorProfileImage(String authorProfileImage) {
+		this.authorProfileImage = authorProfileImage;
 	}
     
     

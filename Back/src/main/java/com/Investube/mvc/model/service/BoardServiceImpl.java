@@ -19,13 +19,28 @@ public class BoardServiceImpl implements BoardService {
     }
     
 	@Override
-	public List<BoardPost> getBoardList(String keyword) {
-		return boardDao.getBoardList(keyword);
+	public List<BoardPost> getBoardList(String keyword, int offset, int size) {
+		return boardDao.getBoardList(keyword, offset, size);
+	}
+	
+	@Override
+	public int getTotalCount(String keyword) {
+		return boardDao.getTotalCount(keyword);
 	}
 
 	@Override
 	public BoardPost getPostById(int postId) {
 		return boardDao.getPostById(postId);
+	}
+	
+	@Override
+	public List<BoardPost> getPostsByUserId(int userId, int offset, int size) {
+		return boardDao.getPostsByUserId(userId, offset, size);
+	}
+	
+	@Override
+	public int getPostCountByUserId(int userId) {
+		return boardDao.getPostCountByUserId(userId);
 	}
 
 	@Override

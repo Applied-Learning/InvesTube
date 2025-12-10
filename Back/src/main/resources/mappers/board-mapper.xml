@@ -5,7 +5,7 @@
 
 <mapper namespace="com.Investube.mvc.model.dao.BoardDao">
 
-	<!-- ResultMap: 게시글 + 이미지 -->
+	<!-- ResultMap: 게시글 + 이미지 + 작성자 정보 -->
 	<resultMap id="PostWithImages" type="com.Investube.mvc.model.dto.BoardPost">
 		<id property="postId" column="post_id"/>
 		<result property="userId" column="user_id"/>
@@ -13,6 +13,8 @@
 		<result property="content" column="content"/>
 		<result property="createdAt" column="created_at"/>
 		<result property="updatedAt" column="updated_at"/>
+		<result property="authorNickname" column="author_nickname"/>
+		<result property="authorProfileImage" column="author_profile_image"/>
 		
 		<collection property="images" ofType="com.Investube.mvc.model.dto.BoardImage">
 			<id property="imageId" column="image_id"/>
@@ -22,13 +24,15 @@
 		</collection>
 	</resultMap>
 
-	<!-- 게시글 목록 / 검색 (이미지 포함) -->
-	<select id="getBoardList" parameterType="string" resultMap="PostWithImages">
+	<!-- 게시글 목록 / 검색 (이미지 + 작성자 정보 포함, 페이징) -->
+	<select id="getBoardList" resultMap="PostWithImages">
 		SELECT 
 			p.post_id, p.user_id, p.title, p.content, 
 			p.created_at, p.updated_at,
+			u.nickname AS author_nickname, u.profile_image AS author_profile_image,
 			i.image_id, i.image_url, i.created_at AS image_created_at
 		FROM board_post p
+		LEFT JOIN users u ON p.user_id = u.user_id
 		LEFT JOIN board_post_images i ON p.post_id = i.post_id
 		<where>
 			<if test="keyword != null and keyword != ''">
@@ -37,18 +41,55 @@
 			</if>
 		</where>
 		ORDER BY p.post_id DESC, i.image_id ASC
+		LIMIT #{size} OFFSET #{offset}
+	</select>
+	
+	<!-- 게시글 총 개수 -->
+	<select id="getTotalCount" resultType="int">
+		SELECT COUNT(*) 
+		FROM board_post p
+		<where>
+			<if test="keyword != null and keyword != ''">
+				(p.title LIKE CONCAT('%', #{keyword}, '%')
+				OR p.content LIKE CONCAT('%', #{keyword}, '%'))
+			</if>
+		</where>
 	</select>
 
-	<!-- 게시글 상세 (이미지 포함) -->
+	<!-- 게시글 상세 (이미지 + 작성자 정보 포함) -->
 	<select id="getPostById" parameterType="int" resultMap="PostWithImages">
 		SELECT 
 			p.post_id, p.user_id, p.title, p.content, 
 			p.created_at, p.updated_at,
+			u.nickname AS author_nickname, u.profile_image AS author_profile_image,
 			i.image_id, i.image_url, i.created_at AS image_created_at
 		FROM board_post p
+		LEFT JOIN users u ON p.user_id = u.user_id
 		LEFT JOIN board_post_images i ON p.post_id = i.post_id
 		WHERE p.post_id = #{postId}
 		ORDER BY i.image_id ASC
+	</select>
+	
+	<!-- 사용자별 게시글 조회 -->
+	<select id="getPostsByUserId" resultMap="PostWithImages">
+		SELECT 
+			p.post_id, p.user_id, p.title, p.content, 
+			p.created_at, p.updated_at,
+			u.nickname AS author_nickname, u.profile_image AS author_profile_image,
+			i.image_id, i.image_url, i.created_at AS image_created_at
+		FROM board_post p
+		LEFT JOIN users u ON p.user_id = u.user_id
+		LEFT JOIN board_post_images i ON p.post_id = i.post_id
+		WHERE p.user_id = #{userId}
+		ORDER BY p.post_id DESC, i.image_id ASC
+		LIMIT #{size} OFFSET #{offset}
+	</select>
+	
+	<!-- 사용자별 게시글 개수 -->
+	<select id="getPostCountByUserId" parameterType="int" resultType="int">
+		SELECT COUNT(*) 
+		FROM board_post
+		WHERE user_id = #{userId}
 	</select>
 
 	<!-- 게시글 등록 -->

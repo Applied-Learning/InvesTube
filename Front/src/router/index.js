@@ -22,6 +22,16 @@ const router = createRouter({
       component: BoardListView,
     },
     {
+      path: '/board/create',
+      name: 'boardCreate',
+      component: () => import('../views/BoardCreateView.vue'),
+    },
+    {
+      path: '/board/:id',
+      name: 'boardDetail',
+      component: () => import('../views/BoardDetailView.vue'),
+    },
+    {
       path: '/invest',
       name: 'invest',
       component: InvestView,
