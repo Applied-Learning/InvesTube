@@ -63,4 +63,3 @@ const close = () => {
   text-align: right;
 }
 </style>
-

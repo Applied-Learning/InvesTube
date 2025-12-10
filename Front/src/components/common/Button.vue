@@ -39,7 +39,10 @@ const onClick = (event) => {
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
 }
 
 .btn--primary {
@@ -87,4 +90,3 @@ const onClick = (event) => {
   }
 }
 </style>
-

@@ -24,5 +24,6 @@ export const signup = (userData) => {
 export const logout = () => {
   localStorage.removeItem('accessToken')
   localStorage.removeItem('userId')
+  localStorage.removeItem('id')
   localStorage.removeItem('nickname')
 }

@@ -36,7 +36,9 @@ const handleClick = (event) => {
 
 .card--clickable {
   cursor: pointer;
-  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  transition:
+    transform 0.12s ease,
+    box-shadow 0.12s ease;
 }
 
 .card--clickable:hover {
@@ -59,4 +61,3 @@ const handleClick = (event) => {
   color: #6b7280;
 }
 </style>
-

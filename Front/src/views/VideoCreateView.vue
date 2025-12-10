@@ -1,7 +1,7 @@
 <template>
   <div class="video-create-container">
     <PageHeader title="영상 등록" />
-    
+
     <form @submit.prevent="handleSubmit" class="create-form">
       <div class="form-group">
         <label for="youtubeVideoId" class="required">YouTube 영상 ID</label>
@@ -87,7 +87,7 @@ const formData = ref({
   title: '',
   description: '',
   categoryId: '',
-  thumbnailUrl: ''
+  thumbnailUrl: '',
 })
 
 const categories = [
@@ -104,7 +104,7 @@ const handleSubmit = async () => {
     // categoryId를 숫자로 변환
     const videoData = {
       ...formData.value,
-      categoryId: parseInt(formData.value.categoryId)
+      categoryId: parseInt(formData.value.categoryId),
     }
 
     await createVideo(videoData)
