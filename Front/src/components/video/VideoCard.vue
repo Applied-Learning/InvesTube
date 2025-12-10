@@ -164,7 +164,9 @@ const onToggleWish = () => {
   justify-content: center;
   font-size: 18px;
   color: #9ca3af;
-  transition: color 0.12s ease, background-color 0.12s ease;
+  transition:
+    color 0.12s ease,
+    background-color 0.12s ease;
 }
 
 .wish-btn:hover {

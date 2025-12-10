@@ -7,36 +7,48 @@
         </RouterLink>
         <nav class="nav">
           <template v-if="authStore.isAuthenticated">
-            <button 
-              type="button" 
+            <button
+              type="button"
               class="nav-item nav-item--notification"
               @click="toggleNotifications"
               title="알림"
             >
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10 2C8.34315 2 7 3.34315 7 5V5.5C7 8.53757 5.76256 11.5 3.5 13.5V15H16.5V13.5C14.2374 11.5 13 8.53757 13 5.5V5C13 3.34315 11.6569 2 10 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M8 15V15.5C8 16.8807 8.89543 18 10 18C11.1046 18 12 16.8807 12 15.5V15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 2C8.34315 2 7 3.34315 7 5V5.5C7 8.53757 5.76256 11.5 3.5 13.5V15H16.5V13.5C14.2374 11.5 13 8.53757 13 5.5V5C13 3.34315 11.6569 2 10 2Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8 15V15.5C8 16.8807 8.89543 18 10 18C11.1046 18 12 16.8807 12 15.5V15"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
               </svg>
               <span v-if="unreadCount > 0" class="notification-badge">{{ unreadCount }}</span>
             </button>
-            <button 
-              type="button" 
-              class="nav-item nav-item--avatar"
-              @click="toggleUserMenu"
-            >
+            <button type="button" class="nav-item nav-item--avatar" @click="toggleUserMenu">
               <div class="avatar-circle">
                 {{ authStore.nickname?.charAt(0).toUpperCase() }}
               </div>
             </button>
           </template>
           <template v-else>
-            <RouterLink to="/login" class="nav-item nav-item--primary">
-              로그인
-            </RouterLink>
+            <RouterLink to="/login" class="nav-item nav-item--primary"> 로그인 </RouterLink>
           </template>
         </nav>
       </div>
-      
+
       <!-- 알림 드롭다운 -->
       <div v-if="showNotifications && authStore.isAuthenticated" class="notifications-dropdown">
         <div class="notifications-header">
@@ -49,8 +61,8 @@
           <div v-if="notifications.length === 0" class="no-notifications">
             새로운 알림이 없습니다.
           </div>
-          <div 
-            v-for="notification in notifications" 
+          <div
+            v-for="notification in notifications"
             :key="notification.id"
             :class="['notification-item', { unread: !notification.isRead }]"
             @click="handleNotificationClick(notification)"
@@ -59,8 +71,8 @@
               <p class="notification-message">{{ notification.message }}</p>
               <span class="notification-time">{{ formatTime(notification.createdAt) }}</span>
             </div>
-            <button 
-              v-if="!notification.isRead" 
+            <button
+              v-if="!notification.isRead"
               class="mark-read-btn"
               @click.stop="markAsRead(notification.id)"
               title="읽음으로 표시"
@@ -86,7 +98,11 @@
           <RouterLink to="/mypage" class="user-menu-item" @click="closeUserMenu">
             마이페이지
           </RouterLink>
-          <button type="button" class="user-menu-item user-menu-item--danger" @click="handleLogoutFromMenu">
+          <button
+            type="button"
+            class="user-menu-item user-menu-item--danger"
+            @click="handleLogoutFromMenu"
+          >
             로그아웃
           </button>
         </div>
@@ -110,7 +126,7 @@ const notifications = ref([
 ])
 
 const unreadCount = computed(() => {
-  return notifications.value.filter(n => !n.isRead).length
+  return notifications.value.filter((n) => !n.isRead).length
 })
 
 const handleLogout = () => {
@@ -137,14 +153,16 @@ const handleNotificationClick = (notification) => {
 }
 
 const markAsRead = (id) => {
-  const notification = notifications.value.find(n => n.id === id)
+  const notification = notifications.value.find((n) => n.id === id)
   if (notification) {
     notification.isRead = true
   }
 }
 
 const markAllAsRead = () => {
-  notifications.value.forEach(n => { n.isRead = true })
+  notifications.value.forEach((n) => {
+    n.isRead = true
+  })
 }
 
 const formatTime = (dateString) => {
@@ -154,7 +172,7 @@ const formatTime = (dateString) => {
   const minutes = Math.floor(diff / 60000)
   const hours = Math.floor(diff / 3600000)
   const days = Math.floor(diff / 86400000)
-  
+
   if (minutes < 1) return '방금 전'
   if (minutes < 60) return `${minutes}분 전`
   if (hours < 24) return `${hours}시간 전`

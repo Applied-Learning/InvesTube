@@ -1,12 +1,8 @@
 <template>
   <aside class="sidebar">
     <nav class="nav">
-      <RouterLink to="/videos" class="nav-item" active-class="nav-item--active">
-        영상
-      </RouterLink>
-      <RouterLink to="/board" class="nav-item" active-class="nav-item--active">
-        게시판
-      </RouterLink>
+      <RouterLink to="/videos" class="nav-item" active-class="nav-item--active"> 영상 </RouterLink>
+      <RouterLink to="/board" class="nav-item" active-class="nav-item--active"> 게시판 </RouterLink>
       <RouterLink to="/invest" class="nav-item" active-class="nav-item--active">
         투자 정보
       </RouterLink>

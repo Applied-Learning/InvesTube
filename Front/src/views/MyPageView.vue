@@ -19,16 +19,13 @@
                   {{ (authStore.nickname || authStore.id || '').charAt(0).toUpperCase() }}
                 </span>
               </div>
-              <button class="avatar-settings-btn" @click="openProfileEdit">
-                ⚙
-              </button>
+              <button class="avatar-settings-btn" @click="openProfileEdit">⚙</button>
             </div>
             <div class="profile-info">
               <h2>{{ authStore.nickname }}</h2>
               <p class="user-id">@{{ authStore.id }}</p>
             </div>
           </div>
-
 
           <!-- 오른쪽: 팔로워 / 팔로잉 요약 -->
           <div class="profile-follow-summary" v-if="authStore.userId">
@@ -70,9 +67,7 @@
           <section class="activity-group">
             <div class="activity-group-header">
               <h4>찜한 영상</h4>
-              <button class="activity-more-btn" @click="goAllWishedVideos">
-                전체 보기
-              </button>
+              <button class="activity-more-btn" @click="goAllWishedVideos">전체 보기</button>
             </div>
             <ul class="activity-list">
               <li
@@ -104,9 +99,7 @@
           <section class="activity-group">
             <div class="activity-group-header">
               <h4>등록한 영상</h4>
-              <button class="activity-more-btn" @click="goMyVideos">
-                전체 보기
-              </button>
+              <button class="activity-more-btn" @click="goMyVideos">전체 보기</button>
             </div>
             <ul class="activity-list">
               <li
@@ -138,9 +131,7 @@
           <section class="activity-group">
             <div class="activity-group-header">
               <h4>리뷰를 작성한 영상</h4>
-              <button class="activity-more-btn" @click="goMyReviewVideos">
-                전체 보기
-              </button>
+              <button class="activity-more-btn" @click="goMyReviewVideos">전체 보기</button>
             </div>
             <ul class="activity-list">
               <li
@@ -183,16 +174,18 @@
           <button class="menu-item" disabled>
             <span>알림 설정</span>
           </button>
+          <button class="menu-item" @click="openPasswordModal">
+            <span>비밀번호 변경</span>
+          </button>
+          <button class="menu-item menu-item--danger" @click="openDeleteModal">
+            <span>회원 탈퇴</span>
+          </button>
         </div>
       </section>
     </div>
 
     <!-- 팔로워 / 팔로잉 모달 -->
-    <div
-      v-if="showFollowModal"
-      class="follow-modal-backdrop"
-      @click.self="closeFollowModal"
-    >
+    <div v-if="showFollowModal" class="follow-modal-backdrop" @click.self="closeFollowModal">
       <div class="follow-modal">
         <div class="follow-modal-header">
           <h3>{{ activeFollowTab === 'followers' ? '팔로워' : '팔로잉' }}</h3>
@@ -242,14 +235,15 @@
                       (user.userId != null ? `사용자 ${user.userId}` : '알 수 없는 사용자')
                     }}
                   </p>
-                  <p class="follow-user-sub" v-if="user.id">
-                    @{{ user.id }}
-                  </p>
+                  <p class="follow-user-sub" v-if="user.id">@{{ user.id }}</p>
                 </div>
               </div>
             </li>
             <li
-              v-if="(activeFollowTab === 'followers' ? followerUsers.length : followingUsers.length) === 0"
+              v-if="
+                (activeFollowTab === 'followers' ? followerUsers.length : followingUsers.length) ===
+                0
+              "
               class="follow-empty"
             >
               {{
@@ -263,57 +257,109 @@
       </div>
     </div>
     <!-- 프로필 편집 모달 -->
-<div
-  v-if="showProfileEditModal"
-  class="follow-modal-backdrop"
-  @click.self="closeProfileEdit"
->
-  <div class="follow-modal profile-edit-modal">
-    <div class="follow-modal-header">
-      <h3>프로필 편집</h3>
-      <button class="modal-close-btn" @click="closeProfileEdit">✕</button>
-    </div>
-    <div class="follow-modal-body profile-edit-body">
-      <div class="form-field">
-        <label>닉네임</label>
-        <input v-model="editNickname" type="text" class="text-input" />
-      </div>
+    <div v-if="showProfileEditModal" class="follow-modal-backdrop" @click.self="closeProfileEdit">
+      <div class="follow-modal profile-edit-modal">
+        <div class="follow-modal-header">
+          <h3>프로필 편집</h3>
+          <button class="modal-close-btn" @click="closeProfileEdit">✕</button>
+        </div>
+        <div class="follow-modal-body profile-edit-body">
+          <div class="form-field">
+            <label>닉네임</label>
+            <input v-model="editNickname" type="text" class="text-input" />
+          </div>
 
-      <div class="form-field">
-        <label>프로필 이미지</label>
-        <div class="profile-image-row">
-          <div class="profile-image-preview">
-            <img
-              v-if="previewProfileImage"
-              :src="previewProfileImage.startsWith('blob:')
-                ? previewProfileImage
-                : resolveImageUrl(previewProfileImage)"
-              alt="프로필 미리보기"
+          <div class="form-field">
+            <label>프로필 이미지</label>
+            <div class="profile-image-row">
+              <div class="profile-image-preview">
+                <img
+                  v-if="previewProfileImage"
+                  :src="
+                    previewProfileImage.startsWith('blob:')
+                      ? previewProfileImage
+                      : resolveImageUrl(previewProfileImage)
+                  "
+                  alt="프로필 미리보기"
+                />
+              </div>
+              <div class="profile-image-actions">
+                <input type="file" accept="image/*" @change="onProfileImageChange" />
+                <button type="button" class="small-btn" @click="markProfileImageDelete">
+                  이미지 제거
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-actions">
+            <button class="cancel-btn" @click="closeProfileEdit">취소</button>
+            <button class="save-btn" @click="saveProfile" :disabled="savingProfile">저장</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 비밀번호 변경 모달 -->
+    <div v-if="showPasswordModal" class="follow-modal-backdrop" @click.self="closePasswordModal">
+      <div class="follow-modal follow-modal--small">
+        <div class="follow-modal-header">
+          <h3>비밀번호 변경</h3>
+          <button class="modal-close-btn" @click="closePasswordModal">✕</button>
+        </div>
+        <div class="follow-modal-body settings-modal-body">
+          <div class="form-field">
+            <label>새 비밀번호</label>
+            <input v-model="newPassword" type="password" class="text-input settings-input" />
+          </div>
+          <div class="form-field">
+            <label>새 비밀번호 확인</label>
+            <input v-model="confirmPassword" type="password" class="text-input settings-input" />
+          </div>
+          <div class="settings-actions">
+            <button class="cancel-btn" @click="closePasswordModal">취소</button>
+            <button class="save-btn" @click="savePassword" :disabled="savingPassword">변경</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 회원 탈퇴 모달 -->
+    <div v-if="showDeleteModal" class="follow-modal-backdrop" @click.self="closeDeleteModal">
+      <div class="follow-modal follow-modal--small">
+        <div class="follow-modal-header">
+          <h3>회원 탈퇴</h3>
+          <button class="modal-close-btn" @click="closeDeleteModal">✕</button>
+        </div>
+        <div class="follow-modal-body settings-modal-body">
+          <p class="delete-warning">
+            정말로 탈퇴하시겠어요?<br />
+            탈퇴 시 계정과 데이터는 복구할 수 없어요.
+          </p>
+          <p class="delete-warning">
+            아래 입력란에 <strong>탈퇴</strong> 를 입력하면 탈퇴가 진행됩니다.
+          </p>
+          <div class="form-field">
+            <label>확인 입력</label>
+            <input
+              v-model="deleteConfirmText"
+              type="text"
+              class="text-input settings-input"
+              placeholder="탈퇴"
             />
           </div>
-          <div class="profile-image-actions">
-            <input
-              type="file"
-              accept="image/*"
-              @change="onProfileImageChange"
-            />
-            <button type="button" class="small-btn" @click="markProfileImageDelete">
-              이미지 제거
+          <div class="settings-actions">
+            <button class="cancel-btn" @click="closeDeleteModal">취소</button>
+            <button
+              class="save-btn save-btn--danger"
+              @click="confirmDelete"
+              :disabled="deletingAccount"
+            >
+              탈퇴하기
             </button>
           </div>
         </div>
       </div>
-
-      <div class="modal-actions">
-        <button class="cancel-btn" @click="closeProfileEdit">취소</button>
-        <button class="save-btn" @click="saveProfile" :disabled="savingProfile">
-          저장
-        </button>
-      </div>
     </div>
-  </div>
-</div>
-
   </div>
 </template>
 
@@ -331,6 +377,8 @@ import {
   updateMyInfo,
   uploadProfileImage,
   deleteProfileImage,
+  updatePassword,
+  deleteMe,
 } from '../api/user.js'
 import { getWishedVideos, getVideoDetail } from '../api/video.js'
 
@@ -338,8 +386,6 @@ const router = useRouter()
 const authStore = useAuthStore()
 
 import { resolveImageUrl } from '../utils/image.js'
-
-
 
 // 팔로워 / 팔로잉
 const followers = ref([])
@@ -421,9 +467,7 @@ const fetchFollowData = async () => {
 
     const missingIds = Array.from(ids).filter((id) => !userProfiles.value[id])
     if (missingIds.length) {
-      const results = await Promise.allSettled(
-        missingIds.map((id) => getUserByUserId(id)),
-      )
+      const results = await Promise.allSettled(missingIds.map((id) => getUserByUserId(id)))
       results.forEach((res) => {
         if (res.status === 'fulfilled') {
           const user = res.value.data
@@ -480,9 +524,7 @@ const normalizeVideo = (video) => {
     title: video.title,
     thumbnailUrl:
       video.thumbnailUrl ||
-      (video.youtubeVideoId
-        ? `https://i.ytimg.com/vi/${video.youtubeVideoId}/hqdefault.jpg`
-        : ''),
+      (video.youtubeVideoId ? `https://i.ytimg.com/vi/${video.youtubeVideoId}/hqdefault.jpg` : ''),
     viewCount: video.viewCount ?? 0,
     wishCount: video.wishCount ?? 0,
   }
@@ -498,9 +540,7 @@ const fetchActivityPreviews = async () => {
     const wishedParams = { page: 1, size: PREVIEW_LIMIT }
     const wishedRes = await getWishedVideos(wishedParams)
     const wishedList = wishedRes.data?.videos || []
-    previewWishedVideos.value = wishedList
-      .map(normalizeVideo)
-      .filter(Boolean)
+    previewWishedVideos.value = wishedList.map(normalizeVideo).filter(Boolean)
 
     // 내가 등록한 영상
     const myVideosRes = await getMyVideos()
@@ -524,9 +564,7 @@ const fetchActivityPreviews = async () => {
       if (orderedIds.length >= PREVIEW_LIMIT) break
     }
 
-    const videoResults = await Promise.allSettled(
-      orderedIds.map((id) => getVideoDetail(id)),
-    )
+    const videoResults = await Promise.allSettled(orderedIds.map((id) => getVideoDetail(id)))
     const reviewedVideos = []
     videoResults.forEach((res) => {
       if (res.status === 'fulfilled') {
@@ -583,8 +621,7 @@ const fetchMyProfile = async () => {
 }
 
 const openProfileEdit = () => {
-  editNickname.value =
-    myProfile.value?.nickname || authStore.nickname || ''
+  editNickname.value = myProfile.value?.nickname || authStore.nickname || ''
   previewProfileImage.value = myProfile.value?.profileImage || ''
   profileImageFile.value = null
   deleteProfileImageFlag.value = false
@@ -642,7 +679,81 @@ const saveProfile = async () => {
   }
 }
 
+// 비밀번호 변경 모달 상태
+const showPasswordModal = ref(false)
+const newPassword = ref('')
+const confirmPassword = ref('')
+const savingPassword = ref(false)
 
+const openPasswordModal = () => {
+  newPassword.value = ''
+  confirmPassword.value = ''
+  showPasswordModal.value = true
+}
+
+const closePasswordModal = () => {
+  showPasswordModal.value = false
+}
+
+const savePassword = async () => {
+  if (!newPassword.value) {
+    alert('새 비밀번호를 입력하세요.')
+    return
+  }
+  if (newPassword.value !== confirmPassword.value) {
+    alert('비밀번호 확인이 일치하지 않습니다.')
+    return
+  }
+
+  savingPassword.value = true
+  try {
+    await updatePassword(newPassword.value)
+    alert('비밀번호가 변경되었습니다.')
+    closePasswordModal()
+  } catch (err) {
+    console.error('비밀번호 변경 실패:', err)
+    alert('비밀번호 변경에 실패했어요.')
+  } finally {
+    savingPassword.value = false
+  }
+}
+
+const showDeleteModal = ref(false)
+const deleteConfirmText = ref('')
+const deletingAccount = ref(false)
+
+const openDeleteModal = () => {
+  deleteConfirmText.value = ''
+  showDeleteModal.value = true
+}
+
+const closeDeleteModal = () => {
+  showDeleteModal.value = false
+}
+
+const confirmDelete = async () => {
+  if (deleteConfirmText.value.trim() !== '탈퇴') {
+    alert("확인 입력란에 '탈퇴'를 정확히 입력해야 합니다.")
+    return
+  }
+
+  if (!window.confirm('정말로 탈퇴하시겠습니까? 이 작업은 되돌릴 수 없습니다.')) {
+    return
+  }
+
+  deletingAccount.value = true
+  try {
+    await deleteMe()
+    alert('회원 탈퇴가 완료되었어요.')
+    authStore.logout()
+    router.push('/')
+  } catch (err) {
+    console.error('회원 탈퇴 실패:', err)
+    alert('회원 탈퇴에 실패했어요.')
+  } finally {
+    deletingAccount.value = false
+  }
+}
 
 onMounted(() => {
   fetchMyProfile()
@@ -777,6 +888,7 @@ onMounted(() => {
   color: #374151;
   text-align: left;
   font-size: 14px;
+  cursor: pointer;
 }
 
 .menu-item:last-child {
@@ -1176,4 +1288,70 @@ onMounted(() => {
   color: #ffffff;
 }
 
+.follow-modal--small {
+  max-width: 360px;
+  max-height: none;
+}
+
+.follow-modal--small .follow-modal-body {
+  max-height: none;
+  overflow-y: visible;
+}
+.password-modal-body {
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.password-modal-body .text-input {
+  width: 100%;
+  max-width: 340px;
+}
+
+.menu-item--danger {
+  color: #b91c1c;
+}
+
+.save-btn--danger {
+  background: #b91c1c;
+}
+
+.save-btn--danger:hover {
+  background: #991b1b;
+}
+
+.delete-warning {
+  font-size: 14px;
+  color: #374151;
+  margin: 0 0 8px 0;
+}
+
+.input-narrow {
+  width: 220px;
+  max-width: 220px;
+  display: block;
+  margin: 0 auto;
+}
+
+.follow-modal--small {
+  max-width: 360px;
+}
+
+/* 비밀번호 / 탈퇴 공통 레이아웃 */
+.settings-modal-body {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.settings-input {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+}
+
+.settings-actions {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
 </style>

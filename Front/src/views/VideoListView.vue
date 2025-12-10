@@ -6,8 +6,21 @@
       <!-- 검색바 -->
       <div class="search-bar">
         <div class="search-input-wrapper">
-          <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM18 18l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <svg
+            class="search-icon"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM18 18l-4-4"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
           </svg>
           <input
             v-model="searchKeyword"
@@ -17,14 +30,25 @@
             class="search-input"
           />
           <button v-if="searchKeyword" class="clear-btn" @click.stop="searchKeyword = ''">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 4L4 12M4 4l8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 4L4 12M4 4l8 8"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
             </svg>
           </button>
         </div>
         <button class="search-btn" @click="handleSearch" type="button">검색</button>
       </div>
-      
+
       <!-- 검색 결과 표시 -->
       <div v-if="isSearchMode" class="search-result-info">
         <span>"{{ searchKeyword }}" 검색 결과 ({{ totalCount }}개)</span>
@@ -62,11 +86,22 @@
             찜한 영상
           </button>
         </div>
-        
+
         <!-- 영상 등록 버튼 (로그인 사용자만) -->
         <button v-if="authStore.isAuthenticated" class="create-video-btn" @click="goCreateVideo">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 3V13M3 8H13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 3V13M3 8H13"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
           </svg>
           영상 등록
         </button>
@@ -89,24 +124,14 @@
           @toggle-wish="toggleWish(video)"
         />
       </div>
-      
+
       <!-- 페이지네이션 -->
       <div v-if="totalPages > 1" class="pagination">
-        <button 
-          class="page-btn" 
-          :disabled="currentPage === 1"
-          @click="changePage(1)"
-        >
-          처음
-        </button>
-        <button 
-          class="page-btn" 
-          :disabled="currentPage === 1"
-          @click="changePage(currentPage - 1)"
-        >
+        <button class="page-btn" :disabled="currentPage === 1" @click="changePage(1)">처음</button>
+        <button class="page-btn" :disabled="currentPage === 1" @click="changePage(currentPage - 1)">
           이전
         </button>
-        
+
         <button
           v-for="page in getPageNumbers()"
           :key="page"
@@ -115,26 +140,28 @@
         >
           {{ page }}
         </button>
-        
-        <button 
-          class="page-btn" 
+
+        <button
+          class="page-btn"
           :disabled="currentPage === totalPages"
           @click="changePage(currentPage + 1)"
         >
           다음
         </button>
-        <button 
-          class="page-btn" 
+        <button
+          class="page-btn"
           :disabled="currentPage === totalPages"
           @click="changePage(totalPages)"
         >
           마지막
         </button>
       </div>
-      
+
       <!-- 페이지 정보 -->
       <div v-if="totalCount > 0" class="page-info">
-        전체 {{ totalCount }}개 중 {{ ((currentPage - 1) * pageSize) + 1 }}-{{ Math.min(currentPage * pageSize, totalCount) }}개
+        전체 {{ totalCount }}개 중 {{ (currentPage - 1) * pageSize + 1 }}-{{
+          Math.min(currentPage * pageSize, totalCount)
+        }}개
       </div>
     </div>
   </div>
@@ -145,7 +172,13 @@ import { ref, onMounted, computed, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import VideoCard from '../components/video/VideoCard.vue'
 import PageHeader from '../components/common/PageHeader.vue'
-import { getVideos, getVideosByCategory, getWishedVideos, toggleVideoWish, searchVideos } from '../api/video.js'
+import {
+  getVideos,
+  getVideosByCategory,
+  getWishedVideos,
+  toggleVideoWish,
+  searchVideos,
+} from '../api/video.js'
 import { useAuthStore } from '../stores/auth.js'
 
 const route = useRoute()
@@ -187,7 +220,7 @@ const loadWishedVideoIds = async () => {
   try {
     const response = await getWishedVideos()
     const wishedVideos = response.data.videos || []
-    wishedVideoIds.value = new Set(wishedVideos.map(v => v.videoId))
+    wishedVideoIds.value = new Set(wishedVideos.map((v) => v.videoId))
   } catch (err) {
     // 로그인하지 않았거나 에러 발생 시 빈 Set
     wishedVideoIds.value = new Set()
@@ -203,13 +236,13 @@ const fetchVideos = async () => {
     if (!isWishlistMode.value && currentPage.value === 1) {
       await loadWishedVideoIds()
     }
-    
+
     // 페이징 파라미터
     const params = {
       page: currentPage.value,
-      size: pageSize.value
+      size: pageSize.value,
     }
-    
+
     let response
     if (isWishlistMode.value) {
       // 찜 목록 조회
@@ -224,14 +257,15 @@ const fetchVideos = async () => {
       // 카테고리별 조회
       response = await getVideosByCategory(selectedCategory.value, params)
     }
-    
+
     // 백엔드 데이터를 VideoCard props 형식으로 변환
     const videoList = response.data.videos || []
-    videos.value = videoList.map(video => ({
+    videos.value = videoList.map((video) => ({
       id: video.videoId,
       youtubeVideoId: video.youtubeVideoId,
       title: video.title,
-      thumbnailUrl: video.thumbnailUrl || `https://i.ytimg.com/vi/${video.youtubeVideoId}/hqdefault.jpg`,
+      thumbnailUrl:
+        video.thumbnailUrl || `https://i.ytimg.com/vi/${video.youtubeVideoId}/hqdefault.jpg`,
       uploaderName: video.uploaderNickname || `사용자 ${video.userId}`,
       uploaderProfileImageUrl: video.uploaderProfileImage || '',
       views: video.viewCount,
@@ -239,11 +273,10 @@ const fetchVideos = async () => {
       duration: video.duration || '',
       wished: isWishlistMode.value ? true : wishedVideoIds.value.has(video.videoId),
     }))
-    
+
     // 페이징 정보 업데이트
     totalPages.value = response.data.totalPages || 0
     totalCount.value = response.data.totalCount || 0
-    
   } catch (err) {
     console.error('비디오 목록 조회 실패:', err)
     error.value = '비디오 목록을 불러오는데 실패했습니다.'
@@ -281,7 +314,7 @@ const changePage = (page) => {
 const getPageNumbers = () => {
   const pages = []
   const maxVisible = 5 // 보여줄 최대 페이지 번호 개수
-  
+
   if (totalPages.value <= maxVisible) {
     // 전체 페이지가 적으면 모두 표시
     for (let i = 1; i <= totalPages.value; i++) {
@@ -291,16 +324,16 @@ const getPageNumbers = () => {
     // 현재 페이지 중심으로 표시
     let start = Math.max(1, currentPage.value - 2)
     let end = Math.min(totalPages.value, start + maxVisible - 1)
-    
+
     if (end - start < maxVisible - 1) {
       start = Math.max(1, end - maxVisible + 1)
     }
-    
+
     for (let i = start; i <= end; i++) {
       pages.push(i)
     }
   }
-  
+
   return pages
 }
 
@@ -310,15 +343,18 @@ onMounted(() => {
 })
 
 // 라우트 변경 감지 (찜 목록 ↔ 일반 목록)
-watch(() => route.path, () => {
-  // 라우트 변경 시 필터 초기화 및 데이터 재로드
-  selectedCategory.value = null
-  sortBy.value = 'latest'
-  searchKeyword.value = ''
-  isSearchMode.value = false
-  currentPage.value = 1
-  fetchVideos()
-})
+watch(
+  () => route.path,
+  () => {
+    // 라우트 변경 시 필터 초기화 및 데이터 재로드
+    selectedCategory.value = null
+    sortBy.value = 'latest'
+    searchKeyword.value = ''
+    isSearchMode.value = false
+    currentPage.value = 1
+    fetchVideos()
+  },
+)
 
 const goDetail = (id) => {
   router.push(`/video/${id}`)
@@ -331,7 +367,7 @@ const goCreateVideo = () => {
 // 검색 처리
 const handleSearch = () => {
   const keyword = searchKeyword.value.trim()
-  
+
   if (keyword) {
     isSearchMode.value = true
     selectedCategory.value = null
@@ -354,14 +390,14 @@ const toggleWish = async (video) => {
   try {
     const response = await toggleVideoWish(video.id)
     video.wished = response.data // 백엔드가 새로운 상태 반환
-    
+
     // wishedVideoIds 업데이트
     if (video.wished) {
       wishedVideoIds.value.add(video.id)
     } else {
       wishedVideoIds.value.delete(video.id)
     }
-    
+
     // 찜 목록 모드에서 찜 해제하면 목록에서 제거
     if (isWishlistMode.value && !video.wished) {
       fetchVideos()
@@ -672,4 +708,3 @@ const toggleWish = async (video) => {
   margin-top: 12px;
 }
 </style>
-

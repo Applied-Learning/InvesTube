@@ -5,9 +5,7 @@
     <div class="profile-page-content">
       <div v-if="loading" class="profile-loading">불러오는 중...</div>
       <div v-else-if="error" class="profile-error">{{ error }}</div>
-      <div v-else-if="videos.length === 0" class="profile-empty">
-        아직 등록한 영상이 없어요.
-      </div>
+      <div v-else-if="videos.length === 0" class="profile-empty">아직 등록한 영상이 없어요.</div>
       <div v-else class="profile-videos-section">
         <div class="profile-video-list">
           <RouterLink

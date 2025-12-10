@@ -20,23 +20,38 @@
         <div class="video-header">
           <h1 class="video-title">{{ video.title }}</h1>
           <div class="header-actions">
-            <button 
-              class="wish-btn"
-              :class="{ active: isWished }"
-              @click="toggleWish"
-            >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 21L10.55 19.7051C5.4 15.1242 2 12.1029 2 8.39509C2 5.37384 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08651C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.37384 22 8.39509C22 12.1029 18.6 15.1242 13.45 19.7051L12 21Z" :fill="isWished ? 'currentColor' : 'none'" stroke="currentColor" stroke-width="2"/>
+            <button class="wish-btn" :class="{ active: isWished }" @click="toggleWish">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 21L10.55 19.7051C5.4 15.1242 2 12.1029 2 8.39509C2 5.37384 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08651C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.37384 22 8.39509C22 12.1029 18.6 15.1242 13.45 19.7051L12 21Z"
+                  :fill="isWished ? 'currentColor' : 'none'"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
               </svg>
               <span>{{ isWished ? '찜 해제' : '찜하기' }}</span>
             </button>
-            <button 
-              v-if="isMyVideo"
-              class="delete-video-btn"
-              @click="removeVideo"
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2M10 11v6M14 11v6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <button v-if="isMyVideo" class="delete-video-btn" @click="removeVideo">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2M10 11v6M14 11v6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
               </svg>
               <span>영상 삭제</span>
             </button>
@@ -68,21 +83,56 @@
 
         <div class="video-meta">
           <span class="meta-item">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 14.6667C11.6819 14.6667 14.6667 11.6819 14.6667 8C14.6667 4.3181 11.6819 1.33333 8 1.33333C4.3181 1.33333 1.33333 4.3181 1.33333 8C1.33333 11.6819 4.3181 14.6667 8 14.6667Z" stroke="currentColor" stroke-width="1.5"/>
-              <path d="M8 4V8L10.6667 9.33333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 14.6667C11.6819 14.6667 14.6667 11.6819 14.6667 8C14.6667 4.3181 11.6819 1.33333 8 1.33333C4.3181 1.33333 1.33333 4.3181 1.33333 8C1.33333 11.6819 4.3181 14.6667 8 14.6667Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+              <path
+                d="M8 4V8L10.6667 9.33333"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
             </svg>
             조회수 {{ video.viewCount.toLocaleString() }}회
           </span>
           <span class="meta-item">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 14L6.82 12.9533C3.4 10.06 1.33333 8.21333 1.33333 5.93333C1.33333 4.2 2.63333 2.9 4.36667 2.9C5.45333 2.9 6.5 3.44 7.16667 4.27333C7.83333 3.44 8.88 2.9 9.96667 2.9C11.7 2.9 13 4.2 13 5.93333C13 8.21333 10.9333 10.06 7.51333 12.96L8 14Z" stroke="currentColor" stroke-width="1.5"/>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 14L6.82 12.9533C3.4 10.06 1.33333 8.21333 1.33333 5.93333C1.33333 4.2 2.63333 2.9 4.36667 2.9C5.45333 2.9 6.5 3.44 7.16667 4.27333C7.83333 3.44 8.88 2.9 9.96667 2.9C11.7 2.9 13 4.2 13 5.93333C13 8.21333 10.9333 10.06 7.51333 12.96L8 14Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
             </svg>
             {{ video.wishCount }}
           </span>
           <span class="meta-item">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 1.33333L10.06 5.50667L14.6667 6.18L11.3333 9.42667L12.12 14.0133L8 11.8467L3.88 14.0133L4.66667 9.42667L1.33333 6.18L5.94 5.50667L8 1.33333Z" stroke="currentColor" stroke-width="1.5"/>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 1.33333L10.06 5.50667L14.6667 6.18L11.3333 9.42667L12.12 14.0133L8 11.8467L3.88 14.0133L4.66667 9.42667L1.33333 6.18L5.94 5.50667L8 1.33333Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
             </svg>
             {{ video.avgRating ? video.avgRating.toFixed(1) : 'N/A' }} ({{ video.reviewCount }}개)
           </span>
@@ -118,11 +168,19 @@
                 :class="{ active: star <= newReview.rating }"
                 @click="newReview.rating = star"
               >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" 
-                    :fill="star <= newReview.rating ? 'currentColor' : 'none'" 
-                    stroke="currentColor" 
-                    stroke-width="2"/>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                    :fill="star <= newReview.rating ? 'currentColor' : 'none'"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
                 </svg>
               </button>
               <span class="rating-value">{{ newReview.rating }}</span>
@@ -142,13 +200,14 @@
 
         <!-- 리뷰 목록 -->
         <div v-if="reviewsLoading" class="loading">리뷰 로딩 중...</div>
-        <div v-else-if="reviews.length === 0" class="no-reviews">
-          아직 작성된 리뷰가 없습니다.
-        </div>
+        <div v-else-if="reviews.length === 0" class="no-reviews">아직 작성된 리뷰가 없습니다.</div>
         <div v-else class="reviews-list">
           <div v-for="review in reviews" :key="review.reviewId" class="review-item">
             <!-- 수정 모드 -->
-            <div v-if="editingReview && editingReview.reviewId === review.reviewId" class="review-edit">
+            <div
+              v-if="editingReview && editingReview.reviewId === review.reviewId"
+              class="review-edit"
+            >
               <div class="rating-input">
                 <label>평점:</label>
                 <div class="star-rating">
@@ -160,21 +219,25 @@
                     :class="{ active: star <= editingReview.rating }"
                     @click="editingReview.rating = star"
                   >
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" 
-                        :fill="star <= editingReview.rating ? 'currentColor' : 'none'" 
-                        stroke="currentColor" 
-                        stroke-width="2"/>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                        :fill="star <= editingReview.rating ? 'currentColor' : 'none'"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      />
                     </svg>
                   </button>
                   <span class="rating-value">{{ editingReview.rating }}</span>
                 </div>
               </div>
-              <textarea
-                v-model="editingReview.content"
-                rows="4"
-                class="review-textarea"
-              ></textarea>
+              <textarea v-model="editingReview.content" rows="4" class="review-textarea"></textarea>
               <div class="edit-actions">
                 <button @click="submitEditReview" class="save-btn">저장</button>
                 <button @click="cancelEditReview" class="cancel-btn">취소</button>
@@ -188,20 +251,54 @@
                   <span class="author-name">사용자 {{ review.userId }}</span>
                   <div class="review-rating">
                     <template v-for="star in 5" :key="star">
-                      <svg v-if="star <= Math.floor(review.rating)" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2"/>
+                      <svg
+                        v-if="star <= Math.floor(review.rating)"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        />
                       </svg>
-                      <svg v-else-if="star === Math.ceil(review.rating) && review.rating % 1 !== 0" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg
+                        v-else-if="star === Math.ceil(review.rating) && review.rating % 1 !== 0"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
                         <defs>
                           <linearGradient :id="`half-${review.reviewId}-${star}`">
-                            <stop offset="50%" stop-color="currentColor"/>
-                            <stop offset="50%" stop-color="transparent"/>
+                            <stop offset="50%" stop-color="currentColor" />
+                            <stop offset="50%" stop-color="transparent" />
                           </linearGradient>
                         </defs>
-                        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" :fill="`url(#half-${review.reviewId}-${star})`" stroke="currentColor" stroke-width="2"/>
+                        <path
+                          d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                          :fill="`url(#half-${review.reviewId}-${star})`"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        />
                       </svg>
-                      <svg v-else width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2"/>
+                      <svg
+                        v-else
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        />
                       </svg>
                     </template>
                     <span class="rating-text">{{ review.rating }}</span>
@@ -210,8 +307,12 @@
                 <div class="review-meta">
                   <span class="review-date">{{ formatDate(review.createdAt) }}</span>
                   <div v-if="isMyReview(review)" class="review-actions">
-                    <button @click="startEditReview(review)" class="action-btn edit-btn">수정</button>
-                    <button @click="removeReview(review.reviewId)" class="action-btn delete-btn">삭제</button>
+                    <button @click="startEditReview(review)" class="action-btn edit-btn">
+                      수정
+                    </button>
+                    <button @click="removeReview(review.reviewId)" class="action-btn delete-btn">
+                      삭제
+                    </button>
                   </div>
                 </div>
               </div>
@@ -252,7 +353,7 @@ const editingReview = ref(null)
 const categories = {
   1: '금융',
   2: '기술',
-  3: '투자'
+  3: '투자',
 }
 
 const getCategoryName = (id) => {
@@ -340,7 +441,7 @@ const toggleWish = async () => {
   try {
     const response = await toggleVideoWish(video.value.videoId)
     isWished.value = response.data
-    
+
     // 찜 수 업데이트
     if (isWished.value) {
       video.value.wishCount++
@@ -448,14 +549,10 @@ const submitEditReview = async () => {
   }
 
   try {
-    await updateReview(
-      route.params.id,
-      editingReview.value.reviewId,
-      {
-        content: editingReview.value.content,
-        rating: editingReview.value.rating
-      }
-    )
+    await updateReview(route.params.id, editingReview.value.reviewId, {
+      content: editingReview.value.content,
+      rating: editingReview.value.rating,
+    })
     editingReview.value = null
     await fetchReviews()
     alert('리뷰가 수정되었습니다.')

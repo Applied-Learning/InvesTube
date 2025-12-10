@@ -10,19 +10,19 @@
         <div class="profile-card-header">
           <div class="profile-main-info">
             <div class="profile-card-avatar">
-            <img
-              v-if="user.profileImage"
-              :src="resolveImageUrl(user.profileImage)"
-              :alt="user.nickname || user.id || '프로필'"
-            />
-            <span v-else>{{ avatarInitial }}</span>
-          </div>
-          <div class="profile-card-info">
-            <h2 class="profile-card-name">
-              {{ user.nickname || user.id || `사용자 ${user.userId}` }}
-            </h2>
-            <p v-if="user.id" class="profile-card-id">@{{ user.id }}</p>
-          </div>
+              <img
+                v-if="user.profileImage"
+                :src="resolveImageUrl(user.profileImage)"
+                :alt="user.nickname || user.id || '프로필'"
+              />
+              <span v-else>{{ avatarInitial }}</span>
+            </div>
+            <div class="profile-card-info">
+              <h2 class="profile-card-name">
+                {{ user.nickname || user.id || `사용자 ${user.userId}` }}
+              </h2>
+              <p v-if="user.id" class="profile-card-id">@{{ user.id }}</p>
+            </div>
           </div>
           <button
             v-if="!isMe && authStore.isAuthenticated"
@@ -103,8 +103,8 @@ const pageTitle = computed(() =>
   isMe.value
     ? '내 프로필'
     : user.value?.nickname
-    ? `${user.value.nickname}님의 프로필`
-    : '사용자 프로필',
+      ? `${user.value.nickname}님의 프로필`
+      : '사용자 프로필',
 )
 
 const avatarInitial = computed(() => {
@@ -387,5 +387,4 @@ onMounted(fetchUser)
   background: #e5e7eb;
   color: #111827;
 }
-
 </style>

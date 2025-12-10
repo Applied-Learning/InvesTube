@@ -50,9 +50,7 @@ const normalizeVideo = (video) => {
     title: video.title,
     thumbnailUrl:
       video.thumbnailUrl ||
-      (video.youtubeVideoId
-        ? `https://i.ytimg.com/vi/${video.youtubeVideoId}/hqdefault.jpg`
-        : ''),
+      (video.youtubeVideoId ? `https://i.ytimg.com/vi/${video.youtubeVideoId}/hqdefault.jpg` : ''),
     viewCount: video.viewCount ?? 0,
     wishCount: video.wishCount ?? 0,
   }
@@ -76,9 +74,7 @@ const fetchMyReviewVideos = async () => {
       }
     }
 
-    const results = await Promise.allSettled(
-      uniqueIds.map((id) => getVideoDetail(id)),
-    )
+    const results = await Promise.allSettled(uniqueIds.map((id) => getVideoDetail(id)))
 
     const list = []
     results.forEach((res) => {
