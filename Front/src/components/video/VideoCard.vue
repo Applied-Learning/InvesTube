@@ -12,7 +12,7 @@
       <div class="uploader">
         <img
           v-if="uploaderProfileImageUrl"
-          :src="uploaderProfileImageUrl"
+          :src="resolveImageUrl(uploaderProfileImageUrl)"
           :alt="uploaderName || channelName"
           class="avatar"
         />
@@ -43,6 +43,7 @@
 <script setup>
 import { computed } from 'vue'
 import Card from '../common/Card.vue'
+import { resolveImageUrl } from '../../utils/image.js'
 
 const props = defineProps({
   thumbnailUrl: { type: String, required: true },

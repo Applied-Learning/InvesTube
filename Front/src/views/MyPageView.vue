@@ -8,14 +8,27 @@
         <div class="profile-header">
           <!-- 왼쪽: 아바타 + 닉네임 + 아이디 -->
           <div class="profile-main-info">
-            <div class="profile-avatar">
-              {{ authStore.nickname?.charAt(0).toUpperCase() }}
+            <div class="profile-avatar-wrapper">
+              <div class="profile-avatar">
+                <img
+                  v-if="myProfile && myProfile.profileImage"
+                  :src="resolveImageUrl(myProfile.profileImage)"
+                  :alt="authStore.nickname || authStore.id || '프로필'"
+                />
+                <span v-else>
+                  {{ (authStore.nickname || authStore.id || '').charAt(0).toUpperCase() }}
+                </span>
+              </div>
+              <button class="avatar-settings-btn" @click="openProfileEdit">
+                ⚙
+              </button>
             </div>
             <div class="profile-info">
               <h2>{{ authStore.nickname }}</h2>
               <p class="user-id">@{{ authStore.id }}</p>
             </div>
           </div>
+
 
           <!-- 오른쪽: 팔로워 / 팔로잉 요약 -->
           <div class="profile-follow-summary" v-if="authStore.userId">
@@ -217,7 +230,7 @@
                 <div class="follow-avatar">
                   <img
                     v-if="user.profileImage"
-                    :src="user.profileImage"
+                    :src="resolveImageUrl(user.profileImage)"
                     :alt="user.nickname || user.id || '프로필'"
                   />
                   <span v-else>{{ user.initial }}</span>
@@ -249,6 +262,58 @@
         </div>
       </div>
     </div>
+    <!-- 프로필 편집 모달 -->
+<div
+  v-if="showProfileEditModal"
+  class="follow-modal-backdrop"
+  @click.self="closeProfileEdit"
+>
+  <div class="follow-modal profile-edit-modal">
+    <div class="follow-modal-header">
+      <h3>프로필 편집</h3>
+      <button class="modal-close-btn" @click="closeProfileEdit">✕</button>
+    </div>
+    <div class="follow-modal-body profile-edit-body">
+      <div class="form-field">
+        <label>닉네임</label>
+        <input v-model="editNickname" type="text" class="text-input" />
+      </div>
+
+      <div class="form-field">
+        <label>프로필 이미지</label>
+        <div class="profile-image-row">
+          <div class="profile-image-preview">
+            <img
+              v-if="previewProfileImage"
+              :src="previewProfileImage.startsWith('blob:')
+                ? previewProfileImage
+                : resolveImageUrl(previewProfileImage)"
+              alt="프로필 미리보기"
+            />
+          </div>
+          <div class="profile-image-actions">
+            <input
+              type="file"
+              accept="image/*"
+              @change="onProfileImageChange"
+            />
+            <button type="button" class="small-btn" @click="markProfileImageDelete">
+              이미지 제거
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button class="cancel-btn" @click="closeProfileEdit">취소</button>
+        <button class="save-btn" @click="saveProfile" :disabled="savingProfile">
+          저장
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
   </div>
 </template>
 
@@ -258,11 +323,23 @@ import { useRouter } from 'vue-router'
 import PageHeader from '../components/common/PageHeader.vue'
 import { useAuthStore } from '../stores/auth.js'
 import { getFollowers, getFollowings } from '../api/follow.js'
-import { getUserByUserId, getMyVideos, getMyReviews } from '../api/user.js'
+import {
+  getUserByUserId,
+  getMyVideos,
+  getMyReviews,
+  getMyInfo,
+  updateMyInfo,
+  uploadProfileImage,
+  deleteProfileImage,
+} from '../api/user.js'
 import { getWishedVideos, getVideoDetail } from '../api/video.js'
 
 const router = useRouter()
 const authStore = useAuthStore()
+
+import { resolveImageUrl } from '../utils/image.js'
+
+
 
 // 팔로워 / 팔로잉
 const followers = ref([])
@@ -482,7 +559,93 @@ const goVideoDetail = (videoId) => {
   router.push({ name: 'videoDetail', params: { id: videoId } })
 }
 
+// 프로필 편집 모달 관련 상태
+const myProfile = ref(null)
+
+const showProfileEditModal = ref(false)
+const editNickname = ref('')
+const previewProfileImage = ref('')
+const profileImageFile = ref(null)
+const deleteProfileImageFlag = ref(false)
+const savingProfile = ref(false)
+
+const fetchMyProfile = async () => {
+  if (!authStore.isAuthenticated) return
+  try {
+    const res = await getMyInfo()
+    myProfile.value = res.data
+    if (myProfile.value?.profileImage) {
+      previewProfileImage.value = myProfile.value.profileImage
+    }
+  } catch (err) {
+    console.error('내 프로필 조회 실패:', err)
+  }
+}
+
+const openProfileEdit = () => {
+  editNickname.value =
+    myProfile.value?.nickname || authStore.nickname || ''
+  previewProfileImage.value = myProfile.value?.profileImage || ''
+  profileImageFile.value = null
+  deleteProfileImageFlag.value = false
+  showProfileEditModal.value = true
+}
+
+const closeProfileEdit = () => {
+  showProfileEditModal.value = false
+}
+
+const onProfileImageChange = (e) => {
+  const file = e.target.files[0]
+  if (!file) return
+  profileImageFile.value = file
+  deleteProfileImageFlag.value = false
+  previewProfileImage.value = URL.createObjectURL(file)
+}
+
+const markProfileImageDelete = () => {
+  deleteProfileImageFlag.value = true
+  profileImageFile.value = null
+  previewProfileImage.value = ''
+}
+
+const saveProfile = async () => {
+  if (!authStore.isAuthenticated) return
+  savingProfile.value = true
+
+  try {
+    // 닉네임 변경
+    if (editNickname.value && editNickname.value !== authStore.nickname) {
+      await updateMyInfo({ nickname: editNickname.value })
+      authStore.nickname = editNickname.value
+      localStorage.setItem('nickname', editNickname.value)
+    }
+
+    // 이미지 삭제
+    if (deleteProfileImageFlag.value) {
+      await deleteProfileImage()
+    }
+
+    // 새 이미지 업로드
+    if (profileImageFile.value) {
+      await uploadProfileImage(profileImageFile.value)
+    }
+
+    await fetchMyProfile()
+    alert('프로필이 저장되었습니다.')
+    closeProfileEdit()
+  } catch (err) {
+    console.error('프로필 저장 실패:', err)
+    alert('프로필 저장에 실패했어요.')
+  } finally {
+    savingProfile.value = false
+  }
+}
+
+
+
 onMounted(() => {
+  fetchMyProfile()
   fetchFollowData()
   fetchActivityPreviews()
 })
@@ -897,4 +1060,120 @@ onMounted(() => {
   font-size: 12px;
   color: #9ca3af;
 }
+
+.profile-avatar-wrapper {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.profile-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-settings-btn {
+  position: absolute;
+  right: -4px;
+  bottom: -4px;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* 프로필 편집 모달 공통 폼 스타일 */
+.profile-edit-body .form-field {
+  margin-bottom: 12px;
+}
+
+.text-input {
+  width: 100%;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.profile-image-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.profile-image-preview {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #e5e7eb;
+  flex-shrink: 0;
+}
+
+.profile-image-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-image-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.small-btn {
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.modal-actions {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.cancel-btn,
+.save-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.save-btn {
+  background: #2563eb;
+  color: #ffffff;
+}
+
 </style>

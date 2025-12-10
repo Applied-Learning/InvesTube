@@ -8,10 +8,11 @@
 
       <div v-else-if="user" class="profile-card">
         <div class="profile-card-header">
-          <div class="profile-card-avatar">
+          <div class="profile-main-info">
+            <div class="profile-card-avatar">
             <img
               v-if="user.profileImage"
-              :src="user.profileImage"
+              :src="resolveImageUrl(user.profileImage)"
               :alt="user.nickname || user.id || '프로필'"
             />
             <span v-else>{{ avatarInitial }}</span>
@@ -22,6 +23,15 @@
             </h2>
             <p v-if="user.id" class="profile-card-id">@{{ user.id }}</p>
           </div>
+          </div>
+          <button
+            v-if="!isMe && authStore.isAuthenticated"
+            class="profile-follow-btn"
+            :class="{ following: isFollowing }"
+            @click="toggleFollowStatus"
+          >
+            {{ isFollowing ? '팔로잉' : '팔로우' }}
+          </button>
         </div>
 
         <div v-if="isMe" class="profile-self-note">
@@ -65,11 +75,14 @@
 </template>
 
 <script setup>
+import { resolveImageUrl } from '../utils/image.js'
+
 import { ref, computed, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import PageHeader from '../components/common/PageHeader.vue'
 import { getUserByUserId } from '../api/user.js'
 import { getVideos } from '../api/video.js'
+import { checkFollowStatus, toggleFollow } from '../api/follow.js'
 import { useAuthStore } from '../stores/auth.js'
 
 const route = useRoute()
@@ -80,6 +93,7 @@ const user = ref(null)
 const videos = ref([])
 const loading = ref(false)
 const error = ref(null)
+const isFollowing = ref(false)
 
 const isMe = computed(
   () => user.value && authStore.userId && user.value.userId === Number(authStore.userId),
@@ -135,6 +149,21 @@ const fetchUser = async () => {
     }
 
     await fetchUserVideos(userId)
+    if (
+      authStore.isAuthenticated &&
+      authStore.userId &&
+      user.value.userId !== Number(authStore.userId)
+    ) {
+      try {
+        const followRes = await checkFollowStatus(user.value.userId)
+        isFollowing.value = followRes.data
+      } catch (followErr) {
+        if (followErr.response?.status !== 401) {
+          console.error('팔로우 상태 확인 실패:', followErr)
+        }
+        isFollowing.value = false
+      }
+    }
   } catch (err) {
     console.error('사용자 정보 조회 실패:', err)
     error.value = '사용자 정보를 불러오지 못했어요.'
@@ -145,6 +174,18 @@ const fetchUser = async () => {
 
 const goToMyPage = () => {
   router.push('/mypage')
+}
+
+const toggleFollowStatus = async () => {
+  if (!authStore.isAuthenticated || !user.value) return
+
+  try {
+    await toggleFollow(user.value.userId)
+    isFollowing.value = !isFollowing.value
+  } catch (err) {
+    console.error('팔로우 토글 실패:', err)
+    alert('팔로우 처리에 실패했어요.')
+  }
 }
 
 onMounted(fetchUser)
@@ -316,4 +357,35 @@ onMounted(fetchUser)
   font-size: 13px;
   color: #6b7280;
 }
+
+.profile-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* ➕ */
+  gap: 20px;
+}
+
+.profile-main-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-follow-btn {
+  padding: 8px 20px;
+  border-radius: 999px;
+  border: none;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.profile-follow-btn.following {
+  background: #e5e7eb;
+  color: #111827;
+}
+
 </style>

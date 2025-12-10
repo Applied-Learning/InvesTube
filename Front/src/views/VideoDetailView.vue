@@ -45,9 +45,13 @@
 
         <!-- 업로더 정보 -->
         <div class="uploader-section">
-          <div class="uploader-info">
+          <div class="uploader-info" @click="goUploaderProfile">
             <div class="uploader-avatar">
-              <img v-if="video.uploaderProfileImage" :src="video.uploaderProfileImage" :alt="video.uploaderNickname" />
+              <img
+                v-if="video.uploaderProfileImage"
+                :src="resolveImageUrl(video.uploaderProfileImage)"
+                :alt="video.uploaderNickname"
+              />
               <div v-else class="avatar-fallback">{{ uploaderInitial }}</div>
             </div>
             <span class="uploader-name">{{ uploaderDisplayName }}</span>
@@ -58,7 +62,7 @@
             :class="{ following: isFollowing }"
             @click="toggleFollowStatus"
           >
-            {{ isFollowing ? '언팔로우' : '팔로우' }}
+            {{ isFollowing ? '팔로잉' : '팔로우' }}
           </button>
         </div>
 
@@ -228,6 +232,7 @@ import { getVideoDetail, checkWishStatus, toggleVideoWish, deleteVideo } from '.
 import { getReviewsByVideoId, createReview, updateReview, deleteReview } from '../api/review.js'
 import { checkFollowStatus, toggleFollow } from '../api/follow.js'
 import { useAuthStore } from '../stores/auth.js'
+import { resolveImageUrl } from '../utils/image.js'
 
 const route = useRoute()
 const router = useRouter()
@@ -258,6 +263,16 @@ const formatDate = (dateString) => {
   if (!dateString) return ''
   const date = new Date(dateString)
   return date.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' })
+}
+
+const goUploaderProfile = () => {
+  if (!video.value || !video.value.userId) return
+  const uploaderId = video.value.userId
+  if (authStore.userId && parseInt(authStore.userId) === uploaderId) {
+    router.push('/mypage')
+  } else {
+    router.push({ name: 'userProfile', params: { userId: uploaderId } })
+  }
 }
 
 const uploaderDisplayName = computed(() => {
@@ -613,6 +628,7 @@ onMounted(() => {
   display: flex;
   align-items: center;
   gap: 12px;
+  cursor: pointer;
 }
 
 .uploader-avatar {
