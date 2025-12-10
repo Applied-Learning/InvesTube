@@ -5,8 +5,10 @@
         <RouterLink to="/" class="logo-link">
           <h1 class="logo">Investube</h1>
         </RouterLink>
+
         <nav class="nav">
           <template v-if="authStore.isAuthenticated">
+            <!-- 알림 버튼 -->
             <button
               type="button"
               class="nav-item nav-item--notification"
@@ -21,28 +23,40 @@
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M10 2C8.34315 2 7 3.34315 7 5V5.5C7 8.53757 5.76256 11.5 3.5 13.5V15H16.5V13.5C14.2374 11.5 13 8.53757 13 5.5V5C13 3.34315 11.6569 2 10 2Z"
+                  d="M10 2C8.343 2 7 3.343 7 5v.5C7 8.538 5.763 11.5 3.5 13.5V15h13v-1.5C14.237 11.5 13 8.538 13 5.5V5c0-1.657-1.343-3-3-3Z"
                   stroke="currentColor"
                   stroke-width="1.5"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 />
                 <path
-                  d="M8 15V15.5C8 16.8807 8.89543 18 10 18C11.1046 18 12 16.8807 12 15.5V15"
+                  d="M8 15v.5A2 2 0 0 0 12 15.5V15"
                   stroke="currentColor"
                   stroke-width="1.5"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 />
               </svg>
-              <span v-if="unreadCount > 0" class="notification-badge">{{ unreadCount }}</span>
+              <span v-if="unreadCount > 0" class="notification-badge">
+                {{ unreadCount }}
+              </span>
             </button>
+
+            <!-- 프로필 아바타 -->
             <button type="button" class="nav-item nav-item--avatar" @click="toggleUserMenu">
               <div class="avatar-circle">
-                {{ authStore.nickname?.charAt(0).toUpperCase() }}
+                <img
+                  v-if="myProfile && myProfile.profileImage"
+                  :src="resolveImageUrl(myProfile.profileImage)"
+                  :alt="authStore.nickname || authStore.id || '프로필'"
+                />
+                <span v-else>
+                  {{ authStore.nickname?.charAt(0).toUpperCase() }}
+                </span>
               </div>
             </button>
           </template>
+
           <template v-else>
             <RouterLink to="/login" class="nav-item nav-item--primary"> 로그인 </RouterLink>
           </template>
@@ -68,17 +82,13 @@
             @click="handleNotificationClick(notification)"
           >
             <div class="notification-content">
-              <p class="notification-message">{{ notification.message }}</p>
-              <span class="notification-time">{{ formatTime(notification.createdAt) }}</span>
+              <p class="notification-message">
+                {{ notification.message }}
+              </p>
+              <span class="notification-time">
+                {{ formatTime(notification.createdAt) }}
+              </span>
             </div>
-            <button
-              v-if="!notification.isRead"
-              class="mark-read-btn"
-              @click.stop="markAsRead(notification.id)"
-              title="읽음으로 표시"
-            >
-              ✓
-            </button>
           </div>
         </div>
       </div>
@@ -87,11 +97,18 @@
       <div v-if="showUserMenu && authStore.isAuthenticated" class="user-menu-dropdown">
         <div class="user-menu-header">
           <div class="avatar-circle avatar-circle--large">
-            {{ authStore.nickname?.charAt(0).toUpperCase() }}
+            <img
+              v-if="myProfile && myProfile.profileImage"
+              :src="resolveImageUrl(myProfile.profileImage)"
+              :alt="authStore.nickname || authStore.id || '프로필'"
+            />
+            <span v-else>
+              {{ authStore.nickname?.charAt(0).toUpperCase() }}
+            </span>
           </div>
           <div class="user-info">
             <p class="user-nickname">{{ authStore.nickname }}</p>
-            <p class="user-id">{{ authStore.id }}</p>
+            <p class="user-id">@{{ authStore.id }}</p>
           </div>
         </div>
         <div class="user-menu-body">
@@ -112,25 +129,28 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
 import { RouterLink, useRouter } from 'vue-router'
 import Container from './Container.vue'
 import { useAuthStore } from '../../stores/auth.js'
+import { getMyInfo } from '../../api/user.js'
+import { resolveImageUrl } from '../../utils/image.js'
 
 const router = useRouter()
 const authStore = useAuthStore()
+
 const showNotifications = ref(false)
 const showUserMenu = ref(false)
-const notifications = ref([
-  // TODO: API 연동 예정
-])
+const myProfile = ref(null)
 
-const unreadCount = computed(() => {
-  return notifications.value.filter((n) => !n.isRead).length
-})
+// 데모용 알림 더미 데이터
+const notifications = ref([])
+
+const unreadCount = computed(() => notifications.value.filter((n) => !n.isRead).length)
 
 const handleLogout = () => {
   authStore.logout()
+  myProfile.value = null
   router.push('/login')
 }
 
@@ -147,76 +167,63 @@ const toggleUserMenu = () => {
   showUserMenu.value = !showUserMenu.value
 }
 
-const handleNotificationClick = (notification) => {
-  markAsRead(notification.id)
-  // 추후 알림 클릭 시 이동 로직 추가 가능
-}
-
-const markAsRead = (id) => {
-  const notification = notifications.value.find((n) => n.id === id)
-  if (notification) {
-    notification.isRead = true
-  }
-}
-
 const markAllAsRead = () => {
   notifications.value.forEach((n) => {
     n.isRead = true
   })
 }
 
+const handleNotificationClick = (notification) => {
+  notification.isRead = true
+}
+
 const formatTime = (dateString) => {
+  if (!dateString) return ''
   const date = new Date(dateString)
-  const now = new Date()
-  const diff = now - date
-  const minutes = Math.floor(diff / 60000)
-  const hours = Math.floor(diff / 3600000)
-  const days = Math.floor(diff / 86400000)
-
-  if (minutes < 1) return '방금 전'
-  if (minutes < 60) return `${minutes}분 전`
-  if (hours < 24) return `${hours}시간 전`
-  if (days < 7) return `${days}일 전`
-  return date.toLocaleDateString()
+  return date.toLocaleString('ko-KR')
 }
 
-const closeUserMenu = () => {
-  showUserMenu.value = false
-}
-
-// 드롭다운 외부 클릭 시 닫기
-const handleClickOutside = (event) => {
-  const notificationsDropdown = document.querySelector('.notifications-dropdown')
-  const notificationsButton = document.querySelector('.nav-item--notification')
-  const userMenuDropdown = document.querySelector('.user-menu-dropdown')
-  const userMenuButton = document.querySelector('.nav-item--avatar')
-
-  if (
-    notificationsDropdown &&
-    !notificationsDropdown.contains(event.target) &&
-    notificationsButton &&
-    !notificationsButton.contains(event.target)
-  ) {
-    showNotifications.value = false
+const fetchMyProfile = async () => {
+  if (!authStore.isAuthenticated) {
+    myProfile.value = null
+    return
   }
+  try {
+    const res = await getMyInfo()
+    myProfile.value = res.data
+  } catch (err) {
+    console.error('헤더 프로필 조회 실패:', err)
+    myProfile.value = null
+  }
+}
 
-  if (
-    userMenuDropdown &&
-    !userMenuDropdown.contains(event.target) &&
-    userMenuButton &&
-    !userMenuButton.contains(event.target)
-  ) {
+const handleClickOutside = (event) => {
+  const headerEl = document.querySelector('.header')
+  if (headerEl && !headerEl.contains(event.target)) {
+    showNotifications.value = false
     showUserMenu.value = false
   }
 }
 
 onMounted(() => {
   document.addEventListener('click', handleClickOutside)
+  fetchMyProfile()
 })
 
 onUnmounted(() => {
   document.removeEventListener('click', handleClickOutside)
 })
+
+watch(
+  () => authStore.isAuthenticated,
+  (isAuth) => {
+    if (isAuth) {
+      fetchMyProfile()
+    } else {
+      myProfile.value = null
+    }
+  },
+)
 </script>
 
 <style scoped>
@@ -283,7 +290,7 @@ onUnmounted(() => {
 
 .nav-item--notification:hover {
   background-color: #374151;
-  color: white;
+  color: #ffffff;
 }
 
 .notification-badge {
@@ -291,7 +298,7 @@ onUnmounted(() => {
   top: 4px;
   right: 4px;
   background: #ef4444;
-  color: white;
+  color: #ffffff;
   font-size: 10px;
   font-weight: 700;
   padding: 2px 5px;
@@ -300,14 +307,46 @@ onUnmounted(() => {
   text-align: center;
 }
 
-/* 알림 드롭다운 */
+.nav-item--avatar {
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.avatar-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+.avatar-circle img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar-circle--large {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+}
+
 .notifications-dropdown {
   position: absolute;
   top: 60px;
   right: 20px;
   width: 360px;
   max-height: 500px;
-  background: white;
+  background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
   z-index: 1000;
@@ -374,10 +413,6 @@ onUnmounted(() => {
   background: #eff6ff;
 }
 
-.notification-item.unread:hover {
-  background: #dbeafe;
-}
-
 .notification-content {
   flex: 1;
 }
@@ -394,58 +429,12 @@ onUnmounted(() => {
   color: #6b7280;
 }
 
-.mark-read-btn {
-  flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  background: #2563eb;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
-  transition: background 0.2s;
-}
-
-.mark-read-btn:hover {
-  background: #1d4ed8;
-}
-
-/* 유저 메뉴 */
-.nav-item--avatar {
-  padding: 0;
-  background: transparent;
-  border: none;
-}
-
-.avatar-circle {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  font-weight: 700;
-}
-
-.avatar-circle--large {
-  width: 40px;
-  height: 40px;
-  font-size: 18px;
-}
-
 .user-menu-dropdown {
   position: absolute;
   top: 60px;
   right: 20px;
   width: 220px;
-  background: white;
+  background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
   z-index: 1000;
