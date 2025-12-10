@@ -7,8 +7,8 @@ import com.Investube.mvc.model.dto.BoardPost;
 
 public interface BoardService {
 	
-	// 게시글 목록 조회 (페이징, 검색)
-	List<BoardPost> getBoardList(String keyword, int offset, int size);
+	// 게시글 목록 조회 (페이징, 검색, 정렬)
+	List<BoardPost> getBoardList(String keyword, String sortBy, int offset, int size);
 	
 	// 게시글 총 개수
 	int getTotalCount(String keyword);

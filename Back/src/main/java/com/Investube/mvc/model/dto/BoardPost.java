@@ -8,6 +8,7 @@ public class BoardPost {
     private int userId;
     private String title;
     private String content;
+    private int viewCount;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
     
@@ -87,6 +88,14 @@ public class BoardPost {
 
 	public void setAuthorProfileImage(String authorProfileImage) {
 		this.authorProfileImage = authorProfileImage;
+	}
+
+	public int getViewCount() {
+		return viewCount;
+	}
+
+	public void setViewCount(int viewCount) {
+		this.viewCount = viewCount;
 	}
     
     

@@ -19,6 +19,22 @@
         </button>
       </div>
 
+      <!-- 정렬 옵션 -->
+      <div class="sort-options">
+        <button
+          @click="changeSortBy('latest')"
+          :class="['sort-btn', { active: sortBy === 'latest' }]"
+        >
+          최신순
+        </button>
+        <button
+          @click="changeSortBy('views')"
+          :class="['sort-btn', { active: sortBy === 'views' }]"
+        >
+          조회수순
+        </button>
+      </div>
+
       <!-- 게시글 목록 -->
       <div v-if="loading" class="loading">로딩 중...</div>
       <div v-else-if="error" class="error">{{ error }}</div>
@@ -47,7 +63,10 @@
                 </div>
                 <span class="author-name">{{ post.authorNickname || '익명' }}</span>
               </div>
-              <span class="post-date">{{ formatDate(post.createdAt) }}</span>
+              <div class="post-stats">
+                <span class="view-count">조회 {{ post.viewCount || 0 }}</span>
+                <span class="post-date">{{ formatDate(post.createdAt) }}</span>
+              </div>
             </div>
           </div>
           <div v-if="post.images && post.images.length > 0" class="post-thumbnail">
@@ -102,6 +121,7 @@ const posts = ref([])
 const loading = ref(false)
 const error = ref(null)
 const searchKeyword = ref('')
+const sortBy = ref('latest')
 const currentPage = ref(0)
 const pageSize = ref(10)
 const totalCount = ref(0)
@@ -122,7 +142,7 @@ const fetchPosts = async () => {
   error.value = null
 
   try {
-    const response = await getBoardList(searchKeyword.value, currentPage.value, pageSize.value)
+    const response = await getBoardList(searchKeyword.value, sortBy.value, currentPage.value, pageSize.value)
     posts.value = response.data.posts
     totalCount.value = response.data.totalCount
     totalPages.value = response.data.totalPages
@@ -132,6 +152,12 @@ const fetchPosts = async () => {
   } finally {
     loading.value = false
   }
+}
+
+const changeSortBy = (newSortBy) => {
+  sortBy.value = newSortBy
+  currentPage.value = 0
+  fetchPosts()
 }
 
 const handleSearch = () => {
@@ -254,6 +280,35 @@ onMounted(() => {
   background: #1d4ed8;
 }
 
+.sort-options {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.sort-btn {
+  padding: 10px 20px;
+  background: white;
+  color: #6b7280;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sort-btn:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.sort-btn.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
 .loading,
 .error,
 .empty {
@@ -359,6 +414,17 @@ onMounted(() => {
   font-size: 14px;
   font-weight: 600;
   color: #374151;
+}
+
+.post-stats {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.view-count {
+  font-size: 13px;
+  color: #6b7280;
 }
 
 .post-date {

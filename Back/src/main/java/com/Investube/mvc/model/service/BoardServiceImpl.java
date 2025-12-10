@@ -19,8 +19,8 @@ public class BoardServiceImpl implements BoardService {
     }
     
 	@Override
-	public List<BoardPost> getBoardList(String keyword, int offset, int size) {
-		return boardDao.getBoardList(keyword, offset, size);
+	public List<BoardPost> getBoardList(String keyword, String sortBy, int offset, int size) {
+		return boardDao.getBoardList(keyword, sortBy, offset, size);
 	}
 	
 	@Override

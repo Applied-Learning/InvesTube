@@ -11,6 +11,7 @@
 		<result property="userId" column="user_id"/>
 		<result property="title" column="title"/>
 		<result property="content" column="content"/>
+		<result property="viewCount" column="view_count"/>
 		<result property="createdAt" column="created_at"/>
 		<result property="updatedAt" column="updated_at"/>
 		<result property="authorNickname" column="author_nickname"/>
@@ -24,10 +25,10 @@
 		</collection>
 	</resultMap>
 
-	<!-- 게시글 목록 / 검색 (이미지 + 작성자 정보 포함, 페이징) -->
+	<!-- 게시글 목록 / 검색 (이미지 + 작성자 정보 포함, 페이징, 정렬) -->
 	<select id="getBoardList" resultMap="PostWithImages">
 		SELECT 
-			p.post_id, p.user_id, p.title, p.content, 
+			p.post_id, p.user_id, p.title, p.content, p.view_count,
 			p.created_at, p.updated_at,
 			u.nickname AS author_nickname, u.profile_image AS author_profile_image,
 			i.image_id, i.image_url, i.created_at AS image_created_at
@@ -40,7 +41,14 @@
 				OR p.content LIKE CONCAT('%', #{keyword}, '%'))
 			</if>
 		</where>
-		ORDER BY p.post_id DESC, i.image_id ASC
+		<choose>
+			<when test="sortBy == 'views'">
+				ORDER BY p.view_count DESC, p.post_id DESC, i.image_id ASC
+			</when>
+			<otherwise>
+				ORDER BY p.post_id DESC, i.image_id ASC
+			</otherwise>
+		</choose>
 		LIMIT #{size} OFFSET #{offset}
 	</select>
 	

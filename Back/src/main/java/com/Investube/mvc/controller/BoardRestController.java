@@ -51,16 +51,17 @@ public class BoardRestController {
         return null;
     }
 
-    // 게시글 목록 + 검색 + 페이징
-    @Operation(summary = "게시글 목록 조회", description = "키워드로 게시글 검색 가능 (페이징 지원)")
+    // 게시글 목록 + 검색 + 페이징 + 정렬
+    @Operation(summary = "게시글 목록 조회", description = "키워드로 게시글 검색 가능 (페이징, 정렬 지원)")
     @GetMapping
     public ResponseEntity<Map<String, Object>> getBoardList(
             @Parameter(description = "검색 키워드") @RequestParam(required = false) String keyword,
+            @Parameter(description = "정렬 기준 (latest: 최신순, views: 조회수순)") @RequestParam(defaultValue = "latest") String sortBy,
             @Parameter(description = "페이지 번호 (0부터 시작)") @RequestParam(defaultValue = "0") int page,
             @Parameter(description = "페이지 크기") @RequestParam(defaultValue = "10") int size) {
 
         int offset = page * size;
-        List<BoardPost> posts = boardService.getBoardList(keyword, offset, size);
+        List<BoardPost> posts = boardService.getBoardList(keyword, sortBy, offset, size);
         int totalCount = boardService.getTotalCount(keyword);
         
         Map<String, Object> response = new HashMap<>();

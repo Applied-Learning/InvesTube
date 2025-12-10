@@ -11,8 +11,8 @@ import com.Investube.mvc.model.dto.BoardPost;
 @Mapper
 public interface BoardDao {
 	
-	// 게시글 목록 조회 (페이징)
-	List<BoardPost> getBoardList(@Param("keyword") String keyword, @Param("offset") int offset, @Param("size") int size);
+	// 게시글 목록 조회 (페이징, 정렬)
+	List<BoardPost> getBoardList(@Param("keyword") String keyword, @Param("sortBy") String sortBy, @Param("offset") int offset, @Param("size") int size);
 	
 	// 게시글 총 개수
 	int getTotalCount(@Param("keyword") String keyword);

@@ -1,9 +1,9 @@
 import http from './http'
 
-// 게시글 목록 조회 (페이징, 검색)
-export const getBoardList = (keyword = '', page = 0, size = 10) => {
+// 게시글 목록 조회 (페이징, 검색, 정렬)
+export const getBoardList = (keyword = '', sortBy = 'latest', page = 0, size = 10) => {
   return http.get('/boards', {
-    params: { keyword, page, size }
+    params: { keyword, sortBy, page, size }
   })
 }
 

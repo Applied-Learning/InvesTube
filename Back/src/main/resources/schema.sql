@@ -121,6 +121,7 @@ CREATE TABLE IF NOT EXISTS board_post (
   user_id        INT,
   title          VARCHAR(200),
   content        TEXT,
+  view_count     INT DEFAULT 0,
   created_at     DATETIME DEFAULT CURRENT_TIMESTAMP,
   updated_at     DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   FOREIGN KEY (user_id) REFERENCES users(user_id)
