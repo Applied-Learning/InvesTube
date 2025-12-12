@@ -19,13 +19,33 @@ public class BoardServiceImpl implements BoardService {
     }
     
 	@Override
-	public List<BoardPost> getBoardList(String keyword) {
-		return boardDao.getBoardList(keyword);
+	public List<BoardPost> getBoardList(String keyword, String sortBy, int offset, int size) {
+		return boardDao.getBoardList(keyword, sortBy, offset, size);
+	}
+	
+	@Override
+	public int getTotalCount(String keyword) {
+		return boardDao.getTotalCount(keyword);
 	}
 
 	@Override
 	public BoardPost getPostById(int postId) {
 		return boardDao.getPostById(postId);
+	}
+
+	@Override
+	public boolean increaseViewCount(int postId) {
+		return boardDao.updateViewCount(postId) > 0;
+	}
+	
+	@Override
+	public List<BoardPost> getPostsByUserId(int userId, int offset, int size) {
+		return boardDao.getPostsByUserId(userId, offset, size);
+	}
+	
+	@Override
+	public int getPostCountByUserId(int userId) {
+		return boardDao.getPostCountByUserId(userId);
 	}
 
 	@Override
@@ -69,6 +89,16 @@ public class BoardServiceImpl implements BoardService {
 	@Override
 	public List<BoardImage> getImagesByPostId(int postId) {
 		return boardDao.getImagesByPostId(postId);
+	}
+
+	@Override
+	public BoardImage getImageById(int imageId) {
+		return boardDao.getImageById(imageId);
+	}
+
+	@Override
+	public int deleteImage(int imageId) {
+		return boardDao.deleteImage(imageId);
 	}
 
 }

@@ -8,8 +8,13 @@ public class BoardPost {
     private int userId;
     private String title;
     private String content;
+    private int viewCount;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
+    
+    // 작성자 정보
+    private String authorNickname;
+    private String authorProfileImage;
     
     private List<BoardImage> images;
 
@@ -67,6 +72,30 @@ public class BoardPost {
 
 	public void setImages(List<BoardImage> images) {
 		this.images = images;
+	}
+
+	public String getAuthorNickname() {
+		return authorNickname;
+	}
+
+	public void setAuthorNickname(String authorNickname) {
+		this.authorNickname = authorNickname;
+	}
+
+	public String getAuthorProfileImage() {
+		return authorProfileImage;
+	}
+
+	public void setAuthorProfileImage(String authorProfileImage) {
+		this.authorProfileImage = authorProfileImage;
+	}
+
+	public int getViewCount() {
+		return viewCount;
+	}
+
+	public void setViewCount(int viewCount) {
+		this.viewCount = viewCount;
 	}
     
     
