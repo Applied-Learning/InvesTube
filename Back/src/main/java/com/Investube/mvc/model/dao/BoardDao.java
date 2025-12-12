@@ -19,6 +19,9 @@ public interface BoardDao {
 	
 	// 게시글 상세 조회
     BoardPost getPostById(int postId);
+
+    // 게시글 조회수 증가
+    int updateViewCount(int postId);
     
     // 게시글 작성
     int createPost(BoardPost post);
@@ -39,4 +42,10 @@ public interface BoardDao {
     int insertImages(List<BoardImage> images);
     
     List<BoardImage> getImagesByPostId(int postId);
+
+    // 단일 이미지 조회
+    BoardImage getImageById(int imageId);
+
+    // 단일 이미지 삭제
+    int deleteImage(int imageId);
 }

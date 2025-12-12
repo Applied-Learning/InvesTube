@@ -54,7 +54,7 @@
                 <div class="author-avatar">
                   <img
                     v-if="post.authorProfileImage"
-                    :src="post.authorProfileImage"
+                    :src="resolveImageUrl(post.authorProfileImage)"
                     :alt="post.authorNickname"
                   />
                   <div v-else class="avatar-fallback">
@@ -69,9 +69,7 @@
               </div>
             </div>
           </div>
-          <div v-if="post.images && post.images.length > 0" class="post-thumbnail">
-            <img :src="post.images[0].imageUrl" :alt="post.title" />
-          </div>
+          <!-- thumbnails removed in list view -->
         </div>
       </div>
 
@@ -113,6 +111,7 @@ import { useAuthStore } from '../stores/auth'
 import { getBoardList } from '../api/board'
 import Container from '../components/common/Container.vue'
 import PageHeader from '../components/common/PageHeader.vue'
+import { resolveImageUrl } from '../utils/image.js'
 
 const router = useRouter()
 const authStore = useAuthStore()
@@ -432,19 +431,7 @@ onMounted(() => {
   color: #9ca3af;
 }
 
-.post-thumbnail {
-  width: 200px;
-  height: 150px;
-  border-radius: 8px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-
-.post-thumbnail img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+/* thumbnails removed from list view; styles left in case needed later */
 
 .pagination {
   display: flex;
@@ -503,9 +490,6 @@ onMounted(() => {
     flex-direction: column-reverse;
   }
 
-  .post-thumbnail {
-    width: 100%;
-    height: 200px;
-  }
+  /* post-thumbnail removed */
 }
 </style>

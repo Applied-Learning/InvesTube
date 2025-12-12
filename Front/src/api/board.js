@@ -21,6 +21,13 @@ export const createBoard = (formData) => {
   })
 }
 
+// 게시글에 이미지 추가 (편집 중)
+export const addBoardImages = (postId, formData) => {
+  return http.post(`/boards/${postId}/images`, formData, {
+    headers: { 'Content-Type': 'multipart/form-data' }
+  })
+}
+
 // 게시글 수정
 export const updateBoard = (postId, data) => {
   return http.put(`/boards/${postId}`, data)
@@ -36,4 +43,9 @@ export const getBoardsByUser = (userId, page = 0, size = 10) => {
   return http.get(`/boards/user/${userId}`, {
     params: { page, size }
   })
+}
+
+// 게시글 이미지 삭제
+export const deleteBoardImage = (imageId) => {
+  return http.delete(`/boards/images/${imageId}`)
 }

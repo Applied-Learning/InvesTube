@@ -5,6 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
+import java.nio.file.NoSuchFileException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -79,6 +80,14 @@ public class BoardRestController {
     @GetMapping("/{postId}")
     public ResponseEntity<BoardPost> getPost(
             @Parameter(description = "게시글 ID") @PathVariable int postId) {
+        // 조회수 증가
+        try {
+            boardService.increaseViewCount(postId);
+        } catch (Exception e) {
+            // 로그만 남기고 조회는 계속 진행
+            // (avoid failing the request due to view count update issue)
+        }
+
         BoardPost post = boardService.getPostById(postId);
         return new ResponseEntity<>(post, HttpStatus.OK);
     }
@@ -188,6 +197,102 @@ public class BoardRestController {
         post.setPostId(postId);
         int result = boardService.updatePost(post);
         return new ResponseEntity<>(Map.of("message", "게시글이 수정되었습니다", "result", result), HttpStatus.OK);
+    }
+
+    // 게시글에 이미지 추가 (편집 중 이미지 업로드)
+    @Operation(summary = "게시글 이미지 추가", description = "게시글에 이미지를 추가합니다")
+    @PostMapping(value = "/{postId}/images", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    public ResponseEntity<Map<String, Object>> addImages(
+            @Parameter(description = "게시글 ID") @PathVariable int postId,
+            @Parameter(description = "이미지 파일들") @RequestParam(value = "images", required = false) List<MultipartFile> files,
+            HttpServletRequest request) throws IOException {
+
+        Integer userId = getUserIdFromRequest(request);
+        if (userId == null) {
+            return new ResponseEntity<>(Map.of("message", "인증이 필요합니다"), HttpStatus.UNAUTHORIZED);
+        }
+
+        BoardPost post = boardService.getPostById(postId);
+        if (post == null) {
+            return new ResponseEntity<>(Map.of("message", "게시글을 찾을 수 없습니다"), HttpStatus.NOT_FOUND);
+        }
+        if (post.getUserId() != userId) {
+            return new ResponseEntity<>(Map.of("message", "본인이 작성한 게시글만 수정할 수 있습니다"), HttpStatus.FORBIDDEN);
+        }
+
+        if (files != null && !files.isEmpty()) {
+            List<BoardImage> images = new ArrayList<>();
+            for (MultipartFile file : files) {
+                if (!file.isEmpty()) {
+                    String savedPath = saveFile(file);
+                    BoardImage img = new BoardImage();
+                    img.setPostId(postId);
+                    img.setImageUrl(savedPath);
+                    images.add(img);
+                }
+            }
+            if (!images.isEmpty()) {
+                boardService.insertImages(images);
+            }
+        }
+
+        return new ResponseEntity<>(Map.of("message", "이미지가 추가되었습니다"), HttpStatus.OK);
+    }
+
+    // 게시글 이미지 삭제
+    @Operation(summary = "게시글 이미지 삭제", description = "단일 게시글 이미지를 삭제합니다")
+    @DeleteMapping("/images/{imageId}")
+    public ResponseEntity<Map<String, Object>> deleteImage(
+            @Parameter(description = "이미지 ID") @PathVariable int imageId,
+            HttpServletRequest request) {
+
+        Integer userId = getUserIdFromRequest(request);
+        if (userId == null) {
+            return new ResponseEntity<>(Map.of("message", "인증이 필요합니다"), HttpStatus.UNAUTHORIZED);
+        }
+
+        try {
+            BoardImage img = boardService.getImageById(imageId);
+            if (img == null) {
+                return new ResponseEntity<>(Map.of("message", "이미지를 찾을 수 없습니다"), HttpStatus.NOT_FOUND);
+            }
+
+            BoardPost post = boardService.getPostById(img.getPostId());
+            if (post == null || post.getUserId() != userId) {
+                return new ResponseEntity<>(Map.of("message", "삭제 권한이 없습니다"), HttpStatus.FORBIDDEN);
+            }
+
+            // 파일 삭제 (시도하되 실패해도 DB 레코드 삭제는 시도)
+            String url = img.getImageUrl();
+            if (url != null && !url.isBlank()) {
+                try {
+                    // URL 예: /uploads/board/12345_file.jpg 또는 uploads/board/12345_file.jpg
+                    String relative = url.startsWith("/") ? url.substring(1) : url;
+                    Path filePath = Paths.get(relative).normalize();
+                    // 안전성: 경로가 uploads 폴더 내부인지 확인
+                    if (filePath.startsWith(UPLOAD_DIR.replace("/", "")) || filePath.startsWith(UPLOAD_DIR)) {
+                        try {
+                            Files.deleteIfExists(filePath);
+                        } catch (NoSuchFileException nsfe) {
+                            // 파일이 없으면 무시
+                        }
+                    } else {
+                        // 업로드 디렉토리 외부 경로 삭제 시도 방지 (무시)
+                    }
+                } catch (Exception ex) {
+                    // 파일 삭제 실패는 무시하고 진행
+                }
+            }
+
+            int result = boardService.deleteImage(imageId);
+            if (result > 0) {
+                return new ResponseEntity<>(Map.of("message", "이미지가 삭제되었습니다", "result", result), HttpStatus.OK);
+            } else {
+                return new ResponseEntity<>(Map.of("message", "이미지 삭제에 실패했습니다 (DB)", "result", result), HttpStatus.INTERNAL_SERVER_ERROR);
+            }
+        } catch (Exception e) {
+            return new ResponseEntity<>(Map.of("message", "서버 오류: " + e.getMessage()), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
     // 게시글 삭제

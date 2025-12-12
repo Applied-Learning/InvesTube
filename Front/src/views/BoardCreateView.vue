@@ -39,6 +39,18 @@
           <p class="file-hint">JPG, PNG, GIF 파일만 가능합니다.</p>
         </div>
 
+        <!-- 기존 업로드된 이미지 (수정 시) -->
+        <div v-if="existingImages.length > 0" class="image-previews">
+          <div
+            v-for="img in existingImages"
+            :key="img.imageId"
+            class="preview-item"
+          >
+            <img :src="resolveImageUrl(img.imageUrl)" :alt="`기존 이미지 ${img.imageId}`" />
+            <button type="button" @click="deleteExistingImage(img.imageId)" class="remove-btn">✕</button>
+          </div>
+        </div>
+
         <!-- 이미지 미리보기 -->
         <div v-if="imagePreviews.length > 0" class="image-previews">
           <div
@@ -71,13 +83,17 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import { useRouter } from 'vue-router'
-import { createBoard } from '../api/board'
+import { ref, onMounted } from 'vue'
+import { useRouter, useRoute } from 'vue-router'
+import { createBoard, updateBoard, getBoardDetail, addBoardImages, deleteBoardImage } from '../api/board'
+import { resolveImageUrl } from '../utils/image.js'
 import Container from '../components/common/Container.vue'
 import PageHeader from '../components/common/PageHeader.vue'
 
 const router = useRouter()
+const route = useRoute()
+const isEdit = ref(false)
+const editingPostId = ref(null)
 
 const form = ref({
   title: '',
@@ -86,13 +102,14 @@ const form = ref({
 
 const selectedFiles = ref([])
 const imagePreviews = ref([])
+const existingImages = ref([])
 const fileInput = ref(null)
 const loading = ref(false)
 
 const handleFileChange = (event) => {
   const files = Array.from(event.target.files)
   
-  if (files.length + selectedFiles.value.length > 5) {
+  if (files.length + selectedFiles.value.length + existingImages.value.length > 5) {
     alert('이미지는 최대 5개까지만 첨부할 수 있습니다.')
     return
   }
@@ -123,6 +140,24 @@ const removeImage = (index) => {
   imagePreviews.value.splice(index, 1)
 }
 
+onMounted(async () => {
+  if (route.params.id) {
+    isEdit.value = true
+    editingPostId.value = route.params.id
+    try {
+      const resp = await getBoardDetail(editingPostId.value)
+      const data = resp.data
+      form.value.title = data.title || ''
+      form.value.content = data.content || ''
+      existingImages.value = data.images || []
+    } catch (err) {
+      console.error('게시글 불러오기 실패:', err)
+      alert('게시글을 불러오는데 실패했습니다.')
+      router.push('/board')
+    }
+  }
+})
+
 const handleSubmit = async () => {
   if (!form.value.title.trim()) {
     alert('제목을 입력해주세요.')
@@ -137,27 +172,57 @@ const handleSubmit = async () => {
   loading.value = true
 
   try {
-    const formData = new FormData()
-    formData.append('title', form.value.title)
-    formData.append('content', form.value.content)
+    if (isEdit.value && editingPostId.value) {
+      // Only update title/content for now
+      const payload = {
+        title: form.value.title,
+        content: form.value.content
+      }
+      await updateBoard(editingPostId.value, payload)
+      // If there are new files selected, upload them to the post
+      if (selectedFiles.value.length > 0) {
+        const fd = new FormData()
+        selectedFiles.value.forEach((f) => fd.append('images', f))
+        await addBoardImages(editingPostId.value, fd)
+      }
+      alert('게시글이 수정되었습니다.')
+      router.push(`/board/${editingPostId.value}`)
+    } else {
+      const formData = new FormData()
+      formData.append('title', form.value.title)
+      formData.append('content', form.value.content)
 
-    selectedFiles.value.forEach((file) => {
-      formData.append('images', file)
-    })
+      selectedFiles.value.forEach((file) => {
+        formData.append('images', file)
+      })
 
-    const response = await createBoard(formData)
-    alert('게시글이 작성되었습니다.')
-    router.push(`/board/${response.data.postId}`)
+      const response = await createBoard(formData)
+      alert('게시글이 작성되었습니다.')
+      router.push(`/board/${response.data.postId}`)
+    }
   } catch (err) {
-    console.error('게시글 작성 실패:', err)
+    console.error('게시글 작성/수정 실패:', err)
     if (err.response?.status === 401) {
       alert('로그인이 필요합니다.')
       router.push('/login')
     } else {
-      alert('게시글 작성에 실패했습니다.')
+      alert(isEdit.value ? '게시글 수정에 실패했습니다.' : '게시글 작성에 실패했습니다.')
     }
   } finally {
     loading.value = false
+  }
+}
+
+const deleteExistingImage = async (imageId) => {
+  if (!confirm('이 이미지를 삭제하시겠습니까?')) return
+  try {
+    await deleteBoardImage(imageId)
+    existingImages.value = existingImages.value.filter(img => img.imageId !== imageId)
+    alert('이미지가 삭제되었습니다.')
+  } catch (err) {
+    console.error('이미지 삭제 실패:', err)
+    const serverMsg = err.response?.data?.message || err.message
+    alert(`이미지 삭제에 실패했습니다: ${serverMsg}`)
   }
 }
 

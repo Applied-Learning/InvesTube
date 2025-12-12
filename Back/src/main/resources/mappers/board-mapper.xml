@@ -67,7 +67,7 @@
 	<!-- 게시글 상세 (이미지 + 작성자 정보 포함) -->
 	<select id="getPostById" parameterType="int" resultMap="PostWithImages">
 		SELECT 
-			p.post_id, p.user_id, p.title, p.content, 
+			p.post_id, p.user_id, p.title, p.content, p.view_count,
 			p.created_at, p.updated_at,
 			u.nickname AS author_nickname, u.profile_image AS author_profile_image,
 			i.image_id, i.image_url, i.created_at AS image_created_at
@@ -137,5 +137,24 @@
 		FROM board_post_images
 		WHERE post_id = #{postId}
 	</select>
+
+	<!-- 단일 이미지 조회 -->
+	<select id="getImageById" parameterType="int" resultType="com.Investube.mvc.model.dto.BoardImage">
+		SELECT image_id, post_id, image_url, created_at
+		FROM board_post_images
+		WHERE image_id = #{imageId}
+	</select>
+
+	<!-- 단일 이미지 삭제 -->
+	<delete id="deleteImage" parameterType="int">
+		DELETE FROM board_post_images WHERE image_id = #{imageId}
+	</delete>
+
+	<!-- 게시글 조회 시 조회수 증가 -->
+	<update id="updateViewCount" parameterType="int">
+		UPDATE board_post
+		SET view_count = view_count + 1
+		WHERE post_id = #{postId}
+	</update>
 
 </mapper>

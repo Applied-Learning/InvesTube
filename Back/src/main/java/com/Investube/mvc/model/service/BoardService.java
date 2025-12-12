@@ -15,6 +15,9 @@ public interface BoardService {
 	
 	// 게시글 상세 조회
     BoardPost getPostById(int postId);
+
+    // 게시글 조회수 증가
+    boolean increaseViewCount(int postId);
     
     // 게시글 작성
     int createPost(BoardPost post);
@@ -36,4 +39,10 @@ public interface BoardService {
     
     // 게시글의 이미지 목록 조회 (파일 삭제용)
     List<BoardImage> getImagesByPostId(int postId);
+
+    // 단일 이미지 조회
+    BoardImage getImageById(int imageId);
+
+    // 단일 이미지 삭제
+    int deleteImage(int imageId);
 }

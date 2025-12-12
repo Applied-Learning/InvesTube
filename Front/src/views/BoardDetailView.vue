@@ -14,7 +14,7 @@
             <div class="author-avatar">
               <img
                 v-if="post.authorProfileImage"
-                :src="post.authorProfileImage"
+                :src="resolveImageUrl(post.authorProfileImage)"
                 :alt="post.authorNickname"
               />
               <div v-else class="avatar-fallback">
@@ -44,7 +44,7 @@
           <img
             v-for="(image, index) in post.images"
             :key="image.imageId"
-            :src="image.imageUrl"
+            :src="resolveImageUrl(image.imageUrl)"
             :alt="`이미지 ${index + 1}`"
             @click="openImageModal(image.imageUrl)"
           />
@@ -70,6 +70,7 @@ import { useRoute, useRouter } from 'vue-router'
 import { useAuthStore } from '../stores/auth'
 import { getBoardDetail, deleteBoard } from '../api/board'
 import Container from '../components/common/Container.vue'
+import { resolveImageUrl } from '../utils/image.js'
 
 const route = useRoute()
 const router = useRouter()
@@ -119,7 +120,7 @@ const formatDate = (dateString) => {
 }
 
 const openImageModal = (imageUrl) => {
-  selectedImage.value = imageUrl
+  selectedImage.value = resolveImageUrl(imageUrl)
   showImageModal.value = true
 }
 
@@ -129,8 +130,11 @@ const closeImageModal = () => {
 }
 
 const editPost = () => {
-  // TODO: 수정 기능 구현
-  alert('수정 기능은 추후 구현 예정입니다.')
+  if (post.value && post.value.postId) {
+    router.push(`/board/${post.value.postId}/edit`)
+  } else {
+    alert('게시글 정보를 불러오는 중입니다.')
+  }
 }
 
 const confirmDelete = async () => {
