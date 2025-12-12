@@ -9,26 +9,55 @@
       <!-- 게시글 헤더 -->
       <div class="post-header">
         <h1 class="post-title">{{ post.title }}</h1>
-        <div class="post-info">
-          <div class="author-section">
-            <div class="author-avatar">
-              <img
-                v-if="post.authorProfileImage"
-                :src="resolveImageUrl(post.authorProfileImage)"
-                :alt="post.authorNickname"
-              />
-              <div v-else class="avatar-fallback">
-                {{ getAuthorInitial(post.authorNickname) }}
-              </div>
-            </div>
-            <div class="author-details">
-              <span class="author-name">{{ post.authorNickname || '익명' }}</span>
-              <span class="post-date">{{ formatDate(post.createdAt) }}</span>
+        <div v-if="isMyPost" class="post-actions">
+          <button @click="editPost" class="edit-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            수정
+          </button>
+          <button @click="confirmDelete" class="delete-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            삭제
+          </button>
+        </div>
+      </div>
+
+      <!-- 메타 정보 -->
+      <div class="post-meta">
+        <div class="author-section" @click="goAuthorProfile">
+          <div class="author-avatar">
+            <img
+              v-if="post.authorProfileImage"
+              :src="resolveImageUrl(post.authorProfileImage)"
+              :alt="post.authorNickname"
+            />
+            <div v-else class="avatar-fallback">
+              {{ getAuthorInitial(post.authorNickname) }}
             </div>
           </div>
-          <div v-if="isMyPost" class="post-actions">
-            <button @click="editPost" class="edit-btn">수정</button>
-            <button @click="confirmDelete" class="delete-btn">삭제</button>
+          <div class="author-details">
+            <span class="author-name">{{ post.authorNickname || '익명' }}</span>
+            <div class="meta-info">
+              <span class="meta-item">
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 14.6667C11.6819 14.6667 14.6667 11.6819 14.6667 8C14.6667 4.3181 11.6819 1.33333 8 1.33333C4.3181 1.33333 1.33333 4.3181 1.33333 8C1.33333 11.6819 4.3181 14.6667 8 14.6667Z" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M8 4V8L10.6667 9.33333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                {{ formatDate(post.createdAt) }}
+              </span>
+              <span class="meta-divider">·</span>
+              <span class="meta-item">
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.33333 8C1.33333 8 3.33333 3.33333 8 3.33333C12.6667 3.33333 14.6667 8 14.6667 8C14.6667 8 12.6667 12.6667 8 12.6667C3.33333 12.6667 1.33333 8 1.33333 8Z" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+                {{ post.viewCount || 0 }}
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -53,7 +82,12 @@
 
       <!-- 하단 버튼 -->
       <div class="footer-actions">
-        <button @click="goToList" class="list-btn">목록으로</button>
+        <button @click="goToList" class="list-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          목록으로
+        </button>
       </div>
     </div>
 
@@ -137,6 +171,16 @@ const editPost = () => {
   }
 }
 
+const goAuthorProfile = () => {
+  if (!post.value || !post.value.userId) return
+  const authorId = post.value.userId
+  if (authStore.userId && parseInt(authStore.userId) === authorId) {
+    router.push('/mypage')
+  } else {
+    router.push({ name: 'userProfile', params: { userId: authorId } })
+  }
+}
+
 const confirmDelete = async () => {
   if (!confirm('정말 이 게시글을 삭제하시겠습니까?')) {
     return
@@ -203,46 +247,71 @@ onMounted(() => {
 }
 
 .detail-container {
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 24px;
 }
 
+/* 헤더 */
 .post-header {
   background: white;
-  padding: 32px;
-  border-radius: 12px 12px 0 0;
+  padding: 40px 32px 32px;
+  border-radius: 16px 16px 0 0;
   border: 1px solid #e5e7eb;
   border-bottom: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .post-title {
-  margin: 0 0 24px 0;
-  font-size: 28px;
-  font-weight: 700;
+  flex: 1;
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
   color: #111827;
-  line-height: 1.4;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
 }
 
-.post-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 24px;
-  border-top: 1px solid #e5e7eb;
+/* 메타 정보 섹션 */
+.post-meta {
+  background: linear-gradient(to bottom, #ffffff 0%, #f9fafb 100%);
+  padding: 20px 32px;
+  border-left: 1px solid #e5e7eb;
+  border-right: 1px solid #e5e7eb;
 }
 
 .author-section {
   display: flex;
   align-items: center;
   gap: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 8px;
+  margin: -8px;
+  border-radius: 12px;
+}
+
+.author-section:hover {
+  background: rgba(37, 99, 235, 0.05);
 }
 
 .author-avatar {
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   overflow: hidden;
+  border: 2px solid #e5e7eb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s;
+}
+
+.author-section:hover .author-avatar {
+  border-color: #2563eb;
+  transform: scale(1.05);
 }
 
 .author-avatar img {
@@ -259,123 +328,194 @@ onMounted(() => {
   justify-content: center;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 }
 
 .author-details {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
+  flex: 1;
 }
 
 .author-name {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 700;
   color: #111827;
+  transition: color 0.2s;
 }
 
-.post-date {
-  font-size: 14px;
+.author-section:hover .author-name {
+  color: #2563eb;
+}
+
+.meta-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
   color: #6b7280;
+}
+
+.meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.meta-item svg {
+  color: #9ca3af;
+}
+
+.meta-divider {
+  color: #d1d5db;
 }
 
 .post-actions {
   display: flex;
   gap: 8px;
+  flex-shrink: 0;
 }
 
 .edit-btn,
 .delete-btn {
-  padding: 8px 16px;
-  border: 1px solid #e5e7eb;
-  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .edit-btn {
-  background: white;
-  color: #374151;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: white;
 }
 
 .edit-btn:hover {
-  border-color: #2563eb;
-  color: #2563eb;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
+}
+
+.edit-btn:active {
+  transform: translateY(0);
+}
+
+.edit-btn svg {
+  width: 16px;
+  height: 16px;
 }
 
 .delete-btn {
   background: white;
   color: #ef4444;
+  border: 1.5px solid #fecaca;
 }
 
 .delete-btn:hover {
-  border-color: #ef4444;
   background: #fef2f2;
+  border-color: #ef4444;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(239, 68, 68, 0.2);
 }
 
+.delete-btn:active {
+  transform: translateY(0);
+}
+
+.delete-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* 본문 */
 .post-body {
   background: white;
-  padding: 32px;
-  border: 1px solid #e5e7eb;
-  border-top: none;
-  border-bottom: none;
+  padding: 40px 32px;
+  border-left: 1px solid #e5e7eb;
+  border-right: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
 }
 
 .post-content {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.8;
-  color: #374151;
+  color: #1f2937;
   white-space: pre-wrap;
   word-break: break-word;
-  margin-bottom: 32px;
+  margin-bottom: 0;
+  letter-spacing: -0.01em;
 }
 
 .image-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 16px;
-  margin-top: 24px;
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid #f3f4f6;
 }
 
 .image-gallery img {
   width: 100%;
-  height: 250px;
+  height: 240px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 12px;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .image-gallery img:hover {
-  transform: scale(1.02);
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
+/* 하단 버튼 */
 .footer-actions {
-  background: white;
-  padding: 24px 32px;
-  border-radius: 0 0 12px 12px;
-  border: 1px solid #e5e7eb;
+  margin-top: 24px;
   display: flex;
   justify-content: center;
 }
 
 .list-btn {
-  padding: 12px 32px;
-  background: #f3f4f6;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  background: white;
   color: #374151;
-  border: none;
-  border-radius: 8px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 12px;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .list-btn:hover {
-  background: #e5e7eb;
+  background: #f9fafb;
+  border-color: #d1d5db;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.list-btn:active {
+  transform: translateY(0);
+}
+
+.list-btn svg {
+  width: 16px;
+  height: 16px;
 }
 
 .image-modal {
@@ -399,21 +539,79 @@ onMounted(() => {
   object-fit: contain;
 }
 
+/* 반응형 */
 @media (max-width: 768px) {
-  .post-header,
-  .post-body,
-  .footer-actions {
-    padding: 20px;
+  .detail-container {
+    padding: 12px;
+  }
+
+  .post-header {
+    padding: 24px 20px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
   }
 
   .post-title {
     font-size: 24px;
   }
 
-  .post-info {
+  .post-actions {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+  }
+
+  .edit-btn,
+  .delete-btn {
+    flex: 1;
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+
+  .post-meta {
+    padding: 20px;
+  }
+
+  .author-section {
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+  }
+
+  .author-details {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .meta-info {
+    margin-top: 12px;
+    padding-left: 0;
+  }
+
+  .post-body {
+    padding: 24px 20px;
+  }
+
+  .post-content {
+    font-size: 16px;
+  }
+
+  .footer-actions {
+    margin-top: 20px;
+  }
+
+  .list-btn {
+    padding: 12px 24px;
+    font-size: 13px;
+  }
+
+  .image-gallery {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .image-gallery img {
+    height: 200px;
   }
 
   .image-gallery {
