@@ -69,9 +69,9 @@
         </div>
 
         <!-- 이미지 갤러리 -->
-        <div v-if="post.images && post.images.length > 0" class="image-gallery">
+        <div v-if="post.images && post.images.filter(i => i.imageUrl).length > 0" class="image-gallery">
           <img
-            v-for="(image, index) in post.images"
+            v-for="(image, index) in post.images.filter(i => i.imageUrl)"
             :key="image.imageId"
             :src="resolveImageUrl(image.imageUrl)"
             :alt="`이미지 ${index + 1}`"
