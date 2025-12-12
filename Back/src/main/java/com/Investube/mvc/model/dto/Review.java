@@ -4,6 +4,7 @@ public class Review {
 	private int reviewId;
 	private int videoId;
 	private int userId;
+	private String nickname;
 	private String content;
 	private double rating;
 	private String createdAt;
@@ -20,6 +21,14 @@ public class Review {
 		this.rating = rating;
 		this.createdAt = createdAt;
 		this.updatedAt = updatedAt;
+	}
+
+	public String getNickname() {
+		return nickname;
+	}
+
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
 	}
 
 	public int getReviewId() {
@@ -81,7 +90,7 @@ public class Review {
 	@Override
 	public String toString() {
 		return "Review [reviewId=" + reviewId + ", videoId=" + videoId + ", userId=" + userId
-				+ ", content=" + content + ", rating=" + rating + ", createdAt=" + createdAt + ", updatedAt="
-				+ updatedAt + "]";
+			+ ", nickname=" + nickname + ", content=" + content + ", rating=" + rating + ", createdAt=" + createdAt + ", updatedAt="
+			+ updatedAt + "]";
 	}
 }
