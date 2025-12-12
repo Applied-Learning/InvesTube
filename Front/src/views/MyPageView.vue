@@ -379,8 +379,8 @@ import {
   deleteProfileImage,
   updatePassword,
   deleteMe,
-} from '../api/user.js'
-import { getWishedVideos, getVideoDetail } from '../api/video.js'
+  } from '../api/user.js'
+  import { getWishedVideos, getVideoPreview } from '../api/video.js'
 
 const router = useRouter()
 const authStore = useAuthStore()
@@ -564,7 +564,7 @@ const fetchActivityPreviews = async () => {
       if (orderedIds.length >= PREVIEW_LIMIT) break
     }
 
-    const videoResults = await Promise.allSettled(orderedIds.map((id) => getVideoDetail(id)))
+    const videoResults = await Promise.allSettled(orderedIds.map((id) => getVideoPreview(id)))
     const reviewedVideos = []
     videoResults.forEach((res) => {
       if (res.status === 'fulfilled') {
