@@ -15,6 +15,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.Investube.mvc.model.dto.Review;
 import com.Investube.mvc.model.service.ReviewService;
+import com.Investube.mvc.model.service.VideoService;
+import com.Investube.mvc.model.service.NotificationService;
+import com.Investube.mvc.model.service.UserService;
+import com.Investube.mvc.model.dto.Notification;
+import com.Investube.mvc.model.dto.Video;
 
 import jakarta.servlet.http.HttpServletRequest;
 
@@ -31,9 +36,15 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 public class ReviewRestController {
 	
 	private final ReviewService reviewService;
-	
-	public ReviewRestController(ReviewService reviewService) {
+	private final VideoService videoService;
+	private final NotificationService notificationService;
+	private final UserService userService;
+    
+	public ReviewRestController(ReviewService reviewService, VideoService videoService, NotificationService notificationService, UserService userService) {
 		this.reviewService = reviewService;
+		this.videoService = videoService;
+		this.notificationService = notificationService;
+		this.userService = userService;
 	}
 	
 	// 비디오별 리뷰 목록 조회
@@ -68,6 +79,35 @@ public class ReviewRestController {
 		review.setUserId(userId);
 		
 		if (reviewService.createReview(review)) {
+			// create notification to video owner (if reviewer is not the owner)
+			try {
+				Video video = videoService.getVideo(videoId);
+				if (video != null && video.getUserId() != userId) {
+					Notification n = new Notification();
+					n.setRecipientId(video.getUserId());
+					n.setActorId(userId);
+					n.setType("REVIEW");
+					n.setTargetType("VIDEO");
+					n.setTargetId(videoId);
+					try {
+						String nickname = null;
+						var actor = userService.getUserByUserId(userId);
+						if (actor != null && actor.getNickname() != null && !actor.getNickname().isBlank()) {
+							nickname = actor.getNickname();
+						}
+						if (nickname != null) {
+							n.setMessage(nickname + "님이 당신의 영상에 리뷰를 남겼습니다.");
+						} else {
+							n.setMessage("사용자 " + userId + "님이 당신의 영상에 리뷰를 남겼습니다.");
+						}
+					} catch (Exception e) {
+						n.setMessage("사용자 " + userId + "님이 당신의 영상에 리뷰를 남겼습니다.");
+					}
+					notificationService.createNotification(n);
+				}
+			} catch (Exception e) {
+				// notification failure should not block review creation
+			}
 			return new ResponseEntity<>(HttpStatus.CREATED);
 		}
 		return new ResponseEntity<>(HttpStatus.BAD_REQUEST);

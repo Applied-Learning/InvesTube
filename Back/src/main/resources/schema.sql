@@ -194,3 +194,22 @@ INSERT INTO board_comments (comment_id, post_id, user_id, content, created_at, u
 (3, 3, 4, '좋은 전략이네요! 실제로 시도해보고 싶습니다.', NOW(), NOW()),
 (4, 4, 5, '블록체인 혁명에 대해 더 알고 싶습니다.', NOW(), NOW()),
 (5, 5, 1, '경제 성장과 투자에 대한 설명이 매우 유익합니다.', NOW(), NOW());
+
+
+-- -----------------------------------------------------
+-- Table: notifications
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS notifications (
+  id             INT AUTO_INCREMENT PRIMARY KEY,
+  recipient_id   INT NOT NULL,
+  actor_id       INT,
+  type           VARCHAR(50),
+  target_type    VARCHAR(50),
+  target_id      INT,
+  message        VARCHAR(500),
+  is_read        BOOLEAN DEFAULT FALSE,
+  created_at     DATETIME DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (recipient_id) REFERENCES users(user_id),
+  FOREIGN KEY (actor_id) REFERENCES users(user_id)
+);
+

@@ -18,6 +18,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.Investube.mvc.model.dto.Video;
 import com.Investube.mvc.model.service.VideoService;
+import com.Investube.mvc.model.service.NotificationService;
+import com.Investube.mvc.model.service.UserService;
+import com.Investube.mvc.model.dto.Notification;
 import jakarta.servlet.http.HttpServletRequest;
 
 import io.swagger.v3.oas.annotations.Operation;
@@ -33,9 +36,13 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 public class VideoRestController {
 	
 	private final VideoService videoService;
-	
-	public VideoRestController(VideoService videoService) {
+	private final NotificationService notificationService;
+	private final UserService userService;
+    
+	public VideoRestController(VideoService videoService, NotificationService notificationService, UserService userService) {
 		this.videoService = videoService;
+		this.notificationService = notificationService;
+		this.userService = userService;
 	}
 	
 	// 전체 비디오 조회 (정렬 기능 + 페이징)
@@ -330,6 +337,35 @@ public class VideoRestController {
 		} else {
 			// 찜하지 않은 상태면 찜 추가
 			videoService.addVideoWish(userId, videoId);
+			// 알림: 영상 업로더에게 찜 알림 (업로더가 본인이 아닐 때)
+			try {
+				Video video = videoService.getVideo(videoId);
+				if (video != null && video.getUserId() != userId) {
+					Notification n = new Notification();
+					n.setRecipientId(video.getUserId());
+					n.setActorId(userId);
+					n.setType("WISH");
+					n.setTargetType("VIDEO");
+					n.setTargetId(videoId);
+					try {
+						String nickname = null;
+						var actor = userService.getUserByUserId(userId);
+						if (actor != null && actor.getNickname() != null && !actor.getNickname().isBlank()) {
+							nickname = actor.getNickname();
+						}
+						if (nickname != null) {
+							n.setMessage(nickname + "님이 당신의 영상을 찜했습니다.");
+						} else {
+							n.setMessage("사용자 " + userId + "님이 당신의 영상을 찜했습니다.");
+						}
+					} catch (Exception e) {
+						n.setMessage("사용자 " + userId + "님이 당신의 영상을 찜했습니다.");
+					}
+					notificationService.createNotification(n);
+				}
+			} catch (Exception e) {
+				// 알림 실패는 찜 동작에 영향 주지 않음
+			}
 			return new ResponseEntity<>(true, HttpStatus.OK);
 		}
 	}

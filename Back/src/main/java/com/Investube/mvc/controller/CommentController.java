@@ -8,6 +8,11 @@ import org.springframework.web.bind.annotation.*;
 
 import com.Investube.mvc.model.dto.BoardComment;
 import com.Investube.mvc.model.service.CommentService;
+import com.Investube.mvc.model.service.BoardService;
+import com.Investube.mvc.model.service.NotificationService;
+import com.Investube.mvc.model.service.UserService;
+import com.Investube.mvc.model.dto.Notification;
+import com.Investube.mvc.model.dto.BoardPost;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
@@ -20,9 +25,15 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 public class CommentController {
 
     private final CommentService commentService;
+    private final BoardService boardService;
+    private final NotificationService notificationService;
+    private final UserService userService;
 
-    public CommentController(CommentService commentService) {
+    public CommentController(CommentService commentService, BoardService boardService, NotificationService notificationService, UserService userService) {
         this.commentService = commentService;
+        this.boardService = boardService;
+        this.notificationService = notificationService;
+        this.userService = userService;
     }
 
     // 댓글 조회
@@ -47,6 +58,38 @@ public class CommentController {
 
         comment.setPostId(postId);
         int result = commentService.insertComment(comment);
+
+        // 알림 생성: 게시글 작성자에게 댓글 알림
+        try {
+            BoardPost post = boardService.getPostById(postId);
+            if (post != null && post.getUserId() != comment.getUserId()) {
+                Notification n = new Notification();
+                n.setRecipientId(post.getUserId());
+                n.setActorId(comment.getUserId());
+                n.setType("COMMENT");
+                n.setTargetType("POST");
+                n.setTargetId(postId);
+                try {
+                    String nickname = null;
+                    int actorId = comment.getUserId();
+                    var actor = userService.getUserByUserId(actorId);
+                    if (actor != null && actor.getNickname() != null && !actor.getNickname().isBlank()) {
+                        nickname = actor.getNickname();
+                    }
+                    if (nickname != null) {
+                        n.setMessage(nickname + "님이 게시글에 댓글을 남겼습니다.");
+                    } else {
+                        n.setMessage("사용자 " + actorId + "님이 게시글에 댓글을 남겼습니다.");
+                    }
+                } catch (Exception e) {
+                    n.setMessage("사용자 " + comment.getUserId() + "님이 게시글에 댓글을 남겼습니다.");
+                }
+                notificationService.createNotification(n);
+            }
+        } catch (Exception e) {
+            // 알림 실패는 댓글 작성에 영향 주지 않음
+        }
+
         return new ResponseEntity<>(result, HttpStatus.CREATED);
     }
 
