@@ -80,6 +80,44 @@
         </div>
       </div>
 
+      <!-- 댓글 섹션 -->
+      <div class="comments-section">
+        <h2>댓글 ({{ comments.length }})</h2>
+
+        <div v-if="authStore.isAuthenticated" class="comment-form">
+          <textarea v-model="newComment.content" rows="3" placeholder="댓글을 입력하세요..." class="comment-textarea"></textarea>
+          <div class="comment-actions">
+            <button @click="submitComment" class="submit-btn">등록</button>
+          </div>
+        </div>
+        <div v-else class="login-prompt">댓글을 작성하려면 로그인이 필요합니다.</div>
+
+        <div v-if="commentsLoading" class="loading">댓글 로딩 중...</div>
+        <div v-else-if="comments.length === 0" class="no-comments">아직 작성된 댓글이 없습니다.</div>
+        <div v-else class="comments-list">
+          <div v-for="comment in comments" :key="comment.commentId" class="comment-item">
+            <div v-if="editingComment && editingComment.commentId === comment.commentId" class="comment-edit">
+              <textarea v-model="editingComment.content" rows="2" class="comment-textarea"></textarea>
+              <div class="comment-actions">
+                <button @click="submitEditComment" class="submit-btn">저장</button>
+                <button @click="cancelEditComment" class="cancel-btn">취소</button>
+              </div>
+            </div>
+            <div v-else class="comment-body">
+              <div class="comment-meta">
+                <span class="comment-author">{{ comment.nickname || ('사용자 ' + comment.userId) }}</span>
+                <span class="comment-date">· {{ formatDate(comment.createdAt) }}</span>
+                <div v-if="isMyComment(comment)" class="comment-controls">
+                  <button @click="startEditComment(comment)" class="action-btn">수정</button>
+                  <button @click="removeComment(comment.commentId)" class="action-btn delete-btn">삭제</button>
+                </div>
+              </div>
+              <p class="comment-text">{{ comment.content }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- 하단 버튼 -->
       <div class="footer-actions">
         <button @click="goToList" class="list-btn">
@@ -102,6 +140,7 @@
 import { ref, computed, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useAuthStore } from '../stores/auth'
+import { getCommentsByPostId, createComment, updateComment, deleteComment } from '../api/comment'
 import { getBoardDetail, deleteBoard } from '../api/board'
 import Container from '../components/common/Container.vue'
 import { resolveImageUrl } from '../utils/image.js'
@@ -115,6 +154,12 @@ const loading = ref(false)
 const error = ref(null)
 const showImageModal = ref(false)
 const selectedImage = ref('')
+
+// comments
+const comments = ref([])
+const commentsLoading = ref(false)
+const newComment = ref({ content: '' })
+const editingComment = ref(null)
 
 const isMyPost = computed(() => {
   return authStore.userId && post.value && post.value.userId === parseInt(authStore.userId)
@@ -134,6 +179,77 @@ const fetchPost = async () => {
   } finally {
     loading.value = false
   }
+}
+
+// comments
+const fetchComments = async () => {
+  commentsLoading.value = true
+  try {
+    const resp = await getCommentsByPostId(route.params.id)
+    comments.value = resp.data || []
+  } catch (err) {
+    console.error('댓글 목록 조회 실패:', err)
+  } finally {
+    commentsLoading.value = false
+  }
+}
+
+const submitComment = async () => {
+  if (!authStore.isAuthenticated) {
+    alert('로그인이 필요합니다.')
+    return
+  }
+  if (!newComment.value.content.trim()) {
+    alert('댓글 내용을 입력해주세요.')
+    return
+  }
+  
+  try {
+    await createComment(route.params.id, { content: newComment.value.content })
+    newComment.value.content = ''
+    await fetchComments()
+  } catch (err) {
+    console.error('댓글 작성 실패:', err)
+    alert('댓글 작성에 실패했습니다.')
+  }
+}
+
+const startEditComment = (c) => {
+  editingComment.value = { ...c }
+}
+
+const cancelEditComment = () => {
+  editingComment.value = null
+}
+
+const submitEditComment = async () => {
+  if (!editingComment.value.content.trim()) {
+    alert('댓글 내용을 입력해주세요.')
+    return
+  }
+  try {
+    await updateComment(editingComment.value.commentId, { content: editingComment.value.content })
+    editingComment.value = null
+    await fetchComments()
+  } catch (err) {
+    console.error('댓글 수정 실패:', err)
+    alert('댓글 수정에 실패했습니다.')
+  }
+}
+
+const removeComment = async (commentId) => {
+  if (!confirm('정말 이 댓글을 삭제하시겠습니까?')) return
+  try {
+    await deleteComment(commentId)
+    await fetchComments()
+  } catch (err) {
+    console.error('댓글 삭제 실패:', err)
+    alert('댓글 삭제에 실패했습니다.')
+  }
+}
+
+const isMyComment = (c) => {
+  return authStore.userId && c.userId === parseInt(authStore.userId)
 }
 
 const getAuthorInitial = (nickname) => {
@@ -206,6 +322,7 @@ const goToList = () => {
 
 onMounted(() => {
   fetchPost()
+  fetchComments()
 })
 </script>
 
@@ -540,6 +657,207 @@ onMounted(() => {
 }
 
 /* 반응형 */
+/* 댓글 섹션 */
+.comments-section {
+  max-width: 800px;
+  margin: 32px auto 0;
+  padding: 0 24px;
+}
+
+.comments-section h2 {
+  margin: 0 0 24px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.comment-form {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.comment-textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  line-height: 1.6;
+  resize: vertical;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.comment-textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.comment-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.submit-btn {
+  padding: 10px 24px;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(37, 99, 235, 0.3);
+}
+
+.submit-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(37, 99, 235, 0.4);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+.cancel-btn {
+  padding: 10px 24px;
+  background: #f3f4f6;
+  color: #374151;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cancel-btn:hover {
+  background: #e5e7eb;
+}
+
+.login-prompt {
+  text-align: center;
+  padding: 32px;
+  background: #f9fafb;
+  border: 1px dashed #d1d5db;
+  border-radius: 12px;
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.no-comments {
+  text-align: center;
+  padding: 48px 24px;
+  color: #9ca3af;
+  font-size: 14px;
+  background: #f9fafb;
+  border-radius: 12px;
+}
+
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.comment-item {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.comment-item:hover {
+  border-color: #d1d5db;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.comment-edit {
+  width: 100%;
+}
+
+.comment-edit .comment-textarea {
+  margin-bottom: 0;
+}
+
+.comment-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.comment-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.comment-author {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.comment-date {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.comment-controls {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  padding: 6px 12px;
+  background: transparent;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.action-btn:hover {
+  background: #f9fafb;
+  border-color: #d1d5db;
+  color: #374151;
+}
+
+.action-btn.delete-btn {
+  color: #ef4444;
+  border-color: #fecaca;
+}
+
+.action-btn.delete-btn:hover {
+  background: #fef2f2;
+  border-color: #ef4444;
+}
+
+.comment-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #374151;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
 @media (max-width: 768px) {
   .detail-container {
     padding: 12px;
@@ -614,8 +932,22 @@ onMounted(() => {
     height: 200px;
   }
 
-  .image-gallery {
-    grid-template-columns: 1fr;
+  .comments-section {
+    padding: 0 12px;
+  }
+
+  .comment-form {
+    padding: 16px;
+  }
+
+  .comment-item {
+    padding: 16px;
+  }
+
+  .comment-controls {
+    margin-left: 0;
+    width: 100%;
+    justify-content: flex-end;
   }
 }
 </style>

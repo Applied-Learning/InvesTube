@@ -31,7 +31,7 @@ public class WebConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
 
         registry.addInterceptor(authInterceptor)
-                .addPathPatterns("/users/me/**", "/videos/**", "/reviews/**", "/boards/**")
+                .addPathPatterns("/users/me/**", "/videos/**", "/reviews/**", "/boards/**", "/board/**", "/comments/**")
                 .excludePathPatterns("/auth/**", "/reviews/video/*/"); // 로그인/회원가입, 리뷰 조회는 제외
     }
     

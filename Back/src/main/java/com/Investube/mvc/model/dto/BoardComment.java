@@ -7,6 +7,7 @@ public class BoardComment {
 	private int commentId;
     private int postId;
     private int userId;
+	private String nickname;
     private String content;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
@@ -28,6 +29,12 @@ public class BoardComment {
 	}
 	public void setUserId(int userId) {
 		this.userId = userId;
+	}
+	public String getNickname() {
+		return nickname;
+	}
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
 	}
 	public String getContent() {
 		return content;
