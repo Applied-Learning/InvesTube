@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.Investube.mvc.model.dto.Follow;
 import com.Investube.mvc.model.service.FollowService;
+import com.Investube.mvc.model.service.NotificationService;
+import com.Investube.mvc.model.service.UserService;
+import com.Investube.mvc.model.dto.Notification;
 import com.Investube.mvc.util.JwtUtil;
 
 import io.swagger.v3.oas.annotations.Operation;
@@ -30,10 +33,14 @@ public class FollowRestController {
 
 	private final FollowService followService;
 	private final JwtUtil jwtUtil;
+	private final NotificationService notificationService;
+	private final UserService userService;
 
-	public FollowRestController(FollowService followService, JwtUtil jwtUtil) {
+	public FollowRestController(FollowService followService, JwtUtil jwtUtil, NotificationService notificationService, UserService userService) {
 		this.followService = followService;
 		this.jwtUtil = jwtUtil;
+		this.notificationService = notificationService;
+		this.userService = userService;
 	}
 
 	// 팔로워 목록
@@ -99,6 +106,39 @@ public class FollowRestController {
 
 		// 팔로우/언팔로우 토글 수행
 		String result = followService.toggleFollow(followerId, followingId);
+
+		// 팔로우가 새로 생성된 경우 알림 생성
+		if ("followed".equalsIgnoreCase(result)) {
+			try {
+				Notification n = new Notification();
+				n.setRecipientId(followingId);
+				n.setActorId(followerId);
+				n.setType("FOLLOW");
+				n.setTargetType("USER");
+				n.setTargetId(followingId);
+				// try to resolve nickname; fall back to numeric id
+				try {
+					String nickname = null;
+					if (followerId != null) {
+						var actor = userService.getUserByUserId(followerId);
+						if (actor != null && actor.getNickname() != null && !actor.getNickname().isBlank()) {
+							nickname = actor.getNickname();
+						}
+					}
+					if (nickname != null) {
+						n.setMessage(nickname + "님이 당신을 팔로우했습니다.");
+					} else {
+						n.setMessage("사용자 " + followerId + "님이 당신을 팔로우했습니다.");
+					}
+				} catch (Exception e) {
+					n.setMessage("사용자 " + followerId + "님이 당신을 팔로우했습니다.");
+				}
+				notificationService.createNotification(n);
+			} catch (Exception e) {
+				// 알림 실패는 팔로우 동작에 영향 주지 않음
+			}
+		}
+
 		return new ResponseEntity<>(result, HttpStatus.OK); // 성공적으로 팔로우/언팔로우 처리됨
 	}
 }
