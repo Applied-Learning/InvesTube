@@ -13,12 +13,15 @@ import com.Investube.mvc.model.service.NotificationService;
 import com.Investube.mvc.model.service.UserService;
 import com.Investube.mvc.model.dto.Notification;
 import com.Investube.mvc.model.dto.BoardPost;
+import com.Investube.mvc.util.JwtUtil;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import jakarta.servlet.http.HttpServletRequest;
 
 @Tag(name = "댓글 API", description = "게시글 댓글 작성, 조회, 수정, 삭제")
 @RestController
@@ -28,12 +31,23 @@ public class CommentController {
     private final BoardService boardService;
     private final NotificationService notificationService;
     private final UserService userService;
+    private final JwtUtil jwtUtil;
 
-    public CommentController(CommentService commentService, BoardService boardService, NotificationService notificationService, UserService userService) {
+    public CommentController(CommentService commentService, BoardService boardService, NotificationService notificationService, UserService userService, JwtUtil jwtUtil) {
         this.commentService = commentService;
         this.boardService = boardService;
         this.notificationService = notificationService;
         this.userService = userService;
+        this.jwtUtil = jwtUtil;
+    }
+    
+    // JWT에서 userId 추출
+    private Integer getUserIdFromRequest(HttpServletRequest request) {
+        Object attr = request.getAttribute("userId");
+        if (attr instanceof Integer) {
+            return (Integer) attr;
+        }
+        return null;
     }
 
     // 댓글 조회
@@ -47,16 +61,25 @@ public class CommentController {
 
     // 댓글 작성
     @Operation(summary = "댓글 작성", description = "게시글에 새로운 댓글을 작성합니다")
+    @SecurityRequirement(name = "bearerAuth")
     @ApiResponses(value = {
         @ApiResponse(responseCode = "201", description = "댓글 작성 성공"),
-        @ApiResponse(responseCode = "400", description = "잘못된 요청")
+        @ApiResponse(responseCode = "400", description = "잘못된 요청"),
+        @ApiResponse(responseCode = "401", description = "인증 필요")
     })
     @PostMapping("/board/{postId}/comments")
     public ResponseEntity<Integer> addComment(
             @Parameter(description = "게시글 ID") @PathVariable int postId,
-            @Parameter(description = "댓글 정보") @RequestBody BoardComment comment) {
+            @Parameter(description = "댓글 정보") @RequestBody BoardComment comment,
+            HttpServletRequest request) {
+
+        Integer userId = getUserIdFromRequest(request);
+        if (userId == null) {
+            return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
+        }
 
         comment.setPostId(postId);
+        comment.setUserId(userId);
         int result = commentService.insertComment(comment);
 
         // 알림 생성: 게시글 작성자에게 댓글 알림
@@ -95,14 +118,22 @@ public class CommentController {
 
     // 댓글 수정
     @Operation(summary = "댓글 수정", description = "댓글을 수정합니다")
+    @SecurityRequirement(name = "bearerAuth")
     @ApiResponses(value = {
         @ApiResponse(responseCode = "200", description = "댓글 수정 성공"),
-        @ApiResponse(responseCode = "400", description = "잘못된 요청")
+        @ApiResponse(responseCode = "400", description = "잘못된 요청"),
+        @ApiResponse(responseCode = "401", description = "인증 필요")
     })
     @PutMapping("/comments/{commentId}")
     public ResponseEntity<Integer> updateComment(
             @Parameter(description = "댓글 ID") @PathVariable int commentId,
-            @Parameter(description = "수정할 댓글 정보") @RequestBody BoardComment comment) {
+            @Parameter(description = "수정할 댓글 정보") @RequestBody BoardComment comment,
+            HttpServletRequest request) {
+
+        Integer userId = getUserIdFromRequest(request);
+        if (userId == null) {
+            return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
+        }
 
         comment.setCommentId(commentId);
         int result = commentService.updateComment(comment);
@@ -111,12 +142,22 @@ public class CommentController {
 
     // 댓글 삭제
     @Operation(summary = "댓글 삭제", description = "댓글을 삭제합니다")
+    @SecurityRequirement(name = "bearerAuth")
     @ApiResponses(value = {
         @ApiResponse(responseCode = "200", description = "댓글 삭제 성공"),
-        @ApiResponse(responseCode = "400", description = "잘못된 요청")
+        @ApiResponse(responseCode = "400", description = "잘못된 요청"),
+        @ApiResponse(responseCode = "401", description = "인증 필요")
     })
     @DeleteMapping("/comments/{commentId}")
-    public ResponseEntity<Integer> deleteComment(@Parameter(description = "댓글 ID") @PathVariable int commentId) {
+    public ResponseEntity<Integer> deleteComment(
+            @Parameter(description = "댓글 ID") @PathVariable int commentId,
+            HttpServletRequest request) {
+        
+        Integer userId = getUserIdFromRequest(request);
+        if (userId == null) {
+            return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
+        }
+
         int result = commentService.deleteComment(commentId);
         return new ResponseEntity<>(result, HttpStatus.OK);
     }

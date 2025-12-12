@@ -8,10 +8,17 @@
 	<!-- 댓글 조회 -->
 	<select id="getCommentsByPostId" parameterType="int"
 		resultType="com.Investube.mvc.model.dto.BoardComment">
-		SELECT *
-		FROM board_comments
-		WHERE post_id = #{postId}
-		ORDER BY comment_id ASC
+		SELECT c.comment_id,
+			   c.post_id,
+			   c.user_id,
+			   c.content,
+			   c.created_at,
+			   c.updated_at,
+			   u.nickname AS nickname
+		FROM board_comments c
+		LEFT JOIN users u ON c.user_id = u.user_id
+		WHERE c.post_id = #{postId}
+		ORDER BY c.comment_id ASC
 	</select>
 
 	<!-- 댓글 등록 -->
