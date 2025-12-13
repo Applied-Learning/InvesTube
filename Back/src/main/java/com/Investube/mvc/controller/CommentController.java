@@ -107,7 +107,9 @@ public class CommentController {
                 } catch (Exception e) {
                     n.setMessage("사용자 " + comment.getUserId() + "님이 게시글에 댓글을 남겼습니다.");
                 }
-                notificationService.createNotification(n);
+                if (notificationService.isNotificationEnabled(post.getUserId(), "COMMENT")) {
+                    notificationService.createNotification(n);
+                }
             }
         } catch (Exception e) {
             // 알림 실패는 댓글 작성에 영향 주지 않음
