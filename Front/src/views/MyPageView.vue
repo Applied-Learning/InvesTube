@@ -161,9 +161,64 @@
         </div>
 
         <div v-else class="activity-boards">
-          <p class="activity-placeholder">
-            게시판 활동(작성한 글, 댓글)은 나중에 구현될 예정이에요.
-          </p>
+          <!-- 작성한 게시글 -->
+          <section class="activity-group">
+            <div class="activity-group-header">
+              <h4>작성한 게시글</h4>
+              <button class="activity-more-btn" @click="goMyBoards">전체 보기</button>
+            </div>
+            <ul class="activity-list">
+              <li
+                v-for="post in previewWrittenBoards"
+                :key="'board-' + post.postId"
+                class="activity-item"
+                @click="goBoardDetail(post.postId)"
+              >
+                <div class="activity-info">
+                  <p class="activity-title">{{ post.title }}</p>
+                  <p class="activity-meta">
+                    조회수 {{ post.viewCount }} · 댓글 {{ post.commentCount }}
+                  </p>
+                </div>
+              </li>
+              <li
+                v-if="!boardActivityLoading && previewWrittenBoards.length === 0"
+                class="activity-empty"
+              >
+                아직 작성한 게시글이 없어요.
+              </li>
+            </ul>
+          </section>
+
+          <!-- 내가 댓글 단 게시글 -->
+          <section class="activity-group">
+            <div class="activity-group-header">
+              <h4>댓글 작성한 게시글</h4>
+              <!-- 원하면 여기에도 전체보기 버튼 추가 가능 -->
+              <button class="activity-more-btn" @click="goMyCommentedBoards">전체 보기</button>
+            </div>
+            <ul class="activity-list">
+              <li
+                v-for="post in previewCommentedBoards"
+                :key="'commented-' + post.postId"
+                class="activity-item"
+                @click="goBoardDetail(post.postId)"
+              >
+                <div class="activity-info">
+                  <!-- 글 제목 -->
+                    <p class="activity-title">{{ post.title }}</p>
+                    <!-- 내가 쓴 댓글 내용 -->
+                    <p class="activity-meta">{{ post.commentContent }}</p>
+                </div>
+              </li>
+              <li
+                v-if="!boardActivityLoading && previewCommentedBoards.length === 0"
+                class="activity-empty"
+              >
+                아직 댓글 단 게시글이 없어요.
+              </li>
+            </ul>
+          </section>
         </div>
       </section>
 
@@ -171,7 +226,7 @@
       <section class="menu-section">
         <h3 class="section-title">설정</h3>
         <div class="menu-list">
-          <button class="menu-item" disabled>
+          <button class="menu-item"  @click="openNotificationModal">
             <span>알림 설정</span>
           </button>
           <button class="menu-item" @click="openPasswordModal">
@@ -182,6 +237,8 @@
           </button>
         </div>
       </section>
+      
+
     </div>
 
     <!-- 팔로워 / 팔로잉 모달 -->
@@ -360,15 +417,78 @@
         </div>
       </div>
     </div>
+    <!-- 알림 설정 모달 -->
+<div
+  v-if="showNotificationModal"
+  class="follow-modal-backdrop"
+  @click.self="closeNotificationModal"
+>
+  <div class="follow-modal">
+    <div class="follow-modal-header">
+      <h3>알림 설정</h3>
+      <button class="modal-close-btn" @click="closeNotificationModal">×</button>
+    </div>
+
+    <div class="follow-modal-body">
+      <div class="notification-setting-item">
+          <label>
+            <input
+              type="checkbox"
+              v-model="notificationSettings.REVIEW"
+              @change="saveNotificationSettings"
+            />
+            영상 리뷰 알림
+          </label>
+        </div>
+      <div class="notification-settings">
+        <div class="notification-setting-item">
+          <label>
+            <input
+              type="checkbox"
+              v-model="notificationSettings.WISH"
+              @change="saveNotificationSettings"
+            />
+            영상 찜 알림
+          </label>
+        </div>
+        <div class="notification-setting-item">
+          <label>
+            <input
+              type="checkbox"
+              v-model="notificationSettings.COMMENT"
+              @change="saveNotificationSettings"
+            />
+            게시판 댓글 알림
+          </label>
+        </div>
+        <div class="notification-setting-item">
+          <label>
+            <input
+              type="checkbox"
+              v-model="notificationSettings.FOLLOW"
+              @change="saveNotificationSettings"
+            />
+            팔로우 알림
+          </label>
+        </div>
+        
+        <p v-if="notificationSettingsError" class="notification-settings-error">
+          {{ notificationSettingsError }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
   </div>
 </template>
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import { useRouter } from 'vue-router'
-import PageHeader from '../components/common/PageHeader.vue'
-import { useAuthStore } from '../stores/auth.js'
-import { getFollowers, getFollowings } from '../api/follow.js'
+  import { useRouter } from 'vue-router'
+  import PageHeader from '../components/common/PageHeader.vue'
+  import { useAuthStore } from '../stores/auth.js'
+  import { getFollowers, getFollowings } from '../api/follow.js'
 import {
   getUserByUserId,
   getMyVideos,
@@ -378,25 +498,27 @@ import {
   uploadProfileImage,
   deleteProfileImage,
   updatePassword,
-  deleteMe,
-} from '../api/user.js'
-import { getWishedVideos, getVideoDetail } from '../api/video.js'
-
-const router = useRouter()
-const authStore = useAuthStore()
-
-import { resolveImageUrl } from '../utils/image.js'
+    deleteMe,
+  } from '../api/user.js'
+  import { getWishedVideos, getVideoPreview } from '../api/video.js'
+  import { getBoardsByUser, getMyCommentedBoards } from '../api/board.js'
+  import { PREVIEW_LIMIT } from '../constants/ui.js'
+  import { getNotificationSettings, updateNotificationSettings } from '../api/notification.js'
+  import { resolveImageUrl } from '../utils/image.js'
+  
+  const router = useRouter()
+  const authStore = useAuthStore()
 
 // 팔로워 / 팔로잉
 const followers = ref([])
 const followings = ref([])
 const followLoading = ref(false)
-const followError = ref(null)
+  const followError = ref(null)
 const userProfiles = ref({})
 const showFollowModal = ref(false)
 const activeFollowTab = ref('followers')
 
-const followerUsers = computed(() =>
+  const followerUsers = computed(() =>
   followers.value.map((item) => {
     const userId = item.followerId ?? item.follower_id
     const profile = userProfiles.value[userId] || {}
@@ -509,13 +631,15 @@ const goToUserProfile = (userId) => {
   closeFollowModal()
 }
 
-// 활동 - 영상 탭
+// 활동
 const activeActivityTab = ref('videos')
 const activityLoading = ref(false)
-const previewWishedVideos = ref([])
-const previewUploadedVideos = ref([])
-const previewReviewedVideos = ref([])
-const PREVIEW_LIMIT = 5
+  const previewWishedVideos = ref([])
+  const previewUploadedVideos = ref([])
+  const previewReviewedVideos = ref([])
+    const boardActivityLoading = ref(false)
+  const previewWrittenBoards = ref([])
+  const previewCommentedBoards = ref([])
 
 const normalizeVideo = (video) => {
   if (!video) return null
@@ -564,7 +688,7 @@ const fetchActivityPreviews = async () => {
       if (orderedIds.length >= PREVIEW_LIMIT) break
     }
 
-    const videoResults = await Promise.allSettled(orderedIds.map((id) => getVideoDetail(id)))
+    const videoResults = await Promise.allSettled(orderedIds.map((id) => getVideoPreview(id)))
     const reviewedVideos = []
     videoResults.forEach((res) => {
       if (res.status === 'fulfilled') {
@@ -575,10 +699,55 @@ const fetchActivityPreviews = async () => {
     previewReviewedVideos.value = reviewedVideos
   } catch (err) {
     console.error('활동(영상) 정보 조회 실패:', err)
-  } finally {
-    activityLoading.value = false
+    } finally {
+      activityLoading.value = false
+    }
+}
+
+  const normalizeBoardPost = (post) => {
+    if (!post) return null
+    return {
+      postId: post.postId,
+      title: post.title,
+      viewCount: post.viewCount ?? 0,
+      commentCount: post.commentCount ?? 0,
+      createdAtDisplay: post.createdAt ? String(post.createdAt).slice(0, 10) : '',
+    }
+  }
+
+  // 댓글 단 게시글용 (백엔드에서 postTitle + commentContent 내려준다고 가정)
+const normalizeCommentedPost = (item) => {
+  if (!item) return null
+  return {
+    postId: item.postId,
+    title: item.postTitle,          // 글 제목
+    commentContent: item.content,   // 내가 단 댓글 내용
+    createdAtDisplay: item.createdAt ? String(item.createdAt).slice(0, 10) : '',
   }
 }
+
+  const fetchBoardActivity = async () => {
+    if (!authStore.isAuthenticated || !authStore.userId) return
+
+    boardActivityLoading.value = true
+    try {
+      // 작성한 게시글
+      const res = await getBoardsByUser(authStore.userId, 0, PREVIEW_LIMIT)
+      const posts = res.data?.posts || res.data || []
+      previewWrittenBoards.value = posts.map(normalizeBoardPost).filter(Boolean)
+
+      // 내가 댓글 단 게시글
+    const commentedRes = await getMyCommentedBoards(PREVIEW_LIMIT)
+    const commentedList = commentedRes.data || []
+    previewCommentedBoards.value = commentedList.map(normalizeCommentedPost).filter(Boolean)
+    } catch (err) {
+      console.error('활동(게시판) 정보 조회 실패:', err)
+      if (!previewWrittenBoards.value.length) previewWrittenBoards.value = []
+      if (!previewCommentedBoards.value.length) previewCommentedBoards.value = []
+    } finally {
+      boardActivityLoading.value = false
+    }
+  }
 
 const goAllWishedVideos = () => {
   router.push('/wishlist')
@@ -588,16 +757,70 @@ const goMyVideos = () => {
   router.push({ name: 'myVideos' })
 }
 
-const goMyReviewVideos = () => {
-  router.push({ name: 'myReviewVideos' })
-}
+  const goMyReviewVideos = () => {
+    router.push({ name: 'myReviewVideos' })
+  }
 
-const goVideoDetail = (videoId) => {
-  if (!videoId) return
-  router.push({ name: 'videoDetail', params: { id: videoId } })
+  const goVideoDetail = (videoId) => {
+    if (!videoId) return
+    router.push({ name: 'videoDetail', params: { id: videoId } })
+  }
+
+  const goMyBoards = () => {
+    router.push({ name: 'myBoards' })
+  }
+
+  const goMyCommentedBoards = () => {
+  router.push({ name: 'myCommentedBoards' })
 }
 
 // 프로필 편집 모달 관련 상태
+const notificationSettings = ref({
+  COMMENT: true,
+  REVIEW: true,
+  FOLLOW: true,
+  WISH: true,
+})
+const notificationSettingsError = ref('')
+const showNotificationModal = ref(false)
+
+const openNotificationModal = () => {
+  showNotificationModal.value = true
+}
+
+const closeNotificationModal = () => {
+  showNotificationModal.value = false
+}
+
+const loadNotificationSettings = async () => {
+  if (!authStore.isAuthenticated) return
+  try {
+    const res = await getNotificationSettings()
+    const data = res.data || {}
+    notificationSettings.value = {
+      COMMENT: data.COMMENT ?? true,
+      REVIEW: data.REVIEW ?? true,
+      FOLLOW: data.FOLLOW ?? true,
+      WISH: data.WISH ?? true,
+    }
+    notificationSettingsError.value = ''
+  } catch (err) {
+    console.error('알림 설정 조회 실패:', err)
+    notificationSettingsError.value = '알림 설정을 불러오는 중 오류가 발생했습니다.'
+  }
+}
+
+const saveNotificationSettings = async () => {
+  if (!authStore.isAuthenticated) return
+  try {
+    await updateNotificationSettings(notificationSettings.value)
+    notificationSettingsError.value = ''
+  } catch (err) {
+    console.error('알림 설정 저장 실패:', err)
+    notificationSettingsError.value = '알림 설정 저장 중 오류가 발생했습니다.'
+  }
+}
+
 const myProfile = ref(null)
 
 const showProfileEditModal = ref(false)
@@ -759,6 +982,8 @@ onMounted(() => {
   fetchMyProfile()
   fetchFollowData()
   fetchActivityPreviews()
+  fetchBoardActivity()
+  loadNotificationSettings()
 })
 </script>
 

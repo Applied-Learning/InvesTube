@@ -361,7 +361,9 @@ public class VideoRestController {
 					} catch (Exception e) {
 						n.setMessage("사용자 " + userId + "님이 당신의 영상을 찜했습니다.");
 					}
-					notificationService.createNotification(n);
+					if (notificationService.isNotificationEnabled(video.getUserId(), "WISH")) {
+						notificationService.createNotification(n);
+					}
 				}
 			} catch (Exception e) {
 				// 알림 실패는 찜 동작에 영향 주지 않음

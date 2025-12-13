@@ -19,6 +19,15 @@ export const getVideoDetail = (videoId) => {
 }
 
 /**
+ * 비디오 프리뷰 조회 (조회수 증가 없음)
+ * @param {number} videoId
+ * @returns {Promise}
+ */
+export const getVideoPreview = (videoId) => {
+  return http.get(`/videos/${videoId}/preview`)
+}
+
+/**
  * 비디오 등록
  * @param {Object} videoData - { youtubeVideoId, title, description, categoryId, thumbnailUrl }
  * @returns {Promise}

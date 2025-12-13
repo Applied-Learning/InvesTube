@@ -47,4 +47,23 @@
     UPDATE notifications SET is_read = TRUE WHERE recipient_id = #{recipientId}
   </update>
 
+  <!-- notification_settings: per-user notification type on/off -->
+  <select id="selectSettingsByUser" parameterType="int" resultType="map">
+    SELECT user_id AS userId, type, enabled
+    FROM notification_settings
+    WHERE user_id = #{userId}
+  </select>
+
+  <select id="isNotificationEnabled" parameterType="map" resultType="boolean">
+    SELECT enabled
+    FROM notification_settings
+    WHERE user_id = #{userId} AND type = #{type}
+  </select>
+
+  <insert id="upsertSetting" parameterType="map">
+    INSERT INTO notification_settings (user_id, type, enabled)
+    VALUES (#{userId}, #{type}, #{enabled})
+    ON DUPLICATE KEY UPDATE enabled = VALUES(enabled)
+  </insert>
+
 </mapper>

@@ -1,7 +1,7 @@
 # InvesTube
 
-주식/투자 관련 유튜브 영상과 커뮤니티 게시판을 한 곳에서 볼 수 있게 하는 서비스입니다.  
-현재는 레이아웃/영상 카드 UI와 임시 데이터 기반의 홈(영상) 화면까지 구현된 상태입니다.
+주식·투자 관련 유튜브 영상과 커뮤니티 게시글을 한 곳에서 다루는 서비스입니다.  
+투자 영상 피드, 게시판, 마이페이지, 알림까지 한 번에 사용할 수 있습니다.
 
 ---
 
@@ -11,75 +11,139 @@
   - Java, Spring Boot
   - MyBatis
   - JWT 기반 인증
+
 - **Frontend**
   - Vite + Vue 3
   - Vue Router
   - Pinia
-  - Axios (공통 http 인스턴스)
+  - Axios (공통 HTTP 클라이언트)
 
 ---
 
-## 폴더 구조
+## 주요 기능
 
-- `Back/`  
-  - Spring Boot 백엔드 프로젝트  
-  - 주요 패키지:
-    - `controller`: `AuthRestController`, `VideoRestController`, `BoardRestController`, `UserRestController` 등
-    - `model/dto`: `Video`, `User` 등 도메인 DTO
-    - `config`: `WebConfig`(CORS, 인터셉터), `SwaggerConfig`, `MyBatisConfig`
-    - `util`: `JwtUtil`
-  - `video_dataset.csv`: 유튜브 영상 메타데이터(임시 데이터셋)
+### 동영상
 
-- `Front/`  
-  - Vue 3 + Vite 프론트엔드 프로젝트  
-  - `src/api/http.js`: baseURL 및 JWT Authorization 헤더를 처리하는 Axios 인스턴스  
-  - `src/layouts/AppLayout.vue`: 상단 헤더 + 좌측 사이드바 + 메인 컨텐츠 레이아웃  
-  - `src/components/common/`
-    - `Header.vue`: 로고(홈 이동), 우측 알림/로그인 버튼
-    - `Sidebar.vue`: 좌측 고정 탭 (영상 / 게시판 / 투자)
-    - `Container.vue`: 화면 폭 컨테이너
-    - `Button.vue`, `Card.vue`, `Modal.vue`: 공통 UI 컴포넌트
-  - `src/components/video/VideoCard.vue`  
-    - 썸네일, 업로더 프로필(이름/아바타), 조회수/메타 정보, 찜 토글 버튼 포함 영상 카드
-  - `src/views/`
-    - `VideoListView.vue`: 홈 화면(영상 탭). CSV 기반 임시 데이터로 `VideoCard` 그리드 렌더링
-    - `BoardListView.vue`: 게시판 목록 화면(초기 뼈대)
-    - `InvestView.vue`: 투자 분석/추천 화면(초기 뼈대)
-  - `src/router/index.js`
-    - `/` → `VideoListView` (홈 = 영상 탭)
-    - `/videos` → `/` 리다이렉트
-    - `/board` → `BoardListView`
-    - `/invest` → `InvestView`
+- 투자 관련 유튜브 영상 목록 / 정렬 / 검색
+- 영상 상세 페이지 (조회수, 찜 수, 평균 평점 등 메타 정보 표시)
+- 찜(위시리스트) 기능 및 찜한 영상 목록
+- 리뷰 작성 / 수정 / 삭제
+- 마이페이지에서:
+  - 내가 찜한 영상 미리보기 / 전체 보기
+  - 내가 업로드한(등록한) 영상 미리보기 / 전체 보기
+  - 내가 리뷰 남긴 영상 미리보기 / 전체 보기
+
+### 게시판
+
+- 투자 관련 자유 게시판
+  - 게시글 작성 / 수정 / 삭제
+  - 게시글 목록 / 상세 조회, 조회수 카운트
+  - 댓글 작성 / 수정 / 삭제
+- 마이페이지에서:
+  - 내가 작성한 게시글 미리보기 / 전체 보기
+  - 내가 댓글을 단 게시글 미리보기 (글 제목 + 내가 단 댓글 내용 요약)
+
+### 마이페이지
+
+- 내 프로필
+  - 닉네임, 아이디, 프로필 이미지 표시
+  - 프로필 이미지 업로드 / 삭제
+  - 닉네임 변경
+
+- 팔로우
+  - 나를 팔로우하는 유저 / 내가 팔로우하는 유저 목록
+  - 팔로우 / 언팔로우 기능
+
+- 활동 탭
+  - 영상 탭: 찜한 영상 / 업로드한 영상 / 리뷰 남긴 영상 미리보기
+  - 게시판 탭: 내가 작성한 게시글 / 내가 댓글 단 게시글 미리보기
+
+- 계정 설정
+  - 비밀번호 변경
+  - 회원 탈퇴
+
+### 유저 프로필
+
+- 다른 유저의 프로필 페이지
+  - 프로필 이미지, 닉네임, 아이디
+  - 해당 유저가 올린 영상 미리보기 / 전체 보기
+  - 해당 유저가 작성한 게시글 미리보기 / 전체 보기
+  - 팔로우 / 언팔로우
+
+### 알림
+
+- 지원 알림 타입
+  - `COMMENT` : 내 게시글에 댓글이 달렸을 때
+  - `REVIEW`  : 내 영상에 리뷰가 달렸을 때
+  - `FOLLOW`  : 누군가 나를 팔로우했을 때
+  - `WISH`    : 누군가 내 영상을 찜했을 때
+
+- 헤더 우측 알림 아이콘
+  - 읽지 않은 알림 개수 배지 표시
+  - 드롭다운에서 안 읽은 알림 목록 표시
+  - 알림 클릭 시 관련 페이지로 이동 (영상 / 게시글 / 유저 프로필 / 마이페이지)
+
+- 알림 설정
+  - 영상 리뷰 알림 ON/OFF
+  - 영상 찜 알림 ON/OFF
+  - 게시판 댓글 알림 ON/OFF
+  - 팔로우 알림 ON/OFF
+  
 
 ---
 
-## 현재 구현된 기능
+## 폴더 구조 개요
 
-- 백엔드
-  - JWT 기반 로그인/회원가입 및 사용자 API
-  - 영상 목록/상세/검색/찜, 게시판·댓글·팔로우·리뷰 API 기본 구현
-  - MyBatis를 이용한 DB 연동 및 Swagger 기반 API 문서
+### Back/
 
-- 프론트엔드
-  - 상단 헤더 + 좌측 사이드바 + 메인 컨텐츠 레이아웃
-  - 공통 UI 컴포넌트: Button, Card, Modal, Container, VideoCard
-  - 홈(영상 탭)에서 임시 데이터셋 기반 영상 카드 리스트 렌더링
-  - 게시판/투자 뷰 기본 뼈대 및 라우팅 구성
+Spring Boot 기반 백엔드 애플리케이션.
 
+- `controller`
+  - `AuthRestController` : 인증/로그인 관련
+  - `VideoRestController` : 동영상 목록, 상세, 찜, 리뷰 연관 API
+  - `BoardRestController` : 게시판(게시글) 관련 API
+  - `CommentController` : 게시글 댓글 관련 API
+  - `ReviewRestController` : 영상 리뷰 관련 API
+  - `FollowRestController` : 팔로우/언팔로우, 팔로우 목록
+  - `NotificationRestController` : 알림 조회 / 읽음 처리 / 알림 설정
+  - `UserRestController` : 유저 정보, 마이페이지 관련
 
-## 추후 작업 예정
+- `model/dto`
+  - `Video`, `Review`, `BoardPost`, `BoardComment`, `User`, `Notification` 등 도메인 DTO
 
-- 인증 고도화
-  - 로그인/회원가입 화면 구현 및 Pinia 연동
-  - Spring Security 도입 및 JWT·권한 관리 정리
+- `config`
+  - `WebConfig` : CORS, 인터셉터 설정
+  - `SwaggerConfig` : Swagger / OpenAPI 설정
+  - `MyBatisConfig` : MyBatis 설정
 
-- 영상/게시판 기능 강화
-  - API 연동 및 정렬·페이지네이션
-  - 영상 상세 페이지 및 찜/리뷰 연동
-  - 게시판 목록/상세/작성/수정/삭제 UI 구현
+- `util`
+  - `JwtUtil` : JWT 발급/검증 유틸리티
 
-- 외부 Public API 활용
-  - YouTube Data API, 금융/증권 관련 API 연동
-  - API 활용하여 심화 기능 구현
+- `resources`
+  - `schema.sql` : DB 스키마  
+    (users, videos, reviews, board_post, board_comments, follow, notifications, notification_settings 등)
+  - `mappers/*.xml` : MyBatis 매퍼들
+
+### Front/
+
+Vue 3 + Vite 기반 프론트엔드 애플리케이션.
+
+- `src/api/`
+  - `http.js` : Axios 인스턴스 (baseURL, JWT 헤더 포함)
+  - `video.js`, `board.js`, `user.js`, `follow.js`, `comment.js`, `notification.js` 등 각 도메인별 API 래퍼
+
+- `src/views/`
+  - `VideoListView.vue` : 메인 영상 리스트
+  - `VideoDetailView.vue` : 영상 상세 + 리뷰
+  - `BoardListView.vue` : 게시판 목록
+  - `BoardDetailView.vue` : 게시글 상세 + 댓글
+  - `MyPageView.vue` : 마이페이지 (프로필, 활동, 설정, 알림 설정)
+  - `MyVideosView.vue`, `MyBoardsView.vue`, `MyReviewedVideosView.vue` : 내 활동 상세 페이지들
+  - `UserProfileView.vue`, `UserVideosView.vue`, `UserBoardsView.vue` : 다른 유저 프로필 및 활동
+
+- `src/components/common/`
+  - `Header.vue` : 상단 네비게이션, 알림 아이콘 포함
+  - `NotificationDropdown.vue` : 알림 드롭다운 UI
+  - 그 외 공통 레이아웃 및 UI 컴포넌트
 
 ---

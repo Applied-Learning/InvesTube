@@ -15,3 +15,11 @@ export function markAsRead(id) {
 export function markAllAsRead() {
   return http.patch('/notifications/mark-all-read')
 }
+
+export function getNotificationSettings() {
+  return http.get('/notifications/settings')
+}
+
+export function updateNotificationSettings(settings) {
+  return http.put('/notifications/settings', settings)
+}

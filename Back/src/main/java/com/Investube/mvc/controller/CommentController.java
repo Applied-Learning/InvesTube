@@ -107,7 +107,9 @@ public class CommentController {
                 } catch (Exception e) {
                     n.setMessage("사용자 " + comment.getUserId() + "님이 게시글에 댓글을 남겼습니다.");
                 }
-                notificationService.createNotification(n);
+                if (notificationService.isNotificationEnabled(post.getUserId(), "COMMENT")) {
+                    notificationService.createNotification(n);
+                }
             }
         } catch (Exception e) {
             // 알림 실패는 댓글 작성에 영향 주지 않음
@@ -160,5 +162,23 @@ public class CommentController {
 
         int result = commentService.deleteComment(commentId);
         return new ResponseEntity<>(result, HttpStatus.OK);
+    }
+
+    // 내가 댓글 단 게시글 (마이페이지용 프리뷰)
+    @Operation(summary = "내가 댓글 단 게시글 목록", description = "로그인 사용자가 댓글을 작성한 게시글 상위 N개 조회")
+    @SecurityRequirement(name = "bearerAuth")
+    @GetMapping("/boards/me/commented")
+    public ResponseEntity<List<BoardComment>> getMyCommentedPosts(
+            @Parameter(description = "가져올 개수", example = "5")
+            @RequestParam(defaultValue = "5") int limit,
+            HttpServletRequest request) {
+
+        Integer userId = getUserIdFromRequest(request);
+        if (userId == null) {
+            return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
+        }
+
+        List<BoardComment> comments = commentService.getCommentedPostsByUser(userId, limit);
+        return new ResponseEntity<>(comments, HttpStatus.OK);
     }
 }

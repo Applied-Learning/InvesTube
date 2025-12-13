@@ -35,4 +35,9 @@ public class CommentServiceImpl implements CommentService {
     public int deleteComment(int commentId) {
         return commentDao.deleteComment(commentId);
     }
+
+    @Override
+    public List<BoardComment> getCommentedPostsByUser(int userId, int limit) {
+        return commentDao.getCommentedPostsByUser(userId, limit);
+    }
 }

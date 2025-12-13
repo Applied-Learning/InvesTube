@@ -35,14 +35,17 @@
         </div>
 
         <div v-if="isMe" class="profile-self-note">
-          <p>내 프로필입니다. 자세한 설정은 마이페이지에서 변경할 수 있어요.</p>
+          <p>본인 프로필입니다. 상세 설정은 마이페이지에서 변경할 수 있어요.</p>
           <button class="goto-mypage-btn" @click="goToMyPage">마이페이지로 이동</button>
         </div>
       </div>
 
-      <!-- 올린 영상 목록 -->
+      <!-- 업로드한 영상 목록 -->
       <div v-if="videos.length" class="profile-videos-section">
-        <h3 class="section-title">올린 영상</h3>
+        <div class="profile-section-header">
+          <h3 class="section-title">업로드한 영상</h3>
+          <button class="section-more-btn" @click="goUserVideos">전체 보기</button>
+        </div>
         <div class="profile-video-list">
           <RouterLink
             v-for="video in videos"
@@ -63,25 +66,44 @@
         </div>
       </div>
 
-      <!-- 게시글 영역 (백엔드 정식 연동 전 안내) -->
+      <!-- 게시글 요약 -->
       <div class="profile-posts-section">
-        <h3 class="section-title">게시글</h3>
-        <p class="profile-posts-note">
-          이 사용자의 게시글은 게시판 기능이 완성되면 여기에서 확인할 수 있어요.
-        </p>
+        <div class="profile-section-header">
+          <h3 class="section-title">게시글</h3>
+          <button class="section-more-btn" @click="goUserBoards">전체 보기</button>
+        </div>  
+        <div v-if="boardLoading" class="profile-loading">불러오는 중...</div>
+        <div v-else-if="boardError" class="profile-error">{{ boardError }}</div>
+        <div v-else-if="userBoards.length === 0" class="profile-empty">아직 작성한 게시글이 없어요.</div>
+        <div v-else>
+          <ul class="profile-board-list">
+            <li
+              v-for="post in userBoards"
+              :key="'board-' + post.postId"
+              class="profile-board-item"
+              @click="goUserBoardDetail(post.postId)"
+            >
+              <p class="profile-board-title">{{ post.title }}</p>
+              <p class="profile-board-meta">
+                조회수 {{ post.viewCount }} · 댓글 {{ post.commentCount }} · {{ post.createdAtDisplay }}
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { resolveImageUrl } from '../utils/image.js'
-
 import { ref, computed, onMounted } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
+import { useRoute, useRouter, RouterLink } from 'vue-router'
 import PageHeader from '../components/common/PageHeader.vue'
+import { resolveImageUrl } from '../utils/image.js'
 import { getUserByUserId } from '../api/user.js'
 import { getVideos } from '../api/video.js'
+import { getBoardsByUser } from '../api/board.js'
+import { PREVIEW_LIMIT } from '../constants/ui.js'
 import { checkFollowStatus, toggleFollow } from '../api/follow.js'
 import { useAuthStore } from '../stores/auth.js'
 
@@ -95,17 +117,19 @@ const loading = ref(false)
 const error = ref(null)
 const isFollowing = ref(false)
 
+const userBoards = ref([])
+const boardLoading = ref(false)
+const boardError = ref(null)
+
 const isMe = computed(
   () => user.value && authStore.userId && user.value.userId === Number(authStore.userId),
 )
 
-const pageTitle = computed(() =>
-  isMe.value
-    ? '내 프로필'
-    : user.value?.nickname
-      ? `${user.value.nickname}님의 프로필`
-      : '사용자 프로필',
-)
+const pageTitle = computed(() => {
+  if (isMe.value) return '내 프로필'
+  if (user.value?.nickname) return `${user.value.nickname}님의 프로필`
+  return '사용자 프로필'
+})
 
 const avatarInitial = computed(() => {
   if (!user.value) return '?'
@@ -113,13 +137,54 @@ const avatarInitial = computed(() => {
   return base.charAt(0).toUpperCase()
 })
 
+const normalizeVideo = (video) => {
+  if (!video) return null
+  return {
+    videoId: video.videoId,
+    title: video.title,
+    thumbnailUrl:
+      video.thumbnailUrl ||
+      (video.youtubeVideoId ? `https://i.ytimg.com/vi/${video.youtubeVideoId}/hqdefault.jpg` : ''),
+    viewCount: video.viewCount ?? 0,
+    wishCount: video.wishCount ?? 0,
+    userId: video.userId,
+  }
+}
+
+const normalizeBoardPost = (post) => {
+  if (!post) return null
+  return {
+    postId: post.postId,
+    title: post.title,
+    viewCount: post.viewCount ?? 0,
+    commentCount: post.commentCount ?? 0,
+    createdAtDisplay: post.createdAt ? String(post.createdAt).slice(0, 10) : '',
+  }
+}
+
 const fetchUserVideos = async (userId) => {
   try {
-    const res = await getVideos({ sortBy: 'latest' })
-    const list = res.data?.videos || []
+    const res = await getVideos({ sortBy: 'latest', page: 1, size: PREVIEW_LIMIT })
+    const list = (res.data?.videos || []).map(normalizeVideo).filter(Boolean)
     videos.value = list.filter((v) => v.userId === userId)
   } catch (err) {
     console.error('사용자 영상 목록 조회 실패:', err)
+  }
+}
+
+const fetchUserBoards = async (userId) => {
+  boardLoading.value = true
+  boardError.value = null
+  try {
+    const res = await getBoardsByUser(userId, 0, PREVIEW_LIMIT)
+    const data = res.data
+    const list = data?.posts || data || []
+    userBoards.value = list.map(normalizeBoardPost).filter(Boolean)
+  } catch (err) {
+    console.error('사용자 게시글 요약 조회 실패:', err)
+    boardError.value = '게시글 정보를 불러오는 중 오류가 발생했습니다.'
+  } finally {
+    boardLoading.value = false
   }
 }
 
@@ -131,7 +196,7 @@ const fetchUser = async () => {
     return
   }
 
-  // 자기 자신이면 마이페이지로 이동
+  // 본인 프로필이면 마이페이지로 이동
   if (authStore.userId && Number(authStore.userId) === userId) {
     router.replace('/mypage')
     return
@@ -149,6 +214,8 @@ const fetchUser = async () => {
     }
 
     await fetchUserVideos(userId)
+    await fetchUserBoards(userId)
+
     if (
       authStore.isAuthenticated &&
       authStore.userId &&
@@ -166,7 +233,7 @@ const fetchUser = async () => {
     }
   } catch (err) {
     console.error('사용자 정보 조회 실패:', err)
-    error.value = '사용자 정보를 불러오지 못했어요.'
+    error.value = '사용자 정보를 불러오는 중 오류가 발생했습니다.'
   } finally {
     loading.value = false
   }
@@ -183,9 +250,24 @@ const toggleFollowStatus = async () => {
     await toggleFollow(user.value.userId)
     isFollowing.value = !isFollowing.value
   } catch (err) {
-    console.error('팔로우 토글 실패:', err)
-    alert('팔로우 처리에 실패했어요.')
+    console.error('팔로우 처리 실패:', err)
+    alert('팔로우 처리 중 오류가 발생했습니다.')
   }
+}
+
+const goUserBoards = () => {
+  if (!user.value) return
+  router.push({ name: 'userBoards', params: { userId: user.value.userId } })
+}
+
+const goUserBoardDetail = (postId) => {
+  if (!postId) return
+  router.push({ name: 'boardDetail', params: { id: postId } })
+}
+
+const goUserVideos = () => {
+  if (!user.value) return
+  router.push({ name: 'userVideos', params: { userId: user.value.userId } })
 }
 
 onMounted(fetchUser)
@@ -203,7 +285,8 @@ onMounted(fetchUser)
 }
 
 .profile-loading,
-.profile-error {
+.profile-error,
+.profile-empty {
   padding: 40px 16px;
   text-align: center;
   font-size: 14px;
@@ -224,6 +307,7 @@ onMounted(fetchUser)
 .profile-card-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 20px;
 }
 
@@ -352,17 +436,33 @@ onMounted(fetchUser)
   margin-top: 24px;
 }
 
-.profile-posts-note {
-  margin: 0;
-  font-size: 13px;
-  color: #6b7280;
+.profile-board-list {
+  margin: 8px 0 0 0;
+  padding: 0;
+  list-style: none;
 }
 
-.profile-card-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* ➕ */
-  gap: 20px;
+.profile-board-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e7eb;
+  cursor: pointer;
+}
+
+.profile-board-item:last-child {
+  border-bottom: none;
+}
+
+.profile-board-title {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+}
+
+.profile-board-meta {
+  margin: 0;
+  font-size: 12px;
+  color: #6b7280;
 }
 
 .profile-main-info {
@@ -387,4 +487,26 @@ onMounted(fetchUser)
   background: #e5e7eb;
   color: #111827;
 }
+
+.profile-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.section-more-btn {
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  color: #374151;
+  cursor: pointer;
+}
+.section-more-btn:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
 </style>

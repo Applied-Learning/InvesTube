@@ -12,4 +12,9 @@ public interface NotificationDao {
     int selectUnreadCount(int recipientId);
     int markAsRead(Map<String, Object> params);
     int markAllAsRead(int recipientId);
+
+    // notification_settings
+    List<Map<String, Object>> selectSettingsByUser(int userId);
+    int upsertSetting(Map<String, Object> params);
+    Boolean isNotificationEnabled(Map<String, Object> params);
 }

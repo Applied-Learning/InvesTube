@@ -8,6 +8,8 @@ public class BoardComment {
     private int postId;
     private int userId;
 	private String nickname;
+    // 댓글 요약용: 댓글이 달린 게시글 제목
+    private String postTitle;
     private String content;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
@@ -53,6 +55,14 @@ public class BoardComment {
 	}
 	public void setUpdatedAt(LocalDateTime updatedAt) {
 		this.updatedAt = updatedAt;
+	}
+
+	public String getPostTitle() {
+		return postTitle;
+	}
+
+	public void setPostTitle(String postTitle) {
+		this.postTitle = postTitle;
 	}
     
     
