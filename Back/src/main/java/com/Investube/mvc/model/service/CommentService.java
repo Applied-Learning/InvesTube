@@ -13,4 +13,6 @@ public interface CommentService {
     int updateComment(BoardComment comment);
     
     int deleteComment(int commentId);
+
+    List<BoardComment> getCommentedPostsByUser(int userId, int limit);
 }

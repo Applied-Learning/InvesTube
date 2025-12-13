@@ -8,13 +8,13 @@
 	<!-- 댓글 조회 -->
 	<select id="getCommentsByPostId" parameterType="int"
 		resultType="com.Investube.mvc.model.dto.BoardComment">
-		SELECT c.comment_id,
-			   c.post_id,
-			   c.user_id,
-			   c.content,
-			   c.created_at,
-			   c.updated_at,
-			   u.nickname AS nickname
+		SELECT c.comment_id   AS commentId,
+			   c.post_id      AS postId,
+			   c.user_id      AS userId,
+			   c.content      AS content,
+			   c.created_at   AS createdAt,
+			   c.updated_at   AS updatedAt,
+			   u.nickname     AS nickname
 		FROM board_comments c
 		LEFT JOIN users u ON c.user_id = u.user_id
 		WHERE c.post_id = #{postId}
@@ -42,4 +42,25 @@
 		DELETE FROM board_comments WHERE comment_id = #{commentId}
 	</delete>
 
+	<!-- 사용자별 댓글 작성 게시글 (최신 댓글 기준 상위 N개) -->
+    <select id="getCommentedPostsByUser"
+            resultType="com.Investube.mvc.model.dto.BoardComment">
+        SELECT
+            c.comment_id   AS commentId,
+            c.post_id      AS postId,
+            c.user_id      AS userId,
+            c.content      AS content,
+            c.created_at   AS createdAt,
+            c.updated_at   AS updatedAt,
+            u.nickname     AS nickname,
+            p.title        AS postTitle
+        FROM board_comments c
+        INNER JOIN board_post p ON c.post_id = p.post_id
+        LEFT JOIN users u ON c.user_id = u.user_id
+        WHERE c.user_id = #{userId}
+        ORDER BY c.created_at DESC, c.comment_id DESC
+        LIMIT #{limit}
+    </select>
+
 </mapper>
+

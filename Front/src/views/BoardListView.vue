@@ -106,14 +106,15 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import { useRouter } from 'vue-router'
+import { useRouter, useRoute } from 'vue-router'
 import { useAuthStore } from '../stores/auth'
-import { getBoardList } from '../api/board'
+import { getBoardList, getBoardsByUser } from '../api/board'
 import Container from '../components/common/Container.vue'
 import PageHeader from '../components/common/PageHeader.vue'
 import { resolveImageUrl } from '../utils/image.js'
 
 const router = useRouter()
+const route = useRoute()
 const authStore = useAuthStore()
 
 const posts = ref([])
@@ -136,15 +137,30 @@ const displayPages = computed(() => {
   return pages
 })
 
+const isMyPostsOnly = computed(() => route.query.mine === 'true')
+
 const fetchPosts = async () => {
   loading.value = true
   error.value = null
 
   try {
-    const response = await getBoardList(searchKeyword.value, sortBy.value, currentPage.value, pageSize.value)
-    posts.value = response.data.posts
-    totalCount.value = response.data.totalCount
-    totalPages.value = response.data.totalPages
+    if (isMyPostsOnly.value && authStore.userId) {
+      const response = await getBoardsByUser(authStore.userId, currentPage.value, pageSize.value)
+      const data = response.data
+      posts.value = data.posts || []
+      totalCount.value = data.totalCount ?? posts.value.length
+      totalPages.value = data.totalPages ?? 1
+    } else {
+      const response = await getBoardList(
+        searchKeyword.value,
+        sortBy.value,
+        currentPage.value,
+        pageSize.value,
+      )
+      posts.value = response.data.posts
+      totalCount.value = response.data.totalCount
+      totalPages.value = response.data.totalPages
+    }
   } catch (err) {
     console.error('게시글 조회 실패:', err)
     error.value = '게시글을 불러오는데 실패했습니다.'

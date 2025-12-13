@@ -161,9 +161,64 @@
         </div>
 
         <div v-else class="activity-boards">
-          <p class="activity-placeholder">
-            게시판 활동(작성한 글, 댓글)은 나중에 구현될 예정이에요.
-          </p>
+          <!-- 작성한 게시글 -->
+          <section class="activity-group">
+            <div class="activity-group-header">
+              <h4>작성한 게시글</h4>
+              <button class="activity-more-btn" @click="goMyBoards">전체 보기</button>
+            </div>
+            <ul class="activity-list">
+              <li
+                v-for="post in previewWrittenBoards"
+                :key="'board-' + post.postId"
+                class="activity-item"
+                @click="goBoardDetail(post.postId)"
+              >
+                <div class="activity-info">
+                  <p class="activity-title">{{ post.title }}</p>
+                  <p class="activity-meta">
+                    조회수 {{ post.viewCount }} · 댓글 {{ post.commentCount }}
+                  </p>
+                </div>
+              </li>
+              <li
+                v-if="!boardActivityLoading && previewWrittenBoards.length === 0"
+                class="activity-empty"
+              >
+                아직 작성한 게시글이 없어요.
+              </li>
+            </ul>
+          </section>
+
+          <!-- 내가 댓글 단 게시글 -->
+          <section class="activity-group">
+            <div class="activity-group-header">
+              <h4>댓글 작성한 게시글</h4>
+              <!-- 원하면 여기에도 전체보기 버튼 추가 가능 -->
+              <button class="activity-more-btn" @click="goMyCommentedBoards">전체 보기</button>
+            </div>
+            <ul class="activity-list">
+              <li
+                v-for="post in previewCommentedBoards"
+                :key="'commented-' + post.postId"
+                class="activity-item"
+                @click="goBoardDetail(post.postId)"
+              >
+                <div class="activity-info">
+                  <!-- 글 제목 -->
+                    <p class="activity-title">{{ post.title }}</p>
+                    <!-- 내가 쓴 댓글 내용 -->
+                    <p class="activity-meta">{{ post.commentContent }}</p>
+                </div>
+              </li>
+              <li
+                v-if="!boardActivityLoading && previewCommentedBoards.length === 0"
+                class="activity-empty"
+              >
+                아직 댓글 단 게시글이 없어요.
+              </li>
+            </ul>
+          </section>
         </div>
       </section>
 
@@ -368,7 +423,7 @@ import { ref, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import PageHeader from '../components/common/PageHeader.vue'
 import { useAuthStore } from '../stores/auth.js'
-import { getFollowers, getFollowings } from '../api/follow.js'
+  import { getFollowers, getFollowings } from '../api/follow.js'
 import {
   getUserByUserId,
   getMyVideos,
@@ -380,12 +435,14 @@ import {
   updatePassword,
   deleteMe,
   } from '../api/user.js'
-  import { getWishedVideos, getVideoPreview } from '../api/video.js'
+    import { getWishedVideos, getVideoPreview } from '../api/video.js'
+    import { getBoardsByUser, getMyCommentedBoards } from '../api/board.js'
+    import { PREVIEW_LIMIT } from '../constants/ui.js'
 
-const router = useRouter()
-const authStore = useAuthStore()
-
-import { resolveImageUrl } from '../utils/image.js'
+  const router = useRouter()
+  const authStore = useAuthStore()
+  
+  import { resolveImageUrl } from '../utils/image.js'
 
 // 팔로워 / 팔로잉
 const followers = ref([])
@@ -509,13 +566,15 @@ const goToUserProfile = (userId) => {
   closeFollowModal()
 }
 
-// 활동 - 영상 탭
+// 활동
 const activeActivityTab = ref('videos')
 const activityLoading = ref(false)
-const previewWishedVideos = ref([])
-const previewUploadedVideos = ref([])
-const previewReviewedVideos = ref([])
-const PREVIEW_LIMIT = 5
+  const previewWishedVideos = ref([])
+  const previewUploadedVideos = ref([])
+  const previewReviewedVideos = ref([])
+    const boardActivityLoading = ref(false)
+  const previewWrittenBoards = ref([])
+  const previewCommentedBoards = ref([])
 
 const normalizeVideo = (video) => {
   if (!video) return null
@@ -575,10 +634,55 @@ const fetchActivityPreviews = async () => {
     previewReviewedVideos.value = reviewedVideos
   } catch (err) {
     console.error('활동(영상) 정보 조회 실패:', err)
-  } finally {
-    activityLoading.value = false
+    } finally {
+      activityLoading.value = false
+    }
+}
+
+  const normalizeBoardPost = (post) => {
+    if (!post) return null
+    return {
+      postId: post.postId,
+      title: post.title,
+      viewCount: post.viewCount ?? 0,
+      commentCount: post.commentCount ?? 0,
+      createdAtDisplay: post.createdAt ? String(post.createdAt).slice(0, 10) : '',
+    }
+  }
+
+  // 댓글 단 게시글용 (백엔드에서 postTitle + commentContent 내려준다고 가정)
+const normalizeCommentedPost = (item) => {
+  if (!item) return null
+  return {
+    postId: item.postId,
+    title: item.postTitle,          // 글 제목
+    commentContent: item.content,   // 내가 단 댓글 내용
+    createdAtDisplay: item.createdAt ? String(item.createdAt).slice(0, 10) : '',
   }
 }
+
+  const fetchBoardActivity = async () => {
+    if (!authStore.isAuthenticated || !authStore.userId) return
+
+    boardActivityLoading.value = true
+    try {
+      // 작성한 게시글
+      const res = await getBoardsByUser(authStore.userId, 0, PREVIEW_LIMIT)
+      const posts = res.data?.posts || res.data || []
+      previewWrittenBoards.value = posts.map(normalizeBoardPost).filter(Boolean)
+
+      // 내가 댓글 단 게시글
+    const commentedRes = await getMyCommentedBoards(PREVIEW_LIMIT)
+    const commentedList = commentedRes.data || []
+    previewCommentedBoards.value = commentedList.map(normalizeCommentedPost).filter(Boolean)
+    } catch (err) {
+      console.error('활동(게시판) 정보 조회 실패:', err)
+      if (!previewWrittenBoards.value.length) previewWrittenBoards.value = []
+      if (!previewCommentedBoards.value.length) previewCommentedBoards.value = []
+    } finally {
+      boardActivityLoading.value = false
+    }
+  }
 
 const goAllWishedVideos = () => {
   router.push('/wishlist')
@@ -588,13 +692,21 @@ const goMyVideos = () => {
   router.push({ name: 'myVideos' })
 }
 
-const goMyReviewVideos = () => {
-  router.push({ name: 'myReviewVideos' })
-}
+  const goMyReviewVideos = () => {
+    router.push({ name: 'myReviewVideos' })
+  }
 
-const goVideoDetail = (videoId) => {
-  if (!videoId) return
-  router.push({ name: 'videoDetail', params: { id: videoId } })
+  const goVideoDetail = (videoId) => {
+    if (!videoId) return
+    router.push({ name: 'videoDetail', params: { id: videoId } })
+  }
+
+  const goMyBoards = () => {
+    router.push({ name: 'myBoards' })
+  }
+
+  const goMyCommentedBoards = () => {
+  router.push({ name: 'myCommentedBoards' })
 }
 
 // 프로필 편집 모달 관련 상태
@@ -759,6 +871,7 @@ onMounted(() => {
   fetchMyProfile()
   fetchFollowData()
   fetchActivityPreviews()
+  fetchBoardActivity()
 })
 </script>
 
