@@ -3,7 +3,7 @@ import http from './http.js'
 // 게시글 목록 조회 (페이징, 검색, 정렬)
 export const getBoardList = (keyword = '', sortBy = 'latest', page = 0, size = 10) => {
   return http.get('/boards', {
-    params: { keyword, sortBy, page, size }
+    params: { keyword, sortBy, page, size },
   })
 }
 
@@ -16,15 +16,15 @@ export const getBoardDetail = (postId) => {
 export const createBoard = (formData) => {
   return http.post('/boards', formData, {
     headers: {
-      'Content-Type': 'multipart/form-data'
-    }
+      'Content-Type': 'multipart/form-data',
+    },
   })
 }
 
 // 게시글에 이미지 추가 (편집 중)
 export const addBoardImages = (postId, formData) => {
   return http.post(`/boards/${postId}/images`, formData, {
-    headers: { 'Content-Type': 'multipart/form-data' }
+    headers: { 'Content-Type': 'multipart/form-data' },
   })
 }
 
@@ -41,7 +41,7 @@ export const deleteBoard = (postId) => {
 // 사용자별 게시글 조회
 export const getBoardsByUser = (userId, page = 0, size = 10) => {
   return http.get(`/boards/user/${userId}`, {
-    params: { page, size }
+    params: { page, size },
   })
 }
 

@@ -11,15 +11,45 @@
         <h1 class="post-title">{{ post.title }}</h1>
         <div v-if="isMyPost" class="post-actions">
           <button @click="editPost" class="edit-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
             </svg>
             수정
           </button>
           <button @click="confirmDelete" class="delete-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
             </svg>
             삭제
           </button>
@@ -43,17 +73,46 @@
             <span class="author-name">{{ post.authorNickname || '익명' }}</span>
             <div class="meta-info">
               <span class="meta-item">
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 14.6667C11.6819 14.6667 14.6667 11.6819 14.6667 8C14.6667 4.3181 11.6819 1.33333 8 1.33333C4.3181 1.33333 1.33333 4.3181 1.33333 8C1.33333 11.6819 4.3181 14.6667 8 14.6667Z" stroke="currentColor" stroke-width="1.5"/>
-                  <path d="M8 4V8L10.6667 9.33333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 14.6667C11.6819 14.6667 14.6667 11.6819 14.6667 8C14.6667 4.3181 11.6819 1.33333 8 1.33333C4.3181 1.33333 1.33333 4.3181 1.33333 8C1.33333 11.6819 4.3181 14.6667 8 14.6667Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M8 4V8L10.6667 9.33333"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
                 </svg>
                 {{ formatDate(post.createdAt) }}
               </span>
               <span class="meta-divider">·</span>
               <span class="meta-item">
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.33333 8C1.33333 8 3.33333 3.33333 8 3.33333C12.6667 3.33333 14.6667 8 14.6667 8C14.6667 8 12.6667 12.6667 8 12.6667C3.33333 12.6667 1.33333 8 1.33333 8Z" stroke="currentColor" stroke-width="1.5"/>
-                  <path d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z" stroke="currentColor" stroke-width="1.5"/>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.33333 8C1.33333 8 3.33333 3.33333 8 3.33333C12.6667 3.33333 14.6667 8 14.6667 8C14.6667 8 12.6667 12.6667 8 12.6667C3.33333 12.6667 1.33333 8 1.33333 8Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
                 </svg>
                 {{ post.viewCount || 0 }}
               </span>
@@ -69,9 +128,12 @@
         </div>
 
         <!-- 이미지 갤러리 -->
-        <div v-if="post.images && post.images.filter(i => i.imageUrl).length > 0" class="image-gallery">
+        <div
+          v-if="post.images && post.images.filter((i) => i.imageUrl).length > 0"
+          class="image-gallery"
+        >
           <img
-            v-for="(image, index) in post.images.filter(i => i.imageUrl)"
+            v-for="(image, index) in post.images.filter((i) => i.imageUrl)"
             :key="image.imageId"
             :src="resolveImageUrl(image.imageUrl)"
             :alt="`이미지 ${index + 1}`"
@@ -85,7 +147,12 @@
         <h2>댓글 ({{ comments.length }})</h2>
 
         <div v-if="authStore.isAuthenticated" class="comment-form">
-          <textarea v-model="newComment.content" rows="3" placeholder="댓글을 입력하세요..." class="comment-textarea"></textarea>
+          <textarea
+            v-model="newComment.content"
+            rows="3"
+            placeholder="댓글을 입력하세요..."
+            class="comment-textarea"
+          ></textarea>
           <div class="comment-actions">
             <button @click="submitComment" class="submit-btn">등록</button>
           </div>
@@ -93,11 +160,20 @@
         <div v-else class="login-prompt">댓글을 작성하려면 로그인이 필요합니다.</div>
 
         <div v-if="commentsLoading" class="loading">댓글 로딩 중...</div>
-        <div v-else-if="comments.length === 0" class="no-comments">아직 작성된 댓글이 없습니다.</div>
+        <div v-else-if="comments.length === 0" class="no-comments">
+          아직 작성된 댓글이 없습니다.
+        </div>
         <div v-else class="comments-list">
           <div v-for="comment in comments" :key="comment.commentId" class="comment-item">
-            <div v-if="editingComment && editingComment.commentId === comment.commentId" class="comment-edit">
-              <textarea v-model="editingComment.content" rows="2" class="comment-textarea"></textarea>
+            <div
+              v-if="editingComment && editingComment.commentId === comment.commentId"
+              class="comment-edit"
+            >
+              <textarea
+                v-model="editingComment.content"
+                rows="2"
+                class="comment-textarea"
+              ></textarea>
               <div class="comment-actions">
                 <button @click="submitEditComment" class="submit-btn">저장</button>
                 <button @click="cancelEditComment" class="cancel-btn">취소</button>
@@ -105,11 +181,15 @@
             </div>
             <div v-else class="comment-body">
               <div class="comment-meta">
-                <span class="comment-author">{{ comment.nickname || ('사용자 ' + comment.userId) }}</span>
+                <span class="comment-author">{{
+                  comment.nickname || '사용자 ' + comment.userId
+                }}</span>
                 <span class="comment-date">· {{ formatDate(comment.createdAt) }}</span>
                 <div v-if="isMyComment(comment)" class="comment-controls">
                   <button @click="startEditComment(comment)" class="action-btn">수정</button>
-                  <button @click="removeComment(comment.commentId)" class="action-btn delete-btn">삭제</button>
+                  <button @click="removeComment(comment.commentId)" class="action-btn delete-btn">
+                    삭제
+                  </button>
                 </div>
               </div>
               <p class="comment-text">{{ comment.content }}</p>
@@ -121,8 +201,20 @@
       <!-- 하단 버튼 -->
       <div class="footer-actions">
         <button @click="goToList" class="list-btn">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 12H5M12 19l-7-7 7-7"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
           </svg>
           목록으로
         </button>
@@ -203,7 +295,7 @@ const submitComment = async () => {
     alert('댓글 내용을 입력해주세요.')
     return
   }
-  
+
   try {
     await createComment(route.params.id, { content: newComment.value.content })
     newComment.value.content = ''
@@ -265,7 +357,7 @@ const formatDate = (dateString) => {
     month: 'long',
     day: 'numeric',
     hour: '2-digit',
-    minute: '2-digit'
+    minute: '2-digit',
   })
 }
 

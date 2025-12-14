@@ -248,7 +248,9 @@
             <div v-else class="review-content">
               <div class="review-header">
                 <div class="review-author">
-                  <span class="author-name">{{ review.nickname || ('사용자 ' + review.userId) }}</span>
+                  <span class="author-name">{{
+                    review.nickname || '사용자 ' + review.userId
+                  }}</span>
                   <div class="review-rating">
                     <template v-for="star in 5" :key="star">
                       <svg
@@ -590,7 +592,6 @@ onMounted(() => {
   fetchVideoDetail()
   fetchReviews()
 })
-
 </script>
 
 <style scoped>

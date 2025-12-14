@@ -1,7 +1,7 @@
 <template>
   <Container>
     <PageHeader title="게시판" />
-    
+
     <div class="board-container">
       <!-- 검색 및 작성 버튼 -->
       <div class="board-header">
@@ -75,11 +75,7 @@
 
       <!-- 페이지네이션 -->
       <div v-if="totalPages > 1" class="pagination">
-        <button
-          @click="changePage(currentPage - 1)"
-          :disabled="currentPage === 0"
-          class="page-btn"
-        >
+        <button @click="changePage(currentPage - 1)" :disabled="currentPage === 0" class="page-btn">
           이전
         </button>
         <div class="page-numbers">
@@ -219,7 +215,7 @@ const formatDate = (dateString) => {
   if (minutes < 60) return `${minutes}분 전`
   if (hours < 24) return `${hours}시간 전`
   if (days < 7) return `${days}일 전`
-  
+
   return date.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' })
 }
 
