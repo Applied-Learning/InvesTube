@@ -96,7 +96,6 @@ const handleLogoutFromMenu = () => {
   handleLogout()
 }
 
-
 const toggleUserMenu = () => {
   showUserMenu.value = !showUserMenu.value
 }

@@ -1,7 +1,7 @@
 <template>
   <Container>
     <PageHeader title="게시글 작성" />
-    
+
     <div class="create-container">
       <form @submit.prevent="handleSubmit" class="create-form">
         <div class="form-group">
@@ -41,38 +41,24 @@
 
         <!-- 기존 업로드된 이미지 (수정 시) -->
         <div v-if="existingImages.length > 0" class="image-previews">
-          <div
-            v-for="img in existingImages"
-            :key="img.imageId"
-            class="preview-item"
-          >
+          <div v-for="img in existingImages" :key="img.imageId" class="preview-item">
             <img :src="resolveImageUrl(img.imageUrl)" :alt="`기존 이미지 ${img.imageId}`" />
-            <button type="button" @click="deleteExistingImage(img.imageId)" class="remove-btn">✕</button>
-          </div>
-        </div>
-
-        <!-- 이미지 미리보기 -->
-        <div v-if="imagePreviews.length > 0" class="image-previews">
-          <div
-            v-for="(preview, index) in imagePreviews"
-            :key="index"
-            class="preview-item"
-          >
-            <img :src="preview" :alt="`미리보기 ${index + 1}`" />
-            <button
-              type="button"
-              @click="removeImage(index)"
-              class="remove-btn"
-            >
+            <button type="button" @click="deleteExistingImage(img.imageId)" class="remove-btn">
               ✕
             </button>
           </div>
         </div>
 
+        <!-- 이미지 미리보기 -->
+        <div v-if="imagePreviews.length > 0" class="image-previews">
+          <div v-for="(preview, index) in imagePreviews" :key="index" class="preview-item">
+            <img :src="preview" :alt="`미리보기 ${index + 1}`" />
+            <button type="button" @click="removeImage(index)" class="remove-btn">✕</button>
+          </div>
+        </div>
+
         <div class="form-actions">
-          <button type="button" @click="goBack" class="cancel-btn">
-            취소
-          </button>
+          <button type="button" @click="goBack" class="cancel-btn">취소</button>
           <button type="submit" :disabled="loading" class="submit-btn">
             {{ loading ? '작성 중...' : '작성 완료' }}
           </button>
@@ -85,7 +71,13 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
-import { createBoard, updateBoard, getBoardDetail, addBoardImages, deleteBoardImage } from '../api/board'
+import {
+  createBoard,
+  updateBoard,
+  getBoardDetail,
+  addBoardImages,
+  deleteBoardImage,
+} from '../api/board'
 import { resolveImageUrl } from '../utils/image.js'
 import Container from '../components/common/Container.vue'
 import PageHeader from '../components/common/PageHeader.vue'
@@ -97,7 +89,7 @@ const editingPostId = ref(null)
 
 const form = ref({
   title: '',
-  content: ''
+  content: '',
 })
 
 const selectedFiles = ref([])
@@ -108,7 +100,7 @@ const loading = ref(false)
 
 const handleFileChange = (event) => {
   const files = Array.from(event.target.files)
-  
+
   if (files.length + selectedFiles.value.length + existingImages.value.length > 5) {
     alert('이미지는 최대 5개까지만 첨부할 수 있습니다.')
     return
@@ -176,7 +168,7 @@ const handleSubmit = async () => {
       // Only update title/content for now
       const payload = {
         title: form.value.title,
-        content: form.value.content
+        content: form.value.content,
       }
       await updateBoard(editingPostId.value, payload)
       // If there are new files selected, upload them to the post
@@ -217,7 +209,7 @@ const deleteExistingImage = async (imageId) => {
   if (!confirm('이 이미지를 삭제하시겠습니까?')) return
   try {
     await deleteBoardImage(imageId)
-    existingImages.value = existingImages.value.filter(img => img.imageId !== imageId)
+    existingImages.value = existingImages.value.filter((img) => img.imageId !== imageId)
     alert('이미지가 삭제되었습니다.')
   } catch (err) {
     console.error('이미지 삭제 실패:', err)
