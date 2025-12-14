@@ -79,6 +79,7 @@ public class ReviewRestController {
 		review.setUserId(userId);
 		
 		if (reviewService.createReview(review)) {
+			videoService.updateRatingStats(videoId);
 			// create notification to video owner (if reviewer is not the owner)
 			try {
 				Video video = videoService.getVideo(videoId);
@@ -157,6 +158,7 @@ public class ReviewRestController {
 		review.setUserId(userId);
 		
 		if (reviewService.modifyReview(review)) {
+			videoService.updateRatingStats(videoId);
 			return new ResponseEntity<>(HttpStatus.OK);
 		}
 		return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
@@ -199,6 +201,7 @@ public class ReviewRestController {
 		}
 		
 		if (reviewService.removeReview(reviewId)) {
+			videoService.updateRatingStats(videoId);
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		}
 		return new ResponseEntity<>(HttpStatus.BAD_REQUEST);

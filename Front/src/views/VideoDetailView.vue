@@ -524,6 +524,7 @@ const submitReview = async () => {
     await createReview(route.params.id, newReview.value)
     newReview.value = { content: '', rating: 5 }
     await fetchReviews()
+    await fetchVideoDetail()
     alert('리뷰가 작성되었습니다.')
   } catch (err) {
     console.error('리뷰 작성 실패:', err)
@@ -555,6 +556,7 @@ const submitEditReview = async () => {
     })
     editingReview.value = null
     await fetchReviews()
+    await fetchVideoDetail()
     alert('리뷰가 수정되었습니다.')
   } catch (err) {
     console.error('리뷰 수정 실패:', err)
@@ -571,6 +573,7 @@ const removeReview = async (reviewId) => {
   try {
     await deleteReview(route.params.id, reviewId)
     await fetchReviews()
+    await fetchVideoDetail()
     alert('리뷰가 삭제되었습니다.')
   } catch (err) {
     console.error('리뷰 삭제 실패:', err)
@@ -587,6 +590,7 @@ onMounted(() => {
   fetchVideoDetail()
   fetchReviews()
 })
+
 </script>
 
 <style scoped>

@@ -228,5 +228,13 @@
 		WHERE video_id = #{videoId} AND wish_count > 0
 	</update>
 	
+	<!-- 리뷰 기반 평점/리뷰 수 갱신 -->
+	<update id="updateRatingStats" parameterType="int">
+		UPDATE videos
+		SET avg_rating = COALESCE((SELECT AVG(rating) FROM reviews WHERE video_id = #{videoId}), 0),
+			review_count = (SELECT COUNT(*) FROM reviews WHERE video_id = #{videoId}),
+			updated_at = NOW()
+		WHERE video_id = #{videoId}
+	</update>
 
 </mapper>

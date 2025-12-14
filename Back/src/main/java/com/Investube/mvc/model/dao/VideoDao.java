@@ -91,4 +91,7 @@ public interface VideoDao {
 	
 	// 찜 수 감소
 	int decrementWishCount(int videoId);
+
+	// 평점 업데이트
+	int updateRatingStats(int videoId);
 }
