@@ -1,4 +1,4 @@
-import http from './http'
+import http from './http.js'
 
 // 게시글 목록 조회 (페이징, 검색, 정렬)
 export const getBoardList = (keyword = '', sortBy = 'latest', page = 0, size = 10) => {
@@ -48,4 +48,11 @@ export const getBoardsByUser = (userId, page = 0, size = 10) => {
 // 게시글 이미지 삭제
 export const deleteBoardImage = (imageId) => {
   return http.delete(`/boards/images/${imageId}`)
+}
+
+// 내가 댓글 단 게시글 (상위 N개)
+export const getMyCommentedBoards = (limit = 5) => {
+  return http.get('/boards/me/commented', {
+    params: { limit },
+  })
 }

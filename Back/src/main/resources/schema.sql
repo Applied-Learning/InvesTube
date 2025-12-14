@@ -213,3 +213,13 @@ CREATE TABLE IF NOT EXISTS notifications (
   FOREIGN KEY (actor_id) REFERENCES users(user_id)
 );
 
+-- -----------------------------------------------------
+-- Table: notification_settings
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS notification_settings (
+  user_id  INT NOT NULL,
+  type     VARCHAR(50) NOT NULL, -- COMMENT, REVIEW, FOLLOW, WISH
+  enabled  BOOLEAN NOT NULL DEFAULT TRUE,
+  PRIMARY KEY (user_id, type),
+  FOREIGN KEY (user_id) REFERENCES users(user_id)
+);

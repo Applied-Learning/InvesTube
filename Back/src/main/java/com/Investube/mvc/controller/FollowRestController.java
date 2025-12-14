@@ -133,7 +133,9 @@ public class FollowRestController {
 				} catch (Exception e) {
 					n.setMessage("사용자 " + followerId + "님이 당신을 팔로우했습니다.");
 				}
-				notificationService.createNotification(n);
+				if (notificationService.isNotificationEnabled(followingId, "FOLLOW")) {
+					notificationService.createNotification(n);
+				}
 			} catch (Exception e) {
 				// 알림 실패는 팔로우 동작에 영향 주지 않음
 			}

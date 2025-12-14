@@ -104,7 +104,9 @@ public class ReviewRestController {
 					} catch (Exception e) {
 						n.setMessage("사용자 " + userId + "님이 당신의 영상에 리뷰를 남겼습니다.");
 					}
-					notificationService.createNotification(n);
+					if (notificationService.isNotificationEnabled(video.getUserId(), "REVIEW")) {
+						notificationService.createNotification(n);
+					}
 				}
 			} catch (Exception e) {
 				// notification failure should not block review creation

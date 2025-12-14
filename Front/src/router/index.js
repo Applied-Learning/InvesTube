@@ -73,9 +73,29 @@ const router = createRouter({
       component: () => import('../views/MyVideosView.vue'),
     },
     {
+      path: '/mypage/boards',
+      name: 'myBoards',
+      component: () => import('../views/MyBoardsView.vue'),
+    },
+    {
+      path: '/mypage/boards/commented',
+      name: 'myCommentedBoards',
+      component: () => import('../views/MyCommentedBoardsView.vue'),
+    },
+    {
       path: '/mypage/reviews',
       name: 'myReviewVideos',
       component: () => import('../views/MyReviewedVideosView.vue'),
+    },
+    {
+      path: '/users/:userId/boards',
+      name: 'userBoards',
+      component: () => import('../views/UserBoardsView.vue'),
+    },
+    {
+      path: '/users/:userId/videos',
+      name: 'userVideos',
+      component: () => import('../views/UserVideosView.vue'),
     },
     {
       path: '/users/:userId',

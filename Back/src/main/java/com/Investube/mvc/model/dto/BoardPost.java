@@ -9,6 +9,7 @@ public class BoardPost {
     private String title;
     private String content;
     private int viewCount;
+    private int commentCount;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
     
@@ -96,6 +97,14 @@ public class BoardPost {
 
 	public void setViewCount(int viewCount) {
 		this.viewCount = viewCount;
+	}
+
+	public int getCommentCount() {
+		return commentCount;
+	}
+
+	public void setCommentCount(int commentCount) {
+		this.commentCount = commentCount;
 	}
     
     
