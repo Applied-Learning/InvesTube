@@ -38,7 +38,14 @@ export const useAuthStore = defineStore('auth', () => {
     id.value = null
     nickname.value = null
 
+    // 서버 세션/쿠키 로그아웃 요청
     apiLogout()
+
+    // 클라이언트 저장 토큰/유저 정보 제거
+    localStorage.removeItem('accessToken')
+    localStorage.removeItem('userId')
+    localStorage.removeItem('id')
+    localStorage.removeItem('nickname')
   }
 
   return {

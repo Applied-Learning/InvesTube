@@ -590,6 +590,7 @@ onMounted(() => {
   fetchVideoDetail()
   fetchReviews()
 })
+
 </script>
 
 <style scoped>
