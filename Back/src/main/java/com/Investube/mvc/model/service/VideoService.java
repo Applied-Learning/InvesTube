@@ -80,4 +80,7 @@ public interface VideoService {
 	
 	// 업로드한 영상 조회
 	List<Video> getVideosByUser(int userId);
+
+	// 평점 갱신
+	boolean updateRatingStats(int videoId);
 }

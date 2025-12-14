@@ -149,4 +149,9 @@ public class VideoServiceImpl implements VideoService {
 		List<Video> videos = videoDao.getVideosByUser(userId);
 	    return videos;
 	}
+
+	@Override
+	public boolean updateRatingStats(int videoId) {
+		return videoDao.updateRatingStats(videoId) > 0;
+	}
 }
