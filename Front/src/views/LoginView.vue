@@ -192,18 +192,15 @@ const handleLogin = async () => {
   align-items: center;
 }
 
-.password-wrapper input {
-  flex: 1;
-  padding-right: 40px;
-}
 
-.form-group input {
+.form-group input, .password-wrapper input {
   padding: 12px;
   border: 1px solid #ddd;
   border-radius: 6px;
   font-size: 14px;
   transition: border-color 0.3s;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .form-group input:focus {
