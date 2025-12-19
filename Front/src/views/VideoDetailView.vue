@@ -35,9 +35,13 @@
                   stroke-width="2"
                 />
               </svg>
-              <span>{{ isWished ? '' : '' }}</span>
             </button>
-            <button v-if="isMyVideo && !editMode" class="edit-video-btn" @click="startEditVideo">
+            <button
+              v-if="isMyVideo"
+              class="edit-video-btn"
+              :class="{ active: editMode }"
+              @click="editMode ? cancelEditVideo() : startEditVideo()"
+            >
               <svg
                 width="20"
                 height="20"
@@ -59,7 +63,7 @@
                   stroke-linejoin="round"
                 />
               </svg>
-              <span>수정</span>
+              <span>{{ editMode ? '취소' : '수정' }}</span>
             </button>
             <button v-if="isMyVideo" class="delete-video-btn" @click="removeVideo">
               <svg
@@ -811,8 +815,10 @@ onMounted(() => {
 .wish-btn {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 20px;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
   background: white;
   border: 2px solid #e5e7eb;
   border-radius: 8px;
@@ -835,8 +841,8 @@ onMounted(() => {
 }
 
 .wish-btn svg {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
 }
 
 .delete-video-btn {
@@ -882,6 +888,12 @@ onMounted(() => {
 .edit-video-btn:hover {
   background: #eff6ff;
   border-color: #2563eb;
+}
+
+.edit-video-btn.active {
+  background: #dbeafe;
+  border-color: #1d4ed8;
+  color: #1d4ed8;
 }
 
 .edit-video-btn svg {
