@@ -85,11 +85,16 @@ const onToggleWish = () => {
   position: relative;
   border-radius: 8px;
   overflow: hidden;
+  padding-bottom: 56.25%;
+  background: #111827;
 }
 
 .thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  display: block;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -108,7 +113,7 @@ const onToggleWish = () => {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
 .uploader {

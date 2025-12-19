@@ -37,6 +37,16 @@ export const createVideo = (videoData) => {
 }
 
 /**
+ * 비디오 수정
+ * @param {number} videoId
+ * @param {Object} videoData - { youtubeVideoId, title, description, categoryId, thumbnailUrl }
+ * @returns {Promise}
+ */
+export const updateVideo = (videoId, videoData) => {
+  return http.put(`/videos/${videoId}`, videoData)
+}
+
+/**
  * 비디오 삭제
  * @param {number} videoId
  * @returns {Promise}

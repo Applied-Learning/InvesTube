@@ -30,7 +30,7 @@ const handleClick = (event) => {
   background-color: #ffffff;
   border-radius: 10px;
   border: 1px solid #e5e7eb;
-  padding: 12px;
+  padding: 8px;
   box-shadow: 0 1px 2px rgba(148, 163, 184, 0.12);
 }
 
@@ -47,7 +47,7 @@ const handleClick = (event) => {
 }
 
 .card__header {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .card__body {
