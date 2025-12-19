@@ -1,6 +1,6 @@
 <template>
   <div class="invest-view">
-    <PageHeader title="투자 정보" />
+    <PageHeader title="투자 정보" :showBack="false" icon="invest" />
     
     <Container>
       <!-- 지수 카드 섹션 -->
@@ -109,6 +109,11 @@
         </div>
       </div>
     </Container>
+    <!-- Disclaimer -->
+    <div class="invest-disclaimer">
+      본 서비스는 금융감독원(DART) 및 한국거래소(KRX)의 공개 데이터를 가공·분석하여 제공하는 참고용 정보입니다.<br />
+      투자 판단의 책임은 이용자 본인에게 있습니다.
+    </div>
   </div>
 </template>
 
@@ -401,6 +406,19 @@ export default {
 .stock-code-small {
   font-size: 12px;
   color: #757575;
+}
+
+.invest-disclaimer {
+  max-width: 900px;
+  margin: 24px auto 48px auto;
+  padding: 12px 16px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e6edf3;
+  color: #4b5563;
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: center;
 }
 
 .stock-change-small,

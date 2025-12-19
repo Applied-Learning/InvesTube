@@ -41,6 +41,8 @@ const posts = ref([])
 const loading = ref(false)
 const error = ref(null)
 
+import { formatKSTDate } from '../utils/date.js'
+
 const normalizeBoardPost = (post) => {
   if (!post) return null
   return {
@@ -48,7 +50,7 @@ const normalizeBoardPost = (post) => {
     title: post.title,
     viewCount: post.viewCount ?? 0,
     commentCount: post.commentCount ?? 0,
-    createdAtDisplay: post.createdAt ? String(post.createdAt).slice(0, 10) : '',
+    createdAtDisplay: post.createdAt ? formatKSTDate(post.createdAt) : '',
   }
 }
 

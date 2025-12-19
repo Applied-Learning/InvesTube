@@ -108,6 +108,7 @@ import { getVideos } from '../api/video.js'
 import { getBoardsByUser } from '../api/board.js'
 import { PREVIEW_LIMIT } from '../constants/ui.js'
 import { checkFollowStatus, toggleFollow } from '../api/follow.js'
+import { formatKSTDate } from '../utils/date.js'
 import { useAuthStore } from '../stores/auth.js'
 
 const route = useRoute()
@@ -161,7 +162,7 @@ const normalizeBoardPost = (post) => {
     title: post.title,
     viewCount: post.viewCount ?? 0,
     commentCount: post.commentCount ?? 0,
-    createdAtDisplay: post.createdAt ? String(post.createdAt).slice(0, 10) : '',
+    createdAtDisplay: post.createdAt ? formatKSTDate(post.createdAt) : '',
   }
 }
 

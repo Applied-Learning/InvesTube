@@ -725,6 +725,8 @@ const fetchActivityPreviews = async () => {
   }
 }
 
+import { formatKSTDate } from '../utils/date.js'
+
 const normalizeBoardPost = (post) => {
   if (!post) return null
   return {
@@ -732,7 +734,7 @@ const normalizeBoardPost = (post) => {
     title: post.title,
     viewCount: post.viewCount ?? 0,
     commentCount: post.commentCount ?? 0,
-    createdAtDisplay: post.createdAt ? String(post.createdAt).slice(0, 10) : '',
+    createdAtDisplay: post.createdAt ? formatKSTDate(post.createdAt) : '',
   }
 }
 
@@ -743,7 +745,7 @@ const normalizeCommentedPost = (item) => {
     postId: item.postId,
     title: item.postTitle, // 글 제목
     commentContent: item.content, // 내가 단 댓글 내용
-    createdAtDisplay: item.createdAt ? String(item.createdAt).slice(0, 10) : '',
+    createdAtDisplay: item.createdAt ? formatKSTDate(item.createdAt) : '',
   }
 }
 
@@ -918,6 +920,12 @@ const saveProfile = async () => {
     }
 
     await fetchMyProfile()
+    // notify header and other components to refresh profile
+    try {
+      window.dispatchEvent(new CustomEvent('profile-updated'))
+    } catch (e) {
+      console.warn('profile-updated event dispatch failed', e)
+    }
     alert('프로필이 저장되었습니다.')
     closeProfileEdit()
   } catch (err) {
