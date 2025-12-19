@@ -3,6 +3,7 @@ import VideoListView from '../views/VideoListView.vue'
 import BoardListView from '../views/BoardListView.vue'
 import InvestView from '../views/InvestView.vue'
 import LoginView from '../views/LoginView.vue'
+import { useAuthStore } from '../stores/auth.js'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -88,6 +89,11 @@ const router = createRouter({
       component: () => import('../views/MyReviewedVideosView.vue'),
     },
     {
+      path: '/mypage/wishlist',
+      name: 'myWishedVideos',
+      component: () => import('../views/MyWishedVideosView.vue'),
+    },
+    {
       path: '/users/:userId/boards',
       name: 'userBoards',
       component: () => import('../views/UserBoardsView.vue'),
@@ -113,6 +119,20 @@ const router = createRouter({
       component: () => import('../views/StockDetailView.vue'),
     },
   ],
+})
+
+// 전역 인증 가드: 로그인/회원가입 외 모든 페이지는 인증 필요
+router.beforeEach((to, from, next) => {
+  const publicPages = ['login', 'signup']
+  const authStore = useAuthStore()
+
+  if (!publicPages.includes(to.name) && !authStore.isAuthenticated) {
+    next({ name: 'login', query: { redirect: to.fullPath } })
+  } else if (publicPages.includes(to.name) && authStore.isAuthenticated) {
+    next({ name: 'home' })
+  } else {
+    next()
+  }
 })
 
 export default router

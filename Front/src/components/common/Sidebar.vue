@@ -35,9 +35,14 @@
 </template>
 
 <script setup>
-import { RouterLink } from 'vue-router'
-// use lucide icons
-import { Video, MessageSquare, TrendingUp } from 'lucide-vue-next'
+import { RouterLink, useRoute } from 'vue-router'
+import { computed } from 'vue'
+
+const route = useRoute()
+const isVideoRoute = computed(() => {
+  const videoNames = ['home', 'videoDetail', 'videoCreate', 'wishlist']
+  return videoNames.includes(route.name)
+})
 </script>
 
 <style scoped>
