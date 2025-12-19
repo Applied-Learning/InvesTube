@@ -430,45 +430,69 @@
     </div>
 
     <div class="follow-modal-body">
-      <div class="notification-setting-item">
-          <label>
+      <div class="notification-settings">
+        <div class="notification-setting-item">
+          <div class="notification-text">
+            <p class="notification-title">영상 리뷰 알림</p>
+            <p class="notification-desc">내 영상에 리뷰가 달리면 알려줘요</p>
+          </div>
+          <label class="toggle-switch">
             <input
               type="checkbox"
               v-model="notificationSettings.REVIEW"
               @change="saveNotificationSettings"
             />
-            영상 리뷰 알림
+            <span class="toggle-track">
+              <span class="toggle-thumb"></span>
+            </span>
           </label>
         </div>
-      <div class="notification-settings">
         <div class="notification-setting-item">
-          <label>
+          <div class="notification-text">
+            <p class="notification-title">영상 찜 알림</p>
+            <p class="notification-desc">내 영상이 찜되면 알려줘요</p>
+          </div>
+          <label class="toggle-switch">
             <input
               type="checkbox"
               v-model="notificationSettings.WISH"
               @change="saveNotificationSettings"
             />
-            영상 찜 알림
+            <span class="toggle-track">
+              <span class="toggle-thumb"></span>
+            </span>
           </label>
         </div>
         <div class="notification-setting-item">
-          <label>
+          <div class="notification-text">
+            <p class="notification-title">게시판 댓글 알림</p>
+            <p class="notification-desc">내 게시글에 댓글이 달리면 알려줘요</p>
+          </div>
+          <label class="toggle-switch">
             <input
               type="checkbox"
               v-model="notificationSettings.COMMENT"
               @change="saveNotificationSettings"
             />
-            게시판 댓글 알림
+            <span class="toggle-track">
+              <span class="toggle-thumb"></span>
+            </span>
           </label>
         </div>
         <div class="notification-setting-item">
-          <label>
+          <div class="notification-text">
+            <p class="notification-title">팔로우 알림</p>
+            <p class="notification-desc">누군가 나를 팔로우하면 알려줘요</p>
+          </div>
+          <label class="toggle-switch">
             <input
               type="checkbox"
               v-model="notificationSettings.FOLLOW"
               @change="saveNotificationSettings"
             />
-            팔로우 알림
+            <span class="toggle-track">
+              <span class="toggle-thumb"></span>
+            </span>
           </label>
         </div>
         
@@ -1325,6 +1349,85 @@ onMounted(() => {
 .follow-modal-body {
   padding: 12px 16px 16px;
   overflow-y: auto;
+}
+
+.notification-settings {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.notification-setting-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid #f3f4f6;
+  border-radius: 12px;
+  background: #f9fafb;
+}
+
+.notification-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.notification-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.notification-desc {
+  margin: 0;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle-switch input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-track {
+  width: 42px;
+  height: 24px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  position: relative;
+  transition: background 0.2s;
+  display: inline-flex;
+  align-items: center;
+}
+
+.toggle-thumb {
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  transform: translateX(3px);
+  transition: transform 0.2s;
+}
+
+.toggle-switch input:checked + .toggle-track {
+  background: #2563eb;
+}
+
+.toggle-switch input:checked + .toggle-track .toggle-thumb {
+  transform: translateX(21px);
 }
 
 .follow-loading,
