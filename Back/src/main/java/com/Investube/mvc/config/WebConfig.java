@@ -10,18 +10,19 @@ import com.Investube.mvc.interceptor.AuthInterceptor;
 
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
-	
-	@Override
-	public void addCorsMappings(CorsRegistry registry) {
-		registry.addMapping("/**")
-				.allowedOrigins("http://localhost:8080", "http://localhost:5173", "http://localhost:3000")
+
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/**")
+                // allowedOrigins → allowedOriginPatterns 로 변경
+                .allowedOriginPatterns("http://localhost:5173")
                 .allowedMethods("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS")
-				.allowedHeaders("*")
-				.allowCredentials(true)
-				.maxAge(3600);
-	}
-	
-	private final AuthInterceptor authInterceptor;
+                .allowedHeaders("*")
+                .allowCredentials(true)
+                .maxAge(3600);
+    }
+
+    private final AuthInterceptor authInterceptor;
 
     public WebConfig(AuthInterceptor authInterceptor) {
         this.authInterceptor = authInterceptor;
@@ -29,15 +30,25 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-
         registry.addInterceptor(authInterceptor)
-                .addPathPatterns("/users/me/**", "/videos/**", "/reviews/**", "/boards/**", "/board/**", "/comments/**")
-                .excludePathPatterns("/auth/**", "/reviews/video/*/"); // 로그인/회원가입, 리뷰 조회는 제외
+                .addPathPatterns(
+                        "/users/me/**",
+                        "/videos/**",
+                        "/reviews/**",
+                        "/boards/**",
+                        "/board/**",
+                        "/comments/**"
+                )
+                // ⭐ 인증 불필요 + CORS 문제 방지
+                .excludePathPatterns(
+                        "/auth/**",
+                        "/reviews/video/*/",
+                        "/stocks/**"
+                );
     }
-    
+
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        // 업로드된 파일에 접근할 수 있도록 설정
         registry.addResourceHandler("/uploads/**")
                 .addResourceLocations("file:uploads/");
     }

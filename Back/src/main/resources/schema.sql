@@ -203,3 +203,33 @@ enabled BOOLEAN NOT NULL DEFAULT TRUE,
 PRIMARY KEY (user_id, type),
 FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
+
+-- Table: stock
+CREATE TABLE IF NOT EXISTS stock (
+stock_id INT AUTO_INCREMENT PRIMARY KEY,
+stock_code VARCHAR(20) UNIQUE NOT NULL,
+stock_name VARCHAR(100) NOT NULL,
+market VARCHAR(20), -- KOSPI, KOSDAQ
+industry VARCHAR(100),
+created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- Table: stock_price
+CREATE TABLE IF NOT EXISTS stock_price (
+price_id INT AUTO_INCREMENT PRIMARY KEY,
+stock_code VARCHAR(20) NOT NULL,
+trade_date DATE NOT NULL,
+open_price DECIMAL(15,2),
+high_price DECIMAL(15,2),
+low_price DECIMAL(15,2),
+close_price DECIMAL(15,2),
+volume BIGINT,
+market_cap BIGINT,
+created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+FOREIGN KEY (stock_code) REFERENCES stock(stock_code) ON DELETE CASCADE,
+UNIQUE KEY unique_stock_date (stock_code, trade_date)
+);
+
+-- Insert sample stock data (샘플 데이터는 KRX API로 동기화합니다)
+-- 데이터 동기화: POST /stocks/sync/dart

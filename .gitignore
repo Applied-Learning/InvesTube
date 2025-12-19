@@ -1,1 +1,6 @@
 /.metadata/
+
+# Environment variables
+.env
+Back/.env
+Front/.env

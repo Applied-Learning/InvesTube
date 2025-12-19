@@ -107,6 +107,11 @@ const router = createRouter({
       name: 'videoDetail',
       component: () => import('../views/VideoDetailView.vue'),
     },
+    {
+      path: '/stocks/:stockCode',
+      name: 'StockDetail',
+      component: () => import('../views/StockDetailView.vue'),
+    },
   ],
 })
 
