@@ -918,6 +918,12 @@ const saveProfile = async () => {
     }
 
     await fetchMyProfile()
+    // notify header and other components to refresh profile
+    try {
+      window.dispatchEvent(new CustomEvent('profile-updated'))
+    } catch (e) {
+      console.warn('profile-updated event dispatch failed', e)
+    }
     alert('프로필이 저장되었습니다.')
     closeProfileEdit()
   } catch (err) {

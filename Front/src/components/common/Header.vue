@@ -132,10 +132,13 @@ const handleClickOutside = (event) => {
 onMounted(() => {
   document.addEventListener('click', handleClickOutside)
   fetchMyProfile()
+  // listen for profile updates from other components
+  window.addEventListener('profile-updated', fetchMyProfile)
 })
 
 onUnmounted(() => {
   document.removeEventListener('click', handleClickOutside)
+  window.removeEventListener('profile-updated', fetchMyProfile)
 })
 
 watch(
