@@ -1,8 +1,14 @@
 <template>
   <aside class="sidebar">
     <nav class="nav">
-      <RouterLink to="/videos" class="nav-item" active-class="nav-item--active"> 영상 </RouterLink>
-      <RouterLink to="/board" class="nav-item" active-class="nav-item--active"> 게시판 </RouterLink>
+      <RouterLink
+        to="/videos"
+        class="nav-item"
+        :class="{ 'nav-item--active': isVideoRoute }"
+      >
+        영상
+      </RouterLink>
+      <RouterLink to="/board" class="nav-item" active-class="nav-item--active">게시판</RouterLink>
       <RouterLink to="/invest" class="nav-item" active-class="nav-item--active">
         투자 정보
       </RouterLink>
@@ -11,7 +17,14 @@
 </template>
 
 <script setup>
-import { RouterLink } from 'vue-router'
+import { RouterLink, useRoute } from 'vue-router'
+import { computed } from 'vue'
+
+const route = useRoute()
+const isVideoRoute = computed(() => {
+  const videoNames = ['home', 'videoDetail', 'videoCreate', 'wishlist']
+  return videoNames.includes(route.name)
+})
 </script>
 
 <style scoped>
