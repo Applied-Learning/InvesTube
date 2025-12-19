@@ -316,7 +316,7 @@
                     review.nickname || '사용자 ' + review.userId
                   }}</span>
                   <div class="review-rating">
-                    <template v-for="star in 5" :key="star">
+                    <span v-for="star in 5" :key="star" class="star-icon">
                       <svg
                         v-if="star <= Math.floor(review.rating)"
                         width="16"
@@ -366,7 +366,7 @@
                           stroke-width="2"
                         />
                       </svg>
-                    </template>
+                    </span>
                     <span class="rating-text">{{ review.rating }}</span>
                   </div>
                 </div>
