@@ -151,4 +151,3 @@ onMounted(fetchUserBoards)
   color: #6b7280;
 }
 </style>
-

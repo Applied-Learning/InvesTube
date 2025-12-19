@@ -206,9 +206,9 @@
               >
                 <div class="activity-info">
                   <!-- 글 제목 -->
-                    <p class="activity-title">{{ post.title }}</p>
-                    <!-- 내가 쓴 댓글 내용 -->
-                    <p class="activity-meta">{{ post.commentContent }}</p>
+                  <p class="activity-title">{{ post.title }}</p>
+                  <!-- 내가 쓴 댓글 내용 -->
+                  <p class="activity-meta">{{ post.commentContent }}</p>
                 </div>
               </li>
               <li
@@ -226,7 +226,7 @@
       <section class="menu-section">
         <h3 class="section-title">설정</h3>
         <div class="menu-list">
-          <button class="menu-item"  @click="openNotificationModal">
+          <button class="menu-item" @click="openNotificationModal">
             <span>알림 설정</span>
           </button>
           <button class="menu-item" @click="openPasswordModal">
@@ -237,8 +237,6 @@
           </button>
         </div>
       </section>
-      
-
     </div>
 
     <!-- 팔로워 / 팔로잉 모달 -->
@@ -418,101 +416,100 @@
       </div>
     </div>
     <!-- 알림 설정 모달 -->
-<div
-  v-if="showNotificationModal"
-  class="follow-modal-backdrop"
-  @click.self="closeNotificationModal"
->
-  <div class="follow-modal">
-    <div class="follow-modal-header">
-      <h3>알림 설정</h3>
-      <button class="modal-close-btn" @click="closeNotificationModal">×</button>
-    </div>
+    <div
+      v-if="showNotificationModal"
+      class="follow-modal-backdrop"
+      @click.self="closeNotificationModal"
+    >
+      <div class="follow-modal">
+        <div class="follow-modal-header">
+          <h3>알림 설정</h3>
+          <button class="modal-close-btn" @click="closeNotificationModal">×</button>
+        </div>
 
-    <div class="follow-modal-body">
-      <div class="notification-settings">
-        <div class="notification-setting-item">
-          <div class="notification-text">
-            <p class="notification-title">영상 리뷰 알림</p>
-            <p class="notification-desc">내 영상에 리뷰가 달리면 알려줘요</p>
+        <div class="follow-modal-body">
+          <div class="notification-settings">
+            <div class="notification-setting-item">
+              <div class="notification-text">
+                <p class="notification-title">영상 리뷰 알림</p>
+                <p class="notification-desc">내 영상에 리뷰가 달리면 알려줘요</p>
+              </div>
+              <label class="toggle-switch">
+                <input
+                  type="checkbox"
+                  v-model="notificationSettings.REVIEW"
+                  @change="saveNotificationSettings"
+                />
+                <span class="toggle-track">
+                  <span class="toggle-thumb"></span>
+                </span>
+              </label>
+            </div>
+            <div class="notification-setting-item">
+              <div class="notification-text">
+                <p class="notification-title">영상 찜 알림</p>
+                <p class="notification-desc">내 영상이 찜되면 알려줘요</p>
+              </div>
+              <label class="toggle-switch">
+                <input
+                  type="checkbox"
+                  v-model="notificationSettings.WISH"
+                  @change="saveNotificationSettings"
+                />
+                <span class="toggle-track">
+                  <span class="toggle-thumb"></span>
+                </span>
+              </label>
+            </div>
+            <div class="notification-setting-item">
+              <div class="notification-text">
+                <p class="notification-title">게시판 댓글 알림</p>
+                <p class="notification-desc">내 게시글에 댓글이 달리면 알려줘요</p>
+              </div>
+              <label class="toggle-switch">
+                <input
+                  type="checkbox"
+                  v-model="notificationSettings.COMMENT"
+                  @change="saveNotificationSettings"
+                />
+                <span class="toggle-track">
+                  <span class="toggle-thumb"></span>
+                </span>
+              </label>
+            </div>
+            <div class="notification-setting-item">
+              <div class="notification-text">
+                <p class="notification-title">팔로우 알림</p>
+                <p class="notification-desc">누군가 나를 팔로우하면 알려줘요</p>
+              </div>
+              <label class="toggle-switch">
+                <input
+                  type="checkbox"
+                  v-model="notificationSettings.FOLLOW"
+                  @change="saveNotificationSettings"
+                />
+                <span class="toggle-track">
+                  <span class="toggle-thumb"></span>
+                </span>
+              </label>
+            </div>
+
+            <p v-if="notificationSettingsError" class="notification-settings-error">
+              {{ notificationSettingsError }}
+            </p>
           </div>
-          <label class="toggle-switch">
-            <input
-              type="checkbox"
-              v-model="notificationSettings.REVIEW"
-              @change="saveNotificationSettings"
-            />
-            <span class="toggle-track">
-              <span class="toggle-thumb"></span>
-            </span>
-          </label>
         </div>
-        <div class="notification-setting-item">
-          <div class="notification-text">
-            <p class="notification-title">영상 찜 알림</p>
-            <p class="notification-desc">내 영상이 찜되면 알려줘요</p>
-          </div>
-          <label class="toggle-switch">
-            <input
-              type="checkbox"
-              v-model="notificationSettings.WISH"
-              @change="saveNotificationSettings"
-            />
-            <span class="toggle-track">
-              <span class="toggle-thumb"></span>
-            </span>
-          </label>
-        </div>
-        <div class="notification-setting-item">
-          <div class="notification-text">
-            <p class="notification-title">게시판 댓글 알림</p>
-            <p class="notification-desc">내 게시글에 댓글이 달리면 알려줘요</p>
-          </div>
-          <label class="toggle-switch">
-            <input
-              type="checkbox"
-              v-model="notificationSettings.COMMENT"
-              @change="saveNotificationSettings"
-            />
-            <span class="toggle-track">
-              <span class="toggle-thumb"></span>
-            </span>
-          </label>
-        </div>
-        <div class="notification-setting-item">
-          <div class="notification-text">
-            <p class="notification-title">팔로우 알림</p>
-            <p class="notification-desc">누군가 나를 팔로우하면 알려줘요</p>
-          </div>
-          <label class="toggle-switch">
-            <input
-              type="checkbox"
-              v-model="notificationSettings.FOLLOW"
-              @change="saveNotificationSettings"
-            />
-            <span class="toggle-track">
-              <span class="toggle-thumb"></span>
-            </span>
-          </label>
-        </div>
-        
-        <p v-if="notificationSettingsError" class="notification-settings-error">
-          {{ notificationSettingsError }}
-        </p>
       </div>
     </div>
-  </div>
-</div>
-
   </div>
 </template>
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-  import { useRouter } from 'vue-router'
-  import PageHeader from '../components/common/PageHeader.vue'
-  import { useAuthStore } from '../stores/auth.js'
-  import { getFollowers, getFollowings } from '../api/follow.js'
+import { useRouter } from 'vue-router'
+import PageHeader from '../components/common/PageHeader.vue'
+import { useAuthStore } from '../stores/auth.js'
+import { getFollowers, getFollowings } from '../api/follow.js'
 import {
   getUserByUserId,
   getMyVideos,
@@ -522,27 +519,27 @@ import {
   uploadProfileImage,
   deleteProfileImage,
   updatePassword,
-    deleteMe,
-  } from '../api/user.js'
-  import { getWishedVideos, getVideoPreview } from '../api/video.js'
-  import { getBoardsByUser, getMyCommentedBoards } from '../api/board.js'
-  import { PREVIEW_LIMIT } from '../constants/ui.js'
-  import { getNotificationSettings, updateNotificationSettings } from '../api/notification.js'
-  import { resolveImageUrl } from '../utils/image.js'
-  
-  const router = useRouter()
-  const authStore = useAuthStore()
+  deleteMe,
+} from '../api/user.js'
+import { getWishedVideos, getVideoPreview } from '../api/video.js'
+import { getBoardsByUser, getMyCommentedBoards } from '../api/board.js'
+import { PREVIEW_LIMIT } from '../constants/ui.js'
+import { getNotificationSettings, updateNotificationSettings } from '../api/notification.js'
+import { resolveImageUrl } from '../utils/image.js'
+
+const router = useRouter()
+const authStore = useAuthStore()
 
 // 팔로워 / 팔로잉
 const followers = ref([])
 const followings = ref([])
 const followLoading = ref(false)
-  const followError = ref(null)
+const followError = ref(null)
 const userProfiles = ref({})
 const showFollowModal = ref(false)
 const activeFollowTab = ref('followers')
 
-  const followerUsers = computed(() =>
+const followerUsers = computed(() =>
   followers.value.map((item) => {
     const userId = item.followerId ?? item.follower_id
     const profile = userProfiles.value[userId] || {}
@@ -658,12 +655,12 @@ const goToUserProfile = (userId) => {
 // 활동
 const activeActivityTab = ref('videos')
 const activityLoading = ref(false)
-  const previewWishedVideos = ref([])
-  const previewUploadedVideos = ref([])
-  const previewReviewedVideos = ref([])
-    const boardActivityLoading = ref(false)
-  const previewWrittenBoards = ref([])
-  const previewCommentedBoards = ref([])
+const previewWishedVideos = ref([])
+const previewUploadedVideos = ref([])
+const previewReviewedVideos = ref([])
+const boardActivityLoading = ref(false)
+const previewWrittenBoards = ref([])
+const previewCommentedBoards = ref([])
 
 const normalizeVideo = (video) => {
   if (!video) return null
@@ -723,55 +720,55 @@ const fetchActivityPreviews = async () => {
     previewReviewedVideos.value = reviewedVideos
   } catch (err) {
     console.error('활동(영상) 정보 조회 실패:', err)
-    } finally {
-      activityLoading.value = false
-    }
+  } finally {
+    activityLoading.value = false
+  }
 }
 
-  const normalizeBoardPost = (post) => {
-    if (!post) return null
-    return {
-      postId: post.postId,
-      title: post.title,
-      viewCount: post.viewCount ?? 0,
-      commentCount: post.commentCount ?? 0,
-      createdAtDisplay: post.createdAt ? String(post.createdAt).slice(0, 10) : '',
-    }
+const normalizeBoardPost = (post) => {
+  if (!post) return null
+  return {
+    postId: post.postId,
+    title: post.title,
+    viewCount: post.viewCount ?? 0,
+    commentCount: post.commentCount ?? 0,
+    createdAtDisplay: post.createdAt ? String(post.createdAt).slice(0, 10) : '',
   }
+}
 
-  // 댓글 단 게시글용 (백엔드에서 postTitle + commentContent 내려준다고 가정)
+// 댓글 단 게시글용 (백엔드에서 postTitle + commentContent 내려준다고 가정)
 const normalizeCommentedPost = (item) => {
   if (!item) return null
   return {
     postId: item.postId,
-    title: item.postTitle,          // 글 제목
-    commentContent: item.content,   // 내가 단 댓글 내용
+    title: item.postTitle, // 글 제목
+    commentContent: item.content, // 내가 단 댓글 내용
     createdAtDisplay: item.createdAt ? String(item.createdAt).slice(0, 10) : '',
   }
 }
 
-  const fetchBoardActivity = async () => {
-    if (!authStore.isAuthenticated || !authStore.userId) return
+const fetchBoardActivity = async () => {
+  if (!authStore.isAuthenticated || !authStore.userId) return
 
-    boardActivityLoading.value = true
-    try {
-      // 작성한 게시글
-      const res = await getBoardsByUser(authStore.userId, 0, PREVIEW_LIMIT)
-      const posts = res.data?.posts || res.data || []
-      previewWrittenBoards.value = posts.map(normalizeBoardPost).filter(Boolean)
+  boardActivityLoading.value = true
+  try {
+    // 작성한 게시글
+    const res = await getBoardsByUser(authStore.userId, 0, PREVIEW_LIMIT)
+    const posts = res.data?.posts || res.data || []
+    previewWrittenBoards.value = posts.map(normalizeBoardPost).filter(Boolean)
 
-      // 내가 댓글 단 게시글
+    // 내가 댓글 단 게시글
     const commentedRes = await getMyCommentedBoards(PREVIEW_LIMIT)
     const commentedList = commentedRes.data || []
     previewCommentedBoards.value = commentedList.map(normalizeCommentedPost).filter(Boolean)
-    } catch (err) {
-      console.error('활동(게시판) 정보 조회 실패:', err)
-      if (!previewWrittenBoards.value.length) previewWrittenBoards.value = []
-      if (!previewCommentedBoards.value.length) previewCommentedBoards.value = []
-    } finally {
-      boardActivityLoading.value = false
-    }
+  } catch (err) {
+    console.error('활동(게시판) 정보 조회 실패:', err)
+    if (!previewWrittenBoards.value.length) previewWrittenBoards.value = []
+    if (!previewCommentedBoards.value.length) previewCommentedBoards.value = []
+  } finally {
+    boardActivityLoading.value = false
   }
+}
 
 const goAllWishedVideos = () => {
   router.push('/wishlist')
@@ -799,7 +796,7 @@ const goMyBoards = () => {
   router.push({ name: 'myBoards' })
 }
 
-  const goMyCommentedBoards = () => {
+const goMyCommentedBoards = () => {
   router.push({ name: 'myCommentedBoards' })
 }
 

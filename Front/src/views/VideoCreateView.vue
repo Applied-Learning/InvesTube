@@ -12,13 +12,16 @@
             placeholder="영상 제목으로 검색하거나 YouTube 링크를 붙여넣기"
             @keyup.enter="handleSearch"
           />
-          <button type="button" class="btn-secondary" :disabled="searchLoading" @click="handleSearch">
+          <button
+            type="button"
+            class="btn-secondary"
+            :disabled="searchLoading"
+            @click="handleSearch"
+          >
             {{ searchLoading ? '검색 중...' : '검색' }}
           </button>
         </div>
-        <p class="help-text">
-          키워드 검색 후 영상을 선택하거나, 영상의 링크/ID를 입력하세요.
-        </p>
+        <p class="help-text">키워드 검색 후 영상을 선택하거나, 영상의 링크/ID를 입력하세요.</p>
         <div v-if="searchError" class="error-message inline-error">{{ searchError }}</div>
         <div v-if="searchResults.length" class="search-results">
           <div
@@ -46,12 +49,16 @@
           <img
             :src="
               selectedPreview.thumbnailUrl ||
-              (selectedPreview.videoId ? `https://i.ytimg.com/vi/${selectedPreview.videoId}/hqdefault.jpg` : '')
+              (selectedPreview.videoId
+                ? `https://i.ytimg.com/vi/${selectedPreview.videoId}/hqdefault.jpg`
+                : '')
             "
             alt="선택한 영상 썸네일"
           />
         </div>
-        <div v-else class="activity-placeholder">검색/링크로 영상을 선택하면 썸네일이 표시됩니다.</div>
+        <div v-else class="activity-placeholder">
+          검색/링크로 영상을 선택하면 썸네일이 표시됩니다.
+        </div>
         <div class="meta-actions">
           <button
             type="button"
@@ -151,9 +158,7 @@ const extractYoutubeId = (input) => {
   // 이미 ID 형식(11자)인 경우
   if (/^[0-9A-Za-z_-]{11}$/.test(trimmed)) return trimmed
   // URL에서 추출
-  const match = trimmed.match(
-    /(?:v=|v\/|vi=|vi\/|youtu\.be\/|embed\/)([0-9A-Za-z_-]{11})/
-  )
+  const match = trimmed.match(/(?:v=|v\/|vi=|vi\/|youtu\.be\/|embed\/)([0-9A-Za-z_-]{11})/)
   return match ? match[1] : ''
 }
 
