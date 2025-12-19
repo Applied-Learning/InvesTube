@@ -20,6 +20,7 @@
 </template>
 
 <script>
+import { markRaw } from 'vue'
 import { Chart, registerables } from 'chart.js'
 
 Chart.register(...registerables)
@@ -73,7 +74,8 @@ export default {
     initChart() {
       const ctx = this.$refs.chartCanvas.getContext('2d')
       
-      this.chart = new Chart(ctx, {
+      // markRaw를 사용하여 Chart 인스턴스를 반응형에서 제외
+      this.chart = markRaw(new Chart(ctx, {
         type: 'line',
         data: {
           labels: [],
@@ -120,14 +122,25 @@ export default {
             }
           }
         }
-      })
+      }))
       
       this.updateChart()
     },
     updateChart() {
-      if (!this.chart || !this.priceData || this.priceData.length === 0) return
+      if (!this.chart) return
       
-      const filteredData = this.filterDataByPeriod(this.priceData)
+      if (!this.priceData || this.priceData.length === 0) {
+        this.chart.data.labels = []
+        this.chart.data.datasets[0].data = []
+        this.chart.update()
+        return
+      }
+      
+      // Vue 반응형 객체를 일반 객체로 변환
+      const rawData = JSON.parse(JSON.stringify(this.priceData))
+      const filteredData = this.filterDataByPeriod(rawData)
+      
+      console.log('Chart data:', filteredData) // 디버깅용
       
       const labels = filteredData.map(item => {
         const date = new Date(item.tradeDate)
@@ -138,6 +151,11 @@ export default {
       
       this.chart.data.labels = labels
       this.chart.data.datasets[0].data = data
+      
+      // 데이터 포인트 표시 설정
+      this.chart.data.datasets[0].pointRadius = filteredData.length < 10 ? 5 : 3
+      this.chart.data.datasets[0].pointHoverRadius = filteredData.length < 10 ? 7 : 5
+      
       this.chart.update()
     },
     filterDataByPeriod(data) {
