@@ -43,7 +43,7 @@
           v-for="stock in filteredStocks" 
           :key="stock.stockCode"
           :stock="stock"
-          @click="goToDetail"
+          @select="goToDetail"
         />
       </div>
       
@@ -144,6 +144,7 @@ export default {
       this.filteredStocks = result
     },
     goToDetail(stockCode) {
+      console.log('goToDetail called with:', stockCode)
       this.$router.push({ name: 'StockDetail', params: { stockCode } })
     }
   }

@@ -58,7 +58,7 @@ export default {
   },
   methods: {
     handleClick() {
-      this.$emit('click', this.stock.stockCode)
+      this.$emit('select', this.stock.stockCode)
     },
     formatPrice(price) {
       if (!price) return '-'

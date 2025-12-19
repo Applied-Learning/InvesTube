@@ -114,8 +114,8 @@ public class StockServiceImpl implements StockService {
     @Transactional
     public void syncKospiStocks() {
         try {
-            // 한 달 전 날짜를 기준일자로 사용
-            String baseDate = LocalDate.now().minusMonths(1).format(DateTimeFormatter.ofPattern("yyyyMMdd"));
+            // 어제 날짜를 기준일자로 사용 (당일 데이터는 아직 제공되지 않을 수 있음)
+            String baseDate = LocalDate.now().minusDays(1).format(DateTimeFormatter.ofPattern("yyyyMMdd"));
             
             // KRX API URL (유가증권 일별매매정보)
             String apiUrl = "https://data-dbg.krx.co.kr/svc/apis/sto/stk_bydd_trd";
@@ -202,8 +202,8 @@ public class StockServiceImpl implements StockService {
     @Transactional
     public void syncKosdaqStocks() {
         try {
-            // 한 달 전 날짜를 기준일자로 사용
-            String baseDate = LocalDate.now().minusMonths(1).format(DateTimeFormatter.ofPattern("yyyyMMdd"));
+            // 어제 날짜를 기준일자로 사용 (당일 데이터는 아직 제공되지 않을 수 있음)
+            String baseDate = LocalDate.now().minusDays(1).format(DateTimeFormatter.ofPattern("yyyyMMdd"));
             
             // KRX API URL
             String apiUrl = "https://data-dbg.krx.co.kr/svc/apis/sto/ksq_bydd_trd";
