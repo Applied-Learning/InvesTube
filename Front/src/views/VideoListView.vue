@@ -1,6 +1,8 @@
 <template>
   <div>
-    <div class="controls">
+    <PageHeader v-if="isWishlistMode" title="찜한 영상" icon="video" />
+
+    <div class="controls" v-if="!isWishlistMode">
       <!-- 검색바 -->
       <div class="search-bar">
         <div class="search-input-wrapper">
@@ -173,6 +175,7 @@ import {
   searchVideos,
 } from '../api/video.js'
 import { useAuthStore } from '../stores/auth.js'
+import { formatKSTDate } from '../utils/date.js'
 
 const route = useRoute()
 const router = useRouter()
@@ -263,7 +266,7 @@ const fetchVideos = async () => {
       uploaderName: video.uploaderNickname || `사용자 ${video.userId}`,
       uploaderProfileImageUrl: video.uploaderProfileImage || '',
       views: video.viewCount,
-      createdAtText: video.createdAt ? new Date(video.createdAt).toLocaleDateString() : '',
+      createdAtText: video.createdAt ? formatKSTDate(video.createdAt) : '',
       duration: video.duration || '',
       wished: isWishlist.value ? true : wishedVideoIds.value.has(video.videoId),
     }))

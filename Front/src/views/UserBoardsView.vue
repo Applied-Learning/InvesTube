@@ -30,6 +30,7 @@
 import { ref, onMounted, computed } from 'vue'
 import { useRoute, RouterLink } from 'vue-router'
 import PageHeader from '../components/common/PageHeader.vue'
+import { formatKSTDate } from '../utils/date.js'
 import { getBoardsByUser } from '../api/board.js'
 import { getUserByUserId } from '../api/user.js'
 
@@ -51,7 +52,7 @@ const normalizeBoardPost = (post) => {
     title: post.title,
     viewCount: post.viewCount ?? 0,
     commentCount: post.commentCount ?? 0,
-    createdAtDisplay: post.createdAt ? String(post.createdAt).slice(0, 10) : '',
+    createdAtDisplay: post.createdAt ? formatKSTDate(post.createdAt) : '',
   }
 }
 

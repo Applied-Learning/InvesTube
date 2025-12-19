@@ -70,6 +70,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted, watch } from 'vue'
+import { formatKST } from '../../utils/date.js'
 import { RouterLink, useRouter } from 'vue-router'
 import Container from './Container.vue'
 import { useAuthStore } from '../../stores/auth.js'
@@ -103,9 +104,7 @@ const toggleUserMenu = () => {
 // notification handlers moved into NotificationDropdown component
 
 const formatTime = (dateString) => {
-  if (!dateString) return ''
-  const date = new Date(dateString)
-  return date.toLocaleString('ko-KR')
+  return formatKST(dateString)
 }
 
 const fetchMyProfile = async () => {
@@ -132,10 +131,13 @@ const handleClickOutside = (event) => {
 onMounted(() => {
   document.addEventListener('click', handleClickOutside)
   fetchMyProfile()
+  // listen for profile updates from other components
+  window.addEventListener('profile-updated', fetchMyProfile)
 })
 
 onUnmounted(() => {
   document.removeEventListener('click', handleClickOutside)
+  window.removeEventListener('profile-updated', fetchMyProfile)
 })
 
 watch(

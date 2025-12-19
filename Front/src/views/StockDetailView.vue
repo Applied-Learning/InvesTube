@@ -87,6 +87,7 @@
 
 <script>
 import PageHeader from '@/components/common/PageHeader.vue'
+import { formatKSTDate } from '@/utils/date.js'
 import Container from '@/components/common/Container.vue'
 import Button from '@/components/common/Button.vue'
 import StockChart from '@/components/stock/StockChart.vue'
@@ -187,7 +188,7 @@ export default {
     },
     formatDate(date) {
       if (!date) return '-'
-      return new Date(date).toLocaleDateString('ko-KR')
+      return formatKSTDate(date)
     }
   }
 }

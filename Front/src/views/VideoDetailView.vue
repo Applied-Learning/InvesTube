@@ -316,7 +316,7 @@
                     review.nickname || '사용자 ' + review.userId
                   }}</span>
                   <div class="review-rating">
-                    <template v-for="star in 5" :key="star">
+                    <span v-for="star in 5" :key="star" class="star-icon">
                       <svg
                         v-if="star <= Math.floor(review.rating)"
                         width="16"
@@ -366,7 +366,7 @@
                           stroke-width="2"
                         />
                       </svg>
-                    </template>
+                    </span>
                     <span class="rating-text">{{ review.rating }}</span>
                   </div>
                 </div>
@@ -440,10 +440,10 @@ const getCategoryName = (id) => {
   return categories[id] || '기타'
 }
 
+import { formatKSTDate } from '../utils/date.js'
+
 const formatDate = (dateString) => {
-  if (!dateString) return ''
-  const date = new Date(dateString)
-  return date.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' })
+  return formatKSTDate(dateString)
 }
 
 const goUploaderProfile = () => {
