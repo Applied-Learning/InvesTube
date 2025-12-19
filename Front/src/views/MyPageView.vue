@@ -757,18 +757,23 @@ const goMyVideos = () => {
   router.push({ name: 'myVideos' })
 }
 
-  const goMyReviewVideos = () => {
-    router.push({ name: 'myReviewVideos' })
-  }
+const goMyReviewVideos = () => {
+  router.push({ name: 'myReviewVideos' })
+}
 
-  const goVideoDetail = (videoId) => {
-    if (!videoId) return
-    router.push({ name: 'videoDetail', params: { id: videoId } })
-  }
+const goVideoDetail = (videoId) => {
+  if (!videoId) return
+  router.push({ name: 'videoDetail', params: { id: videoId } })
+}
 
-  const goMyBoards = () => {
-    router.push({ name: 'myBoards' })
-  }
+const goBoardDetail = (postId) => {
+  if (!postId) return
+  router.push({ name: 'boardDetail', params: { id: postId } })
+}
+
+const goMyBoards = () => {
+  router.push({ name: 'myBoards' })
+}
 
   const goMyCommentedBoards = () => {
   router.push({ name: 'myCommentedBoards' })
