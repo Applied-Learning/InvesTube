@@ -181,9 +181,18 @@
             </div>
             <div v-else class="comment-body">
               <div class="comment-meta">
-                <span class="comment-author">{{
-                  comment.nickname || '사용자 ' + comment.userId
-                }}</span>
+                <div class="comment-author-block" @click="goUserProfile(comment)">
+                  <div class="comment-author-avatar">
+                    <img
+                      v-if="comment.profileImage"
+                      :src="resolveImageUrl(comment.profileImage)"
+                      :alt="comment.nickname || '사용자'
+                    "
+                    />
+                    <div v-else class="avatar-fallback-small">{{ getAuthorInitial(comment.nickname) }}</div>
+                  </div>
+                  <span class="comment-author-name">{{ comment.nickname || ('사용자 ' + comment.userId) }}</span>
+                </div>
                 <span class="comment-date">· {{ formatDate(comment.createdAt) }}</span>
                 <div v-if="isMyComment(comment)" class="comment-controls">
                   <button @click="startEditComment(comment)" class="action-btn">수정</button>
@@ -278,7 +287,12 @@ const fetchComments = async () => {
   commentsLoading.value = true
   try {
     const resp = await getCommentsByPostId(route.params.id)
-    comments.value = resp.data || []
+    const items = resp.data || []
+    // normalize possible profile image field names from backend
+    comments.value = items.map((c) => ({
+      ...c,
+      profileImage: c.profileImage || c.authorProfileImage || c.userProfileImage || c.profile_image || null,
+    }))
   } catch (err) {
     console.error('댓글 목록 조회 실패:', err)
   } finally {
@@ -342,6 +356,18 @@ const removeComment = async (commentId) => {
 
 const isMyComment = (c) => {
   return authStore.userId && c.userId === parseInt(authStore.userId)
+}
+
+const goUserProfile = (comment) => {
+  try {
+    if (authStore.userId && Number(authStore.userId) === Number(comment.userId)) {
+      router.push('/mypage')
+    } else {
+      router.push({ name: 'userProfile', params: { userId: comment.userId } })
+    }
+  } catch (err) {
+    console.error('navigate to user profile failed', err)
+  }
 }
 
 const getAuthorInitial = (nickname) => {
@@ -894,6 +920,47 @@ onMounted(() => {
   align-items: center;
   gap: 8px;
   flex-wrap: wrap;
+}
+
+.comment-author-block {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.comment-author-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #fff;
+  font-weight: 700;
+}
+
+.comment-author-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-fallback-small {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.comment-author-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
 }
 
 .comment-author {
