@@ -21,6 +21,7 @@ import com.Investube.mvc.model.dto.Stock;
 import com.Investube.mvc.model.dto.StockPrice;
 import com.Investube.mvc.model.dto.StockDetailDto;
 import com.Investube.mvc.model.dto.KrxStockResponse;
+import com.Investube.mvc.model.dto.KrxIndexResponse;
 
 @Service
 public class StockServiceImpl implements StockService {
@@ -109,85 +110,37 @@ public class StockServiceImpl implements StockService {
     }
     
     /**
-     * KRX KOSPI 시장 주식 정보를 가져와서 DB에 저장
+     * KRX KOSPI 시장 주식 정보를 가져와서 DB에 저장 (최근 1년 데이터 - 초기 설정용)
      */
     @Transactional
     public void syncKospiStocks() {
         try {
-            // 어제 날짜를 기준일자로 사용 (당일 데이터는 아직 제공되지 않을 수 있음)
-            String baseDate = LocalDate.now().minusDays(1).format(DateTimeFormatter.ofPattern("yyyyMMdd"));
+            System.out.println("KOSPI 데이터 동기화 시작 (최근 30일)");
             
-            // KRX API URL (유가증권 일별매매정보)
-            String apiUrl = "https://data-dbg.krx.co.kr/svc/apis/sto/stk_bydd_trd";
+            // 최근 30일간의 데이터를 수집
+            LocalDate endDate = LocalDate.now();
+            LocalDate startDate = endDate.minusDays(30);
             
-            // 요청 파라미터
-            Map<String, Object> requestBody = new HashMap<>();
-            Map<String, String> inBlock = new HashMap<>();
-            inBlock.put("basDd", baseDate);
-            requestBody.put("InBlock_1", inBlock);
+            int successCount = 0;
+            int totalDays = 30;
             
-            // HTTP 헤더에 API 키 추가
-            org.springframework.http.HttpHeaders headers = new org.springframework.http.HttpHeaders();
-            headers.set("AUTH_KEY", krxApiKey);
-            headers.setContentType(org.springframework.http.MediaType.APPLICATION_JSON);
-            
-            org.springframework.http.HttpEntity<Map<String, Object>> requestEntity = 
-                new org.springframework.http.HttpEntity<>(requestBody, headers);
-            
-            // API 호출
-            System.out.println("KRX KOSPI API 호출 날짜: " + baseDate);
-            
-            // 실제 객체로 파싱
-            org.springframework.http.ResponseEntity<KrxStockResponse> responseEntity = 
-                restTemplate.exchange(apiUrl, org.springframework.http.HttpMethod.POST, requestEntity, KrxStockResponse.class);
-            
-            KrxStockResponse response = responseEntity.getBody();
-            
-            if (response != null && response.getOutBlock_1() != null) {
-                List<KrxStockResponse.KrxStockItem> items = response.getOutBlock_1();
+            for (int i = 0; i < totalDays; i++) {
+                LocalDate targetDate = startDate.plusDays(i);
+                String dateStr = targetDate.format(DateTimeFormatter.ofPattern("yyyyMMdd"));
                 
-                System.out.println("KOSPI에서 " + items.size() + "개 종목 정보 수신");
-                
-                for (KrxStockResponse.KrxStockItem item : items) {
-                    try {
-                        // Stock 정보 저장/업데이트
-                        Stock stock = new Stock();
-                        stock.setStockCode(item.getISU_CD());
-                        stock.setStockName(item.getISU_NM());
-                        stock.setMarket("KOSPI");
-                        stock.setIndustry(item.getSECT_TP_NM());
-                        
-                        // 기존에 있는지 확인
-                        Stock existingStock = stockDao.selectStockByCode(item.getISU_CD());
-                        if (existingStock == null) {
-                            stockDao.insertStock(stock);
-                        } else {
-                            stockDao.updateStock(stock);
-                        }
-                        
-                        // StockPrice 정보 저장
-                        StockPrice stockPrice = new StockPrice();
-                        stockPrice.setStockCode(item.getISU_CD());
-                        stockPrice.setTradeDate(parseDate(item.getBAS_DD()));
-                        stockPrice.setOpenPrice(parseBigDecimal(item.getTDD_OPNPRC()));
-                        stockPrice.setHighPrice(parseBigDecimal(item.getTDD_HGPRC()));
-                        stockPrice.setLowPrice(parseBigDecimal(item.getTDD_LWPRC()));
-                        stockPrice.setClosePrice(parseBigDecimal(item.getTDD_CLSPRC()));
-                        stockPrice.setVolume(parseLong(item.getACC_TRDVOL()));
-                        stockPrice.setMarketCap(parseLong(item.getMKTCAP()));
-                        
-                        // INSERT ON DUPLICATE KEY UPDATE 방식으로 저장
-                        stockDao.insertStockPrice(stockPrice);
-                        
-                    } catch (Exception e) {
-                        System.err.println("KOSPI 종목 " + item.getISU_NM() + " 저장 실패: " + e.getMessage());
+                try {
+                    if (syncKospiStocksByDate(dateStr)) {
+                        successCount++;
                     }
+                    
+                    // API 호출 간격 (너무 빠르게 호출하지 않도록)
+                    Thread.sleep(100);
+                } catch (Exception e) {
+                    System.err.println("KOSPI " + dateStr + " 동기화 실패: " + e.getMessage());
                 }
-                
-                System.out.println("KOSPI 데이터 동기화 완료");
-            } else {
-                System.out.println("KOSPI API 응답 데이터가 없습니다.");
             }
+            
+            System.out.println("KOSPI 데이터 동기화 완료: " + successCount + "/" + totalDays + "일");
             
         } catch (Exception e) {
             System.err.println("KOSPI API 호출 실패: " + e.getMessage());
@@ -197,69 +150,57 @@ public class StockServiceImpl implements StockService {
     }
     
     /**
-     * KRX KOSDAQ 시장 주식 정보를 가져와서 DB에 저장
+     * 오늘 KOSPI 데이터만 수집 (스케줄러용)
      */
     @Transactional
-    public void syncKosdaqStocks() {
+    public void syncTodayKospiStocks() {
+        String today = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyyMMdd"));
+        System.out.println("KOSPI 오늘 데이터 동기화: " + today);
+        
+        if (syncKospiStocksByDate(today)) {
+            System.out.println("KOSPI 오늘 데이터 동기화 완료");
+        } else {
+            System.out.println("KOSPI 오늘 데이터 없음 (휴장일일 수 있음)");
+        }
+    }
+    
+    /**
+     * 특정 날짜의 KOSPI 데이터 수집
+     */
+    private boolean syncKospiStocksByDate(String dateStr) {
         try {
-            // 어제 날짜를 기준일자로 사용 (당일 데이터는 아직 제공되지 않을 수 있음)
-            String baseDate = LocalDate.now().minusDays(1).format(DateTimeFormatter.ofPattern("yyyyMMdd"));
+            String apiUrl = "https://data-dbg.krx.co.kr/svc/apis/sto/stk_bydd_trd";
             
-            // KRX API URL
-            String apiUrl = "https://data-dbg.krx.co.kr/svc/apis/sto/ksq_bydd_trd";
-            
-            // 요청 파라미터
             Map<String, Object> requestBody = new HashMap<>();
             Map<String, String> inBlock = new HashMap<>();
-            inBlock.put("basDd", baseDate);
+            inBlock.put("basDd", dateStr);
             requestBody.put("InBlock_1", inBlock);
             
-            // HTTP 헤더에 API 키 추가
-            org.springframework.http.HttpHeaders headers = new org.springframework.http.HttpHeaders();
+            HttpHeaders headers = new HttpHeaders();
             headers.set("AUTH_KEY", krxApiKey);
-            headers.setContentType(org.springframework.http.MediaType.APPLICATION_JSON);
+            headers.setContentType(MediaType.APPLICATION_JSON);
             
-            org.springframework.http.HttpEntity<Map<String, Object>> requestEntity = 
-                new org.springframework.http.HttpEntity<>(requestBody, headers);
+            HttpEntity<Map<String, Object>> requestEntity = new HttpEntity<>(requestBody, headers);
             
-            // API 호출
-            System.out.println("KRX API 호출 날짜: " + baseDate);
-            System.out.println("요청 URL: " + apiUrl);
-            System.out.println("요청 본문: " + requestBody);
-            
-            // 먼저 String으로 응답 확인
-            org.springframework.http.ResponseEntity<String> stringResponse = 
-                restTemplate.exchange(apiUrl, org.springframework.http.HttpMethod.POST, requestEntity, String.class);
-            
-            System.out.println("응답 상태 코드: " + stringResponse.getStatusCode());
-            System.out.println("응답 본문 (원본): " + stringResponse.getBody());
-            
-            // 실제 객체로 파싱
-            org.springframework.http.ResponseEntity<KrxStockResponse> responseEntity = 
-                restTemplate.exchange(apiUrl, org.springframework.http.HttpMethod.POST, requestEntity, KrxStockResponse.class);
+            ResponseEntity<KrxStockResponse> responseEntity = 
+                restTemplate.exchange(apiUrl, HttpMethod.POST, requestEntity, KrxStockResponse.class);
             
             KrxStockResponse response = responseEntity.getBody();
             
             if (response != null && response.getOutBlock_1() != null) {
                 List<KrxStockResponse.KrxStockItem> items = response.getOutBlock_1();
                 
-                System.out.println("KRX에서 " + items.size() + "개 종목 정보 수신");
-                
                 for (KrxStockResponse.KrxStockItem item : items) {
                     try {
-                        // Stock 정보 저장/업데이트
-                        Stock stock = new Stock();
-                        stock.setStockCode(item.getISU_CD());
-                        stock.setStockName(item.getISU_NM());
-                        stock.setMarket("KOSDAQ");
-                        stock.setIndustry(item.getSECT_TP_NM());
-                        
-                        // 기존에 있는지 확인
+                        // Stock 정보 저장/업데이트 (첫 번째 날짜에만)
                         Stock existingStock = stockDao.selectStockByCode(item.getISU_CD());
                         if (existingStock == null) {
+                            Stock stock = new Stock();
+                            stock.setStockCode(item.getISU_CD());
+                            stock.setStockName(item.getISU_NM());
+                            stock.setMarket("KOSPI");
+                            stock.setIndustry(item.getSECT_TP_NM());
                             stockDao.insertStock(stock);
-                        } else {
-                            stockDao.updateStock(stock);
                         }
                         
                         // StockPrice 정보 저장
@@ -273,23 +214,155 @@ public class StockServiceImpl implements StockService {
                         stockPrice.setVolume(parseLong(item.getACC_TRDVOL()));
                         stockPrice.setMarketCap(parseLong(item.getMKTCAP()));
                         
-                        // INSERT ON DUPLICATE KEY UPDATE 방식으로 저장
                         stockDao.insertStockPrice(stockPrice);
-                        
                     } catch (Exception e) {
-                        System.err.println("종목 " + item.getISU_NM() + " 저장 실패: " + e.getMessage());
+                        // 개별 종목 오류는 무시하고 계속 진행
                     }
                 }
                 
-                System.out.println("KRX 데이터 동기화 완료");
-            } else {
-                System.out.println("KRX API 응답 데이터가 없습니다.");
+                System.out.println("KOSPI " + dateStr + ": " + items.size() + "개 종목 저장");
+                return true;
             }
             
+            return false;
         } catch (Exception e) {
-            System.err.println("KRX API 호출 실패: " + e.getMessage());
+            return false;
+        }
+    }
+    
+    /**
+     * KRX KOSDAQ 시장 주식 정보를 가져와서 DB에 저장 (최근 1년 데이터 - 초기 설정용)
+     */
+    @Transactional
+    public void syncKosdaqStocks() {
+        try {
+            System.out.println("KOSDAQ 데이터 동기화 시작 (최근 30일)");
+            
+            // 최근 30일간의 데이터를 수집
+            LocalDate endDate = LocalDate.now();
+            LocalDate startDate = endDate.minusDays(30);
+            
+            int successCount = 0;
+            int totalDays = 30;
+            
+            for (int i = 0; i < totalDays; i++) {
+                LocalDate targetDate = startDate.plusDays(i);
+                String dateStr = targetDate.format(DateTimeFormatter.ofPattern("yyyyMMdd"));
+                
+                try {
+                    if (syncKosdaqStocksByDate(dateStr)) {
+                        successCount++;
+                    }
+                    
+                    // API 호출 간격
+                    Thread.sleep(100);
+                } catch (Exception e) {
+                    System.err.println("KOSDAQ " + dateStr + " 동기화 실패: " + e.getMessage());
+                }
+            }
+            
+            System.out.println("KOSDAQ 데이터 동기화 완료: " + successCount + "/" + totalDays + "일");
+            
+        } catch (Exception e) {
+            System.err.println("KOSDAQ API 호출 실패: " + e.getMessage());
             e.printStackTrace();
-            throw new RuntimeException("KRX 데이터 동기화 실패", e);
+            throw new RuntimeException("KOSDAQ 데이터 동기화 실패", e);
+        }
+    }
+    
+    /**
+     * 오늘 KOSDAQ 데이터만 수집 (스케줄러용)
+     */
+    @Transactional
+    public void syncTodayKosdaqStocks() {
+        String today = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyyMMdd"));
+        System.out.println("KOSDAQ 오늘 데이터 동기화: " + today);
+        
+        if (syncKosdaqStocksByDate(today)) {
+            System.out.println("KOSDAQ 오늘 데이터 동기화 완료");
+        } else {
+            System.out.println("KOSDAQ 오늘 데이터 없음 (휴장일일 수 있음)");
+        }
+    }
+    
+    @Override
+    @Transactional
+    public void syncTodayStockData() {
+        System.out.println("=".repeat(60));
+        System.out.println("오늘 주식 데이터 동기화 시작");
+        System.out.println("=".repeat(60));
+        
+        syncTodayKospiStocks();
+        syncTodayKosdaqStocks();
+        
+        System.out.println("=".repeat(60));
+        System.out.println("오늘 주식 데이터 동기화 완료");
+        System.out.println("=".repeat(60));
+    }
+    
+    /**
+     * 특정 날짜의 KOSDAQ 데이터 수집
+     */
+    private boolean syncKosdaqStocksByDate(String dateStr) {
+        try {
+            String apiUrl = "https://data-dbg.krx.co.kr/svc/apis/sto/ksq_bydd_trd";
+            
+            Map<String, Object> requestBody = new HashMap<>();
+            Map<String, String> inBlock = new HashMap<>();
+            inBlock.put("basDd", dateStr);
+            requestBody.put("InBlock_1", inBlock);
+            
+            HttpHeaders headers = new HttpHeaders();
+            headers.set("AUTH_KEY", krxApiKey);
+            headers.setContentType(MediaType.APPLICATION_JSON);
+            
+            HttpEntity<Map<String, Object>> requestEntity = new HttpEntity<>(requestBody, headers);
+            
+            ResponseEntity<KrxStockResponse> responseEntity = 
+                restTemplate.exchange(apiUrl, HttpMethod.POST, requestEntity, KrxStockResponse.class);
+            
+            KrxStockResponse response = responseEntity.getBody();
+            
+            if (response != null && response.getOutBlock_1() != null) {
+                List<KrxStockResponse.KrxStockItem> items = response.getOutBlock_1();
+                
+                for (KrxStockResponse.KrxStockItem item : items) {
+                    try {
+                        // Stock 정보 저장/업데이트 (첫 번째 날짜에만)
+                        Stock existingStock = stockDao.selectStockByCode(item.getISU_CD());
+                        if (existingStock == null) {
+                            Stock stock = new Stock();
+                            stock.setStockCode(item.getISU_CD());
+                            stock.setStockName(item.getISU_NM());
+                            stock.setMarket("KOSDAQ");
+                            stock.setIndustry(item.getSECT_TP_NM());
+                            stockDao.insertStock(stock);
+                        }
+                        
+                        // StockPrice 정보 저장
+                        StockPrice stockPrice = new StockPrice();
+                        stockPrice.setStockCode(item.getISU_CD());
+                        stockPrice.setTradeDate(parseDate(item.getBAS_DD()));
+                        stockPrice.setOpenPrice(parseBigDecimal(item.getTDD_OPNPRC()));
+                        stockPrice.setHighPrice(parseBigDecimal(item.getTDD_HGPRC()));
+                        stockPrice.setLowPrice(parseBigDecimal(item.getTDD_LWPRC()));
+                        stockPrice.setClosePrice(parseBigDecimal(item.getTDD_CLSPRC()));
+                        stockPrice.setVolume(parseLong(item.getACC_TRDVOL()));
+                        stockPrice.setMarketCap(parseLong(item.getMKTCAP()));
+                        
+                        stockDao.insertStockPrice(stockPrice);
+                    } catch (Exception e) {
+                        // 개별 종목 오류는 무시하고 계속 진행
+                    }
+                }
+                
+                System.out.println("KOSDAQ " + dateStr + ": " + items.size() + "개 종목 저장");
+                return true;
+            }
+            
+            return false;
+        } catch (Exception e) {
+            return false;
         }
     }
     
@@ -332,6 +405,46 @@ public class StockServiceImpl implements StockService {
             return Long.parseLong(str.replace(",", ""));
         } catch (Exception e) {
             return 0L;
+        }
+    }
+    
+    /**
+     * KRX 지수 정보 조회 (KOSPI, KOSDAQ, KRX 대표지수들)
+     */
+    @Override
+    public List<KrxIndexResponse.KrxIndexItem> getKrxIndices() {
+        try {
+            // 어제 날짜 사용 (오늘 데이터는 장 마감 후에만 조회 가능)
+            String baseDate = LocalDate.now().minusDays(1).format(DateTimeFormatter.ofPattern("yyyyMMdd"));
+            
+            // KRX 시리즈 일별시세정보 API
+            String apiUrl = "https://data-dbg.krx.co.kr/svc/apis/idx/krx_dd_trd";
+            
+            Map<String, Object> requestBody = new HashMap<>();
+            Map<String, String> inBlock = new HashMap<>();
+            inBlock.put("basDd", baseDate);
+            requestBody.put("InBlock_1", inBlock);
+            
+            HttpHeaders headers = new HttpHeaders();
+            headers.set("AUTH_KEY", krxApiKey);
+            headers.setContentType(MediaType.APPLICATION_JSON);
+            
+            HttpEntity<Map<String, Object>> requestEntity = new HttpEntity<>(requestBody, headers);
+            
+            ResponseEntity<KrxIndexResponse> responseEntity = 
+                restTemplate.exchange(apiUrl, HttpMethod.POST, requestEntity, KrxIndexResponse.class);
+            
+            KrxIndexResponse response = responseEntity.getBody();
+            
+            if (response != null && response.getOutBlock_1() != null) {
+                return response.getOutBlock_1();
+            }
+            
+            return List.of();
+        } catch (Exception e) {
+            System.err.println("KRX 지수 정보 조회 실패: " + e.getMessage());
+            e.printStackTrace();
+            return List.of();
         }
     }
 }
