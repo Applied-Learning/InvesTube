@@ -771,7 +771,7 @@ const fetchBoardActivity = async () => {
 }
 
 const goAllWishedVideos = () => {
-  router.push('/wishlist')
+  router.push({ name: 'myWishedVideos' })
 }
 
 const goMyVideos = () => {

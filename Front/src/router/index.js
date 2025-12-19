@@ -88,6 +88,11 @@ const router = createRouter({
       component: () => import('../views/MyReviewedVideosView.vue'),
     },
     {
+      path: '/mypage/wishlist',
+      name: 'myWishedVideos',
+      component: () => import('../views/MyWishedVideosView.vue'),
+    },
+    {
       path: '/users/:userId/boards',
       name: 'userBoards',
       component: () => import('../views/UserBoardsView.vue'),

@@ -1,8 +1,6 @@
 <template>
   <div>
-    <PageHeader v-if="isWishlistMode" title="찜한 영상" />
-
-    <div class="controls" v-if="!isWishlistMode">
+    <div class="controls">
       <!-- 검색바 -->
       <div class="search-bar">
         <div class="search-input-wrapper">
@@ -73,16 +71,12 @@
           <button
             v-for="option in sortOptions"
             :key="option.value"
-            :class="['sort-tab', { active: sortBy === option.value && !isWishlistMode }]"
+            :class="['sort-tab', { active: sortBy === option.value && !isWishlist }]"
             @click="changeSortBy(option.value)"
           >
             {{ option.label }}
           </button>
-          <button
-            class="sort-tab"
-            :class="{ active: isWishlistMode }"
-            @click="$router.push('/wishlist')"
-          >
+          <button class="sort-tab" :class="{ active: isWishlist }" @click="selectWishlistTab">
             찜한 영상
           </button>
         </div>
@@ -111,7 +105,7 @@
     <div v-if="loading" class="loading">로딩 중...</div>
     <div v-else-if="error" class="error">{{ error }}</div>
     <div v-else-if="videos.length === 0" class="empty">
-      <p v-if="isWishlistMode">찜한 영상이 없습니다.</p>
+      <p v-if="isWishlist">찜한 영상이 없습니다.</p>
       <p v-else>비디오가 없습니다.</p>
     </div>
     <div v-else>
@@ -171,7 +165,6 @@
 import { ref, onMounted, computed, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import VideoCard from '../components/video/VideoCard.vue'
-import PageHeader from '../components/common/PageHeader.vue'
 import {
   getVideos,
   getVideosByCategory,
@@ -189,7 +182,8 @@ const loading = ref(false)
 const error = ref(null)
 const sortBy = ref('latest')
 const selectedCategory = ref(null)
-const isWishlistMode = computed(() => route.meta.isWishlist === true)
+const isWishlistRoute = computed(() => route.meta.isWishlist === true)
+const isWishlist = ref(false)
 const wishedVideoIds = ref(new Set()) // 찜한 비디오 ID 목록
 
 // 페이징 상태
@@ -233,7 +227,7 @@ const fetchVideos = async () => {
   error.value = null
   try {
     // 로그인 사용자의 찜 목록을 먼저 로드 (찜 목록 모드가 아닐 때만, 첫 로드시)
-    if (!isWishlistMode.value && currentPage.value === 1) {
+    if (!isWishlist.value && currentPage.value === 1) {
       await loadWishedVideoIds()
     }
 
@@ -244,7 +238,7 @@ const fetchVideos = async () => {
     }
 
     let response
-    if (isWishlistMode.value) {
+    if (isWishlist.value) {
       // 찜 목록 조회
       response = await getWishedVideos(params)
     } else if (isSearchMode.value && searchKeyword.value.trim()) {
@@ -271,7 +265,7 @@ const fetchVideos = async () => {
       views: video.viewCount,
       createdAtText: video.createdAt ? new Date(video.createdAt).toLocaleDateString() : '',
       duration: video.duration || '',
-      wished: isWishlistMode.value ? true : wishedVideoIds.value.has(video.videoId),
+      wished: isWishlist.value ? true : wishedVideoIds.value.has(video.videoId),
     }))
 
     // 페이징 정보 업데이트
@@ -287,17 +281,21 @@ const fetchVideos = async () => {
 
 // 카테고리 변경
 const changeCategory = (categoryId) => {
+  isWishlist.value = false
   selectedCategory.value = categoryId
   currentPage.value = 1 // 첫 페이지로 리셋
+  router.replace({ path: '/', query: {} })
   fetchVideos()
 }
 
 // 정렬 기준 변경
 const changeSortBy = (newSortBy) => {
+  isWishlist.value = false
   sortBy.value = newSortBy
   isSearchMode.value = false // 검색 모드 해제
   searchKeyword.value = '' // 검색어 초기화
   currentPage.value = 1 // 첫 페이지로 리셋
+  router.replace({ path: '/', query: {} })
   fetchVideos()
 }
 
@@ -339,6 +337,7 @@ const getPageNumbers = () => {
 
 // 컴포넌트 마운트 시 데이터 로드
 onMounted(() => {
+  syncWishlistFromRoute()
   fetchVideos()
 })
 
@@ -346,15 +345,31 @@ onMounted(() => {
 watch(
   () => route.path,
   () => {
-    // 라우트 변경 시 필터 초기화 및 데이터 재로드
-    selectedCategory.value = null
-    sortBy.value = 'latest'
-    searchKeyword.value = ''
-    isSearchMode.value = false
-    currentPage.value = 1
+    syncWishlistFromRoute()
+    resetFilters()
     fetchVideos()
   },
 )
+watch(
+  () => route.query.tab,
+  () => {
+    syncWishlistFromRoute()
+    resetFilters()
+    fetchVideos()
+  },
+)
+
+const syncWishlistFromRoute = () => {
+  isWishlist.value = route.query.tab === 'wishlist' || isWishlistRoute.value
+}
+
+const resetFilters = () => {
+  selectedCategory.value = null
+  sortBy.value = 'latest'
+  searchKeyword.value = ''
+  isSearchMode.value = false
+  currentPage.value = 1
+}
 
 const goDetail = (id) => {
   router.push(`/video/${id}`)
@@ -364,14 +379,26 @@ const goCreateVideo = () => {
   router.push('/video/create')
 }
 
+const selectWishlistTab = () => {
+  isWishlist.value = true
+  isSearchMode.value = false
+  searchKeyword.value = ''
+  selectedCategory.value = null
+  currentPage.value = 1
+  router.replace({ path: '/', query: { tab: 'wishlist' } })
+  fetchVideos()
+}
+
 // 검색 처리
 const handleSearch = () => {
   const keyword = searchKeyword.value.trim()
 
   if (keyword) {
+    isWishlist.value = false
     isSearchMode.value = true
     selectedCategory.value = null
     currentPage.value = 1
+    router.replace({ path: '/', query: {} })
     fetchVideos()
   } else {
     alert('검색어를 입력해주세요')
@@ -382,7 +409,9 @@ const handleSearch = () => {
 const clearSearch = () => {
   searchKeyword.value = ''
   isSearchMode.value = false
+  isWishlist.value = false
   currentPage.value = 1
+  router.replace({ path: '/', query: {} })
   fetchVideos()
 }
 
@@ -399,7 +428,7 @@ const toggleWish = async (video) => {
     }
 
     // 찜 목록 모드에서 찜 해제하면 목록에서 제거
-    if (isWishlistMode.value && !video.wished) {
+    if (isWishlist.value && !video.wished) {
       fetchVideos()
     }
   } catch (err) {
