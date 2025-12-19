@@ -1,7 +1,7 @@
 <template>
   <div class="page-header-with-back">
     <div class="header-row">
-      <button class="back-button" @click="goBack" aria-label="뒤로 가기">
+      <button v-if="showBack" class="back-button" @click="goBack" aria-label="뒤로 가기">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -29,6 +29,10 @@ defineProps({
   title: {
     type: String,
     default: '',
+  },
+  showBack: {
+    type: Boolean,
+    default: true,
   },
 })
 
