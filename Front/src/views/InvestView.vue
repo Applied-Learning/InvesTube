@@ -1,6 +1,6 @@
 <template>
   <div class="invest-view">
-    <PageHeader title="투자 정보" :showBack="false" />
+    <PageHeader title="투자 정보" :showBack="false" icon="invest" />
     
     <Container>
       <!-- 지수 카드 섹션 -->

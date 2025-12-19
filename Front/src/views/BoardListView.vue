@@ -1,6 +1,6 @@
 <template>
   <Container>
-    <PageHeader title="게시판" :showBack="false" />
+    <PageHeader title="게시판" :showBack="false" icon="board" />
 
     <div class="board-container">
       <!-- 검색 및 작성 버튼 -->

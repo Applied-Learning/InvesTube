@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PageHeader v-if="isWishlistMode" title="찜한 영상" />
+    <PageHeader v-if="isWishlistMode" title="찜한 영상" icon="video" />
 
     <div class="controls" v-if="!isWishlistMode">
       <!-- 검색바 -->
