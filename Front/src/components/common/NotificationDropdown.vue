@@ -1,5 +1,5 @@
 <template>
-  <div class="notification-root">
+  <div class="notification-root" ref="root">
     <button
       type="button"
       class="nav-item nav-item--notification"
@@ -59,7 +59,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAuthStore } from '../../stores/auth.js'
 import {
@@ -76,6 +76,16 @@ const authStore = useAuthStore()
 const showNotifications = ref(false)
 const notifications = ref([])
 const unreadCount = ref(0)
+const root = ref(null)
+
+const handleClickOutside = (e) => {
+  if (!showNotifications.value) return
+  const el = root.value
+  if (!el) return
+  if (!el.contains(e.target)) {
+    showNotifications.value = false
+  }
+}
 
 const loadUnreadCount = async () => {
   if (!authStore.isAuthenticated) {
@@ -191,6 +201,11 @@ const formatTime = (dateString) => {
 
 onMounted(() => {
   loadUnreadCount()
+  document.addEventListener('click', handleClickOutside)
+})
+
+onUnmounted(() => {
+  document.removeEventListener('click', handleClickOutside)
 })
 </script>
 
