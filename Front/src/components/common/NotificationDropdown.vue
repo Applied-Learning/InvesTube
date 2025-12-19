@@ -96,9 +96,20 @@ const loadNotifications = async () => {
   }
   try {
     const res = await getNotifications()
-    // only show unread notifications in the dropdown
     const items = res.data || []
-    notifications.value = items.filter((it) => !it.isRead)
+    // Show all unread notifications, and keep recent read notifications so
+    // the dropdown always displays up to `KEEP_RECENT_READ` items in total.
+    const KEEP_RECENT_READ = 5
+    const unread = items.filter((it) => !it.isRead)
+    if (unread.length >= KEEP_RECENT_READ) {
+      notifications.value = unread
+    } else {
+      const readSorted = items
+        .filter((it) => it.isRead)
+        .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+      const toKeep = readSorted.slice(0, Math.max(0, KEEP_RECENT_READ - unread.length))
+      notifications.value = [...unread, ...toKeep]
+    }
   } catch (err) {
     console.error('notifications fetch failed', err)
     notifications.value = []
@@ -114,22 +125,22 @@ const toggleNotifications = async () => {
 }
 
 const markAllAsRead = async () => {
-  // optimistic UI update: clear immediately, then call API
+  // optimistic: mark current visible notifications as read locally, set unread count to 0
   const prevNotifications = notifications.value.slice()
   const prevCount = unreadCount.value
-  const prevShow = showNotifications.value
-  notifications.value = []
-  unreadCount.value = 0
-  showNotifications.value = false
   try {
+    // mark visible ones as read locally
+    notifications.value = notifications.value.map((n) => ({ ...n, isRead: true }))
+    unreadCount.value = 0
+    // call API to mark all as read on server
     await apiMarkAllAsRead()
+    // refresh list to include most recent read notifications (keeps recent 5)
+    await loadNotifications()
   } catch (err) {
     console.error('mark all as read failed', err)
     // restore on failure
     notifications.value = prevNotifications
     unreadCount.value = prevCount
-    showNotifications.value = prevShow
-    // optional user feedback
     alert('모두 읽음 처리에 실패했습니다. 잠시 후 다시 시도하세요.')
   }
 }
