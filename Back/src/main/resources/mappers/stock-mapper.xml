@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.Investube.mvc.model.dao.StockDao">
+
+    <!-- Stock 조회 -->
+    <select id="selectAllStocks" resultType="Stock">
+        SELECT stock_id, stock_code, stock_name, market, industry, created_at, updated_at
+        FROM stock
+        ORDER BY stock_name
+    </select>
+    
+    <select id="selectStockByCode" parameterType="String" resultType="Stock">
+        SELECT stock_id, stock_code, stock_name, market, industry, created_at, updated_at
+        FROM stock
+        WHERE stock_code = #{stockCode}
+    </select>
+    
+    <!-- Stock 등록 -->
+    <insert id="insertStock" parameterType="Stock">
+        INSERT INTO stock (stock_code, stock_name, market, industry)
+        VALUES (#{stockCode}, #{stockName}, #{market}, #{industry})
+    </insert>
+    
+    <!-- Stock 수정 -->
+    <update id="updateStock" parameterType="Stock">
+        UPDATE stock
+        SET stock_name = #{stockName},
+            market = #{market},
+            industry = #{industry}
+        WHERE stock_code = #{stockCode}
+    </update>
+    
+    <!-- Stock 삭제 -->
+    <delete id="deleteStock" parameterType="String">
+        DELETE FROM stock
+        WHERE stock_code = #{stockCode}
+    </delete>
+    
+    <!-- StockPrice 조회 -->
+    <select id="selectPricesByStockCode" parameterType="String" resultType="StockPrice">
+        SELECT price_id, stock_code, trade_date, open_price, high_price, low_price, 
+               close_price, volume, market_cap, created_at
+        FROM stock_price
+        WHERE stock_code = #{stockCode}
+        ORDER BY trade_date DESC
+    </select>
+    
+    <select id="selectPricesByStockCodeAndDateRange" resultType="StockPrice">
+        SELECT price_id, stock_code, trade_date, open_price, high_price, low_price, 
+               close_price, volume, market_cap, created_at
+        FROM stock_price
+        WHERE stock_code = #{stockCode}
+        AND trade_date BETWEEN #{startDate} AND #{endDate}
+        ORDER BY trade_date ASC
+    </select>
+    
+    <select id="selectLatestPriceByStockCode" parameterType="String" resultType="StockPrice">
+        SELECT price_id, stock_code, trade_date, open_price, high_price, low_price, 
+               close_price, volume, market_cap, created_at
+        FROM stock_price
+        WHERE stock_code = #{stockCode}
+        ORDER BY trade_date DESC
+        LIMIT 1
+    </select>
+    
+    <!-- StockPrice 등록 -->
+    <insert id="insertStockPrice" parameterType="StockPrice">
+        INSERT INTO stock_price (stock_code, trade_date, open_price, high_price, low_price, 
+                                 close_price, volume, market_cap)
+        VALUES (#{stockCode}, #{tradeDate}, #{openPrice}, #{highPrice}, #{lowPrice}, 
+                #{closePrice}, #{volume}, #{marketCap})
+        ON DUPLICATE KEY UPDATE
+            open_price = #{openPrice},
+            high_price = #{highPrice},
+            low_price = #{lowPrice},
+            close_price = #{closePrice},
+            volume = #{volume},
+            market_cap = #{marketCap}
+    </insert>
+    
+    <!-- StockPrice 수정 -->
+    <update id="updateStockPrice" parameterType="StockPrice">
+        UPDATE stock_price
+        SET open_price = #{openPrice},
+            high_price = #{highPrice},
+            low_price = #{lowPrice},
+            close_price = #{closePrice},
+            volume = #{volume},
+            market_cap = #{marketCap}
+        WHERE stock_code = #{stockCode} AND trade_date = #{tradeDate}
+    </update>
+    
+    <!-- 주식 상세 정보 (최신 가격 포함) -->
+    <select id="selectStockDetailsWithLatestPrice" resultType="StockDetailDto">
+        SELECT 
+            s.stock_code,
+            s.stock_name,
+            s.market,
+            s.industry,
+            sp.trade_date,
+            sp.open_price,
+            sp.high_price,
+            sp.low_price,
+            sp.close_price,
+            sp.volume,
+            sp.market_cap,
+            IFNULL(sp.close_price - prev_sp.close_price, 0) as price_change,
+            IFNULL(ROUND(((sp.close_price - prev_sp.close_price) / prev_sp.close_price * 100), 2), 0) as price_change_rate
+        FROM stock s
+        LEFT JOIN (
+            SELECT stock_code, MAX(trade_date) as max_date
+            FROM stock_price
+            GROUP BY stock_code
+        ) latest ON s.stock_code = latest.stock_code
+        LEFT JOIN stock_price sp ON s.stock_code = sp.stock_code AND latest.max_date = sp.trade_date
+        LEFT JOIN (
+            SELECT sp1.stock_code, sp1.close_price
+            FROM stock_price sp1
+            INNER JOIN (
+                SELECT sp2.stock_code, MAX(sp2.trade_date) as prev_date
+                FROM stock_price sp2
+                INNER JOIN (
+                    SELECT stock_code, MAX(trade_date) as latest_date
+                    FROM stock_price
+                    GROUP BY stock_code
+                ) sp3 ON sp2.stock_code = sp3.stock_code
+                WHERE sp2.trade_date &lt; sp3.latest_date
+                GROUP BY sp2.stock_code
+            ) prev ON sp1.stock_code = prev.stock_code AND sp1.trade_date = prev.prev_date
+        ) prev_sp ON s.stock_code = prev_sp.stock_code
+        ORDER BY s.stock_name
+    </select>
+    
+    <select id="selectStockDetailByCode" parameterType="String" resultType="StockDetailDto">
+        SELECT 
+            s.stock_code,
+            s.stock_name,
+            s.market,
+            s.industry,
+            sp.trade_date,
+            sp.open_price,
+            sp.high_price,
+            sp.low_price,
+            sp.close_price,
+            sp.volume,
+            sp.market_cap,
+            (sp.close_price - prev_sp.close_price) as price_change,
+            ROUND(((sp.close_price - prev_sp.close_price) / prev_sp.close_price * 100), 2) as price_change_rate
+        FROM stock s
+        LEFT JOIN (
+            SELECT stock_code, MAX(trade_date) as max_date
+            FROM stock_price
+            WHERE stock_code = #{stockCode}
+        ) latest ON s.stock_code = latest.stock_code
+        LEFT JOIN stock_price sp ON s.stock_code = sp.stock_code AND latest.max_date = sp.trade_date
+        LEFT JOIN (
+            SELECT close_price
+            FROM stock_price
+            WHERE stock_code = #{stockCode}
+            AND trade_date &lt; (SELECT MAX(trade_date) FROM stock_price WHERE stock_code = #{stockCode})
+            ORDER BY trade_date DESC
+            LIMIT 1
+        ) prev_sp ON 1=1
+        WHERE s.stock_code = #{stockCode}
+    </select>
+
+</mapper>
