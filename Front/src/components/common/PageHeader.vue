@@ -1,7 +1,12 @@
 <template>
   <div class="page-header-with-back">
-    <div class="header-row">
-      <button class="back-button" @click="goBack" aria-label="뒤로 가기">
+    <div class="header-row" :class="{ 'header-row--no-back': !showBack }">
+      <button
+        v-if="showBack"
+        class="back-button"
+        @click="goBack"
+        aria-label="뒤로 가기"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -30,6 +35,10 @@ defineProps({
     type: String,
     default: '',
   },
+  showBack: {
+    type: Boolean,
+    default: true,
+  },
 })
 
 const router = useRouter()
@@ -53,6 +62,10 @@ const goBack = () => {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.header-row--no-back {
+  padding-left: 44px;
 }
 
 .back-button {

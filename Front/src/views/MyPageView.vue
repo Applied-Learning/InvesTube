@@ -1,6 +1,6 @@
 <template>
   <div class="mypage-container">
-    <PageHeader title="마이페이지" />
+    <PageHeader title="마이페이지" :showBack="false" />
 
     <div class="mypage-content">
       <!-- 프로필 섹션 -->
