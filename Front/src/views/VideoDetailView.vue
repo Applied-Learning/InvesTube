@@ -35,7 +35,31 @@
                   stroke-width="2"
                 />
               </svg>
-              <span>{{ isWished ? '찜 해제' : '찜하기' }}</span>
+              <span>{{ isWished ? '' : '' }}</span>
+            </button>
+            <button v-if="isMyVideo && !editMode" class="edit-video-btn" @click="startEditVideo">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 20h9"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M16.5 3.5C17.3284 2.67157 18.6716 2.67157 19.5 3.5C20.3284 4.32843 20.3284 5.67157 19.5 6.5L8 18L4 19L5 15L16.5 3.5Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>수정</span>
             </button>
             <button v-if="isMyVideo" class="delete-video-btn" @click="removeVideo">
               <svg
@@ -139,15 +163,74 @@
           <span class="meta-item">{{ formatDate(video.createdAt) }}</span>
         </div>
 
-        <div class="video-description">
-          <h3>설명</h3>
-          <p>{{ video.description || '설명이 없습니다.' }}</p>
+        <div v-if="editMode" class="video-edit-form">
+          <div class="form-row">
+            <label for="editTitle" class="required">제목</label>
+            <input
+              id="editTitle"
+              v-model="editForm.title"
+              type="text"
+              maxlength="200"
+              placeholder="제목을 입력하세요"
+            />
+          </div>
+          <div class="form-row">
+            <label for="editDescription" class="required">설명</label>
+            <textarea
+              id="editDescription"
+              v-model="editForm.description"
+              rows="4"
+              maxlength="1000"
+              placeholder="설명을 입력하세요"
+            ></textarea>
+          </div>
+          <div class="form-row">
+            <label for="editCategory" class="required">카테고리</label>
+            <select id="editCategory" v-model="editForm.categoryId">
+              <option value="" disabled>카테고리를 선택하세요</option>
+              <option v-for="(name, id) in categories" :key="id" :value="Number(id)">
+                {{ name }}
+              </option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="editYoutubeId" class="required">YouTube 영상 ID</label>
+            <input
+              id="editYoutubeId"
+              v-model="editForm.youtubeVideoId"
+              type="text"
+              placeholder="예) dQw4w9WgXcQ"
+            />
+          </div>
+          <div class="form-row">
+            <label for="editThumb">썸네일 URL (선택)</label>
+            <input
+              id="editThumb"
+              v-model="editForm.thumbnailUrl"
+              type="url"
+              placeholder="https://example.com/thumb.jpg"
+            />
+          </div>
+          <div class="edit-actions">
+            <button class="save-btn" :disabled="editLoading" @click="submitEditVideo">
+              {{ editLoading ? '수정 중...' : '저장' }}
+            </button>
+            <button class="cancel-btn" :disabled="editLoading" @click="cancelEditVideo">
+              취소
+            </button>
+          </div>
         </div>
+        <template v-else>
+          <div class="video-description">
+            <h3>설명</h3>
+            <p>{{ video.description || '설명이 없습니다.' }}</p>
+          </div>
 
-        <!-- 카테고리 -->
-        <div class="video-category">
-          <span class="category-badge">{{ getCategoryName(video.categoryId) }}</span>
-        </div>
+          <!-- 카테고리 -->
+          <div class="video-category">
+            <span class="category-badge">{{ getCategoryName(video.categoryId) }}</span>
+          </div>
+        </template>
       </div>
 
       <!-- 리뷰 섹션 -->
@@ -331,7 +414,13 @@
 import { ref, onMounted, computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import PageHeader from '../components/common/PageHeader.vue'
-import { getVideoDetail, checkWishStatus, toggleVideoWish, deleteVideo } from '../api/video.js'
+import {
+  getVideoDetail,
+  checkWishStatus,
+  toggleVideoWish,
+  deleteVideo,
+  updateVideo,
+} from '../api/video.js'
 import { getReviewsByVideoId, createReview, updateReview, deleteReview } from '../api/review.js'
 import { checkFollowStatus, toggleFollow } from '../api/follow.js'
 import { useAuthStore } from '../stores/auth.js'
@@ -345,6 +434,15 @@ const loading = ref(false)
 const error = ref(null)
 const isWished = ref(false)
 const isFollowing = ref(false)
+const editMode = ref(false)
+const editLoading = ref(false)
+const editForm = ref({
+  youtubeVideoId: '',
+  title: '',
+  description: '',
+  categoryId: '',
+  thumbnailUrl: '',
+})
 
 // 리뷰 관련 상태
 const reviews = ref([])
@@ -460,6 +558,56 @@ const toggleWish = async () => {
 const isMyVideo = computed(() => {
   return authStore.userId && video.value && video.value.userId === parseInt(authStore.userId)
 })
+
+// 영상 수정 모드 진입
+const startEditVideo = () => {
+  if (!video.value) return
+  editForm.value = {
+    youtubeVideoId: video.value.youtubeVideoId || '',
+    title: video.value.title || '',
+    description: video.value.description || '',
+    categoryId: video.value.categoryId || '',
+    thumbnailUrl: video.value.thumbnailUrl || '',
+  }
+  editMode.value = true
+}
+
+const cancelEditVideo = () => {
+  editMode.value = false
+}
+
+const submitEditVideo = async () => {
+  if (!isMyVideo.value) return
+  if (!editForm.value.title.trim()) {
+    alert('제목을 입력해주세요.')
+    return
+  }
+  if (!editForm.value.description.trim()) {
+    alert('설명을 입력해주세요.')
+    return
+  }
+  if (!editForm.value.youtubeVideoId.trim()) {
+    alert('YouTube 영상 ID를 입력해주세요.')
+    return
+  }
+
+  editLoading.value = true
+  try {
+    const payload = {
+      ...editForm.value,
+      categoryId: editForm.value.categoryId ? Number(editForm.value.categoryId) : null,
+    }
+    await updateVideo(route.params.id, payload)
+    await fetchVideoDetail()
+    editMode.value = false
+    alert('영상이 수정되었습니다.')
+  } catch (err) {
+    console.error('영상 수정 실패:', err)
+    alert(err.response?.data?.message || '영상 수정에 실패했습니다.')
+  } finally {
+    editLoading.value = false
+  }
+}
 
 // 영상 삭제
 const removeVideo = async () => {
@@ -716,6 +864,31 @@ onMounted(() => {
   height: 20px;
 }
 
+.edit-video-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  color: #2563eb;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.edit-video-btn:hover {
+  background: #eff6ff;
+  border-color: #2563eb;
+}
+
+.edit-video-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
 .uploader-section {
   display: flex;
   align-items: center;
@@ -838,6 +1011,51 @@ onMounted(() => {
   border-radius: 6px;
   font-size: 13px;
   font-weight: 600;
+}
+
+.video-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-row label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-row label.required::after {
+  content: '*';
+  color: #ef4444;
+  margin-left: 4px;
+}
+
+.form-row input,
+.form-row textarea,
+.form-row select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.form-row input:focus,
+.form-row textarea:focus,
+.form-row select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
 .reviews-section {
