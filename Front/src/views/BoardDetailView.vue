@@ -245,6 +245,7 @@ import { getCommentsByPostId, createComment, updateComment, deleteComment } from
 import { getBoardDetail, deleteBoard } from '../api/board'
 import Container from '../components/common/Container.vue'
 import { resolveImageUrl } from '../utils/image.js'
+import { formatKST } from '../utils/date.js'
 
 const route = useRoute()
 const router = useRouter()
@@ -376,15 +377,7 @@ const getAuthorInitial = (nickname) => {
 }
 
 const formatDate = (dateString) => {
-  if (!dateString) return ''
-  const date = new Date(dateString)
-  return date.toLocaleString('ko-KR', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit',
-  })
+  return formatKST(dateString)
 }
 
 const openImageModal = (imageUrl) => {

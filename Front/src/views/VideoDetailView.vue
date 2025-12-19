@@ -440,10 +440,10 @@ const getCategoryName = (id) => {
   return categories[id] || '기타'
 }
 
+import { formatKSTDate } from '../utils/date.js'
+
 const formatDate = (dateString) => {
-  if (!dateString) return ''
-  const date = new Date(dateString)
-  return date.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' })
+  return formatKSTDate(dateString)
 }
 
 const goUploaderProfile = () => {

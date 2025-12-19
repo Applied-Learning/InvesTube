@@ -40,6 +40,8 @@ const items = ref([])
 const loading = ref(false)
 const error = ref(null)
 
+import { formatKSTDate } from '../utils/date.js'
+
 const normalizeCommented = (item) => {
   if (!item) return null
   return {
@@ -47,7 +49,7 @@ const normalizeCommented = (item) => {
     postId: item.postId,
     postTitle: item.postTitle,
     commentContent: item.content,
-    createdAtDisplay: item.createdAt ? String(item.createdAt).slice(0, 10) : '',
+    createdAtDisplay: item.createdAt ? formatKSTDate(item.createdAt) : '',
   }
 }
 

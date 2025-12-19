@@ -68,6 +68,7 @@ import {
   markAsRead as apiMarkAsRead,
   markAllAsRead as apiMarkAllAsRead,
 } from '../../api/notification.js'
+import { formatKST } from '../../utils/date.js'
 
 const router = useRouter()
 const authStore = useAuthStore()
@@ -185,9 +186,7 @@ const onNotificationClick = async (notification) => {
 }
 
 const formatTime = (dateString) => {
-  if (!dateString) return ''
-  const date = new Date(dateString)
-  return date.toLocaleString('ko-KR')
+  return formatKST(dateString)
 }
 
 onMounted(() => {

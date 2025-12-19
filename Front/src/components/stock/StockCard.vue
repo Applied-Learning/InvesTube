@@ -39,6 +39,8 @@
 </template>
 
 <script>
+import { formatKSTDate } from '../../utils/date.js'
+
 export default {
   name: 'StockCard',
   props: {
@@ -96,7 +98,7 @@ export default {
     },
     formatDate(date) {
       if (!date) return '-'
-      return new Date(date).toLocaleDateString('ko-KR')
+      return formatKSTDate(date)
     }
   }
 }
