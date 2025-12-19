@@ -71,10 +71,12 @@
         <div class="profile-section-header">
           <h3 class="section-title">게시글</h3>
           <button class="section-more-btn" @click="goUserBoards">전체 보기</button>
-        </div>  
+        </div>
         <div v-if="boardLoading" class="profile-loading">불러오는 중...</div>
         <div v-else-if="boardError" class="profile-error">{{ boardError }}</div>
-        <div v-else-if="userBoards.length === 0" class="profile-empty">아직 작성한 게시글이 없어요.</div>
+        <div v-else-if="userBoards.length === 0" class="profile-empty">
+          아직 작성한 게시글이 없어요.
+        </div>
         <div v-else>
           <ul class="profile-board-list">
             <li
@@ -85,7 +87,8 @@
             >
               <p class="profile-board-title">{{ post.title }}</p>
               <p class="profile-board-meta">
-                조회수 {{ post.viewCount }} · 댓글 {{ post.commentCount }} · {{ post.createdAtDisplay }}
+                조회수 {{ post.viewCount }} · 댓글 {{ post.commentCount }} ·
+                {{ post.createdAtDisplay }}
               </p>
             </li>
           </ul>
@@ -508,5 +511,4 @@ onMounted(fetchUser)
   border-color: #2563eb;
   color: #2563eb;
 }
-
 </style>

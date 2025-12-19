@@ -177,4 +177,3 @@ onMounted(fetchUserVideos)
   color: #6b7280;
 }
 </style>
-

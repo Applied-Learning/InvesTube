@@ -5,9 +5,7 @@
     <div class="profile-page-content">
       <div v-if="loading" class="profile-loading">불러오는 중...</div>
       <div v-else-if="error" class="profile-error">{{ error }}</div>
-      <div v-else-if="items.length === 0" class="profile-empty">
-        아직 댓글 단 게시글이 없어요.
-      </div>
+      <div v-else-if="items.length === 0" class="profile-empty">아직 댓글 단 게시글이 없어요.</div>
       <div v-else class="profile-boards-section">
         <div class="profile-board-list">
           <RouterLink
@@ -139,4 +137,3 @@ onMounted(fetchMyCommentedBoardsAll)
   margin-top: 2px;
 }
 </style>
-

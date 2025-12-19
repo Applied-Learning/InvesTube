@@ -293,8 +293,8 @@ const handleSignup = async () => {
   align-items: center;
 }
 
-
-.form-group input, .password-wrapper input {
+.form-group input,
+.password-wrapper input {
   padding: 12px;
   border: 1px solid #ddd;
   border-radius: 6px;
