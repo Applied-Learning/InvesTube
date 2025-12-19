@@ -4,6 +4,7 @@ import java.util.List;
 import com.Investube.mvc.model.dto.Stock;
 import com.Investube.mvc.model.dto.StockPrice;
 import com.Investube.mvc.model.dto.StockDetailDto;
+import com.Investube.mvc.model.dto.KrxIndexResponse;
 
 public interface StockService {
     
@@ -25,6 +26,10 @@ public interface StockService {
     StockDetailDto getStockDetail(String stockCode);
     
     // API 연동
-    void syncStockDataFromDart();
+    void syncStockDataFromDart(); // 초기 대량 수집 (90일)
+    void syncTodayStockData(); // 오늘 데이터만 수집 (스케줄러용)
     void syncStockPriceFromKrx(String stockCode);
+    
+    // 지수 정보 조회
+    List<KrxIndexResponse.KrxIndexItem> getKrxIndices();
 }
