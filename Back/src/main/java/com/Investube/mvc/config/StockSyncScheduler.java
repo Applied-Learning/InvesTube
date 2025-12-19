@@ -12,8 +12,8 @@ public class StockSyncScheduler {
     private StockService stockService;
 
     /**
-     * 매일 오후 6시에 주식 데이터 자동 동기화
-     * 주식 시장이 마감된 후 최신 데이터를 가져옵니다
+     * 매일 오후 6시에 오늘 주식 데이터만 자동 동기화
+     * 주식 시장이 마감된 후 당일 최신 데이터만 추가합니다
      */
     @Scheduled(cron = "0 0 18 * * ?")
     public void syncStockDataDaily() {
@@ -22,7 +22,8 @@ public class StockSyncScheduler {
             System.out.println("예약된 주식 데이터 동기화 시작 (매일 오후 6시)");
             System.out.println("=".repeat(60));
             
-            stockService.syncStockDataFromDart();
+            // 오늘 데이터만 수집 (가벼운 버전)
+            stockService.syncTodayStockData();
             
             System.out.println("=".repeat(60));
             System.out.println("예약된 주식 데이터 동기화 완료!");
