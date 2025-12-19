@@ -197,24 +197,6 @@
               </option>
             </select>
           </div>
-          <div class="form-row">
-            <label for="editYoutubeId" class="required">YouTube 영상 ID</label>
-            <input
-              id="editYoutubeId"
-              v-model="editForm.youtubeVideoId"
-              type="text"
-              placeholder="예) dQw4w9WgXcQ"
-            />
-          </div>
-          <div class="form-row">
-            <label for="editThumb">썸네일 URL (선택)</label>
-            <input
-              id="editThumb"
-              v-model="editForm.thumbnailUrl"
-              type="url"
-              placeholder="https://example.com/thumb.jpg"
-            />
-          </div>
           <div class="edit-actions">
             <button class="save-btn" :disabled="editLoading" @click="submitEditVideo">
               {{ editLoading ? '수정 중...' : '저장' }}
@@ -445,7 +427,6 @@ const editForm = ref({
   title: '',
   description: '',
   categoryId: '',
-  thumbnailUrl: '',
 })
 
 // 리뷰 관련 상태
@@ -571,7 +552,6 @@ const startEditVideo = () => {
     title: video.value.title || '',
     description: video.value.description || '',
     categoryId: video.value.categoryId || '',
-    thumbnailUrl: video.value.thumbnailUrl || '',
   }
   editMode.value = true
 }
