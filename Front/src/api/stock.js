@@ -27,6 +27,11 @@ export default {
   registerStock(stock) {
     return http.post('/stocks', stock)
   },
+  
+  // KRX 지수 정보 조회
+  getIndices() {
+    return http.get('/stocks/indices')
+  },
 
   // 주식 가격 등록/업데이트
   registerStockPrice(stockCode, stockPrice) {

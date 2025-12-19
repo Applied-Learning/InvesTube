@@ -147,4 +147,14 @@ public class StockRestController {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+    
+    // KRX 지수 정보 조회
+    @GetMapping("/indices")
+    public ResponseEntity<?> getIndices() {
+        try {
+            return new ResponseEntity<>(stockService.getKrxIndices(), HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
 }
