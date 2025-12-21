@@ -17,9 +17,7 @@
       >
         I
       </button>
-      <button type="button" class="rte-btn" @click="triggerImageSelect">
-        Img
-      </button>
+      <button type="button" class="rte-btn" @click="triggerImageSelect">Img</button>
     </div>
     <div
       ref="editorRef"
@@ -95,7 +93,7 @@ watch(
     if (editorRef.value.innerHTML !== val) {
       editorRef.value.innerHTML = val || ''
     }
-  }
+  },
 )
 
 const handleInput = () => {

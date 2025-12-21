@@ -211,7 +211,10 @@ const getFirstImageSrc = (content) => {
 const getContentPreview = (content) => {
   if (!content) return ''
   const withoutImg = content.replace(/<img[\s\S]*?>/gi, '')
-  const textOnly = withoutImg.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim()
+  const textOnly = withoutImg
+    .replace(/<[^>]+>/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
   return textOnly.length > 100 ? textOnly.substring(0, 100) + '...' : textOnly
 }
 
@@ -538,4 +541,3 @@ onMounted(() => {
   }
 }
 </style>
-

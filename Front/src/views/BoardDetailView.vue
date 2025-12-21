@@ -123,10 +123,7 @@
 
       <!-- 게시글 본문 -->
       <div class="post-body">
-        <div 
-          class="post-content"
-          v-html="post.content"
-        ></div>
+        <div class="post-content" v-html="post.content"></div>
       </div>
 
       <!-- 댓글 섹션 -->
@@ -173,12 +170,15 @@
                     <img
                       v-if="comment.profileImage"
                       :src="resolveImageUrl(comment.profileImage)"
-                      :alt="comment.nickname || '사용자'
-                    "
+                      :alt="comment.nickname || '사용자'"
                     />
-                    <div v-else class="avatar-fallback-small">{{ getAuthorInitial(comment.nickname) }}</div>
+                    <div v-else class="avatar-fallback-small">
+                      {{ getAuthorInitial(comment.nickname) }}
+                    </div>
                   </div>
-                  <span class="comment-author-name">{{ comment.nickname || ('사용자 ' + comment.userId) }}</span>
+                  <span class="comment-author-name">{{
+                    comment.nickname || '사용자 ' + comment.userId
+                  }}</span>
                 </div>
                 <span class="comment-date">· {{ formatDate(comment.createdAt) }}</span>
                 <div v-if="isMyComment(comment)" class="comment-controls">
@@ -279,7 +279,8 @@ const fetchComments = async () => {
     // normalize possible profile image field names from backend
     comments.value = items.map((c) => ({
       ...c,
-      profileImage: c.profileImage || c.authorProfileImage || c.userProfileImage || c.profile_image || null,
+      profileImage:
+        c.profileImage || c.authorProfileImage || c.userProfileImage || c.profile_image || null,
     }))
   } catch (err) {
     console.error('댓글 목록 조회 실패:', err)

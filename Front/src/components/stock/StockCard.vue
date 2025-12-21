@@ -7,18 +7,16 @@
       </div>
       <span class="stock-market" :class="marketClass">{{ stock.market }}</span>
     </div>
-    
+
     <div class="stock-body">
       <div class="price-section">
-        <div class="current-price">
-          {{ formatPrice(stock.closePrice) }}원
-        </div>
+        <div class="current-price">{{ formatPrice(stock.closePrice) }}원</div>
         <div class="price-change" :class="priceChangeClass">
           <span class="change-amount">{{ formatPriceChange(stock.priceChange) }}</span>
           <span class="change-rate">{{ formatRate(stock.priceChangeRate) }}%</span>
         </div>
       </div>
-      
+
       <div class="stock-details">
         <div class="detail-item">
           <span class="label">거래량</span>
@@ -30,7 +28,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="stock-footer">
       <span class="industry">{{ stock.industry }}</span>
       <span class="trade-date">{{ formatDate(stock.tradeDate) }}</span>
@@ -46,8 +44,8 @@ export default {
   props: {
     stock: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
   computed: {
     marketClass() {
@@ -55,8 +53,12 @@ export default {
     },
     priceChangeClass() {
       if (!this.stock.priceChange) return ''
-      return this.stock.priceChange > 0 ? 'price-up' : this.stock.priceChange < 0 ? 'price-down' : ''
-    }
+      return this.stock.priceChange > 0
+        ? 'price-up'
+        : this.stock.priceChange < 0
+          ? 'price-down'
+          : ''
+    },
   },
   methods: {
     handleClick() {
@@ -99,8 +101,8 @@ export default {
     formatDate(date) {
       if (!date) return '-'
       return formatKSTDate(date)
-    }
-  }
+    },
+  },
 }
 </script>
 

@@ -7,7 +7,7 @@ function parseToDate(input) {
   if (/^\d+$/.test(String(input))) return new Date(Number(input))
 
   const s = String(input).trim()
-  
+
   // If no timezone info (no Z, no +/- offset), assume the backend sent KST time
   // Add +09:00 to explicitly mark it as Korea time (backend uses serverTimezone=Asia/Seoul)
   // This handles: "YYYY-MM-DD HH:mm:ss" or "YYYY-MM-DDTHH:mm:ss" or "YYYY-MM-DDTHH:mm:ss.SSS"

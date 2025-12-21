@@ -1,17 +1,17 @@
 <template>
   <div class="stock-detail-view">
     <PageHeader :title="stock ? stock.stockName : '주식 상세'" />
-    
+
     <Container>
       <div v-if="loading" class="loading">
         <p>로딩 중...</p>
       </div>
-      
+
       <div v-else-if="error" class="error">
         <p>{{ error }}</p>
         <Button @click="loadStockDetail">다시 시도</Button>
       </div>
-      
+
       <div v-else-if="stock" class="stock-detail">
         <!-- 기본 정보 -->
         <div class="stock-info-card">
@@ -22,17 +22,15 @@
             </div>
             <span class="market-badge" :class="marketClass">{{ stock.market }}</span>
           </div>
-          
+
           <div class="price-info">
-            <div class="current-price">
-              {{ formatPrice(stock.closePrice) }}원
-            </div>
+            <div class="current-price">{{ formatPrice(stock.closePrice) }}원</div>
             <div class="price-change" :class="priceChangeClass">
               <span class="change-amount">{{ formatPriceChange(stock.priceChange) }}</span>
               <span class="change-rate">{{ formatRate(stock.priceChangeRate) }}%</span>
             </div>
           </div>
-          
+
           <div class="stock-details-grid">
             <div class="detail-item">
               <span class="label">시가</span>
@@ -59,22 +57,20 @@
               <span class="value">{{ stock.industry }}</span>
             </div>
           </div>
-          
-          <div class="trade-date">
-            기준일: {{ formatDate(stock.tradeDate) }}
-          </div>
+
+          <div class="trade-date">기준일: {{ formatDate(stock.tradeDate) }}</div>
         </div>
-        
+
         <!-- 차트 -->
         <div class="chart-section">
-          <StockChart 
+          <StockChart
             :stock-code="stockCode"
             :price-data="priceHistory"
             :title="`${stock.stockName} 주가 차트`"
             @period-change="handlePeriodChange"
           />
         </div>
-        
+
         <!-- 관련 영상 섹션 (추후 구현) -->
         <div class="related-videos">
           <h3>관련 투자 영상</h3>
@@ -99,14 +95,14 @@ export default {
     PageHeader,
     Container,
     Button,
-    StockChart
+    StockChart,
   },
   data() {
     return {
       stock: null,
       priceHistory: [],
       loading: false,
-      error: null
+      error: null,
     }
   },
   computed: {
@@ -118,8 +114,12 @@ export default {
     },
     priceChangeClass() {
       if (!this.stock?.priceChange) return ''
-      return this.stock.priceChange > 0 ? 'price-up' : this.stock.priceChange < 0 ? 'price-down' : ''
-    }
+      return this.stock.priceChange > 0
+        ? 'price-up'
+        : this.stock.priceChange < 0
+          ? 'price-down'
+          : ''
+    },
   },
   created() {
     this.loadStockDetail()
@@ -129,7 +129,7 @@ export default {
     async loadStockDetail() {
       this.loading = true
       this.error = null
-      
+
       try {
         const response = await stockApi.getStock(this.stockCode)
         this.stock = response.data
@@ -189,8 +189,8 @@ export default {
     formatDate(date) {
       if (!date) return '-'
       return formatKSTDate(date)
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -359,15 +359,15 @@ export default {
     flex-direction: column;
     gap: 12px;
   }
-  
+
   .current-price {
     font-size: 28px;
   }
-  
+
   .price-change {
     font-size: 16px;
   }
-  
+
   .stock-details-grid {
     grid-template-columns: repeat(2, 1fr);
   }

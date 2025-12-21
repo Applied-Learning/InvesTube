@@ -17,10 +17,7 @@
 
         <div class="form-group">
           <label for="content">내용 *</label>
-          <RichTextEditor
-            v-model="form.content"
-            placeholder="내용을 입력해 주세요."
-          />
+          <RichTextEditor v-model="form.content" placeholder="내용을 입력해 주세요." />
         </div>
 
         <div class="form-actions">
@@ -108,7 +105,11 @@ const handleSubmit = async () => {
       alert('로그인이 필요합니다.')
       router.push('/login')
     } else {
-      alert(isEdit.value ? '게시글 수정 중 오류가 발생했습니다.' : '게시글 작성 중 오류가 발생했습니다.')
+      alert(
+        isEdit.value
+          ? '게시글 수정 중 오류가 발생했습니다.'
+          : '게시글 작성 중 오류가 발생했습니다.',
+      )
     }
   } finally {
     loading.value = false
@@ -219,4 +220,3 @@ const goBack = () => {
   }
 }
 </style>
-
