@@ -29,6 +29,14 @@ public class FinancialAnalysisService {
             current.setRevenueGrowthRate(growth);
         }
 
+        // 영업이익 성장률 계산
+        if (previous != null && previous.getOperatingProfit() != null && previous.getOperatingProfit() != 0) {
+            BigDecimal opGrowth = BigDecimal.valueOf(current.getOperatingProfit() - previous.getOperatingProfit())
+                    .divide(BigDecimal.valueOf(previous.getOperatingProfit()), 4, RoundingMode.HALF_UP)
+                    .multiply(BigDecimal.valueOf(100));
+            current.setOperatingProfitGrowthRate(opGrowth);
+        }
+
         // 영업이익률 계산: (영업이익 / 매출액) * 100
         if (current.getRevenue() != null && current.getRevenue() > 0 && current.getOperatingProfit() != null) {
             BigDecimal margin = BigDecimal.valueOf(current.getOperatingProfit())

@@ -38,7 +38,7 @@
             total_assets, total_equity, total_liabilities,
             cash_flow_operating, cash_flow_investing, cash_flow_financing,
             market_cap, stock_price, shares_outstanding,
-            revenue_growth_rate, operating_margin, roe, debt_ratio, fcf,
+            revenue_growth_rate, operating_profit_growth_rate, operating_margin, roe, debt_ratio, fcf,
             per_ratio, pbr_ratio, total_score, data_source
         ) VALUES (
             #{stockCode}, #{fiscalYear}, #{fiscalQuarter},
@@ -46,7 +46,7 @@
             #{totalAssets}, #{totalEquity}, #{totalLiabilities},
             #{cashFlowOperating}, #{cashFlowInvesting}, #{cashFlowFinancing},
             #{marketCap}, #{stockPrice}, #{sharesOutstanding},
-            #{revenueGrowthRate}, #{operatingMargin}, #{roe}, #{debtRatio}, #{fcf},
+            #{revenueGrowthRate}, #{operatingProfitGrowthRate}, #{operatingMargin}, #{roe}, #{debtRatio}, #{fcf},
             #{perRatio}, #{pbrRatio}, #{totalScore}, #{dataSource}
         )
     </insert>
@@ -67,6 +67,7 @@
             stock_price = #{stockPrice},
             shares_outstanding = #{sharesOutstanding},
             revenue_growth_rate = #{revenueGrowthRate},
+            operating_profit_growth_rate = #{operatingProfitGrowthRate},
             operating_margin = #{operatingMargin},
             roe = #{roe},
             debt_ratio = #{debtRatio},

@@ -117,7 +117,7 @@
           </div>
 
           <div class="metrics-grid">
-            <!-- 핵심 재무 데이터 -->
+            <!-- 기본 재무 지표 (항상 표시) -->
             <div class="metric-item" v-if="financialData.revenue">
               <div class="metric-label">매출액</div>
               <div class="metric-value">
@@ -125,6 +125,51 @@
               </div>
             </div>
             
+            <div class="metric-item" v-if="financialData.operatingMargin">
+              <div class="metric-label">영업이익률</div>
+              <div class="metric-value" :class="getGrowthClass(financialData.operatingMargin)">
+                {{ financialData.operatingMargin.toFixed(2) }}%
+              </div>
+            </div>
+            
+            <div class="metric-item" v-if="financialData.roe">
+              <div class="metric-label">ROE</div>
+              <div class="metric-value" :class="getGrowthClass(financialData.roe)">
+                {{ financialData.roe.toFixed(2) }}%
+              </div>
+            </div>
+            
+            <div class="metric-item" v-if="financialData.revenueGrowthRate">
+              <div class="metric-label">매출 성장률</div>
+              <div class="metric-value" :class="getGrowthClass(financialData.revenueGrowthRate)">
+                {{ financialData.revenueGrowthRate.toFixed(2) }}%
+              </div>
+            </div>
+            
+            <div class="metric-item" v-if="financialData.debtRatio">
+              <div class="metric-label">부채비율</div>
+              <div class="metric-value" :class="getDebtClass(financialData.debtRatio)">
+                {{ financialData.debtRatio.toFixed(2) }}%
+              </div>
+            </div>
+          </div>
+          
+          <!-- 상세 보기 토글 버튼 -->
+          <button class="toggle-detail-btn" @click="showDetailMetrics = !showDetailMetrics">
+            <span>{{ showDetailMetrics ? '상세 지표 접기' : '상세 지표 보기' }}</span>
+            <svg 
+              :class="{ 'rotated': showDetailMetrics }" 
+              width="16" 
+              height="16" 
+              viewBox="0 0 16 16" 
+              fill="currentColor"
+            >
+              <path d="M8 10.5l-4-4h8l-4 4z"/>
+            </svg>
+          </button>
+          
+          <!-- 상세 재무 지표 (접기/펼치기) -->
+          <div v-show="showDetailMetrics" class="metrics-grid detail-metrics">
             <div class="metric-item" v-if="financialData.operatingProfit">
               <div class="metric-label">영업이익</div>
               <div class="metric-value" :class="getProfitClass(financialData.operatingProfit)">
@@ -153,32 +198,10 @@
               </div>
             </div>
             
-            <!-- 재무 비율 지표 -->
-            <div class="metric-item" v-if="financialData.revenueGrowthRate">
-              <div class="metric-label">매출 성장률</div>
-              <div class="metric-value" :class="getGrowthClass(financialData.revenueGrowthRate)">
-                {{ financialData.revenueGrowthRate.toFixed(2) }}%
-              </div>
-            </div>
-            
-            <div class="metric-item" v-if="financialData.operatingMargin">
-              <div class="metric-label">영업이익률</div>
-              <div class="metric-value" :class="getGrowthClass(financialData.operatingMargin)">
-                {{ financialData.operatingMargin.toFixed(2) }}%
-              </div>
-            </div>
-            
-            <div class="metric-item" v-if="financialData.roe">
-              <div class="metric-label">ROE</div>
-              <div class="metric-value" :class="getGrowthClass(financialData.roe)">
-                {{ financialData.roe.toFixed(2) }}%
-              </div>
-            </div>
-            
-            <div class="metric-item" v-if="financialData.debtRatio">
-              <div class="metric-label">부채비율</div>
-              <div class="metric-value" :class="getDebtClass(financialData.debtRatio)">
-                {{ financialData.debtRatio.toFixed(2) }}%
+            <div class="metric-item" v-if="financialData.operatingProfitGrowthRate">
+              <div class="metric-label">영업이익 성장률</div>
+              <div class="metric-value" :class="getGrowthClass(financialData.operatingProfitGrowthRate)">
+                {{ financialData.operatingProfitGrowthRate.toFixed(2) }}%
               </div>
             </div>
             
@@ -269,6 +292,7 @@ export default {
       isWished: false,
       wishLoading: false,
       syncLoading: false,
+      showDetailMetrics: false, // 상세 지표 표시 여부
     }
   },
   computed: {
@@ -814,6 +838,42 @@ export default {
 
 .metric-value.poor {
   color: #dc2626;
+}
+
+.toggle-detail-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px;
+  margin: 16px 0;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.toggle-detail-btn:hover {
+  background: #e5e7eb;
+}
+
+.toggle-detail-btn svg {
+  transition: transform 0.3s;
+}
+
+.toggle-detail-btn svg.rotated {
+  transform: rotate(180deg);
+}
+
+.detail-metrics {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
 }
 
 .data-source {

@@ -9,7 +9,7 @@ public class FinancialData {
     private String stockName; // 조인용 필드
     private Integer fiscalYear;
     private Integer fiscalQuarter;
-    
+
     // 재무제표 원본 데이터
     private Long revenue;
     private Long operatingProfit;
@@ -20,24 +20,25 @@ public class FinancialData {
     private Long cashFlowOperating;
     private Long cashFlowInvesting;
     private Long cashFlowFinancing;
-    
+
     // 시장 데이터
     private Long marketCap;
     private BigDecimal stockPrice;
     private Long sharesOutstanding;
-    
+
     // 계산된 재무 지표
     private BigDecimal revenueGrowthRate;
+    private BigDecimal operatingProfitGrowthRate;
     private BigDecimal operatingMargin;
     private BigDecimal roe;
     private BigDecimal debtRatio;
     private Long fcf;
     private BigDecimal perRatio;
     private BigDecimal pbrRatio;
-    
+
     // 종합 점수
     private BigDecimal totalScore;
-    
+
     // 메타 정보
     private String dataSource;
     private LocalDateTime lastUpdated;
@@ -186,6 +187,14 @@ public class FinancialData {
 
     public void setRevenueGrowthRate(BigDecimal revenueGrowthRate) {
         this.revenueGrowthRate = revenueGrowthRate;
+    }
+
+    public BigDecimal getOperatingProfitGrowthRate() {
+        return operatingProfitGrowthRate;
+    }
+
+    public void setOperatingProfitGrowthRate(BigDecimal operatingProfitGrowthRate) {
+        this.operatingProfitGrowthRate = operatingProfitGrowthRate;
     }
 
     public BigDecimal getOperatingMargin() {

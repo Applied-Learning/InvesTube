@@ -252,6 +252,7 @@ CREATE TABLE IF NOT EXISTS financial_data (
     
     -- 계산된 재무 지표
     revenue_growth_rate DECIMAL(10,4), -- 매출 성장률 (%)
+    operating_profit_growth_rate DECIMAL(10,4), -- 영업이익 성장률 (%)
     operating_margin DECIMAL(10,4), -- 영업이익률 (%)
     roe DECIMAL(10,4), -- ROE (%)
     debt_ratio DECIMAL(10,4), -- 부채비율 (%)
