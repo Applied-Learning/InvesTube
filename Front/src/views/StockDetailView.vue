@@ -117,6 +117,43 @@
           </div>
 
           <div class="metrics-grid">
+            <!-- 핵심 재무 데이터 -->
+            <div class="metric-item" v-if="financialData.revenue">
+              <div class="metric-label">매출액</div>
+              <div class="metric-value">
+                {{ formatBigNumber(financialData.revenue) }}원
+              </div>
+            </div>
+            
+            <div class="metric-item" v-if="financialData.operatingProfit">
+              <div class="metric-label">영업이익</div>
+              <div class="metric-value" :class="getProfitClass(financialData.operatingProfit)">
+                {{ formatBigNumber(financialData.operatingProfit) }}원
+              </div>
+            </div>
+            
+            <div class="metric-item" v-if="financialData.netIncome">
+              <div class="metric-label">당기순이익</div>
+              <div class="metric-value" :class="getProfitClass(financialData.netIncome)">
+                {{ formatBigNumber(financialData.netIncome) }}원
+              </div>
+            </div>
+            
+            <div class="metric-item" v-if="financialData.totalAssets">
+              <div class="metric-label">자산총계</div>
+              <div class="metric-value">
+                {{ formatBigNumber(financialData.totalAssets) }}원
+              </div>
+            </div>
+            
+            <div class="metric-item" v-if="financialData.totalEquity">
+              <div class="metric-label">자본총계</div>
+              <div class="metric-value">
+                {{ formatBigNumber(financialData.totalEquity) }}원
+              </div>
+            </div>
+            
+            <!-- 재무 비율 지표 -->
             <div class="metric-item" v-if="financialData.revenueGrowthRate">
               <div class="metric-label">매출 성장률</div>
               <div class="metric-value" :class="getGrowthClass(financialData.revenueGrowthRate)">
@@ -147,7 +184,7 @@
             
             <div class="metric-item" v-if="financialData.fcf">
               <div class="metric-label">잉여현금흐름 (FCF)</div>
-              <div class="metric-value">
+              <div class="metric-value" :class="getProfitClass(financialData.fcf)">
                 {{ formatBigNumber(financialData.fcf) }}원
               </div>
             </div>
@@ -367,11 +404,19 @@ export default {
       if (ratio <= 200) return 'average'
       return 'poor'
     },
+    getProfitClass(value) {
+      if (value > 0) return 'positive'
+      if (value < 0) return 'negative'
+      return 'neutral'
+    },
     formatBigNumber(num) {
-      if (num >= 100000000) {
+      if (num >= 1000000000000) {  // 1조 이상
+        return (num / 1000000000000).toFixed(2) + '조'
+      }
+      if (num >= 100000000) {  // 1억 이상
         return (num / 100000000).toFixed(0) + '억'
       }
-      if (num >= 10000) {
+      if (num >= 10000) {  // 1만 이상
         return (num / 10000).toFixed(0) + '만'
       }
       return num.toLocaleString()

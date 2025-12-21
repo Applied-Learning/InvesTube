@@ -60,39 +60,62 @@ public class FinancialServiceImpl implements FinancialService {
 
         // 재무제표 데이터 조회 (연간 보고서)
         Map<String, Object> financialDataRaw = dartApiService.getFinancialStatement(corpCode, year, "11011");
-        if (financialDataRaw == null || financialDataRaw.isEmpty()) {
-            throw new Exception("DART에서 " + year + "년 재무제표를 찾을 수 없습니다.");
+        if (financialDataRaw == null || !Boolean.TRUE.equals(financialDataRaw.get("success"))) {
+            String message = financialDataRaw != null ? (String) financialDataRaw.get("message") : "알 수 없는 오류";
+            throw new Exception("DART에서 " + year + "년 재무제표를 찾을 수 없습니다: " + message);
         }
-        
+
         // 현금흐름표 데이터 조회
         Map<String, Object> cashFlowDataRaw = dartApiService.getCashFlowStatement(corpCode, year, "11011");
-        if (cashFlowDataRaw == null || cashFlowDataRaw.isEmpty()) {
-            throw new Exception("DART에서 " + year + "년 현금흐름표를 찾을 수 없습니다.");
+        if (cashFlowDataRaw == null || !Boolean.TRUE.equals(cashFlowDataRaw.get("success"))) {
+            String message = cashFlowDataRaw != null ? (String) cashFlowDataRaw.get("message") : "알 수 없는 오류";
+            throw new Exception("DART에서 " + year + "년 현금흐름표를 찾을 수 없습니다: " + message);
         }
+
+        // DartApiService가 반환하는 구조: { "success": true, "data": { "revenue": ..., ... } }
+        // 따라서 "data" 키에서 실제 재무 데이터를 추출
+        @SuppressWarnings("unchecked")
+        Map<String, Object> financialData = (Map<String, Object>) financialDataRaw.get("data");
+        @SuppressWarnings("unchecked")
+        Map<String, Object> cashFlowData = (Map<String, Object>) cashFlowDataRaw.get("data");
 
         // FinancialData 객체 생성
         FinancialData data = new FinancialData();
         data.setStockCode(stockCode);
         data.setFiscalYear(year);
         data.setFiscalQuarter(4); // 연간 보고서는 Q4
-        data.setRevenue(getLongFromMap(financialDataRaw, "매출액"));
-        data.setOperatingProfit(getLongFromMap(financialDataRaw, "영업이익"));
-        data.setNetIncome(getLongFromMap(financialDataRaw, "당기순이익"));
-        data.setTotalAssets(getLongFromMap(financialDataRaw, "자산총계"));
-        data.setTotalEquity(getLongFromMap(financialDataRaw, "자본총계"));
-        data.setTotalLiabilities(getLongFromMap(financialDataRaw, "부채총계"));
-        data.setCashFlowOperating(getLongFromMap(cashFlowDataRaw, "영업활동현금흐름"));
-        data.setCashFlowInvesting(getLongFromMap(cashFlowDataRaw, "투자활동현금흐름"));
-        data.setCashFlowFinancing(getLongFromMap(cashFlowDataRaw, "재무활동현금흐름"));
-        
-        // 시장 데이터는 별도로 수집 필요 (현재는 주가 데이터에서 가져올 수 있음)
-        // 여기서는 기본값 설정
+
+        // DART API 응답: 모두 원 단위
+        data.setRevenue(getLongFromMap(financialData, "revenue"));
+        data.setOperatingProfit(getLongFromMap(financialData, "operating_profit"));
+        data.setNetIncome(getLongFromMap(financialData, "net_income"));
+        data.setTotalAssets(getLongFromMap(financialData, "total_assets"));
+        data.setTotalEquity(getLongFromMap(financialData, "total_equity"));
+        data.setTotalLiabilities(getLongFromMap(financialData, "total_liabilities"));
+
+        // 현금흐름 데이터
+        data.setCashFlowOperating(getLongFromMap(cashFlowData, "cash_flow_operating"));
+        data.setCashFlowInvesting(getLongFromMap(cashFlowData, "cash_flow_investing"));
+        data.setCashFlowFinancing(getLongFromMap(cashFlowData, "cash_flow_financing"));
+
+        // 시장 데이터는 Stock 테이블에 없으므로 기본값 설정
         data.setMarketCap(0L);
         data.setStockPrice(BigDecimal.ZERO);
         data.setSharesOutstanding(0L);
-        
+
         data.setDataSource("DART");
         data.setCreatedAt(LocalDateTime.now());
+
+        // 디버그: 파싱된 재무 데이터 출력
+        System.out.println("=== DART 재무 데이터 ===");
+        System.out.println("기업: " + stock.getStockName() + " (" + stockCode + "), 연도: " + year);
+        System.out.println("매출액: " + data.getRevenue());
+        System.out.println("영업이익: " + data.getOperatingProfit());
+        System.out.println("당기순이익: " + data.getNetIncome());
+        System.out.println("자산총계: " + data.getTotalAssets());
+        System.out.println("자본총계: " + data.getTotalEquity());
+        System.out.println("부채총계: " + data.getTotalLiabilities());
+        System.out.println("====================");
 
         // 전년도 데이터 조회 (매출 성장률 계산용)
         FinancialData previousData = financialDao.getFinancialData(stockCode, year - 1, 4);
@@ -168,9 +191,9 @@ public class FinancialServiceImpl implements FinancialService {
     public List<FinancialData> getWishedStocksWithScores(int userId, Integer profileId) {
         // 찜한 기업 목록 조회
         List<StockWish> wishedStocks = stockWishDao.getWishedStocksByUserId(userId);
-        
+
         List<FinancialData> result = new ArrayList<>();
-        
+
         for (StockWish wish : wishedStocks) {
             FinancialData data = getFinancialDataWithScore(wish.getStockCode(), profileId);
             if (data != null) {
