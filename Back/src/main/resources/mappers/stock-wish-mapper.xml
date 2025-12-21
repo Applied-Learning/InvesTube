@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.Investube.mvc.model.dao.StockWishDao">
+
+    <!-- 사용자의 찜한 기업 목록 조회 (기업 정보 포함) -->
+    <select id="getWishedStocksByUserId" resultType="StockWish">
+        SELECT sw.user_id, sw.stock_code, sw.created_at,
+               s.stock_name, s.market, s.industry
+        FROM stock_wish sw
+        LEFT JOIN stock s ON sw.stock_code = s.stock_code
+        WHERE sw.user_id = #{userId}
+        ORDER BY sw.created_at DESC
+    </select>
+
+    <!-- 찜 여부 확인 -->
+    <select id="isWished" resultType="boolean">
+        SELECT COUNT(*) > 0
+        FROM stock_wish
+        WHERE user_id = #{userId} AND stock_code = #{stockCode}
+    </select>
+
+    <!-- 찜 추가 -->
+    <insert id="addWish">
+        INSERT INTO stock_wish (user_id, stock_code)
+        VALUES (#{userId}, #{stockCode})
+    </insert>
+
+    <!-- 찜 삭제 -->
+    <delete id="removeWish">
+        DELETE FROM stock_wish
+        WHERE user_id = #{userId} AND stock_code = #{stockCode}
+    </delete>
+
+    <!-- 찜 개수 조회 -->
+    <select id="getWishCount" resultType="int">
+        SELECT COUNT(*)
+        FROM stock_wish
+        WHERE stock_code = #{stockCode}
+    </select>
+
+</mapper>

@@ -43,6 +43,11 @@ const router = createRouter({
       component: InvestView,
     },
     {
+      path: '/invest/:stockCode',
+      name: 'stockDetail',
+      component: () => import('../views/StockDetailView.vue'),
+    },
+    {
       path: '/wishlist',
       name: 'wishlist',
       component: VideoListView,
@@ -94,6 +99,11 @@ const router = createRouter({
       component: () => import('../views/MyWishedVideosView.vue'),
     },
     {
+      path: '/mypage/stocks/wished',
+      name: 'myWishedStocks',
+      component: () => import('../views/MyWishedStocksView.vue'),
+    },
+    {
       path: '/users/:userId/boards',
       name: 'userBoards',
       component: () => import('../views/UserBoardsView.vue'),
@@ -112,11 +122,6 @@ const router = createRouter({
       path: '/video/:id',
       name: 'videoDetail',
       component: () => import('../views/VideoDetailView.vue'),
-    },
-    {
-      path: '/stocks/:stockCode',
-      name: 'StockDetail',
-      component: () => import('../views/StockDetailView.vue'),
     },
   ],
 })

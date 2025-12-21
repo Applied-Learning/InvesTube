@@ -37,13 +37,15 @@ public class WebConfig implements WebMvcConfigurer {
                         "/reviews/**",
                         "/boards/**",
                         "/board/**",
-                        "/comments/**"
+                        "/comments/**",
+                        "/stocks/wished",
+                        "/stocks/*/wished",
+                        "/stocks/*/wish"
                 )
                 // ⭐ 인증 불필요 + CORS 문제 방지
                 .excludePathPatterns(
                         "/auth/**",
-                        "/reviews/video/*/",
-                        "/stocks/**"
+                        "/reviews/video/*/"
                 );
     }
 

@@ -14,6 +14,9 @@ public class StockDataInitializer implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         try {
+            // DB 연결이 완전히 초기화될 때까지 대기
+            Thread.sleep(2000);
+            
             // DB에 주식 데이터가 있는지 확인
             int stockCount = stockService.getAllStocks().size();
             

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.Investube.mvc.model.dao.FinancialDao">
+
+    <!-- 재무 데이터 조회 (종목 코드 + 연도 + 분기) -->
+    <select id="getFinancialData" resultType="FinancialData">
+        SELECT * FROM financial_data
+        WHERE stock_code = #{stockCode}
+          AND fiscal_year = #{fiscalYear}
+          AND (fiscal_quarter = #{fiscalQuarter} OR (fiscal_quarter IS NULL AND #{fiscalQuarter} IS NULL))
+        ORDER BY last_updated DESC
+        LIMIT 1
+    </select>
+
+    <!-- 종목의 최신 재무 데이터 조회 -->
+    <select id="getLatestFinancialData" resultType="FinancialData">
+        SELECT * FROM financial_data
+        WHERE stock_code = #{stockCode}
+        ORDER BY fiscal_year DESC, fiscal_quarter DESC
+        LIMIT 1
+    </select>
+
+    <!-- 종목의 재무 데이터 목록 조회 (최근 N년) -->
+    <select id="getFinancialDataList" resultType="FinancialData">
+        SELECT * FROM financial_data
+        WHERE stock_code = #{stockCode}
+        ORDER BY fiscal_year DESC, fiscal_quarter DESC
+        LIMIT #{limit}
+    </select>
+
+    <!-- 재무 데이터 저장 -->
+    <insert id="insertFinancialData" parameterType="FinancialData" useGeneratedKeys="true" keyProperty="financialId">
+        INSERT INTO financial_data (
+            stock_code, fiscal_year, fiscal_quarter,
+            revenue, operating_profit, net_income,
+            total_assets, total_equity, total_liabilities,
+            cash_flow_operating, cash_flow_investing, cash_flow_financing,
+            market_cap, stock_price, shares_outstanding,
+            revenue_growth_rate, operating_margin, roe, debt_ratio, fcf,
+            per_ratio, pbr_ratio, total_score, data_source
+        ) VALUES (
+            #{stockCode}, #{fiscalYear}, #{fiscalQuarter},
+            #{revenue}, #{operatingProfit}, #{netIncome},
+            #{totalAssets}, #{totalEquity}, #{totalLiabilities},
+            #{cashFlowOperating}, #{cashFlowInvesting}, #{cashFlowFinancing},
+            #{marketCap}, #{stockPrice}, #{sharesOutstanding},
+            #{revenueGrowthRate}, #{operatingMargin}, #{roe}, #{debtRatio}, #{fcf},
+            #{perRatio}, #{pbrRatio}, #{totalScore}, #{dataSource}
+        )
+    </insert>
+
+    <!-- 재무 데이터 업데이트 -->
+    <update id="updateFinancialData" parameterType="FinancialData">
+        UPDATE financial_data SET
+            revenue = #{revenue},
+            operating_profit = #{operatingProfit},
+            net_income = #{netIncome},
+            total_assets = #{totalAssets},
+            total_equity = #{totalEquity},
+            total_liabilities = #{totalLiabilities},
+            cash_flow_operating = #{cashFlowOperating},
+            cash_flow_investing = #{cashFlowInvesting},
+            cash_flow_financing = #{cashFlowFinancing},
+            market_cap = #{marketCap},
+            stock_price = #{stockPrice},
+            shares_outstanding = #{sharesOutstanding},
+            revenue_growth_rate = #{revenueGrowthRate},
+            operating_margin = #{operatingMargin},
+            roe = #{roe},
+            debt_ratio = #{debtRatio},
+            fcf = #{fcf},
+            per_ratio = #{perRatio},
+            pbr_ratio = #{pbrRatio},
+            total_score = #{totalScore},
+            data_source = #{dataSource}
+        WHERE financial_id = #{financialId}
+    </update>
+
+    <!-- 재무 데이터 삭제 -->
+    <delete id="deleteFinancialData">
+        DELETE FROM financial_data
+        WHERE financial_id = #{financialId}
+    </delete>
+
+</mapper>

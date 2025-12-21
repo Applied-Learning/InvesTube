@@ -63,6 +63,36 @@
         </div>
 
         <div v-if="activeActivityTab === 'videos'" class="activity-videos">
+          <!-- 찜한 기업 -->
+          <section class="activity-group">
+            <div class="activity-group-header">
+              <h4>찜한 기업</h4>
+              <button class="activity-more-btn" @click="goAllWishedStocks">전체 보기</button>
+            </div>
+            <ul class="activity-list activity-list--stocks">
+              <li
+                v-for="stock in previewWishedStocks"
+                :key="'stock-' + stock.stockCode"
+                class="activity-item activity-item--stock"
+                @click="goStockDetail(stock.stockCode)"
+              >
+                <div class="stock-info">
+                  <p class="stock-name">{{ stock.stockName }}</p>
+                  <p class="stock-code">{{ stock.stockCode }}</p>
+                </div>
+                <span class="market-badge" :class="stock.market === 'KOSPI' ? 'market-kospi' : 'market-kosdaq'">
+                  {{ stock.market }}
+                </span>
+              </li>
+              <li
+                v-if="!activityLoading && previewWishedStocks.length === 0"
+                class="activity-empty"
+              >
+                아직 찜한 기업이 없어요.
+              </li>
+            </ul>
+          </section>
+
           <!-- 찜한 영상 -->
           <section class="activity-group">
             <div class="activity-group-header">
@@ -523,6 +553,7 @@ import {
 } from '../api/user.js'
 import { getWishedVideos, getVideoPreview } from '../api/video.js'
 import { getBoardsByUser, getMyCommentedBoards } from '../api/board.js'
+import { getWishedStocks } from '../api/stockWish.js'
 import { PREVIEW_LIMIT } from '../constants/ui.js'
 import { getNotificationSettings, updateNotificationSettings } from '../api/notification.js'
 import { resolveImageUrl } from '../utils/image.js'
@@ -655,6 +686,7 @@ const goToUserProfile = (userId) => {
 // 활동
 const activeActivityTab = ref('videos')
 const activityLoading = ref(false)
+const previewWishedStocks = ref([])
 const previewWishedVideos = ref([])
 const previewUploadedVideos = ref([])
 const previewReviewedVideos = ref([])
@@ -681,6 +713,11 @@ const fetchActivityPreviews = async () => {
   activityLoading.value = true
 
   try {
+    // 찜한 기업
+    const wishedStocksRes = await getWishedStocks()
+    const wishedStocksList = wishedStocksRes.data || []
+    previewWishedStocks.value = wishedStocksList.slice(0, PREVIEW_LIMIT)
+
     // 찜한 영상
     const wishedParams = { page: 1, size: PREVIEW_LIMIT }
     const wishedRes = await getWishedVideos(wishedParams)
@@ -772,6 +809,10 @@ const fetchBoardActivity = async () => {
   }
 }
 
+const goAllWishedStocks = () => {
+  router.push({ name: 'myWishedStocks' })
+}
+
 const goAllWishedVideos = () => {
   router.push({ name: 'myWishedVideos' })
 }
@@ -782,6 +823,11 @@ const goMyVideos = () => {
 
 const goMyReviewVideos = () => {
   router.push({ name: 'myReviewVideos' })
+}
+
+const goStockDetail = (stockCode) => {
+  if (!stockCode) return
+  router.push({ path: `/invest/${stockCode}` })
 }
 
 const goVideoDetail = (videoId) => {
@@ -1270,6 +1316,66 @@ onMounted(() => {
   padding: 8px 0;
   font-size: 13px;
   color: #9ca3af;
+}
+
+.activity-list--stocks {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.activity-item--stock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #f9fafb;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.activity-item--stock:hover {
+  background: #fff;
+  border-color: #1976d2;
+}
+
+.activity-item--stock + .activity-item--stock {
+  border-top: none;
+}
+
+.stock-info {
+  flex: 1;
+}
+
+.stock-name {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+}
+
+.stock-code {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.market-badge {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.market-kospi {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.market-kosdaq {
+  background-color: #f3e5f5;
+  color: #7b1fa2;
 }
 
 .activity-placeholder {
