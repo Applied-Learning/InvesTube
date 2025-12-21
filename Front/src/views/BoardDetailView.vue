@@ -123,23 +123,10 @@
 
       <!-- 게시글 본문 -->
       <div class="post-body">
-        <div class="post-content">
-          {{ post.content }}
-        </div>
-
-        <!-- 이미지 갤러리 -->
-        <div
-          v-if="post.images && post.images.filter((i) => i.imageUrl).length > 0"
-          class="image-gallery"
-        >
-          <img
-            v-for="(image, index) in post.images.filter((i) => i.imageUrl)"
-            :key="image.imageId"
-            :src="resolveImageUrl(image.imageUrl)"
-            :alt="`이미지 ${index + 1}`"
-            @click="openImageModal(image.imageUrl)"
-          />
-        </div>
+        <div 
+          class="post-content"
+          v-html="post.content"
+        ></div>
       </div>
 
       <!-- 댓글 섹션 -->

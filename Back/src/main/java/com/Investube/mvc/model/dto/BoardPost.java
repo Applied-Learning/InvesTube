@@ -1,7 +1,6 @@
 package com.Investube.mvc.model.dto;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 public class BoardPost {
 	private int postId;
@@ -16,8 +15,6 @@ public class BoardPost {
     // 작성자 정보
     private String authorNickname;
     private String authorProfileImage;
-    
-    private List<BoardImage> images;
 
 	public int getPostId() {
 		return postId;
@@ -67,14 +64,6 @@ public class BoardPost {
 		this.updatedAt = updatedAt;
 	}
 
-	public List<BoardImage> getImages() {
-		return images;
-	}
-
-	public void setImages(List<BoardImage> images) {
-		this.images = images;
-	}
-
 	public String getAuthorNickname() {
 		return authorNickname;
 	}
@@ -106,6 +95,5 @@ public class BoardPost {
 	public void setCommentCount(int commentCount) {
 		this.commentCount = commentCount;
 	}
-    
-    
 }
+

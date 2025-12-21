@@ -3,7 +3,7 @@
     <PageHeader title="게시판" :showBack="false" icon="board" />
 
     <div class="board-container">
-      <!-- 검색 및 작성 버튼 -->
+      <!-- 검색 / 글쓰기 -->
       <div class="board-header">
         <div class="search-box">
           <input
@@ -19,7 +19,7 @@
         </button>
       </div>
 
-      <!-- 정렬 옵션 -->
+      <!-- 정렬 -->
       <div class="sort-options">
         <button
           @click="changeSortBy('latest')"
@@ -31,7 +31,7 @@
           @click="changeSortBy('views')"
           :class="['sort-btn', { active: sortBy === 'views' }]"
         >
-          조회수순
+          조회순
         </button>
       </div>
 
@@ -46,30 +46,39 @@
           class="post-item"
           @click="goToDetail(post.postId)"
         >
-          <div class="post-content">
-            <h3 class="post-title">{{ post.title }}</h3>
-            <p class="post-preview">{{ getContentPreview(post.content) }}</p>
-            <div class="post-meta">
-              <div class="author-info">
-                <div class="author-avatar">
-                  <img
-                    v-if="post.authorProfileImage"
-                    :src="resolveImageUrl(post.authorProfileImage)"
-                    :alt="post.authorNickname"
-                  />
-                  <div v-else class="avatar-fallback">
-                    {{ getAuthorInitial(post.authorNickname) }}
-                  </div>
-                </div>
-                <span class="author-name">{{ post.authorNickname || '익명' }}</span>
-              </div>
-              <div class="post-stats">
-                <span class="view-count">조회 {{ post.viewCount || 0 }}</span>
-                <span class="post-date">{{ formatDate(post.createdAt) }}</span>
-              </div>
+          <!-- 위: 제목 + 요약 + (오른쪽) 썸네일 -->
+          <div class="post-main">
+            <div class="post-content">
+              <h3 class="post-title">
+                <span class="post-title-text">{{ post.title }}</span>
+              </h3>
+              <p class="post-preview">{{ getContentPreview(post.content) }}</p>
+            </div>
+            <div v-if="getFirstImageSrc(post.content)" class="post-thumb">
+              <img :src="getFirstImageSrc(post.content)" alt="썸네일" />
             </div>
           </div>
-          <!-- thumbnails removed in list view -->
+
+          <!-- 아래: 왼쪽 작성자 / 오른쪽 조회/시간 -->
+          <div class="post-meta">
+            <div class="author-info">
+              <div class="author-avatar">
+                <img
+                  v-if="post.authorProfileImage"
+                  :src="resolveImageUrl(post.authorProfileImage)"
+                  :alt="post.authorNickname"
+                />
+                <div v-else class="avatar-fallback">
+                  {{ getAuthorInitial(post.authorNickname) }}
+                </div>
+              </div>
+              <span class="author-name">{{ post.authorNickname || '익명' }}</span>
+            </div>
+            <div class="post-stats">
+              <span class="view-count">조회 {{ post.viewCount || 0 }}</span>
+              <span class="post-date">{{ formatDate(post.createdAt) }}</span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -108,6 +117,7 @@ import { getBoardList, getBoardsByUser } from '../api/board'
 import Container from '../components/common/Container.vue'
 import PageHeader from '../components/common/PageHeader.vue'
 import { resolveImageUrl } from '../utils/image.js'
+import { timeAgoKST } from '../utils/date.js'
 
 const router = useRouter()
 const route = useRoute()
@@ -159,7 +169,7 @@ const fetchPosts = async () => {
     }
   } catch (err) {
     console.error('게시글 조회 실패:', err)
-    error.value = '게시글을 불러오는데 실패했습니다.'
+    error.value = '게시글을 불러오는 중 오류가 발생했습니다.'
   } finally {
     loading.value = false
   }
@@ -192,17 +202,23 @@ const goToDetail = (postId) => {
   router.push(`/board/${postId}`)
 }
 
+const getFirstImageSrc = (content) => {
+  if (!content) return null
+  const match = content.match(/<img[^>]*src=['"]([^'"]+)['"][^>]*>/i)
+  return match ? match[1] : null
+}
+
 const getContentPreview = (content) => {
   if (!content) return ''
-  return content.length > 100 ? content.substring(0, 100) + '...' : content
+  const withoutImg = content.replace(/<img[\s\S]*?>/gi, '')
+  const textOnly = withoutImg.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim()
+  return textOnly.length > 100 ? textOnly.substring(0, 100) + '...' : textOnly
 }
 
 const getAuthorInitial = (nickname) => {
   if (!nickname) return '?'
   return nickname.charAt(0).toUpperCase()
 }
-
-import { timeAgoKST } from '../utils/date.js'
 
 const formatDate = (dateString) => {
   return timeAgoKST(dateString)
@@ -330,8 +346,8 @@ onMounted(() => {
 
 .post-item {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  flex-direction: column;
+  gap: 12px;
   padding: 24px;
   background: white;
   border: 1px solid #e5e7eb;
@@ -340,15 +356,42 @@ onMounted(() => {
   transition: all 0.2s;
 }
 
-.post-item:hover {
-  border-color: #2563eb;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
-  transform: translateY(-2px);
+.post-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .post-content {
   flex: 1;
   min-width: 0;
+}
+
+.post-thumb {
+  width: 120px;
+  height: 80px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #f3f4f6;
+}
+
+.post-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .post-title {
@@ -359,6 +402,11 @@ onMounted(() => {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.post-title-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .post-preview {
@@ -432,8 +480,6 @@ onMounted(() => {
   color: #9ca3af;
 }
 
-/* thumbnails removed from list view; styles left in case needed later */
-
 .pagination {
   display: flex;
   justify-content: center;
@@ -490,7 +536,6 @@ onMounted(() => {
   .post-item {
     flex-direction: column-reverse;
   }
-
-  /* post-thumbnail removed */
 }
 </style>
+
