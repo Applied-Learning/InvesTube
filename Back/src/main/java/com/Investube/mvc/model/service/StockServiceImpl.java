@@ -414,35 +414,47 @@ public class StockServiceImpl implements StockService {
     @Override
     public List<KrxIndexResponse.KrxIndexItem> getKrxIndices() {
         try {
-            // 어제 날짜 사용 (오늘 데이터는 장 마감 후에만 조회 가능)
-            String baseDate = LocalDate.now().minusDays(1).format(DateTimeFormatter.ofPattern("yyyyMMdd"));
-            
-            // KRX 시리즈 일별시세정보 API
+            // KST 기준으로 오늘부터 거슬러가며 가장 최근에 유효한 지수 데이터를 찾음
+            final int maxLookbackDays = 7; // 필요시 값 변경 가능
             String apiUrl = "https://data-dbg.krx.co.kr/svc/apis/idx/krx_dd_trd";
-            
-            Map<String, Object> requestBody = new HashMap<>();
-            Map<String, String> inBlock = new HashMap<>();
-            inBlock.put("basDd", baseDate);
-            requestBody.put("InBlock_1", inBlock);
-            
-            HttpHeaders headers = new HttpHeaders();
-            headers.set("AUTH_KEY", krxApiKey);
-            headers.setContentType(MediaType.APPLICATION_JSON);
-            
-            HttpEntity<Map<String, Object>> requestEntity = new HttpEntity<>(requestBody, headers);
-            
-            ResponseEntity<KrxIndexResponse> responseEntity = 
-                restTemplate.exchange(apiUrl, HttpMethod.POST, requestEntity, KrxIndexResponse.class);
-            
-            KrxIndexResponse response = responseEntity.getBody();
-            
-            if (response != null && response.getOutBlock_1() != null) {
-                return response.getOutBlock_1();
+
+            for (int i = 0; i < maxLookbackDays; i++) {
+                String baseDate = java.time.LocalDate.now(java.time.ZoneId.of("Asia/Seoul")).minusDays(i)
+                        .format(DateTimeFormatter.ofPattern("yyyyMMdd"));
+
+                try {
+                    Map<String, Object> requestBody = new HashMap<>();
+                    Map<String, String> inBlock = new HashMap<>();
+                    inBlock.put("basDd", baseDate);
+                    requestBody.put("InBlock_1", inBlock);
+
+                    HttpHeaders headers = new HttpHeaders();
+                    headers.set("AUTH_KEY", krxApiKey);
+                    headers.setContentType(MediaType.APPLICATION_JSON);
+
+                    HttpEntity<Map<String, Object>> requestEntity = new HttpEntity<>(requestBody, headers);
+
+                    ResponseEntity<KrxIndexResponse> responseEntity = restTemplate.exchange(apiUrl, HttpMethod.POST,
+                            requestEntity, KrxIndexResponse.class);
+
+                    KrxIndexResponse response = responseEntity.getBody();
+
+                    if (response != null && response.getOutBlock_1() != null && !response.getOutBlock_1().isEmpty()) {
+                        if (i > 0) {
+                            System.out.println("KRX 지수: " + baseDate + " 기준 최근 유효 데이터 사용");
+                        }
+                        return response.getOutBlock_1();
+                    }
+                } catch (Exception inner) {
+                    // 해당 날짜 실패 시 다음 날짜로 넘어감
+                    System.err.println("KRX 지수 조회 실패 (date=" + baseDate + "): " + inner.getMessage());
+                }
             }
-            
+
+            // 지정한 기간 내 유효한 데이터가 없으면 빈 리스트 반환
             return List.of();
         } catch (Exception e) {
-            System.err.println("KRX 지수 정보 조회 실패: " + e.getMessage());
+            System.err.println("KRX 지수 정보 조회 전체 실패: " + e.getMessage());
             e.printStackTrace();
             return List.of();
         }
