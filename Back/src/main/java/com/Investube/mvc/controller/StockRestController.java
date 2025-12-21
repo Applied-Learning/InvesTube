@@ -8,7 +8,10 @@ import org.springframework.web.bind.annotation.*;
 import com.Investube.mvc.model.dto.Stock;
 import com.Investube.mvc.model.dto.StockPrice;
 import com.Investube.mvc.model.dto.StockDetailDto;
+import com.Investube.mvc.model.dto.StockWish;
 import com.Investube.mvc.model.service.StockService;
+import com.Investube.mvc.model.service.StockWishService;
+import jakarta.servlet.http.HttpServletRequest;
 
 @RestController
 @RequestMapping("/stocks")
@@ -16,6 +19,18 @@ public class StockRestController {
     
     @Autowired
     private StockService stockService;
+    
+    @Autowired
+    private StockWishService stockWishService;
+    
+    // JWT에서 userId 추출
+    private Integer getUserIdFromRequest(HttpServletRequest request) {
+        Object attr = request.getAttribute("userId");
+        if (attr instanceof Integer) {
+            return (Integer) attr;
+        }
+        return null;
+    }
     
     // 전체 주식 목록 조회 (최신 가격 포함)
     @GetMapping
@@ -153,6 +168,89 @@ public class StockRestController {
     public ResponseEntity<?> getIndices() {
         try {
             return new ResponseEntity<>(stockService.getKrxIndices(), HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+    
+    // ========== 기업 찜 관련 API ==========
+    
+    // 찜한 기업 목록 조회
+    @GetMapping("/wished")
+    public ResponseEntity<?> getWishedStocks(HttpServletRequest request) {
+        try {
+            Integer userId = getUserIdFromRequest(request);
+            if (userId == null) {
+                return new ResponseEntity<>("인증이 필요합니다.", HttpStatus.UNAUTHORIZED);
+            }
+            
+            List<StockWish> wishedStocks = stockWishService.getWishedStocksByUserId(userId);
+            return new ResponseEntity<>(wishedStocks, HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+    
+    // 찜 여부 확인
+    @GetMapping("/{stockCode}/wished")
+    public ResponseEntity<?> isWished(@PathVariable String stockCode, HttpServletRequest request) {
+        try {
+            Integer userId = getUserIdFromRequest(request);
+            if (userId == null) {
+                return new ResponseEntity<>("인증이 필요합니다.", HttpStatus.UNAUTHORIZED);
+            }
+            
+            boolean isWished = stockWishService.isWished(userId, stockCode);
+            return new ResponseEntity<>(isWished, HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+    
+    // 찜 추가
+    @PostMapping("/{stockCode}/wish")
+    public ResponseEntity<?> addWish(@PathVariable String stockCode, HttpServletRequest request) {
+        try {
+            Integer userId = getUserIdFromRequest(request);
+            if (userId == null) {
+                return new ResponseEntity<>("인증이 필요합니다.", HttpStatus.UNAUTHORIZED);
+            }
+            
+            boolean result = stockWishService.addWish(userId, stockCode);
+            if (result) {
+                return new ResponseEntity<>("찜 추가되었습니다.", HttpStatus.OK);
+            }
+            return new ResponseEntity<>("찜 추가에 실패했습니다.", HttpStatus.BAD_REQUEST);
+        } catch (Exception e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+    
+    // 찜 삭제
+    @DeleteMapping("/{stockCode}/wish")
+    public ResponseEntity<?> removeWish(@PathVariable String stockCode, HttpServletRequest request) {
+        try {
+            Integer userId = getUserIdFromRequest(request);
+            if (userId == null) {
+                return new ResponseEntity<>("인증이 필요합니다.", HttpStatus.UNAUTHORIZED);
+            }
+            
+            boolean result = stockWishService.removeWish(userId, stockCode);
+            if (result) {
+                return new ResponseEntity<>("찜이 삭제되었습니다.", HttpStatus.OK);
+            }
+            return new ResponseEntity<>("찜 삭제에 실패했습니다.", HttpStatus.BAD_REQUEST);
+        } catch (Exception e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+    
+    // 기업 찜 개수 조회
+    @GetMapping("/{stockCode}/wish-count")
+    public ResponseEntity<?> getWishCount(@PathVariable String stockCode) {
+        try {
+            int count = stockWishService.getWishCount(stockCode);
+            return new ResponseEntity<>(count, HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
         }

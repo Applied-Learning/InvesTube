@@ -214,5 +214,97 @@ FOREIGN KEY (stock_code) REFERENCES stock(stock_code) ON DELETE CASCADE,
 UNIQUE KEY unique_stock_date (stock_code, trade_date)
 );
 
+-- Table: stock_wish (기업 찜)
+CREATE TABLE IF NOT EXISTS stock_wish (
+user_id INT,
+stock_code VARCHAR(20),
+created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+PRIMARY KEY (user_id, stock_code),
+FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE CASCADE,
+FOREIGN KEY (stock_code) REFERENCES stock(stock_code) ON DELETE CASCADE
+);
+
 -- Insert sample stock data (샘플 데이터는 KRX API로 동기화합니다)
 -- 데이터 동기화: POST /stocks/sync/dart
+
+-- Table: financial_data (기업 재무 데이터 및 점수)
+CREATE TABLE IF NOT EXISTS financial_data (
+    financial_id INT AUTO_INCREMENT PRIMARY KEY,
+    stock_code VARCHAR(20) NOT NULL,
+    fiscal_year INT NOT NULL, -- 회계연도
+    fiscal_quarter INT, -- 분기 (1,2,3,4) NULL이면 연간
+    
+    -- 재무제표 원본 데이터 (단위: 백만원)
+    revenue BIGINT, -- 매출액
+    operating_profit BIGINT, -- 영업이익
+    net_income BIGINT, -- 당기순이익
+    total_assets BIGINT, -- 총자산
+    total_equity BIGINT, -- 자본총계
+    total_liabilities BIGINT, -- 부채총계
+    cash_flow_operating BIGINT, -- 영업활동 현금흐름
+    cash_flow_investing BIGINT, -- 투자활동 현금흐름
+    cash_flow_financing BIGINT, -- 재무활동 현금흐름
+    
+    -- 시장 데이터
+    market_cap BIGINT, -- 시가총액
+    stock_price DECIMAL(15,2), -- 주가
+    shares_outstanding BIGINT, -- 발행주식수
+    
+    -- 계산된 재무 지표
+    revenue_growth_rate DECIMAL(10,4), -- 매출 성장률 (%)
+    operating_profit_growth_rate DECIMAL(10,4), -- 영업이익 성장률 (%)
+    operating_margin DECIMAL(10,4), -- 영업이익률 (%)
+    roe DECIMAL(10,4), -- ROE (%)
+    debt_ratio DECIMAL(10,4), -- 부채비율 (%)
+    fcf BIGINT, -- FCF (영업CF - 투자CF)
+    per_ratio DECIMAL(10,4), -- PER
+    pbr_ratio DECIMAL(10,4), -- PBR
+    
+    -- 종합 점수
+    total_score DECIMAL(5,2), -- 0~100점
+    
+    -- 메타 정보
+    data_source VARCHAR(50), -- DART, KRX 등
+    last_updated DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    
+    FOREIGN KEY (stock_code) REFERENCES stock(stock_code) ON DELETE CASCADE,
+    UNIQUE KEY unique_financial_period (stock_code, fiscal_year, fiscal_quarter)
+);
+
+-- Table: investment_profiles (사용자별 투자 성향 및 가중치)
+CREATE TABLE IF NOT EXISTS investment_profiles (
+    profile_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    profile_name VARCHAR(50) NOT NULL, -- 안정형, 성장형, 균형형, 공격형 등
+    
+    -- 각 지표별 가중치 (합계 100)
+    weight_revenue_growth DECIMAL(5,2) DEFAULT 20.00, -- 매출 성장률 가중치
+    weight_operating_margin DECIMAL(5,2) DEFAULT 20.00, -- 영업이익률 가중치
+    weight_roe DECIMAL(5,2) DEFAULT 15.00, -- ROE 가중치
+    weight_debt_ratio DECIMAL(5,2) DEFAULT 15.00, -- 부채비율 가중치
+    weight_fcf DECIMAL(5,2) DEFAULT 15.00, -- FCF 가중치
+    weight_per DECIMAL(5,2) DEFAULT 10.00, -- PER 가중치
+    weight_pbr DECIMAL(5,2) DEFAULT 5.00, -- PBR 가중치
+    
+    is_default BOOLEAN DEFAULT FALSE, -- 기본 프로필 여부
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    
+    FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE CASCADE
+);
+
+-- 기본 투자 성향 프리셋 (예시)
+INSERT INTO investment_profiles 
+    (user_id, profile_name, weight_revenue_growth, weight_operating_margin, weight_roe, weight_debt_ratio, weight_fcf, weight_per, weight_pbr, is_default) 
+VALUES
+    -- 안정형: 부채비율과 영업이익률 중시
+    (1, '안정형', 10.00, 25.00, 15.00, 25.00, 15.00, 5.00, 5.00, TRUE),
+    -- 성장형: 매출성장률과 ROE 중시
+    (2, '성장형', 30.00, 15.00, 25.00, 10.00, 10.00, 5.00, 5.00, TRUE),
+    -- 균형형: 모든 지표 균형
+    (3, '균형형', 20.00, 20.00, 15.00, 15.00, 15.00, 10.00, 5.00, TRUE),
+    -- 가치형: PER, PBR 중시
+    (4, '가치형', 15.00, 15.00, 10.00, 15.00, 10.00, 20.00, 15.00, TRUE),
+    -- 현금흐름형: FCF와 부채비율 중시
+    (5, '현금흐름형', 15.00, 15.00, 10.00, 20.00, 30.00, 5.00, 5.00, TRUE);

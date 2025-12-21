@@ -213,7 +213,7 @@ export default {
       )
     },
     goToDetail(stockCode) {
-      this.$router.push({ name: 'StockDetail', params: { stockCode } })
+      this.$router.push({ name: 'stockDetail', params: { stockCode } })
     },
     formatIndexValue(value) {
       if (!value) return '-'
