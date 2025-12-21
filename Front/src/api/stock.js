@@ -19,7 +19,7 @@ export default {
   // 특정 기간 주식 가격 조회
   getStockPricesByDateRange(stockCode, startDate, endDate) {
     return http.get(`/stocks/${stockCode}/prices/range`, {
-      params: { startDate, endDate }
+      params: { startDate, endDate },
     })
   },
 
@@ -27,7 +27,7 @@ export default {
   registerStock(stock) {
     return http.post('/stocks', stock)
   },
-  
+
   // KRX 지수 정보 조회
   getIndices() {
     return http.get('/stocks/indices')
@@ -56,5 +56,5 @@ export default {
   // KRX 데이터 동기화
   syncKrxData(stockCode) {
     return http.post(`/stocks/sync/krx/${stockCode}`)
-  }
+  },
 }

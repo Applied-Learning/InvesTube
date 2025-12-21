@@ -116,29 +116,12 @@ updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
 
-INSERT INTO board_post (post_id, user_id, title, content, created_at, updated_at) VALUES
-(1, 1, '투자 기초', '투자에 대한 기초적인 지식을 다룬 글입니다.', NOW(), NOW()),
-(2, 2, '기술 발전', '기술의 발전에 대해 분석한 글입니다.', NOW(), NOW()),
-(3, 3, '주식 투자 전략', '주식 투자 전략에 대해 설명한 글입니다.', NOW(), NOW()),
-(4, 4, '블록체인 혁명', '블록체인 기술의 발전과 전망을 다룬 글입니다.', NOW(), NOW()),
-(5, 5, '경제 성장과 투자', '경제 성장에 따른 투자 기회를 설명한 글입니다.', NOW(), NOW());
-
--- Table: board_post_images
-
-CREATE TABLE IF NOT EXISTS board_post_images (
-image_id INT AUTO_INCREMENT PRIMARY KEY,
-post_id INT,
-image_url VARCHAR(500),
-created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
-FOREIGN KEY (post_id) REFERENCES board_post(post_id) ON DELETE CASCADE
-);
-
-INSERT INTO board_post_images (image_id, post_id, image_url, created_at) VALUES
-(1, 1, null, NOW()),
-(2, 2, null, NOW()),
-(3, 3, null, NOW()),
-(4, 4, null, NOW()),
-(5, 5, null, NOW());
+INSERT INTO board_post (post_id, user_id, title, content, view_count, created_at, updated_at) VALUES
+(1, 1, '투자 기초', '투자에 대한 기초적인 지식을 다룬 글입니다.', 20, NOW(), NOW()),
+(2, 2, '기술 발전', '기술의 발전에 대해 분석한 글입니다.', 15, NOW(), NOW()),
+(3, 3, '주식 투자 전략', '주식 투자 전략에 대해 설명한 글입니다.', 30, NOW(), NOW()),
+(4, 4, '블록체인 혁명', '블록체인 기술의 발전과 전망을 다룬 글입니다.', 20, NOW(), NOW()),
+(5, 5, '경제 성장과 투자', '경제 성장에 따른 투자 기회를 설명한 글입니다.', 10, NOW(), NOW());
 
 -- Table: follow
 

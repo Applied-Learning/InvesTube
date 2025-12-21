@@ -5,8 +5,8 @@
 
 <mapper namespace="com.Investube.mvc.model.dao.BoardDao">
 
-	<!-- ResultMap: 게시글 + 이미지 + 작성자 정보 -->
-	<resultMap id="PostWithImages" type="com.Investube.mvc.model.dto.BoardPost">
+	<!-- ResultMap: 게시글 + 작성자 정보 -->
+	<resultMap id="PostWithAuthor" type="com.Investube.mvc.model.dto.BoardPost">
 		<id property="postId" column="post_id"/>
 		<result property="userId" column="user_id"/>
 		<result property="title" column="title"/>
@@ -17,26 +17,23 @@
 		<result property="updatedAt" column="updated_at"/>
 		<result property="authorNickname" column="author_nickname"/>
 		<result property="authorProfileImage" column="author_profile_image"/>
-		
-		<collection property="images" ofType="com.Investube.mvc.model.dto.BoardImage">
-			<id property="imageId" column="image_id"/>
-			<result property="postId" column="post_id"/>
-			<result property="imageUrl" column="image_url"/>
-			<result property="createdAt" column="image_created_at"/>
-		</collection>
 	</resultMap>
 
-	<!-- 게시글 목록 / 검색 (이미지 + 작성자 정보 포함, 페이징, 정렬) -->
-	<select id="getBoardList" resultMap="PostWithImages">
+	<!-- 게시글 목록 / 검색 (작성자 정보 포함, 페이지/정렬) -->
+	<select id="getBoardList" resultMap="PostWithAuthor">
 		SELECT 
-			p.post_id, p.user_id, p.title, p.content, p.view_count,
+			p.post_id,
+			p.user_id,
+			p.title,
+			p.content,
+			p.view_count,
 			(SELECT COUNT(*) FROM board_comments c WHERE c.post_id = p.post_id) AS comment_count,
-			p.created_at, p.updated_at,
-			u.nickname AS author_nickname, u.profile_image AS author_profile_image,
-			i.image_id, i.image_url, i.created_at AS image_created_at
+			p.created_at,
+			p.updated_at,
+			u.nickname AS author_nickname,
+			u.profile_image AS author_profile_image
 		FROM board_post p
 		LEFT JOIN users u ON p.user_id = u.user_id
-		LEFT JOIN board_post_images i ON p.post_id = i.post_id
 		<where>
 			<if test="keyword != null and keyword != ''">
 				(p.title LIKE CONCAT('%', #{keyword}, '%')
@@ -45,10 +42,10 @@
 		</where>
 		<choose>
 			<when test="sortBy == 'views'">
-				ORDER BY p.view_count DESC, p.post_id DESC, i.image_id ASC
+				ORDER BY p.view_count DESC, p.post_id DESC
 			</when>
 			<otherwise>
-				ORDER BY p.post_id DESC, i.image_id ASC
+				ORDER BY p.post_id DESC
 			</otherwise>
 		</choose>
 		LIMIT #{size} OFFSET #{offset}
@@ -66,34 +63,41 @@
 		</where>
 	</select>
 
-	<!-- 게시글 상세 (이미지 + 작성자 정보 포함) -->
-	<select id="getPostById" parameterType="int" resultMap="PostWithImages">
+	<!-- 게시글 상세 (작성자 정보 포함) -->
+	<select id="getPostById" parameterType="int" resultMap="PostWithAuthor">
 		SELECT 
-			p.post_id, p.user_id, p.title, p.content, p.view_count,
+			p.post_id,
+			p.user_id,
+			p.title,
+			p.content,
+			p.view_count,
 			(SELECT COUNT(*) FROM board_comments c WHERE c.post_id = p.post_id) AS comment_count,
-			p.created_at, p.updated_at,
-			u.nickname AS author_nickname, u.profile_image AS author_profile_image,
-			i.image_id, i.image_url, i.created_at AS image_created_at
+			p.created_at,
+			p.updated_at,
+			u.nickname AS author_nickname,
+			u.profile_image AS author_profile_image
 		FROM board_post p
 		LEFT JOIN users u ON p.user_id = u.user_id
-		LEFT JOIN board_post_images i ON p.post_id = i.post_id
 		WHERE p.post_id = #{postId}
-		ORDER BY i.image_id ASC
 	</select>
 	
 	<!-- 사용자별 게시글 조회 -->
-	<select id="getPostsByUserId" resultMap="PostWithImages">
+	<select id="getPostsByUserId" resultMap="PostWithAuthor">
 		SELECT 
-			p.post_id, p.user_id, p.title, p.content, p.view_count,
+			p.post_id,
+			p.user_id,
+			p.title,
+			p.content,
+			p.view_count,
 			(SELECT COUNT(*) FROM board_comments c WHERE c.post_id = p.post_id) AS comment_count,
-			p.created_at, p.updated_at,
-			u.nickname AS author_nickname, u.profile_image AS author_profile_image,
-			i.image_id, i.image_url, i.created_at AS image_created_at
+			p.created_at,
+			p.updated_at,
+			u.nickname AS author_nickname,
+			u.profile_image AS author_profile_image
 		FROM board_post p
 		LEFT JOIN users u ON p.user_id = u.user_id
-		LEFT JOIN board_post_images i ON p.post_id = i.post_id
 		WHERE p.user_id = #{userId}
-		ORDER BY p.post_id DESC, i.image_id ASC
+		ORDER BY p.post_id DESC
 		LIMIT #{size} OFFSET #{offset}
 	</select>
 	
@@ -117,7 +121,7 @@
 		parameterType="com.Investube.mvc.model.dto.BoardPost">
 		UPDATE board_post
 		SET title = #{title},
-		content = #{content}
+		    content = #{content}
 		WHERE post_id = #{postId}
 	</update>
 
@@ -126,35 +130,7 @@
 		DELETE FROM board_post WHERE post_id = #{postId}
 	</delete>
 
-	<!-- 이미지 여러개 저장 -->
-	<insert id="insertImages" parameterType="java.util.List">
-		INSERT INTO board_post_images (post_id, image_url)
-		VALUES
-		<foreach collection="list" item="img" separator=",">
-			(#{img.postId}, #{img.imageUrl})
-		</foreach>
-	</insert>
-
-	<!-- 게시글별 이미지 목록 조회 (파일 삭제용) -->
-	<select id="getImagesByPostId" parameterType="int" resultType="com.Investube.mvc.model.dto.BoardImage">
-		SELECT image_id, post_id, image_url, created_at
-		FROM board_post_images
-		WHERE post_id = #{postId}
-	</select>
-
-	<!-- 단일 이미지 조회 -->
-	<select id="getImageById" parameterType="int" resultType="com.Investube.mvc.model.dto.BoardImage">
-		SELECT image_id, post_id, image_url, created_at
-		FROM board_post_images
-		WHERE image_id = #{imageId}
-	</select>
-
-	<!-- 단일 이미지 삭제 -->
-	<delete id="deleteImage" parameterType="int">
-		DELETE FROM board_post_images WHERE image_id = #{imageId}
-	</delete>
-
-	<!-- 게시글 조회 시 조회수 증가 -->
+	<!-- 게시글 조회수 증가 -->
 	<update id="updateViewCount" parameterType="int">
 		UPDATE board_post
 		SET view_count = view_count + 1

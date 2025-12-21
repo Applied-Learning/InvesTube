@@ -1,7 +1,7 @@
 <template>
   <div class="invest-view">
     <PageHeader title="투자 정보" :showBack="false" icon="invest" />
-    
+
     <Container>
       <!-- 지수 카드 섹션 -->
       <div class="indices-section">
@@ -22,9 +22,9 @@
       <div class="search-section">
         <h3>종목 검색</h3>
         <div class="search-box">
-          <input 
-            v-model="searchQuery" 
-            type="text" 
+          <input
+            v-model="searchQuery"
+            type="text"
             placeholder="종목명 또는 종목코드를 입력하세요..."
             @input="clearSearchResults"
             @keyup.enter="handleSearch"
@@ -37,8 +37,8 @@
       <div v-if="searchQuery && searchResults.length > 0" class="search-results">
         <h3>검색 결과 ({{ searchResults.length }}개)</h3>
         <div class="stock-grid">
-          <StockCard 
-            v-for="stock in searchResults" 
+          <StockCard
+            v-for="stock in searchResults"
             :key="stock.stockCode"
             :stock="stock"
             @select="goToDetail"
@@ -51,8 +51,8 @@
         <div class="top-section">
           <h3>상승률 TOP 5</h3>
           <div class="stock-list-small">
-            <div 
-              v-for="stock in topGainers" 
+            <div
+              v-for="stock in topGainers"
               :key="stock.stockCode"
               class="stock-item-small"
               @click="goToDetail(stock.stockCode)"
@@ -71,8 +71,8 @@
         <div class="top-section">
           <h3>하락률 TOP 5</h3>
           <div class="stock-list-small">
-            <div 
-              v-for="stock in topLosers" 
+            <div
+              v-for="stock in topLosers"
               :key="stock.stockCode"
               class="stock-item-small"
               @click="goToDetail(stock.stockCode)"
@@ -91,8 +91,8 @@
         <div class="top-section">
           <h3>거래량 TOP 5</h3>
           <div class="stock-list-small">
-            <div 
-              v-for="stock in topVolume" 
+            <div
+              v-for="stock in topVolume"
               :key="stock.stockCode"
               class="stock-item-small"
               @click="goToDetail(stock.stockCode)"
@@ -111,7 +111,8 @@
     </Container>
     <!-- Disclaimer -->
     <div class="invest-disclaimer">
-      본 서비스는 금융감독원(DART) 및 한국거래소(KRX)의 공개 데이터를 가공·분석하여 제공하는 참고용 정보입니다.<br />
+      본 서비스는 금융감독원(DART) 및 한국거래소(KRX)의 공개 데이터를 가공·분석하여 제공하는 참고용
+      정보입니다.<br />
       투자 판단의 책임은 이용자 본인에게 있습니다.
     </div>
   </div>
@@ -130,7 +131,7 @@ export default {
     PageHeader,
     Container,
     Button,
-    StockCard
+    StockCard,
   },
   data() {
     return {
@@ -138,37 +139,37 @@ export default {
       indices: [],
       indicesLoading: false,
       searchQuery: '',
-      searchResults: []
+      searchResults: [],
     }
   },
   computed: {
     mainIndices() {
       // KOSPI, KOSDAQ, KRX100 등 주요 지수 필터링
-      return this.indices.filter(idx => 
-        idx.IDX_NM && (
-          idx.IDX_NM.includes('KOSPI') || 
-          idx.IDX_NM.includes('KOSDAQ') || 
-          idx.IDX_NM.includes('KRX')
+      return this.indices
+        .filter(
+          (idx) =>
+            idx.IDX_NM &&
+            (idx.IDX_NM.includes('KOSPI') ||
+              idx.IDX_NM.includes('KOSDAQ') ||
+              idx.IDX_NM.includes('KRX')),
         )
-      ).slice(0, 3)
+        .slice(0, 3)
     },
     topGainers() {
       return [...this.stocks]
-        .filter(s => s.priceChangeRate > 0)
+        .filter((s) => s.priceChangeRate > 0)
         .sort((a, b) => b.priceChangeRate - a.priceChangeRate)
         .slice(0, 5)
     },
     topLosers() {
       return [...this.stocks]
-        .filter(s => s.priceChangeRate < 0)
+        .filter((s) => s.priceChangeRate < 0)
         .sort((a, b) => a.priceChangeRate - b.priceChangeRate)
         .slice(0, 5)
     },
     topVolume() {
-      return [...this.stocks]
-        .sort((a, b) => (b.volume || 0) - (a.volume || 0))
-        .slice(0, 5)
-    }
+      return [...this.stocks].sort((a, b) => (b.volume || 0) - (a.volume || 0)).slice(0, 5)
+    },
   },
   created() {
     this.loadStocks()
@@ -203,11 +204,12 @@ export default {
         this.searchResults = []
         return
       }
-      
+
       const query = this.searchQuery.toLowerCase().trim()
-      this.searchResults = this.stocks.filter(stock => 
-        stock.stockName.toLowerCase().includes(query) ||
-        stock.stockCode.toLowerCase().includes(query)
+      this.searchResults = this.stocks.filter(
+        (stock) =>
+          stock.stockName.toLowerCase().includes(query) ||
+          stock.stockCode.toLowerCase().includes(query),
       )
     },
     goToDetail(stockCode) {
@@ -215,7 +217,10 @@ export default {
     },
     formatIndexValue(value) {
       if (!value) return '-'
-      return Number(value).toLocaleString('ko-KR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+      return Number(value).toLocaleString('ko-KR', {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+      })
     },
     formatChange(change) {
       if (!change) return '-'
@@ -241,8 +246,8 @@ export default {
       if (!rate) return ''
       const num = Number(rate)
       return num > 0 ? 'price-up' : num < 0 ? 'price-down' : ''
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -440,11 +445,11 @@ export default {
   .indices-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .top-stocks-section {
     grid-template-columns: 1fr;
   }
-  
+
   .stock-grid {
     grid-template-columns: 1fr;
   }
