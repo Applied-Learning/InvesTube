@@ -329,7 +329,17 @@ export default {
       this.syncLoading = true
       try {
         const currentYear = new Date().getFullYear() - 1 // 작년 데이터 사용 (2024년)
+        
+        // 매출 성장률 계산을 위해 전년도 먼저 동기화
+        try {
+          await syncFinancialDataAPI(this.stockCode, currentYear - 1)
+        } catch (prevYearErr) {
+          console.warn('전년도 데이터 동기화 실패 (매출 성장률은 계산되지 않을 수 있습니다):', prevYearErr)
+        }
+        
+        // 현재 연도 동기화 (전년도 데이터가 있으면 성장률 자동 계산)
         await syncFinancialDataAPI(this.stockCode, currentYear)
+        
         alert('재무 데이터 동기화가 완료되었습니다.')
         // 동기화 후 데이터 다시 로드
         await this.loadFinancialData()
@@ -410,14 +420,17 @@ export default {
       return 'neutral'
     },
     formatBigNumber(num) {
-      if (num >= 1000000000000) {  // 1조 이상
-        return (num / 1000000000000).toFixed(2) + '조'
+      const absNum = Math.abs(num)
+      const sign = num < 0 ? '-' : ''
+      
+      if (absNum >= 1000000000000) {  // 1조 이상
+        return sign + (absNum / 1000000000000).toFixed(2) + '조'
       }
-      if (num >= 100000000) {  // 1억 이상
-        return (num / 100000000).toFixed(0) + '억'
+      if (absNum >= 100000000) {  // 1억 이상
+        return sign + (absNum / 100000000).toFixed(0) + '억'
       }
-      if (num >= 10000) {  // 1만 이상
-        return (num / 10000).toFixed(0) + '만'
+      if (absNum >= 10000) {  // 1만 이상
+        return sign + (absNum / 10000).toFixed(0) + '만'
       }
       return num.toLocaleString()
     },
