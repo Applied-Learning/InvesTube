@@ -1,23 +1,24 @@
 package com.Investube.mvc.service;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
-import org.springframework.web.util.UriComponentsBuilder;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.NodeList;
-
-import java.io.*;
+import java.io.ByteArrayInputStream;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+import org.springframework.web.util.UriComponentsBuilder;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
+
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * DART Open API 연동 서비스
@@ -170,8 +171,10 @@ public class DartApiService {
             return null;
         }
         String normalized = corpName.trim().replaceAll("\\s+", "");
-        // 끝의 우/우B/우C/우(전환) 등 제거
-        normalized = normalized.replaceAll("(우([A-Za-z]|[0-9]+)?(\\([^)]*\\))?)$", "");
+        // 끝의 숫자+우/우B/우(전환) 등 제거
+        normalized = normalized.replaceAll("(\\d+)?우([A-Za-z]|[0-9]+)?(\\([^)]*\\))?$", "");
+        // 우 제거 후 붙어 있던 숫자만 남으면 한 번 더 제거
+        normalized = normalized.replaceAll("\\d+$", "");
         return normalized;
     }
 
