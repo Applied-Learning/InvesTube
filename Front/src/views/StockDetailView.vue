@@ -351,9 +351,8 @@ export default {
   setup() {
     const authStore = useAuthStore()
     const toastStore = useToastStore()
-    return { authStore, toastStore }
     const chatbotStore = useChatbotStore()
-    return { authStore, chatbotStore }
+    return { authStore, toastStore, chatbotStore }
   },
   data() {
     return {
