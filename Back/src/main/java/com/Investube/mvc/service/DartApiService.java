@@ -1,23 +1,24 @@
 package com.Investube.mvc.service;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
-import org.springframework.web.util.UriComponentsBuilder;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.NodeList;
-
-import java.io.*;
+import java.io.ByteArrayInputStream;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+import org.springframework.web.util.UriComponentsBuilder;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
+
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * DART Open API 연동 서비스
@@ -36,6 +37,8 @@ public class DartApiService {
 
     // 기업 고유번호 캐시 (메모리)
     private Map<String, String> corpCodeCache = new HashMap<>();
+    // 우선주 표기 등을 제거한 이름으로도 찾을 수 있도록 정규화 캐시
+    private Map<String, String> normalizedCorpCodeCache = new HashMap<>();
     private boolean isCacheLoaded = false;
 
     private static final String DART_API_BASE_URL = "https://opendart.fss.or.kr/api";
@@ -85,6 +88,10 @@ public class DartApiService {
 
                         if (corpCode != null && corpName != null) {
                             corpCodeCache.put(corpName, corpCode);
+                            String normalized = normalizeCorpName(corpName);
+                            if (normalized != null && !normalized.isBlank()) {
+                                normalizedCorpCodeCache.put(normalized, corpCode);
+                            }
                         }
                     }
 
@@ -128,10 +135,21 @@ public class DartApiService {
                 return corpCodeCache.get(corpName);
             }
 
+            // 우선주 표기를 제거한 정규화 이름 매칭 시도
+            String normalized = normalizeCorpName(corpName);
+            if (normalized != null && normalizedCorpCodeCache.containsKey(normalized)) {
+                System.out.println("기업명 정규화 매칭: " + corpName + " -> " + normalized);
+                return normalizedCorpCodeCache.get(normalized);
+            }
+
             // 유사 매칭 시도 (㈜, (주) 등 포함된 이름)
             for (Map.Entry<String, String> entry : corpCodeCache.entrySet()) {
                 if (entry.getKey().contains(corpName)) {
                     System.out.println("기업명 유사 매칭: " + corpName + " -> " + entry.getKey());
+                    return entry.getValue();
+                }
+                if (normalized != null && entry.getKey().contains(normalized)) {
+                    System.out.println("기업명 유사 매칭(정규화): " + corpName + " -> " + entry.getKey());
                     return entry.getValue();
                 }
             }
@@ -146,6 +164,21 @@ public class DartApiService {
     }
 
     /**
+     * 우선주 표기(우, 우B, 우(전환) 등)와 공백을 제거한 이름 반환
+     */
+    private String normalizeCorpName(String corpName) {
+        if (corpName == null) {
+            return null;
+        }
+        String normalized = corpName.trim().replaceAll("\\s+", "");
+        // 끝의 숫자+우/우B/우(전환) 등 제거
+        normalized = normalized.replaceAll("(\\d+)?우([A-Za-z]|[0-9]+)?(\\([^)]*\\))?$", "");
+        // 우 제거 후 붙어 있던 숫자만 남으면 한 번 더 제거
+        normalized = normalized.replaceAll("\\d+$", "");
+        return normalized;
+    }
+
+    /**
      * 재무제표 조회 (단일회사 전체재무제표)
      * 
      * @param corpCode   기업 고유번호
@@ -154,6 +187,30 @@ public class DartApiService {
      * @return 재무제표 데이터
      */
     public Map<String, Object> getFinancialStatement(String corpCode, int year, String reportCode) {
+        // 1차: 연결재무제표(CFS) 시도
+        Map<String, Object> result = fetchFinancialStatement(corpCode, year, reportCode, "CFS");
+        if (Boolean.TRUE.equals(result.get("success"))) {
+            return result;
+        }
+
+        // DART status 013(조회된 데이터 없음)이면 개별재무제표(OFS)로 한 번 더 조회
+        Object status = result.get("status");
+        if (status != null && "013".equals(status.toString())) {
+            Map<String, Object> ofsResult = fetchFinancialStatement(corpCode, year, reportCode, "OFS");
+            if (Boolean.TRUE.equals(ofsResult.get("success"))) {
+                ofsResult.put("message", "OFS(개별)로 조회 성공 (CFS 데이터 없음)");
+            }
+            return ofsResult;
+        }
+
+        return result;
+    }
+
+    /**
+     * 재무제표 조회 (fs_div에 따라 CFS/OFS 요청)
+     */
+    private Map<String, Object> fetchFinancialStatement(String corpCode, int year, String reportCode, String fsDiv) {
+        Map<String, Object> result = new HashMap<>();
         try {
             String url = UriComponentsBuilder
                     .fromHttpUrl(DART_API_BASE_URL + "/fnlttSinglAcntAll.json")
@@ -161,15 +218,19 @@ public class DartApiService {
                     .queryParam("corp_code", corpCode)
                     .queryParam("bsns_year", year)
                     .queryParam("reprt_code", reportCode)
-                    .queryParam("fs_div", "CFS") // CFS: 연결재무제표, OFS: 개별재무제표
+                    .queryParam("fs_div", fsDiv) // CFS: 연결재무제표, OFS: 개별재무제표
                     .toUriString();
 
             String response = restTemplate.getForObject(url, String.class);
             JsonNode root = objectMapper.readTree(response);
 
-            Map<String, Object> result = new HashMap<>();
+            String status = root.has("status") ? root.get("status").asText() : "(none)";
+            String message = root.has("message") ? root.get("message").asText() : "API 호출 실패";
+            result.put("status", status);
+            result.put("message", message);
+            result.put("fsDivTried", fsDiv);
 
-            if (root.has("status") && "000".equals(root.get("status").asText())) {
+            if ("000".equals(status)) {
                 JsonNode list = root.get("list");
                 if (list != null && list.isArray()) {
                     // 재무제표 항목별로 파싱
@@ -181,11 +242,12 @@ public class DartApiService {
                     result.put("message", "재무제표 데이터가 없습니다.");
                 }
             } else {
+                System.err.println("DART 응답 오류: status=" + status + ", message=" + message
+                        + ", corpCode=" + corpCode + ", year=" + year + ", reportCode=" + reportCode
+                        + ", fsDiv=" + fsDiv);
                 result.put("success", false);
-                result.put("message", root.has("message") ? root.get("message").asText() : "API 호출 실패");
+                result.put("message", message);
             }
-
-            return result;
         } catch (Exception e) {
             System.err.println("재무제표 조회 실패: " + e.getMessage());
             Map<String, Object> errorResult = new HashMap<>();
@@ -193,6 +255,7 @@ public class DartApiService {
             errorResult.put("message", e.getMessage());
             return errorResult;
         }
+        return result;
     }
 
     /**

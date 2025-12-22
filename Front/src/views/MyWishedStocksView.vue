@@ -1,6 +1,6 @@
 <template>
   <div class="wished-stocks-view">
-    <PageHeader title="찜한 기업" />
+    <PageHeader title="관심 종목" />
 
     <Container>
       <div v-if="loading" class="loading">
@@ -19,71 +19,64 @@
                 stroke-width="2" 
                 fill="none"/>
         </svg>
-        <p>찜한 기업이 없습니다</p>
+        <p>관심 종목이 없습니다</p>
         <router-link to="/invest">
-          <Button>기업 둘러보기</Button>
+          <Button>둘러보기</Button>
         </router-link>
       </div>
 
       <div v-else>
+        <div v-if="hasMissingScore" class="missing-score-alert">
+          DART에 재무제표가 없는 일부 종목은 점수를 제공하지 않습니다.
+        </div>
         <div class="controls">
-          <Button @click="loadFinancialScores" :disabled="financialLoading">
-            {{ financialLoading ? '점수 계산 중...' : '투자 점수 계산' }}
-          </Button>
-          <select v-model="sortBy" @change="sortStocks" class="sort-select">
-            <option value="recent">최근 찜한 순</option>
-            <option value="scoreHigh">점수 높은 순</option>
-            <option value="scoreLow">점수 낮은 순</option>
-            <option value="name">이름 순</option>
-          </select>
+          <div class="sort-buttons">
+            <button
+              type="button"
+              class="sort-btn"
+              :class="{ active: sortBy === 'recent' }"
+              @click="sortBy = 'recent'"
+            >
+              최근 관심 순
+            </button>
+            <button
+              type="button"
+              class="sort-btn"
+              :class="{ active: sortBy === 'scoreHigh' }"
+              @click="sortBy = 'scoreHigh'"
+            >
+              점수 높은 순
+            </button>
+            <button
+              type="button"
+              class="sort-btn"
+              :class="{ active: sortBy === 'scoreLow' }"
+              @click="sortBy = 'scoreLow'"
+            >
+              점수 낮은 순
+            </button>
+            <button
+              type="button"
+              class="sort-btn"
+              :class="{ active: sortBy === 'name' }"
+              @click="sortBy = 'name'"
+            >
+              이름 순
+            </button>
+          </div>
         </div>
 
         <div class="wished-stocks-grid">
-          <div
+          <StockCard
             v-for="stock in sortedStocks"
             :key="stock.stockCode"
-            class="stock-card"
-            @click="goToStockDetail(stock.stockCode)"
-          >
-            <div class="card-header">
-              <div>
-                <h3>{{ stock.stockName }}</h3>
-                <span class="stock-code">{{ stock.stockCode }}</span>
-              </div>
-              <div class="header-right">
-                <span v-if="stock.totalScore" class="score-badge" :class="getScoreClass(stock.totalScore)">
-                  {{ stock.totalScore.toFixed(1) }}점
-                </span>
-                <span class="market-badge" :class="getMarketClass(stock.market)">
-                  {{ stock.market }}
-                </span>
-              </div>
-            </div>
-
-            <div class="card-body">
-              <div class="info-item">
-                <span class="label">업종</span>
-                <span class="value">{{ stock.industry || '-' }}</span>
-              </div>
-              <div class="info-item">
-                <span class="label">찜한 날짜</span>
-                <span class="value">{{ formatDate(stock.createdAt) }}</span>
-              </div>
-              <div v-if="stock.fiscalYear" class="info-item">
-                <span class="label">재무 데이터</span>
-                <span class="value">{{ stock.fiscalYear }}년</span>
-              </div>
-            </div>
-
-            <div class="card-footer">
-              <button 
-                class="remove-button"
-                @click.stop="removeWish(stock.stockCode)"
-              >
-                찜 취소
-              </button>
-            </div>
-          </div>
+            :stock="stock"
+            :score="stock.totalScore"
+            :showWishToggle="true"
+            :wished="true"
+            @toggleWish="() => removeWish(stock.stockCode)"
+            @select="(code) => goToStockDetail(code)"
+          />
         </div>
       </div>
     </Container>
@@ -96,26 +89,39 @@ import { useRouter } from 'vue-router'
 import PageHeader from '@/components/common/PageHeader.vue'
 import Container from '@/components/common/Container.vue'
 import Button from '@/components/common/Button.vue'
+import StockCard from '@/components/stock/StockCard.vue'
 import { getWishedStocks, removeStockWish } from '@/api/stockWish'
-import { getWishedStocksWithScores } from '@/api/financial'
+import { getWishedStocksWithScores, syncFinancialData } from '@/api/financial'
 import { formatKSTDate } from '@/utils/date'
 
 const router = useRouter()
 
 const wishedStocks = ref([])
 const financialLoading = ref(false)
+const scoresLoaded = ref(false)
 const sortBy = ref('recent')
 const loading = ref(false)
 const error = ref(null)
+const hasMissingScore = computed(() =>
+  wishedStocks.value.some((s) => s.totalScore === null || s.totalScore === undefined),
+)
 
 const sortedStocks = computed(() => {
   const stocks = [...wishedStocks.value]
   
   switch (sortBy.value) {
     case 'scoreHigh':
-      return stocks.sort((a, b) => (b.totalScore || 0) - (a.totalScore || 0))
+      return stocks.sort((a, b) => {
+        const as = a.totalScore ?? -Infinity
+        const bs = b.totalScore ?? -Infinity
+        return bs - as
+      })
     case 'scoreLow':
-      return stocks.sort((a, b) => (a.totalScore || 0) - (b.totalScore || 0))
+      return stocks.sort((a, b) => {
+        const as = a.totalScore ?? Infinity
+        const bs = b.totalScore ?? Infinity
+        return as - bs
+      })
     case 'name':
       return stocks.sort((a, b) => a.stockName.localeCompare(b.stockName))
     case 'recent':
@@ -131,6 +137,8 @@ const loadWishedStocks = async () => {
   try {
     const response = await getWishedStocks()
     wishedStocks.value = response.data
+    // 관심 종목 로드 후 점수도 함께 조회
+    await loadFinancialScores()
   } catch (err) {
     console.error('찜한 기업 목록 조회 실패:', err)
     error.value = '찜한 기업 목록을 불러오는데 실패했습니다.'
@@ -140,12 +148,13 @@ const loadWishedStocks = async () => {
 }
 
 const loadFinancialScores = async () => {
+  if (financialLoading.value) return
   financialLoading.value = true
 
   try {
+    // 1차: 점수 있는 것들 병합
     const response = await getWishedStocksWithScores()
     const financialDataMap = new Map()
-    
     response.data.forEach(fd => {
       financialDataMap.set(fd.stockCode, fd)
     })
@@ -161,6 +170,35 @@ const loadFinancialScores = async () => {
       }
       return stock
     })
+
+    // 점수가 없는 종목은 자동으로 동기화 후 다시 불러오기
+    const missing = wishedStocks.value.filter(s => !s.totalScore)
+    if (missing.length) {
+      const currentYear = new Date().getFullYear() - 1
+      for (const s of missing) {
+        try {
+          await syncFinancialData(s.stockCode, currentYear)
+        } catch (err) {
+          console.warn('재무 동기화 실패 (무시):', s.stockCode, err)
+        }
+      }
+      // 동기화 후 다시 점수 병합
+      const res2 = await getWishedStocksWithScores()
+      const map2 = new Map()
+      res2.data.forEach(fd => map2.set(fd.stockCode, fd))
+      wishedStocks.value = wishedStocks.value.map(stock => {
+        const financial = map2.get(stock.stockCode)
+        if (financial) {
+          return {
+            ...stock,
+            totalScore: financial.totalScore,
+            fiscalYear: financial.fiscalYear
+          }
+        }
+        return stock
+      })
+    }
+    scoresLoaded.value = true
   } catch (err) {
     console.error('재무 점수 조회 실패:', err)
     alert('재무 점수를 불러오는데 실패했습니다.')
@@ -193,6 +231,37 @@ const goToStockDetail = (stockCode) => {
 
 const getMarketClass = (market) => {
   return market === 'KOSPI' ? 'market-kospi' : 'market-kosdaq'
+}
+
+const getChangeClass = (change) => {
+  if (!change) return ''
+  const num = Number(change)
+  return num > 0 ? 'price-up' : num < 0 ? 'price-down' : ''
+}
+
+const formatPrice = (price) => {
+  if (price === null || price === undefined) return '-'
+  return Number(price).toLocaleString('ko-KR') + '원'
+}
+
+const formatChange = (change) => {
+  if (change === null || change === undefined) return '-'
+  const num = Number(change)
+  return (num > 0 ? '+' : '') + num.toLocaleString('ko-KR')
+}
+
+const formatRate = (rate) => {
+  if (rate === null || rate === undefined) return '-'
+  const num = Number(rate)
+  return (num > 0 ? '+' : '') + num.toFixed(2)
+}
+
+const formatMarketCap = (cap) => {
+  if (!cap) return '-'
+  const num = Number(cap)
+  if (num >= 1_000_000_000_000) return (num / 1_000_000_000_000).toFixed(1) + '조'
+  if (num >= 100_000_000) return (num / 100_000_000).toFixed(1) + '억'
+  return num.toLocaleString('ko-KR')
 }
 
 const formatDate = (dateStr) => {
@@ -243,21 +312,45 @@ onMounted(() => {
 }
 
 .controls {
-  display: flex;
-  gap: 12px;
-  margin-bottom: 20px;
-  align-items: center;
+  margin-bottom: 16px;
 }
 
-.sort-select {
+.missing-score-alert {
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  color: #9a3412;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+.sort-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.sort-btn {
   padding: 8px 12px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
-  font-size: 14px;
   background: white;
+  font-size: 13px;
   cursor: pointer;
+  color: #4b5563;
+  transition: all 0.15s ease;
 }
 
+.sort-btn:hover {
+  border-color: #d1d5db;
+}
+
+.sort-btn.active {
+  border-color: #2563eb;
+  color: #2563eb;
+  background: #eff6ff;
+  font-weight: 600;
+}
 .wished-stocks-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -298,7 +391,7 @@ onMounted(() => {
 .header-right {
   display: flex;
   gap: 8px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .score-badge {
@@ -338,6 +431,25 @@ onMounted(() => {
   font-weight: 500;
 }
 
+.wish-toggle {
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #e53935;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.wish-toggle:hover {
+  background: #ffebee;
+  border-color: #ef5350;
+}
+
 .market-kospi {
   background-color: #e3f2fd;
   color: #1976d2;
@@ -353,6 +465,54 @@ onMounted(() => {
   flex-direction: column;
   gap: 12px;
   margin-bottom: 16px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.price-main {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #212121;
+}
+
+.change {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.price-up {
+  color: #d32f2f;
+}
+
+.price-down {
+  color: #1976d2;
+}
+
+.metric {
+  text-align: right;
+}
+
+.metric .label {
+  display: block;
+  font-size: 12px;
+  color: #757575;
+}
+
+.metric .value {
+  font-size: 13px;
+  font-weight: 600;
+  color: #212121;
 }
 
 .info-item {

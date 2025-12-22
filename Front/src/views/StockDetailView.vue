@@ -42,7 +42,7 @@
                     stroke-width="2"
                   />
                 </svg>
-                <span>{{ isWished ? '찜 취소' : '찜하기' }}</span>
+                <span>{{ isWished ? '관심 해제' : '관심 종목' }}</span>
               </button>
             </div>
           </div>
@@ -337,6 +337,7 @@ import stockApi from '@/api/stock'
 import { isStockWished, addStockWish, removeStockWish } from '@/api/stockWish'
 import { getFinancialData, syncFinancialData as syncFinancialDataAPI, getAiAnalysis } from '@/api/financial'
 import { useAuthStore } from '@/stores/auth'
+import { useToastStore } from '@/stores/toast'
 import { useChatbotStore } from '@/stores/chatbot'
 
 export default {
@@ -349,6 +350,8 @@ export default {
   },
   setup() {
     const authStore = useAuthStore()
+    const toastStore = useToastStore()
+    return { authStore, toastStore }
     const chatbotStore = useChatbotStore()
     return { authStore, chatbotStore }
   },
@@ -458,13 +461,15 @@ export default {
         // 현재 연도 동기화 (전년도 데이터가 있으면 성장률 자동 계산)
         await syncFinancialDataAPI(this.stockCode, currentYear)
         
-        alert('재무 데이터 동기화가 완료되었습니다.')
+        this.toastStore.show('재무 데이터 동기화가 완료되었습니다.', { type: 'success' })
         // 동기화 후 데이터 다시 로드
         await this.loadFinancialData()
       } catch (err) {
         console.error('재무 데이터 동기화 실패:', err)
         const errorMsg = err.response?.data?.error || '재무 데이터 동기화에 실패했습니다.'
-        alert(`${errorMsg}\n\nDart에 해당 기업의 재무제표가 없거나, 아직 공시되지 않았을 수 있습니다.`)
+        const hint = 'DART에 재무제표가 없거나 아직 공시되지 않았습니다.'
+        // 상세 오류는 콘솔로, 사용자에게는 간략 힌트만 노출
+        this.toastStore.show(hint, { type: 'error', duration: 5000 })
       } finally {
         this.syncLoading = false
       }
@@ -478,7 +483,7 @@ export default {
         const response = await isStockWished(this.stockCode)
         this.isWished = response.data
       } catch (err) {
-        console.error('찜 상태 확인 실패:', err)
+        console.error('관심 상태 확인 실패:', err)
         // 인증 에러여도 페이지는 유지
         this.isWished = false
       }
@@ -500,8 +505,8 @@ export default {
           this.isWished = true
         }
       } catch (err) {
-        console.error('찜 처리 실패:', err)
-        alert('찜 처리에 실패했습니다.')
+        console.error('관심 종목 처리 실패:', err)
+        alert('관심 종목 처리에 실패했습니다.')
       } finally {
         this.wishLoading = false
       }
@@ -743,10 +748,10 @@ export default {
   align-items: center;
   gap: 6px;
   padding: 8px 16px;
-  background: white;
-  border: 2px solid #e0e0e0;
+  background: #fff;
+  border: 2px solid #e5e5e5;
   border-radius: 6px;
-  color: #757575;
+  color: #555;
   cursor: pointer;
   transition: all 0.2s;
   font-size: 14px;
@@ -754,14 +759,15 @@ export default {
 }
 
 .wish-button:hover {
-  border-color: #1976d2;
-  color: #1976d2;
+  border-color: #e53935;
+  background: #fff4f4;
+  color: #c62828;
 }
 
 .wish-button.wished {
-  background: #e3f2fd;
-  border-color: #1976d2;
-  color: #1976d2;
+  background: #ef5350;
+  border-color: #c62828;
+  color: #fff;
 }
 
 .wish-button:disabled {

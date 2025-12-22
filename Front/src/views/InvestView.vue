@@ -63,21 +63,63 @@
             v-model="searchQuery"
             type="text"
             placeholder="종목명 또는 종목코드를 입력하세요..."
-            @input="clearSearchResults"
             @keyup.enter="handleSearch"
           />
+          <button
+            v-if="searchQuery"
+            class="clear-search-btn"
+            type="button"
+            @click="clearSearchResults(true)"
+            aria-label="검색어 지우기"
+          >
+            ×
+          </button>
           <Button @click="handleSearch">검색</Button>
         </div>
       </div>
 
-      <!-- 검색 결과가 있을 때만 표시 -->
-      <div v-if="searchQuery && searchResults.length > 0" class="search-results">
-        <h3>검색 결과 ({{ searchResults.length }}개)</h3>
-        <div class="stock-grid">
+      <!-- 검색 결과 -->
+      <div class="search-results" v-if="searchQuery">
+        <div class="section-header">
+          <h3>검색 결과 <span class="count">({{ searchResults.length }}개)</span></h3>
+          <span class="favorite-hint" v-if="!searchResults.length">결과가 없습니다.</span>
+        </div>
+        <div v-if="searchResults.length" class="stock-grid">
           <StockCard
             v-for="stock in searchResults"
             :key="stock.stockCode"
             :stock="stock"
+            :showWishToggle="true"
+            :wished="wishedSet.has(stock.stockCode)"
+            @toggleWish="handleToggleWish"
+            @select="goToDetail"
+          />
+        </div>
+      </div>
+
+      <!-- 관심 종목 -->
+      <div class="favorites-section">
+        <div class="section-header">
+          <h3>관심 종목</h3>
+          <span class="favorite-hint" v-if="wishedLoading">불러오는 중...</span>
+          <span class="favorite-hint" v-else-if="!wishedStocks.length">등록된 관심 종목이 없습니다.</span>
+          <span
+            class="favorite-hint"
+            v-else-if="wishedStocks.length > limitedWishedStocks.length"
+          >
+            최근 관심 종목 6개만 표시합니다. 전체 보기에서 모두 확인하세요.
+          </span>
+          <RouterLink v-if="wishedStocks.length" to="/mypage/stocks/wished" class="view-all-link">전체 보기</RouterLink>
+        </div>
+        <div v-if="wishedStocks.length" class="stock-grid favorites-grid">
+          <StockCard
+            v-for="stock in limitedWishedStocks"
+            :key="stock.stockCode"
+            :stock="stock"
+            :compact="true"
+            :showWishToggle="true"
+            :wished="wishedSet.has(stock.stockCode)"
+            @toggleWish="handleToggleWish"
             @select="goToDetail"
           />
         </div>
@@ -162,6 +204,8 @@ import Button from '@/components/common/Button.vue'
 import StockCard from '@/components/stock/StockCard.vue'
 import stockApi from '@/api/stock'
 import profileApi from '@/api/profile'
+import { getWishedStocks, addStockWish, removeStockWish } from '@/api/stockWish'
+import { useInvestSearchStore } from '@/stores/investSearch'
 
 export default {
   name: 'InvestView',
@@ -176,8 +220,12 @@ export default {
       stocks: [],
       indices: [],
       indicesLoading: false,
+      wishedStocks: [],
+      wishedLoading: false,
+      wishedSet: new Set(),
       searchQuery: '',
       searchResults: [],
+      searchStore: null,
       currentProfile: null,
       profileTypes: [
         { name: '안정형', icon: '🛡️' },
@@ -214,13 +262,40 @@ export default {
     topVolume() {
       return [...this.stocks].sort((a, b) => (b.volume || 0) - (a.volume || 0)).slice(0, 5)
     },
+    limitedWishedStocks() {
+      return (this.wishedStocks || []).slice(0, 6)
+    },
   },
   created() {
-    this.loadStocks()
-    this.loadIndices()
-    this.loadProfile()
+    this.searchStore = useInvestSearchStore()
+    this.initPage()
   },
   methods: {
+    async initPage() {
+      await this.loadStocks()
+      this.loadIndices()
+      this.loadProfile()
+      this.loadWishedStocks()
+
+      if (this.searchStore?.searchQuery) {
+        this.searchQuery = this.searchStore.searchQuery
+        this.handleSearch()
+      }
+    },
+    async loadWishedStocks() {
+      this.wishedLoading = true
+      try {
+        const res = await getWishedStocks()
+        this.wishedStocks = res.data || []
+        this.wishedSet = new Set(this.wishedStocks.map((s) => s.stockCode))
+      } catch (err) {
+        console.error('관심 종목 조회 실패:', err)
+        this.wishedStocks = []
+        this.wishedSet = new Set()
+      } finally {
+        this.wishedLoading = false
+      }
+    },
     async loadProfile() {
       try {
         const response = await profileApi.getDefaultProfile()
@@ -283,22 +358,31 @@ export default {
         this.indicesLoading = false
       }
     },
-    clearSearchResults() {
-      // 검색어를 수정할 때 이전 검색 결과 초기화
+    clearSearchResults(forceClear = false) {
+      // 입력 중에는 결과만 초기화, 강제(clear 버튼) 시에는 검색어/스토어도 함께 초기화
+      if (forceClear) {
+        this.searchQuery = ''
+        this.searchStore?.clear()
+      }
       this.searchResults = []
     },
     handleSearch() {
       if (!this.searchQuery.trim()) {
         this.searchResults = []
+        this.searchStore?.clear()
         return
       }
 
-      const query = this.searchQuery.toLowerCase().trim()
+      // 공백/대소문자 무시하고 부분 매칭
+      const normalize = (str) => (str || '').toLowerCase().replace(/\s+/g, '')
+      const query = normalize(this.searchQuery)
+
       this.searchResults = this.stocks.filter(
         (stock) =>
-          stock.stockName.toLowerCase().includes(query) ||
-          stock.stockCode.toLowerCase().includes(query),
+          normalize(stock.stockName).includes(query) ||
+          normalize(stock.stockCode).includes(query),
       )
+      this.searchStore?.setQuery(this.searchQuery)
     },
     goToDetail(stockCode) {
       this.$router.push({ name: 'stockDetail', params: { stockCode } })
@@ -338,6 +422,22 @@ export default {
     goToSurvey() {
       this.$router.push({ name: 'investmentSurvey' })
     },
+    async handleToggleWish(stockCode, currentlyWished) {
+      try {
+        if (currentlyWished) {
+          await removeStockWish(stockCode)
+          this.wishedSet.delete(stockCode)
+          this.wishedStocks = this.wishedStocks.filter((s) => s.stockCode !== stockCode)
+        } else {
+          await addStockWish(stockCode)
+          // 최신 목록 다시 불러와 정합성 유지
+          await this.loadWishedStocks()
+        }
+      } catch (err) {
+        console.error('관심 종목 토글 실패:', err)
+        alert('관심 종목 처리에 실패했습니다.')
+      }
+    },
   },
 }
 </script>
@@ -346,6 +446,64 @@ export default {
 .invest-view {
   min-height: 100vh;
   background-color: #f5f5f5;
+}
+
+/* 관심 종목 섹션 */
+.favorites-section {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.favorites-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.favorites-header h3 {
+  margin: 0;
+}
+
+.favorite-hint {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.favorites-grid {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.section-header h3 {
+  margin: 0;
+}
+
+.section-header .count {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.view-all-link {
+  margin-left: auto;
+  font-size: 13px;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.view-all-link:hover {
+  text-decoration: underline;
 }
 
 /* 투자 성향 프로필 카드 */
@@ -540,6 +698,20 @@ export default {
 .search-box input:focus {
   outline: none;
   border-color: #1976d2;
+}
+
+.clear-search-btn {
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #4b5563;
+}
+
+.clear-search-btn:hover {
+  background: #e5e7eb;
 }
 
 /* 검색 결과 */
