@@ -174,7 +174,12 @@ public class FinancialRestController {
                         profile = financialAnalysisService.createDefaultProfile("균형형");
                         profile.setUserId(userId);
                         profile.setIsDefault(true);
-                        profileDao.insertProfile(profile);
+                        try {
+                            profileDao.insertProfile(profile);
+                        } catch (Exception e) {
+                            System.err.println("기본 프로필 생성 실패 (DB 저장 건너뜀): " + e.getMessage());
+                            // DB 저장이 실패해도 메모리 상의 profile 객체로 분석은 가능하므로 진행
+                        }
                     }
                 } else {
                     // 비로그인 사용자는 임시 균형형 프로필 사용
@@ -191,14 +196,14 @@ public class FinancialRestController {
                     stockCode,
                     stockName,
                     financialData,
-                    profile
-            );
+                    profile);
 
             return new ResponseEntity<>(aiResult, HttpStatus.OK);
 
         } catch (Exception e) {
+            e.printStackTrace(); // 서버 로그에 스택 트레이스 출력
             Map<String, String> error = new HashMap<>();
-            error.put("error", "AI 분석 실패: " + e.getMessage());
+            error.put("error", "AI 분석 실패 (" + e.getClass().getSimpleName() + "): " + e.getMessage());
             return new ResponseEntity<>(error, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }

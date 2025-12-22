@@ -92,11 +92,23 @@ public class FinancialAnalysisService {
      * @return 0~100 사이의 점수
      */
     public BigDecimal calculateInvestmentScore(FinancialData financialData, InvestmentProfile profile) {
+        // 프로필 가중치가 null인 경우 기본 균형형 가중치 적용
+        if (profile.getWeightRevenueGrowth() == null) {
+            InvestmentProfile defaultProfile = createDefaultProfile("균형형");
+            profile.setWeightRevenueGrowth(defaultProfile.getWeightRevenueGrowth());
+            profile.setWeightOperatingMargin(defaultProfile.getWeightOperatingMargin());
+            profile.setWeightRoe(defaultProfile.getWeightRoe());
+            profile.setWeightDebtRatio(defaultProfile.getWeightDebtRatio());
+            profile.setWeightFcf(defaultProfile.getWeightFcf());
+            profile.setWeightPer(defaultProfile.getWeightPer());
+            profile.setWeightPbr(defaultProfile.getWeightPbr());
+        }
+
         BigDecimal totalScore = BigDecimal.ZERO;
         BigDecimal totalWeight = BigDecimal.ZERO; // 실제 사용된 가중치 합계
 
         // 1. 매출 성장률 점수 (높을수록 좋음, 0~50% 범위로 정규화)
-        if (financialData.getRevenueGrowthRate() != null) {
+        if (financialData.getRevenueGrowthRate() != null && profile.getWeightRevenueGrowth() != null) {
             BigDecimal revenueScore = normalizeScore(financialData.getRevenueGrowthRate(),
                     BigDecimal.valueOf(-10), BigDecimal.valueOf(50), true);
             totalScore = totalScore.add(revenueScore.multiply(profile.getWeightRevenueGrowth()));
@@ -104,7 +116,7 @@ public class FinancialAnalysisService {
         }
 
         // 2. 영업이익률 점수 (높을수록 좋음, 0~30% 범위로 정규화)
-        if (financialData.getOperatingMargin() != null) {
+        if (financialData.getOperatingMargin() != null && profile.getWeightOperatingMargin() != null) {
             BigDecimal marginScore = normalizeScore(financialData.getOperatingMargin(),
                     BigDecimal.valueOf(-10), BigDecimal.valueOf(30), true);
             totalScore = totalScore.add(marginScore.multiply(profile.getWeightOperatingMargin()));
@@ -112,7 +124,7 @@ public class FinancialAnalysisService {
         }
 
         // 3. ROE 점수 (높을수록 좋음, 0~30% 범위로 정규화)
-        if (financialData.getRoe() != null) {
+        if (financialData.getRoe() != null && profile.getWeightRoe() != null) {
             BigDecimal roeScore = normalizeScore(financialData.getRoe(),
                     BigDecimal.valueOf(-10), BigDecimal.valueOf(30), true);
             totalScore = totalScore.add(roeScore.multiply(profile.getWeightRoe()));
@@ -120,7 +132,7 @@ public class FinancialAnalysisService {
         }
 
         // 4. 부채비율 점수 (낮을수록 좋음, 0~300% 범위로 정규화, 역방향)
-        if (financialData.getDebtRatio() != null) {
+        if (financialData.getDebtRatio() != null && profile.getWeightDebtRatio() != null) {
             BigDecimal debtScore = normalizeScore(financialData.getDebtRatio(),
                     BigDecimal.ZERO, BigDecimal.valueOf(300), false);
             totalScore = totalScore.add(debtScore.multiply(profile.getWeightDebtRatio()));
@@ -128,7 +140,7 @@ public class FinancialAnalysisService {
         }
 
         // 5. FCF 점수 (높을수록 좋음, -1000억~5000억 범위로 정규화)
-        if (financialData.getFcf() != null) {
+        if (financialData.getFcf() != null && profile.getWeightFcf() != null) {
             BigDecimal fcfInBillion = BigDecimal.valueOf(financialData.getFcf()).divide(BigDecimal.valueOf(100), 4,
                     RoundingMode.HALF_UP);
             BigDecimal fcfScore = normalizeScore(fcfInBillion,
@@ -138,7 +150,7 @@ public class FinancialAnalysisService {
         }
 
         // 6. PER 점수 (낮을수록 좋음, 0~50 범위로 정규화, 역방향)
-        if (financialData.getPerRatio() != null) {
+        if (financialData.getPerRatio() != null && profile.getWeightPer() != null) {
             BigDecimal perScore = normalizeScore(financialData.getPerRatio(),
                     BigDecimal.ZERO, BigDecimal.valueOf(50), false);
             totalScore = totalScore.add(perScore.multiply(profile.getWeightPer()));
@@ -146,7 +158,7 @@ public class FinancialAnalysisService {
         }
 
         // 7. PBR 점수 (낮을수록 좋음, 0~5 범위로 정규화, 역방향)
-        if (financialData.getPbrRatio() != null) {
+        if (financialData.getPbrRatio() != null && profile.getWeightPbr() != null) {
             BigDecimal pbrScore = normalizeScore(financialData.getPbrRatio(),
                     BigDecimal.ZERO, BigDecimal.valueOf(5), false);
             totalScore = totalScore.add(pbrScore.multiply(profile.getWeightPbr()));
