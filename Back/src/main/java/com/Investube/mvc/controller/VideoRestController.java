@@ -16,7 +16,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.Investube.mvc.model.dto.AiVideoDecision;
 import com.Investube.mvc.model.dto.Video;
+import com.Investube.mvc.model.service.VideoAiService;
 import com.Investube.mvc.model.service.VideoService;
 import com.Investube.mvc.model.service.NotificationService;
 import com.Investube.mvc.model.service.UserService;
@@ -36,11 +38,13 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 public class VideoRestController {
 	
 	private final VideoService videoService;
+	private final VideoAiService videoAiService;
 	private final NotificationService notificationService;
 	private final UserService userService;
     
-	public VideoRestController(VideoService videoService, NotificationService notificationService, UserService userService) {
+	public VideoRestController(VideoService videoService, VideoAiService videoAiService, NotificationService notificationService, UserService userService) {
 		this.videoService = videoService;
+		this.videoAiService = videoAiService;
 		this.notificationService = notificationService;
 		this.userService = userService;
 	}
@@ -139,17 +143,66 @@ public class VideoRestController {
 		@ApiResponse(responseCode = "401", description = "인증 필요")
 	})
 	@PostMapping
-	public ResponseEntity<Void> createVideo(@Parameter(description = "등록할 동영상 정보") @RequestBody Video video, HttpServletRequest request) {
+	public ResponseEntity<Map<String, Object>> createVideo(@Parameter(description = "등록할 동영상 정보") @RequestBody Video video, HttpServletRequest request) {
 		Integer userId = getUserIdFromRequest(request);
 		if (userId == null) {
-			return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
+			Map<String, Object> error = new HashMap<>();
+			error.put("message", "로그인이 필요합니다.");
+			return new ResponseEntity<>(error, HttpStatus.UNAUTHORIZED);
+		}
+
+		AiVideoDecision decision;
+		try {
+			decision = videoAiService.inspectVideo(video);
+		} catch (Exception e) {
+			Map<String, Object> error = new HashMap<>();
+			error.put("message", "AI 검증에 실패했습니다. 잠시 후 다시 시도해주세요.");
+			error.put("detail", e.getMessage());
+			return new ResponseEntity<>(error, HttpStatus.BAD_GATEWAY);
+		}
+
+		if (!decision.isAllowed()) {
+			Map<String, Object> error = new HashMap<>();
+			error.put("message", decision.getReason());
+			error.put("aiDecision", decision);
+			return new ResponseEntity<>(error, HttpStatus.BAD_REQUEST);
 		}
 		
 		video.setUserId(userId);
-		if (videoService.createVideo(video)) {
-			return new ResponseEntity<>(HttpStatus.CREATED);
+		if ((video.getCategoryId() <= 0) && decision.getRecommendedCategoryId() != null) {
+			video.setCategoryId(decision.getRecommendedCategoryId());
 		}
-		return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+		if (video.getCategoryId() == 0) {
+			Map<String, Object> error = new HashMap<>();
+			error.put("message", "카테고리를 확인할 수 없습니다. 영상 정보를 다시 확인해주세요.");
+			error.put("aiDecision", decision);
+			return new ResponseEntity<>(error, HttpStatus.BAD_REQUEST);
+		}
+
+		if (videoService.createVideo(video)) {
+			Map<String, Object> response = new HashMap<>();
+			response.put("message", "영상이 등록되었습니다.");
+			response.put("aiDecision", decision);
+			return new ResponseEntity<>(response, HttpStatus.CREATED);
+		}
+		Map<String, Object> error = new HashMap<>();
+		error.put("message", "영상 등록에 실패했습니다.");
+		error.put("aiDecision", decision);
+		return new ResponseEntity<>(error, HttpStatus.BAD_REQUEST);
+	}
+
+	@Operation(summary = "AI 영상 검증", description = "제목/설명으로 영상 적합성을 판단하고 카테고리를 추천합니다.")
+	@PostMapping("/ai/check")
+	public ResponseEntity<Map<String, Object>> checkVideoWithAi(@RequestBody Video video) {
+		Map<String, Object> response = new HashMap<>();
+		try {
+			AiVideoDecision decision = videoAiService.inspectVideo(video);
+			response.put("aiDecision", decision);
+			return new ResponseEntity<>(response, HttpStatus.OK);
+		} catch (Exception e) {
+			response.put("message", "AI 검증에 실패했습니다. 잠시 후 다시 시도해주세요.");
+			return new ResponseEntity<>(response, HttpStatus.BAD_GATEWAY);
+		}
 	}
 	
 	// 비디오 수정 (인증 + 소유자 검증)

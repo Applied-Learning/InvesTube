@@ -100,3 +100,12 @@ export const getVideosByCategory = (categoryId, params = {}) => {
 export const getWishedVideos = (params = {}) => {
   return http.get('/videos/wished', { params })
 }
+
+/**
+ * AI로 영상 적합성 검증 및 카테고리 추천
+ * @param {Object} videoData - { youtubeVideoId, title, description, categoryId, thumbnailUrl }
+ * @returns {Promise}
+ */
+export const checkVideoWithAi = (videoData) => {
+  return http.post('/videos/ai/check', videoData)
+}
