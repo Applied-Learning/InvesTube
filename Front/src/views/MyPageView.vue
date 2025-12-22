@@ -63,36 +63,6 @@
         </div>
 
         <div v-if="activeActivityTab === 'videos'" class="activity-videos">
-          <!-- 찜한 기업 -->
-          <section class="activity-group">
-            <div class="activity-group-header">
-              <h4>찜한 기업</h4>
-              <button class="activity-more-btn" @click="goAllWishedStocks">전체 보기</button>
-            </div>
-            <ul class="activity-list activity-list--stocks">
-              <li
-                v-for="stock in previewWishedStocks"
-                :key="'stock-' + stock.stockCode"
-                class="activity-item activity-item--stock"
-                @click="goStockDetail(stock.stockCode)"
-              >
-                <div class="stock-info">
-                  <p class="stock-name">{{ stock.stockName }}</p>
-                  <p class="stock-code">{{ stock.stockCode }}</p>
-                </div>
-                <span class="market-badge" :class="stock.market === 'KOSPI' ? 'market-kospi' : 'market-kosdaq'">
-                  {{ stock.market }}
-                </span>
-              </li>
-              <li
-                v-if="!activityLoading && previewWishedStocks.length === 0"
-                class="activity-empty"
-              >
-                아직 찜한 기업이 없어요.
-              </li>
-            </ul>
-          </section>
-
           <!-- 찜한 영상 -->
           <section class="activity-group">
             <div class="activity-group-header">

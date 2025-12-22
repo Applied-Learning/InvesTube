@@ -185,7 +185,15 @@ public class StockRestController {
             }
             
             List<StockWish> wishedStocks = stockWishService.getWishedStocksByUserId(userId);
-            return new ResponseEntity<>(wishedStocks, HttpStatus.OK);
+            // 각 관심 종목에 대해 최신 시세가 포함된 상세 정보를 함께 반환
+            List<StockDetailDto> withPrices = new java.util.ArrayList<>();
+            for (StockWish wish : wishedStocks) {
+                StockDetailDto detail = stockService.getStockDetail(wish.getStockCode());
+                if (detail != null) {
+                    withPrices.add(detail);
+                }
+            }
+            return new ResponseEntity<>(withPrices, HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
         }

@@ -38,6 +38,7 @@ public class WebConfig implements WebMvcConfigurer {
                         "/boards/**",
                         "/board/**",
                         "/comments/**",
+                        "/financial/**",
                         "/stocks/wished",
                         "/stocks/*/wished",
                         "/stocks/*/wish",

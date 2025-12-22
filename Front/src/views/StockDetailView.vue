@@ -42,7 +42,7 @@
                     stroke-width="2"
                   />
                 </svg>
-                <span>{{ isWished ? '찜 취소' : '찜하기' }}</span>
+                <span>{{ isWished ? '관심 해제' : '관심 종목' }}</span>
               </button>
             </div>
           </div>
@@ -543,7 +543,7 @@ export default {
         const response = await isStockWished(this.stockCode)
         this.isWished = response.data
       } catch (err) {
-        console.error('찜 상태 확인 실패:', err)
+        console.error('관심 상태 확인 실패:', err)
         // 인증 에러여도 페이지는 유지
         this.isWished = false
       }
@@ -565,8 +565,8 @@ export default {
           this.isWished = true
         }
       } catch (err) {
-        console.error('찜 처리 실패:', err)
-        alert('찜 처리에 실패했습니다.')
+        console.error('관심 종목 처리 실패:', err)
+        alert('관심 종목 처리에 실패했습니다.')
       } finally {
         this.wishLoading = false
       }
@@ -808,10 +808,10 @@ export default {
   align-items: center;
   gap: 6px;
   padding: 8px 16px;
-  background: white;
-  border: 2px solid #e0e0e0;
+  background: #fff;
+  border: 2px solid #e5e5e5;
   border-radius: 6px;
-  color: #757575;
+  color: #555;
   cursor: pointer;
   transition: all 0.2s;
   font-size: 14px;
@@ -819,14 +819,15 @@ export default {
 }
 
 .wish-button:hover {
-  border-color: #1976d2;
-  color: #1976d2;
+  border-color: #e53935;
+  background: #fff4f4;
+  color: #c62828;
 }
 
 .wish-button.wished {
-  background: #e3f2fd;
-  border-color: #1976d2;
-  color: #1976d2;
+  background: #ef5350;
+  border-color: #c62828;
+  color: #fff;
 }
 
 .wish-button:disabled {
