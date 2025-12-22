@@ -1,7 +1,11 @@
 <template>
   <aside class="sidebar">
     <nav class="nav">
-      <RouterLink to="/videos" class="nav-item" active-class="nav-item--active">
+      <RouterLink
+        to="/"
+        class="nav-item"
+        :class="{ 'nav-item--active': isVideoRoute }"
+      >
         <span class="nav-icon" aria-hidden="true">
           <svg
             class="w-4 h-4 text-blue-600"
@@ -22,7 +26,11 @@
         <span class="nav-label">영상</span>
       </RouterLink>
 
-      <RouterLink to="/board" class="nav-item" active-class="nav-item--active">
+      <RouterLink
+        to="/board"
+        class="nav-item"
+        :class="{ 'nav-item--active': isBoardRoute }"
+      >
         <span class="nav-icon" aria-hidden="true">
           <svg
             class="w-4 h-4 text-green-600"
@@ -46,7 +54,11 @@
         <span class="nav-label">게시판</span>
       </RouterLink>
 
-      <RouterLink to="/invest" class="nav-item" active-class="nav-item--active">
+      <RouterLink
+        to="/invest"
+        class="nav-item"
+        :class="{ 'nav-item--active': isInvestRoute }"
+      >
         <span class="nav-icon" aria-hidden="true">
           <svg
             class="w-4 h-4 text-orange-500"
@@ -74,8 +86,18 @@ import { computed } from 'vue'
 
 const route = useRoute()
 const isVideoRoute = computed(() => {
-  const videoNames = ['home', 'videoDetail', 'videoCreate', 'wishlist']
-  return videoNames.includes(route.name)
+  const names = ['home', 'videoDetail', 'videoCreate', 'wishlist', 'myVideos', 'myReviewVideos', 'myWishedVideos', 'userVideos']
+  return names.includes(route.name)
+})
+
+const isBoardRoute = computed(() => {
+  const names = ['board', 'boardCreate', 'boardEdit', 'boardDetail', 'myBoards', 'myCommentedBoards', 'userBoards']
+  return names.includes(route.name)
+})
+
+const isInvestRoute = computed(() => {
+  const names = ['invest', 'investmentSurvey', 'stockDetail', 'myWishedStocks']
+  return names.includes(route.name)
 })
 </script>
 
