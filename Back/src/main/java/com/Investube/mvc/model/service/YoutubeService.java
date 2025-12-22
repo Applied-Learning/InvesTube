@@ -41,14 +41,8 @@ public class YoutubeService {
 		}
 
 		String url = UriComponentsBuilder.fromHttpUrl("https://www.googleapis.com/youtube/v3/search")
-				.queryParam("part", "snippet")
-				.queryParam("type", "video")
-				.queryParam("maxResults", maxResults)
-				.queryParam("q", query)
-				.queryParam("key", youtubeApiKey)
-				.build()
-				.encode()
-				.toUriString();
+				.queryParam("part", "snippet").queryParam("type", "video").queryParam("maxResults", maxResults)
+				.queryParam("q", query).queryParam("key", youtubeApiKey).build().encode().toUriString();
 
 		ResponseEntity<Map> response = restTemplate.getForEntity(URI.create(url), Map.class);
 		if (!response.getStatusCode().is2xxSuccessful() || response.getBody() == null) {
@@ -81,7 +75,7 @@ public class YoutubeService {
 			}
 
 			if (videoId != null) {
-				results.add(new YoutubeVideoResponse(videoId, title, description, channelTitle, thumbnailUrl));
+				results.add(new YoutubeVideoResponse(videoId, title, description, channelTitle, thumbnailUrl, null));
 			}
 		}
 
@@ -97,12 +91,8 @@ public class YoutubeService {
 		}
 
 		String url = UriComponentsBuilder.fromHttpUrl("https://www.googleapis.com/youtube/v3/videos")
-				.queryParam("part", "snippet,statistics,contentDetails")
-				.queryParam("id", videoId)
-				.queryParam("key", youtubeApiKey)
-				.build()
-				.encode()
-				.toUriString();
+				.queryParam("part", "snippet,statistics,contentDetails").queryParam("id", videoId)
+				.queryParam("key", youtubeApiKey).build().encode().toUriString();
 
 		ResponseEntity<Map> response = restTemplate.getForEntity(URI.create(url), Map.class);
 		if (!response.getStatusCode().is2xxSuccessful() || response.getBody() == null) {
@@ -119,29 +109,42 @@ public class YoutubeService {
 		String title = snippet != null ? (String) snippet.getOrDefault("title", "") : "";
 		String description = snippet != null ? (String) snippet.getOrDefault("description", "") : "";
 		String channelTitle = snippet != null ? (String) snippet.getOrDefault("channelTitle", "") : "";
+		java.util.List<String> tags = null;
+		if (snippet != null && snippet.get("tags") instanceof java.util.List<?>) {
+			tags = new java.util.ArrayList<>();
+			for (Object o : (java.util.List<?>) snippet.get("tags")) {
+				if (o != null) {
+					tags.add(o.toString());
+				}
+			}
+		}
 		String thumbnailUrl = null;
 		if (snippet != null && snippet.get("thumbnails") instanceof Map) {
 			Map<String, Object> thumbs = (Map<String, Object>) snippet.get("thumbnails");
 			thumbnailUrl = extractThumbnail(thumbs);
 		}
 
-		return new YoutubeVideoResponse(videoId, title, description, channelTitle, thumbnailUrl);
+		return new YoutubeVideoResponse(videoId, title, description, channelTitle, thumbnailUrl, tags);
 	}
 
 	private String extractThumbnail(Map<String, Object> thumbs) {
-		if (thumbs == null) return null;
+		if (thumbs == null)
+			return null;
 		// high > medium > default
 		if (thumbs.get("high") instanceof Map) {
 			Object url = ((Map<?, ?>) thumbs.get("high")).get("url");
-			if (url != null) return url.toString();
+			if (url != null)
+				return url.toString();
 		}
 		if (thumbs.get("medium") instanceof Map) {
 			Object url = ((Map<?, ?>) thumbs.get("medium")).get("url");
-			if (url != null) return url.toString();
+			if (url != null)
+				return url.toString();
 		}
 		if (thumbs.get("default") instanceof Map) {
 			Object url = ((Map<?, ?>) thumbs.get("default")).get("url");
-			if (url != null) return url.toString();
+			if (url != null)
+				return url.toString();
 		}
 		return null;
 	}
