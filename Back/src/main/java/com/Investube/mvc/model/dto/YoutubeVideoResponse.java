@@ -6,6 +6,7 @@ public class YoutubeVideoResponse {
 	private String description;
 	private String channelTitle;
 	private String thumbnailUrl;
+	private java.util.List<String> tags;
 
 	public YoutubeVideoResponse() {
 	}
@@ -17,6 +18,16 @@ public class YoutubeVideoResponse {
 		this.description = description;
 		this.channelTitle = channelTitle;
 		this.thumbnailUrl = thumbnailUrl;
+	}
+
+	public YoutubeVideoResponse(String videoId, String title, String description, String channelTitle,
+			String thumbnailUrl, java.util.List<String> tags) {
+		this.videoId = videoId;
+		this.title = title;
+		this.description = description;
+		this.channelTitle = channelTitle;
+		this.thumbnailUrl = thumbnailUrl;
+		this.tags = tags;
 	}
 
 	public String getVideoId() {
@@ -57,5 +68,13 @@ public class YoutubeVideoResponse {
 
 	public void setThumbnailUrl(String thumbnailUrl) {
 		this.thumbnailUrl = thumbnailUrl;
+	}
+
+	public java.util.List<String> getTags() {
+		return tags;
+	}
+
+	public void setTags(java.util.List<String> tags) {
+		this.tags = tags;
 	}
 }
