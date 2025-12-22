@@ -16,115 +16,154 @@ import java.util.Map;
 @Component
 public class AiPromptBuilder {
 
-    private final ObjectMapper objectMapper = new ObjectMapper();
+  private final ObjectMapper objectMapper = new ObjectMapper();
 
-    /**
-     * 재무 분석용 프롬프트 생성
-     */
-    public String buildFinancialAnalysisPrompt(
-            String stockCode,
-            String stockName,
-            FinancialData financialData,
-            BigDecimal baseScore,
-            InvestmentProfile profile
-    ) {
-        try {
-            // 재무 지표를 Map으로 변환
-            Map<String, Object> financials = new HashMap<>();
-            financials.put("revenueGrowthRate", formatValue(financialData.getRevenueGrowthRate()));
-            financials.put("operatingProfitGrowthRate", formatValue(financialData.getOperatingProfitGrowthRate()));
-            financials.put("operatingMargin", formatValue(financialData.getOperatingMargin()));
-            financials.put("roe", formatValue(financialData.getRoe()));
-            financials.put("debtRatio", formatValue(financialData.getDebtRatio()));
-            financials.put("fcf", financialData.getFcf());
-            financials.put("per", formatValue(financialData.getPerRatio()));
-            financials.put("pbr", formatValue(financialData.getPbrRatio()));
+  /**
+   * 재무 분석용 프롬프트 생성 (system/user 분리)
+   */
+  public String[] buildFinancialAnalysisPromptWithRoles(
+      String stockCode,
+      String stockName,
+      FinancialData financialData,
+      BigDecimal baseScore,
+      InvestmentProfile profile) {
+    try {
+      // 재무 지표를 Map으로 변환
+      Map<String, Object> financials = new HashMap<>();
+      financials.put("revenueGrowthRate", formatValue(financialData.getRevenueGrowthRate()));
+      financials.put("operatingProfitGrowthRate", formatValue(financialData.getOperatingProfitGrowthRate()));
+      financials.put("operatingMargin", formatValue(financialData.getOperatingMargin()));
+      financials.put("roe", formatValue(financialData.getRoe()));
+      financials.put("debtRatio", formatValue(financialData.getDebtRatio()));
+      financials.put("fcf", financialData.getFcf());
+      financials.put("per", formatValue(financialData.getPerRatio()));
+      financials.put("pbr", formatValue(financialData.getPbrRatio()));
 
-            String financialsJson = objectMapper.writerWithDefaultPrettyPrinter()
-                    .writeValueAsString(financials);
+      String financialsJson = objectMapper.writeValueAsString(financials);
 
-            // 시스템 프롬프트 + 데이터
-            return String.format("""
-                너는 투자 분석 보조 AI다.
-                너의 역할은 점수를 계산하는 것이 아니라,
-                이미 계산된 기본 점수를 해석하고 보정하는 것이다.
-                
-                규칙:
-                1. 절대 최종 점수를 직접 계산하지 마라.
-                2. 보정 점수는 -10 ~ +10 범위만 허용된다.
-                3. 가중치 보정은 각 항목당 -10 ~ +10 사이 정수만 가능하다.
-                4. 출력은 반드시 JSON 형식이어야 한다.
-                5. 감정적 표현, 투자 권유 문구 사용 금지.
-                6. 요약은 2줄 이내로 작성하라.
-                
-                기업: %s (%s)
-                회계 연도: %s
-                투자 성향: %s
-                기본 점수: %.2f
-                
-                재무 지표:
-                %s
-                
-                위 정보를 바탕으로 다음 JSON 형식으로 응답하라:
-                {
-                  "scoreAdjustment": -5,
-                  "weightAdjustment": {
-                    "revenueGrowth": -5,
-                    "operatingMargin": 0,
-                    "roe": -5,
-                    "debtRatio": 5,
-                    "fcf": 0,
-                    "per": 0,
-                    "pbr": 0
-                  },
-                  "summary": "2줄 이내 요약",
-                  "riskLevel": "HIGH"
-                }
-                
-                riskLevel은 LOW, MEDIUM, HIGH 중 하나만 사용하라.
-                JSON만 출력하고 다른 텍스트는 포함하지 마라.
-                """,
-                stockName,
-                stockCode,
-                financialData.getFiscalYear(),
-                profile.getProfileName(),
-                baseScore,
-                financialsJson
-            );
+      // System 프롬프트 (AI의 역할과 규칙 정의)
+      String systemPrompt = "너는 투자 분석 보조 AI다. 너의 역할은 점수를 계산하는 것이 아니라, 이미 계산된 기본 점수를 해석하고 보정하는 것이다. 규칙: 1. 절대 최종 점수를 직접 계산하지 마라. 2. 보정 점수는 -10 ~ +10 범위만 허용된다. 3. 가중치 보정은 각 항목당 -10 ~ +10 사이 정수만 가능하다. 4. 출력은 반드시 JSON 형식이어야 한다. 5. 감정적 표현, 투자 권유 문구 사용 금지. 6. 요약은 2줄 이내로 작성하라. 7. riskLevel은 LOW, MEDIUM, HIGH 중 하나만 사용하라. 8. JSON만 출력하고 다른 텍스트는 포함하지 마라.";
 
-        } catch (Exception e) {
-            throw new RuntimeException("프롬프트 생성 실패", e);
-        }
+      // User 프롬프트 (실제 분석할 데이터)
+      String userPrompt = String.format(
+          "기업: %s (%s) 회계 연도: %s 투자 성향: %s 기본 점수: %.2f 재무 지표: %s 위 정보를 바탕으로 다음 JSON 형식으로 응답하라: {\"scoreAdjustment\": 0, \"weightAdjustment\": {\"revenueGrowth\": 0, \"operatingMargin\": 0, \"roe\": 0, \"debtRatio\": 0, \"fcf\": 0, \"per\": 0, \"pbr\": 0}, \"summary\": \"재무 분석 요약 (2줄 이내)\", \"riskLevel\": \"MEDIUM\"}",
+          stockName,
+          stockCode,
+          financialData.getFiscalYear(),
+          profile.getProfileName(),
+          baseScore,
+          financialsJson);
+      return new String[] { systemPrompt, userPrompt };
+
+    } catch (Exception e) {
+      throw new RuntimeException("프롬프트 생성 실패", e);
     }
+  }
 
-    /**
-     * BigDecimal을 문자열로 포맷 (null 처리)
-     */
-    private String formatValue(BigDecimal value) {
-        return value != null ? value.toString() : "null";
-    }
+  /**
+   * 재무 분석용 프롬프트 생성
+   */
+  public String buildFinancialAnalysisPrompt(
+      String stockCode,
+      String stockName,
+      FinancialData financialData,
+      BigDecimal baseScore,
+      InvestmentProfile profile) {
+    try {
+      // 재무 지표를 Map으로 변환
+      Map<String, Object> financials = new HashMap<>();
+      financials.put("revenueGrowthRate", formatValue(financialData.getRevenueGrowthRate()));
+      financials.put("operatingProfitGrowthRate", formatValue(financialData.getOperatingProfitGrowthRate()));
+      financials.put("operatingMargin", formatValue(financialData.getOperatingMargin()));
+      financials.put("roe", formatValue(financialData.getRoe()));
+      financials.put("debtRatio", formatValue(financialData.getDebtRatio()));
+      financials.put("fcf", financialData.getFcf());
+      financials.put("per", formatValue(financialData.getPerRatio()));
+      financials.put("pbr", formatValue(financialData.getPbrRatio()));
 
-    /**
-     * 챗봇용 프롬프트 생성 (나중 확장용)
-     */
-    public String buildChatPrompt(String userMessage, String context) {
-        return String.format("""
-            너는 투자 관련 질문에 답변하는 AI 챗봇이다.
-            
-            규칙:
-            1. 구체적 투자 조언은 하지 마라.
-            2. 재무 지표 설명, 용어 해설에 집중하라.
-            3. 간결하고 명확하게 답변하라.
-            
-            컨텍스트:
-            %s
-            
-            사용자 질문: %s
-            
-            답변:
-            """,
-            context,
-            userMessage
-        );
+      String financialsJson = objectMapper.writerWithDefaultPrettyPrinter()
+          .writeValueAsString(financials);
+
+      // 시스템 프롬프트 + 데이터
+      return String.format("""
+          너는 투자 분석 보조 AI다.
+          너의 역할은 점수를 계산하는 것이 아니라,
+          이미 계산된 기본 점수를 해석하고 보정하는 것이다.
+
+          규칙:
+          1. 절대 최종 점수를 직접 계산하지 마라.
+          2. 보정 점수는 -10 ~ +10 범위만 허용된다.
+          3. 가중치 보정은 각 항목당 -10 ~ +10 사이 정수만 가능하다.
+          4. 출력은 반드시 JSON 형식이어야 한다.
+          5. 감정적 표현, 투자 권유 문구 사용 금지.
+          6. 요약은 2줄 이내로 작성하라.
+
+          기업: %s (%s)
+          회계 연도: %s
+          투자 성향: %s
+          기본 점수: %.2f
+
+          재무 지표:
+          %s
+
+          위 정보를 바탕으로 다음 JSON 형식으로 응답하라:
+          {
+            "scoreAdjustment": -5,
+            "weightAdjustment": {
+              "revenueGrowth": -5,
+              "operatingMargin": 0,
+              "roe": -5,
+              "debtRatio": 5,
+              "fcf": 0,
+              "per": 0,
+              "pbr": 0
+            },
+            "summary": "2줄 이내 요약",
+            "riskLevel": "HIGH"
+          }
+
+          riskLevel은 LOW, MEDIUM, HIGH 중 하나만 사용하라.
+          JSON만 출력하고 다른 텍스트는 포함하지 마라.
+          """,
+          stockName,
+          stockCode,
+          financialData.getFiscalYear(),
+          profile.getProfileName(),
+          baseScore,
+          financialsJson);
+
+    } catch (Exception e) {
+      throw new RuntimeException("프롬프트 생성 실패", e);
     }
+  }
+
+  /**
+   * BigDecimal을 문자열로 포맷 (null 처리)
+   */
+  private String formatValue(BigDecimal value) {
+    return value != null ? value.toString() : "null";
+  }
+
+  /**
+   * 챗봇용 프롬프트 생성 (나중 확장용)
+   */
+  public String buildChatPrompt(String userMessage, String context) {
+    return String.format("""
+        너는 투자 관련 질문에 답변하는 AI 챗봇이다.
+
+        규칙:
+        1. 구체적 투자 조언은 하지 마라.
+        2. 재무 지표 설명, 용어 해설에 집중하라.
+        3. 간결하고 명확하게 답변하라.
+
+        컨텍스트:
+        %s
+
+        사용자 질문: %s
+
+        답변:
+        """,
+        context,
+        userMessage);
+  }
 }
