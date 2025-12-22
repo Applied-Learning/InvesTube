@@ -36,6 +36,8 @@ public class DartApiService {
 
     // 기업 고유번호 캐시 (메모리)
     private Map<String, String> corpCodeCache = new HashMap<>();
+    // 우선주 표기 등을 제거한 이름으로도 찾을 수 있도록 정규화 캐시
+    private Map<String, String> normalizedCorpCodeCache = new HashMap<>();
     private boolean isCacheLoaded = false;
 
     private static final String DART_API_BASE_URL = "https://opendart.fss.or.kr/api";
@@ -85,6 +87,10 @@ public class DartApiService {
 
                         if (corpCode != null && corpName != null) {
                             corpCodeCache.put(corpName, corpCode);
+                            String normalized = normalizeCorpName(corpName);
+                            if (normalized != null && !normalized.isBlank()) {
+                                normalizedCorpCodeCache.put(normalized, corpCode);
+                            }
                         }
                     }
 
@@ -128,10 +134,21 @@ public class DartApiService {
                 return corpCodeCache.get(corpName);
             }
 
+            // 우선주 표기를 제거한 정규화 이름 매칭 시도
+            String normalized = normalizeCorpName(corpName);
+            if (normalized != null && normalizedCorpCodeCache.containsKey(normalized)) {
+                System.out.println("기업명 정규화 매칭: " + corpName + " -> " + normalized);
+                return normalizedCorpCodeCache.get(normalized);
+            }
+
             // 유사 매칭 시도 (㈜, (주) 등 포함된 이름)
             for (Map.Entry<String, String> entry : corpCodeCache.entrySet()) {
                 if (entry.getKey().contains(corpName)) {
                     System.out.println("기업명 유사 매칭: " + corpName + " -> " + entry.getKey());
+                    return entry.getValue();
+                }
+                if (normalized != null && entry.getKey().contains(normalized)) {
+                    System.out.println("기업명 유사 매칭(정규화): " + corpName + " -> " + entry.getKey());
                     return entry.getValue();
                 }
             }
@@ -143,6 +160,19 @@ public class DartApiService {
             e.printStackTrace();
             return null;
         }
+    }
+
+    /**
+     * 우선주 표기(우, 우B, 우(전환) 등)와 공백을 제거한 이름 반환
+     */
+    private String normalizeCorpName(String corpName) {
+        if (corpName == null) {
+            return null;
+        }
+        String normalized = corpName.trim().replaceAll("\\s+", "");
+        // 끝의 우/우B/우C/우(전환) 등 제거
+        normalized = normalized.replaceAll("(우([A-Za-z]|[0-9]+)?(\\([^)]*\\))?)$", "");
+        return normalized;
     }
 
     /**
