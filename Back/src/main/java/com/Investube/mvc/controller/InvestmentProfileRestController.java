@@ -308,6 +308,36 @@ public class InvestmentProfileRestController {
                 Map.of("value", 3, "text", "추가 매수 기회로 활용")));
         questions.add(q5);
 
+        // Q6: 주식 투자 비중
+        Map<String, Object> q6 = new HashMap<>();
+        q6.put("id", 6);
+        q6.put("question", "전체 자산 중 주식 투자 비중은 어느 정도인가요?");
+        q6.put("options", List.of(
+                Map.of("value", 1, "text", "20% 이하"),
+                Map.of("value", 2, "text", "20~50%"),
+                Map.of("value", 3, "text", "50% 이상")));
+        questions.add(q6);
+
+        // Q7: 정보 수집 방식
+        Map<String, Object> q7 = new HashMap<>();
+        q7.put("id", 7);
+        q7.put("question", "투자 결정 시 어떻게 정보를 수집하나요?");
+        q7.put("options", List.of(
+                Map.of("value", 1, "text", "전문가나 지인 추천"),
+                Map.of("value", 2, "text", "뉴스와 시장 분석 참고"),
+                Map.of("value", 3, "text", "직접 재무제표 분석")));
+        questions.add(q7);
+
+        // Q8: 기대 수익률
+        Map<String, Object> q8 = new HashMap<>();
+        q8.put("id", 8);
+        q8.put("question", "1년 기준 기대하는 투자 수익률은?");
+        q8.put("options", List.of(
+                Map.of("value", 1, "text", "예금 이자 이상 (3~5%)"),
+                Map.of("value", 2, "text", "연 10~20%"),
+                Map.of("value", 3, "text", "연 30% 이상")));
+        questions.add(q8);
+
         return new ResponseEntity<>(questions, HttpStatus.OK);
     }
 

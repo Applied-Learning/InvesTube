@@ -98,9 +98,21 @@ public class FinancialServiceImpl implements FinancialService {
         data.setCashFlowInvesting(getLongFromMap(cashFlowData, "cash_flow_investing"));
         data.setCashFlowFinancing(getLongFromMap(cashFlowData, "cash_flow_financing"));
 
-        // 시장 데이터는 Stock 테이블에 없으므로 기본값 설정
-        data.setMarketCap(0L);
-        data.setStockPrice(BigDecimal.ZERO);
+        // 시장 데이터: KRX에서 시가총액 조회
+        try {
+            var latestPrice = stockService.getLatestPrice(stockCode);
+            if (latestPrice != null && latestPrice.getMarketCap() != null) {
+                data.setMarketCap(latestPrice.getMarketCap());
+                data.setStockPrice(latestPrice.getClosePrice());
+            } else {
+                data.setMarketCap(0L);
+                data.setStockPrice(BigDecimal.ZERO);
+            }
+        } catch (Exception e) {
+            System.err.println("시가총액 조회 실패: " + e.getMessage());
+            data.setMarketCap(0L);
+            data.setStockPrice(BigDecimal.ZERO);
+        }
         data.setSharesOutstanding(0L);
 
         data.setDataSource("DART");

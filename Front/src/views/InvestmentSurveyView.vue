@@ -9,7 +9,7 @@
           <div class="intro-icon">📊</div>
           <h2>나의 투자 성향 알아보기</h2>
           <p>
-            5개의 간단한 질문에 답하고<br />
+            8개의 간단한 질문에 답하고<br />
             나에게 맞는 투자 스타일을 찾아보세요!
           </p>
           <div class="profile-types">
@@ -83,7 +83,7 @@
             {{ resultIcon }}
           </div>
           <h2 class="result-title">{{ result.profileType }}</h2>
-          <p class="result-score">총점: {{ result.totalScore }}점 / 15점</p>
+          <p class="result-score">총점: {{ result.totalScore }}점 / 24점</p>
           
           <div class="result-description">
             <p v-if="result.profileType === '안정형'">
@@ -207,7 +207,10 @@ export default {
           riskTolerance: this.answers[2],
           investmentGoal: this.answers[3],
           investmentExperience: this.answers[4],
-          volatilityResponse: this.answers[5]
+          volatilityResponse: this.answers[5],
+          stockRatio: this.answers[6],
+          informationSource: this.answers[7],
+          expectedReturn: this.answers[8]
         }
         
         const response = await profileApi.submitSurvey(survey)
