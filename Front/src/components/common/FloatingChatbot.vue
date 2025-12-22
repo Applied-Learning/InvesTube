@@ -1,13 +1,21 @@
 <template>
   <div class="floating-chat">
+    <!-- 알림 토스트 -->
+    <div v-if="chatbotStore.showNotification && !isOpen" class="notification-toast">
+      <span class="toast-icon">💡</span>
+      <span class="toast-message">{{ chatbotStore.notificationMessage }}</span>
+      <button class="toast-close" @click="chatbotStore.dismissNotification">✕</button>
+    </div>
+
     <!-- 플로팅 버튼 -->
     <button 
       v-if="!isOpen" 
       class="chat-toggle-btn"
+      :class="{ 'has-notification': chatbotStore.showNotification }"
       @click="openChat"
     >
       <span class="chat-icon">💬</span>
-      <span class="chat-badge" v-if="hasNewMessage">!</span>
+      <span class="chat-badge" v-if="chatbotStore.showNotification || hasNewMessage">!</span>
     </button>
 
     <!-- 챗봇 패널 -->
@@ -15,7 +23,9 @@
       <div class="chat-header">
         <div class="header-info">
           <span class="header-icon">🤖</span>
-          <span class="header-title">투자 AI 챗봇</span>
+          <span class="header-title">
+            {{ chatbotStore.currentStock ? chatbotStore.currentStock.stockName + ' 분석' : '투자 AI 챗봇' }}
+          </span>
         </div>
         <button class="close-btn" @click="closeChat">✕</button>
       </div>
@@ -23,11 +33,13 @@
       <div class="chat-messages" ref="chatMessages">
         <div v-if="chatHistory.length === 0" class="chat-welcome">
           <div class="welcome-icon">📊</div>
-          <h4>안녕하세요!</h4>
-          <p>투자 관련 질문을 해보세요.</p>
+          <h4 v-if="chatbotStore.currentStock">{{ chatbotStore.currentStock.stockName }} 분석</h4>
+          <h4 v-else>안녕하세요!</h4>
+          <p v-if="chatbotStore.currentStock">이 종목에 대해 궁금한 점을 물어보세요.</p>
+          <p v-else>투자 관련 질문을 해보세요.</p>
           <div class="quick-questions">
             <button 
-              v-for="q in quickQuestions" 
+              v-for="q in currentQuickQuestions" 
               :key="q"
               class="quick-btn"
               @click="sendQuickQuestion(q)"
@@ -81,9 +93,14 @@
 
 <script>
 import http from '@/api/http'
+import { useChatbotStore } from '@/stores/chatbot'
 
 export default {
   name: 'FloatingChatbot',
+  setup() {
+    const chatbotStore = useChatbotStore()
+    return { chatbotStore }
+  },
   data() {
     return {
       isOpen: false,
@@ -91,12 +108,23 @@ export default {
       userInput: '',
       chatHistory: [],
       hasNewMessage: false,
-      quickQuestions: [
+      defaultQuestions: [
         '오늘 시장 상황은?',
         '삼성전자 어때?',
         '초보자 추천 종목',
         '투자 성향 알려줘'
+      ],
+      stockQuestions: [
+        '이 종목 투자 점수는?',
+        '영업이익률 알려줘',
+        '안정형 투자자한테 괜찮아?',
+        '리스크 요약해줘'
       ]
+    }
+  },
+  computed: {
+    currentQuickQuestions() {
+      return this.chatbotStore.currentStock ? this.stockQuestions : this.defaultQuestions
     }
   },
   methods: {
@@ -161,8 +189,70 @@ export default {
 .floating-chat {
   position: fixed;
   bottom: 24px;
-  right: 24px;
+  left: 24px;
   z-index: 1000;
+}
+
+/* 알림 토스트 */
+.notification-toast {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 12px 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 280px;
+  max-width: 320px;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.toast-icon {
+  font-size: 20px;
+}
+
+.toast-message {
+  flex: 1;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.toast-close {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toast-close:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* 알림 있을 때 버튼 펄스 효과 */
+.chat-toggle-btn.has-notification {
+  animation: pulse 2s infinite;
 }
 
 /* 플로팅 버튼 */
@@ -427,7 +517,7 @@ export default {
 @media (max-width: 480px) {
   .floating-chat {
     bottom: 16px;
-    right: 16px;
+    left: 16px;
   }
 
   .chat-panel {
