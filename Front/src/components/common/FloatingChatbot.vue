@@ -427,7 +427,7 @@ export default {
 }
 
 .chat-header {
-  background: white;
+  background: #d8edffff;
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
@@ -519,7 +519,7 @@ export default {
   flex: 1;
   overflow-y: auto;
   padding: 20px;
-  background: #f8f9fa;
+  background: #eff4f8; /* 배경색 변경 (흰색과 구분되는 연한 블루그레이) */
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -622,6 +622,7 @@ export default {
   color: #333;
   border-bottom-left-radius: 4px;
   border: 1px solid #eee;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08); /* 말풍선 그림자 추가 */
 }
 
 .inline-quick-questions {
