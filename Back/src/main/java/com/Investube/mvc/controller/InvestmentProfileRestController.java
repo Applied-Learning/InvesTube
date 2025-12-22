@@ -2,6 +2,7 @@ package com.Investube.mvc.controller;
 
 import com.Investube.mvc.model.dao.InvestmentProfileDao;
 import com.Investube.mvc.model.dto.InvestmentProfile;
+import com.Investube.mvc.model.dto.InvestmentSurvey;
 import com.Investube.mvc.service.FinancialAnalysisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -9,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import jakarta.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -229,8 +231,8 @@ public class InvestmentProfileRestController {
                 return new ResponseEntity<>("인증이 필요합니다.", HttpStatus.UNAUTHORIZED);
             }
 
-            String[] profileTypes = {"안정형", "성장형", "균형형", "가치형", "현금흐름형"};
-            
+            String[] profileTypes = { "안정형", "성장형", "균형형", "가치형", "현금흐름형" };
+
             for (int i = 0; i < profileTypes.length; i++) {
                 InvestmentProfile profile = financialAnalysisService.createDefaultProfile(profileTypes[i]);
                 profile.setUserId(userId);
@@ -240,6 +242,110 @@ public class InvestmentProfileRestController {
 
             Map<String, String> result = new HashMap<>();
             result.put("message", "기본 프로필 5개가 생성되었습니다.");
+            return new ResponseEntity<>(result, HttpStatus.CREATED);
+        } catch (Exception e) {
+            Map<String, String> error = new HashMap<>();
+            error.put("error", e.getMessage());
+            return new ResponseEntity<>(error, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    /**
+     * 투자 성향 설문 질문 조회
+     * GET /profiles/survey/questions
+     */
+    @GetMapping("/survey/questions")
+    public ResponseEntity<?> getSurveyQuestions() {
+        List<Map<String, Object>> questions = new ArrayList<>();
+
+        // Q1: 투자 기간
+        Map<String, Object> q1 = new HashMap<>();
+        q1.put("id", 1);
+        q1.put("question", "예상 투자 기간은 어느 정도인가요?");
+        q1.put("options", List.of(
+                Map.of("value", 1, "text", "1년 미만 (단기)"),
+                Map.of("value", 2, "text", "1~3년 (중기)"),
+                Map.of("value", 3, "text", "3년 이상 (장기)")));
+        questions.add(q1);
+
+        // Q2: 손실 감내 수준
+        Map<String, Object> q2 = new HashMap<>();
+        q2.put("id", 2);
+        q2.put("question", "투자 원금의 손실을 어느 정도까지 감내할 수 있나요?");
+        q2.put("options", List.of(
+                Map.of("value", 1, "text", "10% 이내"),
+                Map.of("value", 2, "text", "10~30% 정도"),
+                Map.of("value", 3, "text", "30% 이상도 가능")));
+        questions.add(q2);
+
+        // Q3: 투자 목적
+        Map<String, Object> q3 = new HashMap<>();
+        q3.put("id", 3);
+        q3.put("question", "주된 투자 목적은 무엇인가요?");
+        q3.put("options", List.of(
+                Map.of("value", 1, "text", "원금 보존이 가장 중요"),
+                Map.of("value", 2, "text", "안정적인 수익 추구"),
+                Map.of("value", 3, "text", "고수익 추구 (위험 감수)")));
+        questions.add(q3);
+
+        // Q4: 투자 경험
+        Map<String, Object> q4 = new HashMap<>();
+        q4.put("id", 4);
+        q4.put("question", "주식 투자 경험은 어느 정도인가요?");
+        q4.put("options", List.of(
+                Map.of("value", 1, "text", "거의 없음 (1년 미만)"),
+                Map.of("value", 2, "text", "보통 (1~3년)"),
+                Map.of("value", 3, "text", "많음 (3년 이상)")));
+        questions.add(q4);
+
+        // Q5: 변동성 대응
+        Map<String, Object> q5 = new HashMap<>();
+        q5.put("id", 5);
+        q5.put("question", "보유 종목이 20% 하락했을 때 어떻게 하시겠어요?");
+        q5.put("options", List.of(
+                Map.of("value", 1, "text", "즉시 손절매"),
+                Map.of("value", 2, "text", "상황을 지켜봄"),
+                Map.of("value", 3, "text", "추가 매수 기회로 활용")));
+        questions.add(q5);
+
+        return new ResponseEntity<>(questions, HttpStatus.OK);
+    }
+
+    /**
+     * 투자 성향 설문 결과 제출 및 프로필 생성
+     * POST /profiles/survey/submit
+     */
+    @PostMapping("/survey/submit")
+    public ResponseEntity<?> submitSurvey(
+            HttpServletRequest request,
+            @RequestBody InvestmentSurvey survey) {
+        try {
+            Integer userId = getUserIdFromRequest(request);
+            if (userId == null) {
+                return new ResponseEntity<>("인증이 필요합니다.", HttpStatus.UNAUTHORIZED);
+            }
+
+            // 설문 결과로 성향 결정
+            String profileType = survey.determineProfileType();
+            int totalScore = survey.getTotalScore();
+
+            // 기존 기본 프로필 해제
+            investmentProfileDao.clearDefaultProfile(userId);
+
+            // 새 프로필 생성
+            InvestmentProfile profile = financialAnalysisService.createDefaultProfile(profileType);
+            profile.setUserId(userId);
+            profile.setIsDefault(true);
+            profile.setProfileName(profileType + " (설문 결과)");
+            investmentProfileDao.insertProfile(profile);
+
+            // 결과 반환
+            Map<String, Object> result = new HashMap<>();
+            result.put("totalScore", totalScore);
+            result.put("profileType", profileType);
+            result.put("profile", profile);
+            result.put("message", String.format("설문 결과: %s (점수: %d점)", profileType, totalScore));
+
             return new ResponseEntity<>(result, HttpStatus.CREATED);
         } catch (Exception e) {
             Map<String, String> error = new HashMap<>();

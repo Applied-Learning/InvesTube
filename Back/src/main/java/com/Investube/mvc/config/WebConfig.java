@@ -40,12 +40,14 @@ public class WebConfig implements WebMvcConfigurer {
                         "/comments/**",
                         "/stocks/wished",
                         "/stocks/*/wished",
-                        "/stocks/*/wish"
+                        "/stocks/*/wish",
+                        "/profiles/**" // 프로필 관련 API 인증 필요
                 )
                 // ⭐ 인증 불필요 + CORS 문제 방지
                 .excludePathPatterns(
                         "/auth/**",
-                        "/reviews/video/*/"
+                        "/reviews/video/*/",
+                        "/profiles/survey/questions" // 설문 질문 조회는 인증 불필요
                 );
     }
 

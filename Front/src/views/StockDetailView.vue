@@ -164,7 +164,7 @@
               viewBox="0 0 16 16" 
               fill="currentColor"
             >
-              <path d="M8 10.5l-4-4h8l-4 4z"/>
+              <path d="M8 10.5l-4-4h8l-4 4z"></path>
             </svg>
           </button>
           
@@ -249,6 +249,148 @@
           </div>
         </div>
 
+        <!-- AI 분석 섹션 -->
+        <div v-if="financialData" class="ai-analysis-section">
+          <div class="ai-header">
+            <h3>🤖 AI 투자 분석</h3>
+            <button 
+              class="ai-analyze-button" 
+              @click="runAiAnalysis"
+              :disabled="aiLoading"
+            >
+              {{ aiLoading ? 'AI 분석 중...' : 'AI 분석 실행' }}
+            </button>
+          </div>
+          
+          <div v-if="aiResult" class="ai-result">
+            <div class="ai-score-section">
+              <div class="score-comparison">
+                <div class="score-item">
+                  <div class="score-label">기본 점수</div>
+                  <div class="score-value">{{ aiResult.baseScore.toFixed(1) }}</div>
+                </div>
+                <div class="score-arrow">→</div>
+                <div class="score-item final">
+                  <div class="score-label">AI 보정 점수</div>
+                  <div class="score-value" :class="getScoreClass(aiResult.finalScore)">
+                    {{ aiResult.finalScore.toFixed(1) }}
+                  </div>
+                  <div class="score-adjustment" :class="getAdjustmentClass(aiResult.scoreAdjustment)">
+                    {{ formatAdjustment(aiResult.scoreAdjustment) }}
+                  </div>
+                </div>
+              </div>
+              
+              <div class="risk-level" :class="getRiskClass(aiResult.riskLevel)">
+                <span class="risk-label">리스크 레벨:</span>
+                <span class="risk-value">{{ getRiskLevelText(aiResult.riskLevel) }}</span>
+              </div>
+            </div>
+            
+            <div class="ai-summary">
+              <h4>AI 분석 요약</h4>
+              <p>{{ aiResult.summary }}</p>
+            </div>
+            
+            <div v-if="hasWeightAdjustments(aiResult.weightAdjustment)" class="weight-adjustments">
+              <h4>가중치 보정</h4>
+              <div class="adjustment-grid">
+                <div 
+                  v-for="(value, key) in aiResult.weightAdjustment" 
+                  :key="key"
+                  v-show="value !== 0"
+                  class="adjustment-item"
+                >
+                  <span class="adjustment-label">{{ getWeightLabel(key) }}</span>
+                  <span class="adjustment-value" :class="getAdjustmentClass(value)">
+                    {{ formatAdjustment(value) }}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div v-else class="ai-prompt">
+            <p>AI를 활용하여 재무 데이터를 심층 분석하고 투자 인사이트를 얻어보세요.</p>
+          </div>
+        </div>
+
+        <!-- 챗봇 섹션 -->
+        <div v-if="financialData" class="chatbot-section">
+          <div class="chatbot-header">
+            <h3>💬 종목 분석 챗봇</h3>
+            <p class="chatbot-subtitle">재무 데이터에 대해 궁금한 점을 물어보세요</p>
+          </div>
+
+          <div class="chat-container">
+            <div class="chat-messages" ref="chatMessages">
+              <div v-if="chatHistory.length === 0" class="chat-welcome">
+                <p>안녕하세요! 종목 분석을 도와드리는 AI 챗봇입니다.</p>
+                <div class="chat-examples">
+                  <p class="examples-title">예시 질문:</p>
+                  <button 
+                    v-for="example in exampleQuestions" 
+                    :key="example"
+                    class="example-btn"
+                    @click="askQuestion(example)"
+                  >
+                    {{ example }}
+                  </button>
+                </div>
+              </div>
+
+              <div 
+                v-for="(chat, index) in chatHistory" 
+                :key="index" 
+                class="chat-message"
+                :class="chat.role"
+              >
+                <div class="message-content">
+                  <div class="message-avatar">
+                    {{ chat.role === 'user' ? '👤' : '🤖' }}
+                  </div>
+                  <div class="message-text">
+                    {{ chat.content }}
+                  </div>
+                </div>
+              </div>
+
+              <div v-if="chatLoading" class="chat-message assistant">
+                <div class="message-content">
+                  <div class="message-avatar">🤖</div>
+                  <div class="message-text">
+                    <div class="typing-indicator">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="chat-input-container">
+              <input 
+                v-model="chatInput"
+                type="text"
+                class="chat-input"
+                placeholder="질문을 입력하세요..."
+                @keypress.enter="sendMessage"
+                :disabled="chatLoading"
+              />
+              <button 
+                class="send-button"
+                @click="sendMessage"
+                :disabled="chatLoading || !chatInput.trim()"
+              >
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M2 10l16-8-8 16-2-8-6-0z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
         <!-- 관련 영상 섹션 (추후 구현) -->
         <div class="related-videos">
           <h3>관련 투자 영상</h3>
@@ -267,7 +409,8 @@ import Button from '@/components/common/Button.vue'
 import StockChart from '@/components/stock/StockChart.vue'
 import stockApi from '@/api/stock'
 import { isStockWished, addStockWish, removeStockWish } from '@/api/stockWish'
-import { getFinancialData, syncFinancialData as syncFinancialDataAPI } from '@/api/financial'
+import { getFinancialData, syncFinancialData as syncFinancialDataAPI, getAiAnalysis } from '@/api/financial'
+import { chatAboutStock } from '@/api/chat'
 import { useAuthStore } from '@/stores/auth'
 
 export default {
@@ -287,12 +430,24 @@ export default {
       stock: null,
       priceHistory: [],
       financialData: null,
+      aiResult: null,
       loading: false,
       error: null,
       isWished: false,
       wishLoading: false,
       syncLoading: false,
-      showDetailMetrics: false, // 상세 지표 표시 여부
+      aiLoading: false,
+      showDetailMetrics: false,
+      // 챗봇 관련
+      chatHistory: [],
+      chatInput: '',
+      chatLoading: false,
+      exampleQuestions: [
+        '이 종목 점수 왜 이래?',
+        '재무적으로 가장 안 좋은 지표 뭐야?',
+        '안정형 투자자한테 괜찮아?',
+        '리스크 요약해줘'
+      ]
     }
   },
   computed: {
@@ -495,6 +650,118 @@ export default {
     formatDate(date) {
       if (!date) return '-'
       return formatKSTDate(date)
+    },
+    async runAiAnalysis() {
+      if (!this.financialData) {
+        alert('재무 데이터를 먼저 불러와주세요.')
+        return
+      }
+      
+      this.aiLoading = true
+      try {
+        const response = await getAiAnalysis(this.stockCode)
+        this.aiResult = response.data
+      } catch (err) {
+        console.error('AI 분석 실패:', err)
+        alert('AI 분석에 실패했습니다. 잠시 후 다시 시도해주세요.')
+      } finally {
+        this.aiLoading = false
+      }
+    },
+    formatAdjustment(value) {
+      if (!value) return '0'
+      const num = Number(value)
+      return num > 0 ? '+' + num.toFixed(1) : num.toFixed(1)
+    },
+    getAdjustmentClass(value) {
+      if (value > 0) return 'positive'
+      if (value < 0) return 'negative'
+      return 'neutral'
+    },
+    getRiskClass(level) {
+      return 'risk-' + level.toLowerCase()
+    },
+    getRiskLevelText(level) {
+      const levels = {
+        'LOW': '낮음',
+        'MEDIUM': '보통',
+        'HIGH': '높음'
+      }
+      return levels[level] || level
+    },
+    hasWeightAdjustments(weightAdj) {
+      if (!weightAdj) return false
+      return Object.values(weightAdj).some(v => v !== 0)
+    },
+    getWeightLabel(key) {
+      const labels = {
+        'revenueGrowth': '매출 성장',
+        'operatingMargin': '영업이익률',
+        'roe': 'ROE',
+        'debtRatio': '부채비율',
+        'fcf': '잉여현금',
+        'per': 'PER',
+        'pbr': 'PBR'
+      }
+      return labels[key] || key
+    },
+    // 챗봇 관련 메서드
+    async sendMessage() {
+      if (!this.chatInput.trim()) return
+      
+      const userMessage = this.chatInput.trim()
+      this.chatInput = ''
+      
+      // 사용자 메시지 추가
+      this.chatHistory.push({
+        role: 'user',
+        content: userMessage
+      })
+      
+      this.chatLoading = true
+      this.scrollToBottom()
+      
+      try {
+        const response = await chatAboutStock(this.stockCode, userMessage)
+        
+        // AI 응답 추가
+        this.chatHistory.push({
+          role: 'assistant',
+          content: response.data.message
+        })
+      } catch (err) {
+        console.error('챗봇 응답 실패:', err)
+        let errorMessage = '죄송합니다. 응답 생성에 실패했습니다.'
+        
+        // 상세 에러 메시지 표시
+        if (err.response?.data?.message) {
+          errorMessage = err.response.data.message
+        } else if (err.message) {
+          errorMessage += ' (' + err.message + ')'
+        }
+        
+        this.chatHistory.push({
+          role: 'assistant',
+          content: errorMessage
+        })
+      } finally {
+        this.chatLoading = false
+        this.$nextTick(() => {
+          this.scrollToBottom()
+        })
+      }
+    },
+    askQuestion(question) {
+      this.chatInput = question
+      this.sendMessage()
+    },
+    scrollToBottom() {
+      this.$nextTick(() => {
+        const chatMessages = this.$refs.chatMessages
+        if (chatMessages) {
+          chatMessages.scrollTop = chatMessages.scrollHeight
+        }
+      })
     },
   },
 }
@@ -840,42 +1107,6 @@ export default {
   color: #dc2626;
 }
 
-.toggle-detail-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  width: 100%;
-  padding: 12px;
-  margin: 16px 0;
-  background: #f3f4f6;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #374151;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.toggle-detail-btn:hover {
-  background: #e5e7eb;
-}
-
-.toggle-detail-btn svg {
-  transition: transform 0.3s;
-}
-
-.toggle-detail-btn svg.rotated {
-  transform: rotate(180deg);
-}
-
-.detail-metrics {
-  margin-top: 16px;
-  padding-top: 16px;
-  border-top: 1px solid #e5e7eb;
-}
-
 .data-source {
   text-align: right;
   font-size: 12px;
@@ -930,5 +1161,512 @@ export default {
   .stock-details-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+/* AI 분석 스타일 */
+.ai-analysis-section {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.ai-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.ai-header h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.ai-analyze-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ai-analyze-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.ai-analyze-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.ai-result {
+  margin-top: 20px;
+}
+
+.ai-score-section {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.score-comparison {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+
+.score-item {
+  text-align: center;
+  color: white;
+}
+
+.score-item.final {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.score-item .score-label {
+  font-size: 13px;
+  opacity: 0.9;
+  margin-bottom: 4px;
+}
+
+.score-item .score-value {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.score-adjustment {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.score-adjustment.positive {
+  color: #4ade80;
+}
+
+.score-adjustment.negative {
+  color: #fca5a5;
+}
+
+.score-arrow {
+  font-size: 32px;
+  color: white;
+  opacity: 0.8;
+}
+
+.risk-level {
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 14px;
+}
+
+.risk-level .risk-label {
+  opacity: 0.9;
+  margin-right: 8px;
+}
+
+.risk-level .risk-value {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.risk-level.risk-low {
+  background: rgba(74, 222, 128, 0.2);
+}
+
+.risk-level.risk-high {
+  background: rgba(239, 68, 68, 0.2);
+}
+
+.ai-summary {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid #667eea;
+}
+
+.ai-summary h4 {
+  margin: 0 0 12px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.ai-summary p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #6b7280;
+}
+
+.weight-adjustments {
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.weight-adjustments h4 {
+  margin: 0 0 16px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.adjustment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.adjustment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.adjustment-label {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.adjustment-value {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.adjustment-value.positive {
+  color: #16a34a;
+}
+
+.adjustment-value.negative {
+  color: #dc2626;
+}
+
+.adjustment-value.neutral {
+  color: #6b7280;
+}
+
+.ai-prompt {
+  text-align: center;
+  padding: 40px;
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+/* 상세 지표 토글 스타일 */
+.toggle-detail-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  margin: 16px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-detail-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.toggle-detail-btn svg {
+  transition: transform 0.3s ease;
+}
+
+.toggle-detail-btn svg.rotated {
+  transform: rotate(180deg);
+}
+
+/* 상세 지표 애니메이션 */
+.detail-metrics {
+  animation: slideDown 0.3s ease-out;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 상세 지표 스타일 강조 */
+.detail-metrics .metric-item {
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s;
+}
+
+.detail-metrics .metric-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-color: #d1d5db;
+}
+
+/* 챗봇 섹션 스타일 */
+.chatbot-section {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.chatbot-header {
+  margin-bottom: 20px;
+}
+
+.chatbot-header h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 8px 0;
+}
+
+.chatbot-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.chat-container {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.chat-messages {
+  height: 400px;
+  overflow-y: auto;
+  padding: 20px;
+  background: #f9fafb;
+}
+
+.chat-welcome {
+  text-align: center;
+  color: #6b7280;
+  padding: 20px;
+}
+
+.chat-welcome p {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.chat-examples {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.examples-title {
+  font-size: 13px;
+  color: #9ca3af;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.example-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  color: #374151;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.example-btn:hover {
+  background: #f3f4f6;
+  border-color: #667eea;
+  color: #667eea;
+}
+
+.example-btn:last-child {
+  margin-bottom: 0;
+}
+
+.chat-message {
+  margin-bottom: 16px;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message-content {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.message-avatar {
+  font-size: 24px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.message-text {
+  background: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  max-width: 80%;
+  word-wrap: break-word;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+  line-height: 1.6;
+  color: #374151;
+}
+
+.chat-message.user .message-content {
+  flex-direction: row-reverse;
+}
+
+.chat-message.user .message-text {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.chat-message.assistant .message-text {
+  background: white;
+  border: 1px solid #e5e7eb;
+}
+
+.typing-indicator {
+  display: flex;
+  gap: 4px;
+  padding: 4px 0;
+}
+
+.typing-indicator span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #9ca3af;
+  animation: typing 1.4s infinite;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-indicator span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typing {
+  0%, 60%, 100% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  30% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+}
+
+.chat-input-container {
+  display: flex;
+  gap: 8px;
+  padding: 16px;
+  background: white;
+  border-top: 1px solid #e5e7eb;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.chat-input:focus {
+  border-color: #667eea;
+}
+
+.chat-input:disabled {
+  background: #f3f4f6;
+  cursor: not-allowed;
+}
+
+.send-button {
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.send-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 </style>

@@ -43,6 +43,11 @@ const router = createRouter({
       component: InvestView,
     },
     {
+      path: '/invest/survey',
+      name: 'investmentSurvey',
+      component: () => import('../views/InvestmentSurveyView.vue'),
+    },
+    {
       path: '/invest/:stockCode',
       name: 'stockDetail',
       component: () => import('../views/StockDetailView.vue'),
