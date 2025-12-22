@@ -7,29 +7,41 @@ import com.Investube.mvc.model.dto.StockDetailDto;
 import com.Investube.mvc.model.dto.KrxIndexResponse;
 
 public interface StockService {
-    
+
     // Stock 관련
     List<Stock> getAllStocks();
+
     Stock getStockByCode(String stockCode);
+
+    Stock getStockByName(String stockName);
+
     boolean registerStock(Stock stock);
+
     boolean modifyStock(Stock stock);
+
     boolean removeStock(String stockCode);
-    
+
     // StockPrice 관련
     List<StockPrice> getPricesByStockCode(String stockCode);
+
     List<StockPrice> getPricesByStockCodeAndDateRange(String stockCode, String startDate, String endDate);
+
     StockPrice getLatestPrice(String stockCode);
+
     boolean registerStockPrice(StockPrice stockPrice);
-    
+
     // 상세 정보
     List<StockDetailDto> getStockListWithLatestPrice();
+
     StockDetailDto getStockDetail(String stockCode);
-    
+
     // API 연동
     void syncStockDataFromDart(); // 초기 대량 수집 (90일)
+
     void syncTodayStockData(); // 오늘 데이터만 수집 (스케줄러용)
+
     void syncStockPriceFromKrx(String stockCode);
-    
+
     // 지수 정보 조회
     List<KrxIndexResponse.KrxIndexItem> getKrxIndices();
 }

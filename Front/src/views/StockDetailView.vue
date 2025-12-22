@@ -315,81 +315,7 @@
           </div>
         </div>
 
-        <!-- 챗봇 섹션 -->
-        <div v-if="financialData" class="chatbot-section">
-          <div class="chatbot-header">
-            <h3>💬 종목 분석 챗봇</h3>
-            <p class="chatbot-subtitle">재무 데이터에 대해 궁금한 점을 물어보세요</p>
-          </div>
 
-          <div class="chat-container">
-            <div class="chat-messages" ref="chatMessages">
-              <div v-if="chatHistory.length === 0" class="chat-welcome">
-                <p>안녕하세요! 종목 분석을 도와드리는 AI 챗봇입니다.</p>
-                <div class="chat-examples">
-                  <p class="examples-title">예시 질문:</p>
-                  <button 
-                    v-for="example in exampleQuestions" 
-                    :key="example"
-                    class="example-btn"
-                    @click="askQuestion(example)"
-                  >
-                    {{ example }}
-                  </button>
-                </div>
-              </div>
-
-              <div 
-                v-for="(chat, index) in chatHistory" 
-                :key="index" 
-                class="chat-message"
-                :class="chat.role"
-              >
-                <div class="message-content">
-                  <div class="message-avatar">
-                    {{ chat.role === 'user' ? '👤' : '🤖' }}
-                  </div>
-                  <div class="message-text">
-                    {{ chat.content }}
-                  </div>
-                </div>
-              </div>
-
-              <div v-if="chatLoading" class="chat-message assistant">
-                <div class="message-content">
-                  <div class="message-avatar">🤖</div>
-                  <div class="message-text">
-                    <div class="typing-indicator">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="chat-input-container">
-              <input 
-                v-model="chatInput"
-                type="text"
-                class="chat-input"
-                placeholder="질문을 입력하세요..."
-                @keypress.enter="sendMessage"
-                :disabled="chatLoading"
-              />
-              <button 
-                class="send-button"
-                @click="sendMessage"
-                :disabled="chatLoading || !chatInput.trim()"
-              >
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                  <path d="M2 10l16-8-8 16-2-8-6-0z"/>
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
 
         <!-- 관련 영상 섹션 (추후 구현) -->
         <div class="related-videos">
@@ -410,9 +336,9 @@ import StockChart from '@/components/stock/StockChart.vue'
 import stockApi from '@/api/stock'
 import { isStockWished, addStockWish, removeStockWish } from '@/api/stockWish'
 import { getFinancialData, syncFinancialData as syncFinancialDataAPI, getAiAnalysis } from '@/api/financial'
-import { chatAboutStock } from '@/api/chat'
 import { useAuthStore } from '@/stores/auth'
 import { useToastStore } from '@/stores/toast'
+import { useChatbotStore } from '@/stores/chatbot'
 
 export default {
   name: 'StockDetailView',
@@ -426,6 +352,8 @@ export default {
     const authStore = useAuthStore()
     const toastStore = useToastStore()
     return { authStore, toastStore }
+    const chatbotStore = useChatbotStore()
+    return { authStore, chatbotStore }
   },
   data() {
     return {
@@ -473,6 +401,18 @@ export default {
     this.loadPriceHistory()
     this.loadFinancialData()
     this.checkWishStatus()
+  },
+  mounted() {
+    // 종목 정보가 로드되면 챗봇 스토어에 알림
+    this.$watch('stock', (newStock) => {
+      if (newStock) {
+        this.chatbotStore.setCurrentStock(newStock)
+      }
+    })
+  },
+  beforeUnmount() {
+    // 페이지 떠날 때 챗봇 스토어 초기화
+    this.chatbotStore.clearCurrentStock()
   },
   methods: {
     async loadStockDetail() {
