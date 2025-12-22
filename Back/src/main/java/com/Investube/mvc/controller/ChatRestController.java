@@ -148,19 +148,31 @@ public class ChatRestController {
                 profile = profileDao.getDefaultProfile(userId);
             }
 
-            // 종목 코드가 언급되었는지 확인
-            String stockCode = extractStockCode(userMessage);
-            Stock stock = null;
+            // 종목 정보 추출 (종목코드 또는 종목명으로 DB 검색)
+            Stock stock = extractStockFromMessage(userMessage);
             FinancialData financialData = null;
             Double baseScore = null;
 
-            if (stockCode != null) {
-                stock = stockService.getStockByCode(stockCode);
-                if (stock != null) {
-                    financialData = financialService.getFinancialDataWithScore(stockCode, null);
-                    if (financialData != null && financialData.getTotalScore() != null) {
-                        baseScore = financialData.getTotalScore().doubleValue();
+            if (stock != null) {
+                String stockCode = stock.getStockCode();
+                financialData = financialService.getFinancialDataWithScore(stockCode, null);
+
+                // 재무 데이터가 없으면 DART에서 자동 동기화 시도
+                if (financialData == null) {
+                    System.out.println("[챗봇] " + stock.getStockName() + " 재무 데이터 없음 → 자동 동기화 시도");
+                    try {
+                        int currentYear = java.time.LocalDate.now().getYear() - 1; // 작년 데이터
+                        financialService.syncFinancialData(stockCode, currentYear);
+                        financialData = financialService.getFinancialDataWithScore(stockCode, null);
+                        System.out.println("[챗봇] " + stock.getStockName() + " 재무 데이터 동기화 완료");
+                    } catch (Exception syncErr) {
+                        System.err.println("[챗봇] DART 동기화 실패: " + syncErr.getMessage());
+                        // 동기화 실패해도 계속 진행 (기본 정보만 제공)
                     }
+                }
+
+                if (financialData != null && financialData.getTotalScore() != null) {
+                    baseScore = financialData.getTotalScore().doubleValue();
                 }
             }
 
@@ -185,21 +197,35 @@ public class ChatRestController {
     /**
      * 메시지에서 종목 코드 또는 종목명 추출
      */
-    private String extractStockCode(String message) {
-        // 6자리 숫자 종목코드 패턴
+    private Stock extractStockFromMessage(String message) {
+        // 1. 6자리 숫자 종목코드 패턴 먼저 확인
         java.util.regex.Pattern codePattern = java.util.regex.Pattern.compile("\\b(\\d{6})\\b");
         java.util.regex.Matcher matcher = codePattern.matcher(message);
         if (matcher.find()) {
-            return matcher.group(1);
+            String stockCode = matcher.group(1);
+            Stock stock = stockService.getStockByCode(stockCode);
+            if (stock != null) {
+                return stock;
+            }
         }
 
-        // 주요 종목명으로 검색
-        String[] majorStocks = { "삼성전자", "SK하이닉스", "네이버", "카카오", "현대차", "LG에너지솔루션" };
-        String[] majorCodes = { "005930", "000660", "035420", "035720", "005380", "373220" };
+        // 2. 메시지에서 한글 단어 추출하여 종목명으로 검색
+        java.util.regex.Pattern korPattern = java.util.regex.Pattern.compile("[가-힣]{2,}");
+        java.util.regex.Matcher korMatcher = korPattern.matcher(message);
 
-        for (int i = 0; i < majorStocks.length; i++) {
-            if (message.contains(majorStocks[i])) {
-                return majorCodes[i];
+        while (korMatcher.find()) {
+            String keyword = korMatcher.group();
+            // 제외할 일반 단어들
+            if (keyword.equals("어때") || keyword.equals("회사") || keyword.equals("종목") ||
+                    keyword.equals("주식") || keyword.equals("지금") || keyword.equals("오늘") ||
+                    keyword.equals("투자") || keyword.equals("분석") || keyword.equals("추천")) {
+                continue;
+            }
+
+            // DB에서 종목명 검색
+            Stock stock = stockService.getStockByName(keyword);
+            if (stock != null) {
+                return stock;
             }
         }
 

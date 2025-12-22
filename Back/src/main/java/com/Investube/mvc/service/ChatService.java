@@ -204,6 +204,27 @@ public class ChatService {
     }
 
     /**
+     * 큰 숫자 포맷팅 (억/조 단위)
+     */
+    private String formatBigNumber(Long num) {
+        if (num == null)
+            return "정보 없음";
+        long absNum = Math.abs(num);
+        String sign = num < 0 ? "-" : "";
+
+        if (absNum >= 1_000_000_000_000L) {
+            return sign + String.format("%.1f조", absNum / 1_000_000_000_000.0);
+        }
+        if (absNum >= 100_000_000L) {
+            return sign + String.format("%.0f억", absNum / 100_000_000.0);
+        }
+        if (absNum >= 10_000L) {
+            return sign + String.format("%.0f만", absNum / 10_000.0);
+        }
+        return String.format("%,d", num);
+    }
+
+    /**
      * 일반 투자 관련 챗봇 응답 생성 (종목 없이 가능)
      */
     public String getGeneralChatResponse(
@@ -223,25 +244,43 @@ public class ChatService {
                 userPrompt.append("[종목 정보]\n");
                 userPrompt.append("- 종목명: ").append(stock.getStockName()).append("\n");
                 userPrompt.append("- 시장: ").append(stock.getMarket()).append("\n");
+                if (stock.getIndustry() != null) {
+                    userPrompt.append("- 업종: ").append(stock.getIndustry()).append("\n");
+                }
 
                 if (financialData != null) {
-                    userPrompt.append("\n[재무 요약]\n");
+                    userPrompt.append("\n[재무 데이터 (").append(financialData.getFiscalYear()).append("년)]\n");
+                    if (financialData.getRevenue() != null) {
+                        userPrompt.append("- 매출액: ").append(formatBigNumber(financialData.getRevenue())).append("원\n");
+                    }
+                    if (financialData.getOperatingProfit() != null) {
+                        userPrompt.append("- 영업이익: ").append(formatBigNumber(financialData.getOperatingProfit()))
+                                .append("원\n");
+                    }
+                    if (financialData.getOperatingMargin() != null) {
+                        userPrompt.append("- 영업이익률: ")
+                                .append(String.format("%.2f%%\n", financialData.getOperatingMargin()));
+                    }
                     if (financialData.getRevenueGrowthRate() != null) {
                         userPrompt.append("- 매출 성장률: ")
                                 .append(String.format("%.1f%%\n", financialData.getRevenueGrowthRate()));
                     }
-                    if (financialData.getOperatingMargin() != null) {
-                        userPrompt.append("- 영업이익률: ")
-                                .append(String.format("%.1f%%\n", financialData.getOperatingMargin()));
-                    }
                     if (financialData.getRoe() != null) {
                         userPrompt.append("- ROE: ")
-                                .append(String.format("%.1f%%\n", financialData.getRoe()));
+                                .append(String.format("%.2f%%\n", financialData.getRoe()));
+                    }
+                    if (financialData.getDebtRatio() != null) {
+                        userPrompt.append("- 부채비율: ")
+                                .append(String.format("%.1f%%\n", financialData.getDebtRatio()));
                     }
                     if (baseScore != null) {
                         userPrompt.append("- 투자 점수: ")
                                 .append(String.format("%.1f점\n", baseScore));
                     }
+                } else {
+                    userPrompt.append("\n[⚠️ 재무 데이터 없음]\n");
+                    userPrompt.append("이 종목은 아직 재무 데이터가 동기화되지 않았습니다.\n");
+                    userPrompt.append("사용자에게 '투자 상세 페이지에서 DART 데이터 가져오기 버튼을 클릭하면 재무 정보를 확인할 수 있다'고 안내해주세요.\n");
                 }
             }
 
