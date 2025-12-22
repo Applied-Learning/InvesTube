@@ -3,6 +3,43 @@
     <PageHeader title="투자 정보" :showBack="false" icon="invest" />
 
     <Container>
+      <!-- 투자 성향 카드 -->
+      <div class="profile-card">
+        <div class="profile-header">
+          <span class="profile-icon">📊</span>
+          <span class="profile-title">나의 투자 성향</span>
+        </div>
+        
+        <!-- 현재 성향 표시 -->
+        <div v-if="currentProfile" class="current-profile">
+          <div class="profile-type-badge" :class="getProfileClass(currentProfile.profileName)">
+            {{ getProfileIcon(currentProfile.profileName) }} {{ currentProfile.profileName }}
+          </div>
+          <p class="profile-description">{{ getProfileDescription(currentProfile.profileName) }}</p>
+        </div>
+        <div v-else class="no-profile">
+          아직 투자 성향을 설정하지 않았어요.
+        </div>
+
+        <!-- 성향 선택 버튼 -->
+        <div class="profile-actions">
+          <div class="profile-select-buttons">
+            <button 
+              v-for="type in profileTypes" 
+              :key="type.name"
+              class="profile-type-btn"
+              :class="{ active: currentProfile?.profileName?.includes(type.name) }"
+              @click="selectProfileType(type.name)"
+            >
+              {{ type.icon }} {{ type.name }}
+            </button>
+          </div>
+          <button class="survey-link" @click="goToSurvey">
+            설문으로 정확히 분석하기 →
+          </button>
+        </div>
+      </div>
+
       <!-- 지수 카드 섹션 -->
       <div class="indices-section">
         <div v-if="indicesLoading" class="loading-small">지수 정보 로딩 중...</div>
@@ -124,6 +161,7 @@ import Container from '@/components/common/Container.vue'
 import Button from '@/components/common/Button.vue'
 import StockCard from '@/components/stock/StockCard.vue'
 import stockApi from '@/api/stock'
+import profileApi from '@/api/profile'
 
 export default {
   name: 'InvestView',
@@ -140,6 +178,12 @@ export default {
       indicesLoading: false,
       searchQuery: '',
       searchResults: [],
+      currentProfile: null,
+      profileTypes: [
+        { name: '안정형', icon: '🛡️' },
+        { name: '균형형', icon: '⚖️' },
+        { name: '공격형', icon: '🚀' },
+      ],
     }
   },
   computed: {
@@ -174,8 +218,52 @@ export default {
   created() {
     this.loadStocks()
     this.loadIndices()
+    this.loadProfile()
   },
   methods: {
+    async loadProfile() {
+      try {
+        const response = await profileApi.getDefaultProfile()
+        this.currentProfile = response.data
+      } catch (err) {
+        console.error('프로필 조회 실패:', err)
+        this.currentProfile = null
+      }
+    },
+    async selectProfileType(typeName) {
+      try {
+        // 새 프로필 생성
+        const response = await profileApi.createProfile({
+          profileName: typeName,
+          isDefault: true
+        })
+        this.currentProfile = response.data
+      } catch (err) {
+        console.error('프로필 변경 실패:', err)
+        alert('프로필 변경에 실패했습니다.')
+      }
+    },
+    getProfileIcon(name) {
+      if (!name) return '📊'
+      if (name.includes('안정')) return '🛡️'
+      if (name.includes('균형')) return '⚖️'
+      if (name.includes('공격')) return '🚀'
+      return '📊'
+    },
+    getProfileClass(name) {
+      if (!name) return ''
+      if (name.includes('안정')) return 'safe'
+      if (name.includes('균형')) return 'balanced'
+      if (name.includes('공격')) return 'aggressive'
+      return ''
+    },
+    getProfileDescription(name) {
+      if (!name) return ''
+      if (name.includes('안정')) return '원금 보존을 최우선으로 생각하며, 안정적인 수익을 추구합니다.'
+      if (name.includes('균형')) return '위험과 수익의 균형을 중시하며, 안정과 성장을 동시에 추구합니다.'
+      if (name.includes('공격')) return '높은 수익을 위해 위험을 감수할 수 있는 적극적인 투자 스타일입니다.'
+      return ''
+    },
     async loadStocks() {
       try {
         const response = await stockApi.getStocks()
@@ -247,6 +335,9 @@ export default {
       const num = Number(rate)
       return num > 0 ? 'price-up' : num < 0 ? 'price-down' : ''
     },
+    goToSurvey() {
+      this.$router.push({ name: 'investmentSurvey' })
+    },
   },
 }
 </script>
@@ -255,6 +346,122 @@ export default {
 .invest-view {
   min-height: 100vh;
   background-color: #f5f5f5;
+}
+
+/* 투자 성향 프로필 카드 */
+.profile-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.profile-icon {
+  font-size: 24px;
+}
+
+.profile-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #212121;
+}
+
+.current-profile {
+  margin-bottom: 20px;
+}
+
+.profile-type-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.profile-type-badge.safe {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.profile-type-badge.balanced {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
+.profile-type-badge.aggressive {
+  background: #ffebee;
+  color: #d32f2f;
+}
+
+.profile-description {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.no-profile {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.profile-actions {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 16px;
+}
+
+.profile-select-buttons {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.profile-type-btn {
+  flex: 1;
+  padding: 12px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.profile-type-btn:hover {
+  border-color: #667eea;
+  background: #f8f9ff;
+}
+
+.profile-type-btn.active {
+  border-color: #667eea;
+  background: #667eea;
+  color: white;
+}
+
+.survey-link {
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: none;
+  color: #667eea;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.survey-link:hover {
+  text-decoration: underline;
 }
 
 /* 지수 섹션 */
