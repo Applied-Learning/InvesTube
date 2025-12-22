@@ -42,6 +42,17 @@ export const getWishedStocksWithScores = (profileId = null) => {
   })
 }
 
+/**
+ * AI 기반 재무 분석 (GPT)
+ * @param {string} stockCode 종목 코드
+ * @param {number|null} profileId 투자 프로필 ID (null이면 기본 프로필 사용)
+ */
+export const getAiAnalysis = (stockCode, profileId = null) => {
+  return http.get(`/financial/${stockCode}/ai-analysis`, {
+    params: profileId ? { profileId } : {}
+  })
+}
+
 // 투자 프로필 관련 API
 
 /**

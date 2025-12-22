@@ -164,7 +164,7 @@
               viewBox="0 0 16 16" 
               fill="currentColor"
             >
-              <path d="M8 10.5l-4-4h8l-4 4z"/>
+              <path d="M8 10.5l-4-4h8l-4 4z"></path>
             </svg>
           </button>
           
@@ -249,6 +249,72 @@
           </div>
         </div>
 
+        <!-- AI 분석 섹션 -->
+        <div v-if="financialData" class="ai-analysis-section">
+          <div class="ai-header">
+            <h3>🤖 AI 투자 분석</h3>
+            <button 
+              class="ai-analyze-button" 
+              @click="runAiAnalysis"
+              :disabled="aiLoading"
+            >
+              {{ aiLoading ? 'AI 분석 중...' : 'AI 분석 실행' }}
+            </button>
+          </div>
+          
+          <div v-if="aiResult" class="ai-result">
+            <div class="ai-score-section">
+              <div class="score-comparison">
+                <div class="score-item">
+                  <div class="score-label">기본 점수</div>
+                  <div class="score-value">{{ aiResult.baseScore.toFixed(1) }}</div>
+                </div>
+                <div class="score-arrow">→</div>
+                <div class="score-item final">
+                  <div class="score-label">AI 보정 점수</div>
+                  <div class="score-value" :class="getScoreClass(aiResult.finalScore)">
+                    {{ aiResult.finalScore.toFixed(1) }}
+                  </div>
+                  <div class="score-adjustment" :class="getAdjustmentClass(aiResult.scoreAdjustment)">
+                    {{ formatAdjustment(aiResult.scoreAdjustment) }}
+                  </div>
+                </div>
+              </div>
+              
+              <div class="risk-level" :class="getRiskClass(aiResult.riskLevel)">
+                <span class="risk-label">리스크 레벨:</span>
+                <span class="risk-value">{{ getRiskLevelText(aiResult.riskLevel) }}</span>
+              </div>
+            </div>
+            
+            <div class="ai-summary">
+              <h4>AI 분석 요약</h4>
+              <p>{{ aiResult.summary }}</p>
+            </div>
+            
+            <div v-if="hasWeightAdjustments(aiResult.weightAdjustment)" class="weight-adjustments">
+              <h4>가중치 보정</h4>
+              <div class="adjustment-grid">
+                <div 
+                  v-for="(value, key) in aiResult.weightAdjustment" 
+                  :key="key"
+                  v-show="value !== 0"
+                  class="adjustment-item"
+                >
+                  <span class="adjustment-label">{{ getWeightLabel(key) }}</span>
+                  <span class="adjustment-value" :class="getAdjustmentClass(value)">
+                    {{ formatAdjustment(value) }}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div v-else class="ai-prompt">
+            <p>AI를 활용하여 재무 데이터를 심층 분석하고 투자 인사이트를 얻어보세요.</p>
+          </div>
+        </div>
+
         <!-- 관련 영상 섹션 (추후 구현) -->
         <div class="related-videos">
           <h3>관련 투자 영상</h3>
@@ -267,7 +333,7 @@ import Button from '@/components/common/Button.vue'
 import StockChart from '@/components/stock/StockChart.vue'
 import stockApi from '@/api/stock'
 import { isStockWished, addStockWish, removeStockWish } from '@/api/stockWish'
-import { getFinancialData, syncFinancialData as syncFinancialDataAPI } from '@/api/financial'
+import { getFinancialData, syncFinancialData as syncFinancialDataAPI, getAiAnalysis } from '@/api/financial'
 import { useAuthStore } from '@/stores/auth'
 
 export default {
@@ -287,12 +353,13 @@ export default {
       stock: null,
       priceHistory: [],
       financialData: null,
+      aiResult: null,
       loading: false,
       error: null,
       isWished: false,
       wishLoading: false,
       syncLoading: false,
-      showDetailMetrics: false, // 상세 지표 표시 여부
+      aiLoading: false,
     }
   },
   computed: {
@@ -495,6 +562,60 @@ export default {
     formatDate(date) {
       if (!date) return '-'
       return formatKSTDate(date)
+    },
+    async runAiAnalysis() {
+      if (!this.financialData) {
+        alert('재무 데이터를 먼저 불러와주세요.')
+        return
+      }
+      
+      this.aiLoading = true
+      try {
+        const response = await getAiAnalysis(this.stockCode)
+        this.aiResult = response.data
+      } catch (err) {
+        console.error('AI 분석 실패:', err)
+        alert('AI 분석에 실패했습니다. 잠시 후 다시 시도해주세요.')
+      } finally {
+        this.aiLoading = false
+      }
+    },
+    formatAdjustment(value) {
+      if (!value) return '0'
+      const num = Number(value)
+      return num > 0 ? '+' + num.toFixed(1) : num.toFixed(1)
+    },
+    getAdjustmentClass(value) {
+      if (value > 0) return 'positive'
+      if (value < 0) return 'negative'
+      return 'neutral'
+    },
+    getRiskClass(level) {
+      return 'risk-' + level.toLowerCase()
+    },
+    getRiskLevelText(level) {
+      const levels = {
+        'LOW': '낮음',
+        'MEDIUM': '보통',
+        'HIGH': '높음'
+      }
+      return levels[level] || level
+    },
+    hasWeightAdjustments(weightAdj) {
+      if (!weightAdj) return false
+      return Object.values(weightAdj).some(v => v !== 0)
+    },
+    getWeightLabel(key) {
+      const labels = {
+        'revenueGrowth': '매출 성장',
+        'operatingMargin': '영업이익률',
+        'roe': 'ROE',
+        'debtRatio': '부채비율',
+        'fcf': '잉여현금',
+        'per': 'PER',
+        'pbr': 'PBR'
+      }
+      return labels[key] || key
     },
   },
 }
@@ -840,42 +961,6 @@ export default {
   color: #dc2626;
 }
 
-.toggle-detail-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  width: 100%;
-  padding: 12px;
-  margin: 16px 0;
-  background: #f3f4f6;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #374151;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.toggle-detail-btn:hover {
-  background: #e5e7eb;
-}
-
-.toggle-detail-btn svg {
-  transition: transform 0.3s;
-}
-
-.toggle-detail-btn svg.rotated {
-  transform: rotate(180deg);
-}
-
-.detail-metrics {
-  margin-top: 16px;
-  padding-top: 16px;
-  border-top: 1px solid #e5e7eb;
-}
-
 .data-source {
   text-align: right;
   font-size: 12px;
@@ -930,5 +1015,219 @@ export default {
   .stock-details-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+/* AI 분석 스타일 */
+.ai-analysis-section {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.ai-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.ai-header h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.ai-analyze-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ai-analyze-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.ai-analyze-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.ai-result {
+  margin-top: 20px;
+}
+
+.ai-score-section {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.score-comparison {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+
+.score-item {
+  text-align: center;
+  color: white;
+}
+
+.score-item.final {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.score-item .score-label {
+  font-size: 13px;
+  opacity: 0.9;
+  margin-bottom: 4px;
+}
+
+.score-item .score-value {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.score-adjustment {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.score-adjustment.positive {
+  color: #4ade80;
+}
+
+.score-adjustment.negative {
+  color: #fca5a5;
+}
+
+.score-arrow {
+  font-size: 32px;
+  color: white;
+  opacity: 0.8;
+}
+
+.risk-level {
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 14px;
+}
+
+.risk-level .risk-label {
+  opacity: 0.9;
+  margin-right: 8px;
+}
+
+.risk-level .risk-value {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.risk-level.risk-low {
+  background: rgba(74, 222, 128, 0.2);
+}
+
+.risk-level.risk-high {
+  background: rgba(239, 68, 68, 0.2);
+}
+
+.ai-summary {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid #667eea;
+}
+
+.ai-summary h4 {
+  margin: 0 0 12px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.ai-summary p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #6b7280;
+}
+
+.weight-adjustments {
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.weight-adjustments h4 {
+  margin: 0 0 16px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.adjustment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.adjustment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.adjustment-label {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.adjustment-value {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.adjustment-value.positive {
+  color: #16a34a;
+}
+
+.adjustment-value.negative {
+  color: #dc2626;
+}
+
+.adjustment-value.neutral {
+  color: #6b7280;
+}
+
+.ai-prompt {
+  text-align: center;
+  padding: 40px;
+  color: #9ca3af;
+  font-size: 14px;
 }
 </style>
