@@ -1,5 +1,9 @@
 <template>
   <div class="floating-chat">
+    <!-- 마스코트 상태 바인딩 -->
+    <div class="mascot-wrapper" :class="{ 'is-open': isOpen }">
+      <!-- 챗봇 닫혀있을 때 버튼 위의 마스코트 (옵션) -->
+    </div>
     <!-- 알림 토스트 -->
     <div v-if="chatbotStore.showNotification && !isOpen" class="notification-toast">
       <span class="toast-icon">💡</span>
@@ -22,7 +26,8 @@
     <div v-if="isOpen" class="chat-panel">
       <div class="chat-header">
         <div class="header-info">
-          <span class="header-icon">🤖</span>
+          <!-- 마스코트 컴포넌트 사용 -->
+          <MascotCharacter :state="mascotState" class="header-mascot" />
           <span class="header-title">
             {{ chatbotStore.currentStock ? chatbotStore.currentStock.stockName + ' 분석' : '투자 AI 챗봇' }}
           </span>
@@ -32,7 +37,7 @@
 
       <div class="chat-messages" ref="chatMessages">
         <div v-if="chatHistory.length === 0" class="chat-welcome">
-          <div class="welcome-icon">📊</div>
+          <MascotCharacter state="greeting" class="welcome-mascot" />
           <h4 v-if="chatbotStore.currentStock">{{ chatbotStore.currentStock.stockName }} 분석</h4>
           <h4 v-else>안녕하세요!</h4>
           <p v-if="chatbotStore.currentStock">이 종목에 대해 궁금한 점을 물어보세요.</p>
@@ -55,7 +60,12 @@
           class="message"
           :class="msg.role"
         >
-          <div class="message-avatar">{{ msg.role === 'user' ? '👤' : '🤖' }}</div>
+          <div class="message-avatar">
+            <template v-if="msg.role === 'assistant'">
+              <MascotCharacter :state="msg.isWelcome ? 'greeting' : 'idle'" />
+            </template>
+            <template v-else>👤</template>
+          </div>
           <div class="message-bubble">
             <div class="message-content">{{ msg.content }}</div>
             <!-- 환영 메시지일 때 예시 질문 버튼 표시 -->
@@ -73,7 +83,9 @@
         </div>
 
         <div v-if="loading" class="message assistant">
-          <div class="message-avatar">🤖</div>
+          <div class="message-avatar">
+            <MascotCharacter state="thinking" />
+          </div>
           <div class="message-content">
             <div class="typing-dots">
               <span></span><span></span><span></span>
@@ -107,9 +119,13 @@
 <script>
 import http from '@/api/http'
 import { useChatbotStore } from '@/stores/chatbot'
+import MascotCharacter from './MascotCharacter.vue'
 
 export default {
   name: 'FloatingChatbot',
+  components: {
+    MascotCharacter
+  },
   setup() {
     const chatbotStore = useChatbotStore()
     return { chatbotStore }
@@ -117,6 +133,7 @@ export default {
   data() {
     return {
       isOpen: false,
+      mascotState: 'idle', // idle, thinking, success, greeting
       loading: false,
       userInput: '',
       chatHistory: [],
@@ -159,9 +176,18 @@ export default {
     openChat() {
       this.isOpen = true
       this.hasNewMessage = false
+      this.mascotState = 'greeting' // 채팅 열면 인사
+      
+      // 2초 후 기본 상태로 복귀
+      setTimeout(() => {
+        if (this.mascotState === 'greeting') {
+          this.mascotState = 'idle'
+        }
+      }, 2000)
     },
     closeChat() {
       this.isOpen = false
+      this.mascotState = 'idle'
     },
     sendQuickQuestion(question) {
       this.userInput = question
@@ -181,6 +207,7 @@ export default {
 
       this.scrollToBottom()
       this.loading = true
+      this.mascotState = 'thinking' // 답변 기다리는 동안 고민 중
 
       try {
         // 현재 보고 있는 종목이 있으면 stockCode 함께 전달
@@ -191,16 +218,42 @@ export default {
         
         const response = await http.post('/chat/general', payload)
         
+        let responseText = response.data.message
+        
+        // 감정 태그 파싱 및 제거
+        let sentiment = 'idle'
+        if (responseText.includes('[[SUCCESS]]')) {
+          sentiment = 'success'
+          responseText = responseText.replace('[[SUCCESS]]', '').trim()
+        } else if (responseText.includes('[[SHOCK]]')) {
+          sentiment = 'shock'
+          responseText = responseText.replace('[[SHOCK]]', '').trim()
+        } else if (responseText.includes('[[CAUTION]]')) {
+          sentiment = 'caution'
+          responseText = responseText.replace('[[CAUTION]]', '').trim()
+        }
+        
         this.chatHistory.push({
           role: 'assistant',
-          content: response.data.message
+          content: responseText
         })
+        
+        // 감정에 따른 마스코트 상태 변경
+        if (sentiment !== 'idle') {
+          this.mascotState = sentiment
+          // 2.5초 후 기본 상태로 복귀
+          setTimeout(() => {
+            this.mascotState = 'idle'
+          }, 2500)
+        }
+        
       } catch (err) {
         console.error('챗봇 응답 실패:', err)
         this.chatHistory.push({
           role: 'assistant',
           content: '죄송합니다. 잠시 후 다시 시도해주세요.'
         })
+        this.mascotState = 'idle'
       } finally {
         this.loading = false
         this.scrollToBottom()
@@ -513,6 +566,26 @@ export default {
   gap: 4px;
 }
 
+/* 마스코트 스타일 */
+.header-mascot {
+  margin-right: 8px;
+  font-size: 24px;
+}
+
+.welcome-mascot {
+  font-size: 48px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+/* 메시지 아바타 내 마스코트 크기 조정 */
+.message-avatar .mascot-container {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+}
+
+/* 기존 스타일 */
 .typing-dots span {
   width: 8px;
   height: 8px;
