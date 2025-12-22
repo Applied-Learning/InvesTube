@@ -360,6 +360,7 @@ export default {
       wishLoading: false,
       syncLoading: false,
       aiLoading: false,
+      showDetailMetrics: false,
     }
   },
   computed: {
@@ -1229,5 +1230,68 @@ export default {
   padding: 40px;
   color: #9ca3af;
   font-size: 14px;
+}
+
+/* 상세 지표 토글 스타일 */
+.toggle-detail-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  margin: 16px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-detail-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.toggle-detail-btn svg {
+  transition: transform 0.3s ease;
+}
+
+.toggle-detail-btn svg.rotated {
+  transform: rotate(180deg);
+}
+
+/* 상세 지표 애니메이션 */
+.detail-metrics {
+  animation: slideDown 0.3s ease-out;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 상세 지표 스타일 강조 */
+.detail-metrics .metric-item {
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s;
+}
+
+.detail-metrics .metric-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-color: #d1d5db;
 }
 </style>
