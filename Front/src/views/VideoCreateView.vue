@@ -99,8 +99,12 @@
       </div>
 
       <div class="form-group">
-        <label for="categoryId" class="required">카테고리</label>
-        <select id="categoryId" v-model="formData.categoryId" required>
+        <label for="categoryId" class="required with-recommend">
+          <span class="label-text">카테고리</span>
+          <span class="required-mark">*</span>
+          <span v-if="recommendedName" class="recommend-pill">추천: {{ recommendedName }}</span>
+        </label>
+        <select id="categoryId" v-model="formData.categoryId" required @change="markManualCategory">
           <option value="" disabled>카테고리를 선택하세요</option>
           <option v-for="category in categories" :key="category.id" :value="category.id">
             {{ category.name }}
@@ -108,11 +112,31 @@
         </select>
       </div>
 
-      <div v-if="error" class="error-message">{{ error }}</div>
+      <div v-if="aiLoading && !aiDecision" class="ai-review pending">
+        AI가 영상을 검토하는 중입니다...
+      </div>
+      <div v-else-if="aiDecision" class="ai-review" :class="aiDecision.allowed ? 'ok' : 'blocked'">
+        <div class="ai-review__status">
+          {{ aiDecision.allowed ? '업로드 가능' : '업로드 차단' }}
+        </div>
+        <p v-if="!aiDecision.allowed && aiDecision.reason" class="ai-review__text">
+          {{ aiDecision.reason }}
+        </p>
+        <p v-if="!aiDecision.allowed && aiDecision.recommendedCategoryId" class="ai-review__text">
+          추천 카테고리: {{ getCategoryName(aiDecision.recommendedCategoryId) }}
+        </p>
+      </div>
+
+      <div v-if="error && !(aiDecision && aiDecision.allowed === false)" class="error-message">{{ error }}</div>
 
       <div class="form-actions">
         <button type="button" class="btn-cancel" @click="goBack">취소</button>
-        <button type="submit" class="btn-submit" :disabled="loading">
+        <button
+          type="submit"
+          class="btn-submit"
+          :disabled="loading || (aiDecision && aiDecision.allowed === false)"
+          :class="{ blocked: aiDecision && aiDecision.allowed === false }"
+        >
           {{ loading ? '등록 중...' : '등록하기' }}
         </button>
       </div>
@@ -121,19 +145,28 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
 import PageHeader from '../components/common/PageHeader.vue'
-import { createVideo } from '../api/video.js'
+import { createVideo, checkVideoWithAi } from '../api/video.js'
 import { searchYoutubeVideos, getYoutubeVideo } from '../api/youtube.js'
 
 const router = useRouter()
 const loading = ref(false)
+const aiLoading = ref(false)
+const aiCheckLoading = ref(false)
 const error = ref(null)
 const searchLoading = ref(false)
 const searchError = ref('')
 const metaLoading = ref(false)
 const selectedPreview = ref(null)
+const aiDecision = ref(null)
+const manualCategorySelected = ref(false)
+const recommendedName = computed(() => {
+  if (!aiDecision.value?.allowed) return ''
+  if (!aiDecision.value?.recommendedCategoryId) return ''
+  return getCategoryName(aiDecision.value.recommendedCategoryId)
+})
 
 const formData = ref({
   youtubeVideoId: '',
@@ -152,6 +185,14 @@ const categories = [
   { id: 3, name: '투자' },
 ]
 
+const getCategoryName = (id) => {
+  const target = categories.find((c) => c.id === Number(id))
+  return target ? target.name : ''
+}
+
+const markManualCategory = () => {
+  manualCategorySelected.value = true
+}
 const extractYoutubeId = (input) => {
   if (!input) return ''
   const trimmed = input.trim()
@@ -189,7 +230,15 @@ const handleSearch = async () => {
   if (parsedId) {
     resetMetadataFields()
     formData.value.youtubeVideoId = parsedId
-    updatePreview({ videoId: parsedId })
+    updatePreview({
+      videoId: parsedId,
+      thumbnailUrl: parsedId ? `https://i.ytimg.com/vi/${parsedId}/hqdefault.jpg` : '',
+      title: '',
+      channelTitle: '',
+    })
+    manualCategorySelected.value = false
+    aiDecision.value = null
+    maybeAutoAiCheck()
     return
   }
 
@@ -224,6 +273,9 @@ const selectSearchResult = (item) => {
   if (!item?.videoId) return
   resetMetadataFields()
   formData.value.youtubeVideoId = item.videoId
+  manualCategorySelected.value = false
+  aiDecision.value = null
+  error.value = null
   updatePreview({
     videoId: item.videoId,
     title: item.title,
@@ -231,6 +283,7 @@ const selectSearchResult = (item) => {
     thumbnailUrl: item.thumbnailUrl,
   })
   searchResults.value = []
+  maybeAutoAiCheck()
 }
 
 const fetchAndFillMetadata = async () => {
@@ -255,6 +308,7 @@ const fetchAndFillMetadata = async () => {
       channelTitle: data.channelTitle,
       thumbnailUrl: data.thumbnailUrl,
     })
+    manualCategorySelected.value = false
   } catch (err) {
     console.error('YouTube 메타데이터 불러오기 실패:', err)
     searchError.value = '메타데이터를 불러오지 못했습니다.'
@@ -275,14 +329,30 @@ const handleSubmit = async () => {
     }
     formData.value.youtubeVideoId = parsedId
 
-    // categoryId를 숫자로 변환
+    const parsedCategory = parseInt(formData.value.categoryId)
+    if (Number.isNaN(parsedCategory)) {
+      error.value = '카테고리를 선택해주세요.'
+      return
+    }
+
+    // 기존 AI 결과가 있으면 그대로 활용, 차단이면 중단
+    if (aiDecision.value) {
+      if (!aiDecision.value.allowed) {
+        error.value = aiDecision.value.reason || '업로드가 제한되었습니다.'
+        return
+      }
+    }
+
     const videoData = {
       ...formData.value,
       categoryId: parseInt(formData.value.categoryId),
     }
 
-    await createVideo(videoData)
-    alert('영상이 성공적으로 등록되었습니다!')
+    const res = await createVideo(videoData)
+    if (res.data?.aiDecision) {
+      aiDecision.value = res.data.aiDecision
+    }
+    alert(res.data?.message || '영상이 성공적으로 등록되었습니다!')
     router.push('/')
   } catch (err) {
     console.error('영상 등록 실패:', err)
@@ -294,6 +364,58 @@ const handleSubmit = async () => {
 
 const goBack = () => {
   router.back()
+}
+
+const maybeAutoAiCheck = () => {
+  if (aiCheckLoading.value || aiLoading.value) return
+  if (!formData.value.youtubeVideoId) return
+  runAiCheck(true, true)
+}
+
+const runAiCheck = async (silent = false, allowMissingCategory = false) => {
+  error.value = null
+  if (!silent) {
+    aiDecision.value = null
+  }
+
+  const parsedId = extractYoutubeId(formData.value.youtubeVideoId)
+  if (!parsedId) {
+    error.value = '올바른 YouTube 영상 ID를 입력해주세요.'
+    return null
+  }
+  formData.value.youtubeVideoId = parsedId
+
+  const parsedCategory = parseInt(formData.value.categoryId)
+  if (Number.isNaN(parsedCategory)) {
+    if (!allowMissingCategory) {
+      error.value = '카테고리를 선택해주세요.'
+      return null
+    }
+  }
+
+  const videoData = {
+    ...formData.value,
+    categoryId: Number.isNaN(parsedCategory) ? 0 : parsedCategory,
+  }
+
+  aiCheckLoading.value = !silent
+  aiLoading.value = true
+  try {
+    const aiRes = await checkVideoWithAi(videoData)
+    aiDecision.value = aiRes.data?.aiDecision || aiRes.data
+    if (!aiDecision.value?.allowed) {
+      error.value = aiDecision.value?.reason || '업로드가 제한되었습니다.'
+      return null
+    }
+    return videoData
+  } catch (err) {
+    console.error('AI 분석 실패:', err)
+    error.value = err.response?.data?.message || 'AI 분석에 실패했습니다. 잠시 후 다시 시도해주세요.'
+    return null
+  } finally {
+    aiCheckLoading.value = false
+    aiLoading.value = false
+  }
 }
 </script>
 
@@ -321,6 +443,25 @@ const goBack = () => {
   font-weight: 600;
   color: #374151;
   margin-bottom: 8px;
+}
+
+.form-group label.with-recommend {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-group label.with-recommend.required::after {
+  content: '';
+}
+
+.label-text {
+  display: inline-block;
+}
+
+.required-mark {
+  color: #ef4444;
+  font-weight: 700;
 }
 
 .form-group label.required::after {
@@ -582,5 +723,75 @@ const goBack = () => {
 .btn-submit:disabled {
   opacity: 0.6;
   cursor: not-allowed;
+}
+
+.btn-submit.blocked {
+  background: #9ca3af;
+  color: #111827;
+}
+
+.ai-review {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  background: #f9fafb;
+}
+
+.ai-review.ok {
+  border-color: #10b981;
+  background: #ecfdf3;
+}
+
+.ai-review.blocked {
+  border-color: #ef4444;
+  background: #fef2f2;
+}
+
+.ai-review.pending {
+  border-color: #93c5fd;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.ai-review__status {
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+.ai-review__text {
+  margin: 2px 0;
+  color: #374151;
+  font-size: 14px;
+}
+
+.ai-review__text.subtle {
+  color: #6b7280;
+}
+
+.ai-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.ai-hint {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.recommend-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #e0f2fe;
+  color: #0f172a;
+  font-size: 12px;
+  font-weight: 600;
 }
 </style>
