@@ -412,6 +412,7 @@ import { isStockWished, addStockWish, removeStockWish } from '@/api/stockWish'
 import { getFinancialData, syncFinancialData as syncFinancialDataAPI, getAiAnalysis } from '@/api/financial'
 import { chatAboutStock } from '@/api/chat'
 import { useAuthStore } from '@/stores/auth'
+import { useToastStore } from '@/stores/toast'
 
 export default {
   name: 'StockDetailView',
@@ -423,7 +424,8 @@ export default {
   },
   setup() {
     const authStore = useAuthStore()
-    return { authStore }
+    const toastStore = useToastStore()
+    return { authStore, toastStore }
   },
   data() {
     return {
@@ -519,13 +521,15 @@ export default {
         // 현재 연도 동기화 (전년도 데이터가 있으면 성장률 자동 계산)
         await syncFinancialDataAPI(this.stockCode, currentYear)
         
-        alert('재무 데이터 동기화가 완료되었습니다.')
+        this.toastStore.show('재무 데이터 동기화가 완료되었습니다.', { type: 'success' })
         // 동기화 후 데이터 다시 로드
         await this.loadFinancialData()
       } catch (err) {
         console.error('재무 데이터 동기화 실패:', err)
         const errorMsg = err.response?.data?.error || '재무 데이터 동기화에 실패했습니다.'
-        alert(`${errorMsg}\n\nDart에 해당 기업의 재무제표가 없거나, 아직 공시되지 않았을 수 있습니다.`)
+        const hint = 'DART에 재무제표가 없거나 아직 공시되지 않았습니다.'
+        // 상세 오류는 콘솔로, 사용자에게는 간략 힌트만 노출
+        this.toastStore.show(hint, { type: 'error', duration: 5000 })
       } finally {
         this.syncLoading = false
       }

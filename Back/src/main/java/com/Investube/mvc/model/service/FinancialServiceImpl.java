@@ -1,5 +1,15 @@
 package com.Investube.mvc.model.service;
 
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 import com.Investube.mvc.model.dao.FinancialDao;
 import com.Investube.mvc.model.dao.InvestmentProfileDao;
 import com.Investube.mvc.model.dao.StockWishDao;
@@ -9,15 +19,6 @@ import com.Investube.mvc.model.dto.Stock;
 import com.Investube.mvc.model.dto.StockWish;
 import com.Investube.mvc.service.DartApiService;
 import com.Investube.mvc.service.FinancialAnalysisService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-import java.math.BigDecimal;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 
 /**
  * 재무 분석 통합 서비스 구현체
@@ -62,14 +63,14 @@ public class FinancialServiceImpl implements FinancialService {
         Map<String, Object> financialDataRaw = dartApiService.getFinancialStatement(corpCode, year, "11011");
         if (financialDataRaw == null || !Boolean.TRUE.equals(financialDataRaw.get("success"))) {
             String message = financialDataRaw != null ? (String) financialDataRaw.get("message") : "알 수 없는 오류";
-            throw new Exception("DART에서 " + year + "년 재무제표를 찾을 수 없습니다: " + message);
+            throw new Exception("DART " + year + "년 재무제표 없음 - " + message);
         }
 
         // 현금흐름표 데이터 조회
         Map<String, Object> cashFlowDataRaw = dartApiService.getCashFlowStatement(corpCode, year, "11011");
         if (cashFlowDataRaw == null || !Boolean.TRUE.equals(cashFlowDataRaw.get("success"))) {
             String message = cashFlowDataRaw != null ? (String) cashFlowDataRaw.get("message") : "알 수 없는 오류";
-            throw new Exception("DART에서 " + year + "년 현금흐름표를 찾을 수 없습니다: " + message);
+            throw new Exception("DART " + year + "년 현금흐름표 없음 - " + message);
         }
 
         // DartApiService가 반환하는 구조: { "success": true, "data": { "revenue": ..., ... } }

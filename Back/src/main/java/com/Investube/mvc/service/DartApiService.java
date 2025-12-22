@@ -187,6 +187,30 @@ public class DartApiService {
      * @return 재무제표 데이터
      */
     public Map<String, Object> getFinancialStatement(String corpCode, int year, String reportCode) {
+        // 1차: 연결재무제표(CFS) 시도
+        Map<String, Object> result = fetchFinancialStatement(corpCode, year, reportCode, "CFS");
+        if (Boolean.TRUE.equals(result.get("success"))) {
+            return result;
+        }
+
+        // DART status 013(조회된 데이터 없음)이면 개별재무제표(OFS)로 한 번 더 조회
+        Object status = result.get("status");
+        if (status != null && "013".equals(status.toString())) {
+            Map<String, Object> ofsResult = fetchFinancialStatement(corpCode, year, reportCode, "OFS");
+            if (Boolean.TRUE.equals(ofsResult.get("success"))) {
+                ofsResult.put("message", "OFS(개별)로 조회 성공 (CFS 데이터 없음)");
+            }
+            return ofsResult;
+        }
+
+        return result;
+    }
+
+    /**
+     * 재무제표 조회 (fs_div에 따라 CFS/OFS 요청)
+     */
+    private Map<String, Object> fetchFinancialStatement(String corpCode, int year, String reportCode, String fsDiv) {
+        Map<String, Object> result = new HashMap<>();
         try {
             String url = UriComponentsBuilder
                     .fromHttpUrl(DART_API_BASE_URL + "/fnlttSinglAcntAll.json")
@@ -194,15 +218,19 @@ public class DartApiService {
                     .queryParam("corp_code", corpCode)
                     .queryParam("bsns_year", year)
                     .queryParam("reprt_code", reportCode)
-                    .queryParam("fs_div", "CFS") // CFS: 연결재무제표, OFS: 개별재무제표
+                    .queryParam("fs_div", fsDiv) // CFS: 연결재무제표, OFS: 개별재무제표
                     .toUriString();
 
             String response = restTemplate.getForObject(url, String.class);
             JsonNode root = objectMapper.readTree(response);
 
-            Map<String, Object> result = new HashMap<>();
+            String status = root.has("status") ? root.get("status").asText() : "(none)";
+            String message = root.has("message") ? root.get("message").asText() : "API 호출 실패";
+            result.put("status", status);
+            result.put("message", message);
+            result.put("fsDivTried", fsDiv);
 
-            if (root.has("status") && "000".equals(root.get("status").asText())) {
+            if ("000".equals(status)) {
                 JsonNode list = root.get("list");
                 if (list != null && list.isArray()) {
                     // 재무제표 항목별로 파싱
@@ -214,11 +242,12 @@ public class DartApiService {
                     result.put("message", "재무제표 데이터가 없습니다.");
                 }
             } else {
+                System.err.println("DART 응답 오류: status=" + status + ", message=" + message
+                        + ", corpCode=" + corpCode + ", year=" + year + ", reportCode=" + reportCode
+                        + ", fsDiv=" + fsDiv);
                 result.put("success", false);
-                result.put("message", root.has("message") ? root.get("message").asText() : "API 호출 실패");
+                result.put("message", message);
             }
-
-            return result;
         } catch (Exception e) {
             System.err.println("재무제표 조회 실패: " + e.getMessage());
             Map<String, Object> errorResult = new HashMap<>();
@@ -226,6 +255,7 @@ public class DartApiService {
             errorResult.put("message", e.getMessage());
             return errorResult;
         }
+        return result;
     }
 
     /**
