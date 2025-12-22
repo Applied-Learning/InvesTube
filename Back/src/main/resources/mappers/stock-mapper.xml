@@ -166,4 +166,15 @@
         WHERE s.stock_code = #{stockCode}
     </select>
 
+    <!-- 종목명으로 검색 (정확히 포함하는 경우) -->
+    <select id="selectStockByName" parameterType="String" resultType="Stock">
+        SELECT stock_id, stock_code, stock_name, market, industry, created_at, updated_at
+        FROM stock
+        WHERE stock_name LIKE CONCAT('%', #{stockName}, '%')
+        ORDER BY 
+            CASE WHEN stock_name = #{stockName} THEN 0 ELSE 1 END,
+            LENGTH(stock_name)
+        LIMIT 1
+    </select>
+
 </mapper>

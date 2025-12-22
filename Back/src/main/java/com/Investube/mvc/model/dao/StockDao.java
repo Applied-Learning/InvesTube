@@ -6,22 +6,34 @@ import com.Investube.mvc.model.dto.StockPrice;
 import com.Investube.mvc.model.dto.StockDetailDto;
 
 public interface StockDao {
-    
+
     // Stock 관련
     List<Stock> selectAllStocks();
+
     Stock selectStockByCode(String stockCode);
+
     int insertStock(Stock stock);
+
     int updateStock(Stock stock);
+
     int deleteStock(String stockCode);
-    
+
     // StockPrice 관련
     List<StockPrice> selectPricesByStockCode(String stockCode);
+
     List<StockPrice> selectPricesByStockCodeAndDateRange(String stockCode, String startDate, String endDate);
+
     StockPrice selectLatestPriceByStockCode(String stockCode);
+
     int insertStockPrice(StockPrice stockPrice);
+
     int updateStockPrice(StockPrice stockPrice);
-    
+
     // 상세 정보
     List<StockDetailDto> selectStockDetailsWithLatestPrice();
+
     StockDetailDto selectStockDetailByCode(String stockCode);
+
+    // 종목명으로 검색 (LIKE 검색)
+    Stock selectStockByName(String stockName);
 }
