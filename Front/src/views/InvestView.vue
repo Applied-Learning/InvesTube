@@ -162,6 +162,7 @@ import Button from '@/components/common/Button.vue'
 import StockCard from '@/components/stock/StockCard.vue'
 import stockApi from '@/api/stock'
 import profileApi from '@/api/profile'
+import { useInvestSearchStore } from '@/stores/investSearch'
 
 export default {
   name: 'InvestView',
@@ -178,6 +179,7 @@ export default {
       indicesLoading: false,
       searchQuery: '',
       searchResults: [],
+      searchStore: null,
       currentProfile: null,
       profileTypes: [
         { name: '안정형', icon: '🛡️' },
@@ -216,11 +218,21 @@ export default {
     },
   },
   created() {
-    this.loadStocks()
-    this.loadIndices()
-    this.loadProfile()
+    this.searchStore = useInvestSearchStore()
+    this.initPage()
   },
   methods: {
+    async initPage() {
+      await this.loadStocks()
+      this.loadIndices()
+      this.loadProfile()
+
+      // 뒤로 돌아왔을 때 이전 검색어 유지 + 바로 결과 복원
+      if (this.searchStore?.searchQuery) {
+        this.searchQuery = this.searchStore.searchQuery
+        this.handleSearch()
+      }
+    },
     async loadProfile() {
       try {
         const response = await profileApi.getDefaultProfile()
@@ -286,19 +298,25 @@ export default {
     clearSearchResults() {
       // 검색어를 수정할 때 이전 검색 결과 초기화
       this.searchResults = []
+      this.searchStore?.clear()
     },
     handleSearch() {
       if (!this.searchQuery.trim()) {
         this.searchResults = []
+        this.searchStore?.clear()
         return
       }
 
-      const query = this.searchQuery.toLowerCase().trim()
+      // 공백/대소문자 무시하고 부분 매칭
+      const normalize = (str) => (str || '').toLowerCase().replace(/\s+/g, '')
+      const query = normalize(this.searchQuery)
+
       this.searchResults = this.stocks.filter(
         (stock) =>
-          stock.stockName.toLowerCase().includes(query) ||
-          stock.stockCode.toLowerCase().includes(query),
+          normalize(stock.stockName).includes(query) ||
+          normalize(stock.stockCode).includes(query),
       )
+      this.searchStore?.setQuery(this.searchQuery)
     },
     goToDetail(stockCode) {
       this.$router.push({ name: 'stockDetail', params: { stockCode } })
