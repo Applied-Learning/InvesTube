@@ -5,7 +5,6 @@ import com.Investube.mvc.model.dto.*;
 import com.Investube.mvc.model.service.FinancialService;
 import com.Investube.mvc.model.service.StockService;
 import com.Investube.mvc.service.ChatService;
-import com.Investube.mvc.service.FinancialAnalysisService;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -51,8 +50,7 @@ public class ChatRestController {
     @PostMapping("/stock")
     public ResponseEntity<?> chatAboutStock(
             @RequestBody ChatRequest chatRequest,
-            HttpServletRequest request
-    ) {
+            HttpServletRequest request) {
         try {
             System.out.println("=== 챗봇 요청 시작 ===");
             String stockCode = chatRequest.getStockCode();
@@ -110,8 +108,7 @@ public class ChatRestController {
                     financialData,
                     profile,
                     baseScore,
-                    userMessage
-            );
+                    userMessage);
             System.out.println("챗봇 응답 생성 완료");
             System.out.println("=== 챗봇 요청 완료 ===");
 
@@ -124,5 +121,88 @@ public class ChatRestController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body(new ChatResponse("챗봇 응답 생성 중 오류가 발생했습니다: " + e.getMessage(), false));
         }
+    }
+
+    /**
+     * 일반 투자 관련 챗봇 질문 처리 (종목 없이)
+     * 
+     * POST /chat/general
+     * Request Body: { "message": "오늘 시장 상황은?" }
+     */
+    @PostMapping("/general")
+    public ResponseEntity<?> generalChat(
+            @RequestBody ChatRequest chatRequest,
+            HttpServletRequest request) {
+        try {
+            String userMessage = chatRequest.getMessage();
+
+            if (userMessage == null || userMessage.trim().isEmpty()) {
+                return ResponseEntity.badRequest()
+                        .body(new ChatResponse("질문을 입력해주세요.", false));
+            }
+
+            // 사용자 투자 성향 조회 (로그인한 경우)
+            Integer userId = getUserIdFromRequest(request);
+            InvestmentProfile profile = null;
+            if (userId != null) {
+                profile = profileDao.getDefaultProfile(userId);
+            }
+
+            // 종목 코드가 언급되었는지 확인
+            String stockCode = extractStockCode(userMessage);
+            Stock stock = null;
+            FinancialData financialData = null;
+            Double baseScore = null;
+
+            if (stockCode != null) {
+                stock = stockService.getStockByCode(stockCode);
+                if (stock != null) {
+                    financialData = financialService.getFinancialDataWithScore(stockCode, null);
+                    if (financialData != null && financialData.getTotalScore() != null) {
+                        baseScore = financialData.getTotalScore().doubleValue();
+                    }
+                }
+            }
+
+            // 챗봇 응답 생성
+            String response = chatService.getGeneralChatResponse(
+                    stock,
+                    financialData,
+                    profile,
+                    baseScore,
+                    userMessage);
+
+            return ResponseEntity.ok(new ChatResponse(response, true));
+
+        } catch (Exception e) {
+            System.err.println("일반 챗봇 오류: " + e.getMessage());
+            e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body(new ChatResponse("응답 생성 중 오류가 발생했습니다.", false));
+        }
+    }
+
+    /**
+     * 메시지에서 종목 코드 또는 종목명 추출
+     */
+    private String extractStockCode(String message) {
+        // 6자리 숫자 종목코드 패턴
+        java.util.regex.Pattern codePattern = java.util.regex.Pattern.compile("\\b(\\d{6})\\b");
+        java.util.regex.Matcher matcher = codePattern.matcher(message);
+        if (matcher.find()) {
+            return matcher.group(1);
+        }
+
+        // 주요 종목명으로 검색
+        String[] majorStocks = { "삼성전자", "SK하이닉스", "네이버", "카카오", "현대차", "LG에너지솔루션" };
+        String[] majorCodes = { "005930", "000660", "035420", "035720", "005380", "373220" };
+
+        for (int i = 0; i < majorStocks.length; i++) {
+            if (message.contains(majorStocks[i])) {
+                return majorCodes[i];
+            }
+        }
+
+        return null;
     }
 }

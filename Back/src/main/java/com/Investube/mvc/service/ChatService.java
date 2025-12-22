@@ -26,12 +26,11 @@ public class ChatService {
             FinancialData financialData,
             InvestmentProfile profile,
             Double baseScore,
-            String userMessage
-    ) {
+            String userMessage) {
         try {
             System.out.println("[ChatService] 챗봇 응답 생성 시작");
             System.out.println("[ChatService] 사용자 질문: " + userMessage);
-            
+
             // 1. 시스템 프롬프트 구성
             System.out.println("[ChatService] 시스템 프롬프트 구성 중...");
             String systemPrompt = buildSystemPrompt();
@@ -41,7 +40,7 @@ public class ChatService {
             String context = buildContext(stock, financialData, profile, baseScore);
             String userPrompt = context + "\n\n질문: " + userMessage;
             System.out.println("[ChatService] User 메시지 길이: " + userPrompt.length() + " 글자");
-            
+
             // 프롬프트가 너무 길면 축약
             if (userPrompt.length() > 4000) {
                 System.out.println("[ChatService] User 메시지가 너무 깁니다. 축약합니다.");
@@ -62,15 +61,15 @@ public class ChatService {
             throw new RuntimeException("챗봇 응답 생성 실패: " + e.getMessage(), e);
         }
     }
-    
+
     /**
      * 짧은 사용자 메시지 생성 (토큰 제한 대응)
      */
     private String buildShortUserMessage(Stock stock, FinancialData financialData, String userMessage) {
         StringBuilder message = new StringBuilder();
-        
+
         message.append("종목: ").append(stock.getStockName()).append("\n");
-        
+
         if (financialData != null) {
             if (financialData.getTotalScore() != null) {
                 message.append("투자점수: ").append(String.format("%.1f점\n", financialData.getTotalScore()));
@@ -88,9 +87,9 @@ public class ChatService {
                 message.append("부채비율: ").append(String.format("%.1f%%\n", financialData.getDebtRatio()));
             }
         }
-        
+
         message.append("\n질문: ").append(userMessage);
-        
+
         return message.toString();
     }
 
@@ -101,8 +100,7 @@ public class ChatService {
             Stock stock,
             FinancialData financialData,
             InvestmentProfile profile,
-            Double baseScore
-    ) {
+            Double baseScore) {
         StringBuilder context = new StringBuilder();
 
         // 종목 정보
@@ -125,37 +123,37 @@ public class ChatService {
         // 재무 데이터
         if (financialData != null) {
             context.append("\n[재무 요약]\n");
-            
+
             if (financialData.getRevenueGrowthRate() != null) {
                 context.append("- 매출 성장률: ")
                         .append(String.format("%.2f", financialData.getRevenueGrowthRate()))
                         .append("%\n");
             }
-            
+
             if (financialData.getOperatingMargin() != null) {
                 context.append("- 영업이익률: ")
                         .append(String.format("%.2f", financialData.getOperatingMargin()))
                         .append("%\n");
             }
-            
+
             if (financialData.getRoe() != null) {
                 context.append("- ROE: ")
                         .append(String.format("%.2f", financialData.getRoe()))
                         .append("%\n");
             }
-            
+
             if (financialData.getDebtRatio() != null) {
                 context.append("- 부채비율: ")
                         .append(String.format("%.2f", financialData.getDebtRatio()))
                         .append("%\n");
             }
-            
+
             if (financialData.getPerRatio() != null) {
                 context.append("- PER: ")
                         .append(String.format("%.2f", financialData.getPerRatio()))
                         .append("\n");
             }
-            
+
             if (financialData.getPbrRatio() != null) {
                 context.append("- PBR: ")
                         .append(String.format("%.2f", financialData.getPbrRatio()))
@@ -178,17 +176,17 @@ public class ChatService {
     private String buildSystemPrompt() {
         return """
                 당신은 투자 판단을 대신하지 않는 재무 설명 AI입니다.
-                
+
                 역할:
                 - 주어진 재무 데이터를 쉽게 설명
                 - 지표의 의미와 수치 해석 제공
                 - 객관적인 사실 기반 정보만 제공
-                
+
                 금지사항:
                 - 매수/매도 추천 금지
                 - 수익 보장 금지
                 - "반드시", "확실히" 등 단정적 표현 금지
-                
+
                 답변 형식:
                 - 간결하고 이해하기 쉽게 (3-5문장)
                 - 전문용어 사용 시 설명 추가
@@ -200,7 +198,93 @@ public class ChatService {
      * 가격 포맷팅
      */
     private String formatPrice(Integer price) {
-        if (price == null) return "정보 없음";
+        if (price == null)
+            return "정보 없음";
         return String.format("%,d", price);
+    }
+
+    /**
+     * 일반 투자 관련 챗봇 응답 생성 (종목 없이 가능)
+     */
+    public String getGeneralChatResponse(
+            Stock stock,
+            FinancialData financialData,
+            InvestmentProfile profile,
+            Double baseScore,
+            String userMessage) {
+        try {
+            // 시스템 프롬프트 (일반 투자 상담용)
+            String systemPrompt = buildGeneralSystemPrompt(profile);
+
+            // 사용자 메시지 구성
+            StringBuilder userPrompt = new StringBuilder();
+
+            if (stock != null) {
+                userPrompt.append("[종목 정보]\n");
+                userPrompt.append("- 종목명: ").append(stock.getStockName()).append("\n");
+                userPrompt.append("- 시장: ").append(stock.getMarket()).append("\n");
+
+                if (financialData != null) {
+                    userPrompt.append("\n[재무 요약]\n");
+                    if (financialData.getRevenueGrowthRate() != null) {
+                        userPrompt.append("- 매출 성장률: ")
+                                .append(String.format("%.1f%%\n", financialData.getRevenueGrowthRate()));
+                    }
+                    if (financialData.getOperatingMargin() != null) {
+                        userPrompt.append("- 영업이익률: ")
+                                .append(String.format("%.1f%%\n", financialData.getOperatingMargin()));
+                    }
+                    if (financialData.getRoe() != null) {
+                        userPrompt.append("- ROE: ")
+                                .append(String.format("%.1f%%\n", financialData.getRoe()));
+                    }
+                    if (baseScore != null) {
+                        userPrompt.append("- 투자 점수: ")
+                                .append(String.format("%.1f점\n", baseScore));
+                    }
+                }
+            }
+
+            userPrompt.append("\n질문: ").append(userMessage);
+
+            // API 호출
+            return openaiClient.callGPTWithRoles(systemPrompt, userPrompt.toString());
+
+        } catch (Exception e) {
+            System.err.println("일반 챗봇 오류: " + e.getMessage());
+            e.printStackTrace();
+            throw new RuntimeException("챗봇 응답 생성 실패", e);
+        }
+    }
+
+    /**
+     * 일반 투자 상담용 시스템 프롬프트
+     */
+    private String buildGeneralSystemPrompt(InvestmentProfile profile) {
+        StringBuilder prompt = new StringBuilder();
+        prompt.append("""
+                당신은 친절한 투자 정보 제공 AI입니다.
+
+                역할:
+                - 투자 관련 일반 질문에 답변
+                - 재무 지표 설명
+                - 시장 동향 정보 제공
+
+                금지사항:
+                - 매수/매도 추천 금지
+                - 수익 보장 금지
+                - 미래 가격 예측 금지
+
+                답변 형식:
+                - 간결하게 (3-5문장)
+                - 쉬운 용어 사용
+                - 존댓말 사용
+                """);
+
+        if (profile != null) {
+            prompt.append("\n사용자 투자 성향: ").append(profile.getProfileName()).append("\n");
+        }
+
+        return prompt.toString();
     }
 }
