@@ -132,6 +132,17 @@ public class FinancialServiceImpl implements FinancialService {
         // 전년도 데이터 조회 (매출 성장률 계산용)
         FinancialData previousData = financialDao.getFinancialData(stockCode, year - 1, 4);
 
+        // 전년도 데이터가 DB에 없으면 자동 동기화 시도 (단, 최근 3년치까지만 재귀 허용)
+        if (previousData == null && year >= java.time.LocalDate.now().getYear() - 3) {
+            try {
+                System.out.println("전년도(" + (year - 1) + ") 데이터 없음 → 자동 동기화 시도");
+                previousData = this.syncFinancialData(stockCode, year - 1);
+            } catch (Exception e) {
+                System.err.println("전년도 데이터 동기화 실패: " + e.getMessage());
+                // 실패해도 현재 연도 데이터는 저장해야 하므로 진행
+            }
+        }
+
         // 재무 지표 계산
         data = financialAnalysisService.calculateFinancialMetrics(data, previousData);
 

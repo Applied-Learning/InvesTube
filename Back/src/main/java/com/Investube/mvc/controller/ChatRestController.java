@@ -148,20 +148,31 @@ public class ChatRestController {
                 profile = profileDao.getDefaultProfile(userId);
             }
 
-            // 종목 정보 추출 (종목코드 또는 종목명으로 DB 검색)
-            Stock stock = extractStockFromMessage(userMessage);
+            // 1. 프론트에서 현재 보고 있는 종목 코드가 전달되면 우선 사용
+            // 2. 없으면 메시지에서 종목 추출
+            Stock stock = null;
+            String stockCode = chatRequest.getStockCode();
+            if (stockCode != null && !stockCode.trim().isEmpty()) {
+                stock = stockService.getStockByCode(stockCode);
+                System.out.println("[챗봇] 컨텍스트 종목 사용: " + (stock != null ? stock.getStockName() : "없음"));
+            }
+            if (stock == null) {
+                stock = extractStockFromMessage(userMessage);
+            }
+
             FinancialData financialData = null;
             Double baseScore = null;
 
             if (stock != null) {
-                String stockCode = stock.getStockCode();
+                stockCode = stock.getStockCode();
                 financialData = financialService.getFinancialDataWithScore(stockCode, null);
 
                 // 재무 데이터가 없으면 DART에서 자동 동기화 시도
                 if (financialData == null) {
                     System.out.println("[챗봇] " + stock.getStockName() + " 재무 데이터 없음 → 자동 동기화 시도");
                     try {
-                        int currentYear = java.time.LocalDate.now().getYear() - 1; // 작년 데이터
+                        // 투자 상세 페이지와 동일하게 2024년 데이터 사용
+                        int currentYear = 2024;
                         financialService.syncFinancialData(stockCode, currentYear);
                         financialData = financialService.getFinancialDataWithScore(stockCode, null);
                         System.out.println("[챗봇] " + stock.getStockName() + " 재무 데이터 동기화 완료");
@@ -171,8 +182,14 @@ public class ChatRestController {
                     }
                 }
 
-                if (financialData != null && financialData.getTotalScore() != null) {
-                    baseScore = financialData.getTotalScore().doubleValue();
+                if (financialData != null) {
+                    System.out.println(
+                            "[챗봇] " + stock.getStockName() + " 재무데이터 있음, 점수: " + financialData.getTotalScore());
+                    if (financialData.getTotalScore() != null) {
+                        baseScore = financialData.getTotalScore().doubleValue();
+                    }
+                } else {
+                    System.out.println("[챗봇] " + stock.getStockName() + " 재무데이터 없음");
                 }
             }
 

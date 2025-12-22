@@ -56,7 +56,20 @@
           :class="msg.role"
         >
           <div class="message-avatar">{{ msg.role === 'user' ? '👤' : '🤖' }}</div>
-          <div class="message-content">{{ msg.content }}</div>
+          <div class="message-bubble">
+            <div class="message-content">{{ msg.content }}</div>
+            <!-- 환영 메시지일 때 예시 질문 버튼 표시 -->
+            <div v-if="msg.isWelcome && msg.stockQuestions" class="inline-quick-questions">
+              <button 
+                v-for="q in msg.stockQuestions" 
+                :key="q"
+                class="inline-quick-btn"
+                @click="sendQuickQuestion(q)"
+              >
+                {{ q }}
+              </button>
+            </div>
+          </div>
         </div>
 
         <div v-if="loading" class="message assistant">
@@ -127,6 +140,21 @@ export default {
       return this.chatbotStore.currentStock ? this.stockQuestions : this.defaultQuestions
     }
   },
+  watch: {
+    // 새로운 종목 진입 시 환영 메시지 + 예시 질문 추가
+    'chatbotStore.currentStock'(newStock, oldStock) {
+      if (newStock && (!oldStock || newStock.stockCode !== oldStock.stockCode)) {
+        // AI 환영 메시지 추가
+        this.chatHistory.push({
+          role: 'assistant',
+          content: `${newStock.stockName} 종목 분석 페이지에 오셨네요! 궁금한 점을 물어보세요.`,
+          isWelcome: true,
+          stockQuestions: this.stockQuestions
+        })
+        this.scrollToBottom()
+      }
+    }
+  },
   methods: {
     openChat() {
       this.isOpen = true
@@ -155,8 +183,13 @@ export default {
       this.loading = true
 
       try {
-        // 일반 챗봇 API 호출
-        const response = await http.post('/chat/general', { message })
+        // 현재 보고 있는 종목이 있으면 stockCode 함께 전달
+        const payload = { message }
+        if (this.chatbotStore.currentStock) {
+          payload.stockCode = this.chatbotStore.currentStock.stockCode
+        }
+        
+        const response = await http.post('/chat/general', payload)
         
         this.chatHistory.push({
           role: 'assistant',
@@ -298,8 +331,8 @@ export default {
 
 /* 챗봇 패널 */
 .chat-panel {
-  width: 380px;
-  height: 520px;
+  width: 420px;
+  height: 600px;
   background: white;
   border-radius: 16px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
@@ -396,6 +429,35 @@ export default {
 }
 
 .quick-btn:hover {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+/* 말풍선 안 인라인 예시 질문 */
+.message-bubble {
+  max-width: 85%;
+}
+
+.inline-quick-questions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.inline-quick-btn {
+  padding: 6px 12px;
+  background: rgba(102, 126, 234, 0.1);
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  border-radius: 16px;
+  font-size: 12px;
+  color: #667eea;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.inline-quick-btn:hover {
   background: #667eea;
   color: white;
   border-color: #667eea;
