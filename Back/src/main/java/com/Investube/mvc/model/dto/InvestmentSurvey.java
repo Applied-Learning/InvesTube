@@ -1,7 +1,7 @@
 package com.Investube.mvc.model.dto;
 
 /**
- * 투자 성향 설문 응답 DTO
+ * 투자 성향 설문 응답 DTO (8개 질문)
  */
 public class InvestmentSurvey {
 
@@ -19,6 +19,15 @@ public class InvestmentSurvey {
 
     // Q5: 변동성 대응 (1: 즉시 매도, 2: 관망, 3: 추가 매수)
     private int volatilityResponse;
+
+    // Q6: 주식 투자 비중 (1: 20% 이하, 2: 20~50%, 3: 50% 이상)
+    private int stockRatio;
+
+    // Q7: 정보 수집 방식 (1: 전문가 추천, 2: 뉴스/분석, 3: 직접 분석)
+    private int informationSource;
+
+    // Q8: 기대 수익률 (1: 예금 이상, 2: 연 10~20%, 3: 연 30% 이상)
+    private int expectedReturn;
 
     // Getters and Setters
     public int getInvestmentPeriod() {
@@ -61,13 +70,38 @@ public class InvestmentSurvey {
         this.volatilityResponse = volatilityResponse;
     }
 
+    public int getStockRatio() {
+        return stockRatio;
+    }
+
+    public void setStockRatio(int stockRatio) {
+        this.stockRatio = stockRatio;
+    }
+
+    public int getInformationSource() {
+        return informationSource;
+    }
+
+    public void setInformationSource(int informationSource) {
+        this.informationSource = informationSource;
+    }
+
+    public int getExpectedReturn() {
+        return expectedReturn;
+    }
+
+    public void setExpectedReturn(int expectedReturn) {
+        this.expectedReturn = expectedReturn;
+    }
+
     /**
-     * 총점 계산 (5~15점)
-     * 5~8: 안정형, 9~12: 균형형, 13~15: 공격형
+     * 총점 계산 (8~24점)
+     * 8~12: 안정형, 13~18: 균형형, 19~24: 공격형
      */
     public int getTotalScore() {
         return investmentPeriod + riskTolerance + investmentGoal +
-                investmentExperience + volatilityResponse;
+                investmentExperience + volatilityResponse +
+                stockRatio + informationSource + expectedReturn;
     }
 
     /**
@@ -75,9 +109,9 @@ public class InvestmentSurvey {
      */
     public String determineProfileType() {
         int score = getTotalScore();
-        if (score <= 8) {
+        if (score <= 12) {
             return "안정형";
-        } else if (score <= 12) {
+        } else if (score <= 18) {
             return "균형형";
         } else {
             return "공격형";

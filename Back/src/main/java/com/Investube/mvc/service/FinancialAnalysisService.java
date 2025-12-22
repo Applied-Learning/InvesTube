@@ -217,6 +217,7 @@ public class FinancialAnalysisService {
                 break;
 
             case "성장형":
+            case "공격형": // 공격형도 성장형과 동일한 가중치 사용
                 profile.setWeightRevenueGrowth(BigDecimal.valueOf(30));
                 profile.setWeightOperatingMargin(BigDecimal.valueOf(15));
                 profile.setWeightRoe(BigDecimal.valueOf(25));
