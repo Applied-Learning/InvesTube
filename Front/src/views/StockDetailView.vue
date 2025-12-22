@@ -315,6 +315,82 @@
           </div>
         </div>
 
+        <!-- 챗봇 섹션 -->
+        <div v-if="financialData" class="chatbot-section">
+          <div class="chatbot-header">
+            <h3>💬 종목 분석 챗봇</h3>
+            <p class="chatbot-subtitle">재무 데이터에 대해 궁금한 점을 물어보세요</p>
+          </div>
+
+          <div class="chat-container">
+            <div class="chat-messages" ref="chatMessages">
+              <div v-if="chatHistory.length === 0" class="chat-welcome">
+                <p>안녕하세요! 종목 분석을 도와드리는 AI 챗봇입니다.</p>
+                <div class="chat-examples">
+                  <p class="examples-title">예시 질문:</p>
+                  <button 
+                    v-for="example in exampleQuestions" 
+                    :key="example"
+                    class="example-btn"
+                    @click="askQuestion(example)"
+                  >
+                    {{ example }}
+                  </button>
+                </div>
+              </div>
+
+              <div 
+                v-for="(chat, index) in chatHistory" 
+                :key="index" 
+                class="chat-message"
+                :class="chat.role"
+              >
+                <div class="message-content">
+                  <div class="message-avatar">
+                    {{ chat.role === 'user' ? '👤' : '🤖' }}
+                  </div>
+                  <div class="message-text">
+                    {{ chat.content }}
+                  </div>
+                </div>
+              </div>
+
+              <div v-if="chatLoading" class="chat-message assistant">
+                <div class="message-content">
+                  <div class="message-avatar">🤖</div>
+                  <div class="message-text">
+                    <div class="typing-indicator">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="chat-input-container">
+              <input 
+                v-model="chatInput"
+                type="text"
+                class="chat-input"
+                placeholder="질문을 입력하세요..."
+                @keypress.enter="sendMessage"
+                :disabled="chatLoading"
+              />
+              <button 
+                class="send-button"
+                @click="sendMessage"
+                :disabled="chatLoading || !chatInput.trim()"
+              >
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M2 10l16-8-8 16-2-8-6-0z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
         <!-- 관련 영상 섹션 (추후 구현) -->
         <div class="related-videos">
           <h3>관련 투자 영상</h3>
@@ -334,6 +410,7 @@ import StockChart from '@/components/stock/StockChart.vue'
 import stockApi from '@/api/stock'
 import { isStockWished, addStockWish, removeStockWish } from '@/api/stockWish'
 import { getFinancialData, syncFinancialData as syncFinancialDataAPI, getAiAnalysis } from '@/api/financial'
+import { chatAboutStock } from '@/api/chat'
 import { useAuthStore } from '@/stores/auth'
 
 export default {
@@ -361,6 +438,16 @@ export default {
       syncLoading: false,
       aiLoading: false,
       showDetailMetrics: false,
+      // 챗봇 관련
+      chatHistory: [],
+      chatInput: '',
+      chatLoading: false,
+      exampleQuestions: [
+        '이 종목 점수 왜 이래?',
+        '재무적으로 가장 안 좋은 지표 뭐야?',
+        '안정형 투자자한테 괜찮아?',
+        '리스크 요약해줘'
+      ]
     }
   },
   computed: {
@@ -617,6 +704,64 @@ export default {
         'pbr': 'PBR'
       }
       return labels[key] || key
+    },
+    // 챗봇 관련 메서드
+    async sendMessage() {
+      if (!this.chatInput.trim()) return
+      
+      const userMessage = this.chatInput.trim()
+      this.chatInput = ''
+      
+      // 사용자 메시지 추가
+      this.chatHistory.push({
+        role: 'user',
+        content: userMessage
+      })
+      
+      this.chatLoading = true
+      this.scrollToBottom()
+      
+      try {
+        const response = await chatAboutStock(this.stockCode, userMessage)
+        
+        // AI 응답 추가
+        this.chatHistory.push({
+          role: 'assistant',
+          content: response.data.message
+        })
+      } catch (err) {
+        console.error('챗봇 응답 실패:', err)
+        let errorMessage = '죄송합니다. 응답 생성에 실패했습니다.'
+        
+        // 상세 에러 메시지 표시
+        if (err.response?.data?.message) {
+          errorMessage = err.response.data.message
+        } else if (err.message) {
+          errorMessage += ' (' + err.message + ')'
+        }
+        
+        this.chatHistory.push({
+          role: 'assistant',
+          content: errorMessage
+        })
+      } finally {
+        this.chatLoading = false
+        this.$nextTick(() => {
+          this.scrollToBottom()
+        })
+      }
+    },
+    askQuestion(question) {
+      this.chatInput = question
+      this.sendMessage()
+    },
+    scrollToBottom() {
+      this.$nextTick(() => {
+        const chatMessages = this.$refs.chatMessages
+        if (chatMessages) {
+          chatMessages.scrollTop = chatMessages.scrollHeight
+        }
+      })
     },
   },
 }
@@ -1293,5 +1438,235 @@ export default {
   transform: translateY(-2px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   border-color: #d1d5db;
+}
+
+/* 챗봇 섹션 스타일 */
+.chatbot-section {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.chatbot-header {
+  margin-bottom: 20px;
+}
+
+.chatbot-header h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 8px 0;
+}
+
+.chatbot-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.chat-container {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.chat-messages {
+  height: 400px;
+  overflow-y: auto;
+  padding: 20px;
+  background: #f9fafb;
+}
+
+.chat-welcome {
+  text-align: center;
+  color: #6b7280;
+  padding: 20px;
+}
+
+.chat-welcome p {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.chat-examples {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.examples-title {
+  font-size: 13px;
+  color: #9ca3af;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.example-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  color: #374151;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.example-btn:hover {
+  background: #f3f4f6;
+  border-color: #667eea;
+  color: #667eea;
+}
+
+.example-btn:last-child {
+  margin-bottom: 0;
+}
+
+.chat-message {
+  margin-bottom: 16px;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message-content {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.message-avatar {
+  font-size: 24px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.message-text {
+  background: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  max-width: 80%;
+  word-wrap: break-word;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+  line-height: 1.6;
+  color: #374151;
+}
+
+.chat-message.user .message-content {
+  flex-direction: row-reverse;
+}
+
+.chat-message.user .message-text {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.chat-message.assistant .message-text {
+  background: white;
+  border: 1px solid #e5e7eb;
+}
+
+.typing-indicator {
+  display: flex;
+  gap: 4px;
+  padding: 4px 0;
+}
+
+.typing-indicator span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #9ca3af;
+  animation: typing 1.4s infinite;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-indicator span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typing {
+  0%, 60%, 100% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  30% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+}
+
+.chat-input-container {
+  display: flex;
+  gap: 8px;
+  padding: 16px;
+  background: white;
+  border-top: 1px solid #e5e7eb;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.chat-input:focus {
+  border-color: #667eea;
+}
+
+.chat-input:disabled {
+  background: #f3f4f6;
+  cursor: not-allowed;
+}
+
+.send-button {
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.send-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 </style>
