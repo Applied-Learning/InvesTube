@@ -46,4 +46,7 @@ public interface StockService {
 
     // 지수 정보 조회
     List<KrxIndexResponse.KrxIndexItem> getKrxIndices();
+
+    // DB 데이터를 JSON 파일로 내보내기
+    void exportDbToJson();
 }

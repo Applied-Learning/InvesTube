@@ -5,6 +5,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import com.Investube.mvc.model.service.StockService;
+import com.Investube.mvc.service.StockPriceFileService;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -15,6 +16,9 @@ public class StockDataScheduler {
     @Autowired
     private StockService stockService;
 
+    @Autowired
+    private StockPriceFileService stockPriceFileService;
+
     /**
      * 앱 시작 시 최신 주가 데이터 체크 및 자동 동기화
      */
@@ -24,11 +28,45 @@ public class StockDataScheduler {
         new Thread(() -> {
             try {
                 Thread.sleep(5000); // 다른 초기화 완료 대기
+
+                // JSON 파일 존재 여부 확인 후 처리
+                initializeJsonFiles();
+
+                // 빠진 날짜 동기화
                 checkAndSyncLatestData();
             } catch (Exception e) {
                 System.err.println("[시작 시] 주가 동기화 체크 실패: " + e.getMessage());
             }
         }).start();
+    }
+
+    /**
+     * JSON 파일 초기화
+     * - 파일이 있으면: 스킵
+     * - 파일이 없으면: 1년치 데이터 수집 후 JSON 저장
+     */
+    private void initializeJsonFiles() {
+        try {
+            // JSON 파일 개수 확인
+            int existingFileCount = stockPriceFileService.getAllStockCodes().size();
+
+            if (existingFileCount > 0) {
+                System.out.println("[시작 시] JSON 파일 " + existingFileCount + "개 이미 존재 -> 스킵");
+                return;
+            }
+
+            System.out.println("[시작 시] JSON 파일 없음 -> 1년치 데이터 수집 시작...");
+            System.out.println("[시작 시] ⚠️ 시간이 오래 걸릴 수 있습니다 (약 10-20분)");
+
+            // 1년치 데이터 수집 (KOSPI + KOSDAQ)
+            stockService.syncStockDataFromDart();
+
+            System.out.println("[시작 시] 1년치 데이터 수집 완료!");
+
+        } catch (Exception e) {
+            System.err.println("[시작 시] JSON 파일 초기화 실패: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -51,9 +89,9 @@ public class StockDataScheduler {
                 lastDbDate = latestPrice.getTradeDate();
                 System.out.println("[시작 시] DB 최신 날짜: " + lastDbDate);
             } else {
-                // DB에 데이터가 전혀 없으면 30일 전부터 시작
-                lastDbDate = targetDate.minusDays(30);
-                System.out.println("[시작 시] DB에 데이터 없음, 30일 전부터 동기화");
+                // DB에 데이터가 전혀 없으면 365일 전부터 시작
+                lastDbDate = targetDate.minusDays(365);
+                System.out.println("[시작 시] DB에 데이터 없음, 365일 전부터 동기화");
             }
 
             // 마지막 DB 날짜 다음날부터 목표 날짜까지 체크
