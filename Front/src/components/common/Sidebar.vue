@@ -51,7 +51,7 @@
             <path d="M17 17h.01"></path>
           </svg>
         </span>
-        <span class="nav-label">게시판</span>
+        <span class="nav-label">커뮤니티</span>
       </RouterLink>
 
       <RouterLink

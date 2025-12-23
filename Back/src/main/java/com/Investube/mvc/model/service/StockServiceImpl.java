@@ -1,6 +1,8 @@
 package com.Investube.mvc.model.service;
 
 import java.math.BigDecimal;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -49,8 +51,16 @@ public class StockServiceImpl implements StockService {
                 System.out.println("[StockService] Stock 테이블이 비어있음 -> JSON import 실행");
                 importStockPricesFromJson();
             }
+
+            // market/industry가 null인 종목이 있으면 자동 업데이트
+            int nullMarketCount = stockDao.countStocksWithNullMarket();
+            if (nullMarketCount > 0) {
+                System.out
+                        .println("[StockService] market/industry가 null인 종목 " + nullMarketCount + "개 발견 -> KRX에서 업데이트");
+                updateMissingStockInfo();
+            }
         } catch (Exception e) {
-            System.err.println("[StockService] 초기 JSON import 실패: " + e.getMessage());
+            System.err.println("[StockService] 초기 데이터 로드 실패: " + e.getMessage());
         }
     }
 
@@ -331,6 +341,13 @@ public class StockServiceImpl implements StockService {
                             stock.setMarket("KOSPI");
                             stock.setIndustry(item.getSECT_TP_NM());
                             stockDao.insertStock(stock);
+                        } else {
+                            // 기존 Stock의 market/industry가 없으면 업데이트
+                            if (existingStock.getMarket() == null || existingStock.getIndustry() == null) {
+                                existingStock.setMarket("KOSPI");
+                                existingStock.setIndustry(item.getSECT_TP_NM());
+                                stockDao.updateStock(existingStock);
+                            }
                         }
 
                         // StockPrice 정보 저장
@@ -509,6 +526,13 @@ public class StockServiceImpl implements StockService {
                             stock.setMarket("KOSDAQ");
                             stock.setIndustry(item.getSECT_TP_NM());
                             stockDao.insertStock(stock);
+                        } else {
+                            // 기존 Stock의 market/industry가 없으면 업데이트
+                            if (existingStock.getMarket() == null || existingStock.getIndustry() == null) {
+                                existingStock.setMarket("KOSDAQ");
+                                existingStock.setIndustry(item.getSECT_TP_NM());
+                                stockDao.updateStock(existingStock);
+                            }
                         }
 
                         // StockPrice 정보 저장
@@ -630,50 +654,59 @@ public class StockServiceImpl implements StockService {
      */
     @Override
     public List<KrxIndexResponse.KrxIndexItem> getKrxIndices() {
+        List<KrxIndexResponse.KrxIndexItem> allIndices = new ArrayList<>();
+        final int maxLookbackDays = 7;
+
         try {
-            // KST 기준으로 오늘부터 거슬러가며 가장 최근에 유효한 지수 데이터를 찾음
-            final int maxLookbackDays = 7; // 필요시 값 변경 가능
-            String apiUrl = "https://data-dbg.krx.co.kr/svc/apis/idx/krx_dd_trd";
+            // 여러 API 엔드포인트에서 지수 데이터 가져오기
+            String[] apiUrls = {
+                    "https://data-dbg.krx.co.kr/svc/apis/idx/kospi_dd_trd", // KOSPI 지수
+                    "https://data-dbg.krx.co.kr/svc/apis/idx/kosdaq_dd_trd", // KOSDAQ 지수
+                    "https://data-dbg.krx.co.kr/svc/apis/idx/krx_dd_trd" // KRX 지수
+            };
 
-            for (int i = 0; i < maxLookbackDays; i++) {
-                String baseDate = java.time.LocalDate.now(java.time.ZoneId.of("Asia/Seoul")).minusDays(i)
-                        .format(DateTimeFormatter.ofPattern("yyyyMMdd"));
+            for (String apiUrl : apiUrls) {
+                for (int i = 0; i < maxLookbackDays; i++) {
+                    String baseDate = java.time.LocalDate.now(java.time.ZoneId.of("Asia/Seoul")).minusDays(i)
+                            .format(DateTimeFormatter.ofPattern("yyyyMMdd"));
 
-                try {
-                    Map<String, Object> requestBody = new HashMap<>();
-                    Map<String, String> inBlock = new HashMap<>();
-                    inBlock.put("basDd", baseDate);
-                    requestBody.put("InBlock_1", inBlock);
+                    try {
+                        Map<String, Object> requestBody = new HashMap<>();
+                        Map<String, String> inBlock = new HashMap<>();
+                        inBlock.put("basDd", baseDate);
+                        requestBody.put("InBlock_1", inBlock);
 
-                    HttpHeaders headers = new HttpHeaders();
-                    headers.set("AUTH_KEY", krxApiKey);
-                    headers.setContentType(MediaType.APPLICATION_JSON);
+                        HttpHeaders headers = new HttpHeaders();
+                        headers.set("AUTH_KEY", krxApiKey);
+                        headers.setContentType(MediaType.APPLICATION_JSON);
 
-                    HttpEntity<Map<String, Object>> requestEntity = new HttpEntity<>(requestBody, headers);
+                        HttpEntity<Map<String, Object>> requestEntity = new HttpEntity<>(requestBody, headers);
 
-                    ResponseEntity<KrxIndexResponse> responseEntity = restTemplate.exchange(apiUrl, HttpMethod.POST,
-                            requestEntity, KrxIndexResponse.class);
+                        ResponseEntity<KrxIndexResponse> responseEntity = restTemplate.exchange(apiUrl, HttpMethod.POST,
+                                requestEntity, KrxIndexResponse.class);
 
-                    KrxIndexResponse response = responseEntity.getBody();
+                        KrxIndexResponse response = responseEntity.getBody();
 
-                    if (response != null && response.getOutBlock_1() != null && !response.getOutBlock_1().isEmpty()) {
-                        if (i > 0) {
-                            System.out.println("KRX 지수: " + baseDate + " 기준 최근 유효 데이터 사용");
+                        if (response != null && response.getOutBlock_1() != null
+                                && !response.getOutBlock_1().isEmpty()) {
+                            if (i > 0) {
+                                System.out.println("KRX 지수 (" + apiUrl + "): " + baseDate + " 기준 최근 유효 데이터 사용");
+                            }
+                            allIndices.addAll(response.getOutBlock_1());
+                            break; // 해당 API에서 데이터 찾으면 다음 API로
                         }
-                        return response.getOutBlock_1();
+                    } catch (Exception inner) {
+                        // 해당 날짜 실패 시 다음 날짜로
+                        System.err.println("지수 조회 실패 (" + apiUrl + ", " + baseDate + "): " + inner.getMessage());
                     }
-                } catch (Exception inner) {
-                    // 해당 날짜 실패 시 다음 날짜로 넘어감
-                    System.err.println("KRX 지수 조회 실패 (date=" + baseDate + "): " + inner.getMessage());
                 }
             }
 
-            // 지정한 기간 내 유효한 데이터가 없으면 빈 리스트 반환
-            return List.of();
+            return allIndices;
         } catch (Exception e) {
             System.err.println("KRX 지수 정보 조회 전체 실패: " + e.getMessage());
             e.printStackTrace();
-            return List.of();
+            return allIndices;
         }
     }
 
@@ -720,5 +753,100 @@ public class StockServiceImpl implements StockService {
             System.err.println("DB -> JSON 내보내기 실패: " + e.getMessage());
             e.printStackTrace();
         }
+    }
+
+    /**
+     * 누락된 market/industry 정보 업데이트
+     * KRX API를 호출하여 DB의 null인 market/industry를 채움
+     */
+    @Override
+    public void updateMissingStockInfo() {
+        System.out.println("============================================================");
+        System.out.println("누락된 종목 정보(market/industry) 업데이트 시작");
+        System.out.println("============================================================");
+
+        // 최근 영업일들을 순차적으로 시도 (오늘, 어제, 그제...)
+        int updatedCount = 0;
+        String[] datesToTry = new String[5];
+        for (int i = 0; i < 5; i++) {
+            datesToTry[i] = LocalDate.now().minusDays(i).format(DateTimeFormatter.ofPattern("yyyyMMdd"));
+        }
+
+        try {
+            // 여러 날짜로 시도 (영업일 찾기)
+            for (String dateStr : datesToTry) {
+                System.out.println("시도 중: " + dateStr);
+
+                // KOSPI 데이터 가져오기
+                int kospiUpdated = updateStocksFromKrx(dateStr, "KOSPI", "11");
+
+                // KOSDAQ 데이터 가져오기
+                int kosdaqUpdated = updateStocksFromKrx(dateStr, "KOSDAQ", "22");
+
+                if (kospiUpdated > 0 || kosdaqUpdated > 0) {
+                    updatedCount = kospiUpdated + kosdaqUpdated;
+                    System.out.println("영업일 " + dateStr + " 데이터로 업데이트 완료!");
+                    break;
+                }
+            }
+
+            System.out.println("============================================================");
+            System.out.println("종목 정보 업데이트 완료: " + updatedCount + "개 업데이트됨");
+            System.out.println("============================================================");
+
+        } catch (Exception e) {
+            System.err.println("종목 정보 업데이트 실패: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * KRX API에서 데이터 가져와서 null인 market/industry 업데이트
+     */
+    private int updateStocksFromKrx(String dateStr, String marketName, String marketCode) {
+        int updatedCount = 0;
+        try {
+            // KOSPI와 KOSDAQ는 다른 엔드포인트 사용
+            String apiUrl = marketName.equals("KOSPI")
+                    ? "https://data-dbg.krx.co.kr/svc/apis/sto/stk_bydd_trd"
+                    : "https://data-dbg.krx.co.kr/svc/apis/sto/ksq_bydd_trd";
+
+            Map<String, Object> requestBody = new HashMap<>();
+            Map<String, String> inBlock = new HashMap<>();
+            inBlock.put("basDd", dateStr);
+            requestBody.put("InBlock_1", inBlock);
+
+            HttpHeaders headers = new HttpHeaders();
+            headers.set("AUTH_KEY", krxApiKey);
+            headers.setContentType(MediaType.APPLICATION_JSON);
+
+            HttpEntity<Map<String, Object>> requestEntity = new HttpEntity<>(requestBody, headers);
+
+            ResponseEntity<KrxStockResponse> responseEntity = restTemplate.exchange(apiUrl, HttpMethod.POST,
+                    requestEntity, KrxStockResponse.class);
+
+            KrxStockResponse response = responseEntity.getBody();
+
+            if (response != null && response.getOutBlock_1() != null) {
+                for (KrxStockResponse.KrxStockItem item : response.getOutBlock_1()) {
+                    try {
+                        Stock existingStock = stockDao.selectStockByCode(item.getISU_CD());
+                        if (existingStock != null &&
+                                (existingStock.getMarket() == null || existingStock.getIndustry() == null)) {
+                            existingStock.setMarket(marketName);
+                            existingStock.setIndustry(item.getSECT_TP_NM());
+                            stockDao.updateStock(existingStock);
+                            updatedCount++;
+                        }
+                    } catch (Exception e) {
+                        // 개별 종목 오류는 무시
+                    }
+                }
+            }
+            System.out.println(marketName + ": " + updatedCount + "개 종목 업데이트됨");
+        } catch (Exception e) {
+            System.err.println(marketName + " 정보 가져오기 실패: " + e.getMessage());
+        }
+        return updatedCount;
     }
 }

@@ -53,11 +53,8 @@ public class GmsOpenAiClient {
                 "model", chosenModel,
                 "messages", List.of(
                         Map.of("role", "system", "content", sanitizedSystem),
-                        Map.of("role", "user", "content", sanitizedUser)
-                ),
-                "max_tokens", 4096,
-                "temperature", 0.3
-        );
+                        Map.of("role", "user", "content", sanitizedUser)),
+                "max_completion_tokens", 4096);
 
         String body;
         try {
@@ -68,12 +65,12 @@ public class GmsOpenAiClient {
 
         HttpEntity<String> entity = new HttpEntity<>(body, headers);
         try {
-            ResponseEntity<String> response =
-                    restTemplate.postForEntity(url, entity, String.class);
+            ResponseEntity<String> response = restTemplate.postForEntity(url, entity, String.class);
             return response.getBody();
         } catch (RestClientResponseException e) {
             // up-stream 오류 내용을 그대로 올려보내 디버깅을 돕는다
-            throw new IllegalStateException("AI call failed: status=" + e.getRawStatusCode() + " body=" + e.getResponseBodyAsString(), e);
+            throw new IllegalStateException(
+                    "AI call failed: status=" + e.getRawStatusCode() + " body=" + e.getResponseBodyAsString(), e);
         }
     }
 

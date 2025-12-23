@@ -200,4 +200,9 @@
             market_cap = VALUES(market_cap)
     </insert>
 
+    <!-- market이 null인 종목 수 -->
+    <select id="countStocksWithNullMarket" resultType="int">
+        SELECT COUNT(*) FROM stock WHERE market IS NULL
+    </select>
+
 </mapper>

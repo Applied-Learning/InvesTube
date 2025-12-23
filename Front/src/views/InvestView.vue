@@ -45,7 +45,7 @@
         <div v-if="indicesLoading" class="loading-small">지수 정보 로딩 중...</div>
         <div v-else class="indices-grid">
           <div v-for="index in mainIndices" :key="index.IDX_NM" class="index-card">
-            <div class="index-name">{{ index.IDX_NM }}</div>
+            <div class="index-name">{{ getIndexDisplayName(index.IDX_NM) }}</div>
             <div class="index-value">{{ formatIndexValue(index.CLSPRC_IDX) }}</div>
             <div class="index-change" :class="getChangeClass(index.FLUC_RT)">
               <span>{{ formatChange(index.CMPPREVDD_IDX) }}</span>
@@ -238,16 +238,11 @@ export default {
   },
   computed: {
     mainIndices() {
-      // KOSPI, KOSDAQ, KRX100 등 주요 지수 필터링
-      return this.indices
-        .filter(
-          (idx) =>
-            idx.IDX_NM &&
-            (idx.IDX_NM.includes('KOSPI') ||
-              idx.IDX_NM.includes('KOSDAQ') ||
-              idx.IDX_NM.includes('KRX')),
-        )
-        .slice(0, 3)
+      // 코스피, 코스닥, KRX 300만 표시
+      const targetNames = ['코스피', '코스닥', 'KRX 300']
+      return this.indices.filter(
+        (idx) => idx.IDX_NM && targetNames.includes(idx.IDX_NM)
+      )
     },
     // 가장 최근 거래일 계산 (상장폐지 종목 필터링용)
     latestTradeDate() {
@@ -436,6 +431,14 @@ export default {
         return (num / 1000).toFixed(1) + '천'
       }
       return num.toLocaleString('ko-KR')
+    },
+    getIndexDisplayName(name) {
+      const displayNames = {
+        '코스피': 'KOSPI',
+        '코스닥': 'KOSDAQ',
+        'KRX 300': 'KRX 300'
+      }
+      return displayNames[name] || name
     },
     getChangeClass(rate) {
       if (!rate) return ''

@@ -35,7 +35,6 @@ public class AiPromptBuilder {
       financials.put("operatingMargin", formatValue(financialData.getOperatingMargin()));
       financials.put("roe", formatValue(financialData.getRoe()));
       financials.put("debtRatio", formatValue(financialData.getDebtRatio()));
-      financials.put("fcf", financialData.getFcf());
       financials.put("per", formatValue(financialData.getPerRatio()));
       financials.put("pbr", formatValue(financialData.getPbrRatio()));
 
@@ -52,7 +51,7 @@ public class AiPromptBuilder {
 
       // User 프롬프트 (실제 분석할 데이터)
       String userPrompt = String.format(
-          "기업: %s (%s) 회계 연도: %s 투자 성향: %s 기본 점수: %.2f%s 재무 지표: %s 위 정보를 바탕으로 다음 JSON 형식으로 응답하라: {\"scoreAdjustment\": 0, \"weightAdjustment\": {\"revenueGrowth\": 0, \"operatingMargin\": 0, \"roe\": 0, \"debtRatio\": 0, \"fcf\": 0, \"per\": 0, \"pbr\": 0}, \"summary\": \"재무 분석 요약 (2줄 이내)\", \"riskLevel\": \"MEDIUM\"}",
+          "기업: %s (%s) 회계 연도: %s 투자 성향: %s 기본 점수: %.2f%s 재무 지표: %s 위 정보를 바탕으로 다음 JSON 형식으로 응답하라: {\"scoreAdjustment\": 0, \"weightAdjustment\": {\"revenueGrowth\": 0, \"operatingMargin\": 0, \"roe\": 0, \"debtRatio\": 0, \"per\": 0, \"pbr\": 0}, \"summary\": \"재무 분석 요약 (2줄 이내)\", \"riskLevel\": \"MEDIUM\"}",
           stockName,
           stockCode,
           financialData.getFiscalYear(),
@@ -84,7 +83,6 @@ public class AiPromptBuilder {
       financials.put("operatingMargin", formatValue(financialData.getOperatingMargin()));
       financials.put("roe", formatValue(financialData.getRoe()));
       financials.put("debtRatio", formatValue(financialData.getDebtRatio()));
-      financials.put("fcf", financialData.getFcf());
       financials.put("per", formatValue(financialData.getPerRatio()));
       financials.put("pbr", formatValue(financialData.getPbrRatio()));
 
@@ -121,7 +119,6 @@ public class AiPromptBuilder {
               "operatingMargin": 0,
               "roe": -5,
               "debtRatio": 5,
-              "fcf": 0,
               "per": 0,
               "pbr": 0
             },
