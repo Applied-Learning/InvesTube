@@ -277,6 +277,7 @@ public class DartApiService {
 
         for (JsonNode item : jsonList) {
             String accountName = item.get("account_nm").asText();
+            String normalizedName = accountName.replaceAll("\\s+", ""); // 공백 제거 버전
             String amountStr = item.get("thstrm_amount").asText().replace(",", "");
 
             try {
@@ -306,18 +307,18 @@ public class DartApiService {
                                 (accountName.equals("지배기업 소유주지분") && accountName.length() < 15))) {
                     data.put("net_income", amount);
                 }
-                // 자산총계 (정확 매칭만)
-                else if (!data.containsKey("total_assets") && accountName.equals("자산총계")) {
+                // 자산총계 (공백 제거 후 비교 - '자산 총계' -> '자산총계')
+                else if (!data.containsKey("total_assets") && normalizedName.equals("자산총계")) {
                     data.put("total_assets", amount);
                 }
-                // 자본총계 (엄격한 정확 매칭만! - 우선순위 순서)
+                // 자본총계 (공백 제거 후 비교)
                 else if (!data.containsKey("total_equity") &&
-                        (accountName.equals("지배기업의 소유주에게 귀속되는 자본총계") ||
-                                accountName.equals("자본총계"))) {
+                        (normalizedName.equals("지배기업의소유주에게귀속되는자본총계") ||
+                                normalizedName.equals("자본총계"))) {
                     data.put("total_equity", amount);
                 }
-                // 부채총계 (정확 매칭만)
-                else if (!data.containsKey("total_liabilities") && accountName.equals("부채총계")) {
+                // 부채총계 (공백 제거 후 비교)
+                else if (!data.containsKey("total_liabilities") && normalizedName.equals("부채총계")) {
                     data.put("total_liabilities", amount);
                 }
                 // 영업활동현금흐름
