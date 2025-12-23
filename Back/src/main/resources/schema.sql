@@ -91,7 +91,8 @@ rating DECIMAL(2,1),
 created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
 updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 FOREIGN KEY (video_id) REFERENCES videos(video_id) ON DELETE CASCADE,
-FOREIGN KEY (user_id) REFERENCES users(user_id)
+FOREIGN KEY (user_id) REFERENCES users(user_id),
+UNIQUE KEY unique_video_user (video_id, user_id)
 );
 
 INSERT INTO reviews (review_id, video_id, user_id, content, rating, created_at, updated_at) VALUES

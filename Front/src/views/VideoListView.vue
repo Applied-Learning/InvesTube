@@ -308,6 +308,8 @@ const fetchVideos = async () => {
       uploaderName: video.uploaderNickname || `사용자 ${video.userId}`,
       uploaderProfileImageUrl: video.uploaderProfileImage || '',
       views: video.viewCount,
+      avgRating: video.avgRating,
+      reviewCount: video.reviewCount,
       createdAtText: video.createdAt ? formatKSTDate(video.createdAt) : '',
       duration: video.duration || '',
       wished: isWishlist.value ? true : wishedVideoIds.value.has(video.videoId),

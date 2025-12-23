@@ -17,6 +17,9 @@ public interface ReviewService {
 	
 	// 리뷰 등록
 	boolean createReview(Review review);
+
+	// 기존 존재 시 업데이트까지 포함한 upsert
+	boolean upsertReviewByUserAndVideo(Review review);
 	
 	// 리뷰 수정
 	boolean modifyReview(Review review);

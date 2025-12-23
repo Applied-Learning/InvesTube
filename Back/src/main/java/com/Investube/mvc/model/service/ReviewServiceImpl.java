@@ -37,6 +37,16 @@ public class ReviewServiceImpl implements ReviewService {
 	}
 
 	@Override
+	public boolean upsertReviewByUserAndVideo(Review review) {
+		Review existing = reviewDao.selectByVideoAndUser(review.getVideoId(), review.getUserId());
+		if (existing != null) {
+			review.setReviewId(existing.getReviewId());
+			return reviewDao.updateReview(review) > 0;
+		}
+		return reviewDao.insertReview(review) > 0;
+	}
+
+	@Override
 	public boolean modifyReview(Review review) {
 		return reviewDao.updateReview(review) > 0;
 	}

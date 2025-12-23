@@ -54,6 +54,8 @@ const props = defineProps({
   views: { type: Number, default: null },
   createdAtText: { type: String, default: '' },
   duration: { type: String, default: '' },
+  avgRating: { type: Number, default: null },
+  reviewCount: { type: Number, default: null },
   wished: { type: Boolean, default: false },
 })
 
@@ -62,6 +64,10 @@ const emit = defineEmits(['click', 'toggle-wish'])
 const metaText = computed(() => {
   const parts = []
   if (props.views != null) parts.push(`조회수 ${props.views.toLocaleString()}회`)
+  if (props.avgRating != null) {
+    const rating = props.avgRating.toFixed(1)
+    parts.push(`★${rating}`)
+  }
   if (props.createdAtText) parts.push(props.createdAtText)
   return parts.join(' · ')
 })
