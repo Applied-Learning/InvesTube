@@ -43,4 +43,7 @@ public interface StockDao {
 
     // 다건 주가 배치 업서트
     int insertStockPricesBatch(List<StockPrice> prices);
+
+    // market이 null인 종목 수
+    int countStocksWithNullMarket();
 }

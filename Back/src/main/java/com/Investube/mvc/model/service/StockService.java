@@ -54,4 +54,7 @@ public interface StockService {
 
     // JSON 파일 -> DB 초기 적재/복원
     Map<String, Integer> importStockPricesFromJson();
+
+    // 누락된 market/industry 정보 업데이트
+    void updateMissingStockInfo();
 }
