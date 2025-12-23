@@ -87,6 +87,16 @@ public class VideoServiceImpl implements VideoService {
 	}
 
 	@Override
+	public List<Video> getVideosByParentCategory(int parentId, int offset, int size) {
+		return videoDao.selectByParentCategoryWithPaging(parentId, offset, size);
+	}
+
+	@Override
+	public int getVideosCountByParentCategory(int parentId) {
+		return videoDao.selectCountByParentCategory(parentId);
+	}
+
+	@Override
 	public List<Video> searchVideos(String keyword) {
 		return videoDao.searchByKeyword(keyword);
 	}

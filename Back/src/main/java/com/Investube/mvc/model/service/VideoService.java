@@ -41,12 +41,18 @@ public interface VideoService {
 	
 	// 카테고리별 비디오 조회
 	List<Video> getVideosByCategory(int categoryId);
-	
+
 	// 페이징 - 카테고리별 비디오 조회
 	List<Video> getVideosByCategory(int categoryId, int offset, int size);
-	
+
 	// 카테고리별 비디오 개수 조회
 	int getVideosCountByCategory(int categoryId);
+
+	// 대분류(parent) 기준 하위 카테고리 비디오 조회
+	List<Video> getVideosByParentCategory(int parentId, int offset, int size);
+
+	// 대분류(parent) 기준 하위 카테고리 비디오 개수
+	int getVideosCountByParentCategory(int parentId);
 	
 	// 키워드로 비디오 검색
 	List<Video> searchVideos(String keyword);

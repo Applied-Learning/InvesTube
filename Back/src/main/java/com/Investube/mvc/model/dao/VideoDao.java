@@ -52,6 +52,12 @@ public interface VideoDao {
 	
 	// 카테고리별 비디오 개수 조회
 	int selectCountByCategory(int categoryId);
+
+	// 대분류(parent) 기준 하위 카테고리 비디오 조회 (페이징)
+	List<Video> selectByParentCategoryWithPaging(@Param("parentId") int parentId, @Param("offset") int offset, @Param("size") int size);
+
+	// 대분류(parent) 기준 하위 카테고리 비디오 개수
+	int selectCountByParentCategory(@Param("parentId") int parentId);
 	
 	// 키워드로 비디오 검색
 	List<Video> searchByKeyword(String keyword);

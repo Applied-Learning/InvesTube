@@ -431,9 +431,14 @@ const newReview = ref({ content: '', rating: 5 })
 const editingReview = ref(null)
 
 const categories = {
-  1: '금융',
-  2: '기술',
-  3: '투자',
+  11: '기초 교육',
+  12: '분석 방법',
+  13: '투자 전략',
+  21: '재무 분석',
+  22: '산업 분석',
+  23: '종목 추천',
+  31: '국내 경제',
+  32: '국제 경제',
 }
 
 const getCategoryName = (id) => {

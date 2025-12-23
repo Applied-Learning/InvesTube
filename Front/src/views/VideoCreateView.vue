@@ -104,12 +104,31 @@
           <span class="required-mark">*</span>
           <span v-if="recommendedName" class="recommend-pill">추천: {{ recommendedName }}</span>
         </label>
-        <select id="categoryId" v-model="formData.categoryId" required @change="markManualCategory">
-          <option value="" disabled>카테고리를 선택하세요</option>
-          <option v-for="category in categories" :key="category.id" :value="category.id">
-            {{ category.name }}
-          </option>
-        </select>
+        <div class="category-pickers">
+          <div class="category-scroll parent-scroll">
+            <button
+              v-for="parent in parentCategories"
+              :key="parent.id"
+              type="button"
+              :class="['category-chip', { active: selectedParent === parent.id }]"
+              @click="selectParent(parent.id)"
+            >
+              {{ parent.name }}
+            </button>
+          </div>
+          <div v-if="selectedParent !== null" class="category-scroll child-scroll">
+            <button
+              v-for="category in visibleSubCategories"
+              :key="category.id"
+              type="button"
+              :class="['category-chip', { active: formData.categoryId === category.id }]"
+              @click="selectChild(category.id)"
+            >
+              {{ category.name }}
+            </button>
+          </div>
+          <p class="help-text compact">대분류를 먼저 선택한 뒤 중분류를 선택하세요.</p>
+        </div>
       </div>
 
       <div v-if="aiLoading && !aiDecision" class="ai-review pending">
@@ -119,11 +138,11 @@
         <div class="ai-review__status">
           {{ aiDecision.allowed ? '업로드 가능' : '업로드 차단' }}
         </div>
-        <p v-if="!aiDecision.allowed && aiDecision.reason" class="ai-review__text">
-          {{ aiDecision.reason }}
+        <p v-if="aiDecision.reason" class="ai-review__text">
+          사유: {{ aiDecision.reason }}
         </p>
-        <p v-if="!aiDecision.allowed && aiDecision.recommendedCategoryId" class="ai-review__text">
-          추천 카테고리: {{ getCategoryName(aiDecision.recommendedCategoryId) }}
+        <p v-if="aiDecision.allowed && recommendedLabels.length" class="ai-review__text">
+          추천 카테고리: {{ recommendedLabels.join(', ') }}
         </p>
       </div>
 
@@ -145,7 +164,7 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import PageHeader from '../components/common/PageHeader.vue'
 import { createVideo, checkVideoWithAi } from '../api/video.js'
@@ -162,11 +181,19 @@ const metaLoading = ref(false)
 const selectedPreview = ref(null)
 const aiDecision = ref(null)
 const manualCategorySelected = ref(false)
-const recommendedName = computed(() => {
-  if (!aiDecision.value?.allowed) return ''
-  if (!aiDecision.value?.recommendedCategoryId) return ''
-  return getCategoryName(aiDecision.value.recommendedCategoryId)
+const recommendedLabels = computed(() => {
+  if (!aiDecision.value?.allowed) return []
+  const ids = aiDecision.value?.recommendedCategoryIds?.length
+    ? aiDecision.value.recommendedCategoryIds
+    : aiDecision.value?.recommendedCategoryId
+      ? [aiDecision.value.recommendedCategoryId]
+      : []
+  return ids
+    .map((id) => getCategoryWithParentName(id))
+    .filter((label) => label)
 })
+
+const recommendedName = computed(() => recommendedLabels.value[0] || '')
 
 const formData = ref({
   youtubeVideoId: '',
@@ -179,20 +206,66 @@ const formData = ref({
 const searchQuery = ref('')
 const searchResults = ref([])
 
-const categories = [
-  { id: 1, name: '금융' },
-  { id: 2, name: '기술' },
-  { id: 3, name: '투자' },
+const parentCategories = [
+  { id: 1, name: '투자 교육' },
+  { id: 2, name: '종목 분석' },
+  { id: 3, name: '경제 동향' },
 ]
 
+const subCategories = [
+  { id: 11, parentId: 1, name: '기초 교육' },
+  { id: 12, parentId: 1, name: '분석 방법' },
+  { id: 13, parentId: 1, name: '투자 전략' },
+  { id: 21, parentId: 2, name: '재무 분석' },
+  { id: 22, parentId: 2, name: '산업 분석' },
+  { id: 23, parentId: 2, name: '종목 추천' },
+  { id: 31, parentId: 3, name: '국내 경제' },
+  { id: 32, parentId: 3, name: '국제 경제' },
+]
+
+const selectedParent = ref(null)
+
+const visibleSubCategories = computed(() => {
+  if (selectedParent.value === null) return []
+  return subCategories.filter((c) => c.parentId === selectedParent.value)
+})
+
 const getCategoryName = (id) => {
-  const target = categories.find((c) => c.id === Number(id))
+  const target = subCategories.find((c) => c.id === Number(id))
   return target ? target.name : ''
+}
+
+const getCategoryWithParentName = (id) => {
+  const cat = subCategories.find((c) => c.id === Number(id))
+  if (!cat) return ''
+  const parent = parentCategories.find((p) => p.id === cat.parentId)
+  return parent ? `${parent.name} > ${cat.name}` : cat.name
 }
 
 const markManualCategory = () => {
   manualCategorySelected.value = true
 }
+
+const selectParent = (parentId) => {
+  selectedParent.value = parentId
+  formData.value.categoryId = ''
+  manualCategorySelected.value = true
+}
+
+const selectChild = (categoryId) => {
+  formData.value.categoryId = categoryId
+  manualCategorySelected.value = true
+}
+
+watch(
+  () => formData.value.categoryId,
+  (val) => {
+    const cat = subCategories.find((c) => c.id === Number(val))
+    if (cat) {
+      selectedParent.value = cat.parentId
+    }
+  },
+)
 const extractYoutubeId = (input) => {
   if (!input) return ''
   const trimmed = input.trim()
@@ -793,5 +866,62 @@ const runAiCheck = async (silent = false, allowMissingCategory = false) => {
   color: #0f172a;
   font-size: 12px;
   font-weight: 600;
+}
+
+.category-pickers {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.category-scroll {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 8px 0;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
+.category-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.category-scroll::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+.category-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.category-scroll::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.category-chip {
+  flex-shrink: 0;
+  padding: 8px 14px;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.category-chip:hover {
+  background: #e5e7eb;
+}
+
+.category-chip.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
 }
 </style>
