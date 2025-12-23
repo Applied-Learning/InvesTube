@@ -214,13 +214,6 @@
               </div>
             </div>
             
-            <div class="metric-item" v-if="financialData.fcf">
-              <div class="metric-label">잉여현금흐름 (FCF)</div>
-              <div class="metric-value" :class="getProfitClass(financialData.fcf)">
-                {{ formatBigNumber(financialData.fcf) }}원
-              </div>
-            </div>
-            
             <div class="metric-item" v-if="financialData.perRatio">
               <div class="metric-label">PER</div>
               <div class="metric-value">
@@ -761,7 +754,6 @@ export default {
         'operatingMargin': '영업이익률',
         'roe': 'ROE',
         'debtRatio': '부채비율',
-        'fcf': '잉여현금',
         'per': 'PER',
         'pbr': 'PBR'
       }

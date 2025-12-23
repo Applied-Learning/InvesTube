@@ -101,7 +101,6 @@ public class FinancialAnalysisService {
             profile.setWeightOperatingMargin(defaultProfile.getWeightOperatingMargin());
             profile.setWeightRoe(defaultProfile.getWeightRoe());
             profile.setWeightDebtRatio(defaultProfile.getWeightDebtRatio());
-            profile.setWeightFcf(defaultProfile.getWeightFcf());
             profile.setWeightPer(defaultProfile.getWeightPer());
             profile.setWeightPbr(defaultProfile.getWeightPbr());
         }
@@ -141,17 +140,7 @@ public class FinancialAnalysisService {
             totalWeight = totalWeight.add(profile.getWeightDebtRatio());
         }
 
-        // 5. FCF 점수 (높을수록 좋음, -1000억~5000억 범위로 정규화)
-        if (financialData.getFcf() != null && profile.getWeightFcf() != null) {
-            BigDecimal fcfInBillion = BigDecimal.valueOf(financialData.getFcf()).divide(BigDecimal.valueOf(100), 4,
-                    RoundingMode.HALF_UP);
-            BigDecimal fcfScore = normalizeScore(fcfInBillion,
-                    BigDecimal.valueOf(-1000), BigDecimal.valueOf(5000), true);
-            totalScore = totalScore.add(fcfScore.multiply(profile.getWeightFcf()));
-            totalWeight = totalWeight.add(profile.getWeightFcf());
-        }
-
-        // 6. PER 점수 (낮을수록 좋음, 0~50 범위로 정규화, 역방향)
+        // 5. PER 점수 (낮을수록 좋음, 0~50 범위로 정규화, 역방향)
         if (financialData.getPerRatio() != null && profile.getWeightPer() != null) {
             BigDecimal perScore = normalizeScore(financialData.getPerRatio(),
                     BigDecimal.ZERO, BigDecimal.valueOf(50), false);
@@ -159,7 +148,7 @@ public class FinancialAnalysisService {
             totalWeight = totalWeight.add(profile.getWeightPer());
         }
 
-        // 7. PBR 점수 (낮을수록 좋음, 0~5 범위로 정규화, 역방향)
+        // 6. PBR 점수 (낮을수록 좋음, 0~5 범위로 정규화, 역방향)
         if (financialData.getPbrRatio() != null && profile.getWeightPbr() != null) {
             BigDecimal pbrScore = normalizeScore(financialData.getPbrRatio(),
                     BigDecimal.ZERO, BigDecimal.valueOf(5), false);
@@ -221,22 +210,20 @@ public class FinancialAnalysisService {
 
         switch (profileType) {
             case "안정형":
-                profile.setWeightRevenueGrowth(BigDecimal.valueOf(10));
+                profile.setWeightRevenueGrowth(BigDecimal.valueOf(15));
                 profile.setWeightOperatingMargin(BigDecimal.valueOf(25));
-                profile.setWeightRoe(BigDecimal.valueOf(15));
+                profile.setWeightRoe(BigDecimal.valueOf(20));
                 profile.setWeightDebtRatio(BigDecimal.valueOf(25));
-                profile.setWeightFcf(BigDecimal.valueOf(15));
-                profile.setWeightPer(BigDecimal.valueOf(5));
+                profile.setWeightPer(BigDecimal.valueOf(10));
                 profile.setWeightPbr(BigDecimal.valueOf(5));
                 break;
 
             case "성장형":
             case "공격형": // 공격형도 성장형과 동일한 가중치 사용
-                profile.setWeightRevenueGrowth(BigDecimal.valueOf(30));
+                profile.setWeightRevenueGrowth(BigDecimal.valueOf(35));
                 profile.setWeightOperatingMargin(BigDecimal.valueOf(15));
-                profile.setWeightRoe(BigDecimal.valueOf(25));
+                profile.setWeightRoe(BigDecimal.valueOf(30));
                 profile.setWeightDebtRatio(BigDecimal.valueOf(10));
-                profile.setWeightFcf(BigDecimal.valueOf(10));
                 profile.setWeightPer(BigDecimal.valueOf(5));
                 profile.setWeightPbr(BigDecimal.valueOf(5));
                 break;
@@ -244,31 +231,28 @@ public class FinancialAnalysisService {
             case "가치형":
                 profile.setWeightRevenueGrowth(BigDecimal.valueOf(15));
                 profile.setWeightOperatingMargin(BigDecimal.valueOf(15));
-                profile.setWeightRoe(BigDecimal.valueOf(10));
+                profile.setWeightRoe(BigDecimal.valueOf(15));
                 profile.setWeightDebtRatio(BigDecimal.valueOf(15));
-                profile.setWeightFcf(BigDecimal.valueOf(10));
-                profile.setWeightPer(BigDecimal.valueOf(20));
+                profile.setWeightPer(BigDecimal.valueOf(25));
                 profile.setWeightPbr(BigDecimal.valueOf(15));
                 break;
 
             case "현금흐름형":
-                profile.setWeightRevenueGrowth(BigDecimal.valueOf(15));
-                profile.setWeightOperatingMargin(BigDecimal.valueOf(15));
-                profile.setWeightRoe(BigDecimal.valueOf(10));
+                profile.setWeightRevenueGrowth(BigDecimal.valueOf(20));
+                profile.setWeightOperatingMargin(BigDecimal.valueOf(25));
+                profile.setWeightRoe(BigDecimal.valueOf(20));
                 profile.setWeightDebtRatio(BigDecimal.valueOf(20));
-                profile.setWeightFcf(BigDecimal.valueOf(30));
-                profile.setWeightPer(BigDecimal.valueOf(5));
+                profile.setWeightPer(BigDecimal.valueOf(10));
                 profile.setWeightPbr(BigDecimal.valueOf(5));
                 break;
 
             default: // 균형형
                 profile.setWeightRevenueGrowth(BigDecimal.valueOf(20));
                 profile.setWeightOperatingMargin(BigDecimal.valueOf(20));
-                profile.setWeightRoe(BigDecimal.valueOf(15));
-                profile.setWeightDebtRatio(BigDecimal.valueOf(15));
-                profile.setWeightFcf(BigDecimal.valueOf(15));
+                profile.setWeightRoe(BigDecimal.valueOf(20));
+                profile.setWeightDebtRatio(BigDecimal.valueOf(20));
                 profile.setWeightPer(BigDecimal.valueOf(10));
-                profile.setWeightPbr(BigDecimal.valueOf(5));
+                profile.setWeightPbr(BigDecimal.valueOf(10));
                 break;
         }
 

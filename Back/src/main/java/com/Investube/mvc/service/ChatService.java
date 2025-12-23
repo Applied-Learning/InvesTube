@@ -51,6 +51,7 @@ public class ChatService {
             // 3. GMS OpenAI API 호출 (system/user 분리)
             System.out.println("[ChatService] GMS API 호출 중...");
             String response = openaiClient.callGPTWithRoles(systemPrompt, userPrompt);
+            ;
             System.out.println("[ChatService] API 응답 수신 완료");
 
             return response;

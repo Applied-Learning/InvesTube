@@ -2,7 +2,7 @@ package com.Investube.mvc.service;
 
 import com.Investube.mvc.model.dto.*;
 import com.Investube.mvc.util.AiPromptBuilder;
-import com.Investube.mvc.util.OpenAIApiClient;
+import com.Investube.mvc.util.GeminiApiClient;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,7 +22,7 @@ import java.math.RoundingMode;
 public class AIAnalysisService {
 
     @Autowired
-    private OpenAIApiClient openaiClient;
+    private GeminiApiClient geminiClient;
 
     @Autowired
     private AiPromptBuilder promptBuilder;
@@ -61,10 +61,10 @@ public class AIAnalysisService {
             String userPrompt = prompts[1];
 
             // 3. OpenAI GPT API 호출 (system/user 역할 분리)
-            String aiResponse = openaiClient.callGPTWithRoles(systemPrompt, userPrompt);
+            String aiResponse = geminiClient.callGemini(systemPrompt, userPrompt);
 
             // 4. JSON 응답 파싱
-            String jsonResponse = openaiClient.extractJsonFromResponse(aiResponse);
+            String jsonResponse = geminiClient.extractJsonFromResponse(aiResponse);
             AiAnalysisResult result = objectMapper.readValue(jsonResponse, AiAnalysisResult.class);
 
             // 5. 보정 범위 검증 및 제한
@@ -163,7 +163,7 @@ public class AIAnalysisService {
         try {
             String systemPrompt = "너는 투자 관련 질문에 답변하는 AI 챗봇이다. 구체적 투자 조언은 하지 마라. 재무 지표 설명, 용어 해설에 집중하라. 간결하고 명확하게 답변하라.";
             String userPrompt = String.format("컨텍스트: %s\n\n사용자 질문: %s", context, userMessage);
-            return openaiClient.callGPTWithRoles(systemPrompt, userPrompt);
+            return geminiClient.callGemini(systemPrompt, userPrompt);
         } catch (Exception e) {
             System.err.println("챗봇 응답 실패: " + e.getMessage());
             return "죄송합니다. 현재 응답할 수 없습니다.";
