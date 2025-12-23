@@ -1,10 +1,12 @@
 package com.Investube.mvc.model.service;
 
 import java.util.List;
-import com.Investube.mvc.model.dto.Stock;
-import com.Investube.mvc.model.dto.StockPrice;
-import com.Investube.mvc.model.dto.StockDetailDto;
+import java.util.Map;
+
 import com.Investube.mvc.model.dto.KrxIndexResponse;
+import com.Investube.mvc.model.dto.Stock;
+import com.Investube.mvc.model.dto.StockDetailDto;
+import com.Investube.mvc.model.dto.StockPrice;
 
 public interface StockService {
 
@@ -30,23 +32,26 @@ public interface StockService {
 
     boolean registerStockPrice(StockPrice stockPrice);
 
-    // 상세 정보
+    // 리스트 정보
     List<StockDetailDto> getStockListWithLatestPrice();
 
     StockDetailDto getStockDetail(String stockCode);
 
     // API 연동
-    void syncStockDataFromDart(); // 초기 대량 수집 (90일)
+    void syncStockDataFromDart(); // 초기 전체 동기화 (90일)
 
-    void syncTodayStockData(); // 오늘 데이터만 수집 (스케줄러용)
+    void syncTodayStockData(); // 오늘 데이터만 동기화 (스케줄러용)
 
-    void syncStockDataByDate(String dateStr); // 특정 날짜 데이터 수집 (yyyyMMdd 형식)
+    void syncStockDataByDate(String dateStr); // 특정 날짜 동기화 (yyyyMMdd 포맷)
 
     void syncStockPriceFromKrx(String stockCode);
 
-    // 지수 정보 조회
+    // 지수정보 조회
     List<KrxIndexResponse.KrxIndexItem> getKrxIndices();
 
-    // DB 데이터를 JSON 파일로 내보내기
+    // DB 데이터 -> JSON 파일로 백업/캐시
     void exportDbToJson();
+
+    // JSON 파일 -> DB 초기 적재/복원
+    Map<String, Integer> importStockPricesFromJson();
 }

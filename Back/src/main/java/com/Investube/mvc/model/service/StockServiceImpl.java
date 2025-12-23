@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
+import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
@@ -38,6 +40,19 @@ public class StockServiceImpl implements StockService {
     private String krxApiKey;
 
     private final RestTemplate restTemplate = new RestTemplate();
+
+    @PostConstruct
+    public void initImportFromJsonIfEmpty() {
+        try {
+            int count = stockDao.countStocks();
+            if (count == 0) {
+                System.out.println("[StockService] Stock 테이블이 비어있음 -> JSON import 실행");
+                importStockPricesFromJson();
+            }
+        } catch (Exception e) {
+            System.err.println("[StockService] 초기 JSON import 실패: " + e.getMessage());
+        }
+    }
 
     @Override
     public List<Stock> getAllStocks() {
@@ -117,6 +132,107 @@ public class StockServiceImpl implements StockService {
     public void syncStockPriceFromKrx(String stockCode) {
         // 특정 종목 동기화는 현재 미구현 (전체 동기화만 지원)
         System.out.println("개별 종목 동기화는 전체 동기화를 사용하세요: syncStockDataFromDart()");
+    }
+
+    /**
+     * JSON 파일 데이터를 DB로 적재 (초기 실행/복원용)
+     */
+    @Override
+    @Transactional
+    public Map<String, Integer> importStockPricesFromJson() {
+        Map<String, Integer> stats = new HashMap<>();
+        int filesProcessed = 0;
+        int stocksUpserted = 0;
+        int pricesUpserted = 0;
+
+        try {
+            List<String> stockCodes = stockPriceFileService.getAllStockCodes();
+            int totalFiles = stockCodes.size();
+
+            System.out.println("[JSON Import] 시작 (총 " + totalFiles + "개)");
+
+            int fileIndex = 0;
+            for (String code : stockCodes) {
+                fileIndex++;
+                filesProcessed++;
+                int pricesAddedForFile = 0;
+                List<StockPrice> batchList = new ArrayList<>();
+
+                Map<String, Object> data = stockPriceFileService.loadFromFile(code);
+                String stockName = Objects.toString(data.getOrDefault("stockName", code), code);
+
+                // Stock이 없으면 생성
+                if (stockDao.selectStockByCode(code) == null) {
+                    Stock stock = new Stock();
+                    stock.setStockCode(code);
+                    stock.setStockName(stockName);
+                    stock.setMarket(null);
+                    stock.setIndustry(null);
+                    try {
+                        stockDao.insertStock(stock);
+                        stocksUpserted++;
+                    } catch (Exception ignored) {
+                        // 중복/경합은 무시
+                    }
+                }
+
+                @SuppressWarnings("unchecked")
+                List<Map<String, Object>> prices = (List<Map<String, Object>>) data.get("prices");
+                if (prices != null) {
+                    for (Map<String, Object> priceMap : prices) {
+                        LocalDate tradeDate = parseDateObject(priceMap.get("tradeDate"));
+                        if (tradeDate == null) {
+                            continue;
+                        }
+
+                        StockPrice stockPrice = new StockPrice();
+                        stockPrice.setStockCode(code);
+                        stockPrice.setTradeDate(tradeDate);
+                        stockPrice.setOpenPrice(parseBigDecimalObject(priceMap.get("openPrice")));
+                        stockPrice.setHighPrice(parseBigDecimalObject(priceMap.get("highPrice")));
+                        stockPrice.setLowPrice(parseBigDecimalObject(priceMap.get("lowPrice")));
+                        stockPrice.setClosePrice(parseBigDecimalObject(priceMap.get("closePrice")));
+                        stockPrice.setVolume(parseLongObject(priceMap.get("volume")));
+                        stockPrice.setMarketCap(parseLongObject(priceMap.get("marketCap")));
+                        batchList.add(stockPrice);
+                    }
+                }
+
+                if (!batchList.isEmpty()) {
+                    try {
+                        stockDao.insertStockPricesBatch(batchList);
+                        pricesUpserted += batchList.size();
+                        pricesAddedForFile = batchList.size();
+                    } catch (Exception ignored) {
+                        // 배치 실패 시 개별 처리로 폴백
+                        for (StockPrice sp : batchList) {
+                            try {
+                                stockDao.insertStockPrice(sp);
+                                pricesUpserted++;
+                                pricesAddedForFile++;
+                            } catch (Exception innerIgnored) {
+                                // 개별 행 실패는 계속 진행
+                            }
+                        }
+                    }
+                }
+
+                System.out.println("[JSON Import] (" + fileIndex + "/" + totalFiles + ") " + code
+                        + " 완료 - 가격 " + pricesAddedForFile + "건 추가/업서트");
+            }
+
+            stats.put("filesProcessed", filesProcessed);
+            stats.put("stocksUpserted", stocksUpserted);
+            stats.put("pricesUpserted", pricesUpserted);
+
+            System.out.println("[JSON Import] 완료: files=" + filesProcessed + ", stocks=" + stocksUpserted
+                    + ", prices=" + pricesUpserted);
+            return stats;
+        } catch (Exception e) {
+            System.err.println("JSON -> DB import 실패: " + e.getMessage());
+            e.printStackTrace();
+            throw new RuntimeException("JSON import failed", e);
+        }
     }
 
     /**
@@ -473,6 +589,39 @@ public class StockServiceImpl implements StockService {
             return Long.parseLong(str.replace(",", ""));
         } catch (Exception e) {
             return 0L;
+        }
+    }
+
+    private LocalDate parseDateObject(Object value) {
+        if (value == null) {
+            return null;
+        }
+        try {
+            return LocalDate.parse(value.toString());
+        } catch (Exception e) {
+            return null;
+        }
+    }
+
+    private BigDecimal parseBigDecimalObject(Object value) {
+        if (value == null) {
+            return null;
+        }
+        try {
+            return new BigDecimal(value.toString().replace(",", ""));
+        } catch (Exception e) {
+            return null;
+        }
+    }
+
+    private Long parseLongObject(Object value) {
+        if (value == null) {
+            return null;
+        }
+        try {
+            return Long.parseLong(value.toString().replace(",", ""));
+        } catch (Exception e) {
+            return null;
         }
     }
 
