@@ -283,9 +283,13 @@ public class DartApiService {
                 Long amount = Long.parseLong(amountStr);
 
                 // contains 기반 유연한 매칭 (우선순위 순서, 한 번만 할당)
-                // 매출액
+                // 매출액 (지주회사의 경우 '매출및지분법손익' 또는 세부 매출 항목 사용)
                 if (!data.containsKey("revenue") &&
-                        (accountName.contains("매출액") || accountName.contains("영업수익") || accountName.equals("매출"))) {
+                        (accountName.contains("매출액") ||
+                                accountName.contains("영업수익") ||
+                                accountName.equals("매출") ||
+                                accountName.equals("매출및지분법손익") || // 지주회사 전체 매출
+                                accountName.equals("제품및상품매출"))) { // 제조업 세부 매출
                     data.put("revenue", amount);
                 }
                 // 영업이익
