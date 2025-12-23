@@ -116,6 +116,36 @@ public class VideoRestController {
 		
 		return new ResponseEntity<>(response, HttpStatus.OK);
 	}
+
+	// ?€ë¶„ë¥˜ë¥¼ ? íƒí•œ ê²°ê³¼ (?˜ì´ì§?ì§€??)
+	@GetMapping("/parent/{parentId}")
+	public ResponseEntity<Map<String, Object>> getVideosByParentCategory(
+			@PathVariable int parentId,
+			@RequestParam(required = false) Integer page,
+			@RequestParam(required = false) Integer size) {
+		
+		if (page == null || size == null) {
+			page = 1;
+			size = 12;
+		}
+		
+		if (page < 1) page = 1;
+		if (size < 1 || size > 100) size = 12;
+		
+		int offset = (page - 1) * size;
+		
+		List<Video> videos = videoService.getVideosByParentCategory(parentId, offset, size);
+		int totalCount = videoService.getVideosCountByParentCategory(parentId);
+		
+		Map<String, Object> response = new HashMap<>();
+		response.put("videos", videos);
+		response.put("currentPage", page);
+		response.put("pageSize", size);
+		response.put("totalCount", totalCount);
+		response.put("totalPages", (int) Math.ceil((double) totalCount / size));
+		
+		return new ResponseEntity<>(response, HttpStatus.OK);
+	}
 	
 	// 비디오 ID로 조회 (영상 상세 조회)
 	@Operation(summary = "동영상 상세 조회", description = "동영상 ID로 특정 동영상의 상세 정보를 조회합니다. 조회수가 1 증가합니다")

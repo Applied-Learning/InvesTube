@@ -56,9 +56,28 @@
       </div>
 
       <!-- 카테고리 칩 (가로 스크롤) -->
-      <div v-if="!isSearchMode" class="category-scroll">
+      <!-- 카테고리: 대분류 -->
+      <div v-if="!isSearchMode" class="category-scroll parent-scroll">
         <button
-          v-for="category in categories"
+          v-for="parent in parentCategories"
+          :key="parent.id ?? 'all'"
+          :class="['category-chip', { active: selectedParent === parent.id }]"
+          @click="changeParent(parent.id)"
+        >
+          {{ parent.name }}
+        </button>
+      </div>
+
+      <!-- 카테고리: 중분류 -->
+      <div v-if="!isSearchMode && selectedParent !== null" class="category-scroll child-scroll">
+        <button
+          :class="['category-chip', { active: selectedCategory === null }]"
+          @click="clearChildCategory"
+        >
+          전체
+        </button>
+        <button
+          v-for="category in visibleSubCategories"
           :key="category.id"
           :class="['category-chip', { active: selectedCategory === category.id }]"
           @click="changeCategory(category.id)"
@@ -170,6 +189,7 @@ import VideoCard from '../components/video/VideoCard.vue'
 import {
   getVideos,
   getVideosByCategory,
+  getVideosByParentCategory,
   getWishedVideos,
   toggleVideoWish,
   searchVideos,
@@ -184,6 +204,7 @@ const videos = ref([])
 const loading = ref(false)
 const error = ref(null)
 const sortBy = ref('latest')
+const selectedParent = ref(null)
 const selectedCategory = ref(null)
 const isWishlistRoute = computed(() => route.meta.isWishlist === true)
 const isWishlist = ref(false)
@@ -199,12 +220,30 @@ const totalCount = ref(0)
 const searchKeyword = ref('')
 const isSearchMode = ref(false)
 
-const categories = [
+const parentCategories = [
   { id: null, name: '전체' },
-  { id: 1, name: '금융' },
-  { id: 2, name: '기술' },
-  { id: 3, name: '투자' },
+  { id: 1, name: '투자 교육' },
+  { id: 2, name: '종목 분석' },
+  { id: 3, name: '경제 동향' },
 ]
+
+const subCategories = [
+  { id: 11, parentId: 1, name: '기초 교육' },
+  { id: 12, parentId: 1, name: '분석 방법' },
+  { id: 13, parentId: 1, name: '투자 전략' },
+  { id: 21, parentId: 2, name: '재무 분석' },
+  { id: 22, parentId: 2, name: '산업 분석' },
+  { id: 23, parentId: 2, name: '종목 추천' },
+  { id: 31, parentId: 3, name: '국내 경제' },
+  { id: 32, parentId: 3, name: '국제 경제' },
+]
+
+const visibleSubCategories = computed(() => {
+  if (selectedParent.value === null) {
+    return subCategories
+  }
+  return subCategories.filter((c) => c.parentId === selectedParent.value)
+})
 
 const sortOptions = [
   { value: 'latest', label: '최신순' },
@@ -247,6 +286,9 @@ const fetchVideos = async () => {
     } else if (isSearchMode.value && searchKeyword.value.trim()) {
       // 검색 모드
       response = await searchVideos({ ...params, keyword: searchKeyword.value.trim() })
+    } else if (selectedParent.value !== null && selectedCategory.value === null) {
+      // 대분류만 선택된 경우
+      response = await getVideosByParentCategory(selectedParent.value, params)
     } else if (selectedCategory.value === null) {
       // 전체 조회
       response = await getVideos({ ...params, sortBy: sortBy.value })
@@ -266,6 +308,8 @@ const fetchVideos = async () => {
       uploaderName: video.uploaderNickname || `사용자 ${video.userId}`,
       uploaderProfileImageUrl: video.uploaderProfileImage || '',
       views: video.viewCount,
+      avgRating: video.avgRating,
+      reviewCount: video.reviewCount,
       createdAtText: video.createdAt ? formatKSTDate(video.createdAt) : '',
       duration: video.duration || '',
       wished: isWishlist.value ? true : wishedVideoIds.value.has(video.videoId),
@@ -283,10 +327,35 @@ const fetchVideos = async () => {
 }
 
 // 카테고리 변경
+const changeParent = (parentId) => {
+  isWishlist.value = false
+  selectedParent.value = parentId
+  selectedCategory.value = null
+  isSearchMode.value = false
+  searchKeyword.value = ''
+  currentPage.value = 1
+  videos.value = []
+  totalCount.value = 0
+  router.replace({ path: '/', query: {} })
+  fetchVideos()
+}
+
 const changeCategory = (categoryId) => {
   isWishlist.value = false
   selectedCategory.value = categoryId
+  // 선택된 중분류에 맞춰 상위 카테고리 동기화
+  const parent = subCategories.find((c) => c.id === categoryId)?.parentId ?? null
+  selectedParent.value = parent
   currentPage.value = 1 // 첫 페이지로 리셋
+  router.replace({ path: '/', query: {} })
+  fetchVideos()
+}
+
+const clearChildCategory = () => {
+  // 중분류 '전체' 선택: 부모는 유지하고 자식만 해제
+  isWishlist.value = false
+  selectedCategory.value = null
+  currentPage.value = 1
   router.replace({ path: '/', query: {} })
   fetchVideos()
 }
@@ -367,6 +436,7 @@ const syncWishlistFromRoute = () => {
 }
 
 const resetFilters = () => {
+  selectedParent.value = null
   selectedCategory.value = null
   sortBy.value = 'latest'
   searchKeyword.value = ''
@@ -386,6 +456,7 @@ const selectWishlistTab = () => {
   isWishlist.value = true
   isSearchMode.value = false
   searchKeyword.value = ''
+  selectedParent.value = null
   selectedCategory.value = null
   currentPage.value = 1
   router.replace({ path: '/', query: { tab: 'wishlist' } })
@@ -399,6 +470,7 @@ const handleSearch = () => {
   if (keyword) {
     isWishlist.value = false
     isSearchMode.value = true
+    selectedParent.value = null
     selectedCategory.value = null
     currentPage.value = 1
     router.replace({ path: '/', query: {} })
@@ -573,6 +645,14 @@ const toggleWish = async (video) => {
 
 .category-scroll::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
+}
+
+.parent-scroll {
+  margin-bottom: 6px;
+}
+
+.child-scroll {
+  margin-top: 4px;
 }
 
 .category-chip {

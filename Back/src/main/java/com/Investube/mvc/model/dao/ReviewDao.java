@@ -31,4 +31,7 @@ public interface ReviewDao {
 	// 작성한 리뷰 조회
 	List<Review> getReviewsByUser(@Param("userId") int userId);
 
+	// 특정 사용자-영상 조합 리뷰 조회
+	Review selectByVideoAndUser(@Param("videoId") int videoId, @Param("userId") int userId);
+
 }

@@ -53,6 +53,13 @@
 	    WHERE user_id = #{userId}
 	    ORDER BY created_at DESC
 	</select>
+
+	<!-- 특정 사용자-영상 조합 리뷰 조회 -->
+	<select id="selectByVideoAndUser" resultType="Review">
+		SELECT *
+		FROM reviews
+		WHERE video_id = #{videoId} AND user_id = #{userId}
+	</select>
 	
 
 </mapper>

@@ -28,14 +28,30 @@ INSERT INTO users (user_id, id, password, email, nickname, profile_image, create
 -- Table: category
 
 CREATE TABLE IF NOT EXISTS category (
-category_id INT AUTO_INCREMENT PRIMARY KEY,
-name VARCHAR(50) UNIQUE
+category_id INT PRIMARY KEY,
+name VARCHAR(50) UNIQUE,
+parent_id INT NULL,
+FOREIGN KEY (parent_id) REFERENCES category(category_id)
 );
 
-INSERT INTO category (category_id, name) VALUES
-(1, '금융'),
-(2, '기술'),
-(3, '투자');
+-- Category codes (대분류/중분류)
+-- 1: 투자 교육, 2: 종목 분석, 3: 경제 동향
+-- 11: 기초 교육, 12: 분석 방법, 13: 투자 전략
+-- 21: 재무 분석, 22: 산업 분석, 23: 종목 추천
+-- 31: 국내 경제, 32: 국제 경제
+(23: 종목 추천)
+INSERT INTO category (category_id, name, parent_id) VALUES
+(1, '투자 교육', NULL),
+(2, '종목 분석', NULL),
+(3, '경제 동향', NULL),
+(11, '기초 교육', 1),
+(12, '분석 방법', 1),
+(13, '투자 전략', 1),
+(21, '재무 분석', 2),
+(22, '산업 분석', 2),
+(23, '종목 추천', 2),
+(31, '국내 경제', 3),
+(32, '국제 경제', 3);
 
 -- Table: videos
 
@@ -58,11 +74,11 @@ FOREIGN KEY (category_id) REFERENCES category(category_id)
 );
 
 INSERT INTO videos (video_id, user_id, youtube_video_id, title, thumbnail_url, description, category_id, view_count, wish_count, review_count, avg_rating, created_at, updated_at) VALUES
-(1, 1, 'nqbKOvQ8x1s', '금융 투자 기초', 'https://i.ytimg.com/vi/nqbKOvQ8x1s/hqdefault.jpg', '이 영상은 금융 투자 기초에 대해 설명합니다.', 1, 1000, 1, 1, 4, NOW(), NOW()),
-(2, 2, 'ROLPR_eIrVg', '기술의 발전과 미래', 'https://i.ytimg.com/vi/ROLPR_eIrVg/hqdefault.jpg', '기술의 발전이 사회에 미치는 영향에 대해 다룹니다.', 2, 2000, 1, 1, 5, NOW(), NOW()),
-(3, 3, 'hm-tW-O4YXw', '투자 전략 분석', 'https://i.ytimg.com/vi/hm-tW-O4YXw/hqdefault.jpg', '이 영상에서는 투자 전략에 대해 다루고 있습니다.', 3, 3000, 1, 1, 5, NOW(), NOW()),
-(4, 4, 'YWgI4_Az7f4', '경제 성장과 투자', 'https://i.ytimg.com/vi/YWgI4_Az7f4/hqdefault.jpg', '경제 성장에 따른 투자 기회를 분석합니다.', 3, 1200, 1, 1, 4, NOW(), NOW()),
-(5, 5, '8H1B836CAcI', '블록체인 기술의 미래', 'https://i.ytimg.com/vi/8H1B836CAcI/hqdefault.jpg', '블록체인 기술의 발전과 미래 가능성에 대해 설명합니다.', 2, 5000, 1, 1, 5, NOW(), NOW());
+(1, 1, 'nqbKOvQ8x1s', '금융 투자 기초', 'https://i.ytimg.com/vi/nqbKOvQ8x1s/hqdefault.jpg', '이 영상은 금융 투자 기초에 대해 설명합니다.', 11, 1000, 1, 1, 4, NOW(), NOW()),
+(2, 2, 'ROLPR_eIrVg', '기술의 발전과 미래', 'https://i.ytimg.com/vi/ROLPR_eIrVg/hqdefault.jpg', '기술의 발전이 사회에 미치는 영향에 대해 다룹니다.', 12, 2000, 1, 1, 5, NOW(), NOW()),
+(3, 3, 'hm-tW-O4YXw', '투자 전략 분석', 'https://i.ytimg.com/vi/hm-tW-O4YXw/hqdefault.jpg', '이 영상에서는 투자 전략에 대해 다루고 있습니다.', 13, 3000, 1, 1, 5, NOW(), NOW()),
+(4, 4, 'YWgI4_Az7f4', '경제 성장과 투자', 'https://i.ytimg.com/vi/YWgI4_Az7f4/hqdefault.jpg', '경제 성장에 따른 투자 기회를 분석합니다.', 31, 1200, 1, 1, 4, NOW(), NOW()),
+(5, 5, '8H1B836CAcI', '블록체인 기술의 미래', 'https://i.ytimg.com/vi/8H1B836CAcI/hqdefault.jpg', '블록체인 기술의 발전과 미래 가능성에 대해 설명합니다.', 12, 5000, 1, 1, 5, NOW(), NOW());
 
 -- Table: reviews
 
@@ -75,7 +91,8 @@ rating DECIMAL(2,1),
 created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
 updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 FOREIGN KEY (video_id) REFERENCES videos(video_id) ON DELETE CASCADE,
-FOREIGN KEY (user_id) REFERENCES users(user_id)
+FOREIGN KEY (user_id) REFERENCES users(user_id),
+UNIQUE KEY unique_video_user (video_id, user_id)
 );
 
 INSERT INTO reviews (review_id, video_id, user_id, content, rating, created_at, updated_at) VALUES

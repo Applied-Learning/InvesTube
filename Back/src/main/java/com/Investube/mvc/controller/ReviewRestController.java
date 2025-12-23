@@ -78,7 +78,7 @@ public class ReviewRestController {
 		review.setVideoId(videoId);
 		review.setUserId(userId);
 		
-		if (reviewService.createReview(review)) {
+		if (reviewService.upsertReviewByUserAndVideo(review)) {
 			videoService.updateRatingStats(videoId);
 			// create notification to video owner (if reviewer is not the owner)
 			try {

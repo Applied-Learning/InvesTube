@@ -83,6 +83,16 @@ export const searchVideos = (params) => {
 }
 
 /**
+ * 대분류별 비디오 조회
+ * @param {number} parentId
+ * @param {Object} params - { page, size }
+ * @returns {Promise}
+ */
+export const getVideosByParentCategory = (parentId, params = {}) => {
+  return http.get(`/videos/parent/${parentId}`, { params })
+}
+
+/**
  * 카테고리별 비디오 조회
  * @param {number} categoryId
  * @param {Object} params - { page, size }

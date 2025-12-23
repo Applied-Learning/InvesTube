@@ -216,47 +216,170 @@
 
       <!-- 리뷰 섹션 -->
       <div class="reviews-section">
-        <h2>리뷰 ({{ reviews.length }})</h2>
+        <div class="reviews-header-row">
+          <h2>리뷰 ({{ reviews.length }})</h2>
+          <div v-if="filteredReviews.length" class="review-sort">
+            <label for="reviewSort">정렬:</label>
+            <select id="reviewSort" v-model="reviewSortKey">
+              <option v-for="opt in reviewSortOptions" :key="opt.value" :value="opt.value">
+                {{ opt.label }}
+              </option>
+            </select>
+          </div>
+        </div>
 
         <!-- 리뷰 작성 폼 -->
-        <div v-if="authStore.isAuthenticated" class="review-form">
-          <h3>리뷰 작성하기</h3>
-          <div class="rating-input">
-            <label>평점:</label>
-            <div class="star-rating">
-              <button
-                v-for="star in 5"
-                :key="star"
-                type="button"
-                class="star-btn"
-                :class="{ active: star <= newReview.rating }"
-                @click="newReview.rating = star"
-              >
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
-                    :fill="star <= newReview.rating ? 'currentColor' : 'none'"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  />
-                </svg>
-              </button>
-              <span class="rating-value">{{ newReview.rating }}</span>
+        <div v-if="authStore.isAuthenticated">
+          <template v-if="myReview">
+            <div class="review-item my-review">
+              <div class="my-review-top">
+                <span class="badge">내 리뷰</span>
+                <div class="review-meta my-review-meta">
+                  <span class="review-date my-review-date">{{ formatDate(myReview.createdAt) }}</span>
+                  <div class="review-actions">
+                    <button @click="startEditReview(myReview)" class="action-btn edit-btn">수정</button>
+                    <button @click="removeReview(myReview.reviewId)" class="action-btn delete-btn">삭제</button>
+                  </div>
+                </div>
+              </div>
+              <template v-if="editingReview && editingReview.reviewId === myReview.reviewId">
+                <div class="review-edit">
+                  <div class="rating-input">
+                    <label>평점:</label>
+                    <div class="star-rating">
+                      <button
+                        v-for="star in 5"
+                        :key="star"
+                        type="button"
+                        class="star-btn"
+                        :class="{ active: star <= editingReview.rating }"
+                        @click="editingReview.rating = star"
+                      >
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                            :fill="star <= editingReview.rating ? 'currentColor' : 'none'"
+                            stroke="currentColor"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </button>
+                      <span class="rating-value">{{ editingReview.rating }}</span>
+                    </div>
+                  </div>
+                  <textarea v-model="editingReview.content" rows="4" class="review-textarea"></textarea>
+                  <div class="edit-actions">
+                    <button @click="submitEditReview" class="save-btn">저장</button>
+                    <button @click="cancelEditReview" class="cancel-btn">취소</button>
+                  </div>
+                </div>
+              </template>
+              <template v-else>
+                <div class="review-rating my-review-rating">
+                  <span v-for="star in 5" :key="star" class="star-icon">
+                    <svg
+                      v-if="star <= Math.floor(myReview.rating)"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      />
+                    </svg>
+                    <svg
+                      v-else-if="star === Math.ceil(myReview.rating) && myReview.rating % 1 !== 0"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <defs>
+                        <linearGradient :id="`half-my-${star}`">
+                          <stop offset="50%" stop-color="currentColor" />
+                          <stop offset="50%" stop-color="transparent" />
+                        </linearGradient>
+                      </defs>
+                      <path
+                        d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                        :fill="`url(#half-my-${star})`"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      />
+                    </svg>
+                    <svg
+                      v-else
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      />
+                    </svg>
+                  </span>
+                  <span class="rating-text">{{ myReview.rating }}</span>
+                </div>
+                <p class="review-text">{{ myReview.content }}</p>
+              </template>
             </div>
-          </div>
-          <textarea
-            v-model="newReview.content"
-            placeholder="이 영상에 대한 평가를 남겨주세요..."
-            rows="4"
-            class="review-textarea"
-          ></textarea>
-          <button @click="submitReview" class="submit-btn">리뷰 등록</button>
+          </template>
+          <template v-else>
+            <div class="review-form">
+              <h3>리뷰 작성하기</h3>
+              <div class="rating-input">
+                <label>평점:</label>
+                <div class="star-rating">
+                  <button
+                    v-for="star in 5"
+                    :key="star"
+                    type="button"
+                    class="star-btn"
+                    :class="{ active: star <= newReview.rating }"
+                    @click="newReview.rating = star"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                        :fill="star <= newReview.rating ? 'currentColor' : 'none'"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      />
+                    </svg>
+                  </button>
+                  <span class="rating-value">{{ newReview.rating }}</span>
+                </div>
+              </div>
+              <textarea
+                v-model="newReview.content"
+                placeholder="이 영상에 대한 평가를 남겨주세요..."
+                rows="4"
+                class="review-textarea"
+              ></textarea>
+              <button @click="submitReview" class="submit-btn">리뷰 등록</button>
+            </div>
+          </template>
         </div>
         <div v-else class="login-prompt">
           <p>리뷰를 작성하려면 로그인이 필요합니다.</p>
@@ -265,8 +388,8 @@
         <!-- 리뷰 목록 -->
         <div v-if="reviewsLoading" class="loading">리뷰 로딩 중...</div>
         <div v-else-if="reviews.length === 0" class="no-reviews">아직 작성된 리뷰가 없습니다.</div>
-        <div v-else class="reviews-list">
-          <div v-for="review in reviews" :key="review.reviewId" class="review-item">
+        <div v-else :class="['reviews-list', { 'with-gap': myReview }]">
+          <div v-for="review in sortedFilteredReviews" :key="review.reviewId" class="review-item">
             <!-- 수정 모드 -->
             <div
               v-if="editingReview && editingReview.reviewId === review.reviewId"
@@ -429,11 +552,47 @@ const reviews = ref([])
 const reviewsLoading = ref(false)
 const newReview = ref({ content: '', rating: 5 })
 const editingReview = ref(null)
+const myReview = computed(() => {
+  if (!authStore.userId) return null
+  return reviews.value.find((r) => r.userId === parseInt(authStore.userId))
+})
+const reviewSortOptions = [
+  { value: 'latest', label: '최신순' },
+  { value: 'oldest', label: '오래된순' },
+  { value: 'ratingDesc', label: '별점 높은순' },
+  { value: 'ratingAsc', label: '별점 낮은순' },
+]
+const reviewSortKey = ref('latest')
+const filteredReviews = computed(() => {
+  if (!myReview.value) return reviews.value
+  return reviews.value.filter((r) => r.reviewId !== myReview.value.reviewId)
+})
+const sortedFilteredReviews = computed(() => {
+  const list = filteredReviews.value.slice()
+  const getDate = (r) => new Date(r.createdAt).getTime()
+  switch (reviewSortKey.value) {
+    case 'oldest':
+      return list.sort((a, b) => getDate(a) - getDate(b))
+    case 'ratingDesc':
+      return list.sort((a, b) => b.rating - a.rating || getDate(b) - getDate(a))
+    case 'ratingAsc':
+      return list.sort((a, b) => a.rating - b.rating || getDate(b) - getDate(a))
+    case 'latest':
+    default:
+      return list.sort((a, b) => getDate(b) - getDate(a))
+  }
+})
+const reviewSubmitLabel = computed(() => (myReview.value ? '리뷰 수정' : '리뷰 등록'))
 
 const categories = {
-  1: '금융',
-  2: '기술',
-  3: '투자',
+  11: '기초 교육',
+  12: '분석 방법',
+  13: '투자 전략',
+  21: '재무 분석',
+  22: '산업 분석',
+  23: '종목 추천',
+  31: '국내 경제',
+  32: '국제 경제',
 }
 
 const getCategoryName = (id) => {
@@ -630,6 +789,15 @@ const fetchReviews = async () => {
   try {
     const response = await getReviewsByVideoId(route.params.id)
     reviews.value = response.data
+    // 본인 리뷰가 있으면 폼에 미리 채움
+    if (myReview.value) {
+      newReview.value = {
+        content: myReview.value.content,
+        rating: myReview.value.rating,
+      }
+    } else {
+      newReview.value = { content: '', rating: 5 }
+    }
   } catch (err) {
     console.error('리뷰 목록 조회 실패:', err)
   } finally {
@@ -650,11 +818,15 @@ const submitReview = async () => {
   }
 
   try {
-    await createReview(route.params.id, newReview.value)
-    newReview.value = { content: '', rating: 5 }
+    if (myReview.value) {
+      await updateReview(route.params.id, myReview.value.reviewId, newReview.value)
+      alert('리뷰가 수정되었습니다.')
+    } else {
+      await createReview(route.params.id, newReview.value)
+      alert('리뷰가 작성되었습니다.')
+    }
     await fetchReviews()
     await fetchVideoDetail()
-    alert('리뷰가 작성되었습니다.')
   } catch (err) {
     console.error('리뷰 작성 실패:', err)
     alert('리뷰 작성에 실패했습니다.')
@@ -1064,6 +1236,30 @@ onMounted(() => {
   color: #374151;
 }
 
+.reviews-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.review-sort {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #4b5563;
+}
+
+.review-sort select {
+  padding: 6px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+  font-size: 13px;
+}
+
 /* 리뷰 작성 폼 */
 .review-form {
   background: #f9fafb;
@@ -1169,11 +1365,44 @@ onMounted(() => {
   gap: 16px;
 }
 
+.reviews-list.with-gap {
+  margin-top: 16px;
+}
+
 .review-item {
   background: #f9fafb;
   padding: 20px;
   border-radius: 12px;
   border: 1px solid #e5e7eb;
+}
+
+.my-review {
+  background: #f0f6ff;
+  border: 1px solid #cfe0ff;
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.12);
+}
+
+.my-review-author {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: #1d4ed8;
+  color: white;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.rating-text.emphasized {
+  color: #0f172a;
+  font-weight: 800;
 }
 
 .review-header {
@@ -1183,6 +1412,10 @@ onMounted(() => {
   margin-bottom: 12px;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+.my-review-header {
+  justify-content: flex-end;
 }
 
 .review-author {
@@ -1202,6 +1435,32 @@ onMounted(() => {
   align-items: center;
   gap: 2px;
   color: #fbbf24;
+}
+
+.review-rating.strong {
+  font-size: 15px;
+}
+
+.my-review-rating {
+  margin-bottom: 8px;
+}
+
+.my-review-meta {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.my-review-actions {
+  justify-content: flex-end;
+}
+
+.my-review-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .rating-text {

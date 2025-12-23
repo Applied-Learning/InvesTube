@@ -110,6 +110,17 @@
 		WHERE category_id = #{categoryId}
 		ORDER BY created_at DESC
 	</select>
+
+	<!-- 대분류(parent)로 하위 중분류까지 조회 -->
+	<select id="selectByParentCategoryWithPaging" resultMap="VideoResultMap">
+		SELECT v.*, u.nickname AS uploader_nickname, u.profile_image AS uploader_profile_image
+		FROM videos v
+		INNER JOIN category c ON v.category_id = c.category_id
+		LEFT JOIN users u ON v.user_id = u.user_id
+		WHERE c.parent_id = #{parentId}
+		ORDER BY v.created_at DESC
+		LIMIT #{size} OFFSET #{offset}
+	</select>
 	
 	<!-- 페이징 - 카테고리별 비디오 조회 -->
 	<select id="selectByCategoryWithPaging" resultMap="VideoResultMap">
@@ -125,6 +136,14 @@
 	<select id="selectCountByCategory" parameterType="int" resultType="int">
 		SELECT COUNT(*) FROM videos
 		WHERE category_id = #{categoryId}
+	</select>
+
+	<!-- 대분류(parent)로 하위 중분류까지 개수 조회 -->
+	<select id="selectCountByParentCategory" parameterType="int" resultType="int">
+		SELECT COUNT(*)
+		FROM videos v
+		INNER JOIN category c ON v.category_id = c.category_id
+		WHERE c.parent_id = #{parentId}
 	</select>
 	
 	<!-- 키워드로 비디오 검색 -->

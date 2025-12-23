@@ -19,40 +19,65 @@ public class VideoAiService {
 
 	private static final Logger log = LoggerFactory.getLogger(VideoAiService.class);
 
-	private static final Map<Integer, String> CATEGORY_MAP = Map.of(1, "금융", 2, "기술", 3, "투자");
+	private static final Map<Integer, String> CATEGORY_MAP = Map.ofEntries(
+			Map.entry(1, "투자 교육"),
+			Map.entry(2, "종목 분석"),
+			Map.entry(3, "경제 동향"),
+			Map.entry(11, "기초 교육"),
+			Map.entry(12, "분석 방법"),
+			Map.entry(13, "투자 전략"),
+			Map.entry(21, "재무 분석"),
+			Map.entry(22, "산업 분석"),
+			Map.entry(23, "종목 추천"),
+			Map.entry(31, "국내 경제"),
+			Map.entry(32, "국제 경제"));
 
 	/**
 	 * SYSTEM PROMPT - JSON 스키마 고정 (다중 추천 허용, 첫 번째가 대표) - allowed 의미 명확화 - 추측 금지 -
 	 * YouTube 메타데이터와 사용자 입력을 모두 참고하여 일관성 확인
 	 */
 	private static final String SYSTEM_PROMPT = """
-			너는 투자/재테크 커뮤니티 'InvesTube'의 콘텐츠 자동 검수 AI이다.
+			You are the content classification AI for 'InvesTube'.
 
-			판단 기준:
-			- allowed는 영상 주제가 금융/기술/투자 카테고리와 충분히 관련 있으면 true이다.
-			- 위험성, 투자 조언 여부, 합법성 판단으로 차단하지 않는다.
-			- 제공된 메타데이터(제목, 설명, 채널, 태그, YouTube 카테고리 정보, 링크)만을 기반으로 판단하며 영상 내용을 추측하지 않는다.
+			Guidelines:
+			- allowed = true only if the video topic fits the categories below.
+			- Do not allow illegal/harmful/misinformation content.
+			- Use only the given metadata (title/description/channel/tags/id) for judgment.
 
-			카테고리:
-			1: 금융 (주식, 채권, 재테크, 경제 분석, 시장 동향)
-			2: 기술 (IT, AI, 블록체인, 개발, 기술 트렌드, 핀테크)
-			3: 투자 (자산 배분, 투자 전략, 리스크 관리, 부동산/대체 투자)
+			Categories:
+			1: 투자 교육 (parent)
+			11: 기초 교육 (주식 기본 개념, 투자 시작 방법)
+			12: 분석 방법 (기술적 분석, 재무 분석)
+			13: 투자 전략 (장기/단기 투자 원칙, 특정 종목 추천/매수·매도 시점 제시는 여기 아님)
+			2: 종목 분석 (parent)
+			21: 재무 분석 (재무제표 분석, 재무 비율 분석)
+			22: 산업 분석 (산업 성장성 분석, 산업 경쟁력 분석)
+			23: 종목 추천 (개별 기업 매수/매도 아이디어, 급등 예상, 목표가 제시)
+			3: 경제 동향 (parent)
+			31: 국내 경제 (한국 경제, 고용, 정부 경제 정책)
+			32: 국제 경제 (글로벌 경제 동향, 주요 국가 경제 현황)
 
-			출력 규칙:
-			- 반드시 JSON 한 덩어리만 출력한다.
-			- 코드펜스(```), 주석, 추가 설명을 절대 포함하지 않는다.
-			- confidence는 0.0 ~ 1.0 사이의 숫자이다.
-			- recommendedCategoryIds는 1~3 값만 중복 없이 포함하며 최대 3개까지 제공한다. 첫 번째가 대표 추천이다.
+			Output rules:
+			- 모든 설명/이유는 한국어로 작성한다.
+			- allowed는 위 카테고리 중 하나에 적합하면 true로 설정한다. 종목 추천/급등 예상/매수·매도 시점 언급만으로 차단하지 말고, 불법/허위/유해 콘텐츠일 때만 false로 한다. 종목 추천 영상은 23번으로 허용한다.
+			- reason은 항상 한 문장으로 작성한다. allowed=false이면 차단 사유를, allowed=true이면 추천 사유를 간결히 적는다. (예: "투자와 무관한 일상 브이로그입니다.")
+			- "연관성이 낮다" 같은 모호한 표현은 사용하지 말고, 왜 카테고리에 부적합/차단인지 구체적 근거를 한 문장으로 제시한다.
+			- 특정 종목 추천, 급등 예상, 매수/매도 시점 언급, 포트폴리오 제시는 모두 23(종목 분석)으로 분류한다. 13(투자 전략)은 종목/시점 언급 없는 방법론일 때만 사용한다.
+			- reason에는 카테고리 번호를 직접 적지 말고, 내용만 설명한다.
+			- Return JSON only. No code fences, no extra text.
+			- confidence: 0.0 ~ 1.0
+			- recommendedCategoryIds: use only the category ids above, up to 3, no duplicates. The first is the main recommendation.
 
-			반환 JSON 스키마:
+			Response JSON format:
 			{
 			  "allowed": boolean,
 			  "reason": string,
-			  "recommendedCategoryId": 1 | 2 | 3,
-			  "recommendedCategoryIds": [1,2,3],
+			  "recommendedCategoryId": 11 | 12 | 13 | 21 | 22 | 23 | 31 | 32,
+			  "recommendedCategoryIds": [11,12,13,21,22,23,31,32],
 			  "confidence": number
 			}
 			""";
+
 
 	private final GmsOpenAiClient gmsOpenAiClient;
 	private final YoutubeService youtubeService;
