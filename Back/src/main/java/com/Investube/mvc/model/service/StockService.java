@@ -40,6 +40,8 @@ public interface StockService {
 
     void syncTodayStockData(); // 오늘 데이터만 수집 (스케줄러용)
 
+    void syncStockDataByDate(String dateStr); // 특정 날짜 데이터 수집 (yyyyMMdd 형식)
+
     void syncStockPriceFromKrx(String stockCode);
 
     // 지수 정보 조회

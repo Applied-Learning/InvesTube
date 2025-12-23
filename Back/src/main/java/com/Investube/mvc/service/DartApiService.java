@@ -275,6 +275,28 @@ public class DartApiService {
         }
         System.out.println("========================");
 
+        // 1단계: 연결당기순이익 우선 스캔 (있으면 먼저 설정)
+        for (JsonNode item : jsonList) {
+            String accountName = item.get("account_nm").asText();
+            String amountStr = item.get("thstrm_amount").asText().replace(",", "");
+            try {
+                Long amount = Long.parseLong(amountStr);
+                if (!data.containsKey("net_income") &&
+                        (accountName.equals("연결당기순이익") ||
+                                accountName.equals("연결당기순이익(손실)") ||
+                                accountName.equals("당기연결순이익") ||
+                                accountName.equals("당기연결순이익(손실)"))) {
+                    data.put("net_income", amount);
+                    System.out.println("[파싱] 연결당기순이익 우선 사용: " + amount);
+                    break;
+                }
+            } catch (NumberFormatException e) {
+                // 무시
+            }
+        }
+
+        // 2단계: 나머지 항목 파싱 (연결당기순이익이 없을 때만 당기순이익 사용)
+
         for (JsonNode item : jsonList) {
             String accountName = item.get("account_nm").asText();
             String normalizedName = accountName.replaceAll("\\s+", ""); // 공백 제거 버전
@@ -293,17 +315,25 @@ public class DartApiService {
                                 accountName.equals("제품및상품매출"))) { // 제조업 세부 매출
                     data.put("revenue", amount);
                 }
-                // 영업이익
+                // 영업이익 (영업손실도 포함 - 손실은 음수로 들어옴)
                 else if (!data.containsKey("operating_profit") &&
-                        (accountName.contains("영업이익") || accountName.contains("영업손익"))) {
+                        (accountName.contains("영업이익") || accountName.contains("영업손익") ||
+                                accountName.equals("영업손실"))) {
                     data.put("operating_profit", amount);
                 }
-                // 당기순이익 (여러 변형 지원)
+                // 당기순이익 - 2순위: 일반 당기순이익 (1단계에서 연결당기순이익이 없을 때만)
                 else if (!data.containsKey("net_income") &&
                         (accountName.equals("당기순이익") ||
                                 accountName.equals("당기순이익(손실)") ||
-                                accountName.contains("지배기업의 소유주에게 귀속되는 당기순이익") ||
+                                accountName.equals("당기순손실") ||
+                                accountName.equals("당기순손익"))) {
+                    data.put("net_income", amount);
+                }
+                // 당기순이익 - 3순위: 지배기업소유주지분 (위 두 개가 없을 때만)
+                else if (!data.containsKey("net_income") &&
+                        (accountName.contains("지배기업의 소유주에게 귀속되는 당기순이익") ||
                                 accountName.contains("지배기업 소유주지분 당기순이익") ||
+                                accountName.contains("지배기업소유주지분") ||
                                 (accountName.equals("지배기업 소유주지분") && accountName.length() < 15))) {
                     data.put("net_income", amount);
                 }
