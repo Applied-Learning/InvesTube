@@ -32,7 +32,6 @@
           :to="{ name: 'boardDetail', params: { id: post.postId } }"
         >
           <div class="card-header">
-            <span class="post-badge">📄</span>
             <span class="post-date">{{ post.createdAtDisplay }}</span>
           </div>
           <h3 class="post-title">{{ post.title }}</h3>
