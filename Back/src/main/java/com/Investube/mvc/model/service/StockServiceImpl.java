@@ -3,6 +3,7 @@ package com.Investube.mvc.model.service;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -22,12 +23,16 @@ import com.Investube.mvc.model.dto.StockPrice;
 import com.Investube.mvc.model.dto.StockDetailDto;
 import com.Investube.mvc.model.dto.KrxStockResponse;
 import com.Investube.mvc.model.dto.KrxIndexResponse;
+import com.Investube.mvc.service.StockPriceFileService;
 
 @Service
 public class StockServiceImpl implements StockService {
 
     @Autowired
     private StockDao stockDao;
+
+    @Autowired
+    private StockPriceFileService stockPriceFileService;
 
     @Value("${krx.api.key}")
     private String krxApiKey;
@@ -120,14 +125,14 @@ public class StockServiceImpl implements StockService {
     @Transactional
     public void syncKospiStocks() {
         try {
-            System.out.println("KOSPI 데이터 동기화 시작 (최근 30일)");
+            System.out.println("KOSPI 데이터 동기화 시작 (최근 365일)");
 
-            // 최근 30일간의 데이터를 수집
+            // 최근 365일간의 데이터를 수집
             LocalDate endDate = LocalDate.now();
-            LocalDate startDate = endDate.minusDays(30);
+            LocalDate startDate = endDate.minusDays(365);
 
             int successCount = 0;
-            int totalDays = 30;
+            int totalDays = 365;
 
             for (int i = 0; i < totalDays; i++) {
                 LocalDate targetDate = startDate.plusDays(i);
@@ -195,6 +200,10 @@ public class StockServiceImpl implements StockService {
             if (response != null && response.getOutBlock_1() != null) {
                 List<KrxStockResponse.KrxStockItem> items = response.getOutBlock_1();
 
+                // JSON 파일 저장을 위한 종목별 데이터 수집
+                Map<String, List<StockPrice>> stockPricesMap = new HashMap<>();
+                Map<String, String> stockNamesMap = new HashMap<>();
+
                 for (KrxStockResponse.KrxStockItem item : items) {
                     try {
                         // Stock 정보 저장/업데이트 (첫 번째 날짜에만)
@@ -220,12 +229,24 @@ public class StockServiceImpl implements StockService {
                         stockPrice.setMarketCap(parseLong(item.getMKTCAP()));
 
                         stockDao.insertStockPrice(stockPrice);
+
+                        // JSON 파일용 데이터 수집
+                        stockPricesMap.computeIfAbsent(item.getISU_CD(), k -> new ArrayList<>()).add(stockPrice);
+                        stockNamesMap.putIfAbsent(item.getISU_CD(), item.getISU_NM());
                     } catch (Exception e) {
                         // 개별 종목 오류는 무시하고 계속 진행
                     }
                 }
 
-                System.out.println("KOSPI " + dateStr + ": " + items.size() + "개 종목 저장");
+                // JSON 파일에 저장
+                for (Map.Entry<String, List<StockPrice>> entry : stockPricesMap.entrySet()) {
+                    String stockCode = entry.getKey();
+                    List<StockPrice> prices = entry.getValue();
+                    String stockName = stockNamesMap.get(stockCode);
+                    stockPriceFileService.addPricesToFile(stockCode, stockName, prices);
+                }
+
+                System.out.println("KOSPI " + dateStr + ": " + items.size() + "개 종목 저장 (DB + JSON)");
                 return true;
             }
 
@@ -241,14 +262,14 @@ public class StockServiceImpl implements StockService {
     @Transactional
     public void syncKosdaqStocks() {
         try {
-            System.out.println("KOSDAQ 데이터 동기화 시작 (최근 30일)");
+            System.out.println("KOSDAQ 데이터 동기화 시작 (최근 365일)");
 
-            // 최근 30일간의 데이터를 수집
+            // 최근 365일간의 데이터를 수집
             LocalDate endDate = LocalDate.now();
-            LocalDate startDate = endDate.minusDays(30);
+            LocalDate startDate = endDate.minusDays(365);
 
             int successCount = 0;
-            int totalDays = 30;
+            int totalDays = 365;
 
             for (int i = 0; i < totalDays; i++) {
                 LocalDate targetDate = startDate.plusDays(i);
@@ -357,6 +378,10 @@ public class StockServiceImpl implements StockService {
             if (response != null && response.getOutBlock_1() != null) {
                 List<KrxStockResponse.KrxStockItem> items = response.getOutBlock_1();
 
+                // JSON 파일 저장을 위한 종목별 데이터 수집
+                Map<String, List<StockPrice>> stockPricesMap = new HashMap<>();
+                Map<String, String> stockNamesMap = new HashMap<>();
+
                 for (KrxStockResponse.KrxStockItem item : items) {
                     try {
                         // Stock 정보 저장/업데이트 (첫 번째 날짜에만)
@@ -382,12 +407,24 @@ public class StockServiceImpl implements StockService {
                         stockPrice.setMarketCap(parseLong(item.getMKTCAP()));
 
                         stockDao.insertStockPrice(stockPrice);
+
+                        // JSON 파일용 데이터 수집
+                        stockPricesMap.computeIfAbsent(item.getISU_CD(), k -> new ArrayList<>()).add(stockPrice);
+                        stockNamesMap.putIfAbsent(item.getISU_CD(), item.getISU_NM());
                     } catch (Exception e) {
                         // 개별 종목 오류는 무시하고 계속 진행
                     }
                 }
 
-                System.out.println("KOSDAQ " + dateStr + ": " + items.size() + "개 종목 저장");
+                // JSON 파일에 저장
+                for (Map.Entry<String, List<StockPrice>> entry : stockPricesMap.entrySet()) {
+                    String stockCode = entry.getKey();
+                    List<StockPrice> prices = entry.getValue();
+                    String stockName = stockNamesMap.get(stockCode);
+                    stockPriceFileService.addPricesToFile(stockCode, stockName, prices);
+                }
+
+                System.out.println("KOSDAQ " + dateStr + ": " + items.size() + "개 종목 저장 (DB + JSON)");
                 return true;
             }
 
@@ -488,6 +525,51 @@ public class StockServiceImpl implements StockService {
             System.err.println("KRX 지수 정보 조회 전체 실패: " + e.getMessage());
             e.printStackTrace();
             return List.of();
+        }
+    }
+
+    /**
+     * DB에 저장된 주가 데이터를 JSON 파일로 내보내기
+     * - 기존에 DB에 있는 데이터를 JSON 파일로 저장
+     * - 서버 시작 시 호출하여 JSON 파일 초기화
+     */
+    @Override
+    public void exportDbToJson() {
+        try {
+            System.out.println("DB 데이터를 JSON 파일로 내보내기 시작...");
+
+            // 모든 종목 조회
+            List<Stock> allStocks = stockDao.selectAllStocks();
+            int exportedCount = 0;
+
+            // 1년 전 날짜 계산
+            String startDate = LocalDate.now().minusYears(1).format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+            String endDate = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+
+            for (Stock stock : allStocks) {
+                try {
+                    // 해당 종목의 1년치 가격 데이터 조회
+                    List<StockPrice> prices = stockDao.selectPricesByStockCodeAndDateRange(
+                            stock.getStockCode(), startDate, endDate);
+
+                    if (prices != null && !prices.isEmpty()) {
+                        // JSON 파일에 저장
+                        stockPriceFileService.addPricesToFile(
+                                stock.getStockCode(),
+                                stock.getStockName(),
+                                prices);
+                        exportedCount++;
+                    }
+                } catch (Exception e) {
+                    // 개별 종목 오류는 무시
+                }
+            }
+
+            System.out.println("DB -> JSON 내보내기 완료: " + exportedCount + "/" + allStocks.size() + " 종목");
+
+        } catch (Exception e) {
+            System.err.println("DB -> JSON 내보내기 실패: " + e.getMessage());
+            e.printStackTrace();
         }
     }
 }

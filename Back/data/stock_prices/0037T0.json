@@ -1,0 +1,934 @@
+{
+  "lastUpdated" : "2025-12-23",
+  "stockName" : "KB제32호스팩",
+  "prices" : [ {
+    "volume" : 35926226,
+    "marketCap" : 12571380000,
+    "lowPrice" : 1980,
+    "highPrice" : 2745,
+    "openPrice" : 2350,
+    "tradeDate" : "2025-07-04",
+    "closePrice" : 1986
+  }, {
+    "volume" : 1014400,
+    "marketCap" : 12641010000,
+    "lowPrice" : 1987,
+    "highPrice" : 2000,
+    "openPrice" : 1990,
+    "tradeDate" : "2025-07-07",
+    "closePrice" : 1997
+  }, {
+    "volume" : 349938,
+    "marketCap" : 12653670000,
+    "lowPrice" : 1989,
+    "highPrice" : 2000,
+    "openPrice" : 1997,
+    "tradeDate" : "2025-07-08",
+    "closePrice" : 1999
+  }, {
+    "volume" : 225501,
+    "marketCap" : 12641010000,
+    "lowPrice" : 1995,
+    "highPrice" : 1999,
+    "openPrice" : 1999,
+    "tradeDate" : "2025-07-09",
+    "closePrice" : 1997
+  }, {
+    "volume" : 206402,
+    "marketCap" : 12647340000,
+    "lowPrice" : 1996,
+    "highPrice" : 2000,
+    "openPrice" : 1997,
+    "tradeDate" : "2025-07-10",
+    "closePrice" : 1998
+  }, {
+    "volume" : 146306,
+    "marketCap" : 12641010000,
+    "lowPrice" : 1995,
+    "highPrice" : 1999,
+    "openPrice" : 1997,
+    "tradeDate" : "2025-07-11",
+    "closePrice" : 1997
+  }, {
+    "volume" : 77806,
+    "marketCap" : 12622020000,
+    "lowPrice" : 1991,
+    "highPrice" : 1998,
+    "openPrice" : 1997,
+    "tradeDate" : "2025-07-14",
+    "closePrice" : 1994
+  }, {
+    "volume" : 159384,
+    "marketCap" : 12641010000,
+    "lowPrice" : 1992,
+    "highPrice" : 2000,
+    "openPrice" : 1994,
+    "tradeDate" : "2025-07-15",
+    "closePrice" : 1997
+  }, {
+    "volume" : 71874,
+    "marketCap" : 12641010000,
+    "lowPrice" : 1993,
+    "highPrice" : 2000,
+    "openPrice" : 1997,
+    "tradeDate" : "2025-07-16",
+    "closePrice" : 1997
+  }, {
+    "volume" : 140802,
+    "marketCap" : 12660000000,
+    "lowPrice" : 1995,
+    "highPrice" : 2005,
+    "openPrice" : 1998,
+    "tradeDate" : "2025-07-17",
+    "closePrice" : 2000
+  }, {
+    "volume" : 87821,
+    "marketCap" : 12660000000,
+    "lowPrice" : 1996,
+    "highPrice" : 2005,
+    "openPrice" : 1996,
+    "tradeDate" : "2025-07-18",
+    "closePrice" : 2000
+  }, {
+    "volume" : 34140,
+    "marketCap" : 12660000000,
+    "lowPrice" : 1996,
+    "highPrice" : 2000,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-07-21",
+    "closePrice" : 2000
+  }, {
+    "volume" : 98962,
+    "marketCap" : 12647340000,
+    "lowPrice" : 1996,
+    "highPrice" : 2000,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-07-22",
+    "closePrice" : 1998
+  }, {
+    "volume" : 33664,
+    "marketCap" : 12647340000,
+    "lowPrice" : 1996,
+    "highPrice" : 2000,
+    "openPrice" : 1998,
+    "tradeDate" : "2025-07-23",
+    "closePrice" : 1998
+  }, {
+    "volume" : 55477,
+    "marketCap" : 12647340000,
+    "lowPrice" : 1992,
+    "highPrice" : 2000,
+    "openPrice" : 1999,
+    "tradeDate" : "2025-07-24",
+    "closePrice" : 1998
+  }, {
+    "volume" : 68779,
+    "marketCap" : 12660000000,
+    "lowPrice" : 1995,
+    "highPrice" : 2005,
+    "openPrice" : 1998,
+    "tradeDate" : "2025-07-25",
+    "closePrice" : 2000
+  }, {
+    "volume" : 19149,
+    "marketCap" : 12628350000,
+    "lowPrice" : 1993,
+    "highPrice" : 2005,
+    "openPrice" : 2005,
+    "tradeDate" : "2025-07-28",
+    "closePrice" : 1995
+  }, {
+    "volume" : 43765,
+    "marketCap" : 12647340000,
+    "lowPrice" : 1993,
+    "highPrice" : 2000,
+    "openPrice" : 1995,
+    "tradeDate" : "2025-07-29",
+    "closePrice" : 1998
+  }, {
+    "volume" : 54081,
+    "marketCap" : 12653670000,
+    "lowPrice" : 1994,
+    "highPrice" : 2005,
+    "openPrice" : 1998,
+    "tradeDate" : "2025-07-30",
+    "closePrice" : 1999
+  }, {
+    "volume" : 10477,
+    "marketCap" : 12660000000,
+    "lowPrice" : 1996,
+    "highPrice" : 2000,
+    "openPrice" : 1999,
+    "tradeDate" : "2025-07-31",
+    "closePrice" : 2000
+  }, {
+    "volume" : 14869,
+    "marketCap" : 12634680000,
+    "lowPrice" : 1992,
+    "highPrice" : 2000,
+    "openPrice" : 1993,
+    "tradeDate" : "2025-08-01",
+    "closePrice" : 1996
+  }, {
+    "volume" : 13874,
+    "marketCap" : 12647340000,
+    "lowPrice" : 1994,
+    "highPrice" : 2000,
+    "openPrice" : 1994,
+    "tradeDate" : "2025-08-04",
+    "closePrice" : 1998
+  }, {
+    "volume" : 16592,
+    "marketCap" : 12660000000,
+    "lowPrice" : 1996,
+    "highPrice" : 2005,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-08-05",
+    "closePrice" : 2000
+  }, {
+    "volume" : 48289,
+    "marketCap" : 12641010000,
+    "lowPrice" : 1992,
+    "highPrice" : 2005,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-08-06",
+    "closePrice" : 1997
+  }, {
+    "volume" : 29350,
+    "marketCap" : 12634680000,
+    "lowPrice" : 1994,
+    "highPrice" : 1997,
+    "openPrice" : 1997,
+    "tradeDate" : "2025-08-07",
+    "closePrice" : 1996
+  }, {
+    "volume" : 4756,
+    "marketCap" : 12634680000,
+    "lowPrice" : 1995,
+    "highPrice" : 2000,
+    "openPrice" : 1996,
+    "tradeDate" : "2025-08-08",
+    "closePrice" : 1996
+  }, {
+    "volume" : 7018,
+    "marketCap" : 12641010000,
+    "lowPrice" : 1996,
+    "highPrice" : 1999,
+    "openPrice" : 1999,
+    "tradeDate" : "2025-08-11",
+    "closePrice" : 1997
+  }, {
+    "volume" : 38866,
+    "marketCap" : 12647340000,
+    "lowPrice" : 1993,
+    "highPrice" : 2000,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-08-12",
+    "closePrice" : 1998
+  }, {
+    "volume" : 5746,
+    "marketCap" : 12653670000,
+    "lowPrice" : 1997,
+    "highPrice" : 2000,
+    "openPrice" : 1997,
+    "tradeDate" : "2025-08-13",
+    "closePrice" : 1999
+  }, {
+    "volume" : 11067,
+    "marketCap" : 12634680000,
+    "lowPrice" : 1995,
+    "highPrice" : 1999,
+    "openPrice" : 1999,
+    "tradeDate" : "2025-08-14",
+    "closePrice" : 1996
+  }, {
+    "volume" : 15851,
+    "marketCap" : 12653670000,
+    "lowPrice" : 1995,
+    "highPrice" : 1999,
+    "openPrice" : 1996,
+    "tradeDate" : "2025-08-18",
+    "closePrice" : 1999
+  }, {
+    "volume" : 7684,
+    "marketCap" : 12653670000,
+    "lowPrice" : 1998,
+    "highPrice" : 2000,
+    "openPrice" : 1999,
+    "tradeDate" : "2025-08-19",
+    "closePrice" : 1999
+  }, {
+    "volume" : 13138,
+    "marketCap" : 12647340000,
+    "lowPrice" : 1995,
+    "highPrice" : 2000,
+    "openPrice" : 1999,
+    "tradeDate" : "2025-08-20",
+    "closePrice" : 1998
+  }, {
+    "volume" : 14156,
+    "marketCap" : 12634680000,
+    "lowPrice" : 1996,
+    "highPrice" : 1998,
+    "openPrice" : 1998,
+    "tradeDate" : "2025-08-21",
+    "closePrice" : 1996
+  }, {
+    "volume" : 9470,
+    "marketCap" : 12634680000,
+    "lowPrice" : 1996,
+    "highPrice" : 1999,
+    "openPrice" : 1996,
+    "tradeDate" : "2025-08-22",
+    "closePrice" : 1996
+  }, {
+    "volume" : 39816,
+    "marketCap" : 12641010000,
+    "lowPrice" : 1996,
+    "highPrice" : 2000,
+    "openPrice" : 1996,
+    "tradeDate" : "2025-08-25",
+    "closePrice" : 1997
+  }, {
+    "volume" : 18771,
+    "marketCap" : 12653670000,
+    "lowPrice" : 1996,
+    "highPrice" : 2000,
+    "openPrice" : 1996,
+    "tradeDate" : "2025-08-26",
+    "closePrice" : 1999
+  }, {
+    "volume" : 7492,
+    "marketCap" : 12653670000,
+    "lowPrice" : 1997,
+    "highPrice" : 2000,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-08-27",
+    "closePrice" : 1999
+  }, {
+    "volume" : 30464,
+    "marketCap" : 12634680000,
+    "lowPrice" : 1996,
+    "highPrice" : 2005,
+    "openPrice" : 1999,
+    "tradeDate" : "2025-08-28",
+    "closePrice" : 1996
+  }, {
+    "volume" : 38349,
+    "marketCap" : 12647340000,
+    "lowPrice" : 1997,
+    "highPrice" : 2000,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-08-29",
+    "closePrice" : 1998
+  }, {
+    "volume" : 10498,
+    "marketCap" : 12641010000,
+    "lowPrice" : 1996,
+    "highPrice" : 2000,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-09-01",
+    "closePrice" : 1997
+  }, {
+    "volume" : 3358,
+    "marketCap" : 12647340000,
+    "lowPrice" : 1996,
+    "highPrice" : 2000,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-09-02",
+    "closePrice" : 1998
+  }, {
+    "volume" : 5630,
+    "marketCap" : 12647340000,
+    "lowPrice" : 1995,
+    "highPrice" : 2000,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-09-03",
+    "closePrice" : 1998
+  }, {
+    "volume" : 38648,
+    "marketCap" : 12653670000,
+    "lowPrice" : 1998,
+    "highPrice" : 2005,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-09-04",
+    "closePrice" : 1999
+  }, {
+    "volume" : 55881,
+    "marketCap" : 12653670000,
+    "lowPrice" : 1996,
+    "highPrice" : 2000,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-09-05",
+    "closePrice" : 1999
+  }, {
+    "volume" : 31231,
+    "marketCap" : 12691650000,
+    "lowPrice" : 1998,
+    "highPrice" : 2005,
+    "openPrice" : 1999,
+    "tradeDate" : "2025-09-08",
+    "closePrice" : 2005
+  }, {
+    "volume" : 25419,
+    "marketCap" : 12660000000,
+    "lowPrice" : 1998,
+    "highPrice" : 2005,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-09-09",
+    "closePrice" : 2000
+  }, {
+    "volume" : 12311,
+    "marketCap" : 12691650000,
+    "lowPrice" : 2000,
+    "highPrice" : 2005,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-09-10",
+    "closePrice" : 2005
+  }, {
+    "volume" : 17215,
+    "marketCap" : 12691650000,
+    "lowPrice" : 2000,
+    "highPrice" : 2005,
+    "openPrice" : 2005,
+    "tradeDate" : "2025-09-11",
+    "closePrice" : 2005
+  }, {
+    "volume" : 1921,
+    "marketCap" : 12660000000,
+    "lowPrice" : 2000,
+    "highPrice" : 2005,
+    "openPrice" : 2005,
+    "tradeDate" : "2025-09-12",
+    "closePrice" : 2000
+  }, {
+    "volume" : 2284,
+    "marketCap" : 12660000000,
+    "lowPrice" : 2000,
+    "highPrice" : 2005,
+    "openPrice" : 2005,
+    "tradeDate" : "2025-09-15",
+    "closePrice" : 2000
+  }, {
+    "volume" : 25400,
+    "marketCap" : 12691650000,
+    "lowPrice" : 2000,
+    "highPrice" : 2005,
+    "openPrice" : 2005,
+    "tradeDate" : "2025-09-16",
+    "closePrice" : 2005
+  }, {
+    "volume" : 23613,
+    "marketCap" : 12660000000,
+    "lowPrice" : 2000,
+    "highPrice" : 2005,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-09-17",
+    "closePrice" : 2000
+  }, {
+    "volume" : 3133,
+    "marketCap" : 12660000000,
+    "lowPrice" : 2000,
+    "highPrice" : 2005,
+    "openPrice" : 2005,
+    "tradeDate" : "2025-09-18",
+    "closePrice" : 2000
+  }, {
+    "volume" : 11894,
+    "marketCap" : 12691650000,
+    "lowPrice" : 1999,
+    "highPrice" : 2005,
+    "openPrice" : 2005,
+    "tradeDate" : "2025-09-19",
+    "closePrice" : 2005
+  }, {
+    "volume" : 9851,
+    "marketCap" : 12660000000,
+    "lowPrice" : 1999,
+    "highPrice" : 2005,
+    "openPrice" : 2005,
+    "tradeDate" : "2025-09-22",
+    "closePrice" : 2000
+  }, {
+    "volume" : 22506,
+    "marketCap" : 12660000000,
+    "lowPrice" : 1994,
+    "highPrice" : 2005,
+    "openPrice" : 2005,
+    "tradeDate" : "2025-09-23",
+    "closePrice" : 2000
+  }, {
+    "volume" : 8241,
+    "marketCap" : 12660000000,
+    "lowPrice" : 1994,
+    "highPrice" : 2005,
+    "openPrice" : 2005,
+    "tradeDate" : "2025-09-24",
+    "closePrice" : 2000
+  }, {
+    "volume" : 8344,
+    "marketCap" : 12647340000,
+    "lowPrice" : 1996,
+    "highPrice" : 2000,
+    "openPrice" : 1996,
+    "tradeDate" : "2025-09-25",
+    "closePrice" : 1998
+  }, {
+    "volume" : 2300,
+    "marketCap" : 12653670000,
+    "lowPrice" : 1998,
+    "highPrice" : 2005,
+    "openPrice" : 2005,
+    "tradeDate" : "2025-09-26",
+    "closePrice" : 1999
+  }, {
+    "volume" : 7282,
+    "marketCap" : 12660000000,
+    "lowPrice" : 1999,
+    "highPrice" : 2000,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-09-29",
+    "closePrice" : 2000
+  }, {
+    "volume" : 10053,
+    "marketCap" : 12660000000,
+    "lowPrice" : 1992,
+    "highPrice" : 2005,
+    "openPrice" : 1998,
+    "tradeDate" : "2025-09-30",
+    "closePrice" : 2000
+  }, {
+    "volume" : 3788,
+    "marketCap" : 12660000000,
+    "lowPrice" : 1994,
+    "highPrice" : 2000,
+    "openPrice" : 1998,
+    "tradeDate" : "2025-10-01",
+    "closePrice" : 2000
+  }, {
+    "volume" : 48236,
+    "marketCap" : 12653670000,
+    "lowPrice" : 1995,
+    "highPrice" : 2000,
+    "openPrice" : 1998,
+    "tradeDate" : "2025-10-02",
+    "closePrice" : 1999
+  }, {
+    "volume" : 2734,
+    "marketCap" : 12660000000,
+    "lowPrice" : 1994,
+    "highPrice" : 2000,
+    "openPrice" : 1999,
+    "tradeDate" : "2025-10-10",
+    "closePrice" : 2000
+  }, {
+    "volume" : 5803,
+    "marketCap" : 12647340000,
+    "lowPrice" : 1996,
+    "highPrice" : 2000,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-10-13",
+    "closePrice" : 1998
+  }, {
+    "volume" : 6747,
+    "marketCap" : 12653670000,
+    "lowPrice" : 1997,
+    "highPrice" : 1999,
+    "openPrice" : 1998,
+    "tradeDate" : "2025-10-14",
+    "closePrice" : 1999
+  }, {
+    "volume" : 6025,
+    "marketCap" : 12647340000,
+    "lowPrice" : 1997,
+    "highPrice" : 2000,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-10-15",
+    "closePrice" : 1998
+  }, {
+    "volume" : 7783,
+    "marketCap" : 12660000000,
+    "lowPrice" : 1995,
+    "highPrice" : 2000,
+    "openPrice" : 1998,
+    "tradeDate" : "2025-10-16",
+    "closePrice" : 2000
+  }, {
+    "volume" : 4517,
+    "marketCap" : 12653670000,
+    "lowPrice" : 1996,
+    "highPrice" : 1999,
+    "openPrice" : 1999,
+    "tradeDate" : "2025-10-17",
+    "closePrice" : 1999
+  }, {
+    "volume" : 33339,
+    "marketCap" : 12660000000,
+    "lowPrice" : 1997,
+    "highPrice" : 2000,
+    "openPrice" : 1997,
+    "tradeDate" : "2025-10-20",
+    "closePrice" : 2000
+  }, {
+    "volume" : 23782,
+    "marketCap" : 12660000000,
+    "lowPrice" : 1997,
+    "highPrice" : 2005,
+    "openPrice" : 1998,
+    "tradeDate" : "2025-10-21",
+    "closePrice" : 2000
+  }, {
+    "volume" : 1648,
+    "marketCap" : 12660000000,
+    "lowPrice" : 1998,
+    "highPrice" : 2000,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-10-22",
+    "closePrice" : 2000
+  }, {
+    "volume" : 6709,
+    "marketCap" : 12660000000,
+    "lowPrice" : 1998,
+    "highPrice" : 2000,
+    "openPrice" : 1999,
+    "tradeDate" : "2025-10-23",
+    "closePrice" : 2000
+  }, {
+    "volume" : 16523,
+    "marketCap" : 12653670000,
+    "lowPrice" : 1998,
+    "highPrice" : 2005,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-10-24",
+    "closePrice" : 1999
+  }, {
+    "volume" : 8231,
+    "marketCap" : 12653670000,
+    "lowPrice" : 1996,
+    "highPrice" : 2000,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-10-27",
+    "closePrice" : 1999
+  }, {
+    "volume" : 14209,
+    "marketCap" : 12653670000,
+    "lowPrice" : 1998,
+    "highPrice" : 2005,
+    "openPrice" : 1999,
+    "tradeDate" : "2025-10-28",
+    "closePrice" : 1999
+  }, {
+    "volume" : 6262,
+    "marketCap" : 12653670000,
+    "lowPrice" : 1996,
+    "highPrice" : 2000,
+    "openPrice" : 1999,
+    "tradeDate" : "2025-10-29",
+    "closePrice" : 1999
+  }, {
+    "volume" : 26197,
+    "marketCap" : 12653670000,
+    "lowPrice" : 1996,
+    "highPrice" : 2000,
+    "openPrice" : 1999,
+    "tradeDate" : "2025-10-30",
+    "closePrice" : 1999
+  }, {
+    "volume" : 13346,
+    "marketCap" : 12660000000,
+    "lowPrice" : 1998,
+    "highPrice" : 2000,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-10-31",
+    "closePrice" : 2000
+  }, {
+    "volume" : 20818,
+    "marketCap" : 12647340000,
+    "lowPrice" : 1996,
+    "highPrice" : 2000,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-11-03",
+    "closePrice" : 1998
+  }, {
+    "volume" : 7354,
+    "marketCap" : 12653670000,
+    "lowPrice" : 1993,
+    "highPrice" : 2000,
+    "openPrice" : 1998,
+    "tradeDate" : "2025-11-04",
+    "closePrice" : 1999
+  }, {
+    "volume" : 14446,
+    "marketCap" : 12628350000,
+    "lowPrice" : 1994,
+    "highPrice" : 2000,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-11-05",
+    "closePrice" : 1995
+  }, {
+    "volume" : 8514,
+    "marketCap" : 12628350000,
+    "lowPrice" : 1993,
+    "highPrice" : 1999,
+    "openPrice" : 1995,
+    "tradeDate" : "2025-11-06",
+    "closePrice" : 1995
+  }, {
+    "volume" : 13649,
+    "marketCap" : 12622020000,
+    "lowPrice" : 1993,
+    "highPrice" : 1995,
+    "openPrice" : 1994,
+    "tradeDate" : "2025-11-07",
+    "closePrice" : 1994
+  }, {
+    "volume" : 61382,
+    "marketCap" : 12622020000,
+    "lowPrice" : 1992,
+    "highPrice" : 1996,
+    "openPrice" : 1995,
+    "tradeDate" : "2025-11-10",
+    "closePrice" : 1994
+  }, {
+    "volume" : 23642,
+    "marketCap" : 12622020000,
+    "lowPrice" : 1993,
+    "highPrice" : 1998,
+    "openPrice" : 1994,
+    "tradeDate" : "2025-11-11",
+    "closePrice" : 1994
+  }, {
+    "volume" : 21099,
+    "marketCap" : 12622020000,
+    "lowPrice" : 1991,
+    "highPrice" : 1996,
+    "openPrice" : 1996,
+    "tradeDate" : "2025-11-12",
+    "closePrice" : 1994
+  }, {
+    "volume" : 23423,
+    "marketCap" : 12628350000,
+    "lowPrice" : 1970,
+    "highPrice" : 1996,
+    "openPrice" : 1994,
+    "tradeDate" : "2025-11-13",
+    "closePrice" : 1995
+  }, {
+    "volume" : 1862,
+    "marketCap" : 12628350000,
+    "lowPrice" : 1993,
+    "highPrice" : 1995,
+    "openPrice" : 1995,
+    "tradeDate" : "2025-11-14",
+    "closePrice" : 1995
+  }, {
+    "volume" : 1563,
+    "marketCap" : 12634680000,
+    "lowPrice" : 1993,
+    "highPrice" : 1997,
+    "openPrice" : 1993,
+    "tradeDate" : "2025-11-17",
+    "closePrice" : 1996
+  }, {
+    "volume" : 23175,
+    "marketCap" : 12622020000,
+    "lowPrice" : 1993,
+    "highPrice" : 1997,
+    "openPrice" : 1997,
+    "tradeDate" : "2025-11-18",
+    "closePrice" : 1994
+  }, {
+    "volume" : 1763,
+    "marketCap" : 12622020000,
+    "lowPrice" : 1993,
+    "highPrice" : 1996,
+    "openPrice" : 1995,
+    "tradeDate" : "2025-11-19",
+    "closePrice" : 1994
+  }, {
+    "volume" : 3098,
+    "marketCap" : 12634680000,
+    "lowPrice" : 1992,
+    "highPrice" : 1996,
+    "openPrice" : 1995,
+    "tradeDate" : "2025-11-20",
+    "closePrice" : 1996
+  }, {
+    "volume" : 3108,
+    "marketCap" : 12628350000,
+    "lowPrice" : 1993,
+    "highPrice" : 1996,
+    "openPrice" : 1993,
+    "tradeDate" : "2025-11-21",
+    "closePrice" : 1995
+  }, {
+    "volume" : 7858,
+    "marketCap" : 12634680000,
+    "lowPrice" : 1991,
+    "highPrice" : 1996,
+    "openPrice" : 1996,
+    "tradeDate" : "2025-11-24",
+    "closePrice" : 1996
+  }, {
+    "volume" : 5276,
+    "marketCap" : 12628350000,
+    "lowPrice" : 1993,
+    "highPrice" : 1996,
+    "openPrice" : 1996,
+    "tradeDate" : "2025-11-25",
+    "closePrice" : 1995
+  }, {
+    "volume" : 7396,
+    "marketCap" : 12622020000,
+    "lowPrice" : 1993,
+    "highPrice" : 1995,
+    "openPrice" : 1995,
+    "tradeDate" : "2025-11-26",
+    "closePrice" : 1994
+  }, {
+    "volume" : 33999,
+    "marketCap" : 12634680000,
+    "lowPrice" : 1992,
+    "highPrice" : 1996,
+    "openPrice" : 1994,
+    "tradeDate" : "2025-11-27",
+    "closePrice" : 1996
+  }, {
+    "volume" : 23741,
+    "marketCap" : 12653670000,
+    "lowPrice" : 1993,
+    "highPrice" : 1999,
+    "openPrice" : 1993,
+    "tradeDate" : "2025-11-28",
+    "closePrice" : 1999
+  }, {
+    "volume" : 36555,
+    "marketCap" : 12653670000,
+    "lowPrice" : 1994,
+    "highPrice" : 2005,
+    "openPrice" : 1994,
+    "tradeDate" : "2025-12-01",
+    "closePrice" : 1999
+  }, {
+    "volume" : 54368,
+    "marketCap" : 12660000000,
+    "lowPrice" : 1995,
+    "highPrice" : 2005,
+    "openPrice" : 1995,
+    "tradeDate" : "2025-12-02",
+    "closePrice" : 2000
+  }, {
+    "volume" : 29300,
+    "marketCap" : 12754950000,
+    "lowPrice" : 2000,
+    "highPrice" : 2015,
+    "openPrice" : 2005,
+    "tradeDate" : "2025-12-03",
+    "closePrice" : 2015
+  }, {
+    "volume" : 14925,
+    "marketCap" : 12818250000,
+    "lowPrice" : 2000,
+    "highPrice" : 2025,
+    "openPrice" : 2010,
+    "tradeDate" : "2025-12-04",
+    "closePrice" : 2025
+  }, {
+    "volume" : 18518,
+    "marketCap" : 12754950000,
+    "lowPrice" : 2005,
+    "highPrice" : 2025,
+    "openPrice" : 2025,
+    "tradeDate" : "2025-12-05",
+    "closePrice" : 2015
+  }, {
+    "volume" : 1424,
+    "marketCap" : 12786600000,
+    "lowPrice" : 2005,
+    "highPrice" : 2020,
+    "openPrice" : 2015,
+    "tradeDate" : "2025-12-08",
+    "closePrice" : 2020
+  }, {
+    "volume" : 1188,
+    "marketCap" : 12723300000,
+    "lowPrice" : 2007,
+    "highPrice" : 2020,
+    "openPrice" : 2020,
+    "tradeDate" : "2025-12-09",
+    "closePrice" : 2010
+  }, {
+    "volume" : 2926,
+    "marketCap" : 12691650000,
+    "lowPrice" : 2002,
+    "highPrice" : 2010,
+    "openPrice" : 2005,
+    "tradeDate" : "2025-12-10",
+    "closePrice" : 2005
+  }, {
+    "volume" : 15589,
+    "marketCap" : 12590370000,
+    "lowPrice" : 1974,
+    "highPrice" : 2005,
+    "openPrice" : 2005,
+    "tradeDate" : "2025-12-11",
+    "closePrice" : 1989
+  }, {
+    "volume" : 24524,
+    "marketCap" : 12647340000,
+    "lowPrice" : 1995,
+    "highPrice" : 2000,
+    "openPrice" : 1995,
+    "tradeDate" : "2025-12-12",
+    "closePrice" : 1998
+  }, {
+    "volume" : 7952,
+    "marketCap" : 12660000000,
+    "lowPrice" : 1998,
+    "highPrice" : 2005,
+    "openPrice" : 1998,
+    "tradeDate" : "2025-12-15",
+    "closePrice" : 2000
+  }, {
+    "volume" : 2490,
+    "marketCap" : 12628350000,
+    "lowPrice" : 1995,
+    "highPrice" : 2010,
+    "openPrice" : 2010,
+    "tradeDate" : "2025-12-16",
+    "closePrice" : 1995
+  }, {
+    "volume" : 1320,
+    "marketCap" : 12641010000,
+    "lowPrice" : 1997,
+    "highPrice" : 1999,
+    "openPrice" : 1998,
+    "tradeDate" : "2025-12-17",
+    "closePrice" : 1997
+  }, {
+    "volume" : 2499,
+    "marketCap" : 12628350000,
+    "lowPrice" : 1994,
+    "highPrice" : 2000,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-12-18",
+    "closePrice" : 1995
+  }, {
+    "volume" : 4474,
+    "marketCap" : 12634680000,
+    "lowPrice" : 1995,
+    "highPrice" : 1999,
+    "openPrice" : 1998,
+    "tradeDate" : "2025-12-19",
+    "closePrice" : 1996
+  }, {
+    "volume" : 19279,
+    "marketCap" : 12653670000,
+    "lowPrice" : 1997,
+    "highPrice" : 1999,
+    "openPrice" : 1997,
+    "tradeDate" : "2025-12-22",
+    "closePrice" : 1999
+  } ],
+  "stockCode" : "0037T0"
+}

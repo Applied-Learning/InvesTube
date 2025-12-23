@@ -1,0 +1,1942 @@
+{
+  "lastUpdated" : "2025-12-23",
+  "stockName" : "KX",
+  "prices" : [ {
+    "volume" : 115842,
+    "marketCap" : 149155321560,
+    "lowPrice" : 3225,
+    "highPrice" : 3305,
+    "openPrice" : 3225,
+    "tradeDate" : "2024-12-23",
+    "closePrice" : 3290
+  }, {
+    "volume" : 97049,
+    "marketCap" : 151875479400,
+    "lowPrice" : 3295,
+    "highPrice" : 3355,
+    "openPrice" : 3295,
+    "tradeDate" : "2024-12-24",
+    "closePrice" : 3350
+  }, {
+    "volume" : 151968,
+    "marketCap" : 152328839040,
+    "lowPrice" : 3285,
+    "highPrice" : 3360,
+    "openPrice" : 3355,
+    "tradeDate" : "2024-12-26",
+    "closePrice" : 3360
+  }, {
+    "volume" : 208900,
+    "marketCap" : 141448207680,
+    "lowPrice" : 3090,
+    "highPrice" : 3220,
+    "openPrice" : 3210,
+    "tradeDate" : "2024-12-27",
+    "closePrice" : 3120
+  }, {
+    "volume" : 91342,
+    "marketCap" : 137594650740,
+    "lowPrice" : 3025,
+    "highPrice" : 3115,
+    "openPrice" : 3060,
+    "tradeDate" : "2024-12-30",
+    "closePrice" : 3035
+  }, {
+    "volume" : 190193,
+    "marketCap" : 134194453440,
+    "lowPrice" : 2920,
+    "highPrice" : 3035,
+    "openPrice" : 2985,
+    "tradeDate" : "2025-01-02",
+    "closePrice" : 2960
+  }, {
+    "volume" : 70586,
+    "marketCap" : 136687931460,
+    "lowPrice" : 2960,
+    "highPrice" : 3035,
+    "openPrice" : 2960,
+    "tradeDate" : "2025-01-03",
+    "closePrice" : 3015
+  }, {
+    "volume" : 100038,
+    "marketCap" : 141221527860,
+    "lowPrice" : 3015,
+    "highPrice" : 3120,
+    "openPrice" : 3030,
+    "tradeDate" : "2025-01-06",
+    "closePrice" : 3115
+  }, {
+    "volume" : 94738,
+    "marketCap" : 138728049840,
+    "lowPrice" : 3035,
+    "highPrice" : 3170,
+    "openPrice" : 3090,
+    "tradeDate" : "2025-01-07",
+    "closePrice" : 3060
+  }, {
+    "volume" : 49751,
+    "marketCap" : 138048010380,
+    "lowPrice" : 3015,
+    "highPrice" : 3090,
+    "openPrice" : 3060,
+    "tradeDate" : "2025-01-08",
+    "closePrice" : 3045
+  }, {
+    "volume" : 33583,
+    "marketCap" : 136234571820,
+    "lowPrice" : 3000,
+    "highPrice" : 3055,
+    "openPrice" : 3050,
+    "tradeDate" : "2025-01-09",
+    "closePrice" : 3005
+  }, {
+    "volume" : 33478,
+    "marketCap" : 137367970920,
+    "lowPrice" : 2990,
+    "highPrice" : 3050,
+    "openPrice" : 3050,
+    "tradeDate" : "2025-01-10",
+    "closePrice" : 3030
+  }, {
+    "volume" : 106713,
+    "marketCap" : 133741093800,
+    "lowPrice" : 2950,
+    "highPrice" : 3030,
+    "openPrice" : 2985,
+    "tradeDate" : "2025-01-13",
+    "closePrice" : 2950
+  }, {
+    "volume" : 33055,
+    "marketCap" : 136234571820,
+    "lowPrice" : 2950,
+    "highPrice" : 3030,
+    "openPrice" : 2950,
+    "tradeDate" : "2025-01-14",
+    "closePrice" : 3005
+  }, {
+    "volume" : 17908,
+    "marketCap" : 135327852540,
+    "lowPrice" : 2980,
+    "highPrice" : 3030,
+    "openPrice" : 2995,
+    "tradeDate" : "2025-01-15",
+    "closePrice" : 2985
+  }, {
+    "volume" : 26818,
+    "marketCap" : 135327852540,
+    "lowPrice" : 2975,
+    "highPrice" : 3035,
+    "openPrice" : 2985,
+    "tradeDate" : "2025-01-16",
+    "closePrice" : 2985
+  }, {
+    "volume" : 36175,
+    "marketCap" : 136234571820,
+    "lowPrice" : 2995,
+    "highPrice" : 3045,
+    "openPrice" : 2995,
+    "tradeDate" : "2025-01-17",
+    "closePrice" : 3005
+  }, {
+    "volume" : 42387,
+    "marketCap" : 136687931460,
+    "lowPrice" : 2960,
+    "highPrice" : 3020,
+    "openPrice" : 3000,
+    "tradeDate" : "2025-01-20",
+    "closePrice" : 3015
+  }, {
+    "volume" : 44231,
+    "marketCap" : 134874492900,
+    "lowPrice" : 2960,
+    "highPrice" : 3025,
+    "openPrice" : 3015,
+    "tradeDate" : "2025-01-21",
+    "closePrice" : 2975
+  }, {
+    "volume" : 103780,
+    "marketCap" : 133287734160,
+    "lowPrice" : 2925,
+    "highPrice" : 3010,
+    "openPrice" : 3010,
+    "tradeDate" : "2025-01-22",
+    "closePrice" : 2940
+  }, {
+    "volume" : 100560,
+    "marketCap" : 131020935960,
+    "lowPrice" : 2865,
+    "highPrice" : 2945,
+    "openPrice" : 2945,
+    "tradeDate" : "2025-01-23",
+    "closePrice" : 2890
+  }, {
+    "volume" : 81036,
+    "marketCap" : 131474295600,
+    "lowPrice" : 2850,
+    "highPrice" : 2930,
+    "openPrice" : 2875,
+    "tradeDate" : "2025-01-24",
+    "closePrice" : 2900
+  }, {
+    "volume" : 48765,
+    "marketCap" : 131247615780,
+    "lowPrice" : 2855,
+    "highPrice" : 2900,
+    "openPrice" : 2900,
+    "tradeDate" : "2025-01-31",
+    "closePrice" : 2895
+  }, {
+    "volume" : 108174,
+    "marketCap" : 127847418480,
+    "lowPrice" : 2780,
+    "highPrice" : 2870,
+    "openPrice" : 2870,
+    "tradeDate" : "2025-02-03",
+    "closePrice" : 2820
+  }, {
+    "volume" : 24482,
+    "marketCap" : 128980817580,
+    "lowPrice" : 2810,
+    "highPrice" : 2865,
+    "openPrice" : 2810,
+    "tradeDate" : "2025-02-04",
+    "closePrice" : 2845
+  }, {
+    "volume" : 68320,
+    "marketCap" : 131927655240,
+    "lowPrice" : 2860,
+    "highPrice" : 2940,
+    "openPrice" : 2865,
+    "tradeDate" : "2025-02-05",
+    "closePrice" : 2910
+  }, {
+    "volume" : 36424,
+    "marketCap" : 131927655240,
+    "lowPrice" : 2905,
+    "highPrice" : 2950,
+    "openPrice" : 2950,
+    "tradeDate" : "2025-02-06",
+    "closePrice" : 2910
+  }, {
+    "volume" : 91532,
+    "marketCap" : 131474295600,
+    "lowPrice" : 2855,
+    "highPrice" : 2945,
+    "openPrice" : 2945,
+    "tradeDate" : "2025-02-07",
+    "closePrice" : 2900
+  }, {
+    "volume" : 40183,
+    "marketCap" : 132154335060,
+    "lowPrice" : 2845,
+    "highPrice" : 2940,
+    "openPrice" : 2865,
+    "tradeDate" : "2025-02-10",
+    "closePrice" : 2915
+  }, {
+    "volume" : 38847,
+    "marketCap" : 131927655240,
+    "lowPrice" : 2885,
+    "highPrice" : 2940,
+    "openPrice" : 2935,
+    "tradeDate" : "2025-02-11",
+    "closePrice" : 2910
+  }, {
+    "volume" : 27341,
+    "marketCap" : 131020935960,
+    "lowPrice" : 2880,
+    "highPrice" : 2915,
+    "openPrice" : 2910,
+    "tradeDate" : "2025-02-12",
+    "closePrice" : 2890
+  }, {
+    "volume" : 26334,
+    "marketCap" : 131474295600,
+    "lowPrice" : 2885,
+    "highPrice" : 2920,
+    "openPrice" : 2920,
+    "tradeDate" : "2025-02-13",
+    "closePrice" : 2900
+  }, {
+    "volume" : 38821,
+    "marketCap" : 132381014880,
+    "lowPrice" : 2890,
+    "highPrice" : 2930,
+    "openPrice" : 2910,
+    "tradeDate" : "2025-02-14",
+    "closePrice" : 2920
+  }, {
+    "volume" : 70710,
+    "marketCap" : 133741093800,
+    "lowPrice" : 2900,
+    "highPrice" : 2985,
+    "openPrice" : 2930,
+    "tradeDate" : "2025-02-17",
+    "closePrice" : 2950
+  }, {
+    "volume" : 78240,
+    "marketCap" : 135101172720,
+    "lowPrice" : 2940,
+    "highPrice" : 3010,
+    "openPrice" : 2985,
+    "tradeDate" : "2025-02-18",
+    "closePrice" : 2980
+  }, {
+    "volume" : 71647,
+    "marketCap" : 138048010380,
+    "lowPrice" : 2960,
+    "highPrice" : 3060,
+    "openPrice" : 2975,
+    "tradeDate" : "2025-02-19",
+    "closePrice" : 3045
+  }, {
+    "volume" : 71942,
+    "marketCap" : 136914611280,
+    "lowPrice" : 2965,
+    "highPrice" : 3060,
+    "openPrice" : 3045,
+    "tradeDate" : "2025-02-20",
+    "closePrice" : 3020
+  }, {
+    "volume" : 5999027,
+    "marketCap" : 160262632740,
+    "lowPrice" : 3005,
+    "highPrice" : 3870,
+    "openPrice" : 3045,
+    "tradeDate" : "2025-02-21",
+    "closePrice" : 3535
+  }, {
+    "volume" : 906232,
+    "marketCap" : 160942672200,
+    "lowPrice" : 3405,
+    "highPrice" : 3675,
+    "openPrice" : 3520,
+    "tradeDate" : "2025-02-24",
+    "closePrice" : 3550
+  }, {
+    "volume" : 7096277,
+    "marketCap" : 162076071300,
+    "lowPrice" : 3455,
+    "highPrice" : 4245,
+    "openPrice" : 3550,
+    "tradeDate" : "2025-02-25",
+    "closePrice" : 3575
+  }, {
+    "volume" : 2128519,
+    "marketCap" : 166836347520,
+    "lowPrice" : 3580,
+    "highPrice" : 3900,
+    "openPrice" : 3650,
+    "tradeDate" : "2025-02-26",
+    "closePrice" : 3680
+  }, {
+    "volume" : 522497,
+    "marketCap" : 169783185180,
+    "lowPrice" : 3620,
+    "highPrice" : 3770,
+    "openPrice" : 3650,
+    "tradeDate" : "2025-02-27",
+    "closePrice" : 3745
+  }, {
+    "volume" : 273340,
+    "marketCap" : 167516386980,
+    "lowPrice" : 3655,
+    "highPrice" : 3745,
+    "openPrice" : 3700,
+    "tradeDate" : "2025-02-28",
+    "closePrice" : 3695
+  }, {
+    "volume" : 240555,
+    "marketCap" : 163436150220,
+    "lowPrice" : 3535,
+    "highPrice" : 3690,
+    "openPrice" : 3690,
+    "tradeDate" : "2025-03-04",
+    "closePrice" : 3605
+  }, {
+    "volume" : 132257,
+    "marketCap" : 163889509860,
+    "lowPrice" : 3560,
+    "highPrice" : 3665,
+    "openPrice" : 3600,
+    "tradeDate" : "2025-03-05",
+    "closePrice" : 3615
+  }, {
+    "volume" : 244521,
+    "marketCap" : 162982790580,
+    "lowPrice" : 3500,
+    "highPrice" : 3650,
+    "openPrice" : 3650,
+    "tradeDate" : "2025-03-06",
+    "closePrice" : 3595
+  }, {
+    "volume" : 108679,
+    "marketCap" : 160035952920,
+    "lowPrice" : 3500,
+    "highPrice" : 3610,
+    "openPrice" : 3580,
+    "tradeDate" : "2025-03-07",
+    "closePrice" : 3530
+  }, {
+    "volume" : 93842,
+    "marketCap" : 162076071300,
+    "lowPrice" : 3440,
+    "highPrice" : 3590,
+    "openPrice" : 3590,
+    "tradeDate" : "2025-03-10",
+    "closePrice" : 3575
+  }, {
+    "volume" : 109564,
+    "marketCap" : 164796229140,
+    "lowPrice" : 3460,
+    "highPrice" : 3640,
+    "openPrice" : 3500,
+    "tradeDate" : "2025-03-11",
+    "closePrice" : 3635
+  }, {
+    "volume" : 74888,
+    "marketCap" : 163436150220,
+    "lowPrice" : 3570,
+    "highPrice" : 3650,
+    "openPrice" : 3635,
+    "tradeDate" : "2025-03-12",
+    "closePrice" : 3605
+  }, {
+    "volume" : 71515,
+    "marketCap" : 163209470400,
+    "lowPrice" : 3570,
+    "highPrice" : 3635,
+    "openPrice" : 3635,
+    "tradeDate" : "2025-03-13",
+    "closePrice" : 3600
+  }, {
+    "volume" : 208116,
+    "marketCap" : 166382987880,
+    "lowPrice" : 3580,
+    "highPrice" : 3735,
+    "openPrice" : 3605,
+    "tradeDate" : "2025-03-14",
+    "closePrice" : 3670
+  }, {
+    "volume" : 240915,
+    "marketCap" : 171143264100,
+    "lowPrice" : 3640,
+    "highPrice" : 3845,
+    "openPrice" : 3640,
+    "tradeDate" : "2025-03-17",
+    "closePrice" : 3775
+  }, {
+    "volume" : 107046,
+    "marketCap" : 169329825540,
+    "lowPrice" : 3700,
+    "highPrice" : 3820,
+    "openPrice" : 3795,
+    "tradeDate" : "2025-03-18",
+    "closePrice" : 3735
+  }, {
+    "volume" : 98741,
+    "marketCap" : 167743066800,
+    "lowPrice" : 3660,
+    "highPrice" : 3810,
+    "openPrice" : 3735,
+    "tradeDate" : "2025-03-19",
+    "closePrice" : 3700
+  }, {
+    "volume" : 105341,
+    "marketCap" : 163662830040,
+    "lowPrice" : 3575,
+    "highPrice" : 3770,
+    "openPrice" : 3770,
+    "tradeDate" : "2025-03-20",
+    "closePrice" : 3610
+  }, {
+    "volume" : 106706,
+    "marketCap" : 160489312560,
+    "lowPrice" : 3480,
+    "highPrice" : 3645,
+    "openPrice" : 3620,
+    "tradeDate" : "2025-03-21",
+    "closePrice" : 3540
+  }, {
+    "volume" : 160593,
+    "marketCap" : 167289707160,
+    "lowPrice" : 3535,
+    "highPrice" : 3695,
+    "openPrice" : 3540,
+    "tradeDate" : "2025-03-24",
+    "closePrice" : 3690
+  }, {
+    "volume" : 81534,
+    "marketCap" : 161849391480,
+    "lowPrice" : 3540,
+    "highPrice" : 3720,
+    "openPrice" : 3690,
+    "tradeDate" : "2025-03-25",
+    "closePrice" : 3570
+  }, {
+    "volume" : 106948,
+    "marketCap" : 165249588780,
+    "lowPrice" : 3530,
+    "highPrice" : 3660,
+    "openPrice" : 3570,
+    "tradeDate" : "2025-03-26",
+    "closePrice" : 3645
+  }, {
+    "volume" : 50492,
+    "marketCap" : 163662830040,
+    "lowPrice" : 3555,
+    "highPrice" : 3695,
+    "openPrice" : 3640,
+    "tradeDate" : "2025-03-27",
+    "closePrice" : 3610
+  }, {
+    "volume" : 160543,
+    "marketCap" : 169103145720,
+    "lowPrice" : 3535,
+    "highPrice" : 3810,
+    "openPrice" : 3575,
+    "tradeDate" : "2025-03-28",
+    "closePrice" : 3730
+  }, {
+    "volume" : 139233,
+    "marketCap" : 166609667700,
+    "lowPrice" : 3660,
+    "highPrice" : 3830,
+    "openPrice" : 3730,
+    "tradeDate" : "2025-03-31",
+    "closePrice" : 3675
+  }, {
+    "volume" : 380947,
+    "marketCap" : 176356899960,
+    "lowPrice" : 3675,
+    "highPrice" : 3925,
+    "openPrice" : 3675,
+    "tradeDate" : "2025-04-01",
+    "closePrice" : 3890
+  }, {
+    "volume" : 135105,
+    "marketCap" : 175903540320,
+    "lowPrice" : 3840,
+    "highPrice" : 3925,
+    "openPrice" : 3890,
+    "tradeDate" : "2025-04-02",
+    "closePrice" : 3880
+  }, {
+    "volume" : 134441,
+    "marketCap" : 175676860500,
+    "lowPrice" : 3805,
+    "highPrice" : 3920,
+    "openPrice" : 3875,
+    "tradeDate" : "2025-04-03",
+    "closePrice" : 3875
+  }, {
+    "volume" : 162761,
+    "marketCap" : 180437136720,
+    "lowPrice" : 3795,
+    "highPrice" : 3980,
+    "openPrice" : 3870,
+    "tradeDate" : "2025-04-04",
+    "closePrice" : 3980
+  }, {
+    "volume" : 171433,
+    "marketCap" : 168196426440,
+    "lowPrice" : 3690,
+    "highPrice" : 3900,
+    "openPrice" : 3900,
+    "tradeDate" : "2025-04-07",
+    "closePrice" : 3710
+  }, {
+    "volume" : 83365,
+    "marketCap" : 167743066800,
+    "lowPrice" : 3670,
+    "highPrice" : 3800,
+    "openPrice" : 3770,
+    "tradeDate" : "2025-04-08",
+    "closePrice" : 3700
+  }, {
+    "volume" : 84671,
+    "marketCap" : 166156308060,
+    "lowPrice" : 3570,
+    "highPrice" : 3790,
+    "openPrice" : 3660,
+    "tradeDate" : "2025-04-09",
+    "closePrice" : 3665
+  }, {
+    "volume" : 127746,
+    "marketCap" : 173863421940,
+    "lowPrice" : 3700,
+    "highPrice" : 3850,
+    "openPrice" : 3700,
+    "tradeDate" : "2025-04-10",
+    "closePrice" : 3835
+  }, {
+    "volume" : 177994,
+    "marketCap" : 176130220140,
+    "lowPrice" : 3785,
+    "highPrice" : 3885,
+    "openPrice" : 3830,
+    "tradeDate" : "2025-04-11",
+    "closePrice" : 3885
+  }, {
+    "volume" : 222343,
+    "marketCap" : 171823303560,
+    "lowPrice" : 3765,
+    "highPrice" : 3930,
+    "openPrice" : 3905,
+    "tradeDate" : "2025-04-14",
+    "closePrice" : 3790
+  }, {
+    "volume" : 210557,
+    "marketCap" : 174316781580,
+    "lowPrice" : 3715,
+    "highPrice" : 3855,
+    "openPrice" : 3830,
+    "tradeDate" : "2025-04-15",
+    "closePrice" : 3845
+  }, {
+    "volume" : 99594,
+    "marketCap" : 174996821040,
+    "lowPrice" : 3820,
+    "highPrice" : 3890,
+    "openPrice" : 3865,
+    "tradeDate" : "2025-04-16",
+    "closePrice" : 3860
+  }, {
+    "volume" : 79601,
+    "marketCap" : 173636742120,
+    "lowPrice" : 3800,
+    "highPrice" : 3890,
+    "openPrice" : 3890,
+    "tradeDate" : "2025-04-17",
+    "closePrice" : 3830
+  }, {
+    "volume" : 174802,
+    "marketCap" : 177263619240,
+    "lowPrice" : 3825,
+    "highPrice" : 3945,
+    "openPrice" : 3835,
+    "tradeDate" : "2025-04-18",
+    "closePrice" : 3910
+  }, {
+    "volume" : 122260,
+    "marketCap" : 175676860500,
+    "lowPrice" : 3865,
+    "highPrice" : 3950,
+    "openPrice" : 3910,
+    "tradeDate" : "2025-04-21",
+    "closePrice" : 3875
+  }, {
+    "volume" : 111947,
+    "marketCap" : 174090101760,
+    "lowPrice" : 3810,
+    "highPrice" : 3880,
+    "openPrice" : 3875,
+    "tradeDate" : "2025-04-22",
+    "closePrice" : 3840
+  }, {
+    "volume" : 322333,
+    "marketCap" : 174090101760,
+    "lowPrice" : 3810,
+    "highPrice" : 3925,
+    "openPrice" : 3870,
+    "tradeDate" : "2025-04-23",
+    "closePrice" : 3840
+  }, {
+    "volume" : 86694,
+    "marketCap" : 171823303560,
+    "lowPrice" : 3750,
+    "highPrice" : 3840,
+    "openPrice" : 3840,
+    "tradeDate" : "2025-04-24",
+    "closePrice" : 3790
+  }, {
+    "volume" : 217745,
+    "marketCap" : 177263619240,
+    "lowPrice" : 3800,
+    "highPrice" : 3945,
+    "openPrice" : 3810,
+    "tradeDate" : "2025-04-25",
+    "closePrice" : 3910
+  }, {
+    "volume" : 386304,
+    "marketCap" : 184290693660,
+    "lowPrice" : 3915,
+    "highPrice" : 4150,
+    "openPrice" : 3950,
+    "tradeDate" : "2025-04-28",
+    "closePrice" : 4065
+  }, {
+    "volume" : 236194,
+    "marketCap" : 183157294560,
+    "lowPrice" : 4035,
+    "highPrice" : 4155,
+    "openPrice" : 4095,
+    "tradeDate" : "2025-04-29",
+    "closePrice" : 4040
+  }, {
+    "volume" : 185451,
+    "marketCap" : 181343856000,
+    "lowPrice" : 3915,
+    "highPrice" : 4065,
+    "openPrice" : 4065,
+    "tradeDate" : "2025-04-30",
+    "closePrice" : 4000
+  }, {
+    "volume" : 123628,
+    "marketCap" : 182250575280,
+    "lowPrice" : 3965,
+    "highPrice" : 4080,
+    "openPrice" : 4000,
+    "tradeDate" : "2025-05-02",
+    "closePrice" : 4020
+  }, {
+    "volume" : 162515,
+    "marketCap" : 177263619240,
+    "lowPrice" : 3900,
+    "highPrice" : 4045,
+    "openPrice" : 4045,
+    "tradeDate" : "2025-05-07",
+    "closePrice" : 3910
+  }, {
+    "volume" : 203546,
+    "marketCap" : 173863421940,
+    "lowPrice" : 3785,
+    "highPrice" : 3945,
+    "openPrice" : 3915,
+    "tradeDate" : "2025-05-08",
+    "closePrice" : 3835
+  }, {
+    "volume" : 155820,
+    "marketCap" : 171823303560,
+    "lowPrice" : 3760,
+    "highPrice" : 3835,
+    "openPrice" : 3825,
+    "tradeDate" : "2025-05-09",
+    "closePrice" : 3790
+  }, {
+    "volume" : 103754,
+    "marketCap" : 173636742120,
+    "lowPrice" : 3755,
+    "highPrice" : 3835,
+    "openPrice" : 3815,
+    "tradeDate" : "2025-05-12",
+    "closePrice" : 3830
+  }, {
+    "volume" : 165321,
+    "marketCap" : 168196426440,
+    "lowPrice" : 3700,
+    "highPrice" : 3830,
+    "openPrice" : 3830,
+    "tradeDate" : "2025-05-13",
+    "closePrice" : 3710
+  }, {
+    "volume" : 64360,
+    "marketCap" : 170009865000,
+    "lowPrice" : 3690,
+    "highPrice" : 3775,
+    "openPrice" : 3745,
+    "tradeDate" : "2025-05-14",
+    "closePrice" : 3750
+  }, {
+    "volume" : 117512,
+    "marketCap" : 173636742120,
+    "lowPrice" : 3735,
+    "highPrice" : 3840,
+    "openPrice" : 3770,
+    "tradeDate" : "2025-05-15",
+    "closePrice" : 3830
+  }, {
+    "volume" : 959067,
+    "marketCap" : 179077057800,
+    "lowPrice" : 3870,
+    "highPrice" : 4275,
+    "openPrice" : 3895,
+    "tradeDate" : "2025-05-16",
+    "closePrice" : 3950
+  }, {
+    "volume" : 911005,
+    "marketCap" : 174316781580,
+    "lowPrice" : 3780,
+    "highPrice" : 4010,
+    "openPrice" : 3920,
+    "tradeDate" : "2025-05-19",
+    "closePrice" : 3845
+  }, {
+    "volume" : 189818,
+    "marketCap" : 174316781580,
+    "lowPrice" : 3825,
+    "highPrice" : 3925,
+    "openPrice" : 3905,
+    "tradeDate" : "2025-05-20",
+    "closePrice" : 3845
+  }, {
+    "volume" : 98883,
+    "marketCap" : 175903540320,
+    "lowPrice" : 3830,
+    "highPrice" : 3950,
+    "openPrice" : 3850,
+    "tradeDate" : "2025-05-21",
+    "closePrice" : 3880
+  }, {
+    "volume" : 134089,
+    "marketCap" : 169103145720,
+    "lowPrice" : 3710,
+    "highPrice" : 3870,
+    "openPrice" : 3870,
+    "tradeDate" : "2025-05-22",
+    "closePrice" : 3730
+  }, {
+    "volume" : 128256,
+    "marketCap" : 162756110760,
+    "lowPrice" : 3590,
+    "highPrice" : 3765,
+    "openPrice" : 3760,
+    "tradeDate" : "2025-05-23",
+    "closePrice" : 3590
+  }, {
+    "volume" : 64866,
+    "marketCap" : 162756110760,
+    "lowPrice" : 3535,
+    "highPrice" : 3640,
+    "openPrice" : 3590,
+    "tradeDate" : "2025-05-26",
+    "closePrice" : 3590
+  }, {
+    "volume" : 113547,
+    "marketCap" : 162756110760,
+    "lowPrice" : 3530,
+    "highPrice" : 3630,
+    "openPrice" : 3620,
+    "tradeDate" : "2025-05-27",
+    "closePrice" : 3590
+  }, {
+    "volume" : 69775,
+    "marketCap" : 166382987880,
+    "lowPrice" : 3570,
+    "highPrice" : 3700,
+    "openPrice" : 3570,
+    "tradeDate" : "2025-05-28",
+    "closePrice" : 3670
+  }, {
+    "volume" : 105477,
+    "marketCap" : 173183382480,
+    "lowPrice" : 3655,
+    "highPrice" : 3835,
+    "openPrice" : 3670,
+    "tradeDate" : "2025-05-29",
+    "closePrice" : 3820
+  }, {
+    "volume" : 94489,
+    "marketCap" : 174543461400,
+    "lowPrice" : 3795,
+    "highPrice" : 3955,
+    "openPrice" : 3845,
+    "tradeDate" : "2025-05-30",
+    "closePrice" : 3850
+  }, {
+    "volume" : 44708,
+    "marketCap" : 176130220140,
+    "lowPrice" : 3815,
+    "highPrice" : 3930,
+    "openPrice" : 3930,
+    "tradeDate" : "2025-06-02",
+    "closePrice" : 3885
+  }, {
+    "volume" : 276729,
+    "marketCap" : 182477255100,
+    "lowPrice" : 3915,
+    "highPrice" : 4130,
+    "openPrice" : 3950,
+    "tradeDate" : "2025-06-04",
+    "closePrice" : 4025
+  }, {
+    "volume" : 252567,
+    "marketCap" : 183157294560,
+    "lowPrice" : 3900,
+    "highPrice" : 4150,
+    "openPrice" : 4025,
+    "tradeDate" : "2025-06-05",
+    "closePrice" : 4040
+  }, {
+    "volume" : 134731,
+    "marketCap" : 183157294560,
+    "lowPrice" : 4000,
+    "highPrice" : 4130,
+    "openPrice" : 4000,
+    "tradeDate" : "2025-06-09",
+    "closePrice" : 4040
+  }, {
+    "volume" : 124613,
+    "marketCap" : 186784171680,
+    "lowPrice" : 4030,
+    "highPrice" : 4160,
+    "openPrice" : 4160,
+    "tradeDate" : "2025-06-10",
+    "closePrice" : 4120
+  }, {
+    "volume" : 79350,
+    "marketCap" : 187237531320,
+    "lowPrice" : 4055,
+    "highPrice" : 4150,
+    "openPrice" : 4150,
+    "tradeDate" : "2025-06-11",
+    "closePrice" : 4130
+  }, {
+    "volume" : 159475,
+    "marketCap" : 187464211140,
+    "lowPrice" : 4115,
+    "highPrice" : 4235,
+    "openPrice" : 4130,
+    "tradeDate" : "2025-06-12",
+    "closePrice" : 4135
+  }, {
+    "volume" : 63396,
+    "marketCap" : 185424092760,
+    "lowPrice" : 4070,
+    "highPrice" : 4195,
+    "openPrice" : 4145,
+    "tradeDate" : "2025-06-13",
+    "closePrice" : 4090
+  }, {
+    "volume" : 85111,
+    "marketCap" : 185877452400,
+    "lowPrice" : 4025,
+    "highPrice" : 4195,
+    "openPrice" : 4090,
+    "tradeDate" : "2025-06-16",
+    "closePrice" : 4100
+  }, {
+    "volume" : 1043260,
+    "marketCap" : 200384960880,
+    "lowPrice" : 4165,
+    "highPrice" : 4710,
+    "openPrice" : 4165,
+    "tradeDate" : "2025-06-17",
+    "closePrice" : 4420
+  }, {
+    "volume" : 153285,
+    "marketCap" : 204011838000,
+    "lowPrice" : 4330,
+    "highPrice" : 4510,
+    "openPrice" : 4365,
+    "tradeDate" : "2025-06-18",
+    "closePrice" : 4500
+  }, {
+    "volume" : 152367,
+    "marketCap" : 199000062960,
+    "lowPrice" : 4350,
+    "highPrice" : 4550,
+    "openPrice" : 4550,
+    "tradeDate" : "2025-06-19",
+    "closePrice" : 4440
+  }, {
+    "volume" : 96174,
+    "marketCap" : 196086773750,
+    "lowPrice" : 4375,
+    "highPrice" : 4515,
+    "openPrice" : 4440,
+    "tradeDate" : "2025-06-20",
+    "closePrice" : 4375
+  }, {
+    "volume" : 108518,
+    "marketCap" : 194069881220,
+    "lowPrice" : 4250,
+    "highPrice" : 4350,
+    "openPrice" : 4350,
+    "tradeDate" : "2025-06-23",
+    "closePrice" : 4330
+  }, {
+    "volume" : 104852,
+    "marketCap" : 192501187030,
+    "lowPrice" : 4250,
+    "highPrice" : 4450,
+    "openPrice" : 4410,
+    "tradeDate" : "2025-06-24",
+    "closePrice" : 4295
+  }, {
+    "volume" : 73358,
+    "marketCap" : 191604790350,
+    "lowPrice" : 4215,
+    "highPrice" : 4375,
+    "openPrice" : 4375,
+    "tradeDate" : "2025-06-25",
+    "closePrice" : 4275
+  }, {
+    "volume" : 70325,
+    "marketCap" : 188691501140,
+    "lowPrice" : 4150,
+    "highPrice" : 4275,
+    "openPrice" : 4275,
+    "tradeDate" : "2025-06-26",
+    "closePrice" : 4210
+  }, {
+    "volume" : 64497,
+    "marketCap" : 185554112760,
+    "lowPrice" : 4115,
+    "highPrice" : 4220,
+    "openPrice" : 4210,
+    "tradeDate" : "2025-06-27",
+    "closePrice" : 4140
+  }, {
+    "volume" : 50700,
+    "marketCap" : 186898707780,
+    "lowPrice" : 4095,
+    "highPrice" : 4170,
+    "openPrice" : 4140,
+    "tradeDate" : "2025-06-30",
+    "closePrice" : 4170
+  }, {
+    "volume" : 6171893,
+    "marketCap" : 207515831420,
+    "lowPrice" : 4175,
+    "highPrice" : 5340,
+    "openPrice" : 4210,
+    "tradeDate" : "2025-07-01",
+    "closePrice" : 4630
+  }, {
+    "volume" : 17015258,
+    "marketCap" : 221858178300,
+    "lowPrice" : 4570,
+    "highPrice" : 5620,
+    "openPrice" : 4630,
+    "tradeDate" : "2025-07-02",
+    "closePrice" : 4950
+  }, {
+    "volume" : 3573732,
+    "marketCap" : 224099170000,
+    "lowPrice" : 4935,
+    "highPrice" : 5290,
+    "openPrice" : 5010,
+    "tradeDate" : "2025-07-03",
+    "closePrice" : 5000
+  }, {
+    "volume" : 1165454,
+    "marketCap" : 211549616480,
+    "lowPrice" : 4720,
+    "highPrice" : 5220,
+    "openPrice" : 4970,
+    "tradeDate" : "2025-07-04",
+    "closePrice" : 4720
+  }, {
+    "volume" : 464863,
+    "marketCap" : 207291732250,
+    "lowPrice" : 4600,
+    "highPrice" : 4865,
+    "openPrice" : 4720,
+    "tradeDate" : "2025-07-07",
+    "closePrice" : 4625
+  }, {
+    "volume" : 865631,
+    "marketCap" : 219617186600,
+    "lowPrice" : 4615,
+    "highPrice" : 4990,
+    "openPrice" : 4620,
+    "tradeDate" : "2025-07-08",
+    "closePrice" : 4900
+  }, {
+    "volume" : 213558,
+    "marketCap" : 220289484110,
+    "lowPrice" : 4795,
+    "highPrice" : 4925,
+    "openPrice" : 4885,
+    "tradeDate" : "2025-07-09",
+    "closePrice" : 4915
+  }, {
+    "volume" : 267283,
+    "marketCap" : 216479798220,
+    "lowPrice" : 4805,
+    "highPrice" : 4955,
+    "openPrice" : 4920,
+    "tradeDate" : "2025-07-10",
+    "closePrice" : 4830
+  }, {
+    "volume" : 253697,
+    "marketCap" : 214014707350,
+    "lowPrice" : 4755,
+    "highPrice" : 4925,
+    "openPrice" : 4840,
+    "tradeDate" : "2025-07-11",
+    "closePrice" : 4775
+  }, {
+    "volume" : 113798,
+    "marketCap" : 213342409840,
+    "lowPrice" : 4700,
+    "highPrice" : 4810,
+    "openPrice" : 4780,
+    "tradeDate" : "2025-07-14",
+    "closePrice" : 4760
+  }, {
+    "volume" : 123200,
+    "marketCap" : 211773715650,
+    "lowPrice" : 4690,
+    "highPrice" : 4810,
+    "openPrice" : 4810,
+    "tradeDate" : "2025-07-15",
+    "closePrice" : 4725
+  }, {
+    "volume" : 135155,
+    "marketCap" : 208412228100,
+    "lowPrice" : 4600,
+    "highPrice" : 4740,
+    "openPrice" : 4740,
+    "tradeDate" : "2025-07-16",
+    "closePrice" : 4650
+  }, {
+    "volume" : 95778,
+    "marketCap" : 207964029760,
+    "lowPrice" : 4585,
+    "highPrice" : 4690,
+    "openPrice" : 4650,
+    "tradeDate" : "2025-07-17",
+    "closePrice" : 4640
+  }, {
+    "volume" : 90303,
+    "marketCap" : 208188128930,
+    "lowPrice" : 4585,
+    "highPrice" : 4660,
+    "openPrice" : 4635,
+    "tradeDate" : "2025-07-18",
+    "closePrice" : 4645
+  }, {
+    "volume" : 133233,
+    "marketCap" : 201913352170,
+    "lowPrice" : 4455,
+    "highPrice" : 4645,
+    "openPrice" : 4645,
+    "tradeDate" : "2025-07-21",
+    "closePrice" : 4505
+  }, {
+    "volume" : 112604,
+    "marketCap" : 201241054660,
+    "lowPrice" : 4460,
+    "highPrice" : 4570,
+    "openPrice" : 4505,
+    "tradeDate" : "2025-07-22",
+    "closePrice" : 4490
+  }, {
+    "volume" : 67493,
+    "marketCap" : 201689253000,
+    "lowPrice" : 4410,
+    "highPrice" : 4545,
+    "openPrice" : 4490,
+    "tradeDate" : "2025-07-23",
+    "closePrice" : 4500
+  }, {
+    "volume" : 111711,
+    "marketCap" : 195862674580,
+    "lowPrice" : 4360,
+    "highPrice" : 4535,
+    "openPrice" : 4505,
+    "tradeDate" : "2025-07-24",
+    "closePrice" : 4370
+  }, {
+    "volume" : 138021,
+    "marketCap" : 193845782050,
+    "lowPrice" : 4305,
+    "highPrice" : 4460,
+    "openPrice" : 4460,
+    "tradeDate" : "2025-07-25",
+    "closePrice" : 4325
+  }, {
+    "volume" : 104620,
+    "marketCap" : 191156592010,
+    "lowPrice" : 4225,
+    "highPrice" : 4360,
+    "openPrice" : 4275,
+    "tradeDate" : "2025-07-28",
+    "closePrice" : 4265
+  }, {
+    "volume" : 53578,
+    "marketCap" : 190708393670,
+    "lowPrice" : 4200,
+    "highPrice" : 4320,
+    "openPrice" : 4320,
+    "tradeDate" : "2025-07-29",
+    "closePrice" : 4255
+  }, {
+    "volume" : 38876,
+    "marketCap" : 190484294500,
+    "lowPrice" : 4220,
+    "highPrice" : 4285,
+    "openPrice" : 4280,
+    "tradeDate" : "2025-07-30",
+    "closePrice" : 4250
+  }, {
+    "volume" : 56268,
+    "marketCap" : 192052988690,
+    "lowPrice" : 4230,
+    "highPrice" : 4310,
+    "openPrice" : 4260,
+    "tradeDate" : "2025-07-31",
+    "closePrice" : 4285
+  }, {
+    "volume" : 174291,
+    "marketCap" : 179503435170,
+    "lowPrice" : 4000,
+    "highPrice" : 4285,
+    "openPrice" : 4285,
+    "tradeDate" : "2025-08-01",
+    "closePrice" : 4005
+  }, {
+    "volume" : 52231,
+    "marketCap" : 183313121060,
+    "lowPrice" : 3985,
+    "highPrice" : 4120,
+    "openPrice" : 3985,
+    "tradeDate" : "2025-08-04",
+    "closePrice" : 4090
+  }, {
+    "volume" : 73239,
+    "marketCap" : 184881815250,
+    "lowPrice" : 4055,
+    "highPrice" : 4165,
+    "openPrice" : 4060,
+    "tradeDate" : "2025-08-05",
+    "closePrice" : 4125
+  }, {
+    "volume" : 26806,
+    "marketCap" : 186898707780,
+    "lowPrice" : 4075,
+    "highPrice" : 4170,
+    "openPrice" : 4125,
+    "tradeDate" : "2025-08-06",
+    "closePrice" : 4170
+  }, {
+    "volume" : 21913,
+    "marketCap" : 186226410270,
+    "lowPrice" : 4140,
+    "highPrice" : 4202,
+    "openPrice" : 4175,
+    "tradeDate" : "2025-08-07",
+    "closePrice" : 4155
+  }, {
+    "volume" : 40788,
+    "marketCap" : 186002311100,
+    "lowPrice" : 4105,
+    "highPrice" : 4190,
+    "openPrice" : 4125,
+    "tradeDate" : "2025-08-08",
+    "closePrice" : 4150
+  }, {
+    "volume" : 43428,
+    "marketCap" : 183313121060,
+    "lowPrice" : 4035,
+    "highPrice" : 4170,
+    "openPrice" : 4150,
+    "tradeDate" : "2025-08-11",
+    "closePrice" : 4090
+  }, {
+    "volume" : 45580,
+    "marketCap" : 182640823550,
+    "lowPrice" : 4040,
+    "highPrice" : 4145,
+    "openPrice" : 4145,
+    "tradeDate" : "2025-08-12",
+    "closePrice" : 4075
+  }, {
+    "volume" : 91307,
+    "marketCap" : 184881815250,
+    "lowPrice" : 3980,
+    "highPrice" : 4170,
+    "openPrice" : 4075,
+    "tradeDate" : "2025-08-13",
+    "closePrice" : 4125
+  }, {
+    "volume" : 24941,
+    "marketCap" : 181296228530,
+    "lowPrice" : 4040,
+    "highPrice" : 4125,
+    "openPrice" : 4125,
+    "tradeDate" : "2025-08-14",
+    "closePrice" : 4045
+  }, {
+    "volume" : 110675,
+    "marketCap" : 178607038490,
+    "lowPrice" : 3935,
+    "highPrice" : 4115,
+    "openPrice" : 4045,
+    "tradeDate" : "2025-08-18",
+    "closePrice" : 3985
+  }, {
+    "volume" : 85122,
+    "marketCap" : 181968526040,
+    "lowPrice" : 3960,
+    "highPrice" : 4135,
+    "openPrice" : 3985,
+    "tradeDate" : "2025-08-19",
+    "closePrice" : 4060
+  }, {
+    "volume" : 37088,
+    "marketCap" : 181744426870,
+    "lowPrice" : 3970,
+    "highPrice" : 4070,
+    "openPrice" : 4000,
+    "tradeDate" : "2025-08-20",
+    "closePrice" : 4055
+  }, {
+    "volume" : 39822,
+    "marketCap" : 180623931020,
+    "lowPrice" : 4000,
+    "highPrice" : 4100,
+    "openPrice" : 4050,
+    "tradeDate" : "2025-08-21",
+    "closePrice" : 4030
+  }, {
+    "volume" : 32494,
+    "marketCap" : 181968526040,
+    "lowPrice" : 4010,
+    "highPrice" : 4100,
+    "openPrice" : 4010,
+    "tradeDate" : "2025-08-22",
+    "closePrice" : 4060
+  }, {
+    "volume" : 34554,
+    "marketCap" : 183313121060,
+    "lowPrice" : 4055,
+    "highPrice" : 4120,
+    "openPrice" : 4060,
+    "tradeDate" : "2025-08-25",
+    "closePrice" : 4090
+  }, {
+    "volume" : 31565,
+    "marketCap" : 182640823550,
+    "lowPrice" : 4040,
+    "highPrice" : 4105,
+    "openPrice" : 4055,
+    "tradeDate" : "2025-08-26",
+    "closePrice" : 4075
+  }, {
+    "volume" : 36196,
+    "marketCap" : 180623931020,
+    "lowPrice" : 3995,
+    "highPrice" : 4075,
+    "openPrice" : 4075,
+    "tradeDate" : "2025-08-27",
+    "closePrice" : 4030
+  }, {
+    "volume" : 66825,
+    "marketCap" : 180623931020,
+    "lowPrice" : 3950,
+    "highPrice" : 4070,
+    "openPrice" : 4030,
+    "tradeDate" : "2025-08-28",
+    "closePrice" : 4030
+  }, {
+    "volume" : 46200,
+    "marketCap" : 180623931020,
+    "lowPrice" : 3990,
+    "highPrice" : 4100,
+    "openPrice" : 4010,
+    "tradeDate" : "2025-08-29",
+    "closePrice" : 4030
+  }, {
+    "volume" : 79339,
+    "marketCap" : 176814245130,
+    "lowPrice" : 3890,
+    "highPrice" : 4020,
+    "openPrice" : 3960,
+    "tradeDate" : "2025-09-01",
+    "closePrice" : 3945
+  }, {
+    "volume" : 62706,
+    "marketCap" : 175469650110,
+    "lowPrice" : 3880,
+    "highPrice" : 4000,
+    "openPrice" : 3910,
+    "tradeDate" : "2025-09-02",
+    "closePrice" : 3915
+  }, {
+    "volume" : 60616,
+    "marketCap" : 175469650110,
+    "lowPrice" : 3900,
+    "highPrice" : 3990,
+    "openPrice" : 3990,
+    "tradeDate" : "2025-09-03",
+    "closePrice" : 3915
+  }, {
+    "volume" : 36437,
+    "marketCap" : 177934740980,
+    "lowPrice" : 3890,
+    "highPrice" : 4010,
+    "openPrice" : 3930,
+    "tradeDate" : "2025-09-04",
+    "closePrice" : 3970
+  }, {
+    "volume" : 25524,
+    "marketCap" : 178158840150,
+    "lowPrice" : 3940,
+    "highPrice" : 4005,
+    "openPrice" : 4005,
+    "tradeDate" : "2025-09-05",
+    "closePrice" : 3975
+  }, {
+    "volume" : 30109,
+    "marketCap" : 178382939320,
+    "lowPrice" : 3930,
+    "highPrice" : 4010,
+    "openPrice" : 3975,
+    "tradeDate" : "2025-09-08",
+    "closePrice" : 3980
+  }, {
+    "volume" : 36908,
+    "marketCap" : 179727534340,
+    "lowPrice" : 3975,
+    "highPrice" : 4020,
+    "openPrice" : 3990,
+    "tradeDate" : "2025-09-09",
+    "closePrice" : 4010
+  }, {
+    "volume" : 57674,
+    "marketCap" : 181744426870,
+    "lowPrice" : 3990,
+    "highPrice" : 4080,
+    "openPrice" : 4040,
+    "tradeDate" : "2025-09-10",
+    "closePrice" : 4055
+  }, {
+    "volume" : 54118,
+    "marketCap" : 179055236830,
+    "lowPrice" : 3995,
+    "highPrice" : 4065,
+    "openPrice" : 4055,
+    "tradeDate" : "2025-09-11",
+    "closePrice" : 3995
+  }, {
+    "volume" : 107917,
+    "marketCap" : 180848030190,
+    "lowPrice" : 3960,
+    "highPrice" : 4040,
+    "openPrice" : 4015,
+    "tradeDate" : "2025-09-12",
+    "closePrice" : 4035
+  }, {
+    "volume" : 126161,
+    "marketCap" : 186450509440,
+    "lowPrice" : 4035,
+    "highPrice" : 4200,
+    "openPrice" : 4035,
+    "tradeDate" : "2025-09-15",
+    "closePrice" : 4160
+  }, {
+    "volume" : 82934,
+    "marketCap" : 183761319400,
+    "lowPrice" : 4050,
+    "highPrice" : 4160,
+    "openPrice" : 4160,
+    "tradeDate" : "2025-09-16",
+    "closePrice" : 4100
+  }, {
+    "volume" : 44899,
+    "marketCap" : 184433616910,
+    "lowPrice" : 4050,
+    "highPrice" : 4145,
+    "openPrice" : 4100,
+    "tradeDate" : "2025-09-17",
+    "closePrice" : 4115
+  }, {
+    "volume" : 51727,
+    "marketCap" : 186002311100,
+    "lowPrice" : 4100,
+    "highPrice" : 4165,
+    "openPrice" : 4150,
+    "tradeDate" : "2025-09-18",
+    "closePrice" : 4150
+  }, {
+    "volume" : 74702,
+    "marketCap" : 188019203630,
+    "lowPrice" : 4090,
+    "highPrice" : 4200,
+    "openPrice" : 4150,
+    "tradeDate" : "2025-09-19",
+    "closePrice" : 4195
+  }, {
+    "volume" : 294892,
+    "marketCap" : 192277087860,
+    "lowPrice" : 4265,
+    "highPrice" : 4460,
+    "openPrice" : 4350,
+    "tradeDate" : "2025-09-22",
+    "closePrice" : 4290
+  }, {
+    "volume" : 90817,
+    "marketCap" : 189139699480,
+    "lowPrice" : 4205,
+    "highPrice" : 4320,
+    "openPrice" : 4270,
+    "tradeDate" : "2025-09-23",
+    "closePrice" : 4220
+  }, {
+    "volume" : 45584,
+    "marketCap" : 186450509440,
+    "lowPrice" : 4125,
+    "highPrice" : 4220,
+    "openPrice" : 4220,
+    "tradeDate" : "2025-09-24",
+    "closePrice" : 4160
+  }, {
+    "volume" : 43177,
+    "marketCap" : 186226410270,
+    "lowPrice" : 4110,
+    "highPrice" : 4185,
+    "openPrice" : 4160,
+    "tradeDate" : "2025-09-25",
+    "closePrice" : 4155
+  }, {
+    "volume" : 122252,
+    "marketCap" : 179727534340,
+    "lowPrice" : 3980,
+    "highPrice" : 4185,
+    "openPrice" : 4125,
+    "tradeDate" : "2025-09-26",
+    "closePrice" : 4010
+  }, {
+    "volume" : 51135,
+    "marketCap" : 179503435170,
+    "lowPrice" : 4000,
+    "highPrice" : 4155,
+    "openPrice" : 4005,
+    "tradeDate" : "2025-09-29",
+    "closePrice" : 4005
+  }, {
+    "volume" : 68302,
+    "marketCap" : 179279336000,
+    "lowPrice" : 3970,
+    "highPrice" : 4065,
+    "openPrice" : 4005,
+    "tradeDate" : "2025-09-30",
+    "closePrice" : 4000
+  }, {
+    "volume" : 63194,
+    "marketCap" : 175469650110,
+    "lowPrice" : 3910,
+    "highPrice" : 4055,
+    "openPrice" : 4055,
+    "tradeDate" : "2025-10-01",
+    "closePrice" : 3915
+  }, {
+    "volume" : 129747,
+    "marketCap" : 174797352600,
+    "lowPrice" : 3870,
+    "highPrice" : 4090,
+    "openPrice" : 3990,
+    "tradeDate" : "2025-10-02",
+    "closePrice" : 3900
+  }, {
+    "volume" : 92393,
+    "marketCap" : 170763567540,
+    "lowPrice" : 3810,
+    "highPrice" : 3935,
+    "openPrice" : 3885,
+    "tradeDate" : "2025-10-10",
+    "closePrice" : 3810
+  }, {
+    "volume" : 68888,
+    "marketCap" : 171211765880,
+    "lowPrice" : 3720,
+    "highPrice" : 3880,
+    "openPrice" : 3810,
+    "tradeDate" : "2025-10-13",
+    "closePrice" : 3820
+  }, {
+    "volume" : 101990,
+    "marketCap" : 173900955920,
+    "lowPrice" : 3630,
+    "highPrice" : 4035,
+    "openPrice" : 3895,
+    "tradeDate" : "2025-10-14",
+    "closePrice" : 3880
+  }, {
+    "volume" : 30721,
+    "marketCap" : 176141947620,
+    "lowPrice" : 3850,
+    "highPrice" : 3960,
+    "openPrice" : 3850,
+    "tradeDate" : "2025-10-15",
+    "closePrice" : 3930
+  }, {
+    "volume" : 51856,
+    "marketCap" : 175021451770,
+    "lowPrice" : 3905,
+    "highPrice" : 3970,
+    "openPrice" : 3940,
+    "tradeDate" : "2025-10-16",
+    "closePrice" : 3905
+  }, {
+    "volume" : 76842,
+    "marketCap" : 171435865050,
+    "lowPrice" : 3630,
+    "highPrice" : 3930,
+    "openPrice" : 3915,
+    "tradeDate" : "2025-10-17",
+    "closePrice" : 3825
+  }, {
+    "volume" : 39226,
+    "marketCap" : 172332261730,
+    "lowPrice" : 3780,
+    "highPrice" : 3875,
+    "openPrice" : 3815,
+    "tradeDate" : "2025-10-20",
+    "closePrice" : 3845
+  }, {
+    "volume" : 81554,
+    "marketCap" : 172332261730,
+    "lowPrice" : 3830,
+    "highPrice" : 3935,
+    "openPrice" : 3830,
+    "tradeDate" : "2025-10-21",
+    "closePrice" : 3845
+  }, {
+    "volume" : 53797,
+    "marketCap" : 174349154260,
+    "lowPrice" : 3785,
+    "highPrice" : 3895,
+    "openPrice" : 3845,
+    "tradeDate" : "2025-10-22",
+    "closePrice" : 3890
+  }, {
+    "volume" : 46351,
+    "marketCap" : 173900955920,
+    "lowPrice" : 3855,
+    "highPrice" : 3925,
+    "openPrice" : 3890,
+    "tradeDate" : "2025-10-23",
+    "closePrice" : 3880
+  }, {
+    "volume" : 56439,
+    "marketCap" : 173676856750,
+    "lowPrice" : 3825,
+    "highPrice" : 3880,
+    "openPrice" : 3880,
+    "tradeDate" : "2025-10-24",
+    "closePrice" : 3875
+  }, {
+    "volume" : 60180,
+    "marketCap" : 173228658410,
+    "lowPrice" : 3835,
+    "highPrice" : 3875,
+    "openPrice" : 3875,
+    "tradeDate" : "2025-10-27",
+    "closePrice" : 3865
+  }, {
+    "volume" : 59102,
+    "marketCap" : 175021451770,
+    "lowPrice" : 3860,
+    "highPrice" : 3950,
+    "openPrice" : 3865,
+    "tradeDate" : "2025-10-28",
+    "closePrice" : 3905
+  }, {
+    "volume" : 46972,
+    "marketCap" : 172780460070,
+    "lowPrice" : 3850,
+    "highPrice" : 3925,
+    "openPrice" : 3905,
+    "tradeDate" : "2025-10-29",
+    "closePrice" : 3855
+  }, {
+    "volume" : 111073,
+    "marketCap" : 170987666710,
+    "lowPrice" : 3765,
+    "highPrice" : 3890,
+    "openPrice" : 3855,
+    "tradeDate" : "2025-10-30",
+    "closePrice" : 3815
+  }, {
+    "volume" : 22450,
+    "marketCap" : 170987666710,
+    "lowPrice" : 3785,
+    "highPrice" : 3860,
+    "openPrice" : 3800,
+    "tradeDate" : "2025-10-31",
+    "closePrice" : 3815
+  }, {
+    "volume" : 69775,
+    "marketCap" : 167177980820,
+    "lowPrice" : 3730,
+    "highPrice" : 3815,
+    "openPrice" : 3815,
+    "tradeDate" : "2025-11-03",
+    "closePrice" : 3730
+  }, {
+    "volume" : 98395,
+    "marketCap" : 166505683310,
+    "lowPrice" : 3690,
+    "highPrice" : 3790,
+    "openPrice" : 3730,
+    "tradeDate" : "2025-11-04",
+    "closePrice" : 3715
+  }, {
+    "volume" : 67977,
+    "marketCap" : 165833385800,
+    "lowPrice" : 3610,
+    "highPrice" : 3735,
+    "openPrice" : 3705,
+    "tradeDate" : "2025-11-05",
+    "closePrice" : 3700
+  }, {
+    "volume" : 47221,
+    "marketCap" : 167850278330,
+    "lowPrice" : 3665,
+    "highPrice" : 3765,
+    "openPrice" : 3705,
+    "tradeDate" : "2025-11-06",
+    "closePrice" : 3745
+  }, {
+    "volume" : 60159,
+    "marketCap" : 166281584140,
+    "lowPrice" : 3665,
+    "highPrice" : 3770,
+    "openPrice" : 3745,
+    "tradeDate" : "2025-11-07",
+    "closePrice" : 3710
+  }, {
+    "volume" : 44897,
+    "marketCap" : 170091270030,
+    "lowPrice" : 3720,
+    "highPrice" : 3810,
+    "openPrice" : 3740,
+    "tradeDate" : "2025-11-10",
+    "closePrice" : 3795
+  }, {
+    "volume" : 51471,
+    "marketCap" : 170315369200,
+    "lowPrice" : 3770,
+    "highPrice" : 3855,
+    "openPrice" : 3800,
+    "tradeDate" : "2025-11-11",
+    "closePrice" : 3800
+  }, {
+    "volume" : 80109,
+    "marketCap" : 174349154260,
+    "lowPrice" : 3720,
+    "highPrice" : 3890,
+    "openPrice" : 3780,
+    "tradeDate" : "2025-11-12",
+    "closePrice" : 3890
+  }, {
+    "volume" : 38446,
+    "marketCap" : 174573253430,
+    "lowPrice" : 3860,
+    "highPrice" : 3925,
+    "openPrice" : 3860,
+    "tradeDate" : "2025-11-13",
+    "closePrice" : 3895
+  }, {
+    "volume" : 44868,
+    "marketCap" : 171884063390,
+    "lowPrice" : 3825,
+    "highPrice" : 3890,
+    "openPrice" : 3890,
+    "tradeDate" : "2025-11-14",
+    "closePrice" : 3835
+  }, {
+    "volume" : 53718,
+    "marketCap" : 174349154260,
+    "lowPrice" : 3805,
+    "highPrice" : 3895,
+    "openPrice" : 3835,
+    "tradeDate" : "2025-11-17",
+    "closePrice" : 3890
+  }, {
+    "volume" : 95530,
+    "marketCap" : 168522575840,
+    "lowPrice" : 3760,
+    "highPrice" : 3910,
+    "openPrice" : 3885,
+    "tradeDate" : "2025-11-18",
+    "closePrice" : 3760
+  }, {
+    "volume" : 29712,
+    "marketCap" : 170091270030,
+    "lowPrice" : 3745,
+    "highPrice" : 3840,
+    "openPrice" : 3760,
+    "tradeDate" : "2025-11-19",
+    "closePrice" : 3795
+  }, {
+    "volume" : 46731,
+    "marketCap" : 175021451770,
+    "lowPrice" : 3805,
+    "highPrice" : 3925,
+    "openPrice" : 3805,
+    "tradeDate" : "2025-11-20",
+    "closePrice" : 3905
+  }, {
+    "volume" : 34792,
+    "marketCap" : 172332261730,
+    "lowPrice" : 3815,
+    "highPrice" : 3875,
+    "openPrice" : 3865,
+    "tradeDate" : "2025-11-21",
+    "closePrice" : 3845
+  }, {
+    "volume" : 134026,
+    "marketCap" : 172332261730,
+    "lowPrice" : 3795,
+    "highPrice" : 3910,
+    "openPrice" : 3870,
+    "tradeDate" : "2025-11-24",
+    "closePrice" : 3845
+  }, {
+    "volume" : 86895,
+    "marketCap" : 170315369200,
+    "lowPrice" : 3765,
+    "highPrice" : 3885,
+    "openPrice" : 3845,
+    "tradeDate" : "2025-11-25",
+    "closePrice" : 3800
+  }, {
+    "volume" : 56310,
+    "marketCap" : 170539468370,
+    "lowPrice" : 3770,
+    "highPrice" : 3820,
+    "openPrice" : 3795,
+    "tradeDate" : "2025-11-26",
+    "closePrice" : 3805
+  }, {
+    "volume" : 62536,
+    "marketCap" : 170987666710,
+    "lowPrice" : 3780,
+    "highPrice" : 3845,
+    "openPrice" : 3845,
+    "tradeDate" : "2025-11-27",
+    "closePrice" : 3815
+  }, {
+    "volume" : 58329,
+    "marketCap" : 172108162560,
+    "lowPrice" : 3775,
+    "highPrice" : 3850,
+    "openPrice" : 3840,
+    "tradeDate" : "2025-11-28",
+    "closePrice" : 3840
+  }, {
+    "volume" : 45388,
+    "marketCap" : 172108162560,
+    "lowPrice" : 3835,
+    "highPrice" : 3885,
+    "openPrice" : 3850,
+    "tradeDate" : "2025-12-01",
+    "closePrice" : 3840
+  }, {
+    "volume" : 54926,
+    "marketCap" : 173452757580,
+    "lowPrice" : 3795,
+    "highPrice" : 3880,
+    "openPrice" : 3880,
+    "tradeDate" : "2025-12-02",
+    "closePrice" : 3870
+  }, {
+    "volume" : 37956,
+    "marketCap" : 173900955920,
+    "lowPrice" : 3820,
+    "highPrice" : 3890,
+    "openPrice" : 3870,
+    "tradeDate" : "2025-12-03",
+    "closePrice" : 3880
+  }, {
+    "volume" : 33229,
+    "marketCap" : 173004559240,
+    "lowPrice" : 3830,
+    "highPrice" : 3910,
+    "openPrice" : 3910,
+    "tradeDate" : "2025-12-04",
+    "closePrice" : 3860
+  }, {
+    "volume" : 36438,
+    "marketCap" : 172556360900,
+    "lowPrice" : 3815,
+    "highPrice" : 3900,
+    "openPrice" : 3860,
+    "tradeDate" : "2025-12-05",
+    "closePrice" : 3850
+  }, {
+    "volume" : 22721,
+    "marketCap" : 172556360900,
+    "lowPrice" : 3825,
+    "highPrice" : 3905,
+    "openPrice" : 3905,
+    "tradeDate" : "2025-12-08",
+    "closePrice" : 3850
+  }, {
+    "volume" : 41036,
+    "marketCap" : 171435865050,
+    "lowPrice" : 3790,
+    "highPrice" : 3835,
+    "openPrice" : 3835,
+    "tradeDate" : "2025-12-09",
+    "closePrice" : 3825
+  }, {
+    "volume" : 33632,
+    "marketCap" : 170091270030,
+    "lowPrice" : 3755,
+    "highPrice" : 3850,
+    "openPrice" : 3815,
+    "tradeDate" : "2025-12-10",
+    "closePrice" : 3795
+  }, {
+    "volume" : 44070,
+    "marketCap" : 173676856750,
+    "lowPrice" : 3800,
+    "highPrice" : 3900,
+    "openPrice" : 3810,
+    "tradeDate" : "2025-12-11",
+    "closePrice" : 3875
+  }, {
+    "volume" : 31350,
+    "marketCap" : 173452757580,
+    "lowPrice" : 3850,
+    "highPrice" : 3915,
+    "openPrice" : 3895,
+    "tradeDate" : "2025-12-12",
+    "closePrice" : 3870
+  }, {
+    "volume" : 85823,
+    "marketCap" : 171211765880,
+    "lowPrice" : 3810,
+    "highPrice" : 3870,
+    "openPrice" : 3835,
+    "tradeDate" : "2025-12-15",
+    "closePrice" : 3820
+  }, {
+    "volume" : 100197,
+    "marketCap" : 168074377500,
+    "lowPrice" : 3730,
+    "highPrice" : 3860,
+    "openPrice" : 3810,
+    "tradeDate" : "2025-12-16",
+    "closePrice" : 3750
+  }, {
+    "volume" : 49514,
+    "marketCap" : 169418972520,
+    "lowPrice" : 3745,
+    "highPrice" : 3825,
+    "openPrice" : 3770,
+    "tradeDate" : "2025-12-17",
+    "closePrice" : 3780
+  }, {
+    "volume" : 59005,
+    "marketCap" : 167850278330,
+    "lowPrice" : 3715,
+    "highPrice" : 3810,
+    "openPrice" : 3810,
+    "tradeDate" : "2025-12-18",
+    "closePrice" : 3745
+  }, {
+    "volume" : 37758,
+    "marketCap" : 169418972520,
+    "lowPrice" : 3735,
+    "highPrice" : 3785,
+    "openPrice" : 3735,
+    "tradeDate" : "2025-12-19",
+    "closePrice" : 3780
+  }, {
+    "volume" : 50573,
+    "marketCap" : 173452757580,
+    "lowPrice" : 3785,
+    "highPrice" : 3875,
+    "openPrice" : 3785,
+    "tradeDate" : "2025-12-22",
+    "closePrice" : 3870
+  } ],
+  "stockCode" : "122450"
+}

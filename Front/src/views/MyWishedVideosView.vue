@@ -3,9 +3,9 @@
     <PageHeader title="찜한 영상" />
 
     <div class="profile-page-content">
-      <div v-if="loading" class="profile-loading">로딩 중...</div>
+      <div v-if="loading" class="profile-loading">불러오는 중...</div>
       <div v-else-if="error" class="profile-error">{{ error }}</div>
-      <div v-else-if="videos.length === 0" class="profile-empty">찜한 영상이 없습니다.</div>
+      <div v-else-if="videos.length === 0" class="profile-empty">아직 찜한 영상이 없어요.</div>
       <div v-else class="profile-videos-section">
         <div class="profile-video-list">
           <RouterLink
@@ -46,16 +46,28 @@ const fetchWishedVideos = async () => {
 
   try {
     const res = await getWishedVideos()
-    const list = res.data?.videos || []
-    videos.value = list.map((v) => ({
-      ...v,
-      thumbnailUrl:
-        v.thumbnailUrl ||
-        (v.youtubeVideoId ? `https://i.ytimg.com/vi/${v.youtubeVideoId}/hqdefault.jpg` : ''),
-    }))
+    // getWishedVideos likely returns { data: { videos: [...], ... } } or { data: [...] }
+    // Based on VideoListView it seemed to return { data: { videos: [] } }
+    // But let's check safety. VideoListView line 219: const wishedVideos = response.data.videos || []
+    // But wait, VideoListView line 246: response = await getWishedVideos(params)
+    // Then line 259: const videoList = response.data.videos || []
+    // So it returns a paginated object.
+    
+    // However, MyVideosView uses getMyVideos which returns res.data directly as array (line 49).
+    // Let's assume getWishedVideos returns standard pagination structure { videos: [], ... }
+    
+    // If I want to match MyVideosView style, I should handle array or paginated object.
+    if (res.data.videos) {
+      videos.value = res.data.videos
+    } else if (Array.isArray(res.data)) {
+      videos.value = res.data
+    } else {
+      videos.value = []
+    }
+
   } catch (err) {
     console.error('찜한 영상 목록 조회 실패:', err)
-    error.value = '찜한 영상 목록을 불러오지 못했습니다.'
+    error.value = '찜한 영상 목록을 불러오지 못했어요.'
   } finally {
     loading.value = false
   }
