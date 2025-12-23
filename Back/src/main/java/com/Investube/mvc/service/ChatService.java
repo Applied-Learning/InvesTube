@@ -124,6 +124,12 @@ public class ChatService {
         if (financialData != null) {
             context.append("\n[재무 요약]\n");
 
+            // Pre-revenue 기업 안내 (매출 1억 미만)
+            if (financialData.getRevenue() != null && financialData.getRevenue() < 100_000_000L) {
+                context.append("⚠️ [Pre-revenue 기업] 매출 1억 미만으로 성장률 지표가 없습니다. ")
+                        .append("바이오/테크 스타트업의 경우 기술력, R&D, 자금 상황이 더 중요합니다.\n\n");
+            }
+
             if (financialData.getRevenueGrowthRate() != null) {
                 context.append("- 매출 성장률: ")
                         .append(String.format("%.2f", financialData.getRevenueGrowthRate()))

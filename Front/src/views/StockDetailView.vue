@@ -146,6 +146,15 @@
               </div>
             </div>
             
+            <!-- Pre-revenue 기업 안내 (매출 성장률 없고 매출 1억 미만) -->
+            <div class="metric-item pre-revenue" v-else-if="!financialData.revenueGrowthRate && financialData.revenue != null && financialData.revenue < 100000000">
+              <div class="metric-label">매출 성장률</div>
+              <div class="metric-value pre-revenue-badge">
+                📊 Pre-revenue
+              </div>
+              <div class="metric-hint">매출 1억 미만으로 성장률 분석 불가</div>
+            </div>
+            
             <div class="metric-item" v-if="financialData.debtRatio">
               <div class="metric-label">부채비율</div>
               <div class="metric-value" :class="getDebtClass(financialData.debtRatio)">
@@ -1065,6 +1074,24 @@ export default {
 
 .metric-value.poor {
   color: #dc2626;
+}
+
+/* Pre-revenue 기업 스타일 */
+.metric-item.pre-revenue {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border: 1px solid #f59e0b;
+}
+
+.metric-value.pre-revenue-badge {
+  font-size: 16px;
+  color: #92400e;
+  font-weight: 600;
+}
+
+.metric-hint {
+  font-size: 11px;
+  color: #b45309;
+  margin-top: 4px;
 }
 
 .data-source {

@@ -21,8 +21,10 @@ public class FinancialAnalysisService {
      * @return 계산된 재무 지표가 포함된 FinancialData
      */
     public FinancialData calculateFinancialMetrics(FinancialData current, FinancialData previous) {
-        // 매출 성장률 계산
-        if (previous != null && previous.getRevenue() != null && previous.getRevenue() > 0) {
+        // 매출 성장률 계산 (매출 1억 미만인 pre-revenue 기업은 성장률 계산 안 함)
+        long MIN_REVENUE_FOR_GROWTH = 100_000_000L; // 1억
+        if (previous != null && previous.getRevenue() != null && previous.getRevenue() >= MIN_REVENUE_FOR_GROWTH
+                && current.getRevenue() != null && current.getRevenue() >= MIN_REVENUE_FOR_GROWTH) {
             BigDecimal growth = BigDecimal.valueOf(current.getRevenue() - previous.getRevenue())
                     .divide(BigDecimal.valueOf(previous.getRevenue()), 4, RoundingMode.HALF_UP)
                     .multiply(BigDecimal.valueOf(100));
