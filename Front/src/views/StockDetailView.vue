@@ -336,6 +336,7 @@ import StockChart from '@/components/stock/StockChart.vue'
 import stockApi from '@/api/stock'
 import { isStockWished, addStockWish, removeStockWish } from '@/api/stockWish'
 import { getFinancialData, syncFinancialData as syncFinancialDataAPI, getAiAnalysis } from '@/api/financial'
+import profileApi from '@/api/profile'
 import { useAuthStore } from '@/stores/auth'
 import { useToastStore } from '@/stores/toast'
 import { useChatbotStore } from '@/stores/chatbot'
@@ -360,6 +361,7 @@ export default {
       priceHistory: [],
       financialData: null,
       aiResult: null,
+      currentProfile: null,
       loading: false,
       error: null,
       isWished: false,
@@ -398,7 +400,7 @@ export default {
   created() {
     this.loadStockDetail()
     this.loadPriceHistory()
-    this.loadFinancialData()
+    this.loadProfile() // 프로필 먼저 로드 후 재무 데이터 로드
     this.checkWishStatus()
   },
   mounted() {
@@ -436,9 +438,23 @@ export default {
         console.error('주가 이력 조회 실패:', err)
       }
     },
+    async loadProfile() {
+      try {
+        const response = await profileApi.getDefaultProfile()
+        this.currentProfile = response.data
+        // 프로필 로드 후 재무 데이터 로드
+        this.loadFinancialData()
+      } catch (err) {
+        console.error('프로필 조회 실패:', err)
+        this.currentProfile = null
+        // 프로필 없어도 재무 데이터 로드 (기본값 사용)
+        this.loadFinancialData()
+      }
+    },
     async loadFinancialData() {
       try {
-        const response = await getFinancialData(this.stockCode)
+        const profileId = this.currentProfile?.profileId || null
+        const response = await getFinancialData(this.stockCode, profileId)
         this.financialData = response.data
       } catch (err) {
         console.error('재무 데이터 조회 실패:', err)
