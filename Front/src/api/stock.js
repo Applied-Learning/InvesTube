@@ -1,59 +1,64 @@
 import http from './http'
 
 export default {
-  // 전체 주식 목록 조회
+  // Stock list (includes latest price)
   getStocks() {
     return http.get('/stocks')
   },
 
-  // 특정 주식 상세 조회
+  // Single stock detail
   getStock(stockCode) {
     return http.get(`/stocks/${stockCode}`)
   },
 
-  // 주식 가격 이력 조회
+  // Related news for a stock
+  getStockNews(stockCode, limit = 5) {
+    return http.get(`/stocks/${stockCode}/news`, { params: { limit } })
+  },
+
+  // Stock price history
   getStockPrices(stockCode) {
     return http.get(`/stocks/${stockCode}/prices`)
   },
 
-  // 특정 기간 주식 가격 조회
+  // Stock price history by date range
   getStockPricesByDateRange(stockCode, startDate, endDate) {
     return http.get(`/stocks/${stockCode}/prices/range`, {
       params: { startDate, endDate },
     })
   },
 
-  // 주식 등록
+  // Register a stock
   registerStock(stock) {
     return http.post('/stocks', stock)
   },
 
-  // KRX 지수 정보 조회
+  // KRX indices
   getIndices() {
     return http.get('/stocks/indices')
   },
 
-  // 주식 가격 등록/업데이트
+  // Register or update a stock price entry
   registerStockPrice(stockCode, stockPrice) {
     return http.post(`/stocks/${stockCode}/prices`, stockPrice)
   },
 
-  // 주식 수정
+  // Update stock information
   updateStock(stockCode, stock) {
     return http.put(`/stocks/${stockCode}`, stock)
   },
 
-  // 주식 삭제
+  // Remove a stock
   deleteStock(stockCode) {
     return http.delete(`/stocks/${stockCode}`)
   },
 
-  // DART 데이터 동기화
+  // Sync stocks from DART
   syncDartData() {
     return http.post('/stocks/sync/dart')
   },
 
-  // KRX 데이터 동기화
+  // Sync stock price from KRX
   syncKrxData(stockCode) {
     return http.post(`/stocks/sync/krx/${stockCode}`)
   },

@@ -1,6 +1,9 @@
 package com.Investube.mvc.controller;
 
 import java.util.List;
+import java.util.Collections;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -9,19 +12,26 @@ import com.Investube.mvc.model.dto.Stock;
 import com.Investube.mvc.model.dto.StockPrice;
 import com.Investube.mvc.model.dto.StockDetailDto;
 import com.Investube.mvc.model.dto.StockWish;
+import com.Investube.mvc.model.dto.NewsArticle;
 import com.Investube.mvc.model.service.StockService;
 import com.Investube.mvc.model.service.StockWishService;
+import com.Investube.mvc.model.service.NewsService;
 import jakarta.servlet.http.HttpServletRequest;
 
 @RestController
 @RequestMapping("/stocks")
 public class StockRestController {
+
+    private static final Logger log = LoggerFactory.getLogger(StockRestController.class);
     
     @Autowired
     private StockService stockService;
     
     @Autowired
     private StockWishService stockWishService;
+
+    @Autowired
+    private NewsService newsService;
     
     // JWT에서 userId 추출
     private Integer getUserIdFromRequest(HttpServletRequest request) {
@@ -55,6 +65,24 @@ public class StockRestController {
             return new ResponseEntity<>(stock, HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @GetMapping("/{stockCode}/news")
+    public ResponseEntity<?> getStockNews(
+            @PathVariable String stockCode,
+            @RequestParam(name = "limit", defaultValue = "5") int limit) {
+        try {
+            Stock stock = stockService.getStockByCode(stockCode);
+            if (stock == null) {
+                return new ResponseEntity<>("주식을 찾을 수 없습니다.", HttpStatus.NOT_FOUND);
+            }
+            List<NewsArticle> news = newsService.searchNews(stock.getStockName(), stock.getStockCode(), limit);
+            return new ResponseEntity<>(news, HttpStatus.OK);
+        } catch (Exception e) {
+            log.error("Failed to load news for stockCode={}", stockCode, e);
+            // 외부 API/파싱 오류 등은 비즈니스 영향이 적으므로 빈 목록으로 대체
+            return new ResponseEntity<>(Collections.emptyList(), HttpStatus.OK);
         }
     }
     

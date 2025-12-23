@@ -326,10 +326,55 @@
 
 
 
-        <!-- 관련 영상 섹션 (추후 구현) -->
-        <div class="related-videos">
-          <h3>관련 투자 영상</h3>
-          <p class="coming-soon">준비 중입니다</p>
+        <!-- 관련 기사 -->
+        <div class="related-news">
+          <div class="related-news-header">
+            <h3>관련 기사</h3>
+            <span v-if="stock" class="related-news-subtitle">"{{ stock.stockName }}" 관련 뉴스</span>
+            <div class="news-actions">
+              <button class="news-action-btn" :disabled="newsLoading" @click="refreshNews">새로고침</button>
+              <button
+                v-if="stock"
+                class="news-action-btn"
+                type="button"
+                @click="openNaverNews"
+              >
+                더 보기 (네이버)
+              </button>
+            </div>
+          </div>
+
+          <div v-if="newsLoading" class="news-placeholder">
+            <p>관련 기사를 불러오는 중입니다...</p>
+          </div>
+          <div v-else-if="newsError" class="news-placeholder error">
+            <p>{{ newsError }}</p>
+            <Button @click="loadStockNews">다시 불러오기</Button>
+          </div>
+          <div v-else-if="newsArticles.length" class="news-list">
+            <article
+              v-for="article in newsArticles"
+              :key="article.link || article.title"
+              class="news-card"
+            >
+              <a
+                :href="article.link || article.originalLink"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="news-meta">
+                  <span class="news-source">{{ article.source || 'Naver News' }}</span>
+                  <span v-if="article.publishedAt" class="news-date">{{ formatNewsDate(article.publishedAt) }}</span>
+                </div>
+                <h4 class="news-title">{{ article.title }}</h4>
+                <p class="news-summary">{{ article.summary }}</p>
+              </a>
+            </article>
+          </div>
+          <div v-else class="news-placeholder">
+            <p>안내 가능한 관련 기사가 없어요.</p>
+            <Button @click="loadStockNews">새로고침</Button>
+          </div>
         </div>
       </div>
     </Container>
@@ -377,6 +422,10 @@ export default {
       wishLoading: false,
       syncLoading: false,
       aiLoading: false,
+      newsArticles: [],
+      newsLoading: false,
+      newsError: null,
+      newsLimit: 6,
       showDetailMetrics: false,
       // 챗봇 관련
       chatHistory: [],
@@ -394,6 +443,12 @@ export default {
     stockCode() {
       return this.$route.params.stockCode
     },
+    naverNewsUrl() {
+      if (!this.stock?.stockName) return '#'
+      const query = encodeURIComponent(`${this.stock.stockName}`)
+      // 네이버 기본 검색
+      return `https://search.naver.com/search.naver?where=news&query=${query}`
+    },
     marketClass() {
       return this.stock?.market === 'KOSPI' ? 'market-kospi' : 'market-kosdaq'
     },
@@ -410,6 +465,8 @@ export default {
     this.loadStockDetail()
     this.loadPriceHistory()
     this.loadProfile() // 프로필 먼저 로드 후 재무 데이터 로드
+    this.loadFinancialData()
+    this.loadStockNews()
     this.checkWishStatus()
   },
   mounted() {
@@ -468,6 +525,30 @@ export default {
       } catch (err) {
         console.error('재무 데이터 조회 실패:', err)
         this.financialData = null
+      }
+    },
+    async loadStockNews(limit = this.newsLimit) {
+      this.newsLimit = limit
+      this.newsLoading = true
+      this.newsError = null
+
+      try {
+        const response = await stockApi.getStockNews(this.stockCode, this.newsLimit)
+        this.newsArticles = response.data || []
+      } catch (err) {
+        console.error('관련 기사 조회 실패:', err)
+        this.newsArticles = []
+        this.newsError = '관련 기사를 불러오지 못했습니다.'
+      } finally {
+        this.newsLoading = false
+      }
+    },
+    refreshNews() {
+      this.loadStockNews(this.newsLimit)
+    },
+    openNaverNews() {
+      if (this.naverNewsUrl && this.naverNewsUrl !== '#') {
+        window.open(this.naverNewsUrl, '_blank', 'noopener')
       }
     },
     async syncFinancialData() {
@@ -618,6 +699,19 @@ export default {
     formatDate(date) {
       if (!date) return '-'
       return formatKSTDate(date)
+    },
+    formatNewsDate(value) {
+      if (!value) return ''
+      const date = new Date(value)
+      if (Number.isNaN(date.getTime())) {
+        return value
+      }
+      return date.toLocaleString('ko-KR', {
+        month: 'short',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+      })
     },
     async runAiAnalysis() {
       if (!this.financialData) {
@@ -903,24 +997,173 @@ export default {
   overflow: hidden;
 }
 
-.related-videos {
+.related-news {
   background: white;
   border-radius: 8px;
   padding: 24px;
   border: 1px solid #e0e0e0;
 }
 
-.related-videos h3 {
-  margin: 0 0 16px 0;
+.related-news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  }
+
+.related-news h3 {
+  margin: 0;
   font-size: 18px;
-  font-weight: 600;
-  color: #212121;
+  font-weight: 700;
+  color: #111827;
 }
 
-.coming-soon {
+.related-news-subtitle {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.news-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+
+.news-action-btn {
+  padding: 8px 14px;
+  border: 1px solid #dbeafe;
+  background: linear-gradient(135deg, #e0f2fe 0%, #dbeafe 100%);
+  color: #1d4ed8;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.15);
+}
+
+.news-action-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.2);
+}
+
+.news-action-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.news-more-link,
+.news-more-link:visited,
+.news-more-link:hover,
+.news-more-link:focus,
+.news-more-link:active {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #1d4ed8;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-color: transparent !important;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+.news-more-link:hover,
+.news-more-link:focus,
+.news-more-link:active {
+  background: #e0f2fe;
+  border-color: #bfdbfe;
+}
+
+.news-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.news-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.news-card a {
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+.news-card:hover {
+  border-color: #667eea;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.news-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 8px;
+  gap: 10px;
+}
+
+.news-source {
+  background: #eef2ff;
+  color: #4338ca;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.news-date {
+  color: #9ca3af;
+}
+
+.news-title {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.4;
+}
+
+.news-summary {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+.news-placeholder {
   text-align: center;
-  padding: 40px;
-  color: #9e9e9e;
+  padding: 32px 16px;
+  color: #6b7280;
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+}
+
+.news-placeholder.error {
+  color: #b91c1c;
+  background: #fef2f2;
+  border-color: #fecdd3;
+}
+
+.news-placeholder p {
+  margin: 0 0 12px 0;
 }
 
 /* 재무 지표 섹션 */
