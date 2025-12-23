@@ -39,7 +39,7 @@ FOREIGN KEY (parent_id) REFERENCES category(category_id)
 -- 11: 기초 교육, 12: 분석 방법, 13: 투자 전략
 -- 21: 재무 분석, 22: 산업 분석, 23: 종목 추천
 -- 31: 국내 경제, 32: 국제 경제
-(23: 종목 추천)
+
 INSERT INTO category (category_id, name, parent_id) VALUES
 (1, '투자 교육', NULL),
 (2, '종목 분석', NULL),
