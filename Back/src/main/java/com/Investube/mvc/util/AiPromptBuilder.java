@@ -44,14 +44,21 @@ public class AiPromptBuilder {
       // System 프롬프트 (AI의 역할과 규칙 정의)
       String systemPrompt = "너는 투자 분석 보조 AI다. 너의 역할은 점수를 계산하는 것이 아니라, 이미 계산된 기본 점수를 해석하고 보정하는 것이다. 규칙: 1. 절대 최종 점수를 직접 계산하지 마라. 2. 보정 점수는 -10 ~ +10 범위만 허용된다. 3. 가중치 보정은 각 항목당 -10 ~ +10 사이 정수만 가능하다. 4. 출력은 반드시 JSON 형식이어야 한다. 5. 감정적 표현, 투자 권유 문구 사용 금지. 6. 요약은 2줄 이내로 작성하라. 7. riskLevel은 LOW, MEDIUM, HIGH 중 하나만 사용하라. 8. JSON만 출력하고 다른 텍스트는 포함하지 마라.";
 
+      // Pre-revenue 기업 컨텍스트 (매출 1억 미만)
+      String preRevenueContext = "";
+      if (financialData.getRevenue() == null || financialData.getRevenue() < 100_000_000L) {
+        preRevenueContext = " [주의: Pre-revenue 기업 - 매출 1억 미만으로 성장률 지표 없음. 기술력, R&D, 자금 상황 중심으로 분석 필요. 바이오/테크 스타트업 특성 고려.]";
+      }
+
       // User 프롬프트 (실제 분석할 데이터)
       String userPrompt = String.format(
-          "기업: %s (%s) 회계 연도: %s 투자 성향: %s 기본 점수: %.2f 재무 지표: %s 위 정보를 바탕으로 다음 JSON 형식으로 응답하라: {\"scoreAdjustment\": 0, \"weightAdjustment\": {\"revenueGrowth\": 0, \"operatingMargin\": 0, \"roe\": 0, \"debtRatio\": 0, \"fcf\": 0, \"per\": 0, \"pbr\": 0}, \"summary\": \"재무 분석 요약 (2줄 이내)\", \"riskLevel\": \"MEDIUM\"}",
+          "기업: %s (%s) 회계 연도: %s 투자 성향: %s 기본 점수: %.2f%s 재무 지표: %s 위 정보를 바탕으로 다음 JSON 형식으로 응답하라: {\"scoreAdjustment\": 0, \"weightAdjustment\": {\"revenueGrowth\": 0, \"operatingMargin\": 0, \"roe\": 0, \"debtRatio\": 0, \"fcf\": 0, \"per\": 0, \"pbr\": 0}, \"summary\": \"재무 분석 요약 (2줄 이내)\", \"riskLevel\": \"MEDIUM\"}",
           stockName,
           stockCode,
           financialData.getFiscalYear(),
           profile.getProfileName(),
           baseScore,
+          preRevenueContext,
           financialsJson);
       return new String[] { systemPrompt, userPrompt };
 

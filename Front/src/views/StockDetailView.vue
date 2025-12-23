@@ -146,6 +146,15 @@
               </div>
             </div>
             
+            <!-- Pre-revenue 기업 안내 (매출 성장률 없고 매출 1억 미만) -->
+            <div class="metric-item pre-revenue" v-else-if="!financialData.revenueGrowthRate && financialData.revenue != null && financialData.revenue < 100000000">
+              <div class="metric-label">매출 성장률</div>
+              <div class="metric-value pre-revenue-badge">
+                📊 Pre-revenue
+              </div>
+              <div class="metric-hint">매출 1억 미만으로 성장률 분석 불가</div>
+            </div>
+            
             <div class="metric-item" v-if="financialData.debtRatio">
               <div class="metric-label">부채비율</div>
               <div class="metric-value" :class="getDebtClass(financialData.debtRatio)">
@@ -381,6 +390,7 @@ import StockChart from '@/components/stock/StockChart.vue'
 import stockApi from '@/api/stock'
 import { isStockWished, addStockWish, removeStockWish } from '@/api/stockWish'
 import { getFinancialData, syncFinancialData as syncFinancialDataAPI, getAiAnalysis } from '@/api/financial'
+import profileApi from '@/api/profile'
 import { useAuthStore } from '@/stores/auth'
 import { useToastStore } from '@/stores/toast'
 import { useChatbotStore } from '@/stores/chatbot'
@@ -405,6 +415,7 @@ export default {
       priceHistory: [],
       financialData: null,
       aiResult: null,
+      currentProfile: null,
       loading: false,
       error: null,
       isWished: false,
@@ -453,6 +464,7 @@ export default {
   created() {
     this.loadStockDetail()
     this.loadPriceHistory()
+    this.loadProfile() // 프로필 먼저 로드 후 재무 데이터 로드
     this.loadFinancialData()
     this.loadStockNews()
     this.checkWishStatus()
@@ -492,9 +504,23 @@ export default {
         console.error('주가 이력 조회 실패:', err)
       }
     },
+    async loadProfile() {
+      try {
+        const response = await profileApi.getDefaultProfile()
+        this.currentProfile = response.data
+        // 프로필 로드 후 재무 데이터 로드
+        this.loadFinancialData()
+      } catch (err) {
+        console.error('프로필 조회 실패:', err)
+        this.currentProfile = null
+        // 프로필 없어도 재무 데이터 로드 (기본값 사용)
+        this.loadFinancialData()
+      }
+    },
     async loadFinancialData() {
       try {
-        const response = await getFinancialData(this.stockCode)
+        const profileId = this.currentProfile?.profileId || null
+        const response = await getFinancialData(this.stockCode, profileId)
         this.financialData = response.data
       } catch (err) {
         console.error('재무 데이터 조회 실패:', err)
@@ -1291,6 +1317,24 @@ export default {
 
 .metric-value.poor {
   color: #dc2626;
+}
+
+/* Pre-revenue 기업 스타일 */
+.metric-item.pre-revenue {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border: 1px solid #f59e0b;
+}
+
+.metric-value.pre-revenue-badge {
+  font-size: 16px;
+  color: #92400e;
+  font-weight: 600;
+}
+
+.metric-hint {
+  font-size: 11px;
+  color: #b45309;
+  margin-top: 4px;
 }
 
 .data-source {

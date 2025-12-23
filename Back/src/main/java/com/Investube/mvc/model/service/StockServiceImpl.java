@@ -305,6 +305,32 @@ public class StockServiceImpl implements StockService {
         System.out.println("=".repeat(60));
     }
 
+    @Override
+    @Transactional
+    public void syncStockDataByDate(String dateStr) {
+        System.out.println("=".repeat(60));
+        System.out.println(dateStr + " 주식 데이터 동기화 시작");
+        System.out.println("=".repeat(60));
+
+        System.out.println("KOSPI " + dateStr + " 데이터 동기화");
+        if (syncKospiStocksByDate(dateStr)) {
+            System.out.println("KOSPI " + dateStr + " 데이터 동기화 완료");
+        } else {
+            System.out.println("KOSPI " + dateStr + " 데이터 없음 (휴장일일 수 있음)");
+        }
+
+        System.out.println("KOSDAQ " + dateStr + " 데이터 동기화");
+        if (syncKosdaqStocksByDate(dateStr)) {
+            System.out.println("KOSDAQ " + dateStr + " 데이터 동기화 완료");
+        } else {
+            System.out.println("KOSDAQ " + dateStr + " 데이터 없음 (휴장일일 수 있음)");
+        }
+
+        System.out.println("=".repeat(60));
+        System.out.println(dateStr + " 주식 데이터 동기화 완료");
+        System.out.println("=".repeat(60));
+    }
+
     /**
      * 특정 날짜의 KOSDAQ 데이터 수집
      */

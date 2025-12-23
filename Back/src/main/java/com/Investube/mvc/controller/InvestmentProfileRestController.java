@@ -123,6 +123,19 @@ public class InvestmentProfileRestController {
 
             profile.setUserId(userId);
 
+            // 가중치가 없으면 profileName 기반으로 기본 가중치 설정
+            if (profile.getWeightRevenueGrowth() == null && profile.getProfileName() != null) {
+                InvestmentProfile defaultWeights = financialAnalysisService
+                        .createDefaultProfile(profile.getProfileName());
+                profile.setWeightRevenueGrowth(defaultWeights.getWeightRevenueGrowth());
+                profile.setWeightOperatingMargin(defaultWeights.getWeightOperatingMargin());
+                profile.setWeightRoe(defaultWeights.getWeightRoe());
+                profile.setWeightDebtRatio(defaultWeights.getWeightDebtRatio());
+                profile.setWeightFcf(defaultWeights.getWeightFcf());
+                profile.setWeightPer(defaultWeights.getWeightPer());
+                profile.setWeightPbr(defaultWeights.getWeightPbr());
+            }
+
             // 기본 프로필로 설정하면 다른 프로필의 기본 해제
             if (profile.getIsDefault() != null && profile.getIsDefault()) {
                 investmentProfileDao.clearDefaultProfile(userId);
