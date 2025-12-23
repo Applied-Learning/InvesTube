@@ -247,20 +247,33 @@ export default {
         )
         .slice(0, 3)
     },
+    // 가장 최근 거래일 계산 (상장폐지 종목 필터링용)
+    latestTradeDate() {
+      if (!this.stocks.length) return null
+      const dates = this.stocks
+        .filter(s => s.tradeDate)
+        .map(s => s.tradeDate)
+      return dates.length ? dates.sort().reverse()[0] : null
+    },
+    // 최근 거래일에 데이터가 있는 종목만 (상장폐지 종목 제외)
+    activeStocks() {
+      if (!this.latestTradeDate) return this.stocks
+      return this.stocks.filter(s => s.tradeDate === this.latestTradeDate)
+    },
     topGainers() {
-      return [...this.stocks]
+      return [...this.activeStocks]
         .filter((s) => s.priceChangeRate > 0)
         .sort((a, b) => b.priceChangeRate - a.priceChangeRate)
         .slice(0, 5)
     },
     topLosers() {
-      return [...this.stocks]
+      return [...this.activeStocks]
         .filter((s) => s.priceChangeRate < 0)
         .sort((a, b) => a.priceChangeRate - b.priceChangeRate)
         .slice(0, 5)
     },
     topVolume() {
-      return [...this.stocks].sort((a, b) => (b.volume || 0) - (a.volume || 0)).slice(0, 5)
+      return [...this.activeStocks].sort((a, b) => (b.volume || 0) - (a.volume || 0)).slice(0, 5)
     },
     limitedWishedStocks() {
       return (this.wishedStocks || []).slice(0, 6)
