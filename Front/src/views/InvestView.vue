@@ -63,6 +63,7 @@
             v-model="searchQuery"
             type="text"
             placeholder="종목명 또는 종목코드를 입력하세요..."
+            @input="handleInputChange"
             @keyup.enter="handleSearch"
           />
           <button
@@ -79,7 +80,7 @@
       </div>
 
       <!-- 검색 결과 -->
-      <div class="search-results" v-if="searchQuery">
+      <div class="search-results" v-if="hasSearched">
         <div class="section-header">
           <h3>검색 결과 <span class="count">({{ searchResults.length }}개)</span></h3>
           <span class="favorite-hint" v-if="!searchResults.length">결과가 없습니다.</span>
@@ -225,6 +226,7 @@ export default {
       wishedSet: new Set(),
       searchQuery: '',
       searchResults: [],
+      hasSearched: false,
       searchStore: null,
       currentProfile: null,
       profileTypes: [
@@ -365,11 +367,18 @@ export default {
         this.searchStore?.clear()
       }
       this.searchResults = []
+      this.hasSearched = false
+    },
+    handleInputChange() {
+      // 입력이 바뀌면 이전 검색 결과는 즉시 지우고 검색 상태 초기화
+      this.searchResults = []
+      this.hasSearched = false
     },
     handleSearch() {
       if (!this.searchQuery.trim()) {
         this.searchResults = []
         this.searchStore?.clear()
+        this.hasSearched = false
         return
       }
 
@@ -383,6 +392,7 @@ export default {
           normalize(stock.stockCode).includes(query),
       )
       this.searchStore?.setQuery(this.searchQuery)
+      this.hasSearched = true
     },
     goToDetail(stockCode) {
       this.$router.push({ name: 'stockDetail', params: { stockCode } })
