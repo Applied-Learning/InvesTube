@@ -196,10 +196,10 @@
 
       <!-- 하단 버튼 -->
       <div class="footer-actions">
-        <button @click="goToList" class="list-btn">
+        <button @click="goBack" class="back-button">
           <svg
-            width="16"
-            height="16"
+            width="18"
+            height="18"
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -212,7 +212,7 @@
               stroke-linejoin="round"
             />
           </svg>
-          목록으로
+          뒤로가기
         </button>
       </div>
     </div>
@@ -413,6 +413,10 @@ const confirmDelete = async () => {
       alert('게시글 삭제에 실패했습니다.')
     }
   }
+}
+
+const goBack = () => {
+  router.back()
 }
 
 const goToList = () => {
@@ -697,41 +701,41 @@ onMounted(() => {
 
 /* 하단 버튼 */
 .footer-actions {
-  margin-top: 24px;
+  margin-top: 32px;
   display: flex;
   justify-content: center;
 }
 
-.list-btn {
+.back-button {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 12px 28px;
+  padding: 14px 32px;
   background: white;
   color: #374151;
   border: 1.5px solid #e5e7eb;
   border-radius: 12px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
-.list-btn:hover {
+.back-button:hover {
   background: #f9fafb;
   border-color: #d1d5db;
   transform: translateY(-1px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.list-btn:active {
+.back-button:active {
   transform: translateY(0);
 }
 
-.list-btn svg {
-  width: 16px;
-  height: 16px;
+.back-button svg {
+  width: 18px;
+  height: 18px;
 }
 
 .image-modal {
