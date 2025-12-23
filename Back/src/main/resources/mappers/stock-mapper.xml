@@ -177,4 +177,27 @@
         LIMIT 1
     </select>
 
+    <!-- 종목 개수 -->
+    <select id="countStocks" resultType="int">
+        SELECT COUNT(*) FROM stock
+    </select>
+
+    <!-- StockPrice 배치 업서트 -->
+    <insert id="insertStockPricesBatch" parameterType="java.util.List">
+        INSERT INTO stock_price (stock_code, trade_date, open_price, high_price, low_price,
+                                 close_price, volume, market_cap)
+        VALUES
+        <foreach collection="list" item="item" separator=",">
+            (#{item.stockCode}, #{item.tradeDate}, #{item.openPrice}, #{item.highPrice}, #{item.lowPrice},
+             #{item.closePrice}, #{item.volume}, #{item.marketCap})
+        </foreach>
+        ON DUPLICATE KEY UPDATE
+            open_price = VALUES(open_price),
+            high_price = VALUES(high_price),
+            low_price = VALUES(low_price),
+            close_price = VALUES(close_price),
+            volume = VALUES(volume),
+            market_cap = VALUES(market_cap)
+    </insert>
+
 </mapper>

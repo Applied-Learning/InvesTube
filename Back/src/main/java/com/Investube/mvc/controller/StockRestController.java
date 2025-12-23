@@ -1,7 +1,8 @@
 package com.Investube.mvc.controller;
 
-import java.util.List;
 import java.util.Collections;
+import java.util.List;
+import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,7 +50,7 @@ public class StockRestController {
             List<StockDetailDto> stocks = stockService.getStockListWithLatestPrice();
             return new ResponseEntity<>(stocks, HttpStatus.OK);
         } catch (Exception e) {
-            e.printStackTrace(); // 콘솔에 상세 에러 출력
+            e.printStackTrace(); // 콘솔에서 에러 출력
             return new ResponseEntity<>("Error: " + e.getMessage() + " - " + e.getClass().getName(), HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
@@ -81,12 +82,12 @@ public class StockRestController {
             return new ResponseEntity<>(news, HttpStatus.OK);
         } catch (Exception e) {
             log.error("Failed to load news for stockCode={}", stockCode, e);
-            // 외부 API/파싱 오류 등은 비즈니스 영향이 적으므로 빈 목록으로 대체
+            // 뉴스 API/호출 오류 시 비즈니스 영향이 없으므로 빈 목록으로 응답
             return new ResponseEntity<>(Collections.emptyList(), HttpStatus.OK);
         }
     }
     
-    // 주식 가격 이력 조회
+    // 주식 가격이력 조회
     @GetMapping("/{stockCode}/prices")
     public ResponseEntity<?> getStockPrices(@PathVariable String stockCode) {
         try {
@@ -97,7 +98,7 @@ public class StockRestController {
         }
     }
     
-    // 특정 기간 주식 가격 조회
+    // 특정 기간 주식 가격조회
     @GetMapping("/{stockCode}/prices/range")
     public ResponseEntity<?> getStockPricesByDateRange(
             @PathVariable String stockCode,
@@ -174,7 +175,7 @@ public class StockRestController {
     public ResponseEntity<?> syncDartData() {
         try {
             stockService.syncStockDataFromDart();
-            return new ResponseEntity<>("DART 데이터 동기화가 완료되었습니다.", HttpStatus.OK);
+            return new ResponseEntity<>("DART 데이터가 동기화되었습니다.", HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
         }
@@ -185,13 +186,24 @@ public class StockRestController {
     public ResponseEntity<?> syncKrxData(@PathVariable String stockCode) {
         try {
             stockService.syncStockPriceFromKrx(stockCode);
-            return new ResponseEntity<>("KRX 데이터 동기화가 완료되었습니다.", HttpStatus.OK);
+            return new ResponseEntity<>("KRX 데이터가 동기화되었습니다.", HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
     
-    // KRX 지수 정보 조회
+    // JSON -> DB import (initial load/restore)
+    @PostMapping("/import/json")
+    public ResponseEntity<?> importFromJson() {
+        try {
+            Map<String, Integer> result = stockService.importStockPricesFromJson();
+            return new ResponseEntity<>(result, HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    // KRX indices
     @GetMapping("/indices")
     public ResponseEntity<?> getIndices() {
         try {
@@ -213,7 +225,7 @@ public class StockRestController {
             }
             
             List<StockWish> wishedStocks = stockWishService.getWishedStocksByUserId(userId);
-            // 각 관심 종목에 대해 최신 시세가 포함된 상세 정보를 함께 반환
+            // 찜한 종목마다 최신 주가가 포함된 상세 정보로 반환
             List<StockDetailDto> withPrices = new java.util.ArrayList<>();
             for (StockWish wish : wishedStocks) {
                 StockDetailDto detail = stockService.getStockDetail(wish.getStockCode());
@@ -254,7 +266,7 @@ public class StockRestController {
             
             boolean result = stockWishService.addWish(userId, stockCode);
             if (result) {
-                return new ResponseEntity<>("찜 추가되었습니다.", HttpStatus.OK);
+                return new ResponseEntity<>("찜이 추가되었습니다.", HttpStatus.OK);
             }
             return new ResponseEntity<>("찜 추가에 실패했습니다.", HttpStatus.BAD_REQUEST);
         } catch (Exception e) {

@@ -1,9 +1,10 @@
 package com.Investube.mvc.model.dao;
 
 import java.util.List;
+
 import com.Investube.mvc.model.dto.Stock;
-import com.Investube.mvc.model.dto.StockPrice;
 import com.Investube.mvc.model.dto.StockDetailDto;
+import com.Investube.mvc.model.dto.StockPrice;
 
 public interface StockDao {
 
@@ -29,11 +30,17 @@ public interface StockDao {
 
     int updateStockPrice(StockPrice stockPrice);
 
-    // 상세 정보
+    // 리스트 정보
     List<StockDetailDto> selectStockDetailsWithLatestPrice();
 
     StockDetailDto selectStockDetailByCode(String stockCode);
 
-    // 종목명으로 검색 (LIKE 검색)
+    // 종목명으로검색(LIKE 검색)
     Stock selectStockByName(String stockName);
+
+    // 총종목 수
+    int countStocks();
+
+    // 다건 주가 배치 업서트
+    int insertStockPricesBatch(List<StockPrice> prices);
 }
