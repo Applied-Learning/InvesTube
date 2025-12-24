@@ -15,9 +15,11 @@
                   :src="resolveImageUrl(myProfile.profileImage)"
                   :alt="authStore.nickname || authStore.id || '프로필'"
                 />
-                <span v-else>
-                  {{ (authStore.nickname || authStore.id || '').charAt(0).toUpperCase() }}
-                </span>
+                <img
+                  v-else
+                  src="/default-avatar.svg"
+                  :alt="authStore.nickname || authStore.id || 'avatar'"
+                />
               </div>
               <button class="avatar-settings-btn" @click="openProfileEdit">⚙</button>
             </div>
@@ -281,7 +283,11 @@
                     :src="resolveImageUrl(user.profileImage)"
                     :alt="user.nickname || user.id || '프로필'"
                   />
-                  <span v-else>{{ user.initial }}</span>
+                  <img
+                    v-else
+                    src="/default-avatar.svg"
+                    :alt="user.nickname || user.id || 'avatar'"
+                  />
                 </div>
                 <div class="follow-user-info">
                   <p class="follow-user-name">

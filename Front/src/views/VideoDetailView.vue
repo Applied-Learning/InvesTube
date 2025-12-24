@@ -83,17 +83,22 @@
 
         <!-- 업로더 정보 -->
         <div class="uploader-section">
-          <div class="uploader-info" @click="goUploaderProfile">
-            <div class="uploader-avatar">
-              <img
-                v-if="video.uploaderProfileImage"
-                :src="resolveImageUrl(video.uploaderProfileImage)"
-                :alt="video.uploaderNickname"
-              />
-              <div v-else class="avatar-fallback">{{ uploaderInitial }}</div>
+            <div class="uploader-info" @click="goUploaderProfile">
+              <div class="uploader-avatar">
+                <img
+                  v-if="video.uploaderProfileImage"
+                  :src="resolveImageUrl(video.uploaderProfileImage)"
+                  :alt="video.uploaderNickname"
+                />
+                <img
+                  v-else
+                  src="/default-avatar.svg"
+                  :alt="video.uploaderNickname || 'avatar'"
+                  class="avatar-fallback"
+                />
+              </div>
+              <span class="uploader-name">{{ uploaderDisplayName }}</span>
             </div>
-            <span class="uploader-name">{{ uploaderDisplayName }}</span>
-          </div>
           <button
             v-if="!isMyVideo && authStore.isAuthenticated"
             class="follow-btn"
@@ -1081,13 +1086,8 @@ onMounted(() => {
 .avatar-fallback {
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  font-size: 20px;
-  font-weight: 700;
+  object-fit: cover;
+  display: block;
 }
 
 .uploader-name {
