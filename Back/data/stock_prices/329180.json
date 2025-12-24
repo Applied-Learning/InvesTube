@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HD현대중공업",
   "prices" : [ {
-    "volume" : 253569,
-    "marketCap" : 23924354762000,
-    "lowPrice" : 263000,
-    "highPrice" : 272500,
-    "openPrice" : 264000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 269500
-  }, {
     "volume" : 326334,
     "marketCap" : 24146287552000,
     "lowPrice" : 266000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 527000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 514000
+  }, {
+    "volume" : 243535,
+    "marketCap" : 55944332925000,
+    "lowPrice" : 516000,
+    "highPrice" : 537000,
+    "openPrice" : 529000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 533000
   } ],
   "stockCode" : "329180"
 }

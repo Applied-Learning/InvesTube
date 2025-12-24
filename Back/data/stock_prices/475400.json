@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "씨메스",
   "prices" : [ {
-    "volume" : 565107,
-    "marketCap" : 241455344000,
-    "lowPrice" : 20650,
-    "highPrice" : 22050,
-    "openPrice" : 21650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 20800
-  }, {
     "volume" : 1186077,
     "marketCap" : 249581245000,
     "lowPrice" : 20150,
@@ -1937,6 +1929,14 @@
     "openPrice" : 35750,
     "tradeDate" : "2025-12-22",
     "closePrice" : 37150
+  }, {
+    "volume" : 566939,
+    "marketCap" : 410721212100,
+    "lowPrice" : 35100,
+    "highPrice" : 38550,
+    "openPrice" : 37150,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 35150
   } ],
   "stockCode" : "475400"
 }

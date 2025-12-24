@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "드림텍",
   "prices" : [ {
-    "volume" : 133331,
-    "marketCap" : 513919705860,
-    "lowPrice" : 7100,
-    "highPrice" : 7490,
-    "openPrice" : 7200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7460
-  }, {
     "volume" : 149371,
     "marketCap" : 510475203810,
     "lowPrice" : 7290,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7040,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7130
+  }, {
+    "volume" : 76589,
+    "marketCap" : 484296988230,
+    "lowPrice" : 7000,
+    "highPrice" : 7220,
+    "openPrice" : 7150,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7030
   } ],
   "stockCode" : "192650"
 }

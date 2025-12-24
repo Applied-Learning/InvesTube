@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유니드",
   "prices" : [ {
-    "volume" : 59376,
-    "marketCap" : 491327760000,
-    "lowPrice" : 70000,
-    "highPrice" : 73400,
-    "openPrice" : 71100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 72600
-  }, {
     "volume" : 66353,
     "marketCap" : 503509440000,
     "lowPrice" : 73000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 69600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 69900
+  }, {
+    "volume" : 21974,
+    "marketCap" : 468994680000,
+    "lowPrice" : 68900,
+    "highPrice" : 70000,
+    "openPrice" : 70000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 69300
   } ],
   "stockCode" : "014830"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "다원시스",
   "prices" : [ {
-    "volume" : 127635,
-    "marketCap" : 355683232840,
-    "lowPrice" : 9310,
-    "highPrice" : 9530,
-    "openPrice" : 9360,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9320
-  }, {
     "volume" : 108958,
     "marketCap" : 352630157880,
     "lowPrice" : 9240,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2770,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2675
+  }, {
+    "volume" : 902696,
+    "marketCap" : 95026958130,
+    "lowPrice" : 2455,
+    "highPrice" : 2670,
+    "openPrice" : 2670,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2490
   } ],
   "stockCode" : "068240"
 }

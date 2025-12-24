@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "DI동일",
   "prices" : [ {
-    "volume" : 245817,
-    "marketCap" : 1095242754200,
-    "lowPrice" : 50800,
-    "highPrice" : 51500,
-    "openPrice" : 51200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 51100
-  }, {
     "volume" : 224480,
     "marketCap" : 1093099422000,
     "lowPrice" : 50500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 20050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 20800
+  }, {
+    "volume" : 112272,
+    "marketCap" : 404450240000,
+    "lowPrice" : 20200,
+    "highPrice" : 20950,
+    "openPrice" : 20450,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 20500
   } ],
   "stockCode" : "001530"
 }

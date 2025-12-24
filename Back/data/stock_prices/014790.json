@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HL D&I",
   "prices" : [ {
-    "volume" : 17988,
-    "marketCap" : 85371145255,
-    "lowPrice" : 2210,
-    "highPrice" : 2255,
-    "openPrice" : 2220,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2255
-  }, {
     "volume" : 9042,
     "marketCap" : 86317610280,
     "lowPrice" : 2240,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2675,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2660
+  }, {
+    "volume" : 60269,
+    "marketCap" : 100325292650,
+    "lowPrice" : 2630,
+    "highPrice" : 2680,
+    "openPrice" : 2675,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2650
   } ],
   "stockCode" : "014790"
 }

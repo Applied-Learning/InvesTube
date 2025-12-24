@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인산가",
   "prices" : [ {
-    "volume" : 28644,
-    "marketCap" : 51896735517,
-    "lowPrice" : 1351,
-    "highPrice" : 1378,
-    "openPrice" : 1377,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1353
-  }, {
     "volume" : 33792,
     "marketCap" : 51129599737,
     "lowPrice" : 1331,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1230,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1251
+  }, {
+    "volume" : 105892,
+    "marketCap" : 47822323725,
+    "lowPrice" : 1244,
+    "highPrice" : 1265,
+    "openPrice" : 1251,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1245
   } ],
   "stockCode" : "277410"
 }

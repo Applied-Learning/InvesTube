@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SOOP",
   "prices" : [ {
-    "volume" : 40687,
-    "marketCap" : 1070162807700,
-    "lowPrice" : 91300,
-    "highPrice" : 94200,
-    "openPrice" : 93000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 93100
-  }, {
     "volume" : 44792,
     "marketCap" : 1065564900900,
     "lowPrice" : 92100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 69700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 69800
+  }, {
+    "volume" : 19773,
+    "marketCap" : 803484213300,
+    "lowPrice" : 69500,
+    "highPrice" : 70300,
+    "openPrice" : 69900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 69900
   } ],
   "stockCode" : "067160"
 }

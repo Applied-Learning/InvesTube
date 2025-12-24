@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "휴마시스",
   "prices" : [ {
-    "volume" : 1206852,
-    "marketCap" : 217867515156,
-    "lowPrice" : 1640,
-    "highPrice" : 1704,
-    "openPrice" : 1640,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1684
-  }, {
     "volume" : 768363,
     "marketCap" : 215668140003,
     "lowPrice" : 1659,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1029,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1065
+  }, {
+    "volume" : 563046,
+    "marketCap" : 133256259270,
+    "lowPrice" : 1030,
+    "highPrice" : 1076,
+    "openPrice" : 1076,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1030
   } ],
   "stockCode" : "205470"
 }

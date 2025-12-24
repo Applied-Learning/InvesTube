@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "더존비즈온",
   "prices" : [ {
-    "volume" : 120827,
-    "marketCap" : 1892847443200,
-    "lowPrice" : 60700,
-    "highPrice" : 63100,
-    "openPrice" : 61800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 62300
-  }, {
     "volume" : 88771,
     "marketCap" : 1862464659200,
     "lowPrice" : 60700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 84100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 83900
+  }, {
+    "volume" : 77960,
+    "marketCap" : 2564306969600,
+    "lowPrice" : 84000,
+    "highPrice" : 85700,
+    "openPrice" : 84400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 84400
   } ],
   "stockCode" : "012510"
 }

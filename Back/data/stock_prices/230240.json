@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에치에프알",
   "prices" : [ {
-    "volume" : 252971,
-    "marketCap" : 215871980000,
-    "lowPrice" : 15090,
-    "highPrice" : 16410,
-    "openPrice" : 15090,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16220
-  }, {
     "volume" : 142986,
     "marketCap" : 218666870000,
     "lowPrice" : 15950,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12040,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13650
+  }, {
+    "volume" : 194010,
+    "marketCap" : 172218460000,
+    "lowPrice" : 12940,
+    "highPrice" : 14230,
+    "openPrice" : 13610,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12940
   } ],
   "stockCode" : "230240"
 }

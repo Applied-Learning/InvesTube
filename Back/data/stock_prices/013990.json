@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아가방컴퍼니",
   "prices" : [ {
-    "volume" : 469624,
-    "marketCap" : 174303940800,
-    "lowPrice" : 5100,
-    "highPrice" : 5350,
-    "openPrice" : 5150,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5300
-  }, {
     "volume" : 312516,
     "marketCap" : 171015187200,
     "lowPrice" : 5170,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4530,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4530
+  }, {
+    "volume" : 167159,
+    "marketCap" : 144705158400,
+    "lowPrice" : 4390,
+    "highPrice" : 4545,
+    "openPrice" : 4530,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4400
   } ],
   "stockCode" : "013990"
 }

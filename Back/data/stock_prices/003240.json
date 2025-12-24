@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "태광산업",
   "prices" : [ {
-    "volume" : 647,
-    "marketCap" : 690308000000,
-    "lowPrice" : 613000,
-    "highPrice" : 625000,
-    "openPrice" : 618000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 620000
-  }, {
     "volume" : 191,
     "marketCap" : 686967800000,
     "lowPrice" : 614000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 778000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 776000
+  }, {
+    "volume" : 475,
+    "marketCap" : 865111800000,
+    "lowPrice" : 775000,
+    "highPrice" : 784000,
+    "openPrice" : 778000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 777000
   } ],
   "stockCode" : "003240"
 }

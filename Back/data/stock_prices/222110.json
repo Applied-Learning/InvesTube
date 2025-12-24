@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "팬젠",
   "prices" : [ {
-    "volume" : 49859,
-    "marketCap" : 73132776990,
-    "lowPrice" : 5640,
-    "highPrice" : 5930,
-    "openPrice" : 5660,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5670
-  }, {
     "volume" : 73270,
     "marketCap" : 70940083500,
     "lowPrice" : 5280,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5940,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5890
+  }, {
+    "volume" : 8660,
+    "marketCap" : 78941052450,
+    "lowPrice" : 5710,
+    "highPrice" : 5900,
+    "openPrice" : 5890,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5850
   } ],
   "stockCode" : "222110"
 }

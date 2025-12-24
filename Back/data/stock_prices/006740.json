@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "블루산업개발",
   "prices" : [ {
-    "volume" : 266864,
-    "marketCap" : 66753218292,
-    "lowPrice" : 1144,
-    "highPrice" : 1235,
-    "openPrice" : 1218,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1194
-  }, {
     "volume" : 151307,
     "marketCap" : 65914610022,
     "lowPrice" : 1168,
@@ -1937,6 +1929,14 @@
     "openPrice" : 840,
     "tradeDate" : "2025-12-22",
     "closePrice" : 843
+  }, {
+    "volume" : 37683,
+    "marketCap" : 47973445096,
+    "lowPrice" : 839,
+    "highPrice" : 848,
+    "openPrice" : 843,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 842
   } ],
   "stockCode" : "006740"
 }

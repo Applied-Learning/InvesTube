@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "영우디에스피",
   "prices" : [ {
-    "volume" : 48320,
-    "marketCap" : 30060329230,
-    "lowPrice" : 667,
-    "highPrice" : 683,
-    "openPrice" : 672,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 674
-  }, {
     "volume" : 143208,
     "marketCap" : 30907727235,
     "lowPrice" : 666,
@@ -1937,6 +1929,14 @@
     "openPrice" : 772,
     "tradeDate" : "2025-12-22",
     "closePrice" : 789
+  }, {
+    "volume" : 1419739,
+    "marketCap" : 39560106865,
+    "lowPrice" : 782,
+    "highPrice" : 888,
+    "openPrice" : 798,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 887
   } ],
   "stockCode" : "143540"
 }

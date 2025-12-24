@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "AJ네트웍스",
   "prices" : [ {
-    "volume" : 162388,
-    "marketCap" : 213819286275,
-    "lowPrice" : 4670,
-    "highPrice" : 4725,
-    "openPrice" : 4675,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4725
-  }, {
     "volume" : 463585,
     "marketCap" : 212914231095,
     "lowPrice" : 4635,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4685,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4675
+  }, {
+    "volume" : 114130,
+    "marketCap" : 209746537965,
+    "lowPrice" : 4625,
+    "highPrice" : 4705,
+    "openPrice" : 4705,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4635
   } ],
   "stockCode" : "095570"
 }

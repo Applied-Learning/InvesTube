@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "사람인",
   "prices" : [ {
-    "volume" : 30035,
-    "marketCap" : 204092454090,
-    "lowPrice" : 16750,
-    "highPrice" : 17660,
-    "openPrice" : 17050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17430
-  }, {
     "volume" : 17307,
     "marketCap" : 206785584580,
     "lowPrice" : 17310,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13430,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13730
+  }, {
+    "volume" : 10507,
+    "marketCap" : 158894698910,
+    "lowPrice" : 13460,
+    "highPrice" : 13780,
+    "openPrice" : 13740,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13570
   } ],
   "stockCode" : "143240"
 }

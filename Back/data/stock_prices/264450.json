@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유비쿼스",
   "prices" : [ {
-    "volume" : 10379,
-    "marketCap" : 118601144850,
-    "lowPrice" : 7880,
-    "highPrice" : 8100,
-    "openPrice" : 7880,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7950
-  }, {
     "volume" : 24484,
     "marketCap" : 122032372940,
     "lowPrice" : 7880,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9990,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9880
+  }, {
+    "volume" : 15377,
+    "marketCap" : 142108627170,
+    "lowPrice" : 9600,
+    "highPrice" : 9990,
+    "openPrice" : 9990,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9690
   } ],
   "stockCode" : "264450"
 }

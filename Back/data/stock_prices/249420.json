@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "일동제약",
   "prices" : [ {
-    "volume" : 45866,
-    "marketCap" : 318790011360,
-    "lowPrice" : 10980,
-    "highPrice" : 11410,
-    "openPrice" : 10980,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11360
-  }, {
     "volume" : 897805,
     "marketCap" : 329734386750,
     "lowPrice" : 11360,
@@ -1937,6 +1929,14 @@
     "openPrice" : 37800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 36650
+  }, {
+    "volume" : 1913211,
+    "marketCap" : 1180106799600,
+    "lowPrice" : 36100,
+    "highPrice" : 39350,
+    "openPrice" : 38050,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 37300
   } ],
   "stockCode" : "249420"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유니온",
   "prices" : [ {
-    "volume" : 211044,
-    "marketCap" : 80087605470,
-    "lowPrice" : 5060,
-    "highPrice" : 5200,
-    "openPrice" : 5120,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5130
-  }, {
     "volume" : 146067,
     "marketCap" : 78994792140,
     "lowPrice" : 5050,
@@ -1936,6 +1928,14 @@
     "highPrice" : 4330,
     "openPrice" : 4265,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 4280
+  }, {
+    "volume" : 72943,
+    "marketCap" : 66817729320,
+    "lowPrice" : 4255,
+    "highPrice" : 4350,
+    "openPrice" : 4280,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 4280
   } ],
   "stockCode" : "000910"

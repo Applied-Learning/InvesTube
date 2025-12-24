@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HLB펩",
   "prices" : [ {
-    "volume" : 73868,
-    "marketCap" : 77323624560,
-    "lowPrice" : 12460,
-    "highPrice" : 13550,
-    "openPrice" : 13400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12880
-  }, {
     "volume" : 65331,
     "marketCap" : 78464268090,
     "lowPrice" : 12660,
@@ -1936,6 +1928,14 @@
     "highPrice" : 7380,
     "openPrice" : 7130,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 7050
+  }, {
+    "volume" : 20415,
+    "marketCap" : 65518455900,
+    "lowPrice" : 6910,
+    "highPrice" : 7190,
+    "openPrice" : 6970,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 7050
   } ],
   "stockCode" : "196300"

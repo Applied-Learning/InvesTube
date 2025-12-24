@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이씨에이치",
   "prices" : [ {
-    "volume" : 7473535,
-    "marketCap" : 66207256150,
-    "lowPrice" : 3380,
-    "highPrice" : 4355,
-    "openPrice" : 3380,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3775
-  }, {
     "volume" : 697010,
     "marketCap" : 57175007960,
     "lowPrice" : 3260,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1306,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1300
+  }, {
+    "volume" : 1487906,
+    "marketCap" : 26640747574,
+    "lowPrice" : 1290,
+    "highPrice" : 1519,
+    "openPrice" : 1290,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1519
   } ],
   "stockCode" : "368600"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "세명전기",
   "prices" : [ {
-    "volume" : 1838263,
-    "marketCap" : 73257030000,
-    "lowPrice" : 4575,
-    "highPrice" : 5450,
-    "openPrice" : 4575,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4805
-  }, {
     "volume" : 254255,
     "marketCap" : 72570960000,
     "lowPrice" : 4700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9200
+  }, {
+    "volume" : 130893,
+    "marketCap" : 137518920000,
+    "lowPrice" : 9010,
+    "highPrice" : 9240,
+    "openPrice" : 9210,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9020
   } ],
   "stockCode" : "017510"
 }

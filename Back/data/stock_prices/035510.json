@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신세계 I&C",
   "prices" : [ {
-    "volume" : 7243909,
-    "marketCap" : 241488000000,
-    "lowPrice" : 12860,
-    "highPrice" : 14040,
-    "openPrice" : 13330,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14040
-  }, {
     "volume" : 32742621,
     "marketCap" : 233761347400,
     "lowPrice" : 12840,
@@ -1937,6 +1929,14 @@
     "openPrice" : 18180,
     "tradeDate" : "2025-12-22",
     "closePrice" : 18100
+  }, {
+    "volume" : 254176,
+    "marketCap" : 238793772000,
+    "lowPrice" : 17070,
+    "highPrice" : 17900,
+    "openPrice" : 17880,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 17080
   } ],
   "stockCode" : "035510"
 }

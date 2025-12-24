@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "흥아해운",
   "prices" : [ {
-    "volume" : 906659,
-    "marketCap" : 390930885774,
-    "lowPrice" : 1577,
-    "highPrice" : 1630,
-    "openPrice" : 1578,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1626
-  }, {
     "volume" : 3468394,
     "marketCap" : 398624482542,
     "lowPrice" : 1635,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1588,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1595
+  }, {
+    "volume" : 602237,
+    "marketCap" : 380833040016,
+    "lowPrice" : 1582,
+    "highPrice" : 1604,
+    "openPrice" : 1601,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1584
   } ],
   "stockCode" : "003280"
 }

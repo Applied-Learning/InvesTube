@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "칩스앤미디어",
   "prices" : [ {
-    "volume" : 456675,
-    "marketCap" : 333169984000,
-    "lowPrice" : 15950,
-    "highPrice" : 16430,
-    "openPrice" : 16100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16000
-  }, {
     "volume" : 312495,
     "marketCap" : 317760872240,
     "lowPrice" : 15130,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17460,
     "tradeDate" : "2025-12-22",
     "closePrice" : 17510
+  }, {
+    "volume" : 164594,
+    "marketCap" : 365577927320,
+    "lowPrice" : 17100,
+    "highPrice" : 17750,
+    "openPrice" : 17700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 17180
   } ],
   "stockCode" : "094360"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "서울가스",
   "prices" : [ {
-    "volume" : 2205,
-    "marketCap" : 256500000000,
-    "lowPrice" : 50800,
-    "highPrice" : 51500,
-    "openPrice" : 51100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 51300
-  }, {
     "volume" : 2369,
     "marketCap" : 258500000000,
     "lowPrice" : 51200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 65800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 65800
+  }, {
+    "volume" : 11468,
+    "marketCap" : 333500000000,
+    "lowPrice" : 65700,
+    "highPrice" : 66900,
+    "openPrice" : 66000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 66700
   } ],
   "stockCode" : "017390"
 }

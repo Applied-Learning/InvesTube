@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "크리스에프앤씨",
   "prices" : [ {
-    "volume" : 48609,
-    "marketCap" : 141522998400,
-    "lowPrice" : 5950,
-    "highPrice" : 6280,
-    "openPrice" : 5960,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6040
-  }, {
     "volume" : 46287,
     "marketCap" : 146677809600,
     "lowPrice" : 5980,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4180,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4265
+  }, {
+    "volume" : 21078,
+    "marketCap" : 98644341600,
+    "lowPrice" : 4140,
+    "highPrice" : 4285,
+    "openPrice" : 4220,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4210
   } ],
   "stockCode" : "110790"
 }

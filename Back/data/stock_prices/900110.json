@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이스트아시아홀딩스",
   "prices" : [ {
-    "volume" : 3959586,
-    "marketCap" : 26779787100,
-    "lowPrice" : 61,
-    "highPrice" : 63,
-    "openPrice" : 62,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 62
-  }, {
     "volume" : 3272100,
     "marketCap" : 26347855050,
     "lowPrice" : 61,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1130,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1123
+  }, {
+    "volume" : 71377,
+    "marketCap" : 29362291931,
+    "lowPrice" : 1113,
+    "highPrice" : 1122,
+    "openPrice" : 1119,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1117
   } ],
   "stockCode" : "900110"
 }

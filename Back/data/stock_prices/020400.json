@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대동금속",
   "prices" : [ {
-    "volume" : 16999,
-    "marketCap" : 21367412200,
-    "lowPrice" : 6640,
-    "highPrice" : 6940,
-    "openPrice" : 6640,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6700
-  }, {
     "volume" : 16727,
     "marketCap" : 20889037300,
     "lowPrice" : 6510,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5810
+  }, {
+    "volume" : 5377,
+    "marketCap" : 18560946120,
+    "lowPrice" : 5740,
+    "highPrice" : 5830,
+    "openPrice" : 5780,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5820
   } ],
   "stockCode" : "020400"
 }

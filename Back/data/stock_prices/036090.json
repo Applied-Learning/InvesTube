@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "위지트",
   "prices" : [ {
-    "volume" : 585828,
-    "marketCap" : 85716013616,
-    "lowPrice" : 716,
-    "highPrice" : 731,
-    "openPrice" : 721,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 724
-  }, {
     "volume" : 673297,
     "marketCap" : 85479229048,
     "lowPrice" : 717,
@@ -1937,6 +1929,14 @@
     "openPrice" : 630,
     "tradeDate" : "2025-12-22",
     "closePrice" : 633
+  }, {
+    "volume" : 174260,
+    "marketCap" : 74231962068,
+    "lowPrice" : 625,
+    "highPrice" : 640,
+    "openPrice" : 634,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 627
   } ],
   "stockCode" : "036090"
 }

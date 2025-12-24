@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "티피씨글로벌",
   "prices" : [ {
-    "volume" : 62325,
-    "marketCap" : 21166326483,
-    "lowPrice" : 1868,
-    "highPrice" : 1935,
-    "openPrice" : 1870,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1877
-  }, {
     "volume" : 80628,
     "marketCap" : 21752713791,
     "lowPrice" : 1844,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1895,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1843
+  }, {
+    "volume" : 165539,
+    "marketCap" : 21741437112,
+    "lowPrice" : 1751,
+    "highPrice" : 1954,
+    "openPrice" : 1851,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1928
   } ],
   "stockCode" : "130740"
 }

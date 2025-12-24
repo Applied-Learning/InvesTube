@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제이씨현시스템",
   "prices" : [ {
-    "volume" : 1008777,
-    "marketCap" : 112775148800,
-    "lowPrice" : 5760,
-    "highPrice" : 5990,
-    "openPrice" : 5850,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5900
-  }, {
     "volume" : 7297175,
     "marketCap" : 105702808960,
     "lowPrice" : 5460,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4185,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4280
+  }, {
+    "volume" : 66488,
+    "marketCap" : 80185042240,
+    "lowPrice" : 4175,
+    "highPrice" : 4305,
+    "openPrice" : 4280,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4195
   } ],
   "stockCode" : "033320"
 }

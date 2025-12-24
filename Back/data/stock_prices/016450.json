@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한세예스24홀딩스",
   "prices" : [ {
-    "volume" : 27925,
-    "marketCap" : 179000000000,
-    "lowPrice" : 4405,
-    "highPrice" : 4495,
-    "openPrice" : 4405,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4475
-  }, {
     "volume" : 71556,
     "marketCap" : 180200000000,
     "lowPrice" : 4480,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4340,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4340
+  }, {
+    "volume" : 25913,
+    "marketCap" : 173200000000,
+    "lowPrice" : 4275,
+    "highPrice" : 4355,
+    "openPrice" : 4300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4330
   } ],
   "stockCode" : "016450"
 }

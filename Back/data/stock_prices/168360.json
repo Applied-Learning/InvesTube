@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "펨트론",
   "prices" : [ {
-    "volume" : 248488,
-    "marketCap" : 121343218800,
-    "lowPrice" : 5410,
-    "highPrice" : 5800,
-    "openPrice" : 5550,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5700
-  }, {
     "volume" : 264305,
     "marketCap" : 114956733600,
     "lowPrice" : 5400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 16860,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16510
+  }, {
+    "volume" : 130003,
+    "marketCap" : 335503355840,
+    "lowPrice" : 15450,
+    "highPrice" : 16350,
+    "openPrice" : 16320,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15760
   } ],
   "stockCode" : "168360"
 }

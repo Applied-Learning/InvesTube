@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "시그네틱스",
   "prices" : [ {
-    "volume" : 9065950,
-    "marketCap" : 80756076498,
-    "lowPrice" : 892,
-    "highPrice" : 1028,
-    "openPrice" : 897,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 942
-  }, {
     "volume" : 2123411,
     "marketCap" : 78012770290,
     "lowPrice" : 905,
@@ -1937,6 +1929,14 @@
     "openPrice" : 737,
     "tradeDate" : "2025-12-22",
     "closePrice" : 741
+  }, {
+    "volume" : 260408,
+    "marketCap" : 62324487913,
+    "lowPrice" : 721,
+    "highPrice" : 754,
+    "openPrice" : 744,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 727
   } ],
   "stockCode" : "033170"
 }

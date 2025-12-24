@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한올바이오파마",
   "prices" : [ {
-    "volume" : 364427,
-    "marketCap" : 1773569660100,
-    "lowPrice" : 32250,
-    "highPrice" : 34150,
-    "openPrice" : 32250,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 33950
-  }, {
     "volume" : 329400,
     "marketCap" : 1802302011000,
     "lowPrice" : 33200,
@@ -1936,6 +1928,14 @@
     "highPrice" : 43300,
     "openPrice" : 43300,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 42700
+  }, {
+    "volume" : 443248,
+    "marketCap" : 2230675242600,
+    "lowPrice" : 42500,
+    "highPrice" : 43900,
+    "openPrice" : 42900,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 42700
   } ],
   "stockCode" : "009420"

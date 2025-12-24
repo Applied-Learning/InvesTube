@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대림통상",
   "prices" : [ {
-    "volume" : 22445,
-    "marketCap" : 40726875000,
-    "lowPrice" : 2565,
-    "highPrice" : 2680,
-    "openPrice" : 2655,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2675
-  }, {
     "volume" : 3092,
     "marketCap" : 39813375000,
     "lowPrice" : 2610,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2280,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2235
+  }, {
+    "volume" : 5248,
+    "marketCap" : 33875625000,
+    "lowPrice" : 2220,
+    "highPrice" : 2270,
+    "openPrice" : 2270,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2225
   } ],
   "stockCode" : "006570"
 }

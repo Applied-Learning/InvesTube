@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "차AI헬스케어",
   "prices" : [ {
-    "volume" : 5734,
-    "marketCap" : 18073929380,
-    "lowPrice" : 3970,
-    "highPrice" : 4135,
-    "openPrice" : 4130,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4030
-  }, {
     "volume" : 9695,
     "marketCap" : 17849687080,
     "lowPrice" : 3980,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11380,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10810
+  }, {
+    "volume" : 25396,
+    "marketCap" : 191505795960,
+    "lowPrice" : 10475,
+    "highPrice" : 11190,
+    "openPrice" : 11190,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10520
   } ],
   "stockCode" : "025620"
 }

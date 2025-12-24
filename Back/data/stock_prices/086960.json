@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "MDS테크",
   "prices" : [ {
-    "volume" : 2969712,
-    "marketCap" : 88923272904,
-    "lowPrice" : 921,
-    "highPrice" : 1029,
-    "openPrice" : 921,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 958
-  }, {
     "volume" : 543973,
     "marketCap" : 86788371780,
     "lowPrice" : 935,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1303,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1346
+  }, {
+    "volume" : 3254348,
+    "marketCap" : 128932057592,
+    "lowPrice" : 1332,
+    "highPrice" : 1419,
+    "openPrice" : 1385,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1333
   } ],
   "stockCode" : "086960"
 }

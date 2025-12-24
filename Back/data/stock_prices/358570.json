@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "지아이이노베이션",
   "prices" : [ {
-    "volume" : 3041404,
-    "marketCap" : 373932503560,
-    "lowPrice" : 7490,
-    "highPrice" : 8680,
-    "openPrice" : 8090,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8440
-  }, {
     "volume" : 709412,
     "marketCap" : 366843735720,
     "lowPrice" : 8150,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17910,
     "tradeDate" : "2025-12-22",
     "closePrice" : 17610
+  }, {
+    "volume" : 345264,
+    "marketCap" : 1092005721450,
+    "lowPrice" : 17020,
+    "highPrice" : 17780,
+    "openPrice" : 17770,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 17150
   } ],
   "stockCode" : "358570"
 }

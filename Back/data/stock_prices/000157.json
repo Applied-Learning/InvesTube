@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "두산2우B",
   "prices" : [ {
-    "volume" : 1653,
-    "marketCap" : 93501078600,
-    "lowPrice" : 104400,
-    "highPrice" : 110000,
-    "openPrice" : 107100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 104700
-  }, {
     "volume" : 2291,
     "marketCap" : 96894623000,
     "lowPrice" : 103800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 440000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 436500
+  }, {
+    "volume" : 1246,
+    "marketCap" : 378648112000,
+    "lowPrice" : 424000,
+    "highPrice" : 438000,
+    "openPrice" : 437500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 424000
   } ],
   "stockCode" : "000157"
 }

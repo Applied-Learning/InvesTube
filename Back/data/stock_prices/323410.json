@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "카카오뱅크",
   "prices" : [ {
-    "volume" : 415660,
-    "marketCap" : 10731794332500,
-    "lowPrice" : 21750,
-    "highPrice" : 22550,
-    "openPrice" : 22350,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 22500
-  }, {
     "volume" : 273805,
     "marketCap" : 10564855309550,
     "lowPrice" : 22100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 21850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 21950
+  }, {
+    "volume" : 377609,
+    "marketCap" : 10446550470300,
+    "lowPrice" : 21800,
+    "highPrice" : 22000,
+    "openPrice" : 21950,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 21900
   } ],
   "stockCode" : "323410"
 }

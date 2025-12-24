@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신진에스엠",
   "prices" : [ {
-    "volume" : 183353,
-    "marketCap" : 45683362440,
-    "lowPrice" : 2550,
-    "highPrice" : 2670,
-    "openPrice" : 2570,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2610
-  }, {
     "volume" : 148267,
     "marketCap" : 45420814380,
     "lowPrice" : 2535,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2040,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2065
+  }, {
+    "volume" : 15281,
+    "marketCap" : 35881568200,
+    "lowPrice" : 2050,
+    "highPrice" : 2100,
+    "openPrice" : 2065,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2050
   } ],
   "stockCode" : "138070"
 }

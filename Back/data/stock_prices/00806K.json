@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대덕1우",
   "prices" : [ {
-    "volume" : 1006,
-    "marketCap" : 8765341110,
-    "lowPrice" : 7080,
-    "highPrice" : 7230,
-    "openPrice" : 7080,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7230
-  }, {
     "volume" : 2023,
     "marketCap" : 8838082530,
     "lowPrice" : 7290,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9350,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9280
+  }, {
+    "volume" : 10619,
+    "marketCap" : 10959707280,
+    "lowPrice" : 9040,
+    "highPrice" : 9340,
+    "openPrice" : 9340,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9040
   } ],
   "stockCode" : "00806K"
 }

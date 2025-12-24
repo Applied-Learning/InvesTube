@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유한양행우",
   "prices" : [ {
-    "volume" : 15899,
-    "marketCap" : 122935854000,
-    "lowPrice" : 98800,
-    "highPrice" : 105500,
-    "openPrice" : 98800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 104100
-  }, {
     "volume" : 6737,
     "marketCap" : 121400632000,
     "lowPrice" : 102000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 104200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 103700
+  }, {
+    "volume" : 1807,
+    "marketCap" : 121754914000,
+    "lowPrice" : 103100,
+    "highPrice" : 104200,
+    "openPrice" : 103700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 103100
   } ],
   "stockCode" : "000105"
 }

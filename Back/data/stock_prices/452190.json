@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한빛레이저",
   "prices" : [ {
-    "volume" : 71206,
-    "marketCap" : 75047332680,
-    "lowPrice" : 3170,
-    "highPrice" : 3285,
-    "openPrice" : 3170,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3240
-  }, {
     "volume" : 100764,
     "marketCap" : 73889194830,
     "lowPrice" : 3170,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4895,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4945
+  }, {
+    "volume" : 119795,
+    "marketCap" : 113327801450,
+    "lowPrice" : 4835,
+    "highPrice" : 5020,
+    "openPrice" : 5000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4850
   } ],
   "stockCode" : "452190"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "브이원텍",
   "prices" : [ {
-    "volume" : 13296,
-    "marketCap" : 62735256410,
-    "lowPrice" : 3790,
-    "highPrice" : 3935,
-    "openPrice" : 3790,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3935
-  }, {
     "volume" : 14086,
     "marketCap" : 62575827550,
     "lowPrice" : 3820,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5450,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5650
+  }, {
+    "volume" : 147187,
+    "marketCap" : 93106454240,
+    "lowPrice" : 5570,
+    "highPrice" : 5910,
+    "openPrice" : 5770,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5840
   } ],
   "stockCode" : "251630"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대성홀딩스",
   "prices" : [ {
-    "volume" : 6737,
-    "marketCap" : 116326788570,
-    "lowPrice" : 7110,
-    "highPrice" : 7300,
-    "openPrice" : 7270,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7230
-  }, {
     "volume" : 6554,
     "marketCap" : 116809472340,
     "lowPrice" : 7230,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9000
+  }, {
+    "volume" : 7532,
+    "marketCap" : 144161552640,
+    "lowPrice" : 8930,
+    "highPrice" : 8990,
+    "openPrice" : 8990,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8960
   } ],
   "stockCode" : "016710"
 }

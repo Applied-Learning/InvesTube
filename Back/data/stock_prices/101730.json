@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "위메이드맥스",
   "prices" : [ {
-    "volume" : 36618,
-    "marketCap" : 269025959360,
-    "lowPrice" : 7900,
-    "highPrice" : 8130,
-    "openPrice" : 8010,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8080
-  }, {
     "volume" : 50800,
     "marketCap" : 270357771040,
     "lowPrice" : 8070,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6380,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6340
+  }, {
+    "volume" : 30543,
+    "marketCap" : 527122668940,
+    "lowPrice" : 6200,
+    "highPrice" : 6340,
+    "openPrice" : 6340,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6290
   } ],
   "stockCode" : "101730"
 }

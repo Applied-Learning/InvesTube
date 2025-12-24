@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "광전자",
   "prices" : [ {
-    "volume" : 28832,
-    "marketCap" : 100938035146,
-    "lowPrice" : 1700,
-    "highPrice" : 1749,
-    "openPrice" : 1700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1742
-  }, {
     "volume" : 43670,
     "marketCap" : 101691304065,
     "lowPrice" : 1735,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1834,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1814
+  }, {
+    "volume" : 35344,
+    "marketCap" : 104588492215,
+    "lowPrice" : 1804,
+    "highPrice" : 1819,
+    "openPrice" : 1809,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1805
   } ],
   "stockCode" : "017900"
 }

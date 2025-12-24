@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "비씨엔씨",
   "prices" : [ {
-    "volume" : 34922,
-    "marketCap" : 108228128580,
-    "lowPrice" : 8230,
-    "highPrice" : 8640,
-    "openPrice" : 8230,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8460
-  }, {
     "volume" : 25412,
     "marketCap" : 105157827060,
     "lowPrice" : 8220,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12810,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13090
+  }, {
+    "volume" : 22637,
+    "marketCap" : 164197352090,
+    "lowPrice" : 12260,
+    "highPrice" : 13220,
+    "openPrice" : 13220,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12830
   } ],
   "stockCode" : "146320"
 }

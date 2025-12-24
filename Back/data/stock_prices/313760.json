@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "캐리",
   "prices" : [ {
-    "volume" : 62972,
-    "marketCap" : 40605918330,
-    "lowPrice" : 5110,
-    "highPrice" : 5460,
-    "openPrice" : 5350,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5290
-  }, {
     "volume" : 269131,
     "marketCap" : 28477874670,
     "lowPrice" : 3710,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1308,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1466
+  }, {
+    "volume" : 3706357,
+    "marketCap" : 18290127552,
+    "lowPrice" : 1419,
+    "highPrice" : 1905,
+    "openPrice" : 1490,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1632
   } ],
   "stockCode" : "313760"
 }

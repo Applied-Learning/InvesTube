@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "기업은행",
   "prices" : [ {
-    "volume" : 830412,
-    "marketCap" : 11610520652640,
-    "lowPrice" : 14250,
-    "highPrice" : 14570,
-    "openPrice" : 14290,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14560
-  }, {
     "volume" : 638878,
     "marketCap" : 11746083050370,
     "lowPrice" : 14550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 21050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 21350
+  }, {
+    "volume" : 579561,
+    "marketCap" : 16865557129350,
+    "lowPrice" : 21150,
+    "highPrice" : 21450,
+    "openPrice" : 21400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 21150
   } ],
   "stockCode" : "024110"
 }

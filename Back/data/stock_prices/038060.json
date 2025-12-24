@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "루멘스",
   "prices" : [ {
-    "volume" : 51214,
-    "marketCap" : 50508222450,
-    "lowPrice" : 1042,
-    "highPrice" : 1090,
-    "openPrice" : 1045,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1050
-  }, {
     "volume" : 35256,
     "marketCap" : 52143726796,
     "lowPrice" : 1050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 655,
     "tradeDate" : "2025-12-22",
     "closePrice" : 647
+  }, {
+    "volume" : 23292,
+    "marketCap" : 30978376436,
+    "lowPrice" : 641,
+    "highPrice" : 647,
+    "openPrice" : 647,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 644
   } ],
   "stockCode" : "038060"
 }

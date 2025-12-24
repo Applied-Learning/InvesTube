@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스디바이오센서",
   "prices" : [ {
-    "volume" : 114193,
-    "marketCap" : 1323194262390,
-    "lowPrice" : 10500,
-    "highPrice" : 10770,
-    "openPrice" : 10660,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10630
-  }, {
     "volume" : 118490,
     "marketCap" : 1308256980030,
     "lowPrice" : 10510,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9270,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9260
+  }, {
+    "volume" : 53895,
+    "marketCap" : 1110351810240,
+    "lowPrice" : 9100,
+    "highPrice" : 9300,
+    "openPrice" : 9270,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9120
   } ],
   "stockCode" : "137310"
 }

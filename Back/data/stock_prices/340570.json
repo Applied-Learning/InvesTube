@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "티앤엘",
   "prices" : [ {
-    "volume" : 31707,
-    "marketCap" : 516940800000,
-    "lowPrice" : 63500,
-    "highPrice" : 65500,
-    "openPrice" : 63600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 63600
-  }, {
     "volume" : 51769,
     "marketCap" : 531571200000,
     "lowPrice" : 63800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 46500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 47450
+  }, {
+    "volume" : 39821,
+    "marketCap" : 396646400000,
+    "lowPrice" : 46700,
+    "highPrice" : 48950,
+    "openPrice" : 47550,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 48800
   } ],
   "stockCode" : "340570"
 }

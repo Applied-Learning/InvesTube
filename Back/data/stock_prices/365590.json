@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하이딥",
   "prices" : [ {
-    "volume" : 135234,
-    "marketCap" : 95913013176,
-    "lowPrice" : 638,
-    "highPrice" : 669,
-    "openPrice" : 646,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 664
-  }, {
     "volume" : 86501,
     "marketCap" : 92446277760,
     "lowPrice" : 640,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 563
+  }, {
+    "volume" : 0,
+    "marketCap" : 87142893182,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 563
   } ],
   "stockCode" : "365590"

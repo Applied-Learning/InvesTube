@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아티스트스튜디오",
   "prices" : [ {
-    "volume" : 6489154,
-    "marketCap" : 264394861250,
-    "lowPrice" : 25000,
-    "highPrice" : 28150,
-    "openPrice" : 27600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 26450
-  }, {
     "volume" : 2175817,
     "marketCap" : 242403606250,
     "lowPrice" : 22450,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6120,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5810
+  }, {
+    "volume" : 16884,
+    "marketCap" : 57477143750,
+    "lowPrice" : 5690,
+    "highPrice" : 5870,
+    "openPrice" : 5770,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5750
   } ],
   "stockCode" : "200350"
 }

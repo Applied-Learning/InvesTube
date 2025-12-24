@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한화엔진",
   "prices" : [ {
-    "volume" : 1745745,
-    "marketCap" : 1499545141740,
-    "lowPrice" : 17160,
-    "highPrice" : 18120,
-    "openPrice" : 17160,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17970
-  }, {
     "volume" : 825219,
     "marketCap" : 1472007584880,
     "lowPrice" : 17390,
@@ -1937,6 +1929,14 @@
     "openPrice" : 43300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 43350
+  }, {
+    "volume" : 1585040,
+    "marketCap" : 3771810818400,
+    "lowPrice" : 43750,
+    "highPrice" : 45750,
+    "openPrice" : 44950,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 45200
   } ],
   "stockCode" : "082740"
 }

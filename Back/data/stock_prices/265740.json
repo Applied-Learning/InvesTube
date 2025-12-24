@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엔에프씨",
   "prices" : [ {
-    "volume" : 35797,
-    "marketCap" : 42961958000,
-    "lowPrice" : 4730,
-    "highPrice" : 4930,
-    "openPrice" : 4855,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4810
-  }, {
     "volume" : 68827,
     "marketCap" : 40773667000,
     "lowPrice" : 4565,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4395
+  }, {
+    "volume" : 131372,
+    "marketCap" : 77349388000,
+    "lowPrice" : 4280,
+    "highPrice" : 4430,
+    "openPrice" : 4395,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4330
   } ],
   "stockCode" : "265740"
 }

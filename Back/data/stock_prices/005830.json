@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "DB손해보험",
   "prices" : [ {
-    "volume" : 106016,
-    "marketCap" : 7412760000000,
-    "lowPrice" : 100200,
-    "highPrice" : 105100,
-    "openPrice" : 101300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 104700
-  }, {
     "volume" : 51674,
     "marketCap" : 7476480000000,
     "lowPrice" : 104000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 125100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 126600
+  }, {
+    "volume" : 154263,
+    "marketCap" : 9119040000000,
+    "lowPrice" : 126700,
+    "highPrice" : 130200,
+    "openPrice" : 127200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 128800
   } ],
   "stockCode" : "005830"
 }

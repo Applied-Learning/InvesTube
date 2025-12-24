@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "큐리옥스바이오시스템즈",
   "prices" : [ {
-    "volume" : 77181,
-    "marketCap" : 310184141260,
-    "lowPrice" : 18740,
-    "highPrice" : 19550,
-    "openPrice" : 19000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 19270
-  }, {
     "volume" : 78607,
     "marketCap" : 308735434840,
     "lowPrice" : 18880,
@@ -1937,6 +1929,14 @@
     "openPrice" : 104300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 100300
+  }, {
+    "volume" : 128585,
+    "marketCap" : 1696575450300,
+    "lowPrice" : 97500,
+    "highPrice" : 101000,
+    "openPrice" : 99900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 99100
   } ],
   "stockCode" : "445680"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼보판지",
   "prices" : [ {
-    "volume" : 4823,
-    "marketCap" : 133887600000,
-    "lowPrice" : 8190,
-    "highPrice" : 8300,
-    "openPrice" : 8260,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8280
-  }, {
     "volume" : 9268,
     "marketCap" : 135181200000,
     "lowPrice" : 8230,
@@ -1936,6 +1928,14 @@
     "highPrice" : 9810,
     "openPrice" : 9700,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 9790
+  }, {
+    "volume" : 20109,
+    "marketCap" : 156721257000,
+    "lowPrice" : 9700,
+    "highPrice" : 9790,
+    "openPrice" : 9790,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 9790
   } ],
   "stockCode" : "023600"

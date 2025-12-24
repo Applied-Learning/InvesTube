@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "나인테크",
   "prices" : [ {
-    "volume" : 51000,
-    "marketCap" : 84053400200,
-    "lowPrice" : 1925,
-    "highPrice" : 1955,
-    "openPrice" : 1925,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1925
-  }, {
     "volume" : 55633,
     "marketCap" : 84053400200,
     "lowPrice" : 1925,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3020,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3070
+  }, {
+    "volume" : 681005,
+    "marketCap" : 169949273200,
+    "lowPrice" : 2955,
+    "highPrice" : 3095,
+    "openPrice" : 3095,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2960
   } ],
   "stockCode" : "267320"
 }

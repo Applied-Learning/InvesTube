@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "LG",
   "prices" : [ {
-    "volume" : 142881,
-    "marketCap" : 11876224971500,
-    "lowPrice" : 73100,
-    "highPrice" : 75500,
-    "openPrice" : 73800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 75500
-  }, {
     "volume" : 58895,
     "marketCap" : 11844764772900,
     "lowPrice" : 74600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 82400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 82800
+  }, {
+    "volume" : 102286,
+    "marketCap" : 12692436445500,
+    "lowPrice" : 82000,
+    "highPrice" : 83700,
+    "openPrice" : 83100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 82300
   } ],
   "stockCode" : "003550"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국첨단소재",
   "prices" : [ {
-    "volume" : 11100640,
-    "marketCap" : 31578908800,
-    "lowPrice" : 3200,
-    "highPrice" : 3900,
-    "openPrice" : 3345,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3200
-  }, {
     "volume" : 3530221,
     "marketCap" : 28815754280,
     "lowPrice" : 2875,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2625,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2655
+  }, {
+    "volume" : 588244,
+    "marketCap" : 60760665260,
+    "lowPrice" : 2632,
+    "highPrice" : 2820,
+    "openPrice" : 2820,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2635
   } ],
   "stockCode" : "062970"
 }

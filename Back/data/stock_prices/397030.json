@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이프릴바이오",
   "prices" : [ {
-    "volume" : 161931,
-    "marketCap" : 345283822440,
-    "lowPrice" : 15170,
-    "highPrice" : 15510,
-    "openPrice" : 15200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15390
-  }, {
     "volume" : 201361,
     "marketCap" : 354706772760,
     "lowPrice" : 15200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 50700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 49100
+  }, {
+    "volume" : 854684,
+    "marketCap" : 1086149656800,
+    "lowPrice" : 46300,
+    "highPrice" : 50000,
+    "openPrice" : 48450,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 46800
   } ],
   "stockCode" : "397030"
 }

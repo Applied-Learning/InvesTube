@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "기가레인",
   "prices" : [ {
-    "volume" : 91333,
-    "marketCap" : 47364907626,
-    "lowPrice" : 540,
-    "highPrice" : 590,
-    "openPrice" : 545,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 558
-  }, {
     "volume" : 93126,
     "marketCap" : 47025374238,
     "lowPrice" : 550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 547,
     "tradeDate" : "2025-12-22",
     "closePrice" : 539
+  }, {
+    "volume" : 173550,
+    "marketCap" : 45157940604,
+    "lowPrice" : 508,
+    "highPrice" : 549,
+    "openPrice" : 539,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 532
   } ],
   "stockCode" : "049080"
 }

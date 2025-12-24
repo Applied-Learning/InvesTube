@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제닉스로보틱스",
   "prices" : [ {
-    "volume" : 24250,
-    "marketCap" : 103631568000,
-    "lowPrice" : 23100,
-    "highPrice" : 24250,
-    "openPrice" : 23100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 23700
-  }, {
     "volume" : 20634,
     "marketCap" : 103631568000,
     "lowPrice" : 23250,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12640,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13250
+  }, {
+    "volume" : 318139,
+    "marketCap" : 168565272000,
+    "lowPrice" : 12840,
+    "highPrice" : 13450,
+    "openPrice" : 13250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12850
   } ],
   "stockCode" : "381620"
 }

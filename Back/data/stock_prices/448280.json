@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에코아이",
   "prices" : [ {
-    "volume" : 492262,
-    "marketCap" : 210874868050,
-    "lowPrice" : 20500,
-    "highPrice" : 23550,
-    "openPrice" : 20800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 21350
-  }, {
     "volume" : 284495,
     "marketCap" : 207417903000,
     "lowPrice" : 20950,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11160,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11080
+  }, {
+    "volume" : 61430,
+    "marketCap" : 323868239970,
+    "lowPrice" : 10760,
+    "highPrice" : 11130,
+    "openPrice" : 10990,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10930
   } ],
   "stockCode" : "448280"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이오테크닉스",
   "prices" : [ {
-    "volume" : 166179,
-    "marketCap" : 1695170080000,
-    "lowPrice" : 128400,
-    "highPrice" : 139500,
-    "openPrice" : 129700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 137600
-  }, {
     "volume" : 103437,
     "marketCap" : 1705025720000,
     "lowPrice" : 136400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 255000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 257000
+  }, {
+    "volume" : 70552,
+    "marketCap" : 3178443900000,
+    "lowPrice" : 254000,
+    "highPrice" : 261000,
+    "openPrice" : 257000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 258000
   } ],
   "stockCode" : "039030"
 }

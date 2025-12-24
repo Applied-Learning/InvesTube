@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "시디즈",
   "prices" : [ {
-    "volume" : 1137,
-    "marketCap" : 45900000000,
-    "lowPrice" : 22700,
-    "highPrice" : 23200,
-    "openPrice" : 23150,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 22950
-  }, {
     "volume" : 987,
     "marketCap" : 46400000000,
     "lowPrice" : 23050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 22100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 21950
+  }, {
+    "volume" : 911,
+    "marketCap" : 43700000000,
+    "lowPrice" : 21850,
+    "highPrice" : 21950,
+    "openPrice" : 21950,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 21850
   } ],
   "stockCode" : "134790"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아톤",
   "prices" : [ {
-    "volume" : 1412334,
-    "marketCap" : 130511158120,
-    "lowPrice" : 5370,
-    "highPrice" : 5730,
-    "openPrice" : 5500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5620
-  }, {
     "volume" : 1058831,
     "marketCap" : 126563311700,
     "lowPrice" : 5420,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6420,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6560
+  }, {
+    "volume" : 252574,
+    "marketCap" : 157664672480,
+    "lowPrice" : 6380,
+    "highPrice" : 6710,
+    "openPrice" : 6640,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6440
   } ],
   "stockCode" : "158430"
 }

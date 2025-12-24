@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "네패스",
   "prices" : [ {
-    "volume" : 53997,
-    "marketCap" : 159108493800,
-    "lowPrice" : 6580,
-    "highPrice" : 7030,
-    "openPrice" : 6580,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6900
-  }, {
     "volume" : 36034,
     "marketCap" : 154035469360,
     "lowPrice" : 6680,
@@ -1937,6 +1929,14 @@
     "openPrice" : 16380,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16500
+  }, {
+    "volume" : 401794,
+    "marketCap" : 338278493340,
+    "lowPrice" : 13560,
+    "highPrice" : 16420,
+    "openPrice" : 16380,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14670
   } ],
   "stockCode" : "033640"
 }

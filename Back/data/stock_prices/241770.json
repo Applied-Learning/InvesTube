@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "메카로",
   "prices" : [ {
-    "volume" : 11265,
-    "marketCap" : 81846899200,
-    "lowPrice" : 7640,
-    "highPrice" : 8050,
-    "openPrice" : 7750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8030
-  }, {
     "volume" : 185228,
     "marketCap" : 85618176000,
     "lowPrice" : 8040,
@@ -1937,6 +1929,14 @@
     "openPrice" : 20600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 21150
+  }, {
+    "volume" : 9739,
+    "marketCap" : 212516544000,
+    "lowPrice" : 20750,
+    "highPrice" : 21300,
+    "openPrice" : 21300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 20850
   } ],
   "stockCode" : "241770"
 }

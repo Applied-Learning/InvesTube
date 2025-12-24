@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "LS증권",
   "prices" : [ {
-    "volume" : 10648,
-    "marketCap" : 221924760000,
-    "lowPrice" : 3980,
-    "highPrice" : 4020,
-    "openPrice" : 4000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4000
-  }, {
     "volume" : 19560,
     "marketCap" : 221924760000,
     "lowPrice" : 3955,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4860,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4880
+  }, {
+    "volume" : 60403,
+    "marketCap" : 270470801250,
+    "lowPrice" : 4855,
+    "highPrice" : 4935,
+    "openPrice" : 4880,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4875
   } ],
   "stockCode" : "078020"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "애경케미칼",
   "prices" : [ {
-    "volume" : 163088,
-    "marketCap" : 369730188400,
-    "lowPrice" : 7310,
-    "highPrice" : 7740,
-    "openPrice" : 7450,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7600
-  }, {
     "volume" : 98754,
     "marketCap" : 367297752950,
     "lowPrice" : 7510,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10300
+  }, {
+    "volume" : 94874,
+    "marketCap" : 491351960900,
+    "lowPrice" : 10080,
+    "highPrice" : 10330,
+    "openPrice" : 10320,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10100
   } ],
   "stockCode" : "161000"
 }

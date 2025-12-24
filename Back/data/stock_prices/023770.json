@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "플레이위드",
   "prices" : [ {
-    "volume" : 33244,
-    "marketCap" : 29675685700,
-    "lowPrice" : 3375,
-    "highPrice" : 3540,
-    "openPrice" : 3450,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3385
-  }, {
     "volume" : 21572,
     "marketCap" : 29675685700,
     "lowPrice" : 3340,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3035,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3145
+  }, {
+    "volume" : 34350,
+    "marketCap" : 26928949950,
+    "lowPrice" : 3010,
+    "highPrice" : 3170,
+    "openPrice" : 3170,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3010
   } ],
   "stockCode" : "023770"
 }

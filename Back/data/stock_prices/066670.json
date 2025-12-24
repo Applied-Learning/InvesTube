@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디티씨",
   "prices" : [ {
-    "volume" : 41767,
-    "marketCap" : 54954238920,
-    "lowPrice" : 2865,
-    "highPrice" : 2985,
-    "openPrice" : 2970,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2940
-  }, {
     "volume" : 15559,
     "marketCap" : 53926183430,
     "lowPrice" : 2860,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3445,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3465
+  }, {
+    "volume" : 50566,
+    "marketCap" : 65234793820,
+    "lowPrice" : 3420,
+    "highPrice" : 3505,
+    "openPrice" : 3440,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3490
   } ],
   "stockCode" : "066670"
 }

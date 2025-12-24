@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "효성오앤비",
   "prices" : [ {
-    "volume" : 1852133,
-    "marketCap" : 63420300000,
-    "lowPrice" : 7300,
-    "highPrice" : 8090,
-    "openPrice" : 7360,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7470
-  }, {
     "volume" : 727315,
     "marketCap" : 62146800000,
     "lowPrice" : 7070,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6040,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6080
+  }, {
+    "volume" : 13129,
+    "marketCap" : 51534300000,
+    "lowPrice" : 5990,
+    "highPrice" : 6090,
+    "openPrice" : 6080,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6070
   } ],
   "stockCode" : "097870"
 }

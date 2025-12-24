@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대성미생물",
   "prices" : [ {
-    "volume" : 9519,
-    "marketCap" : 34846000000,
-    "lowPrice" : 9150,
-    "highPrice" : 9250,
-    "openPrice" : 9150,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9170
-  }, {
     "volume" : 4899,
     "marketCap" : 34694000000,
     "lowPrice" : 9100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7480,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7360
+  }, {
+    "volume" : 8780,
+    "marketCap" : 27854000000,
+    "lowPrice" : 7310,
+    "highPrice" : 7440,
+    "openPrice" : 7440,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7330
   } ],
   "stockCode" : "036480"
 }

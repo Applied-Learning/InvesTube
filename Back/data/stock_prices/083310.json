@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엘오티베큠",
   "prices" : [ {
-    "volume" : 26814,
-    "marketCap" : 154056785450,
-    "lowPrice" : 8400,
-    "highPrice" : 8760,
-    "openPrice" : 8590,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8650
-  }, {
     "volume" : 39586,
     "marketCap" : 153700584790,
     "lowPrice" : 8570,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11620,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12160
+  }, {
+    "volume" : 30769,
+    "marketCap" : 214432797320,
+    "lowPrice" : 12000,
+    "highPrice" : 12240,
+    "openPrice" : 12180,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12040
   } ],
   "stockCode" : "083310"
 }

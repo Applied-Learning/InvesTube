@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국전자홀딩스",
   "prices" : [ {
-    "volume" : 27792,
-    "marketCap" : 32528179520,
-    "lowPrice" : 686,
-    "highPrice" : 725,
-    "openPrice" : 686,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 695
-  }, {
     "volume" : 88045,
     "marketCap" : 32902604608,
     "lowPrice" : 696,
@@ -1937,6 +1929,14 @@
     "openPrice" : 659,
     "tradeDate" : "2025-12-22",
     "closePrice" : 660
+  }, {
+    "volume" : 84992,
+    "marketCap" : 30702857216,
+    "lowPrice" : 643,
+    "highPrice" : 673,
+    "openPrice" : 673,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 656
   } ],
   "stockCode" : "006200"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이디스홀딩스",
   "prices" : [ {
-    "volume" : 2423,
-    "marketCap" : 94888922520,
-    "lowPrice" : 9100,
-    "highPrice" : 9260,
-    "openPrice" : 9250,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9170
-  }, {
     "volume" : 4636,
     "marketCap" : 94992400080,
     "lowPrice" : 9170,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12570,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12290
+  }, {
+    "volume" : 2843,
+    "marketCap" : 127070443680,
+    "lowPrice" : 12180,
+    "highPrice" : 12490,
+    "openPrice" : 12330,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12280
   } ],
   "stockCode" : "054800"
 }

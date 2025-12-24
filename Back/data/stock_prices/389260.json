@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대명에너지",
   "prices" : [ {
-    "volume" : 44520,
-    "marketCap" : 204600000000,
-    "lowPrice" : 12000,
-    "highPrice" : 12520,
-    "openPrice" : 12380,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12000
-  }, {
     "volume" : 24427,
     "marketCap" : 203918000000,
     "lowPrice" : 11960,
@@ -1936,6 +1928,14 @@
     "highPrice" : 20750,
     "openPrice" : 20300,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 20500
+  }, {
+    "volume" : 58332,
+    "marketCap" : 367284662500,
+    "lowPrice" : 20400,
+    "highPrice" : 21400,
+    "openPrice" : 20650,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 20500
   } ],
   "stockCode" : "389260"

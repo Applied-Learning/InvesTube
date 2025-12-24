@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "셀바스헬스케어",
   "prices" : [ {
-    "volume" : 132577,
-    "marketCap" : 106308529320,
-    "lowPrice" : 4050,
-    "highPrice" : 4155,
-    "openPrice" : 4050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4130
-  }, {
     "volume" : 134499,
     "marketCap" : 104249284200,
     "lowPrice" : 4040,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5810
+  }, {
+    "volume" : 4404281,
+    "marketCap" : 151869327600,
+    "lowPrice" : 5480,
+    "highPrice" : 6130,
+    "openPrice" : 5570,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5900
   } ],
   "stockCode" : "208370"
 }

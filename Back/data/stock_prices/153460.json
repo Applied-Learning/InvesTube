@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "네이블",
   "prices" : [ {
-    "volume" : 925,
-    "marketCap" : 43555193380,
-    "lowPrice" : 6670,
-    "highPrice" : 6970,
-    "openPrice" : 6970,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6670
-  }, {
     "volume" : 460,
     "marketCap" : 43946994220,
     "lowPrice" : 6470,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6980,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7040
+  }, {
+    "volume" : 2482,
+    "marketCap" : 45122396740,
+    "lowPrice" : 6870,
+    "highPrice" : 7110,
+    "openPrice" : 7030,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6910
   } ],
   "stockCode" : "153460"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코스모신소재",
   "prices" : [ {
-    "volume" : 200650,
-    "marketCap" : 1807598033600,
-    "lowPrice" : 51400,
-    "highPrice" : 56000,
-    "openPrice" : 53900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 55600
-  }, {
     "volume" : 170258,
     "marketCap" : 1755580824000,
     "lowPrice" : 53600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 46950,
     "tradeDate" : "2025-12-22",
     "closePrice" : 48050
+  }, {
+    "volume" : 155528,
+    "marketCap" : 1528005532000,
+    "lowPrice" : 47000,
+    "highPrice" : 48250,
+    "openPrice" : 48200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 47000
   } ],
   "stockCode" : "005070"
 }

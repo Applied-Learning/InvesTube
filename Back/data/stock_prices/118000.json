@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "메타케어",
   "prices" : [ {
-    "volume" : 138440,
-    "marketCap" : 48279767652,
-    "lowPrice" : 291,
-    "highPrice" : 299,
-    "openPrice" : 294,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 293
-  }, {
     "volume" : 147927,
     "marketCap" : 47455880832,
     "lowPrice" : 287,
@@ -1937,6 +1929,14 @@
     "openPrice" : 307,
     "tradeDate" : "2025-12-22",
     "closePrice" : 307
+  }, {
+    "volume" : 467139,
+    "marketCap" : 51876763928,
+    "lowPrice" : 300,
+    "highPrice" : 307,
+    "openPrice" : 305,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 302
   } ],
   "stockCode" : "118000"
 }

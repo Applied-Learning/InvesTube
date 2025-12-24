@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "프리시젼바이오",
   "prices" : [ {
-    "volume" : 1748,
-    "marketCap" : 33217544360,
-    "lowPrice" : 2820,
-    "highPrice" : 2895,
-    "openPrice" : 2830,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2860
-  }, {
     "volume" : 21053,
     "marketCap" : 33101399100,
     "lowPrice" : 2810,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2845,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2770
+  }, {
+    "volume" : 14789,
+    "marketCap" : 49473766550,
+    "lowPrice" : 2755,
+    "highPrice" : 2795,
+    "openPrice" : 2790,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2755
   } ],
   "stockCode" : "335810"
 }

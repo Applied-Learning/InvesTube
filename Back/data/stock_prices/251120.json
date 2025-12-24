@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "바이오에프디엔씨",
   "prices" : [ {
-    "volume" : 22299,
-    "marketCap" : 120174574000,
-    "lowPrice" : 13500,
-    "highPrice" : 13880,
-    "openPrice" : 13600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13820
-  }, {
     "volume" : 5759,
     "marketCap" : 120435445000,
     "lowPrice" : 13710,
@@ -1937,6 +1929,14 @@
     "openPrice" : 16350,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16380
+  }, {
+    "volume" : 23863,
+    "marketCap" : 140000770000,
+    "lowPrice" : 16000,
+    "highPrice" : 16500,
+    "openPrice" : 16260,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16100
   } ],
   "stockCode" : "251120"
 }

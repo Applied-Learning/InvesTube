@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "비에이치아이",
   "prices" : [ {
-    "volume" : 1835911,
-    "marketCap" : 477471706250,
-    "lowPrice" : 14520,
-    "highPrice" : 15900,
-    "openPrice" : 14600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15430
-  }, {
     "volume" : 1106819,
     "marketCap" : 473139493750,
     "lowPrice" : 15100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 56100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 55400
+  }, {
+    "volume" : 598086,
+    "marketCap" : 1717412812500,
+    "lowPrice" : 54800,
+    "highPrice" : 56600,
+    "openPrice" : 55900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 55500
   } ],
   "stockCode" : "083650"
 }

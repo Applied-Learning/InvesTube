@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이티알파",
   "prices" : [ {
-    "volume" : 41466,
-    "marketCap" : 181126250685,
-    "lowPrice" : 3615,
-    "highPrice" : 3715,
-    "openPrice" : 3615,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3695
-  }, {
     "volume" : 12812,
     "marketCap" : 178920382950,
     "lowPrice" : 3650,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5820,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5830
+  }, {
+    "volume" : 46145,
+    "marketCap" : 281370684420,
+    "lowPrice" : 5700,
+    "highPrice" : 5860,
+    "openPrice" : 5790,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5740
   } ],
   "stockCode" : "036030"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "콜마홀딩스",
   "prices" : [ {
-    "volume" : 38067,
-    "marketCap" : 233557523790,
-    "lowPrice" : 6700,
-    "highPrice" : 6850,
-    "openPrice" : 6740,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6810
-  }, {
     "volume" : 35027,
     "marketCap" : 234586411560,
     "lowPrice" : 6810,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10000
+  }, {
+    "volume" : 63318,
+    "marketCap" : 340218889280,
+    "lowPrice" : 9900,
+    "highPrice" : 10050,
+    "openPrice" : 9940,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9920
   } ],
   "stockCode" : "024720"
 }

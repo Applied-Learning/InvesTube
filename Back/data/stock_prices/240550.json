@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동방메디컬",
   "prices" : [ {
     "volume" : 30367154,
@@ -1689,6 +1689,14 @@
     "openPrice" : 9100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8550
+  }, {
+    "volume" : 1218284,
+    "marketCap" : 176887210000,
+    "lowPrice" : 8140,
+    "highPrice" : 9060,
+    "openPrice" : 8400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8500
   } ],
   "stockCode" : "240550"
 }

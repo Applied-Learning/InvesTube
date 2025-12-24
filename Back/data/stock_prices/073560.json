@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "우리손에프앤지",
   "prices" : [ {
-    "volume" : 77880,
-    "marketCap" : 89316559470,
-    "lowPrice" : 1282,
-    "highPrice" : 1298,
-    "openPrice" : 1282,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1290
-  }, {
     "volume" : 232365,
     "marketCap" : 88554945397,
     "lowPrice" : 1274,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1586,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1565
+  }, {
+    "volume" : 78510,
+    "marketCap" : 106695207863,
+    "lowPrice" : 1541,
+    "highPrice" : 1581,
+    "openPrice" : 1565,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1541
   } ],
   "stockCode" : "073560"
 }

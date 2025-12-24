@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "상상인제4호스팩",
   "prices" : [ {
-    "volume" : 6596,
-    "marketCap" : 10225980000,
-    "lowPrice" : 1958,
-    "highPrice" : 1979,
-    "openPrice" : 1971,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1959
-  }, {
     "volume" : 5669,
     "marketCap" : 10246860000,
     "lowPrice" : 1961,
@@ -1936,6 +1928,14 @@
     "highPrice" : 2080,
     "openPrice" : 2080,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 2075
+  }, {
+    "volume" : 3312,
+    "marketCap" : 10831500000,
+    "lowPrice" : 2075,
+    "highPrice" : 2085,
+    "openPrice" : 2085,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 2075
   } ],
   "stockCode" : "452670"

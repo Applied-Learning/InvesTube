@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인천도시가스",
   "prices" : [ {
-    "volume" : 2739,
-    "marketCap" : 110900013900,
-    "lowPrice" : 25300,
-    "highPrice" : 25550,
-    "openPrice" : 25400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 25350
-  }, {
     "volume" : 3932,
     "marketCap" : 111118751600,
     "lowPrice" : 25350,
@@ -1936,6 +1928,14 @@
     "highPrice" : 26600,
     "openPrice" : 26500,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 26450
+  }, {
+    "volume" : 2106,
+    "marketCap" : 115712243300,
+    "lowPrice" : 26400,
+    "highPrice" : 26600,
+    "openPrice" : 26450,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 26450
   } ],
   "stockCode" : "034590"

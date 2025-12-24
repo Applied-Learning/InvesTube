@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SNT다이내믹스",
   "prices" : [ {
-    "volume" : 101424,
-    "marketCap" : 643772213920,
-    "lowPrice" : 18250,
-    "highPrice" : 19470,
-    "openPrice" : 18450,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 19360
-  }, {
     "volume" : 63333,
     "marketCap" : 640114417250,
     "lowPrice" : 18780,
@@ -1937,6 +1929,14 @@
     "openPrice" : 49100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 49000
+  }, {
+    "volume" : 70117,
+    "marketCap" : 1606105265100,
+    "lowPrice" : 47200,
+    "highPrice" : 50200,
+    "openPrice" : 50200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 48300
   } ],
   "stockCode" : "003570"
 }

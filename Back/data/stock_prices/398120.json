@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스지헬스케어",
   "prices" : [ {
-    "volume" : 916358,
-    "marketCap" : 44907908500,
-    "lowPrice" : 4020,
-    "highPrice" : 4350,
-    "openPrice" : 4260,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4055
-  }, {
     "volume" : 2326982,
     "marketCap" : 47399716000,
     "lowPrice" : 3965,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3010
+  }, {
+    "volume" : 87293,
+    "marketCap" : 35286264000,
+    "lowPrice" : 2945,
+    "highPrice" : 3145,
+    "openPrice" : 2985,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3120
   } ],
   "stockCode" : "398120"
 }

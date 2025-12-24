@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "비상교육",
   "prices" : [ {
-    "volume" : 15264,
-    "marketCap" : 58225399680,
-    "lowPrice" : 4420,
-    "highPrice" : 4545,
-    "openPrice" : 4490,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4480
-  }, {
     "volume" : 22317,
     "marketCap" : 57835497450,
     "lowPrice" : 4400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4930
+  }, {
+    "volume" : 26415,
+    "marketCap" : 63294128670,
+    "lowPrice" : 4830,
+    "highPrice" : 4930,
+    "openPrice" : 4930,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4870
   } ],
   "stockCode" : "100220"
 }

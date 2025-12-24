@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이티아이즈",
   "prices" : [ {
-    "volume" : 9080,
-    "marketCap" : 28055638450,
-    "lowPrice" : 4545,
-    "highPrice" : 4665,
-    "openPrice" : 4600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4655
-  }, {
     "volume" : 6251,
     "marketCap" : 28929552000,
     "lowPrice" : 4590,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4740,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4725
+  }, {
+    "volume" : 16198,
+    "marketCap" : 28662732600,
+    "lowPrice" : 4610,
+    "highPrice" : 4840,
+    "openPrice" : 4755,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4740
   } ],
   "stockCode" : "372800"
 }

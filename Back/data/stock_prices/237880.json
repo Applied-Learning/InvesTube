@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "클리오",
   "prices" : [ {
-    "volume" : 70749,
-    "marketCap" : 323115791640,
-    "lowPrice" : 17410,
-    "highPrice" : 18090,
-    "openPrice" : 17650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17880
-  }, {
     "volume" : 259705,
     "marketCap" : 338476441690,
     "lowPrice" : 17990,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13460,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13450
+  }, {
+    "volume" : 39602,
+    "marketCap" : 239987567840,
+    "lowPrice" : 13280,
+    "highPrice" : 13550,
+    "openPrice" : 13510,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13280
   } ],
   "stockCode" : "237880"
 }

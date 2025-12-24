@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "롯데렌탈",
   "prices" : [ {
-    "volume" : 32723,
-    "marketCap" : 1100174456400,
-    "lowPrice" : 30200,
-    "highPrice" : 30650,
-    "openPrice" : 30500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 30300
-  }, {
     "volume" : 82569,
     "marketCap" : 1116513681000,
     "lowPrice" : 30150,
@@ -1937,6 +1929,14 @@
     "openPrice" : 32000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 32100
+  }, {
+    "volume" : 25290,
+    "marketCap" : 1161900416000,
+    "lowPrice" : 31850,
+    "highPrice" : 32150,
+    "openPrice" : 32100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 32000
   } ],
   "stockCode" : "089860"
 }

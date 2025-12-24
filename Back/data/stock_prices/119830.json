@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이텍",
   "prices" : [ {
-    "volume" : 105784,
-    "marketCap" : 116173889740,
-    "lowPrice" : 5310,
-    "highPrice" : 5530,
-    "openPrice" : 5310,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5420
-  }, {
     "volume" : 80752,
     "marketCap" : 115316517860,
     "lowPrice" : 5350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5240,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5290
+  }, {
+    "volume" : 114041,
+    "marketCap" : 114790042980,
+    "lowPrice" : 5190,
+    "highPrice" : 5310,
+    "openPrice" : 5290,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5190
   } ],
   "stockCode" : "119830"
 }

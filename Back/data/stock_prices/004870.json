@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "티웨이홀딩스",
   "prices" : [ {
-    "volume" : 384709,
-    "marketCap" : 75096190596,
-    "lowPrice" : 661,
-    "highPrice" : 678,
-    "openPrice" : 669,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 668
-  }, {
     "volume" : 368927,
     "marketCap" : 73971996126,
     "lowPrice" : 658,
@@ -1937,6 +1929,14 @@
     "openPrice" : 511,
     "tradeDate" : "2025-12-22",
     "closePrice" : 515
+  }, {
+    "volume" : 153882,
+    "marketCap" : 56921237482,
+    "lowPrice" : 500,
+    "highPrice" : 516,
+    "openPrice" : 515,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 503
   } ],
   "stockCode" : "004870"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "진매트릭스",
   "prices" : [ {
-    "volume" : 110898,
-    "marketCap" : 56286446400,
-    "lowPrice" : 2680,
-    "highPrice" : 2865,
-    "openPrice" : 2730,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2760
-  }, {
     "volume" : 37284,
     "marketCap" : 55266764400,
     "lowPrice" : 2710,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2435,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2445
+  }, {
+    "volume" : 46992,
+    "marketCap" : 49454577000,
+    "lowPrice" : 2425,
+    "highPrice" : 2465,
+    "openPrice" : 2465,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2425
   } ],
   "stockCode" : "109820"
 }

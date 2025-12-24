@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼화네트웍스",
   "prices" : [ {
-    "volume" : 438266,
-    "marketCap" : 61996331788,
-    "lowPrice" : 1407,
-    "highPrice" : 1528,
-    "openPrice" : 1486,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1436
-  }, {
     "volume" : 357617,
     "marketCap" : 60657970865,
     "lowPrice" : 1380,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1196,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1209
+  }, {
+    "volume" : 147895,
+    "marketCap" : 50641850409,
+    "lowPrice" : 1170,
+    "highPrice" : 1213,
+    "openPrice" : 1200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1173
   } ],
   "stockCode" : "046390"
 }

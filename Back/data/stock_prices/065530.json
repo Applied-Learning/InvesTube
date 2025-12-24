@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "와이어블",
   "prices" : [ {
-    "volume" : 97696,
-    "marketCap" : 70198080000,
-    "lowPrice" : 1282,
-    "highPrice" : 1328,
-    "openPrice" : 1293,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1328
-  }, {
     "volume" : 21707,
     "marketCap" : 70198080000,
     "lowPrice" : 1305,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1364,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1395
+  }, {
+    "volume" : 35220,
+    "marketCap" : 65921809902,
+    "lowPrice" : 1374,
+    "highPrice" : 1410,
+    "openPrice" : 1391,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1378
   } ],
   "stockCode" : "065530"
 }

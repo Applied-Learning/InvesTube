@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "웰크론한텍",
   "prices" : [ {
-    "volume" : 18951,
-    "marketCap" : 22729720936,
-    "lowPrice" : 1000,
-    "highPrice" : 1007,
-    "openPrice" : 1000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1006
-  }, {
     "volume" : 15922,
     "marketCap" : 22910474184,
     "lowPrice" : 1006,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1176,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1164
+  }, {
+    "volume" : 25541,
+    "marketCap" : 25892902776,
+    "lowPrice" : 1138,
+    "highPrice" : 1176,
+    "openPrice" : 1176,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1146
   } ],
   "stockCode" : "076080"
 }

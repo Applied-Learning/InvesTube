@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "LF",
   "prices" : [ {
-    "volume" : 25506,
-    "marketCap" : 463454000000,
-    "lowPrice" : 15550,
-    "highPrice" : 15890,
-    "openPrice" : 15580,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15850
-  }, {
     "volume" : 11361,
     "marketCap" : 459360400000,
     "lowPrice" : 15710,
@@ -1937,6 +1929,14 @@
     "openPrice" : 18900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 18970
+  }, {
+    "volume" : 47836,
+    "marketCap" : 545326000000,
+    "lowPrice" : 18560,
+    "highPrice" : 18980,
+    "openPrice" : 18890,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 18650
   } ],
   "stockCode" : "093050"
 }

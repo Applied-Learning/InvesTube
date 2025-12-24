@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유니드비티플러스",
   "prices" : [ {
-    "volume" : 14276,
-    "marketCap" : 39155383350,
-    "lowPrice" : 3635,
-    "highPrice" : 3705,
-    "openPrice" : 3685,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3690
-  }, {
     "volume" : 18346,
     "marketCap" : 38783990825,
     "lowPrice" : 3645,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3550,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3575
+  }, {
+    "volume" : 46665,
+    "marketCap" : 37988149700,
+    "lowPrice" : 3555,
+    "highPrice" : 3630,
+    "openPrice" : 3575,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3580
   } ],
   "stockCode" : "446070"
 }

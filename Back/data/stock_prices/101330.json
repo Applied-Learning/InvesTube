@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "모베이스",
   "prices" : [ {
-    "volume" : 11354,
-    "marketCap" : 63654329750,
-    "lowPrice" : 2695,
-    "highPrice" : 2760,
-    "openPrice" : 2700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2750
-  }, {
     "volume" : 25037,
     "marketCap" : 63538594605,
     "lowPrice" : 2715,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3240
+  }, {
+    "volume" : 58388,
+    "marketCap" : 74186227945,
+    "lowPrice" : 3195,
+    "highPrice" : 3280,
+    "openPrice" : 3245,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3205
   } ],
   "stockCode" : "101330"
 }

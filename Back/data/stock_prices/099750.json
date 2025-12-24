@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이지케어텍",
   "prices" : [ {
-    "volume" : 4517,
-    "marketCap" : 116874669600,
-    "lowPrice" : 16930,
-    "highPrice" : 17670,
-    "openPrice" : 16940,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17100
-  }, {
     "volume" : 22339,
     "marketCap" : 116259539760,
     "lowPrice" : 16530,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10240,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9650
+  }, {
+    "volume" : 37011,
+    "marketCap" : 66570718240,
+    "lowPrice" : 9550,
+    "highPrice" : 9860,
+    "openPrice" : 9610,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9740
   } ],
   "stockCode" : "099750"
 }

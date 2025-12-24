@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "레이크머티리얼즈",
   "prices" : [ {
-    "volume" : 302295,
-    "marketCap" : 780221604760,
-    "lowPrice" : 10770,
-    "highPrice" : 12000,
-    "openPrice" : 10890,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11870
-  }, {
     "volume" : 509162,
     "marketCap" : 760502440360,
     "lowPrice" : 11540,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14250,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15200
+  }, {
+    "volume" : 193095,
+    "marketCap" : 989244747400,
+    "lowPrice" : 14910,
+    "highPrice" : 15310,
+    "openPrice" : 15250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15050
   } ],
   "stockCode" : "281740"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대동기어",
   "prices" : [ {
-    "volume" : 687245,
-    "marketCap" : 124567027200,
-    "lowPrice" : 13820,
-    "highPrice" : 14550,
-    "openPrice" : 14360,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13860
-  }, {
     "volume" : 637448,
     "marketCap" : 121421395200,
     "lowPrice" : 13170,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17120,
     "tradeDate" : "2025-12-22",
     "closePrice" : 17000
+  }, {
+    "volume" : 57784,
+    "marketCap" : 149282707200,
+    "lowPrice" : 16590,
+    "highPrice" : 16940,
+    "openPrice" : 16940,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16610
   } ],
   "stockCode" : "008830"
 }

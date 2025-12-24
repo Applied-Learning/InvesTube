@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "셀트리온",
   "prices" : [ {
-    "volume" : 284433,
-    "marketCap" : 42091531620600,
-    "lowPrice" : 192500,
-    "highPrice" : 194500,
-    "openPrice" : 193300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 193900
-  }, {
     "volume" : 360405,
     "marketCap" : 42200070897600,
     "lowPrice" : 192200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 185800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 184600
+  }, {
+    "volume" : 327510,
+    "marketCap" : 42219665133200,
+    "lowPrice" : 182100,
+    "highPrice" : 185000,
+    "openPrice" : 184100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 182800
   } ],
   "stockCode" : "068270"
 }

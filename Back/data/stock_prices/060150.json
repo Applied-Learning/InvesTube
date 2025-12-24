@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인선이엔티",
   "prices" : [ {
-    "volume" : 78310,
-    "marketCap" : 254237321520,
-    "lowPrice" : 5270,
-    "highPrice" : 5500,
-    "openPrice" : 5370,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5460
-  }, {
     "volume" : 43185,
     "marketCap" : 253771685400,
     "lowPrice" : 5430,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4490,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4480
+  }, {
+    "volume" : 64218,
+    "marketCap" : 205345528920,
+    "lowPrice" : 4385,
+    "highPrice" : 4495,
+    "openPrice" : 4480,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4410
   } ],
   "stockCode" : "060150"
 }

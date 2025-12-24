@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "페이퍼코리아",
   "prices" : [ {
-    "volume" : 18665,
-    "marketCap" : 151285816050,
-    "lowPrice" : 850,
-    "highPrice" : 873,
-    "openPrice" : 873,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 850
-  }, {
     "volume" : 16986,
     "marketCap" : 150929849424,
     "lowPrice" : 841,
@@ -1937,6 +1929,14 @@
     "openPrice" : 625,
     "tradeDate" : "2025-12-22",
     "closePrice" : 613
+  }, {
+    "volume" : 18880,
+    "marketCap" : 108035870991,
+    "lowPrice" : 605,
+    "highPrice" : 619,
+    "openPrice" : 613,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 607
   } ],
   "stockCode" : "001020"
 }

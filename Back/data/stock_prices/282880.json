@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코윈테크",
   "prices" : [ {
-    "volume" : 30930,
-    "marketCap" : 152865592040,
-    "lowPrice" : 13340,
-    "highPrice" : 13800,
-    "openPrice" : 13460,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13720
-  }, {
     "volume" : 24984,
     "marketCap" : 152308501690,
     "lowPrice" : 13650,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16680
+  }, {
+    "volume" : 110675,
+    "marketCap" : 186721343600,
+    "lowPrice" : 16160,
+    "highPrice" : 16790,
+    "openPrice" : 16720,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16280
   } ],
   "stockCode" : "282880"
 }

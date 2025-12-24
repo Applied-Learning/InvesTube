@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "휴온스글로벌",
   "prices" : [ {
-    "volume" : 139643,
-    "marketCap" : 569860363800,
-    "lowPrice" : 45000,
-    "highPrice" : 48300,
-    "openPrice" : 46600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 45150
-  }, {
     "volume" : 313718,
     "marketCap" : 527578365600,
     "lowPrice" : 39800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 51900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 49750
+  }, {
+    "volume" : 45723,
+    "marketCap" : 619697797400,
+    "lowPrice" : 48300,
+    "highPrice" : 49950,
+    "openPrice" : 49950,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 48950
   } ],
   "stockCode" : "084110"
 }

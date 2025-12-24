@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한화솔루션",
   "prices" : [ {
-    "volume" : 575510,
-    "marketCap" : 2709026367360,
-    "lowPrice" : 15450,
-    "highPrice" : 15920,
-    "openPrice" : 15750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15760
-  }, {
     "volume" : 622956,
     "marketCap" : 2722777770240,
     "lowPrice" : 15820,
@@ -1937,6 +1929,14 @@
     "openPrice" : 27250,
     "tradeDate" : "2025-12-22",
     "closePrice" : 27450
+  }, {
+    "volume" : 1243140,
+    "marketCap" : 4830180261600,
+    "lowPrice" : 27950,
+    "highPrice" : 28800,
+    "openPrice" : 28300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 28100
   } ],
   "stockCode" : "009830"
 }

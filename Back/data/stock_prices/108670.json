@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "LX하우시스",
   "prices" : [ {
-    "volume" : 14703,
-    "marketCap" : 294139576000,
-    "lowPrice" : 32600,
-    "highPrice" : 33050,
-    "openPrice" : 32850,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 32800
-  }, {
     "volume" : 19847,
     "marketCap" : 293242809000,
     "lowPrice" : 32550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 29550,
     "tradeDate" : "2025-12-22",
     "closePrice" : 29400
+  }, {
+    "volume" : 23359,
+    "marketCap" : 264097881500,
+    "lowPrice" : 29000,
+    "highPrice" : 29700,
+    "openPrice" : 29700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 29450
   } ],
   "stockCode" : "108670"
 }

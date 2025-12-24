@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "LB인베스트먼트",
   "prices" : [ {
-    "volume" : 27685,
-    "marketCap" : 75107768165,
-    "lowPrice" : 3060,
-    "highPrice" : 3285,
-    "openPrice" : 3165,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3235
-  }, {
     "volume" : 22045,
     "marketCap" : 74875595775,
     "lowPrice" : 3190,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6830,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6700
+  }, {
+    "volume" : 569362,
+    "marketCap" : 142786019850,
+    "lowPrice" : 5980,
+    "highPrice" : 6600,
+    "openPrice" : 6600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6150
   } ],
   "stockCode" : "309960"
 }

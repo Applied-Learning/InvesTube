@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "큐로홀딩스",
   "prices" : [ {
-    "volume" : 78507,
-    "marketCap" : 14201577045,
-    "lowPrice" : 1036,
-    "highPrice" : 1075,
-    "openPrice" : 1075,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1041
-  }, {
     "volume" : 47402,
     "marketCap" : 14201577045,
     "lowPrice" : 1041,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1214,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1141
+  }, {
+    "volume" : 418893,
+    "marketCap" : 25566469500,
+    "lowPrice" : 1083,
+    "highPrice" : 1159,
+    "openPrice" : 1133,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1100
   } ],
   "stockCode" : "051780"
 }

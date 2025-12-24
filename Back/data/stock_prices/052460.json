@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이크래프트",
   "prices" : [ {
-    "volume" : 67440,
-    "marketCap" : 29654110080,
-    "lowPrice" : 2000,
-    "highPrice" : 2075,
-    "openPrice" : 2020,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2030
-  }, {
     "volume" : 42580,
     "marketCap" : 29727149760,
     "lowPrice" : 2010,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2730,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2720
+  }, {
+    "volume" : 28511,
+    "marketCap" : 39295347840,
+    "lowPrice" : 2660,
+    "highPrice" : 2790,
+    "openPrice" : 2720,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2690
   } ],
   "stockCode" : "052460"
 }

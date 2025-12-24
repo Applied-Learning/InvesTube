@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KB금융",
   "prices" : [ {
-    "volume" : 720602,
-    "marketCap" : 34236972801000,
-    "lowPrice" : 85900,
-    "highPrice" : 87800,
-    "openPrice" : 86300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 87000
-  }, {
     "volume" : 417559,
     "marketCap" : 34040208589500,
     "lowPrice" : 86000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 126400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 126500
+  }, {
+    "volume" : 484510,
+    "marketCap" : 48064224978000,
+    "lowPrice" : 125300,
+    "highPrice" : 127300,
+    "openPrice" : 126800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 126000
   } ],
   "stockCode" : "105560"
 }

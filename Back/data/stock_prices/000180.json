@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "성창기업지주",
   "prices" : [ {
-    "volume" : 11708,
-    "marketCap" : 92769628000,
-    "lowPrice" : 1326,
-    "highPrice" : 1345,
-    "openPrice" : 1329,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1330
-  }, {
     "volume" : 14685,
     "marketCap" : 92978882800,
     "lowPrice" : 1320,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1549,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1526
+  }, {
+    "volume" : 63634,
+    "marketCap" : 105394667600,
+    "lowPrice" : 1508,
+    "highPrice" : 1577,
+    "openPrice" : 1577,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1511
   } ],
   "stockCode" : "000180"
 }

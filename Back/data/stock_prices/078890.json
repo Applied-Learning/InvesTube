@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "가온그룹",
   "prices" : [ {
-    "volume" : 34345,
-    "marketCap" : 53916754800,
-    "lowPrice" : 3000,
-    "highPrice" : 3155,
-    "openPrice" : 3080,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3075
-  }, {
     "volume" : 45450,
     "marketCap" : 53478407200,
     "lowPrice" : 2995,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5450,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6150
+  }, {
+    "volume" : 289626,
+    "marketCap" : 105574201200,
+    "lowPrice" : 5650,
+    "highPrice" : 6100,
+    "openPrice" : 6090,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5850
   } ],
   "stockCode" : "078890"
 }

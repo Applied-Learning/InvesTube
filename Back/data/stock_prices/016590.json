@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신대양제지",
   "prices" : [ {
-    "volume" : 12284,
-    "marketCap" : 234936290600,
-    "lowPrice" : 5810,
-    "highPrice" : 5920,
-    "openPrice" : 5850,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5830
-  }, {
     "volume" : 3014,
     "marketCap" : 235742247000,
     "lowPrice" : 5820,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13430,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13420
+  }, {
+    "volume" : 24377,
+    "marketCap" : 545229504600,
+    "lowPrice" : 13260,
+    "highPrice" : 13840,
+    "openPrice" : 13450,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13530
   } ],
   "stockCode" : "016590"
 }

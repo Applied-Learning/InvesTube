@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "진양제약",
   "prices" : [ {
-    "volume" : 45189,
-    "marketCap" : 76286573190,
-    "lowPrice" : 5850,
-    "highPrice" : 6030,
-    "openPrice" : 5850,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6030
-  }, {
     "volume" : 48558,
     "marketCap" : 76160061460,
     "lowPrice" : 5960,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5250,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5200
+  }, {
+    "volume" : 46298,
+    "marketCap" : 72793123050,
+    "lowPrice" : 5140,
+    "highPrice" : 5230,
+    "openPrice" : 5200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5150
   } ],
   "stockCode" : "007370"
 }

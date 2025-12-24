@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SK우",
   "prices" : [ {
-    "volume" : 2104,
-    "marketCap" : 65048911500,
-    "lowPrice" : 112900,
-    "highPrice" : 115700,
-    "openPrice" : 112900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 114900
-  }, {
     "volume" : 1245,
     "marketCap" : 64709230500,
     "lowPrice" : 114200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 191900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 190200
+  }, {
+    "volume" : 2420,
+    "marketCap" : 107112742000,
+    "lowPrice" : 186700,
+    "highPrice" : 190200,
+    "openPrice" : 190200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 189200
   } ],
   "stockCode" : "03473K"
 }

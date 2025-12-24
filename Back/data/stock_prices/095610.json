@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "테스",
   "prices" : [ {
-    "volume" : 68499,
-    "marketCap" : 319059167640,
-    "lowPrice" : 15510,
-    "highPrice" : 16200,
-    "openPrice" : 15510,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16140
-  }, {
     "volume" : 41491,
     "marketCap" : 319059167640,
     "lowPrice" : 15940,
@@ -1937,6 +1929,14 @@
     "openPrice" : 39400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 40550
+  }, {
+    "volume" : 231708,
+    "marketCap" : 821369790300,
+    "lowPrice" : 40750,
+    "highPrice" : 42050,
+    "openPrice" : 41700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 41550
   } ],
   "stockCode" : "095610"
 }

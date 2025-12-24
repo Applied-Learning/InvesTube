@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오스코텍",
   "prices" : [ {
-    "volume" : 312199,
-    "marketCap" : 935155678200,
-    "lowPrice" : 23900,
-    "highPrice" : 25700,
-    "openPrice" : 24950,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 24450
-  }, {
     "volume" : 154826,
     "marketCap" : 929418526800,
     "lowPrice" : 24000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 48900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 46500
+  }, {
+    "volume" : 978137,
+    "marketCap" : 1679533926400,
+    "lowPrice" : 43250,
+    "highPrice" : 46500,
+    "openPrice" : 46500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 43900
   } ],
   "stockCode" : "039200"
 }

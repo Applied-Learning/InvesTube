@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "레뷰코퍼레이션",
   "prices" : [ {
-    "volume" : 70504,
-    "marketCap" : 138544081770,
-    "lowPrice" : 11550,
-    "highPrice" : 12640,
-    "openPrice" : 12640,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12470
-  }, {
     "volume" : 55501,
     "marketCap" : 137321960760,
     "lowPrice" : 11840,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11770,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11570
+  }, {
+    "volume" : 15404,
+    "marketCap" : 127393387000,
+    "lowPrice" : 11250,
+    "highPrice" : 11530,
+    "openPrice" : 11460,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11450
   } ],
   "stockCode" : "443250"
 }

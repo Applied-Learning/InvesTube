@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인텔리안테크",
   "prices" : [ {
-    "volume" : 47020,
-    "marketCap" : 406793358600,
-    "lowPrice" : 37050,
-    "highPrice" : 38550,
-    "openPrice" : 37050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 37900
-  }, {
     "volume" : 57510,
     "marketCap" : 403036691700,
     "lowPrice" : 37550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 52500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 60500
+  }, {
+    "volume" : 648547,
+    "marketCap" : 596773370400,
+    "lowPrice" : 54300,
+    "highPrice" : 64600,
+    "openPrice" : 64500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 55600
   } ],
   "stockCode" : "189300"
 }

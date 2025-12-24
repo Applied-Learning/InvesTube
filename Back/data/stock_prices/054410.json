@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이피티유",
   "prices" : [ {
-    "volume" : 5894,
-    "marketCap" : 18353253020,
-    "lowPrice" : 3180,
-    "highPrice" : 3340,
-    "openPrice" : 3250,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3205
-  }, {
     "volume" : 1941,
     "marketCap" : 18811368540,
     "lowPrice" : 3215,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3605,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3680
+  }, {
+    "volume" : 5517,
+    "marketCap" : 21130578360,
+    "lowPrice" : 3670,
+    "highPrice" : 3710,
+    "openPrice" : 3680,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3690
   } ],
   "stockCode" : "054410"
 }

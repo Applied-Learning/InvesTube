@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제이피아이헬스케어",
   "prices" : [ {
     "volume" : 14944855,
@@ -665,6 +665,14 @@
     "openPrice" : 15880,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15850
+  }, {
+    "volume" : 65926,
+    "marketCap" : 75662028000,
+    "lowPrice" : 14810,
+    "highPrice" : 15930,
+    "openPrice" : 15880,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14820
   } ],
   "stockCode" : "0010V0"
 }

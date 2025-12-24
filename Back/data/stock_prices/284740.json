@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "쿠쿠홈시스",
   "prices" : [ {
-    "volume" : 9088,
-    "marketCap" : 467818330500,
-    "lowPrice" : 20400,
-    "highPrice" : 20850,
-    "openPrice" : 20450,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 20850
-  }, {
     "volume" : 23560,
     "marketCap" : 481280728500,
     "lowPrice" : 20600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 25750,
     "tradeDate" : "2025-12-22",
     "closePrice" : 26000
+  }, {
+    "volume" : 59952,
+    "marketCap" : 565420716000,
+    "lowPrice" : 24950,
+    "highPrice" : 26000,
+    "openPrice" : 26000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 25200
   } ],
   "stockCode" : "284740"
 }

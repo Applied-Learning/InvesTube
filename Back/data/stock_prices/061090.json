@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "세나테크놀로지",
   "prices" : [ {
     "volume" : 8332380,
@@ -217,6 +217,14 @@
     "openPrice" : 50500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 50500
+  }, {
+    "volume" : 76735,
+    "marketCap" : 271461326400,
+    "lowPrice" : 48600,
+    "highPrice" : 50600,
+    "openPrice" : 50300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 48600
   } ],
   "stockCode" : "061090"
 }

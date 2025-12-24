@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "ESR켄달스퀘어리츠",
   "prices" : [ {
-    "volume" : 267282,
-    "marketCap" : 933329820000,
-    "lowPrice" : 4230,
-    "highPrice" : 4395,
-    "openPrice" : 4390,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4380
-  }, {
     "volume" : 274456,
     "marketCap" : 958900500000,
     "lowPrice" : 4400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4190,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4130
+  }, {
+    "volume" : 132288,
+    "marketCap" : 1012656235000,
+    "lowPrice" : 4110,
+    "highPrice" : 4140,
+    "openPrice" : 4140,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4115
   } ],
   "stockCode" : "365550"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "송원산업",
   "prices" : [ {
-    "volume" : 49208,
-    "marketCap" : 269040000000,
-    "lowPrice" : 10790,
-    "highPrice" : 11210,
-    "openPrice" : 10830,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11210
-  }, {
     "volume" : 27705,
     "marketCap" : 267840000000,
     "lowPrice" : 11150,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9080,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9190
+  }, {
+    "volume" : 16433,
+    "marketCap" : 218400000000,
+    "lowPrice" : 9070,
+    "highPrice" : 9230,
+    "openPrice" : 9230,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9100
   } ],
   "stockCode" : "004430"
 }

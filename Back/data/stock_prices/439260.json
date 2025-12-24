@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대한조선",
   "prices" : [ {
     "volume" : 14738911,
@@ -769,6 +769,14 @@
     "openPrice" : 75100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 74600
+  }, {
+    "volume" : 340691,
+    "marketCap" : 2800862882400,
+    "lowPrice" : 70900,
+    "highPrice" : 76800,
+    "openPrice" : 75500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 72700
   } ],
   "stockCode" : "439260"
 }

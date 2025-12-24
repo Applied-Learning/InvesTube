@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동원시스템즈",
   "prices" : [ {
-    "volume" : 16525,
-    "marketCap" : 1181394741500,
-    "lowPrice" : 39600,
-    "highPrice" : 41200,
-    "openPrice" : 40500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 40750
-  }, {
     "volume" : 25033,
     "marketCap" : 1221982536300,
     "lowPrice" : 40550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 26600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 26450
+  }, {
+    "volume" : 15674,
+    "marketCap" : 752323767900,
+    "lowPrice" : 25900,
+    "highPrice" : 26700,
+    "openPrice" : 26550,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 25950
   } ],
   "stockCode" : "014820"
 }

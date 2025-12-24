@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "일동홀딩스",
   "prices" : [ {
-    "volume" : 24977,
-    "marketCap" : 76974468000,
-    "lowPrice" : 6450,
-    "highPrice" : 6850,
-    "openPrice" : 6460,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6670
-  }, {
     "volume" : 871196,
     "marketCap" : 84937344000,
     "lowPrice" : 6670,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13650,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13430
+  }, {
+    "volume" : 85565,
+    "marketCap" : 153487320000,
+    "lowPrice" : 13160,
+    "highPrice" : 14050,
+    "openPrice" : 13590,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13300
   } ],
   "stockCode" : "000230"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "켄코아에어로스페이스",
   "prices" : [ {
-    "volume" : 117317,
-    "marketCap" : 128744863220,
-    "lowPrice" : 9230,
-    "highPrice" : 10040,
-    "openPrice" : 9610,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9970
-  }, {
     "volume" : 121567,
     "marketCap" : 127840937400,
     "lowPrice" : 9830,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12450,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15170
+  }, {
+    "volume" : 4797181,
+    "marketCap" : 194736585000,
+    "lowPrice" : 13700,
+    "highPrice" : 17400,
+    "openPrice" : 17030,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14860
   } ],
   "stockCode" : "274090"
 }

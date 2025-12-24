@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "전방",
   "prices" : [ {
-    "volume" : 980,
-    "marketCap" : 29803200000,
-    "lowPrice" : 17400,
-    "highPrice" : 18300,
-    "openPrice" : 17760,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17740
-  }, {
     "volume" : 9104,
     "marketCap" : 30189600000,
     "lowPrice" : 17810,
@@ -1937,6 +1929,14 @@
     "openPrice" : 37700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 37550
+  }, {
+    "volume" : 2663,
+    "marketCap" : 61488000000,
+    "lowPrice" : 36600,
+    "highPrice" : 37900,
+    "openPrice" : 37200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 36600
   } ],
   "stockCode" : "000950"
 }

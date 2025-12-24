@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HL만도",
   "prices" : [ {
-    "volume" : 85963,
-    "marketCap" : 1981590464000,
-    "lowPrice" : 41200,
-    "highPrice" : 42400,
-    "openPrice" : 42100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 42200
-  }, {
     "volume" : 120742,
     "marketCap" : 1948720480000,
     "lowPrice" : 40850,
@@ -1937,6 +1929,14 @@
     "openPrice" : 54900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 55600
+  }, {
+    "volume" : 1226216,
+    "marketCap" : 2507510208000,
+    "lowPrice" : 53100,
+    "highPrice" : 57400,
+    "openPrice" : 56500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 53400
   } ],
   "stockCode" : "204320"
 }

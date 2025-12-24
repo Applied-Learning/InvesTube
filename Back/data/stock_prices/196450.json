@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코아시아씨엠",
   "prices" : [ {
-    "volume" : 89171,
-    "marketCap" : 33173934024,
-    "lowPrice" : 723,
-    "highPrice" : 774,
-    "openPrice" : 774,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 732
-  }, {
     "volume" : 33040,
     "marketCap" : 33264573188,
     "lowPrice" : 719,
@@ -1937,6 +1929,14 @@
     "openPrice" : 791,
     "tradeDate" : "2025-12-22",
     "closePrice" : 778
+  }, {
+    "volume" : 27377,
+    "marketCap" : 34397562738,
+    "lowPrice" : 758,
+    "highPrice" : 778,
+    "openPrice" : 778,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 759
   } ],
   "stockCode" : "196450"
 }

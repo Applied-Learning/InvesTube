@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "미래에셋비전스팩9호",
   "prices" : [ {
     "volume" : 59833928,
@@ -129,6 +129,14 @@
     "openPrice" : 1990,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1997
+  }, {
+    "volume" : 255697,
+    "marketCap" : 10961500000,
+    "lowPrice" : 1992,
+    "highPrice" : 2005,
+    "openPrice" : 1998,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1993
   } ],
   "stockCode" : "0096D0"
 }

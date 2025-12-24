@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "바이오솔루션",
   "prices" : [ {
-    "volume" : 47244,
-    "marketCap" : 163682862600,
-    "lowPrice" : 19750,
-    "highPrice" : 20900,
-    "openPrice" : 19990,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 20100
-  }, {
     "volume" : 27171,
     "marketCap" : 166125890400,
     "lowPrice" : 19480,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7580,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7540
+  }, {
+    "volume" : 143713,
+    "marketCap" : 186807417880,
+    "lowPrice" : 7610,
+    "highPrice" : 8180,
+    "openPrice" : 8090,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7690
   } ],
   "stockCode" : "086820"
 }

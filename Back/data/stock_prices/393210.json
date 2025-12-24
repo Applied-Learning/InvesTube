@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "토마토시스템",
   "prices" : [ {
-    "volume" : 117286,
-    "marketCap" : 67923266400,
-    "lowPrice" : 4250,
-    "highPrice" : 4400,
-    "openPrice" : 4310,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4350
-  }, {
     "volume" : 125559,
     "marketCap" : 68938211760,
     "lowPrice" : 4270,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5220,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5330
+  }, {
+    "volume" : 71671,
+    "marketCap" : 80414901600,
+    "lowPrice" : 5140,
+    "highPrice" : 5340,
+    "openPrice" : 5290,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5150
   } ],
   "stockCode" : "393210"
 }

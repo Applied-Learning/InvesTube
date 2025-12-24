@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼양패키징",
   "prices" : [ {
-    "volume" : 12442,
-    "marketCap" : 262091938600,
-    "lowPrice" : 16430,
-    "highPrice" : 16610,
-    "openPrice" : 16450,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16600
-  }, {
     "volume" : 53622,
     "marketCap" : 266986426610,
     "lowPrice" : 16600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14280,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14420
+  }, {
+    "volume" : 19383,
+    "marketCap" : 216231626100,
+    "lowPrice" : 14240,
+    "highPrice" : 14450,
+    "openPrice" : 14380,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14350
   } ],
   "stockCode" : "272550"
 }

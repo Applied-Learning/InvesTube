@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "YW",
   "prices" : [ {
-    "volume" : 7331,
-    "marketCap" : 42241968960,
-    "lowPrice" : 3710,
-    "highPrice" : 3775,
-    "openPrice" : 3710,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3720
-  }, {
     "volume" : 5831,
     "marketCap" : 42866514200,
     "lowPrice" : 3730,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3955,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3985
+  }, {
+    "volume" : 4704,
+    "marketCap" : 45137587800,
+    "lowPrice" : 3975,
+    "highPrice" : 3990,
+    "openPrice" : 3985,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3975
   } ],
   "stockCode" : "051390"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "CS",
   "prices" : [ {
-    "volume" : 539909,
-    "marketCap" : 28922583700,
-    "lowPrice" : 1431,
-    "highPrice" : 1569,
-    "openPrice" : 1559,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1490
-  }, {
     "volume" : 393898,
     "marketCap" : 30223129410,
     "lowPrice" : 1453,
@@ -1937,6 +1929,14 @@
     "openPrice" : 823,
     "tradeDate" : "2025-12-22",
     "closePrice" : 797
+  }, {
+    "volume" : 54639,
+    "marketCap" : 15528904000,
+    "lowPrice" : 797,
+    "highPrice" : 806,
+    "openPrice" : 797,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 800
   } ],
   "stockCode" : "065770"
 }

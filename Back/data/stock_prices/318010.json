@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "팜스빌",
   "prices" : [ {
-    "volume" : 27787,
-    "marketCap" : 31479471860,
-    "lowPrice" : 3870,
-    "highPrice" : 3985,
-    "openPrice" : 3905,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3970
-  }, {
     "volume" : 25335,
     "marketCap" : 30250424470,
     "lowPrice" : 3815,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3555,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3520
+  }, {
+    "volume" : 7061,
+    "marketCap" : 27831976380,
+    "lowPrice" : 3495,
+    "highPrice" : 3560,
+    "openPrice" : 3520,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3510
   } ],
   "stockCode" : "318010"
 }

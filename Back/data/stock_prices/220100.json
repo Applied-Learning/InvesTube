@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "퓨쳐켐",
   "prices" : [ {
-    "volume" : 207929,
-    "marketCap" : 339710122350,
-    "lowPrice" : 15120,
-    "highPrice" : 15480,
-    "openPrice" : 15120,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15370
-  }, {
     "volume" : 224705,
     "marketCap" : 348772005900,
     "lowPrice" : 15160,
@@ -1937,6 +1929,14 @@
     "openPrice" : 31100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 30150
+  }, {
+    "volume" : 440310,
+    "marketCap" : 660816284000,
+    "lowPrice" : 29500,
+    "highPrice" : 30750,
+    "openPrice" : 30250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 29500
   } ],
   "stockCode" : "220100"
 }

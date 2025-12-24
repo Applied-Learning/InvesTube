@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "파로스아이바이오",
   "prices" : [ {
-    "volume" : 43925,
-    "marketCap" : 96835571360,
-    "lowPrice" : 7310,
-    "highPrice" : 7750,
-    "openPrice" : 7370,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7480
-  }, {
     "volume" : 34812,
     "marketCap" : 96447193400,
     "lowPrice" : 7350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11320,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10380
+  }, {
+    "volume" : 287097,
+    "marketCap" : 128294186120,
+    "lowPrice" : 9810,
+    "highPrice" : 10440,
+    "openPrice" : 10440,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9910
   } ],
   "stockCode" : "388870"
 }

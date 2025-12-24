@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "기가비스",
   "prices" : [ {
-    "volume" : 45818,
-    "marketCap" : 328935920100,
-    "lowPrice" : 24900,
-    "highPrice" : 26450,
-    "openPrice" : 24900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 25950
-  }, {
     "volume" : 36095,
     "marketCap" : 326400768500,
     "lowPrice" : 25400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 30650,
     "tradeDate" : "2025-12-22",
     "closePrice" : 30750
+  }, {
+    "volume" : 12934,
+    "marketCap" : 391680922200,
+    "lowPrice" : 30700,
+    "highPrice" : 31300,
+    "openPrice" : 31000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 30900
   } ],
   "stockCode" : "420770"
 }

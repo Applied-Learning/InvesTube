@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KT",
   "prices" : [ {
-    "volume" : 310041,
-    "marketCap" : 11517391004500,
-    "lowPrice" : 45100,
-    "highPrice" : 46100,
-    "openPrice" : 45100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 45700
-  }, {
     "volume" : 329750,
     "marketCap" : 11618199678500,
     "lowPrice" : 45250,
@@ -1936,6 +1928,14 @@
     "highPrice" : 54000,
     "openPrice" : 53600,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 53100
+  }, {
+    "volume" : 222587,
+    "marketCap" : 13382351473500,
+    "lowPrice" : 52900,
+    "highPrice" : 53400,
+    "openPrice" : 53200,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 53100
   } ],
   "stockCode" : "030200"

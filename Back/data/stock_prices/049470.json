@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "비트플래닛",
   "prices" : [ {
-    "volume" : 133250,
-    "marketCap" : 17128914459,
-    "lowPrice" : 290,
-    "highPrice" : 295,
-    "openPrice" : 291,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 291
-  }, {
     "volume" : 120553,
     "marketCap" : 17364363455,
     "lowPrice" : 293,
@@ -1937,6 +1929,14 @@
     "openPrice" : 994,
     "tradeDate" : "2025-12-22",
     "closePrice" : 974
+  }, {
+    "volume" : 411294,
+    "marketCap" : 112426895590,
+    "lowPrice" : 930,
+    "highPrice" : 994,
+    "openPrice" : 988,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 955
   } ],
   "stockCode" : "049470"
 }

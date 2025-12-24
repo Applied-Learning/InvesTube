@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼목에스폼",
   "prices" : [ {
-    "volume" : 4123,
-    "marketCap" : 310170000000,
-    "lowPrice" : 21100,
-    "highPrice" : 21450,
-    "openPrice" : 21400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 21100
-  }, {
     "volume" : 18016,
     "marketCap" : 319725000000,
     "lowPrice" : 20800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 20100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 19900
+  }, {
+    "volume" : 11765,
+    "marketCap" : 291060000000,
+    "lowPrice" : 19510,
+    "highPrice" : 20050,
+    "openPrice" : 20050,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 19800
   } ],
   "stockCode" : "018310"
 }

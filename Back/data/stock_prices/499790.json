@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "GS피앤엘",
   "prices" : [ {
-    "volume" : 1929541,
-    "marketCap" : 506677987550,
-    "lowPrice" : 24400,
-    "highPrice" : 33100,
-    "openPrice" : 30100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 25550
-  }, {
     "volume" : 281710,
     "marketCap" : 493787940900,
     "lowPrice" : 24200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 43800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 43150
+  }, {
+    "volume" : 77853,
+    "marketCap" : 864624667600,
+    "lowPrice" : 43450,
+    "highPrice" : 44950,
+    "openPrice" : 43650,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 43600
   } ],
   "stockCode" : "499790"
 }

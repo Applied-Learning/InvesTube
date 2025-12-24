@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "뉴온",
   "prices" : [ {
-    "volume" : 70110,
-    "marketCap" : 51018582450,
-    "lowPrice" : 1636,
-    "highPrice" : 1849,
-    "openPrice" : 1740,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1745
-  }, {
     "volume" : 25862,
     "marketCap" : 49995287100,
     "lowPrice" : 1710,
@@ -1937,6 +1929,14 @@
     "openPrice" : 990,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1009
+  }, {
+    "volume" : 61926,
+    "marketCap" : 37154307000,
+    "lowPrice" : 1000,
+    "highPrice" : 1030,
+    "openPrice" : 1002,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1000
   } ],
   "stockCode" : "123840"
 }

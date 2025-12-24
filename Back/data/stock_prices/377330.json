@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이지트로닉스",
   "prices" : [ {
-    "volume" : 5414,
-    "marketCap" : 37321689090,
-    "lowPrice" : 4505,
-    "highPrice" : 4800,
-    "openPrice" : 4505,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4585
-  }, {
     "volume" : 5081,
     "marketCap" : 38257783800,
     "lowPrice" : 4585,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4165,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4195
+  }, {
+    "volume" : 14680,
+    "marketCap" : 33943608180,
+    "lowPrice" : 4105,
+    "highPrice" : 4180,
+    "openPrice" : 4180,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4170
   } ],
   "stockCode" : "377330"
 }

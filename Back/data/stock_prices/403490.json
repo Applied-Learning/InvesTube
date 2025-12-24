@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "우듬지팜",
   "prices" : [ {
-    "volume" : 109818,
-    "marketCap" : 69446344704,
-    "lowPrice" : 1523,
-    "highPrice" : 1555,
-    "openPrice" : 1523,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1536
-  }, {
     "volume" : 127156,
     "marketCap" : 69401132240,
     "lowPrice" : 1519,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1579,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1586
+  }, {
+    "volume" : 159981,
+    "marketCap" : 71196938232,
+    "lowPrice" : 1540,
+    "highPrice" : 1595,
+    "openPrice" : 1578,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1563
   } ],
   "stockCode" : "403490"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국주철관",
   "prices" : [ {
-    "volume" : 44633,
-    "marketCap" : 147747240000,
-    "lowPrice" : 6460,
-    "highPrice" : 6530,
-    "openPrice" : 6500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6480
-  }, {
     "volume" : 21397,
     "marketCap" : 147975245000,
     "lowPrice" : 6490,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7340,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7350
+  }, {
+    "volume" : 30079,
+    "marketCap" : 166899660000,
+    "lowPrice" : 7300,
+    "highPrice" : 7390,
+    "openPrice" : 7390,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7320
   } ],
   "stockCode" : "000970"
 }

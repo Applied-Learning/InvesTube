@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "서울평가정보",
   "prices" : [ {
-    "volume" : 155781,
-    "marketCap" : 80762500000,
-    "lowPrice" : 2215,
-    "highPrice" : 2325,
-    "openPrice" : 2325,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2275
-  }, {
     "volume" : 112151,
     "marketCap" : 82005000000,
     "lowPrice" : 2250,
@@ -1936,6 +1928,14 @@
     "highPrice" : 2210,
     "openPrice" : 2210,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 2180
+  }, {
+    "volume" : 75941,
+    "marketCap" : 77390000000,
+    "lowPrice" : 2145,
+    "highPrice" : 2190,
+    "openPrice" : 2190,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 2180
   } ],
   "stockCode" : "036120"

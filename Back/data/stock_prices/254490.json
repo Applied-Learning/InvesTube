@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "미래반도체",
   "prices" : [ {
-    "volume" : 61920,
-    "marketCap" : 165892620000,
-    "lowPrice" : 10940,
-    "highPrice" : 11850,
-    "openPrice" : 10940,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11490
-  }, {
     "volume" : 25033,
     "marketCap" : 162283120000,
     "lowPrice" : 11180,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14700
+  }, {
+    "volume" : 22056,
+    "marketCap" : 210794800000,
+    "lowPrice" : 14510,
+    "highPrice" : 14910,
+    "openPrice" : 14910,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14600
   } ],
   "stockCode" : "254490"
 }

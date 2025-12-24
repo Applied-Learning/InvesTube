@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "진양산업",
   "prices" : [ {
-    "volume" : 341710,
-    "marketCap" : 113620000000,
-    "lowPrice" : 8510,
-    "highPrice" : 8950,
-    "openPrice" : 8510,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8740
-  }, {
     "volume" : 330646,
     "marketCap" : 111670000000,
     "lowPrice" : 8430,
@@ -1936,6 +1928,14 @@
     "highPrice" : 6830,
     "openPrice" : 6710,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 6750
+  }, {
+    "volume" : 35428,
+    "marketCap" : 87750000000,
+    "lowPrice" : 6710,
+    "highPrice" : 6790,
+    "openPrice" : 6790,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 6750
   } ],
   "stockCode" : "003780"

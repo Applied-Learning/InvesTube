@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이수스페셜티케미컬",
   "prices" : [ {
-    "volume" : 170299,
-    "marketCap" : 930415024000,
-    "lowPrice" : 29700,
-    "highPrice" : 31300,
-    "openPrice" : 29750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 30800
-  }, {
     "volume" : 289197,
     "marketCap" : 957602476000,
     "lowPrice" : 31050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 56200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 57500
+  }, {
+    "volume" : 248068,
+    "marketCap" : 1679580368000,
+    "lowPrice" : 55400,
+    "highPrice" : 57500,
+    "openPrice" : 57500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 55600
   } ],
   "stockCode" : "457190"
 }

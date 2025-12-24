@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "벽산",
   "prices" : [ {
-    "volume" : 85008,
-    "marketCap" : 129039600000,
-    "lowPrice" : 1860,
-    "highPrice" : 1912,
-    "openPrice" : 1889,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1910
-  }, {
     "volume" : 166393,
     "marketCap" : 126607440000,
     "lowPrice" : 1860,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1805,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1806
+  }, {
+    "volume" : 160403,
+    "marketCap" : 119411960000,
+    "lowPrice" : 1781,
+    "highPrice" : 1806,
+    "openPrice" : 1806,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1786
   } ],
   "stockCode" : "007210"
 }

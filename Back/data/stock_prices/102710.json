@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이엔에프테크놀로지",
   "prices" : [ {
-    "volume" : 71284,
-    "marketCap" : 243607603800,
-    "lowPrice" : 16560,
-    "highPrice" : 17210,
-    "openPrice" : 16560,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17050
-  }, {
     "volume" : 42232,
     "marketCap" : 242750333640,
     "lowPrice" : 16860,
@@ -1937,6 +1929,14 @@
     "openPrice" : 47050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 46600
+  }, {
+    "volume" : 43121,
+    "marketCap" : 662955590400,
+    "lowPrice" : 46100,
+    "highPrice" : 46900,
+    "openPrice" : 46900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 46400
   } ],
   "stockCode" : "102710"
 }

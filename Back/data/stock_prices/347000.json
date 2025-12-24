@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "센코",
   "prices" : [ {
-    "volume" : 17466,
-    "marketCap" : 63930638512,
-    "lowPrice" : 1860,
-    "highPrice" : 1939,
-    "openPrice" : 1860,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1937
-  }, {
     "volume" : 14558,
     "marketCap" : 63765613632,
     "lowPrice" : 1919,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2270
+  }, {
+    "volume" : 180015,
+    "marketCap" : 82427644280,
+    "lowPrice" : 2180,
+    "highPrice" : 2300,
+    "openPrice" : 2270,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2180
   } ],
   "stockCode" : "347000"
 }

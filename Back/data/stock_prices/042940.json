@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "상지건설",
   "prices" : [ {
-    "volume" : 12972,
-    "marketCap" : 19112707200,
-    "lowPrice" : 4800,
-    "highPrice" : 4980,
-    "openPrice" : 4940,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4800
-  }, {
     "volume" : 11630,
     "marketCap" : 19072889060,
     "lowPrice" : 4610,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12790
+  }, {
+    "volume" : 322677,
+    "marketCap" : 82763989440,
+    "lowPrice" : 12010,
+    "highPrice" : 12970,
+    "openPrice" : 12900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12120
   } ],
   "stockCode" : "042940"
 }

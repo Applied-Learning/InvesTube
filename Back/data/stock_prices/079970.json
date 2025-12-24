@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "투비소프트",
   "prices" : [ {
-    "volume" : 18759,
-    "marketCap" : 9123271000,
-    "lowPrice" : 952,
-    "highPrice" : 1000,
-    "openPrice" : 989,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 982
-  }, {
     "volume" : 56324,
     "marketCap" : 8993204000,
     "lowPrice" : 950,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 596
+  }, {
+    "volume" : 0,
+    "marketCap" : 7646223464,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 596
   } ],
   "stockCode" : "079970"

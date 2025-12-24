@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "쓰리빌리언",
   "prices" : [ {
-    "volume" : 7352958,
-    "marketCap" : 173571089760,
-    "lowPrice" : 5340,
-    "highPrice" : 5820,
-    "openPrice" : 5650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5520
-  }, {
     "volume" : 10530022,
     "marketCap" : 180803218500,
     "lowPrice" : 5450,
@@ -1937,6 +1929,14 @@
     "openPrice" : 18500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 17530
+  }, {
+    "volume" : 884749,
+    "marketCap" : 546615001960,
+    "lowPrice" : 16910,
+    "highPrice" : 18270,
+    "openPrice" : 17530,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 17210
   } ],
   "stockCode" : "394800"
 }

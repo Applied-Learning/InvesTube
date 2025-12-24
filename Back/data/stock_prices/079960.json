@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동양이엔피",
   "prices" : [ {
-    "volume" : 6441,
-    "marketCap" : 142501800000,
-    "lowPrice" : 18010,
-    "highPrice" : 18200,
-    "openPrice" : 18120,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 18130
-  }, {
     "volume" : 6811,
     "marketCap" : 142266000000,
     "lowPrice" : 18000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 25800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 26100
+  }, {
+    "volume" : 41543,
+    "marketCap" : 205932000000,
+    "lowPrice" : 25650,
+    "highPrice" : 26300,
+    "openPrice" : 26050,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 26200
   } ],
   "stockCode" : "079960"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인성정보",
   "prices" : [ {
-    "volume" : 161208,
-    "marketCap" : 93099845340,
-    "lowPrice" : 1820,
-    "highPrice" : 1854,
-    "openPrice" : 1820,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1843
-  }, {
     "volume" : 125661,
     "marketCap" : 91786445460,
     "lowPrice" : 1805,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1798,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1834
+  }, {
+    "volume" : 215668,
+    "marketCap" : 90624591720,
+    "lowPrice" : 1788,
+    "highPrice" : 1842,
+    "openPrice" : 1835,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1794
   } ],
   "stockCode" : "033230"
 }

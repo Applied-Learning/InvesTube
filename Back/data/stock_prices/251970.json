@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "펌텍코리아",
   "prices" : [ {
-    "volume" : 73275,
-    "marketCap" : 521420000000,
-    "lowPrice" : 40250,
-    "highPrice" : 43350,
-    "openPrice" : 41650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 42050
-  }, {
     "volume" : 43960,
     "marketCap" : 516460000000,
     "lowPrice" : 41350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 53900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 54200
+  }, {
+    "volume" : 31608,
+    "marketCap" : 667120000000,
+    "lowPrice" : 53700,
+    "highPrice" : 54400,
+    "openPrice" : 54100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 53800
   } ],
   "stockCode" : "251970"
 }

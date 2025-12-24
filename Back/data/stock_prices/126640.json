@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "화신정공",
   "prices" : [ {
-    "volume" : 212286,
-    "marketCap" : 46922314230,
-    "lowPrice" : 1183,
-    "highPrice" : 1301,
-    "openPrice" : 1183,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1290
-  }, {
     "volume" : 116762,
     "marketCap" : 47104183665,
     "lowPrice" : 1270,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1325,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1326
+  }, {
+    "volume" : 411028,
+    "marketCap" : 46168633470,
+    "lowPrice" : 1317,
+    "highPrice" : 1384,
+    "openPrice" : 1384,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1317
   } ],
   "stockCode" : "126640"
 }

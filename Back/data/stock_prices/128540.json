@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에코캡",
   "prices" : [ {
-    "volume" : 85070,
-    "marketCap" : 37420024920,
-    "lowPrice" : 1348,
-    "highPrice" : 1424,
-    "openPrice" : 1350,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1402
-  }, {
     "volume" : 43408,
     "marketCap" : 36218954220,
     "lowPrice" : 1357,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1759,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1764
+  }, {
+    "volume" : 56667,
+    "marketCap" : 46121114880,
+    "lowPrice" : 1722,
+    "highPrice" : 1793,
+    "openPrice" : 1764,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1728
   } ],
   "stockCode" : "128540"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "금화피에스시",
   "prices" : [ {
-    "volume" : 3309,
-    "marketCap" : 151500000000,
-    "lowPrice" : 25050,
-    "highPrice" : 25350,
-    "openPrice" : 25050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 25250
-  }, {
     "volume" : 4417,
     "marketCap" : 152100000000,
     "lowPrice" : 25100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 31100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 30800
+  }, {
+    "volume" : 3508,
+    "marketCap" : 184200000000,
+    "lowPrice" : 30700,
+    "highPrice" : 30950,
+    "openPrice" : 30900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 30700
   } ],
   "stockCode" : "036190"
 }

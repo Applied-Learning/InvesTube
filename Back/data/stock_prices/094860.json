@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "네오리진",
   "prices" : [ {
-    "volume" : 80770,
-    "marketCap" : 23047335813,
-    "lowPrice" : 1051,
-    "highPrice" : 1095,
-    "openPrice" : 1090,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1077
-  }, {
     "volume" : 92247,
     "marketCap" : 22362549605,
     "lowPrice" : 1044,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1070,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1043
+  }, {
+    "volume" : 70449,
+    "marketCap" : 24915353484,
+    "lowPrice" : 1007,
+    "highPrice" : 1065,
+    "openPrice" : 1065,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1036
   } ],
   "stockCode" : "094860"
 }

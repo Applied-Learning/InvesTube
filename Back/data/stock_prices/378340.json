@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "필에너지",
   "prices" : [ {
-    "volume" : 79230,
-    "marketCap" : 279483630660,
-    "lowPrice" : 12710,
-    "highPrice" : 13160,
-    "openPrice" : 12710,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13130
-  }, {
     "volume" : 84736,
     "marketCap" : 276077889540,
     "lowPrice" : 12970,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12810,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12900
+  }, {
+    "volume" : 30606,
+    "marketCap" : 272793230220,
+    "lowPrice" : 12610,
+    "highPrice" : 12950,
+    "openPrice" : 12900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12710
   } ],
   "stockCode" : "378340"
 }

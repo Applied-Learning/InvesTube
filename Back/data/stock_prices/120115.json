@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코오롱인더우",
   "prices" : [ {
-    "volume" : 14305,
-    "marketCap" : 54665235000,
-    "lowPrice" : 19590,
-    "highPrice" : 19840,
-    "openPrice" : 19590,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 19750
-  }, {
     "volume" : 14423,
     "marketCap" : 54858985200,
     "lowPrice" : 19730,
@@ -1937,6 +1929,14 @@
     "openPrice" : 25350,
     "tradeDate" : "2025-12-22",
     "closePrice" : 25850
+  }, {
+    "volume" : 13498,
+    "marketCap" : 71825967000,
+    "lowPrice" : 25800,
+    "highPrice" : 26150,
+    "openPrice" : 25900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 25950
   } ],
   "stockCode" : "120115"
 }

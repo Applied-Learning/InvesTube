@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대약품",
   "prices" : [ {
-    "volume" : 154557,
-    "marketCap" : 117440000000,
-    "lowPrice" : 3515,
-    "highPrice" : 3675,
-    "openPrice" : 3540,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3670
-  }, {
     "volume" : 87813,
     "marketCap" : 116160000000,
     "lowPrice" : 3585,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6160,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6510
+  }, {
+    "volume" : 2313827,
+    "marketCap" : 216320000000,
+    "lowPrice" : 6590,
+    "highPrice" : 6920,
+    "openPrice" : 6790,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6760
   } ],
   "stockCode" : "004310"
 }

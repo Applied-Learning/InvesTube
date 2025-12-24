@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엠에스씨",
   "prices" : [ {
-    "volume" : 164601,
-    "marketCap" : 102080000000,
-    "lowPrice" : 5710,
-    "highPrice" : 5920,
-    "openPrice" : 5770,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5800
-  }, {
     "volume" : 60089,
     "marketCap" : 101552000000,
     "lowPrice" : 5720,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8190,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8180
+  }, {
+    "volume" : 35126,
+    "marketCap" : 142032000000,
+    "lowPrice" : 8010,
+    "highPrice" : 8240,
+    "openPrice" : 8220,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8070
   } ],
   "stockCode" : "009780"
 }

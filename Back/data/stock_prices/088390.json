@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이녹스",
   "prices" : [ {
-    "volume" : 5292,
-    "marketCap" : 75368327320,
-    "lowPrice" : 7910,
-    "highPrice" : 8220,
-    "openPrice" : 7910,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8030
-  }, {
     "volume" : 5593,
     "marketCap" : 73491158520,
     "lowPrice" : 7830,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8840,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8960
+  }, {
+    "volume" : 15350,
+    "marketCap" : 82689285640,
+    "lowPrice" : 8760,
+    "highPrice" : 8990,
+    "openPrice" : 8890,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8810
   } ],
   "stockCode" : "088390"
 }

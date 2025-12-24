@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "쏘카",
   "prices" : [ {
-    "volume" : 2413,
-    "marketCap" : 577656675200,
-    "lowPrice" : 17510,
-    "highPrice" : 17860,
-    "openPrice" : 17510,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17600
-  }, {
     "volume" : 4437,
     "marketCap" : 584220955600,
     "lowPrice" : 17600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11650,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11700
+  }, {
+    "volume" : 3219,
+    "marketCap" : 382608158300,
+    "lowPrice" : 11650,
+    "highPrice" : 11820,
+    "openPrice" : 11690,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11650
   } ],
   "stockCode" : "403550"
 }

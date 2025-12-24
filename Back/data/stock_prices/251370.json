@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "와이엠티",
   "prices" : [ {
-    "volume" : 19423,
-    "marketCap" : 177175079040,
-    "lowPrice" : 10820,
-    "highPrice" : 11130,
-    "openPrice" : 11130,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10860
-  }, {
     "volume" : 47785,
     "marketCap" : 176196211200,
     "lowPrice" : 10710,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11040,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11480
+  }, {
+    "volume" : 46955,
+    "marketCap" : 192982909500,
+    "lowPrice" : 10930,
+    "highPrice" : 11440,
+    "openPrice" : 11440,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10950
   } ],
   "stockCode" : "251370"
 }

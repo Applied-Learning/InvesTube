@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "안트로젠",
   "prices" : [ {
-    "volume" : 7545,
-    "marketCap" : 152782556100,
-    "lowPrice" : 15660,
-    "highPrice" : 16120,
-    "openPrice" : 15860,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15700
-  }, {
     "volume" : 628532,
     "marketCap" : 177986812170,
     "lowPrice" : 15550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 39950,
     "tradeDate" : "2025-12-22",
     "closePrice" : 40600
+  }, {
+    "volume" : 31916,
+    "marketCap" : 401244610000,
+    "lowPrice" : 39900,
+    "highPrice" : 41800,
+    "openPrice" : 40600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 40100
   } ],
   "stockCode" : "065660"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼성전자우",
   "prices" : [ {
-    "volume" : 1854636,
-    "marketCap" : 36453880810000,
-    "lowPrice" : 43100,
-    "highPrice" : 44900,
-    "openPrice" : 43500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 44300
-  }, {
     "volume" : 816525,
     "marketCap" : 36988757165000,
     "lowPrice" : 44300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 85300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 85300
+  }, {
+    "volume" : 2019002,
+    "marketCap" : 70010626171200,
+    "lowPrice" : 85000,
+    "highPrice" : 86500,
+    "openPrice" : 85400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 85800
   } ],
   "stockCode" : "005935"
 }

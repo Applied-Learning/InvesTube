@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코세스",
   "prices" : [ {
-    "volume" : 29964,
-    "marketCap" : 111119245400,
-    "lowPrice" : 6430,
-    "highPrice" : 6700,
-    "openPrice" : 6510,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6700
-  }, {
     "volume" : 30032,
     "marketCap" : 109958298060,
     "lowPrice" : 6510,
@@ -1937,6 +1929,14 @@
     "openPrice" : 21900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 23650
+  }, {
+    "volume" : 179244,
+    "marketCap" : 373990893100,
+    "lowPrice" : 21850,
+    "highPrice" : 24250,
+    "openPrice" : 24250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 22550
   } ],
   "stockCode" : "089890"
 }

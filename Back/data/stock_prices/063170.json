@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "서울옥션",
   "prices" : [ {
-    "volume" : 207029,
-    "marketCap" : 122464699630,
-    "lowPrice" : 6710,
-    "highPrice" : 7330,
-    "openPrice" : 6710,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6890
-  }, {
     "volume" : 52509,
     "marketCap" : 122464699630,
     "lowPrice" : 6770,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6880,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7260
+  }, {
+    "volume" : 36285,
+    "marketCap" : 127086009050,
+    "lowPrice" : 7070,
+    "highPrice" : 7280,
+    "openPrice" : 7280,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7150
   } ],
   "stockCode" : "063170"
 }

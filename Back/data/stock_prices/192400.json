@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "쿠쿠홀딩스",
   "prices" : [ {
-    "volume" : 13450,
-    "marketCap" : 864161095500,
-    "lowPrice" : 23800,
-    "highPrice" : 24600,
-    "openPrice" : 24100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 24300
-  }, {
     "volume" : 13842,
     "marketCap" : 851714330750,
     "lowPrice" : 23800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 30450,
     "tradeDate" : "2025-12-22",
     "closePrice" : 30100
+  }, {
+    "volume" : 8635,
+    "marketCap" : 1075756096250,
+    "lowPrice" : 30000,
+    "highPrice" : 30300,
+    "openPrice" : 30200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 30250
   } ],
   "stockCode" : "192400"
 }

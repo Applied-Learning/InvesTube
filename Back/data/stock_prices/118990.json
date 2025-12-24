@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "모트렉스",
   "prices" : [ {
-    "volume" : 80189,
-    "marketCap" : 240415443300,
-    "lowPrice" : 9450,
-    "highPrice" : 9690,
-    "openPrice" : 9450,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9670
-  }, {
     "volume" : 77409,
     "marketCap" : 236934764700,
     "lowPrice" : 9530,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8790,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8940
+  }, {
+    "volume" : 74167,
+    "marketCap" : 216299313000,
+    "lowPrice" : 8700,
+    "highPrice" : 9000,
+    "openPrice" : 9000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8700
   } ],
   "stockCode" : "118990"
 }

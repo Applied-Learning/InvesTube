@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "위드텍",
   "prices" : [ {
-    "volume" : 17490,
-    "marketCap" : 73118248000,
-    "lowPrice" : 7090,
-    "highPrice" : 7320,
-    "openPrice" : 7190,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7180
-  }, {
     "volume" : 10233,
     "marketCap" : 73016412000,
     "lowPrice" : 7100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8380,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8600
+  }, {
+    "volume" : 16818,
+    "marketCap" : 85644076000,
+    "lowPrice" : 8390,
+    "highPrice" : 8590,
+    "openPrice" : 8560,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8410
   } ],
   "stockCode" : "348350"
 }

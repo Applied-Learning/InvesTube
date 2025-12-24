@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "푸드웰",
   "prices" : [ {
-    "volume" : 20173,
-    "marketCap" : 52400000000,
-    "lowPrice" : 5180,
-    "highPrice" : 5330,
-    "openPrice" : 5230,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5240
-  }, {
     "volume" : 10287,
     "marketCap" : 52000000000,
     "lowPrice" : 5170,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6340,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6400
+  }, {
+    "volume" : 33403,
+    "marketCap" : 63200000000,
+    "lowPrice" : 6300,
+    "highPrice" : 6400,
+    "openPrice" : 6400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6320
   } ],
   "stockCode" : "005670"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "GH신소재",
   "prices" : [ {
-    "volume" : 789184,
-    "marketCap" : 44362408600,
-    "lowPrice" : 2990,
-    "highPrice" : 3130,
-    "openPrice" : 3045,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3050
-  }, {
     "volume" : 570423,
     "marketCap" : 42471551840,
     "lowPrice" : 2890,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2440,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2430
+  }, {
+    "volume" : 43627,
+    "marketCap" : 35271751100,
+    "lowPrice" : 2400,
+    "highPrice" : 2460,
+    "openPrice" : 2430,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2425
   } ],
   "stockCode" : "130500"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디젠스",
   "prices" : [ {
-    "volume" : 21706450,
-    "marketCap" : 59448308922,
-    "lowPrice" : 1412,
-    "highPrice" : 1996,
-    "openPrice" : 1561,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1822
-  }, {
     "volume" : 11618452,
     "marketCap" : 51715460835,
     "lowPrice" : 1583,
@@ -1937,6 +1929,14 @@
     "openPrice" : 808,
     "tradeDate" : "2025-12-22",
     "closePrice" : 809
+  }, {
+    "volume" : 142595,
+    "marketCap" : 26135068851,
+    "lowPrice" : 800,
+    "highPrice" : 809,
+    "openPrice" : 809,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 801
   } ],
   "stockCode" : "113810"
 }

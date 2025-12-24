@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "브레인즈컴퍼니",
   "prices" : [ {
-    "volume" : 4260,
-    "marketCap" : 43421817070,
-    "lowPrice" : 5230,
-    "highPrice" : 5410,
-    "openPrice" : 5310,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5290
-  }, {
     "volume" : 6464,
     "marketCap" : 41123497830,
     "lowPrice" : 5010,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5330
+  }, {
+    "volume" : 10155,
+    "marketCap" : 44160562540,
+    "lowPrice" : 5310,
+    "highPrice" : 5430,
+    "openPrice" : 5430,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5380
   } ],
   "stockCode" : "099390"
 }

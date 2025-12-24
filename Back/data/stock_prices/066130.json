@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하츠",
   "prices" : [ {
-    "volume" : 92978,
-    "marketCap" : 72064000000,
-    "lowPrice" : 5600,
-    "highPrice" : 5850,
-    "openPrice" : 5680,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5630
-  }, {
     "volume" : 67640,
     "marketCap" : 72064000000,
     "lowPrice" : 5600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4530,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4530
+  }, {
+    "volume" : 13963,
+    "marketCap" : 57920000000,
+    "lowPrice" : 4500,
+    "highPrice" : 4565,
+    "openPrice" : 4545,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4525
   } ],
   "stockCode" : "066130"
 }

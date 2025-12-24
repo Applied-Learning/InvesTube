@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HS애드",
   "prices" : [ {
-    "volume" : 13564,
-    "marketCap" : 106528439870,
-    "lowPrice" : 6370,
-    "highPrice" : 6450,
-    "openPrice" : 6420,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6430
-  }, {
     "volume" : 16175,
     "marketCap" : 106031417600,
     "lowPrice" : 6370,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9010,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8810
+  }, {
+    "volume" : 34916,
+    "marketCap" : 142465190760,
+    "lowPrice" : 8670,
+    "highPrice" : 8930,
+    "openPrice" : 8850,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8790
   } ],
   "stockCode" : "035000"
 }

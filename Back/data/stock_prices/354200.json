@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엔젠바이오",
   "prices" : [ {
-    "volume" : 51498,
-    "marketCap" : 29606433020,
-    "lowPrice" : 2130,
-    "highPrice" : 2255,
-    "openPrice" : 2130,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2155
-  }, {
     "volume" : 62110,
     "marketCap" : 28782123980,
     "lowPrice" : 2095,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1574,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1565
+  }, {
+    "volume" : 40601,
+    "marketCap" : 38708945888,
+    "lowPrice" : 1532,
+    "highPrice" : 1579,
+    "openPrice" : 1579,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1546
   } ],
   "stockCode" : "354200"
 }

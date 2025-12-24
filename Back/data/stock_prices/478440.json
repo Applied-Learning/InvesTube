@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "미래에셋비전스팩6호",
   "prices" : [ {
-    "volume" : 5375,
-    "marketCap" : 13783770000,
-    "lowPrice" : 1965,
-    "highPrice" : 1990,
-    "openPrice" : 1983,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1989
-  }, {
     "volume" : 784,
     "marketCap" : 13756050000,
     "lowPrice" : 1970,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2025,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2040
+  }, {
+    "volume" : 6172,
+    "marketCap" : 14067900000,
+    "lowPrice" : 2030,
+    "highPrice" : 2045,
+    "openPrice" : 2030,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2030
   } ],
   "stockCode" : "478440"
 }

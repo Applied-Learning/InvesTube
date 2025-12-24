@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "진도",
   "prices" : [ {
-    "volume" : 31058,
-    "marketCap" : 21298089984,
-    "lowPrice" : 1654,
-    "highPrice" : 1715,
-    "openPrice" : 1705,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1711
-  }, {
     "volume" : 16232,
     "marketCap" : 21410119680,
     "lowPrice" : 1702,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2010,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2025
+  }, {
+    "volume" : 19548,
+    "marketCap" : 25082204160,
+    "lowPrice" : 2000,
+    "highPrice" : 2040,
+    "openPrice" : 2040,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2015
   } ],
   "stockCode" : "088790"
 }

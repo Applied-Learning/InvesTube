@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼익악기",
   "prices" : [ {
-    "volume" : 24241,
-    "marketCap" : 108184443425,
-    "lowPrice" : 1172,
-    "highPrice" : 1200,
-    "openPrice" : 1173,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1195
-  }, {
     "volume" : 44109,
     "marketCap" : 109180283490,
     "lowPrice" : 1186,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1247,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1254
+  }, {
+    "volume" : 156811,
+    "marketCap" : 112801520090,
+    "lowPrice" : 1230,
+    "highPrice" : 1258,
+    "openPrice" : 1245,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1246
   } ],
   "stockCode" : "002450"
 }

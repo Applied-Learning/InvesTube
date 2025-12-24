@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인스코비",
   "prices" : [ {
-    "volume" : 2885244,
-    "marketCap" : 188244909846,
-    "lowPrice" : 1560,
-    "highPrice" : 1664,
-    "openPrice" : 1570,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1577
-  }, {
     "volume" : 1003701,
     "marketCap" : 182873304936,
     "lowPrice" : 1491,
@@ -1937,6 +1929,14 @@
     "openPrice" : 660,
     "tradeDate" : "2025-12-22",
     "closePrice" : 711
+  }, {
+    "volume" : 5040232,
+    "marketCap" : 105744338280,
+    "lowPrice" : 730,
+    "highPrice" : 849,
+    "openPrice" : 730,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 840
   } ],
   "stockCode" : "006490"
 }

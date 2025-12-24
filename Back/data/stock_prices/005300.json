@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "롯데칠성",
   "prices" : [ {
-    "volume" : 5686,
-    "marketCap" : 1086557316400,
-    "lowPrice" : 115500,
-    "highPrice" : 117300,
-    "openPrice" : 117300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 117100
-  }, {
     "volume" : 8821,
     "marketCap" : 1071711102000,
     "lowPrice" : 115100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 133900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 133200
+  }, {
+    "volume" : 28901,
+    "marketCap" : 1255433005200,
+    "lowPrice" : 132300,
+    "highPrice" : 135500,
+    "openPrice" : 132400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 135300
   } ],
   "stockCode" : "005300"
 }

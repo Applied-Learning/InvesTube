@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "지에프씨생명과학",
   "prices" : [ {
     "volume" : 40975681,
@@ -961,6 +961,14 @@
     "openPrice" : 15650,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15470
+  }, {
+    "volume" : 100877,
+    "marketCap" : 77748973200,
+    "lowPrice" : 14490,
+    "highPrice" : 15690,
+    "openPrice" : 15310,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14800
   } ],
   "stockCode" : "388610"
 }

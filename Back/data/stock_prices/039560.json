@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "다산네트웍스",
   "prices" : [ {
-    "volume" : 578801,
-    "marketCap" : 137283283975,
-    "lowPrice" : 3430,
-    "highPrice" : 3535,
-    "openPrice" : 3515,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3475
-  }, {
     "volume" : 235256,
     "marketCap" : 136690694260,
     "lowPrice" : 3430,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3140,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3210
+  }, {
+    "volume" : 156549,
+    "marketCap" : 122605271195,
+    "lowPrice" : 3090,
+    "highPrice" : 3230,
+    "openPrice" : 3210,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3095
   } ],
   "stockCode" : "039560"
 }

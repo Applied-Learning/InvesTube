@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "일신석재",
   "prices" : [ {
-    "volume" : 4964263,
-    "marketCap" : 169629975900,
-    "lowPrice" : 2165,
-    "highPrice" : 2300,
-    "openPrice" : 2205,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2190
-  }, {
     "volume" : 5312149,
     "marketCap" : 168468126750,
     "lowPrice" : 2110,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1675,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1700
+  }, {
+    "volume" : 397789,
+    "marketCap" : 127958319720,
+    "lowPrice" : 1645,
+    "highPrice" : 1709,
+    "openPrice" : 1700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1652
   } ],
   "stockCode" : "007110"
 }

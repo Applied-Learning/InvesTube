@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오텍",
   "prices" : [ {
-    "volume" : 34347,
-    "marketCap" : 51023170575,
-    "lowPrice" : 3275,
-    "highPrice" : 3375,
-    "openPrice" : 3310,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3315
-  }, {
     "volume" : 8314,
     "marketCap" : 50792296500,
     "lowPrice" : 3280,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1930,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1902
+  }, {
+    "volume" : 63425,
+    "marketCap" : 44342818880,
+    "lowPrice" : 1812,
+    "highPrice" : 1917,
+    "openPrice" : 1902,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1856
   } ],
   "stockCode" : "067170"
 }

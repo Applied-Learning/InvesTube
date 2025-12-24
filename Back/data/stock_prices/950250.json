@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "테라뷰",
   "prices" : [ {
     "volume" : 67415611,
@@ -81,6 +81,14 @@
     "openPrice" : 10150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9170
+  }, {
+    "volume" : 11001860,
+    "marketCap" : 346297877250,
+    "lowPrice" : 8880,
+    "highPrice" : 10860,
+    "openPrice" : 9300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9750
   } ],
   "stockCode" : "950250"
 }

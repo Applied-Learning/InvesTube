@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이치케이",
   "prices" : [ {
-    "volume" : 141460,
-    "marketCap" : 21096597180,
-    "lowPrice" : 1136,
-    "highPrice" : 1238,
-    "openPrice" : 1156,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1140
-  }, {
     "volume" : 115902,
     "marketCap" : 21762805512,
     "lowPrice" : 1114,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1395,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1382
+  }, {
+    "volume" : 23893,
+    "marketCap" : 25630514995,
+    "lowPrice" : 1382,
+    "highPrice" : 1399,
+    "openPrice" : 1399,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1385
   } ],
   "stockCode" : "044780"
 }

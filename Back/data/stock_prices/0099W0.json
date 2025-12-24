@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "미래에셋비전스팩11호",
   "prices" : [ {
     "volume" : 67463423,
@@ -9,6 +9,14 @@
     "openPrice" : 3900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2210
+  }, {
+    "volume" : 2077938,
+    "marketCap" : 13993000000,
+    "lowPrice" : 1986,
+    "highPrice" : 2210,
+    "openPrice" : 2210,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1999
   } ],
   "stockCode" : "0099W0"
 }

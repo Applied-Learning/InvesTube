@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "뉴키즈온",
   "prices" : [ {
     "volume" : 11506517,
@@ -905,6 +905,14 @@
     "openPrice" : 5940,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5900
+  }, {
+    "volume" : 33172,
+    "marketCap" : 46068660000,
+    "lowPrice" : 5760,
+    "highPrice" : 5960,
+    "openPrice" : 5890,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5830
   } ],
   "stockCode" : "462310"
 }

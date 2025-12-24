@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "원익큐브",
   "prices" : [ {
-    "volume" : 146162,
-    "marketCap" : 50692665392,
-    "lowPrice" : 1413,
-    "highPrice" : 1450,
-    "openPrice" : 1426,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1432
-  }, {
     "volume" : 69309,
     "marketCap" : 50657265486,
     "lowPrice" : 1431,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1586,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1579
+  }, {
+    "volume" : 89767,
+    "marketCap" : 55223853360,
+    "lowPrice" : 1550,
+    "highPrice" : 1584,
+    "openPrice" : 1584,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1560
   } ],
   "stockCode" : "014190"
 }

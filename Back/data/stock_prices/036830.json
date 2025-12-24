@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "솔브레인홀딩스",
   "prices" : [ {
-    "volume" : 88214,
-    "marketCap" : 859526296000,
-    "lowPrice" : 37000,
-    "highPrice" : 41350,
-    "openPrice" : 37100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 41000
-  }, {
     "volume" : 72031,
     "marketCap" : 807116156000,
     "lowPrice" : 38400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 38100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 38900
+  }, {
+    "volume" : 15922,
+    "marketCap" : 813405372800,
+    "lowPrice" : 38350,
+    "highPrice" : 39100,
+    "openPrice" : 39100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 38800
   } ],
   "stockCode" : "036830"
 }

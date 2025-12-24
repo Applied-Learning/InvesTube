@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "CJ제일제당",
   "prices" : [ {
-    "volume" : 31482,
-    "marketCap" : 3989359290000,
-    "lowPrice" : 260000,
-    "highPrice" : 266000,
-    "openPrice" : 261000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 265000
-  }, {
     "volume" : 22151,
     "marketCap" : 3981832197000,
     "lowPrice" : 262000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 210500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 211500
+  }, {
+    "volume" : 36605,
+    "marketCap" : 3176433246000,
+    "lowPrice" : 210000,
+    "highPrice" : 213500,
+    "openPrice" : 211500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 211000
   } ],
   "stockCode" : "097950"
 }

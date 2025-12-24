@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "옵투스제약",
   "prices" : [ {
-    "volume" : 1693405,
-    "marketCap" : 118079614220,
-    "lowPrice" : 6550,
-    "highPrice" : 7310,
-    "openPrice" : 6910,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7310
-  }, {
     "volume" : 2372774,
     "marketCap" : 101280325740,
     "lowPrice" : 6190,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7080,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7190
+  }, {
+    "volume" : 86275,
+    "marketCap" : 123879061800,
+    "lowPrice" : 7010,
+    "highPrice" : 7200,
+    "openPrice" : 7120,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7020
   } ],
   "stockCode" : "131030"
 }

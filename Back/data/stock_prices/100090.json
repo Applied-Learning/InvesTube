@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SK오션플랜트",
   "prices" : [ {
-    "volume" : 295602,
-    "marketCap" : 793812566880,
-    "lowPrice" : 13120,
-    "highPrice" : 13650,
-    "openPrice" : 13500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13410
-  }, {
     "volume" : 141521,
     "marketCap" : 794996478240,
     "lowPrice" : 13220,
@@ -1937,6 +1929,14 @@
     "openPrice" : 20950,
     "tradeDate" : "2025-12-22",
     "closePrice" : 20200
+  }, {
+    "volume" : 501443,
+    "marketCap" : 1248313017420,
+    "lowPrice" : 19880,
+    "highPrice" : 20450,
+    "openPrice" : 20250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 19980
   } ],
   "stockCode" : "100090"
 }

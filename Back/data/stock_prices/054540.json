@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼영엠텍",
   "prices" : [ {
-    "volume" : 184873,
-    "marketCap" : 59215000000,
-    "lowPrice" : 4385,
-    "highPrice" : 4600,
-    "openPrice" : 4385,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4555
-  }, {
     "volume" : 120504,
     "marketCap" : 58500000000,
     "lowPrice" : 4430,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13610,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13660
+  }, {
+    "volume" : 16747088,
+    "marketCap" : 206700000000,
+    "lowPrice" : 14350,
+    "highPrice" : 17130,
+    "openPrice" : 14470,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15900
   } ],
   "stockCode" : "054540"
 }

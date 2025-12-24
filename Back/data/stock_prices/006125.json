@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SK디스커버리우",
   "prices" : [ {
-    "volume" : 786,
-    "marketCap" : 43470560000,
-    "lowPrice" : 31750,
-    "highPrice" : 32100,
-    "openPrice" : 32000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 32000
-  }, {
     "volume" : 874,
     "marketCap" : 43742251000,
     "lowPrice" : 31500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 39800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 39350
+  }, {
+    "volume" : 845,
+    "marketCap" : 51579481500,
+    "lowPrice" : 39000,
+    "highPrice" : 39400,
+    "openPrice" : 39350,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 39300
   } ],
   "stockCode" : "006125"
 }

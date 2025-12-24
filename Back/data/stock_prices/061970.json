@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "LB세미콘",
   "prices" : [ {
-    "volume" : 80604,
-    "marketCap" : 159375914880,
-    "lowPrice" : 3565,
-    "highPrice" : 3670,
-    "openPrice" : 3580,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3640
-  }, {
     "volume" : 45516,
     "marketCap" : 157843454160,
     "lowPrice" : 3580,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3920,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4035
+  }, {
+    "volume" : 305494,
+    "marketCap" : 227685383520,
+    "lowPrice" : 3915,
+    "highPrice" : 4090,
+    "openPrice" : 4035,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3920
   } ],
   "stockCode" : "061970"
 }

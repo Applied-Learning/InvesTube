@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "티이엠씨씨엔에스",
   "prices" : [ {
-    "volume" : 19310,
-    "marketCap" : 48162682710,
-    "lowPrice" : 4715,
-    "highPrice" : 4850,
-    "openPrice" : 4730,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4815
-  }, {
     "volume" : 9702,
     "marketCap" : 47712564180,
     "lowPrice" : 4750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6640,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6810
+  }, {
+    "volume" : 25783,
+    "marketCap" : 66217437080,
+    "lowPrice" : 6600,
+    "highPrice" : 6790,
+    "openPrice" : 6750,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6620
   } ],
   "stockCode" : "241790"
 }

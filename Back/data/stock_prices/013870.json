@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "지엠비코리아",
   "prices" : [ {
-    "volume" : 4415,
-    "marketCap" : 69804544800,
-    "lowPrice" : 3640,
-    "highPrice" : 3760,
-    "openPrice" : 3705,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3660
-  }, {
     "volume" : 8467,
     "marketCap" : 69041653600,
     "lowPrice" : 3595,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4010
+  }, {
+    "volume" : 30995,
+    "marketCap" : 76384481400,
+    "lowPrice" : 3935,
+    "highPrice" : 4040,
+    "openPrice" : 4035,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4005
   } ],
   "stockCode" : "013870"
 }

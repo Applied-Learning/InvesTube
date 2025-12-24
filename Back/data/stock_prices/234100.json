@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "폴라리스세원",
   "prices" : [ {
-    "volume" : 79915,
-    "marketCap" : 63554632784,
-    "lowPrice" : 1156,
-    "highPrice" : 1174,
-    "openPrice" : 1161,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1168
-  }, {
     "volume" : 99875,
     "marketCap" : 62575194950,
     "lowPrice" : 1149,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1071,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1090
+  }, {
+    "volume" : 125942,
+    "marketCap" : 74461565672,
+    "lowPrice" : 1052,
+    "highPrice" : 1094,
+    "openPrice" : 1094,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1061
   } ],
   "stockCode" : "234100"
 }

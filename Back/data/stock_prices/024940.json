@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "PN풍년",
   "prices" : [ {
-    "volume" : 1818274,
-    "marketCap" : 83500000000,
-    "lowPrice" : 8220,
-    "highPrice" : 9050,
-    "openPrice" : 8230,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8350
-  }, {
     "volume" : 742455,
     "marketCap" : 78900000000,
     "lowPrice" : 7890,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5580,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5710
+  }, {
+    "volume" : 39443,
+    "marketCap" : 56200000000,
+    "lowPrice" : 5570,
+    "highPrice" : 5790,
+    "openPrice" : 5710,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5620
   } ],
   "stockCode" : "024940"
 }

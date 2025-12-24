@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "DXVX",
   "prices" : [ {
-    "volume" : 171471,
-    "marketCap" : 85149617360,
-    "lowPrice" : 1730,
-    "highPrice" : 1812,
-    "openPrice" : 1736,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1730
-  }, {
     "volume" : 6076785,
     "marketCap" : 91941898976,
     "lowPrice" : 1730,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1734,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2265
+  }, {
+    "volume" : 5872535,
+    "marketCap" : 123048580000,
+    "lowPrice" : 2300,
+    "highPrice" : 2860,
+    "openPrice" : 2710,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2500
   } ],
   "stockCode" : "180400"
 }

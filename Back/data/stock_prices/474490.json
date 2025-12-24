@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유안타제16호스팩",
   "prices" : [ {
-    "volume" : 38721,
-    "marketCap" : 10667360000,
-    "lowPrice" : 1930,
-    "highPrice" : 1952,
-    "openPrice" : 1952,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1936
-  }, {
     "volume" : 11684,
     "marketCap" : 10750010000,
     "lowPrice" : 1943,
@@ -1936,6 +1928,14 @@
     "highPrice" : 2025,
     "openPrice" : 2025,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 2025
+  }, {
+    "volume" : 11394,
+    "marketCap" : 11157750000,
+    "lowPrice" : 2020,
+    "highPrice" : 2030,
+    "openPrice" : 2020,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 2025
   } ],
   "stockCode" : "474490"

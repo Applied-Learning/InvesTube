@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "뱅크웨어글로벌",
   "prices" : [ {
-    "volume" : 877278,
-    "marketCap" : 69095203920,
-    "lowPrice" : 6750,
-    "highPrice" : 7350,
-    "openPrice" : 6750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6840
-  }, {
     "volume" : 959188,
     "marketCap" : 71721629800,
     "lowPrice" : 6260,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5530,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5650
+  }, {
+    "volume" : 33228,
+    "marketCap" : 56693029280,
+    "lowPrice" : 5540,
+    "highPrice" : 5710,
+    "openPrice" : 5710,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5560
   } ],
   "stockCode" : "199480"
 }

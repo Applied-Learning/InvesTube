@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "명인제약",
   "prices" : [ {
     "volume" : 5696196,
@@ -433,6 +433,14 @@
     "openPrice" : 73000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 73000
+  }, {
+    "volume" : 49343,
+    "marketCap" : 1051200000000,
+    "lowPrice" : 71600,
+    "highPrice" : 73400,
+    "openPrice" : 73000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 72000
   } ],
   "stockCode" : "317450"
 }

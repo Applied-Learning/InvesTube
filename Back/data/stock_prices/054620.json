@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "APS",
   "prices" : [ {
-    "volume" : 16718,
-    "marketCap" : 109020331080,
-    "lowPrice" : 5480,
-    "highPrice" : 5690,
-    "openPrice" : 5500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5480
-  }, {
     "volume" : 17643,
     "marketCap" : 108224562240,
     "lowPrice" : 5430,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3950,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3990
+  }, {
+    "volume" : 33557,
+    "marketCap" : 69530155380,
+    "lowPrice" : 3780,
+    "highPrice" : 3990,
+    "openPrice" : 3990,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3780
   } ],
   "stockCode" : "054620"
 }

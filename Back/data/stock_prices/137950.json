@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제이씨케미칼",
   "prices" : [ {
-    "volume" : 31509,
-    "marketCap" : 90852681120,
-    "lowPrice" : 3980,
-    "highPrice" : 4080,
-    "openPrice" : 3980,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4080
-  }, {
     "volume" : 30064,
     "marketCap" : 88959916930,
     "lowPrice" : 3970,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3355,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3330
+  }, {
+    "volume" : 16287,
+    "marketCap" : 74040481550,
+    "lowPrice" : 3310,
+    "highPrice" : 3370,
+    "openPrice" : 3350,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3325
   } ],
   "stockCode" : "137950"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼성중공업",
   "prices" : [ {
-    "volume" : 6192894,
-    "marketCap" : 10111200000000,
-    "lowPrice" : 11230,
-    "highPrice" : 11570,
-    "openPrice" : 11330,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11490
-  }, {
     "volume" : 3839366,
     "marketCap" : 9996800000000,
     "lowPrice" : 11330,
@@ -1937,6 +1929,14 @@
     "openPrice" : 25700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 24850
+  }, {
+    "volume" : 3938965,
+    "marketCap" : 22132000000000,
+    "lowPrice" : 24750,
+    "highPrice" : 25400,
+    "openPrice" : 25300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 25150
   } ],
   "stockCode" : "010140"
 }

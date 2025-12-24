@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엘디티",
   "prices" : [ {
-    "volume" : 9831,
-    "marketCap" : 16362080000,
-    "lowPrice" : 2365,
-    "highPrice" : 2490,
-    "openPrice" : 2370,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2450
-  }, {
     "volume" : 4934,
     "marketCap" : 16762784000,
     "lowPrice" : 2465,
@@ -1936,6 +1928,14 @@
     "highPrice" : 2455,
     "openPrice" : 2425,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 2420
+  }, {
+    "volume" : 27116,
+    "marketCap" : 16161728000,
+    "lowPrice" : 2375,
+    "highPrice" : 2460,
+    "openPrice" : 2415,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 2420
   } ],
   "stockCode" : "096870"

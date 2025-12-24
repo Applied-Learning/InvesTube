@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스제이그룹",
   "prices" : [ {
-    "volume" : 11054,
-    "marketCap" : 51006330760,
-    "lowPrice" : 5040,
-    "highPrice" : 5240,
-    "openPrice" : 5060,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5170
-  }, {
     "volume" : 32246,
     "marketCap" : 49131823440,
     "lowPrice" : 4980,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7530,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7780
+  }, {
+    "volume" : 1901601,
+    "marketCap" : 80209181640,
+    "lowPrice" : 7330,
+    "highPrice" : 8560,
+    "openPrice" : 7620,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8130
   } ],
   "stockCode" : "306040"
 }

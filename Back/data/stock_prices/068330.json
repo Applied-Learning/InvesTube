@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "일신바이오",
   "prices" : [ {
-    "volume" : 31756,
-    "marketCap" : 47045972960,
-    "lowPrice" : 1048,
-    "highPrice" : 1070,
-    "openPrice" : 1070,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1064
-  }, {
     "volume" : 55005,
     "marketCap" : 46515379280,
     "lowPrice" : 1047,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1690,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1703
+  }, {
+    "volume" : 283102,
+    "marketCap" : 73045063280,
+    "lowPrice" : 1652,
+    "highPrice" : 1729,
+    "openPrice" : 1713,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1652
   } ],
   "stockCode" : "068330"
 }

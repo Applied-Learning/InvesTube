@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "깨끗한나라",
   "prices" : [ {
-    "volume" : 190528,
-    "marketCap" : 89936273595,
-    "lowPrice" : 2380,
-    "highPrice" : 2455,
-    "openPrice" : 2385,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2415
-  }, {
     "volume" : 303154,
     "marketCap" : 86026000830,
     "lowPrice" : 2295,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1949,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1939
+  }, {
+    "volume" : 38347,
+    "marketCap" : 71539371253,
+    "lowPrice" : 1921,
+    "highPrice" : 1949,
+    "openPrice" : 1935,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1921
   } ],
   "stockCode" : "004540"
 }

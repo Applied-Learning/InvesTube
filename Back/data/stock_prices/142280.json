@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "녹십자엠에스",
   "prices" : [ {
-    "volume" : 88071,
-    "marketCap" : 80118997310,
-    "lowPrice" : 3560,
-    "highPrice" : 3730,
-    "openPrice" : 3565,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3685
-  }, {
     "volume" : 33702,
     "marketCap" : 79031901010,
     "lowPrice" : 3580,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4210,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4175
+  }, {
+    "volume" : 101042,
+    "marketCap" : 88054800300,
+    "lowPrice" : 4050,
+    "highPrice" : 4200,
+    "openPrice" : 4165,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4050
   } ],
   "stockCode" : "142280"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한화오션",
   "prices" : [ {
-    "volume" : 7967681,
-    "marketCap" : 10954278835500,
-    "lowPrice" : 34550,
-    "highPrice" : 36150,
-    "openPrice" : 35000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 35750
-  }, {
     "volume" : 3860416,
     "marketCap" : 11030882184000,
     "lowPrice" : 35400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 112700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 109700
+  }, {
+    "volume" : 8971820,
+    "marketCap" : 37811412819600,
+    "lowPrice" : 114700,
+    "highPrice" : 124800,
+    "openPrice" : 117600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 123400
   } ],
   "stockCode" : "042660"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KX",
   "prices" : [ {
-    "volume" : 115842,
-    "marketCap" : 149155321560,
-    "lowPrice" : 3225,
-    "highPrice" : 3305,
-    "openPrice" : 3225,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3290
-  }, {
     "volume" : 97049,
     "marketCap" : 151875479400,
     "lowPrice" : 3295,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3785,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3870
+  }, {
+    "volume" : 56644,
+    "marketCap" : 172556360900,
+    "lowPrice" : 3850,
+    "highPrice" : 3900,
+    "openPrice" : 3875,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3850
   } ],
   "stockCode" : "122450"
 }

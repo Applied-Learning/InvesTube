@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "태광",
   "prices" : [ {
-    "volume" : 706042,
-    "marketCap" : 481240000000,
-    "lowPrice" : 17800,
-    "highPrice" : 18530,
-    "openPrice" : 18130,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 18160
-  }, {
     "volume" : 546909,
     "marketCap" : 474085000000,
     "lowPrice" : 17890,
@@ -1937,6 +1929,14 @@
     "openPrice" : 24200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 22900
+  }, {
+    "volume" : 176090,
+    "marketCap" : 613475000000,
+    "lowPrice" : 22600,
+    "highPrice" : 23450,
+    "openPrice" : 23200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 23150
   } ],
   "stockCode" : "023160"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "티씨케이",
   "prices" : [ {
-    "volume" : 21520,
-    "marketCap" : 813747500000,
-    "lowPrice" : 68000,
-    "highPrice" : 70700,
-    "openPrice" : 68800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 69700
-  }, {
     "volume" : 19820,
     "marketCap" : 813747500000,
     "lowPrice" : 69400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 143500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 146400
+  }, {
+    "volume" : 23681,
+    "marketCap" : 1702215000000,
+    "lowPrice" : 143600,
+    "highPrice" : 147000,
+    "openPrice" : 147000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 145800
   } ],
   "stockCode" : "064760"
 }

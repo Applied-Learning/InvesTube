@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "LS머트리얼즈",
   "prices" : [ {
-    "volume" : 164930,
-    "marketCap" : 760415887160,
-    "lowPrice" : 11000,
-    "highPrice" : 11450,
-    "openPrice" : 11240,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11240
-  }, {
     "volume" : 153901,
     "marketCap" : 760415887160,
     "lowPrice" : 11120,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12920,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13700
+  }, {
+    "volume" : 1128404,
+    "marketCap" : 916693529450,
+    "lowPrice" : 13270,
+    "highPrice" : 14040,
+    "openPrice" : 14040,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13550
   } ],
   "stockCode" : "417200"
 }

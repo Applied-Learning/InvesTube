@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유신",
   "prices" : [ {
-    "volume" : 10824,
-    "marketCap" : 72000000000,
-    "lowPrice" : 23850,
-    "highPrice" : 24250,
-    "openPrice" : 24050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 24000
-  }, {
     "volume" : 10635,
     "marketCap" : 71850000000,
     "lowPrice" : 23750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 23100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 23300
+  }, {
+    "volume" : 8055,
+    "marketCap" : 68850000000,
+    "lowPrice" : 22950,
+    "highPrice" : 23250,
+    "openPrice" : 23200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 22950
   } ],
   "stockCode" : "054930"
 }

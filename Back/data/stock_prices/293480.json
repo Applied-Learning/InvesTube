@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하나제약",
   "prices" : [ {
-    "volume" : 19381,
-    "marketCap" : 197812888980,
-    "lowPrice" : 10900,
-    "highPrice" : 11150,
-    "openPrice" : 10930,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11130
-  }, {
     "volume" : 31324,
     "marketCap" : 201900666560,
     "lowPrice" : 11140,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11780,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11820
+  }, {
+    "volume" : 19111,
+    "marketCap" : 209009844960,
+    "lowPrice" : 11730,
+    "highPrice" : 11870,
+    "openPrice" : 11730,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11760
   } ],
   "stockCode" : "293480"
 }

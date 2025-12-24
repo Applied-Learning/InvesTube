@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "로보로보",
   "prices" : [ {
-    "volume" : 74616,
-    "marketCap" : 73661403480,
-    "lowPrice" : 3490,
-    "highPrice" : 3625,
-    "openPrice" : 3515,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3620
-  }, {
     "volume" : 186120,
     "marketCap" : 74882310720,
     "lowPrice" : 3575,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7530,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7950
+  }, {
+    "volume" : 765020,
+    "marketCap" : 161566724760,
+    "lowPrice" : 7800,
+    "highPrice" : 8250,
+    "openPrice" : 7950,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7940
   } ],
   "stockCode" : "215100"
 }

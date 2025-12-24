@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유유제약2우B",
   "prices" : [ {
-    "volume" : 3578,
-    "marketCap" : 3122120400,
-    "lowPrice" : 9580,
-    "highPrice" : 9760,
-    "openPrice" : 9760,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9590
-  }, {
     "volume" : 6840,
     "marketCap" : 3122120400,
     "lowPrice" : 9570,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11470,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11630
+  }, {
+    "volume" : 1197,
+    "marketCap" : 3688594800,
+    "lowPrice" : 11330,
+    "highPrice" : 11750,
+    "openPrice" : 11750,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11330
   } ],
   "stockCode" : "000227"
 }

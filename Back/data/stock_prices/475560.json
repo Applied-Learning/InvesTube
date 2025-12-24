@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "더본코리아",
   "prices" : [ {
-    "volume" : 1142229,
-    "marketCap" : 494738226000,
-    "lowPrice" : 31800,
-    "highPrice" : 38350,
-    "openPrice" : 31800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 34200
-  }, {
     "volume" : 150248,
     "marketCap" : 483888703500,
     "lowPrice" : 33300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 24750,
     "tradeDate" : "2025-12-22",
     "closePrice" : 24950
+  }, {
+    "volume" : 35247,
+    "marketCap" : 364244176000,
+    "lowPrice" : 24450,
+    "highPrice" : 25150,
+    "openPrice" : 25050,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 24650
   } ],
   "stockCode" : "475560"
 }

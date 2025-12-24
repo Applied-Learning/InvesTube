@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "가비아",
   "prices" : [ {
-    "volume" : 45856,
-    "marketCap" : 218330582920,
-    "lowPrice" : 15940,
-    "highPrice" : 16380,
-    "openPrice" : 16130,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16130
-  }, {
     "volume" : 24897,
     "marketCap" : 216570944000,
     "lowPrice" : 15930,
@@ -1937,6 +1929,14 @@
     "openPrice" : 32800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 32650
+  }, {
+    "volume" : 24037,
+    "marketCap" : 441263298400,
+    "lowPrice" : 32350,
+    "highPrice" : 32900,
+    "openPrice" : 32800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 32600
   } ],
   "stockCode" : "079940"
 }

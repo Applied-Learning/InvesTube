@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "경남제약",
   "prices" : [ {
-    "volume" : 540682,
-    "marketCap" : 58688665858,
-    "lowPrice" : 727,
-    "highPrice" : 779,
-    "openPrice" : 733,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 751
-  }, {
     "volume" : 288195,
     "marketCap" : 58688665858,
     "lowPrice" : 730,
@@ -1937,6 +1929,14 @@
     "openPrice" : 701,
     "tradeDate" : "2025-12-22",
     "closePrice" : 695
+  }, {
+    "volume" : 390344,
+    "marketCap" : 53218350798,
+    "lowPrice" : 680,
+    "highPrice" : 699,
+    "openPrice" : 696,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 681
   } ],
   "stockCode" : "053950"
 }

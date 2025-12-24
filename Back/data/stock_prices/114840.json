@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이패밀리에스씨",
   "prices" : [ {
-    "volume" : 123457,
-    "marketCap" : 338631780160,
-    "lowPrice" : 18850,
-    "highPrice" : 19680,
-    "openPrice" : 19170,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 19640
-  }, {
     "volume" : 298169,
     "marketCap" : 348287268800,
     "lowPrice" : 19680,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13930,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14400
+  }, {
+    "volume" : 39908,
+    "marketCap" : 240919809000,
+    "lowPrice" : 13910,
+    "highPrice" : 14470,
+    "openPrice" : 14400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13910
   } ],
   "stockCode" : "114840"
 }

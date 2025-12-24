@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "모바일어플라이언스",
   "prices" : [ {
-    "volume" : 76490,
-    "marketCap" : 66896129355,
-    "lowPrice" : 1980,
-    "highPrice" : 2065,
-    "openPrice" : 1980,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2055
-  }, {
     "volume" : 66435,
     "marketCap" : 65268486305,
     "lowPrice" : 2005,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1648,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1662
+  }, {
+    "volume" : 62630,
+    "marketCap" : 53451797762,
+    "lowPrice" : 1630,
+    "highPrice" : 1680,
+    "openPrice" : 1662,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1642
   } ],
   "stockCode" : "087260"
 }

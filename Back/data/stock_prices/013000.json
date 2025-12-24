@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "세우글로벌",
   "prices" : [ {
-    "volume" : 321395,
-    "marketCap" : 47363301150,
-    "lowPrice" : 1588,
-    "highPrice" : 1673,
-    "openPrice" : 1588,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1650
-  }, {
     "volume" : 137484,
     "marketCap" : 46100279786,
     "lowPrice" : 1605,
@@ -1936,6 +1928,14 @@
     "highPrice" : 1176,
     "openPrice" : 1176,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 1171
+  }, {
+    "volume" : 18037,
+    "marketCap" : 33613591301,
+    "lowPrice" : 1160,
+    "highPrice" : 1185,
+    "openPrice" : 1185,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 1171
   } ],
   "stockCode" : "013000"

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제이오",
   "prices" : [ {
-    "volume" : 64036,
-    "marketCap" : 461374667930,
-    "lowPrice" : 14300,
-    "highPrice" : 14820,
-    "openPrice" : 14400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14410
-  }, {
     "volume" : 81660,
     "marketCap" : 457852723900,
     "lowPrice" : 14300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7230,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7190
+  }, {
+    "volume" : 59605,
+    "marketCap" : 227005301570,
+    "lowPrice" : 7080,
+    "highPrice" : 7270,
+    "openPrice" : 7220,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7090
   } ],
   "stockCode" : "418550"
 }

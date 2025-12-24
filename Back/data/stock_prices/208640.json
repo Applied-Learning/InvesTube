@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "썸에이지",
   "prices" : [ {
-    "volume" : 637479,
-    "marketCap" : 43860680010,
-    "lowPrice" : 309,
-    "highPrice" : 318,
-    "openPrice" : 315,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 315
-  }, {
     "volume" : 597804,
     "marketCap" : 42189796962,
     "lowPrice" : 302,
@@ -1937,6 +1929,14 @@
     "openPrice" : 283,
     "tradeDate" : "2025-12-22",
     "closePrice" : 285
+  }, {
+    "volume" : 626309,
+    "marketCap" : 38430310104,
+    "lowPrice" : 275,
+    "highPrice" : 286,
+    "openPrice" : 285,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 276
   } ],
   "stockCode" : "208640"
 }

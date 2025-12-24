@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "선익시스템",
   "prices" : [ {
-    "volume" : 52034,
-    "marketCap" : 409208855500,
-    "lowPrice" : 42500,
-    "highPrice" : 44300,
-    "openPrice" : 43150,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 43100
-  }, {
     "volume" : 68397,
     "marketCap" : 419652701000,
     "lowPrice" : 42100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 52800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 54400
+  }, {
+    "volume" : 24545,
+    "marketCap" : 506759712000,
+    "lowPrice" : 52800,
+    "highPrice" : 54500,
+    "openPrice" : 54500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 53000
   } ],
   "stockCode" : "171090"
 }

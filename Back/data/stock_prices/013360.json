@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "일성건설",
   "prices" : [ {
-    "volume" : 4802542,
-    "marketCap" : 187196209200,
-    "lowPrice" : 3100,
-    "highPrice" : 3650,
-    "openPrice" : 3240,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3465
-  }, {
     "volume" : 2827738,
     "marketCap" : 185575462800,
     "lowPrice" : 3310,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2205,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2300
+  }, {
+    "volume" : 1326229,
+    "marketCap" : 116153492000,
+    "lowPrice" : 2120,
+    "highPrice" : 2345,
+    "openPrice" : 2335,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2150
   } ],
   "stockCode" : "013360"
 }

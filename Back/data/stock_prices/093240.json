@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "형지엘리트",
   "prices" : [ {
-    "volume" : 2119142,
-    "marketCap" : 66759923426,
-    "lowPrice" : 1800,
-    "highPrice" : 1960,
-    "openPrice" : 1959,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1883
-  }, {
     "volume" : 1424701,
     "marketCap" : 65909026898,
     "lowPrice" : 1810,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1249,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1230
+  }, {
+    "volume" : 772304,
+    "marketCap" : 45684408210,
+    "lowPrice" : 1169,
+    "highPrice" : 1230,
+    "openPrice" : 1218,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1190
   } ],
   "stockCode" : "093240"
 }

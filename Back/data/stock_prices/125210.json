@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아모그린텍",
   "prices" : [ {
-    "volume" : 19784,
-    "marketCap" : 97990932600,
-    "lowPrice" : 5850,
-    "highPrice" : 6010,
-    "openPrice" : 5860,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5940
-  }, {
     "volume" : 45050,
     "marketCap" : 98155900500,
     "lowPrice" : 5880,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6160,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6280
+  }, {
+    "volume" : 51687,
+    "marketCap" : 101785194300,
+    "lowPrice" : 6110,
+    "highPrice" : 6390,
+    "openPrice" : 6260,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6170
   } ],
   "stockCode" : "125210"
 }

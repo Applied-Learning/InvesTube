@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동아화성",
   "prices" : [ {
-    "volume" : 14160,
-    "marketCap" : 87848000000,
-    "lowPrice" : 5460,
-    "highPrice" : 5580,
-    "openPrice" : 5520,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5560
-  }, {
     "volume" : 17422,
     "marketCap" : 86742000000,
     "lowPrice" : 5490,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6390,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6570
+  }, {
+    "volume" : 33246,
+    "marketCap" : 102384000000,
+    "lowPrice" : 6300,
+    "highPrice" : 6610,
+    "openPrice" : 6570,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6480
   } ],
   "stockCode" : "041930"
 }

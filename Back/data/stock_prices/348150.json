@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "고바이오랩",
   "prices" : [ {
-    "volume" : 49215,
-    "marketCap" : 102875143500,
-    "lowPrice" : 5070,
-    "highPrice" : 5530,
-    "openPrice" : 5070,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5310
-  }, {
     "volume" : 59362,
     "marketCap" : 101712712500,
     "lowPrice" : 5230,
@@ -1936,6 +1928,14 @@
     "highPrice" : 6280,
     "openPrice" : 6080,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 5900
+  }, {
+    "volume" : 144099,
+    "marketCap" : 114571445100,
+    "lowPrice" : 5670,
+    "highPrice" : 5980,
+    "openPrice" : 5940,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 5900
   } ],
   "stockCode" : "348150"

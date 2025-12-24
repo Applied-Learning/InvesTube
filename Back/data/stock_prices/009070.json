@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KCTC",
   "prices" : [ {
-    "volume" : 39177,
-    "marketCap" : 119400000000,
-    "lowPrice" : 3860,
-    "highPrice" : 3980,
-    "openPrice" : 3860,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3980
-  }, {
     "volume" : 50134,
     "marketCap" : 120300000000,
     "lowPrice" : 3955,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6350,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6420
+  }, {
+    "volume" : 7815661,
+    "marketCap" : 184500000000,
+    "lowPrice" : 6110,
+    "highPrice" : 7140,
+    "openPrice" : 6380,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6150
   } ],
   "stockCode" : "009070"
 }

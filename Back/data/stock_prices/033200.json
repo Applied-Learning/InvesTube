@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "모아텍",
   "prices" : [ {
-    "volume" : 4133,
-    "marketCap" : 42205339825,
-    "lowPrice" : 2880,
-    "highPrice" : 3135,
-    "openPrice" : 2990,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2945
-  }, {
     "volume" : 732,
     "marketCap" : 42635275375,
     "lowPrice" : 2905,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3465,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3360
+  }, {
+    "volume" : 7930,
+    "marketCap" : 47579534200,
+    "lowPrice" : 3300,
+    "highPrice" : 3400,
+    "openPrice" : 3350,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3320
   } ],
   "stockCode" : "033200"
 }

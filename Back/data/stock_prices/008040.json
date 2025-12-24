@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "사조동아원",
   "prices" : [ {
-    "volume" : 274503,
-    "marketCap" : 140580021600,
-    "lowPrice" : 976,
-    "highPrice" : 1003,
-    "openPrice" : 976,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 996
-  }, {
     "volume" : 125673,
     "marketCap" : 140297732400,
     "lowPrice" : 987,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1141,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1142
+  }, {
+    "volume" : 599999,
+    "marketCap" : 160622554800,
+    "lowPrice" : 1126,
+    "highPrice" : 1151,
+    "openPrice" : 1136,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1138
   } ],
   "stockCode" : "008040"
 }

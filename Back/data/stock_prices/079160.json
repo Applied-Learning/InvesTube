@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "CJ CGV",
   "prices" : [ {
-    "volume" : 171170,
-    "marketCap" : 892476598860,
-    "lowPrice" : 5320,
-    "highPrice" : 5420,
-    "openPrice" : 5330,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5390
-  }, {
     "volume" : 146774,
     "marketCap" : 892476598860,
     "lowPrice" : 5330,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6020,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6070
+  }, {
+    "volume" : 483812,
+    "marketCap" : 998456420880,
+    "lowPrice" : 5990,
+    "highPrice" : 6180,
+    "openPrice" : 6100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6030
   } ],
   "stockCode" : "079160"
 }

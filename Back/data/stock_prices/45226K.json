@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한화갤러리아우",
   "prices" : [ {
-    "volume" : 9602,
-    "marketCap" : 7028817400,
-    "lowPrice" : 2400,
-    "highPrice" : 2420,
-    "openPrice" : 2400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2420
-  }, {
     "volume" : 572,
     "marketCap" : 6970728000,
     "lowPrice" : 2375,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5970,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5970
+  }, {
+    "volume" : 138411,
+    "marketCap" : 22538687200,
+    "lowPrice" : 7760,
+    "highPrice" : 7760,
+    "openPrice" : 7760,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7760
   } ],
   "stockCode" : "45226K"
 }

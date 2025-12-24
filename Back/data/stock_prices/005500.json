@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼진제약",
   "prices" : [ {
-    "volume" : 17538,
-    "marketCap" : 257011000000,
-    "lowPrice" : 18180,
-    "highPrice" : 18580,
-    "openPrice" : 18180,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 18490
-  }, {
     "volume" : 23089,
     "marketCap" : 263822000000,
     "lowPrice" : 18440,
@@ -1937,6 +1929,14 @@
     "openPrice" : 20700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 20600
+  }, {
+    "volume" : 34226,
+    "marketCap" : 275724000000,
+    "lowPrice" : 20400,
+    "highPrice" : 20725,
+    "openPrice" : 20500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 20700
   } ],
   "stockCode" : "005500"
 }

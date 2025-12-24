@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "태원물산",
   "prices" : [ {
-    "volume" : 3089,
-    "marketCap" : 27436000000,
-    "lowPrice" : 3525,
-    "highPrice" : 3610,
-    "openPrice" : 3570,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3610
-  }, {
     "volume" : 7984,
     "marketCap" : 28272000000,
     "lowPrice" : 3560,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3640,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3615
+  }, {
+    "volume" : 14727,
+    "marketCap" : 27512000000,
+    "lowPrice" : 3570,
+    "highPrice" : 3670,
+    "openPrice" : 3615,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3620
   } ],
   "stockCode" : "001420"
 }

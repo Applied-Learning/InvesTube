@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대창솔루션",
   "prices" : [ {
-    "volume" : 264200,
-    "marketCap" : 51748478844,
-    "lowPrice" : 311,
-    "highPrice" : 322,
-    "openPrice" : 313,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 316
-  }, {
     "volume" : 191976,
     "marketCap" : 51748478844,
     "lowPrice" : 315,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2305,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2330
+  }, {
+    "volume" : 224398,
+    "marketCap" : 83107488310,
+    "lowPrice" : 2235,
+    "highPrice" : 2325,
+    "openPrice" : 2325,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2255
   } ],
   "stockCode" : "096350"
 }

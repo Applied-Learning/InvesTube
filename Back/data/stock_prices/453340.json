@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대그린푸드",
   "prices" : [ {
-    "volume" : 78664,
-    "marketCap" : 527864640120,
-    "lowPrice" : 15070,
-    "highPrice" : 15790,
-    "openPrice" : 15070,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15580
-  }, {
     "volume" : 82146,
     "marketCap" : 510246564840,
     "lowPrice" : 14850,
@@ -1937,6 +1929,14 @@
     "openPrice" : 16060,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16190
+  }, {
+    "volume" : 19738,
+    "marketCap" : 527735083680,
+    "lowPrice" : 15990,
+    "highPrice" : 16180,
+    "openPrice" : 16180,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16080
   } ],
   "stockCode" : "453340"
 }

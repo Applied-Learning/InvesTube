@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "킵스파마",
   "prices" : [ {
-    "volume" : 26243,
-    "marketCap" : 94493236320,
-    "lowPrice" : 4905,
-    "highPrice" : 5100,
-    "openPrice" : 4925,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5040
-  }, {
     "volume" : 43559,
     "marketCap" : 97493021600,
     "lowPrice" : 5010,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11430,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11100
+  }, {
+    "volume" : 54594,
+    "marketCap" : 219052583770,
+    "lowPrice" : 10850,
+    "highPrice" : 11200,
+    "openPrice" : 11200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10910
   } ],
   "stockCode" : "256940"
 }

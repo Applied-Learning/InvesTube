@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "싸이토젠",
   "prices" : [ {
-    "volume" : 26486,
-    "marketCap" : 121892712690,
-    "lowPrice" : 5260,
-    "highPrice" : 5880,
-    "openPrice" : 5880,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5270
-  }, {
     "volume" : 78886,
     "marketCap" : 115647735000,
     "lowPrice" : 4790,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6640,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8120
+  }, {
+    "volume" : 1654984,
+    "marketCap" : 154505373960,
+    "lowPrice" : 6680,
+    "highPrice" : 10550,
+    "openPrice" : 9240,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6680
   } ],
   "stockCode" : "217330"
 }

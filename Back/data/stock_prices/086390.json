@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유니테스트",
   "prices" : [ {
-    "volume" : 42136,
-    "marketCap" : 188093721400,
-    "lowPrice" : 8750,
-    "highPrice" : 9030,
-    "openPrice" : 8750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8900
-  }, {
     "volume" : 81436,
     "marketCap" : 193588594160,
     "lowPrice" : 8930,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14150
+  }, {
+    "volume" : 137623,
+    "marketCap" : 298413859120,
+    "lowPrice" : 14100,
+    "highPrice" : 14710,
+    "openPrice" : 14250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14120
   } ],
   "stockCode" : "086390"
 }

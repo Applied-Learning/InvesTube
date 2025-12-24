@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "성우",
   "prices" : [ {
-    "volume" : 47712,
-    "marketCap" : 268113839400,
-    "lowPrice" : 17220,
-    "highPrice" : 17940,
-    "openPrice" : 17690,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17820
-  }, {
     "volume" : 32721,
     "marketCap" : 265556075500,
     "lowPrice" : 17630,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10350,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10200
+  }, {
+    "volume" : 22245,
+    "marketCap" : 151961267000,
+    "lowPrice" : 9990,
+    "highPrice" : 10220,
+    "openPrice" : 10200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10100
   } ],
   "stockCode" : "458650"
 }

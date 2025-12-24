@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엠플러스",
   "prices" : [ {
-    "volume" : 24615,
-    "marketCap" : 96785327760,
-    "lowPrice" : 7640,
-    "highPrice" : 7890,
-    "openPrice" : 7750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7880
-  }, {
     "volume" : 39684,
     "marketCap" : 93591903240,
     "lowPrice" : 7620,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12730
+  }, {
+    "volume" : 107303,
+    "marketCap" : 148444979760,
+    "lowPrice" : 12170,
+    "highPrice" : 12820,
+    "openPrice" : 12820,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12210
   } ],
   "stockCode" : "259630"
 }

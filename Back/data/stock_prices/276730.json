@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한울앤제주",
   "prices" : [ {
-    "volume" : 39603,
-    "marketCap" : 32866462825,
-    "lowPrice" : 2735,
-    "highPrice" : 2830,
-    "openPrice" : 2760,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2765
-  }, {
     "volume" : 42925,
     "marketCap" : 42485634760,
     "lowPrice" : 2710,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1610,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1436
+  }, {
+    "volume" : 432851,
+    "marketCap" : 28794801100,
+    "lowPrice" : 1206,
+    "highPrice" : 1422,
+    "openPrice" : 1422,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1300
   } ],
   "stockCode" : "276730"
 }

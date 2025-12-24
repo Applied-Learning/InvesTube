@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "모토닉",
   "prices" : [ {
-    "volume" : 63521,
-    "marketCap" : 289410000000,
-    "lowPrice" : 8640,
-    "highPrice" : 8770,
-    "openPrice" : 8640,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8770
-  }, {
     "volume" : 15585,
     "marketCap" : 290070000000,
     "lowPrice" : 8710,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11450,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11620
+  }, {
+    "volume" : 37489,
+    "marketCap" : 324258000000,
+    "lowPrice" : 11460,
+    "highPrice" : 11640,
+    "openPrice" : 11620,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11560
   } ],
   "stockCode" : "009680"
 }

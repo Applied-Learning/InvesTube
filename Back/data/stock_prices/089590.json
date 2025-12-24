@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제주항공",
   "prices" : [ {
-    "volume" : 76592,
-    "marketCap" : 682222733100,
-    "lowPrice" : 8450,
-    "highPrice" : 8520,
-    "openPrice" : 8470,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8460
-  }, {
     "volume" : 115236,
     "marketCap" : 674965044450,
     "lowPrice" : 8310,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5340,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5370
+  }, {
+    "volume" : 68913,
+    "marketCap" : 432235679600,
+    "lowPrice" : 5360,
+    "highPrice" : 5450,
+    "openPrice" : 5440,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5360
   } ],
   "stockCode" : "089590"
 }

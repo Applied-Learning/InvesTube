@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "액트로",
   "prices" : [ {
-    "volume" : 20994,
-    "marketCap" : 52438707310,
-    "lowPrice" : 4965,
-    "highPrice" : 5320,
-    "openPrice" : 5040,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5210
-  }, {
     "volume" : 3875,
     "marketCap" : 52740657640,
     "lowPrice" : 5120,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13820,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16200
+  }, {
+    "volume" : 307708,
+    "marketCap" : 156611571160,
+    "lowPrice" : 15390,
+    "highPrice" : 16900,
+    "openPrice" : 16900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15560
   } ],
   "stockCode" : "290740"
 }

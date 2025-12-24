@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "다원넥스뷰",
   "prices" : [ {
-    "volume" : 32919,
-    "marketCap" : 39653321400,
-    "lowPrice" : 4730,
-    "highPrice" : 5030,
-    "openPrice" : 4995,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4950
-  }, {
     "volume" : 8030,
     "marketCap" : 40133967720,
     "lowPrice" : 4890,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5270,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5370
+  }, {
+    "volume" : 16240,
+    "marketCap" : 41015152640,
+    "lowPrice" : 5100,
+    "highPrice" : 5310,
+    "openPrice" : 5300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5120
   } ],
   "stockCode" : "323350"
 }

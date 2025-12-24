@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "세중",
   "prices" : [ {
-    "volume" : 26878,
-    "marketCap" : 28976545533,
-    "lowPrice" : 1584,
-    "highPrice" : 1669,
-    "openPrice" : 1669,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1599
-  }, {
     "volume" : 16833,
     "marketCap" : 29103397202,
     "lowPrice" : 1552,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1320,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1314
+  }, {
+    "volume" : 10472,
+    "marketCap" : 23739383770,
+    "lowPrice" : 1299,
+    "highPrice" : 1314,
+    "openPrice" : 1314,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1310
   } ],
   "stockCode" : "039310"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하나33호스팩",
   "prices" : [ {
-    "volume" : 1175,
-    "marketCap" : 7603500000,
-    "lowPrice" : 2040,
-    "highPrice" : 2080,
-    "openPrice" : 2070,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2055
-  }, {
     "volume" : 8544,
     "marketCap" : 7640500000,
     "lowPrice" : 2000,
@@ -1936,6 +1928,14 @@
     "highPrice" : 2100,
     "openPrice" : 2085,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 2095
+  }, {
+    "volume" : 19,
+    "marketCap" : 7751500000,
+    "lowPrice" : 2085,
+    "highPrice" : 2095,
+    "openPrice" : 2085,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 2095
   } ],
   "stockCode" : "475250"

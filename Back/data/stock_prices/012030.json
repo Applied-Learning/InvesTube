@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "DB",
   "prices" : [ {
-    "volume" : 1065544,
-    "marketCap" : 311819596150,
-    "lowPrice" : 1501,
-    "highPrice" : 1557,
-    "openPrice" : 1501,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1550
-  }, {
     "volume" : 580941,
     "marketCap" : 302967943098,
     "lowPrice" : 1506,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1503,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1520
+  }, {
+    "volume" : 302624,
+    "marketCap" : 301157377701,
+    "lowPrice" : 1492,
+    "highPrice" : 1523,
+    "openPrice" : 1519,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1497
   } ],
   "stockCode" : "012030"
 }

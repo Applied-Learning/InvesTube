@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HDC현대산업개발",
   "prices" : [ {
-    "volume" : 224907,
-    "marketCap" : 1254216489900,
-    "lowPrice" : 18290,
-    "highPrice" : 19150,
-    "openPrice" : 18450,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 19030
-  }, {
     "volume" : 335552,
     "marketCap" : 1214672091900,
     "lowPrice" : 18260,
@@ -1937,6 +1929,14 @@
     "openPrice" : 21450,
     "tradeDate" : "2025-12-22",
     "closePrice" : 21100
+  }, {
+    "volume" : 142424,
+    "marketCap" : 1393940029500,
+    "lowPrice" : 20950,
+    "highPrice" : 21400,
+    "openPrice" : 21250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 21150
   } ],
   "stockCode" : "294870"
 }

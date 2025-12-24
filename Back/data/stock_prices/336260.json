@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "두산퓨얼셀",
   "prices" : [ {
-    "volume" : 229157,
-    "marketCap" : 1099639659540,
-    "lowPrice" : 16790,
-    "highPrice" : 17450,
-    "openPrice" : 17300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16790
-  }, {
     "volume" : 165636,
     "marketCap" : 1070822420100,
     "lowPrice" : 16350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 30600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 30850
+  }, {
+    "volume" : 283231,
+    "marketCap" : 2004108015600,
+    "lowPrice" : 30550,
+    "highPrice" : 31200,
+    "openPrice" : 31000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 30600
   } ],
   "stockCode" : "336260"
 }

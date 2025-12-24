@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "누리플랜",
   "prices" : [ {
-    "volume" : 61758,
-    "marketCap" : 17361134475,
-    "lowPrice" : 1310,
-    "highPrice" : 1388,
-    "openPrice" : 1366,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1325
-  }, {
     "volume" : 1903388,
     "marketCap" : 20623717482,
     "lowPrice" : 1289,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2970,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2840
+  }, {
+    "volume" : 241601,
+    "marketCap" : 37932440985,
+    "lowPrice" : 2755,
+    "highPrice" : 2950,
+    "openPrice" : 2800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2895
   } ],
   "stockCode" : "069140"
 }

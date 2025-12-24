@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "셀바스AI",
   "prices" : [ {
-    "volume" : 554305,
-    "marketCap" : 322170036300,
-    "lowPrice" : 11800,
-    "highPrice" : 12210,
-    "openPrice" : 11930,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11970
-  }, {
     "volume" : 303099,
     "marketCap" : 315710486700,
     "lowPrice" : 11640,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12290,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12660
+  }, {
+    "volume" : 234110,
+    "marketCap" : 329706177500,
+    "lowPrice" : 12180,
+    "highPrice" : 12530,
+    "openPrice" : 12530,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12250
   } ],
   "stockCode" : "108860"
 }

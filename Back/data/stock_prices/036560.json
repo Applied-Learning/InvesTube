@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KZ정밀",
   "prices" : [ {
-    "volume" : 41031,
-    "marketCap" : 211050000000,
-    "lowPrice" : 12860,
-    "highPrice" : 13470,
-    "openPrice" : 12860,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13400
-  }, {
     "volume" : 26049,
     "marketCap" : 207900000000,
     "lowPrice" : 13140,
@@ -1937,6 +1929,14 @@
     "openPrice" : 15870,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16030
+  }, {
+    "volume" : 15581,
+    "marketCap" : 247747500000,
+    "lowPrice" : 15700,
+    "highPrice" : 16180,
+    "openPrice" : 16180,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15730
   } ],
   "stockCode" : "036560"
 }

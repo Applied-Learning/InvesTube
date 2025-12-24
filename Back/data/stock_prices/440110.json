@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "파두",
   "prices" : [ {
-    "volume" : 335602,
-    "marketCap" : 693821575760,
-    "lowPrice" : 13390,
-    "highPrice" : 14440,
-    "openPrice" : 13520,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14060
-  }, {
     "volume" : 203413,
     "marketCap" : 735766692360,
     "lowPrice" : 14160,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 21250
+  }, {
+    "volume" : 0,
+    "marketCap" : 1051732476250,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 21250
   } ],
   "stockCode" : "440110"

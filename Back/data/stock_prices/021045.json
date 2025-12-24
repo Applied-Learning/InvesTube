@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대호특수강우",
   "prices" : [ {
-    "volume" : 484,
-    "marketCap" : 2401232360,
-    "lowPrice" : 2805,
-    "highPrice" : 2845,
-    "openPrice" : 2845,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2830
-  }, {
     "volume" : 16,
     "marketCap" : 2409717280,
     "lowPrice" : 2780,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3335
+  }, {
+    "volume" : 80750,
+    "marketCap" : 2638810120,
+    "lowPrice" : 3015,
+    "highPrice" : 3365,
+    "openPrice" : 3365,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3110
   } ],
   "stockCode" : "021045"
 }

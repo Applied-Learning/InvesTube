@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대보마그네틱",
   "prices" : [ {
-    "volume" : 66305,
-    "marketCap" : 117864900000,
-    "lowPrice" : 13410,
-    "highPrice" : 15390,
-    "openPrice" : 13410,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15000
-  }, {
     "volume" : 42741,
     "marketCap" : 120457927800,
     "lowPrice" : 14910,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13440,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13730
+  }, {
+    "volume" : 7537,
+    "marketCap" : 105606950400,
+    "lowPrice" : 13430,
+    "highPrice" : 13930,
+    "openPrice" : 13930,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13440
   } ],
   "stockCode" : "290670"
 }

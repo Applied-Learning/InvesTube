@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디와이피엔에프",
   "prices" : [ {
-    "volume" : 22234,
-    "marketCap" : 133813176250,
-    "lowPrice" : 12420,
-    "highPrice" : 12700,
-    "openPrice" : 12420,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12490
-  }, {
     "volume" : 24448,
     "marketCap" : 134134585000,
     "lowPrice" : 12370,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14100
+  }, {
+    "volume" : 16146,
+    "marketCap" : 146096422890,
+    "lowPrice" : 13840,
+    "highPrice" : 14200,
+    "openPrice" : 14100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13890
   } ],
   "stockCode" : "104460"
 }

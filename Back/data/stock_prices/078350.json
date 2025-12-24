@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한양디지텍",
   "prices" : [ {
-    "volume" : 47985,
-    "marketCap" : 124699044760,
-    "lowPrice" : 7930,
-    "highPrice" : 8230,
-    "openPrice" : 7930,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8180
-  }, {
     "volume" : 72266,
     "marketCap" : 127747921160,
     "lowPrice" : 7910,
@@ -1937,6 +1929,14 @@
     "openPrice" : 19710,
     "tradeDate" : "2025-12-22",
     "closePrice" : 20900
+  }, {
+    "volume" : 111331,
+    "marketCap" : 313272050100,
+    "lowPrice" : 20450,
+    "highPrice" : 21400,
+    "openPrice" : 20800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 20550
   } ],
   "stockCode" : "078350"
 }

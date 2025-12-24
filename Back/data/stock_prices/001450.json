@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대해상",
   "prices" : [ {
-    "volume" : 376756,
-    "marketCap" : 2257350000000,
-    "lowPrice" : 24550,
-    "highPrice" : 25250,
-    "openPrice" : 24750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 25250
-  }, {
     "volume" : 317998,
     "marketCap" : 2288640000000,
     "lowPrice" : 25100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 30850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 30950
+  }, {
+    "volume" : 194688,
+    "marketCap" : 2735640000000,
+    "lowPrice" : 30600,
+    "highPrice" : 31250,
+    "openPrice" : 31000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 30600
   } ],
   "stockCode" : "001450"
 }

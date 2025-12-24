@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "우진",
   "prices" : [ {
-    "volume" : 140740,
-    "marketCap" : 134948796960,
-    "lowPrice" : 6360,
-    "highPrice" : 6670,
-    "openPrice" : 6360,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6640
-  }, {
     "volume" : 67780,
     "marketCap" : 133932616260,
     "lowPrice" : 6550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 19300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 18450
+  }, {
+    "volume" : 580683,
+    "marketCap" : 369415384300,
+    "lowPrice" : 18210,
+    "highPrice" : 18980,
+    "openPrice" : 18640,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 18290
   } ],
   "stockCode" : "105840"
 }

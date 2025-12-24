@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "풍산",
   "prices" : [ {
-    "volume" : 119180,
-    "marketCap" : 1426435750200,
-    "lowPrice" : 49600,
-    "highPrice" : 51200,
-    "openPrice" : 49600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 50900
-  }, {
     "volume" : 1696894,
     "marketCap" : 1460064883800,
     "lowPrice" : 51300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 102500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 106300
+  }, {
+    "volume" : 82698,
+    "marketCap" : 2948154045600,
+    "lowPrice" : 104300,
+    "highPrice" : 107200,
+    "openPrice" : 107000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 105200
   } ],
   "stockCode" : "103140"
 }

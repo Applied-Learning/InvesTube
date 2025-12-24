@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "씨앤씨인터내셔널",
   "prices" : [ {
-    "volume" : 135096,
-    "marketCap" : 471656621100,
-    "lowPrice" : 45050,
-    "highPrice" : 47550,
-    "openPrice" : 46000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 47100
-  }, {
     "volume" : 242884,
     "marketCap" : 472658015200,
     "lowPrice" : 46850,
@@ -1937,6 +1929,14 @@
     "openPrice" : 31100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 31800
+  }, {
+    "volume" : 30332,
+    "marketCap" : 443653277550,
+    "lowPrice" : 31800,
+    "highPrice" : 32800,
+    "openPrice" : 31850,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 32550
   } ],
   "stockCode" : "352480"
 }

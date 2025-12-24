@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HLB글로벌",
   "prices" : [ {
-    "volume" : 57464,
-    "marketCap" : 184361180220,
-    "lowPrice" : 3780,
-    "highPrice" : 3920,
-    "openPrice" : 3920,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3780
-  }, {
     "volume" : 71599,
     "marketCap" : 185336636200,
     "lowPrice" : 3780,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2120,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2160
+  }, {
+    "volume" : 58083,
+    "marketCap" : 108926535750,
+    "lowPrice" : 2145,
+    "highPrice" : 2180,
+    "openPrice" : 2160,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2150
   } ],
   "stockCode" : "003580"
 }

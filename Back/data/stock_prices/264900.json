@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "크라운제과",
   "prices" : [ {
-    "volume" : 11527,
-    "marketCap" : 101192708000,
-    "lowPrice" : 7960,
-    "highPrice" : 8120,
-    "openPrice" : 8050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8080
-  }, {
     "volume" : 7654,
     "marketCap" : 100691754000,
     "lowPrice" : 8040,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9050
+  }, {
+    "volume" : 19885,
+    "marketCap" : 113090365500,
+    "lowPrice" : 8970,
+    "highPrice" : 9040,
+    "openPrice" : 8990,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9030
   } ],
   "stockCode" : "264900"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유성기업",
   "prices" : [ {
-    "volume" : 16211,
-    "marketCap" : 49222407500,
-    "lowPrice" : 1888,
-    "highPrice" : 1911,
-    "openPrice" : 1911,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1897
-  }, {
     "volume" : 5491,
     "marketCap" : 49222407500,
     "lowPrice" : 1890,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2240,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2275
+  }, {
+    "volume" : 49905,
+    "marketCap" : 58900825000,
+    "lowPrice" : 2270,
+    "highPrice" : 2320,
+    "openPrice" : 2300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2270
   } ],
   "stockCode" : "002920"
 }

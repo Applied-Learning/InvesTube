@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오공",
   "prices" : [ {
-    "volume" : 11014,
-    "marketCap" : 44049132400,
-    "lowPrice" : 2550,
-    "highPrice" : 2620,
-    "openPrice" : 2620,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2600
-  }, {
     "volume" : 9539,
     "marketCap" : 43964422530,
     "lowPrice" : 2585,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2335,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2345
+  }, {
+    "volume" : 5299,
+    "marketCap" : 39559509290,
+    "lowPrice" : 2330,
+    "highPrice" : 2345,
+    "openPrice" : 2345,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2335
   } ],
   "stockCode" : "045060"
 }

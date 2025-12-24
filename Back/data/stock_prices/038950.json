@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "파인디지털",
   "prices" : [ {
-    "volume" : 14887,
-    "marketCap" : 37779830500,
-    "lowPrice" : 3600,
-    "highPrice" : 3725,
-    "openPrice" : 3725,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3700
-  }, {
     "volume" : 18361,
     "marketCap" : 36911915475,
     "lowPrice" : 3550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3220,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3260
+  }, {
+    "volume" : 1457,
+    "marketCap" : 33184986250,
+    "lowPrice" : 3225,
+    "highPrice" : 3260,
+    "openPrice" : 3260,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3250
   } ],
   "stockCode" : "038950"
 }

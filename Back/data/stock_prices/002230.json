@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "피에스텍",
   "prices" : [ {
-    "volume" : 11787,
-    "marketCap" : 77870105460,
-    "lowPrice" : 3935,
-    "highPrice" : 4020,
-    "openPrice" : 3970,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4020
-  }, {
     "volume" : 10870,
     "marketCap" : 77773252095,
     "lowPrice" : 3990,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6330,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6860
+  }, {
+    "volume" : 1534235,
+    "marketCap" : 135687692800,
+    "lowPrice" : 6880,
+    "highPrice" : 7850,
+    "openPrice" : 7020,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7040
   } ],
   "stockCode" : "002230"
 }

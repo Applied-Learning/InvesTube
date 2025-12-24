@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "세아제강지주",
   "prices" : [ {
-    "volume" : 3584,
-    "marketCap" : 749639917000,
-    "lowPrice" : 176600,
-    "highPrice" : 182800,
-    "openPrice" : 180900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 181000
-  }, {
     "volume" : 1640,
     "marketCap" : 743427431500,
     "lowPrice" : 179100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 134100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 131100
+  }, {
+    "volume" : 10394,
+    "marketCap" : 533031255900,
+    "lowPrice" : 127600,
+    "highPrice" : 131600,
+    "openPrice" : 131200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 128700
   } ],
   "stockCode" : "003030"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "경남스틸",
   "prices" : [ {
-    "volume" : 21963324,
-    "marketCap" : 142182513080,
-    "lowPrice" : 4725,
-    "highPrice" : 5670,
-    "openPrice" : 4725,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5270
-  }, {
     "volume" : 3897098,
     "marketCap" : 138675164560,
     "lowPrice" : 5100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2810,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2870
+  }, {
+    "volume" : 84343,
+    "marketCap" : 76352279320,
+    "lowPrice" : 2815,
+    "highPrice" : 2890,
+    "openPrice" : 2870,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2830
   } ],
   "stockCode" : "039240"
 }

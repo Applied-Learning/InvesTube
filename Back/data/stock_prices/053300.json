@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국정보인증",
   "prices" : [ {
-    "volume" : 69961,
-    "marketCap" : 180800197860,
-    "lowPrice" : 4185,
-    "highPrice" : 4280,
-    "openPrice" : 4240,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4260
-  }, {
     "volume" : 421507,
     "marketCap" : 182073438690,
     "lowPrice" : 4215,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6110,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6310
+  }, {
+    "volume" : 193929,
+    "marketCap" : 264834092640,
+    "lowPrice" : 6190,
+    "highPrice" : 6320,
+    "openPrice" : 6230,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6240
   } ],
   "stockCode" : "053300"
 }

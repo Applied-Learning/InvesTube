@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "우양에이치씨",
   "prices" : [ {
     "volume" : 1899726,
@@ -1449,6 +1449,14 @@
     "openPrice" : 12200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11890
+  }, {
+    "volume" : 25875,
+    "marketCap" : 175261606650,
+    "lowPrice" : 11590,
+    "highPrice" : 11990,
+    "openPrice" : 11990,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11850
   } ],
   "stockCode" : "101970"
 }

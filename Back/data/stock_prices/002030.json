@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아세아",
   "prices" : [ {
-    "volume" : 6147,
-    "marketCap" : 489203072000,
-    "lowPrice" : 227000,
-    "highPrice" : 236500,
-    "openPrice" : 228500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 233000
-  }, {
     "volume" : 1588,
     "marketCap" : 509149120000,
     "lowPrice" : 232000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 319500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 319000
+  }, {
+    "volume" : 1732,
+    "marketCap" : 660137751000,
+    "lowPrice" : 311500,
+    "highPrice" : 319000,
+    "openPrice" : 318500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 318500
   } ],
   "stockCode" : "002030"
 }

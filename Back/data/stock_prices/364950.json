@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이아이코리아",
   "prices" : [ {
     "volume" : 5427516,
@@ -1273,6 +1273,14 @@
     "openPrice" : 8420,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8750
+  }, {
+    "volume" : 98848,
+    "marketCap" : 69275315750,
+    "lowPrice" : 8350,
+    "highPrice" : 8840,
+    "openPrice" : 8720,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8350
   } ],
   "stockCode" : "364950"
 }

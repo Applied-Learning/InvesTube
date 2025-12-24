@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대한제분",
   "prices" : [ {
-    "volume" : 1367,
-    "marketCap" : 216996000000,
-    "lowPrice" : 126100,
-    "highPrice" : 128700,
-    "openPrice" : 126100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 128400
-  }, {
     "volume" : 857,
     "marketCap" : 216658000000,
     "lowPrice" : 127500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 153100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 153200
+  }, {
+    "volume" : 1915,
+    "marketCap" : 258063000000,
+    "lowPrice" : 151600,
+    "highPrice" : 153100,
+    "openPrice" : 152800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 152700
   } ],
   "stockCode" : "001130"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "플랜티넷",
   "prices" : [ {
-    "volume" : 222309,
-    "marketCap" : 39311786800,
-    "lowPrice" : 2325,
-    "highPrice" : 2420,
-    "openPrice" : 2360,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2365
-  }, {
     "volume" : 260364,
     "marketCap" : 40392237600,
     "lowPrice" : 2340,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2475,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2505
+  }, {
+    "volume" : 39140,
+    "marketCap" : 41389576800,
+    "lowPrice" : 2485,
+    "highPrice" : 2515,
+    "openPrice" : 2510,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2490
   } ],
   "stockCode" : "075130"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "트루엔",
   "prices" : [ {
-    "volume" : 55612,
-    "marketCap" : 110546482500,
-    "lowPrice" : 9820,
-    "highPrice" : 10150,
-    "openPrice" : 9920,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10050
-  }, {
     "volume" : 37836,
     "marketCap" : 110766475500,
     "lowPrice" : 9990,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8440,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8500
+  }, {
+    "volume" : 40307,
+    "marketCap" : 88248536130,
+    "lowPrice" : 8340,
+    "highPrice" : 8520,
+    "openPrice" : 8500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8430
   } ],
   "stockCode" : "417790"
 }

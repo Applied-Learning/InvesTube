@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "비아이매트릭스",
   "prices" : [ {
-    "volume" : 20743,
-    "marketCap" : 61907614600,
-    "lowPrice" : 8240,
-    "highPrice" : 8590,
-    "openPrice" : 8350,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8590
-  }, {
     "volume" : 10883,
     "marketCap" : 60466226600,
     "lowPrice" : 8370,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9960,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10020
+  }, {
+    "volume" : 49582,
+    "marketCap" : 69402832200,
+    "lowPrice" : 9520,
+    "highPrice" : 10200,
+    "openPrice" : 10200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9630
   } ],
   "stockCode" : "413640"
 }

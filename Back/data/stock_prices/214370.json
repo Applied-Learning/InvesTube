@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케어젠",
   "prices" : [ {
-    "volume" : 247062,
-    "marketCap" : 1487905500000,
-    "lowPrice" : 26600,
-    "highPrice" : 28000,
-    "openPrice" : 26950,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 27700
-  }, {
     "volume" : 285315,
     "marketCap" : 1528191750000,
     "lowPrice" : 27300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 68000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 66100
+  }, {
+    "volume" : 148075,
+    "marketCap" : 3609648000000,
+    "lowPrice" : 65100,
+    "highPrice" : 69600,
+    "openPrice" : 67700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 67200
   } ],
   "stockCode" : "214370"
 }

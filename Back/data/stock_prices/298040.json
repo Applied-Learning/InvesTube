@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "효성중공업",
   "prices" : [ {
-    "volume" : 57347,
-    "marketCap" : 3958270626000,
-    "lowPrice" : 417000,
-    "highPrice" : 432500,
-    "openPrice" : 417500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 424500
-  }, {
     "volume" : 368872,
     "marketCap" : 3664547364000,
     "lowPrice" : 366000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1889000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1850000
+  }, {
+    "volume" : 31654,
+    "marketCap" : 17045273744000,
+    "lowPrice" : 1818000,
+    "highPrice" : 1856000,
+    "openPrice" : 1855000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1828000
   } ],
   "stockCode" : "298040"
 }

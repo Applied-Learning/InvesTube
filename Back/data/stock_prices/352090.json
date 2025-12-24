@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "스톰테크",
   "prices" : [ {
-    "volume" : 43248,
-    "marketCap" : 85993593600,
-    "lowPrice" : 3165,
-    "highPrice" : 3235,
-    "openPrice" : 3200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3200
-  }, {
     "volume" : 34540,
     "marketCap" : 85321768650,
     "lowPrice" : 3125,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3820,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3820
+  }, {
+    "volume" : 76931,
+    "marketCap" : 101311202460,
+    "lowPrice" : 3735,
+    "highPrice" : 3840,
+    "openPrice" : 3820,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3770
   } ],
   "stockCode" : "352090"
 }

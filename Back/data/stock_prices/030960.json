@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "양지사",
   "prices" : [ {
-    "volume" : 135688,
-    "marketCap" : 146217000000,
-    "lowPrice" : 9030,
-    "highPrice" : 9310,
-    "openPrice" : 9210,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9150
-  }, {
     "volume" : 90081,
     "marketCap" : 145897400000,
     "lowPrice" : 9020,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8280,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8210
+  }, {
+    "volume" : 35422,
+    "marketCap" : 131355600000,
+    "lowPrice" : 8160,
+    "highPrice" : 8240,
+    "openPrice" : 8180,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8220
   } ],
   "stockCode" : "030960"
 }

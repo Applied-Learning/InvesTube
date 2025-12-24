@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "공구우먼",
   "prices" : [ {
-    "volume" : 36247,
-    "marketCap" : 86311168500,
-    "lowPrice" : 3720,
-    "highPrice" : 3830,
-    "openPrice" : 3720,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3810
-  }, {
     "volume" : 19774,
     "marketCap" : 85405014500,
     "lowPrice" : 3770,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6230
+  }, {
+    "volume" : 102933,
+    "marketCap" : 140227331500,
+    "lowPrice" : 6120,
+    "highPrice" : 6360,
+    "openPrice" : 6250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6190
   } ],
   "stockCode" : "366030"
 }

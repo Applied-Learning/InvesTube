@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "패션플랫폼",
   "prices" : [ {
-    "volume" : 36980,
-    "marketCap" : 25038510220,
-    "lowPrice" : 910,
-    "highPrice" : 941,
-    "openPrice" : 915,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 940
-  }, {
     "volume" : 69415,
     "marketCap" : 25198330498,
     "lowPrice" : 936,
@@ -1937,6 +1929,14 @@
     "openPrice" : 853,
     "tradeDate" : "2025-12-22",
     "closePrice" : 854
+  }, {
+    "volume" : 16539,
+    "marketCap" : 23333760588,
+    "lowPrice" : 854,
+    "highPrice" : 879,
+    "openPrice" : 862,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 876
   } ],
   "stockCode" : "225590"
 }

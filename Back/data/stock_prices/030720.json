@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동원수산",
   "prices" : [ {
-    "volume" : 14924,
-    "marketCap" : 22664030350,
-    "lowPrice" : 4655,
-    "highPrice" : 5110,
-    "openPrice" : 4765,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4870
-  }, {
     "volume" : 7014,
     "marketCap" : 22780375475,
     "lowPrice" : 4875,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6130,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6100
+  }, {
+    "volume" : 13944,
+    "marketCap" : 28527824650,
+    "lowPrice" : 6080,
+    "highPrice" : 6150,
+    "openPrice" : 6110,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6130
   } ],
   "stockCode" : "030720"
 }

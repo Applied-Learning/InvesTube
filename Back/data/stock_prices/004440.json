@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼일씨엔에스",
   "prices" : [ {
-    "volume" : 16344,
-    "marketCap" : 42397383510,
-    "lowPrice" : 3300,
-    "highPrice" : 3440,
-    "openPrice" : 3435,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3330
-  }, {
     "volume" : 2218,
     "marketCap" : 43097640595,
     "lowPrice" : 3330,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4875,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4755
+  }, {
+    "volume" : 16223,
+    "marketCap" : 58694275670,
+    "lowPrice" : 4610,
+    "highPrice" : 4780,
+    "openPrice" : 4755,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4610
   } ],
   "stockCode" : "004440"
 }

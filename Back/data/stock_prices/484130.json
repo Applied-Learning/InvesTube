@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하나34호스팩",
   "prices" : [ {
-    "volume" : 17170,
-    "marketCap" : 8976720000,
-    "lowPrice" : 1985,
-    "highPrice" : 2005,
-    "openPrice" : 1998,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1986
-  }, {
     "volume" : 5967,
     "marketCap" : 9026440000,
     "lowPrice" : 1987,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2045,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2035
+  }, {
+    "volume" : 358,
+    "marketCap" : 9220800000,
+    "lowPrice" : 2030,
+    "highPrice" : 2040,
+    "openPrice" : 2035,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2040
   } ],
   "stockCode" : "484130"
 }

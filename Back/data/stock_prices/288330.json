@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "파라택시스코리아",
   "prices" : [ {
-    "volume" : 3201974,
-    "marketCap" : 226600726350,
-    "lowPrice" : 4000,
-    "highPrice" : 4555,
-    "openPrice" : 4010,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4495
-  }, {
     "volume" : 1736699,
     "marketCap" : 204167506500,
     "lowPrice" : 4000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 861,
     "tradeDate" : "2025-12-22",
     "closePrice" : 820
+  }, {
+    "volume" : 561093,
+    "marketCap" : 71223567432,
+    "lowPrice" : 805,
+    "highPrice" : 839,
+    "openPrice" : 820,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 813
   } ],
   "stockCode" : "288330"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하이텍팜",
   "prices" : [ {
-    "volume" : 12431,
-    "marketCap" : 145568138370,
-    "lowPrice" : 13250,
-    "highPrice" : 13850,
-    "openPrice" : 13250,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13690
-  }, {
     "volume" : 33344,
     "marketCap" : 147163114320,
     "lowPrice" : 13570,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11880,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11730
+  }, {
+    "volume" : 34874,
+    "marketCap" : 127917071190,
+    "lowPrice" : 11680,
+    "highPrice" : 12080,
+    "openPrice" : 11790,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12030
   } ],
   "stockCode" : "106190"
 }

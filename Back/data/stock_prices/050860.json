@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아세아텍",
   "prices" : [ {
-    "volume" : 62898,
-    "marketCap" : 47250000000,
-    "lowPrice" : 2065,
-    "highPrice" : 2100,
-    "openPrice" : 2085,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2100
-  }, {
     "volume" : 55623,
     "marketCap" : 46125000000,
     "lowPrice" : 2050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1887
+  }, {
+    "volume" : 19681,
+    "marketCap" : 42390000000,
+    "lowPrice" : 1882,
+    "highPrice" : 1902,
+    "openPrice" : 1893,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1884
   } ],
   "stockCode" : "050860"
 }

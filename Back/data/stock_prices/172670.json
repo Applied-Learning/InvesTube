@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이엘티",
   "prices" : [ {
-    "volume" : 814069,
-    "marketCap" : 73563726390,
-    "lowPrice" : 7800,
-    "highPrice" : 8350,
-    "openPrice" : 7850,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8210
-  }, {
     "volume" : 323146,
     "marketCap" : 71413264230,
     "lowPrice" : 7880,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11100
+  }, {
+    "volume" : 32841,
+    "marketCap" : 97308412740,
+    "lowPrice" : 10800,
+    "highPrice" : 11330,
+    "openPrice" : 11100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10860
   } ],
   "stockCode" : "172670"
 }

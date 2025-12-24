@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "지엘팜텍",
   "prices" : [ {
-    "volume" : 78627,
-    "marketCap" : 74405519408,
-    "lowPrice" : 961,
-    "highPrice" : 974,
-    "openPrice" : 965,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 968
-  }, {
     "volume" : 113398,
     "marketCap" : 75635362704,
     "lowPrice" : 965,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1210,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1180
+  }, {
+    "volume" : 229085,
+    "marketCap" : 90189493978,
+    "lowPrice" : 1160,
+    "highPrice" : 1199,
+    "openPrice" : 1190,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1163
   } ],
   "stockCode" : "204840"
 }

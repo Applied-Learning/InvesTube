@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "우리로",
   "prices" : [ {
-    "volume" : 1161605,
-    "marketCap" : 59426698644,
-    "lowPrice" : 1355,
-    "highPrice" : 1420,
-    "openPrice" : 1400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1356
-  }, {
     "volume" : 1224766,
     "marketCap" : 58024298676,
     "lowPrice" : 1314,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1271,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1294
+  }, {
+    "volume" : 554850,
+    "marketCap" : 55745398728,
+    "lowPrice" : 1257,
+    "highPrice" : 1319,
+    "openPrice" : 1308,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1272
   } ],
   "stockCode" : "046970"
 }

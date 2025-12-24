@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "성신양회",
   "prices" : [ {
-    "volume" : 16455,
-    "marketCap" : 187793119180,
-    "lowPrice" : 7600,
-    "highPrice" : 7710,
-    "openPrice" : 7620,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7660
-  }, {
     "volume" : 31703,
     "marketCap" : 188773762100,
     "lowPrice" : 7650,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10150
+  }, {
+    "volume" : 29429,
+    "marketCap" : 247122015840,
+    "lowPrice" : 10030,
+    "highPrice" : 10150,
+    "openPrice" : 10150,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10080
   } ],
   "stockCode" : "004980"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스에너지",
   "prices" : [ {
-    "volume" : 85290,
-    "marketCap" : 29354277015,
-    "lowPrice" : 1475,
-    "highPrice" : 1519,
-    "openPrice" : 1519,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1505
-  }, {
     "volume" : 24181,
     "marketCap" : 29217745494,
     "lowPrice" : 1480,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1133,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1123
+  }, {
+    "volume" : 75710,
+    "marketCap" : 25513742594,
+    "lowPrice" : 1112,
+    "highPrice" : 1130,
+    "openPrice" : 1123,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1114
   } ],
   "stockCode" : "095910"
 }

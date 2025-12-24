@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼진",
   "prices" : [ {
-    "volume" : 14355,
-    "marketCap" : 37253378250,
-    "lowPrice" : 4035,
-    "highPrice" : 4145,
-    "openPrice" : 4080,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4125
-  }, {
     "volume" : 6632,
     "marketCap" : 37388845080,
     "lowPrice" : 4115,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3790,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3870
+  }, {
+    "volume" : 9491,
+    "marketCap" : 34905286530,
+    "lowPrice" : 3825,
+    "highPrice" : 3905,
+    "openPrice" : 3905,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3865
   } ],
   "stockCode" : "032750"
 }

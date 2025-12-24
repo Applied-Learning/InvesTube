@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "광동제약",
   "prices" : [ {
-    "volume" : 31560,
-    "marketCap" : 297750433680,
-    "lowPrice" : 5630,
-    "highPrice" : 5710,
-    "openPrice" : 5700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5680
-  }, {
     "volume" : 19433,
     "marketCap" : 296177808150,
     "lowPrice" : 5620,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6030,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6080
+  }, {
+    "volume" : 113981,
+    "marketCap" : 313476688980,
+    "lowPrice" : 5970,
+    "highPrice" : 6080,
+    "openPrice" : 6020,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5980
   } ],
   "stockCode" : "009290"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "나노실리칸첨단소재",
   "prices" : [ {
-    "volume" : 125037,
-    "marketCap" : 44640634925,
-    "lowPrice" : 2035,
-    "highPrice" : 2155,
-    "openPrice" : 2050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2075
-  }, {
     "volume" : 122358,
     "marketCap" : 43349821385,
     "lowPrice" : 1999,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1757,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1691
+  }, {
+    "volume" : 77786,
+    "marketCap" : 52303123481,
+    "lowPrice" : 1605,
+    "highPrice" : 1739,
+    "openPrice" : 1730,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1633
   } ],
   "stockCode" : "286750"
 }

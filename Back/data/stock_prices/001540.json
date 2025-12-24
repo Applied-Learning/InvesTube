@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "안국약품",
   "prices" : [ {
-    "volume" : 11447,
-    "marketCap" : 87384214000,
-    "lowPrice" : 6530,
-    "highPrice" : 6780,
-    "openPrice" : 6530,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6700
-  }, {
     "volume" : 9451,
     "marketCap" : 87905910800,
     "lowPrice" : 6680,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9030
+  }, {
+    "volume" : 31579,
+    "marketCap" : 116599234800,
+    "lowPrice" : 8930,
+    "highPrice" : 9050,
+    "openPrice" : 8950,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8940
   } ],
   "stockCode" : "001540"
 }

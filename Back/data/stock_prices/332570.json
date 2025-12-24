@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "PS일렉트로닉스",
   "prices" : [ {
-    "volume" : 99856,
-    "marketCap" : 109174502250,
-    "lowPrice" : 2410,
-    "highPrice" : 2585,
-    "openPrice" : 2410,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2585
-  }, {
     "volume" : 42790,
     "marketCap" : 107696317500,
     "lowPrice" : 2510,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5390
+  }, {
+    "volume" : 1950851,
+    "marketCap" : 216759143700,
+    "lowPrice" : 4860,
+    "highPrice" : 5440,
+    "openPrice" : 5440,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4950
   } ],
   "stockCode" : "332570"
 }

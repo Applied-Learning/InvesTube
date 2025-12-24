@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이글루",
   "prices" : [ {
-    "volume" : 69157,
-    "marketCap" : 58829236650,
-    "lowPrice" : 5220,
-    "highPrice" : 5370,
-    "openPrice" : 5220,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5350
-  }, {
     "volume" : 8775,
     "marketCap" : 58499353080,
     "lowPrice" : 5290,
@@ -1936,6 +1928,14 @@
     "highPrice" : 5470,
     "openPrice" : 5450,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 5460
+  }, {
+    "volume" : 10091,
+    "marketCap" : 60038809740,
+    "lowPrice" : 5400,
+    "highPrice" : 5480,
+    "openPrice" : 5460,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 5460
   } ],
   "stockCode" : "067920"

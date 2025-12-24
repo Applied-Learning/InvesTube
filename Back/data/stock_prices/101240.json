@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "씨큐브",
   "prices" : [ {
-    "volume" : 33996,
-    "marketCap" : 41208673795,
-    "lowPrice" : 3925,
-    "highPrice" : 4025,
-    "openPrice" : 3955,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3985
-  }, {
     "volume" : 26644,
     "marketCap" : 40950150120,
     "lowPrice" : 3940,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4340,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4255
+  }, {
+    "volume" : 4853,
+    "marketCap" : 46269521400,
+    "lowPrice" : 4250,
+    "highPrice" : 4320,
+    "openPrice" : 4280,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4260
   } ],
   "stockCode" : "101240"
 }

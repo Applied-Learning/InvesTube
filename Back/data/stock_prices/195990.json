@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이비프로바이오",
   "prices" : [ {
-    "volume" : 939752,
-    "marketCap" : 124978787519,
-    "lowPrice" : 436,
-    "highPrice" : 454,
-    "openPrice" : 448,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 439
-  }, {
     "volume" : 697214,
     "marketCap" : 122416580030,
     "lowPrice" : 424,
@@ -1937,6 +1929,14 @@
     "openPrice" : 266,
     "tradeDate" : "2025-12-22",
     "closePrice" : 268
+  }, {
+    "volume" : 2818388,
+    "marketCap" : 72880568576,
+    "lowPrice" : 253,
+    "highPrice" : 273,
+    "openPrice" : 273,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 256
   } ],
   "stockCode" : "195990"
 }

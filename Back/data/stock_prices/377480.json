@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "마음AI",
   "prices" : [ {
-    "volume" : 475616,
-    "marketCap" : 100264683220,
-    "lowPrice" : 14340,
-    "highPrice" : 16270,
-    "openPrice" : 14600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16070
-  }, {
     "volume" : 283641,
     "marketCap" : 98455301880,
     "lowPrice" : 15500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17770,
     "tradeDate" : "2025-12-22",
     "closePrice" : 18570
+  }, {
+    "volume" : 48738,
+    "marketCap" : 128056052750,
+    "lowPrice" : 18010,
+    "highPrice" : 18800,
+    "openPrice" : 18770,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 18010
   } ],
   "stockCode" : "377480"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한화비전",
   "prices" : [ {
-    "volume" : 888310,
-    "marketCap" : 1491931924500,
-    "lowPrice" : 29050,
-    "highPrice" : 30100,
-    "openPrice" : 29100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 29550
-  }, {
     "volume" : 984329,
     "marketCap" : 1534847056000,
     "lowPrice" : 29100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 38250,
     "tradeDate" : "2025-12-22",
     "closePrice" : 39200
+  }, {
+    "volume" : 549965,
+    "marketCap" : 1991766985500,
+    "lowPrice" : 38250,
+    "highPrice" : 39800,
+    "openPrice" : 39500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 39450
   } ],
   "stockCode" : "489790"
 }

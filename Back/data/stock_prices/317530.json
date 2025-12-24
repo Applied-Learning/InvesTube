@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "캐리소프트",
   "prices" : [ {
-    "volume" : 56053,
-    "marketCap" : 48892140980,
-    "lowPrice" : 4740,
-    "highPrice" : 4950,
-    "openPrice" : 4740,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4870
-  }, {
     "volume" : 70392,
     "marketCap" : 47135236530,
     "lowPrice" : 4685,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4845,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4835
+  }, {
+    "volume" : 32814,
+    "marketCap" : 49394113680,
+    "lowPrice" : 4815,
+    "highPrice" : 4930,
+    "openPrice" : 4880,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4920
   } ],
   "stockCode" : "317530"
 }

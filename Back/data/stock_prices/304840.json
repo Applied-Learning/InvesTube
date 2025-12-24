@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "피플바이오",
   "prices" : [ {
-    "volume" : 71068,
-    "marketCap" : 67380837480,
-    "lowPrice" : 3080,
-    "highPrice" : 3225,
-    "openPrice" : 3125,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3195
-  }, {
     "volume" : 58106,
     "marketCap" : 66115469640,
     "lowPrice" : 3130,
@@ -1936,6 +1928,14 @@
     "highPrice" : 1091,
     "openPrice" : 1000,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 960
+  }, {
+    "volume" : 886008,
+    "marketCap" : 20379178560,
+    "lowPrice" : 942,
+    "highPrice" : 1050,
+    "openPrice" : 960,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 960
   } ],
   "stockCode" : "304840"

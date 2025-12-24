@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "멀티캠퍼스",
   "prices" : [ {
-    "volume" : 5027,
-    "marketCap" : 179285064750,
-    "lowPrice" : 29500,
-    "highPrice" : 30250,
-    "openPrice" : 29500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 30250
-  }, {
     "volume" : 2366,
     "marketCap" : 179285064750,
     "lowPrice" : 29600,
@@ -1936,6 +1928,14 @@
     "highPrice" : 33350,
     "openPrice" : 33200,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 33200
+  }, {
+    "volume" : 3612,
+    "marketCap" : 196769062800,
+    "lowPrice" : 32800,
+    "highPrice" : 33300,
+    "openPrice" : 33250,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 33200
   } ],
   "stockCode" : "067280"

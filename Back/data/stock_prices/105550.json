@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엣지파운드리",
   "prices" : [ {
-    "volume" : 226208,
-    "marketCap" : 144650616825,
-    "lowPrice" : 2515,
-    "highPrice" : 2690,
-    "openPrice" : 2635,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2525
-  }, {
     "volume" : 167403,
     "marketCap" : 143218432500,
     "lowPrice" : 2450,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1660,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1721
+  }, {
+    "volume" : 629651,
+    "marketCap" : 125369588651,
+    "lowPrice" : 1599,
+    "highPrice" : 1721,
+    "openPrice" : 1680,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1601
   } ],
   "stockCode" : "105550"
 }

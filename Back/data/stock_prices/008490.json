@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "서흥",
   "prices" : [ {
-    "volume" : 26466,
-    "marketCap" : 153290747250,
-    "lowPrice" : 12850,
-    "highPrice" : 13300,
-    "openPrice" : 12990,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13250
-  }, {
     "volume" : 29690,
     "marketCap" : 152712291600,
     "lowPrice" : 13110,
@@ -1937,6 +1929,14 @@
     "openPrice" : 22000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 21900
+  }, {
+    "volume" : 24723,
+    "marketCap" : 254520486000,
+    "lowPrice" : 21800,
+    "highPrice" : 22300,
+    "openPrice" : 21800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 22000
   } ],
   "stockCode" : "008490"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이이엠텍",
   "prices" : [ {
-    "volume" : 2140243,
-    "marketCap" : 39338662500,
-    "lowPrice" : 2500,
-    "highPrice" : 2650,
-    "openPrice" : 2590,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2500
-  }, {
     "volume" : 446962,
     "marketCap" : 39417339825,
     "lowPrice" : 2370,
@@ -1937,6 +1929,14 @@
     "openPrice" : 970,
     "tradeDate" : "2025-12-22",
     "closePrice" : 941
+  }, {
+    "volume" : 644152,
+    "marketCap" : 24350949875,
+    "lowPrice" : 870,
+    "highPrice" : 958,
+    "openPrice" : 941,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 875
   } ],
   "stockCode" : "106080"
 }

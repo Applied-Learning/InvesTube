@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "TS인베스트먼트",
   "prices" : [ {
-    "volume" : 152519,
-    "marketCap" : 40606826898,
-    "lowPrice" : 968,
-    "highPrice" : 997,
-    "openPrice" : 968,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 979
-  }, {
     "volume" : 55860,
     "marketCap" : 40026136830,
     "lowPrice" : 960,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1556,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1487
+  }, {
+    "volume" : 426440,
+    "marketCap" : 57986051076,
+    "lowPrice" : 1389,
+    "highPrice" : 1487,
+    "openPrice" : 1487,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1398
   } ],
   "stockCode" : "246690"
 }

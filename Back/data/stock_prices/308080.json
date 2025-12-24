@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "바이젠셀",
   "prices" : [ {
-    "volume" : 170577,
-    "marketCap" : 47774075200,
-    "lowPrice" : 2480,
-    "highPrice" : 2630,
-    "openPrice" : 2610,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2480
-  }, {
     "volume" : 155567,
     "marketCap" : 47485119100,
     "lowPrice" : 2390,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10890,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11210
+  }, {
+    "volume" : 1073553,
+    "marketCap" : 225901845200,
+    "lowPrice" : 10570,
+    "highPrice" : 11540,
+    "openPrice" : 11050,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11020
   } ],
   "stockCode" : "308080"
 }

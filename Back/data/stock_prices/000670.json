@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "영풍",
   "prices" : [ {
-    "volume" : 18751,
-    "marketCap" : 763525580000,
-    "lowPrice" : 395000,
-    "highPrice" : 416000,
-    "openPrice" : 403000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 414500
-  }, {
     "volume" : 6318,
     "marketCap" : 769972720000,
     "lowPrice" : 406000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 57000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 55900
+  }, {
+    "volume" : 63104,
+    "marketCap" : 1066251510000,
+    "lowPrice" : 55600,
+    "highPrice" : 57200,
+    "openPrice" : 56500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 55800
   } ],
   "stockCode" : "000670"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유비벨록스",
   "prices" : [ {
-    "volume" : 7568,
-    "marketCap" : 94715179570,
-    "lowPrice" : 6350,
-    "highPrice" : 6440,
-    "openPrice" : 6350,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6430
-  }, {
     "volume" : 8648,
     "marketCap" : 94862481560,
     "lowPrice" : 6370,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5460,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5510
+  }, {
+    "volume" : 30197,
+    "marketCap" : 80574188530,
+    "lowPrice" : 5420,
+    "highPrice" : 5530,
+    "openPrice" : 5470,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5470
   } ],
   "stockCode" : "089850"
 }

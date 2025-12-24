@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "상신전자",
   "prices" : [ {
-    "volume" : 27500,
-    "marketCap" : 40526222710,
-    "lowPrice" : 2770,
-    "highPrice" : 2860,
-    "openPrice" : 2795,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2845
-  }, {
     "volume" : 11723,
     "marketCap" : 40811117070,
     "lowPrice" : 2795,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3115
+  }, {
+    "volume" : 147406,
+    "marketCap" : 47615226750,
+    "lowPrice" : 2975,
+    "highPrice" : 3125,
+    "openPrice" : 3120,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2990
   } ],
   "stockCode" : "263810"
 }

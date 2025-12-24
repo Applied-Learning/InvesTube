@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "화승알앤에이",
   "prices" : [ {
-    "volume" : 17516,
-    "marketCap" : 58975199415,
-    "lowPrice" : 3020,
-    "highPrice" : 3125,
-    "openPrice" : 3020,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3105
-  }, {
     "volume" : 7985,
     "marketCap" : 59070167530,
     "lowPrice" : 3060,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3320,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3335
+  }, {
+    "volume" : 47357,
+    "marketCap" : 62109147210,
+    "lowPrice" : 3250,
+    "highPrice" : 3365,
+    "openPrice" : 3305,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3270
   } ],
   "stockCode" : "378850"
 }

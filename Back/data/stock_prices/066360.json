@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "체리부로",
   "prices" : [ {
-    "volume" : 27197,
-    "marketCap" : 38361612000,
-    "lowPrice" : 784,
-    "highPrice" : 810,
-    "openPrice" : 806,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 800
-  }, {
     "volume" : 35562,
     "marketCap" : 38217755955,
     "lowPrice" : 757,
@@ -1937,6 +1929,14 @@
     "openPrice" : 744,
     "tradeDate" : "2025-12-22",
     "closePrice" : 746
+  }, {
+    "volume" : 111761,
+    "marketCap" : 35676299160,
+    "lowPrice" : 702,
+    "highPrice" : 746,
+    "openPrice" : 745,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 744
   } ],
   "stockCode" : "066360"
 }

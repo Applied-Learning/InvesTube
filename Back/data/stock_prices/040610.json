@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SG&G",
   "prices" : [ {
-    "volume" : 29038,
-    "marketCap" : 54164554444,
-    "lowPrice" : 1580,
-    "highPrice" : 1614,
-    "openPrice" : 1589,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1589
-  }, {
     "volume" : 16924,
     "marketCap" : 54846298364,
     "lowPrice" : 1582,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1855,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1843
+  }, {
+    "volume" : 47041,
+    "marketCap" : 62004609524,
+    "lowPrice" : 1815,
+    "highPrice" : 1868,
+    "openPrice" : 1868,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1819
   } ],
   "stockCode" : "040610"
 }

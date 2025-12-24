@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동방",
   "prices" : [ {
-    "volume" : 307613,
-    "marketCap" : 104578449880,
-    "lowPrice" : 2145,
-    "highPrice" : 2195,
-    "openPrice" : 2155,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2180
-  }, {
     "volume" : 216812,
     "marketCap" : 103858873390,
     "lowPrice" : 2160,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2705,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2750
+  }, {
+    "volume" : 1496972,
+    "marketCap" : 127125179900,
+    "lowPrice" : 2645,
+    "highPrice" : 2795,
+    "openPrice" : 2750,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2650
   } ],
   "stockCode" : "004140"
 }

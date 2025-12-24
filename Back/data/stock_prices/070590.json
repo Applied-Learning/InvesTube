@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한솔인티큐브",
   "prices" : [ {
-    "volume" : 23131,
-    "marketCap" : 13671328185,
-    "lowPrice" : 947,
-    "highPrice" : 985,
-    "openPrice" : 976,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 985
-  }, {
     "volume" : 14845,
     "marketCap" : 14046075252,
     "lowPrice" : 985,
@@ -1936,6 +1928,14 @@
     "highPrice" : 2510,
     "openPrice" : 2505,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 2140
+  }, {
+    "volume" : 35670,
+    "marketCap" : 29702174940,
+    "lowPrice" : 2070,
+    "highPrice" : 2150,
+    "openPrice" : 2140,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 2140
   } ],
   "stockCode" : "070590"

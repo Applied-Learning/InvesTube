@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "바른손",
   "prices" : [ {
-    "volume" : 105392,
-    "marketCap" : 40738918120,
-    "lowPrice" : 1152,
-    "highPrice" : 1195,
-    "openPrice" : 1195,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1160
-  }, {
     "volume" : 53441,
     "marketCap" : 41090115690,
     "lowPrice" : 1120,
@@ -1937,6 +1929,14 @@
     "openPrice" : 949,
     "tradeDate" : "2025-12-22",
     "closePrice" : 935
+  }, {
+    "volume" : 80513,
+    "marketCap" : 32942332066,
+    "lowPrice" : 910,
+    "highPrice" : 950,
+    "openPrice" : 950,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 938
   } ],
   "stockCode" : "018700"
 }

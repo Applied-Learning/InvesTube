@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "골프존",
   "prices" : [ {
-    "volume" : 18518,
-    "marketCap" : 445554465000,
-    "lowPrice" : 69700,
-    "highPrice" : 71200,
-    "openPrice" : 70500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 71000
-  }, {
     "volume" : 13400,
     "marketCap" : 448064631000,
     "lowPrice" : 70600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 60200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 61000
+  }, {
+    "volume" : 16897,
+    "marketCap" : 381545232000,
+    "lowPrice" : 60300,
+    "highPrice" : 61200,
+    "openPrice" : 61100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 60800
   } ],
   "stockCode" : "215000"
 }

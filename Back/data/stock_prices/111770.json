@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "영원무역",
   "prices" : [ {
-    "volume" : 29870,
-    "marketCap" : 1896530830400,
-    "lowPrice" : 42100,
-    "highPrice" : 42800,
-    "openPrice" : 42500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 42800
-  }, {
     "volume" : 25770,
     "marketCap" : 1885452963400,
     "lowPrice" : 42100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 90500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 88500
+  }, {
+    "volume" : 44236,
+    "marketCap" : 3832941982000,
+    "lowPrice" : 85500,
+    "highPrice" : 88900,
+    "openPrice" : 88700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 86500
   } ],
   "stockCode" : "111770"
 }

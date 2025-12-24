@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "샘표",
   "prices" : [ {
-    "volume" : 1414,
-    "marketCap" : 111437250000,
-    "lowPrice" : 38300,
-    "highPrice" : 38800,
-    "openPrice" : 38650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 38750
-  }, {
     "volume" : 599,
     "marketCap" : 111293460000,
     "lowPrice" : 38350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 49950,
     "tradeDate" : "2025-12-22",
     "closePrice" : 49750
+  }, {
+    "volume" : 3517,
+    "marketCap" : 142639680000,
+    "lowPrice" : 49350,
+    "highPrice" : 50000,
+    "openPrice" : 49800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 49600
   } ],
   "stockCode" : "007540"
 }

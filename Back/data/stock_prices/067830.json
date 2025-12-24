@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "세이브존I&C",
   "prices" : [ {
-    "volume" : 13105,
-    "marketCap" : 83313016850,
-    "lowPrice" : 1998,
-    "highPrice" : 2035,
-    "openPrice" : 2005,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2030
-  }, {
     "volume" : 11528,
     "marketCap" : 83313016850,
     "lowPrice" : 2020,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3685,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3560
+  }, {
+    "volume" : 2117431,
+    "marketCap" : 145695177250,
+    "lowPrice" : 3455,
+    "highPrice" : 3670,
+    "openPrice" : 3500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3550
   } ],
   "stockCode" : "067830"
 }

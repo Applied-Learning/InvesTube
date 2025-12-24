@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한화3우B",
   "prices" : [ {
-    "volume" : 34047,
-    "marketCap" : 300186702270,
-    "lowPrice" : 15200,
-    "highPrice" : 15500,
-    "openPrice" : 15200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15470
-  }, {
     "volume" : 31216,
     "marketCap" : 300380746680,
     "lowPrice" : 15430,
@@ -1937,6 +1929,14 @@
     "openPrice" : 35750,
     "tradeDate" : "2025-12-22",
     "closePrice" : 36100
+  }, {
+    "volume" : 43014,
+    "marketCap" : 726696315450,
+    "lowPrice" : 36500,
+    "highPrice" : 37700,
+    "openPrice" : 36500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 37450
   } ],
   "stockCode" : "00088K"
 }

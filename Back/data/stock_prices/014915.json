@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "성문전자우",
   "prices" : [ {
-    "volume" : 438,
-    "marketCap" : 2853000000,
-    "lowPrice" : 4320,
-    "highPrice" : 4755,
-    "openPrice" : 4500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4755
-  }, {
     "volume" : 1918,
     "marketCap" : 2802000000,
     "lowPrice" : 4665,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4580,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4525
+  }, {
+    "volume" : 8758,
+    "marketCap" : 2679000000,
+    "lowPrice" : 4400,
+    "highPrice" : 4525,
+    "openPrice" : 4400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4465
   } ],
   "stockCode" : "014915"
 }

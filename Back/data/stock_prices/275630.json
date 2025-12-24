@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스에스알",
   "prices" : [ {
-    "volume" : 11941,
-    "marketCap" : 19648734085,
-    "lowPrice" : 3230,
-    "highPrice" : 3320,
-    "openPrice" : 3320,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3265
-  }, {
     "volume" : 5288,
     "marketCap" : 19889453645,
     "lowPrice" : 3240,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2895,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2900
+  }, {
+    "volume" : 12308,
+    "marketCap" : 17271628430,
+    "lowPrice" : 2835,
+    "highPrice" : 2930,
+    "openPrice" : 2930,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2870
   } ],
   "stockCode" : "275630"
 }

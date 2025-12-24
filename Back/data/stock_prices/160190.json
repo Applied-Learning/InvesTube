@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하이젠알앤엠",
   "prices" : [ {
-    "volume" : 1743173,
-    "marketCap" : 337605840000,
-    "lowPrice" : 10360,
-    "highPrice" : 11580,
-    "openPrice" : 10550,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10930
-  }, {
     "volume" : 1523082,
     "marketCap" : 333899280000,
     "lowPrice" : 10810,
@@ -1937,6 +1929,14 @@
     "openPrice" : 60400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 63000
+  }, {
+    "volume" : 336719,
+    "marketCap" : 1816214400000,
+    "lowPrice" : 58700,
+    "highPrice" : 64000,
+    "openPrice" : 62400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 58800
   } ],
   "stockCode" : "160190"
 }

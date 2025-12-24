@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SK리츠",
   "prices" : [ {
-    "volume" : 439210,
-    "marketCap" : 1228913814300,
-    "lowPrice" : 4370,
-    "highPrice" : 4550,
-    "openPrice" : 4370,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4505
-  }, {
     "volume" : 470035,
     "marketCap" : 1263012421800,
     "lowPrice" : 4480,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5690,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5620
+  }, {
+    "volume" : 216246,
+    "marketCap" : 1691866128300,
+    "lowPrice" : 5580,
+    "highPrice" : 5730,
+    "openPrice" : 5600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5700
   } ],
   "stockCode" : "395400"
 }

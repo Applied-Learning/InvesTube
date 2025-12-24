@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이엔더블유",
   "prices" : [ {
-    "volume" : 18521,
-    "marketCap" : 53238992820,
-    "lowPrice" : 3200,
-    "highPrice" : 3340,
-    "openPrice" : 3250,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3315
-  }, {
     "volume" : 23165,
     "marketCap" : 53720793660,
     "lowPrice" : 3290,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5490,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5510
+  }, {
+    "volume" : 32732,
+    "marketCap" : 89133155400,
+    "lowPrice" : 5450,
+    "highPrice" : 5590,
+    "openPrice" : 5590,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5550
   } ],
   "stockCode" : "105330"
 }

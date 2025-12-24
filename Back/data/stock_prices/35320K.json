@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대덕전자1우",
   "prices" : [ {
-    "volume" : 1219,
-    "marketCap" : 17036569470,
-    "lowPrice" : 7930,
-    "highPrice" : 8180,
-    "openPrice" : 7930,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8130
-  }, {
     "volume" : 295,
     "marketCap" : 16617465670,
     "lowPrice" : 7860,
@@ -1937,6 +1929,14 @@
     "openPrice" : 15000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15060
+  }, {
+    "volume" : 6750,
+    "marketCap" : 30908905250,
+    "lowPrice" : 14750,
+    "highPrice" : 15070,
+    "openPrice" : 15060,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14750
   } ],
   "stockCode" : "35320K"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대우건설",
   "prices" : [ {
-    "volume" : 462718,
-    "marketCap" : 1386101497730,
-    "lowPrice" : 3275,
-    "highPrice" : 3345,
-    "openPrice" : 3285,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3335
-  }, {
     "volume" : 385086,
     "marketCap" : 1375710931780,
     "lowPrice" : 3310,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3785,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3785
+  }, {
+    "volume" : 773562,
+    "marketCap" : 1568975458450,
+    "lowPrice" : 3755,
+    "highPrice" : 3800,
+    "openPrice" : 3785,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3775
   } ],
   "stockCode" : "047040"
 }

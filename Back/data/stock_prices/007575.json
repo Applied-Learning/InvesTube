@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "일양약품우",
   "prices" : [ {
-    "volume" : 1298,
-    "marketCap" : 4588774800,
-    "lowPrice" : 10240,
-    "highPrice" : 10320,
-    "openPrice" : 10240,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10310
-  }, {
     "volume" : 260,
     "marketCap" : 4628832000,
     "lowPrice" : 10280,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 12980
+  }, {
+    "volume" : 0,
+    "marketCap" : 5777138400,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 12980
   } ],
   "stockCode" : "007575"

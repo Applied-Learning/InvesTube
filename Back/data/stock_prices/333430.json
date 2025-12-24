@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "일승",
   "prices" : [ {
-    "volume" : 7633913,
-    "marketCap" : 137809460295,
-    "lowPrice" : 4425,
-    "highPrice" : 4820,
-    "openPrice" : 4600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4485
-  }, {
     "volume" : 2690565,
     "marketCap" : 133200448245,
     "lowPrice" : 4315,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6220,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6280
+  }, {
+    "volume" : 494000,
+    "marketCap" : 196343913330,
+    "lowPrice" : 6320,
+    "highPrice" : 6610,
+    "openPrice" : 6590,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6390
   } ],
   "stockCode" : "333430"
 }

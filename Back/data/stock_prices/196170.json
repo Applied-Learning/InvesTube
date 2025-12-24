@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "알테오젠",
   "prices" : [ {
-    "volume" : 783284,
-    "marketCap" : 14769315356000,
-    "lowPrice" : 275500,
-    "highPrice" : 287000,
-    "openPrice" : 284000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 277000
-  }, {
     "volume" : 1769852,
     "marketCap" : 15782373088000,
     "lowPrice" : 275500,
@@ -1936,6 +1928,14 @@
     "highPrice" : 452500,
     "openPrice" : 452500,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 439500
+  }, {
+    "volume" : 430606,
+    "marketCap" : 23515793826000,
+    "lowPrice" : 437000,
+    "highPrice" : 450000,
+    "openPrice" : 443500,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 439500
   } ],
   "stockCode" : "196170"

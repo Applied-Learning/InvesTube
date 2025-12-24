@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코이즈",
   "prices" : [ {
-    "volume" : 837107,
-    "marketCap" : 41329136250,
-    "lowPrice" : 1265,
-    "highPrice" : 1365,
-    "openPrice" : 1365,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1350
-  }, {
     "volume" : 1177684,
     "marketCap" : 42553703250,
     "lowPrice" : 1302,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4505,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4600
+  }, {
+    "volume" : 14926,
+    "marketCap" : 13914140265,
+    "lowPrice" : 4410,
+    "highPrice" : 4860,
+    "openPrice" : 4600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4545
   } ],
   "stockCode" : "121850"
 }

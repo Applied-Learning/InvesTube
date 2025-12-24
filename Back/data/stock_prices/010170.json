@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대한광통신",
   "prices" : [ {
-    "volume" : 260308,
-    "marketCap" : 62738401772,
-    "lowPrice" : 830,
-    "highPrice" : 890,
-    "openPrice" : 877,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 842
-  }, {
     "volume" : 164127,
     "marketCap" : 61844267780,
     "lowPrice" : 830,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2270,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2165
+  }, {
+    "volume" : 7207736,
+    "marketCap" : 296967735000,
+    "lowPrice" : 2135,
+    "highPrice" : 2330,
+    "openPrice" : 2165,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2250
   } ],
   "stockCode" : "010170"
 }

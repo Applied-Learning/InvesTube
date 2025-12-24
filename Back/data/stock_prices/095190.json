@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이엠코리아",
   "prices" : [ {
-    "volume" : 529871,
-    "marketCap" : 104008876740,
-    "lowPrice" : 2165,
-    "highPrice" : 2315,
-    "openPrice" : 2205,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2295
-  }, {
     "volume" : 380848,
     "marketCap" : 106048266480,
     "lowPrice" : 2275,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2120,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2085
+  }, {
+    "volume" : 141874,
+    "marketCap" : 140309993300,
+    "lowPrice" : 2045,
+    "highPrice" : 2155,
+    "openPrice" : 2110,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2150
   } ],
   "stockCode" : "095190"
 }

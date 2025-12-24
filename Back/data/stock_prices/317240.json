@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "TS트릴리온",
   "prices" : [ {
-    "volume" : 0,
-    "marketCap" : 29920217238,
-    "lowPrice" : 0,
-    "highPrice" : 0,
-    "openPrice" : 0,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 279
-  }, {
     "volume" : 0,
     "marketCap" : 29920217238,
     "lowPrice" : 0,
@@ -1937,6 +1929,14 @@
     "openPrice" : 280,
     "tradeDate" : "2025-12-22",
     "closePrice" : 278
+  }, {
+    "volume" : 6967041,
+    "marketCap" : 32078819324,
+    "lowPrice" : 271,
+    "highPrice" : 288,
+    "openPrice" : 278,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 277
   } ],
   "stockCode" : "317240"
 }

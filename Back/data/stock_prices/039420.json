@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이엘넷",
   "prices" : [ {
-    "volume" : 82387,
-    "marketCap" : 63526939900,
-    "lowPrice" : 2595,
-    "highPrice" : 2635,
-    "openPrice" : 2610,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2630
-  }, {
     "volume" : 1948622,
     "marketCap" : 62198429750,
     "lowPrice" : 2515,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2910,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2915
+  }, {
+    "volume" : 52249,
+    "marketCap" : 69686396050,
+    "lowPrice" : 2870,
+    "highPrice" : 2920,
+    "openPrice" : 2915,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2885
   } ],
   "stockCode" : "039420"
 }

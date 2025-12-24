@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "더블유게임즈",
   "prices" : [ {
-    "volume" : 40530,
-    "marketCap" : 1186574011200,
-    "lowPrice" : 53900,
-    "highPrice" : 55300,
-    "openPrice" : 54200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 55200
-  }, {
     "volume" : 31044,
     "marketCap" : 1177975648800,
     "lowPrice" : 54200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 54900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 55100
+  }, {
+    "volume" : 19932,
+    "marketCap" : 1182274830000,
+    "lowPrice" : 54600,
+    "highPrice" : 55400,
+    "openPrice" : 55400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 55000
   } ],
   "stockCode" : "192080"
 }

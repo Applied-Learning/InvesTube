@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "와이솔",
   "prices" : [ {
-    "volume" : 40870,
-    "marketCap" : 146382409570,
-    "lowPrice" : 5230,
-    "highPrice" : 5330,
-    "openPrice" : 5260,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5290
-  }, {
     "volume" : 41484,
     "marketCap" : 149149562870,
     "lowPrice" : 5270,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5940,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5820
+  }, {
+    "volume" : 55270,
+    "marketCap" : 153973888180,
+    "lowPrice" : 5740,
+    "highPrice" : 5870,
+    "openPrice" : 5810,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5780
   } ],
   "stockCode" : "122990"
 }

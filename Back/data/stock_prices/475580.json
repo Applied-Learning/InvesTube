@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이럭스",
   "prices" : [ {
-    "volume" : 2249987,
-    "marketCap" : 163818978600,
-    "lowPrice" : 11770,
-    "highPrice" : 12550,
-    "openPrice" : 11930,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12270
-  }, {
     "volume" : 17508524,
     "marketCap" : 180908489000,
     "lowPrice" : 12390,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9860,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10300
+  }, {
+    "volume" : 260052,
+    "marketCap" : 137611490000,
+    "lowPrice" : 10000,
+    "highPrice" : 10500,
+    "openPrice" : 10500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10100
   } ],
   "stockCode" : "475580"
 }

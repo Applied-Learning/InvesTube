@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스티아이",
   "prices" : [ {
-    "volume" : 168482,
-    "marketCap" : 270693000000,
-    "lowPrice" : 16560,
-    "highPrice" : 17340,
-    "openPrice" : 16600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17100
-  }, {
     "volume" : 325620,
     "marketCap" : 266577200000,
     "lowPrice" : 16840,
@@ -1937,6 +1929,14 @@
     "openPrice" : 30400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 31500
+  }, {
+    "volume" : 484426,
+    "marketCap" : 499436500000,
+    "lowPrice" : 30800,
+    "highPrice" : 32100,
+    "openPrice" : 32100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 31550
   } ],
   "stockCode" : "039440"
 }

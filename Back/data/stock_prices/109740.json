@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디에스케이",
   "prices" : [ {
-    "volume" : 6512,
-    "marketCap" : 118782001800,
-    "lowPrice" : 4460,
-    "highPrice" : 4640,
-    "openPrice" : 4640,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4620
-  }, {
     "volume" : 4459,
     "marketCap" : 114925443300,
     "lowPrice" : 4470,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7170,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7240
+  }, {
+    "volume" : 15110,
+    "marketCap" : 180744041700,
+    "lowPrice" : 7020,
+    "highPrice" : 7250,
+    "openPrice" : 7240,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7030
   } ],
   "stockCode" : "109740"
 }

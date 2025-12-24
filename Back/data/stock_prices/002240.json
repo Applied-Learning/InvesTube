@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "고려제강",
   "prices" : [ {
-    "volume" : 10922,
-    "marketCap" : 475500000000,
-    "lowPrice" : 18510,
-    "highPrice" : 19040,
-    "openPrice" : 18510,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 19020
-  }, {
     "volume" : 22024,
     "marketCap" : 478750000000,
     "lowPrice" : 18930,
@@ -1936,6 +1928,14 @@
     "highPrice" : 20850,
     "openPrice" : 20150,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 20500
+  }, {
+    "volume" : 75381,
+    "marketCap" : 553500000000,
+    "lowPrice" : 20250,
+    "highPrice" : 21050,
+    "openPrice" : 20250,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 20500
   } ],
   "stockCode" : "002240"

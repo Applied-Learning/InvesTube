@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "씨엔플러스",
   "prices" : [ {
-    "volume" : 187135,
-    "marketCap" : 28952238000,
-    "lowPrice" : 415,
-    "highPrice" : 443,
-    "openPrice" : 425,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 426
-  }, {
     "volume" : 105183,
     "marketCap" : 28884275000,
     "lowPrice" : 408,
@@ -1937,6 +1929,14 @@
     "openPrice" : 347,
     "tradeDate" : "2025-12-22",
     "closePrice" : 339
+  }, {
+    "volume" : 146594,
+    "marketCap" : 22699642000,
+    "lowPrice" : 334,
+    "highPrice" : 354,
+    "openPrice" : 354,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 334
   } ],
   "stockCode" : "115530"
 }

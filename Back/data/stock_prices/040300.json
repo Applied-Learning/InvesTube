@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "YTN",
   "prices" : [ {
-    "volume" : 844356,
-    "marketCap" : 135450000000,
-    "lowPrice" : 3200,
-    "highPrice" : 3385,
-    "openPrice" : 3230,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3225
-  }, {
     "volume" : 447518,
     "marketCap" : 132930000000,
     "lowPrice" : 3165,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3865,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3855
+  }, {
+    "volume" : 2190969,
+    "marketCap" : 184748297500,
+    "lowPrice" : 3810,
+    "highPrice" : 4170,
+    "openPrice" : 3875,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3875
   } ],
   "stockCode" : "040300"
 }

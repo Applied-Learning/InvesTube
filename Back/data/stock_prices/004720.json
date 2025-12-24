@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "팜젠사이언스",
   "prices" : [ {
-    "volume" : 19974,
-    "marketCap" : 77985872250,
-    "lowPrice" : 4225,
-    "highPrice" : 4330,
-    "openPrice" : 4235,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4290
-  }, {
     "volume" : 15232,
     "marketCap" : 76804268125,
     "lowPrice" : 4210,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4205,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4305
+  }, {
+    "volume" : 205619,
+    "marketCap" : 80636248385,
+    "lowPrice" : 4265,
+    "highPrice" : 4425,
+    "openPrice" : 4350,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4285
   } ],
   "stockCode" : "004720"
 }

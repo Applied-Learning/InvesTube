@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "푸드나무",
   "prices" : [ {
-    "volume" : 18219,
-    "marketCap" : 38600807040,
-    "lowPrice" : 2800,
-    "highPrice" : 2960,
-    "openPrice" : 2805,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2880
-  }, {
     "volume" : 862050,
     "marketCap" : 36322287180,
     "lowPrice" : 2710,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1916,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2100
+  }, {
+    "volume" : 159660,
+    "marketCap" : 71654892675,
+    "lowPrice" : 2030,
+    "highPrice" : 2400,
+    "openPrice" : 2100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2085
   } ],
   "stockCode" : "290720"
 }

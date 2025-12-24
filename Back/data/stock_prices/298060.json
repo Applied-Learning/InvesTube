@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스씨엠생명과학",
   "prices" : [ {
-    "volume" : 73141,
-    "marketCap" : 40422814800,
-    "lowPrice" : 1867,
-    "highPrice" : 2110,
-    "openPrice" : 1943,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1975
-  }, {
     "volume" : 50831,
     "marketCap" : 39645059376,
     "lowPrice" : 1924,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1036,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1029
+  }, {
+    "volume" : 78514,
+    "marketCap" : 45617677632,
+    "lowPrice" : 1029,
+    "highPrice" : 1069,
+    "openPrice" : 1032,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1032
   } ],
   "stockCode" : "298060"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "창해에탄올",
   "prices" : [ {
-    "volume" : 11622,
-    "marketCap" : 85842865900,
-    "lowPrice" : 9250,
-    "highPrice" : 9350,
-    "openPrice" : 9260,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9340
-  }, {
     "volume" : 11429,
     "marketCap" : 85934774750,
     "lowPrice" : 9330,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10390
+  }, {
+    "volume" : 23429,
+    "marketCap" : 94758024350,
+    "lowPrice" : 10310,
+    "highPrice" : 10420,
+    "openPrice" : 10420,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10310
   } ],
   "stockCode" : "004650"
 }

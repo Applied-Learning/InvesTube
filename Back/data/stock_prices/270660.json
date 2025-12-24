@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에브리봇",
   "prices" : [ {
-    "volume" : 42499,
-    "marketCap" : 181964251280,
-    "lowPrice" : 14290,
-    "highPrice" : 14900,
-    "openPrice" : 14300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14840
-  }, {
     "volume" : 751067,
     "marketCap" : 192018879720,
     "lowPrice" : 14700,
@@ -1936,6 +1928,14 @@
     "highPrice" : 20950,
     "openPrice" : 19160,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 20750
+  }, {
+    "volume" : 418981,
+    "marketCap" : 256700117500,
+    "lowPrice" : 20150,
+    "highPrice" : 21950,
+    "openPrice" : 20400,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 20750
   } ],
   "stockCode" : "270660"

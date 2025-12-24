@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신일전자",
   "prices" : [ {
-    "volume" : 93895,
-    "marketCap" : 103729380660,
-    "lowPrice" : 1442,
-    "highPrice" : 1477,
-    "openPrice" : 1477,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1460
-  }, {
     "volume" : 108664,
     "marketCap" : 102876810408,
     "lowPrice" : 1445,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1321,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1327
+  }, {
+    "volume" : 151379,
+    "marketCap" : 93285395073,
+    "lowPrice" : 1312,
+    "highPrice" : 1332,
+    "openPrice" : 1325,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1313
   } ],
   "stockCode" : "002700"
 }

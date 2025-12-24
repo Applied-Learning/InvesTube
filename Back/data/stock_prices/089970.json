@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "브이엠",
   "prices" : [ {
-    "volume" : 36273,
-    "marketCap" : 171177480450,
-    "lowPrice" : 6860,
-    "highPrice" : 7200,
-    "openPrice" : 6970,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7110
-  }, {
     "volume" : 39316,
     "marketCap" : 162991778150,
     "lowPrice" : 6770,
@@ -1937,6 +1929,14 @@
     "openPrice" : 29550,
     "tradeDate" : "2025-12-22",
     "closePrice" : 29950
+  }, {
+    "volume" : 656597,
+    "marketCap" : 677424536250,
+    "lowPrice" : 26850,
+    "highPrice" : 29950,
+    "openPrice" : 29900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 27750
   } ],
   "stockCode" : "089970"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "미코",
   "prices" : [ {
-    "volume" : 99943,
-    "marketCap" : 270341734020,
-    "lowPrice" : 7910,
-    "highPrice" : 8150,
-    "openPrice" : 7910,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8090
-  }, {
     "volume" : 118691,
     "marketCap" : 265329217320,
     "lowPrice" : 7890,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14280
+  }, {
+    "volume" : 767107,
+    "marketCap" : 441435637380,
+    "lowPrice" : 13210,
+    "highPrice" : 14430,
+    "openPrice" : 14270,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13210
   } ],
   "stockCode" : "059090"
 }

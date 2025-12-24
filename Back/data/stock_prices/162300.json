@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신스틸",
   "prices" : [ {
-    "volume" : 135018,
-    "marketCap" : 103678455000,
-    "lowPrice" : 2475,
-    "highPrice" : 2575,
-    "openPrice" : 2520,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2500
-  }, {
     "volume" : 43280,
     "marketCap" : 104093168820,
     "lowPrice" : 2460,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1765,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1780
+  }, {
+    "volume" : 20730,
+    "marketCap" : 73943474106,
+    "lowPrice" : 1767,
+    "highPrice" : 1788,
+    "openPrice" : 1767,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1783
   } ],
   "stockCode" : "162300"
 }

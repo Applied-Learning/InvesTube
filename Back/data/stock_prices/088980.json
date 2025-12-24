@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "맥쿼리인프라",
   "prices" : [ {
-    "volume" : 651547,
-    "marketCap" : 5325612562160,
-    "lowPrice" : 11030,
-    "highPrice" : 11130,
-    "openPrice" : 11060,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11120
-  }, {
     "volume" : 974944,
     "marketCap" : 5354347881740,
     "lowPrice" : 11100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11630,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11550
+  }, {
+    "volume" : 1467816,
+    "marketCap" : 5545916678940,
+    "lowPrice" : 11500,
+    "highPrice" : 11590,
+    "openPrice" : 11550,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11580
   } ],
   "stockCode" : "088980"
 }

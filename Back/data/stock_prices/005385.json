@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대차우",
   "prices" : [ {
-    "volume" : 50667,
-    "marketCap" : 3645252567600,
-    "lowPrice" : 151600,
-    "highPrice" : 153400,
-    "openPrice" : 151900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 152700
-  }, {
     "volume" : 49173,
     "marketCap" : 3645252567600,
     "lowPrice" : 152000,
@@ -1936,6 +1928,14 @@
     "highPrice" : 204000,
     "openPrice" : 204000,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 203500
+  }, {
+    "volume" : 64178,
+    "marketCap" : 4749885360000,
+    "lowPrice" : 202500,
+    "highPrice" : 205000,
+    "openPrice" : 204500,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 203500
   } ],
   "stockCode" : "005385"

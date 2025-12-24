@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국수출포장",
   "prices" : [ {
-    "volume" : 42111,
-    "marketCap" : 112800000000,
-    "lowPrice" : 2790,
-    "highPrice" : 2835,
-    "openPrice" : 2815,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2820
-  }, {
     "volume" : 24123,
     "marketCap" : 112200000000,
     "lowPrice" : 2790,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3220,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3200
+  }, {
+    "volume" : 101374,
+    "marketCap" : 128200000000,
+    "lowPrice" : 3180,
+    "highPrice" : 3220,
+    "openPrice" : 3210,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3205
   } ],
   "stockCode" : "002200"
 }

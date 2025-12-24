@@ -5,11 +5,14 @@ import com.Investube.mvc.model.dto.*;
 import com.Investube.mvc.model.service.FinancialService;
 import com.Investube.mvc.model.service.StockService;
 import com.Investube.mvc.service.ChatService;
+import com.Investube.mvc.service.FinancialAnalysisService;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.math.BigDecimal;
 
 /**
  * 챗봇 REST API 컨트롤러
@@ -29,6 +32,9 @@ public class ChatRestController {
 
     @Autowired
     private InvestmentProfileDao profileDao;
+
+    @Autowired
+    private FinancialAnalysisService financialAnalysisService;
 
     /**
      * userId 추출 헬퍼 메서드
@@ -88,17 +94,41 @@ public class ChatRestController {
             InvestmentProfile profile = null;
             if (userId != null) {
                 profile = profileDao.getDefaultProfile(userId);
-                System.out.println("투자 성향: " + (profile != null ? profile.getProfileName() : "없음"));
+                if (profile != null) {
+                    System.out.println("투자 성향: " + profile.getProfileName());
+                    // 가중치가 NULL이면 프로필 이름 기반으로 가중치 설정
+                    if (profile.getWeightRevenueGrowth() == null) {
+                        String profileType = extractProfileType(profile.getProfileName());
+                        InvestmentProfile defaultWeights = financialAnalysisService.createDefaultProfile(profileType);
+                        profile.setWeightRevenueGrowth(defaultWeights.getWeightRevenueGrowth());
+                        profile.setWeightOperatingMargin(defaultWeights.getWeightOperatingMargin());
+                        profile.setWeightRoe(defaultWeights.getWeightRoe());
+                        profile.setWeightDebtRatio(defaultWeights.getWeightDebtRatio());
+                        profile.setWeightFcf(defaultWeights.getWeightFcf());
+                        profile.setWeightPer(defaultWeights.getWeightPer());
+                        profile.setWeightPbr(defaultWeights.getWeightPbr());
+                        System.out.println("프로필 가중치 적용: " + profileType);
+                    }
+                } else {
+                    System.out.println("투자 성향: 없음");
+                }
             } else {
                 System.out.println("로그인하지 않은 사용자");
             }
 
-            // 4. 기본 점수 계산 (재무 데이터가 있는 경우)
-            System.out.println("4. 기본 점수 계산 중...");
+            // 4. 투자 점수 계산 (사용자 프로필 기반)
+            System.out.println("4. 투자 점수 계산 중...");
             Double baseScore = null;
-            if (financialData != null && financialData.getTotalScore() != null) {
-                baseScore = financialData.getTotalScore().doubleValue();
-                System.out.println("기본 점수: " + baseScore);
+            if (financialData != null) {
+                if (profile != null) {
+                    // 사용자 프로필 기반 점수 계산
+                    BigDecimal profileScore = financialAnalysisService.calculateInvestmentScore(financialData, profile);
+                    baseScore = profileScore.doubleValue();
+                    System.out.println("프로필 기반 점수 (" + profile.getProfileName() + "): " + baseScore);
+                } else if (financialData.getTotalScore() != null) {
+                    baseScore = financialData.getTotalScore().doubleValue();
+                    System.out.println("기본 점수: " + baseScore);
+                }
             }
 
             // 5. 챗봇 응답 생성
@@ -143,9 +173,26 @@ public class ChatRestController {
 
             // 사용자 투자 성향 조회 (로그인한 경우)
             Integer userId = getUserIdFromRequest(request);
+            System.out.println("[챗봇-general] userId: " + userId);
             InvestmentProfile profile = null;
             if (userId != null) {
                 profile = profileDao.getDefaultProfile(userId);
+                System.out.println("[챗봇-general] 프로필 조회 결과: " + (profile != null ? profile.getProfileName() : "없음"));
+                // 가중치가 NULL이면 프로필 이름 기반으로 가중치 설정
+                if (profile != null && profile.getWeightRevenueGrowth() == null) {
+                    String profileType = extractProfileType(profile.getProfileName());
+                    System.out.println("[챗봇-general] 가중치 NULL → 타입 추출: " + profileType);
+                    InvestmentProfile defaultWeights = financialAnalysisService.createDefaultProfile(profileType);
+                    profile.setWeightRevenueGrowth(defaultWeights.getWeightRevenueGrowth());
+                    profile.setWeightOperatingMargin(defaultWeights.getWeightOperatingMargin());
+                    profile.setWeightRoe(defaultWeights.getWeightRoe());
+                    profile.setWeightDebtRatio(defaultWeights.getWeightDebtRatio());
+                    profile.setWeightFcf(defaultWeights.getWeightFcf());
+                    profile.setWeightPer(defaultWeights.getWeightPer());
+                    profile.setWeightPbr(defaultWeights.getWeightPbr());
+                }
+            } else {
+                System.out.println("[챗봇-general] 로그인하지 않은 사용자");
             }
 
             // 1. 프론트에서 현재 보고 있는 종목 코드가 전달되면 우선 사용
@@ -185,7 +232,13 @@ public class ChatRestController {
                 if (financialData != null) {
                     System.out.println(
                             "[챗봇] " + stock.getStockName() + " 재무데이터 있음, 점수: " + financialData.getTotalScore());
-                    if (financialData.getTotalScore() != null) {
+                    // 사용자 프로필이 있으면 프로필 기반 점수 계산
+                    if (profile != null) {
+                        BigDecimal profileScore = financialAnalysisService.calculateInvestmentScore(financialData,
+                                profile);
+                        baseScore = profileScore.doubleValue();
+                        System.out.println("[챗봇] 프로필 기반 점수 (" + profile.getProfileName() + "): " + baseScore);
+                    } else if (financialData.getTotalScore() != null) {
                         baseScore = financialData.getTotalScore().doubleValue();
                     }
                 } else {
@@ -247,5 +300,25 @@ public class ChatRestController {
         }
 
         return null;
+    }
+
+    /**
+     * 프로필 이름에서 순수 프로필 타입 추출
+     * 예: "안정형 (설문 결과)" -> "안정형"
+     */
+    private String extractProfileType(String profileName) {
+        if (profileName == null)
+            return "균형형";
+
+        // 프로필 타입 목록
+        String[] profileTypes = { "안정형", "성장형", "균형형", "가치형", "현금흐름형", "공격형" };
+
+        for (String type : profileTypes) {
+            if (profileName.contains(type)) {
+                return type;
+            }
+        }
+
+        return "균형형"; // 기본값
     }
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "캡스톤파트너스",
   "prices" : [ {
-    "volume" : 38814,
-    "marketCap" : 37919262200,
-    "lowPrice" : 2620,
-    "highPrice" : 2710,
-    "openPrice" : 2620,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2690
-  }, {
     "volume" : 47357,
     "marketCap" : 37778298400,
     "lowPrice" : 2660,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3095,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2955
+  }, {
+    "volume" : 168039,
+    "marketCap" : 39887601625,
+    "lowPrice" : 2780,
+    "highPrice" : 2960,
+    "openPrice" : 2960,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2825
   } ],
   "stockCode" : "452300"
 }

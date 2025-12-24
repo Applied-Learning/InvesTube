@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "BGF",
   "prices" : [ {
-    "volume" : 85124,
-    "marketCap" : 336923104320,
-    "lowPrice" : 3470,
-    "highPrice" : 3540,
-    "openPrice" : 3475,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3520
-  }, {
     "volume" : 84971,
     "marketCap" : 335008768500,
     "lowPrice" : 3480,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4110,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4070
+  }, {
+    "volume" : 82550,
+    "marketCap" : 388610171460,
+    "lowPrice" : 4050,
+    "highPrice" : 4085,
+    "openPrice" : 4080,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4060
   } ],
   "stockCode" : "027410"
 }

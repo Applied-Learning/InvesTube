@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아주스틸",
   "prices" : [ {
-    "volume" : 16177,
-    "marketCap" : 104479911360,
-    "lowPrice" : 3890,
-    "highPrice" : 4010,
-    "openPrice" : 4005,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3940
-  }, {
     "volume" : 7936,
     "marketCap" : 104347322640,
     "lowPrice" : 3900,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3405,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3410
+  }, {
+    "volume" : 18918,
+    "marketCap" : 129830636900,
+    "lowPrice" : 3350,
+    "highPrice" : 3430,
+    "openPrice" : 3385,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3350
   } ],
   "stockCode" : "139990"
 }

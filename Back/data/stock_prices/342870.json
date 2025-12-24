@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오아",
   "prices" : [ {
     "volume" : 5339405,
@@ -561,6 +561,14 @@
     "openPrice" : 7980,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8100
+  }, {
+    "volume" : 24017,
+    "marketCap" : 46158037720,
+    "lowPrice" : 7820,
+    "highPrice" : 8110,
+    "openPrice" : 8020,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7880
   } ],
   "stockCode" : "342870"
 }

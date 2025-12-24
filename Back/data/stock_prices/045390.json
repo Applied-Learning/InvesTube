@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대아티아이",
   "prices" : [ {
-    "volume" : 490417,
-    "marketCap" : 215296166735,
-    "lowPrice" : 3030,
-    "highPrice" : 3095,
-    "openPrice" : 3075,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3055
-  }, {
     "volume" : 402367,
     "marketCap" : 213181965425,
     "lowPrice" : 3000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4040
+  }, {
+    "volume" : 441131,
+    "marketCap" : 276255637840,
+    "lowPrice" : 3920,
+    "highPrice" : 4055,
+    "openPrice" : 4055,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3920
   } ],
   "stockCode" : "045390"
 }

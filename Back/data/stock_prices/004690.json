@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼천리",
   "prices" : [ {
-    "volume" : 5037,
-    "marketCap" : 368196270000,
-    "lowPrice" : 90600,
-    "highPrice" : 91300,
-    "openPrice" : 90600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 90800
-  }, {
     "volume" : 2238,
     "marketCap" : 368196270000,
     "lowPrice" : 90600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 130300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 131100
+  }, {
+    "volume" : 10335,
+    "marketCap" : 538101817500,
+    "lowPrice" : 130200,
+    "highPrice" : 133000,
+    "openPrice" : 131500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 132700
   } ],
   "stockCode" : "004690"
 }

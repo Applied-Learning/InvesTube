@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동방선기",
   "prices" : [ {
-    "volume" : 107832,
-    "marketCap" : 44100000000,
-    "lowPrice" : 3095,
-    "highPrice" : 3205,
-    "openPrice" : 3095,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3150
-  }, {
     "volume" : 81809,
     "marketCap" : 43820000000,
     "lowPrice" : 3090,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4665,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4795
+  }, {
+    "volume" : 253669,
+    "marketCap" : 66360000000,
+    "lowPrice" : 4735,
+    "highPrice" : 4985,
+    "openPrice" : 4900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4740
   } ],
   "stockCode" : "099410"
 }

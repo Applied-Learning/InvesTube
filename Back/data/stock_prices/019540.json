@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "일지테크",
   "prices" : [ {
-    "volume" : 17369,
-    "marketCap" : 48783735000,
-    "lowPrice" : 3535,
-    "highPrice" : 3615,
-    "openPrice" : 3535,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3610
-  }, {
     "volume" : 10510,
     "marketCap" : 48716167500,
     "lowPrice" : 3580,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4190,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4185
+  }, {
+    "volume" : 30861,
+    "marketCap" : 56283727500,
+    "lowPrice" : 4110,
+    "highPrice" : 4280,
+    "openPrice" : 4180,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4165
   } ],
   "stockCode" : "019540"
 }

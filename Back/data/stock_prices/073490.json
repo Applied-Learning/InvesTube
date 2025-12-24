@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이노와이어리스",
   "prices" : [ {
-    "volume" : 23037,
-    "marketCap" : 152076920000,
-    "lowPrice" : 19420,
-    "highPrice" : 20150,
-    "openPrice" : 19420,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 20000
-  }, {
     "volume" : 28011,
     "marketCap" : 153217496900,
     "lowPrice" : 20000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 22750,
     "tradeDate" : "2025-12-22",
     "closePrice" : 24000
+  }, {
+    "volume" : 50243,
+    "marketCap" : 174128073400,
+    "lowPrice" : 22850,
+    "highPrice" : 24350,
+    "openPrice" : 24200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 22900
   } ],
   "stockCode" : "073490"
 }

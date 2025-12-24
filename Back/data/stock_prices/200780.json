@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "비씨월드제약",
   "prices" : [ {
-    "volume" : 5336,
-    "marketCap" : 42905752800,
-    "lowPrice" : 4700,
-    "highPrice" : 4835,
-    "openPrice" : 4800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4825
-  }, {
     "volume" : 6782,
     "marketCap" : 43039138560,
     "lowPrice" : 4750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5680,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5760
+  }, {
+    "volume" : 14091,
+    "marketCap" : 56178104800,
+    "lowPrice" : 5740,
+    "highPrice" : 5830,
+    "openPrice" : 5830,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5770
   } ],
   "stockCode" : "200780"
 }

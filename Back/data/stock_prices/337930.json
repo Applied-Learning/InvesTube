@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "젝시믹스",
   "prices" : [ {
-    "volume" : 571637,
-    "marketCap" : 191404401910,
-    "lowPrice" : 6430,
-    "highPrice" : 6850,
-    "openPrice" : 6430,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6530
-  }, {
     "volume" : 234307,
     "marketCap" : 183783399690,
     "lowPrice" : 6250,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5130,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5130
+  }, {
+    "volume" : 472955,
+    "marketCap" : 148233992625,
+    "lowPrice" : 4995,
+    "highPrice" : 5190,
+    "openPrice" : 5080,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4995
   } ],
   "stockCode" : "337930"
 }

@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "메리츠제1호스팩",
   "prices" : [ {
     "volume" : 49273744,
@@ -49,6 +49,14 @@
     "openPrice" : 1985,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1987
+  }, {
+    "volume" : 196581,
+    "marketCap" : 11561025000,
+    "lowPrice" : 1983,
+    "highPrice" : 2005,
+    "openPrice" : 1987,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1995
   } ],
   "stockCode" : "0088D0"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코오롱티슈진",
   "prices" : [ {
-    "volume" : 400454,
-    "marketCap" : 1867460635000,
-    "lowPrice" : 22650,
-    "highPrice" : 24250,
-    "openPrice" : 23400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 23500
-  }, {
     "volume" : 788464,
     "marketCap" : 1994606891000,
     "lowPrice" : 23050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 75700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 75300
+  }, {
+    "volume" : 182893,
+    "marketCap" : 6274883381000,
+    "lowPrice" : 74100,
+    "highPrice" : 76300,
+    "openPrice" : 75400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 75400
   } ],
   "stockCode" : "950160"
 }

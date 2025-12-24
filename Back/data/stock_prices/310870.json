@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디와이씨",
   "prices" : [ {
-    "volume" : 41715,
-    "marketCap" : 31754960985,
-    "lowPrice" : 1510,
-    "highPrice" : 1567,
-    "openPrice" : 1520,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1535
-  }, {
     "volume" : 72217,
     "marketCap" : 32582451825,
     "lowPrice" : 1518,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1317,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1341
+  }, {
+    "volume" : 36789,
+    "marketCap" : 27327884991,
+    "lowPrice" : 1310,
+    "highPrice" : 1352,
+    "openPrice" : 1341,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1321
   } ],
   "stockCode" : "310870"
 }

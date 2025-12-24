@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제이브이엠",
   "prices" : [ {
-    "volume" : 26667,
-    "marketCap" : 232609522080,
-    "lowPrice" : 18600,
-    "highPrice" : 19280,
-    "openPrice" : 18830,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 19240
-  }, {
     "volume" : 34662,
     "marketCap" : 233334915600,
     "lowPrice" : 19120,
@@ -1937,6 +1929,14 @@
     "openPrice" : 26600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 26900
+  }, {
+    "volume" : 64992,
+    "marketCap" : 317359665000,
+    "lowPrice" : 26200,
+    "highPrice" : 27000,
+    "openPrice" : 26950,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 26250
   } ],
   "stockCode" : "054950"
 }

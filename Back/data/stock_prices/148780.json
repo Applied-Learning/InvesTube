@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "비큐AI",
   "prices" : [ {
-    "volume" : 32300,
-    "marketCap" : 30753919050,
-    "lowPrice" : 970,
-    "highPrice" : 992,
-    "openPrice" : 981,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 978
-  }, {
     "volume" : 64381,
     "marketCap" : 30753919050,
     "lowPrice" : 970,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1397,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1398
+  }, {
+    "volume" : 115855,
+    "marketCap" : 42357391575,
+    "lowPrice" : 1333,
+    "highPrice" : 1425,
+    "openPrice" : 1400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1347
   } ],
   "stockCode" : "148780"
 }

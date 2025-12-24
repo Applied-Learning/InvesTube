@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "와이엠",
   "prices" : [ {
-    "volume" : 14714,
-    "marketCap" : 46306301580,
-    "lowPrice" : 2385,
-    "highPrice" : 2445,
-    "openPrice" : 2390,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2415
-  }, {
     "volume" : 14868,
     "marketCap" : 46114557060,
     "lowPrice" : 2400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2605,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2570
+  }, {
+    "volume" : 10183,
+    "marketCap" : 56859560205,
+    "lowPrice" : 2540,
+    "highPrice" : 2635,
+    "openPrice" : 2625,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2555
   } ],
   "stockCode" : "007530"
 }

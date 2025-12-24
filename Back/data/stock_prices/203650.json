@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "드림시큐리티",
   "prices" : [ {
-    "volume" : 1021011,
-    "marketCap" : 176361052690,
-    "lowPrice" : 3480,
-    "highPrice" : 3630,
-    "openPrice" : 3565,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3485
-  }, {
     "volume" : 590247,
     "marketCap" : 171553506060,
     "lowPrice" : 3390,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1620,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1660
+  }, {
+    "volume" : 508911,
+    "marketCap" : 157411661224,
+    "lowPrice" : 1620,
+    "highPrice" : 1695,
+    "openPrice" : 1675,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1646
   } ],
   "stockCode" : "203650"
 }

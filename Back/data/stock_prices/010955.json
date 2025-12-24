@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "S-Oil우",
   "prices" : [ {
-    "volume" : 8728,
-    "marketCap" : 158463923800,
-    "lowPrice" : 38650,
-    "highPrice" : 39650,
-    "openPrice" : 38700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 39400
-  }, {
     "volume" : 4588,
     "marketCap" : 156855153000,
     "lowPrice" : 38850,
@@ -1937,6 +1929,14 @@
     "openPrice" : 48300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 48700
+  }, {
+    "volume" : 9470,
+    "marketCap" : 195264555850,
+    "lowPrice" : 48200,
+    "highPrice" : 49200,
+    "openPrice" : 48800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 48550
   } ],
   "stockCode" : "010955"
 }

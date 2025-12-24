@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스엔시스",
   "prices" : [ {
     "volume" : 11843928,
@@ -681,6 +681,14 @@
     "openPrice" : 30350,
     "tradeDate" : "2025-12-22",
     "closePrice" : 32200
+  }, {
+    "volume" : 85742,
+    "marketCap" : 296779937800,
+    "lowPrice" : 31200,
+    "highPrice" : 33600,
+    "openPrice" : 33200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 31450
   } ],
   "stockCode" : "0008Z0"
 }

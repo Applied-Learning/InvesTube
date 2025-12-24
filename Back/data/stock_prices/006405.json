@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼성SDI우",
   "prices" : [ {
-    "volume" : 4140,
-    "marketCap" : 243655137600,
-    "lowPrice" : 147000,
-    "highPrice" : 151700,
-    "openPrice" : 150000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 150600
-  }, {
     "volume" : 2626,
     "marketCap" : 241875452000,
     "lowPrice" : 149200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 173200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 174100
+  }, {
+    "volume" : 7207,
+    "marketCap" : 279734218400,
+    "lowPrice" : 171000,
+    "highPrice" : 174100,
+    "openPrice" : 174100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 172900
   } ],
   "stockCode" : "006405"
 }

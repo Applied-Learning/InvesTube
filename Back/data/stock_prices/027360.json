@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아주IB투자",
   "prices" : [ {
-    "volume" : 869229,
-    "marketCap" : 315062782630,
-    "lowPrice" : 2480,
-    "highPrice" : 2610,
-    "openPrice" : 2480,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2605
-  }, {
     "volume" : 742801,
     "marketCap" : 305991877180,
     "lowPrice" : 2525,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3485,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3685
+  }, {
+    "volume" : 3367602,
+    "marketCap" : 379185120780,
+    "lowPrice" : 3090,
+    "highPrice" : 3685,
+    "openPrice" : 3685,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3130
   } ],
   "stockCode" : "027360"
 }

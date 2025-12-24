@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "원풍",
   "prices" : [ {
-    "volume" : 20164,
-    "marketCap" : 50160000000,
-    "lowPrice" : 4125,
-    "highPrice" : 4230,
-    "openPrice" : 4190,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4180
-  }, {
     "volume" : 21294,
     "marketCap" : 50640000000,
     "lowPrice" : 4180,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5130
+  }, {
+    "volume" : 1635,
+    "marketCap" : 61920000000,
+    "lowPrice" : 5110,
+    "highPrice" : 5180,
+    "openPrice" : 5110,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5160
   } ],
   "stockCode" : "008370"
 }

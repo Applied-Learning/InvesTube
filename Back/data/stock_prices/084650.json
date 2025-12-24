@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "랩지노믹스",
   "prices" : [ {
-    "volume" : 754512,
-    "marketCap" : 182259175450,
-    "lowPrice" : 2450,
-    "highPrice" : 2510,
-    "openPrice" : 2495,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2455
-  }, {
     "volume" : 487764,
     "marketCap" : 180774375650,
     "lowPrice" : 2415,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1881,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1900
+  }, {
+    "volume" : 349613,
+    "marketCap" : 138086381400,
+    "lowPrice" : 1850,
+    "highPrice" : 1913,
+    "openPrice" : 1901,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1860
   } ],
   "stockCode" : "084650"
 }

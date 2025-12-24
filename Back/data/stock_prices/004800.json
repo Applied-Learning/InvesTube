@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "효성",
   "prices" : [ {
-    "volume" : 23875,
-    "marketCap" : 848738634900,
-    "lowPrice" : 50300,
-    "highPrice" : 51500,
-    "openPrice" : 51500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 50700
-  }, {
     "volume" : 27449,
     "marketCap" : 853760757000,
     "lowPrice" : 50600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 120200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 120600
+  }, {
+    "volume" : 27598,
+    "marketCap" : 2005500758600,
+    "lowPrice" : 119000,
+    "highPrice" : 121900,
+    "openPrice" : 121000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 119800
   } ],
   "stockCode" : "004800"
 }

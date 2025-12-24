@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제이에스코퍼레이션",
   "prices" : [ {
-    "volume" : 35640,
-    "marketCap" : 199585582850,
-    "lowPrice" : 14270,
-    "highPrice" : 14660,
-    "openPrice" : 14520,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14590
-  }, {
     "volume" : 26643,
     "marketCap" : 202047913550,
     "lowPrice" : 14580,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14450,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14550
+  }, {
+    "volume" : 349359,
+    "marketCap" : 405654276840,
+    "lowPrice" : 13980,
+    "highPrice" : 14480,
+    "openPrice" : 14390,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13980
   } ],
   "stockCode" : "194370"
 }

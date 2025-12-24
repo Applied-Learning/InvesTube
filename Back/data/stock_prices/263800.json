@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "데이타솔루션",
   "prices" : [ {
-    "volume" : 44504,
-    "marketCap" : 73473791400,
-    "lowPrice" : 4375,
-    "highPrice" : 4530,
-    "openPrice" : 4375,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4530
-  }, {
     "volume" : 26737,
     "marketCap" : 71446368900,
     "lowPrice" : 4405,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5260,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5340
+  }, {
+    "volume" : 149640,
+    "marketCap" : 86465285400,
+    "lowPrice" : 5290,
+    "highPrice" : 5420,
+    "openPrice" : 5390,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5330
   } ],
   "stockCode" : "263800"
 }

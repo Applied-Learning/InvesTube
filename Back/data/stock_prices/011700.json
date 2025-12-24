@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한신기계",
   "prices" : [ {
-    "volume" : 187295,
-    "marketCap" : 88577992230,
-    "lowPrice" : 2675,
-    "highPrice" : 2765,
-    "openPrice" : 2675,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2730
-  }, {
     "volume" : 128501,
     "marketCap" : 88253530720,
     "lowPrice" : 2695,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3115,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3155
+  }, {
+    "volume" : 98499,
+    "marketCap" : 99934145080,
+    "lowPrice" : 3060,
+    "highPrice" : 3160,
+    "openPrice" : 3130,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3080
   } ],
   "stockCode" : "011700"
 }

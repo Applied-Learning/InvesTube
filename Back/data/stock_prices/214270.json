@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "FSN",
   "prices" : [ {
-    "volume" : 151288,
-    "marketCap" : 62311367662,
-    "lowPrice" : 1858,
-    "highPrice" : 1910,
-    "openPrice" : 1858,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1874
-  }, {
     "volume" : 98433,
     "marketCap" : 61845861180,
     "lowPrice" : 1835,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1799,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1858
+  }, {
+    "volume" : 243441,
+    "marketCap" : 80566128396,
+    "lowPrice" : 1823,
+    "highPrice" : 1891,
+    "openPrice" : 1874,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1844
   } ],
   "stockCode" : "214270"
 }

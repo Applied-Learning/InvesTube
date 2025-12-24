@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "글로벌에스엠",
   "prices" : [ {
-    "volume" : 21656,
-    "marketCap" : 22088770848,
-    "lowPrice" : 411,
-    "highPrice" : 424,
-    "openPrice" : 417,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 411
-  }, {
     "volume" : 15208,
     "marketCap" : 22518722592,
     "lowPrice" : 400,
@@ -1936,6 +1928,14 @@
     "highPrice" : 443,
     "openPrice" : 442,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 429
+  }, {
+    "volume" : 75987,
+    "marketCap" : 23056162272,
+    "lowPrice" : 427,
+    "highPrice" : 444,
+    "openPrice" : 432,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 429
   } ],
   "stockCode" : "900070"

@@ -345,9 +345,33 @@ public class ChatService {
                 """);
 
         if (profile != null) {
-            prompt.append("\n사용자 투자 성향: ").append(profile.getProfileName()).append("\n");
+            prompt.append("\n\n[사용자 투자 성향: ").append(profile.getProfileName()).append("]\n");
+            prompt.append(getProfileAnalysisGuidance(profile.getProfileName()));
         }
 
         return prompt.toString();
+    }
+
+    /**
+     * 투자 성향별 분석 가이드 생성
+     */
+    private String getProfileAnalysisGuidance(String profileName) {
+        switch (profileName) {
+            case "안정형":
+                return "이 사용자는 안정성을 중시합니다. 부채비율과 영업이익률을 강조하고, " +
+                        "위험 요소가 있다면 더 신중하게 안내해주세요.";
+            case "성장형":
+            case "공격형":
+                return "이 사용자는 성장성을 중시합니다. 매출 성장률과 ROE를 강조하고, " +
+                        "성장 잠재력에 대해 분석해주세요.";
+            case "가치형":
+                return "이 사용자는 기업 가치를 중시합니다. PER, PBR 등 밸류에이션 지표를 " +
+                        "강조하여 설명해주세요.";
+            case "현금흐름형":
+                return "이 사용자는 현금 창출력을 중시합니다. 영업이익률과 현금흐름 지표를 " +
+                        "강조하여 설명해주세요.";
+            default: // 균형형
+                return "균형 잡힌 관점에서 모든 지표를 종합적으로 분석해주세요.";
+        }
     }
 }

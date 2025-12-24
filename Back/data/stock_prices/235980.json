@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "메드팩토",
   "prices" : [ {
-    "volume" : 102948,
-    "marketCap" : 150441513600,
-    "lowPrice" : 4430,
-    "highPrice" : 4560,
-    "openPrice" : 4430,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4480
-  }, {
     "volume" : 111030,
     "marketCap" : 148090864950,
     "lowPrice" : 4345,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6670,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6600
+  }, {
+    "volume" : 173448,
+    "marketCap" : 224159291340,
+    "lowPrice" : 6430,
+    "highPrice" : 6770,
+    "openPrice" : 6680,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6540
   } ],
   "stockCode" : "235980"
 }

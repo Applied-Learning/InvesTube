@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "좋은사람들",
   "prices" : [ {
-    "volume" : 352434,
-    "marketCap" : 61951406562,
-    "lowPrice" : 633,
-    "highPrice" : 651,
-    "openPrice" : 650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 639
-  }, {
     "volume" : 588381,
     "marketCap" : 60400197634,
     "lowPrice" : 623,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1662,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1702
+  }, {
+    "volume" : 1017072,
+    "marketCap" : 158901964562,
+    "lowPrice" : 1636,
+    "highPrice" : 1714,
+    "openPrice" : 1700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1639
   } ],
   "stockCode" : "033340"
 }

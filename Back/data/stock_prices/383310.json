@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에코프로에이치엔",
   "prices" : [ {
-    "volume" : 484954,
-    "marketCap" : 492053563800,
-    "lowPrice" : 31800,
-    "highPrice" : 33550,
-    "openPrice" : 33050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 32150
-  }, {
     "volume" : 213082,
     "marketCap" : 488992577400,
     "lowPrice" : 31650,
@@ -1936,6 +1928,14 @@
     "highPrice" : 26150,
     "openPrice" : 26000,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 25800
+  }, {
+    "volume" : 22664,
+    "marketCap" : 541153245600,
+    "lowPrice" : 25550,
+    "highPrice" : 26100,
+    "openPrice" : 26100,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 25800
   } ],
   "stockCode" : "383310"

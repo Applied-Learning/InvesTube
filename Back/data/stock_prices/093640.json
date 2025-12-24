@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이알엠",
   "prices" : [ {
-    "volume" : 96113,
-    "marketCap" : 144610820940,
-    "lowPrice" : 4210,
-    "highPrice" : 4535,
-    "openPrice" : 4210,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4435
-  }, {
     "volume" : 46491,
     "marketCap" : 143306551980,
     "lowPrice" : 4350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3855
+  }, {
+    "volume" : 33962,
+    "marketCap" : 123970633800,
+    "lowPrice" : 3740,
+    "highPrice" : 3860,
+    "openPrice" : 3805,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3800
   } ],
   "stockCode" : "093640"
 }

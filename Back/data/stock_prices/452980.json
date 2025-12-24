@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신한제11호스팩",
   "prices" : [ {
-    "volume" : 116911,
-    "marketCap" : 36656795000,
-    "lowPrice" : 1938,
-    "highPrice" : 1950,
-    "openPrice" : 1950,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1939
-  }, {
     "volume" : 61758,
     "marketCap" : 36694605000,
     "lowPrice" : 1937,
@@ -1936,6 +1928,14 @@
     "highPrice" : 2080,
     "openPrice" : 2070,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 2075
+  }, {
+    "volume" : 2506,
+    "marketCap" : 39227875000,
+    "lowPrice" : 2075,
+    "highPrice" : 2077,
+    "openPrice" : 2075,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 2075
   } ],
   "stockCode" : "452980"

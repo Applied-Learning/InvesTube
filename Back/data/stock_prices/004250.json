@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "NPC",
   "prices" : [ {
-    "volume" : 16783,
-    "marketCap" : 162669600000,
-    "lowPrice" : 4290,
-    "highPrice" : 4430,
-    "openPrice" : 4315,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4430
-  }, {
     "volume" : 12287,
     "marketCap" : 161935200000,
     "lowPrice" : 4355,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3940,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3930
+  }, {
+    "volume" : 107355,
+    "marketCap" : 141739200000,
+    "lowPrice" : 3855,
+    "highPrice" : 3930,
+    "openPrice" : 3925,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3860
   } ],
   "stockCode" : "004250"
 }

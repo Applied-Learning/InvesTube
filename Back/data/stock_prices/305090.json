@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "마이크로디지탈",
   "prices" : [ {
-    "volume" : 74942,
-    "marketCap" : 176026442800,
-    "lowPrice" : 10500,
-    "highPrice" : 10970,
-    "openPrice" : 10960,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10580
-  }, {
     "volume" : 259975,
     "marketCap" : 169704132000,
     "lowPrice" : 9930,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9980,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10160
+  }, {
+    "volume" : 377871,
+    "marketCap" : 200153585940,
+    "lowPrice" : 9850,
+    "highPrice" : 11020,
+    "openPrice" : 10150,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10780
   } ],
   "stockCode" : "305090"
 }

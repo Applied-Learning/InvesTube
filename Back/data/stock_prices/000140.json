@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하이트진로홀딩스",
   "prices" : [ {
-    "volume" : 21211,
-    "marketCap" : 225105620500,
-    "lowPrice" : 9460,
-    "highPrice" : 9750,
-    "openPrice" : 9590,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9700
-  }, {
     "volume" : 60511,
     "marketCap" : 223945282250,
     "lowPrice" : 9550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10230,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10240
+  }, {
+    "volume" : 35137,
+    "marketCap" : 236012800050,
+    "lowPrice" : 10090,
+    "highPrice" : 10240,
+    "openPrice" : 10240,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10170
   } ],
   "stockCode" : "000140"
 }

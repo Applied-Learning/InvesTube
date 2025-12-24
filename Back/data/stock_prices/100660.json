@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "서암기계공업",
   "prices" : [ {
-    "volume" : 36567,
-    "marketCap" : 46053000000,
-    "lowPrice" : 3570,
-    "highPrice" : 3680,
-    "openPrice" : 3570,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3655
-  }, {
     "volume" : 20927,
     "marketCap" : 45864000000,
     "lowPrice" : 3610,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4365,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4400
+  }, {
+    "volume" : 898801,
+    "marketCap" : 56700000000,
+    "lowPrice" : 4415,
+    "highPrice" : 4765,
+    "openPrice" : 4430,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4500
   } ],
   "stockCode" : "100660"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "광명전기",
   "prices" : [ {
-    "volume" : 178153,
-    "marketCap" : 68386756470,
-    "lowPrice" : 1574,
-    "highPrice" : 1609,
-    "openPrice" : 1585,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1578
-  }, {
     "volume" : 108276,
     "marketCap" : 66653251870,
     "lowPrice" : 1533,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1239,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1256
+  }, {
+    "volume" : 134572,
+    "marketCap" : 53738642600,
+    "lowPrice" : 1238,
+    "highPrice" : 1285,
+    "openPrice" : 1285,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1240
   } ],
   "stockCode" : "017040"
 }

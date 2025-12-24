@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국컴퓨터",
   "prices" : [ {
-    "volume" : 63342,
-    "marketCap" : 85820688600,
-    "lowPrice" : 5110,
-    "highPrice" : 5350,
-    "openPrice" : 5200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5340
-  }, {
     "volume" : 27912,
     "marketCap" : 85499262800,
     "lowPrice" : 5270,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5170,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5200
+  }, {
+    "volume" : 30650,
+    "marketCap" : 82927856400,
+    "lowPrice" : 5080,
+    "highPrice" : 5220,
+    "openPrice" : 5220,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5160
   } ],
   "stockCode" : "054040"
 }

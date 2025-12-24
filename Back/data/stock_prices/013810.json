@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "스페코",
   "prices" : [ {
-    "volume" : 94751,
-    "marketCap" : 53345910800,
-    "lowPrice" : 3525,
-    "highPrice" : 3640,
-    "openPrice" : 3540,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3640
-  }, {
     "volume" : 39822,
     "marketCap" : 53052801400,
     "lowPrice" : 3605,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2340,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2345
+  }, {
+    "volume" : 320045,
+    "marketCap" : 36418842950,
+    "lowPrice" : 2305,
+    "highPrice" : 2560,
+    "openPrice" : 2345,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2485
   } ],
   "stockCode" : "013810"
 }

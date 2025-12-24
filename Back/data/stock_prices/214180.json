@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "헥토이노베이션",
   "prices" : [ {
-    "volume" : 14668,
-    "marketCap" : 166510243600,
-    "lowPrice" : 12350,
-    "highPrice" : 12620,
-    "openPrice" : 12350,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12560
-  }, {
     "volume" : 12505,
     "marketCap" : 167570818400,
     "lowPrice" : 12500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 17600
+  }, {
+    "volume" : 43516,
+    "marketCap" : 224135580750,
+    "lowPrice" : 16750,
+    "highPrice" : 17690,
+    "openPrice" : 17550,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 17250
   } ],
   "stockCode" : "214180"
 }

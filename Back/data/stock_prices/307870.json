@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "비투엔",
   "prices" : [ {
-    "volume" : 402904,
-    "marketCap" : 40405708068,
-    "lowPrice" : 880,
-    "highPrice" : 930,
-    "openPrice" : 892,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 892
-  }, {
     "volume" : 135157,
     "marketCap" : 40224516552,
     "lowPrice" : 880,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1019,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1014
+  }, {
+    "volume" : 594810,
+    "marketCap" : 58790172357,
+    "lowPrice" : 972,
+    "highPrice" : 1025,
+    "openPrice" : 1025,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 987
   } ],
   "stockCode" : "307870"
 }

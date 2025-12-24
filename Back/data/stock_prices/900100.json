@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "애머릿지",
   "prices" : [ {
-    "volume" : 70639,
-    "marketCap" : 43252846475,
-    "lowPrice" : 1004,
-    "highPrice" : 1035,
-    "openPrice" : 1011,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1025
-  }, {
     "volume" : 59043,
     "marketCap" : 42240096899,
     "lowPrice" : 998,
@@ -1937,6 +1929,14 @@
     "openPrice" : 633,
     "tradeDate" : "2025-12-22",
     "closePrice" : 629
+  }, {
+    "volume" : 344239,
+    "marketCap" : 27484263324,
+    "lowPrice" : 590,
+    "highPrice" : 629,
+    "openPrice" : 621,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 597
   } ],
   "stockCode" : "900100"
 }

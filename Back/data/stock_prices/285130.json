@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SK케미칼",
   "prices" : [ {
-    "volume" : 26769,
-    "marketCap" : 803163598650,
-    "lowPrice" : 45700,
-    "highPrice" : 47050,
-    "openPrice" : 47050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 46550
-  }, {
     "volume" : 15064,
     "marketCap" : 785909815650,
     "lowPrice" : 45550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 70100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 70600
+  }, {
+    "volume" : 41631,
+    "marketCap" : 1212643496600,
+    "lowPrice" : 69900,
+    "highPrice" : 71400,
+    "openPrice" : 71000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 70100
   } ],
   "stockCode" : "285130"
 }

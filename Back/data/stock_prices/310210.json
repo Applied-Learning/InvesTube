@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "보로노이",
   "prices" : [ {
-    "volume" : 318476,
-    "marketCap" : 1349209512000,
-    "lowPrice" : 68300,
-    "highPrice" : 74500,
-    "openPrice" : 68800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 73500
-  }, {
     "volume" : 498569,
     "marketCap" : 1505240544000,
     "lowPrice" : 73000,
@@ -1936,6 +1928,14 @@
     "highPrice" : 217500,
     "openPrice" : 215000,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 208000
+  }, {
+    "volume" : 127073,
+    "marketCap" : 3825769168000,
+    "lowPrice" : 205000,
+    "highPrice" : 213500,
+    "openPrice" : 209500,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 208000
   } ],
   "stockCode" : "310210"

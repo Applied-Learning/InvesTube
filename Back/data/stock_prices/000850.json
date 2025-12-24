@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "화천기공",
   "prices" : [ {
-    "volume" : 4619,
-    "marketCap" : 59400000000,
-    "lowPrice" : 26700,
-    "highPrice" : 27200,
-    "openPrice" : 26700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 27000
-  }, {
     "volume" : 1764,
     "marketCap" : 59510000000,
     "lowPrice" : 27000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 36750,
     "tradeDate" : "2025-12-22",
     "closePrice" : 36900
+  }, {
+    "volume" : 13393,
+    "marketCap" : 78980000000,
+    "lowPrice" : 35650,
+    "highPrice" : 37150,
+    "openPrice" : 37150,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 35900
   } ],
   "stockCode" : "000850"
 }

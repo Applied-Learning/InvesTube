@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "보령",
   "prices" : [ {
-    "volume" : 145592,
-    "marketCap" : 886965255540,
-    "lowPrice" : 10120,
-    "highPrice" : 10230,
-    "openPrice" : 10120,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10220
-  }, {
     "volume" : 132377,
     "marketCap" : 906058441080,
     "lowPrice" : 10200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9350,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9360
+  }, {
+    "volume" : 184512,
+    "marketCap" : 796963153030,
+    "lowPrice" : 9290,
+    "highPrice" : 9580,
+    "openPrice" : 9480,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9290
   } ],
   "stockCode" : "003850"
 }

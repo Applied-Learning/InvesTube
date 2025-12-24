@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "국도화학",
   "prices" : [ {
-    "volume" : 56635,
-    "marketCap" : 276175380400,
-    "lowPrice" : 28400,
-    "highPrice" : 31050,
-    "openPrice" : 28400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 30650
-  }, {
     "volume" : 5146,
     "marketCap" : 272120603200,
     "lowPrice" : 30100,
@@ -1936,6 +1928,14 @@
     "highPrice" : 33650,
     "openPrice" : 33200,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 33550
+  }, {
+    "volume" : 13941,
+    "marketCap" : 310700913600,
+    "lowPrice" : 33400,
+    "highPrice" : 34000,
+    "openPrice" : 33600,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 33550
   } ],
   "stockCode" : "007690"

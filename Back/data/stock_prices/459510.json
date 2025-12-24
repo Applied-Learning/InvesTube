@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "나우로보틱스",
   "prices" : [ {
     "volume" : 25222444,
@@ -1241,6 +1241,14 @@
     "openPrice" : 21800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 22250
+  }, {
+    "volume" : 282036,
+    "marketCap" : 281131789400,
+    "lowPrice" : 21550,
+    "highPrice" : 22800,
+    "openPrice" : 22100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 21700
   } ],
   "stockCode" : "459510"
 }

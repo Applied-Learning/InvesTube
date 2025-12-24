@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "블루엠텍",
   "prices" : [ {
-    "volume" : 120685,
-    "marketCap" : 135941589570,
-    "lowPrice" : 11950,
-    "highPrice" : 12340,
-    "openPrice" : 12000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12170
-  }, {
     "volume" : 105770,
     "marketCap" : 134266056420,
     "lowPrice" : 11890,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4680,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4670
+  }, {
+    "volume" : 932676,
+    "marketCap" : 156371047140,
+    "lowPrice" : 4575,
+    "highPrice" : 4850,
+    "openPrice" : 4670,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4620
   } ],
   "stockCode" : "439580"
 }

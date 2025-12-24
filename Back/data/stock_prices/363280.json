@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "티와이홀딩스",
   "prices" : [ {
-    "volume" : 743043,
-    "marketCap" : 157591462500,
-    "lowPrice" : 2930,
-    "highPrice" : 3265,
-    "openPrice" : 2940,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3125
-  }, {
     "volume" : 572636,
     "marketCap" : 150531364980,
     "lowPrice" : 2930,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2770,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2800
+  }, {
+    "volume" : 114978,
+    "marketCap" : 135654730920,
+    "lowPrice" : 2650,
+    "highPrice" : 2830,
+    "openPrice" : 2770,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2690
   } ],
   "stockCode" : "363280"
 }

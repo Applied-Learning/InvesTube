@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "토박스코리아",
   "prices" : [ {
-    "volume" : 8586,
-    "marketCap" : 26320000000,
-    "lowPrice" : 2730,
-    "highPrice" : 2920,
-    "openPrice" : 2785,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2800
-  }, {
     "volume" : 8858,
     "marketCap" : 25662000000,
     "lowPrice" : 2730,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2140,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2035
+  }, {
+    "volume" : 1974,
+    "marketCap" : 18589500000,
+    "lowPrice" : 2020,
+    "highPrice" : 2060,
+    "openPrice" : 2055,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2025
   } ],
   "stockCode" : "215480"
 }

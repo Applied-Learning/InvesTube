@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼화전기",
   "prices" : [ {
-    "volume" : 45384,
-    "marketCap" : 205359111000,
-    "lowPrice" : 30100,
-    "highPrice" : 31300,
-    "openPrice" : 30100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 31050
-  }, {
     "volume" : 32720,
     "marketCap" : 203044274000,
     "lowPrice" : 30200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 29300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 30350
+  }, {
+    "volume" : 23469,
+    "marketCap" : 198083909000,
+    "lowPrice" : 29900,
+    "highPrice" : 30500,
+    "openPrice" : 30200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 29950
   } ],
   "stockCode" : "009470"
 }

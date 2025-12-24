@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이엠넷",
   "prices" : [ {
-    "volume" : 29629,
-    "marketCap" : 52014642130,
-    "lowPrice" : 2320,
-    "highPrice" : 2355,
-    "openPrice" : 2325,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2335
-  }, {
     "volume" : 40414,
     "marketCap" : 52794304860,
     "lowPrice" : 2315,
@@ -1936,6 +1928,14 @@
     "highPrice" : 1999,
     "openPrice" : 1999,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 1994
+  }, {
+    "volume" : 6517,
+    "marketCap" : 44418499532,
+    "lowPrice" : 1983,
+    "highPrice" : 1994,
+    "openPrice" : 1994,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 1994
   } ],
   "stockCode" : "123570"

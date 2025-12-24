@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유진스팩10호",
   "prices" : [ {
-    "volume" : 1556,
-    "marketCap" : 8925200000,
-    "lowPrice" : 2060,
-    "highPrice" : 2125,
-    "openPrice" : 2095,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2105
-  }, {
     "volume" : 970,
     "marketCap" : 8946400000,
     "lowPrice" : 2095,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2095,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2090
+  }, {
+    "volume" : 109,
+    "marketCap" : 8904000000,
+    "lowPrice" : 2090,
+    "highPrice" : 2100,
+    "openPrice" : 2090,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2100
   } ],
   "stockCode" : "468760"
 }

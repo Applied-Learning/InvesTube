@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "STX엔진",
   "prices" : [ {
-    "volume" : 342389,
-    "marketCap" : 447523182800,
-    "lowPrice" : 19280,
-    "highPrice" : 20450,
-    "openPrice" : 19600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 19450
-  }, {
     "volume" : 232552,
     "marketCap" : 449133806080,
     "lowPrice" : 19150,
@@ -1937,6 +1929,14 @@
     "openPrice" : 37750,
     "tradeDate" : "2025-12-22",
     "closePrice" : 38700
+  }, {
+    "volume" : 453307,
+    "marketCap" : 1569789263300,
+    "lowPrice" : 38400,
+    "highPrice" : 40300,
+    "openPrice" : 39500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 39100
   } ],
   "stockCode" : "077970"
 }

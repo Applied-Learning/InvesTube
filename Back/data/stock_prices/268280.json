@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "미원에스씨",
   "prices" : [ {
-    "volume" : 1453,
-    "marketCap" : 732500000000,
-    "lowPrice" : 144100,
-    "highPrice" : 146500,
-    "openPrice" : 146500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 146500
-  }, {
     "volume" : 1189,
     "marketCap" : 735000000000,
     "lowPrice" : 145900,
@@ -1937,6 +1929,14 @@
     "openPrice" : 149200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 145700
+  }, {
+    "volume" : 1479,
+    "marketCap" : 728000000000,
+    "lowPrice" : 143600,
+    "highPrice" : 147300,
+    "openPrice" : 145800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 145600
   } ],
   "stockCode" : "268280"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이지스밸류플러스리츠",
   "prices" : [ {
-    "volume" : 58434,
-    "marketCap" : 218377525905,
-    "lowPrice" : 4205,
-    "highPrice" : 4280,
-    "openPrice" : 4280,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4245
-  }, {
     "volume" : 113457,
     "marketCap" : 222235786080,
     "lowPrice" : 4225,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4205,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4190
+  }, {
+    "volume" : 186043,
+    "marketCap" : 290295494940,
+    "lowPrice" : 4180,
+    "highPrice" : 4210,
+    "openPrice" : 4200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4180
   } ],
   "stockCode" : "334890"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하나29호스팩",
   "prices" : [ {
-    "volume" : 2119,
-    "marketCap" : 10991035000,
-    "lowPrice" : 2010,
-    "highPrice" : 2095,
-    "openPrice" : 2095,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2035
-  }, {
     "volume" : 13874,
     "marketCap" : 10964030000,
     "lowPrice" : 2025,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2095,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2090
+  }, {
+    "volume" : 34205,
+    "marketCap" : 11315095000,
+    "lowPrice" : 2090,
+    "highPrice" : 2095,
+    "openPrice" : 2090,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2095
   } ],
   "stockCode" : "454640"
 }

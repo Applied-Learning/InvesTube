@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "태양금속우",
   "prices" : [ {
-    "volume" : 34850,
-    "marketCap" : 12177000000,
-    "lowPrice" : 3675,
-    "highPrice" : 3790,
-    "openPrice" : 3790,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3690
-  }, {
     "volume" : 35343,
     "marketCap" : 12870000000,
     "lowPrice" : 3685,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3560,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3580
+  }, {
+    "volume" : 44185,
+    "marketCap" : 11401500000,
+    "lowPrice" : 3400,
+    "highPrice" : 3580,
+    "openPrice" : 3530,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3455
   } ],
   "stockCode" : "004105"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코퍼스코리아",
   "prices" : [ {
-    "volume" : 58373,
-    "marketCap" : 32053057985,
-    "lowPrice" : 845,
-    "highPrice" : 875,
-    "openPrice" : 850,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 845
-  }, {
     "volume" : 63226,
     "marketCap" : 31294405725,
     "lowPrice" : 825,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1384,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1384
+  }, {
+    "volume" : 610417,
+    "marketCap" : 54476442891,
+    "lowPrice" : 1263,
+    "highPrice" : 1365,
+    "openPrice" : 1365,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1269
   } ],
   "stockCode" : "322780"
 }

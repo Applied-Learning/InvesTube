@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼정펄프",
   "prices" : [ {
-    "volume" : 368,
-    "marketCap" : 64999246000,
-    "lowPrice" : 25700,
-    "highPrice" : 26200,
-    "openPrice" : 26200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 26000
-  }, {
     "volume" : 494,
     "marketCap" : 65124244550,
     "lowPrice" : 25750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 32000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 31950
+  }, {
+    "volume" : 1522,
+    "marketCap" : 79374079250,
+    "lowPrice" : 31500,
+    "highPrice" : 32150,
+    "openPrice" : 32150,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 31750
   } ],
   "stockCode" : "009770"
 }

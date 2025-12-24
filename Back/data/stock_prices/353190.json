@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "휴럼",
   "prices" : [ {
-    "volume" : 71846,
-    "marketCap" : 27564894000,
-    "lowPrice" : 663,
-    "highPrice" : 720,
-    "openPrice" : 691,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 700
-  }, {
     "volume" : 36119,
     "marketCap" : 27564894000,
     "lowPrice" : 690,
@@ -1937,6 +1929,14 @@
     "openPrice" : 690,
     "tradeDate" : "2025-12-22",
     "closePrice" : 705
+  }, {
+    "volume" : 28700,
+    "marketCap" : 27486137160,
+    "lowPrice" : 698,
+    "highPrice" : 705,
+    "openPrice" : 705,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 698
   } ],
   "stockCode" : "353190"
 }

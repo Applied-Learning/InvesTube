@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대원미디어",
   "prices" : [ {
-    "volume" : 15123,
-    "marketCap" : 98870515560,
-    "lowPrice" : 7770,
-    "highPrice" : 7960,
-    "openPrice" : 7770,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7860
-  }, {
     "volume" : 11187,
     "marketCap" : 98367357720,
     "lowPrice" : 7800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8000
+  }, {
+    "volume" : 26320,
+    "marketCap" : 99625252320,
+    "lowPrice" : 7880,
+    "highPrice" : 8010,
+    "openPrice" : 8010,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7920
   } ],
   "stockCode" : "048910"
 }

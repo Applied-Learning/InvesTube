@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "TBH글로벌",
   "prices" : [ {
-    "volume" : 29324,
-    "marketCap" : 25361891904,
-    "lowPrice" : 1170,
-    "highPrice" : 1230,
-    "openPrice" : 1230,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1216
-  }, {
     "volume" : 8928,
     "marketCap" : 25299321447,
     "lowPrice" : 1204,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1255,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1259
+  }, {
+    "volume" : 24457,
+    "marketCap" : 26321305578,
+    "lowPrice" : 1256,
+    "highPrice" : 1289,
+    "openPrice" : 1260,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1262
   } ],
   "stockCode" : "084870"
 }

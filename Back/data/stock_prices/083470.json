@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이엠앤아이",
   "prices" : [ {
-    "volume" : 41238,
-    "marketCap" : 30303267180,
-    "lowPrice" : 1415,
-    "highPrice" : 1459,
-    "openPrice" : 1416,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1420
-  }, {
     "volume" : 70837,
     "marketCap" : 30708733431,
     "lowPrice" : 1364,
@@ -1937,6 +1929,14 @@
     "openPrice" : 821,
     "tradeDate" : "2025-12-22",
     "closePrice" : 821
+  }, {
+    "volume" : 33812,
+    "marketCap" : 17477729451,
+    "lowPrice" : 814,
+    "highPrice" : 833,
+    "openPrice" : 816,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 819
   } ],
   "stockCode" : "083470"
 }

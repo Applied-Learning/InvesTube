@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국피아이엠",
   "prices" : [ {
     "volume" : 36839523,
@@ -1409,6 +1409,14 @@
     "openPrice" : 50000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 50600
+  }, {
+    "volume" : 370028,
+    "marketCap" : 286412598900,
+    "lowPrice" : 47250,
+    "highPrice" : 51900,
+    "openPrice" : 50600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 47700
   } ],
   "stockCode" : "448900"
 }

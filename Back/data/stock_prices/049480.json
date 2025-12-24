@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오픈베이스",
   "prices" : [ {
-    "volume" : 149650,
-    "marketCap" : 80127076650,
-    "lowPrice" : 2515,
-    "highPrice" : 2580,
-    "openPrice" : 2520,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2550
-  }, {
     "volume" : 72745,
     "marketCap" : 79812852820,
     "lowPrice" : 2520,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2420,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2425
+  }, {
+    "volume" : 55551,
+    "marketCap" : 75099495370,
+    "lowPrice" : 2385,
+    "highPrice" : 2430,
+    "openPrice" : 2425,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2390
   } ],
   "stockCode" : "049480"
 }

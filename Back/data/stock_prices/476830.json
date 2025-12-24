@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "알지노믹스",
   "prices" : [ {
     "volume" : 304191,
@@ -25,6 +25,14 @@
     "openPrice" : 152100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 152100
+  }, {
+    "volume" : 7950082,
+    "marketCap" : 2224345200000,
+    "lowPrice" : 144000,
+    "highPrice" : 171400,
+    "openPrice" : 156500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 161700
   } ],
   "stockCode" : "476830"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KPX홀딩스",
   "prices" : [ {
-    "volume" : 2862,
-    "marketCap" : 228130884000,
-    "lowPrice" : 53800,
-    "highPrice" : 54500,
-    "openPrice" : 54100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 54000
-  }, {
     "volume" : 814,
     "marketCap" : 228975813200,
     "lowPrice" : 54000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 76300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 75700
+  }, {
+    "volume" : 2750,
+    "marketCap" : 316848450000,
+    "lowPrice" : 75000,
+    "highPrice" : 76300,
+    "openPrice" : 75200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 75000
   } ],
   "stockCode" : "092230"
 }

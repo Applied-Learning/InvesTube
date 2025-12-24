@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KCC",
   "prices" : [ {
-    "volume" : 14563,
-    "marketCap" : 2052774801000,
-    "lowPrice" : 227000,
-    "highPrice" : 232500,
-    "openPrice" : 228500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 231000
-  }, {
     "volume" : 13451,
     "marketCap" : 2030558623500,
     "lowPrice" : 227000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 424500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 419500
+  }, {
+    "volume" : 17307,
+    "marketCap" : 3701215171500,
+    "lowPrice" : 415500,
+    "highPrice" : 424000,
+    "openPrice" : 419000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 416500
   } ],
   "stockCode" : "002380"
 }

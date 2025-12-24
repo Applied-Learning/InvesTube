@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "농우바이오",
   "prices" : [ {
-    "volume" : 20010,
-    "marketCap" : 115420039200,
-    "lowPrice" : 7170,
-    "highPrice" : 7210,
-    "openPrice" : 7180,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7200
-  }, {
     "volume" : 17883,
     "marketCap" : 116061261640,
     "lowPrice" : 7200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8180,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8250
+  }, {
+    "volume" : 16695,
+    "marketCap" : 131771211420,
+    "lowPrice" : 8200,
+    "highPrice" : 8280,
+    "openPrice" : 8240,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8220
   } ],
   "stockCode" : "054050"
 }

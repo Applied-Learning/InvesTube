@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "보해양조",
   "prices" : [ {
-    "volume" : 648414,
-    "marketCap" : 67473262565,
-    "lowPrice" : 475,
-    "highPrice" : 494,
-    "openPrice" : 477,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 485
-  }, {
     "volume" : 312397,
     "marketCap" : 67473262565,
     "lowPrice" : 480,
@@ -1937,6 +1929,14 @@
     "openPrice" : 431,
     "tradeDate" : "2025-12-22",
     "closePrice" : 422
+  }, {
+    "volume" : 329141,
+    "marketCap" : 58430454180,
+    "lowPrice" : 417,
+    "highPrice" : 424,
+    "openPrice" : 423,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 420
   } ],
   "stockCode" : "000890"
 }

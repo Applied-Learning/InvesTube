@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "조일알미늄",
   "prices" : [ {
-    "volume" : 370173,
-    "marketCap" : 181969783077,
-    "lowPrice" : 1404,
-    "highPrice" : 1450,
-    "openPrice" : 1404,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1437
-  }, {
     "volume" : 465781,
     "marketCap" : 181083361030,
     "lowPrice" : 1422,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1243,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1247
+  }, {
+    "volume" : 431324,
+    "marketCap" : 156516807156,
+    "lowPrice" : 1222,
+    "highPrice" : 1252,
+    "openPrice" : 1250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1236
   } ],
   "stockCode" : "018470"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대동스틸",
   "prices" : [ {
-    "volume" : 6741,
-    "marketCap" : 32900000000,
-    "lowPrice" : 3240,
-    "highPrice" : 3345,
-    "openPrice" : 3255,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3290
-  }, {
     "volume" : 20688,
     "marketCap" : 32900000000,
     "lowPrice" : 3200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2820,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2885
+  }, {
+    "volume" : 45558,
+    "marketCap" : 28450000000,
+    "lowPrice" : 2790,
+    "highPrice" : 2950,
+    "openPrice" : 2950,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2845
   } ],
   "stockCode" : "048470"
 }

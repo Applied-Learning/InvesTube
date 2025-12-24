@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "BYC우",
   "prices" : [ {
-    "volume" : 2306,
-    "marketCap" : 28150819500,
-    "lowPrice" : 12520,
-    "highPrice" : 13070,
-    "openPrice" : 12520,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13070
-  }, {
     "volume" : 488,
     "marketCap" : 28107742500,
     "lowPrice" : 12980,
@@ -1937,6 +1929,14 @@
     "openPrice" : 25500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 25100
+  }, {
+    "volume" : 2697,
+    "marketCap" : 54169327500,
+    "lowPrice" : 24800,
+    "highPrice" : 25600,
+    "openPrice" : 25600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 25150
   } ],
   "stockCode" : "001465"
 }

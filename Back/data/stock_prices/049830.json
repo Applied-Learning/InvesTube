@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "승일",
   "prices" : [ {
-    "volume" : 2189,
-    "marketCap" : 48014436960,
-    "lowPrice" : 7560,
-    "highPrice" : 7840,
-    "openPrice" : 7570,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7830
-  }, {
     "volume" : 1483,
     "marketCap" : 48382363680,
     "lowPrice" : 7750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8550,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8530
+  }, {
+    "volume" : 1727,
+    "marketCap" : 52613520960,
+    "lowPrice" : 8500,
+    "highPrice" : 8600,
+    "openPrice" : 8600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8580
   } ],
   "stockCode" : "049830"
 }

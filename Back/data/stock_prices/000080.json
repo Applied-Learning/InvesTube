@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하이트진로",
   "prices" : [ {
-    "volume" : 110435,
-    "marketCap" : 1465792469900,
-    "lowPrice" : 20750,
-    "highPrice" : 21000,
-    "openPrice" : 20950,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 20900
-  }, {
     "volume" : 153399,
     "marketCap" : 1469299150450,
     "lowPrice" : 20900,
@@ -1937,6 +1929,14 @@
     "openPrice" : 19040,
     "tradeDate" : "2025-12-22",
     "closePrice" : 18990
+  }, {
+    "volume" : 185778,
+    "marketCap" : 1331135936780,
+    "lowPrice" : 18960,
+    "highPrice" : 19050,
+    "openPrice" : 18980,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 18980
   } ],
   "stockCode" : "000080"
 }

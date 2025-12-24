@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "정상제이엘에스",
   "prices" : [ {
-    "volume" : 90341,
-    "marketCap" : 103628618720,
-    "lowPrice" : 6540,
-    "highPrice" : 6620,
-    "openPrice" : 6590,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6610
-  }, {
     "volume" : 89162,
     "marketCap" : 103785394240,
     "lowPrice" : 6580,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6510,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6450
+  }, {
+    "volume" : 48757,
+    "marketCap" : 100963434880,
+    "lowPrice" : 6420,
+    "highPrice" : 6460,
+    "openPrice" : 6450,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6440
   } ],
   "stockCode" : "040420"
 }

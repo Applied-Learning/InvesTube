@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "크라운제과우",
   "prices" : [ {
-    "volume" : 689,
-    "marketCap" : 7588623600,
-    "lowPrice" : 9650,
-    "highPrice" : 9840,
-    "openPrice" : 9820,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9810
-  }, {
     "volume" : 293,
     "marketCap" : 7588623600,
     "lowPrice" : 9700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10250,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10150
+  }, {
+    "volume" : 2510,
+    "marketCap" : 7859369600,
+    "lowPrice" : 10060,
+    "highPrice" : 10270,
+    "openPrice" : 10270,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10160
   } ],
   "stockCode" : "26490K"
 }

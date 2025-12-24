@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아시아경제",
   "prices" : [ {
-    "volume" : 215986,
-    "marketCap" : 54799408740,
-    "lowPrice" : 1460,
-    "highPrice" : 1599,
-    "openPrice" : 1500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1570
-  }, {
     "volume" : 43587,
     "marketCap" : 55043737314,
     "lowPrice" : 1547,
@@ -1937,6 +1929,14 @@
     "openPrice" : 942,
     "tradeDate" : "2025-12-22",
     "closePrice" : 953
+  }, {
+    "volume" : 86840,
+    "marketCap" : 33682439130,
+    "lowPrice" : 933,
+    "highPrice" : 985,
+    "openPrice" : 960,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 965
   } ],
   "stockCode" : "127710"
 }

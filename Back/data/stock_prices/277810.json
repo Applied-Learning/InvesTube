@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "레인보우로보틱스",
   "prices" : [ {
-    "volume" : 134941,
-    "marketCap" : 2615100858400,
-    "lowPrice" : 128500,
-    "highPrice" : 136700,
-    "openPrice" : 129800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 134800
-  }, {
     "volume" : 525056,
     "marketCap" : 2826559310600,
     "lowPrice" : 134500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 451500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 472500
+  }, {
+    "volume" : 933866,
+    "marketCap" : 9738728716000,
+    "lowPrice" : 473000,
+    "highPrice" : 531000,
+    "openPrice" : 477000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 502000
   } ],
   "stockCode" : "277810"
 }

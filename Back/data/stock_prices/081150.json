@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "티플랙스",
   "prices" : [ {
-    "volume" : 238980,
-    "marketCap" : 73775942080,
-    "lowPrice" : 3025,
-    "highPrice" : 3130,
-    "openPrice" : 3030,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3040
-  }, {
     "volume" : 173078,
     "marketCap" : 74382652130,
     "lowPrice" : 3030,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2825,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2865
+  }, {
+    "volume" : 36497,
+    "marketCap" : 68679577660,
+    "lowPrice" : 2825,
+    "highPrice" : 2885,
+    "openPrice" : 2880,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2830
   } ],
   "stockCode" : "081150"
 }

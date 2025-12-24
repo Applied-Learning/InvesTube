@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한전산업",
   "prices" : [ {
-    "volume" : 1102672,
-    "marketCap" : 324370000000,
-    "lowPrice" : 9500,
-    "highPrice" : 10670,
-    "openPrice" : 9500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9950
-  }, {
     "volume" : 215601,
     "marketCap" : 322088000000,
     "lowPrice" : 9800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10830
+  }, {
+    "volume" : 54330,
+    "marketCap" : 351428000000,
+    "lowPrice" : 10760,
+    "highPrice" : 10900,
+    "openPrice" : 10850,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10780
   } ],
   "stockCode" : "130660"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "수젠텍",
   "prices" : [ {
-    "volume" : 39790,
-    "marketCap" : 86060048000,
-    "lowPrice" : 5060,
-    "highPrice" : 5300,
-    "openPrice" : 5060,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5140
-  }, {
     "volume" : 53363,
     "marketCap" : 86562344000,
     "lowPrice" : 5130,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6330,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6330
+  }, {
+    "volume" : 112911,
+    "marketCap" : 103807840000,
+    "lowPrice" : 6190,
+    "highPrice" : 6400,
+    "openPrice" : 6300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6200
   } ],
   "stockCode" : "253840"
 }

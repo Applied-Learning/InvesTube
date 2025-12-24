@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대원제약",
   "prices" : [ {
-    "volume" : 47837,
-    "marketCap" : 316453196130,
-    "lowPrice" : 13890,
-    "highPrice" : 14140,
-    "openPrice" : 13900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14110
-  }, {
     "volume" : 36751,
     "marketCap" : 319593057750,
     "lowPrice" : 14080,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12330,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12280
+  }, {
+    "volume" : 14135,
+    "marketCap" : 274065064260,
+    "lowPrice" : 12200,
+    "highPrice" : 12400,
+    "openPrice" : 12240,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12220
   } ],
   "stockCode" : "003220"
 }

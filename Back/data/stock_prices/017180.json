@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "명문제약",
   "prices" : [ {
-    "volume" : 167634,
-    "marketCap" : 62202727728,
-    "lowPrice" : 1800,
-    "highPrice" : 1864,
-    "openPrice" : 1810,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1832
-  }, {
     "volume" : 147216,
     "marketCap" : 61931100096,
     "lowPrice" : 1818,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1864
+  }, {
+    "volume" : 64918,
+    "marketCap" : 62813889900,
+    "lowPrice" : 1800,
+    "highPrice" : 1869,
+    "openPrice" : 1861,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1850
   } ],
   "stockCode" : "017180"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "TCC스틸",
   "prices" : [ {
-    "volume" : 155107,
-    "marketCap" : 764129267550,
-    "lowPrice" : 27500,
-    "highPrice" : 29350,
-    "openPrice" : 28350,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 29150
-  }, {
     "volume" : 104481,
     "marketCap" : 749711734200,
     "lowPrice" : 28600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 15320,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15390
+  }, {
+    "volume" : 97954,
+    "marketCap" : 396875372580,
+    "lowPrice" : 15060,
+    "highPrice" : 15530,
+    "openPrice" : 15500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15140
   } ],
   "stockCode" : "002710"
 }

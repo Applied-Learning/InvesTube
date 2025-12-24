@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "티사이언티픽",
   "prices" : [ {
-    "volume" : 612951,
-    "marketCap" : 77874611593,
-    "lowPrice" : 1008,
-    "highPrice" : 1093,
-    "openPrice" : 1065,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1093
-  }, {
     "volume" : 364254,
     "marketCap" : 75238417056,
     "lowPrice" : 1046,
@@ -1937,6 +1929,14 @@
     "openPrice" : 753,
     "tradeDate" : "2025-12-22",
     "closePrice" : 751
+  }, {
+    "volume" : 64223,
+    "marketCap" : 52866387742,
+    "lowPrice" : 741,
+    "highPrice" : 762,
+    "openPrice" : 744,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 742
   } ],
   "stockCode" : "057680"
 }

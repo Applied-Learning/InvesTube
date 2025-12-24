@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한미사이언스",
   "prices" : [ {
-    "volume" : 109412,
-    "marketCap" : 1993613682500,
-    "lowPrice" : 28650,
-    "highPrice" : 29250,
-    "openPrice" : 28700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 29150
-  }, {
     "volume" : 67772,
     "marketCap" : 1986774527500,
     "lowPrice" : 28850,
@@ -1937,6 +1929,14 @@
     "openPrice" : 37900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 37150
+  }, {
+    "volume" : 43015,
+    "marketCap" : 2544165660000,
+    "lowPrice" : 37100,
+    "highPrice" : 37700,
+    "openPrice" : 37300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 37200
   } ],
   "stockCode" : "008930"
 }

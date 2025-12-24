@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "티엑스알로보틱스",
   "prices" : [ {
     "volume" : 30913639,
@@ -1497,6 +1497,14 @@
     "openPrice" : 15100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15550
+  }, {
+    "volume" : 350484,
+    "marketCap" : 245051511900,
+    "lowPrice" : 15260,
+    "highPrice" : 16360,
+    "openPrice" : 15550,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15860
   } ],
   "stockCode" : "484810"
 }

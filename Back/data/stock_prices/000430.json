@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대원강업",
   "prices" : [ {
-    "volume" : 15566,
-    "marketCap" : 245210000000,
-    "lowPrice" : 3875,
-    "highPrice" : 3980,
-    "openPrice" : 3875,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3955
-  }, {
     "volume" : 30194,
     "marketCap" : 241800000000,
     "lowPrice" : 3900,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3995,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3890
+  }, {
+    "volume" : 43795,
+    "marketCap" : 236840000000,
+    "lowPrice" : 3810,
+    "highPrice" : 3930,
+    "openPrice" : 3890,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3820
   } ],
   "stockCode" : "000430"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유바이오로직스",
   "prices" : [ {
-    "volume" : 110656,
-    "marketCap" : 436219625580,
-    "lowPrice" : 11700,
-    "highPrice" : 12020,
-    "openPrice" : 11740,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11940
-  }, {
     "volume" : 89758,
     "marketCap" : 436584968650,
     "lowPrice" : 11830,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12060
+  }, {
+    "volume" : 182510,
+    "marketCap" : 434566837950,
+    "lowPrice" : 11780,
+    "highPrice" : 12120,
+    "openPrice" : 12060,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11850
   } ],
   "stockCode" : "206650"
 }

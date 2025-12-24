@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "세동",
   "prices" : [ {
-    "volume" : 28264,
-    "marketCap" : 17145353849,
-    "lowPrice" : 939,
-    "highPrice" : 976,
-    "openPrice" : 968,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 971
-  }, {
     "volume" : 29584,
     "marketCap" : 17304270620,
     "lowPrice" : 971,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1264,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1266
+  }, {
+    "volume" : 43258,
+    "marketCap" : 22283662778,
+    "lowPrice" : 1247,
+    "highPrice" : 1273,
+    "openPrice" : 1266,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1262
   } ],
   "stockCode" : "053060"
 }

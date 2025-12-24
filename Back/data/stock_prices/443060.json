@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HD현대마린솔루션",
   "prices" : [ {
-    "volume" : 167206,
-    "marketCap" : 6974205000000,
-    "lowPrice" : 154400,
-    "highPrice" : 162900,
-    "openPrice" : 161900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 156900
-  }, {
     "volume" : 102332,
     "marketCap" : 7116445000000,
     "lowPrice" : 155100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 198000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 196400
+  }, {
+    "volume" : 63941,
+    "marketCap" : 8777559318000,
+    "lowPrice" : 192700,
+    "highPrice" : 198700,
+    "openPrice" : 196900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 195800
   } ],
   "stockCode" : "443060"
 }

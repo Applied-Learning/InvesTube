@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대신증권우",
   "prices" : [ {
-    "volume" : 66623,
-    "marketCap" : 411580000000,
-    "lowPrice" : 15610,
-    "highPrice" : 15950,
-    "openPrice" : 15950,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15830
-  }, {
     "volume" : 55636,
     "marketCap" : 411060000000,
     "lowPrice" : 15730,
@@ -1937,6 +1929,14 @@
     "openPrice" : 20750,
     "tradeDate" : "2025-12-22",
     "closePrice" : 20950
+  }, {
+    "volume" : 57153,
+    "marketCap" : 548600000000,
+    "lowPrice" : 20950,
+    "highPrice" : 21125,
+    "openPrice" : 21050,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 21100
   } ],
   "stockCode" : "003545"
 }

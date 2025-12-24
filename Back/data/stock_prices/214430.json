@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이쓰리시스템",
   "prices" : [ {
-    "volume" : 193726,
-    "marketCap" : 311631426000,
-    "lowPrice" : 40300,
-    "highPrice" : 44750,
-    "openPrice" : 40300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 43850
-  }, {
     "volume" : 91314,
     "marketCap" : 313763454000,
     "lowPrice" : 43450,
@@ -1937,6 +1929,14 @@
     "openPrice" : 72700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 78400
+  }, {
+    "volume" : 126061,
+    "marketCap" : 542195353000,
+    "lowPrice" : 71600,
+    "highPrice" : 83300,
+    "openPrice" : 83100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 74200
   } ],
   "stockCode" : "214430"
 }

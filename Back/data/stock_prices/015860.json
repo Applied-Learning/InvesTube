@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "일진홀딩스",
   "prices" : [ {
-    "volume" : 115421,
-    "marketCap" : 192455183700,
-    "lowPrice" : 3855,
-    "highPrice" : 3930,
-    "openPrice" : 3855,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3900
-  }, {
     "volume" : 41419,
     "marketCap" : 192455183700,
     "lowPrice" : 3875,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7210,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7250
+  }, {
+    "volume" : 126987,
+    "marketCap" : 354808402770,
+    "lowPrice" : 7080,
+    "highPrice" : 7270,
+    "openPrice" : 7270,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7190
   } ],
   "stockCode" : "015860"
 }

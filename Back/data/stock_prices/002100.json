@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "경농",
   "prices" : [ {
-    "volume" : 9413,
-    "marketCap" : 180779044500,
-    "lowPrice" : 9200,
-    "highPrice" : 9320,
-    "openPrice" : 9320,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9260
-  }, {
     "volume" : 29219,
     "marketCap" : 180583818750,
     "lowPrice" : 9130,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9430,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9430
+  }, {
+    "volume" : 10753,
+    "marketCap" : 184293108000,
+    "lowPrice" : 9390,
+    "highPrice" : 9450,
+    "openPrice" : 9430,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9440
   } ],
   "stockCode" : "002100"
 }

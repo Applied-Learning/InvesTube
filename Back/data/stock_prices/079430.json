@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대리바트",
   "prices" : [ {
-    "volume" : 12240,
-    "marketCap" : 165719725740,
-    "lowPrice" : 7910,
-    "highPrice" : 8070,
-    "openPrice" : 7960,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8070
-  }, {
     "volume" : 10926,
     "marketCap" : 164076903180,
     "lowPrice" : 7900,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6450,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6330
+  }, {
+    "volume" : 35903,
+    "marketCap" : 128961570960,
+    "lowPrice" : 6200,
+    "highPrice" : 6350,
+    "openPrice" : 6330,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6280
   } ],
   "stockCode" : "079430"
 }

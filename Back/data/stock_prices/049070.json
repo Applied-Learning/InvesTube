@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인탑스",
   "prices" : [ {
-    "volume" : 72926,
-    "marketCap" : 292400000000,
-    "lowPrice" : 16300,
-    "highPrice" : 17100,
-    "openPrice" : 16300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17000
-  }, {
     "volume" : 126732,
     "marketCap" : 288960000000,
     "lowPrice" : 16800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 15440,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15710
+  }, {
+    "volume" : 32511,
+    "marketCap" : 265912000000,
+    "lowPrice" : 15400,
+    "highPrice" : 15890,
+    "openPrice" : 15720,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15460
   } ],
   "stockCode" : "049070"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이프로젠",
   "prices" : [ {
-    "volume" : 2103158,
-    "marketCap" : 244211968682,
-    "lowPrice" : 796,
-    "highPrice" : 814,
-    "openPrice" : 800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 803
-  }, {
     "volume" : 1526869,
     "marketCap" : 241778972730,
     "lowPrice" : 784,
@@ -1937,6 +1929,14 @@
     "openPrice" : 750,
     "tradeDate" : "2025-12-22",
     "closePrice" : 743
+  }, {
+    "volume" : 2856745,
+    "marketCap" : 234135876330,
+    "lowPrice" : 708,
+    "highPrice" : 743,
+    "openPrice" : 743,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 711
   } ],
   "stockCode" : "007460"
 }

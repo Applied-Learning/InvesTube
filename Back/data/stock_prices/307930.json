@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "컴퍼니케이",
   "prices" : [ {
-    "volume" : 26427,
-    "marketCap" : 77191450000,
-    "lowPrice" : 4770,
-    "highPrice" : 4945,
-    "openPrice" : 4770,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4945
-  }, {
     "volume" : 11462,
     "marketCap" : 77113400000,
     "lowPrice" : 4870,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6820,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6760
+  }, {
+    "volume" : 232534,
+    "marketCap" : 97562500000,
+    "lowPrice" : 6200,
+    "highPrice" : 6750,
+    "openPrice" : 6750,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6250
   } ],
   "stockCode" : "307930"
 }

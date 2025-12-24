@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이티켐",
   "prices" : [ {
     "volume" : 9211579,
@@ -737,6 +737,14 @@
     "openPrice" : 35000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 35300
+  }, {
+    "volume" : 109007,
+    "marketCap" : 444809085350,
+    "lowPrice" : 34100,
+    "highPrice" : 36450,
+    "openPrice" : 35800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 35350
   } ],
   "stockCode" : "309710"
 }

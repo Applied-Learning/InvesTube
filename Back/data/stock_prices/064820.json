@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이프",
   "prices" : [ {
-    "volume" : 135548,
-    "marketCap" : 182320195200,
-    "lowPrice" : 5830,
-    "highPrice" : 6020,
-    "openPrice" : 5890,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5900
-  }, {
     "volume" : 139236,
     "marketCap" : 182320195200,
     "lowPrice" : 5750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10890,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10890
+  }, {
+    "volume" : 290915,
+    "marketCap" : 331266524160,
+    "lowPrice" : 10700,
+    "highPrice" : 11250,
+    "openPrice" : 11050,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10720
   } ],
   "stockCode" : "064820"
 }

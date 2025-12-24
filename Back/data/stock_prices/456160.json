@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "지투지바이오",
   "prices" : [ {
     "volume" : 6682113,
@@ -697,6 +697,14 @@
     "openPrice" : 69000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 68200
+  }, {
+    "volume" : 481124,
+    "marketCap" : 1084446352200,
+    "lowPrice" : 66500,
+    "highPrice" : 71100,
+    "openPrice" : 69100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 66700
   } ],
   "stockCode" : "456160"
 }

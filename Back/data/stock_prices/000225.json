@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유유제약1우",
   "prices" : [ {
-    "volume" : 12421,
-    "marketCap" : 10427878000,
-    "lowPrice" : 4545,
-    "highPrice" : 4635,
-    "openPrice" : 4635,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4600
-  }, {
     "volume" : 25583,
     "marketCap" : 10348535450,
     "lowPrice" : 4525,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5010,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5150
+  }, {
+    "volume" : 42911,
+    "marketCap" : 11402657900,
+    "lowPrice" : 4960,
+    "highPrice" : 5250,
+    "openPrice" : 5150,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5030
   } ],
   "stockCode" : "000225"
 }

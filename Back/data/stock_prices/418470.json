@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KT밀리의서재",
   "prices" : [ {
-    "volume" : 56090,
-    "marketCap" : 126894384770,
-    "lowPrice" : 14580,
-    "highPrice" : 15000,
-    "openPrice" : 14660,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14930
-  }, {
     "volume" : 45400,
     "marketCap" : 124174612290,
     "lowPrice" : 14610,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14070,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13960
+  }, {
+    "volume" : 14504,
+    "marketCap" : 117865256640,
+    "lowPrice" : 13740,
+    "highPrice" : 14100,
+    "openPrice" : 14100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13760
   } ],
   "stockCode" : "418470"
 }

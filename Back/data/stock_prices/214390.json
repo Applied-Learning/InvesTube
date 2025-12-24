@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "경보제약",
   "prices" : [ {
-    "volume" : 0,
-    "marketCap" : 177867038400,
-    "lowPrice" : 0,
-    "highPrice" : 0,
-    "openPrice" : 0,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7440
-  }, {
     "volume" : 0,
     "marketCap" : 177867038400,
     "lowPrice" : 0,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6030,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5950
+  }, {
+    "volume" : 30865,
+    "marketCap" : 140811405400,
+    "lowPrice" : 5890,
+    "highPrice" : 6070,
+    "openPrice" : 6010,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5890
   } ],
   "stockCode" : "214390"
 }

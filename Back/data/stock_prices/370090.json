@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "퓨런티어",
   "prices" : [ {
-    "volume" : 536705,
-    "marketCap" : 232083617500,
-    "lowPrice" : 26350,
-    "highPrice" : 27550,
-    "openPrice" : 26650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 27250
-  }, {
     "volume" : 433440,
     "marketCap" : 222715104500,
     "lowPrice" : 26100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 15200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15380
+  }, {
+    "volume" : 308320,
+    "marketCap" : 123047215400,
+    "lowPrice" : 14360,
+    "highPrice" : 15960,
+    "openPrice" : 15850,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14380
   } ],
   "stockCode" : "370090"
 }

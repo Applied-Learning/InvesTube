@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "와이씨켐",
   "prices" : [ {
-    "volume" : 71832,
-    "marketCap" : 138008939250,
-    "lowPrice" : 13360,
-    "highPrice" : 13870,
-    "openPrice" : 13420,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13650
-  }, {
     "volume" : 82995,
     "marketCap" : 133661404900,
     "lowPrice" : 13220,
@@ -1937,6 +1929,14 @@
     "openPrice" : 20600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 20700
+  }, {
+    "volume" : 35942,
+    "marketCap" : 203727481750,
+    "lowPrice" : 20050,
+    "highPrice" : 20750,
+    "openPrice" : 20750,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 20150
   } ],
   "stockCode" : "112290"
 }

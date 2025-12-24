@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "라온피플",
   "prices" : [ {
-    "volume" : 45182,
-    "marketCap" : 81875547100,
-    "lowPrice" : 3730,
-    "highPrice" : 3975,
-    "openPrice" : 3730,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3925
-  }, {
     "volume" : 6771073,
     "marketCap" : 87820650520,
     "lowPrice" : 3910,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2070,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2010
+  }, {
+    "volume" : 63448,
+    "marketCap" : 42241524300,
+    "lowPrice" : 2005,
+    "highPrice" : 2075,
+    "openPrice" : 2040,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2025
   } ],
   "stockCode" : "300120"
 }

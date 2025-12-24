@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엠로",
   "prices" : [ {
-    "volume" : 111738,
-    "marketCap" : 775540678000,
-    "lowPrice" : 60400,
-    "highPrice" : 64500,
-    "openPrice" : 61500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 63800
-  }, {
     "volume" : 142708,
     "marketCap" : 801067879000,
     "lowPrice" : 63500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 36900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 38350
+  }, {
+    "volume" : 47576,
+    "marketCap" : 452977067700,
+    "lowPrice" : 36600,
+    "highPrice" : 38850,
+    "openPrice" : 38500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 36650
   } ],
   "stockCode" : "058970"
 }

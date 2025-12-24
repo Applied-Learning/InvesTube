@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아우딘퓨쳐스",
   "prices" : [ {
-    "volume" : 70443,
-    "marketCap" : 39213068794,
-    "lowPrice" : 1090,
-    "highPrice" : 1129,
-    "openPrice" : 1094,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1102
-  }, {
     "volume" : 49174,
     "marketCap" : 39177485247,
     "lowPrice" : 1100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 833,
     "tradeDate" : "2025-12-22",
     "closePrice" : 812
+  }, {
+    "volume" : 66173,
+    "marketCap" : 27812624840,
+    "lowPrice" : 770,
+    "highPrice" : 823,
+    "openPrice" : 812,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 770
   } ],
   "stockCode" : "227610"
 }

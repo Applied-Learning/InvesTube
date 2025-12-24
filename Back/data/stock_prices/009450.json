@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "경동나비엔",
   "prices" : [ {
-    "volume" : 51066,
-    "marketCap" : 1264553785600,
-    "lowPrice" : 85600,
-    "highPrice" : 87900,
-    "openPrice" : 86500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 86800
-  }, {
     "volume" : 31329,
     "marketCap" : 1260183208000,
     "lowPrice" : 85700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 57000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 56300
+  }, {
+    "volume" : 40293,
+    "marketCap" : 812927433600,
+    "lowPrice" : 55400,
+    "highPrice" : 56900,
+    "openPrice" : 56900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 55800
   } ],
   "stockCode" : "009450"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "네오이뮨텍",
   "prices" : [ {
-    "volume" : 200333,
-    "marketCap" : 112807777565,
-    "lowPrice" : 1100,
-    "highPrice" : 1145,
-    "openPrice" : 1108,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1141
-  }, {
     "volume" : 153294,
     "marketCap" : 111720235450,
     "lowPrice" : 1105,
@@ -1937,6 +1929,14 @@
     "openPrice" : 714,
     "tradeDate" : "2025-12-22",
     "closePrice" : 760
+  }, {
+    "volume" : 22947115,
+    "marketCap" : 134965548755,
+    "lowPrice" : 740,
+    "highPrice" : 876,
+    "openPrice" : 760,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 821
   } ],
   "stockCode" : "950220"
 }

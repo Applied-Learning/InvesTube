@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신신제약",
   "prices" : [ {
-    "volume" : 1994071,
-    "marketCap" : 83741160000,
-    "lowPrice" : 5330,
-    "highPrice" : 5980,
-    "openPrice" : 5330,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5520
-  }, {
     "volume" : 97639,
     "marketCap" : 82679225000,
     "lowPrice" : 5420,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5740,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5840
+  }, {
+    "volume" : 548442,
+    "marketCap" : 86471850000,
+    "lowPrice" : 5660,
+    "highPrice" : 5940,
+    "openPrice" : 5850,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5700
   } ],
   "stockCode" : "002800"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인터엠",
   "prices" : [ {
-    "volume" : 109834,
-    "marketCap" : 21971467548,
-    "lowPrice" : 1039,
-    "highPrice" : 1082,
-    "openPrice" : 1050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1044
-  }, {
     "volume" : 63119,
     "marketCap" : 21845194746,
     "lowPrice" : 1035,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1005,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1016
+  }, {
+    "volume" : 31717,
+    "marketCap" : 21487421807,
+    "lowPrice" : 1005,
+    "highPrice" : 1022,
+    "openPrice" : 1016,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1021
   } ],
   "stockCode" : "017250"
 }

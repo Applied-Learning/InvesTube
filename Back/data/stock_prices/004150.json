@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한솔홀딩스",
   "prices" : [ {
-    "volume" : 32522,
-    "marketCap" : 99770370375,
-    "lowPrice" : 2350,
-    "highPrice" : 2385,
-    "openPrice" : 2370,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2375
-  }, {
     "volume" : 7036,
     "marketCap" : 99770370375,
     "lowPrice" : 2365,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3160,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3150
+  }, {
+    "volume" : 25704,
+    "marketCap" : 128413320600,
+    "lowPrice" : 3115,
+    "highPrice" : 3150,
+    "openPrice" : 3150,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3130
   } ],
   "stockCode" : "004150"
 }

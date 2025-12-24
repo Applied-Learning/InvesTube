@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스아이리소스",
   "prices" : [ {
-    "volume" : 240602,
-    "marketCap" : 15747005780,
-    "lowPrice" : 215,
-    "highPrice" : 222,
-    "openPrice" : 218,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 220
-  }, {
     "volume" : 233667,
     "marketCap" : 15389119285,
     "lowPrice" : 210,
@@ -1937,6 +1929,14 @@
     "openPrice" : 267,
     "tradeDate" : "2025-12-22",
     "closePrice" : 266
+  }, {
+    "volume" : 500280,
+    "marketCap" : 18753252338,
+    "lowPrice" : 262,
+    "highPrice" : 269,
+    "openPrice" : 266,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 262
   } ],
   "stockCode" : "065420"
 }

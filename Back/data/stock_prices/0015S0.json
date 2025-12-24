@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "페스카로",
   "prices" : [ {
     "volume" : 16294211,
@@ -73,6 +73,14 @@
     "openPrice" : 20150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 19030
+  }, {
+    "volume" : 1937429,
+    "marketCap" : 199052238000,
+    "lowPrice" : 19050,
+    "highPrice" : 22500,
+    "openPrice" : 19050,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 20600
   } ],
   "stockCode" : "0015S0"
 }

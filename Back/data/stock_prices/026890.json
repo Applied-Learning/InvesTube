@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "스틱인베스트먼트",
   "prices" : [ {
-    "volume" : 43037,
-    "marketCap" : 361766559000,
-    "lowPrice" : 8300,
-    "highPrice" : 8720,
-    "openPrice" : 8310,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8680
-  }, {
     "volume" : 40205,
     "marketCap" : 368851848750,
     "lowPrice" : 8610,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10440,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10380
+  }, {
+    "volume" : 139257,
+    "marketCap" : 416781750000,
+    "lowPrice" : 9950,
+    "highPrice" : 10380,
+    "openPrice" : 10380,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10000
   } ],
   "stockCode" : "026890"
 }

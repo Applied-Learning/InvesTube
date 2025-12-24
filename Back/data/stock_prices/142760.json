@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "모아라이프플러스",
   "prices" : [ {
-    "volume" : 33707,
-    "marketCap" : 45583651688,
-    "lowPrice" : 1188,
-    "highPrice" : 1239,
-    "openPrice" : 1188,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1208
-  }, {
     "volume" : 29706,
     "marketCap" : 45659121310,
     "lowPrice" : 1208,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1800
+  }, {
+    "volume" : 492640,
+    "marketCap" : 69866750858,
+    "lowPrice" : 1758,
+    "highPrice" : 1820,
+    "openPrice" : 1808,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1789
   } ],
   "stockCode" : "142760"
 }

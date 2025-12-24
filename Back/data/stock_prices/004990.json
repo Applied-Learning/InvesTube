@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "롯데지주",
   "prices" : [ {
-    "volume" : 113370,
-    "marketCap" : 2423403374700,
-    "lowPrice" : 22450,
-    "highPrice" : 23150,
-    "openPrice" : 22750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 23100
-  }, {
     "volume" : 71278,
     "marketCap" : 2433894298400,
     "lowPrice" : 22850,
@@ -1937,6 +1929,14 @@
     "openPrice" : 28150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 27900
+  }, {
+    "volume" : 114222,
+    "marketCap" : 2905985864900,
+    "lowPrice" : 27700,
+    "highPrice" : 28150,
+    "openPrice" : 27900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 27700
   } ],
   "stockCode" : "004990"
 }

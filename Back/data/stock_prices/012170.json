@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아센디오",
   "prices" : [ {
-    "volume" : 456786,
-    "marketCap" : 42463490080,
-    "lowPrice" : 396,
-    "highPrice" : 418,
-    "openPrice" : 399,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 410
-  }, {
     "volume" : 439636,
     "marketCap" : 40599239296,
     "lowPrice" : 392,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1830,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1752
+  }, {
+    "volume" : 25131,
+    "marketCap" : 18550605558,
+    "lowPrice" : 1705,
+    "highPrice" : 1753,
+    "openPrice" : 1753,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1706
   } ],
   "stockCode" : "012170"
 }

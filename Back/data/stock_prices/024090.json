@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디씨엠",
   "prices" : [ {
-    "volume" : 4822,
-    "marketCap" : 131670000000,
-    "lowPrice" : 11390,
-    "highPrice" : 11600,
-    "openPrice" : 11450,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11550
-  }, {
     "volume" : 2642,
     "marketCap" : 131556000000,
     "lowPrice" : 11540,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13090,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13010
+  }, {
+    "volume" : 2948,
+    "marketCap" : 147174000000,
+    "lowPrice" : 12850,
+    "highPrice" : 13010,
+    "openPrice" : 13010,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12910
   } ],
   "stockCode" : "024090"
 }

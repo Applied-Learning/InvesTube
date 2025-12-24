@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이스테크",
   "prices" : [ {
-    "volume" : 188990,
-    "marketCap" : 130823393811,
-    "lowPrice" : 713,
-    "highPrice" : 737,
-    "openPrice" : 733,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 719
-  }, {
     "volume" : 282624,
     "marketCap" : 127548260169,
     "lowPrice" : 693,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3045,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3070
+  }, {
+    "volume" : 296607,
+    "marketCap" : 213683208220,
+    "lowPrice" : 2830,
+    "highPrice" : 3120,
+    "openPrice" : 3120,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2830
   } ],
   "stockCode" : "088800"
 }

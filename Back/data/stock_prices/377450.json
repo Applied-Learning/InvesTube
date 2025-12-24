@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "리파인",
   "prices" : [ {
-    "volume" : 81931,
-    "marketCap" : 201894500000,
-    "lowPrice" : 11000,
-    "highPrice" : 11950,
-    "openPrice" : 11100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11650
-  }, {
     "volume" : 83832,
     "marketCap" : 211079400000,
     "lowPrice" : 11650,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12830
+  }, {
+    "volume" : 14865,
+    "marketCap" : 219224500000,
+    "lowPrice" : 12630,
+    "highPrice" : 12940,
+    "openPrice" : 12820,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12650
   } ],
   "stockCode" : "377450"
 }

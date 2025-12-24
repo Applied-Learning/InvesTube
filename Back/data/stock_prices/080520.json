@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오디텍",
   "prices" : [ {
-    "volume" : 35095,
-    "marketCap" : 36884352260,
-    "lowPrice" : 3110,
-    "highPrice" : 3170,
-    "openPrice" : 3170,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3140
-  }, {
     "volume" : 9171,
     "marketCap" : 37060551395,
     "lowPrice" : 3120,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3220,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3165
+  }, {
+    "volume" : 6237,
+    "marketCap" : 37236750530,
+    "lowPrice" : 3145,
+    "highPrice" : 3220,
+    "openPrice" : 3165,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3170
   } ],
   "stockCode" : "080520"
 }

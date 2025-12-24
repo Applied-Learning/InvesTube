@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "비츠로테크",
   "prices" : [ {
-    "volume" : 60626,
-    "marketCap" : 181304173000,
-    "lowPrice" : 6740,
-    "highPrice" : 6930,
-    "openPrice" : 6740,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6920
-  }, {
     "volume" : 48404,
     "marketCap" : 180518172250,
     "lowPrice" : 6840,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9230
+  }, {
+    "volume" : 635051,
+    "marketCap" : 230036219500,
+    "lowPrice" : 8710,
+    "highPrice" : 9390,
+    "openPrice" : 9360,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8780
   } ],
   "stockCode" : "042370"
 }

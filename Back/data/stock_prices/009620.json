@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼보산업",
   "prices" : [ {
-    "volume" : 369308,
-    "marketCap" : 36966735900,
-    "lowPrice" : 2300,
-    "highPrice" : 2600,
-    "openPrice" : 2300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2505
-  }, {
     "volume" : 3127610,
     "marketCap" : 39327884700,
     "lowPrice" : 2410,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1744,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1688
+  }, {
+    "volume" : 114916,
+    "marketCap" : 27053436241,
+    "lowPrice" : 1639,
+    "highPrice" : 1719,
+    "openPrice" : 1705,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1651
   } ],
   "stockCode" : "009620"
 }

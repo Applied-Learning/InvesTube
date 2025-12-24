@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "일월지엠엘",
   "prices" : [ {
-    "volume" : 0,
-    "marketCap" : 145788786750,
-    "lowPrice" : 0,
-    "highPrice" : 0,
-    "openPrice" : 0,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8650
-  }, {
     "volume" : 0,
     "marketCap" : 145788786750,
     "lowPrice" : 0,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3125,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3150
+  }, {
+    "volume" : 58815,
+    "marketCap" : 58340680350,
+    "lowPrice" : 3095,
+    "highPrice" : 3215,
+    "openPrice" : 3160,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3130
   } ],
   "stockCode" : "178780"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "우양",
   "prices" : [ {
-    "volume" : 1640916,
-    "marketCap" : 59491965780,
-    "lowPrice" : 3180,
-    "highPrice" : 3740,
-    "openPrice" : 3180,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3635
-  }, {
     "volume" : 3114565,
     "marketCap" : 66529529820,
     "lowPrice" : 3620,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3305,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3330
+  }, {
+    "volume" : 157706,
+    "marketCap" : 53109058860,
+    "lowPrice" : 3190,
+    "highPrice" : 3315,
+    "openPrice" : 3300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3245
   } ],
   "stockCode" : "103840"
 }

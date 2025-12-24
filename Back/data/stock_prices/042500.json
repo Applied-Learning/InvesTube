@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "링네트",
   "prices" : [ {
-    "volume" : 83880,
-    "marketCap" : 95922774020,
-    "lowPrice" : 4960,
-    "highPrice" : 5110,
-    "openPrice" : 4990,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5030
-  }, {
     "volume" : 102711,
     "marketCap" : 98401891440,
     "lowPrice" : 5060,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4005,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4025
+  }, {
+    "volume" : 68704,
+    "marketCap" : 89833310320,
+    "lowPrice" : 3985,
+    "highPrice" : 4045,
+    "openPrice" : 4025,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4030
   } ],
   "stockCode" : "042500"
 }

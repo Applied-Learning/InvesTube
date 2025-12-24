@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동아쏘시오홀딩스",
   "prices" : [ {
-    "volume" : 6392,
-    "marketCap" : 699650212600,
-    "lowPrice" : 109200,
-    "highPrice" : 115000,
-    "openPrice" : 113200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 110200
-  }, {
     "volume" : 6687,
     "marketCap" : 683143038800,
     "lowPrice" : 106200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 117100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 115600
+  }, {
+    "volume" : 6169,
+    "marketCap" : 750382623200,
+    "lowPrice" : 114300,
+    "highPrice" : 116300,
+    "openPrice" : 116200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 114800
   } ],
   "stockCode" : "000640"
 }

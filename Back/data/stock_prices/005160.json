@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동국산업",
   "prices" : [ {
-    "volume" : 101953,
-    "marketCap" : 250880729250,
-    "lowPrice" : 4400,
-    "highPrice" : 4670,
-    "openPrice" : 4575,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4625
-  }, {
     "volume" : 56179,
     "marketCap" : 246269948280,
     "lowPrice" : 4540,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2895,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2885
+  }, {
+    "volume" : 94894,
+    "marketCap" : 154596773700,
+    "lowPrice" : 2835,
+    "highPrice" : 2885,
+    "openPrice" : 2885,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2850
   } ],
   "stockCode" : "005160"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "국전약품",
   "prices" : [ {
-    "volume" : 85782,
-    "marketCap" : 176894714745,
-    "lowPrice" : 3470,
-    "highPrice" : 3630,
-    "openPrice" : 3470,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3605
-  }, {
     "volume" : 97226,
     "marketCap" : 174195904950,
     "lowPrice" : 3545,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3465,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3475
+  }, {
+    "volume" : 52370,
+    "marketCap" : 171101455800,
+    "lowPrice" : 3405,
+    "highPrice" : 3570,
+    "openPrice" : 3475,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3410
   } ],
   "stockCode" : "307750"
 }

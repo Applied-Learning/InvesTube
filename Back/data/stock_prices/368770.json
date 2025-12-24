@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "파이버프로",
   "prices" : [ {
-    "volume" : 499749,
-    "marketCap" : 148501097000,
-    "lowPrice" : 4395,
-    "highPrice" : 4570,
-    "openPrice" : 4515,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4520
-  }, {
     "volume" : 764695,
     "marketCap" : 147022656875,
     "lowPrice" : 4465,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11620,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11420
+  }, {
+    "volume" : 898238,
+    "marketCap" : 331170588000,
+    "lowPrice" : 10040,
+    "highPrice" : 11760,
+    "openPrice" : 11700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10080
   } ],
   "stockCode" : "368770"
 }

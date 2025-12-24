@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "성호전자",
   "prices" : [ {
-    "volume" : 162606,
-    "marketCap" : 72226591776,
-    "lowPrice" : 1161,
-    "highPrice" : 1188,
-    "openPrice" : 1169,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1184
-  }, {
     "volume" : 98843,
     "marketCap" : 71982583020,
     "lowPrice" : 1170,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7610,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7940
+  }, {
+    "volume" : 3649589,
+    "marketCap" : 575184094530,
+    "lowPrice" : 7390,
+    "highPrice" : 8480,
+    "openPrice" : 8210,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8110
   } ],
   "stockCode" : "043260"
 }

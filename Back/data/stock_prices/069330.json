@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유아이디",
   "prices" : [ {
-    "volume" : 35756,
-    "marketCap" : 18235551935,
-    "lowPrice" : 1260,
-    "highPrice" : 1285,
-    "openPrice" : 1280,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1285
-  }, {
     "volume" : 8363,
     "marketCap" : 18391653936,
     "lowPrice" : 1276,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1117,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1153
+  }, {
+    "volume" : 25186,
+    "marketCap" : 16234608104,
+    "lowPrice" : 1132,
+    "highPrice" : 1195,
+    "openPrice" : 1153,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1144
   } ],
   "stockCode" : "069330"
 }

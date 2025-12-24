@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "셀바이오휴먼텍",
   "prices" : [ {
-    "volume" : 24458,
-    "marketCap" : 30699886815,
-    "lowPrice" : 3250,
-    "highPrice" : 3360,
-    "openPrice" : 3300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3315
-  }, {
     "volume" : 4368,
     "marketCap" : 30653582310,
     "lowPrice" : 3305,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8440,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8460
+  }, {
+    "volume" : 32268,
+    "marketCap" : 78933148450,
+    "lowPrice" : 8330,
+    "highPrice" : 8590,
+    "openPrice" : 8520,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8450
   } ],
   "stockCode" : "318160"
 }

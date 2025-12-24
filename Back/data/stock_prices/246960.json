@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SCL사이언스",
   "prices" : [ {
-    "volume" : 37821,
-    "marketCap" : 59578220180,
-    "lowPrice" : 8160,
-    "highPrice" : 8600,
-    "openPrice" : 8570,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8180
-  }, {
     "volume" : 16328,
     "marketCap" : 60306560280,
     "lowPrice" : 8120,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2430,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2375
+  }, {
+    "volume" : 57462,
+    "marketCap" : 79155484630,
+    "lowPrice" : 2300,
+    "highPrice" : 2415,
+    "openPrice" : 2375,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2330
   } ],
   "stockCode" : "246960"
 }

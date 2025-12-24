@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "슈어소프트테크",
   "prices" : [ {
-    "volume" : 277311,
-    "marketCap" : 232576249620,
-    "lowPrice" : 4340,
-    "highPrice" : 4450,
-    "openPrice" : 4375,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4420
-  }, {
     "volume" : 406494,
     "marketCap" : 228629820045,
     "lowPrice" : 4300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7100
+  }, {
+    "volume" : 1416489,
+    "marketCap" : 376226286150,
+    "lowPrice" : 7020,
+    "highPrice" : 7390,
+    "openPrice" : 7320,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7150
   } ],
   "stockCode" : "298830"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SJM홀딩스",
   "prices" : [ {
-    "volume" : 11716,
-    "marketCap" : 50551617080,
-    "lowPrice" : 3365,
-    "highPrice" : 3425,
-    "openPrice" : 3400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3385
-  }, {
     "volume" : 8597,
     "marketCap" : 50626287120,
     "lowPrice" : 3340,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3880,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3910
+  }, {
+    "volume" : 23056,
+    "marketCap" : 58765321480,
+    "lowPrice" : 3910,
+    "highPrice" : 3955,
+    "openPrice" : 3920,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3935
   } ],
   "stockCode" : "025530"
 }

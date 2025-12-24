@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이윈플러스",
   "prices" : [ {
-    "volume" : 3392335,
-    "marketCap" : 32985127420,
-    "lowPrice" : 981,
-    "highPrice" : 1200,
-    "openPrice" : 1030,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1010
-  }, {
     "volume" : 1465606,
     "marketCap" : 32625883458,
     "lowPrice" : 958,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1195,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1183
+  }, {
+    "volume" : 729998,
+    "marketCap" : 39549494362,
+    "lowPrice" : 1160,
+    "highPrice" : 1250,
+    "openPrice" : 1210,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1211
   } ],
   "stockCode" : "123010"
 }

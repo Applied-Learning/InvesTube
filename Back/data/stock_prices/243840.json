@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신흥에스이씨",
   "prices" : [ {
-    "volume" : 56323,
-    "marketCap" : 203546553050,
-    "lowPrice" : 5050,
-    "highPrice" : 5250,
-    "openPrice" : 5180,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5230
-  }, {
     "volume" : 61311,
     "marketCap" : 202378982000,
     "lowPrice" : 5180,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5230
+  }, {
+    "volume" : 181917,
+    "marketCap" : 198960492600,
+    "lowPrice" : 5060,
+    "highPrice" : 5220,
+    "openPrice" : 5200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5160
   } ],
   "stockCode" : "243840"
 }

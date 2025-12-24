@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "예선테크",
   "prices" : [ {
-    "volume" : 98256,
-    "marketCap" : 13662182160,
-    "lowPrice" : 412,
-    "highPrice" : 432,
-    "openPrice" : 431,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 414
-  }, {
     "volume" : 81036,
     "marketCap" : 13332177760,
     "lowPrice" : 403,
@@ -1937,6 +1929,14 @@
     "openPrice" : 506,
     "tradeDate" : "2025-12-22",
     "closePrice" : 502
+  }, {
+    "volume" : 130959,
+    "marketCap" : 16500220000,
+    "lowPrice" : 495,
+    "highPrice" : 513,
+    "openPrice" : 503,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 500
   } ],
   "stockCode" : "250930"
 }

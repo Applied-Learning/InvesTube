@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대웅제약",
   "prices" : [ {
-    "volume" : 13521,
-    "marketCap" : 1458749792500,
-    "lowPrice" : 124200,
-    "highPrice" : 127500,
-    "openPrice" : 126000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 125900
-  }, {
     "volume" : 15556,
     "marketCap" : 1448321875000,
     "lowPrice" : 123500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 181900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 179500
+  }, {
+    "volume" : 26255,
+    "marketCap" : 2069362295000,
+    "lowPrice" : 176700,
+    "highPrice" : 180900,
+    "openPrice" : 180000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 178600
   } ],
   "stockCode" : "069620"
 }

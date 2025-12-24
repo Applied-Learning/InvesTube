@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "LG전자우",
   "prices" : [ {
-    "volume" : 11288,
-    "marketCap" : 718374465600,
-    "lowPrice" : 41300,
-    "highPrice" : 41950,
-    "openPrice" : 41600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 41800
-  }, {
     "volume" : 17516,
     "marketCap" : 720093064800,
     "lowPrice" : 41650,
@@ -1937,6 +1929,14 @@
     "openPrice" : 50500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 49900
+  }, {
+    "volume" : 60226,
+    "marketCap" : 855862401600,
+    "lowPrice" : 49200,
+    "highPrice" : 50100,
+    "openPrice" : 50000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 49800
   } ],
   "stockCode" : "066575"
 }

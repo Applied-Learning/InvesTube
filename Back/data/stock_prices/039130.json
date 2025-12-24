@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하나투어",
   "prices" : [ {
-    "volume" : 45382,
-    "marketCap" : 904610034000,
-    "lowPrice" : 55200,
-    "highPrice" : 56600,
-    "openPrice" : 56200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 56400
-  }, {
     "volume" : 42845,
     "marketCap" : 894986523000,
     "lowPrice" : 55700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 49000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 49100
+  }, {
+    "volume" : 64833,
+    "marketCap" : 757457674800,
+    "lowPrice" : 48850,
+    "highPrice" : 49400,
+    "openPrice" : 48900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 48900
   } ],
   "stockCode" : "039130"
 }

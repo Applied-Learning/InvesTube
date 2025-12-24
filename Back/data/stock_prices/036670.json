@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼양케이씨아이",
   "prices" : [ {
-    "volume" : 8631,
-    "marketCap" : 77650300000,
-    "lowPrice" : 6810,
-    "highPrice" : 6940,
-    "openPrice" : 6860,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6890
-  }, {
     "volume" : 4851,
     "marketCap" : 77199500000,
     "lowPrice" : 6830,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6730,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6670
+  }, {
+    "volume" : 36205,
+    "marketCap" : 75058200000,
+    "lowPrice" : 6600,
+    "highPrice" : 6710,
+    "openPrice" : 6710,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6660
   } ],
   "stockCode" : "036670"
 }

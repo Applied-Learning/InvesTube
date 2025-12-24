@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "STX",
   "prices" : [ {
-    "volume" : 46729,
-    "marketCap" : 137874685515,
-    "lowPrice" : 4390,
-    "highPrice" : 4490,
-    "openPrice" : 4405,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4445
-  }, {
     "volume" : 56580,
     "marketCap" : 135083072085,
     "lowPrice" : 4355,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 3530
+  }, {
+    "volume" : 0,
+    "marketCap" : 109493282310,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 3530
   } ],
   "stockCode" : "011810"

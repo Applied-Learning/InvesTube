@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제로투세븐",
   "prices" : [ {
-    "volume" : 107406,
-    "marketCap" : 110379824360,
-    "lowPrice" : 5250,
-    "highPrice" : 5520,
-    "openPrice" : 5250,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5510
-  }, {
     "volume" : 83079,
     "marketCap" : 107975908040,
     "lowPrice" : 5340,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4085
+  }, {
+    "volume" : 27797,
+    "marketCap" : 81332502160,
+    "lowPrice" : 4030,
+    "highPrice" : 4095,
+    "openPrice" : 4085,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4060
   } ],
   "stockCode" : "159580"
 }

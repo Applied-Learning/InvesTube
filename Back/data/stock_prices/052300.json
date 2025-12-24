@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오션인더블유",
   "prices" : [ {
-    "volume" : 135447,
-    "marketCap" : 50258127034,
-    "lowPrice" : 295,
-    "highPrice" : 300,
-    "openPrice" : 298,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 298
-  }, {
     "volume" : 155133,
     "marketCap" : 49414869869,
     "lowPrice" : 292,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2285,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2275
+  }, {
+    "volume" : 43676,
+    "marketCap" : 38115223180,
+    "lowPrice" : 2235,
+    "highPrice" : 2295,
+    "openPrice" : 2275,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2260
   } ],
   "stockCode" : "052300"
 }

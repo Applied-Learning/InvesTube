@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신한알파리츠",
   "prices" : [ {
-    "volume" : 177666,
-    "marketCap" : 682102293720,
-    "lowPrice" : 5600,
-    "highPrice" : 5720,
-    "openPrice" : 5650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5640
-  }, {
     "volume" : 134036,
     "marketCap" : 678474090030,
     "lowPrice" : 5600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5490
+  }, {
+    "volume" : 170528,
+    "marketCap" : 661542472810,
+    "lowPrice" : 5430,
+    "highPrice" : 5500,
+    "openPrice" : 5490,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5470
   } ],
   "stockCode" : "293940"
 }

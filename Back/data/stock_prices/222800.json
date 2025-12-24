@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "심텍",
   "prices" : [ {
-    "volume" : 166015,
-    "marketCap" : 368552434510,
-    "lowPrice" : 11240,
-    "highPrice" : 11640,
-    "openPrice" : 11300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11570
-  }, {
     "volume" : 116312,
     "marketCap" : 368870975940,
     "lowPrice" : 11460,
@@ -1937,6 +1929,14 @@
     "openPrice" : 53500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 51400
+  }, {
+    "volume" : 709332,
+    "marketCap" : 1858098950000,
+    "lowPrice" : 49800,
+    "highPrice" : 51900,
+    "openPrice" : 51900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 50000
   } ],
   "stockCode" : "222800"
 }

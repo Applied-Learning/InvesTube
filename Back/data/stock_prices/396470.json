@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "워트",
   "prices" : [ {
-    "volume" : 574681,
-    "marketCap" : 125736000000,
-    "lowPrice" : 7370,
-    "highPrice" : 8290,
-    "openPrice" : 7370,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7800
-  }, {
     "volume" : 127435,
     "marketCap" : 124285200000,
     "lowPrice" : 7700,
@@ -1936,6 +1928,14 @@
     "highPrice" : 6930,
     "openPrice" : 6820,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 6910
+  }, {
+    "volume" : 22229,
+    "marketCap" : 111389200000,
+    "lowPrice" : 6800,
+    "highPrice" : 7040,
+    "openPrice" : 7040,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 6910
   } ],
   "stockCode" : "396470"

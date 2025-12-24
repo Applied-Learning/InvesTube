@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한미반도체",
   "prices" : [ {
-    "volume" : 994065,
-    "marketCap" : 8376456255300,
-    "lowPrice" : 80600,
-    "highPrice" : 88400,
-    "openPrice" : 80600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 86700
-  }, {
     "volume" : 706303,
     "marketCap" : 8183227737300,
     "lowPrice" : 83900,
@@ -1936,6 +1928,14 @@
     "highPrice" : 127600,
     "openPrice" : 118500,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 127000
+  }, {
+    "volume" : 1486199,
+    "marketCap" : 12104649400000,
+    "lowPrice" : 125800,
+    "highPrice" : 129600,
+    "openPrice" : 128100,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 127000
   } ],
   "stockCode" : "042700"

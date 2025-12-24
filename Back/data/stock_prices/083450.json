@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "GST",
   "prices" : [ {
-    "volume" : 765960,
-    "marketCap" : 312786768000,
-    "lowPrice" : 15660,
-    "highPrice" : 16990,
-    "openPrice" : 15680,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16800
-  }, {
     "volume" : 345578,
     "marketCap" : 304222368400,
     "lowPrice" : 16270,
@@ -1937,6 +1929,14 @@
     "openPrice" : 24150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 25100
+  }, {
+    "volume" : 1881225,
+    "marketCap" : 539999000000,
+    "lowPrice" : 24850,
+    "highPrice" : 29650,
+    "openPrice" : 25450,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 29300
   } ],
   "stockCode" : "083450"
 }

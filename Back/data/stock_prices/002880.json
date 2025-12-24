@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대유에이텍",
   "prices" : [ {
-    "volume" : 94448,
-    "marketCap" : 57027704400,
-    "lowPrice" : 1173,
-    "highPrice" : 1230,
-    "openPrice" : 1173,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1220
-  }, {
     "volume" : 15006,
     "marketCap" : 56887472340,
     "lowPrice" : 1210,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1132,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1141
+  }, {
+    "volume" : 34850,
+    "marketCap" : 52573970380,
+    "lowPrice" : 1104,
+    "highPrice" : 1148,
+    "openPrice" : 1141,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1124
   } ],
   "stockCode" : "002880"
 }

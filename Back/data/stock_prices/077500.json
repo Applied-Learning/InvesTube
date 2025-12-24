@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유니퀘스트",
   "prices" : [ {
-    "volume" : 71956,
-    "marketCap" : 102816485520,
-    "lowPrice" : 4660,
-    "highPrice" : 4830,
-    "openPrice" : 4755,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4760
-  }, {
     "volume" : 419077,
     "marketCap" : 112752532440,
     "lowPrice" : 4805,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6140,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6280
+  }, {
+    "volume" : 109391,
+    "marketCap" : 135432639540,
+    "lowPrice" : 6220,
+    "highPrice" : 6420,
+    "openPrice" : 6290,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6270
   } ],
   "stockCode" : "077500"
 }

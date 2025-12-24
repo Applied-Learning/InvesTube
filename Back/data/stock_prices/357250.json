@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "미래에셋맵스리츠",
   "prices" : [ {
-    "volume" : 34332,
-    "marketCap" : 61737909350,
-    "lowPrice" : 2400,
-    "highPrice" : 2470,
-    "openPrice" : 2445,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2470
-  }, {
     "volume" : 45478,
     "marketCap" : 62487762500,
     "lowPrice" : 2450,
@@ -1936,6 +1928,14 @@
     "highPrice" : 2655,
     "openPrice" : 2635,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 2615
+  }, {
+    "volume" : 14278,
+    "marketCap" : 65362199575,
+    "lowPrice" : 2600,
+    "highPrice" : 2635,
+    "openPrice" : 2630,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 2615
   } ],
   "stockCode" : "357250"

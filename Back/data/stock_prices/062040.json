@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "산일전기",
   "prices" : [ {
-    "volume" : 576071,
-    "marketCap" : 2122030440000,
-    "lowPrice" : 69700,
-    "highPrice" : 73900,
-    "openPrice" : 72400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 69700
-  }, {
     "volume" : 490185,
     "marketCap" : 2067229080000,
     "lowPrice" : 66400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 135100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 136200
+  }, {
+    "volume" : 231003,
+    "marketCap" : 4061389680000,
+    "lowPrice" : 132100,
+    "highPrice" : 139800,
+    "openPrice" : 137500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 133400
   } ],
   "stockCode" : "062040"
 }

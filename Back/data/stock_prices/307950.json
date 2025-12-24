@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대오토에버",
   "prices" : [ {
-    "volume" : 23837,
-    "marketCap" : 3628192818600,
-    "lowPrice" : 130500,
-    "highPrice" : 133300,
-    "openPrice" : 132100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 132300
-  }, {
     "volume" : 68686,
     "marketCap" : 3537693678000,
     "lowPrice" : 129000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 298000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 307000
+  }, {
+    "volume" : 274214,
+    "marketCap" : 8076362699000,
+    "lowPrice" : 293000,
+    "highPrice" : 314000,
+    "openPrice" : 308500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 294500
   } ],
   "stockCode" : "307950"
 }

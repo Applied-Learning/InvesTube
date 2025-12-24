@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "성창오토텍",
   "prices" : [ {
-    "volume" : 2188,
-    "marketCap" : 26170500000,
-    "lowPrice" : 3535,
-    "highPrice" : 3600,
-    "openPrice" : 3600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3585
-  }, {
     "volume" : 4394,
     "marketCap" : 25915000000,
     "lowPrice" : 3525,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4170,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4055
+  }, {
+    "volume" : 4499,
+    "marketCap" : 29565000000,
+    "lowPrice" : 4020,
+    "highPrice" : 4055,
+    "openPrice" : 4055,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4050
   } ],
   "stockCode" : "080470"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대봉엘에스",
   "prices" : [ {
-    "volume" : 79041,
-    "marketCap" : 152440461250,
-    "lowPrice" : 13290,
-    "highPrice" : 13840,
-    "openPrice" : 13290,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13750
-  }, {
     "volume" : 70191,
     "marketCap" : 149447084920,
     "lowPrice" : 13480,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12640,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12670
+  }, {
+    "volume" : 28055,
+    "marketCap" : 136919250650,
+    "lowPrice" : 12200,
+    "highPrice" : 12700,
+    "openPrice" : 12670,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12350
   } ],
   "stockCode" : "078140"
 }

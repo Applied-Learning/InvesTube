@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "와이즈넛",
   "prices" : [ {
     "volume" : 3254006,
@@ -1769,6 +1769,14 @@
     "openPrice" : 11760,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11820
+  }, {
+    "volume" : 49968,
+    "marketCap" : 149169545040,
+    "lowPrice" : 11390,
+    "highPrice" : 11840,
+    "openPrice" : 11760,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11390
   } ],
   "stockCode" : "096250"
 }

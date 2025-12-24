@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "광주신세계",
   "prices" : [ {
-    "volume" : 50291,
-    "marketCap" : 231554229000,
-    "lowPrice" : 29000,
-    "highPrice" : 30300,
-    "openPrice" : 29650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 29100
-  }, {
     "volume" : 18609,
     "marketCap" : 233145667000,
     "lowPrice" : 29100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 32050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 32000
+  }, {
+    "volume" : 13064,
+    "marketCap" : 253834361000,
+    "lowPrice" : 31800,
+    "highPrice" : 32250,
+    "openPrice" : 32100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 31900
   } ],
   "stockCode" : "037710"
 }

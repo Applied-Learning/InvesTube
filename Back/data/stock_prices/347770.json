@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "핌스",
   "prices" : [ {
-    "volume" : 10409,
-    "marketCap" : 40228393920,
-    "lowPrice" : 1760,
-    "highPrice" : 1780,
-    "openPrice" : 1761,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1760
-  }, {
     "volume" : 4675,
     "marketCap" : 39085541820,
     "lowPrice" : 1710,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1127,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1130
+  }, {
+    "volume" : 75947,
+    "marketCap" : 25897028586,
+    "lowPrice" : 1116,
+    "highPrice" : 1162,
+    "openPrice" : 1131,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1133
   } ],
   "stockCode" : "347770"
 }

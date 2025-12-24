@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "교보15호스팩",
   "prices" : [ {
-    "volume" : 1407,
-    "marketCap" : 7924800000,
-    "lowPrice" : 2050,
-    "highPrice" : 2090,
-    "openPrice" : 2090,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2080
-  }, {
     "volume" : 7399,
     "marketCap" : 7943850000,
     "lowPrice" : 2050,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 2335
+  }, {
+    "volume" : 0,
+    "marketCap" : 8896350000,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 2335
   } ],
   "stockCode" : "465320"

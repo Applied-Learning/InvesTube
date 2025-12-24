@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "LG에너지솔루션",
   "prices" : [ {
-    "volume" : 284110,
-    "marketCap" : 84006000000000,
-    "lowPrice" : 345000,
-    "highPrice" : 361500,
-    "openPrice" : 359000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 359000
-  }, {
     "volume" : 172107,
     "marketCap" : 81900000000000,
     "lowPrice" : 350000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 385000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 389500
+  }, {
+    "volume" : 184844,
+    "marketCap" : 90792000000000,
+    "lowPrice" : 383500,
+    "highPrice" : 392000,
+    "openPrice" : 391000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 388000
   } ],
   "stockCode" : "373220"
 }

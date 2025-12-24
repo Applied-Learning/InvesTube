@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이디스",
   "prices" : [ {
-    "volume" : 10735,
-    "marketCap" : 166425536700,
-    "lowPrice" : 15350,
-    "highPrice" : 15600,
-    "openPrice" : 15550,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15530
-  }, {
     "volume" : 16910,
     "marketCap" : 166854192300,
     "lowPrice" : 15380,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 17620
+  }, {
+    "volume" : 16471,
+    "marketCap" : 189894430800,
+    "lowPrice" : 17350,
+    "highPrice" : 17720,
+    "openPrice" : 17620,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 17720
   } ],
   "stockCode" : "143160"
 }

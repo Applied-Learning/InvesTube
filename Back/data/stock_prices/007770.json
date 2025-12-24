@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한일화학",
   "prices" : [ {
-    "volume" : 5508,
-    "marketCap" : 40610700000,
-    "lowPrice" : 11050,
-    "highPrice" : 11840,
-    "openPrice" : 11600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11570
-  }, {
     "volume" : 4783,
     "marketCap" : 40224600000,
     "lowPrice" : 11370,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8130,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8130
+  }, {
+    "volume" : 5721,
+    "marketCap" : 27799200000,
+    "lowPrice" : 7870,
+    "highPrice" : 8240,
+    "openPrice" : 8240,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7920
   } ],
   "stockCode" : "007770"
 }

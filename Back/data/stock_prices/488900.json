@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "비츠로넥스텍",
   "prices" : [ {
     "volume" : 48864829,
@@ -177,6 +177,14 @@
     "openPrice" : 11440,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14430
+  }, {
+    "volume" : 11095729,
+    "marketCap" : 382489047600,
+    "lowPrice" : 12500,
+    "highPrice" : 15930,
+    "openPrice" : 15120,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13200
   } ],
   "stockCode" : "488900"
 }

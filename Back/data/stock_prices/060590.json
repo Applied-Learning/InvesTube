@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "씨티씨바이오",
   "prices" : [ {
-    "volume" : 50277,
-    "marketCap" : 156451199400,
-    "lowPrice" : 6240,
-    "highPrice" : 6540,
-    "openPrice" : 6400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6470
-  }, {
     "volume" : 17860,
     "marketCap" : 155967579000,
     "lowPrice" : 6410,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5010
+  }, {
+    "volume" : 72439,
+    "marketCap" : 117398852100,
+    "lowPrice" : 4850,
+    "highPrice" : 5080,
+    "openPrice" : 5080,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4855
   } ],
   "stockCode" : "060590"
 }

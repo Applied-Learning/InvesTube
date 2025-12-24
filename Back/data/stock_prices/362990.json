@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "드림인사이트",
   "prices" : [ {
-    "volume" : 28201,
-    "marketCap" : 31921090600,
-    "lowPrice" : 1873,
-    "highPrice" : 1951,
-    "openPrice" : 1939,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1900
-  }, {
     "volume" : 19467,
     "marketCap" : 31534677398,
     "lowPrice" : 1856,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1918,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1889
+  }, {
+    "volume" : 31968,
+    "marketCap" : 31282668788,
+    "lowPrice" : 1860,
+    "highPrice" : 1889,
+    "openPrice" : 1889,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1862
   } ],
   "stockCode" : "362990"
 }

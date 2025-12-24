@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "소프트캠프",
   "prices" : [ {
-    "volume" : 129269,
-    "marketCap" : 25316170692,
-    "lowPrice" : 941,
-    "highPrice" : 1029,
-    "openPrice" : 1005,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1013
-  }, {
     "volume" : 93262,
     "marketCap" : 24991284000,
     "lowPrice" : 995,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1430,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1446
+  }, {
+    "volume" : 357990,
+    "marketCap" : 36437292072,
+    "lowPrice" : 1405,
+    "highPrice" : 1464,
+    "openPrice" : 1434,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1458
   } ],
   "stockCode" : "258790"
 }

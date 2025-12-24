@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유투바이오",
   "prices" : [ {
-    "volume" : 47379,
-    "marketCap" : 29290273620,
-    "lowPrice" : 2525,
-    "highPrice" : 2605,
-    "openPrice" : 2555,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2595
-  }, {
     "volume" : 55271,
     "marketCap" : 30701173120,
     "lowPrice" : 2575,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4510
+  }, {
+    "volume" : 206974,
+    "marketCap" : 59459020440,
+    "lowPrice" : 4290,
+    "highPrice" : 4510,
+    "openPrice" : 4465,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4390
   } ],
   "stockCode" : "221800"
 }

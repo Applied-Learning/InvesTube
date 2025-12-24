@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에프엔씨엔터",
   "prices" : [ {
-    "volume" : 7315,
-    "marketCap" : 44408251080,
-    "lowPrice" : 2885,
-    "highPrice" : 3000,
-    "openPrice" : 2970,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2885
-  }, {
     "volume" : 23406,
     "marketCap" : 43869502800,
     "lowPrice" : 2780,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4020,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4125
+  }, {
+    "volume" : 12368,
+    "marketCap" : 63264440880,
+    "lowPrice" : 3950,
+    "highPrice" : 4200,
+    "openPrice" : 4125,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4110
   } ],
   "stockCode" : "173940"
 }

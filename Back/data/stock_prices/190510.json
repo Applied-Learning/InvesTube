@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "나무가",
   "prices" : [ {
-    "volume" : 61557,
-    "marketCap" : 219406540160,
-    "lowPrice" : 13160,
-    "highPrice" : 13570,
-    "openPrice" : 13570,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13490
-  }, {
     "volume" : 31000,
     "marketCap" : 217942745600,
     "lowPrice" : 13250,
@@ -1937,6 +1929,14 @@
     "openPrice" : 18610,
     "tradeDate" : "2025-12-22",
     "closePrice" : 18750
+  }, {
+    "volume" : 123864,
+    "marketCap" : 268267862500,
+    "lowPrice" : 18550,
+    "highPrice" : 19100,
+    "openPrice" : 18750,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 18700
   } ],
   "stockCode" : "190510"
 }

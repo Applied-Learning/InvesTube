@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "차바이오텍",
   "prices" : [ {
-    "volume" : 2815383,
-    "marketCap" : 591864795930,
-    "lowPrice" : 10500,
-    "highPrice" : 11390,
-    "openPrice" : 11280,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10510
-  }, {
     "volume" : 1373706,
     "marketCap" : 613827428700,
     "lowPrice" : 10520,
@@ -1937,6 +1929,14 @@
     "openPrice" : 15030,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14930
+  }, {
+    "volume" : 232934,
+    "marketCap" : 1122484257580,
+    "lowPrice" : 14580,
+    "highPrice" : 15040,
+    "openPrice" : 14940,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14620
   } ],
   "stockCode" : "085660"
 }

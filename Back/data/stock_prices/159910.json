@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에코글로우",
   "prices" : [ {
-    "volume" : 81137,
-    "marketCap" : 22210159780,
-    "lowPrice" : 608,
-    "highPrice" : 618,
-    "openPrice" : 616,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 610
-  }, {
     "volume" : 115546,
     "marketCap" : 22173749682,
     "lowPrice" : 598,
@@ -1937,6 +1929,14 @@
     "openPrice" : 700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 689
+  }, {
+    "volume" : 107511,
+    "marketCap" : 35274116890,
+    "lowPrice" : 664,
+    "highPrice" : 700,
+    "openPrice" : 700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 674
   } ],
   "stockCode" : "159910"
 }

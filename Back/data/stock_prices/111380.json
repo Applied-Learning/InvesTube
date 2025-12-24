@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동인기연",
   "prices" : [ {
-    "volume" : 15689,
-    "marketCap" : 118883200000,
-    "lowPrice" : 18550,
-    "highPrice" : 19400,
-    "openPrice" : 18550,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 19400
-  }, {
     "volume" : 22359,
     "marketCap" : 118270400000,
     "lowPrice" : 19100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13900
+  }, {
+    "volume" : 2357,
+    "marketCap" : 85240480000,
+    "lowPrice" : 13850,
+    "highPrice" : 14100,
+    "openPrice" : 14100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13910
   } ],
   "stockCode" : "111380"
 }

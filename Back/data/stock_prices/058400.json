@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KNN",
   "prices" : [ {
-    "volume" : 1529217,
-    "marketCap" : 113757129480,
-    "lowPrice" : 848,
-    "highPrice" : 876,
-    "openPrice" : 865,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 859
-  }, {
     "volume" : 832204,
     "marketCap" : 112697691720,
     "lowPrice" : 851,
@@ -1937,6 +1929,14 @@
     "openPrice" : 705,
     "tradeDate" : "2025-12-22",
     "closePrice" : 711
+  }, {
+    "volume" : 61389,
+    "marketCap" : 93627812040,
+    "lowPrice" : 706,
+    "highPrice" : 713,
+    "openPrice" : 706,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 707
   } ],
   "stockCode" : "058400"
 }

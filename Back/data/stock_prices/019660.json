@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "글로본",
   "prices" : [ {
-    "volume" : 114102,
-    "marketCap" : 21222355060,
-    "lowPrice" : 610,
-    "highPrice" : 637,
-    "openPrice" : 623,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 610
-  }, {
     "volume" : 133056,
     "marketCap" : 21535471774,
     "lowPrice" : 601,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2605,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2560
+  }, {
+    "volume" : 7992,
+    "marketCap" : 35348884155,
+    "lowPrice" : 2530,
+    "highPrice" : 2600,
+    "openPrice" : 2600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2535
   } ],
   "stockCode" : "019660"
 }

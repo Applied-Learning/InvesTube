@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "리더스코스메틱",
   "prices" : [ {
-    "volume" : 172268,
-    "marketCap" : 47752235000,
-    "lowPrice" : 2380,
-    "highPrice" : 2735,
-    "openPrice" : 2405,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2500
-  }, {
     "volume" : 22696,
     "marketCap" : 47752235000,
     "lowPrice" : 2405,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2135,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2120
+  }, {
+    "volume" : 71950,
+    "marketCap" : 39825363990,
+    "lowPrice" : 1952,
+    "highPrice" : 2125,
+    "openPrice" : 2095,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2085
   } ],
   "stockCode" : "016100"
 }

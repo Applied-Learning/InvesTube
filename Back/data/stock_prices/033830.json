@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "티비씨",
   "prices" : [ {
-    "volume" : 628461,
-    "marketCap" : 86200000000,
-    "lowPrice" : 857,
-    "highPrice" : 880,
-    "openPrice" : 861,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 862
-  }, {
     "volume" : 576710,
     "marketCap" : 83500000000,
     "lowPrice" : 830,
@@ -1937,6 +1929,14 @@
     "openPrice" : 626,
     "tradeDate" : "2025-12-22",
     "closePrice" : 628
+  }, {
+    "volume" : 138418,
+    "marketCap" : 61900000000,
+    "lowPrice" : 615,
+    "highPrice" : 628,
+    "openPrice" : 627,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 619
   } ],
   "stockCode" : "033830"
 }

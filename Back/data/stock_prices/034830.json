@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국토지신탁",
   "prices" : [ {
-    "volume" : 118545,
-    "marketCap" : 263093777660,
-    "lowPrice" : 1030,
-    "highPrice" : 1042,
-    "openPrice" : 1030,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1042
-  }, {
     "volume" : 319921,
     "marketCap" : 262083820740,
     "lowPrice" : 1036,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1321,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1322
+  }, {
+    "volume" : 211368,
+    "marketCap" : 334043251290,
+    "lowPrice" : 1319,
+    "highPrice" : 1329,
+    "openPrice" : 1320,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1323
   } ],
   "stockCode" : "034830"
 }

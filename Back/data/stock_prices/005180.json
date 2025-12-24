@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "빙그레",
   "prices" : [ {
-    "volume" : 104087,
-    "marketCap" : 807801762000,
-    "lowPrice" : 75200,
-    "highPrice" : 83000,
-    "openPrice" : 76200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 82000
-  }, {
     "volume" : 31698,
     "marketCap" : 803861265600,
     "lowPrice" : 81400,
@@ -1936,6 +1928,14 @@
     "highPrice" : 77300,
     "openPrice" : 77300,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 76700
+  }, {
+    "volume" : 18889,
+    "marketCap" : 732922420100,
+    "lowPrice" : 76500,
+    "highPrice" : 77200,
+    "openPrice" : 76700,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 76700
   } ],
   "stockCode" : "005180"

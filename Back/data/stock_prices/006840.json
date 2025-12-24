@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "AK홀딩스",
   "prices" : [ {
-    "volume" : 11707,
-    "marketCap" : 145723171000,
-    "lowPrice" : 10700,
-    "highPrice" : 11180,
-    "openPrice" : 10950,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11000
-  }, {
     "volume" : 5840,
     "marketCap" : 145723171000,
     "lowPrice" : 10830,
@@ -1936,6 +1928,14 @@
     "highPrice" : 8960,
     "openPrice" : 8940,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 8830
+  }, {
+    "volume" : 2381,
+    "marketCap" : 116975963630,
+    "lowPrice" : 8810,
+    "highPrice" : 8960,
+    "openPrice" : 8820,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 8830
   } ],
   "stockCode" : "006840"

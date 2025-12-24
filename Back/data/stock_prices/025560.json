@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "미래산업",
   "prices" : [ {
-    "volume" : 418660,
-    "marketCap" : 43037665048,
-    "lowPrice" : 786,
-    "highPrice" : 805,
-    "openPrice" : 786,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 802
-  }, {
     "volume" : 284537,
     "marketCap" : 42608361656,
     "lowPrice" : 790,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12760,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13290
+  }, {
+    "volume" : 30312,
+    "marketCap" : 58722767400,
+    "lowPrice" : 13000,
+    "highPrice" : 13540,
+    "openPrice" : 13290,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13100
   } ],
   "stockCode" : "025560"
 }

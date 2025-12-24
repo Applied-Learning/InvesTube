@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "상상인",
   "prices" : [ {
-    "volume" : 86807,
-    "marketCap" : 84265020699,
-    "lowPrice" : 1485,
-    "highPrice" : 1577,
-    "openPrice" : 1575,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1523
-  }, {
     "volume" : 54273,
     "marketCap" : 83545752630,
     "lowPrice" : 1492,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1740,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1744
+  }, {
+    "volume" : 15014,
+    "marketCap" : 95607324864,
+    "lowPrice" : 1712,
+    "highPrice" : 1744,
+    "openPrice" : 1744,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1728
   } ],
   "stockCode" : "038540"
 }

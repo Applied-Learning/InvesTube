@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국큐빅",
   "prices" : [ {
-    "volume" : 11564,
-    "marketCap" : 37361036455,
-    "lowPrice" : 2240,
-    "highPrice" : 2310,
-    "openPrice" : 2270,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2285
-  }, {
     "volume" : 40186,
     "marketCap" : 38587328680,
     "lowPrice" : 2270,
@@ -1936,6 +1928,14 @@
     "highPrice" : 2340,
     "openPrice" : 2335,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 2335
+  }, {
+    "volume" : 109878,
+    "marketCap" : 38178564605,
+    "lowPrice" : 2300,
+    "highPrice" : 2340,
+    "openPrice" : 2335,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 2335
   } ],
   "stockCode" : "021650"

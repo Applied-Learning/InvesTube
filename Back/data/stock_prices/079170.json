@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한창산업",
   "prices" : [ {
-    "volume" : 5733,
-    "marketCap" : 34996000000,
-    "lowPrice" : 6620,
-    "highPrice" : 6740,
-    "openPrice" : 6670,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6730
-  }, {
     "volume" : 9585,
     "marketCap" : 34840000000,
     "lowPrice" : 6670,
@@ -1936,6 +1928,14 @@
     "highPrice" : 6670,
     "openPrice" : 6670,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 6640
+  }, {
+    "volume" : 8503,
+    "marketCap" : 34528000000,
+    "lowPrice" : 6600,
+    "highPrice" : 6650,
+    "openPrice" : 6640,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 6640
   } ],
   "stockCode" : "079170"

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "우주일렉트로",
   "prices" : [ {
-    "volume" : 193246,
-    "marketCap" : 149239800000,
-    "lowPrice" : 13800,
-    "highPrice" : 15710,
-    "openPrice" : 13800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15660
-  }, {
     "volume" : 177738,
     "marketCap" : 150192800000,
     "lowPrice" : 15280,
@@ -1937,6 +1929,14 @@
     "openPrice" : 36400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 36450
+  }, {
+    "volume" : 132840,
+    "marketCap" : 320644343700,
+    "lowPrice" : 34700,
+    "highPrice" : 36950,
+    "openPrice" : 36950,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 34700
   } ],
   "stockCode" : "065680"
 }

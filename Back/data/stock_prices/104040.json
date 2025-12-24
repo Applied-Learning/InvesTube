@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대성파인텍",
   "prices" : [ {
-    "volume" : 32636,
-    "marketCap" : 41321863625,
-    "lowPrice" : 860,
-    "highPrice" : 878,
-    "openPrice" : 863,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 875
-  }, {
     "volume" : 15965,
     "marketCap" : 40660713807,
     "lowPrice" : 859,
@@ -1937,6 +1929,14 @@
     "openPrice" : 715,
     "tradeDate" : "2025-12-22",
     "closePrice" : 730
+  }, {
+    "volume" : 79643,
+    "marketCap" : 95858495590,
+    "lowPrice" : 715,
+    "highPrice" : 734,
+    "openPrice" : 730,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 715
   } ],
   "stockCode" : "104040"
 }

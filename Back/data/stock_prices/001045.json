@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "CJ우",
   "prices" : [ {
-    "volume" : 667,
-    "marketCap" : 131318956300,
-    "lowPrice" : 57200,
-    "highPrice" : 58300,
-    "openPrice" : 57500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 58100
-  }, {
     "volume" : 1164,
     "marketCap" : 131318956300,
     "lowPrice" : 57000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 87000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 87100
+  }, {
+    "volume" : 2286,
+    "marketCap" : 196187356400,
+    "lowPrice" : 86700,
+    "highPrice" : 87600,
+    "openPrice" : 87100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 86800
   } ],
   "stockCode" : "001045"
 }

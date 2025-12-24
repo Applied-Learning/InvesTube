@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "알파AI",
   "prices" : [ {
-    "volume" : 59239,
-    "marketCap" : 12282916800,
-    "lowPrice" : 1517,
-    "highPrice" : 1599,
-    "openPrice" : 1517,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1540
-  }, {
     "volume" : 109561,
     "marketCap" : 24244297754,
     "lowPrice" : 1460,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1757,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1743
+  }, {
+    "volume" : 276725,
+    "marketCap" : 33503393280,
+    "lowPrice" : 1650,
+    "highPrice" : 1756,
+    "openPrice" : 1744,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1666
   } ],
   "stockCode" : "043100"
 }

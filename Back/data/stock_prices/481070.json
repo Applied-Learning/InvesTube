@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이유브랜즈",
   "prices" : [ {
     "volume" : 14040184,
@@ -1417,6 +1417,14 @@
     "openPrice" : 21650,
     "tradeDate" : "2025-12-22",
     "closePrice" : 21400
+  }, {
+    "volume" : 28366,
+    "marketCap" : 310812000000,
+    "lowPrice" : 20900,
+    "highPrice" : 22200,
+    "openPrice" : 21000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 21950
   } ],
   "stockCode" : "481070"
 }

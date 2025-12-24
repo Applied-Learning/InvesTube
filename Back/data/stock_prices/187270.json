@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신화콘텍",
   "prices" : [ {
-    "volume" : 12950,
-    "marketCap" : 30482254225,
-    "lowPrice" : 2960,
-    "highPrice" : 3010,
-    "openPrice" : 2980,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3005
-  }, {
     "volume" : 17439,
     "marketCap" : 30177938875,
     "lowPrice" : 2960,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3155
+  }, {
+    "volume" : 8393,
+    "marketCap" : 32054550200,
+    "lowPrice" : 3125,
+    "highPrice" : 3165,
+    "openPrice" : 3155,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3160
   } ],
   "stockCode" : "187270"
 }

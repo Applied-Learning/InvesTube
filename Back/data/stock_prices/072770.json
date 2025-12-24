@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "율호",
   "prices" : [ {
-    "volume" : 114449,
-    "marketCap" : 97139491452,
-    "lowPrice" : 1360,
-    "highPrice" : 1414,
-    "openPrice" : 1402,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1383
-  }, {
     "volume" : 66349,
     "marketCap" : 95945441304,
     "lowPrice" : 1366,
@@ -1937,6 +1929,14 @@
     "openPrice" : 947,
     "tradeDate" : "2025-12-22",
     "closePrice" : 940
+  }, {
+    "volume" : 754710,
+    "marketCap" : 72881095707,
+    "lowPrice" : 908,
+    "highPrice" : 966,
+    "openPrice" : 945,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 909
   } ],
   "stockCode" : "072770"
 }

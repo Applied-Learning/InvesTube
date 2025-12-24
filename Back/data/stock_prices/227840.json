@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대코퍼레이션홀딩스",
   "prices" : [ {
-    "volume" : 12728,
-    "marketCap" : 97378945200,
-    "lowPrice" : 10590,
-    "highPrice" : 10730,
-    "openPrice" : 10640,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10700
-  }, {
     "volume" : 10560,
     "marketCap" : 97469953560,
     "lowPrice" : 10680,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12820,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12740
+  }, {
+    "volume" : 20821,
+    "marketCap" : 115125575400,
+    "lowPrice" : 12550,
+    "highPrice" : 12730,
+    "openPrice" : 12640,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12650
   } ],
   "stockCode" : "227840"
 }

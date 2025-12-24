@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "자람테크놀로지",
   "prices" : [ {
-    "volume" : 564302,
-    "marketCap" : 303378883500,
-    "lowPrice" : 48300,
-    "highPrice" : 54300,
-    "openPrice" : 53100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 48950
-  }, {
     "volume" : 1180101,
     "marketCap" : 301519564500,
     "lowPrice" : 48450,
@@ -1937,6 +1929,14 @@
     "openPrice" : 36200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 36000
+  }, {
+    "volume" : 12847,
+    "marketCap" : 218469982500,
+    "lowPrice" : 35200,
+    "highPrice" : 36500,
+    "openPrice" : 36300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 35250
   } ],
   "stockCode" : "389020"
 }

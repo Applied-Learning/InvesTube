@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이수앱지스",
   "prices" : [ {
-    "volume" : 95709,
-    "marketCap" : 162817315975,
-    "lowPrice" : 4385,
-    "highPrice" : 4575,
-    "openPrice" : 4465,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4535
-  }, {
     "volume" : 38625,
     "marketCap" : 160842684800,
     "lowPrice" : 4460,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5540,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5430
+  }, {
+    "volume" : 129195,
+    "marketCap" : 213317012040,
+    "lowPrice" : 5320,
+    "highPrice" : 5500,
+    "openPrice" : 5460,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5340
   } ],
   "stockCode" : "086890"
 }

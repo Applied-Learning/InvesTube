@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신한글로벌액티브리츠",
   "prices" : [ {
-    "volume" : 40524,
-    "marketCap" : 87607492960,
-    "lowPrice" : 1996,
-    "highPrice" : 2045,
-    "openPrice" : 1996,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2015
-  }, {
     "volume" : 87681,
     "marketCap" : 87607492960,
     "lowPrice" : 2000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1296,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1294
+  }, {
+    "volume" : 146603,
+    "marketCap" : 55999231232,
+    "lowPrice" : 1277,
+    "highPrice" : 1307,
+    "openPrice" : 1295,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1288
   } ],
   "stockCode" : "481850"
 }

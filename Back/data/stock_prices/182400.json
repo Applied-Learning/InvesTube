@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엔케이맥스",
   "prices" : [ {
-    "volume" : 0,
-    "marketCap" : 172748038620,
-    "lowPrice" : 0,
-    "highPrice" : 0,
-    "openPrice" : 0,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2020
-  }, {
     "volume" : 0,
     "marketCap" : 172748038620,
     "lowPrice" : 0,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 3685
+  }, {
+    "volume" : 0,
+    "marketCap" : 263029901475,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 3685
   } ],
   "stockCode" : "182400"

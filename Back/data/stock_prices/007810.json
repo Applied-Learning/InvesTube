@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코리아써키트",
   "prices" : [ {
-    "volume" : 1580843,
-    "marketCap" : 228412662170,
-    "lowPrice" : 9160,
-    "highPrice" : 11000,
-    "openPrice" : 9160,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9670
-  }, {
     "volume" : 166875,
     "marketCap" : 227467832130,
     "lowPrice" : 9630,
@@ -1937,6 +1929,14 @@
     "openPrice" : 36400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 38400
+  }, {
+    "volume" : 341702,
+    "marketCap" : 883416087400,
+    "lowPrice" : 36750,
+    "highPrice" : 38450,
+    "openPrice" : 38100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 37400
   } ],
   "stockCode" : "007810"
 }

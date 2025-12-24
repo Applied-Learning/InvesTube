@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "남선알미우",
   "prices" : [ {
-    "volume" : 37324,
-    "marketCap" : 5585124600,
-    "lowPrice" : 18140,
-    "highPrice" : 19870,
-    "openPrice" : 19870,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 18140
-  }, {
     "volume" : 33793,
     "marketCap" : 5643623700,
     "lowPrice" : 18210,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12650,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13100
+  }, {
+    "volume" : 867,
+    "marketCap" : 3931755300,
+    "lowPrice" : 12600,
+    "highPrice" : 13000,
+    "openPrice" : 13000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12770
   } ],
   "stockCode" : "008355"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "큐라티스",
   "prices" : [ {
-    "volume" : 117405,
-    "marketCap" : 33676423984,
-    "lowPrice" : 581,
-    "highPrice" : 603,
-    "openPrice" : 592,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 581
-  }, {
     "volume" : 285051,
     "marketCap" : 34487904080,
     "lowPrice" : 574,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1384,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1191
+  }, {
+    "volume" : 301917,
+    "marketCap" : 94872681040,
+    "lowPrice" : 1154,
+    "highPrice" : 1195,
+    "openPrice" : 1185,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1160
   } ],
   "stockCode" : "348080"
 }

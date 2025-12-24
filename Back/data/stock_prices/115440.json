@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "우리넷",
   "prices" : [ {
-    "volume" : 235163,
-    "marketCap" : 77968232750,
-    "lowPrice" : 7080,
-    "highPrice" : 7350,
-    "openPrice" : 7260,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7250
-  }, {
     "volume" : 198095,
     "marketCap" : 77430520800,
     "lowPrice" : 7190,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7350,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7500
+  }, {
+    "volume" : 65112,
+    "marketCap" : 79122160360,
+    "lowPrice" : 7310,
+    "highPrice" : 7610,
+    "openPrice" : 7600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7330
   } ],
   "stockCode" : "115440"
 }

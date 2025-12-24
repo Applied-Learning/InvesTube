@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제이엘케이",
   "prices" : [ {
-    "volume" : 154202,
-    "marketCap" : 206528736280,
-    "lowPrice" : 8020,
-    "highPrice" : 8230,
-    "openPrice" : 8120,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8090
-  }, {
     "volume" : 152325,
     "marketCap" : 206273447360,
     "lowPrice" : 8000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5950,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6500
+  }, {
+    "volume" : 369709,
+    "marketCap" : 152918063080,
+    "lowPrice" : 5980,
+    "highPrice" : 6430,
+    "openPrice" : 6430,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5990
   } ],
   "stockCode" : "322510"
 }

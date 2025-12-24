@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "파워로직스",
   "prices" : [ {
-    "volume" : 292578,
-    "marketCap" : 223691713050,
-    "lowPrice" : 5940,
-    "highPrice" : 6180,
-    "openPrice" : 6030,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6110
-  }, {
     "volume" : 198236,
     "marketCap" : 221861175300,
     "lowPrice" : 6050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4355,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4295
+  }, {
+    "volume" : 138714,
+    "marketCap" : 155595708750,
+    "lowPrice" : 4205,
+    "highPrice" : 4340,
+    "openPrice" : 4305,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4250
   } ],
   "stockCode" : "047310"
 }

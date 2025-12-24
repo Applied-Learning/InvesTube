@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대주전자재료",
   "prices" : [ {
-    "volume" : 102972,
-    "marketCap" : 1222966847000,
-    "lowPrice" : 76300,
-    "highPrice" : 79600,
-    "openPrice" : 77700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 79000
-  }, {
     "volume" : 90592,
     "marketCap" : 1195101779600,
     "lowPrice" : 77100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 67500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 67800
+  }, {
+    "volume" : 49082,
+    "marketCap" : 1044940027500,
+    "lowPrice" : 67200,
+    "highPrice" : 68700,
+    "openPrice" : 68700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 67500
   } ],
   "stockCode" : "078600"
 }

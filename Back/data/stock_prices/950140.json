@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "잉글우드랩",
   "prices" : [ {
-    "volume" : 140299,
-    "marketCap" : 139075062000,
-    "lowPrice" : 6840,
-    "highPrice" : 7070,
-    "openPrice" : 6890,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7000
-  }, {
     "volume" : 236182,
     "marketCap" : 139869776640,
     "lowPrice" : 7000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11820
+  }, {
+    "volume" : 254700,
+    "marketCap" : 228480459000,
+    "lowPrice" : 11330,
+    "highPrice" : 11890,
+    "openPrice" : 11850,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11500
   } ],
   "stockCode" : "950140"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "와이엠텍",
   "prices" : [ {
-    "volume" : 9111,
-    "marketCap" : 118213480000,
-    "lowPrice" : 10660,
-    "highPrice" : 10950,
-    "openPrice" : 10660,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10780
-  }, {
     "volume" : 8641,
     "marketCap" : 116897560000,
     "lowPrice" : 10600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8110,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8280
+  }, {
+    "volume" : 13864,
+    "marketCap" : 90908140000,
+    "lowPrice" : 8200,
+    "highPrice" : 8500,
+    "openPrice" : 8250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8290
   } ],
   "stockCode" : "273640"
 }

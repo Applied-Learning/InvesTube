@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "넷마블",
   "prices" : [ {
-    "volume" : 99804,
-    "marketCap" : 4546940255800,
-    "lowPrice" : 51900,
-    "highPrice" : 53800,
-    "openPrice" : 53400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 52900
-  }, {
     "volume" : 61577,
     "marketCap" : 4555535606000,
     "lowPrice" : 52500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 49900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 49600
+  }, {
+    "volume" : 94783,
+    "marketCap" : 4220316948200,
+    "lowPrice" : 49050,
+    "highPrice" : 50200,
+    "openPrice" : 49750,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 49100
   } ],
   "stockCode" : "251270"
 }

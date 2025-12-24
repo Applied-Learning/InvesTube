@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "넵튠",
   "prices" : [ {
-    "volume" : 109174,
-    "marketCap" : 230113419500,
-    "lowPrice" : 4895,
-    "highPrice" : 5070,
-    "openPrice" : 5070,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4930
-  }, {
     "volume" : 109247,
     "marketCap" : 231513704000,
     "lowPrice" : 4850,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5090
+  }, {
+    "volume" : 23478,
+    "marketCap" : 233678215000,
+    "lowPrice" : 4995,
+    "highPrice" : 5120,
+    "openPrice" : 5120,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5000
   } ],
   "stockCode" : "217270"
 }

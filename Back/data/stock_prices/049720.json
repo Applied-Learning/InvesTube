@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "고려신용정보",
   "prices" : [ {
-    "volume" : 40751,
-    "marketCap" : 146146000000,
-    "lowPrice" : 10200,
-    "highPrice" : 10350,
-    "openPrice" : 10330,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10220
-  }, {
     "volume" : 51094,
     "marketCap" : 147576000000,
     "lowPrice" : 10200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11010
+  }, {
+    "volume" : 26429,
+    "marketCap" : 156728000000,
+    "lowPrice" : 10860,
+    "highPrice" : 11050,
+    "openPrice" : 11010,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10960
   } ],
   "stockCode" : "049720"
 }

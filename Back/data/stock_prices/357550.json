@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "석경에이티",
   "prices" : [ {
-    "volume" : 1441,
-    "marketCap" : 208926500000,
-    "lowPrice" : 37700,
-    "highPrice" : 38700,
-    "openPrice" : 38200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 38300
-  }, {
     "volume" : 6203,
     "marketCap" : 207290000000,
     "lowPrice" : 37650,
@@ -1937,6 +1929,14 @@
     "openPrice" : 70000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 74000
+  }, {
+    "volume" : 33222,
+    "marketCap" : 387850500000,
+    "lowPrice" : 68200,
+    "highPrice" : 75000,
+    "openPrice" : 74500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 71100
   } ],
   "stockCode" : "357550"
 }

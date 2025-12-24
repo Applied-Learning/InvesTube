@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코람코라이프인프라리츠",
   "prices" : [ {
-    "volume" : 96951,
-    "marketCap" : 393234830160,
-    "lowPrice" : 3995,
-    "highPrice" : 4060,
-    "openPrice" : 3995,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4040
-  }, {
     "volume" : 97804,
     "marketCap" : 396154890780,
     "lowPrice" : 4025,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4360,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4410
+  }, {
+    "volume" : 56430,
+    "marketCap" : 428275557600,
+    "lowPrice" : 4365,
+    "highPrice" : 4420,
+    "openPrice" : 4420,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4400
   } ],
   "stockCode" : "357120"
 }

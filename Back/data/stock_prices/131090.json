@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "시큐브",
   "prices" : [ {
-    "volume" : 134018,
-    "marketCap" : 39600000000,
-    "lowPrice" : 850,
-    "highPrice" : 949,
-    "openPrice" : 880,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 900
-  }, {
     "volume" : 141024,
     "marketCap" : 39072000000,
     "lowPrice" : 887,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3905,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3915
+  }, {
+    "volume" : 7770,
+    "marketCap" : 31200000000,
+    "lowPrice" : 3890,
+    "highPrice" : 3955,
+    "openPrice" : 3915,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3900
   } ],
   "stockCode" : "131090"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코스모화학",
   "prices" : [ {
-    "volume" : 111893,
-    "marketCap" : 615299812560,
-    "lowPrice" : 15230,
-    "highPrice" : 16050,
-    "openPrice" : 15520,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16020
-  }, {
     "volume" : 81582,
     "marketCap" : 603777344160,
     "lowPrice" : 15700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 15550,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15670
+  }, {
+    "volume" : 131111,
+    "marketCap" : 592638958040,
+    "lowPrice" : 15400,
+    "highPrice" : 15800,
+    "openPrice" : 15800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15430
   } ],
   "stockCode" : "005420"
 }

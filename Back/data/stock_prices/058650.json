@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "세아홀딩스",
   "prices" : [ {
-    "volume" : 206,
-    "marketCap" : 388000000000,
-    "lowPrice" : 96200,
-    "highPrice" : 97500,
-    "openPrice" : 96200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 97000
-  }, {
     "volume" : 84,
     "marketCap" : 388400000000,
     "lowPrice" : 97100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 129700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 133900
+  }, {
+    "volume" : 1583,
+    "marketCap" : 519200000000,
+    "lowPrice" : 128900,
+    "highPrice" : 135900,
+    "openPrice" : 135900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 129800
   } ],
   "stockCode" : "058650"
 }

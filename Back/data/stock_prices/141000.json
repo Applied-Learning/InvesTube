@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "비아트론",
   "prices" : [ {
-    "volume" : 118920,
-    "marketCap" : 87831647500,
-    "lowPrice" : 7130,
-    "highPrice" : 7840,
-    "openPrice" : 7130,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7250
-  }, {
     "volume" : 29646,
     "marketCap" : 88437383000,
     "lowPrice" : 7210,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7540,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7630
+  }, {
+    "volume" : 6406,
+    "marketCap" : 90254589500,
+    "lowPrice" : 7450,
+    "highPrice" : 7630,
+    "openPrice" : 7630,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7450
   } ],
   "stockCode" : "141000"
 }

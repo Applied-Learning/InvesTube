@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코나아이",
   "prices" : [ {
-    "volume" : 243011,
-    "marketCap" : 396339973400,
-    "lowPrice" : 25450,
-    "highPrice" : 27350,
-    "openPrice" : 26450,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 26600
-  }, {
     "volume" : 218077,
     "marketCap" : 408259972600,
     "lowPrice" : 25600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 47000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 47000
+  }, {
+    "volume" : 66981,
+    "marketCap" : 677193031500,
+    "lowPrice" : 46300,
+    "highPrice" : 47700,
+    "openPrice" : 47400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 46500
   } ],
   "stockCode" : "052400"
 }

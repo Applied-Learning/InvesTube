@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "컨텍",
   "prices" : [ {
-    "volume" : 142841,
-    "marketCap" : 153812543760,
-    "lowPrice" : 9930,
-    "highPrice" : 10290,
-    "openPrice" : 9930,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10260
-  }, {
     "volume" : 85616,
     "marketCap" : 150814248560,
     "lowPrice" : 9960,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9590,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10930
+  }, {
+    "volume" : 2887617,
+    "marketCap" : 161825799560,
+    "lowPrice" : 10200,
+    "highPrice" : 13580,
+    "openPrice" : 12770,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10610
   } ],
   "stockCode" : "451760"
 }

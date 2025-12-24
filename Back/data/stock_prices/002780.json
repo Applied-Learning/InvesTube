@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "진흥기업",
   "prices" : [ {
-    "volume" : 191850,
-    "marketCap" : 119141359155,
-    "lowPrice" : 813,
-    "highPrice" : 839,
-    "openPrice" : 816,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 819
-  }, {
     "volume" : 153551,
     "marketCap" : 118414000430,
     "lowPrice" : 811,
@@ -1937,6 +1929,14 @@
     "openPrice" : 755,
     "tradeDate" : "2025-12-22",
     "closePrice" : 767
+  }, {
+    "volume" : 614394,
+    "marketCap" : 110122110965,
+    "lowPrice" : 744,
+    "highPrice" : 767,
+    "openPrice" : 767,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 757
   } ],
   "stockCode" : "002780"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "화인베스틸",
   "prices" : [ {
-    "volume" : 13963,
-    "marketCap" : 30887770236,
-    "lowPrice" : 997,
-    "highPrice" : 1022,
-    "openPrice" : 1006,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1002
-  }, {
     "volume" : 25289,
     "marketCap" : 30363726230,
     "lowPrice" : 985,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1777,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1740
+  }, {
+    "volume" : 246982,
+    "marketCap" : 64170973958,
+    "lowPrice" : 1723,
+    "highPrice" : 1788,
+    "openPrice" : 1740,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1729
   } ],
   "stockCode" : "133820"
 }

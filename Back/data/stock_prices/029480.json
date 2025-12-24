@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "광무",
   "prices" : [ {
-    "volume" : 195286,
-    "marketCap" : 145499024535,
-    "lowPrice" : 2450,
-    "highPrice" : 2655,
-    "openPrice" : 2565,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2645
-  }, {
     "volume" : 154380,
     "marketCap" : 142198479555,
     "lowPrice" : 2580,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1963,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1938
+  }, {
+    "volume" : 287157,
+    "marketCap" : 118617179664,
+    "lowPrice" : 1853,
+    "highPrice" : 1937,
+    "openPrice" : 1937,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1864
   } ],
   "stockCode" : "029480"
 }

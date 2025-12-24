@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "퍼시스",
   "prices" : [ {
-    "volume" : 262,
-    "marketCap" : 487600000000,
-    "lowPrice" : 41500,
-    "highPrice" : 42400,
-    "openPrice" : 41600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 42400
-  }, {
     "volume" : 142,
     "marketCap" : 487600000000,
     "lowPrice" : 41600,
@@ -1936,6 +1928,14 @@
     "highPrice" : 50400,
     "openPrice" : 50100,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 49250
+  }, {
+    "volume" : 3339,
+    "marketCap" : 566375000000,
+    "lowPrice" : 48250,
+    "highPrice" : 49500,
+    "openPrice" : 49250,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 49250
   } ],
   "stockCode" : "016800"

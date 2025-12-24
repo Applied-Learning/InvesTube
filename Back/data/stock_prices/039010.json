@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대에이치티",
   "prices" : [ {
-    "volume" : 39042,
-    "marketCap" : 55113750000,
-    "lowPrice" : 6160,
-    "highPrice" : 6400,
-    "openPrice" : 6190,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6390
-  }, {
     "volume" : 30860,
     "marketCap" : 55027500000,
     "lowPrice" : 6210,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9260,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9850
+  }, {
+    "volume" : 52113,
+    "marketCap" : 85560000000,
+    "lowPrice" : 9720,
+    "highPrice" : 9970,
+    "openPrice" : 9860,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9920
   } ],
   "stockCode" : "039010"
 }

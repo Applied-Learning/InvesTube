@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이엠",
   "prices" : [ {
-    "volume" : 116453,
-    "marketCap" : 27519819555,
-    "lowPrice" : 2345,
-    "highPrice" : 2490,
-    "openPrice" : 2360,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2465
-  }, {
     "volume" : 60797,
     "marketCap" : 27352356150,
     "lowPrice" : 2405,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 396
+  }, {
+    "volume" : 0,
+    "marketCap" : 5140810224,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 396
   } ],
   "stockCode" : "101390"

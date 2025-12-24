@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KBI동양철관",
   "prices" : [ {
-    "volume" : 581584,
-    "marketCap" : 107266625280,
-    "lowPrice" : 670,
-    "highPrice" : 692,
-    "openPrice" : 681,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 683
-  }, {
     "volume" : 646169,
     "marketCap" : 106010208000,
     "lowPrice" : 665,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1845,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1840
+  }, {
+    "volume" : 9006682,
+    "marketCap" : 131277190201,
+    "lowPrice" : 1608,
+    "highPrice" : 1688,
+    "openPrice" : 1615,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1643
   } ],
   "stockCode" : "008970"
 }

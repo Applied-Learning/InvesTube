@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "로보티즈",
   "prices" : [ {
-    "volume" : 198936,
-    "marketCap" : 263821797000,
-    "lowPrice" : 19550,
-    "highPrice" : 20400,
-    "openPrice" : 19750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 20200
-  }, {
     "volume" : 354554,
     "marketCap" : 270352039500,
     "lowPrice" : 20300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 282000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 280500
+  }, {
+    "volume" : 669376,
+    "marketCap" : 4065054552000,
+    "lowPrice" : 273500,
+    "highPrice" : 293000,
+    "openPrice" : 281000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 279000
   } ],
   "stockCode" : "108490"
 }

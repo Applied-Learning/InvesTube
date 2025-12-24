@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "핸즈코퍼레이션",
   "prices" : [ {
-    "volume" : 5241,
-    "marketCap" : 40951398384,
-    "lowPrice" : 1870,
-    "highPrice" : 1895,
-    "openPrice" : 1890,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1872
-  }, {
     "volume" : 6316,
     "marketCap" : 40601386432,
     "lowPrice" : 1855,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1360
+  }, {
+    "volume" : 58426,
+    "marketCap" : 29663512932,
+    "lowPrice" : 1356,
+    "highPrice" : 1388,
+    "openPrice" : 1365,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1356
   } ],
   "stockCode" : "143210"
 }

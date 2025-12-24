@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "비엠티",
   "prices" : [ {
-    "volume" : 4952,
-    "marketCap" : 70720098500,
-    "lowPrice" : 7600,
-    "highPrice" : 7850,
-    "openPrice" : 7600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7750
-  }, {
     "volume" : 5368,
     "marketCap" : 69716329360,
     "lowPrice" : 7640,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12550,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12690
+  }, {
+    "volume" : 10875,
+    "marketCap" : 124172821350,
+    "lowPrice" : 12510,
+    "highPrice" : 12790,
+    "openPrice" : 12570,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12510
   } ],
   "stockCode" : "086670"
 }

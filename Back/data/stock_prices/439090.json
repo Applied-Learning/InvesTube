@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "마녀공장",
   "prices" : [ {
-    "volume" : 50255,
-    "marketCap" : 246165247800,
-    "lowPrice" : 14810,
-    "highPrice" : 15120,
-    "openPrice" : 14810,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15030
-  }, {
     "volume" : 105432,
     "marketCap" : 245018769600,
     "lowPrice" : 14960,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14000
+  }, {
+    "volume" : 30094,
+    "marketCap" : 227985379200,
+    "lowPrice" : 13920,
+    "highPrice" : 14150,
+    "openPrice" : 14000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13920
   } ],
   "stockCode" : "439090"
 }

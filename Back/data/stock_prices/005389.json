@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대차3우B",
   "prices" : [ {
-    "volume" : 8246,
-    "marketCap" : 363249650400,
-    "lowPrice" : 151700,
-    "highPrice" : 153800,
-    "openPrice" : 152200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 152600
-  }, {
     "volume" : 4544,
     "marketCap" : 363963771600,
     "lowPrice" : 152400,
@@ -1936,6 +1928,14 @@
     "highPrice" : 202500,
     "openPrice" : 202500,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 201500
+  }, {
+    "volume" : 6639,
+    "marketCap" : 468981578000,
+    "lowPrice" : 200500,
+    "highPrice" : 203000,
+    "openPrice" : 202000,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 201500
   } ],
   "stockCode" : "005389"

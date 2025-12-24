@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "NHN",
   "prices" : [ {
-    "volume" : 57764,
-    "marketCap" : 626361581650,
-    "lowPrice" : 18390,
-    "highPrice" : 18850,
-    "openPrice" : 18590,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 18550
-  }, {
     "volume" : 67929,
     "marketCap" : 628049887800,
     "lowPrice" : 18520,
@@ -1937,6 +1929,14 @@
     "openPrice" : 28850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 29450
+  }, {
+    "volume" : 69716,
+    "marketCap" : 977681199150,
+    "lowPrice" : 29400,
+    "highPrice" : 30800,
+    "openPrice" : 29450,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 29850
   } ],
   "stockCode" : "181710"
 }

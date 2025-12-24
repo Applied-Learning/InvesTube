@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국제지",
   "prices" : [ {
-    "volume" : 226489,
-    "marketCap" : 157087223762,
-    "lowPrice" : 785,
-    "highPrice" : 837,
-    "openPrice" : 815,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 826
-  }, {
     "volume" : 116221,
     "marketCap" : 156897045525,
     "lowPrice" : 810,
@@ -1937,6 +1929,14 @@
     "openPrice" : 745,
     "tradeDate" : "2025-12-22",
     "closePrice" : 776
+  }, {
+    "volume" : 77294,
+    "marketCap" : 149289916045,
+    "lowPrice" : 771,
+    "highPrice" : 786,
+    "openPrice" : 776,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 785
   } ],
   "stockCode" : "027970"
 }

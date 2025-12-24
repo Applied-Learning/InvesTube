@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "풀무원",
   "prices" : [ {
-    "volume" : 36392,
-    "marketCap" : 420088372840,
-    "lowPrice" : 10880,
-    "highPrice" : 11150,
-    "openPrice" : 10940,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11020
-  }, {
     "volume" : 74806,
     "marketCap" : 422756810780,
     "lowPrice" : 10900,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13080,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13090
+  }, {
+    "volume" : 51348,
+    "marketCap" : 495185840580,
+    "lowPrice" : 12990,
+    "highPrice" : 13150,
+    "openPrice" : 13090,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12990
   } ],
   "stockCode" : "017810"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "쇼박스",
   "prices" : [ {
-    "volume" : 3464914,
-    "marketCap" : 255563040000,
-    "lowPrice" : 3985,
-    "highPrice" : 4480,
-    "openPrice" : 4385,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4080
-  }, {
     "volume" : 3236225,
     "marketCap" : 249925620000,
     "lowPrice" : 3800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2430,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2420
+  }, {
+    "volume" : 104069,
+    "marketCap" : 150644390000,
+    "lowPrice" : 2395,
+    "highPrice" : 2425,
+    "openPrice" : 2405,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2405
   } ],
   "stockCode" : "086980"
 }

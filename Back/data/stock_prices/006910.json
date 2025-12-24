@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "보성파워텍",
   "prices" : [ {
-    "volume" : 389664,
-    "marketCap" : 128474489760,
-    "lowPrice" : 2485,
-    "highPrice" : 2635,
-    "openPrice" : 2510,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2615
-  }, {
     "volume" : 300453,
     "marketCap" : 128965788000,
     "lowPrice" : 2575,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5240,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5420
+  }, {
+    "volume" : 1229966,
+    "marketCap" : 258914172480,
+    "lowPrice" : 5200,
+    "highPrice" : 5450,
+    "openPrice" : 5400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5270
   } ],
   "stockCode" : "006910"
 }

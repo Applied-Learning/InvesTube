@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼성카드",
   "prices" : [ {
-    "volume" : 63282,
-    "marketCap" : 4802351031950,
-    "lowPrice" : 40000,
-    "highPrice" : 41550,
-    "openPrice" : 40000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 41450
-  }, {
     "volume" : 56586,
     "marketCap" : 4738628641900,
     "lowPrice" : 40400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 55800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 55700
+  }, {
+    "volume" : 29390,
+    "marketCap" : 6499683785100,
+    "lowPrice" : 55500,
+    "highPrice" : 56300,
+    "openPrice" : 55800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 56100
   } ],
   "stockCode" : "029780"
 }

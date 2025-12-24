@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대바이오랜드",
   "prices" : [ {
-    "volume" : 88744,
-    "marketCap" : 126450000000,
-    "lowPrice" : 4110,
-    "highPrice" : 4215,
-    "openPrice" : 4135,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4215
-  }, {
     "volume" : 42051,
     "marketCap" : 126600000000,
     "lowPrice" : 4210,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4415,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4410
+  }, {
+    "volume" : 35220,
+    "marketCap" : 132150000000,
+    "lowPrice" : 4375,
+    "highPrice" : 4430,
+    "openPrice" : 4390,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4405
   } ],
   "stockCode" : "052260"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "토모큐브",
   "prices" : [ {
-    "volume" : 390642,
-    "marketCap" : 200541519780,
-    "lowPrice" : 15100,
-    "highPrice" : 16000,
-    "openPrice" : 16000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15370
-  }, {
     "volume" : 394572,
     "marketCap" : 203542466400,
     "lowPrice" : 15070,
@@ -1937,6 +1929,14 @@
     "openPrice" : 50000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 49950
+  }, {
+    "volume" : 172082,
+    "marketCap" : 650102571200,
+    "lowPrice" : 48600,
+    "highPrice" : 50500,
+    "openPrice" : 49600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 48800
   } ],
   "stockCode" : "475960"
 }

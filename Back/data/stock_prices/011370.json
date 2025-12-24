@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "서한",
   "prices" : [ {
-    "volume" : 107080,
-    "marketCap" : 88686586335,
-    "lowPrice" : 865,
-    "highPrice" : 894,
-    "openPrice" : 868,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 879
-  }, {
     "volume" : 39660,
     "marketCap" : 88383901740,
     "lowPrice" : 865,
@@ -1937,6 +1929,14 @@
     "openPrice" : 937,
     "tradeDate" : "2025-12-22",
     "closePrice" : 940
+  }, {
+    "volume" : 96514,
+    "marketCap" : 94740278235,
+    "lowPrice" : 934,
+    "highPrice" : 948,
+    "openPrice" : 948,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 939
   } ],
   "stockCode" : "011370"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "강동씨앤엘",
   "prices" : [ {
-    "volume" : 12778,
-    "marketCap" : 74946232080,
-    "lowPrice" : 1215,
-    "highPrice" : 1235,
-    "openPrice" : 1219,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1230
-  }, {
     "volume" : 16543,
     "marketCap" : 74336913120,
     "lowPrice" : 1219,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1132,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1129
+  }, {
+    "volume" : 14439,
+    "marketCap" : 68365587312,
+    "lowPrice" : 1112,
+    "highPrice" : 1129,
+    "openPrice" : 1129,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1122
   } ],
   "stockCode" : "198440"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "정다운",
   "prices" : [ {
-    "volume" : 261076,
-    "marketCap" : 97562474310,
-    "lowPrice" : 2925,
-    "highPrice" : 2985,
-    "openPrice" : 2925,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2985
-  }, {
     "volume" : 287812,
     "marketCap" : 97725895540,
     "lowPrice" : 2965,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2745,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2740
+  }, {
+    "volume" : 130945,
+    "marketCap" : 89391412810,
+    "lowPrice" : 2715,
+    "highPrice" : 2740,
+    "openPrice" : 2735,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2735
   } ],
   "stockCode" : "208140"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "화승코퍼레이션",
   "prices" : [ {
-    "volume" : 46845,
-    "marketCap" : 76978825576,
-    "lowPrice" : 1517,
-    "highPrice" : 1538,
-    "openPrice" : 1527,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1538
-  }, {
     "volume" : 24114,
     "marketCap" : 77579440600,
     "lowPrice" : 1529,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2240,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2250
+  }, {
+    "volume" : 89696,
+    "marketCap" : 111614291960,
+    "lowPrice" : 2210,
+    "highPrice" : 2290,
+    "openPrice" : 2230,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2230
   } ],
   "stockCode" : "013520"
 }

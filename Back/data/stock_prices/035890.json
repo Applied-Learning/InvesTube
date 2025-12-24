@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "서희건설",
   "prices" : [ {
-    "volume" : 712912,
-    "marketCap" : 376885869480,
-    "lowPrice" : 1608,
-    "highPrice" : 1649,
-    "openPrice" : 1608,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1640
-  }, {
     "volume" : 648923,
     "marketCap" : 381482038620,
     "lowPrice" : 1640,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 1623
+  }, {
+    "volume" : 0,
+    "marketCap" : 372979125711,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 1623
   } ],
   "stockCode" : "035890"

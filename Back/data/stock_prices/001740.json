@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SK네트웍스",
   "prices" : [ {
-    "volume" : 348664,
-    "marketCap" : 958133315660,
-    "lowPrice" : 4195,
-    "highPrice" : 4335,
-    "openPrice" : 4210,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4330
-  }, {
     "volume" : 265564,
     "marketCap" : 948175810070,
     "lowPrice" : 4260,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4665,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4605
+  }, {
+    "volume" : 250036,
+    "marketCap" : 1006814454100,
+    "lowPrice" : 4535,
+    "highPrice" : 4620,
+    "openPrice" : 4610,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4550
   } ],
   "stockCode" : "001740"
 }

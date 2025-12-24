@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HLB제약",
   "prices" : [ {
-    "volume" : 207808,
-    "marketCap" : 695157618900,
-    "lowPrice" : 21750,
-    "highPrice" : 23050,
-    "openPrice" : 22800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 21850
-  }, {
     "volume" : 183164,
     "marketCap" : 685613120700,
     "lowPrice" : 21450,
@@ -1936,6 +1928,14 @@
     "highPrice" : 15030,
     "openPrice" : 14820,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 14920
+  }, {
+    "volume" : 42064,
+    "marketCap" : 489366391520,
+    "lowPrice" : 14850,
+    "highPrice" : 15080,
+    "openPrice" : 15040,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 14920
   } ],
   "stockCode" : "047920"

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "범한퓨얼셀",
   "prices" : [ {
-    "volume" : 25869,
-    "marketCap" : 112754070000,
-    "lowPrice" : 12870,
-    "highPrice" : 13190,
-    "openPrice" : 13190,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12870
-  }, {
     "volume" : 38492,
     "marketCap" : 112578850000,
     "lowPrice" : 12770,
@@ -1937,6 +1929,14 @@
     "openPrice" : 27750,
     "tradeDate" : "2025-12-22",
     "closePrice" : 27800
+  }, {
+    "volume" : 50731,
+    "marketCap" : 244869950000,
+    "lowPrice" : 27700,
+    "highPrice" : 28200,
+    "openPrice" : 28050,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 27950
   } ],
   "stockCode" : "382900"
 }

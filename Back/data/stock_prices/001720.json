@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신영증권",
   "prices" : [ {
-    "volume" : 724,
-    "marketCap" : 1251084000000,
-    "lowPrice" : 75400,
-    "highPrice" : 76100,
-    "openPrice" : 75400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 76100
-  }, {
     "volume" : 2455,
     "marketCap" : 1256016000000,
     "lowPrice" : 76100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 143200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 142200
+  }, {
+    "volume" : 15059,
+    "marketCap" : 2341056000000,
+    "lowPrice" : 142000,
+    "highPrice" : 144700,
+    "openPrice" : 143600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 142400
   } ],
   "stockCode" : "001720"
 }

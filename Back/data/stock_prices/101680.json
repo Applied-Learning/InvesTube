@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국정밀기계",
   "prices" : [ {
-    "volume" : 976176,
-    "marketCap" : 27186940000,
-    "lowPrice" : 3150,
-    "highPrice" : 3545,
-    "openPrice" : 3410,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3235
-  }, {
     "volume" : 472407,
     "marketCap" : 26472600000,
     "lowPrice" : 3000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2030,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2060
+  }, {
+    "volume" : 2246350,
+    "marketCap" : 22480700000,
+    "lowPrice" : 2060,
+    "highPrice" : 2675,
+    "openPrice" : 2060,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2675
   } ],
   "stockCode" : "101680"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아시아종묘",
   "prices" : [ {
-    "volume" : 10345,
-    "marketCap" : 23043607776,
-    "lowPrice" : 1960,
-    "highPrice" : 1998,
-    "openPrice" : 1980,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1988
-  }, {
     "volume" : 7171,
     "marketCap" : 22997242368,
     "lowPrice" : 1971,
@@ -1936,6 +1928,14 @@
     "highPrice" : 2055,
     "openPrice" : 2030,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 2030
+  }, {
+    "volume" : 29366,
+    "marketCap" : 24485590010,
+    "lowPrice" : 2005,
+    "highPrice" : 2085,
+    "openPrice" : 2085,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 2030
   } ],
   "stockCode" : "154030"

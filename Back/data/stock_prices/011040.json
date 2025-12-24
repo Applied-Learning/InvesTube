@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "경동제약",
   "prices" : [ {
-    "volume" : 32041,
-    "marketCap" : 192920162820,
-    "lowPrice" : 6210,
-    "highPrice" : 6270,
-    "openPrice" : 6220,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6270
-  }, {
     "volume" : 20861,
     "marketCap" : 193535538140,
     "lowPrice" : 6210,
@@ -1936,6 +1928,14 @@
     "highPrice" : 6140,
     "openPrice" : 6090,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 6090
+  }, {
+    "volume" : 45053,
+    "marketCap" : 187381784940,
+    "lowPrice" : 6050,
+    "highPrice" : 6140,
+    "openPrice" : 6090,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 6090
   } ],
   "stockCode" : "011040"

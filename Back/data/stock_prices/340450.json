@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "지씨지놈",
   "prices" : [ {
     "volume" : 30744214,
@@ -1065,6 +1065,14 @@
     "openPrice" : 7030,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6900
+  }, {
+    "volume" : 123111,
+    "marketCap" : 156568249660,
+    "lowPrice" : 6620,
+    "highPrice" : 6950,
+    "openPrice" : 6950,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6620
   } ],
   "stockCode" : "340450"
 }

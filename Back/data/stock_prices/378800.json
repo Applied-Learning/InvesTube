@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "샤페론",
   "prices" : [ {
-    "volume" : 9244770,
-    "marketCap" : 108062766135,
-    "lowPrice" : 2885,
-    "highPrice" : 3795,
-    "openPrice" : 2920,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3585
-  }, {
     "volume" : 4560838,
     "marketCap" : 106103469120,
     "lowPrice" : 3430,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1888,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1835
+  }, {
+    "volume" : 696427,
+    "marketCap" : 83607400048,
+    "lowPrice" : 1780,
+    "highPrice" : 1850,
+    "openPrice" : 1839,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1808
   } ],
   "stockCode" : "378800"
 }

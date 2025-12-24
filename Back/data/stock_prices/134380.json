@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "미원화학",
   "prices" : [ {
-    "volume" : 31,
-    "marketCap" : 175941440000,
-    "lowPrice" : 79900,
-    "highPrice" : 80100,
-    "openPrice" : 80100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 80000
-  }, {
     "volume" : 155,
     "marketCap" : 174841806000,
     "lowPrice" : 79000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 95000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 95000
+  }, {
+    "volume" : 56,
+    "marketCap" : 206511265200,
+    "lowPrice" : 93900,
+    "highPrice" : 95000,
+    "openPrice" : 95000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 93900
   } ],
   "stockCode" : "134380"
 }

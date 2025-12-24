@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대원전선",
   "prices" : [ {
-    "volume" : 42549788,
-    "marketCap" : 239558464125,
-    "lowPrice" : 2875,
-    "highPrice" : 3390,
-    "openPrice" : 2880,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3195
-  }, {
     "volume" : 5324521,
     "marketCap" : 228311587875,
     "lowPrice" : 3020,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3795,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3935
+  }, {
+    "volume" : 2890018,
+    "marketCap" : 290956883025,
+    "lowPrice" : 3775,
+    "highPrice" : 3995,
+    "openPrice" : 3980,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3775
   } ],
   "stockCode" : "006340"
 }

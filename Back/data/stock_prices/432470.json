@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이엔에스",
   "prices" : [ {
-    "volume" : 17671,
-    "marketCap" : 95940589360,
-    "lowPrice" : 10930,
-    "highPrice" : 11240,
-    "openPrice" : 11000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11060
-  }, {
     "volume" : 17246,
     "marketCap" : 94465914840,
     "lowPrice" : 10840,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9730,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9800
+  }, {
+    "volume" : 8763,
+    "marketCap" : 84820946520,
+    "lowPrice" : 9480,
+    "highPrice" : 9890,
+    "openPrice" : 9740,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9670
   } ],
   "stockCode" : "432470"
 }

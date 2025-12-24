@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "티로보틱스",
   "prices" : [ {
-    "volume" : 54776,
-    "marketCap" : 130114111920,
-    "lowPrice" : 7000,
-    "highPrice" : 7260,
-    "openPrice" : 7130,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7160
-  }, {
     "volume" : 85838,
     "marketCap" : 132113071740,
     "lowPrice" : 7210,
@@ -1937,6 +1929,14 @@
     "openPrice" : 18640,
     "tradeDate" : "2025-12-22",
     "closePrice" : 20350
+  }, {
+    "volume" : 1761139,
+    "marketCap" : 441056117250,
+    "lowPrice" : 19600,
+    "highPrice" : 21350,
+    "openPrice" : 20400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 20250
   } ],
   "stockCode" : "117730"
 }

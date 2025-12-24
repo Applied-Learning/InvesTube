@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대성산업",
   "prices" : [ {
-    "volume" : 92405,
-    "marketCap" : 150860319130,
-    "lowPrice" : 3295,
-    "highPrice" : 3360,
-    "openPrice" : 3315,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3335
-  }, {
     "volume" : 89973,
     "marketCap" : 149277077400,
     "lowPrice" : 3285,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10900
+  }, {
+    "volume" : 5016644,
+    "marketCap" : 443760039180,
+    "lowPrice" : 8510,
+    "highPrice" : 10950,
+    "openPrice" : 10510,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9810
   } ],
   "stockCode" : "128820"
 }

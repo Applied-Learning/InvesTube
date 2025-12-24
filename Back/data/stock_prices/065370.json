@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "위세아이텍",
   "prices" : [ {
-    "volume" : 500668,
-    "marketCap" : 42826933200,
-    "lowPrice" : 4985,
-    "highPrice" : 5840,
-    "openPrice" : 5320,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5800
-  }, {
     "volume" : 293279,
     "marketCap" : 40168709760,
     "lowPrice" : 5430,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5740,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5650
+  }, {
+    "volume" : 13898,
+    "marketCap" : 40611747000,
+    "lowPrice" : 5480,
+    "highPrice" : 5650,
+    "openPrice" : 5650,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5500
   } ],
   "stockCode" : "065370"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인디에프",
   "prices" : [ {
-    "volume" : 1013920,
-    "marketCap" : 75112995000,
-    "lowPrice" : 988,
-    "highPrice" : 1017,
-    "openPrice" : 1017,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1000
-  }, {
     "volume" : 751302,
     "marketCap" : 73911187080,
     "lowPrice" : 969,
@@ -1937,6 +1929,14 @@
     "openPrice" : 865,
     "tradeDate" : "2025-12-22",
     "closePrice" : 879
+  }, {
+    "volume" : 176511,
+    "marketCap" : 64972740675,
+    "lowPrice" : 858,
+    "highPrice" : 899,
+    "openPrice" : 879,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 865
   } ],
   "stockCode" : "014990"
 }

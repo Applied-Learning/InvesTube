@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대퓨처넷",
   "prices" : [ {
-    "volume" : 268425,
-    "marketCap" : 457342221750,
-    "lowPrice" : 4035,
-    "highPrice" : 4180,
-    "openPrice" : 4035,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4150
-  }, {
     "volume" : 198077,
     "marketCap" : 451832074500,
     "lowPrice" : 4045,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3220,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3215
+  }, {
+    "volume" : 62027,
+    "marketCap" : 351547394550,
+    "lowPrice" : 3170,
+    "highPrice" : 3215,
+    "openPrice" : 3215,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3190
   } ],
   "stockCode" : "126560"
 }

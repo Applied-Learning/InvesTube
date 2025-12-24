@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "우진아이엔에스",
   "prices" : [ {
-    "volume" : 6090,
-    "marketCap" : 24390400000,
-    "lowPrice" : 3200,
-    "highPrice" : 3405,
-    "openPrice" : 3375,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3200
-  }, {
     "volume" : 3423,
     "marketCap" : 24314180000,
     "lowPrice" : 3090,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3820,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3865
+  }, {
+    "volume" : 7072,
+    "marketCap" : 28963600000,
+    "lowPrice" : 3785,
+    "highPrice" : 3855,
+    "openPrice" : 3845,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3800
   } ],
   "stockCode" : "010400"
 }

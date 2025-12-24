@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엔젤로보틱스",
   "prices" : [ {
-    "volume" : 81901,
-    "marketCap" : 324314767700,
-    "lowPrice" : 21250,
-    "highPrice" : 22050,
-    "openPrice" : 21400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 21700
-  }, {
     "volume" : 158168,
     "marketCap" : 334029265350,
     "lowPrice" : 21350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 31600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 32100
+  }, {
+    "volume" : 301582,
+    "marketCap" : 469917904450,
+    "lowPrice" : 30750,
+    "highPrice" : 33000,
+    "openPrice" : 32200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 30950
   } ],
   "stockCode" : "455900"
 }

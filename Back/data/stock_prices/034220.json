@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "LG디스플레이",
   "prices" : [ {
-    "volume" : 1776680,
-    "marketCap" : 4800000000000,
-    "lowPrice" : 9130,
-    "highPrice" : 9660,
-    "openPrice" : 9220,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9600
-  }, {
     "volume" : 513138,
     "marketCap" : 4720000000000,
     "lowPrice" : 9410,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12040,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11770
+  }, {
+    "volume" : 1514351,
+    "marketCap" : 5960000000000,
+    "lowPrice" : 11800,
+    "highPrice" : 12030,
+    "openPrice" : 11850,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11920
   } ],
   "stockCode" : "034220"
 }

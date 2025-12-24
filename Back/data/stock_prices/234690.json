@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "녹십자웰빙",
   "prices" : [ {
-    "volume" : 166184,
-    "marketCap" : 189949353200,
-    "lowPrice" : 10000,
-    "highPrice" : 10870,
-    "openPrice" : 10060,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10700
-  }, {
     "volume" : 76391,
     "marketCap" : 181960829000,
     "lowPrice" : 10250,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9420,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9510
+  }, {
+    "volume" : 21661,
+    "marketCap" : 164741121280,
+    "lowPrice" : 9270,
+    "highPrice" : 9510,
+    "openPrice" : 9480,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9280
   } ],
   "stockCode" : "234690"
 }

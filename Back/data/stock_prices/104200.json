@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "NHN벅스",
   "prices" : [ {
-    "volume" : 12152,
-    "marketCap" : 42999895000,
-    "lowPrice" : 2890,
-    "highPrice" : 2975,
-    "openPrice" : 2890,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2900
-  }, {
     "volume" : 16478,
     "marketCap" : 43074032750,
     "lowPrice" : 2870,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3110,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3150
+  }, {
+    "volume" : 45781,
+    "marketCap" : 45817129500,
+    "lowPrice" : 3060,
+    "highPrice" : 3150,
+    "openPrice" : 3130,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3090
   } ],
   "stockCode" : "104200"
 }

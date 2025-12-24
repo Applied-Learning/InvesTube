@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동성화인텍",
   "prices" : [ {
-    "volume" : 497989,
-    "marketCap" : 452841359400,
-    "lowPrice" : 14920,
-    "highPrice" : 15340,
-    "openPrice" : 14980,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15100
-  }, {
     "volume" : 706316,
     "marketCap" : 457939573380,
     "lowPrice" : 15060,
@@ -1937,6 +1929,14 @@
     "openPrice" : 28400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 27350
+  }, {
+    "volume" : 135034,
+    "marketCap" : 839705832000,
+    "lowPrice" : 27400,
+    "highPrice" : 28050,
+    "openPrice" : 27700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 28000
   } ],
   "stockCode" : "033500"
 }

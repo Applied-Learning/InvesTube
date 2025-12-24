@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SNT모티브",
   "prices" : [ {
-    "volume" : 8210,
-    "marketCap" : 595161635200,
-    "lowPrice" : 39850,
-    "highPrice" : 40700,
-    "openPrice" : 39900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 40700
-  }, {
     "volume" : 9717,
     "marketCap" : 588581224000,
     "lowPrice" : 40100,
@@ -1936,6 +1928,14 @@
     "highPrice" : 35500,
     "openPrice" : 35500,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 34800
+  }, {
+    "volume" : 44234,
+    "marketCap" : 923601465600,
+    "lowPrice" : 34500,
+    "highPrice" : 35750,
+    "openPrice" : 34950,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 34800
   } ],
   "stockCode" : "064960"

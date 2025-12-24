@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "BYC",
   "prices" : [ {
-    "volume" : 2502,
-    "marketCap" : 184261425000,
-    "lowPrice" : 29200,
-    "highPrice" : 29850,
-    "openPrice" : 29600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 29500
-  }, {
     "volume" : 1960,
     "marketCap" : 184261425000,
     "lowPrice" : 28550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 43550,
     "tradeDate" : "2025-12-22",
     "closePrice" : 41850
+  }, {
+    "volume" : 3671,
+    "marketCap" : 268272142500,
+    "lowPrice" : 41700,
+    "highPrice" : 42950,
+    "openPrice" : 42150,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 42950
   } ],
   "stockCode" : "001460"
 }

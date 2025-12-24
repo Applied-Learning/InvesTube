@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "LG화학우",
   "prices" : [ {
-    "volume" : 13751,
-    "marketCap" : 1244816720000,
-    "lowPrice" : 160000,
-    "highPrice" : 164500,
-    "openPrice" : 162500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 161900
-  }, {
     "volume" : 8016,
     "marketCap" : 1235590160000,
     "lowPrice" : 160700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 174400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 174500
+  }, {
+    "volume" : 23199,
+    "marketCap" : 1330162400000,
+    "lowPrice" : 172300,
+    "highPrice" : 175200,
+    "openPrice" : 175000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 173000
   } ],
   "stockCode" : "051915"
 }

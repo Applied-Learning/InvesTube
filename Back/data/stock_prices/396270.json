@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "넥스트칩",
   "prices" : [ {
-    "volume" : 348326,
-    "marketCap" : 244200690000,
-    "lowPrice" : 13350,
-    "highPrice" : 13800,
-    "openPrice" : 13550,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13500
-  }, {
     "volume" : 587010,
     "marketCap" : 249808261400,
     "lowPrice" : 13460,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3390,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3305
+  }, {
+    "volume" : 1828056,
+    "marketCap" : 71497442395,
+    "lowPrice" : 3220,
+    "highPrice" : 3640,
+    "openPrice" : 3325,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3545
   } ],
   "stockCode" : "396270"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "비피도",
   "prices" : [ {
-    "volume" : 6646,
-    "marketCap" : 24826300000,
-    "lowPrice" : 3005,
-    "highPrice" : 3095,
-    "openPrice" : 3005,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3035
-  }, {
     "volume" : 4225,
     "marketCap" : 24826300000,
     "lowPrice" : 3035,
@@ -1936,6 +1928,14 @@
     "highPrice" : 3190,
     "openPrice" : 3180,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 3180
+  }, {
+    "volume" : 5736,
+    "marketCap" : 26012400000,
+    "lowPrice" : 3130,
+    "highPrice" : 3195,
+    "openPrice" : 3180,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 3180
   } ],
   "stockCode" : "238200"

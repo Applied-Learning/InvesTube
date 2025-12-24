@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "일신방직",
   "prices" : [ {
-    "volume" : 6034,
-    "marketCap" : 179023200000,
-    "lowPrice" : 7590,
-    "highPrice" : 7730,
-    "openPrice" : 7650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7690
-  }, {
     "volume" : 12138,
     "marketCap" : 179721600000,
     "lowPrice" : 7640,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13290,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13200
+  }, {
+    "volume" : 28708,
+    "marketCap" : 298480000000,
+    "lowPrice" : 12920,
+    "highPrice" : 13210,
+    "openPrice" : 13200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13000
   } ],
   "stockCode" : "003200"
 }

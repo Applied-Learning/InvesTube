@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "시노펙스",
   "prices" : [ {
-    "volume" : 546938,
-    "marketCap" : 570800144160,
-    "lowPrice" : 6610,
-    "highPrice" : 6890,
-    "openPrice" : 6620,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6810
-  }, {
     "volume" : 770207,
     "marketCap" : 580020117120,
     "lowPrice" : 6840,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6740,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6880
+  }, {
+    "volume" : 360505,
+    "marketCap" : 598342783720,
+    "lowPrice" : 6740,
+    "highPrice" : 7000,
+    "openPrice" : 6940,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6820
   } ],
   "stockCode" : "025320"
 }

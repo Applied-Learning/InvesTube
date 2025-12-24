@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "미스터블루",
   "prices" : [ {
-    "volume" : 70465,
-    "marketCap" : 97618745025,
-    "lowPrice" : 1146,
-    "highPrice" : 1179,
-    "openPrice" : 1146,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1175
-  }, {
     "volume" : 57773,
     "marketCap" : 95874069582,
     "lowPrice" : 1152,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1304,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1280
+  }, {
+    "volume" : 439951,
+    "marketCap" : 103683569184,
+    "lowPrice" : 1240,
+    "highPrice" : 1281,
+    "openPrice" : 1269,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1248
   } ],
   "stockCode" : "207760"
 }

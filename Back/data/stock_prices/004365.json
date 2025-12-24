@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "세방우",
   "prices" : [ {
-    "volume" : 2730,
-    "marketCap" : 29366430000,
-    "lowPrice" : 7830,
-    "highPrice" : 7960,
-    "openPrice" : 7860,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7960
-  }, {
     "volume" : 1950,
     "marketCap" : 29366430000,
     "lowPrice" : 7850,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9760,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9910
+  }, {
+    "volume" : 3449,
+    "marketCap" : 36080865000,
+    "lowPrice" : 9780,
+    "highPrice" : 9940,
+    "openPrice" : 9850,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9780
   } ],
   "stockCode" : "004365"
 }

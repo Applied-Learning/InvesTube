@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "콜마비앤에이치",
   "prices" : [ {
-    "volume" : 63199,
-    "marketCap" : 344162028600,
-    "lowPrice" : 11270,
-    "highPrice" : 11730,
-    "openPrice" : 11310,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11700
-  }, {
     "volume" : 43784,
     "marketCap" : 345044495340,
     "lowPrice" : 11570,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13200
+  }, {
+    "volume" : 43959,
+    "marketCap" : 387108743280,
+    "lowPrice" : 13070,
+    "highPrice" : 13220,
+    "openPrice" : 13130,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13160
   } ],
   "stockCode" : "200130"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "스피어",
   "prices" : [ {
-    "volume" : 174561,
-    "marketCap" : 95795461100,
-    "lowPrice" : 4425,
-    "highPrice" : 4715,
-    "openPrice" : 4465,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4700
-  }, {
     "volume" : 183913,
     "marketCap" : 94368720190,
     "lowPrice" : 4500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14110,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14010
+  }, {
+    "volume" : 3780965,
+    "marketCap" : 606278218000,
+    "lowPrice" : 12310,
+    "highPrice" : 14200,
+    "openPrice" : 14200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13000
   } ],
   "stockCode" : "347700"
 }

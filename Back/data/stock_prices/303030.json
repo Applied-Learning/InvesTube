@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "지니틱스",
   "prices" : [ {
-    "volume" : 51249,
-    "marketCap" : 31170222496,
-    "lowPrice" : 834,
-    "highPrice" : 900,
-    "openPrice" : 834,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 872
-  }, {
     "volume" : 12126680,
     "marketCap" : 40499841844,
     "lowPrice" : 881,
@@ -1937,6 +1929,14 @@
     "openPrice" : 710,
     "tradeDate" : "2025-12-22",
     "closePrice" : 695
+  }, {
+    "volume" : 31069,
+    "marketCap" : 25988655989,
+    "lowPrice" : 691,
+    "highPrice" : 714,
+    "openPrice" : 695,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 701
   } ],
   "stockCode" : "303030"
 }

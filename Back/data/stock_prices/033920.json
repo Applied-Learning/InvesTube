@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "무학",
   "prices" : [ {
-    "volume" : 187421,
-    "marketCap" : 189525000000,
-    "lowPrice" : 6530,
-    "highPrice" : 7190,
-    "openPrice" : 6550,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6650
-  }, {
     "volume" : 45696,
     "marketCap" : 193230000000,
     "lowPrice" : 6620,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8740,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8720
+  }, {
+    "volume" : 34695,
+    "marketCap" : 245670000000,
+    "lowPrice" : 8580,
+    "highPrice" : 8840,
+    "openPrice" : 8720,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8620
   } ],
   "stockCode" : "033920"
 }

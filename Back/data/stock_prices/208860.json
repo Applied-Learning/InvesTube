@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "다산디엠씨",
   "prices" : [ {
-    "volume" : 0,
-    "marketCap" : 67316270805,
-    "lowPrice" : 0,
-    "highPrice" : 0,
-    "openPrice" : 0,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2205
-  }, {
     "volume" : 0,
     "marketCap" : 67316270805,
     "lowPrice" : 0,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1410,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1414
+  }, {
+    "volume" : 34590,
+    "marketCap" : 48175011687,
+    "lowPrice" : 1418,
+    "highPrice" : 1435,
+    "openPrice" : 1435,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1419
   } ],
   "stockCode" : "208860"
 }

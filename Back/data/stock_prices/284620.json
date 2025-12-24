@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "카이노스메드",
   "prices" : [ {
-    "volume" : 243319,
-    "marketCap" : 89474017775,
-    "lowPrice" : 3065,
-    "highPrice" : 3265,
-    "openPrice" : 3230,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3175
-  }, {
     "volume" : 156450,
     "marketCap" : 85669610720,
     "lowPrice" : 2990,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 1087
+  }, {
+    "volume" : 0,
+    "marketCap" : 35965517911,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 1087
   } ],
   "stockCode" : "284620"

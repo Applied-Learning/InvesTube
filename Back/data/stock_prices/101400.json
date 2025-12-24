@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엔시트론",
   "prices" : [ {
-    "volume" : 72898,
-    "marketCap" : 24554153135,
-    "lowPrice" : 391,
-    "highPrice" : 399,
-    "openPrice" : 391,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 395
-  }, {
     "volume" : 150458,
     "marketCap" : 24740640374,
     "lowPrice" : 394,
@@ -1937,6 +1929,14 @@
     "openPrice" : 320,
     "tradeDate" : "2025-12-22",
     "closePrice" : 313
+  }, {
+    "volume" : 373284,
+    "marketCap" : 21698824840,
+    "lowPrice" : 305,
+    "highPrice" : 315,
+    "openPrice" : 313,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 308
   } ],
   "stockCode" : "101400"
 }

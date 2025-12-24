@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "싸이닉솔루션",
   "prices" : [ {
     "volume" : 61807676,
@@ -920,6 +920,14 @@
     "highPrice" : 8900,
     "openPrice" : 8670,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 8820
+  }, {
+    "volume" : 534535,
+    "marketCap" : 208196100000,
+    "lowPrice" : 8750,
+    "highPrice" : 9130,
+    "openPrice" : 9070,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 8820
   } ],
   "stockCode" : "234030"

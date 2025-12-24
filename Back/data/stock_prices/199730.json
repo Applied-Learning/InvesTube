@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "바이오인프라",
   "prices" : [ {
-    "volume" : 13862,
-    "marketCap" : 33174982940,
-    "lowPrice" : 6680,
-    "highPrice" : 7000,
-    "openPrice" : 6730,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6820
-  }, {
     "volume" : 11118,
     "marketCap" : 32688546240,
     "lowPrice" : 6600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4730,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4620
+  }, {
+    "volume" : 8511,
+    "marketCap" : 22813881230,
+    "lowPrice" : 4585,
+    "highPrice" : 4700,
+    "openPrice" : 4595,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4690
   } ],
   "stockCode" : "199730"
 }

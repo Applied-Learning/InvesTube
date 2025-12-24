@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "태림포장",
   "prices" : [ {
-    "volume" : 61675,
-    "marketCap" : 138425612700,
-    "lowPrice" : 1949,
-    "highPrice" : 1979,
-    "openPrice" : 1959,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1955
-  }, {
     "volume" : 15227,
     "marketCap" : 137788359240,
     "lowPrice" : 1944,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1976,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1982
+  }, {
+    "volume" : 147165,
+    "marketCap" : 138779642400,
+    "lowPrice" : 1960,
+    "highPrice" : 2005,
+    "openPrice" : 1999,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1960
   } ],
   "stockCode" : "011280"
 }

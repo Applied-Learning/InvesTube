@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "매커스",
   "prices" : [ {
-    "volume" : 64504,
-    "marketCap" : 137063020160,
-    "lowPrice" : 8130,
-    "highPrice" : 8510,
-    "openPrice" : 8130,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8480
-  }, {
     "volume" : 54913,
     "marketCap" : 134476925440,
     "lowPrice" : 8000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 21700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 22850
+  }, {
+    "volume" : 31105,
+    "marketCap" : 314420642400,
+    "lowPrice" : 22050,
+    "highPrice" : 22900,
+    "openPrice" : 22850,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 22200
   } ],
   "stockCode" : "093520"
 }

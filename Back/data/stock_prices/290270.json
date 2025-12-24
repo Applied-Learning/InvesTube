@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "휴네시온",
   "prices" : [ {
-    "volume" : 11826,
-    "marketCap" : 31897471040,
-    "lowPrice" : 3270,
-    "highPrice" : 3335,
-    "openPrice" : 3280,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3320
-  }, {
     "volume" : 12176,
     "marketCap" : 31945509400,
     "lowPrice" : 3235,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3875,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3900
+  }, {
+    "volume" : 27573,
+    "marketCap" : 37133652280,
+    "lowPrice" : 3810,
+    "highPrice" : 3920,
+    "openPrice" : 3860,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3865
   } ],
   "stockCode" : "290270"
 }

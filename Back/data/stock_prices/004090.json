@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국석유",
   "prices" : [ {
-    "volume" : 64550,
-    "marketCap" : 172259208400,
-    "lowPrice" : 13310,
-    "highPrice" : 13660,
-    "openPrice" : 13420,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13570
-  }, {
     "volume" : 48475,
     "marketCap" : 173528620400,
     "lowPrice" : 13500,
@@ -1936,6 +1928,14 @@
     "highPrice" : 14110,
     "openPrice" : 13890,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 14000
+  }, {
+    "volume" : 39819,
+    "marketCap" : 177717680000,
+    "lowPrice" : 13940,
+    "highPrice" : 14150,
+    "openPrice" : 14080,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 14000
   } ],
   "stockCode" : "004090"

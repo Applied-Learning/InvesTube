@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제이엠티",
   "prices" : [ {
-    "volume" : 68744,
-    "marketCap" : 49658531600,
-    "lowPrice" : 2945,
-    "highPrice" : 3030,
-    "openPrice" : 2995,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2965
-  }, {
     "volume" : 63579,
     "marketCap" : 49491049200,
     "lowPrice" : 2910,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2765,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2825
+  }, {
+    "volume" : 66884,
+    "marketCap" : 47230036800,
+    "lowPrice" : 2770,
+    "highPrice" : 2835,
+    "openPrice" : 2825,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2820
   } ],
   "stockCode" : "094970"
 }

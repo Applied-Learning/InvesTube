@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼진엘앤디",
   "prices" : [ {
-    "volume" : 28022,
-    "marketCap" : 18944057088,
-    "lowPrice" : 750,
-    "highPrice" : 764,
-    "openPrice" : 764,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 759
-  }, {
     "volume" : 23668,
     "marketCap" : 18919097856,
     "lowPrice" : 751,
@@ -1937,6 +1929,14 @@
     "openPrice" : 825,
     "tradeDate" : "2025-12-22",
     "closePrice" : 828
+  }, {
+    "volume" : 68087,
+    "marketCap" : 20791040256,
+    "lowPrice" : 810,
+    "highPrice" : 839,
+    "openPrice" : 821,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 833
   } ],
   "stockCode" : "054090"
 }

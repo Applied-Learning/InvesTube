@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대창단조",
   "prices" : [ {
-    "volume" : 63308,
-    "marketCap" : 146861262200,
-    "lowPrice" : 5060,
-    "highPrice" : 5200,
-    "openPrice" : 5140,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5140
-  }, {
     "volume" : 35981,
     "marketCap" : 146861262200,
     "lowPrice" : 5080,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6580,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6470
+  }, {
+    "volume" : 33136,
+    "marketCap" : 181433660500,
+    "lowPrice" : 6340,
+    "highPrice" : 6580,
+    "openPrice" : 6580,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6350
   } ],
   "stockCode" : "015230"
 }

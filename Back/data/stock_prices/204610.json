@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "티쓰리",
   "prices" : [ {
-    "volume" : 366809,
-    "marketCap" : 98631213960,
-    "lowPrice" : 1525,
-    "highPrice" : 1560,
-    "openPrice" : 1542,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1543
-  }, {
     "volume" : 217954,
     "marketCap" : 97352779560,
     "lowPrice" : 1516,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1868,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1860
+  }, {
+    "volume" : 141862,
+    "marketCap" : 109636132960,
+    "lowPrice" : 1847,
+    "highPrice" : 1889,
+    "openPrice" : 1860,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1868
   } ],
   "stockCode" : "204610"
 }

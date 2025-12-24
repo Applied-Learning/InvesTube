@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이비아이동국실업",
   "prices" : [ {
-    "volume" : 3363115,
-    "marketCap" : 56314273686,
-    "lowPrice" : 482,
-    "highPrice" : 580,
-    "openPrice" : 487,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 506
-  }, {
     "volume" : 276736,
     "marketCap" : 55201343376,
     "lowPrice" : 488,
@@ -1937,6 +1929,14 @@
     "openPrice" : 493,
     "tradeDate" : "2025-12-22",
     "closePrice" : 493
+  }, {
+    "volume" : 141337,
+    "marketCap" : 54756171252,
+    "lowPrice" : 485,
+    "highPrice" : 496,
+    "openPrice" : 496,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 492
   } ],
   "stockCode" : "001620"
 }

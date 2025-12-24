@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "쿠콘",
   "prices" : [ {
-    "volume" : 26590,
-    "marketCap" : 166741178100,
-    "lowPrice" : 16250,
-    "highPrice" : 17330,
-    "openPrice" : 17330,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16260
-  }, {
     "volume" : 43074,
     "marketCap" : 171150692650,
     "lowPrice" : 16120,
@@ -1937,6 +1929,14 @@
     "openPrice" : 28450,
     "tradeDate" : "2025-12-22",
     "closePrice" : 28800
+  }, {
+    "volume" : 44183,
+    "marketCap" : 290137295000,
+    "lowPrice" : 28500,
+    "highPrice" : 29650,
+    "openPrice" : 28800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 28750
   } ],
   "stockCode" : "294570"
 }

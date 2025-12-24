@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "퓨릿",
   "prices" : [ {
-    "volume" : 26007,
-    "marketCap" : 93907452800,
-    "lowPrice" : 5370,
-    "highPrice" : 5670,
-    "openPrice" : 5420,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5600
-  }, {
     "volume" : 29684,
     "marketCap" : 91727458360,
     "lowPrice" : 5380,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8630,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8970
+  }, {
+    "volume" : 139110,
+    "marketCap" : 144732962960,
+    "lowPrice" : 8420,
+    "highPrice" : 9020,
+    "openPrice" : 9020,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8420
   } ],
   "stockCode" : "445180"
 }

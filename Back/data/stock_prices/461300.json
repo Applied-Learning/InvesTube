@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이스크림미디어",
   "prices" : [ {
-    "volume" : 33308,
-    "marketCap" : 164625996470,
-    "lowPrice" : 12550,
-    "highPrice" : 12780,
-    "openPrice" : 12590,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12590
-  }, {
     "volume" : 37383,
     "marketCap" : 161487772550,
     "lowPrice" : 12340,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 17740
+  }, {
+    "volume" : 20799,
+    "marketCap" : 236322039410,
+    "lowPrice" : 17500,
+    "highPrice" : 18040,
+    "openPrice" : 18040,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 17770
   } ],
   "stockCode" : "461300"
 }

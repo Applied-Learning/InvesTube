@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "폴라리스AI파마",
   "prices" : [ {
-    "volume" : 17831,
-    "marketCap" : 72638645660,
-    "lowPrice" : 5310,
-    "highPrice" : 5460,
-    "openPrice" : 5330,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5380
-  }, {
     "volume" : 14931,
     "marketCap" : 72908677800,
     "lowPrice" : 5360,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6480,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6500
+  }, {
+    "volume" : 160320,
+    "marketCap" : 84385043750,
+    "lowPrice" : 6220,
+    "highPrice" : 6560,
+    "openPrice" : 6520,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6250
   } ],
   "stockCode" : "041910"
 }

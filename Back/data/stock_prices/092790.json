@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "넥스틸",
   "prices" : [ {
-    "volume" : 345878,
-    "marketCap" : 215816600000,
-    "lowPrice" : 8090,
-    "highPrice" : 8320,
-    "openPrice" : 8090,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8300
-  }, {
     "volume" : 385978,
     "marketCap" : 221017000000,
     "lowPrice" : 8260,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9460,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9720
+  }, {
+    "volume" : 89588,
+    "marketCap" : 247799060000,
+    "lowPrice" : 9500,
+    "highPrice" : 9730,
+    "openPrice" : 9720,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9530
   } ],
   "stockCode" : "092790"
 }

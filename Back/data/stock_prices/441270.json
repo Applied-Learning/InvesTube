@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "파인엠텍",
   "prices" : [ {
-    "volume" : 194068,
-    "marketCap" : 175877469255,
-    "lowPrice" : 4425,
-    "highPrice" : 4780,
-    "openPrice" : 4425,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4755
-  }, {
     "volume" : 2009148,
     "marketCap" : 190487690150,
     "lowPrice" : 4735,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9720
+  }, {
+    "volume" : 904495,
+    "marketCap" : 370604801700,
+    "lowPrice" : 9120,
+    "highPrice" : 9750,
+    "openPrice" : 9750,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9390
   } ],
   "stockCode" : "441270"
 }

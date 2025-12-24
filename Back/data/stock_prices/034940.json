@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "조아제약",
   "prices" : [ {
-    "volume" : 116659,
-    "marketCap" : 31010806827,
-    "lowPrice" : 990,
-    "highPrice" : 1015,
-    "openPrice" : 1015,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1001
-  }, {
     "volume" : 65998,
     "marketCap" : 31010806827,
     "lowPrice" : 991,
@@ -1937,6 +1929,14 @@
     "openPrice" : 995,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1000
+  }, {
+    "volume" : 32168,
+    "marketCap" : 30670028730,
+    "lowPrice" : 990,
+    "highPrice" : 1000,
+    "openPrice" : 1000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 990
   } ],
   "stockCode" : "034940"
 }

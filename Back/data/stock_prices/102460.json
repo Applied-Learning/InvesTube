@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이연제약",
   "prices" : [ {
-    "volume" : 8044,
-    "marketCap" : 239398125680,
-    "lowPrice" : 12650,
-    "highPrice" : 12970,
-    "openPrice" : 12650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12880
-  }, {
     "volume" : 5279,
     "marketCap" : 240141598120,
     "lowPrice" : 12840,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11110
+  }, {
+    "volume" : 51092,
+    "marketCap" : 202410371790,
+    "lowPrice" : 10860,
+    "highPrice" : 11130,
+    "openPrice" : 11080,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10890
   } ],
   "stockCode" : "102460"
 }

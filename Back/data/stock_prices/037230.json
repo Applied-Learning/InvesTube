@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국팩키지",
   "prices" : [ {
-    "volume" : 5309,
-    "marketCap" : 53193583695,
-    "lowPrice" : 1768,
-    "highPrice" : 1800,
-    "openPrice" : 1800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1785
-  }, {
     "volume" : 22897,
     "marketCap" : 52716778463,
     "lowPrice" : 1767,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2040,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1968
+  }, {
+    "volume" : 7934,
+    "marketCap" : 58855645825,
+    "lowPrice" : 1957,
+    "highPrice" : 1996,
+    "openPrice" : 1996,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1975
   } ],
   "stockCode" : "037230"
 }

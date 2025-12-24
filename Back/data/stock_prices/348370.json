@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엔켐",
   "prices" : [ {
-    "volume" : 393993,
-    "marketCap" : 2837214105600,
-    "lowPrice" : 122600,
-    "highPrice" : 136000,
-    "openPrice" : 128000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 134400
-  }, {
     "volume" : 267618,
     "marketCap" : 2807659792000,
     "lowPrice" : 133000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 63500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 63100
+  }, {
+    "volume" : 114269,
+    "marketCap" : 1397469969000,
+    "lowPrice" : 62600,
+    "highPrice" : 65500,
+    "openPrice" : 63900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 64200
   } ],
   "stockCode" : "348370"
 }

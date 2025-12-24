@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "파인디앤씨",
   "prices" : [ {
-    "volume" : 60884,
-    "marketCap" : 51648654792,
-    "lowPrice" : 988,
-    "highPrice" : 1035,
-    "openPrice" : 998,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 993
-  }, {
     "volume" : 233466,
     "marketCap" : 54613381200,
     "lowPrice" : 987,
@@ -1937,6 +1929,14 @@
     "openPrice" : 720,
     "tradeDate" : "2025-12-22",
     "closePrice" : 702
+  }, {
+    "volume" : 109992,
+    "marketCap" : 35038498859,
+    "lowPrice" : 661,
+    "highPrice" : 710,
+    "openPrice" : 702,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 661
   } ],
   "stockCode" : "049120"
 }

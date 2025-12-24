@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "금호석유화학우",
   "prices" : [ {
-    "volume" : 18695,
-    "marketCap" : 152081345800,
-    "lowPrice" : 49900,
-    "highPrice" : 50800,
-    "openPrice" : 50300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 50300
-  }, {
     "volume" : 18630,
     "marketCap" : 152081345800,
     "lowPrice" : 50100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 63900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 63700
+  }, {
+    "volume" : 10416,
+    "marketCap" : 193200755400,
+    "lowPrice" : 63200,
+    "highPrice" : 64200,
+    "openPrice" : 63700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 63900
   } ],
   "stockCode" : "011785"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이에프더블류",
   "prices" : [ {
-    "volume" : 22051,
-    "marketCap" : 22728228336,
-    "lowPrice" : 1122,
-    "highPrice" : 1166,
-    "openPrice" : 1166,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1122
-  }, {
     "volume" : 14014,
     "marketCap" : 23214393648,
     "lowPrice" : 1111,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1360
+  }, {
+    "volume" : 45101,
+    "marketCap" : 26880890376,
+    "lowPrice" : 1327,
+    "highPrice" : 1367,
+    "openPrice" : 1360,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1327
   } ],
   "stockCode" : "312610"
 }

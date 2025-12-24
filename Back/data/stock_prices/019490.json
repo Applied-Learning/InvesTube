@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엑시큐어하이트론",
   "prices" : [ {
-    "volume" : 1204630,
-    "marketCap" : 95390554075,
-    "lowPrice" : 3110,
-    "highPrice" : 3555,
-    "openPrice" : 3235,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3175
-  }, {
     "volume" : 731345,
     "marketCap" : 94188783315,
     "lowPrice" : 2915,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 541
+  }, {
+    "volume" : 0,
+    "marketCap" : 41349858070,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 541
   } ],
   "stockCode" : "019490"

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HLB제넥스",
   "prices" : [ {
-    "volume" : 152519,
-    "marketCap" : 101949954225,
-    "lowPrice" : 4160,
-    "highPrice" : 4380,
-    "openPrice" : 4220,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4215
-  }, {
     "volume" : 136110,
     "marketCap" : 104247758650,
     "lowPrice" : 4155,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2635,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2715
+  }, {
+    "volume" : 26363,
+    "marketCap" : 78958240220,
+    "lowPrice" : 2680,
+    "highPrice" : 2725,
+    "openPrice" : 2710,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2710
   } ],
   "stockCode" : "187420"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SK이노베이션",
   "prices" : [ {
-    "volume" : 184254,
-    "marketCap" : 17384102717600,
-    "lowPrice" : 112600,
-    "highPrice" : 117400,
-    "openPrice" : 117400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 115100
-  }, {
     "volume" : 122728,
     "marketCap" : 17036722732800,
     "lowPrice" : 112800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 106200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 106500
+  }, {
+    "volume" : 136988,
+    "marketCap" : 17953406085600,
+    "lowPrice" : 105600,
+    "highPrice" : 107000,
+    "openPrice" : 106800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 106200
   } ],
   "stockCode" : "096770"
 }

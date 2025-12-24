@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "자비스",
   "prices" : [ {
-    "volume" : 84969,
-    "marketCap" : 39703762570,
-    "lowPrice" : 1260,
-    "highPrice" : 1302,
-    "openPrice" : 1260,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1291
-  }, {
     "volume" : 43337,
     "marketCap" : 39334711330,
     "lowPrice" : 1270,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1575,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1586
+  }, {
+    "volume" : 316765,
+    "marketCap" : 47730627040,
+    "lowPrice" : 1535,
+    "highPrice" : 1608,
+    "openPrice" : 1586,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1552
   } ],
   "stockCode" : "254120"
 }

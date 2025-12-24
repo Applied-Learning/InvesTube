@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "남선알미늄",
   "prices" : [ {
-    "volume" : 14422702,
-    "marketCap" : 210657074880,
-    "lowPrice" : 1570,
-    "highPrice" : 1731,
-    "openPrice" : 1706,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1632
-  }, {
     "volume" : 41237558,
     "marketCap" : 213367735770,
     "lowPrice" : 1633,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1025,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1042
+  }, {
+    "volume" : 367251,
+    "marketCap" : 130757118170,
+    "lowPrice" : 1013,
+    "highPrice" : 1040,
+    "openPrice" : 1040,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1013
   } ],
   "stockCode" : "008350"
 }

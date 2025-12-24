@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "베뉴지",
   "prices" : [ {
-    "volume" : 78839,
-    "marketCap" : 101943000000,
-    "lowPrice" : 2100,
-    "highPrice" : 2170,
-    "openPrice" : 2130,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2115
-  }, {
     "volume" : 41211,
     "marketCap" : 100738000000,
     "lowPrice" : 2090,
@@ -1936,6 +1928,14 @@
     "highPrice" : 2720,
     "openPrice" : 2700,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 2635
+  }, {
+    "volume" : 79754,
+    "marketCap" : 127007000000,
+    "lowPrice" : 2625,
+    "highPrice" : 2670,
+    "openPrice" : 2650,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 2635
   } ],
   "stockCode" : "019010"

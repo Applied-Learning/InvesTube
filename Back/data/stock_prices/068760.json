@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "셀트리온제약",
   "prices" : [ {
-    "volume" : 145486,
-    "marketCap" : 2558620600500,
-    "lowPrice" : 60000,
-    "highPrice" : 61800,
-    "openPrice" : 60300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 61500
-  }, {
     "volume" : 169674,
     "marketCap" : 2596063828800,
     "lowPrice" : 60500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 63000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 62400
+  }, {
+    "volume" : 82969,
+    "marketCap" : 2673333504000,
+    "lowPrice" : 61000,
+    "highPrice" : 62800,
+    "openPrice" : 62500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 61200
   } ],
   "stockCode" : "068760"
 }

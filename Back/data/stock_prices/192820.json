@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코스맥스",
   "prices" : [ {
-    "volume" : 51575,
-    "marketCap" : 1721720515300,
-    "lowPrice" : 149300,
-    "highPrice" : 153000,
-    "openPrice" : 152000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 151700
-  }, {
     "volume" : 68329,
     "marketCap" : 1721720515300,
     "lowPrice" : 151400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 170000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 169300
+  }, {
+    "volume" : 22192,
+    "marketCap" : 1907852462900,
+    "lowPrice" : 167700,
+    "highPrice" : 169800,
+    "openPrice" : 169500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 168100
   } ],
   "stockCode" : "192820"
 }

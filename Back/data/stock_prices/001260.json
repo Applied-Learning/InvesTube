@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "남광토건",
   "prices" : [ {
-    "volume" : 51481,
-    "marketCap" : 80430438960,
-    "lowPrice" : 8120,
-    "highPrice" : 8390,
-    "openPrice" : 8370,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8180
-  }, {
     "volume" : 51519,
     "marketCap" : 77578993080,
     "lowPrice" : 7880,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8440,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8230
+  }, {
+    "volume" : 31757,
+    "marketCap" : 79938810360,
+    "lowPrice" : 8070,
+    "highPrice" : 8360,
+    "openPrice" : 8220,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8130
   } ],
   "stockCode" : "001260"
 }

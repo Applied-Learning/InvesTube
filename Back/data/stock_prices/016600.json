@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "큐캐피탈",
   "prices" : [ {
-    "volume" : 252598,
-    "marketCap" : 42422812656,
-    "lowPrice" : 236,
-    "highPrice" : 242,
-    "openPrice" : 240,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 238
-  }, {
     "volume" : 263578,
     "marketCap" : 42422812656,
     "lowPrice" : 235,
@@ -1937,6 +1929,14 @@
     "openPrice" : 250,
     "tradeDate" : "2025-12-22",
     "closePrice" : 247
+  }, {
+    "volume" : 380389,
+    "marketCap" : 43314048216,
+    "lowPrice" : 243,
+    "highPrice" : 249,
+    "openPrice" : 248,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 243
   } ],
   "stockCode" : "016600"
 }

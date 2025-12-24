@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SG글로벌",
   "prices" : [ {
-    "volume" : 24891134,
-    "marketCap" : 187725297025,
-    "lowPrice" : 3970,
-    "highPrice" : 4455,
-    "openPrice" : 4020,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4175
-  }, {
     "volume" : 7534075,
     "marketCap" : 169065177680,
     "lowPrice" : 3705,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1894,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1899
+  }, {
+    "volume" : 170587,
+    "marketCap" : 84172875696,
+    "lowPrice" : 1848,
+    "highPrice" : 1909,
+    "openPrice" : 1883,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1872
   } ],
   "stockCode" : "001380"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "미스토홀딩스",
   "prices" : [ {
-    "volume" : 59318,
-    "marketCap" : 2457919815100,
-    "lowPrice" : 40050,
-    "highPrice" : 41200,
-    "openPrice" : 40150,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 40900
-  }, {
     "volume" : 54198,
     "marketCap" : 2451910231200,
     "lowPrice" : 40650,
@@ -1937,6 +1929,14 @@
     "openPrice" : 45300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 44100
+  }, {
+    "volume" : 63280,
+    "marketCap" : 2656236083800,
+    "lowPrice" : 43750,
+    "highPrice" : 44800,
+    "openPrice" : 44400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 44200
   } ],
   "stockCode" : "081660"
 }

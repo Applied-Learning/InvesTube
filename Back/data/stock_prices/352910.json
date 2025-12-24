@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오비고",
   "prices" : [ {
-    "volume" : 2963,
-    "marketCap" : 77216970220,
-    "lowPrice" : 6060,
-    "highPrice" : 6150,
-    "openPrice" : 6130,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6110
-  }, {
     "volume" : 8463,
     "marketCap" : 76964214180,
     "lowPrice" : 5980,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4350,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4300
+  }, {
+    "volume" : 9180,
+    "marketCap" : 53457902460,
+    "lowPrice" : 4230,
+    "highPrice" : 4280,
+    "openPrice" : 4280,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4230
   } ],
   "stockCode" : "352910"
 }

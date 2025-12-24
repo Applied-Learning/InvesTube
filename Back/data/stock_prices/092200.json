@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디아이씨",
   "prices" : [ {
-    "volume" : 31969,
-    "marketCap" : 143693262455,
-    "lowPrice" : 3605,
-    "highPrice" : 3740,
-    "openPrice" : 3680,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3695
-  }, {
     "volume" : 28551,
     "marketCap" : 143498819610,
     "lowPrice" : 3665,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12270
+  }, {
+    "volume" : 1766126,
+    "marketCap" : 454996257300,
+    "lowPrice" : 11490,
+    "highPrice" : 12650,
+    "openPrice" : 12400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11700
   } ],
   "stockCode" : "092200"
 }

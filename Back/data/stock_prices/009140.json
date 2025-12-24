@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "경인전자",
   "prices" : [ {
-    "volume" : 10189,
-    "marketCap" : 32044258800,
-    "lowPrice" : 20100,
-    "highPrice" : 20850,
-    "openPrice" : 20150,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 20400
-  }, {
     "volume" : 3035,
     "marketCap" : 32201338500,
     "lowPrice" : 20300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 20950,
     "tradeDate" : "2025-12-22",
     "closePrice" : 21100
+  }, {
+    "volume" : 3830,
+    "marketCap" : 32672577600,
+    "lowPrice" : 20700,
+    "highPrice" : 21100,
+    "openPrice" : 21100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 20800
   } ],
   "stockCode" : "009140"
 }

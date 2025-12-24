@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동국홀딩스",
   "prices" : [ {
-    "volume" : 34080,
-    "marketCap" : 242955690120,
-    "lowPrice" : 7590,
-    "highPrice" : 7650,
-    "openPrice" : 7600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7640
-  }, {
     "volume" : 30771,
     "marketCap" : 242955690120,
     "lowPrice" : 7590,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7640,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7630
+  }, {
+    "volume" : 34211,
+    "marketCap" : 241683670800,
+    "lowPrice" : 7540,
+    "highPrice" : 7630,
+    "openPrice" : 7570,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7600
   } ],
   "stockCode" : "001230"
 }

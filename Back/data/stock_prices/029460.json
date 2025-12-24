@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이씨",
   "prices" : [ {
-    "volume" : 9007,
-    "marketCap" : 224726049520,
-    "lowPrice" : 16190,
-    "highPrice" : 16620,
-    "openPrice" : 16260,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16580
-  }, {
     "volume" : 5944,
     "marketCap" : 225810373040,
     "lowPrice" : 16530,
@@ -1937,6 +1929,14 @@
     "openPrice" : 25200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 26150
+  }, {
+    "volume" : 35704,
+    "marketCap" : 342028148550,
+    "lowPrice" : 25650,
+    "highPrice" : 26300,
+    "openPrice" : 26300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 25850
   } ],
   "stockCode" : "029460"
 }

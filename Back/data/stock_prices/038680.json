@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스넷",
   "prices" : [ {
-    "volume" : 232007,
-    "marketCap" : 85627585260,
-    "lowPrice" : 4130,
-    "highPrice" : 4390,
-    "openPrice" : 4140,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4380
-  }, {
     "volume" : 99958,
     "marketCap" : 82597385325,
     "lowPrice" : 4215,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3495,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3535
+  }, {
+    "volume" : 19005,
+    "marketCap" : 68997304530,
+    "lowPrice" : 3435,
+    "highPrice" : 3545,
+    "openPrice" : 3510,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3465
   } ],
   "stockCode" : "038680"
 }

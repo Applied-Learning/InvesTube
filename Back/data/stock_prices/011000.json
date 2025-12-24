@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "진원생명과학",
   "prices" : [ {
-    "volume" : 131911,
-    "marketCap" : 164880412100,
-    "lowPrice" : 1996,
-    "highPrice" : 2070,
-    "openPrice" : 1996,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2060
-  }, {
     "volume" : 109498,
     "marketCap" : 162079045875,
     "lowPrice" : 2015,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2005,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2000
+  }, {
+    "volume" : 325082,
+    "marketCap" : 167745114304,
+    "lowPrice" : 1963,
+    "highPrice" : 2020,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1964
   } ],
   "stockCode" : "011000"
 }

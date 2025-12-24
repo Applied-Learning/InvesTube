@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국알콜",
   "prices" : [ {
-    "volume" : 33107,
-    "marketCap" : 179975980800,
-    "lowPrice" : 8100,
-    "highPrice" : 8340,
-    "openPrice" : 8100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8330
-  }, {
     "volume" : 9208,
     "marketCap" : 180192038400,
     "lowPrice" : 8300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11090
+  }, {
+    "volume" : 58412,
+    "marketCap" : 234221301060,
+    "lowPrice" : 11000,
+    "highPrice" : 11240,
+    "openPrice" : 11090,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11010
   } ],
   "stockCode" : "017890"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "슈피겐코리아",
   "prices" : [ {
-    "volume" : 16339,
-    "marketCap" : 119664987750,
-    "lowPrice" : 18750,
-    "highPrice" : 19700,
-    "openPrice" : 18800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 19250
-  }, {
     "volume" : 5147,
     "marketCap" : 123270478290,
     "lowPrice" : 19190,
@@ -1937,6 +1929,14 @@
     "openPrice" : 23200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 23050
+  }, {
+    "volume" : 5048,
+    "marketCap" : 141111440100,
+    "lowPrice" : 22600,
+    "highPrice" : 23250,
+    "openPrice" : 23250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 22700
   } ],
   "stockCode" : "192440"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "바이오니아",
   "prices" : [ {
-    "volume" : 65725,
-    "marketCap" : 497106204660,
-    "lowPrice" : 19080,
-    "highPrice" : 19500,
-    "openPrice" : 19080,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 19260
-  }, {
     "volume" : 51777,
     "marketCap" : 495299484290,
     "lowPrice" : 18910,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13570
+  }, {
+    "volume" : 155178,
+    "marketCap" : 337856709190,
+    "lowPrice" : 13020,
+    "highPrice" : 13660,
+    "openPrice" : 13580,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13090
   } ],
   "stockCode" : "064550"
 }

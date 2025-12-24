@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "포인트엔지니어링",
   "prices" : [ {
-    "volume" : 17274,
-    "marketCap" : 66696632800,
-    "lowPrice" : 1140,
-    "highPrice" : 1165,
-    "openPrice" : 1157,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1150
-  }, {
     "volume" : 107346,
     "marketCap" : 68494542032,
     "lowPrice" : 1140,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1051,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1028
+  }, {
+    "volume" : 14188,
+    "marketCap" : 60896925600,
+    "lowPrice" : 1023,
+    "highPrice" : 1050,
+    "openPrice" : 1034,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1050
   } ],
   "stockCode" : "256630"
 }

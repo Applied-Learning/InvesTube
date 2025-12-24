@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "교보증권",
   "prices" : [ {
-    "volume" : 39002,
-    "marketCap" : 653007766530,
-    "lowPrice" : 5610,
-    "highPrice" : 5740,
-    "openPrice" : 5670,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5730
-  }, {
     "volume" : 45581,
     "marketCap" : 646169988870,
     "lowPrice" : 5650,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9730
+  }, {
+    "volume" : 103348,
+    "marketCap" : 1112278499360,
+    "lowPrice" : 9710,
+    "highPrice" : 9860,
+    "openPrice" : 9820,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9760
   } ],
   "stockCode" : "030610"
 }

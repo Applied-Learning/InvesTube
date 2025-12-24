@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동양고속",
   "prices" : [ {
-    "volume" : 215,
-    "marketCap" : 21716767500,
-    "lowPrice" : 7500,
-    "highPrice" : 7800,
-    "openPrice" : 7610,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7500
-  }, {
     "volume" : 1274,
     "marketCap" : 21427210600,
     "lowPrice" : 7380,
@@ -1937,6 +1929,14 @@
     "openPrice" : 91500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 81900
+  }, {
+    "volume" : 2799176,
+    "marketCap" : 256547413400,
+    "lowPrice" : 71600,
+    "highPrice" : 93400,
+    "openPrice" : 79500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 88600
   } ],
   "stockCode" : "084670"
 }

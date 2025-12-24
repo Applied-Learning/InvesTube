@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "S&K폴리텍",
   "prices" : [ {
-    "volume" : 16609,
-    "marketCap" : 30254118785,
-    "lowPrice" : 2500,
-    "highPrice" : 2600,
-    "openPrice" : 2500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2585
-  }, {
     "volume" : 68702,
     "marketCap" : 29844488550,
     "lowPrice" : 2470,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2315,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2345
+  }, {
+    "volume" : 13918,
+    "marketCap" : 27328188535,
+    "lowPrice" : 2310,
+    "highPrice" : 2350,
+    "openPrice" : 2345,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2335
   } ],
   "stockCode" : "091340"
 }

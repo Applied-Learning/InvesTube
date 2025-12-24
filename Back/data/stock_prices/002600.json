@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "조흥",
   "prices" : [ {
-    "volume" : 10,
-    "marketCap" : 103920000000,
-    "lowPrice" : 173100,
-    "highPrice" : 173200,
-    "openPrice" : 173100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 173200
-  }, {
     "volume" : 41,
     "marketCap" : 103920000000,
     "lowPrice" : 172200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 157700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 155400
+  }, {
+    "volume" : 74,
+    "marketCap" : 92580000000,
+    "lowPrice" : 154300,
+    "highPrice" : 157300,
+    "openPrice" : 157300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 154300
   } ],
   "stockCode" : "002600"
 }

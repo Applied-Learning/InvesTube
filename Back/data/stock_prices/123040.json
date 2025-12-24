@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엠에스오토텍",
   "prices" : [ {
-    "volume" : 55128,
-    "marketCap" : 172930532500,
-    "lowPrice" : 2440,
-    "highPrice" : 2525,
-    "openPrice" : 2440,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2500
-  }, {
     "volume" : 20208,
     "marketCap" : 174659837825,
     "lowPrice" : 2485,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2185,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2195
+  }, {
+    "volume" : 50170,
+    "marketCap" : 134963984345,
+    "lowPrice" : 2140,
+    "highPrice" : 2210,
+    "openPrice" : 2200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2155
   } ],
   "stockCode" : "123040"
 }

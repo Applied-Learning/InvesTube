@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이치엠씨제7호스팩",
   "prices" : [ {
-    "volume" : 31145,
-    "marketCap" : 14539360000,
-    "lowPrice" : 1932,
-    "highPrice" : 1939,
-    "openPrice" : 1939,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1936
-  }, {
     "volume" : 22339,
     "marketCap" : 14464260000,
     "lowPrice" : 1926,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2020,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2010
+  }, {
+    "volume" : 3573,
+    "marketCap" : 15132650000,
+    "lowPrice" : 2010,
+    "highPrice" : 2020,
+    "openPrice" : 2020,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2015
   } ],
   "stockCode" : "477340"
 }

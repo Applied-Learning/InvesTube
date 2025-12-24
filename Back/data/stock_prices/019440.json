@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "세아특수강",
   "prices" : [ {
-    "volume" : 26980,
-    "marketCap" : 119808600000,
-    "lowPrice" : 13690,
-    "highPrice" : 14010,
-    "openPrice" : 13710,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13980
-  }, {
     "volume" : 24981,
     "marketCap" : 120922700000,
     "lowPrice" : 13980,
@@ -1937,6 +1929,14 @@
     "openPrice" : 16070,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16240
+  }, {
+    "volume" : 17975,
+    "marketCap" : 137977000000,
+    "lowPrice" : 15900,
+    "highPrice" : 16300,
+    "openPrice" : 16270,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16100
   } ],
   "stockCode" : "019440"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "조비",
   "prices" : [ {
-    "volume" : 8186,
-    "marketCap" : 57581930510,
-    "lowPrice" : 10790,
-    "highPrice" : 11100,
-    "openPrice" : 10890,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11090
-  }, {
     "volume" : 8269,
     "marketCap" : 56335793150,
     "lowPrice" : 10780,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11490,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11540
+  }, {
+    "volume" : 8799,
+    "marketCap" : 58983835040,
+    "lowPrice" : 11350,
+    "highPrice" : 11640,
+    "openPrice" : 11540,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11360
   } ],
   "stockCode" : "001550"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "펄어비스",
   "prices" : [ {
-    "volume" : 193661,
-    "marketCap" : 1770028405250,
-    "lowPrice" : 27050,
-    "highPrice" : 27700,
-    "openPrice" : 27400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 27550
-  }, {
     "volume" : 179945,
     "marketCap" : 1770028405250,
     "lowPrice" : 27450,
@@ -1937,6 +1929,14 @@
     "openPrice" : 36400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 36200
+  }, {
+    "volume" : 114473,
+    "marketCap" : 2322559958250,
+    "lowPrice" : 35950,
+    "highPrice" : 36550,
+    "openPrice" : 36450,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 36150
   } ],
   "stockCode" : "263750"
 }

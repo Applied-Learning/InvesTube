@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "세아메카닉스",
   "prices" : [ {
-    "volume" : 55224,
-    "marketCap" : 62780115000,
-    "lowPrice" : 2345,
-    "highPrice" : 2390,
-    "openPrice" : 2345,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2370
-  }, {
     "volume" : 41475,
     "marketCap" : 62117877500,
     "lowPrice" : 2315,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2480,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2510
+  }, {
+    "volume" : 162702,
+    "marketCap" : 64899275000,
+    "lowPrice" : 2400,
+    "highPrice" : 2550,
+    "openPrice" : 2515,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2450
   } ],
   "stockCode" : "396300"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KTis",
   "prices" : [ {
-    "volume" : 107891,
-    "marketCap" : 95009460000,
-    "lowPrice" : 2700,
-    "highPrice" : 2740,
-    "openPrice" : 2700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2730
-  }, {
     "volume" : 73498,
     "marketCap" : 95531490000,
     "lowPrice" : 2730,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2830,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2850
+  }, {
+    "volume" : 108835,
+    "marketCap" : 98663670000,
+    "lowPrice" : 2830,
+    "highPrice" : 2865,
+    "openPrice" : 2860,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2835
   } ],
   "stockCode" : "058860"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엠오티",
   "prices" : [ {
-    "volume" : 73523,
-    "marketCap" : 71218107000,
-    "lowPrice" : 6050,
-    "highPrice" : 6210,
-    "openPrice" : 6180,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6150
-  }, {
     "volume" : 164590,
     "marketCap" : 66701836800,
     "lowPrice" : 5760,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6770,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6950
+  }, {
+    "volume" : 64307,
+    "marketCap" : 78050413200,
+    "lowPrice" : 6720,
+    "highPrice" : 6950,
+    "openPrice" : 6950,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6740
   } ],
   "stockCode" : "413390"
 }

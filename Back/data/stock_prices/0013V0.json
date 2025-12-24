@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼진식품",
   "prices" : [ {
     "volume" : 21435310,
@@ -9,6 +9,14 @@
     "openPrice" : 22900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 19210
+  }, {
+    "volume" : 7976129,
+    "marketCap" : 171394375680,
+    "lowPrice" : 17010,
+    "highPrice" : 22000,
+    "openPrice" : 20300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 17280
   } ],
   "stockCode" : "0013V0"
 }

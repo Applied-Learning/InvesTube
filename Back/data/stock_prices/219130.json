@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "타이거일렉",
   "prices" : [ {
-    "volume" : 66294,
-    "marketCap" : 85053486300,
-    "lowPrice" : 12860,
-    "highPrice" : 13650,
-    "openPrice" : 12910,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13470
-  }, {
     "volume" : 22767,
     "marketCap" : 82275198700,
     "lowPrice" : 13030,
@@ -1937,6 +1929,14 @@
     "openPrice" : 20450,
     "tradeDate" : "2025-12-22",
     "closePrice" : 21200
+  }, {
+    "volume" : 67120,
+    "marketCap" : 137335807500,
+    "lowPrice" : 20900,
+    "highPrice" : 22100,
+    "openPrice" : 21100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 21750
   } ],
   "stockCode" : "219130"
 }

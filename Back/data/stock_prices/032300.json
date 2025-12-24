@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국파마",
   "prices" : [ {
-    "volume" : 37187,
-    "marketCap" : 171998674770,
-    "lowPrice" : 15300,
-    "highPrice" : 16090,
-    "openPrice" : 15300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15770
-  }, {
     "volume" : 15998,
     "marketCap" : 170144535600,
     "lowPrice" : 15600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13300
+  }, {
+    "volume" : 10096,
+    "marketCap" : 143095917120,
+    "lowPrice" : 13090,
+    "highPrice" : 13310,
+    "openPrice" : 13310,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13120
   } ],
   "stockCode" : "032300"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디이엔티",
   "prices" : [ {
-    "volume" : 58075,
-    "marketCap" : 116748898200,
-    "lowPrice" : 5060,
-    "highPrice" : 5340,
-    "openPrice" : 5140,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5300
-  }, {
     "volume" : 61663,
     "marketCap" : 113224403160,
     "lowPrice" : 5140,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5250,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5240
+  }, {
+    "volume" : 70419,
+    "marketCap" : 114766369740,
+    "lowPrice" : 5070,
+    "highPrice" : 5240,
+    "openPrice" : 5180,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5210
   } ],
   "stockCode" : "079810"
 }

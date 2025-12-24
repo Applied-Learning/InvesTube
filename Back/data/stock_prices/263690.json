@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디알젬",
   "prices" : [ {
-    "volume" : 5663,
-    "marketCap" : 63989696500,
-    "lowPrice" : 5430,
-    "highPrice" : 5670,
-    "openPrice" : 5650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5650
-  }, {
     "volume" : 1236,
     "marketCap" : 64669233100,
     "lowPrice" : 5660,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5640,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5600
+  }, {
+    "volume" : 32450,
+    "marketCap" : 61951086700,
+    "lowPrice" : 5390,
+    "highPrice" : 5610,
+    "openPrice" : 5600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5470
   } ],
   "stockCode" : "263690"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "화성밸브",
   "prices" : [ {
-    "volume" : 402511,
-    "marketCap" : 79119040000,
-    "lowPrice" : 7440,
-    "highPrice" : 7660,
-    "openPrice" : 7500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7600
-  }, {
     "volume" : 397689,
     "marketCap" : 77453376000,
     "lowPrice" : 7380,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7650,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8600
+  }, {
+    "volume" : 336846,
+    "marketCap" : 88071984000,
+    "lowPrice" : 8450,
+    "highPrice" : 8770,
+    "openPrice" : 8570,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8460
   } ],
   "stockCode" : "039610"
 }

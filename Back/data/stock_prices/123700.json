@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SJM",
   "prices" : [ {
-    "volume" : 53677,
-    "marketCap" : 47438889920,
-    "lowPrice" : 2975,
-    "highPrice" : 3060,
-    "openPrice" : 2975,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3040
-  }, {
     "volume" : 33497,
     "marketCap" : 47594938900,
     "lowPrice" : 3030,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3820,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4000
+  }, {
+    "volume" : 61017,
+    "marketCap" : 61171200160,
+    "lowPrice" : 3880,
+    "highPrice" : 4005,
+    "openPrice" : 4005,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3920
   } ],
   "stockCode" : "123700"
 }

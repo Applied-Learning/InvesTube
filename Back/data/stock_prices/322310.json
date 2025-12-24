@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오로스테크놀로지",
   "prices" : [ {
-    "volume" : 58273,
-    "marketCap" : 156514916820,
-    "lowPrice" : 15530,
-    "highPrice" : 16910,
-    "openPrice" : 15750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16710
-  }, {
     "volume" : 32281,
     "marketCap" : 152955630860,
     "lowPrice" : 16100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 23100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 23200
+  }, {
+    "volume" : 26189,
+    "marketCap" : 214962138900,
+    "lowPrice" : 22750,
+    "highPrice" : 23450,
+    "openPrice" : 23200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 22950
   } ],
   "stockCode" : "322310"
 }

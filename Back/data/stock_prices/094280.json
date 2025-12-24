@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "효성ITX",
   "prices" : [ {
-    "volume" : 4197,
-    "marketCap" : 144593082000,
-    "lowPrice" : 12450,
-    "highPrice" : 12560,
-    "openPrice" : 12470,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12510
-  }, {
     "volume" : 4174,
     "marketCap" : 144824246000,
     "lowPrice" : 12500,
@@ -1936,6 +1928,14 @@
     "highPrice" : 13160,
     "openPrice" : 13000,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 13050
+  }, {
+    "volume" : 7560,
+    "marketCap" : 150834510000,
+    "lowPrice" : 12980,
+    "highPrice" : 13090,
+    "openPrice" : 13000,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 13050
   } ],
   "stockCode" : "094280"

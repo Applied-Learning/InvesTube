@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "태성",
   "prices" : [ {
-    "volume" : 262798,
-    "marketCap" : 671864443500,
-    "lowPrice" : 25450,
-    "highPrice" : 27550,
-    "openPrice" : 26950,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 25950
-  }, {
     "volume" : 220104,
     "marketCap" : 664097224500,
     "lowPrice" : 25200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 48300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 49000
+  }, {
+    "volume" : 302399,
+    "marketCap" : 1521986427000,
+    "lowPrice" : 48200,
+    "highPrice" : 50400,
+    "openPrice" : 49250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 49900
   } ],
   "stockCode" : "323280"
 }

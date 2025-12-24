@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "DMS",
   "prices" : [ {
-    "volume" : 117222,
-    "marketCap" : 153335900640,
-    "lowPrice" : 6100,
-    "highPrice" : 6300,
-    "openPrice" : 6180,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6240
-  }, {
     "volume" : 86257,
     "marketCap" : 154564553690,
     "lowPrice" : 6170,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 6330
+  }, {
+    "volume" : 0,
+    "marketCap" : 149939488590,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 6330
   } ],
   "stockCode" : "068790"

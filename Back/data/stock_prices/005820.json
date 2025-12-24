@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "원림",
   "prices" : [ {
-    "volume" : 1399,
-    "marketCap" : 29276137800,
-    "lowPrice" : 12610,
-    "highPrice" : 13070,
-    "openPrice" : 12750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12740
-  }, {
     "volume" : 1235,
     "marketCap" : 29368056600,
     "lowPrice" : 12660,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14860,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14930
+  }, {
+    "volume" : 1687,
+    "marketCap" : 34722326700,
+    "lowPrice" : 14700,
+    "highPrice" : 15300,
+    "openPrice" : 14990,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15110
   } ],
   "stockCode" : "005820"
 }

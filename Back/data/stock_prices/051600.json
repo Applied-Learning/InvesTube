@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한전KPS",
   "prices" : [ {
-    "volume" : 135879,
-    "marketCap" : 2110500000000,
-    "lowPrice" : 46100,
-    "highPrice" : 47100,
-    "openPrice" : 47000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 46900
-  }, {
     "volume" : 132135,
     "marketCap" : 2133000000000,
     "lowPrice" : 46500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 53500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 53200
+  }, {
+    "volume" : 151616,
+    "marketCap" : 2376000000000,
+    "lowPrice" : 52800,
+    "highPrice" : 53600,
+    "openPrice" : 53400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 52800
   } ],
   "stockCode" : "051600"
 }

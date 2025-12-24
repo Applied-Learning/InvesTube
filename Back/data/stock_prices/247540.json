@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에코프로비엠",
   "prices" : [ {
-    "volume" : 672328,
-    "marketCap" : 11227594291200,
-    "lowPrice" : 108900,
-    "highPrice" : 115900,
-    "openPrice" : 115000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 114800
-  }, {
     "volume" : 753672,
     "marketCap" : 11276494963200,
     "lowPrice" : 114800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 156800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 158900
+  }, {
+    "volume" : 245633,
+    "marketCap" : 15452612352000,
+    "lowPrice" : 157000,
+    "highPrice" : 160100,
+    "openPrice" : 160000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 158000
   } ],
   "stockCode" : "247540"
 }

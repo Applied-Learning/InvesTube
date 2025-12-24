@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "그래디언트",
   "prices" : [ {
-    "volume" : 14436,
-    "marketCap" : 179560938240,
-    "lowPrice" : 12120,
-    "highPrice" : 12490,
-    "openPrice" : 12120,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12360
-  }, {
     "volume" : 8848,
     "marketCap" : 177962904000,
     "lowPrice" : 12210,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11640
+  }, {
+    "volume" : 5880,
+    "marketCap" : 159058834740,
+    "lowPrice" : 11560,
+    "highPrice" : 11700,
+    "openPrice" : 11560,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11630
   } ],
   "stockCode" : "035080"
 }

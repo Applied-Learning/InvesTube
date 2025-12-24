@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "큐알티",
   "prices" : [ {
-    "volume" : 46857,
-    "marketCap" : 149560793170,
-    "lowPrice" : 11550,
-    "highPrice" : 12280,
-    "openPrice" : 11550,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12170
-  }, {
     "volume" : 21603,
     "marketCap" : 147102932970,
     "lowPrice" : 11950,
@@ -1937,6 +1929,14 @@
     "openPrice" : 15280,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15740
+  }, {
+    "volume" : 51772,
+    "marketCap" : 189992593460,
+    "lowPrice" : 15430,
+    "highPrice" : 16000,
+    "openPrice" : 15730,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15460
   } ],
   "stockCode" : "405100"
 }

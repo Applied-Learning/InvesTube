@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "지니언스",
   "prices" : [ {
-    "volume" : 12769,
-    "marketCap" : 84440280000,
-    "lowPrice" : 9160,
-    "highPrice" : 9380,
-    "openPrice" : 9220,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9300
-  }, {
     "volume" : 7795,
     "marketCap" : 84440280000,
     "lowPrice" : 9250,
@@ -1937,6 +1929,14 @@
     "openPrice" : 19180,
     "tradeDate" : "2025-12-22",
     "closePrice" : 19440
+  }, {
+    "volume" : 42465,
+    "marketCap" : 182953940000,
+    "lowPrice" : 19190,
+    "highPrice" : 20500,
+    "openPrice" : 19500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 20150
   } ],
   "stockCode" : "263860"
 }

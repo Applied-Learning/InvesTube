@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "크래프톤",
   "prices" : [ {
-    "volume" : 87063,
-    "marketCap" : 14777339727500,
-    "lowPrice" : 307500,
-    "highPrice" : 315500,
-    "openPrice" : 315500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 308500
-  }, {
     "volume" : 82563,
     "marketCap" : 14657588190000,
     "lowPrice" : 304500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 249000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 247000
+  }, {
+    "volume" : 95871,
+    "marketCap" : 11850495250000,
+    "lowPrice" : 247500,
+    "highPrice" : 257500,
+    "openPrice" : 248500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 250000
   } ],
   "stockCode" : "259960"
 }

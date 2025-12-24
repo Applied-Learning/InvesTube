@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "미래아이앤지",
   "prices" : [ {
-    "volume" : 177764,
-    "marketCap" : 24720088448,
-    "lowPrice" : 854,
-    "highPrice" : 888,
-    "openPrice" : 873,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 856
-  }, {
     "volume" : 206158,
     "marketCap" : 24777845664,
     "lowPrice" : 837,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1010,
     "tradeDate" : "2025-12-22",
     "closePrice" : 949
+  }, {
+    "volume" : 1096322,
+    "marketCap" : 28474307488,
+    "lowPrice" : 929,
+    "highPrice" : 1070,
+    "openPrice" : 963,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 986
   } ],
   "stockCode" : "007120"
 }

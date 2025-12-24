@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이디칩스",
   "prices" : [ {
-    "volume" : 0,
-    "marketCap" : 12594094838,
-    "lowPrice" : 0,
-    "highPrice" : 0,
-    "openPrice" : 0,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 158
-  }, {
     "volume" : 0,
     "marketCap" : 12594094838,
     "lowPrice" : 0,
@@ -1937,6 +1929,14 @@
     "openPrice" : 233,
     "tradeDate" : "2025-12-22",
     "closePrice" : 220
+  }, {
+    "volume" : 3803159,
+    "marketCap" : 996368250,
+    "lowPrice" : 125,
+    "highPrice" : 191,
+    "openPrice" : 191,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 125
   } ],
   "stockCode" : "054630"
 }

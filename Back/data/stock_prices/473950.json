@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스케이증권제13호스팩",
   "prices" : [ {
-    "volume" : 2107,
-    "marketCap" : 8835580000,
-    "lowPrice" : 1998,
-    "highPrice" : 2010,
-    "openPrice" : 1998,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1999
-  }, {
     "volume" : 1912,
     "marketCap" : 8840000000,
     "lowPrice" : 1990,
@@ -1936,6 +1928,14 @@
     "highPrice" : 2035,
     "openPrice" : 2020,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 2020
+  }, {
+    "volume" : 10571,
+    "marketCap" : 8928400000,
+    "lowPrice" : 2010,
+    "highPrice" : 2030,
+    "openPrice" : 2025,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 2020
   } ],
   "stockCode" : "473950"

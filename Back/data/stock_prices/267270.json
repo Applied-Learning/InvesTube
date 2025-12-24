@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HD현대건설기계",
   "prices" : [ {
-    "volume" : 117273,
-    "marketCap" : 1136776890600,
-    "lowPrice" : 61600,
-    "highPrice" : 62800,
-    "openPrice" : 62200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 62100
-  }, {
     "volume" : 135431,
     "marketCap" : 1107487953000,
     "lowPrice" : 60100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 99300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 95500
+  }, {
+    "volume" : 211394,
+    "marketCap" : 1621201054200,
+    "lowPrice" : 93000,
+    "highPrice" : 96200,
+    "openPrice" : 95500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 93400
   } ],
   "stockCode" : "267270"
 }

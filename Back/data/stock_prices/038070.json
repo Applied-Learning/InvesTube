@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "서린바이오",
   "prices" : [ {
-    "volume" : 197316,
-    "marketCap" : 67022090280,
-    "lowPrice" : 7070,
-    "highPrice" : 7580,
-    "openPrice" : 7140,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7530
-  }, {
     "volume" : 126548,
     "marketCap" : 65063941560,
     "lowPrice" : 7310,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6820,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6790
+  }, {
+    "volume" : 26399,
+    "marketCap" : 61429563000,
+    "lowPrice" : 6720,
+    "highPrice" : 6940,
+    "openPrice" : 6800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6750
   } ],
   "stockCode" : "038070"
 }

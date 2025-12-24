@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HS효성첨단소재",
   "prices" : [ {
-    "volume" : 8185,
-    "marketCap" : 836406291600,
-    "lowPrice" : 183500,
-    "highPrice" : 188300,
-    "openPrice" : 184700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 186700
-  }, {
     "volume" : 11862,
     "marketCap" : 839990250000,
     "lowPrice" : 186800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 190500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 193800
+  }, {
+    "volume" : 5339,
+    "marketCap" : 856566057600,
+    "lowPrice" : 191100,
+    "highPrice" : 196300,
+    "openPrice" : 194400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 191200
   } ],
   "stockCode" : "298050"
 }

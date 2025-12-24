@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "클래시스",
   "prices" : [ {
-    "volume" : 100310,
-    "marketCap" : 3199951442150,
-    "lowPrice" : 48700,
-    "highPrice" : 50400,
-    "openPrice" : 49200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 48850
-  }, {
     "volume" : 141419,
     "marketCap" : 3281833515900,
     "lowPrice" : 48900,
@@ -1937,6 +1929,14 @@
     "openPrice" : 57800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 56100
+  }, {
+    "volume" : 219739,
+    "marketCap" : 3550406717800,
+    "lowPrice" : 54000,
+    "highPrice" : 56300,
+    "openPrice" : 55900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 54200
   } ],
   "stockCode" : "214150"
 }

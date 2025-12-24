@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "계양전기우",
   "prices" : [ {
-    "volume" : 838,
-    "marketCap" : 4045013340,
-    "lowPrice" : 3445,
-    "highPrice" : 3495,
-    "openPrice" : 3495,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3460
-  }, {
     "volume" : 30749,
     "marketCap" : 4208684400,
     "lowPrice" : 3525,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7330,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7330
+  }, {
+    "volume" : 115209,
+    "marketCap" : 11129632080,
+    "lowPrice" : 9520,
+    "highPrice" : 9520,
+    "openPrice" : 9520,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9520
   } ],
   "stockCode" : "012205"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "화일약품",
   "prices" : [ {
-    "volume" : 155727,
-    "marketCap" : 103841940209,
-    "lowPrice" : 1210,
-    "highPrice" : 1263,
-    "openPrice" : 1210,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1253
-  }, {
     "volume" : 1043609,
     "marketCap" : 106908302370,
     "lowPrice" : 1253,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1180,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1158
+  }, {
+    "volume" : 323843,
+    "marketCap" : 99060644815,
+    "lowPrice" : 1137,
+    "highPrice" : 1167,
+    "openPrice" : 1160,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1145
   } ],
   "stockCode" : "061250"
 }

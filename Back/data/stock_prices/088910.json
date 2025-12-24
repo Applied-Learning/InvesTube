@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동우팜투테이블",
   "prices" : [ {
-    "volume" : 45029,
-    "marketCap" : 50139453924,
-    "lowPrice" : 1918,
-    "highPrice" : 1947,
-    "openPrice" : 1919,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1941
-  }, {
     "volume" : 18111,
     "marketCap" : 50113622160,
     "lowPrice" : 1929,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2110,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2110
+  }, {
+    "volume" : 11287,
+    "marketCap" : 54117545580,
+    "lowPrice" : 2080,
+    "highPrice" : 2110,
+    "openPrice" : 2100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2095
   } ],
   "stockCode" : "088910"
 }

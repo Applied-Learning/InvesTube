@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼양사우",
   "prices" : [ {
-    "volume" : 519,
-    "marketCap" : 11416659500,
-    "lowPrice" : 30800,
-    "highPrice" : 30850,
-    "openPrice" : 30850,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 30850
-  }, {
     "volume" : 438,
     "marketCap" : 11453666500,
     "lowPrice" : 30800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 38150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 38350
+  }, {
+    "volume" : 454,
+    "marketCap" : 14136674000,
+    "lowPrice" : 38200,
+    "highPrice" : 38300,
+    "openPrice" : 38200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 38200
   } ],
   "stockCode" : "145995"
 }

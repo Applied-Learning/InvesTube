@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "휴림에이텍",
   "prices" : [ {
-    "volume" : 1159306,
-    "marketCap" : 33610410180,
-    "lowPrice" : 620,
-    "highPrice" : 688,
-    "openPrice" : 636,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 620
-  }, {
     "volume" : 898630,
     "marketCap" : 32526203400,
     "lowPrice" : 588,
@@ -1937,6 +1929,14 @@
     "openPrice" : 703,
     "tradeDate" : "2025-12-22",
     "closePrice" : 715
+  }, {
+    "volume" : 7181437,
+    "marketCap" : 50452277556,
+    "lowPrice" : 716,
+    "highPrice" : 906,
+    "openPrice" : 716,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 762
   } ],
   "stockCode" : "078590"
 }

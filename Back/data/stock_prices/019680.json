@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대교",
   "prices" : [ {
-    "volume" : 76890,
-    "marketCap" : 211757125000,
-    "lowPrice" : 2500,
-    "highPrice" : 2590,
-    "openPrice" : 2575,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2500
-  }, {
     "volume" : 40928,
     "marketCap" : 218533353000,
     "lowPrice" : 2485,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1927,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1923
+  }, {
+    "volume" : 34669,
+    "marketCap" : 162205957750,
+    "lowPrice" : 1907,
+    "highPrice" : 1946,
+    "openPrice" : 1946,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1915
   } ],
   "stockCode" : "019680"
 }

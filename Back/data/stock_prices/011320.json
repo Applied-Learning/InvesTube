@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유니크",
   "prices" : [ {
-    "volume" : 19024,
-    "marketCap" : 68008846400,
-    "lowPrice" : 3465,
-    "highPrice" : 3580,
-    "openPrice" : 3580,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3520
-  }, {
     "volume" : 25105,
     "marketCap" : 67912242925,
     "lowPrice" : 3465,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4750,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4795
+  }, {
+    "volume" : 41244,
+    "marketCap" : 92835939475,
+    "lowPrice" : 4740,
+    "highPrice" : 4840,
+    "openPrice" : 4740,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4805
   } ],
   "stockCode" : "011320"
 }

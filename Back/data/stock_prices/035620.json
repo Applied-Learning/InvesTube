@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "바른손이앤에이",
   "prices" : [ {
-    "volume" : 117343,
-    "marketCap" : 33051215700,
-    "lowPrice" : 433,
-    "highPrice" : 450,
-    "openPrice" : 444,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 444
-  }, {
     "volume" : 20127,
     "marketCap" : 33200095050,
     "lowPrice" : 430,
@@ -1937,6 +1929,14 @@
     "openPrice" : 390,
     "tradeDate" : "2025-12-22",
     "closePrice" : 389
+  }, {
+    "volume" : 200326,
+    "marketCap" : 27617119425,
+    "lowPrice" : 370,
+    "highPrice" : 389,
+    "openPrice" : 389,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 371
   } ],
   "stockCode" : "035620"
 }

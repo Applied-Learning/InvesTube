@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "롯데케미칼",
   "prices" : [ {
-    "volume" : 85677,
-    "marketCap" : 2707684022700,
-    "lowPrice" : 61100,
-    "highPrice" : 63500,
-    "openPrice" : 62900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 63300
-  }, {
     "volume" : 102024,
     "marketCap" : 2634965810400,
     "lowPrice" : 61500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 72300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 73300
+  }, {
+    "volume" : 92985,
+    "marketCap" : 3169658547900,
+    "lowPrice" : 73200,
+    "highPrice" : 75000,
+    "openPrice" : 73500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 74100
   } ],
   "stockCode" : "011170"
 }

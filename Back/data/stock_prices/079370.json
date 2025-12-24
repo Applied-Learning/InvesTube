@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제우스",
   "prices" : [ {
-    "volume" : 181312,
-    "marketCap" : 350802156900,
-    "lowPrice" : 10830,
-    "highPrice" : 11350,
-    "openPrice" : 10830,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11310
-  }, {
     "volume" : 261602,
     "marketCap" : 362588613100,
     "lowPrice" : 11390,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13590,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13870
+  }, {
+    "volume" : 82034,
+    "marketCap" : 437029389100,
+    "lowPrice" : 13830,
+    "highPrice" : 14140,
+    "openPrice" : 14070,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14090
   } ],
   "stockCode" : "079370"
 }
