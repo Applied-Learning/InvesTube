@@ -47,6 +47,12 @@ public class StockServiceImpl implements StockService {
 
     @PostConstruct
     public void initImportFromJsonIfEmpty() {
+        // Run heavy startup data preparation off the main init thread
+        System.out.println("[StockService] Starting background stock data warmup...");
+        new Thread(this::performInitialDataWarmup, "stock-startup-loader").start();
+    }
+
+    private void performInitialDataWarmup() {
         try {
             int count = stockDao.countStocks();
             if (count == 0) {
