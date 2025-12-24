@@ -4,12 +4,14 @@ import com.Investube.mvc.service.FinancialDataBatchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 /**
  * 서버 시작 시 CSV 캐시에서 재무 데이터 자동 로드
  */
 @Component
+@Order(2)
 public class FinancialDataLoader implements ApplicationRunner {
 
     @Autowired
