@@ -187,14 +187,16 @@ public class FinancialRestController {
                 }
             }
 
-            // 3. 종목 정보 조회
+            // 3. 종목 정보 조회 (업종 포함)
             Stock stock = stockService.getStockByCode(stockCode);
             String stockName = stock != null ? stock.getStockName() : stockCode;
+            String industry = stock != null ? stock.getIndustry() : null;
 
-            // 4. AI 분석 수행
+            // 4. AI 분석 수행 (업종별 분석 + 동종업계 비교 포함)
             AiAnalysisResult aiResult = aiAnalysisService.analyzeFinancials(
                     stockCode,
                     stockName,
+                    industry,
                     financialData,
                     profile);
 

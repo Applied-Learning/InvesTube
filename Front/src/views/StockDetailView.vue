@@ -310,6 +310,96 @@
                 </div>
               </div>
             </div>
+
+            <!-- 동종업계 비교 섹션 -->
+            <div v-if="aiResult.peerStats && aiResult.peerStats.peerCount >= 2" class="peer-comparison-section">
+              <h4>📊 동종업계 비교 <span class="industry-badge">{{ aiResult.peerStats.industry }} ({{ aiResult.peerStats.peerCount }}개 기업)</span></h4>
+              <div class="peer-stats-grid">
+                <div class="peer-stat-item" v-if="aiResult.peerStats.avgOperatingMargin">
+                  <div class="stat-header">
+                    <span class="stat-label">영업이익률</span>
+                    <span class="percentile-badge" v-if="aiResult.peerStats.operatingMarginPercentile" :class="getPercentileClass(aiResult.peerStats.operatingMarginPercentile, true)">
+                      상위 {{ aiResult.peerStats.operatingMarginPercentile }}%
+                    </span>
+                  </div>
+                  <div class="stat-comparison">
+                    <div class="stat-row">
+                      <span class="compare-label">업계 평균</span>
+                      <span class="compare-value">{{ aiResult.peerStats.avgOperatingMargin.toFixed(1) }}%</span>
+                    </div>
+                    <div class="stat-row current" v-if="financialData.operatingMargin">
+                      <span class="compare-label">현재 기업</span>
+                      <span class="compare-value" :class="getCompareClass(financialData.operatingMargin, aiResult.peerStats.avgOperatingMargin, true)">
+                        {{ financialData.operatingMargin.toFixed(1) }}%
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="peer-stat-item" v-if="aiResult.peerStats.avgRoe">
+                  <div class="stat-header">
+                    <span class="stat-label">ROE</span>
+                    <span class="percentile-badge" v-if="aiResult.peerStats.roePercentile" :class="getPercentileClass(aiResult.peerStats.roePercentile, true)">
+                      상위 {{ aiResult.peerStats.roePercentile }}%
+                    </span>
+                  </div>
+                  <div class="stat-comparison">
+                    <div class="stat-row">
+                      <span class="compare-label">업계 평균</span>
+                      <span class="compare-value">{{ aiResult.peerStats.avgRoe.toFixed(1) }}%</span>
+                    </div>
+                    <div class="stat-row current" v-if="financialData.roe">
+                      <span class="compare-label">현재 기업</span>
+                      <span class="compare-value" :class="getCompareClass(financialData.roe, aiResult.peerStats.avgRoe, true)">
+                        {{ financialData.roe.toFixed(1) }}%
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="peer-stat-item" v-if="aiResult.peerStats.avgDebtRatio">
+                  <div class="stat-header">
+                    <span class="stat-label">부채비율</span>
+                    <span class="percentile-badge" v-if="aiResult.peerStats.debtRatioPercentile" :class="getPercentileClass(aiResult.peerStats.debtRatioPercentile, false)">
+                      하위 {{ aiResult.peerStats.debtRatioPercentile }}%
+                    </span>
+                  </div>
+                  <div class="stat-comparison">
+                    <div class="stat-row">
+                      <span class="compare-label">업계 평균</span>
+                      <span class="compare-value">{{ aiResult.peerStats.avgDebtRatio.toFixed(1) }}%</span>
+                    </div>
+                    <div class="stat-row current" v-if="financialData.debtRatio">
+                      <span class="compare-label">현재 기업</span>
+                      <span class="compare-value" :class="getCompareClass(financialData.debtRatio, aiResult.peerStats.avgDebtRatio, false)">
+                        {{ financialData.debtRatio.toFixed(1) }}%
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="peer-stat-item" v-if="aiResult.peerStats.avgPer">
+                  <div class="stat-header">
+                    <span class="stat-label">PER</span>
+                    <span class="percentile-badge" v-if="aiResult.peerStats.perPercentile" :class="getPercentileClass(aiResult.peerStats.perPercentile, false)">
+                      하위 {{ aiResult.peerStats.perPercentile }}%
+                    </span>
+                  </div>
+                  <div class="stat-comparison">
+                    <div class="stat-row">
+                      <span class="compare-label">업계 평균</span>
+                      <span class="compare-value">{{ aiResult.peerStats.avgPer.toFixed(1) }}배</span>
+                    </div>
+                    <div class="stat-row current" v-if="financialData.perRatio">
+                      <span class="compare-label">현재 기업</span>
+                      <span class="compare-value" :class="getCompareClass(financialData.perRatio, aiResult.peerStats.avgPer, false)">
+                        {{ financialData.perRatio.toFixed(1) }}배
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           
           <div v-else class="ai-prompt">
@@ -758,6 +848,28 @@ export default {
         'pbr': 'PBR'
       }
       return labels[key] || key
+    },
+    // 동종업계 비교 관련 메서드
+    getPercentileClass(percentile, higherIsBetter) {
+      // higherIsBetter = true면 상위 %, false면 하위 %
+      if (percentile <= 20) return 'percentile-excellent'
+      if (percentile <= 40) return 'percentile-good'
+      if (percentile <= 60) return 'percentile-average'
+      return 'percentile-poor'
+    },
+    getCompareClass(current, average, higherIsBetter) {
+      if (current == null || average == null) return ''
+      const diff = current - average
+      if (higherIsBetter) {
+        // 높을수록 좋음 (영업이익률, ROE)
+        if (diff > 0) return 'above-average'
+        if (diff < 0) return 'below-average'
+      } else {
+        // 낮을수록 좋음 (부채비율, PER)
+        if (diff < 0) return 'above-average'
+        if (diff > 0) return 'below-average'
+      }
+      return ''
     },
     // 챗봇 관련 메서드
     async sendMessage() {
@@ -1590,6 +1702,119 @@ export default {
 
 .adjustment-value.neutral {
   color: #6b7280;
+}
+
+/* 동종업계 비교 스타일 */
+.peer-comparison-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 16px;
+}
+
+.peer-comparison-section h4 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.industry-badge {
+  font-size: 12px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.peer-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.peer-stat-item {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.stat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.percentile-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 12px;
+}
+
+.percentile-excellent {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.percentile-good {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.percentile-average {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.percentile-poor {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.stat-comparison {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+.stat-row.current {
+  padding-top: 6px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.compare-label {
+  color: #6b7280;
+}
+
+.compare-value {
+  font-weight: 600;
+  color: #374151;
+}
+
+.compare-value.above-average {
+  color: #16a34a;
+}
+
+.compare-value.below-average {
+  color: #dc2626;
 }
 
 .ai-prompt {
