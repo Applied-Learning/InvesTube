@@ -18,9 +18,11 @@
                   :src="resolveImageUrl(myProfile.profileImage)"
                   :alt="authStore.nickname || authStore.id || '프로필'"
                 />
-                <span v-else>
-                  {{ authStore.nickname?.charAt(0).toUpperCase() }}
-                </span>
+                <img
+                  v-else
+                  src="/default-avatar.svg"
+                  :alt="authStore.nickname || authStore.id || 'avatar'"
+                />
               </div>
             </button>
           </template>
@@ -42,9 +44,11 @@
               :src="resolveImageUrl(myProfile.profileImage)"
               :alt="authStore.nickname || authStore.id || '프로필'"
             />
-            <span v-else>
-              {{ authStore.nickname?.charAt(0).toUpperCase() }}
-            </span>
+            <img
+              v-else
+              src="/default-avatar.svg"
+              :alt="authStore.nickname || authStore.id || 'avatar'"
+            />
           </div>
           <div class="user-info">
             <p class="user-nickname">{{ authStore.nickname }}</p>

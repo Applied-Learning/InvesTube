@@ -16,9 +16,12 @@
           :alt="uploaderName || channelName"
           class="avatar"
         />
-        <div v-else class="avatar avatar--fallback">
-          {{ uploaderInitial }}
-        </div>
+        <img
+          v-else
+          src="/default-avatar.svg"
+          :alt="uploaderName || channelName || 'avatar'"
+          class="avatar avatar--fallback"
+        />
       </div>
 
       <div class="info">
@@ -132,16 +135,7 @@ const onToggleWish = () => {
   border-radius: 999px;
   object-fit: cover;
   background-color: #e5e7eb;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  font-weight: 600;
-  color: #4b5563;
-}
-
-.avatar--fallback {
-  text-transform: uppercase;
+  display: block;
 }
 
 .info {

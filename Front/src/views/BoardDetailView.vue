@@ -35,9 +35,12 @@
                   :src="resolveImageUrl(post.authorProfileImage)" 
                   :alt="post.authorNickname"
                 />
-                <div v-else class="avatar-placeholder">
-                  {{ getAuthorInitial(post.authorNickname) }}
-                </div>
+                <img
+                  v-else
+                  src="/default-avatar.svg"
+                  :alt="post.authorNickname || 'avatar'"
+                  class="avatar-placeholder"
+                />
               </div>
               <div class="author-info">
                 <span class="author-name">{{ post.authorNickname || '익명' }}</span>
@@ -137,7 +140,12 @@
                 <div v-else class="view-mode-box">
                   <div class="stream-avatar" @click="goUserProfile(comment)">
                     <img v-if="comment.profileImage" :src="resolveImageUrl(comment.profileImage)" />
-                    <div v-else class="char-avatar">{{ getAuthorInitial(comment.nickname) }}</div>
+                    <img
+                      v-else
+                      src="/default-avatar.svg"
+                      :alt="comment.nickname || 'avatar'"
+                      class="char-avatar"
+                    />
                   </div>
                   
                   <div class="stream-content">
@@ -230,10 +238,29 @@ const fetchComments = async () => {
   try {
     const resp = await getCommentsByPostId(route.params.id)
     const items = resp.data || []
+    console.log('[comments payload]', items[0]);
     comments.value = items.map((c) => ({
       ...c,
       profileImage:
-        c.profileImage || c.authorProfileImage || c.userProfileImage || c.profile_image || null,
+        c.profileImage ||
+        c.profileImg ||
+        c.profileImageUrl ||
+        c.profileImgUrl ||
+        c.profile_image ||
+        c.profile_image_url ||
+        c.profile_imageUrl ||
+        c.profile_img ||
+        c.profile_img_url ||
+        c.authorProfileImage ||
+        c.authorProfileImageUrl ||
+        c.userProfileImage ||
+        c.userProfileImageUrl ||
+        c.user_profile_image ||
+        c.user_profile_image_url ||
+        c.user?.profileImage ||
+        c.user?.profileImageUrl ||
+        c.user?.profile_image ||
+        null,
     }))
   } catch (err) {
     console.error('댓글 목록 조회 실패:', err)
@@ -502,8 +529,7 @@ onMounted(() => {
 }
 .author-avatar img { width: 100%; height: 100%; object-fit: cover; }
 .avatar-placeholder {
-  width: 100%; height: 100%; background: #111; color: white;
-  display: flex; align-items: center; justify-content: center; font-weight: 700;
+  width: 100%; height: 100%; object-fit: cover; display: block;
 }
 
 .author-info { text-align: left; }
@@ -642,11 +668,11 @@ onMounted(() => {
 }
 
 .stream-avatar {
-  flex-shrink: 0; width: 48px; height: 48px; border-radius: 12px; overflow: hidden; cursor: pointer;
+  flex-shrink: 0; width: 48px; height: 48px; border-radius: 50%; overflow: hidden; cursor: pointer;
   background: #f1f5f9;
 }
 .stream-avatar img { width: 100%; height: 100%; object-fit: cover; }
-.char-avatar { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #64748b; }
+.char-avatar { width: 100%; height: 100%; object-fit: cover; display: block; }
 
 .stream-content { flex: 1; }
 

@@ -15,7 +15,7 @@
                 :src="resolveImageUrl(user.profileImage)"
                 :alt="user.nickname || user.id || '프로필'"
               />
-              <span v-else>{{ avatarInitial }}</span>
+              <img v-else src="/default-avatar.svg" :alt="user.nickname || user.id || 'avatar'" />
             </div>
             <div class="profile-card-info">
               <h2 class="profile-card-name">
