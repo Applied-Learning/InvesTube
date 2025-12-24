@@ -45,19 +45,17 @@ public class StockServiceImpl implements StockService {
 
     private final RestTemplate restTemplate = new RestTemplate();
 
-    @PostConstruct
-    public void initImportFromJsonIfEmpty() {
-        // Run heavy startup data preparation off the main init thread
-        System.out.println("[StockService] Starting background stock data warmup...");
-        new Thread(this::performInitialDataWarmup, "stock-startup-loader").start();
-    }
-
-    private void performInitialDataWarmup() {
+    @Override
+    public void initializeStockData() {
+        // Run startup data preparation synchronously to ensure order
+        System.out.println("[StockService] Starting stock data initialization...");
         try {
             int count = stockDao.countStocks();
             if (count == 0) {
                 System.out.println("[StockService] Stock 테이블이 비어있음 -> JSON import 실행");
                 importStockPricesFromJson();
+            } else {
+                System.out.println("[StockService] Stock 테이블에 데이터가 이미 존재합니다 (" + count + "개)");
             }
 
             // market이 null인 종목이 있으면 자동 업데이트
@@ -876,7 +874,7 @@ public class StockServiceImpl implements StockService {
     @Override
     public void updateMissingStockInfo() {
         System.out.println("============================================================");
-                    System.out.println("누락된 종목 정보(market) 업데이트 시작");
+        System.out.println("누락된 종목 정보(market) 업데이트 시작");
         System.out.println("============================================================");
 
         // 최근 영업일들을 순차적으로 시도 (오늘, 어제, 그제...)

@@ -16,25 +16,10 @@ public class StockDataInitializer implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         try {
-            // DB 연결이 완전히 초기화될 때까지 대기
-            Thread.sleep(2000);
+            // StockService의 동기 초기화 메서드 호출
+            // 이 메서드는 내부적으로 JSON 적재, KRX 업데이트, CSV 업종 보정 등을 순차적으로 수행함
+            stockService.initializeStockData();
 
-            // DB에 주식 데이터가 있는지 확인
-            int stockCount = stockService.getAllStocks().size();
-
-            if (stockCount == 0) {
-                System.out.println("=".repeat(60));
-                System.out.println("주식 데이터가 없습니다. KRX API에서 데이터를 가져옵니다...");
-                System.out.println("=".repeat(60));
-
-                stockService.syncStockDataFromDart();
-
-                System.out.println("=".repeat(60));
-                System.out.println("주식 데이터 초기화 완료!");
-                System.out.println("=".repeat(60));
-            } else {
-                System.out.println("주식 데이터 " + stockCount + "개가 이미 존재합니다.");
-            }
         } catch (Exception e) {
             System.err.println("주식 데이터 초기화 실패: " + e.getMessage());
             // 실패해도 서버는 정상 시작되도록 함
