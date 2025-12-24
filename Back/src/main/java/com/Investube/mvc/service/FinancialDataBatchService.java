@@ -168,17 +168,25 @@ public class FinancialDataBatchService {
 
         int loadedCount = 0;
         int skippedCount = 0;
+        int stockNotFoundCount = 0;
 
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(
                 new FileInputStream(file), StandardCharsets.UTF_8))) {
 
-            String header = reader.readLine(); // 헤더 스킵
+            reader.readLine(); // 헤더 스킵
             String line;
 
             while ((line = reader.readLine()) != null) {
                 try {
                     FinancialData data = parseCsvLine(line);
                     if (data != null) {
+                        // stock 테이블에 해당 종목이 있는지 확인
+                        Stock stock = stockDao.selectStockByCode(data.getStockCode());
+                        if (stock == null) {
+                            stockNotFoundCount++;
+                            continue; // 종목이 없으면 건너뛰기
+                        }
+
                         // 이미 존재하는지 확인
                         FinancialData existing = financialDao.getFinancialData(
                                 data.getStockCode(), data.getFiscalYear(), null);
@@ -195,8 +203,8 @@ public class FinancialDataBatchService {
                 }
             }
 
-            System.out.printf("[BatchSync] CSV 로드 완료: %d건 추가, %d건 스킵 (이미 존재)%n",
-                    loadedCount, skippedCount);
+            System.out.printf("[BatchSync] CSV 로드 완료: %d건 추가, %d건 스킵 (이미 존재), %d건 스킵 (종목 없음)%n",
+                    loadedCount, skippedCount, stockNotFoundCount);
         } catch (Exception e) {
             System.err.println("[BatchSync] CSV 로드 실패: " + e.getMessage());
             e.printStackTrace();
