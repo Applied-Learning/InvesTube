@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "앱클론",
   "prices" : [ {
-    "volume" : 45060,
-    "marketCap" : 243080298450,
-    "lowPrice" : 13900,
-    "highPrice" : 14340,
-    "openPrice" : 13990,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13950
-  }, {
     "volume" : 59972,
     "marketCap" : 244648558440,
     "lowPrice" : 13690,
@@ -1937,6 +1929,14 @@
     "openPrice" : 42400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 39750
+  }, {
+    "volume" : 164464,
+    "marketCap" : 745381299000,
+    "lowPrice" : 38700,
+    "highPrice" : 39950,
+    "openPrice" : 39700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 39000
   } ],
   "stockCode" : "174900"
 }

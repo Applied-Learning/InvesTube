@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KB오토시스",
   "prices" : [ {
-    "volume" : 13207,
-    "marketCap" : 36800000000,
-    "lowPrice" : 3140,
-    "highPrice" : 3210,
-    "openPrice" : 3140,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3200
-  }, {
     "volume" : 11882,
     "marketCap" : 36627500000,
     "lowPrice" : 3165,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3585,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3655
+  }, {
+    "volume" : 20120,
+    "marketCap" : 41975000000,
+    "lowPrice" : 3600,
+    "highPrice" : 3675,
+    "openPrice" : 3655,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3650
   } ],
   "stockCode" : "024120"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "YG PLUS",
   "prices" : [ {
-    "volume" : 612264,
-    "marketCap" : 236908846350,
-    "lowPrice" : 3660,
-    "highPrice" : 3880,
-    "openPrice" : 3805,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3735
-  }, {
     "volume" : 543623,
     "marketCap" : 232468787650,
     "lowPrice" : 3645,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6790,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6720
+  }, {
+    "volume" : 1841914,
+    "marketCap" : 438638827900,
+    "lowPrice" : 6720,
+    "highPrice" : 7000,
+    "openPrice" : 6790,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6890
   } ],
   "stockCode" : "037270"
 }

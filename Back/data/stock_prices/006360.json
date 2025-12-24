@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "GS건설",
   "prices" : [ {
-    "volume" : 119696,
-    "marketCap" : 1556727303100,
-    "lowPrice" : 17830,
-    "highPrice" : 18220,
-    "openPrice" : 17970,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 18190
-  }, {
     "volume" : 264310,
     "marketCap" : 1549024969000,
     "lowPrice" : 17870,
@@ -1937,6 +1929,14 @@
     "openPrice" : 20250,
     "tradeDate" : "2025-12-22",
     "closePrice" : 20100
+  }, {
+    "volume" : 402305,
+    "marketCap" : 1703071651000,
+    "lowPrice" : 19740,
+    "highPrice" : 20050,
+    "openPrice" : 20000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 19900
   } ],
   "stockCode" : "006360"
 }

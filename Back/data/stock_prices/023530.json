@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "롯데쇼핑",
   "prices" : [ {
-    "volume" : 56277,
-    "marketCap" : 1615287910500,
-    "lowPrice" : 56100,
-    "highPrice" : 57300,
-    "openPrice" : 57300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 57100
-  }, {
     "volume" : 72015,
     "marketCap" : 1623774537000,
     "lowPrice" : 56900,
@@ -1937,6 +1929,14 @@
     "openPrice" : 74900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 75200
+  }, {
+    "volume" : 25254,
+    "marketCap" : 2113169998500,
+    "lowPrice" : 74600,
+    "highPrice" : 76000,
+    "openPrice" : 75200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 74700
   } ],
   "stockCode" : "023530"
 }

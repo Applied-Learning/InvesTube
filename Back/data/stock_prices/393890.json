@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "더블유씨피",
   "prices" : [ {
-    "volume" : 122294,
-    "marketCap" : 400025962080,
-    "lowPrice" : 11120,
-    "highPrice" : 11870,
-    "openPrice" : 11400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11820
-  }, {
     "volume" : 127888,
     "marketCap" : 393257333280,
     "lowPrice" : 11620,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6810,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6800
+  }, {
+    "volume" : 96233,
+    "marketCap" : 225395339040,
+    "lowPrice" : 6630,
+    "highPrice" : 6890,
+    "openPrice" : 6890,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6660
   } ],
   "stockCode" : "393890"
 }

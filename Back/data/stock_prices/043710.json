@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "서울리거",
   "prices" : [ {
-    "volume" : 38644,
-    "marketCap" : 27960776160,
-    "lowPrice" : 549,
-    "highPrice" : 565,
-    "openPrice" : 549,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 557
-  }, {
     "volume" : 20075,
     "marketCap" : 27358389600,
     "lowPrice" : 545,
@@ -1937,6 +1929,14 @@
     "openPrice" : 818,
     "tradeDate" : "2025-12-22",
     "closePrice" : 825
+  }, {
+    "volume" : 17433,
+    "marketCap" : 70288758120,
+    "lowPrice" : 812,
+    "highPrice" : 839,
+    "openPrice" : 818,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 812
   } ],
   "stockCode" : "043710"
 }

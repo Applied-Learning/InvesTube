@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대상",
   "prices" : [ {
-    "volume" : 78687,
-    "marketCap" : 694692901250,
-    "lowPrice" : 19640,
-    "highPrice" : 20100,
-    "openPrice" : 19750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 20050
-  }, {
     "volume" : 91637,
     "marketCap" : 696425302500,
     "lowPrice" : 19950,
@@ -1937,6 +1929,14 @@
     "openPrice" : 21550,
     "tradeDate" : "2025-12-22",
     "closePrice" : 21550
+  }, {
+    "volume" : 125741,
+    "marketCap" : 748397340000,
+    "lowPrice" : 21450,
+    "highPrice" : 21800,
+    "openPrice" : 21600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 21600
   } ],
   "stockCode" : "001680"
 }

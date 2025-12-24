@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이녹스첨단소재",
   "prices" : [ {
-    "volume" : 58878,
-    "marketCap" : 422758052200,
-    "lowPrice" : 20550,
-    "highPrice" : 21000,
-    "openPrice" : 20800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 20900
-  }, {
     "volume" : 54688,
     "marketCap" : 428826349600,
     "lowPrice" : 21000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 23400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 24500
+  }, {
+    "volume" : 147123,
+    "marketCap" : 476361345900,
+    "lowPrice" : 23400,
+    "highPrice" : 24500,
+    "openPrice" : 24350,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 23550
   } ],
   "stockCode" : "272290"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코스메카코리아",
   "prices" : [ {
-    "volume" : 45565,
-    "marketCap" : 556428000000,
-    "lowPrice" : 51600,
-    "highPrice" : 52700,
-    "openPrice" : 52500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 52100
-  }, {
     "volume" : 134765,
     "marketCap" : 574584000000,
     "lowPrice" : 51600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 71100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 69300
+  }, {
+    "volume" : 67206,
+    "marketCap" : 729444000000,
+    "lowPrice" : 67000,
+    "highPrice" : 70300,
+    "openPrice" : 70100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 68300
   } ],
   "stockCode" : "241710"
 }

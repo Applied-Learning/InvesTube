@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼성에스디에스",
   "prices" : [ {
-    "volume" : 89085,
-    "marketCap" : 10368625200000,
-    "lowPrice" : 131200,
-    "highPrice" : 135500,
-    "openPrice" : 135500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 134000
-  }, {
     "volume" : 68557,
     "marketCap" : 10206131820000,
     "lowPrice" : 131700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 173100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 169900
+  }, {
+    "volume" : 110779,
+    "marketCap" : 13131012660000,
+    "lowPrice" : 168600,
+    "highPrice" : 171400,
+    "openPrice" : 170000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 169700
   } ],
   "stockCode" : "018260"
 }

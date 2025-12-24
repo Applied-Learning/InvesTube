@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "로지시스",
   "prices" : [ {
-    "volume" : 33744,
-    "marketCap" : 27232090430,
-    "lowPrice" : 2720,
-    "highPrice" : 2815,
-    "openPrice" : 2720,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2815
-  }, {
     "volume" : 13890,
     "marketCap" : 27232090430,
     "lowPrice" : 2775,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2735,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2740
+  }, {
+    "volume" : 40400,
+    "marketCap" : 27280460040,
+    "lowPrice" : 2740,
+    "highPrice" : 2850,
+    "openPrice" : 2740,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2820
   } ],
   "stockCode" : "067730"
 }

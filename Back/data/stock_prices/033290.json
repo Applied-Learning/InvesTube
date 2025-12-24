@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "로젠",
   "prices" : [ {
-    "volume" : 61861,
-    "marketCap" : 123543862200,
-    "lowPrice" : 2115,
-    "highPrice" : 2215,
-    "openPrice" : 2115,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2200
-  }, {
     "volume" : 60265,
     "marketCap" : 123824643705,
     "lowPrice" : 2180,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2190,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2200
+  }, {
+    "volume" : 47432,
+    "marketCap" : 120455265645,
+    "lowPrice" : 2130,
+    "highPrice" : 2215,
+    "openPrice" : 2200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2145
   } ],
   "stockCode" : "033290"
 }

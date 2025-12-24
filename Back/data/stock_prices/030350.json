@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "드래곤플라이",
   "prices" : [ {
-    "volume" : 109524,
-    "marketCap" : 18735021900,
-    "lowPrice" : 1296,
-    "highPrice" : 1350,
-    "openPrice" : 1335,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1350
-  }, {
     "volume" : 68262,
     "marketCap" : 18526854990,
     "lowPrice" : 1314,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 973
+  }, {
+    "volume" : 0,
+    "marketCap" : 13503093562,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 973
   } ],
   "stockCode" : "030350"

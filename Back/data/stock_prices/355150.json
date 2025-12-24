@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코스텍시스",
   "prices" : [ {
-    "volume" : 22552,
-    "marketCap" : 39376617500,
-    "lowPrice" : 4815,
-    "highPrice" : 5130,
-    "openPrice" : 4840,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5050
-  }, {
     "volume" : 34975,
     "marketCap" : 39064723500,
     "lowPrice" : 5000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12210
+  }, {
+    "volume" : 104982,
+    "marketCap" : 96609166500,
+    "lowPrice" : 12110,
+    "highPrice" : 12880,
+    "openPrice" : 12380,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12390
   } ],
   "stockCode" : "355150"
 }

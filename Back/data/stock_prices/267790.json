@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "배럴",
   "prices" : [ {
-    "volume" : 11491,
-    "marketCap" : 37430932500,
-    "lowPrice" : 4690,
-    "highPrice" : 4965,
-    "openPrice" : 4825,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4745
-  }, {
     "volume" : 6819,
     "marketCap" : 38298667500,
     "lowPrice" : 4750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3690,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3700
+  }, {
+    "volume" : 9553,
+    "marketCap" : 28258210575,
+    "lowPrice" : 3650,
+    "highPrice" : 3715,
+    "openPrice" : 3715,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3675
   } ],
   "stockCode" : "267790"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스티큐브",
   "prices" : [ {
-    "volume" : 488002,
-    "marketCap" : 489355956000,
-    "lowPrice" : 7200,
-    "highPrice" : 7710,
-    "openPrice" : 7680,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7200
-  }, {
     "volume" : 662824,
     "marketCap" : 482681366100,
     "lowPrice" : 6500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8230,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7580
+  }, {
+    "volume" : 188355,
+    "marketCap" : 503756186310,
+    "lowPrice" : 7330,
+    "highPrice" : 7640,
+    "openPrice" : 7560,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7410
   } ],
   "stockCode" : "052020"
 }

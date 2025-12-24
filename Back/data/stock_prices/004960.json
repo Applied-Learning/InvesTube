@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한신공영",
   "prices" : [ {
-    "volume" : 17164,
-    "marketCap" : 77292289360,
-    "lowPrice" : 6550,
-    "highPrice" : 6700,
-    "openPrice" : 6610,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6680
-  }, {
     "volume" : 15409,
     "marketCap" : 76713754260,
     "lowPrice" : 6480,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11160
+  }, {
+    "volume" : 153034,
+    "marketCap" : 126004944780,
+    "lowPrice" : 10710,
+    "highPrice" : 11360,
+    "openPrice" : 11170,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10890
   } ],
   "stockCode" : "004960"
 }

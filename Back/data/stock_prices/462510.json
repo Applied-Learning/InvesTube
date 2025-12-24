@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "라메디텍",
   "prices" : [ {
-    "volume" : 25464,
-    "marketCap" : 74050291600,
-    "lowPrice" : 8440,
-    "highPrice" : 8730,
-    "openPrice" : 8440,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8560
-  }, {
     "volume" : 32202,
     "marketCap" : 74482828350,
     "lowPrice" : 8480,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6750,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6720
+  }, {
+    "volume" : 38912,
+    "marketCap" : 59243954450,
+    "lowPrice" : 6690,
+    "highPrice" : 6830,
+    "openPrice" : 6750,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6730
   } ],
   "stockCode" : "462510"
 }

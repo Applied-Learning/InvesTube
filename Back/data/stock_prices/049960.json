@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "쎌바이오텍",
   "prices" : [ {
-    "volume" : 10348,
-    "marketCap" : 132822000000,
-    "lowPrice" : 14020,
-    "highPrice" : 14160,
-    "openPrice" : 14160,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14130
-  }, {
     "volume" : 8931,
     "marketCap" : 133574000000,
     "lowPrice" : 14050,
@@ -1936,6 +1928,14 @@
     "highPrice" : 13840,
     "openPrice" : 13730,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 13760
+  }, {
+    "volume" : 5905,
+    "marketCap" : 129344000000,
+    "lowPrice" : 13590,
+    "highPrice" : 13790,
+    "openPrice" : 13660,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 13760
   } ],
   "stockCode" : "049960"

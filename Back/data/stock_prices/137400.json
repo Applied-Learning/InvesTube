@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "피엔티",
   "prices" : [ {
-    "volume" : 164414,
-    "marketCap" : 953284902900,
-    "lowPrice" : 38850,
-    "highPrice" : 40600,
-    "openPrice" : 39650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 40150
-  }, {
     "volume" : 171144,
     "marketCap" : 937851897000,
     "lowPrice" : 39400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 38850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 39600
+  }, {
+    "volume" : 75295,
+    "marketCap" : 939039051300,
+    "lowPrice" : 39350,
+    "highPrice" : 40050,
+    "openPrice" : 39700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 39550
   } ],
   "stockCode" : "137400"
 }

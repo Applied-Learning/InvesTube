@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하나금융지주",
   "prices" : [ {
-    "volume" : 755438,
-    "marketCap" : 16947211920000,
-    "lowPrice" : 57200,
-    "highPrice" : 59100,
-    "openPrice" : 57300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 59000
-  }, {
     "volume" : 502941,
     "marketCap" : 16918487832000,
     "lowPrice" : 58100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 93300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 94100
+  }, {
+    "volume" : 362623,
+    "marketCap" : 25884300702000,
+    "lowPrice" : 92700,
+    "highPrice" : 94400,
+    "openPrice" : 93800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 93000
   } ],
   "stockCode" : "086790"
 }

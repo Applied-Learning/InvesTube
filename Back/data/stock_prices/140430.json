@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "카티스",
   "prices" : [ {
-    "volume" : 59020,
-    "marketCap" : 44508170270,
-    "lowPrice" : 2255,
-    "highPrice" : 2340,
-    "openPrice" : 2255,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2330
-  }, {
     "volume" : 32464,
     "marketCap" : 43075503845,
     "lowPrice" : 2250,
@@ -1937,6 +1929,14 @@
     "openPrice" : 990,
     "tradeDate" : "2025-12-22",
     "closePrice" : 980
+  }, {
+    "volume" : 1684618,
+    "marketCap" : 49438973575,
+    "lowPrice" : 915,
+    "highPrice" : 988,
+    "openPrice" : 985,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 925
   } ],
   "stockCode" : "140430"
 }

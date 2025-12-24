@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼화왕관",
   "prices" : [ {
-    "volume" : 211,
-    "marketCap" : 65493121600,
-    "lowPrice" : 30400,
-    "highPrice" : 31100,
-    "openPrice" : 31100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 30400
-  }, {
     "volume" : 249,
     "marketCap" : 65600840550,
     "lowPrice" : 30250,
@@ -1937,6 +1929,14 @@
     "openPrice" : 30850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 30650
+  }, {
+    "volume" : 3262,
+    "marketCap" : 64631370000,
+    "lowPrice" : 29900,
+    "highPrice" : 31400,
+    "openPrice" : 30950,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 30000
   } ],
   "stockCode" : "004450"
 }

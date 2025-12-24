@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이오플로우",
   "prices" : [ {
-    "volume" : 518679,
-    "marketCap" : 104850845255,
-    "lowPrice" : 3430,
-    "highPrice" : 3575,
-    "openPrice" : 3460,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3445
-  }, {
     "volume" : 438410,
     "marketCap" : 104089953780,
     "lowPrice" : 3300,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 1490
+  }, {
+    "volume" : 0,
+    "marketCap" : 52267866450,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 1490
   } ],
   "stockCode" : "294090"

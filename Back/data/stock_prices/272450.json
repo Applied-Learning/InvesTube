@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "진에어",
   "prices" : [ {
-    "volume" : 154255,
-    "marketCap" : 525132000000,
-    "lowPrice" : 9980,
-    "highPrice" : 10130,
-    "openPrice" : 10050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10060
-  }, {
     "volume" : 140524,
     "marketCap" : 520434000000,
     "lowPrice" : 9920,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7080,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7000
+  }, {
+    "volume" : 58130,
+    "marketCap" : 359658000000,
+    "lowPrice" : 6890,
+    "highPrice" : 7010,
+    "openPrice" : 6980,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6890
   } ],
   "stockCode" : "272450"
 }

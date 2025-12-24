@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "일정실업",
   "prices" : [ {
-    "volume" : 1756,
-    "marketCap" : 13440000000,
-    "lowPrice" : 11200,
-    "highPrice" : 11430,
-    "openPrice" : 11260,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11200
-  }, {
     "volume" : 2288,
     "marketCap" : 13080000000,
     "lowPrice" : 10900,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3140,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3400
+  }, {
+    "volume" : 191065,
+    "marketCap" : 19320000000,
+    "lowPrice" : 3135,
+    "highPrice" : 3425,
+    "openPrice" : 3365,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3220
   } ],
   "stockCode" : "008500"
 }

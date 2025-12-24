@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동원금속",
   "prices" : [ {
-    "volume" : 19623847,
-    "marketCap" : 85093978060,
-    "lowPrice" : 1430,
-    "highPrice" : 1820,
-    "openPrice" : 1430,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1820
-  }, {
     "volume" : 45347939,
     "marketCap" : 81353583420,
     "lowPrice" : 1736,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1376,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1382
+  }, {
+    "volume" : 145986,
+    "marketCap" : 63306179282,
+    "lowPrice" : 1346,
+    "highPrice" : 1389,
+    "openPrice" : 1380,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1354
   } ],
   "stockCode" : "018500"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대양전기공업",
   "prices" : [ {
-    "volume" : 43476,
-    "marketCap" : 122079169080,
-    "lowPrice" : 12710,
-    "highPrice" : 13190,
-    "openPrice" : 12770,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12760
-  }, {
     "volume" : 19919,
     "marketCap" : 121887822420,
     "lowPrice" : 12550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 27750,
     "tradeDate" : "2025-12-22",
     "closePrice" : 28600
+  }, {
+    "volume" : 29235,
+    "marketCap" : 275539190400,
+    "lowPrice" : 28350,
+    "highPrice" : 29350,
+    "openPrice" : 29000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 28800
   } ],
   "stockCode" : "108380"
 }

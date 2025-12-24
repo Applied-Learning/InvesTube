@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "옵티시스",
   "prices" : [ {
-    "volume" : 27481,
-    "marketCap" : 47004240000,
-    "lowPrice" : 8340,
-    "highPrice" : 8620,
-    "openPrice" : 8450,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8340
-  }, {
     "volume" : 31065,
     "marketCap" : 44637120000,
     "lowPrice" : 7800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8130,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8090
+  }, {
+    "volume" : 33737,
+    "marketCap" : 45144360000,
+    "lowPrice" : 7990,
+    "highPrice" : 8120,
+    "openPrice" : 8090,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8010
   } ],
   "stockCode" : "109080"
 }

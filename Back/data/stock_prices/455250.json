@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KB제25호스팩",
   "prices" : [ {
-    "volume" : 11706,
-    "marketCap" : 8739150000,
-    "lowPrice" : 2030,
-    "highPrice" : 2050,
-    "openPrice" : 2050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2030
-  }, {
     "volume" : 27490,
     "marketCap" : 8782200000,
     "lowPrice" : 2020,
@@ -1936,6 +1928,14 @@
     "highPrice" : 2100,
     "openPrice" : 2090,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 2100
+  }, {
+    "volume" : 1719,
+    "marketCap" : 9040500000,
+    "lowPrice" : 2095,
+    "highPrice" : 2100,
+    "openPrice" : 2100,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 2100
   } ],
   "stockCode" : "455250"

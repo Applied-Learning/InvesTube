@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "GRT",
   "prices" : [ {
-    "volume" : 75031,
-    "marketCap" : 217284375000,
-    "lowPrice" : 3225,
-    "highPrice" : 3330,
-    "openPrice" : 3330,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3225
-  }, {
     "volume" : 83236,
     "marketCap" : 251847750000,
     "lowPrice" : 3105,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3130,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3155
+  }, {
+    "volume" : 208592,
+    "marketCap" : 249826500000,
+    "lowPrice" : 3040,
+    "highPrice" : 3185,
+    "openPrice" : 3185,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3090
   } ],
   "stockCode" : "900290"
 }

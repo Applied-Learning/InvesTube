@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "NH올원리츠",
   "prices" : [ {
-    "volume" : 46357,
-    "marketCap" : 149038499400,
-    "lowPrice" : 3450,
-    "highPrice" : 3500,
-    "openPrice" : 3475,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3480
-  }, {
     "volume" : 56565,
     "marketCap" : 149895042500,
     "lowPrice" : 3455,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3525,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3510
+  }, {
+    "volume" : 91819,
+    "marketCap" : 193076401625,
+    "lowPrice" : 3495,
+    "highPrice" : 3530,
+    "openPrice" : 3510,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3515
   } ],
   "stockCode" : "400760"
 }

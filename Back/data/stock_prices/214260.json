@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "라파스",
   "prices" : [ {
-    "volume" : 36978,
-    "marketCap" : 131249430730,
-    "lowPrice" : 14500,
-    "highPrice" : 15290,
-    "openPrice" : 15000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14710
-  }, {
     "volume" : 35510,
     "marketCap" : 137316705570,
     "lowPrice" : 14540,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13110,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12990
+  }, {
+    "volume" : 27590,
+    "marketCap" : 114118301770,
+    "lowPrice" : 12770,
+    "highPrice" : 13270,
+    "openPrice" : 13270,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12790
   } ],
   "stockCode" : "214260"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "일진파워",
   "prices" : [ {
-    "volume" : 81758,
-    "marketCap" : 125304071790,
-    "lowPrice" : 8030,
-    "highPrice" : 8330,
-    "openPrice" : 8030,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8310
-  }, {
     "volume" : 41693,
     "marketCap" : 124399349250,
     "lowPrice" : 8210,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14660,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14500
+  }, {
+    "volume" : 1029214,
+    "marketCap" : 199491320070,
+    "lowPrice" : 12920,
+    "highPrice" : 14180,
+    "openPrice" : 14130,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13230
   } ],
   "stockCode" : "094820"
 }

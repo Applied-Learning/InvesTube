@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이지에이",
   "prices" : [ {
     "volume" : 17032492,
@@ -1033,6 +1033,14 @@
     "openPrice" : 3740,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3625
+  }, {
+    "volume" : 181624,
+    "marketCap" : 42832140945,
+    "lowPrice" : 3345,
+    "highPrice" : 3590,
+    "openPrice" : 3575,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3355
   } ],
   "stockCode" : "455180"
 }

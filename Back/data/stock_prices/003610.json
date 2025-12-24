@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "방림",
   "prices" : [ {
-    "volume" : 380105,
-    "marketCap" : 193375391300,
-    "lowPrice" : 4325,
-    "highPrice" : 4610,
-    "openPrice" : 4535,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4570
-  }, {
     "volume" : 308375,
     "marketCap" : 183854721050,
     "lowPrice" : 4345,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5990,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5930
+  }, {
+    "volume" : 153323,
+    "marketCap" : 237594753780,
+    "lowPrice" : 5850,
+    "highPrice" : 6000,
+    "openPrice" : 5930,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5910
   } ],
   "stockCode" : "003610"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "꿈비",
   "prices" : [ {
-    "volume" : 127402,
-    "marketCap" : 101631039460,
-    "lowPrice" : 8000,
-    "highPrice" : 8380,
-    "openPrice" : 8000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8290
-  }, {
     "volume" : 84902,
     "marketCap" : 100772876280,
     "lowPrice" : 8190,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4810,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4800
+  }, {
+    "volume" : 226356,
+    "marketCap" : 66733475040,
+    "lowPrice" : 4535,
+    "highPrice" : 4805,
+    "openPrice" : 4770,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4560
   } ],
   "stockCode" : "407400"
 }

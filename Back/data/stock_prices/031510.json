@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오스템",
   "prices" : [ {
-    "volume" : 24742,
-    "marketCap" : 35756000000,
-    "lowPrice" : 1240,
-    "highPrice" : 1282,
-    "openPrice" : 1240,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1277
-  }, {
     "volume" : 28608,
     "marketCap" : 36316000000,
     "lowPrice" : 1285,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1086,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1087
+  }, {
+    "volume" : 45130,
+    "marketCap" : 30352000000,
+    "lowPrice" : 1071,
+    "highPrice" : 1097,
+    "openPrice" : 1097,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1084
   } ],
   "stockCode" : "031510"
 }

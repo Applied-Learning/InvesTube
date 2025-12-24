@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "티에스넥스젠",
   "prices" : [ {
-    "volume" : 437068,
-    "marketCap" : 58122337689,
-    "lowPrice" : 399,
-    "highPrice" : 420,
-    "openPrice" : 420,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 403
-  }, {
     "volume" : 430737,
     "marketCap" : 57545441037,
     "lowPrice" : 399,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 1710
+  }, {
+    "volume" : 0,
+    "marketCap" : 27227331360,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 1710
   } ],
   "stockCode" : "043220"

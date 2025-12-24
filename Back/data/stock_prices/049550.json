@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "잉크테크",
   "prices" : [ {
-    "volume" : 2164,
-    "marketCap" : 71955036590,
-    "lowPrice" : 3615,
-    "highPrice" : 3700,
-    "openPrice" : 3680,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3670
-  }, {
     "volume" : 1551,
     "marketCap" : 72249130745,
     "lowPrice" : 3670,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3215,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3215
+  }, {
+    "volume" : 2195,
+    "marketCap" : 62740086400,
+    "lowPrice" : 3170,
+    "highPrice" : 3250,
+    "openPrice" : 3245,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3200
   } ],
   "stockCode" : "049550"
 }

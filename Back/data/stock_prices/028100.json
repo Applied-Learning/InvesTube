@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동아지질",
   "prices" : [ {
-    "volume" : 42139,
-    "marketCap" : 187051342940,
-    "lowPrice" : 13860,
-    "highPrice" : 14070,
-    "openPrice" : 14030,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13970
-  }, {
     "volume" : 37030,
     "marketCap" : 184775127600,
     "lowPrice" : 13770,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17190,
     "tradeDate" : "2025-12-22",
     "closePrice" : 17520
+  }, {
+    "volume" : 33786,
+    "marketCap" : 228558799140,
+    "lowPrice" : 17000,
+    "highPrice" : 17460,
+    "openPrice" : 17460,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 17070
   } ],
   "stockCode" : "028100"
 }

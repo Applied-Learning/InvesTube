@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에너토크",
   "prices" : [ {
-    "volume" : 41839,
-    "marketCap" : 50146292320,
-    "lowPrice" : 4980,
-    "highPrice" : 5180,
-    "openPrice" : 5000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5140
-  }, {
     "volume" : 17917,
     "marketCap" : 48975561760,
     "lowPrice" : 5010,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7540
+  }, {
+    "volume" : 44380,
+    "marketCap" : 71512125040,
+    "lowPrice" : 7330,
+    "highPrice" : 7640,
+    "openPrice" : 7490,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7330
   } ],
   "stockCode" : "019990"
 }

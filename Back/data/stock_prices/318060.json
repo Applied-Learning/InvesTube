@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "그래피",
   "prices" : [ {
     "volume" : 15426567,
@@ -649,6 +649,14 @@
     "openPrice" : 21400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 22850
+  }, {
+    "volume" : 221269,
+    "marketCap" : 241038760900,
+    "lowPrice" : 21500,
+    "highPrice" : 23000,
+    "openPrice" : 22850,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 21700
   } ],
   "stockCode" : "318060"
 }

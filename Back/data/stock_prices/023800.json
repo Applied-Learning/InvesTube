@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인지컨트롤스",
   "prices" : [ {
-    "volume" : 26392,
-    "marketCap" : 93590446240,
-    "lowPrice" : 5770,
-    "highPrice" : 5970,
-    "openPrice" : 5780,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5920
-  }, {
     "volume" : 11385,
     "marketCap" : 92483802450,
     "lowPrice" : 5830,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6420,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6460
+  }, {
+    "volume" : 32641,
+    "marketCap" : 100546492920,
+    "lowPrice" : 6360,
+    "highPrice" : 6490,
+    "openPrice" : 6480,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6360
   } ],
   "stockCode" : "023800"
 }

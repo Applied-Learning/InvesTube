@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "웰킵스하이텍",
   "prices" : [ {
-    "volume" : 801943,
-    "marketCap" : 17286117394,
-    "lowPrice" : 620,
-    "highPrice" : 709,
-    "openPrice" : 677,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 637
-  }, {
     "volume" : 379909,
     "marketCap" : 16580561582,
     "lowPrice" : 600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 607,
     "tradeDate" : "2025-12-22",
     "closePrice" : 605
+  }, {
+    "volume" : 35660,
+    "marketCap" : 16472014534,
+    "lowPrice" : 605,
+    "highPrice" : 625,
+    "openPrice" : 605,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 607
   } ],
   "stockCode" : "043590"
 }

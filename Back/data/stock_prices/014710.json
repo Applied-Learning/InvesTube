@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "사조씨푸드",
   "prices" : [ {
-    "volume" : 22804,
-    "marketCap" : 82218542825,
-    "lowPrice" : 4675,
-    "highPrice" : 4975,
-    "openPrice" : 4675,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4775
-  }, {
     "volume" : 61772,
     "marketCap" : 82218542825,
     "lowPrice" : 4705,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9220,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9310
+  }, {
+    "volume" : 60923,
+    "marketCap" : 163920529360,
+    "lowPrice" : 9220,
+    "highPrice" : 9530,
+    "openPrice" : 9220,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9520
   } ],
   "stockCode" : "014710"
 }

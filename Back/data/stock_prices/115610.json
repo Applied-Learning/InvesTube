@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이미지스",
   "prices" : [ {
-    "volume" : 390120,
-    "marketCap" : 40961428200,
-    "lowPrice" : 2395,
-    "highPrice" : 2640,
-    "openPrice" : 2625,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2520
-  }, {
     "volume" : 128432,
     "marketCap" : 41123973550,
     "lowPrice" : 2490,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1172,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1149
+  }, {
+    "volume" : 149283,
+    "marketCap" : 26946793320,
+    "lowPrice" : 1125,
+    "highPrice" : 1172,
+    "openPrice" : 1139,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1140
   } ],
   "stockCode" : "115610"
 }

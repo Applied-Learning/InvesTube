@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유진투자증권",
   "prices" : [ {
-    "volume" : 635835,
-    "marketCap" : 248946694260,
-    "lowPrice" : 2480,
-    "highPrice" : 2570,
-    "openPrice" : 2490,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2570
-  }, {
     "volume" : 450210,
     "marketCap" : 247493697990,
     "lowPrice" : 2545,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3530,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3615
+  }, {
+    "volume" : 542661,
+    "marketCap" : 349203436890,
+    "lowPrice" : 3580,
+    "highPrice" : 3640,
+    "openPrice" : 3625,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3605
   } ],
   "stockCode" : "001200"
 }

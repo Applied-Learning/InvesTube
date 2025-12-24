@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼영",
   "prices" : [ {
-    "volume" : 66943,
-    "marketCap" : 127670000000,
-    "lowPrice" : 3655,
-    "highPrice" : 3775,
-    "openPrice" : 3690,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3755
-  }, {
     "volume" : 139323,
     "marketCap" : 131240000000,
     "lowPrice" : 3755,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6320,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6440
+  }, {
+    "volume" : 356277,
+    "marketCap" : 217260000000,
+    "lowPrice" : 6290,
+    "highPrice" : 6540,
+    "openPrice" : 6500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6390
   } ],
   "stockCode" : "003720"
 }

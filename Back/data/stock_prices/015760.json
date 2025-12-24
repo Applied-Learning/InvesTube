@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국전력",
   "prices" : [ {
-    "volume" : 1094287,
-    "marketCap" : 13288656393900,
-    "lowPrice" : 20200,
-    "highPrice" : 20750,
-    "openPrice" : 20450,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 20700
-  }, {
     "volume" : 784465,
     "marketCap" : 13192361782350,
     "lowPrice" : 20400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 49650,
     "tradeDate" : "2025-12-22",
     "closePrice" : 49050
+  }, {
+    "volume" : 2039178,
+    "marketCap" : 31038963122950,
+    "lowPrice" : 48200,
+    "highPrice" : 49100,
+    "openPrice" : 49050,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 48350
   } ],
   "stockCode" : "015760"
 }

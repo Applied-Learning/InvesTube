@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "지에스이",
   "prices" : [ {
-    "volume" : 249044,
-    "marketCap" : 96710000325,
-    "lowPrice" : 3175,
-    "highPrice" : 3245,
-    "openPrice" : 3175,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3225
-  }, {
     "volume" : 339916,
     "marketCap" : 96710000325,
     "lowPrice" : 3215,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2395,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2410
+  }, {
+    "volume" : 92935,
+    "marketCap" : 71520418845,
+    "lowPrice" : 2385,
+    "highPrice" : 2440,
+    "openPrice" : 2410,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2385
   } ],
   "stockCode" : "053050"
 }

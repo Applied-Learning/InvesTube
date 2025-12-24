@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "셀레스트라",
   "prices" : [ {
-    "volume" : 189111,
-    "marketCap" : 20687412116,
-    "lowPrice" : 512,
-    "highPrice" : 545,
-    "openPrice" : 512,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 532
-  }, {
     "volume" : 193142,
     "marketCap" : 20026348195,
     "lowPrice" : 510,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 5250
+  }, {
+    "volume" : 0,
+    "marketCap" : 13610136750,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 5250
   } ],
   "stockCode" : "352770"

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "앤디포스",
   "prices" : [ {
-    "volume" : 22504,
-    "marketCap" : 67798952640,
-    "lowPrice" : 2750,
-    "highPrice" : 2950,
-    "openPrice" : 2880,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2880
-  }, {
     "volume" : 14079,
     "marketCap" : 66857300520,
     "lowPrice" : 2800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1873,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1933
+  }, {
+    "volume" : 25611,
+    "marketCap" : 45105136548,
+    "lowPrice" : 1901,
+    "highPrice" : 1949,
+    "openPrice" : 1928,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1916
   } ],
   "stockCode" : "238090"
 }

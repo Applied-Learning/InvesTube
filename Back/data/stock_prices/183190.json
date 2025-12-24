@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아세아시멘트",
   "prices" : [ {
-    "volume" : 41763,
-    "marketCap" : 395769643560,
-    "lowPrice" : 10420,
-    "highPrice" : 10570,
-    "openPrice" : 10460,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10460
-  }, {
     "volume" : 33510,
     "marketCap" : 395391278700,
     "lowPrice" : 10440,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12660,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12720
+  }, {
+    "volume" : 99769,
+    "marketCap" : 468981256600,
+    "lowPrice" : 12590,
+    "highPrice" : 12830,
+    "openPrice" : 12720,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12700
   } ],
   "stockCode" : "183190"
 }

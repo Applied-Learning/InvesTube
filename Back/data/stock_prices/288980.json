@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "모아데이타",
   "prices" : [ {
-    "volume" : 187935,
-    "marketCap" : 43403041872,
-    "lowPrice" : 1256,
-    "highPrice" : 1309,
-    "openPrice" : 1264,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1256
-  }, {
     "volume" : 90282,
     "marketCap" : 43679494368,
     "lowPrice" : 1262,
@@ -1937,6 +1929,14 @@
     "openPrice" : 959,
     "tradeDate" : "2025-12-22",
     "closePrice" : 961
+  }, {
+    "volume" : 391681,
+    "marketCap" : 34556562000,
+    "lowPrice" : 955,
+    "highPrice" : 1005,
+    "openPrice" : 961,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1000
   } ],
   "stockCode" : "288980"
 }

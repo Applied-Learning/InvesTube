@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "DL이앤씨우",
   "prices" : [ {
-    "volume" : 1203,
-    "marketCap" : 34350631250,
-    "lowPrice" : 16000,
-    "highPrice" : 16310,
-    "openPrice" : 16000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16250
-  }, {
     "volume" : 750,
     "marketCap" : 34540880900,
     "lowPrice" : 16220,
@@ -1937,6 +1929,14 @@
     "openPrice" : 22950,
     "tradeDate" : "2025-12-22",
     "closePrice" : 23050
+  }, {
+    "volume" : 5300,
+    "marketCap" : 47985189500,
+    "lowPrice" : 22600,
+    "highPrice" : 23050,
+    "openPrice" : 23050,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 22700
   } ],
   "stockCode" : "37550K"
 }

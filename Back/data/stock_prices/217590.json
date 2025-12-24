@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "티엠씨",
   "prices" : [ {
     "volume" : 29529336,
@@ -49,6 +49,14 @@
     "openPrice" : 18400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 18200
+  }, {
+    "volume" : 10091765,
+    "marketCap" : 569828421250,
+    "lowPrice" : 18460,
+    "highPrice" : 23650,
+    "openPrice" : 18500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 23650
   } ],
   "stockCode" : "217590"
 }

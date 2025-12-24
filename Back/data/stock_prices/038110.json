@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에코플라스틱",
   "prices" : [ {
-    "volume" : 37046,
-    "marketCap" : 98806488000,
-    "lowPrice" : 2365,
-    "highPrice" : 2415,
-    "openPrice" : 2365,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2400
-  }, {
     "volume" : 70530,
     "marketCap" : 99218181700,
     "lowPrice" : 2385,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3020,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3110
+  }, {
+    "volume" : 217792,
+    "marketCap" : 123919803700,
+    "lowPrice" : 3005,
+    "highPrice" : 3115,
+    "openPrice" : 3080,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3010
   } ],
   "stockCode" : "038110"
 }

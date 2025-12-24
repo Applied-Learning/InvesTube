@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한탑",
   "prices" : [ {
-    "volume" : 39164,
-    "marketCap" : 23009560888,
-    "lowPrice" : 700,
-    "highPrice" : 738,
-    "openPrice" : 700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 712
-  }, {
     "volume" : 60503,
     "marketCap" : 22783343295,
     "lowPrice" : 695,
@@ -1936,6 +1928,14 @@
     "highPrice" : 720,
     "openPrice" : 717,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 717
+  }, {
+    "volume" : 33103,
+    "marketCap" : 23171144883,
+    "lowPrice" : 712,
+    "highPrice" : 718,
+    "openPrice" : 717,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 717
   } ],
   "stockCode" : "002680"

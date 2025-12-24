@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "헥토파이낸셜",
   "prices" : [ {
-    "volume" : 20872,
-    "marketCap" : 140944230000,
-    "lowPrice" : 14450,
-    "highPrice" : 15000,
-    "openPrice" : 14450,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14910
-  }, {
     "volume" : 10552,
     "marketCap" : 138959100000,
     "lowPrice" : 14630,
@@ -1937,6 +1929,14 @@
     "openPrice" : 16300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16930
+  }, {
+    "volume" : 524284,
+    "marketCap" : 235684966720,
+    "lowPrice" : 16540,
+    "highPrice" : 17760,
+    "openPrice" : 16870,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16870
   } ],
   "stockCode" : "234340"
 }

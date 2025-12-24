@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "프롬바이오",
   "prices" : [ {
-    "volume" : 25476,
-    "marketCap" : 52118710000,
-    "lowPrice" : 1796,
-    "highPrice" : 1859,
-    "openPrice" : 1851,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1841
-  }, {
     "volume" : 13490,
     "marketCap" : 52316880000,
     "lowPrice" : 1811,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1289,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1283
+  }, {
+    "volume" : 199700,
+    "marketCap" : 35868770000,
+    "lowPrice" : 1258,
+    "highPrice" : 1302,
+    "openPrice" : 1289,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1267
   } ],
   "stockCode" : "377220"
 }

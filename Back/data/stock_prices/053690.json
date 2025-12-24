@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한미글로벌",
   "prices" : [ {
-    "volume" : 113477,
-    "marketCap" : 187374105000,
-    "lowPrice" : 17020,
-    "highPrice" : 17320,
-    "openPrice" : 17090,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17100
-  }, {
     "volume" : 90021,
     "marketCap" : 188579435500,
     "lowPrice" : 16990,
@@ -1937,6 +1929,14 @@
     "openPrice" : 18000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 17920
+  }, {
+    "volume" : 33659,
+    "marketCap" : 193291182000,
+    "lowPrice" : 17620,
+    "highPrice" : 17920,
+    "openPrice" : 17900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 17640
   } ],
   "stockCode" : "053690"
 }

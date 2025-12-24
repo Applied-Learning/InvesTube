@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KS인더스트리",
   "prices" : [ {
-    "volume" : 121856,
-    "marketCap" : 70488401300,
-    "lowPrice" : 2245,
-    "highPrice" : 2350,
-    "openPrice" : 2290,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2300
-  }, {
     "volume" : 105665,
     "marketCap" : 70181929990,
     "lowPrice" : 2210,
@@ -1937,6 +1929,14 @@
     "openPrice" : 758,
     "tradeDate" : "2025-12-22",
     "closePrice" : 753
+  }, {
+    "volume" : 449839,
+    "marketCap" : 24750633480,
+    "lowPrice" : 730,
+    "highPrice" : 785,
+    "openPrice" : 768,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 740
   } ],
   "stockCode" : "101000"
 }

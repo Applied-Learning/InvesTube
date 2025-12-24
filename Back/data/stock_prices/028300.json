@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HLB",
   "prices" : [ {
-    "volume" : 796851,
-    "marketCap" : 8881790470800,
-    "lowPrice" : 67600,
-    "highPrice" : 71300,
-    "openPrice" : 70400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 67600
-  }, {
     "volume" : 867146,
     "marketCap" : 8763541781100,
     "lowPrice" : 66300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 46600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 46350
+  }, {
+    "volume" : 321584,
+    "marketCap" : 6144354926000,
+    "lowPrice" : 46000,
+    "highPrice" : 46950,
+    "openPrice" : 46700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 46600
   } ],
   "stockCode" : "028300"
 }

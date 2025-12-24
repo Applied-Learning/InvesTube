@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아진엑스텍",
   "prices" : [ {
-    "volume" : 14936,
-    "marketCap" : 59271463680,
-    "lowPrice" : 5940,
-    "highPrice" : 6090,
-    "openPrice" : 6020,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6080
-  }, {
     "volume" : 26078,
     "marketCap" : 60831239040,
     "lowPrice" : 6050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8760,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9370
+  }, {
+    "volume" : 159263,
+    "marketCap" : 88322279760,
+    "lowPrice" : 9000,
+    "highPrice" : 9520,
+    "openPrice" : 9410,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9060
   } ],
   "stockCode" : "059120"
 }

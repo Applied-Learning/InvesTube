@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "쎄트렉아이",
   "prices" : [ {
-    "volume" : 59430,
-    "marketCap" : 452835345300,
-    "lowPrice" : 39500,
-    "highPrice" : 41600,
-    "openPrice" : 39500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 41350
-  }, {
     "volume" : 31860,
     "marketCap" : 445169450700,
     "lowPrice" : 40400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 61000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 65800
+  }, {
+    "volume" : 505504,
+    "marketCap" : 674598724800,
+    "lowPrice" : 60600,
+    "highPrice" : 69700,
+    "openPrice" : 69100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 61600
   } ],
   "stockCode" : "099320"
 }

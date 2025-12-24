@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "씨싸이트",
   "prices" : [ {
-    "volume" : 16066,
-    "marketCap" : 48560528640,
-    "lowPrice" : 8050,
-    "highPrice" : 8480,
-    "openPrice" : 8050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8320
-  }, {
     "volume" : 8655,
     "marketCap" : 48560528640,
     "lowPrice" : 8090,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5960,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6000
+  }, {
+    "volume" : 11058,
+    "marketCap" : 34611049860,
+    "lowPrice" : 5890,
+    "highPrice" : 6050,
+    "openPrice" : 6030,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5930
   } ],
   "stockCode" : "109670"
 }

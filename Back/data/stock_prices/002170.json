@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼양통상",
   "prices" : [ {
-    "volume" : 1071,
-    "marketCap" : 150900000000,
-    "lowPrice" : 50000,
-    "highPrice" : 50400,
-    "openPrice" : 50200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 50300
-  }, {
     "volume" : 1041,
     "marketCap" : 152100000000,
     "lowPrice" : 49950,
@@ -1937,6 +1929,14 @@
     "openPrice" : 56900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 57000
+  }, {
+    "volume" : 1819,
+    "marketCap" : 169200000000,
+    "lowPrice" : 55300,
+    "highPrice" : 57200,
+    "openPrice" : 57200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 56400
   } ],
   "stockCode" : "002170"
 }

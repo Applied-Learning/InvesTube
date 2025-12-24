@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한선엔지니어링",
   "prices" : [ {
-    "volume" : 90000,
-    "marketCap" : 111216534000,
-    "lowPrice" : 6360,
-    "highPrice" : 6500,
-    "openPrice" : 6400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6490
-  }, {
     "volume" : 88466,
     "marketCap" : 108303312000,
     "lowPrice" : 6250,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8980,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9180
+  }, {
+    "volume" : 44188,
+    "marketCap" : 155294608500,
+    "lowPrice" : 8990,
+    "highPrice" : 9260,
+    "openPrice" : 9160,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8990
   } ],
   "stockCode" : "452280"
 }

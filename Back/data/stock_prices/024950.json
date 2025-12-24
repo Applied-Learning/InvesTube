@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼천리자전거",
   "prices" : [ {
-    "volume" : 134820,
-    "marketCap" : 56014494940,
-    "lowPrice" : 4005,
-    "highPrice" : 4280,
-    "openPrice" : 4005,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4220
-  }, {
     "volume" : 66056,
     "marketCap" : 54156194160,
     "lowPrice" : 4045,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4240,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4270
+  }, {
+    "volume" : 35211,
+    "marketCap" : 55948127055,
+    "lowPrice" : 4215,
+    "highPrice" : 4285,
+    "openPrice" : 4260,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4215
   } ],
   "stockCode" : "024950"
 }

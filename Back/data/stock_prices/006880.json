@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신송홀딩스",
   "prices" : [ {
-    "volume" : 36695,
-    "marketCap" : 75113248300,
-    "lowPrice" : 6250,
-    "highPrice" : 6370,
-    "openPrice" : 6250,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6350
-  }, {
     "volume" : 60482,
     "marketCap" : 74640093980,
     "lowPrice" : 6240,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6970
+  }, {
+    "volume" : 41391,
+    "marketCap" : 81264254460,
+    "lowPrice" : 6810,
+    "highPrice" : 6990,
+    "openPrice" : 6970,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6870
   } ],
   "stockCode" : "006880"
 }

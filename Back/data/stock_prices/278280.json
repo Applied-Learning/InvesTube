@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "천보",
   "prices" : [ {
-    "volume" : 28571,
-    "marketCap" : 383000000000,
-    "lowPrice" : 36750,
-    "highPrice" : 38450,
-    "openPrice" : 36750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 38300
-  }, {
     "volume" : 25753,
     "marketCap" : 374500000000,
     "lowPrice" : 37300,
@@ -1936,6 +1928,14 @@
     "highPrice" : 53100,
     "openPrice" : 52700,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 52000
+  }, {
+    "volume" : 38181,
+    "marketCap" : 605276724000,
+    "lowPrice" : 51600,
+    "highPrice" : 52600,
+    "openPrice" : 52400,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 52000
   } ],
   "stockCode" : "278280"

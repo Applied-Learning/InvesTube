@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동국알앤에스",
   "prices" : [ {
-    "volume" : 92597,
-    "marketCap" : 46736000000,
-    "lowPrice" : 2530,
-    "highPrice" : 2595,
-    "openPrice" : 2540,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2540
-  }, {
     "volume" : 52694,
     "marketCap" : 47656000000,
     "lowPrice" : 2545,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2380,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2365
+  }, {
+    "volume" : 53440,
+    "marketCap" : 42688000000,
+    "lowPrice" : 2305,
+    "highPrice" : 2365,
+    "openPrice" : 2365,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2320
   } ],
   "stockCode" : "075970"
 }

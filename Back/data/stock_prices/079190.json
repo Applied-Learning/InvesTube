@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케스피온",
   "prices" : [ {
-    "volume" : 174620,
-    "marketCap" : 21440732326,
-    "lowPrice" : 546,
-    "highPrice" : 594,
-    "openPrice" : 560,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 559
-  }, {
     "volume" : 93867,
     "marketCap" : 20788688588,
     "lowPrice" : 541,
@@ -1937,6 +1929,14 @@
     "openPrice" : 461,
     "tradeDate" : "2025-12-22",
     "closePrice" : 461
+  }, {
+    "volume" : 62416,
+    "marketCap" : 17912025038,
+    "lowPrice" : 457,
+    "highPrice" : 468,
+    "openPrice" : 457,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 467
   } ],
   "stockCode" : "079190"
 }

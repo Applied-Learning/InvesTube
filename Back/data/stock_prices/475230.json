@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엔알비",
   "prices" : [ {
     "volume" : 11732705,
@@ -801,6 +801,14 @@
     "openPrice" : 14440,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15150
+  }, {
+    "volume" : 558065,
+    "marketCap" : 158492512800,
+    "lowPrice" : 14380,
+    "highPrice" : 16000,
+    "openPrice" : 15650,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15200
   } ],
   "stockCode" : "475230"
 }

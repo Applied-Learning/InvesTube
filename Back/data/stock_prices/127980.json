@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "화인써키트",
   "prices" : [ {
-    "volume" : 5190,
-    "marketCap" : 72938613440,
-    "lowPrice" : 6100,
-    "highPrice" : 6170,
-    "openPrice" : 6120,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6160
-  }, {
     "volume" : 21426,
     "marketCap" : 76017191280,
     "lowPrice" : 6160,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6180,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6010
+  }, {
+    "volume" : 6179,
+    "marketCap" : 70807290320,
+    "lowPrice" : 5950,
+    "highPrice" : 6160,
+    "openPrice" : 6050,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5980
   } ],
   "stockCode" : "127980"
 }

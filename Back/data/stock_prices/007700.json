@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "F&F홀딩스",
   "prices" : [ {
-    "volume" : 4684,
-    "marketCap" : 474848415380,
-    "lowPrice" : 12050,
-    "highPrice" : 12150,
-    "openPrice" : 12060,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12140
-  }, {
     "volume" : 5480,
     "marketCap" : 475239559050,
     "lowPrice" : 12070,
@@ -1937,6 +1929,14 @@
     "openPrice" : 20850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 20550
+  }, {
+    "volume" : 19655,
+    "marketCap" : 786198776700,
+    "lowPrice" : 20000,
+    "highPrice" : 20800,
+    "openPrice" : 20800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 20100
   } ],
   "stockCode" : "007700"
 }

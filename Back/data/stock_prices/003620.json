@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KG모빌리티",
   "prices" : [ {
-    "volume" : 201003,
-    "marketCap" : 769904675680,
-    "lowPrice" : 3825,
-    "highPrice" : 3935,
-    "openPrice" : 3880,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3920
-  }, {
     "volume" : 176548,
     "marketCap" : 761066484250,
     "lowPrice" : 3870,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3640,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3730
+  }, {
+    "volume" : 291860,
+    "marketCap" : 742715927040,
+    "lowPrice" : 3660,
+    "highPrice" : 3790,
+    "openPrice" : 3790,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3670
   } ],
   "stockCode" : "003620"
 }

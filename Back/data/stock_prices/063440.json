@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SM Life Design",
   "prices" : [ {
-    "volume" : 39384,
-    "marketCap" : 60160104278,
-    "lowPrice" : 1288,
-    "highPrice" : 1315,
-    "openPrice" : 1310,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1307
-  }, {
     "volume" : 51642,
     "marketCap" : 60022016816,
     "lowPrice" : 1282,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1809,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1789
+  }, {
+    "volume" : 257813,
+    "marketCap" : 82898506354,
+    "lowPrice" : 1776,
+    "highPrice" : 1816,
+    "openPrice" : 1776,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1801
   } ],
   "stockCode" : "063440"
 }

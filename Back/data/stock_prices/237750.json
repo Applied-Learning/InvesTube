@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "피앤씨테크",
   "prices" : [ {
-    "volume" : 8259,
-    "marketCap" : 26538611000,
-    "lowPrice" : 4030,
-    "highPrice" : 4100,
-    "openPrice" : 4055,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4085
-  }, {
     "volume" : 7874,
     "marketCap" : 26441162000,
     "lowPrice" : 4035,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3785,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3700
+  }, {
+    "volume" : 80652,
+    "marketCap" : 23777556000,
+    "lowPrice" : 3630,
+    "highPrice" : 3730,
+    "openPrice" : 3700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3660
   } ],
   "stockCode" : "237750"
 }

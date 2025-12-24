@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "온코닉테라퓨틱스",
   "prices" : [ {
-    "volume" : 5916277,
-    "marketCap" : 231204744000,
-    "lowPrice" : 19810,
-    "highPrice" : 22200,
-    "openPrice" : 20850,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 21400
-  }, {
     "volume" : 2853036,
     "marketCap" : 195551676000,
     "lowPrice" : 18100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 19180,
     "tradeDate" : "2025-12-22",
     "closePrice" : 18920
+  }, {
+    "volume" : 1842035,
+    "marketCap" : 827956406260,
+    "lowPrice" : 18150,
+    "highPrice" : 19630,
+    "openPrice" : 19010,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 18610
   } ],
   "stockCode" : "476060"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아모레퍼시픽홀딩스3우C",
   "prices" : [ {
-    "volume" : 3522,
-    "marketCap" : 123687968000,
-    "lowPrice" : 17340,
-    "highPrice" : 17510,
-    "openPrice" : 17340,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17440
-  }, {
     "volume" : 26048,
     "marketCap" : 123900734000,
     "lowPrice" : 17020,
@@ -1937,6 +1929,14 @@
     "openPrice" : 21950,
     "tradeDate" : "2025-12-22",
     "closePrice" : 22050
+  }, {
+    "volume" : 6811,
+    "marketCap" : 156028400000,
+    "lowPrice" : 21900,
+    "highPrice" : 22200,
+    "openPrice" : 22100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 22000
   } ],
   "stockCode" : "00279K"
 }

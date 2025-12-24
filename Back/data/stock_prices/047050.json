@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "포스코인터내셔널",
   "prices" : [ {
-    "volume" : 725914,
-    "marketCap" : 7230426586800,
-    "lowPrice" : 38350,
-    "highPrice" : 41650,
-    "openPrice" : 38400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 41100
-  }, {
     "volume" : 491645,
     "marketCap" : 7151261332200,
     "lowPrice" : 40550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 50700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 50900
+  }, {
+    "volume" : 216343,
+    "marketCap" : 9007246745600,
+    "lowPrice" : 50500,
+    "highPrice" : 51600,
+    "openPrice" : 51100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 51200
   } ],
   "stockCode" : "047050"
 }

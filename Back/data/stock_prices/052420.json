@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오성첨단소재",
   "prices" : [ {
-    "volume" : 721345,
-    "marketCap" : 124639137248,
-    "lowPrice" : 1418,
-    "highPrice" : 1455,
-    "openPrice" : 1418,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1444
-  }, {
     "volume" : 690723,
     "marketCap" : 123603354944,
     "lowPrice" : 1424,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1531,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1530
+  }, {
+    "volume" : 1289754,
+    "marketCap" : 139655583678,
+    "lowPrice" : 1479,
+    "highPrice" : 1533,
+    "openPrice" : 1526,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1479
   } ],
   "stockCode" : "052420"
 }

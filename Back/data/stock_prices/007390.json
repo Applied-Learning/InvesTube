@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "네이처셀",
   "prices" : [ {
-    "volume" : 379475,
-    "marketCap" : 1293578835600,
-    "lowPrice" : 19980,
-    "highPrice" : 20550,
-    "openPrice" : 20250,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 20100
-  }, {
     "volume" : 986964,
     "marketCap" : 1306450266800,
     "lowPrice" : 19350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 22250,
     "tradeDate" : "2025-12-22",
     "closePrice" : 22400
+  }, {
+    "volume" : 305620,
+    "marketCap" : 1469119276800,
+    "lowPrice" : 22300,
+    "highPrice" : 22900,
+    "openPrice" : 22550,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 22800
   } ],
   "stockCode" : "007390"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "세림B&G",
   "prices" : [ {
-    "volume" : 17032,
-    "marketCap" : 33514847884,
-    "lowPrice" : 1163,
-    "highPrice" : 1199,
-    "openPrice" : 1181,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1181
-  }, {
     "volume" : 46301,
     "marketCap" : 32663496964,
     "lowPrice" : 1150,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1551,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1575
+  }, {
+    "volume" : 223147,
+    "marketCap" : 42510789272,
+    "lowPrice" : 1485,
+    "highPrice" : 1575,
+    "openPrice" : 1575,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1498
   } ],
   "stockCode" : "340440"
 }

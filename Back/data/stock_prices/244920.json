@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이플러스에셋",
   "prices" : [ {
-    "volume" : 39581,
-    "marketCap" : 103317157010,
-    "lowPrice" : 4465,
-    "highPrice" : 4635,
-    "openPrice" : 4465,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4570
-  }, {
     "volume" : 50122,
     "marketCap" : 103995387800,
     "lowPrice" : 4490,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9340,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9600
+  }, {
+    "volume" : 408135,
+    "marketCap" : 219294622100,
+    "lowPrice" : 9580,
+    "highPrice" : 10070,
+    "openPrice" : 9720,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9700
   } ],
   "stockCode" : "244920"
 }

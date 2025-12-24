@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SK스퀘어",
   "prices" : [ {
-    "volume" : 150751,
-    "marketCap" : 11076446712000,
-    "lowPrice" : 79000,
-    "highPrice" : 82900,
-    "openPrice" : 80000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 82200
-  }, {
     "volume" : 77958,
     "marketCap" : 10941696752000,
     "lowPrice" : 80900,
@@ -1936,6 +1928,14 @@
     "highPrice" : 318000,
     "openPrice" : 303000,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 315000
+  }, {
+    "volume" : 240036,
+    "marketCap" : 41607441225000,
+    "lowPrice" : 313500,
+    "highPrice" : 320000,
+    "openPrice" : 315000,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 315000
   } ],
   "stockCode" : "402340"

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "그린케미칼",
   "prices" : [ {
-    "volume" : 1990765,
-    "marketCap" : 163200000000,
-    "lowPrice" : 6380,
-    "highPrice" : 6920,
-    "openPrice" : 6380,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6800
-  }, {
     "volume" : 8027695,
     "marketCap" : 156240000000,
     "lowPrice" : 6510,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6890,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6800
+  }, {
+    "volume" : 37937,
+    "marketCap" : 162000000000,
+    "lowPrice" : 6690,
+    "highPrice" : 6880,
+    "openPrice" : 6760,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6750
   } ],
   "stockCode" : "083420"
 }

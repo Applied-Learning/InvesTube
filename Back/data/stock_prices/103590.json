@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "일진전기",
   "prices" : [ {
-    "volume" : 710251,
-    "marketCap" : 1289889799500,
-    "lowPrice" : 26500,
-    "highPrice" : 27500,
-    "openPrice" : 26900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 27050
-  }, {
     "volume" : 725475,
     "marketCap" : 1332806650500,
     "lowPrice" : 26600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 55600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 55400
+  }, {
+    "volume" : 326284,
+    "marketCap" : 2613159372000,
+    "lowPrice" : 54700,
+    "highPrice" : 56700,
+    "openPrice" : 55500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 54800
   } ],
   "stockCode" : "103590"
 }

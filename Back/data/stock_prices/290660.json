@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "네오펙트",
   "prices" : [ {
-    "volume" : 219188,
-    "marketCap" : 40874200913,
-    "lowPrice" : 824,
-    "highPrice" : 901,
-    "openPrice" : 829,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 887
-  }, {
     "volume" : 57307,
     "marketCap" : 41104607908,
     "lowPrice" : 873,
@@ -1937,6 +1929,14 @@
     "openPrice" : 853,
     "tradeDate" : "2025-12-22",
     "closePrice" : 811
+  }, {
+    "volume" : 183319,
+    "marketCap" : 44309293490,
+    "lowPrice" : 761,
+    "highPrice" : 835,
+    "openPrice" : 811,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 761
   } ],
   "stockCode" : "290660"
 }

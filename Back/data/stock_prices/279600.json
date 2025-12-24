@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "미디어젠",
   "prices" : [ {
-    "volume" : 0,
-    "marketCap" : 52938025300,
-    "lowPrice" : 0,
-    "highPrice" : 0,
-    "openPrice" : 0,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11300
-  }, {
     "volume" : 0,
     "marketCap" : 52938025300,
     "lowPrice" : 0,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7090,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7110
+  }, {
+    "volume" : 7936,
+    "marketCap" : 32793467000,
+    "lowPrice" : 7000,
+    "highPrice" : 7110,
+    "openPrice" : 7110,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7000
   } ],
   "stockCode" : "279600"
 }

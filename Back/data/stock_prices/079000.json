@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "와토스코리아",
   "prices" : [ {
-    "volume" : 3649,
-    "marketCap" : 37728000000,
-    "lowPrice" : 5190,
-    "highPrice" : 5290,
-    "openPrice" : 5190,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5240
-  }, {
     "volume" : 2450,
     "marketCap" : 38448000000,
     "lowPrice" : 5250,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6220,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6200
+  }, {
+    "volume" : 11757,
+    "marketCap" : 45288000000,
+    "lowPrice" : 6180,
+    "highPrice" : 6340,
+    "openPrice" : 6190,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6290
   } ],
   "stockCode" : "079000"
 }

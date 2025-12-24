@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "GS우",
   "prices" : [ {
-    "volume" : 11967,
-    "marketCap" : 68448077100,
-    "lowPrice" : 37750,
-    "highPrice" : 38450,
-    "openPrice" : 37750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 38350
-  }, {
     "volume" : 7854,
     "marketCap" : 68091111900,
     "lowPrice" : 38000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 47550,
     "tradeDate" : "2025-12-22",
     "closePrice" : 47800
+  }, {
+    "volume" : 3615,
+    "marketCap" : 84957717600,
+    "lowPrice" : 47600,
+    "highPrice" : 47900,
+    "openPrice" : 47900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 47600
   } ],
   "stockCode" : "078935"
 }

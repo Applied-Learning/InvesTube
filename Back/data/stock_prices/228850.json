@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "레이언스",
   "prices" : [ {
-    "volume" : 8326,
-    "marketCap" : 102532466520,
-    "lowPrice" : 6120,
-    "highPrice" : 6200,
-    "openPrice" : 6150,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6180
-  }, {
     "volume" : 7837,
     "marketCap" : 102864286800,
     "lowPrice" : 6140,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5130,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5250
+  }, {
+    "volume" : 18430,
+    "marketCap" : 85609632240,
+    "lowPrice" : 5130,
+    "highPrice" : 5260,
+    "openPrice" : 5250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5160
   } ],
   "stockCode" : "228850"
 }

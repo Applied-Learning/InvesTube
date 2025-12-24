@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "씨케이솔루션",
   "prices" : [ {
     "volume" : 17689298,
@@ -1521,6 +1521,14 @@
     "openPrice" : 8860,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8870
+  }, {
+    "volume" : 21241,
+    "marketCap" : 94039804600,
+    "lowPrice" : 8570,
+    "highPrice" : 8880,
+    "openPrice" : 8800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8600
   } ],
   "stockCode" : "480370"
 }

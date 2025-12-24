@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "INVENI",
   "prices" : [ {
-    "volume" : 55713,
-    "marketCap" : 333000000000,
-    "lowPrice" : 54400,
-    "highPrice" : 56400,
-    "openPrice" : 55000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 55500
-  }, {
     "volume" : 23540,
     "marketCap" : 328800000000,
     "lowPrice" : 53800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 68000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 67500
+  }, {
+    "volume" : 13196,
+    "marketCap" : 386460000000,
+    "lowPrice" : 66800,
+    "highPrice" : 69300,
+    "openPrice" : 67700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 67800
   } ],
   "stockCode" : "015360"
 }

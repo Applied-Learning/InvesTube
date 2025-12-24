@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "와이즈버즈",
   "prices" : [ {
-    "volume" : 770357,
-    "marketCap" : 37239171516,
-    "lowPrice" : 714,
-    "highPrice" : 784,
-    "openPrice" : 768,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 738
-  }, {
     "volume" : 960228,
     "marketCap" : 36179520294,
     "lowPrice" : 710,
@@ -1937,6 +1929,14 @@
     "openPrice" : 952,
     "tradeDate" : "2025-12-22",
     "closePrice" : 955
+  }, {
+    "volume" : 174050,
+    "marketCap" : 46271436694,
+    "lowPrice" : 916,
+    "highPrice" : 961,
+    "openPrice" : 946,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 917
   } ],
   "stockCode" : "273060"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에넥스",
   "prices" : [ {
-    "volume" : 253123,
-    "marketCap" : 35515051472,
-    "lowPrice" : 571,
-    "highPrice" : 597,
-    "openPrice" : 581,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 592
-  }, {
     "volume" : 250245,
     "marketCap" : 35515051472,
     "lowPrice" : 580,
@@ -1937,6 +1929,14 @@
     "openPrice" : 583,
     "tradeDate" : "2025-12-22",
     "closePrice" : 586
+  }, {
+    "volume" : 748458,
+    "marketCap" : 34075252088,
+    "lowPrice" : 557,
+    "highPrice" : 595,
+    "openPrice" : 586,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 568
   } ],
   "stockCode" : "011090"
 }

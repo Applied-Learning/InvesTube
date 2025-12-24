@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한일홀딩스",
   "prices" : [ {
-    "volume" : 32894,
-    "marketCap" : 478218030840,
-    "lowPrice" : 15400,
-    "highPrice" : 15990,
-    "openPrice" : 15400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15510
-  }, {
     "volume" : 68363,
     "marketCap" : 487159567200,
     "lowPrice" : 15520,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 17750
+  }, {
+    "volume" : 20727,
+    "marketCap" : 550058650560,
+    "lowPrice" : 17700,
+    "highPrice" : 17900,
+    "openPrice" : 17750,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 17840
   } ],
   "stockCode" : "003300"
 }

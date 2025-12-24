@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코오롱ENP",
   "prices" : [ {
-    "volume" : 22068,
-    "marketCap" : 211660000000,
-    "lowPrice" : 5490,
-    "highPrice" : 5590,
-    "openPrice" : 5520,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5570
-  }, {
     "volume" : 27644,
     "marketCap" : 212040000000,
     "lowPrice" : 5520,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8430,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8500
+  }, {
+    "volume" : 81500,
+    "marketCap" : 322240000000,
+    "lowPrice" : 8410,
+    "highPrice" : 8750,
+    "openPrice" : 8500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8480
   } ],
   "stockCode" : "138490"
 }

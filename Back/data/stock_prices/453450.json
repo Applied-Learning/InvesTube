@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "그리드위즈",
   "prices" : [ {
-    "volume" : 75140,
-    "marketCap" : 135582742500,
-    "lowPrice" : 16040,
-    "highPrice" : 17380,
-    "openPrice" : 16230,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17070
-  }, {
     "volume" : 63279,
     "marketCap" : 137806712500,
     "lowPrice" : 16750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14580,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14640
+  }, {
+    "volume" : 17721,
+    "marketCap" : 114216745000,
+    "lowPrice" : 14310,
+    "highPrice" : 14690,
+    "openPrice" : 14550,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14380
   } ],
   "stockCode" : "453450"
 }

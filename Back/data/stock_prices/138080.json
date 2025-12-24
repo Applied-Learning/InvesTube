@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오이솔루션",
   "prices" : [ {
-    "volume" : 5729,
-    "marketCap" : 104328612900,
-    "lowPrice" : 9700,
-    "highPrice" : 9990,
-    "openPrice" : 9890,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9820
-  }, {
     "volume" : 6493,
     "marketCap" : 103903649100,
     "lowPrice" : 9580,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13630,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14970
+  }, {
+    "volume" : 223836,
+    "marketCap" : 159538862400,
+    "lowPrice" : 13840,
+    "highPrice" : 15120,
+    "openPrice" : 14970,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13900
   } ],
   "stockCode" : "138080"
 }

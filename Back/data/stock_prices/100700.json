@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "세운메디칼",
   "prices" : [ {
-    "volume" : 23567,
-    "marketCap" : 107091000000,
-    "lowPrice" : 2425,
-    "highPrice" : 2480,
-    "openPrice" : 2425,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2445
-  }, {
     "volume" : 20552,
     "marketCap" : 107967000000,
     "lowPrice" : 2440,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2470,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2480
+  }, {
+    "volume" : 33424,
+    "marketCap" : 108186000000,
+    "lowPrice" : 2460,
+    "highPrice" : 2490,
+    "openPrice" : 2485,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2470
   } ],
   "stockCode" : "100700"
 }

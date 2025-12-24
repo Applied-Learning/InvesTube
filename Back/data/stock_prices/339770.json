@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "교촌에프앤비",
   "prices" : [ {
-    "volume" : 56850,
-    "marketCap" : 279554622600,
-    "lowPrice" : 10960,
-    "highPrice" : 11300,
-    "openPrice" : 11160,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11190
-  }, {
     "volume" : 87520,
     "marketCap" : 287549035400,
     "lowPrice" : 11200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4515,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4520
+  }, {
+    "volume" : 47285,
+    "marketCap" : 224593034600,
+    "lowPrice" : 4470,
+    "highPrice" : 4540,
+    "openPrice" : 4510,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4495
   } ],
   "stockCode" : "339770"
 }

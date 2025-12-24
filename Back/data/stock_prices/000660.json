@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SK하이닉스",
   "prices" : [ {
-    "volume" : 3287596,
-    "marketCap" : 123469201104000,
-    "lowPrice" : 169600,
-    "highPrice" : 173300,
-    "openPrice" : 170000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 169600
-  }, {
     "volume" : 1844961,
     "marketCap" : 122668398502500,
     "lowPrice" : 168300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 574000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 580000
+  }, {
+    "volume" : 2011188,
+    "marketCap" : 425153381160000,
+    "lowPrice" : 581000,
+    "highPrice" : 593000,
+    "openPrice" : 585000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 584000
   } ],
   "stockCode" : "000660"
 }

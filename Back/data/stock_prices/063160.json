@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "종근당바이오",
   "prices" : [ {
-    "volume" : 5444,
-    "marketCap" : 123708443100,
-    "lowPrice" : 22050,
-    "highPrice" : 22600,
-    "openPrice" : 22050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 22550
-  }, {
     "volume" : 5577,
     "marketCap" : 122336952600,
     "lowPrice" : 21900,
@@ -1937,6 +1929,14 @@
     "openPrice" : 20950,
     "tradeDate" : "2025-12-22",
     "closePrice" : 20750
+  }, {
+    "volume" : 18252,
+    "marketCap" : 113559413400,
+    "lowPrice" : 20600,
+    "highPrice" : 21350,
+    "openPrice" : 21100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 20700
   } ],
   "stockCode" : "063160"
 }

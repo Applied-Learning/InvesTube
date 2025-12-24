@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국자산신탁",
   "prices" : [ {
-    "volume" : 2655827,
-    "marketCap" : 362634924600,
-    "lowPrice" : 2890,
-    "highPrice" : 2925,
-    "openPrice" : 2900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2925
-  }, {
     "volume" : 347090,
     "marketCap" : 360155369560,
     "lowPrice" : 2880,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2515,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2520
+  }, {
+    "volume" : 261571,
+    "marketCap" : 304099206110,
+    "lowPrice" : 2470,
+    "highPrice" : 2525,
+    "openPrice" : 2520,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2485
   } ],
   "stockCode" : "123890"
 }

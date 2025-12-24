@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디아이티",
   "prices" : [ {
-    "volume" : 60545,
-    "marketCap" : 247023000000,
-    "lowPrice" : 12630,
-    "highPrice" : 13160,
-    "openPrice" : 12630,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13070
-  }, {
     "volume" : 59772,
     "marketCap" : 243810000000,
     "lowPrice" : 12710,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14030,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14710
+  }, {
+    "volume" : 142648,
+    "marketCap" : 284445000000,
+    "lowPrice" : 14750,
+    "highPrice" : 15200,
+    "openPrice" : 14810,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15050
   } ],
   "stockCode" : "110990"
 }

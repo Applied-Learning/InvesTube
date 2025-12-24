@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "힘스",
   "prices" : [ {
-    "volume" : 6532,
-    "marketCap" : 40158437800,
-    "lowPrice" : 3475,
-    "highPrice" : 3550,
-    "openPrice" : 3475,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3550
-  }, {
     "volume" : 3371,
     "marketCap" : 39762509540,
     "lowPrice" : 3515,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3450,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3480
+  }, {
+    "volume" : 14509,
+    "marketCap" : 39310020100,
+    "lowPrice" : 3455,
+    "highPrice" : 3515,
+    "openPrice" : 3480,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3475
   } ],
   "stockCode" : "238490"
 }

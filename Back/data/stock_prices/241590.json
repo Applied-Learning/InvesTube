@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "화승엔터프라이즈",
   "prices" : [ {
-    "volume" : 158328,
-    "marketCap" : 521673666360,
-    "lowPrice" : 8420,
-    "highPrice" : 8790,
-    "openPrice" : 8690,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8610
-  }, {
     "volume" : 81869,
     "marketCap" : 511373489440,
     "lowPrice" : 8370,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5250,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5210
+  }, {
+    "volume" : 61080,
+    "marketCap" : 315064235200,
+    "lowPrice" : 5140,
+    "highPrice" : 5250,
+    "openPrice" : 5230,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5200
   } ],
   "stockCode" : "241590"
 }

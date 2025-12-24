@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SBI인베스트먼트",
   "prices" : [ {
-    "volume" : 574220,
-    "marketCap" : 126087795350,
-    "lowPrice" : 763,
-    "highPrice" : 795,
-    "openPrice" : 772,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 778
-  }, {
     "volume" : 462766,
     "marketCap" : 125601595625,
     "lowPrice" : 765,
@@ -1937,6 +1929,14 @@
     "openPrice" : 801,
     "tradeDate" : "2025-12-22",
     "closePrice" : 784
+  }, {
+    "volume" : 979131,
+    "marketCap" : 120739598375,
+    "lowPrice" : 745,
+    "highPrice" : 784,
+    "openPrice" : 784,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 745
   } ],
   "stockCode" : "019550"
 }

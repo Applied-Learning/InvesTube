@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이노션",
   "prices" : [ {
-    "volume" : 27941,
-    "marketCap" : 800000000000,
-    "lowPrice" : 19840,
-    "highPrice" : 20200,
-    "openPrice" : 19840,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 20000
-  }, {
     "volume" : 40755,
     "marketCap" : 798800000000,
     "lowPrice" : 19850,
@@ -1937,6 +1929,14 @@
     "openPrice" : 19000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 19020
+  }, {
+    "volume" : 1129708,
+    "marketCap" : 755200000000,
+    "lowPrice" : 18780,
+    "highPrice" : 19120,
+    "openPrice" : 19000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 18880
   } ],
   "stockCode" : "214320"
 }

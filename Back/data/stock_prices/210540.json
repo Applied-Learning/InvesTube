@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디와이파워",
   "prices" : [ {
-    "volume" : 16199,
-    "marketCap" : 126979642000,
-    "lowPrice" : 11200,
-    "highPrice" : 11580,
-    "openPrice" : 11400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11500
-  }, {
     "volume" : 10626,
     "marketCap" : 126758807840,
     "lowPrice" : 11300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13650,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13980
+  }, {
+    "volume" : 35520,
+    "marketCap" : 154473494920,
+    "lowPrice" : 13770,
+    "highPrice" : 14130,
+    "openPrice" : 13980,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13990
   } ],
   "stockCode" : "210540"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한익스프레스",
   "prices" : [ {
-    "volume" : 63523,
-    "marketCap" : 40320000000,
-    "lowPrice" : 3280,
-    "highPrice" : 3360,
-    "openPrice" : 3335,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3360
-  }, {
     "volume" : 25133,
     "marketCap" : 40440000000,
     "lowPrice" : 3305,
@@ -1936,6 +1928,14 @@
     "highPrice" : 3135,
     "openPrice" : 3115,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 3120
+  }, {
+    "volume" : 18450,
+    "marketCap" : 37440000000,
+    "lowPrice" : 3080,
+    "highPrice" : 3130,
+    "openPrice" : 3120,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 3120
   } ],
   "stockCode" : "014130"

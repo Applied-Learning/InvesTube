@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대글로비스",
   "prices" : [ {
-    "volume" : 100244,
-    "marketCap" : 8932500000000,
-    "lowPrice" : 115600,
-    "highPrice" : 120300,
-    "openPrice" : 117800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 119100
-  }, {
     "volume" : 73167,
     "marketCap" : 8842500000000,
     "lowPrice" : 116800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 180900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 179800
+  }, {
+    "volume" : 84984,
+    "marketCap" : 13372500000000,
+    "lowPrice" : 177300,
+    "highPrice" : 181900,
+    "openPrice" : 179900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 178300
   } ],
   "stockCode" : "086280"
 }

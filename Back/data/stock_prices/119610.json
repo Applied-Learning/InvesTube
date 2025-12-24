@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인터로조",
   "prices" : [ {
-    "volume" : 0,
-    "marketCap" : 329090302200,
-    "lowPrice" : 0,
-    "highPrice" : 0,
-    "openPrice" : 0,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 24900
-  }, {
     "volume" : 0,
     "marketCap" : 329090302200,
     "lowPrice" : 0,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16950
+  }, {
+    "volume" : 33242,
+    "marketCap" : 189354062730,
+    "lowPrice" : 16490,
+    "highPrice" : 17040,
+    "openPrice" : 16950,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16590
   } ],
   "stockCode" : "119610"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HDC랩스",
   "prices" : [ {
-    "volume" : 44528,
-    "marketCap" : 221677912540,
-    "lowPrice" : 8540,
-    "highPrice" : 9220,
-    "openPrice" : 8780,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8540
-  }, {
     "volume" : 145967,
     "marketCap" : 227907736780,
     "lowPrice" : 8290,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8540,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8580
+  }, {
+    "volume" : 22420,
+    "marketCap" : 219082152440,
+    "lowPrice" : 8430,
+    "highPrice" : 8610,
+    "openPrice" : 8590,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8440
   } ],
   "stockCode" : "039570"
 }

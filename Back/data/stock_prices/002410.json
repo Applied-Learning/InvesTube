@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "범양건영",
   "prices" : [ {
-    "volume" : 1980982,
-    "marketCap" : 73783316700,
-    "lowPrice" : 2625,
-    "highPrice" : 2805,
-    "openPrice" : 2805,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2685
-  }, {
     "volume" : 1827313,
     "marketCap" : 71584931100,
     "lowPrice" : 2550,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 1935
+  }, {
+    "volume" : 0,
+    "marketCap" : 53173451700,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 1935
   } ],
   "stockCode" : "002410"

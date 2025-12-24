@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인지소프트",
   "prices" : [ {
-    "volume" : 1705,
-    "marketCap" : 56250020820,
-    "lowPrice" : 16940,
-    "highPrice" : 17190,
-    "openPrice" : 17100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17130
-  }, {
     "volume" : 4180,
     "marketCap" : 55823138000,
     "lowPrice" : 16900,
@@ -1937,6 +1929,14 @@
     "openPrice" : 19530,
     "tradeDate" : "2025-12-22",
     "closePrice" : 19900
+  }, {
+    "volume" : 2789,
+    "marketCap" : 64426468680,
+    "lowPrice" : 19620,
+    "highPrice" : 20300,
+    "openPrice" : 20200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 19620
   } ],
   "stockCode" : "100030"
 }

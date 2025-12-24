@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "소프트센우",
   "prices" : [ {
-    "volume" : 844,
-    "marketCap" : 2624993700,
-    "lowPrice" : 7300,
-    "highPrice" : 7360,
-    "openPrice" : 7300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7350
-  }, {
     "volume" : 6238,
     "marketCap" : 2592850920,
     "lowPrice" : 7220,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6520,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6620
+  }, {
+    "volume" : 329,
+    "marketCap" : 2349994360,
+    "lowPrice" : 6510,
+    "highPrice" : 6610,
+    "openPrice" : 6510,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6580
   } ],
   "stockCode" : "032685"
 }

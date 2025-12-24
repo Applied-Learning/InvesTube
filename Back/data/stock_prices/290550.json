@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디케이티",
   "prices" : [ {
-    "volume" : 93509,
-    "marketCap" : 155609569400,
-    "lowPrice" : 7460,
-    "highPrice" : 7860,
-    "openPrice" : 7460,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7780
-  }, {
     "volume" : 69472,
     "marketCap" : 159009778500,
     "lowPrice" : 7780,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7120
+  }, {
+    "volume" : 67776,
+    "marketCap" : 139408573100,
+    "lowPrice" : 6940,
+    "highPrice" : 7140,
+    "openPrice" : 7140,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6970
   } ],
   "stockCode" : "290550"
 }

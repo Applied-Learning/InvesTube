@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이티센글로벌",
   "prices" : [ {
-    "volume" : 87167,
-    "marketCap" : 131569668090,
-    "lowPrice" : 5450,
-    "highPrice" : 5740,
-    "openPrice" : 5490,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5670
-  }, {
     "volume" : 44169,
     "marketCap" : 128553079580,
     "lowPrice" : 5540,
@@ -1937,6 +1929,14 @@
     "openPrice" : 24100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 28500
+  }, {
+    "volume" : 3322376,
+    "marketCap" : 720500563350,
+    "lowPrice" : 27800,
+    "highPrice" : 32400,
+    "openPrice" : 28700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 31050
   } ],
   "stockCode" : "124500"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "싸이버원",
   "prices" : [ {
-    "volume" : 6996,
-    "marketCap" : 34080689500,
-    "lowPrice" : 2845,
-    "highPrice" : 2940,
-    "openPrice" : 2845,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2860
-  }, {
     "volume" : 17343,
     "marketCap" : 34974413875,
     "lowPrice" : 2890,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4025,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4125
+  }, {
+    "volume" : 1148968,
+    "marketCap" : 48771606000,
+    "lowPrice" : 3970,
+    "highPrice" : 4445,
+    "openPrice" : 4105,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4080
   } ],
   "stockCode" : "356890"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오스테오닉",
   "prices" : [ {
-    "volume" : 891162,
-    "marketCap" : 128515158220,
-    "lowPrice" : 5870,
-    "highPrice" : 6300,
-    "openPrice" : 6110,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6220
-  }, {
     "volume" : 398838,
     "marketCap" : 128101926200,
     "lowPrice" : 6050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6030,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6060
+  }, {
+    "volume" : 151797,
+    "marketCap" : 121490213880,
+    "lowPrice" : 5820,
+    "highPrice" : 6070,
+    "openPrice" : 6070,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5880
   } ],
   "stockCode" : "226400"
 }

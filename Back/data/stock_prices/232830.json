@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이티센피엔에스",
   "prices" : [ {
-    "volume" : 7928180,
-    "marketCap" : 31258950240,
-    "lowPrice" : 2280,
-    "highPrice" : 2845,
-    "openPrice" : 2315,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2670
-  }, {
     "volume" : 6441363,
     "marketCap" : 30556501920,
     "lowPrice" : 2600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2420,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2475
+  }, {
+    "volume" : 72898,
+    "marketCap" : 43070356230,
+    "lowPrice" : 2500,
+    "highPrice" : 2700,
+    "openPrice" : 2600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2605
   } ],
   "stockCode" : "232830"
 }

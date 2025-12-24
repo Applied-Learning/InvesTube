@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대백화점",
   "prices" : [ {
-    "volume" : 61421,
-    "marketCap" : 1104286074400,
-    "lowPrice" : 47450,
-    "highPrice" : 49050,
-    "openPrice" : 48600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 48800
-  }, {
     "volume" : 65023,
     "marketCap" : 1111074718300,
     "lowPrice" : 48500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 92800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 91900
+  }, {
+    "volume" : 36884,
+    "marketCap" : 2045644695200,
+    "lowPrice" : 90000,
+    "highPrice" : 92800,
+    "openPrice" : 92000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 90400
   } ],
   "stockCode" : "069960"
 }

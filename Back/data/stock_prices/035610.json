@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "솔본",
   "prices" : [ {
-    "volume" : 35176,
-    "marketCap" : 104051518585,
-    "lowPrice" : 3795,
-    "highPrice" : 3860,
-    "openPrice" : 3825,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3805
-  }, {
     "volume" : 28406,
     "marketCap" : 104598438525,
     "lowPrice" : 3800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3640,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3620
+  }, {
+    "volume" : 73599,
+    "marketCap" : 96668099395,
+    "lowPrice" : 3530,
+    "highPrice" : 3630,
+    "openPrice" : 3630,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3535
   } ],
   "stockCode" : "035610"
 }

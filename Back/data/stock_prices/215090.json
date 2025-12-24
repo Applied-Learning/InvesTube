@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "솔디펜스",
   "prices" : [ {
-    "volume" : 0,
-    "marketCap" : 149972154360,
-    "lowPrice" : 0,
-    "highPrice" : 0,
-    "openPrice" : 0,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1505
-  }, {
     "volume" : 0,
     "marketCap" : 149972154360,
     "lowPrice" : 0,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2390,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2470
+  }, {
+    "volume" : 79784,
+    "marketCap" : 55110473180,
+    "lowPrice" : 2375,
+    "highPrice" : 2520,
+    "openPrice" : 2470,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2380
   } ],
   "stockCode" : "215090"
 }

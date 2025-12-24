@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제넥신",
   "prices" : [ {
-    "volume" : 96951,
-    "marketCap" : 250928121940,
-    "lowPrice" : 5320,
-    "highPrice" : 5550,
-    "openPrice" : 5320,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5510
-  }, {
     "volume" : 99322,
     "marketCap" : 244097047840,
     "lowPrice" : 5330,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4815,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4830
+  }, {
+    "volume" : 102008,
+    "marketCap" : 214951131680,
+    "lowPrice" : 4720,
+    "highPrice" : 4895,
+    "openPrice" : 4850,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4720
   } ],
   "stockCode" : "095700"
 }

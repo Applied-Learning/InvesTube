@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "NH투자증권우",
   "prices" : [ {
-    "volume" : 54463,
-    "marketCap" : 233622583840,
-    "lowPrice" : 12110,
-    "highPrice" : 12390,
-    "openPrice" : 12250,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12380
-  }, {
     "volume" : 60019,
     "marketCap" : 234754841920,
     "lowPrice" : 12370,
@@ -1937,6 +1929,14 @@
     "openPrice" : 19400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 19410
+  }, {
+    "volume" : 35731,
+    "marketCap" : 367983876000,
+    "lowPrice" : 19400,
+    "highPrice" : 19540,
+    "openPrice" : 19490,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 19500
   } ],
   "stockCode" : "005945"
 }

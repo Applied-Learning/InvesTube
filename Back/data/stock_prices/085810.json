@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "알티캐스트",
   "prices" : [ {
-    "volume" : 852946,
-    "marketCap" : 36241564194,
-    "lowPrice" : 1053,
-    "highPrice" : 1220,
-    "openPrice" : 1075,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1166
-  }, {
     "volume" : 2582447,
     "marketCap" : 35837498727,
     "lowPrice" : 1146,
@@ -1937,6 +1929,14 @@
     "openPrice" : 589,
     "tradeDate" : "2025-12-22",
     "closePrice" : 595
+  }, {
+    "volume" : 186665,
+    "marketCap" : 35267069360,
+    "lowPrice" : 571,
+    "highPrice" : 603,
+    "openPrice" : 600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 580
   } ],
   "stockCode" : "085810"
 }

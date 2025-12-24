@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "소프트센",
   "prices" : [ {
-    "volume" : 442683,
-    "marketCap" : 32416364548,
-    "lowPrice" : 302,
-    "highPrice" : 313,
-    "openPrice" : 304,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 307
-  }, {
     "volume" : 228187,
     "marketCap" : 32099592256,
     "lowPrice" : 296,
@@ -1937,6 +1929,14 @@
     "openPrice" : 313,
     "tradeDate" : "2025-12-22",
     "closePrice" : 312
+  }, {
+    "volume" : 429785,
+    "marketCap" : 33155499896,
+    "lowPrice" : 308,
+    "highPrice" : 315,
+    "openPrice" : 312,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 314
   } ],
   "stockCode" : "032680"
 }

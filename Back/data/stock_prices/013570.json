@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디와이",
   "prices" : [ {
-    "volume" : 29500,
-    "marketCap" : 106726111815,
-    "lowPrice" : 3985,
-    "highPrice" : 4060,
-    "openPrice" : 3985,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4055
-  }, {
     "volume" : 18435,
     "marketCap" : 105804924660,
     "lowPrice" : 4015,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4620,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4775
+  }, {
+    "volume" : 136345,
+    "marketCap" : 123044284275,
+    "lowPrice" : 4590,
+    "highPrice" : 4800,
+    "openPrice" : 4800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4675
   } ],
   "stockCode" : "013570"
 }

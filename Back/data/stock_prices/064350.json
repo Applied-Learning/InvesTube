@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대로템",
   "prices" : [ {
-    "volume" : 951407,
-    "marketCap" : 5451657535350,
-    "lowPrice" : 48500,
-    "highPrice" : 50100,
-    "openPrice" : 48500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 49950
-  }, {
     "volume" : 768216,
     "marketCap" : 5375257930250,
     "lowPrice" : 48350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 182500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 183000
+  }, {
+    "volume" : 412221,
+    "marketCap" : 20595150689100,
+    "lowPrice" : 182000,
+    "highPrice" : 188700,
+    "openPrice" : 183000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 188700
   } ],
   "stockCode" : "064350"
 }

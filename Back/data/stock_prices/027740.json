@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "마니커",
   "prices" : [ {
-    "volume" : 51872,
-    "marketCap" : 53412942748,
-    "lowPrice" : 835,
-    "highPrice" : 850,
-    "openPrice" : 841,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 841
-  }, {
     "volume" : 25135,
     "marketCap" : 53349431520,
     "lowPrice" : 838,
@@ -1936,6 +1928,14 @@
     "highPrice" : 791,
     "openPrice" : 789,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 783
+  }, {
+    "volume" : 65539,
+    "marketCap" : 49729291524,
+    "lowPrice" : 782,
+    "highPrice" : 787,
+    "openPrice" : 783,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 783
   } ],
   "stockCode" : "027740"

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "NICE",
   "prices" : [ {
-    "volume" : 14345,
-    "marketCap" : 440343322120,
-    "lowPrice" : 11590,
-    "highPrice" : 11860,
-    "openPrice" : 11770,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11860
-  }, {
     "volume" : 15116,
     "marketCap" : 432917633720,
     "lowPrice" : 11530,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13880,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13720
+  }, {
+    "volume" : 69249,
+    "marketCap" : 510924482300,
+    "lowPrice" : 13530,
+    "highPrice" : 13900,
+    "openPrice" : 13650,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13900
   } ],
   "stockCode" : "034310"
 }

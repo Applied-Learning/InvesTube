@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제룡산업",
   "prices" : [ {
-    "volume" : 250794,
-    "marketCap" : 115000000000,
-    "lowPrice" : 5600,
-    "highPrice" : 5870,
-    "openPrice" : 5600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5750
-  }, {
     "volume" : 520892,
     "marketCap" : 115400000000,
     "lowPrice" : 5700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6320,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6380
+  }, {
+    "volume" : 75439,
+    "marketCap" : 126000000000,
+    "lowPrice" : 6270,
+    "highPrice" : 6390,
+    "openPrice" : 6390,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6300
   } ],
   "stockCode" : "147830"
 }

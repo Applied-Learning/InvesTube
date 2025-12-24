@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "씨티알모빌리티",
   "prices" : [ {
-    "volume" : 5235,
-    "marketCap" : 51487800000,
-    "lowPrice" : 5880,
-    "highPrice" : 6090,
-    "openPrice" : 5960,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5980
-  }, {
     "volume" : 1551,
     "marketCap" : 51401700000,
     "lowPrice" : 5970,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4520,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4500
+  }, {
+    "volume" : 7362,
+    "marketCap" : 38874150000,
+    "lowPrice" : 4430,
+    "highPrice" : 4525,
+    "openPrice" : 4500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4515
   } ],
   "stockCode" : "308170"
 }

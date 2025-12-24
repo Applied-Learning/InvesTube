@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이씨에스",
   "prices" : [ {
-    "volume" : 1389883,
-    "marketCap" : 119280000000,
-    "lowPrice" : 9870,
-    "highPrice" : 10660,
-    "openPrice" : 10200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9940
-  }, {
     "volume" : 809722,
     "marketCap" : 116640000000,
     "lowPrice" : 9640,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9950,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10000
+  }, {
+    "volume" : 157468,
+    "marketCap" : 119760000000,
+    "lowPrice" : 9930,
+    "highPrice" : 10560,
+    "openPrice" : 10520,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9980
   } ],
   "stockCode" : "115500"
 }

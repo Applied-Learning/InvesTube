@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "퀄리타스반도체",
   "prices" : [ {
-    "volume" : 332610,
-    "marketCap" : 133388011360,
-    "lowPrice" : 9220,
-    "highPrice" : 9980,
-    "openPrice" : 9450,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9580
-  }, {
     "volume" : 576429,
     "marketCap" : 134834578560,
     "lowPrice" : 9520,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13510,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13520
+  }, {
+    "volume" : 147384,
+    "marketCap" : 191637812600,
+    "lowPrice" : 13400,
+    "highPrice" : 14500,
+    "openPrice" : 13590,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13550
   } ],
   "stockCode" : "432720"
 }

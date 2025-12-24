@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "LX세미콘",
   "prices" : [ {
-    "volume" : 33255,
-    "marketCap" : 961220130000,
-    "lowPrice" : 57300,
-    "highPrice" : 59500,
-    "openPrice" : 58000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 59100
-  }, {
     "volume" : 41849,
     "marketCap" : 961220130000,
     "lowPrice" : 58500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 50800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 50800
+  }, {
+    "volume" : 33227,
+    "marketCap" : 822973580000,
+    "lowPrice" : 50200,
+    "highPrice" : 50900,
+    "openPrice" : 50700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 50600
   } ],
   "stockCode" : "108320"
 }

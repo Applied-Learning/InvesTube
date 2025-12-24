@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유안타제12호스팩",
   "prices" : [ {
-    "volume" : 4115,
-    "marketCap" : 9683100000,
-    "lowPrice" : 2020,
-    "highPrice" : 2030,
-    "openPrice" : 2025,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2030
-  }, {
     "volume" : 76403,
     "marketCap" : 9611550000,
     "lowPrice" : 2015,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2115,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2115
+  }, {
+    "volume" : 190862,
+    "marketCap" : 10112400000,
+    "lowPrice" : 2115,
+    "highPrice" : 2125,
+    "openPrice" : 2115,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2120
   } ],
   "stockCode" : "446150"
 }

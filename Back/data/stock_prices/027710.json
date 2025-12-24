@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "팜스토리",
   "prices" : [ {
-    "volume" : 168210,
-    "marketCap" : 131360171400,
-    "lowPrice" : 1170,
-    "highPrice" : 1192,
-    "openPrice" : 1187,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1179
-  }, {
     "volume" : 100206,
     "marketCap" : 131471588000,
     "lowPrice" : 1172,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1172,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1171
+  }, {
+    "volume" : 199712,
+    "marketCap" : 130134588800,
+    "lowPrice" : 1165,
+    "highPrice" : 1182,
+    "openPrice" : 1165,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1168
   } ],
   "stockCode" : "027710"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "테고사이언스",
   "prices" : [ {
-    "volume" : 30696,
-    "marketCap" : 117253739640,
-    "lowPrice" : 13960,
-    "highPrice" : 14700,
-    "openPrice" : 14700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14460
-  }, {
     "volume" : 48880,
     "marketCap" : 106955520460,
     "lowPrice" : 13140,
@@ -1937,6 +1929,14 @@
     "openPrice" : 16130,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15980
+  }, {
+    "volume" : 7722,
+    "marketCap" : 126741075420,
+    "lowPrice" : 15630,
+    "highPrice" : 16070,
+    "openPrice" : 15830,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15630
   } ],
   "stockCode" : "191420"
 }

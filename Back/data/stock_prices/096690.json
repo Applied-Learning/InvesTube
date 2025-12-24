@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이루트",
   "prices" : [ {
-    "volume" : 127480,
-    "marketCap" : 56844266922,
-    "lowPrice" : 1633,
-    "highPrice" : 1730,
-    "openPrice" : 1730,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1698
-  }, {
     "volume" : 54477,
     "marketCap" : 56241677520,
     "lowPrice" : 1641,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1909,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1920
+  }, {
+    "volume" : 56475,
+    "marketCap" : 47187938615,
+    "lowPrice" : 1884,
+    "highPrice" : 1955,
+    "openPrice" : 1940,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1955
   } ],
   "stockCode" : "096690"
 }

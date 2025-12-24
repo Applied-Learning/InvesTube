@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "레드캡투어",
   "prices" : [ {
-    "volume" : 12522,
-    "marketCap" : 147310441820,
-    "lowPrice" : 8700,
-    "highPrice" : 8880,
-    "openPrice" : 8700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8810
-  }, {
     "volume" : 11440,
     "marketCap" : 147979274700,
     "lowPrice" : 8760,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12020,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12080
+  }, {
+    "volume" : 58584,
+    "marketCap" : 201653113320,
+    "lowPrice" : 12000,
+    "highPrice" : 12160,
+    "openPrice" : 12100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12060
   } ],
   "stockCode" : "038390"
 }

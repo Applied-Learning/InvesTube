@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "지투파워",
   "prices" : [ {
-    "volume" : 1810739,
-    "marketCap" : 127224171600,
-    "lowPrice" : 6150,
-    "highPrice" : 6890,
-    "openPrice" : 6250,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6800
-  }, {
     "volume" : 650715,
     "marketCap" : 121611340500,
     "lowPrice" : 6460,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8350,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8320
+  }, {
+    "volume" : 88437,
+    "marketCap" : 151546439700,
+    "lowPrice" : 8070,
+    "highPrice" : 8310,
+    "openPrice" : 8240,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8100
   } ],
   "stockCode" : "388050"
 }

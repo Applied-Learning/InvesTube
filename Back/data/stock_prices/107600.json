@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "새빗켐",
   "prices" : [ {
-    "volume" : 5426,
-    "marketCap" : 80999921700,
-    "lowPrice" : 16130,
-    "highPrice" : 16490,
-    "openPrice" : 16410,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16260
-  }, {
     "volume" : 7451,
     "marketCap" : 80601398100,
     "lowPrice" : 16100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 31600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 31300
+  }, {
+    "volume" : 42063,
+    "marketCap" : 171153641600,
+    "lowPrice" : 29800,
+    "highPrice" : 31400,
+    "openPrice" : 31400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 30400
   } ],
   "stockCode" : "107600"
 }

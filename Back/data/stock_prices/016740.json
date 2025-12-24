@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "두올",
   "prices" : [ {
-    "volume" : 62777,
-    "marketCap" : 105967370840,
-    "lowPrice" : 3340,
-    "highPrice" : 3415,
-    "openPrice" : 3345,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3385
-  }, {
     "volume" : 69576,
     "marketCap" : 106280420680,
     "lowPrice" : 3350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3785,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3830
+  }, {
+    "volume" : 53964,
+    "marketCap" : 108101070480,
+    "lowPrice" : 3765,
+    "highPrice" : 3855,
+    "openPrice" : 3820,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3770
   } ],
   "stockCode" : "016740"
 }

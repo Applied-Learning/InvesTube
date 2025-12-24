@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "넥센타이어1우B",
   "prices" : [ {
-    "volume" : 1778,
-    "marketCap" : 19337500000,
-    "lowPrice" : 2925,
-    "highPrice" : 2980,
-    "openPrice" : 2955,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2975
-  }, {
     "volume" : 208,
     "marketCap" : 19565000000,
     "lowPrice" : 2915,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3760,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3765
+  }, {
+    "volume" : 5576,
+    "marketCap" : 24375000000,
+    "lowPrice" : 3750,
+    "highPrice" : 3815,
+    "openPrice" : 3815,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3750
   } ],
   "stockCode" : "002355"
 }

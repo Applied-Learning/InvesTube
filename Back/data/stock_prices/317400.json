@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "자이에스앤디",
   "prices" : [ {
-    "volume" : 28095,
-    "marketCap" : 131472742800,
-    "lowPrice" : 3275,
-    "highPrice" : 3390,
-    "openPrice" : 3285,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3390
-  }, {
     "volume" : 9176,
     "marketCap" : 130309267200,
     "lowPrice" : 3360,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4575,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4665
+  }, {
+    "volume" : 63674,
+    "marketCap" : 178205679400,
+    "lowPrice" : 4585,
+    "highPrice" : 4715,
+    "openPrice" : 4700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4595
   } ],
   "stockCode" : "317400"
 }

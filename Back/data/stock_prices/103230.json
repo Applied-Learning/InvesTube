@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스앤더블류",
   "prices" : [ {
-    "volume" : 15857,
-    "marketCap" : 23688000000,
-    "lowPrice" : 3075,
-    "highPrice" : 3310,
-    "openPrice" : 3135,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3290
-  }, {
     "volume" : 3595,
     "marketCap" : 23544000000,
     "lowPrice" : 3235,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4210,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4235
+  }, {
+    "volume" : 24942,
+    "marketCap" : 30744000000,
+    "lowPrice" : 4210,
+    "highPrice" : 4300,
+    "openPrice" : 4250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4270
   } ],
   "stockCode" : "103230"
 }

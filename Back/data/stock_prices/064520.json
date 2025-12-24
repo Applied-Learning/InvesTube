@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "테크엘",
   "prices" : [ {
-    "volume" : 12351,
-    "marketCap" : 41796485940,
-    "lowPrice" : 1755,
-    "highPrice" : 1886,
-    "openPrice" : 1886,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1870
-  }, {
     "volume" : 3000,
     "marketCap" : 41684730630,
     "lowPrice" : 1845,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1662,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1684
+  }, {
+    "volume" : 24812,
+    "marketCap" : 37326273540,
+    "lowPrice" : 1670,
+    "highPrice" : 1689,
+    "openPrice" : 1670,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1670
   } ],
   "stockCode" : "064520"
 }

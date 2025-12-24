@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KG에코솔루션",
   "prices" : [ {
-    "volume" : 45682,
-    "marketCap" : 243305374910,
-    "lowPrice" : 4900,
-    "highPrice" : 5020,
-    "openPrice" : 4900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4955
-  }, {
     "volume" : 80653,
     "marketCap" : 245269494990,
     "lowPrice" : 4955,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6130,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6130
+  }, {
+    "volume" : 97617,
+    "marketCap" : 284665951960,
+    "lowPrice" : 5980,
+    "highPrice" : 6200,
+    "openPrice" : 6120,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5980
   } ],
   "stockCode" : "151860"
 }

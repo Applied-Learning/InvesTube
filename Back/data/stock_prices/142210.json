@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유니트론텍",
   "prices" : [ {
-    "volume" : 78327,
-    "marketCap" : 92766163440,
-    "lowPrice" : 4680,
-    "highPrice" : 4855,
-    "openPrice" : 4690,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4820
-  }, {
     "volume" : 64639,
     "marketCap" : 93054854820,
     "lowPrice" : 4815,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6190,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6260
+  }, {
+    "volume" : 279054,
+    "marketCap" : 126900828840,
+    "lowPrice" : 5940,
+    "highPrice" : 6350,
+    "openPrice" : 6260,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6040
   } ],
   "stockCode" : "142210"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "메디포스트",
   "prices" : [ {
-    "volume" : 315466,
-    "marketCap" : 421220933350,
-    "lowPrice" : 11690,
-    "highPrice" : 12660,
-    "openPrice" : 12300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12310
-  }, {
     "volume" : 323838,
     "marketCap" : 398979373100,
     "lowPrice" : 11650,
@@ -1937,6 +1929,14 @@
     "openPrice" : 18750,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16910
+  }, {
+    "volume" : 203741,
+    "marketCap" : 676671447780,
+    "lowPrice" : 17170,
+    "highPrice" : 17760,
+    "openPrice" : 17340,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 17260
   } ],
   "stockCode" : "078160"
 }

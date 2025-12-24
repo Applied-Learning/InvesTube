@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "위즈코프",
   "prices" : [ {
-    "volume" : 720833,
-    "marketCap" : 54359457125,
-    "lowPrice" : 723,
-    "highPrice" : 812,
-    "openPrice" : 747,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 775
-  }, {
     "volume" : 497538,
     "marketCap" : 53307338600,
     "lowPrice" : 740,
@@ -1937,6 +1929,14 @@
     "openPrice" : 605,
     "tradeDate" : "2025-12-22",
     "closePrice" : 610
+  }, {
+    "volume" : 211295,
+    "marketCap" : 45589137930,
+    "lowPrice" : 596,
+    "highPrice" : 613,
+    "openPrice" : 608,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 602
   } ],
   "stockCode" : "038620"
 }

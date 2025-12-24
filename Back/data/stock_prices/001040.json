@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "CJ",
   "prices" : [ {
-    "volume" : 121446,
-    "marketCap" : 3148198084200,
-    "lowPrice" : 103700,
-    "highPrice" : 109000,
-    "openPrice" : 106000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 107900
-  }, {
     "volume" : 163511,
     "marketCap" : 2981889195600,
     "lowPrice" : 101600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 174900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 173100
+  }, {
+    "volume" : 83317,
+    "marketCap" : 5015525956200,
+    "lowPrice" : 170800,
+    "highPrice" : 173900,
+    "openPrice" : 173000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 171900
   } ],
   "stockCode" : "001040"
 }

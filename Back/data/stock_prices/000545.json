@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "흥국화재우",
   "prices" : [ {
-    "volume" : 12209,
-    "marketCap" : 3878400000,
-    "lowPrice" : 4880,
-    "highPrice" : 5100,
-    "openPrice" : 5040,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5050
-  }, {
     "volume" : 210578,
     "marketCap" : 4608000000,
     "lowPrice" : 5400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7860,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7720
+  }, {
+    "volume" : 4249,
+    "marketCap" : 5905920000,
+    "lowPrice" : 7650,
+    "highPrice" : 7700,
+    "openPrice" : 7700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7690
   } ],
   "stockCode" : "000545"
 }

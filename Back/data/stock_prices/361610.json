@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SK아이이테크놀로지",
   "prices" : [ {
-    "volume" : 179827,
-    "marketCap" : 1746791004000,
-    "lowPrice" : 22850,
-    "highPrice" : 24500,
-    "openPrice" : 22850,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 24500
-  }, {
     "volume" : 98426,
     "marketCap" : 1693317810000,
     "lowPrice" : 23700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 27650,
     "tradeDate" : "2025-12-22",
     "closePrice" : 27550
+  }, {
+    "volume" : 85236,
+    "marketCap" : 2240966540000,
+    "lowPrice" : 27000,
+    "highPrice" : 27650,
+    "openPrice" : 27600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 27400
   } ],
   "stockCode" : "361610"
 }

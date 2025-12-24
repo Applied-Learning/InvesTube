@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "무림P&P",
   "prices" : [ {
-    "volume" : 48796,
-    "marketCap" : 160286592680,
-    "lowPrice" : 2495,
-    "highPrice" : 2595,
-    "openPrice" : 2495,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2570
-  }, {
     "volume" : 29201,
     "marketCap" : 158415542960,
     "lowPrice" : 2530,
@@ -1936,6 +1928,14 @@
     "highPrice" : 2605,
     "openPrice" : 2595,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 2570
+  }, {
+    "volume" : 27733,
+    "marketCap" : 160286592680,
+    "lowPrice" : 2555,
+    "highPrice" : 2585,
+    "openPrice" : 2585,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 2570
   } ],
   "stockCode" : "009580"

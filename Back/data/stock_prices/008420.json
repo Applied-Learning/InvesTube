@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "문배철강",
   "prices" : [ {
-    "volume" : 11912,
-    "marketCap" : 47978201700,
-    "lowPrice" : 2310,
-    "highPrice" : 2340,
-    "openPrice" : 2310,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2340
-  }, {
     "volume" : 19236,
     "marketCap" : 46953026450,
     "lowPrice" : 2290,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2110,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2105
+  }, {
+    "volume" : 29520,
+    "marketCap" : 42852325450,
+    "lowPrice" : 2085,
+    "highPrice" : 2115,
+    "openPrice" : 2105,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2090
   } ],
   "stockCode" : "008420"
 }

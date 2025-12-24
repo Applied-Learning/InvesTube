@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스엘",
   "prices" : [ {
-    "volume" : 53521,
-    "marketCap" : 1463128380000,
-    "lowPrice" : 30650,
-    "highPrice" : 31550,
-    "openPrice" : 31050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 31500
-  }, {
     "volume" : 40620,
     "marketCap" : 1453838676000,
     "lowPrice" : 30850,
@@ -1937,6 +1929,14 @@
     "openPrice" : 44400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 43600
+  }, {
+    "volume" : 141278,
+    "marketCap" : 1974062100000,
+    "lowPrice" : 42200,
+    "highPrice" : 44150,
+    "openPrice" : 43850,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 42500
   } ],
   "stockCode" : "005850"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오뚜기",
   "prices" : [ {
-    "volume" : 1763,
-    "marketCap" : 1645214215000,
-    "lowPrice" : 403000,
-    "highPrice" : 413000,
-    "openPrice" : 413000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 410500
-  }, {
     "volume" : 2655,
     "marketCap" : 1629182895000,
     "lowPrice" : 406000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 389000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 389500
+  }, {
+    "volume" : 4449,
+    "marketCap" : 1555038040000,
+    "lowPrice" : 387000,
+    "highPrice" : 390500,
+    "openPrice" : 389000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 388000
   } ],
   "stockCode" : "007310"
 }

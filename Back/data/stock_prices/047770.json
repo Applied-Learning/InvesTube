@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코데즈컴바인",
   "prices" : [ {
-    "volume" : 657560,
-    "marketCap" : 59299357334,
-    "lowPrice" : 1550,
-    "highPrice" : 1607,
-    "openPrice" : 1600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1567
-  }, {
     "volume" : 392268,
     "marketCap" : 57520755040,
     "lowPrice" : 1517,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2870,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2855
+  }, {
+    "volume" : 531191,
+    "marketCap" : 103688729480,
+    "lowPrice" : 2730,
+    "highPrice" : 2855,
+    "openPrice" : 2855,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2740
   } ],
   "stockCode" : "047770"
 }

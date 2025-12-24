@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "퀀텀온",
   "prices" : [ {
-    "volume" : 824473,
-    "marketCap" : 15494144844,
-    "lowPrice" : 632,
-    "highPrice" : 697,
-    "openPrice" : 695,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 642
-  }, {
     "volume" : 484149,
     "marketCap" : 15083863750,
     "lowPrice" : 624,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 612
+  }, {
+    "volume" : 0,
+    "marketCap" : 14770119384,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 612
   } ],
   "stockCode" : "227100"

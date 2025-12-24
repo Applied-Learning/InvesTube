@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "나이스디앤비",
   "prices" : [ {
-    "volume" : 2047,
-    "marketCap" : 74690000000,
-    "lowPrice" : 4830,
-    "highPrice" : 4860,
-    "openPrice" : 4860,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4850
-  }, {
     "volume" : 2077,
     "marketCap" : 75152000000,
     "lowPrice" : 4835,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6220
+  }, {
+    "volume" : 19465,
+    "marketCap" : 97174000000,
+    "lowPrice" : 6160,
+    "highPrice" : 6340,
+    "openPrice" : 6220,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6310
   } ],
   "stockCode" : "130580"
 }

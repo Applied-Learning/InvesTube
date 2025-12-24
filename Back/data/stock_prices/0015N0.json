@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아로마티카",
   "prices" : [ {
     "volume" : 17005446,
@@ -145,6 +145,14 @@
     "openPrice" : 11240,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11780
+  }, {
+    "volume" : 306811,
+    "marketCap" : 140501302500,
+    "lowPrice" : 10910,
+    "highPrice" : 11840,
+    "openPrice" : 11810,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11050
   } ],
   "stockCode" : "0015N0"
 }

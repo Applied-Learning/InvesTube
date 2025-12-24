@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "새로닉스",
   "prices" : [ {
-    "volume" : 12166,
-    "marketCap" : 124235740000,
-    "lowPrice" : 9870,
-    "highPrice" : 10270,
-    "openPrice" : 10100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10000
-  }, {
     "volume" : 7183,
     "marketCap" : 123863032780,
     "lowPrice" : 9880,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12950,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12720
+  }, {
+    "volume" : 23547,
+    "marketCap" : 154673496300,
+    "lowPrice" : 12280,
+    "highPrice" : 12710,
+    "openPrice" : 12620,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12450
   } ],
   "stockCode" : "042600"
 }

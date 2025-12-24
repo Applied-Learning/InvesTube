@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "메디톡스",
   "prices" : [ {
-    "volume" : 28352,
-    "marketCap" : 920340471700,
-    "lowPrice" : 124000,
-    "highPrice" : 127500,
-    "openPrice" : 126000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 126100
-  }, {
     "volume" : 15322,
     "marketCap" : 916691223200,
     "lowPrice" : 124500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 121900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 123200
+  }, {
+    "volume" : 25076,
+    "marketCap" : 886767385500,
+    "lowPrice" : 121500,
+    "highPrice" : 123800,
+    "openPrice" : 122400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 121500
   } ],
   "stockCode" : "086900"
 }

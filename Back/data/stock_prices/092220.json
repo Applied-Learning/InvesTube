@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KEC",
   "prices" : [ {
-    "volume" : 584748,
-    "marketCap" : 163220433633,
-    "lowPrice" : 793,
-    "highPrice" : 828,
-    "openPrice" : 793,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 813
-  }, {
     "volume" : 388585,
     "marketCap" : 161212802223,
     "lowPrice" : 803,
@@ -1937,6 +1929,14 @@
     "openPrice" : 680,
     "tradeDate" : "2025-12-22",
     "closePrice" : 700
+  }, {
+    "volume" : 430093,
+    "marketCap" : 140132672418,
+    "lowPrice" : 692,
+    "highPrice" : 703,
+    "openPrice" : 701,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 698
   } ],
   "stockCode" : "092220"
 }

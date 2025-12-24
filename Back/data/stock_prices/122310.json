@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제노레이",
   "prices" : [ {
-    "volume" : 29988,
-    "marketCap" : 80628295760,
-    "lowPrice" : 5480,
-    "highPrice" : 5600,
-    "openPrice" : 5480,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5540
-  }, {
     "volume" : 6202,
     "marketCap" : 80628295760,
     "lowPrice" : 5510,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4380,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4325
+  }, {
+    "volume" : 43400,
+    "marketCap" : 61198914020,
+    "lowPrice" : 4200,
+    "highPrice" : 4325,
+    "openPrice" : 4325,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4205
   } ],
   "stockCode" : "122310"
 }

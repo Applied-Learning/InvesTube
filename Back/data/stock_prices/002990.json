@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "금호건설",
   "prices" : [ {
-    "volume" : 25907,
-    "marketCap" : 100883314350,
-    "lowPrice" : 2695,
-    "highPrice" : 2745,
-    "openPrice" : 2715,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2730
-  }, {
     "volume" : 28225,
     "marketCap" : 100144242450,
     "lowPrice" : 2695,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4545,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4365
+  }, {
+    "volume" : 100469,
+    "marketCap" : 159086068000,
+    "lowPrice" : 4225,
+    "highPrice" : 4360,
+    "openPrice" : 4320,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4300
   } ],
   "stockCode" : "002990"
 }

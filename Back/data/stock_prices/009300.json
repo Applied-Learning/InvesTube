@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼아제약",
   "prices" : [ {
-    "volume" : 11063,
-    "marketCap" : 109755100000,
-    "lowPrice" : 17000,
-    "highPrice" : 17400,
-    "openPrice" : 17100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17230
-  }, {
     "volume" : 13875,
     "marketCap" : 110646900000,
     "lowPrice" : 17100,
@@ -1936,6 +1928,14 @@
     "highPrice" : 16430,
     "openPrice" : 16370,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 16390
+  }, {
+    "volume" : 8720,
+    "marketCap" : 104404300000,
+    "lowPrice" : 16270,
+    "highPrice" : 16470,
+    "openPrice" : 16400,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 16390
   } ],
   "stockCode" : "009300"

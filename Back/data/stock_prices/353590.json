@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오토앤",
   "prices" : [ {
-    "volume" : 59149,
-    "marketCap" : 54463661100,
-    "lowPrice" : 4090,
-    "highPrice" : 4290,
-    "openPrice" : 4140,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4230
-  }, {
     "volume" : 10720,
     "marketCap" : 54141771850,
     "lowPrice" : 4075,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3320,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3400
+  }, {
+    "volume" : 51481,
+    "marketCap" : 42103113900,
+    "lowPrice" : 3225,
+    "highPrice" : 3395,
+    "openPrice" : 3390,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3270
   } ],
   "stockCode" : "353590"
 }

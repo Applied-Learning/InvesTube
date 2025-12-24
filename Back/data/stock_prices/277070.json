@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "린드먼아시아",
   "prices" : [ {
-    "volume" : 534042,
-    "marketCap" : 57917160000,
-    "lowPrice" : 4000,
-    "highPrice" : 4585,
-    "openPrice" : 4020,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4230
-  }, {
     "volume" : 33334,
     "marketCap" : 56958720000,
     "lowPrice" : 4060,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5010,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5120
+  }, {
+    "volume" : 25165,
+    "marketCap" : 67638480000,
+    "lowPrice" : 4885,
+    "highPrice" : 5200,
+    "openPrice" : 5130,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4940
   } ],
   "stockCode" : "277070"
 }

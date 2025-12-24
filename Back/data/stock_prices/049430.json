@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코메론",
   "prices" : [ {
-    "volume" : 269728,
-    "marketCap" : 95004000000,
-    "lowPrice" : 10280,
-    "highPrice" : 10730,
-    "openPrice" : 10610,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10500
-  }, {
     "volume" : 99401,
     "marketCap" : 95456400000,
     "lowPrice" : 10370,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14730,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14610
+  }, {
+    "volume" : 27485,
+    "marketCap" : 132372240000,
+    "lowPrice" : 14350,
+    "highPrice" : 14830,
+    "openPrice" : 14620,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14630
   } ],
   "stockCode" : "049430"
 }

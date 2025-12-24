@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동국제강",
   "prices" : [ {
-    "volume" : 57497,
-    "marketCap" : 414226941950,
-    "lowPrice" : 8210,
-    "highPrice" : 8390,
-    "openPrice" : 8260,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8350
-  }, {
     "volume" : 99084,
     "marketCap" : 419187743650,
     "lowPrice" : 8350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8630,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8620
+  }, {
+    "volume" : 99296,
+    "marketCap" : 429109347050,
+    "lowPrice" : 8620,
+    "highPrice" : 8730,
+    "openPrice" : 8730,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8650
   } ],
   "stockCode" : "460860"
 }

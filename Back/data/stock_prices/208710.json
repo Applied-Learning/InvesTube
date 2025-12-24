@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "포톤",
   "prices" : [ {
-    "volume" : 12328552,
-    "marketCap" : 31434616728,
-    "lowPrice" : 421,
-    "highPrice" : 546,
-    "openPrice" : 421,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 477
-  }, {
     "volume" : 2954841,
     "marketCap" : 30182504112,
     "lowPrice" : 441,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2230,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2185
+  }, {
+    "volume" : 34834,
+    "marketCap" : 28930389740,
+    "lowPrice" : 2155,
+    "highPrice" : 2240,
+    "openPrice" : 2185,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2195
   } ],
   "stockCode" : "208710"
 }

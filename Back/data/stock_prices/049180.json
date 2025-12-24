@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "셀루메드",
   "prices" : [ {
-    "volume" : 272351,
-    "marketCap" : 105865186830,
-    "lowPrice" : 2040,
-    "highPrice" : 2095,
-    "openPrice" : 2070,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2055
-  }, {
     "volume" : 226611,
     "marketCap" : 104834868710,
     "lowPrice" : 2025,
@@ -1937,6 +1929,14 @@
     "openPrice" : 686,
     "tradeDate" : "2025-12-22",
     "closePrice" : 864
+  }, {
+    "volume" : 1256084,
+    "marketCap" : 61716781749,
+    "lowPrice" : 1123,
+    "highPrice" : 1123,
+    "openPrice" : 1123,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1123
   } ],
   "stockCode" : "049180"
 }

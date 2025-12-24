@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "상신이디피",
   "prices" : [ {
-    "volume" : 34621,
-    "marketCap" : 104605826010,
-    "lowPrice" : 7450,
-    "highPrice" : 7880,
-    "openPrice" : 7610,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7790
-  }, {
     "volume" : 43983,
     "marketCap" : 104471543820,
     "lowPrice" : 7720,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13990,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13960
+  }, {
+    "volume" : 78821,
+    "marketCap" : 181130496210,
+    "lowPrice" : 13380,
+    "highPrice" : 13980,
+    "openPrice" : 13980,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13590
   } ],
   "stockCode" : "091580"
 }

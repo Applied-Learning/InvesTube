@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대주산업",
   "prices" : [ {
-    "volume" : 73346,
-    "marketCap" : 51602046300,
-    "lowPrice" : 1439,
-    "highPrice" : 1479,
-    "openPrice" : 1439,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1458
-  }, {
     "volume" : 40423,
     "marketCap" : 51389692200,
     "lowPrice" : 1442,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2380,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2450
+  }, {
+    "volume" : 64748195,
+    "marketCap" : 93966689250,
+    "lowPrice" : 2335,
+    "highPrice" : 3020,
+    "openPrice" : 2450,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2655
   } ],
   "stockCode" : "003310"
 }

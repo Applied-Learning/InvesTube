@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KR모터스",
   "prices" : [ {
-    "volume" : 206509,
-    "marketCap" : 29465105320,
-    "lowPrice" : 480,
-    "highPrice" : 505,
-    "openPrice" : 480,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 490
-  }, {
     "volume" : 386800,
     "marketCap" : 28202315092,
     "lowPrice" : 459,
@@ -1937,6 +1929,14 @@
     "openPrice" : 489,
     "tradeDate" : "2025-12-22",
     "closePrice" : 477
+  }, {
+    "volume" : 78421,
+    "marketCap" : 41114587584,
+    "lowPrice" : 473,
+    "highPrice" : 494,
+    "openPrice" : 477,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 476
   } ],
   "stockCode" : "000040"
 }

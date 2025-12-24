@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유진스팩12호",
   "prices" : [ {
     "volume" : 69568623,
@@ -64,6 +64,14 @@
     "highPrice" : 1989,
     "openPrice" : 1985,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 1985
+  }, {
+    "volume" : 113369,
+    "marketCap" : 11235100000,
+    "lowPrice" : 1981,
+    "highPrice" : 1985,
+    "openPrice" : 1985,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 1985
   } ],
   "stockCode" : "0105P0"

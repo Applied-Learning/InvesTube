@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "컬러레이",
   "prices" : [ {
-    "volume" : 85082,
-    "marketCap" : 37016088150,
-    "lowPrice" : 545,
-    "highPrice" : 580,
-    "openPrice" : 574,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 578
-  }, {
     "volume" : 37336,
     "marketCap" : 37464379875,
     "lowPrice" : 570,
@@ -1936,6 +1928,14 @@
     "highPrice" : 583,
     "openPrice" : 576,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 577
+  }, {
+    "volume" : 48102,
+    "marketCap" : 36952046475,
+    "lowPrice" : 573,
+    "highPrice" : 585,
+    "openPrice" : 583,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 577
   } ],
   "stockCode" : "900310"

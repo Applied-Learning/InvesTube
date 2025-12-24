@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "쎄니트",
   "prices" : [ {
-    "volume" : 48376,
-    "marketCap" : 47839750294,
-    "lowPrice" : 1379,
-    "highPrice" : 1483,
-    "openPrice" : 1471,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1414
-  }, {
     "volume" : 8724,
     "marketCap" : 48448742872,
     "lowPrice" : 1414,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1806,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1823
+  }, {
+    "volume" : 71336,
+    "marketCap" : 60899257800,
+    "lowPrice" : 1782,
+    "highPrice" : 1839,
+    "openPrice" : 1822,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1800
   } ],
   "stockCode" : "037760"
 }

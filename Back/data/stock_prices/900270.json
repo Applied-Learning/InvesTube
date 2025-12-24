@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "헝셩그룹",
   "prices" : [ {
-    "volume" : 1306119,
-    "marketCap" : 43095901088,
-    "lowPrice" : 280,
-    "highPrice" : 288,
-    "openPrice" : 282,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 283
-  }, {
     "volume" : 1187411,
     "marketCap" : 43095901088,
     "lowPrice" : 280,
@@ -1937,6 +1929,14 @@
     "openPrice" : 190,
     "tradeDate" : "2025-12-22",
     "closePrice" : 191
+  }, {
+    "volume" : 3016106,
+    "marketCap" : 36105031680,
+    "lowPrice" : 187,
+    "highPrice" : 194,
+    "openPrice" : 192,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 192
   } ],
   "stockCode" : "900270"
 }

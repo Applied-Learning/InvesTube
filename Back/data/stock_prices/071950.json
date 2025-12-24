@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코아스",
   "prices" : [ {
-    "volume" : 7450,
-    "marketCap" : 26490296000,
-    "lowPrice" : 8050,
-    "highPrice" : 8370,
-    "openPrice" : 8240,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8050
-  }, {
     "volume" : 9089,
     "marketCap" : 26194131200,
     "lowPrice" : 7880,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3700
+  }, {
+    "volume" : 129123,
+    "marketCap" : 44614129920,
+    "lowPrice" : 3750,
+    "highPrice" : 4050,
+    "openPrice" : 3750,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3890
   } ],
   "stockCode" : "071950"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "파트론",
   "prices" : [ {
-    "volume" : 161226,
-    "marketCap" : 441297422860,
-    "lowPrice" : 7450,
-    "highPrice" : 7530,
-    "openPrice" : 7510,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7490
-  }, {
     "volume" : 139004,
     "marketCap" : 438940694300,
     "lowPrice" : 7430,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7230,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7270
+  }, {
+    "volume" : 127997,
+    "marketCap" : 412680000000,
+    "lowPrice" : 7180,
+    "highPrice" : 7280,
+    "openPrice" : 7270,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7240
   } ],
   "stockCode" : "091700"
 }

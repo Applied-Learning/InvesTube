@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "플레이디",
   "prices" : [ {
-    "volume" : 111116,
-    "marketCap" : 75808397400,
-    "lowPrice" : 5900,
-    "highPrice" : 6110,
-    "openPrice" : 5900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5910
-  }, {
     "volume" : 85143,
     "marketCap" : 74397412000,
     "lowPrice" : 5610,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4540,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4585
+  }, {
+    "volume" : 18819,
+    "marketCap" : 58748301200,
+    "lowPrice" : 4555,
+    "highPrice" : 4620,
+    "openPrice" : 4585,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4580
   } ],
   "stockCode" : "237820"
 }

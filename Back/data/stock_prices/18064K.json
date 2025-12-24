@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한진칼우",
   "prices" : [ {
-    "volume" : 162,
-    "marketCap" : 12506647800,
-    "lowPrice" : 23250,
-    "highPrice" : 23800,
-    "openPrice" : 23800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 23300
-  }, {
     "volume" : 345,
     "marketCap" : 12506647800,
     "lowPrice" : 23300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 35600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 36150
+  }, {
+    "volume" : 11939,
+    "marketCap" : 19860342000,
+    "lowPrice" : 35800,
+    "highPrice" : 37900,
+    "openPrice" : 36050,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 37000
   } ],
   "stockCode" : "18064K"
 }

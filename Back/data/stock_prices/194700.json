@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "노바렉스",
   "prices" : [ {
-    "volume" : 94861,
-    "marketCap" : 140473811520,
-    "lowPrice" : 7300,
-    "highPrice" : 7520,
-    "openPrice" : 7390,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7490
-  }, {
     "volume" : 57239,
     "marketCap" : 141224005440,
     "lowPrice" : 7420,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14660,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14730
+  }, {
+    "volume" : 49232,
+    "marketCap" : 271382650560,
+    "lowPrice" : 14420,
+    "highPrice" : 14850,
+    "openPrice" : 14730,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14470
   } ],
   "stockCode" : "194700"
 }

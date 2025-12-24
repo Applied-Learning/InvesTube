@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동운아나텍",
   "prices" : [ {
-    "volume" : 285999,
-    "marketCap" : 400411368000,
-    "lowPrice" : 20300,
-    "highPrice" : 21450,
-    "openPrice" : 20300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 21000
-  }, {
     "volume" : 368164,
     "marketCap" : 406131530400,
     "lowPrice" : 21100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 27850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 27400
+  }, {
+    "volume" : 200366,
+    "marketCap" : 576068736800,
+    "lowPrice" : 27050,
+    "highPrice" : 28100,
+    "openPrice" : 27650,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 27550
   } ],
   "stockCode" : "094170"
 }

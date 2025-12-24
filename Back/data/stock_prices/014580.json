@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "태경비케이",
   "prices" : [ {
-    "volume" : 517848,
-    "marketCap" : 133226373000,
-    "lowPrice" : 4725,
-    "highPrice" : 4925,
-    "openPrice" : 4725,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4830
-  }, {
     "volume" : 525620,
     "marketCap" : 132812626500,
     "lowPrice" : 4800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4865,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4905
+  }, {
+    "volume" : 95140,
+    "marketCap" : 133364288500,
+    "lowPrice" : 4815,
+    "highPrice" : 4915,
+    "openPrice" : 4885,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4835
   } ],
   "stockCode" : "014580"
 }

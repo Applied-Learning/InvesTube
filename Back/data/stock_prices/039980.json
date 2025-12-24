@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "폴라리스AI",
   "prices" : [ {
-    "volume" : 10386871,
-    "marketCap" : 245449143380,
-    "lowPrice" : 3325,
-    "highPrice" : 3440,
-    "openPrice" : 3345,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3395
-  }, {
     "volume" : 7718938,
     "marketCap" : 242918739840,
     "lowPrice" : 3175,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1893,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1918
+  }, {
+    "volume" : 779669,
+    "marketCap" : 133912947840,
+    "lowPrice" : 1829,
+    "highPrice" : 1918,
+    "openPrice" : 1918,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1840
   } ],
   "stockCode" : "039980"
 }

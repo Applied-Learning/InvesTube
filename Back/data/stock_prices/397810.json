@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "애드포러스",
   "prices" : [ {
     "volume" : 14860389,
@@ -657,6 +657,14 @@
     "openPrice" : 8100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8360
+  }, {
+    "volume" : 52115,
+    "marketCap" : 42369921700,
+    "lowPrice" : 8070,
+    "highPrice" : 8460,
+    "openPrice" : 8360,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8210
   } ],
   "stockCode" : "397810"
 }

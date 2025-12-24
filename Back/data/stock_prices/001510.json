@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SK증권",
   "prices" : [ {
-    "volume" : 610765,
-    "marketCap" : 224952921396,
-    "lowPrice" : 469,
-    "highPrice" : 478,
-    "openPrice" : 469,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 476
-  }, {
     "volume" : 313552,
     "marketCap" : 225425511567,
     "lowPrice" : 474,
@@ -1937,6 +1929,14 @@
     "openPrice" : 661,
     "tradeDate" : "2025-12-22",
     "closePrice" : 661
+  }, {
+    "volume" : 1346020,
+    "marketCap" : 309073971834,
+    "lowPrice" : 654,
+    "highPrice" : 666,
+    "openPrice" : 664,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 654
   } ],
   "stockCode" : "001510"
 }

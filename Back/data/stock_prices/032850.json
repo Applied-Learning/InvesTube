@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "비트컴퓨터",
   "prices" : [ {
-    "volume" : 37493,
-    "marketCap" : 83615163790,
-    "lowPrice" : 4995,
-    "highPrice" : 5080,
-    "openPrice" : 5020,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5030
-  }, {
     "volume" : 46262,
     "marketCap" : 82867115605,
     "lowPrice" : 4985,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4870,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4875
+  }, {
+    "volume" : 36457,
+    "marketCap" : 80373621655,
+    "lowPrice" : 4835,
+    "highPrice" : 4885,
+    "openPrice" : 4875,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4835
   } ],
   "stockCode" : "032850"
 }

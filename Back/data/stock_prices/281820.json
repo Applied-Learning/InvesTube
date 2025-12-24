@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이씨텍",
   "prices" : [ {
-    "volume" : 46166,
-    "marketCap" : 564305089800,
-    "lowPrice" : 25450,
-    "highPrice" : 27100,
-    "openPrice" : 25450,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 27050
-  }, {
     "volume" : 20641,
     "marketCap" : 561175856400,
     "lowPrice" : 26550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 37450,
     "tradeDate" : "2025-12-22",
     "closePrice" : 38800
+  }, {
+    "volume" : 96723,
+    "marketCap" : 810026145450,
+    "lowPrice" : 38500,
+    "highPrice" : 39400,
+    "openPrice" : 39400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 39150
   } ],
   "stockCode" : "281820"
 }

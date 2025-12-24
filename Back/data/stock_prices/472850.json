@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "폰드그룹",
   "prices" : [ {
-    "volume" : 43159,
-    "marketCap" : 169805648250,
-    "lowPrice" : 5090,
-    "highPrice" : 5270,
-    "openPrice" : 5100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5250
-  }, {
     "volume" : 113547,
     "marketCap" : 178215070830,
     "lowPrice" : 5220,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10260,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10160
+  }, {
+    "volume" : 39275,
+    "marketCap" : 324733087320,
+    "lowPrice" : 9970,
+    "highPrice" : 10170,
+    "openPrice" : 10060,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10040
   } ],
   "stockCode" : "472850"
 }

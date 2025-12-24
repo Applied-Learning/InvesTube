@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "피엔에이치테크",
   "prices" : [ {
-    "volume" : 33049,
-    "marketCap" : 76405955950,
-    "lowPrice" : 7520,
-    "highPrice" : 7920,
-    "openPrice" : 7650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7690
-  }, {
     "volume" : 18948,
     "marketCap" : 77598246550,
     "lowPrice" : 7680,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5000
+  }, {
+    "volume" : 27915,
+    "marketCap" : 48784557050,
+    "lowPrice" : 4910,
+    "highPrice" : 5020,
+    "openPrice" : 4980,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4910
   } ],
   "stockCode" : "239890"
 }

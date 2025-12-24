@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "큐리언트",
   "prices" : [ {
-    "volume" : 32265,
-    "marketCap" : 144186776015,
-    "lowPrice" : 4285,
-    "highPrice" : 4490,
-    "openPrice" : 4380,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4465
-  }, {
     "volume" : 33218,
     "marketCap" : 142087752400,
     "lowPrice" : 4360,
@@ -1937,6 +1929,14 @@
     "openPrice" : 28950,
     "tradeDate" : "2025-12-22",
     "closePrice" : 27550
+  }, {
+    "volume" : 131123,
+    "marketCap" : 1004933837050,
+    "lowPrice" : 27500,
+    "highPrice" : 28400,
+    "openPrice" : 28000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 27950
   } ],
   "stockCode" : "115180"
 }

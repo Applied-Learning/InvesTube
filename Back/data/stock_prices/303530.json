@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이노뎁",
   "prices" : [ {
-    "volume" : 5401,
-    "marketCap" : 53063131770,
-    "lowPrice" : 7140,
-    "highPrice" : 7250,
-    "openPrice" : 7190,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7230
-  }, {
     "volume" : 16412,
     "marketCap" : 53209917750,
     "lowPrice" : 7220,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5630,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5500
+  }, {
+    "volume" : 26978,
+    "marketCap" : 41100074400,
+    "lowPrice" : 5430,
+    "highPrice" : 5940,
+    "openPrice" : 5500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5600
   } ],
   "stockCode" : "303530"
 }

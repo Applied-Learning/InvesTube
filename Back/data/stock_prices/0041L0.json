@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하나35호스팩",
   "prices" : [ {
     "volume" : 41345892,
@@ -745,6 +745,14 @@
     "openPrice" : 1998,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2005
+  }, {
+    "volume" : 1879,
+    "marketCap" : 12060000000,
+    "lowPrice" : 2000,
+    "highPrice" : 2005,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2000
   } ],
   "stockCode" : "0041L0"
 }

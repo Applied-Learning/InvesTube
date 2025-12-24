@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신흥",
   "prices" : [ {
-    "volume" : 1166,
-    "marketCap" : 135850000000,
-    "lowPrice" : 14240,
-    "highPrice" : 14300,
-    "openPrice" : 14280,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14300
-  }, {
     "volume" : 4289,
     "marketCap" : 135090000000,
     "lowPrice" : 14210,
@@ -1936,6 +1928,14 @@
     "highPrice" : 13980,
     "openPrice" : 13980,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 13950
+  }, {
+    "volume" : 3880,
+    "marketCap" : 132525000000,
+    "lowPrice" : 13840,
+    "highPrice" : 13970,
+    "openPrice" : 13840,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 13950
   } ],
   "stockCode" : "004080"

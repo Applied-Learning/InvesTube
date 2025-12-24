@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "포니링크",
   "prices" : [ {
-    "volume" : 389389,
-    "marketCap" : 167171945784,
-    "lowPrice" : 1302,
-    "highPrice" : 1385,
-    "openPrice" : 1385,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1308
-  }, {
     "volume" : 246479,
     "marketCap" : 168450018764,
     "lowPrice" : 1300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 846,
     "tradeDate" : "2025-12-22",
     "closePrice" : 857
+  }, {
+    "volume" : 272761,
+    "marketCap" : 105057598956,
+    "lowPrice" : 812,
+    "highPrice" : 899,
+    "openPrice" : 857,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 822
   } ],
   "stockCode" : "064800"
 }

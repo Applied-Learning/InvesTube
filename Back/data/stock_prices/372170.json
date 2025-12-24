@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "윤성에프앤씨",
   "prices" : [ {
-    "volume" : 20999,
-    "marketCap" : 293628966400,
-    "lowPrice" : 35700,
-    "highPrice" : 37250,
-    "openPrice" : 35800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 36800
-  }, {
     "volume" : 25616,
     "marketCap" : 296022680800,
     "lowPrice" : 36800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 31500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 31300
+  }, {
+    "volume" : 24622,
+    "marketCap" : 252536869200,
+    "lowPrice" : 30850,
+    "highPrice" : 33400,
+    "openPrice" : 31500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 31650
   } ],
   "stockCode" : "372170"
 }

@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "LG씨엔에스",
   "prices" : [ {
     "volume" : 11928487,
@@ -1737,6 +1737,14 @@
     "openPrice" : 65000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 64100
+  }, {
+    "volume" : 593758,
+    "marketCap" : 6152257698000,
+    "lowPrice" : 63000,
+    "highPrice" : 64700,
+    "openPrice" : 64000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 63500
   } ],
   "stockCode" : "064400"
 }

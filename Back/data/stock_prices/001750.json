@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한양증권",
   "prices" : [ {
-    "volume" : 26594,
-    "marketCap" : 163307091220,
-    "lowPrice" : 12420,
-    "highPrice" : 12870,
-    "openPrice" : 12420,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12830
-  }, {
     "volume" : 33385,
     "marketCap" : 164579944620,
     "lowPrice" : 12830,
@@ -1937,6 +1929,14 @@
     "openPrice" : 19150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 19040
+  }, {
+    "volume" : 24655,
+    "marketCap" : 243751426100,
+    "lowPrice" : 19000,
+    "highPrice" : 19150,
+    "openPrice" : 19100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 19150
   } ],
   "stockCode" : "001750"
 }

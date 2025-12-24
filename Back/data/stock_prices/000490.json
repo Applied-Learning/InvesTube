@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대동",
   "prices" : [ {
-    "volume" : 174404,
-    "marketCap" : 253587393320,
-    "lowPrice" : 9750,
-    "highPrice" : 9990,
-    "openPrice" : 9870,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9890
-  }, {
     "volume" : 203759,
     "marketCap" : 253587393320,
     "lowPrice" : 9730,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9870,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9870
+  }, {
+    "volume" : 84108,
+    "marketCap" : 254425223120,
+    "lowPrice" : 9630,
+    "highPrice" : 9890,
+    "openPrice" : 9880,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9640
   } ],
   "stockCode" : "000490"
 }

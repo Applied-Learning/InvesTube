@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이스토리",
   "prices" : [ {
-    "volume" : 35805,
-    "marketCap" : 78418750680,
-    "lowPrice" : 8220,
-    "highPrice" : 8450,
-    "openPrice" : 8270,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8220
-  }, {
     "volume" : 29649,
     "marketCap" : 75652152420,
     "lowPrice" : 7820,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7170,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7180
+  }, {
+    "volume" : 18323,
+    "marketCap" : 66779958000,
+    "lowPrice" : 6950,
+    "highPrice" : 7270,
+    "openPrice" : 7270,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7000
   } ],
   "stockCode" : "241840"
 }

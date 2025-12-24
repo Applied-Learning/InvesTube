@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "성도이엔지",
   "prices" : [ {
-    "volume" : 12678,
-    "marketCap" : 74178650000,
-    "lowPrice" : 4715,
-    "highPrice" : 4825,
-    "openPrice" : 4825,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4795
-  }, {
     "volume" : 35227,
     "marketCap" : 75106850000,
     "lowPrice" : 4750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6260,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6250
+  }, {
+    "volume" : 159778,
+    "marketCap" : 98698600000,
+    "lowPrice" : 6160,
+    "highPrice" : 6490,
+    "openPrice" : 6220,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6380
   } ],
   "stockCode" : "037350"
 }

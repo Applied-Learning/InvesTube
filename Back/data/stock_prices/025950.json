@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동신건설",
   "prices" : [ {
-    "volume" : 486173,
-    "marketCap" : 378000000000,
-    "lowPrice" : 41850,
-    "highPrice" : 45250,
-    "openPrice" : 43700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 45000
-  }, {
     "volume" : 418091,
     "marketCap" : 375060000000,
     "lowPrice" : 43350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 18940
+  }, {
+    "volume" : 71613,
+    "marketCap" : 150276000000,
+    "lowPrice" : 17570,
+    "highPrice" : 19290,
+    "openPrice" : 19290,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 17890
   } ],
   "stockCode" : "025950"
 }

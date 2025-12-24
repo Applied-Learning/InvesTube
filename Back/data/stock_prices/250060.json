@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "모비스",
   "prices" : [ {
-    "volume" : 216688,
-    "marketCap" : 89597109490,
-    "lowPrice" : 2770,
-    "highPrice" : 2835,
-    "openPrice" : 2800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2785
-  }, {
     "volume" : 246453,
     "marketCap" : 88149400360,
     "lowPrice" : 2740,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3430
+  }, {
+    "volume" : 2242835,
+    "marketCap" : 100374499680,
+    "lowPrice" : 3090,
+    "highPrice" : 3490,
+    "openPrice" : 3470,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3120
   } ],
   "stockCode" : "250060"
 }

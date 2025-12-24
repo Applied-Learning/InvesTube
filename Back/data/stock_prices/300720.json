@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한일시멘트",
   "prices" : [ {
-    "volume" : 263605,
-    "marketCap" : 1135889256000,
-    "lowPrice" : 15660,
-    "highPrice" : 16500,
-    "openPrice" : 16400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16400
-  }, {
     "volume" : 165794,
     "marketCap" : 1135889256000,
     "lowPrice" : 16020,
@@ -1937,6 +1929,14 @@
     "openPrice" : 19520,
     "tradeDate" : "2025-12-22",
     "closePrice" : 19280
+  }, {
+    "volume" : 101725,
+    "marketCap" : 1420157985790,
+    "lowPrice" : 19290,
+    "highPrice" : 19520,
+    "openPrice" : 19300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 19310
   } ],
   "stockCode" : "300720"
 }

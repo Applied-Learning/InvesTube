@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "리가켐바이오",
   "prices" : [ {
-    "volume" : 552403,
-    "marketCap" : 3562185887400,
-    "lowPrice" : 93800,
-    "highPrice" : 98900,
-    "openPrice" : 95700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 97300
-  }, {
     "volume" : 841696,
     "marketCap" : 3781847915400,
     "lowPrice" : 96500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 176700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 172200
+  }, {
+    "volume" : 278670,
+    "marketCap" : 6231079527600,
+    "lowPrice" : 169400,
+    "highPrice" : 174200,
+    "openPrice" : 174000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 170200
   } ],
   "stockCode" : "141080"
 }

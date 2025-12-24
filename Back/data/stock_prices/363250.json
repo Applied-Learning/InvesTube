@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "진시스템",
   "prices" : [ {
-    "volume" : 17891,
-    "marketCap" : 59708455020,
-    "lowPrice" : 8360,
-    "highPrice" : 8760,
-    "openPrice" : 8730,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8490
-  }, {
     "volume" : 38349,
     "marketCap" : 58934847240,
     "lowPrice" : 8300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4210,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4035
+  }, {
+    "volume" : 11372,
+    "marketCap" : 28488117910,
+    "lowPrice" : 4015,
+    "highPrice" : 4165,
+    "openPrice" : 4065,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4045
   } ],
   "stockCode" : "363250"
 }

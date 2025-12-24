@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SGA솔루션즈",
   "prices" : [ {
-    "volume" : 27270,
-    "marketCap" : 29296407348,
-    "lowPrice" : 451,
-    "highPrice" : 471,
-    "openPrice" : 451,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 468
-  }, {
     "volume" : 52634,
     "marketCap" : 29609403153,
     "lowPrice" : 463,
@@ -1937,6 +1929,14 @@
     "openPrice" : 660,
     "tradeDate" : "2025-12-22",
     "closePrice" : 661
+  }, {
+    "volume" : 542320,
+    "marketCap" : 57616268457,
+    "lowPrice" : 623,
+    "highPrice" : 666,
+    "openPrice" : 665,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 649
   } ],
   "stockCode" : "184230"
 }

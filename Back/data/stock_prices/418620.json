@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "E8",
   "prices" : [ {
-    "volume" : 59184,
-    "marketCap" : 57516842920,
-    "lowPrice" : 5710,
-    "highPrice" : 5960,
-    "openPrice" : 5770,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5960
-  }, {
     "volume" : 40393,
     "marketCap" : 56262280910,
     "lowPrice" : 5810,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1551,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1549
+  }, {
+    "volume" : 377985,
+    "marketCap" : 20059594597,
+    "lowPrice" : 1544,
+    "highPrice" : 1785,
+    "openPrice" : 1560,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1561
   } ],
   "stockCode" : "418620"
 }

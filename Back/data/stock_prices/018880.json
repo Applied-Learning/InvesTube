@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한온시스템",
   "prices" : [ {
-    "volume" : 542338,
-    "marketCap" : 2201925000000,
-    "lowPrice" : 4045,
-    "highPrice" : 4145,
-    "openPrice" : 4100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4125
-  }, {
     "volume" : 1160363,
     "marketCap" : 2249967000000,
     "lowPrice" : 4130,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3080,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3090
+  }, {
+    "volume" : 3242141,
+    "marketCap" : 2046469094280,
+    "lowPrice" : 2980,
+    "highPrice" : 3095,
+    "openPrice" : 3095,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3015
   } ],
   "stockCode" : "018880"
 }

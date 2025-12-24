@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "지어소프트",
   "prices" : [ {
-    "volume" : 57774,
-    "marketCap" : 126580837400,
-    "lowPrice" : 8080,
-    "highPrice" : 8400,
-    "openPrice" : 8310,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8180
-  }, {
     "volume" : 28446,
     "marketCap" : 126890326000,
     "lowPrice" : 8090,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8260,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8220
+  }, {
+    "volume" : 130121,
+    "marketCap" : 126890326000,
+    "lowPrice" : 8100,
+    "highPrice" : 8330,
+    "openPrice" : 8260,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8200
   } ],
   "stockCode" : "051160"
 }

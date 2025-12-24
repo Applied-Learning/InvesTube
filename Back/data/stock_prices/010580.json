@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스엠벡셀",
   "prices" : [ {
-    "volume" : 381508,
-    "marketCap" : 149522365440,
-    "lowPrice" : 1320,
-    "highPrice" : 1370,
-    "openPrice" : 1350,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1344
-  }, {
     "volume" : 167606,
     "marketCap" : 150189876000,
     "lowPrice" : 1290,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1977,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1967
+  }, {
+    "volume" : 170214,
+    "marketCap" : 211600847520,
+    "lowPrice" : 1893,
+    "highPrice" : 2000,
+    "openPrice" : 1967,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1902
   } ],
   "stockCode" : "010580"
 }

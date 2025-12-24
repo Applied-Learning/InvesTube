@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "사조산업",
   "prices" : [ {
-    "volume" : 7855,
-    "marketCap" : 178500000000,
-    "lowPrice" : 34500,
-    "highPrice" : 35950,
-    "openPrice" : 34650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 35700
-  }, {
     "volume" : 22286,
     "marketCap" : 177000000000,
     "lowPrice" : 35250,
@@ -1937,6 +1929,14 @@
     "openPrice" : 58300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 60100
+  }, {
+    "volume" : 10125,
+    "marketCap" : 291000000000,
+    "lowPrice" : 58200,
+    "highPrice" : 60000,
+    "openPrice" : 59900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 58200
   } ],
   "stockCode" : "007160"
 }

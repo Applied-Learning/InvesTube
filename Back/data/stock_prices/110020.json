@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "전진바이오팜",
   "prices" : [ {
-    "volume" : 20811,
-    "marketCap" : 22782786430,
-    "lowPrice" : 2490,
-    "highPrice" : 2600,
-    "openPrice" : 2505,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2515
-  }, {
     "volume" : 11233,
     "marketCap" : 23099843100,
     "lowPrice" : 2510,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2695,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2655
+  }, {
+    "volume" : 14311,
+    "marketCap" : 23824544060,
+    "lowPrice" : 2620,
+    "highPrice" : 2690,
+    "openPrice" : 2665,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2630
   } ],
   "stockCode" : "110020"
 }

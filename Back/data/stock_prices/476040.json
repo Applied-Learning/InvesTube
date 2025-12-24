@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오가노이드사이언스",
   "prices" : [ {
     "volume" : 24040480,
@@ -1233,6 +1233,14 @@
     "openPrice" : 45700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 44450
+  }, {
+    "volume" : 329933,
+    "marketCap" : 274063872250,
+    "lowPrice" : 41250,
+    "highPrice" : 44900,
+    "openPrice" : 44500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 41650
   } ],
   "stockCode" : "476040"
 }

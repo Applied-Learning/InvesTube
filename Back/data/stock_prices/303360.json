@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "프로티아",
   "prices" : [ {
-    "volume" : 2072,
-    "marketCap" : 34897252650,
-    "lowPrice" : 2695,
-    "highPrice" : 2740,
-    "openPrice" : 2695,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2710
-  }, {
     "volume" : 15414,
     "marketCap" : 35476727325,
     "lowPrice" : 2685,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6550,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6270
+  }, {
+    "volume" : 62494,
+    "marketCap" : 80482593750,
+    "lowPrice" : 6050,
+    "highPrice" : 6330,
+    "openPrice" : 6270,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6250
   } ],
   "stockCode" : "303360"
 }

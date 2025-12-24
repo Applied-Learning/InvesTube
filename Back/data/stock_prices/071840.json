@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "롯데하이마트",
   "prices" : [ {
-    "volume" : 7196,
-    "marketCap" : 179182534080,
-    "lowPrice" : 7440,
-    "highPrice" : 7610,
-    "openPrice" : 7490,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7590
-  }, {
     "volume" : 11113,
     "marketCap" : 177057840000,
     "lowPrice" : 7430,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7860,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7820
+  }, {
+    "volume" : 5713,
+    "marketCap" : 183431922240,
+    "lowPrice" : 7770,
+    "highPrice" : 7850,
+    "openPrice" : 7850,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7770
   } ],
   "stockCode" : "071840"
 }

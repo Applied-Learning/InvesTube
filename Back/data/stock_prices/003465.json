@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유화증권우",
   "prices" : [ {
-    "volume" : 668,
-    "marketCap" : 39409338375,
-    "lowPrice" : 2255,
-    "highPrice" : 2260,
-    "openPrice" : 2255,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2255
-  }, {
     "volume" : 1880,
     "marketCap" : 39409338375,
     "lowPrice" : 2255,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2775,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2800
+  }, {
+    "volume" : 560,
+    "marketCap" : 49370900625,
+    "lowPrice" : 2810,
+    "highPrice" : 2830,
+    "openPrice" : 2815,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2825
   } ],
   "stockCode" : "003465"
 }

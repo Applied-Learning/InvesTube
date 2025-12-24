@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "위닉스",
   "prices" : [ {
-    "volume" : 5712,
-    "marketCap" : 86507377000,
-    "lowPrice" : 4800,
-    "highPrice" : 4890,
-    "openPrice" : 4820,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4840
-  }, {
     "volume" : 11601,
     "marketCap" : 86060541375,
     "lowPrice" : 4765,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5850
+  }, {
+    "volume" : 7752,
+    "marketCap" : 103308396500,
+    "lowPrice" : 5770,
+    "highPrice" : 5880,
+    "openPrice" : 5880,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5780
   } ],
   "stockCode" : "044340"
 }

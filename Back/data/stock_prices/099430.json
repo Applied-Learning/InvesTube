@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "바이오플러스",
   "prices" : [ {
-    "volume" : 1514422,
-    "marketCap" : 446067652800,
-    "lowPrice" : 7570,
-    "highPrice" : 8010,
-    "openPrice" : 7630,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7700
-  }, {
     "volume" : 1191098,
     "marketCap" : 446646961440,
     "lowPrice" : 7590,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5270,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5340
+  }, {
+    "volume" : 548808,
+    "marketCap" : 315600496640,
+    "lowPrice" : 5120,
+    "highPrice" : 5390,
+    "openPrice" : 5340,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5120
   } ],
   "stockCode" : "099430"
 }

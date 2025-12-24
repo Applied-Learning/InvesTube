@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엔텔스",
   "prices" : [ {
-    "volume" : 7193,
-    "marketCap" : 38827882960,
-    "lowPrice" : 3695,
-    "highPrice" : 3800,
-    "openPrice" : 3695,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3790
-  }, {
     "volume" : 32581,
     "marketCap" : 40057261840,
     "lowPrice" : 3750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5220,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5200
+  }, {
+    "volume" : 19140,
+    "marketCap" : 52555947120,
+    "lowPrice" : 5090,
+    "highPrice" : 5200,
+    "openPrice" : 5200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5130
   } ],
   "stockCode" : "069410"
 }

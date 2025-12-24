@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "티에이치엔",
   "prices" : [ {
-    "volume" : 92825,
-    "marketCap" : 57600000000,
-    "lowPrice" : 3130,
-    "highPrice" : 3215,
-    "openPrice" : 3160,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3200
-  }, {
     "volume" : 76866,
     "marketCap" : 57780000000,
     "lowPrice" : 3175,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7750,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7790
+  }, {
+    "volume" : 290367,
+    "marketCap" : 134460000000,
+    "lowPrice" : 7470,
+    "highPrice" : 7890,
+    "openPrice" : 7730,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7470
   } ],
   "stockCode" : "019180"
 }

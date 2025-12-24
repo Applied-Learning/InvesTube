@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국선재",
   "prices" : [ {
-    "volume" : 4707245,
-    "marketCap" : 98093000000,
-    "lowPrice" : 4055,
-    "highPrice" : 4500,
-    "openPrice" : 4100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4210
-  }, {
     "volume" : 824668,
     "marketCap" : 94015500000,
     "lowPrice" : 4030,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3495,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3510
+  }, {
+    "volume" : 72162,
+    "marketCap" : 86875183620,
+    "lowPrice" : 3395,
+    "highPrice" : 3540,
+    "openPrice" : 3490,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3405
   } ],
   "stockCode" : "025550"
 }

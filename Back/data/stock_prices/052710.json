@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아모텍",
   "prices" : [ {
-    "volume" : 30093,
-    "marketCap" : 55318187565,
-    "lowPrice" : 3700,
-    "highPrice" : 3880,
-    "openPrice" : 3850,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3785
-  }, {
     "volume" : 37512,
     "marketCap" : 57291227280,
     "lowPrice" : 3750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9570,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9870
+  }, {
+    "volume" : 115002,
+    "marketCap" : 137528175690,
+    "lowPrice" : 9350,
+    "highPrice" : 9950,
+    "openPrice" : 9950,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9410
   } ],
   "stockCode" : "052710"
 }

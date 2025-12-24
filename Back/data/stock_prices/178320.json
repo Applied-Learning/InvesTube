@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "서진시스템",
   "prices" : [ {
-    "volume" : 437622,
-    "marketCap" : 1504632769500,
-    "lowPrice" : 26600,
-    "highPrice" : 27400,
-    "openPrice" : 27400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 26750
-  }, {
     "volume" : 439760,
     "marketCap" : 1496195576400,
     "lowPrice" : 26450,
@@ -1937,6 +1929,14 @@
     "openPrice" : 26200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 26500
+  }, {
+    "volume" : 276242,
+    "marketCap" : 1438008906950,
+    "lowPrice" : 25300,
+    "highPrice" : 26850,
+    "openPrice" : 26850,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 25550
   } ],
   "stockCode" : "178320"
 }

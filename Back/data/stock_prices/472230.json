@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스케이증권제11호스팩",
   "prices" : [ {
-    "volume" : 4041,
-    "marketCap" : 8413875000,
-    "lowPrice" : 2005,
-    "highPrice" : 2025,
-    "openPrice" : 2020,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2025
-  }, {
     "volume" : 2422,
     "marketCap" : 8393100000,
     "lowPrice" : 2000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2035,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2040
+  }, {
+    "volume" : 6302,
+    "marketCap" : 8455425000,
+    "lowPrice" : 2035,
+    "highPrice" : 2045,
+    "openPrice" : 2035,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2035
   } ],
   "stockCode" : "472230"
 }

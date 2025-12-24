@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HB테크놀러지",
   "prices" : [ {
-    "volume" : 806264,
-    "marketCap" : 185060968336,
-    "lowPrice" : 1960,
-    "highPrice" : 2015,
-    "openPrice" : 1960,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1996
-  }, {
     "volume" : 658249,
     "marketCap" : 182094059024,
     "lowPrice" : 1960,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1885
+  }, {
+    "volume" : 444605,
+    "marketCap" : 171431728684,
+    "lowPrice" : 1847,
+    "highPrice" : 1889,
+    "openPrice" : 1888,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1849
   } ],
   "stockCode" : "078150"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "CNT85",
   "prices" : [ {
-    "volume" : 11612,
-    "marketCap" : 51729607828,
-    "lowPrice" : 670,
-    "highPrice" : 707,
-    "openPrice" : 707,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 698
-  }, {
     "volume" : 90800,
     "marketCap" : 49876828178,
     "lowPrice" : 668,
@@ -1937,6 +1929,14 @@
     "openPrice" : 637,
     "tradeDate" : "2025-12-22",
     "closePrice" : 623
+  }, {
+    "volume" : 89509,
+    "marketCap" : 45726601762,
+    "lowPrice" : 600,
+    "highPrice" : 639,
+    "openPrice" : 639,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 617
   } ],
   "stockCode" : "056730"
 }

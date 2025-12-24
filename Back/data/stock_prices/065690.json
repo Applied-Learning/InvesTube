@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "파커스",
   "prices" : [ {
-    "volume" : 198388,
-    "marketCap" : 14709649557,
-    "lowPrice" : 1000,
-    "highPrice" : 1114,
-    "openPrice" : 1024,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1047
-  }, {
     "volume" : 83092,
     "marketCap" : 14274120296,
     "lowPrice" : 1011,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1232,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1246
+  }, {
+    "volume" : 68485,
+    "marketCap" : 16873246531,
+    "lowPrice" : 1200,
+    "highPrice" : 1245,
+    "openPrice" : 1243,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1201
   } ],
   "stockCode" : "065690"
 }

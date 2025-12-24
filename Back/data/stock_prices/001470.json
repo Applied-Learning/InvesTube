@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼부토건",
   "prices" : [ {
-    "volume" : 5435426,
-    "marketCap" : 217705096448,
-    "lowPrice" : 936,
-    "highPrice" : 991,
-    "openPrice" : 990,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 952
-  }, {
     "volume" : 4897136,
     "marketCap" : 211530687200,
     "lowPrice" : 923,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 347
+  }, {
+    "volume" : 0,
+    "marketCap" : 79699592928,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 347
   } ],
   "stockCode" : "001470"

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대한항공",
   "prices" : [ {
-    "volume" : 589313,
-    "marketCap" : 8726829665700,
-    "lowPrice" : 23300,
-    "highPrice" : 23700,
-    "openPrice" : 23550,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 23700
-  }, {
     "volume" : 704211,
     "marketCap" : 8818884830950,
     "lowPrice" : 23550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 22800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 22950
+  }, {
+    "volume" : 1220589,
+    "marketCap" : 8340197971650,
+    "lowPrice" : 22600,
+    "highPrice" : 23000,
+    "openPrice" : 23000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 22650
   } ],
   "stockCode" : "003490"
 }

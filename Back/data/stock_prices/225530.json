@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HC보광산업",
   "prices" : [ {
-    "volume" : 5569415,
-    "marketCap" : 182420409540,
-    "lowPrice" : 4700,
-    "highPrice" : 5580,
-    "openPrice" : 4700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5020
-  }, {
     "volume" : 450735,
     "marketCap" : 178786536840,
     "lowPrice" : 4920,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2920,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2930
+  }, {
+    "volume" : 63797,
+    "marketCap" : 108107712825,
+    "lowPrice" : 2905,
+    "highPrice" : 2990,
+    "openPrice" : 2905,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2975
   } ],
   "stockCode" : "225530"
 }

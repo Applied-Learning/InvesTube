@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "GKL",
   "prices" : [ {
-    "volume" : 76898,
-    "marketCap" : 702061854500,
-    "lowPrice" : 11140,
-    "highPrice" : 11380,
-    "openPrice" : 11360,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11350
-  }, {
     "volume" : 102753,
     "marketCap" : 702061854500,
     "lowPrice" : 11250,
@@ -1937,6 +1929,14 @@
     "openPrice" : 15050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15310
+  }, {
+    "volume" : 189465,
+    "marketCap" : 938350513900,
+    "lowPrice" : 14970,
+    "highPrice" : 15370,
+    "openPrice" : 15220,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15170
   } ],
   "stockCode" : "114090"
 }

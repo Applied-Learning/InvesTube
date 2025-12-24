@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "키이스트",
   "prices" : [ {
-    "volume" : 35249,
-    "marketCap" : 103016869110,
-    "lowPrice" : 5170,
-    "highPrice" : 5300,
-    "openPrice" : 5230,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5270
-  }, {
     "volume" : 34146,
     "marketCap" : 102234957390,
     "lowPrice" : 5190,
@@ -1936,6 +1928,14 @@
     "highPrice" : 3690,
     "openPrice" : 3690,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 3435
+  }, {
+    "volume" : 106633,
+    "marketCap" : 67524518955,
+    "lowPrice" : 3365,
+    "highPrice" : 3470,
+    "openPrice" : 3435,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 3435
   } ],
   "stockCode" : "054780"

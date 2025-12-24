@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대성에너지",
   "prices" : [ {
-    "volume" : 43267,
-    "marketCap" : 232375000000,
-    "lowPrice" : 8330,
-    "highPrice" : 8530,
-    "openPrice" : 8500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8450
-  }, {
     "volume" : 42600,
     "marketCap" : 232925000000,
     "lowPrice" : 8450,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8120,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8160
+  }, {
+    "volume" : 34317,
+    "marketCap" : 223575000000,
+    "lowPrice" : 8100,
+    "highPrice" : 8190,
+    "openPrice" : 8120,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8130
   } ],
   "stockCode" : "117580"
 }

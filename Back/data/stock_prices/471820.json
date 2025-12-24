@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "셀로맥스사이언스",
   "prices" : [ {
-    "volume" : 160245,
-    "marketCap" : 59967006850,
-    "lowPrice" : 5110,
-    "highPrice" : 5510,
-    "openPrice" : 5430,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5150
-  }, {
     "volume" : 3215446,
     "marketCap" : 63460230550,
     "lowPrice" : 5030,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6150
+  }, {
+    "volume" : 229876,
+    "marketCap" : 70297902210,
+    "lowPrice" : 6040,
+    "highPrice" : 6580,
+    "openPrice" : 6160,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6070
   } ],
   "stockCode" : "471820"
 }

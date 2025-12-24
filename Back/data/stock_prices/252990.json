@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "샘씨엔에스",
   "prices" : [ {
-    "volume" : 92601,
-    "marketCap" : 241142700190,
-    "lowPrice" : 3975,
-    "highPrice" : 4175,
-    "openPrice" : 3975,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4130
-  }, {
     "volume" : 84571,
     "marketCap" : 238223297040,
     "lowPrice" : 4045,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6640,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6770
+  }, {
+    "volume" : 267057,
+    "marketCap" : 383025693280,
+    "lowPrice" : 6560,
+    "highPrice" : 6770,
+    "openPrice" : 6770,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6560
   } ],
   "stockCode" : "252990"
 }

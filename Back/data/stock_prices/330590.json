@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "롯데리츠",
   "prices" : [ {
-    "volume" : 292768,
-    "marketCap" : 920365895540,
-    "lowPrice" : 3140,
-    "highPrice" : 3210,
-    "openPrice" : 3140,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3185
-  }, {
     "volume" : 228544,
     "marketCap" : 929034962060,
     "lowPrice" : 3190,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3955,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3935
+  }, {
+    "volume" : 169117,
+    "marketCap" : 1139982247380,
+    "lowPrice" : 3925,
+    "highPrice" : 3965,
+    "openPrice" : 3935,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3945
   } ],
   "stockCode" : "330590"
 }

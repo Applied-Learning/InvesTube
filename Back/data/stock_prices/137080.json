@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "나래나노텍",
   "prices" : [ {
-    "volume" : 98242,
-    "marketCap" : 49435616340,
-    "lowPrice" : 4175,
-    "highPrice" : 4530,
-    "openPrice" : 4175,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4470
-  }, {
     "volume" : 118188,
     "marketCap" : 53085225600,
     "lowPrice" : 4470,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3885
+  }, {
+    "volume" : 24210,
+    "marketCap" : 41141049840,
+    "lowPrice" : 3720,
+    "highPrice" : 3910,
+    "openPrice" : 3855,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3720
   } ],
   "stockCode" : "137080"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이리츠코크렙",
   "prices" : [ {
-    "volume" : 43520,
-    "marketCap" : 273318960850,
-    "lowPrice" : 4210,
-    "highPrice" : 4320,
-    "openPrice" : 4210,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4315
-  }, {
     "volume" : 53717,
     "marketCap" : 277436164200,
     "lowPrice" : 4280,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4790,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4750
+  }, {
+    "volume" : 183501,
+    "marketCap" : 299605720700,
+    "lowPrice" : 4660,
+    "highPrice" : 4790,
+    "openPrice" : 4790,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4730
   } ],
   "stockCode" : "088260"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스씨디",
   "prices" : [ {
-    "volume" : 37680,
-    "marketCap" : 69449583468,
-    "lowPrice" : 1432,
-    "highPrice" : 1446,
-    "openPrice" : 1436,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1437
-  }, {
     "volume" : 29338,
     "marketCap" : 69497913032,
     "lowPrice" : 1421,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1323,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1322
+  }, {
+    "volume" : 66259,
+    "marketCap" : 63553376660,
+    "lowPrice" : 1305,
+    "highPrice" : 1335,
+    "openPrice" : 1314,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1315
   } ],
   "stockCode" : "042110"
 }

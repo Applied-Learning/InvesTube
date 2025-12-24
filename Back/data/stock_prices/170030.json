@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대공업",
   "prices" : [ {
-    "volume" : 20826,
-    "marketCap" : 77773800000,
-    "lowPrice" : 4980,
-    "highPrice" : 5070,
-    "openPrice" : 4985,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5070
-  }, {
     "volume" : 43613,
     "marketCap" : 78387400000,
     "lowPrice" : 5040,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6210,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6280
+  }, {
+    "volume" : 61155,
+    "marketCap" : 94954600000,
+    "lowPrice" : 6170,
+    "highPrice" : 6310,
+    "openPrice" : 6280,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6190
   } ],
   "stockCode" : "170030"
 }

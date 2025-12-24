@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신성델타테크",
   "prices" : [ {
-    "volume" : 404131,
-    "marketCap" : 2858330592000,
-    "lowPrice" : 102000,
-    "highPrice" : 107600,
-    "openPrice" : 105900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 104000
-  }, {
     "volume" : 318874,
     "marketCap" : 2803362696000,
     "lowPrice" : 102000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 56600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 58900
+  }, {
+    "volume" : 115382,
+    "marketCap" : 1616056142400,
+    "lowPrice" : 58400,
+    "highPrice" : 60700,
+    "openPrice" : 60700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 58800
   } ],
   "stockCode" : "065350"
 }

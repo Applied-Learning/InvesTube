@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "LG생활건강",
   "prices" : [ {
-    "volume" : 24630,
-    "marketCap" : 4896304759500,
-    "lowPrice" : 310000,
-    "highPrice" : 315000,
-    "openPrice" : 312500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 313500
-  }, {
     "volume" : 21442,
     "marketCap" : 4872877464000,
     "lowPrice" : 311000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 264500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 263500
+  }, {
+    "volume" : 34011,
+    "marketCap" : 4024546717000,
+    "lowPrice" : 262000,
+    "highPrice" : 265000,
+    "openPrice" : 264500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 263000
   } ],
   "stockCode" : "051900"
 }

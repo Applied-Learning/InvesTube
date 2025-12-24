@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "모티브링크",
   "prices" : [ {
     "volume" : 56140193,
@@ -1649,6 +1649,14 @@
     "openPrice" : 8030,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8080
+  }, {
+    "volume" : 77587,
+    "marketCap" : 97636021040,
+    "lowPrice" : 7880,
+    "highPrice" : 8190,
+    "openPrice" : 8100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7880
   } ],
   "stockCode" : "463480"
 }

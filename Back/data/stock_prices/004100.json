@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "태양금속",
   "prices" : [ {
-    "volume" : 1092018,
-    "marketCap" : 83125500000,
-    "lowPrice" : 2235,
-    "highPrice" : 2365,
-    "openPrice" : 2340,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2265
-  }, {
     "volume" : 621196,
     "marketCap" : 83859500000,
     "lowPrice" : 2240,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2405,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2400
+  }, {
+    "volume" : 204391,
+    "marketCap" : 86245000000,
+    "lowPrice" : 2345,
+    "highPrice" : 2410,
+    "openPrice" : 2410,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2350
   } ],
   "stockCode" : "004100"
 }

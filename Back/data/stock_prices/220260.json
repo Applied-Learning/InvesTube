@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "켐트로스",
   "prices" : [ {
-    "volume" : 1124182,
-    "marketCap" : 121238671455,
-    "lowPrice" : 4385,
-    "highPrice" : 4625,
-    "openPrice" : 4535,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4565
-  }, {
     "volume" : 10201106,
     "marketCap" : 126683124390,
     "lowPrice" : 4735,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6880,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6940
+  }, {
+    "volume" : 1470650,
+    "marketCap" : 184845816720,
+    "lowPrice" : 6790,
+    "highPrice" : 7140,
+    "openPrice" : 6980,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6960
   } ],
   "stockCode" : "220260"
 }

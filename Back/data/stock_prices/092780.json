@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "DYP",
   "prices" : [ {
-    "volume" : 24089,
-    "marketCap" : 63603661800,
-    "lowPrice" : 4525,
-    "highPrice" : 4830,
-    "openPrice" : 4550,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4830
-  }, {
     "volume" : 8980,
     "marketCap" : 63274450300,
     "lowPrice" : 4755,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3440,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3430
+  }, {
+    "volume" : 6659,
+    "marketCap" : 44246025600,
+    "lowPrice" : 3360,
+    "highPrice" : 3460,
+    "openPrice" : 3440,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3360
   } ],
   "stockCode" : "092780"
 }

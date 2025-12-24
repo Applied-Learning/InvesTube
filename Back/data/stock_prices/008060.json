@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대덕",
   "prices" : [ {
-    "volume" : 43697,
-    "marketCap" : 227741808000,
-    "lowPrice" : 6670,
-    "highPrice" : 6750,
-    "openPrice" : 6700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6720
-  }, {
     "volume" : 49006,
     "marketCap" : 227741808000,
     "lowPrice" : 6680,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11070,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10770
+  }, {
+    "volume" : 327371,
+    "marketCap" : 352457560000,
+    "lowPrice" : 10370,
+    "highPrice" : 10770,
+    "openPrice" : 10770,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10400
   } ],
   "stockCode" : "008060"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "퍼스텍",
   "prices" : [ {
-    "volume" : 317994,
-    "marketCap" : 146559673690,
-    "lowPrice" : 2915,
-    "highPrice" : 3015,
-    "openPrice" : 2915,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3005
-  }, {
     "volume" : 346681,
     "marketCap" : 147778972140,
     "lowPrice" : 3000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3910,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4040
+  }, {
+    "volume" : 327755,
+    "marketCap" : 192649155100,
+    "lowPrice" : 3915,
+    "highPrice" : 4105,
+    "openPrice" : 4075,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3950
   } ],
   "stockCode" : "010820"
 }

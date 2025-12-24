@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "PI첨단소재",
   "prices" : [ {
-    "volume" : 98554,
-    "marketCap" : 516259940760,
-    "lowPrice" : 17110,
-    "highPrice" : 18000,
-    "openPrice" : 17120,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17580
-  }, {
     "volume" : 56625,
     "marketCap" : 515672614320,
     "lowPrice" : 17460,
@@ -1937,6 +1929,14 @@
     "openPrice" : 15940,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16150
+  }, {
+    "volume" : 27455,
+    "marketCap" : 470154815220,
+    "lowPrice" : 15930,
+    "highPrice" : 16210,
+    "openPrice" : 16110,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16010
   } ],
   "stockCode" : "178920"
 }

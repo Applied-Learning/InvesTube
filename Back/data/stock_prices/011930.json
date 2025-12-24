@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신성이엔지",
   "prices" : [ {
-    "volume" : 494400,
-    "marketCap" : 244341755237,
-    "lowPrice" : 1134,
-    "highPrice" : 1192,
-    "openPrice" : 1134,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1187
-  }, {
     "volume" : 387311,
     "marketCap" : 244959299690,
     "lowPrice" : 1173,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1578,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1616
+  }, {
+    "volume" : 1147112,
+    "marketCap" : 327710256392,
+    "lowPrice" : 1590,
+    "highPrice" : 1650,
+    "openPrice" : 1625,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1592
   } ],
   "stockCode" : "011930"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엑스페릭스",
   "prices" : [ {
-    "volume" : 77418,
-    "marketCap" : 66855143705,
-    "lowPrice" : 2695,
-    "highPrice" : 2820,
-    "openPrice" : 2780,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2815
-  }, {
     "volume" : 257759,
     "marketCap" : 68161372090,
     "lowPrice" : 2715,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2810,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2835
+  }, {
+    "volume" : 315223,
+    "marketCap" : 90841244130,
+    "lowPrice" : 2690,
+    "highPrice" : 2835,
+    "openPrice" : 2800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2730
   } ],
   "stockCode" : "317770"
 }

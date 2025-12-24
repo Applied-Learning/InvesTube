@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼화콘덴서",
   "prices" : [ {
-    "volume" : 46644,
-    "marketCap" : 286382250000,
-    "lowPrice" : 26200,
-    "highPrice" : 27850,
-    "openPrice" : 26200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 27550
-  }, {
     "volume" : 17377,
     "marketCap" : 286382250000,
     "lowPrice" : 27350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 31200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 31700
+  }, {
+    "volume" : 42844,
+    "marketCap" : 319646250000,
+    "lowPrice" : 30700,
+    "highPrice" : 31850,
+    "openPrice" : 31850,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 30750
   } ],
   "stockCode" : "001820"
 }

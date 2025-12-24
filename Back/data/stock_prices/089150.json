@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이씨티",
   "prices" : [ {
-    "volume" : 42201,
-    "marketCap" : 43132250000,
-    "lowPrice" : 2500,
-    "highPrice" : 2580,
-    "openPrice" : 2505,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2515
-  }, {
     "volume" : 38477,
     "marketCap" : 43389500000,
     "lowPrice" : 2490,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2985
+  }, {
+    "volume" : 57720,
+    "marketCap" : 49392000000,
+    "lowPrice" : 2850,
+    "highPrice" : 3000,
+    "openPrice" : 2990,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2880
   } ],
   "stockCode" : "089150"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "비보존 제약",
   "prices" : [ {
-    "volume" : 1414674,
-    "marketCap" : 426891754320,
-    "lowPrice" : 8470,
-    "highPrice" : 9200,
-    "openPrice" : 9000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8520
-  }, {
     "volume" : 2108727,
     "marketCap" : 389313254820,
     "lowPrice" : 7700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4090,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4025
+  }, {
+    "volume" : 421779,
+    "marketCap" : 203925990620,
+    "lowPrice" : 4000,
+    "highPrice" : 4375,
+    "openPrice" : 4025,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4070
   } ],
   "stockCode" : "082800"
 }

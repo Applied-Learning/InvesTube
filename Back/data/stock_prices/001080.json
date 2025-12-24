@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "만호제강",
   "prices" : [ {
-    "volume" : 2163,
-    "marketCap" : 124085000000,
-    "lowPrice" : 29500,
-    "highPrice" : 30100,
-    "openPrice" : 29550,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 29900
-  }, {
     "volume" : 5096,
     "marketCap" : 126575000000,
     "lowPrice" : 29600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 44500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 43750
+  }, {
+    "volume" : 2819,
+    "marketCap" : 177205000000,
+    "lowPrice" : 42450,
+    "highPrice" : 45500,
+    "openPrice" : 43750,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 42700
   } ],
   "stockCode" : "001080"
 }

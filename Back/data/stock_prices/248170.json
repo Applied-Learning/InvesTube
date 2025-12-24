@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "샘표식품",
   "prices" : [ {
-    "volume" : 2964,
-    "marketCap" : 114435564300,
-    "lowPrice" : 24700,
-    "highPrice" : 25350,
-    "openPrice" : 24700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 25050
-  }, {
     "volume" : 4169,
     "marketCap" : 114892392900,
     "lowPrice" : 25000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 29250,
     "tradeDate" : "2025-12-22",
     "closePrice" : 29200
+  }, {
+    "volume" : 10817,
+    "marketCap" : 132480294000,
+    "lowPrice" : 28700,
+    "highPrice" : 29450,
+    "openPrice" : 29450,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 29000
   } ],
   "stockCode" : "248170"
 }

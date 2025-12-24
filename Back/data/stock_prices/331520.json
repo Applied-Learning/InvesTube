@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "밸로프",
   "prices" : [ {
-    "volume" : 1179973,
-    "marketCap" : 30925549120,
-    "lowPrice" : 583,
-    "highPrice" : 677,
-    "openPrice" : 615,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 608
-  }, {
     "volume" : 80232,
     "marketCap" : 30722091560,
     "lowPrice" : 592,
@@ -1937,6 +1929,14 @@
     "openPrice" : 590,
     "tradeDate" : "2025-12-22",
     "closePrice" : 585
+  }, {
+    "volume" : 64755,
+    "marketCap" : 29653939370,
+    "lowPrice" : 579,
+    "highPrice" : 589,
+    "openPrice" : 585,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 583
   } ],
   "stockCode" : "331520"
 }

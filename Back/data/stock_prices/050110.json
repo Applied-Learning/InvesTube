@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "캠시스",
   "prices" : [ {
-    "volume" : 235515,
-    "marketCap" : 64153158542,
-    "lowPrice" : 855,
-    "highPrice" : 875,
-    "openPrice" : 865,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 869
-  }, {
     "volume" : 1003262,
     "marketCap" : 63488741480,
     "lowPrice" : 821,
@@ -1937,6 +1929,14 @@
     "openPrice" : 468,
     "tradeDate" : "2025-12-22",
     "closePrice" : 470
+  }, {
+    "volume" : 956904,
+    "marketCap" : 34771159578,
+    "lowPrice" : 451,
+    "highPrice" : 486,
+    "openPrice" : 471,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 471
   } ],
   "stockCode" : "050110"
 }

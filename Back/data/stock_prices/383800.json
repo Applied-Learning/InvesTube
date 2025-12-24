@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "LX홀딩스",
   "prices" : [ {
-    "volume" : 101874,
-    "marketCap" : 537016057600,
-    "lowPrice" : 6970,
-    "highPrice" : 7050,
-    "openPrice" : 6980,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7040
-  }, {
     "volume" : 57129,
     "marketCap" : 535490443800,
     "lowPrice" : 7010,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8170
+  }, {
+    "volume" : 132550,
+    "marketCap" : 625501658000,
+    "lowPrice" : 8150,
+    "highPrice" : 8230,
+    "openPrice" : 8160,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8200
   } ],
   "stockCode" : "383800"
 }

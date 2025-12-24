@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "웨이비스",
   "prices" : [ {
-    "volume" : 112689,
-    "marketCap" : 93020575990,
-    "lowPrice" : 7380,
-    "highPrice" : 7650,
-    "openPrice" : 7400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7430
-  }, {
     "volume" : 326310,
     "marketCap" : 96400866100,
     "lowPrice" : 7590,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8700
+  }, {
+    "volume" : 36277,
+    "marketCap" : 104788993410,
+    "lowPrice" : 8320,
+    "highPrice" : 8770,
+    "openPrice" : 8700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8370
   } ],
   "stockCode" : "289930"
 }

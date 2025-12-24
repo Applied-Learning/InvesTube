@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대건설",
   "prices" : [ {
-    "volume" : 271230,
-    "marketCap" : 2906385466500,
-    "lowPrice" : 25800,
-    "highPrice" : 26200,
-    "openPrice" : 25900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 26100
-  }, {
     "volume" : 159365,
     "marketCap" : 2895249890000,
     "lowPrice" : 25950,
@@ -1937,6 +1929,14 @@
     "openPrice" : 70500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 71100
+  }, {
+    "volume" : 891216,
+    "marketCap" : 7794903550000,
+    "lowPrice" : 69800,
+    "highPrice" : 71600,
+    "openPrice" : 71100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 70000
   } ],
   "stockCode" : "000720"
 }

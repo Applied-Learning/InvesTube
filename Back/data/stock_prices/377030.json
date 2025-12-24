@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "비트맥스",
   "prices" : [ {
-    "volume" : 718158,
-    "marketCap" : 42833298030,
-    "lowPrice" : 1330,
-    "highPrice" : 1448,
-    "openPrice" : 1330,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1415
-  }, {
     "volume" : 870531,
     "marketCap" : 39382417482,
     "lowPrice" : 1300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1923,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1835
+  }, {
+    "volume" : 375183,
+    "marketCap" : 64521707726,
+    "lowPrice" : 1716,
+    "highPrice" : 1856,
+    "openPrice" : 1835,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1733
   } ],
   "stockCode" : "377030"
 }

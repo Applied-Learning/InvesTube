@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "씨씨에스",
   "prices" : [ {
-    "volume" : 1853499,
-    "marketCap" : 96815929954,
-    "lowPrice" : 1445,
-    "highPrice" : 1518,
-    "openPrice" : 1495,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1486
-  }, {
     "volume" : 1269672,
     "marketCap" : 95121976940,
     "lowPrice" : 1436,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 1493
+  }, {
+    "volume" : 0,
+    "marketCap" : 97271994227,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 1493
   } ],
   "stockCode" : "066790"

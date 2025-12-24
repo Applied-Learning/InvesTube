@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼일제약",
   "prices" : [ {
-    "volume" : 278928,
-    "marketCap" : 278522853240,
-    "lowPrice" : 12810,
-    "highPrice" : 13280,
-    "openPrice" : 13100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12840
-  }, {
     "volume" : 403227,
     "marketCap" : 278956689460,
     "lowPrice" : 12590,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10360
+  }, {
+    "volume" : 714351,
+    "marketCap" : 214315092680,
+    "lowPrice" : 9780,
+    "highPrice" : 10360,
+    "openPrice" : 10340,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9880
   } ],
   "stockCode" : "000520"
 }

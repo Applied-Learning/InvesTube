@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "진흥기업2우B",
   "prices" : [ {
-    "volume" : 120,
-    "marketCap" : 2921547280,
-    "lowPrice" : 9800,
-    "highPrice" : 10000,
-    "openPrice" : 10000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9910
-  }, {
     "volume" : 1111,
     "marketCap" : 2830156800,
     "lowPrice" : 9600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9190,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8550
+  }, {
+    "volume" : 4204,
+    "marketCap" : 2349619760,
+    "lowPrice" : 7970,
+    "highPrice" : 8550,
+    "openPrice" : 8550,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7970
   } ],
   "stockCode" : "002787"
 }

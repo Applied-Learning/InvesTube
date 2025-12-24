@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "미창석유",
   "prices" : [ {
-    "volume" : 702,
-    "marketCap" : 155526676800,
-    "lowPrice" : 89400,
-    "highPrice" : 92000,
-    "openPrice" : 89500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 89400
-  }, {
     "volume" : 582,
     "marketCap" : 155874611200,
     "lowPrice" : 88700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 125800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 122500
+  }, {
+    "volume" : 872,
+    "marketCap" : 214327590400,
+    "lowPrice" : 121000,
+    "highPrice" : 123300,
+    "openPrice" : 122500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 123200
   } ],
   "stockCode" : "003650"
 }

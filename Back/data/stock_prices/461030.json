@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이엠비디엑스",
   "prices" : [ {
-    "volume" : 76858,
-    "marketCap" : 157699687500,
-    "lowPrice" : 10620,
-    "highPrice" : 11390,
-    "openPrice" : 10620,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11250
-  }, {
     "volume" : 65630,
     "marketCap" : 150270280000,
     "lowPrice" : 10600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10380,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10250
+  }, {
+    "volume" : 101081,
+    "marketCap" : 140878387500,
+    "lowPrice" : 10000,
+    "highPrice" : 10330,
+    "openPrice" : 10330,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10050
   } ],
   "stockCode" : "461030"
 }

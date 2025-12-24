@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엠투엔",
   "prices" : [ {
-    "volume" : 22245,
-    "marketCap" : 72252935721,
-    "lowPrice" : 1777,
-    "highPrice" : 1837,
-    "openPrice" : 1800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1791
-  }, {
     "volume" : 21750,
     "marketCap" : 72172251259,
     "lowPrice" : 1786,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1877,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1849
+  }, {
+    "volume" : 44830,
+    "marketCap" : 73584229344,
+    "lowPrice" : 1824,
+    "highPrice" : 1884,
+    "openPrice" : 1836,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1824
   } ],
   "stockCode" : "033310"
 }

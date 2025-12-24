@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "러셀",
   "prices" : [ {
-    "volume" : 18570,
-    "marketCap" : 47495316000,
-    "lowPrice" : 1462,
-    "highPrice" : 1500,
-    "openPrice" : 1480,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1493
-  }, {
     "volume" : 13076,
     "marketCap" : 47622564000,
     "lowPrice" : 1470,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1943,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2005
+  }, {
+    "volume" : 128093,
+    "marketCap" : 61842528000,
+    "lowPrice" : 1939,
+    "highPrice" : 2020,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1944
   } ],
   "stockCode" : "217500"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "상상인증권",
   "prices" : [ {
-    "volume" : 32807,
-    "marketCap" : 46909972960,
-    "lowPrice" : 423,
-    "highPrice" : 433,
-    "openPrice" : 423,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 433
-  }, {
     "volume" : 71335,
     "marketCap" : 46151613120,
     "lowPrice" : 423,
@@ -1937,6 +1929,14 @@
     "openPrice" : 646,
     "tradeDate" : "2025-12-22",
     "closePrice" : 664
+  }, {
+    "volume" : 139730,
+    "marketCap" : 71502499200,
+    "lowPrice" : 647,
+    "highPrice" : 665,
+    "openPrice" : 664,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 660
   } ],
   "stockCode" : "001290"
 }

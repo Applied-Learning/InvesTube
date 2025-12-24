@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "와이씨",
   "prices" : [ {
-    "volume" : 4681035,
-    "marketCap" : 880346605500,
-    "lowPrice" : 9430,
-    "highPrice" : 10990,
-    "openPrice" : 9430,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10730
-  }, {
     "volume" : 2117620,
     "marketCap" : 890192047500,
     "lowPrice" : 10350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14140,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14060
+  }, {
+    "volume" : 496919,
+    "marketCap" : 1143712179000,
+    "lowPrice" : 13940,
+    "highPrice" : 14220,
+    "openPrice" : 14130,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13940
   } ],
   "stockCode" : "232140"
 }

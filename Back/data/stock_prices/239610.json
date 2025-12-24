@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이치엘사이언스",
   "prices" : [ {
-    "volume" : 1393,
-    "marketCap" : 67077910600,
-    "lowPrice" : 12390,
-    "highPrice" : 12720,
-    "openPrice" : 12510,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12440
-  }, {
     "volume" : 1741,
     "marketCap" : 66269093350,
     "lowPrice" : 12200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8390,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8220
+  }, {
+    "volume" : 1334,
+    "marketCap" : 43730052650,
+    "lowPrice" : 8100,
+    "highPrice" : 8360,
+    "openPrice" : 8360,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8110
   } ],
   "stockCode" : "239610"
 }

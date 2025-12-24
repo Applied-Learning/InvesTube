@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SAMG엔터",
   "prices" : [ {
-    "volume" : 148067,
-    "marketCap" : 116922557300,
-    "lowPrice" : 13300,
-    "highPrice" : 13950,
-    "openPrice" : 13300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13610
-  }, {
     "volume" : 197618,
     "marketCap" : 113658003900,
     "lowPrice" : 13220,
@@ -1937,6 +1929,14 @@
     "openPrice" : 41400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 41500
+  }, {
+    "volume" : 113306,
+    "marketCap" : 415663790500,
+    "lowPrice" : 40900,
+    "highPrice" : 43200,
+    "openPrice" : 42200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 42700
   } ],
   "stockCode" : "419530"
 }

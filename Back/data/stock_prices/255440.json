@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "야스",
   "prices" : [ {
-    "volume" : 35324,
-    "marketCap" : 101199500000,
-    "lowPrice" : 7610,
-    "highPrice" : 7900,
-    "openPrice" : 7720,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7750
-  }, {
     "volume" : 9463,
     "marketCap" : 101721820000,
     "lowPrice" : 7580,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9570,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9780
+  }, {
+    "volume" : 185849,
+    "marketCap" : 131755220000,
+    "lowPrice" : 9680,
+    "highPrice" : 10350,
+    "openPrice" : 9680,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10090
   } ],
   "stockCode" : "255440"
 }

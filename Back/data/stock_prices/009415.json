@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "태영건설우",
   "prices" : [ {
-    "volume" : 2906,
-    "marketCap" : 3048378060,
-    "lowPrice" : 4640,
-    "highPrice" : 4745,
-    "openPrice" : 4640,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4690
-  }, {
     "volume" : 2199,
     "marketCap" : 3074377020,
     "lowPrice" : 4670,
@@ -1937,6 +1929,14 @@
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
     "closePrice" : 18900
+  }, {
+    "volume" : 450894,
+    "marketCap" : 8599156020,
+    "lowPrice" : 13230,
+    "highPrice" : 18690,
+    "openPrice" : 13230,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13230
   } ],
   "stockCode" : "009415"
 }

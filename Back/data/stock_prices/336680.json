@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "탑런토탈솔루션",
   "prices" : [ {
-    "volume" : 31164,
-    "marketCap" : 190247411880,
-    "lowPrice" : 9600,
-    "highPrice" : 9840,
-    "openPrice" : 9680,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9720
-  }, {
     "volume" : 287994,
     "marketCap" : 199055162430,
     "lowPrice" : 9870,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4095,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4170
+  }, {
+    "volume" : 39898,
+    "marketCap" : 161279698960,
+    "lowPrice" : 4090,
+    "highPrice" : 4200,
+    "openPrice" : 4200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4120
   } ],
   "stockCode" : "336680"
 }

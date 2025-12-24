@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "서남",
   "prices" : [ {
-    "volume" : 439883,
-    "marketCap" : 82369441665,
-    "lowPrice" : 3345,
-    "highPrice" : 3495,
-    "openPrice" : 3420,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3435
-  }, {
     "volume" : 187392,
     "marketCap" : 82009749780,
     "lowPrice" : 3340,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2635,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2650
+  }, {
+    "volume" : 240728,
+    "marketCap" : 61808893440,
+    "lowPrice" : 2560,
+    "highPrice" : 2690,
+    "openPrice" : 2650,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2560
   } ],
   "stockCode" : "294630"
 }

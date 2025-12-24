@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "영화테크",
   "prices" : [ {
-    "volume" : 9842,
-    "marketCap" : 73334634800,
-    "lowPrice" : 6620,
-    "highPrice" : 6900,
-    "openPrice" : 6860,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6860
-  }, {
     "volume" : 5289,
     "marketCap" : 73655340200,
     "lowPrice" : 6650,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7080,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7100
+  }, {
+    "volume" : 9278,
+    "marketCap" : 75045063600,
+    "lowPrice" : 7020,
+    "highPrice" : 7140,
+    "openPrice" : 7110,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7020
   } ],
   "stockCode" : "265560"
 }

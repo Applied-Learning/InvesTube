@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "뉴로핏",
   "prices" : [ {
     "volume" : 19144622,
@@ -809,6 +809,14 @@
     "openPrice" : 25900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 25150
+  }, {
+    "volume" : 639075,
+    "marketCap" : 277532981550,
+    "lowPrice" : 23500,
+    "highPrice" : 25200,
+    "openPrice" : 25200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 23850
   } ],
   "stockCode" : "380550"
 }

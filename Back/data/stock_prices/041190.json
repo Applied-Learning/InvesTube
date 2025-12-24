@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "우리기술투자",
   "prices" : [ {
-    "volume" : 1791635,
-    "marketCap" : 605640000000,
-    "lowPrice" : 7090,
-    "highPrice" : 7340,
-    "openPrice" : 7160,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7210
-  }, {
     "volume" : 1718184,
     "marketCap" : 585480000000,
     "lowPrice" : 6970,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7560,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7840
+  }, {
+    "volume" : 521874,
+    "marketCap" : 640080000000,
+    "lowPrice" : 7590,
+    "highPrice" : 7870,
+    "openPrice" : 7860,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7620
   } ],
   "stockCode" : "041190"
 }

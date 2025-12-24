@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현우산업",
   "prices" : [ {
-    "volume" : 42484,
-    "marketCap" : 48549321600,
-    "lowPrice" : 2530,
-    "highPrice" : 2600,
-    "openPrice" : 2530,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2600
-  }, {
     "volume" : 25937,
     "marketCap" : 49016142000,
     "lowPrice" : 2575,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3370,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3400
+  }, {
+    "volume" : 108188,
+    "marketCap" : 61897890580,
+    "lowPrice" : 3260,
+    "highPrice" : 3430,
+    "openPrice" : 3430,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3260
   } ],
   "stockCode" : "092300"
 }

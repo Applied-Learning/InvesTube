@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "데브시스터즈",
   "prices" : [ {
-    "volume" : 82737,
-    "marketCap" : 344362590000,
-    "lowPrice" : 28150,
-    "highPrice" : 28900,
-    "openPrice" : 28450,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 28600
-  }, {
     "volume" : 35108,
     "marketCap" : 344362590000,
     "lowPrice" : 28400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 30400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 30050
+  }, {
+    "volume" : 22660,
+    "marketCap" : 362661585000,
+    "lowPrice" : 29550,
+    "highPrice" : 30250,
+    "openPrice" : 30250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 29900
   } ],
   "stockCode" : "194480"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엑시온그룹",
   "prices" : [ {
-    "volume" : 14606,
-    "marketCap" : 33082469040,
-    "lowPrice" : 910,
-    "highPrice" : 943,
-    "openPrice" : 917,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 940
-  }, {
     "volume" : 18558,
     "marketCap" : 33188051388,
     "lowPrice" : 925,
@@ -1937,6 +1929,14 @@
     "openPrice" : 797,
     "tradeDate" : "2025-12-22",
     "closePrice" : 794
+  }, {
+    "volume" : 1238487,
+    "marketCap" : 30746995398,
+    "lowPrice" : 639,
+    "highPrice" : 788,
+    "openPrice" : 787,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 686
   } ],
   "stockCode" : "069920"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "포커스에이아이",
   "prices" : [ {
-    "volume" : 81596,
-    "marketCap" : 43110182444,
-    "lowPrice" : 1851,
-    "highPrice" : 1914,
-    "openPrice" : 1905,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1897
-  }, {
     "volume" : 40520,
     "marketCap" : 43110182444,
     "lowPrice" : 1851,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2910,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2895
+  }, {
+    "volume" : 121745,
+    "marketCap" : 71834625505,
+    "lowPrice" : 2785,
+    "highPrice" : 2900,
+    "openPrice" : 2855,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2845
   } ],
   "stockCode" : "331380"
 }

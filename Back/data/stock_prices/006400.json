@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼성SDI",
   "prices" : [ {
-    "volume" : 306213,
-    "marketCap" : 17603719680000,
-    "lowPrice" : 243500,
-    "highPrice" : 258000,
-    "openPrice" : 251000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 256000
-  }, {
     "volume" : 202305,
     "marketCap" : 17534955150000,
     "lowPrice" : 254500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 282000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 282500
+  }, {
+    "volume" : 329038,
+    "marketCap" : 22523655635000,
+    "lowPrice" : 277750,
+    "highPrice" : 283000,
+    "openPrice" : 283000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 279500
   } ],
   "stockCode" : "006400"
 }

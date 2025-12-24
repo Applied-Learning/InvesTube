@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "세보엠이씨",
   "prices" : [ {
-    "volume" : 23749,
-    "marketCap" : 114882300000,
-    "lowPrice" : 10660,
-    "highPrice" : 10950,
-    "openPrice" : 10680,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10910
-  }, {
     "volume" : 44756,
     "marketCap" : 114987600000,
     "lowPrice" : 10800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 15010,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14940
+  }, {
+    "volume" : 39005,
+    "marketCap" : 150684300000,
+    "lowPrice" : 14310,
+    "highPrice" : 15020,
+    "openPrice" : 14940,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14310
   } ],
   "stockCode" : "011560"
 }

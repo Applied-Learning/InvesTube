@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "JW홀딩스",
   "prices" : [ {
-    "volume" : 75507,
-    "marketCap" : 224731823680,
-    "lowPrice" : 2975,
-    "highPrice" : 3055,
-    "openPrice" : 2990,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3040
-  }, {
     "volume" : 47652,
     "marketCap" : 225101448390,
     "lowPrice" : 3010,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3825,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3780
+  }, {
+    "volume" : 82208,
+    "marketCap" : 273522285400,
+    "lowPrice" : 3690,
+    "highPrice" : 3800,
+    "openPrice" : 3780,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3700
   } ],
   "stockCode" : "096760"
 }

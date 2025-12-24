@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에프앤가이드",
   "prices" : [ {
-    "volume" : 20442,
-    "marketCap" : 92880102480,
-    "lowPrice" : 7900,
-    "highPrice" : 8230,
-    "openPrice" : 8140,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8140
-  }, {
     "volume" : 14420,
     "marketCap" : 91510862640,
     "lowPrice" : 7920,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8840,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8870
+  }, {
+    "volume" : 22440,
+    "marketCap" : 98699371800,
+    "lowPrice" : 8550,
+    "highPrice" : 8810,
+    "openPrice" : 8740,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8650
   } ],
   "stockCode" : "064850"
 }

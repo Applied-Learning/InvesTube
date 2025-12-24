@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코리아에프티",
   "prices" : [ {
-    "volume" : 217051,
-    "marketCap" : 128068894400,
-    "lowPrice" : 4580,
-    "highPrice" : 4700,
-    "openPrice" : 4580,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4600
-  }, {
     "volume" : 459461,
     "marketCap" : 124449556080,
     "lowPrice" : 4375,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8670,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8660
+  }, {
+    "volume" : 480274,
+    "marketCap" : 232194473760,
+    "lowPrice" : 8240,
+    "highPrice" : 8660,
+    "openPrice" : 8660,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8340
   } ],
   "stockCode" : "123410"
 }

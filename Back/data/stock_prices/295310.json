@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이치브이엠",
   "prices" : [ {
-    "volume" : 532354,
-    "marketCap" : 262437578550,
-    "lowPrice" : 21600,
-    "highPrice" : 22650,
-    "openPrice" : 21800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 22050
-  }, {
     "volume" : 397017,
     "marketCap" : 258271902700,
     "lowPrice" : 21050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 48850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 52200
+  }, {
+    "volume" : 763636,
+    "marketCap" : 548083922550,
+    "lowPrice" : 43900,
+    "highPrice" : 49800,
+    "openPrice" : 49800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 46050
   } ],
   "stockCode" : "295310"
 }

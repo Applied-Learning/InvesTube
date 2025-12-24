@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "비츠로시스",
   "prices" : [ {
-    "volume" : 456217,
-    "marketCap" : 25612672079,
-    "lowPrice" : 502,
-    "highPrice" : 525,
-    "openPrice" : 520,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 521
-  }, {
     "volume" : 390546,
     "marketCap" : 25809314475,
     "lowPrice" : 512,
@@ -1936,6 +1928,14 @@
     "highPrice" : 405,
     "openPrice" : 400,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 402
+  }, {
+    "volume" : 209657,
+    "marketCap" : 24101138562,
+    "lowPrice" : 397,
+    "highPrice" : 411,
+    "openPrice" : 411,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 402
   } ],
   "stockCode" : "054220"

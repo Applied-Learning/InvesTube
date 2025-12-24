@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이씨디",
   "prices" : [ {
-    "volume" : 19496,
-    "marketCap" : 82098295500,
-    "lowPrice" : 4305,
-    "highPrice" : 4445,
-    "openPrice" : 4445,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4420
-  }, {
     "volume" : 10882,
     "marketCap" : 80798096250,
     "lowPrice" : 4305,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3915,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3930
+  }, {
+    "volume" : 31246,
+    "marketCap" : 71975315625,
+    "lowPrice" : 3855,
+    "highPrice" : 3985,
+    "openPrice" : 3985,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3875
   } ],
   "stockCode" : "040910"
 }

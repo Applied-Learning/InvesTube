@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "남화산업",
   "prices" : [ {
-    "volume" : 10006,
-    "marketCap" : 111792840000,
-    "lowPrice" : 5220,
-    "highPrice" : 5470,
-    "openPrice" : 5320,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5430
-  }, {
     "volume" : 2780,
     "marketCap" : 111175200000,
     "lowPrice" : 5330,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4475,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4470
+  }, {
+    "volume" : 2666,
+    "marketCap" : 91204840000,
+    "lowPrice" : 4410,
+    "highPrice" : 4485,
+    "openPrice" : 4470,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4430
   } ],
   "stockCode" : "111710"
 }

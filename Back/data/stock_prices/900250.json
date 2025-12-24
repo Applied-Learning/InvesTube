@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "크리스탈신소재",
   "prices" : [ {
-    "volume" : 146231,
-    "marketCap" : 112350403440,
-    "lowPrice" : 850,
-    "highPrice" : 878,
-    "openPrice" : 851,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 860
-  }, {
     "volume" : 174430,
     "marketCap" : 111305283408,
     "lowPrice" : 849,
@@ -1937,6 +1929,14 @@
     "openPrice" : 723,
     "tradeDate" : "2025-12-22",
     "closePrice" : 716
+  }, {
+    "volume" : 335936,
+    "marketCap" : 91839922812,
+    "lowPrice" : 703,
+    "highPrice" : 720,
+    "openPrice" : 720,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 703
   } ],
   "stockCode" : "900250"
 }

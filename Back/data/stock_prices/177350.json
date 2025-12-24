@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "베셀",
   "prices" : [ {
-    "volume" : 0,
-    "marketCap" : 18053152686,
-    "lowPrice" : 0,
-    "highPrice" : 0,
-    "openPrice" : 0,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 202
-  }, {
     "volume" : 0,
     "marketCap" : 18053152686,
     "lowPrice" : 0,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1350,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1321
+  }, {
+    "volume" : 390179,
+    "marketCap" : 25549897100,
+    "lowPrice" : 1250,
+    "highPrice" : 1334,
+    "openPrice" : 1334,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1300
   } ],
   "stockCode" : "177350"
 }

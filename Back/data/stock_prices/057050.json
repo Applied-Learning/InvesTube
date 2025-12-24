@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대홈쇼핑",
   "prices" : [ {
-    "volume" : 13305,
-    "marketCap" : 550800000000,
-    "lowPrice" : 45650,
-    "highPrice" : 46050,
-    "openPrice" : 45650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 45900
-  }, {
     "volume" : 17556,
     "marketCap" : 557400000000,
     "lowPrice" : 45800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 56400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 55700
+  }, {
+    "volume" : 2974,
+    "marketCap" : 667200000000,
+    "lowPrice" : 55600,
+    "highPrice" : 56200,
+    "openPrice" : 55800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 55600
   } ],
   "stockCode" : "057050"
 }

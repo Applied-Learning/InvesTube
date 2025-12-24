@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "DS단석",
   "prices" : [ {
-    "volume" : 906448,
-    "marketCap" : 214527386400,
-    "lowPrice" : 34800,
-    "highPrice" : 39500,
-    "openPrice" : 35500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 36600
-  }, {
     "volume" : 1750447,
     "marketCap" : 610172156400,
     "lowPrice" : 34300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 19290,
     "tradeDate" : "2025-12-22",
     "closePrice" : 19300
+  }, {
+    "volume" : 28917,
+    "marketCap" : 334451712240,
+    "lowPrice" : 18990,
+    "highPrice" : 19470,
+    "openPrice" : 19300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 19020
   } ],
   "stockCode" : "017860"
 }

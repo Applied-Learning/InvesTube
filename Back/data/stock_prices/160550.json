@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "NEW",
   "prices" : [ {
-    "volume" : 80950,
-    "marketCap" : 63904982740,
-    "lowPrice" : 2235,
-    "highPrice" : 2320,
-    "openPrice" : 2310,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2290
-  }, {
     "volume" : 394588,
     "marketCap" : 60695780550,
     "lowPrice" : 2095,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2130,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2050
+  }, {
+    "volume" : 96128,
+    "marketCap" : 56370334120,
+    "lowPrice" : 2000,
+    "highPrice" : 2050,
+    "openPrice" : 2050,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2020
   } ],
   "stockCode" : "160550"
 }

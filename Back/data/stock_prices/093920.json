@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "서원인텍",
   "prices" : [ {
-    "volume" : 24966,
-    "marketCap" : 106392000000,
-    "lowPrice" : 5640,
-    "highPrice" : 5750,
-    "openPrice" : 5700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5720
-  }, {
     "volume" : 38887,
     "marketCap" : 106206000000,
     "lowPrice" : 5700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5690,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5690
+  }, {
+    "volume" : 11708,
+    "marketCap" : 105090000000,
+    "lowPrice" : 5630,
+    "highPrice" : 5700,
+    "openPrice" : 5700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5650
   } ],
   "stockCode" : "093920"
 }

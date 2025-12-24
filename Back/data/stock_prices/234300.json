@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스트래픽",
   "prices" : [ {
-    "volume" : 126419,
-    "marketCap" : 107346013280,
-    "lowPrice" : 3765,
-    "highPrice" : 3895,
-    "openPrice" : 3765,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3860
-  }, {
     "volume" : 71598,
     "marketCap" : 106511717840,
     "lowPrice" : 3800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3510,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3550
+  }, {
+    "volume" : 78750,
+    "marketCap" : 94683074400,
+    "lowPrice" : 3465,
+    "highPrice" : 3555,
+    "openPrice" : 3555,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3480
   } ],
   "stockCode" : "234300"
 }

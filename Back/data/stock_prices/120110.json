@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코오롱인더",
   "prices" : [ {
-    "volume" : 87670,
-    "marketCap" : 817317002700,
-    "lowPrice" : 29150,
-    "highPrice" : 29950,
-    "openPrice" : 29300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 29700
-  }, {
     "volume" : 77552,
     "marketCap" : 817317002700,
     "lowPrice" : 29500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 46000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 46450
+  }, {
+    "volume" : 161388,
+    "marketCap" : 1271382004200,
+    "lowPrice" : 45600,
+    "highPrice" : 47800,
+    "openPrice" : 46900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 46200
   } ],
   "stockCode" : "120110"
 }

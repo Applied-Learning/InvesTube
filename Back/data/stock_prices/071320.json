@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "지역난방공사",
   "prices" : [ {
-    "volume" : 34289,
-    "marketCap" : 592831692800,
-    "lowPrice" : 47400,
-    "highPrice" : 52400,
-    "openPrice" : 47700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 51200
-  }, {
     "volume" : 13338,
     "marketCap" : 573147828000,
     "lowPrice" : 49150,
@@ -1937,6 +1929,14 @@
     "openPrice" : 104000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 101800
+  }, {
+    "volume" : 29958,
+    "marketCap" : 1153242902400,
+    "lowPrice" : 99200,
+    "highPrice" : 102800,
+    "openPrice" : 102500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 99600
   } ],
   "stockCode" : "071320"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "영화금속",
   "prices" : [ {
-    "volume" : 95311,
-    "marketCap" : 46291396480,
-    "lowPrice" : 890,
-    "highPrice" : 912,
-    "openPrice" : 900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 896
-  }, {
     "volume" : 147530,
     "marketCap" : 46549719005,
     "lowPrice" : 890,
@@ -1937,6 +1929,14 @@
     "openPrice" : 937,
     "tradeDate" : "2025-12-22",
     "closePrice" : 992
+  }, {
+    "volume" : 216901,
+    "marketCap" : 50321227870,
+    "lowPrice" : 970,
+    "highPrice" : 997,
+    "openPrice" : 997,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 974
   } ],
   "stockCode" : "012280"
 }

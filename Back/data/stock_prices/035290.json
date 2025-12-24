@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "골드앤에스",
   "prices" : [ {
-    "volume" : 83420,
-    "marketCap" : 19833415680,
-    "lowPrice" : 392,
-    "highPrice" : 437,
-    "openPrice" : 405,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 416
-  }, {
     "volume" : 43816,
     "marketCap" : 19928768640,
     "lowPrice" : 414,
@@ -1937,6 +1929,14 @@
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
     "closePrice" : 365
+  }, {
+    "volume" : 704844,
+    "marketCap" : 14064561600,
+    "lowPrice" : 575,
+    "highPrice" : 686,
+    "openPrice" : 686,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 590
   } ],
   "stockCode" : "035290"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동원개발",
   "prices" : [ {
-    "volume" : 43572,
-    "marketCap" : 220209642500,
-    "lowPrice" : 2385,
-    "highPrice" : 2460,
-    "openPrice" : 2390,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2425
-  }, {
     "volume" : 29996,
     "marketCap" : 221117723500,
     "lowPrice" : 2395,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2855,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2830
+  }, {
+    "volume" : 83739,
+    "marketCap" : 261073287500,
+    "lowPrice" : 2800,
+    "highPrice" : 2885,
+    "openPrice" : 2830,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2875
   } ],
   "stockCode" : "013120"
 }

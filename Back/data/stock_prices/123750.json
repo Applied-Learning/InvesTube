@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "알톤",
   "prices" : [ {
-    "volume" : 6131,
-    "marketCap" : 17895800988,
-    "lowPrice" : 1351,
-    "highPrice" : 1408,
-    "openPrice" : 1378,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1404
-  }, {
     "volume" : 4751,
     "marketCap" : 18227204710,
     "lowPrice" : 1400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1305,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1298
+  }, {
+    "volume" : 30902,
+    "marketCap" : 16531947209,
+    "lowPrice" : 1297,
+    "highPrice" : 1328,
+    "openPrice" : 1310,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1297
   } ],
   "stockCode" : "123750"
 }

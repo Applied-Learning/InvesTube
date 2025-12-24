@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이피엠테크",
   "prices" : [ {
-    "volume" : 2539650,
-    "marketCap" : 51291509598,
-    "lowPrice" : 294,
-    "highPrice" : 347,
-    "openPrice" : 327,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 294
-  }, {
     "volume" : 318048,
     "marketCap" : 50942587764,
     "lowPrice" : 288,
@@ -1936,6 +1928,14 @@
     "highPrice" : 218,
     "openPrice" : 214,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 214
+  }, {
+    "volume" : 149311,
+    "marketCap" : 41761152836,
+    "lowPrice" : 212,
+    "highPrice" : 216,
+    "openPrice" : 213,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 214
   } ],
   "stockCode" : "042040"

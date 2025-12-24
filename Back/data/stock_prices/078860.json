@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엔에스이엔엠",
   "prices" : [ {
-    "volume" : 10694,
-    "marketCap" : 84248432000,
-    "lowPrice" : 7640,
-    "highPrice" : 8000,
-    "openPrice" : 7640,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8000
-  }, {
     "volume" : 6765,
     "marketCap" : 81510357960,
     "lowPrice" : 7740,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1130,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1096
+  }, {
+    "volume" : 90441,
+    "marketCap" : 64467411102,
+    "lowPrice" : 1034,
+    "highPrice" : 1102,
+    "openPrice" : 1090,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1086
   } ],
   "stockCode" : "078860"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "원익홀딩스",
   "prices" : [ {
-    "volume" : 171382,
-    "marketCap" : 183440204875,
-    "lowPrice" : 2330,
-    "highPrice" : 2385,
-    "openPrice" : 2330,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2375
-  }, {
     "volume" : 308895,
     "marketCap" : 180350685635,
     "lowPrice" : 2335,
@@ -1937,6 +1929,14 @@
     "openPrice" : 33500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 33700
+  }, {
+    "volume" : 8341092,
+    "marketCap" : 2711053133100,
+    "lowPrice" : 33800,
+    "highPrice" : 35950,
+    "openPrice" : 34050,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 35100
   } ],
   "stockCode" : "030530"
 }

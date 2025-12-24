@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "포인트모바일",
   "prices" : [ {
-    "volume" : 8749,
-    "marketCap" : 37100456960,
-    "lowPrice" : 2775,
-    "highPrice" : 2970,
-    "openPrice" : 2920,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2930
-  }, {
     "volume" : 23921,
     "marketCap" : 38493306880,
     "lowPrice" : 2900,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4080,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4065
+  }, {
+    "volume" : 6469,
+    "marketCap" : 49389607080,
+    "lowPrice" : 3990,
+    "highPrice" : 4080,
+    "openPrice" : 4080,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4015
   } ],
   "stockCode" : "318020"
 }

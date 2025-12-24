@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인스피언",
   "prices" : [ {
-    "volume" : 145052,
-    "marketCap" : 81811820040,
-    "lowPrice" : 7800,
-    "highPrice" : 8240,
-    "openPrice" : 7800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8070
-  }, {
     "volume" : 114399,
     "marketCap" : 79378754760,
     "lowPrice" : 7800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5580,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5580
+  }, {
+    "volume" : 14055,
+    "marketCap" : 55048101960,
+    "lowPrice" : 5430,
+    "highPrice" : 5590,
+    "openPrice" : 5530,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5430
   } ],
   "stockCode" : "465480"
 }

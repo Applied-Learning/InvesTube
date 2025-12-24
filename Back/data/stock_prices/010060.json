@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "OCI홀딩스",
   "prices" : [ {
-    "volume" : 31041,
-    "marketCap" : 1157204856500,
-    "lowPrice" : 58400,
-    "highPrice" : 61000,
-    "openPrice" : 59600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 60500
-  }, {
     "volume" : 37935,
     "marketCap" : 1182070415400,
     "lowPrice" : 60300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 116700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 114800
+  }, {
+    "volume" : 303282,
+    "marketCap" : 2275901280800,
+    "lowPrice" : 119100,
+    "highPrice" : 126500,
+    "openPrice" : 121200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 121900
   } ],
   "stockCode" : "010060"
 }

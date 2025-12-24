@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "국일제지",
   "prices" : [ {
-    "volume" : 0,
-    "marketCap" : 901924696800,
-    "lowPrice" : 0,
-    "highPrice" : 0,
-    "openPrice" : 0,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 800
-  }, {
     "volume" : 0,
     "marketCap" : 901924696800,
     "lowPrice" : 0,
@@ -1937,6 +1929,14 @@
     "openPrice" : 354,
     "tradeDate" : "2025-12-22",
     "closePrice" : 369
+  }, {
+    "volume" : 1248479,
+    "marketCap" : 402483895947,
+    "lowPrice" : 355,
+    "highPrice" : 373,
+    "openPrice" : 373,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 357
   } ],
   "stockCode" : "078130"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "휴비스",
   "prices" : [ {
-    "volume" : 72733,
-    "marketCap" : 93840000000,
-    "lowPrice" : 2700,
-    "highPrice" : 2845,
-    "openPrice" : 2710,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2720
-  }, {
     "volume" : 85425,
     "marketCap" : 92977500000,
     "lowPrice" : 2625,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2840,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2830
+  }, {
+    "volume" : 23889,
+    "marketCap" : 95220000000,
+    "lowPrice" : 2760,
+    "highPrice" : 2840,
+    "openPrice" : 2830,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2760
   } ],
   "stockCode" : "079980"
 }

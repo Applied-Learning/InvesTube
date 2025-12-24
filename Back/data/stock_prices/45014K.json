@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코오롱모빌리티그룹우",
   "prices" : [ {
-    "volume" : 1324853,
-    "marketCap" : 22006835200,
-    "lowPrice" : 8870,
-    "highPrice" : 11230,
-    "openPrice" : 10030,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8960
-  }, {
     "volume" : 533437,
     "marketCap" : 20827897600,
     "lowPrice" : 7800,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 12200
+  }, {
+    "volume" : 0,
+    "marketCap" : 29964664000,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 12200
   } ],
   "stockCode" : "45014K"

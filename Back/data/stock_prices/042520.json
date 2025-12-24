@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한스바이오메드",
   "prices" : [ {
-    "volume" : 16934,
-    "marketCap" : 119978875290,
-    "lowPrice" : 8620,
-    "highPrice" : 9010,
-    "openPrice" : 8690,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8870
-  }, {
     "volume" : 25640,
     "marketCap" : 124442576400,
     "lowPrice" : 8740,
@@ -1937,6 +1929,14 @@
     "openPrice" : 31200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 30300
+  }, {
+    "volume" : 336880,
+    "marketCap" : 400380463200,
+    "lowPrice" : 28900,
+    "highPrice" : 30850,
+    "openPrice" : 30650,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 29600
   } ],
   "stockCode" : "042520"
 }

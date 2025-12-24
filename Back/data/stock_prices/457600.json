@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "벡트",
   "prices" : [ {
-    "volume" : 1571025,
-    "marketCap" : 72923900000,
-    "lowPrice" : 5320,
-    "highPrice" : 5900,
-    "openPrice" : 5890,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5320
-  }, {
     "volume" : 3927019,
     "marketCap" : 67852125000,
     "lowPrice" : 4950,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2710,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2665
+  }, {
+    "volume" : 70500,
+    "marketCap" : 35228275000,
+    "lowPrice" : 2550,
+    "highPrice" : 2660,
+    "openPrice" : 2660,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2570
   } ],
   "stockCode" : "457600"
 }

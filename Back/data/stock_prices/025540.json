@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국단자",
   "prices" : [ {
-    "volume" : 9417,
-    "marketCap" : 701971000000,
-    "lowPrice" : 66000,
-    "highPrice" : 68000,
-    "openPrice" : 66100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 67400
-  }, {
     "volume" : 12159,
     "marketCap" : 696763500000,
     "lowPrice" : 66800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 69800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 69500
+  }, {
+    "volume" : 44030,
+    "marketCap" : 706027000000,
+    "lowPrice" : 69000,
+    "highPrice" : 70300,
+    "openPrice" : 69500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 69800
   } ],
   "stockCode" : "025540"
 }

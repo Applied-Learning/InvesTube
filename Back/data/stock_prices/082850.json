@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "우리바이오",
   "prices" : [ {
-    "volume" : 692429,
-    "marketCap" : 132044175050,
-    "lowPrice" : 2680,
-    "highPrice" : 2750,
-    "openPrice" : 2690,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2725
-  }, {
     "volume" : 523934,
     "marketCap" : 130348194820,
     "lowPrice" : 2680,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2165,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2125
+  }, {
+    "volume" : 809193,
+    "marketCap" : 99578267790,
+    "lowPrice" : 2045,
+    "highPrice" : 2125,
+    "openPrice" : 2115,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2055
   } ],
   "stockCode" : "082850"
 }

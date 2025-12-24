@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "CJ 바이오사이언스",
   "prices" : [ {
-    "volume" : 61827,
-    "marketCap" : 92218520240,
-    "lowPrice" : 10000,
-    "highPrice" : 10260,
-    "openPrice" : 10130,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10120
-  }, {
     "volume" : 44372,
     "marketCap" : 93858770600,
     "lowPrice" : 9950,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9760,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9920
+  }, {
+    "volume" : 30809,
+    "marketCap" : 124775162100,
+    "lowPrice" : 9500,
+    "highPrice" : 10010,
+    "openPrice" : 10010,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9550
   } ],
   "stockCode" : "311690"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이랜시스",
   "prices" : [ {
-    "volume" : 210341,
-    "marketCap" : 127691789580,
-    "lowPrice" : 4095,
-    "highPrice" : 4270,
-    "openPrice" : 4095,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4215
-  }, {
     "volume" : 442146,
     "marketCap" : 129206520180,
     "lowPrice" : 4195,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6390,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7420
+  }, {
+    "volume" : 3615645,
+    "marketCap" : 219332990880,
+    "lowPrice" : 7120,
+    "highPrice" : 7520,
+    "openPrice" : 7380,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7240
   } ],
   "stockCode" : "264850"
 }

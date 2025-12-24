@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "씨유메디칼",
   "prices" : [ {
-    "volume" : 115898,
-    "marketCap" : 41649071346,
-    "lowPrice" : 674,
-    "highPrice" : 694,
-    "openPrice" : 688,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 687
-  }, {
     "volume" : 90301,
     "marketCap" : 41588446788,
     "lowPrice" : 665,
@@ -1937,6 +1929,14 @@
     "openPrice" : 558,
     "tradeDate" : "2025-12-22",
     "closePrice" : 559
+  }, {
+    "volume" : 101825,
+    "marketCap" : 33464756016,
+    "lowPrice" : 550,
+    "highPrice" : 564,
+    "openPrice" : 561,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 552
   } ],
   "stockCode" : "115480"
 }

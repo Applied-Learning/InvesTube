@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HDC현대EP",
   "prices" : [ {
-    "volume" : 4675,
-    "marketCap" : 113404500000,
-    "lowPrice" : 3500,
-    "highPrice" : 3575,
-    "openPrice" : 3500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3555
-  }, {
     "volume" : 16887,
     "marketCap" : 114521000000,
     "lowPrice" : 3555,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4360,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4320
+  }, {
+    "volume" : 21028,
+    "marketCap" : 138446000000,
+    "lowPrice" : 4300,
+    "highPrice" : 4385,
+    "openPrice" : 4320,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4340
   } ],
   "stockCode" : "089470"
 }

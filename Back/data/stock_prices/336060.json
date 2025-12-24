@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "웨이버스",
   "prices" : [ {
-    "volume" : 257695,
-    "marketCap" : 59905068800,
-    "lowPrice" : 1213,
-    "highPrice" : 1259,
-    "openPrice" : 1240,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1244
-  }, {
     "volume" : 285031,
     "marketCap" : 58990120000,
     "lowPrice" : 1221,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1018,
     "tradeDate" : "2025-12-22",
     "closePrice" : 995
+  }, {
+    "volume" : 264705,
+    "marketCap" : 46662388800,
+    "lowPrice" : 952,
+    "highPrice" : 1014,
+    "openPrice" : 1000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 969
   } ],
   "stockCode" : "336060"
 }

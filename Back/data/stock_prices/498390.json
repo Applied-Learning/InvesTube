@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한화플러스제5호스팩",
   "prices" : [ {
     "volume" : 8587228,
@@ -1496,6 +1496,14 @@
     "highPrice" : 2005,
     "openPrice" : 1999,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 2000
+  }, {
+    "volume" : 24899,
+    "marketCap" : 9920000000,
+    "lowPrice" : 2000,
+    "highPrice" : 2010,
+    "openPrice" : 2005,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 2000
   } ],
   "stockCode" : "498390"

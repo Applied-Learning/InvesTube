@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인터플렉스",
   "prices" : [ {
-    "volume" : 107788,
-    "marketCap" : 216945489600,
-    "lowPrice" : 8780,
-    "highPrice" : 9300,
-    "openPrice" : 8780,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9300
-  }, {
     "volume" : 43853,
     "marketCap" : 217878588480,
     "lowPrice" : 9220,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10820,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11060
+  }, {
+    "volume" : 172603,
+    "marketCap" : 245405005440,
+    "lowPrice" : 10440,
+    "highPrice" : 11060,
+    "openPrice" : 11010,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10520
   } ],
   "stockCode" : "051370"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "뷰티스킨",
   "prices" : [ {
-    "volume" : 16810,
-    "marketCap" : 38344334000,
-    "lowPrice" : 10830,
-    "highPrice" : 11250,
-    "openPrice" : 11250,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10850
-  }, {
     "volume" : 23360,
     "marketCap" : 38415014800,
     "lowPrice" : 10750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13730,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14860
+  }, {
+    "volume" : 925757,
+    "marketCap" : 68242312400,
+    "lowPrice" : 14630,
+    "highPrice" : 19310,
+    "openPrice" : 14860,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 19310
   } ],
   "stockCode" : "406820"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국전자인증",
   "prices" : [ {
-    "volume" : 39415,
-    "marketCap" : 56430000000,
-    "lowPrice" : 2920,
-    "highPrice" : 3015,
-    "openPrice" : 3015,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2970
-  }, {
     "volume" : 31363,
     "marketCap" : 57285000000,
     "lowPrice" : 2965,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3805,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3920
+  }, {
+    "volume" : 73489,
+    "marketCap" : 72865000000,
+    "lowPrice" : 3830,
+    "highPrice" : 3935,
+    "openPrice" : 3895,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3835
   } ],
   "stockCode" : "041460"
 }

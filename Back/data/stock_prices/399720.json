@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "가온칩스",
   "prices" : [ {
-    "volume" : 295405,
-    "marketCap" : 477229718000,
-    "lowPrice" : 40750,
-    "highPrice" : 43350,
-    "openPrice" : 41650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 41150
-  }, {
     "volume" : 253754,
     "marketCap" : 476649852000,
     "lowPrice" : 41000,
@@ -1936,6 +1928,14 @@
     "highPrice" : 48200,
     "openPrice" : 46650,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 47750
+  }, {
+    "volume" : 57151,
+    "marketCap" : 553920055000,
+    "lowPrice" : 47300,
+    "highPrice" : 48700,
+    "openPrice" : 48100,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 47750
   } ],
   "stockCode" : "399720"

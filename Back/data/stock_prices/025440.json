@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "DH오토웨어",
   "prices" : [ {
-    "volume" : 69571,
-    "marketCap" : 25456072248,
-    "lowPrice" : 809,
-    "highPrice" : 833,
-    "openPrice" : 809,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 827
-  }, {
     "volume" : 96011,
     "marketCap" : 25148260008,
     "lowPrice" : 805,
@@ -1937,6 +1929,14 @@
     "openPrice" : 769,
     "tradeDate" : "2025-12-22",
     "closePrice" : 765
+  }, {
+    "volume" : 71130,
+    "marketCap" : 36195668208,
+    "lowPrice" : 740,
+    "highPrice" : 763,
+    "openPrice" : 758,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 742
   } ],
   "stockCode" : "025440"
 }

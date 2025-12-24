@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "쎄노텍",
   "prices" : [ {
-    "volume" : 20332,
-    "marketCap" : 29503689919,
-    "lowPrice" : 639,
-    "highPrice" : 651,
-    "openPrice" : 650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 649
-  }, {
     "volume" : 20841,
     "marketCap" : 29321848995,
     "lowPrice" : 630,
@@ -1937,6 +1929,14 @@
     "openPrice" : 856,
     "tradeDate" : "2025-12-22",
     "closePrice" : 843
+  }, {
+    "volume" : 84520,
+    "marketCap" : 38004753116,
+    "lowPrice" : 825,
+    "highPrice" : 849,
+    "openPrice" : 843,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 836
   } ],
   "stockCode" : "222420"
 }

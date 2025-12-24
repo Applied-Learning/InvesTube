@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "농심홀딩스",
   "prices" : [ {
-    "volume" : 1638,
-    "marketCap" : 306094140000,
-    "lowPrice" : 65400,
-    "highPrice" : 66000,
-    "openPrice" : 65700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 66000
-  }, {
     "volume" : 3815,
     "marketCap" : 305630361000,
     "lowPrice" : 65500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 91000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 92700
+  }, {
+    "volume" : 6336,
+    "marketCap" : 429459354000,
+    "lowPrice" : 92000,
+    "highPrice" : 93000,
+    "openPrice" : 93000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 92600
   } ],
   "stockCode" : "072710"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "알리코제약",
   "prices" : [ {
-    "volume" : 47379,
-    "marketCap" : 54334289445,
-    "lowPrice" : 3470,
-    "highPrice" : 3565,
-    "openPrice" : 3470,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3545
-  }, {
     "volume" : 42766,
     "marketCap" : 54410924550,
     "lowPrice" : 3500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4780,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4500
+  }, {
+    "volume" : 1193780,
+    "marketCap" : 65139839250,
+    "lowPrice" : 4225,
+    "highPrice" : 4565,
+    "openPrice" : 4540,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4250
   } ],
   "stockCode" : "260660"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼영에스앤씨",
   "prices" : [ {
-    "volume" : 12073,
-    "marketCap" : 26921375500,
-    "lowPrice" : 4750,
-    "highPrice" : 4910,
-    "openPrice" : 4910,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4750
-  }, {
     "volume" : 6335,
     "marketCap" : 26439624570,
     "lowPrice" : 4595,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3430,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3435
+  }, {
+    "volume" : 5339,
+    "marketCap" : 19440066940,
+    "lowPrice" : 3425,
+    "highPrice" : 3550,
+    "openPrice" : 3440,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3430
   } ],
   "stockCode" : "361670"
 }

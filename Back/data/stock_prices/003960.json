@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "사조대림",
   "prices" : [ {
-    "volume" : 62537,
-    "marketCap" : 419274365250,
-    "lowPrice" : 41750,
-    "highPrice" : 46100,
-    "openPrice" : 41800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 45750
-  }, {
     "volume" : 31475,
     "marketCap" : 417899695200,
     "lowPrice" : 44850,
@@ -1937,6 +1929,14 @@
     "openPrice" : 38100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 37900
+  }, {
+    "volume" : 2922,
+    "marketCap" : 345500405900,
+    "lowPrice" : 37600,
+    "highPrice" : 38000,
+    "openPrice" : 37650,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 37700
   } ],
   "stockCode" : "003960"
 }

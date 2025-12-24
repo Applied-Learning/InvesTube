@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "프레스티지바이오파마",
   "prices" : [ {
-    "volume" : 85760,
-    "marketCap" : 891826940200,
-    "lowPrice" : 14490,
-    "highPrice" : 15490,
-    "openPrice" : 14680,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14840
-  }, {
     "volume" : 39585,
     "marketCap" : 895432709500,
     "lowPrice" : 14750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13260,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13750
+  }, {
+    "volume" : 145205,
+    "marketCap" : 786658668950,
+    "lowPrice" : 13090,
+    "highPrice" : 13820,
+    "openPrice" : 13800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13090
   } ],
   "stockCode" : "950210"
 }

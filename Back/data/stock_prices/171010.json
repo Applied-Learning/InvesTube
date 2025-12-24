@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "램테크놀러지",
   "prices" : [ {
-    "volume" : 21308,
-    "marketCap" : 43039243520,
-    "lowPrice" : 2960,
-    "highPrice" : 3020,
-    "openPrice" : 2970,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3010
-  }, {
     "volume" : 16288,
     "marketCap" : 43253724800,
     "lowPrice" : 3005,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4130,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4070
+  }, {
+    "volume" : 120592,
+    "marketCap" : 55693639040,
+    "lowPrice" : 3880,
+    "highPrice" : 4135,
+    "openPrice" : 4100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3895
   } ],
   "stockCode" : "171010"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대상홀딩스",
   "prices" : [ {
-    "volume" : 891619,
-    "marketCap" : 369005762220,
-    "lowPrice" : 10000,
-    "highPrice" : 10370,
-    "openPrice" : 10200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10190
-  }, {
     "volume" : 1387145,
     "marketCap" : 379869523620,
     "lowPrice" : 10110,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9790
+  }, {
+    "volume" : 64985,
+    "marketCap" : 354882872400,
+    "lowPrice" : 9720,
+    "highPrice" : 9940,
+    "openPrice" : 9770,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9800
   } ],
   "stockCode" : "084690"
 }

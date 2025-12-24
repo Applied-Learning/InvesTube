@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "조선선재",
   "prices" : [ {
-    "volume" : 1066,
-    "marketCap" : 118596489300,
-    "lowPrice" : 93100,
-    "highPrice" : 94400,
-    "openPrice" : 93300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 94300
-  }, {
     "volume" : 590,
     "marketCap" : 119225314800,
     "lowPrice" : 93400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 99600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 99400
+  }, {
+    "volume" : 1775,
+    "marketCap" : 124004388600,
+    "lowPrice" : 98100,
+    "highPrice" : 99500,
+    "openPrice" : 99500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 98600
   } ],
   "stockCode" : "120030"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "롯데손해보험",
   "prices" : [ {
-    "volume" : 240817,
-    "marketCap" : 634637774400,
-    "lowPrice" : 1987,
-    "highPrice" : 2060,
-    "openPrice" : 1998,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2045
-  }, {
     "volume" : 470398,
     "marketCap" : 642396182400,
     "lowPrice" : 2025,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1766,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1777
+  }, {
+    "volume" : 200471,
+    "marketCap" : 552398649600,
+    "lowPrice" : 1771,
+    "highPrice" : 1797,
+    "openPrice" : 1777,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1780
   } ],
   "stockCode" : "000400"
 }

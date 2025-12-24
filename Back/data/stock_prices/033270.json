@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유나이티드제약",
   "prices" : [ {
-    "volume" : 21614,
-    "marketCap" : 299398957260,
-    "lowPrice" : 18050,
-    "highPrice" : 18480,
-    "openPrice" : 18050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 18330
-  }, {
     "volume" : 8879,
     "marketCap" : 304299103860,
     "lowPrice" : 18400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 20100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 20150
+  }, {
+    "volume" : 41410,
+    "marketCap" : 323082999160,
+    "lowPrice" : 19720,
+    "highPrice" : 20200,
+    "openPrice" : 20050,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 19780
   } ],
   "stockCode" : "033270"
 }

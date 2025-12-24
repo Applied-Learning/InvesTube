@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이마켓코리아",
   "prices" : [ {
-    "volume" : 23276,
-    "marketCap" : 270773604000,
-    "lowPrice" : 8060,
-    "highPrice" : 8110,
-    "openPrice" : 8060,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8100
-  }, {
     "volume" : 23438,
     "marketCap" : 271776469200,
     "lowPrice" : 8090,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7960,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7950
+  }, {
+    "volume" : 875881,
+    "marketCap" : 273782199600,
+    "lowPrice" : 7920,
+    "highPrice" : 10330,
+    "openPrice" : 7940,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8190
   } ],
   "stockCode" : "122900"
 }

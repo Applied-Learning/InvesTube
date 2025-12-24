@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "네오위즈홀딩스",
   "prices" : [ {
-    "volume" : 15060,
-    "marketCap" : 162612059760,
-    "lowPrice" : 17510,
-    "highPrice" : 18360,
-    "openPrice" : 17820,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 18360
-  }, {
     "volume" : 9050,
     "marketCap" : 161372098520,
     "lowPrice" : 17510,
@@ -1936,6 +1928,14 @@
     "highPrice" : 26500,
     "openPrice" : 26500,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 25200
+  }, {
+    "volume" : 6125,
+    "marketCap" : 210830331600,
+    "lowPrice" : 25000,
+    "highPrice" : 25650,
+    "openPrice" : 25350,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 25200
   } ],
   "stockCode" : "042420"

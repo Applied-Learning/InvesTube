@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "토탈소프트",
   "prices" : [ {
-    "volume" : 182372,
-    "marketCap" : 76936779600,
-    "lowPrice" : 8450,
-    "highPrice" : 8990,
-    "openPrice" : 8740,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8990
-  }, {
     "volume" : 471130,
     "marketCap" : 80445576000,
     "lowPrice" : 8750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7340
+  }, {
+    "volume" : 47440,
+    "marketCap" : 60334182000,
+    "lowPrice" : 7050,
+    "highPrice" : 7360,
+    "openPrice" : 7340,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7050
   } ],
   "stockCode" : "045340"
 }

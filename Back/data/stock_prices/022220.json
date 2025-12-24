@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "티케이지애강",
   "prices" : [ {
-    "volume" : 387386,
-    "marketCap" : 55730967004,
-    "lowPrice" : 1014,
-    "highPrice" : 1076,
-    "openPrice" : 1015,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1076
-  }, {
     "volume" : 608960,
     "marketCap" : 51328427789,
     "lowPrice" : 981,
@@ -1937,6 +1929,14 @@
     "openPrice" : 735,
     "tradeDate" : "2025-12-22",
     "closePrice" : 740
+  }, {
+    "volume" : 31834,
+    "marketCap" : 38120810144,
+    "lowPrice" : 725,
+    "highPrice" : 745,
+    "openPrice" : 745,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 736
   } ],
   "stockCode" : "022220"
 }

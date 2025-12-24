@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SG세계물산",
   "prices" : [ {
-    "volume" : 383421,
-    "marketCap" : 66800236800,
-    "lowPrice" : 329,
-    "highPrice" : 335,
-    "openPrice" : 331,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 330
-  }, {
     "volume" : 447563,
     "marketCap" : 65990536960,
     "lowPrice" : 325,
@@ -1937,6 +1929,14 @@
     "openPrice" : 347,
     "tradeDate" : "2025-12-22",
     "closePrice" : 344
+  }, {
+    "volume" : 1849954,
+    "marketCap" : 67812361600,
+    "lowPrice" : 330,
+    "highPrice" : 347,
+    "openPrice" : 344,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 335
   } ],
   "stockCode" : "004060"
 }

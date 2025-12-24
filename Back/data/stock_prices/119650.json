@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KC코트렐",
   "prices" : [ {
-    "volume" : 1065618,
-    "marketCap" : 41161384889,
-    "lowPrice" : 620,
-    "highPrice" : 735,
-    "openPrice" : 729,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 641
-  }, {
     "volume" : 728115,
     "marketCap" : 40711884586,
     "lowPrice" : 576,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 918
+  }, {
+    "volume" : 0,
+    "marketCap" : 100782913662,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 918
   } ],
   "stockCode" : "119650"

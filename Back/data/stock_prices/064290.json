@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인텍플러스",
   "prices" : [ {
-    "volume" : 40924,
-    "marketCap" : 129025538860,
-    "lowPrice" : 9690,
-    "highPrice" : 10190,
-    "openPrice" : 9690,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10030
-  }, {
     "volume" : 47958,
     "marketCap" : 129411457720,
     "lowPrice" : 9970,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14020,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13820
+  }, {
+    "volume" : 118251,
+    "marketCap" : 168389262580,
+    "lowPrice" : 12980,
+    "highPrice" : 13970,
+    "openPrice" : 13850,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13090
   } ],
   "stockCode" : "064290"
 }

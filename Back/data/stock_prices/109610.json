@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스와이",
   "prices" : [ {
-    "volume" : 271926,
-    "marketCap" : 191961545000,
-    "lowPrice" : 3845,
-    "highPrice" : 3950,
-    "openPrice" : 3885,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3925
-  }, {
     "volume" : 233248,
     "marketCap" : 190494323000,
     "lowPrice" : 3830,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3075,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3090
+  }, {
+    "volume" : 187498,
+    "marketCap" : 146477663000,
+    "lowPrice" : 2980,
+    "highPrice" : 3075,
+    "openPrice" : 3055,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2995
   } ],
   "stockCode" : "109610"
 }

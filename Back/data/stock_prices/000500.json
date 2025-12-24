@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "가온전선",
   "prices" : [ {
-    "volume" : 557349,
-    "marketCap" : 515593221700,
-    "lowPrice" : 49850,
-    "highPrice" : 54900,
-    "openPrice" : 50000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 52300
-  }, {
     "volume" : 201715,
     "marketCap" : 512635708000,
     "lowPrice" : 51900,
@@ -1937,6 +1929,14 @@
     "openPrice" : 85100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 85900
+  }, {
+    "volume" : 40277,
+    "marketCap" : 1401201840500,
+    "lowPrice" : 83400,
+    "highPrice" : 86800,
+    "openPrice" : 86800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 84700
   } ],
   "stockCode" : "000500"
 }

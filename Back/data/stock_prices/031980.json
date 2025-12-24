@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "피에스케이홀딩스",
   "prices" : [ {
-    "volume" : 282961,
-    "marketCap" : 710480915250,
-    "lowPrice" : 30750,
-    "highPrice" : 33250,
-    "openPrice" : 30800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 32950
-  }, {
     "volume" : 204687,
     "marketCap" : 697543478250,
     "lowPrice" : 32250,
@@ -1937,6 +1929,14 @@
     "openPrice" : 43250,
     "tradeDate" : "2025-12-22",
     "closePrice" : 46000
+  }, {
+    "volume" : 100527,
+    "marketCap" : 1000495128000,
+    "lowPrice" : 45900,
+    "highPrice" : 47350,
+    "openPrice" : 46300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 46400
   } ],
   "stockCode" : "031980"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "셀리드",
   "prices" : [ {
-    "volume" : 380058,
-    "marketCap" : 116910492580,
-    "lowPrice" : 5500,
-    "highPrice" : 5740,
-    "openPrice" : 5570,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5540
-  }, {
     "volume" : 578743,
     "marketCap" : 109735480400,
     "lowPrice" : 5200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3040,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2975
+  }, {
+    "volume" : 278782,
+    "marketCap" : 84821058875,
+    "lowPrice" : 2860,
+    "highPrice" : 3000,
+    "openPrice" : 2970,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2875
   } ],
   "stockCode" : "299660"
 }

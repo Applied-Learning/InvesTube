@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "윈하이텍",
   "prices" : [ {
-    "volume" : 228681,
-    "marketCap" : 44404721725,
-    "lowPrice" : 3960,
-    "highPrice" : 4250,
-    "openPrice" : 4075,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4025
-  }, {
     "volume" : 108340,
     "marketCap" : 44349560580,
     "lowPrice" : 3955,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2265,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2275
+  }, {
+    "volume" : 11067,
+    "marketCap" : 24712192960,
+    "lowPrice" : 2210,
+    "highPrice" : 2300,
+    "openPrice" : 2250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2240
   } ],
   "stockCode" : "192390"
 }

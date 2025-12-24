@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "CR홀딩스",
   "prices" : [ {
-    "volume" : 14273,
-    "marketCap" : 274778271400,
-    "lowPrice" : 5860,
-    "highPrice" : 5920,
-    "openPrice" : 5890,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5860
-  }, {
     "volume" : 5990,
     "marketCap" : 276184986100,
     "lowPrice" : 5840,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5080,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5080
+  }, {
+    "volume" : 23461,
+    "marketCap" : 237734784300,
+    "lowPrice" : 5020,
+    "highPrice" : 5090,
+    "openPrice" : 5020,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5070
   } ],
   "stockCode" : "000480"
 }

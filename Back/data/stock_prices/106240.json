@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "파인테크닉스",
   "prices" : [ {
-    "volume" : 901772,
-    "marketCap" : 13693829020,
-    "lowPrice" : 844,
-    "highPrice" : 895,
-    "openPrice" : 881,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 860
-  }, {
     "volume" : 8883279,
     "marketCap" : 17801977726,
     "lowPrice" : 890,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1307,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1315
+  }, {
+    "volume" : 86142,
+    "marketCap" : 22711118240,
+    "lowPrice" : 1299,
+    "highPrice" : 1357,
+    "openPrice" : 1357,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1336
   } ],
   "stockCode" : "106240"
 }

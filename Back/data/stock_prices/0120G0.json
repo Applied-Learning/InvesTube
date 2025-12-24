@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼양바이오팜",
   "prices" : [ {
     "volume" : 686460,
@@ -169,6 +169,14 @@
     "openPrice" : 66600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 63300
+  }, {
+    "volume" : 178217,
+    "marketCap" : 446152200000,
+    "lowPrice" : 59800,
+    "highPrice" : 63300,
+    "openPrice" : 63300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 60000
   } ],
   "stockCode" : "0120G0"
 }

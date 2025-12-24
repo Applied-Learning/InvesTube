@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "비비안",
   "prices" : [ {
-    "volume" : 153775,
-    "marketCap" : 26427269130,
-    "lowPrice" : 879,
-    "highPrice" : 904,
-    "openPrice" : 904,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 887
-  }, {
     "volume" : 112927,
     "marketCap" : 26576239080,
     "lowPrice" : 878,
@@ -1937,6 +1929,14 @@
     "openPrice" : 644,
     "tradeDate" : "2025-12-22",
     "closePrice" : 639
+  }, {
+    "volume" : 195926,
+    "marketCap" : 28970685357,
+    "lowPrice" : 640,
+    "highPrice" : 690,
+    "openPrice" : 690,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 641
   } ],
   "stockCode" : "002070"
 }

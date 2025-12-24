@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "원풍물산",
   "prices" : [ {
-    "volume" : 70383,
-    "marketCap" : 19370191204,
-    "lowPrice" : 465,
-    "highPrice" : 519,
-    "openPrice" : 479,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 476
-  }, {
     "volume" : 77407,
     "marketCap" : 19858515352,
     "lowPrice" : 472,
@@ -1937,6 +1929,14 @@
     "openPrice" : 472,
     "tradeDate" : "2025-12-22",
     "closePrice" : 470
+  }, {
+    "volume" : 14313,
+    "marketCap" : 18881867056,
+    "lowPrice" : 461,
+    "highPrice" : 476,
+    "openPrice" : 464,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 464
   } ],
   "stockCode" : "008290"
 }

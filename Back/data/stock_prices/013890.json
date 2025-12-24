@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "지누스",
   "prices" : [ {
-    "volume" : 120492,
-    "marketCap" : 540786196800,
-    "lowPrice" : 23100,
-    "highPrice" : 24450,
-    "openPrice" : 23500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 24300
-  }, {
     "volume" : 134621,
     "marketCap" : 532997095200,
     "lowPrice" : 23750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12650,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13250
+  }, {
+    "volume" : 141901,
+    "marketCap" : 295318223520,
+    "lowPrice" : 12500,
+    "highPrice" : 13450,
+    "openPrice" : 13260,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13270
   } ],
   "stockCode" : "013890"
 }

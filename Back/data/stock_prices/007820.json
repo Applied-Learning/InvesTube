@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스엠코어",
   "prices" : [ {
-    "volume" : 28702,
-    "marketCap" : 75928655340,
-    "lowPrice" : 3720,
-    "highPrice" : 3835,
-    "openPrice" : 3750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3790
-  }, {
     "volume" : 27927,
     "marketCap" : 75728315880,
     "lowPrice" : 3735,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4305,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4405
+  }, {
+    "volume" : 205884,
+    "marketCap" : 84543252120,
+    "lowPrice" : 4200,
+    "highPrice" : 4580,
+    "openPrice" : 4320,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4220
   } ],
   "stockCode" : "007820"
 }

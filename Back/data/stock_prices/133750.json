@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "메가엠디",
   "prices" : [ {
-    "volume" : 112506,
-    "marketCap" : 50559286320,
-    "lowPrice" : 2045,
-    "highPrice" : 2160,
-    "openPrice" : 2090,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2160
-  }, {
     "volume" : 59894,
     "marketCap" : 49388932470,
     "lowPrice" : 2100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1820,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1838
+  }, {
+    "volume" : 12981,
+    "marketCap" : 42928579218,
+    "lowPrice" : 1827,
+    "highPrice" : 1838,
+    "openPrice" : 1837,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1834
   } ],
   "stockCode" : "133750"
 }

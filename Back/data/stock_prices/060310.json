@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "3S",
   "prices" : [ {
-    "volume" : 215966,
-    "marketCap" : 101236648320,
-    "lowPrice" : 1887,
-    "highPrice" : 1920,
-    "openPrice" : 1890,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1908
-  }, {
     "volume" : 90961,
     "marketCap" : 100652998880,
     "lowPrice" : 1875,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1569,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1589
+  }, {
+    "volume" : 275783,
+    "marketCap" : 81498685440,
+    "lowPrice" : 1520,
+    "highPrice" : 1589,
+    "openPrice" : 1589,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1536
   } ],
   "stockCode" : "060310"
 }

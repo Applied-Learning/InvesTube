@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "텔콘RF제약",
   "prices" : [ {
-    "volume" : 0,
-    "marketCap" : 71909640530,
-    "lowPrice" : 0,
-    "highPrice" : 0,
-    "openPrice" : 0,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 598
-  }, {
     "volume" : 0,
     "marketCap" : 71909640530,
     "lowPrice" : 0,
@@ -1937,6 +1929,14 @@
     "openPrice" : 971,
     "tradeDate" : "2025-12-22",
     "closePrice" : 962
+  }, {
+    "volume" : 1091839,
+    "marketCap" : 62561985629,
+    "lowPrice" : 905,
+    "highPrice" : 965,
+    "openPrice" : 962,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 913
   } ],
   "stockCode" : "200230"
 }

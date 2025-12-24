@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한세실업",
   "prices" : [ {
-    "volume" : 48446,
-    "marketCap" : 579200000000,
-    "lowPrice" : 13980,
-    "highPrice" : 14550,
-    "openPrice" : 13980,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14480
-  }, {
     "volume" : 54460,
     "marketCap" : 574000000000,
     "lowPrice" : 14180,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14880,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14700
+  }, {
+    "volume" : 174595,
+    "marketCap" : 575600000000,
+    "lowPrice" : 14210,
+    "highPrice" : 14660,
+    "openPrice" : 14620,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14390
   } ],
   "stockCode" : "105630"
 }

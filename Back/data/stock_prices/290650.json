@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엘앤씨바이오",
   "prices" : [ {
-    "volume" : 151548,
-    "marketCap" : 502470335650,
-    "lowPrice" : 21500,
-    "highPrice" : 22800,
-    "openPrice" : 22000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 22150
-  }, {
     "volume" : 100789,
     "marketCap" : 510410047500,
     "lowPrice" : 21950,
@@ -1937,6 +1929,14 @@
     "openPrice" : 68700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 67000
+  }, {
+    "volume" : 1035728,
+    "marketCap" : 1563296975000,
+    "lowPrice" : 60400,
+    "highPrice" : 67500,
+    "openPrice" : 67100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 63500
   } ],
   "stockCode" : "290650"
 }

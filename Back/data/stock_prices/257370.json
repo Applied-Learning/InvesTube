@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "피엔티엠에스",
   "prices" : [ {
-    "volume" : 176106,
-    "marketCap" : 42391478790,
-    "lowPrice" : 3310,
-    "highPrice" : 3800,
-    "openPrice" : 3685,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3390
-  }, {
     "volume" : 44051,
     "marketCap" : 42516527400,
     "lowPrice" : 3365,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2645,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2655
+  }, {
+    "volume" : 118243,
+    "marketCap" : 36451669815,
+    "lowPrice" : 2655,
+    "highPrice" : 2915,
+    "openPrice" : 2655,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2915
   } ],
   "stockCode" : "257370"
 }

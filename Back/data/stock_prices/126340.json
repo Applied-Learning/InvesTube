@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "비나텍",
   "prices" : [ {
-    "volume" : 35757,
-    "marketCap" : 188638658000,
-    "lowPrice" : 29550,
-    "highPrice" : 31150,
-    "openPrice" : 30000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 31000
-  }, {
     "volume" : 22593,
     "marketCap" : 192289728800,
     "lowPrice" : 30600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 74700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 73900
+  }, {
+    "volume" : 129260,
+    "marketCap" : 451612365600,
+    "lowPrice" : 68600,
+    "highPrice" : 73900,
+    "openPrice" : 73900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 68700
   } ],
   "stockCode" : "126340"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "셀레믹스",
   "prices" : [ {
-    "volume" : 15462,
-    "marketCap" : 26288556560,
-    "lowPrice" : 3145,
-    "highPrice" : 3300,
-    "openPrice" : 3240,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3220
-  }, {
     "volume" : 24747,
     "marketCap" : 25961990640,
     "lowPrice" : 3130,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2775,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2840
+  }, {
+    "volume" : 26901,
+    "marketCap" : 23349463280,
+    "lowPrice" : 2825,
+    "highPrice" : 2910,
+    "openPrice" : 2910,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2860
   } ],
   "stockCode" : "331920"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "지오엘리먼트",
   "prices" : [ {
-    "volume" : 26010,
-    "marketCap" : 91455560000,
-    "lowPrice" : 7100,
-    "highPrice" : 7400,
-    "openPrice" : 7230,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7250
-  }, {
     "volume" : 39915,
     "marketCap" : 91455560000,
     "lowPrice" : 7180,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6860,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7030
+  }, {
+    "volume" : 67825,
+    "marketCap" : 88175774400,
+    "lowPrice" : 6890,
+    "highPrice" : 7280,
+    "openPrice" : 7020,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6990
   } ],
   "stockCode" : "311320"
 }

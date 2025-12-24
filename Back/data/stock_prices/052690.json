@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한전기술",
   "prices" : [ {
-    "volume" : 145578,
-    "marketCap" : 2170896000000,
-    "lowPrice" : 53900,
-    "highPrice" : 56900,
-    "openPrice" : 54100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 56800
-  }, {
     "volume" : 81019,
     "marketCap" : 2136498000000,
     "lowPrice" : 55800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 90800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 92700
+  }, {
+    "volume" : 168995,
+    "marketCap" : 3508596000000,
+    "lowPrice" : 91400,
+    "highPrice" : 94900,
+    "openPrice" : 93700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 91800
   } ],
   "stockCode" : "052690"
 }

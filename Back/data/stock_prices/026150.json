@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "특수건설",
   "prices" : [ {
-    "volume" : 58779,
-    "marketCap" : 111770128470,
-    "lowPrice" : 6330,
-    "highPrice" : 6480,
-    "openPrice" : 6460,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6370
-  }, {
     "volume" : 48658,
     "marketCap" : 110892811920,
     "lowPrice" : 6300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6280,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6270
+  }, {
+    "volume" : 99865,
+    "marketCap" : 107909935650,
+    "lowPrice" : 6150,
+    "highPrice" : 6350,
+    "openPrice" : 6290,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6150
   } ],
   "stockCode" : "026150"
 }

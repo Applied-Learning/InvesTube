@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼일",
   "prices" : [ {
-    "volume" : 868040,
-    "marketCap" : 48073294350,
-    "lowPrice" : 2795,
-    "highPrice" : 3100,
-    "openPrice" : 2845,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2965
-  }, {
     "volume" : 295337,
     "marketCap" : 47019411000,
     "lowPrice" : 2820,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1418,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1401
+  }, {
+    "volume" : 42652,
+    "marketCap" : 22926016260,
+    "lowPrice" : 1397,
+    "highPrice" : 1415,
+    "openPrice" : 1405,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1414
   } ],
   "stockCode" : "032280"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "켐트로닉스",
   "prices" : [ {
-    "volume" : 121104,
-    "marketCap" : 251329930940,
-    "lowPrice" : 15600,
-    "highPrice" : 16510,
-    "openPrice" : 15700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16390
-  }, {
     "volume" : 72567,
     "marketCap" : 250716557100,
     "lowPrice" : 16260,
@@ -1937,6 +1929,14 @@
     "openPrice" : 29800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 30700
+  }, {
+    "volume" : 246130,
+    "marketCap" : 484460926950,
+    "lowPrice" : 29550,
+    "highPrice" : 30700,
+    "openPrice" : 30700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 29650
   } ],
   "stockCode" : "089010"
 }

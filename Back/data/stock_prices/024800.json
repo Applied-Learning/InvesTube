@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유성티엔에스",
   "prices" : [ {
-    "volume" : 25308,
-    "marketCap" : 70768960920,
-    "lowPrice" : 1904,
-    "highPrice" : 1934,
-    "openPrice" : 1921,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1910
-  }, {
     "volume" : 27379,
     "marketCap" : 69731510184,
     "lowPrice" : 1866,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2650,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2630
+  }, {
+    "volume" : 72782,
+    "marketCap" : 93000048120,
+    "lowPrice" : 2500,
+    "highPrice" : 2645,
+    "openPrice" : 2645,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2510
   } ],
   "stockCode" : "024800"
 }

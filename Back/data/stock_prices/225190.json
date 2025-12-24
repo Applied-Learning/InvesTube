@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "LK삼양",
   "prices" : [ {
-    "volume" : 10350101,
-    "marketCap" : 150722866800,
-    "lowPrice" : 2780,
-    "highPrice" : 3160,
-    "openPrice" : 2790,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2970
-  }, {
     "volume" : 2268543,
     "marketCap" : 147170476000,
     "lowPrice" : 2875,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1423,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1621
+  }, {
+    "volume" : 12731234,
+    "marketCap" : 101967832680,
+    "lowPrice" : 1430,
+    "highPrice" : 1723,
+    "openPrice" : 1701,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1447
   } ],
   "stockCode" : "225190"
 }

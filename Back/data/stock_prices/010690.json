@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "화신",
   "prices" : [ {
-    "volume" : 76145,
-    "marketCap" : 245141278200,
-    "lowPrice" : 6840,
-    "highPrice" : 7060,
-    "openPrice" : 6920,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7020
-  }, {
     "volume" : 70686,
     "marketCap" : 246188890500,
     "lowPrice" : 6980,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8530,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8620
+  }, {
+    "volume" : 172313,
+    "marketCap" : 292283831700,
+    "lowPrice" : 8330,
+    "highPrice" : 8630,
+    "openPrice" : 8620,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8370
   } ],
   "stockCode" : "010690"
 }

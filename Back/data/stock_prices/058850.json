@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KTcs",
   "prices" : [ {
-    "volume" : 164002,
-    "marketCap" : 115676350000,
-    "lowPrice" : 2675,
-    "highPrice" : 2740,
-    "openPrice" : 2690,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2710
-  }, {
     "volume" : 129755,
     "marketCap" : 115249500000,
     "lowPrice" : 2700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2915,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3000
+  }, {
+    "volume" : 592225,
+    "marketCap" : 126134175000,
+    "lowPrice" : 2945,
+    "highPrice" : 3080,
+    "openPrice" : 3025,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2955
   } ],
   "stockCode" : "058850"
 }

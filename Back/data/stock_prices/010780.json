@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이에스동서",
   "prices" : [ {
-    "volume" : 44424,
-    "marketCap" : 674678913600,
-    "lowPrice" : 21750,
-    "highPrice" : 22400,
-    "openPrice" : 21750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 22350
-  }, {
     "volume" : 74257,
     "marketCap" : 698828494400,
     "lowPrice" : 22200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 24150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 24400
+  }, {
+    "volume" : 322517,
+    "marketCap" : 774295934400,
+    "lowPrice" : 24250,
+    "highPrice" : 25850,
+    "openPrice" : 24550,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 25650
   } ],
   "stockCode" : "010780"
 }

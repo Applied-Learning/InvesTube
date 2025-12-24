@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "DB하이텍",
   "prices" : [ {
-    "volume" : 93493,
-    "marketCap" : 1491792556800,
-    "lowPrice" : 33150,
-    "highPrice" : 33750,
-    "openPrice" : 33200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 33600
-  }, {
     "volume" : 146284,
     "marketCap" : 1507332062600,
     "lowPrice" : 33500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 66500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 68300
+  }, {
+    "volume" : 432258,
+    "marketCap" : 3019218407200,
+    "lowPrice" : 68000,
+    "highPrice" : 70500,
+    "openPrice" : 68300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 69400
   } ],
   "stockCode" : "000990"
 }

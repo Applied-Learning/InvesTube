@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "노브랜드",
   "prices" : [ {
-    "volume" : 1742594,
-    "marketCap" : 73022727180,
-    "lowPrice" : 8070,
-    "highPrice" : 9730,
-    "openPrice" : 8160,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8270
-  }, {
     "volume" : 214677,
     "marketCap" : 70550373660,
     "lowPrice" : 7980,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4235,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4240
+  }, {
+    "volume" : 26309,
+    "marketCap" : 70169880750,
+    "lowPrice" : 4135,
+    "highPrice" : 4265,
+    "openPrice" : 4265,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4150
   } ],
   "stockCode" : "145170"
 }

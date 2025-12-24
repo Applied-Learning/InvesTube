@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스엠",
   "prices" : [ {
-    "volume" : 77925,
-    "marketCap" : 1800564641700,
-    "lowPrice" : 75000,
-    "highPrice" : 78400,
-    "openPrice" : 76200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 77100
-  }, {
     "volume" : 57312,
     "marketCap" : 1770204926600,
     "lowPrice" : 75500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 118000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 118700
+  }, {
+    "volume" : 417541,
+    "marketCap" : 2923651913000,
+    "lowPrice" : 119400,
+    "highPrice" : 129500,
+    "openPrice" : 121900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 127700
   } ],
   "stockCode" : "041510"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "LG우",
   "prices" : [ {
-    "volume" : 2530,
-    "marketCap" : 178879904000,
-    "lowPrice" : 58800,
-    "highPrice" : 59200,
-    "openPrice" : 59100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 59200
-  }, {
     "volume" : 1540,
     "marketCap" : 179182066000,
     "lowPrice" : 59000,
@@ -1936,6 +1928,14 @@
     "highPrice" : 67900,
     "openPrice" : 67300,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 67200
+  }, {
+    "volume" : 5280,
+    "marketCap" : 202352572800,
+    "lowPrice" : 66900,
+    "highPrice" : 67900,
+    "openPrice" : 67400,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 67200
   } ],
   "stockCode" : "003555"

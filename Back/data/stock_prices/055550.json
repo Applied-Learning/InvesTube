@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신한지주",
   "prices" : [ {
-    "volume" : 829898,
-    "marketCap" : 24819854522500,
-    "lowPrice" : 48300,
-    "highPrice" : 49450,
-    "openPrice" : 48350,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 49300
-  }, {
     "volume" : 594327,
     "marketCap" : 24870199055000,
     "lowPrice" : 48750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 78800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 78600
+  }, {
+    "volume" : 712754,
+    "marketCap" : 37140362451000,
+    "lowPrice" : 75900,
+    "highPrice" : 78500,
+    "openPrice" : 78200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 76500
   } ],
   "stockCode" : "055550"
 }

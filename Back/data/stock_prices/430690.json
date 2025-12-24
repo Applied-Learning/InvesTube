@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한싹",
   "prices" : [ {
-    "volume" : 32804,
-    "marketCap" : 42764158475,
-    "lowPrice" : 3780,
-    "highPrice" : 4005,
-    "openPrice" : 3780,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3925
-  }, {
     "volume" : 41627,
     "marketCap" : 41892532315,
     "lowPrice" : 3825,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5090
+  }, {
+    "volume" : 86575,
+    "marketCap" : 54585588270,
+    "lowPrice" : 4970,
+    "highPrice" : 5160,
+    "openPrice" : 5030,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5010
   } ],
   "stockCode" : "430690"
 }

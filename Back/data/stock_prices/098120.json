@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "마이크로컨텍솔",
   "prices" : [ {
-    "volume" : 32729,
-    "marketCap" : 43558893840,
-    "lowPrice" : 5010,
-    "highPrice" : 5310,
-    "openPrice" : 5070,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5240
-  }, {
     "volume" : 12272,
     "marketCap" : 42893872560,
     "lowPrice" : 5090,
@@ -1937,6 +1929,14 @@
     "openPrice" : 18030,
     "tradeDate" : "2025-12-22",
     "closePrice" : 18540
+  }, {
+    "volume" : 88396,
+    "marketCap" : 147967234800,
+    "lowPrice" : 17730,
+    "highPrice" : 18540,
+    "openPrice" : 18540,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 17800
   } ],
   "stockCode" : "098120"
 }

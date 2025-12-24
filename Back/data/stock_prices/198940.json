@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한주라이트메탈",
   "prices" : [ {
-    "volume" : 65583,
-    "marketCap" : 29153310522,
-    "lowPrice" : 733,
-    "highPrice" : 760,
-    "openPrice" : 754,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 749
-  }, {
     "volume" : 68933,
     "marketCap" : 29153310522,
     "lowPrice" : 745,
@@ -1937,6 +1929,14 @@
     "openPrice" : 642,
     "tradeDate" : "2025-12-22",
     "closePrice" : 626
+  }, {
+    "volume" : 115147,
+    "marketCap" : 24326861250,
+    "lowPrice" : 624,
+    "highPrice" : 653,
+    "openPrice" : 630,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 625
   } ],
   "stockCode" : "198940"
 }

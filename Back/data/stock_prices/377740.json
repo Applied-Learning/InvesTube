@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "바이오노트",
   "prices" : [ {
-    "volume" : 54898,
-    "marketCap" : 495992393280,
-    "lowPrice" : 4760,
-    "highPrice" : 4860,
-    "openPrice" : 4760,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4860
-  }, {
     "volume" : 79890,
     "marketCap" : 494971832800,
     "lowPrice" : 4815,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5650,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5640
+  }, {
+    "volume" : 30178,
+    "marketCap" : 571513868800,
+    "lowPrice" : 5590,
+    "highPrice" : 5650,
+    "openPrice" : 5630,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5600
   } ],
   "stockCode" : "377740"
 }

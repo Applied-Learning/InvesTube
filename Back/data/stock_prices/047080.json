@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한빛소프트",
   "prices" : [ {
-    "volume" : 60789,
-    "marketCap" : 32815162564,
-    "lowPrice" : 1230,
-    "highPrice" : 1350,
-    "openPrice" : 1280,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1322
-  }, {
     "volume" : 28452,
     "marketCap" : 32343537686,
     "lowPrice" : 1297,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1207,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1198
+  }, {
+    "volume" : 23925,
+    "marketCap" : 29762012038,
+    "lowPrice" : 1191,
+    "highPrice" : 1205,
+    "openPrice" : 1198,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1199
   } ],
   "stockCode" : "047080"
 }

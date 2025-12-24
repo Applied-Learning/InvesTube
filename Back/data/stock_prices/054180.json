@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "메디콕스",
   "prices" : [ {
-    "volume" : 852812,
-    "marketCap" : 19135441975,
-    "lowPrice" : 298,
-    "highPrice" : 327,
-    "openPrice" : 298,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 325
-  }, {
     "volume" : 258122,
     "marketCap" : 18841050560,
     "lowPrice" : 316,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 2295
+  }, {
+    "volume" : 0,
+    "marketCap" : 12686716395,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 2295
   } ],
   "stockCode" : "054180"

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엔비티",
   "prices" : [ {
-    "volume" : 23237,
-    "marketCap" : 55255011630,
-    "lowPrice" : 3235,
-    "highPrice" : 3320,
-    "openPrice" : 3280,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3255
-  }, {
     "volume" : 1161518,
     "marketCap" : 53217960510,
     "lowPrice" : 3130,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2280,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2300
+  }, {
+    "volume" : 106850,
+    "marketCap" : 36751797290,
+    "lowPrice" : 2135,
+    "highPrice" : 2290,
+    "openPrice" : 2280,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2165
   } ],
   "stockCode" : "236810"
 }

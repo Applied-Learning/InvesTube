@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "스튜디오미르",
   "prices" : [ {
-    "volume" : 108207,
-    "marketCap" : 83073580360,
-    "lowPrice" : 2485,
-    "highPrice" : 2630,
-    "openPrice" : 2485,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2540
-  }, {
     "volume" : 121955,
     "marketCap" : 80293558970,
     "lowPrice" : 2455,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3040,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3065
+  }, {
+    "volume" : 154571,
+    "marketCap" : 97370357700,
+    "lowPrice" : 2950,
+    "highPrice" : 3075,
+    "openPrice" : 3070,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2975
   } ],
   "stockCode" : "408900"
 }

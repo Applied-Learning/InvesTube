@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "클로봇",
   "prices" : [ {
-    "volume" : 576836,
-    "marketCap" : 158135153120,
-    "lowPrice" : 6200,
-    "highPrice" : 6440,
-    "openPrice" : 6220,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6440
-  }, {
     "volume" : 32283718,
     "marketCap" : 192757911800,
     "lowPrice" : 6390,
@@ -1937,6 +1929,14 @@
     "openPrice" : 66600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 69100
+  }, {
+    "volume" : 4134701,
+    "marketCap" : 1651980387900,
+    "lowPrice" : 65600,
+    "highPrice" : 72100,
+    "openPrice" : 69400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 66100
   } ],
   "stockCode" : "466100"
 }

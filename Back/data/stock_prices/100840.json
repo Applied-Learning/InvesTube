@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SNT에너지",
   "prices" : [ {
-    "volume" : 2228460,
-    "marketCap" : 484964361350,
-    "lowPrice" : 19190,
-    "highPrice" : 24300,
-    "openPrice" : 19190,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 23450
-  }, {
     "volume" : 728496,
     "marketCap" : 495304752850,
     "lowPrice" : 23050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 39700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 39500
+  }, {
+    "volume" : 60759,
+    "marketCap" : 800346302100,
+    "lowPrice" : 38700,
+    "highPrice" : 39750,
+    "openPrice" : 39650,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 38700
   } ],
   "stockCode" : "100840"
 }

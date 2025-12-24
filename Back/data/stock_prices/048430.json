@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유라테크",
   "prices" : [ {
-    "volume" : 187674,
-    "marketCap" : 89740800000,
-    "lowPrice" : 7500,
-    "highPrice" : 7960,
-    "openPrice" : 7510,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7790
-  }, {
     "volume" : 88807,
     "marketCap" : 88243200000,
     "lowPrice" : 7610,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8160,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8110
+  }, {
+    "volume" : 46346,
+    "marketCap" : 92160000000,
+    "lowPrice" : 7980,
+    "highPrice" : 8230,
+    "openPrice" : 8160,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8000
   } ],
   "stockCode" : "048430"
 }

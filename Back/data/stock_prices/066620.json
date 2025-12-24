@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "국보디자인",
   "prices" : [ {
-    "volume" : 9796,
-    "marketCap" : 135675000000,
-    "lowPrice" : 18090,
-    "highPrice" : 18220,
-    "openPrice" : 18170,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 18090
-  }, {
     "volume" : 15993,
     "marketCap" : 136650000000,
     "lowPrice" : 18030,
@@ -1937,6 +1929,14 @@
     "openPrice" : 23000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 23450
+  }, {
+    "volume" : 14748,
+    "marketCap" : 176250000000,
+    "lowPrice" : 22900,
+    "highPrice" : 23750,
+    "openPrice" : 23450,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 23500
   } ],
   "stockCode" : "066620"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한컴라이프케어",
   "prices" : [ {
-    "volume" : 133096,
-    "marketCap" : 87866239050,
-    "lowPrice" : 3115,
-    "highPrice" : 3190,
-    "openPrice" : 3120,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3175
-  }, {
     "volume" : 70263,
     "marketCap" : 87866239050,
     "lowPrice" : 3165,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3110,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3115
+  }, {
+    "volume" : 624539,
+    "marketCap" : 87727867020,
+    "lowPrice" : 3080,
+    "highPrice" : 3195,
+    "openPrice" : 3125,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3170
   } ],
   "stockCode" : "372910"
 }

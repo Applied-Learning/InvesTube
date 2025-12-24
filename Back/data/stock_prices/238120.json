@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "얼라인드",
   "prices" : [ {
-    "volume" : 114995,
-    "marketCap" : 44286999680,
-    "lowPrice" : 2955,
-    "highPrice" : 3130,
-    "openPrice" : 2955,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3080
-  }, {
     "volume" : 31023,
     "marketCap" : 45005944480,
     "lowPrice" : 3015,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3995,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4030
+  }, {
+    "volume" : 46042,
+    "marketCap" : 57012322640,
+    "lowPrice" : 3835,
+    "highPrice" : 4030,
+    "openPrice" : 4025,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3965
   } ],
   "stockCode" : "238120"
 }

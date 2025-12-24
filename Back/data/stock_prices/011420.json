@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "갤럭시아에스엠",
   "prices" : [ {
-    "volume" : 185925,
-    "marketCap" : 55099288000,
-    "lowPrice" : 1980,
-    "highPrice" : 2040,
-    "openPrice" : 1980,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2000
-  }, {
     "volume" : 166493,
     "marketCap" : 54823791560,
     "lowPrice" : 1963,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1910,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1945
+  }, {
+    "volume" : 118923,
+    "marketCap" : 52482071820,
+    "lowPrice" : 1896,
+    "highPrice" : 1948,
+    "openPrice" : 1932,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1905
   } ],
   "stockCode" : "011420"
 }

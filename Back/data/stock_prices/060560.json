@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HC홈센타",
   "prices" : [ {
-    "volume" : 949318,
-    "marketCap" : 109157443875,
-    "lowPrice" : 827,
-    "highPrice" : 894,
-    "openPrice" : 827,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 855
-  }, {
     "volume" : 0,
     "marketCap" : 109157443875,
     "lowPrice" : 0,
@@ -1937,6 +1929,14 @@
     "openPrice" : 738,
     "tradeDate" : "2025-12-22",
     "closePrice" : 749
+  }, {
+    "volume" : 95602,
+    "marketCap" : 96135152325,
+    "lowPrice" : 740,
+    "highPrice" : 761,
+    "openPrice" : 742,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 753
   } ],
   "stockCode" : "060560"
 }

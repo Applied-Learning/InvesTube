@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "OCI",
   "prices" : [ {
-    "volume" : 10056,
-    "marketCap" : 559530937500,
-    "lowPrice" : 60700,
-    "highPrice" : 62500,
-    "openPrice" : 61300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 62500
-  }, {
     "volume" : 12333,
     "marketCap" : 555054690000,
     "lowPrice" : 61800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 60900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 62000
+  }, {
+    "volume" : 34938,
+    "marketCap" : 553264191000,
+    "lowPrice" : 61400,
+    "highPrice" : 62800,
+    "openPrice" : 62600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 61800
   } ],
   "stockCode" : "456040"
 }

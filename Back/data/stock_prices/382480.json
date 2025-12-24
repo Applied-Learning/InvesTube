@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "지아이텍",
   "prices" : [ {
-    "volume" : 31287,
-    "marketCap" : 77139994400,
-    "lowPrice" : 1924,
-    "highPrice" : 1964,
-    "openPrice" : 1932,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1960
-  }, {
     "volume" : 24636,
     "marketCap" : 77179351540,
     "lowPrice" : 1940,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1999,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1995
+  }, {
+    "volume" : 135279,
+    "marketCap" : 77100637260,
+    "lowPrice" : 1955,
+    "highPrice" : 2005,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1959
   } ],
   "stockCode" : "382480"
 }

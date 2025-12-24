@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하이드로리튬",
   "prices" : [ {
-    "volume" : 1227936,
-    "marketCap" : 99781084740,
-    "lowPrice" : 1798,
-    "highPrice" : 1986,
-    "openPrice" : 1808,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1842
-  }, {
     "volume" : 770856,
     "marketCap" : 97397606060,
     "lowPrice" : 1770,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1960,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1922
+  }, {
+    "volume" : 1272792,
+    "marketCap" : 100431124380,
+    "lowPrice" : 1800,
+    "highPrice" : 1923,
+    "openPrice" : 1922,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1854
   } ],
   "stockCode" : "101670"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이즈비전",
   "prices" : [ {
-    "volume" : 217393,
-    "marketCap" : 45019648172,
-    "lowPrice" : 1730,
-    "highPrice" : 1848,
-    "openPrice" : 1787,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1777
-  }, {
     "volume" : 7574046,
     "marketCap" : 47299765412,
     "lowPrice" : 1774,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1553,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1536
+  }, {
+    "volume" : 162257,
+    "marketCap" : 39611629629,
+    "lowPrice" : 1495,
+    "highPrice" : 1543,
+    "openPrice" : 1543,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1503
   } ],
   "stockCode" : "031310"
 }

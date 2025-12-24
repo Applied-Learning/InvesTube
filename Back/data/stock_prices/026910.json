@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "광진실업",
   "prices" : [ {
-    "volume" : 10555,
-    "marketCap" : 13002972150,
-    "lowPrice" : 1990,
-    "highPrice" : 2040,
-    "openPrice" : 2040,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2030
-  }, {
     "volume" : 5523,
     "marketCap" : 13355269425,
     "lowPrice" : 2020,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2695,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2720
+  }, {
+    "volume" : 14266,
+    "marketCap" : 17134458375,
+    "lowPrice" : 2675,
+    "highPrice" : 2710,
+    "openPrice" : 2700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2675
   } ],
   "stockCode" : "026910"
 }

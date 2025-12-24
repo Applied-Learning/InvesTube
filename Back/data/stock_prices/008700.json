@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아남전자",
   "prices" : [ {
-    "volume" : 686179,
-    "marketCap" : 102036136860,
-    "lowPrice" : 1272,
-    "highPrice" : 1327,
-    "openPrice" : 1285,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1323
-  }, {
     "volume" : 941523,
     "marketCap" : 100725014920,
     "lowPrice" : 1303,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1274,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1273
+  }, {
+    "volume" : 3367370,
+    "marketCap" : 106972125340,
+    "lowPrice" : 1247,
+    "highPrice" : 1400,
+    "openPrice" : 1266,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1387
   } ],
   "stockCode" : "008700"
 }

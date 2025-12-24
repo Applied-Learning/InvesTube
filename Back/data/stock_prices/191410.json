@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "육일씨엔에쓰",
   "prices" : [ {
-    "volume" : 10587,
-    "marketCap" : 16862403775,
-    "lowPrice" : 1480,
-    "highPrice" : 1512,
-    "openPrice" : 1505,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1505
-  }, {
     "volume" : 8435,
     "marketCap" : 16559888890,
     "lowPrice" : 1478,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2570,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2630
+  }, {
+    "volume" : 1574189,
+    "marketCap" : 31595999100,
+    "lowPrice" : 2565,
+    "highPrice" : 2960,
+    "openPrice" : 2620,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2820
   } ],
   "stockCode" : "191410"
 }

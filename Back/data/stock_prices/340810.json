@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "시선AI",
   "prices" : [ {
-    "volume" : 23867,
-    "marketCap" : 33171311190,
-    "lowPrice" : 2955,
-    "highPrice" : 3300,
-    "openPrice" : 2955,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3130
-  }, {
     "volume" : 14307,
     "marketCap" : 33489247080,
     "lowPrice" : 3085,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2875,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2995
+  }, {
+    "volume" : 24080,
+    "marketCap" : 37896539850,
+    "lowPrice" : 2910,
+    "highPrice" : 3030,
+    "openPrice" : 2995,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2925
   } ],
   "stockCode" : "340810"
 }

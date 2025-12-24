@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엔투텍",
   "prices" : [ {
-    "volume" : 197653,
-    "marketCap" : 46816139560,
-    "lowPrice" : 445,
-    "highPrice" : 466,
-    "openPrice" : 460,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 452
-  }, {
     "volume" : 266489,
     "marketCap" : 46194686380,
     "lowPrice" : 441,
@@ -1937,6 +1929,14 @@
     "openPrice" : 335,
     "tradeDate" : "2025-12-22",
     "closePrice" : 335
+  }, {
+    "volume" : 175999,
+    "marketCap" : 57283627604,
+    "lowPrice" : 331,
+    "highPrice" : 337,
+    "openPrice" : 335,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 332
   } ],
   "stockCode" : "227950"
 }

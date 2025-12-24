@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엠젠솔루션",
   "prices" : [ {
-    "volume" : 19039,
-    "marketCap" : 42303517425,
-    "lowPrice" : 962,
-    "highPrice" : 986,
-    "openPrice" : 976,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 975
-  }, {
     "volume" : 64488,
     "marketCap" : 41913023418,
     "lowPrice" : 948,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1090,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1036
+  }, {
+    "volume" : 391118,
+    "marketCap" : 52452781016,
+    "lowPrice" : 1019,
+    "highPrice" : 1080,
+    "openPrice" : 1036,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1052
   } ],
   "stockCode" : "032790"
 }

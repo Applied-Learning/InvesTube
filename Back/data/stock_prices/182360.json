@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "큐브엔터",
   "prices" : [ {
-    "volume" : 84352,
-    "marketCap" : 232853480860,
-    "lowPrice" : 15380,
-    "highPrice" : 16240,
-    "openPrice" : 15990,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15980
-  }, {
     "volume" : 76999,
     "marketCap" : 234456352130,
     "lowPrice" : 15720,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13350,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13460
+  }, {
+    "volume" : 94924,
+    "marketCap" : 214432417710,
+    "lowPrice" : 13490,
+    "highPrice" : 14050,
+    "openPrice" : 13540,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13790
   } ],
   "stockCode" : "182360"
 }

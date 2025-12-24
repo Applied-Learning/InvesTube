@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "부국증권",
   "prices" : [ {
-    "volume" : 2258,
-    "marketCap" : 278949933400,
-    "lowPrice" : 26700,
-    "highPrice" : 27050,
-    "openPrice" : 27050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 26900
-  }, {
     "volume" : 1261,
     "marketCap" : 283097887800,
     "lowPrice" : 26700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 60900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 59000
+  }, {
+    "volume" : 19247,
+    "marketCap" : 618045205600,
+    "lowPrice" : 58400,
+    "highPrice" : 59700,
+    "openPrice" : 59200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 59600
   } ],
   "stockCode" : "001270"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엠케이전자",
   "prices" : [ {
-    "volume" : 40975,
-    "marketCap" : 148727070940,
-    "lowPrice" : 6550,
-    "highPrice" : 6760,
-    "openPrice" : 6550,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6740
-  }, {
     "volume" : 71181,
     "marketCap" : 145858447910,
     "lowPrice" : 6610,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8290,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8340
+  }, {
+    "volume" : 51304,
+    "marketCap" : 184613241600,
+    "lowPrice" : 8120,
+    "highPrice" : 8360,
+    "openPrice" : 8360,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8170
   } ],
   "stockCode" : "033160"
 }

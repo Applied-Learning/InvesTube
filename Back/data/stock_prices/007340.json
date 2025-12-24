@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "DN오토모티브",
   "prices" : [ {
-    "volume" : 52751,
-    "marketCap" : 1091537185200,
-    "lowPrice" : 18220,
-    "highPrice" : 18580,
-    "openPrice" : 18310,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 18480
-  }, {
     "volume" : 51625,
     "marketCap" : 1096853113050,
     "lowPrice" : 18330,
@@ -1937,6 +1929,14 @@
     "openPrice" : 26500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 25850
+  }, {
+    "volume" : 105864,
+    "marketCap" : 1494952600750,
+    "lowPrice" : 25200,
+    "highPrice" : 25850,
+    "openPrice" : 25850,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 25550
   } ],
   "stockCode" : "007340"
 }

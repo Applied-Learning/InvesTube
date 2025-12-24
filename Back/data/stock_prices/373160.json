@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "데이원컴퍼니",
   "prices" : [ {
     "volume" : 5373704,
@@ -1769,6 +1769,14 @@
     "openPrice" : 5200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5170
+  }, {
+    "volume" : 13842,
+    "marketCap" : 70958825660,
+    "lowPrice" : 5110,
+    "highPrice" : 5260,
+    "openPrice" : 5170,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5140
   } ],
   "stockCode" : "373160"
 }

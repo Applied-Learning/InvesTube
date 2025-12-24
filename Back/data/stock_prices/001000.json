@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신라섬유",
   "prices" : [ {
-    "volume" : 61847,
-    "marketCap" : 24277540000,
-    "lowPrice" : 961,
-    "highPrice" : 1002,
-    "openPrice" : 982,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1000
-  }, {
     "volume" : 29568,
     "marketCap" : 24277540000,
     "lowPrice" : 979,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2175,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2120
+  }, {
+    "volume" : 32447,
+    "marketCap" : 51589772500,
+    "lowPrice" : 2100,
+    "highPrice" : 2140,
+    "openPrice" : 2135,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2125
   } ],
   "stockCode" : "001000"
 }

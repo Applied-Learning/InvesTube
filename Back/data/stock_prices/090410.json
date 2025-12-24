@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "덕신이피씨",
   "prices" : [ {
-    "volume" : 73234,
-    "marketCap" : 73642383810,
-    "lowPrice" : 1580,
-    "highPrice" : 1613,
-    "openPrice" : 1593,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1598
-  }, {
     "volume" : 74725,
     "marketCap" : 72997206480,
     "lowPrice" : 1575,
@@ -1936,6 +1928,14 @@
     "highPrice" : 1323,
     "openPrice" : 1323,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 1316
+  }, {
+    "volume" : 84322,
+    "marketCap" : 60646669020,
+    "lowPrice" : 1293,
+    "highPrice" : 1321,
+    "openPrice" : 1307,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 1316
   } ],
   "stockCode" : "090410"

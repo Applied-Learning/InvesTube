@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "바디텍메드",
   "prices" : [ {
-    "volume" : 91032,
-    "marketCap" : 371087648000,
-    "lowPrice" : 15770,
-    "highPrice" : 16400,
-    "openPrice" : 16300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15800
-  }, {
     "volume" : 88243,
     "marketCap" : 380482272000,
     "lowPrice" : 15870,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13270,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13200
+  }, {
+    "volume" : 28064,
+    "marketCap" : 307439070400,
+    "lowPrice" : 13000,
+    "highPrice" : 13450,
+    "openPrice" : 13330,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13090
   } ],
   "stockCode" : "206640"
 }

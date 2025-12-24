@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "원텍",
   "prices" : [ {
-    "volume" : 343028,
-    "marketCap" : 397565754550,
-    "lowPrice" : 4445,
-    "highPrice" : 4600,
-    "openPrice" : 4545,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4450
-  }, {
     "volume" : 383898,
     "marketCap" : 402032785500,
     "lowPrice" : 4460,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7370,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7530
+  }, {
+    "volume" : 571033,
+    "marketCap" : 654973570160,
+    "lowPrice" : 7280,
+    "highPrice" : 7580,
+    "openPrice" : 7580,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7280
   } ],
   "stockCode" : "336570"
 }

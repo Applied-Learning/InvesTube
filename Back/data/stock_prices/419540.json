@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "비스토스",
   "prices" : [ {
-    "volume" : 340772,
-    "marketCap" : 39754051519,
-    "lowPrice" : 1650,
-    "highPrice" : 1814,
-    "openPrice" : 1650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1729
-  }, {
     "volume" : 75113,
     "marketCap" : 39363178832,
     "lowPrice" : 1700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1185,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1173
+  }, {
+    "volume" : 142484,
+    "marketCap" : 26671312760,
+    "lowPrice" : 1156,
+    "highPrice" : 1184,
+    "openPrice" : 1184,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1160
   } ],
   "stockCode" : "419540"
 }

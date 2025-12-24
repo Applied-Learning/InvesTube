@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "테이팩스",
   "prices" : [ {
-    "volume" : 8850,
-    "marketCap" : 63007076500,
-    "lowPrice" : 12900,
-    "highPrice" : 13290,
-    "openPrice" : 13040,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13210
-  }, {
     "volume" : 11715,
     "marketCap" : 63102469500,
     "lowPrice" : 12920,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14710,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14670
+  }, {
+    "volume" : 18628,
+    "marketCap" : 67967512500,
+    "lowPrice" : 14220,
+    "highPrice" : 14750,
+    "openPrice" : 14750,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14250
   } ],
   "stockCode" : "055490"
 }

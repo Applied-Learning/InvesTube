@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동서",
   "prices" : [ {
-    "volume" : 107643,
-    "marketCap" : 2746735000000,
-    "lowPrice" : 27500,
-    "highPrice" : 28500,
-    "openPrice" : 28150,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 27550
-  }, {
     "volume" : 183264,
     "marketCap" : 2781630000000,
     "lowPrice" : 27250,
@@ -1937,6 +1929,14 @@
     "openPrice" : 29100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 28850
+  }, {
+    "volume" : 71995,
+    "marketCap" : 2911240000000,
+    "lowPrice" : 28750,
+    "highPrice" : 29300,
+    "openPrice" : 28800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 29200
   } ],
   "stockCode" : "026960"
 }

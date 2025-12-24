@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "키움증권",
   "prices" : [ {
-    "volume" : 87992,
-    "marketCap" : 3244444332600,
-    "lowPrice" : 123100,
-    "highPrice" : 127600,
-    "openPrice" : 124600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 127100
-  }, {
     "volume" : 73410,
     "marketCap" : 3285287062200,
     "lowPrice" : 126400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 298000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 296500
+  }, {
+    "volume" : 89577,
+    "marketCap" : 8057395746000,
+    "lowPrice" : 295000,
+    "highPrice" : 303500,
+    "openPrice" : 297000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 301500
   } ],
   "stockCode" : "039490"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "큐렉소",
   "prices" : [ {
-    "volume" : 131684,
-    "marketCap" : 258045137200,
-    "lowPrice" : 6170,
-    "highPrice" : 6440,
-    "openPrice" : 6230,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6280
-  }, {
     "volume" : 106046,
     "marketCap" : 260099636700,
     "lowPrice" : 6280,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12950,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13670
+  }, {
+    "volume" : 1324866,
+    "marketCap" : 564165562700,
+    "lowPrice" : 13390,
+    "highPrice" : 14270,
+    "openPrice" : 14200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13730
   } ],
   "stockCode" : "060280"
 }

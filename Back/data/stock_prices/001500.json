@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대차증권",
   "prices" : [ {
-    "volume" : 30629,
-    "marketCap" : 241015471200,
-    "lowPrice" : 7490,
-    "highPrice" : 7620,
-    "openPrice" : 7490,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7600
-  }, {
     "volume" : 45089,
     "marketCap" : 242918224920,
     "lowPrice" : 7580,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8090,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8120
+  }, {
+    "volume" : 80340,
+    "marketCap" : 500229325960,
+    "lowPrice" : 8070,
+    "highPrice" : 8210,
+    "openPrice" : 8170,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8090
   } ],
   "stockCode" : "001500"
 }

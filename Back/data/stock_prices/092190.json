@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "서울바이오시스",
   "prices" : [ {
-    "volume" : 24262,
-    "marketCap" : 139898568150,
-    "lowPrice" : 2930,
-    "highPrice" : 3080,
-    "openPrice" : 3080,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3050
-  }, {
     "volume" : 6308,
     "marketCap" : 139669226235,
     "lowPrice" : 3025,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2495,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2585
+  }, {
+    "volume" : 9343,
+    "marketCap" : 117652402395,
+    "lowPrice" : 2545,
+    "highPrice" : 2600,
+    "openPrice" : 2585,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2565
   } ],
   "stockCode" : "092190"
 }

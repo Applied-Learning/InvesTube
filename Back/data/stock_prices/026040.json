@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제이에스티나",
   "prices" : [ {
-    "volume" : 553936,
-    "marketCap" : 41094437100,
-    "lowPrice" : 2315,
-    "highPrice" : 2495,
-    "openPrice" : 2370,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2490
-  }, {
     "volume" : 207800,
     "marketCap" : 40351766550,
     "lowPrice" : 2385,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3070,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3180
+  }, {
+    "volume" : 61213,
+    "marketCap" : 50584116350,
+    "lowPrice" : 3050,
+    "highPrice" : 3175,
+    "openPrice" : 3135,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3065
   } ],
   "stockCode" : "026040"
 }

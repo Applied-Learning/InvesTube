@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이톡시",
   "prices" : [ {
-    "volume" : 266919,
-    "marketCap" : 50106484758,
-    "lowPrice" : 1015,
-    "highPrice" : 1090,
-    "openPrice" : 1045,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1023
-  }, {
     "volume" : 95338,
     "marketCap" : 50008524866,
     "lowPrice" : 1015,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 247
+  }, {
+    "volume" : 0,
+    "marketCap" : 14393949453,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 247
   } ],
   "stockCode" : "052770"

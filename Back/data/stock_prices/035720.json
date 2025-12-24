@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "카카오",
   "prices" : [ {
-    "volume" : 2132239,
-    "marketCap" : 17609470195700,
-    "lowPrice" : 39200,
-    "highPrice" : 41000,
-    "openPrice" : 41000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 39700
-  }, {
     "volume" : 1110417,
     "marketCap" : 17520757499500,
     "lowPrice" : 39500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 58800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 58700
+  }, {
+    "volume" : 1324562,
+    "marketCap" : 26103004141000,
+    "lowPrice" : 58300,
+    "highPrice" : 59500,
+    "openPrice" : 58700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 59000
   } ],
   "stockCode" : "035720"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "팬오션",
   "prices" : [ {
-    "volume" : 914168,
-    "marketCap" : 1796153560320,
-    "lowPrice" : 3320,
-    "highPrice" : 3380,
-    "openPrice" : 3355,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3360
-  }, {
     "volume" : 911913,
     "marketCap" : 1809517798120,
     "lowPrice" : 3365,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3940,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3925
+  }, {
+    "volume" : 1605537,
+    "marketCap" : 2103531029720,
+    "lowPrice" : 3900,
+    "highPrice" : 4005,
+    "openPrice" : 3950,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3935
   } ],
   "stockCode" : "028670"
 }

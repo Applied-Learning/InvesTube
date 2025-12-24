@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엘엠에스",
   "prices" : [ {
-    "volume" : 8779,
-    "marketCap" : 55153681000,
-    "lowPrice" : 6160,
-    "highPrice" : 6340,
-    "openPrice" : 6250,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6200
-  }, {
     "volume" : 5704,
     "marketCap" : 55509511200,
     "lowPrice" : 6160,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5020,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5060
+  }, {
+    "volume" : 5976,
+    "marketCap" : 44167423575,
+    "lowPrice" : 4955,
+    "highPrice" : 5080,
+    "openPrice" : 5060,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4965
   } ],
   "stockCode" : "073110"
 }

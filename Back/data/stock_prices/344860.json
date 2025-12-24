@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이노진",
   "prices" : [ {
-    "volume" : 15340,
-    "marketCap" : 18321690000,
-    "lowPrice" : 1463,
-    "highPrice" : 1536,
-    "openPrice" : 1530,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1523
-  }, {
     "volume" : 15917,
     "marketCap" : 18249510000,
     "lowPrice" : 1511,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2040
+  }, {
+    "volume" : 652696,
+    "marketCap" : 23446470000,
+    "lowPrice" : 1912,
+    "highPrice" : 2110,
+    "openPrice" : 2040,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1949
   } ],
   "stockCode" : "344860"
 }

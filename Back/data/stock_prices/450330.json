@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하스",
   "prices" : [ {
-    "volume" : 22755,
-    "marketCap" : 55400583630,
-    "lowPrice" : 7070,
-    "highPrice" : 7280,
-    "openPrice" : 7090,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7070
-  }, {
     "volume" : 13193,
     "marketCap" : 55400583630,
     "lowPrice" : 7030,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6480,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6610
+  }, {
+    "volume" : 39217,
+    "marketCap" : 53214479500,
+    "lowPrice" : 6410,
+    "highPrice" : 6630,
+    "openPrice" : 6630,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6500
   } ],
   "stockCode" : "450330"
 }

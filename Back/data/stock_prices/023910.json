@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대한약품",
   "prices" : [ {
-    "volume" : 10331,
-    "marketCap" : 161100000000,
-    "lowPrice" : 26400,
-    "highPrice" : 26850,
-    "openPrice" : 26850,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 26850
-  }, {
     "volume" : 6494,
     "marketCap" : 161400000000,
     "lowPrice" : 26550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 30500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 30350
+  }, {
+    "volume" : 17379,
+    "marketCap" : 182400000000,
+    "lowPrice" : 30000,
+    "highPrice" : 30450,
+    "openPrice" : 30350,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 30400
   } ],
   "stockCode" : "023910"
 }

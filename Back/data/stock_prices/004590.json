@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국가구",
   "prices" : [ {
-    "volume" : 18696,
-    "marketCap" : 60600000000,
-    "lowPrice" : 4015,
-    "highPrice" : 4095,
-    "openPrice" : 4070,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4040
-  }, {
     "volume" : 11441,
     "marketCap" : 60750000000,
     "lowPrice" : 4040,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5020
+  }, {
+    "volume" : 113965,
+    "marketCap" : 73725000000,
+    "lowPrice" : 4855,
+    "highPrice" : 5090,
+    "openPrice" : 4970,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4915
   } ],
   "stockCode" : "004590"
 }

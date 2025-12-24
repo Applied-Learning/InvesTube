@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한네트",
   "prices" : [ {
-    "volume" : 72038,
-    "marketCap" : 53308657000,
-    "lowPrice" : 4550,
-    "highPrice" : 4650,
-    "openPrice" : 4580,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4610
-  }, {
     "volume" : 42611,
     "marketCap" : 53077383000,
     "lowPrice" : 4580,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4015,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4030
+  }, {
+    "volume" : 15727,
+    "marketCap" : 46543892500,
+    "lowPrice" : 3985,
+    "highPrice" : 4035,
+    "openPrice" : 4025,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4025
   } ],
   "stockCode" : "052600"
 }

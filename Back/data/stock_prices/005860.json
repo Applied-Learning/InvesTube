@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한일사료",
   "prices" : [ {
-    "volume" : 101070,
-    "marketCap" : 145596616075,
-    "lowPrice" : 3610,
-    "highPrice" : 3695,
-    "openPrice" : 3610,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3695
-  }, {
     "volume" : 114507,
     "marketCap" : 145596616075,
     "lowPrice" : 3665,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3115,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3110
+  }, {
+    "volume" : 107881,
+    "marketCap" : 121757386650,
+    "lowPrice" : 3080,
+    "highPrice" : 3120,
+    "openPrice" : 3090,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3090
   } ],
   "stockCode" : "005860"
 }

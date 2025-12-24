@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인벤티지랩",
   "prices" : [ {
-    "volume" : 1036656,
-    "marketCap" : 183213100500,
-    "lowPrice" : 16870,
-    "highPrice" : 18500,
-    "openPrice" : 16900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 18250
-  }, {
     "volume" : 464083,
     "marketCap" : 174278324640,
     "lowPrice" : 17150,
@@ -1937,6 +1929,14 @@
     "openPrice" : 87500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 78800
+  }, {
+    "volume" : 628835,
+    "marketCap" : 911992483500,
+    "lowPrice" : 71900,
+    "highPrice" : 79600,
+    "openPrice" : 78400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 73500
   } ],
   "stockCode" : "389470"
 }

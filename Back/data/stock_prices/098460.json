@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "고영",
   "prices" : [ {
-    "volume" : 353271,
-    "marketCap" : 584938512600,
-    "lowPrice" : 8410,
-    "highPrice" : 8640,
-    "openPrice" : 8500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8520
-  }, {
     "volume" : 203710,
     "marketCap" : 576699942000,
     "lowPrice" : 8360,
@@ -1937,6 +1929,14 @@
     "openPrice" : 24050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 24500
+  }, {
+    "volume" : 4018823,
+    "marketCap" : 1623684955750,
+    "lowPrice" : 23400,
+    "highPrice" : 25275,
+    "openPrice" : 24800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 23650
   } ],
   "stockCode" : "098460"
 }

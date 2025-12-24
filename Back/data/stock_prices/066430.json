@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이로보틱스",
   "prices" : [ {
-    "volume" : 86747,
-    "marketCap" : 21182030516,
-    "lowPrice" : 539,
-    "highPrice" : 550,
-    "openPrice" : 539,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 541
-  }, {
     "volume" : 32293,
     "marketCap" : 21338644420,
     "lowPrice" : 539,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1452,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1450
+  }, {
+    "volume" : 434442,
+    "marketCap" : 56146084584,
+    "lowPrice" : 1420,
+    "highPrice" : 1465,
+    "openPrice" : 1457,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1434
   } ],
   "stockCode" : "066430"
 }

@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아크릴",
   "prices" : [ {
     "volume" : 30320190,
@@ -41,6 +41,14 @@
     "openPrice" : 41900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 38750
+  }, {
+    "volume" : 5074714,
+    "marketCap" : 376671292800,
+    "lowPrice" : 33800,
+    "highPrice" : 49600,
+    "openPrice" : 39150,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 47200
   } ],
   "stockCode" : "0007C0"
 }

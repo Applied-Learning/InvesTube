@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아모센스",
   "prices" : [ {
-    "volume" : 168574,
-    "marketCap" : 60028412400,
-    "lowPrice" : 5300,
-    "highPrice" : 6300,
-    "openPrice" : 5510,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5350
-  }, {
     "volume" : 10331,
     "marketCap" : 59467399200,
     "lowPrice" : 5150,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6950,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6750
+  }, {
+    "volume" : 24661,
+    "marketCap" : 76493871960,
+    "lowPrice" : 6720,
+    "highPrice" : 7050,
+    "openPrice" : 6750,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6780
   } ],
   "stockCode" : "357580"
 }

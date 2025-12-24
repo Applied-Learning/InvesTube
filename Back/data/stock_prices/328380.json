@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "솔트웨어",
   "prices" : [ {
-    "volume" : 52781,
-    "marketCap" : 29671565748,
-    "lowPrice" : 840,
-    "highPrice" : 870,
-    "openPrice" : 865,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 866
-  }, {
     "volume" : 37744,
     "marketCap" : 29123361300,
     "lowPrice" : 844,
@@ -1937,6 +1929,14 @@
     "openPrice" : 850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 835
+  }, {
+    "volume" : 54769,
+    "marketCap" : 28403842962,
+    "lowPrice" : 829,
+    "highPrice" : 839,
+    "openPrice" : 837,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 829
   } ],
   "stockCode" : "328380"
 }

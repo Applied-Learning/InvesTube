@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대한화섬",
   "prices" : [ {
-    "volume" : 177,
-    "marketCap" : 145814400000,
-    "lowPrice" : 105000,
-    "highPrice" : 111700,
-    "openPrice" : 108600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 109800
-  }, {
     "volume" : 388,
     "marketCap" : 142096000000,
     "lowPrice" : 105800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 121300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 120100
+  }, {
+    "volume" : 42,
+    "marketCap" : 157500800000,
+    "lowPrice" : 118600,
+    "highPrice" : 121000,
+    "openPrice" : 121000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 118600
   } ],
   "stockCode" : "003830"
 }

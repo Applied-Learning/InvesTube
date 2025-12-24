@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "율촌화학",
   "prices" : [ {
-    "volume" : 63101,
-    "marketCap" : 508400000000,
-    "lowPrice" : 19330,
-    "highPrice" : 20900,
-    "openPrice" : 19490,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 20500
-  }, {
     "volume" : 140286,
     "marketCap" : 525760000000,
     "lowPrice" : 20400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 28250,
     "tradeDate" : "2025-12-22",
     "closePrice" : 27900
+  }, {
+    "volume" : 41440,
+    "marketCap" : 689440000000,
+    "lowPrice" : 27700,
+    "highPrice" : 28300,
+    "openPrice" : 28050,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 27800
   } ],
   "stockCode" : "008730"
 }

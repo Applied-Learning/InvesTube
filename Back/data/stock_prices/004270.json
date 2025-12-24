@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "남성",
   "prices" : [ {
-    "volume" : 25799,
-    "marketCap" : 41028377280,
-    "lowPrice" : 1114,
-    "highPrice" : 1144,
-    "openPrice" : 1130,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1133
-  }, {
     "volume" : 36392,
     "marketCap" : 42368227200,
     "lowPrice" : 1126,
@@ -1937,6 +1929,14 @@
     "openPrice" : 929,
     "tradeDate" : "2025-12-22",
     "closePrice" : 928
+  }, {
+    "volume" : 71184,
+    "marketCap" : 33460035840,
+    "lowPrice" : 919,
+    "highPrice" : 936,
+    "openPrice" : 936,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 924
   } ],
   "stockCode" : "004270"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "효성화학",
   "prices" : [ {
-    "volume" : 13064,
-    "marketCap" : 167218865100,
-    "lowPrice" : 43950,
-    "highPrice" : 46700,
-    "openPrice" : 45600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 44100
-  }, {
     "volume" : 14917,
     "marketCap" : 161910329700,
     "lowPrice" : 42350,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 38900
+  }, {
+    "volume" : 0,
+    "marketCap" : 147501447900,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 38900
   } ],
   "stockCode" : "298000"

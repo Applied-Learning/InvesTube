@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "그린광학",
   "prices" : [ {
     "volume" : 21446871,
@@ -209,6 +209,14 @@
     "openPrice" : 15880,
     "tradeDate" : "2025-12-22",
     "closePrice" : 17350
+  }, {
+    "volume" : 905467,
+    "marketCap" : 183729893700,
+    "lowPrice" : 15670,
+    "highPrice" : 17860,
+    "openPrice" : 17860,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15700
   } ],
   "stockCode" : "0015G0"
 }

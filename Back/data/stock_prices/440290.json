@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HB인베스트먼트",
   "prices" : [ {
-    "volume" : 49367,
-    "marketCap" : 44753673510,
-    "lowPrice" : 1633,
-    "highPrice" : 1651,
-    "openPrice" : 1642,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1651
-  }, {
     "volume" : 37447,
     "marketCap" : 44997636600,
     "lowPrice" : 1638,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2475,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2425
+  }, {
+    "volume" : 264688,
+    "marketCap" : 64227514050,
+    "lowPrice" : 2305,
+    "highPrice" : 2420,
+    "openPrice" : 2420,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2335
   } ],
   "stockCode" : "440290"
 }

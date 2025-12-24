@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "모베이스전자",
   "prices" : [ {
-    "volume" : 175451,
-    "marketCap" : 101940972144,
-    "lowPrice" : 1363,
-    "highPrice" : 1397,
-    "openPrice" : 1372,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1392
-  }, {
     "volume" : 105713,
     "marketCap" : 101135404117,
     "lowPrice" : 1367,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1370,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1391
+  }, {
+    "volume" : 124319,
+    "marketCap" : 101062170660,
+    "lowPrice" : 1361,
+    "highPrice" : 1403,
+    "openPrice" : 1392,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1380
   } ],
   "stockCode" : "012860"
 }

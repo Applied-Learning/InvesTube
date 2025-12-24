@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "민테크",
   "prices" : [ {
-    "volume" : 115017,
-    "marketCap" : 112362861000,
-    "lowPrice" : 4870,
-    "highPrice" : 5220,
-    "openPrice" : 4870,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5070
-  }, {
     "volume" : 635724,
     "marketCap" : 107708778000,
     "lowPrice" : 4840,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2375,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2395
+  }, {
+    "volume" : 82396,
+    "marketCap" : 54691426500,
+    "lowPrice" : 2305,
+    "highPrice" : 2420,
+    "openPrice" : 2420,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2305
   } ],
   "stockCode" : "452200"
 }

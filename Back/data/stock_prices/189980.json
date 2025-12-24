@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "흥국에프엔비",
   "prices" : [ {
-    "volume" : 45846,
-    "marketCap" : 66307690204,
-    "lowPrice" : 1600,
-    "highPrice" : 1655,
-    "openPrice" : 1600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1652
-  }, {
     "volume" : 202228,
     "marketCap" : 67551962841,
     "lowPrice" : 1645,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1695,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1716
+  }, {
+    "volume" : 69141,
+    "marketCap" : 68033616765,
+    "lowPrice" : 1689,
+    "highPrice" : 1721,
+    "openPrice" : 1719,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1695
   } ],
   "stockCode" : "189980"
 }

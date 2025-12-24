@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "블리츠웨이엔터테인먼트",
   "prices" : [ {
-    "volume" : 7608,
-    "marketCap" : 82538012705,
-    "lowPrice" : 1640,
-    "highPrice" : 1697,
-    "openPrice" : 1640,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1655
-  }, {
     "volume" : 17724,
     "marketCap" : 82438268883,
     "lowPrice" : 1640,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1416,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1388
+  }, {
+    "volume" : 31301,
+    "marketCap" : 68823237180,
+    "lowPrice" : 1378,
+    "highPrice" : 1400,
+    "openPrice" : 1400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1380
   } ],
   "stockCode" : "369370"
 }

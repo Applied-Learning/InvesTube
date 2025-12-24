@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼호개발",
   "prices" : [ {
-    "volume" : 11838,
-    "marketCap" : 78250000000,
-    "lowPrice" : 3100,
-    "highPrice" : 3140,
-    "openPrice" : 3100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3130
-  }, {
     "volume" : 12895,
     "marketCap" : 79000000000,
     "lowPrice" : 3115,
@@ -1936,6 +1928,14 @@
     "highPrice" : 3700,
     "openPrice" : 3645,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 3670
+  }, {
+    "volume" : 42796,
+    "marketCap" : 88520400000,
+    "lowPrice" : 3635,
+    "highPrice" : 3675,
+    "openPrice" : 3640,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 3670
   } ],
   "stockCode" : "010960"

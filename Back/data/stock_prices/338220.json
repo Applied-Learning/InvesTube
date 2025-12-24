@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "뷰노",
   "prices" : [ {
-    "volume" : 112617,
-    "marketCap" : 336094851400,
-    "lowPrice" : 23750,
-    "highPrice" : 24400,
-    "openPrice" : 24250,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 24200
-  }, {
     "volume" : 154973,
     "marketCap" : 341650138200,
     "lowPrice" : 23750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 23850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 24950
+  }, {
+    "volume" : 134758,
+    "marketCap" : 329742931650,
+    "lowPrice" : 23500,
+    "highPrice" : 24750,
+    "openPrice" : 24750,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 23550
   } ],
   "stockCode" : "338220"
 }

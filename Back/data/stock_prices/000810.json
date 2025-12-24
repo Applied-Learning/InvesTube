@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼성화재",
   "prices" : [ {
-    "volume" : 51762,
-    "marketCap" : 17623439364000,
-    "lowPrice" : 363000,
-    "highPrice" : 373000,
-    "openPrice" : 364000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 372000
-  }, {
     "volume" : 46360,
     "marketCap" : 17528689690000,
     "lowPrice" : 368000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 493500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 497500
+  }, {
+    "volume" : 47364,
+    "marketCap" : 22913555190000,
+    "lowPrice" : 496500,
+    "highPrice" : 504000,
+    "openPrice" : 499000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 498000
   } ],
   "stockCode" : "000810"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "레몬",
   "prices" : [ {
-    "volume" : 43293,
-    "marketCap" : 63000000000,
-    "lowPrice" : 2920,
-    "highPrice" : 3040,
-    "openPrice" : 2920,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3000
-  }, {
     "volume" : 33005,
     "marketCap" : 62790000000,
     "lowPrice" : 2950,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5040,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5000
+  }, {
+    "volume" : 83498,
+    "marketCap" : 116557053600,
+    "lowPrice" : 4950,
+    "highPrice" : 5260,
+    "openPrice" : 5150,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5200
   } ],
   "stockCode" : "294140"
 }

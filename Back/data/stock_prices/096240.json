@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "크레버스",
   "prices" : [ {
-    "volume" : 11970,
-    "marketCap" : 168743427000,
-    "lowPrice" : 14910,
-    "highPrice" : 15350,
-    "openPrice" : 15000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15150
-  }, {
     "volume" : 22569,
     "marketCap" : 168854808800,
     "lowPrice" : 15060,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12920
+  }, {
+    "volume" : 30589,
+    "marketCap" : 142680085800,
+    "lowPrice" : 12810,
+    "highPrice" : 12960,
+    "openPrice" : 12820,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12810
   } ],
   "stockCode" : "096240"
 }

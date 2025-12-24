@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국종합기술",
   "prices" : [ {
-    "volume" : 345657,
-    "marketCap" : 61977000000,
-    "lowPrice" : 5510,
-    "highPrice" : 5810,
-    "openPrice" : 5670,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5660
-  }, {
     "volume" : 2691810,
     "marketCap" : 65371500000,
     "lowPrice" : 5610,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4910,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4880
+  }, {
+    "volume" : 24685,
+    "marketCap" : 53107500000,
+    "lowPrice" : 4775,
+    "highPrice" : 4920,
+    "openPrice" : 4920,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4850
   } ],
   "stockCode" : "023350"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코어라인소프트",
   "prices" : [ {
-    "volume" : 91415,
-    "marketCap" : 80072079360,
-    "lowPrice" : 6180,
-    "highPrice" : 6700,
-    "openPrice" : 6550,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6240
-  }, {
     "volume" : 73043,
     "marketCap" : 78788872960,
     "lowPrice" : 6090,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4110,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4200
+  }, {
+    "volume" : 131677,
+    "marketCap" : 71158633780,
+    "lowPrice" : 3965,
+    "highPrice" : 4190,
+    "openPrice" : 4190,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3965
   } ],
   "stockCode" : "384470"
 }

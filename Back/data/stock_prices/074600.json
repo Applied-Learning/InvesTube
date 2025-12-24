@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "원익QnC",
   "prices" : [ {
-    "volume" : 176042,
-    "marketCap" : 490271200000,
-    "lowPrice" : 17970,
-    "highPrice" : 18920,
-    "openPrice" : 18020,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 18650
-  }, {
     "volume" : 150811,
     "marketCap" : 490008320000,
     "lowPrice" : 18600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 20550,
     "tradeDate" : "2025-12-22",
     "closePrice" : 20950
+  }, {
+    "volume" : 108462,
+    "marketCap" : 546790400000,
+    "lowPrice" : 20600,
+    "highPrice" : 21000,
+    "openPrice" : 20900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 20800
   } ],
   "stockCode" : "074600"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "호텔신라우",
   "prices" : [ {
-    "volume" : 1107,
-    "marketCap" : 22819527650,
-    "lowPrice" : 30150,
-    "highPrice" : 30550,
-    "openPrice" : 30200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 30350
-  }, {
     "volume" : 886,
     "marketCap" : 22894715550,
     "lowPrice" : 30400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 38300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 37700
+  }, {
+    "volume" : 575,
+    "marketCap" : 28383432250,
+    "lowPrice" : 37700,
+    "highPrice" : 38400,
+    "openPrice" : 38400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 37750
   } ],
   "stockCode" : "008775"
 }

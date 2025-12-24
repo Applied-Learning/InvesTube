@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하이트진로2우B",
   "prices" : [ {
-    "volume" : 281,
-    "marketCap" : 18500359060,
-    "lowPrice" : 16230,
-    "highPrice" : 16410,
-    "openPrice" : 16350,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16370
-  }, {
     "volume" : 1530,
     "marketCap" : 18421249400,
     "lowPrice" : 16220,
@@ -1937,6 +1929,14 @@
     "openPrice" : 15430,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15460
+  }, {
+    "volume" : 1708,
+    "marketCap" : 17505837620,
+    "lowPrice" : 15440,
+    "highPrice" : 15500,
+    "openPrice" : 15460,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15490
   } ],
   "stockCode" : "000087"
 }

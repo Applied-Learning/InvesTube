@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "셀비온",
   "prices" : [ {
-    "volume" : 293514,
-    "marketCap" : 157452410700,
-    "lowPrice" : 11700,
-    "highPrice" : 12770,
-    "openPrice" : 11980,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12300
-  }, {
     "volume" : 243255,
     "marketCap" : 153612108000,
     "lowPrice" : 11750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 23600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 23650
+  }, {
+    "volume" : 229773,
+    "marketCap" : 289992126000,
+    "lowPrice" : 22300,
+    "highPrice" : 23900,
+    "openPrice" : 23900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 22600
   } ],
   "stockCode" : "308430"
 }

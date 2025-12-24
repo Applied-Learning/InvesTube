@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "티앤알바이오팹",
   "prices" : [ {
-    "volume" : 940732,
-    "marketCap" : 80800605000,
-    "lowPrice" : 3420,
-    "highPrice" : 4795,
-    "openPrice" : 4700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3750
-  }, {
     "volume" : 312792,
     "marketCap" : 84355831620,
     "lowPrice" : 3765,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4535
+  }, {
+    "volume" : 2619214,
+    "marketCap" : 206328762000,
+    "lowPrice" : 4075,
+    "highPrice" : 4925,
+    "openPrice" : 4525,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4500
   } ],
   "stockCode" : "246710"
 }

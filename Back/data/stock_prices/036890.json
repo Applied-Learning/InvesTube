@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "진성티이씨",
   "prices" : [ {
-    "volume" : 89035,
-    "marketCap" : 205712752200,
-    "lowPrice" : 8980,
-    "highPrice" : 9180,
-    "openPrice" : 9060,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9150
-  }, {
     "volume" : 60003,
     "marketCap" : 204363816120,
     "lowPrice" : 8990,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13480,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13280
+  }, {
+    "volume" : 70939,
+    "marketCap" : 288847687530,
+    "lowPrice" : 13010,
+    "highPrice" : 13360,
+    "openPrice" : 13300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13110
   } ],
   "stockCode" : "036890"
 }

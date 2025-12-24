@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "툴젠",
   "prices" : [ {
-    "volume" : 21032,
-    "marketCap" : 324539342000,
-    "lowPrice" : 38000,
-    "highPrice" : 39100,
-    "openPrice" : 38550,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 38000
-  }, {
     "volume" : 60708,
     "marketCap" : 321231012800,
     "lowPrice" : 37600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 51800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 51400
+  }, {
+    "volume" : 39579,
+    "marketCap" : 456485706500,
+    "lowPrice" : 50200,
+    "highPrice" : 53400,
+    "openPrice" : 52400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 50900
   } ],
   "stockCode" : "199800"
 }

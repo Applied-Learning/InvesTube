@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제일약품",
   "prices" : [ {
-    "volume" : 5776,
-    "marketCap" : 169400125440,
-    "lowPrice" : 11290,
-    "highPrice" : 11560,
-    "openPrice" : 11560,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11520
-  }, {
     "volume" : 8369,
     "marketCap" : 172635197280,
     "lowPrice" : 11360,
@@ -1937,6 +1929,14 @@
     "openPrice" : 16090,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15690
+  }, {
+    "volume" : 25587,
+    "marketCap" : 225131590320,
+    "lowPrice" : 15210,
+    "highPrice" : 15760,
+    "openPrice" : 15760,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15310
   } ],
   "stockCode" : "271980"
 }

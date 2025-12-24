@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "씨엔알리서치",
   "prices" : [ {
-    "volume" : 223153,
-    "marketCap" : 65404952323,
-    "lowPrice" : 1109,
-    "highPrice" : 1155,
-    "openPrice" : 1109,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1153
-  }, {
     "volume" : 594958,
     "marketCap" : 67503810290,
     "lowPrice" : 1150,
@@ -1937,6 +1929,14 @@
     "openPrice" : 970,
     "tradeDate" : "2025-12-22",
     "closePrice" : 957
+  }, {
+    "volume" : 588216,
+    "marketCap" : 52758118206,
+    "lowPrice" : 915,
+    "highPrice" : 962,
+    "openPrice" : 951,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 918
   } ],
   "stockCode" : "359090"
 }

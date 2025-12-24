@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "구영테크",
   "prices" : [ {
-    "volume" : 34085,
-    "marketCap" : 56054278225,
-    "lowPrice" : 1985,
-    "highPrice" : 2045,
-    "openPrice" : 1992,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2045
-  }, {
     "volume" : 94129,
     "marketCap" : 56054278225,
     "lowPrice" : 2020,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2150
+  }, {
+    "volume" : 22743,
+    "marketCap" : 58384162650,
+    "lowPrice" : 2110,
+    "highPrice" : 2165,
+    "openPrice" : 2140,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2130
   } ],
   "stockCode" : "053270"
 }

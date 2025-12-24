@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유디엠텍",
   "prices" : [ {
-    "volume" : 1221281,
-    "marketCap" : 26528485737,
-    "lowPrice" : 656,
-    "highPrice" : 696,
-    "openPrice" : 667,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 663
-  }, {
     "volume" : 1090273,
     "marketCap" : 27008639325,
     "lowPrice" : 660,
@@ -1937,6 +1929,14 @@
     "openPrice" : 549,
     "tradeDate" : "2025-12-22",
     "closePrice" : 534
+  }, {
+    "volume" : 398373,
+    "marketCap" : 21794451660,
+    "lowPrice" : 518,
+    "highPrice" : 538,
+    "openPrice" : 534,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 524
   } ],
   "stockCode" : "389680"
 }

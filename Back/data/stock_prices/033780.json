@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KT&G",
   "prices" : [ {
-    "volume" : 129000,
-    "marketCap" : 13802410919700,
-    "lowPrice" : 108200,
-    "highPrice" : 110200,
-    "openPrice" : 108300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 110100
-  }, {
     "volume" : 92374,
     "marketCap" : 13789874670000,
     "lowPrice" : 109000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 148000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 144800
+  }, {
+    "volume" : 149341,
+    "marketCap" : 17165601847500,
+    "lowPrice" : 144200,
+    "highPrice" : 145700,
+    "openPrice" : 144900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 145500
   } ],
   "stockCode" : "033780"
 }

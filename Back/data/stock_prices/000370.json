@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한화손해보험",
   "prices" : [ {
-    "volume" : 196378,
-    "marketCap" : 487384970125,
-    "lowPrice" : 4025,
-    "highPrice" : 4190,
-    "openPrice" : 4045,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4175
-  }, {
     "volume" : 812978,
     "marketCap" : 489719748425,
     "lowPrice" : 4150,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5460,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5540
+  }, {
+    "volume" : 540764,
+    "marketCap" : 652570534850,
+    "lowPrice" : 5510,
+    "highPrice" : 5670,
+    "openPrice" : 5530,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5590
   } ],
   "stockCode" : "000370"
 }

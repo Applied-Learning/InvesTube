@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "지앤비에스 에코",
   "prices" : [ {
-    "volume" : 48620,
-    "marketCap" : 98688847920,
-    "lowPrice" : 3010,
-    "highPrice" : 3130,
-    "openPrice" : 3010,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3120
-  }, {
     "volume" : 2665885,
     "marketCap" : 109443401860,
     "lowPrice" : 3110,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2670,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2735
+  }, {
+    "volume" : 71763,
+    "marketCap" : 87853673160,
+    "lowPrice" : 2700,
+    "highPrice" : 2760,
+    "openPrice" : 2710,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2760
   } ],
   "stockCode" : "382800"
 }

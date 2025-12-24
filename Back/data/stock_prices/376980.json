@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "원티드랩",
   "prices" : [ {
-    "volume" : 126220,
-    "marketCap" : 57066714900,
-    "lowPrice" : 5840,
-    "highPrice" : 6150,
-    "openPrice" : 6100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5850
-  }, {
     "volume" : 73855,
     "marketCap" : 55018166160,
     "lowPrice" : 5550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3605,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3610
+  }, {
+    "volume" : 20758,
+    "marketCap" : 35159018400,
+    "lowPrice" : 3570,
+    "highPrice" : 3660,
+    "openPrice" : 3610,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3600
   } ],
   "stockCode" : "376980"
 }

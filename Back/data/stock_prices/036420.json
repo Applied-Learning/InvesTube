@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "콘텐트리중앙",
   "prices" : [ {
-    "volume" : 126488,
-    "marketCap" : 187037010680,
-    "lowPrice" : 9240,
-    "highPrice" : 9950,
-    "openPrice" : 9240,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9710
-  }, {
     "volume" : 62543,
     "marketCap" : 179139464400,
     "lowPrice" : 9200,
@@ -1936,6 +1928,14 @@
     "highPrice" : 10100,
     "openPrice" : 9920,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 10030
+  }, {
+    "volume" : 59595,
+    "marketCap" : 193200949240,
+    "lowPrice" : 9810,
+    "highPrice" : 10200,
+    "openPrice" : 10040,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 10030
   } ],
   "stockCode" : "036420"

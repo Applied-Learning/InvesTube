@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "주성엔지니어링",
   "prices" : [ {
-    "volume" : 281135,
-    "marketCap" : 1401505717650,
-    "lowPrice" : 28700,
-    "highPrice" : 30000,
-    "openPrice" : 29500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 29650
-  }, {
     "volume" : 410764,
     "marketCap" : 1434593542350,
     "lowPrice" : 29650,
@@ -1936,6 +1928,14 @@
     "highPrice" : 27950,
     "openPrice" : 27450,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 27900
+  }, {
+    "volume" : 147989,
+    "marketCap" : 1318786155900,
+    "lowPrice" : 27700,
+    "highPrice" : 28200,
+    "openPrice" : 28200,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 27900
   } ],
   "stockCode" : "036930"

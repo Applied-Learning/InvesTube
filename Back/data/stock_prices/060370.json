@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "LS마린솔루션",
   "prices" : [ {
-    "volume" : 875833,
-    "marketCap" : 482845662120,
-    "lowPrice" : 14200,
-    "highPrice" : 15250,
-    "openPrice" : 14420,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14780
-  }, {
     "volume" : 433263,
     "marketCap" : 475985202780,
     "lowPrice" : 14520,
@@ -1937,6 +1929,14 @@
     "openPrice" : 32000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 31950
+  }, {
+    "volume" : 504452,
+    "marketCap" : 1593285047000,
+    "lowPrice" : 30450,
+    "highPrice" : 32250,
+    "openPrice" : 32250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 30500
   } ],
   "stockCode" : "060370"
 }

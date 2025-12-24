@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "수산아이앤티",
   "prices" : [ {
-    "volume" : 101397,
-    "marketCap" : 98564600000,
-    "lowPrice" : 14230,
-    "highPrice" : 15290,
-    "openPrice" : 15000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14600
-  }, {
     "volume" : 79714,
     "marketCap" : 100859940000,
     "lowPrice" : 14390,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9260,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9530
+  }, {
+    "volume" : 31066,
+    "marketCap" : 63864460000,
+    "lowPrice" : 9370,
+    "highPrice" : 9650,
+    "openPrice" : 9560,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9460
   } ],
   "stockCode" : "050960"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대한제당우",
   "prices" : [ {
-    "volume" : 15378,
-    "marketCap" : 15785520600,
-    "lowPrice" : 2410,
-    "highPrice" : 2450,
-    "openPrice" : 2415,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2435
-  }, {
     "volume" : 20255,
     "marketCap" : 15720693000,
     "lowPrice" : 2420,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2690,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2680
+  }, {
+    "volume" : 122596,
+    "marketCap" : 17308969200,
+    "lowPrice" : 2645,
+    "highPrice" : 2690,
+    "openPrice" : 2680,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2670
   } ],
   "stockCode" : "001795"
 }

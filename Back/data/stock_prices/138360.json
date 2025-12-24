@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "협진",
   "prices" : [ {
-    "volume" : 119053,
-    "marketCap" : 32103236672,
-    "lowPrice" : 640,
-    "highPrice" : 694,
-    "openPrice" : 687,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 664
-  }, {
     "volume" : 100660,
     "marketCap" : 31378012952,
     "lowPrice" : 642,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1041,
     "tradeDate" : "2025-12-22",
     "closePrice" : 997
+  }, {
+    "volume" : 239902,
+    "marketCap" : 55360137152,
+    "lowPrice" : 952,
+    "highPrice" : 1030,
+    "openPrice" : 997,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 976
   } ],
   "stockCode" : "138360"
 }

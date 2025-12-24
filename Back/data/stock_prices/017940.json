@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "E1",
   "prices" : [ {
-    "volume" : 8435,
-    "marketCap" : 493234000000,
-    "lowPrice" : 70900,
-    "highPrice" : 73800,
-    "openPrice" : 71300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 71900
-  }, {
     "volume" : 28244,
     "marketCap" : 494606000000,
     "lowPrice" : 71700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 88900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 87300
+  }, {
+    "volume" : 10028,
+    "marketCap" : 594762000000,
+    "lowPrice" : 85900,
+    "highPrice" : 87900,
+    "openPrice" : 87800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 86700
   } ],
   "stockCode" : "017940"
 }

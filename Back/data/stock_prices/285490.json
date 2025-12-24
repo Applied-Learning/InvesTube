@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "노바텍",
   "prices" : [ {
-    "volume" : 44599,
-    "marketCap" : 165934788390,
-    "lowPrice" : 15140,
-    "highPrice" : 15870,
-    "openPrice" : 15750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15690
-  }, {
     "volume" : 43253,
     "marketCap" : 161069906130,
     "lowPrice" : 15230,
@@ -1937,6 +1929,14 @@
     "openPrice" : 21300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 21800
+  }, {
+    "volume" : 22825,
+    "marketCap" : 226851574950,
+    "lowPrice" : 21250,
+    "highPrice" : 22000,
+    "openPrice" : 22000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 21450
   } ],
   "stockCode" : "285490"
 }

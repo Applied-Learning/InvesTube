@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제주반도체",
   "prices" : [ {
-    "volume" : 3773173,
-    "marketCap" : 324795915190,
-    "lowPrice" : 8910,
-    "highPrice" : 10220,
-    "openPrice" : 8910,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9430
-  }, {
     "volume" : 1094438,
     "marketCap" : 313429780300,
     "lowPrice" : 9040,
@@ -1937,6 +1929,14 @@
     "openPrice" : 18670,
     "tradeDate" : "2025-12-22",
     "closePrice" : 19150
+  }, {
+    "volume" : 556759,
+    "marketCap" : 675079526800,
+    "lowPrice" : 19260,
+    "highPrice" : 19710,
+    "openPrice" : 19700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 19600
   } ],
   "stockCode" : "080220"
 }

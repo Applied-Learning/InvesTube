@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한화시스템",
   "prices" : [ {
-    "volume" : 9330342,
-    "marketCap" : 4382929824800,
-    "lowPrice" : 20950,
-    "highPrice" : 23450,
-    "openPrice" : 21000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 23200
-  }, {
     "volume" : 3875896,
     "marketCap" : 4241240283050,
     "lowPrice" : 22100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 55300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 56800
+  }, {
+    "volume" : 7002880,
+    "marketCap" : 11108460073200,
+    "lowPrice" : 58300,
+    "highPrice" : 62200,
+    "openPrice" : 58300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 58800
   } ],
   "stockCode" : "272210"
 }

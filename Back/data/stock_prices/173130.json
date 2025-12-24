@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오파스넷",
   "prices" : [ {
-    "volume" : 385031,
-    "marketCap" : 94456464520,
-    "lowPrice" : 7080,
-    "highPrice" : 7380,
-    "openPrice" : 7260,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7240
-  }, {
     "volume" : 453852,
     "marketCap" : 99935983180,
     "lowPrice" : 7230,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6950,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7020
+  }, {
+    "volume" : 94803,
+    "marketCap" : 88063692750,
+    "lowPrice" : 6730,
+    "highPrice" : 7020,
+    "openPrice" : 6970,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6750
   } ],
   "stockCode" : "173130"
 }

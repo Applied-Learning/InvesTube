@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "비츠로셀",
   "prices" : [ {
-    "volume" : 79483,
-    "marketCap" : 481460083650,
-    "lowPrice" : 20800,
-    "highPrice" : 21250,
-    "openPrice" : 20900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 21050
-  }, {
     "volume" : 95017,
     "marketCap" : 468880366500,
     "lowPrice" : 20400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 19440,
     "tradeDate" : "2025-12-22",
     "closePrice" : 18970
+  }, {
+    "volume" : 174151,
+    "marketCap" : 434572047000,
+    "lowPrice" : 18840,
+    "highPrice" : 19260,
+    "openPrice" : 19010,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 19000
   } ],
   "stockCode" : "082920"
 }

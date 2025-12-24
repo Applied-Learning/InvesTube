@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "크라운해태홀딩스",
   "prices" : [ {
-    "volume" : 7577,
-    "marketCap" : 83887510550,
-    "lowPrice" : 5570,
-    "highPrice" : 5660,
-    "openPrice" : 5620,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5650
-  }, {
     "volume" : 17784,
     "marketCap" : 84629877900,
     "lowPrice" : 5600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7100
+  }, {
+    "volume" : 23150,
+    "marketCap" : 104673796350,
+    "lowPrice" : 7020,
+    "highPrice" : 7110,
+    "openPrice" : 7100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7050
   } ],
   "stockCode" : "005740"
 }

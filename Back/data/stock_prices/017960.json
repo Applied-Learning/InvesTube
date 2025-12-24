@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국카본",
   "prices" : [ {
-    "volume" : 473543,
-    "marketCap" : 580336493360,
-    "lowPrice" : 10820,
-    "highPrice" : 11270,
-    "openPrice" : 10850,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11180
-  }, {
     "volume" : 485323,
     "marketCap" : 586565507600,
     "lowPrice" : 11110,
@@ -1937,6 +1929,14 @@
     "openPrice" : 34350,
     "tradeDate" : "2025-12-22",
     "closePrice" : 33000
+  }, {
+    "volume" : 553861,
+    "marketCap" : 1780459903600,
+    "lowPrice" : 33250,
+    "highPrice" : 34550,
+    "openPrice" : 33650,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 34300
   } ],
   "stockCode" : "017960"
 }

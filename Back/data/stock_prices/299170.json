@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "더블유에스아이",
   "prices" : [ {
-    "volume" : 25471,
-    "marketCap" : 38555904492,
-    "lowPrice" : 1251,
-    "highPrice" : 1290,
-    "openPrice" : 1265,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1284
-  }, {
     "volume" : 18086,
     "marketCap" : 38826156159,
     "lowPrice" : 1284,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2505,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2510
+  }, {
+    "volume" : 1060768,
+    "marketCap" : 93868158660,
+    "lowPrice" : 2345,
+    "highPrice" : 2520,
+    "openPrice" : 2520,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2370
   } ],
   "stockCode" : "299170"
 }

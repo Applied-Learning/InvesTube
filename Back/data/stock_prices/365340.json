@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "성일하이텍",
   "prices" : [ {
-    "volume" : 22341,
-    "marketCap" : 469520200000,
-    "lowPrice" : 37050,
-    "highPrice" : 38700,
-    "openPrice" : 38000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 38650
-  }, {
     "volume" : 18779,
     "marketCap" : 456764800000,
     "lowPrice" : 37500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 41050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 41800
+  }, {
+    "volume" : 31184,
+    "marketCap" : 516335821200,
+    "lowPrice" : 41350,
+    "highPrice" : 42700,
+    "openPrice" : 41950,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 42200
   } ],
   "stockCode" : "365340"
 }

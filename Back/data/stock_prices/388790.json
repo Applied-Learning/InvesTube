@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "라이콤",
   "prices" : [ {
-    "volume" : 451353,
-    "marketCap" : 93181891950,
-    "lowPrice" : 3010,
-    "highPrice" : 3120,
-    "openPrice" : 3050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3115
-  }, {
     "volume" : 318199,
     "marketCap" : 91237486500,
     "lowPrice" : 3040,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2590,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2635
+  }, {
+    "volume" : 254899,
+    "marketCap" : 76829586470,
+    "lowPrice" : 2510,
+    "highPrice" : 2650,
+    "openPrice" : 2620,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2510
   } ],
   "stockCode" : "388790"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스원",
   "prices" : [ {
-    "volume" : 38160,
-    "marketCap" : 2390148296200,
-    "lowPrice" : 62200,
-    "highPrice" : 63100,
-    "openPrice" : 63000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 62900
-  }, {
     "volume" : 35313,
     "marketCap" : 2382548460600,
     "lowPrice" : 61700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 77800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 77700
+  }, {
+    "volume" : 37381,
+    "marketCap" : 2971535719600,
+    "lowPrice" : 76300,
+    "highPrice" : 78600,
+    "openPrice" : 77000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 78200
   } ],
   "stockCode" : "012750"
 }

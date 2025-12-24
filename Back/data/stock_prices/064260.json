@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "다날",
   "prices" : [ {
-    "volume" : 99503,
-    "marketCap" : 199262725600,
-    "lowPrice" : 2840,
-    "highPrice" : 2905,
-    "openPrice" : 2840,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2890
-  }, {
     "volume" : 125661,
     "marketCap" : 198917980400,
     "lowPrice" : 2865,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7630,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7500
+  }, {
+    "volume" : 7951305,
+    "marketCap" : 566789666450,
+    "lowPrice" : 7380,
+    "highPrice" : 7870,
+    "openPrice" : 7500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7550
   } ],
   "stockCode" : "064260"
 }

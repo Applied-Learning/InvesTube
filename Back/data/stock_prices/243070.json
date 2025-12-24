@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "휴온스",
   "prices" : [ {
-    "volume" : 22186,
-    "marketCap" : 327044854500,
-    "lowPrice" : 27050,
-    "highPrice" : 28100,
-    "openPrice" : 27550,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 27300
-  }, {
     "volume" : 17469,
     "marketCap" : 333034687000,
     "lowPrice" : 27300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 28800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 28700
+  }, {
+    "volume" : 19214,
+    "marketCap" : 339623502750,
+    "lowPrice" : 28300,
+    "highPrice" : 28900,
+    "openPrice" : 28700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 28350
   } ],
   "stockCode" : "243070"
 }

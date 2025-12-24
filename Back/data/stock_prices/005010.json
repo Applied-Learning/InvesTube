@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "휴스틸",
   "prices" : [ {
-    "volume" : 116900,
-    "marketCap" : 218571611750,
-    "lowPrice" : 3870,
-    "highPrice" : 3960,
-    "openPrice" : 3880,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3890
-  }, {
     "volume" : 88086,
     "marketCap" : 220538194375,
     "lowPrice" : 3880,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4040,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4095
+  }, {
+    "volume" : 180573,
+    "marketCap" : 227842644125,
+    "lowPrice" : 4040,
+    "highPrice" : 4095,
+    "openPrice" : 4060,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4055
   } ],
   "stockCode" : "005010"
 }

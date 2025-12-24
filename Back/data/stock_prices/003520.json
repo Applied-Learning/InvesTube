@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "영진약품",
   "prices" : [ {
-    "volume" : 121966,
-    "marketCap" : 363590749228,
-    "lowPrice" : 1923,
-    "highPrice" : 1990,
-    "openPrice" : 1923,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1988
-  }, {
     "volume" : 82501,
     "marketCap" : 361396036456,
     "lowPrice" : 1957,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1977,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1971
+  }, {
+    "volume" : 3267530,
+    "marketCap" : 367614389310,
+    "lowPrice" : 1945,
+    "highPrice" : 2220,
+    "openPrice" : 1971,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2010
   } ],
   "stockCode" : "003520"
 }

@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엔에이치스팩32호",
   "prices" : [ {
     "volume" : 60873014,
@@ -97,6 +97,14 @@
     "openPrice" : 2005,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2000
+  }, {
+    "volume" : 345334,
+    "marketCap" : 12408134000,
+    "lowPrice" : 1996,
+    "highPrice" : 2005,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1996
   } ],
   "stockCode" : "0054V0"
 }

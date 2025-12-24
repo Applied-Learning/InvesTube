@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대한유화",
   "prices" : [ {
-    "volume" : 18224,
-    "marketCap" : 517400000000,
-    "lowPrice" : 76800,
-    "highPrice" : 81000,
-    "openPrice" : 79600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 79600
-  }, {
     "volume" : 27557,
     "marketCap" : 514150000000,
     "lowPrice" : 78800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 147500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 145800
+  }, {
+    "volume" : 34056,
+    "marketCap" : 966550000000,
+    "lowPrice" : 144100,
+    "highPrice" : 151300,
+    "openPrice" : 145200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 148700
   } ],
   "stockCode" : "006650"
 }

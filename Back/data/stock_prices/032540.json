@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "TJ미디어",
   "prices" : [ {
-    "volume" : 10155,
-    "marketCap" : 67707619740,
-    "lowPrice" : 4800,
-    "highPrice" : 4890,
-    "openPrice" : 4840,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4860
-  }, {
     "volume" : 9138,
     "marketCap" : 67637961695,
     "lowPrice" : 4800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5830
+  }, {
+    "volume" : 3529,
+    "marketCap" : 81081964380,
+    "lowPrice" : 5740,
+    "highPrice" : 5890,
+    "openPrice" : 5830,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5820
   } ],
   "stockCode" : "032540"
 }

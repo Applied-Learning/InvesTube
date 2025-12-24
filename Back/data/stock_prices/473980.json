@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "노머스",
   "prices" : [ {
-    "volume" : 431697,
-    "marketCap" : 240653059100,
-    "lowPrice" : 21200,
-    "highPrice" : 23000,
-    "openPrice" : 22700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 22300
-  }, {
     "volume" : 194721,
     "marketCap" : 241732220800,
     "lowPrice" : 21800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 24250,
     "tradeDate" : "2025-12-22",
     "closePrice" : 23800
+  }, {
+    "volume" : 486517,
+    "marketCap" : 292085099100,
+    "lowPrice" : 24400,
+    "highPrice" : 26900,
+    "openPrice" : 24500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 26550
   } ],
   "stockCode" : "473980"
 }

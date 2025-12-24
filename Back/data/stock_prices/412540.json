@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제일엠앤에스",
   "prices" : [ {
-    "volume" : 47262,
-    "marketCap" : 137818448850,
-    "lowPrice" : 6550,
-    "highPrice" : 6720,
-    "openPrice" : 6550,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6690
-  }, {
     "volume" : 54413,
     "marketCap" : 136170395650,
     "lowPrice" : 6550,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 3935
+  }, {
+    "volume" : 0,
+    "marketCap" : 81063616775,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 3935
   } ],
   "stockCode" : "412540"

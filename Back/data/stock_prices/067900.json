@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "와이엔텍",
   "prices" : [ {
-    "volume" : 19196,
-    "marketCap" : 110471930130,
-    "lowPrice" : 5950,
-    "highPrice" : 6080,
-    "openPrice" : 6060,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6070
-  }, {
     "volume" : 10194,
     "marketCap" : 110471930130,
     "lowPrice" : 6030,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6630,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6710
+  }, {
+    "volume" : 49983,
+    "marketCap" : 121027732350,
+    "lowPrice" : 6610,
+    "highPrice" : 6770,
+    "openPrice" : 6770,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6650
   } ],
   "stockCode" : "067900"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스피시스템스",
   "prices" : [ {
-    "volume" : 31930,
-    "marketCap" : 45573250140,
-    "lowPrice" : 4180,
-    "highPrice" : 4265,
-    "openPrice" : 4180,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4230
-  }, {
     "volume" : 94480,
     "marketCap" : 47781882830,
     "lowPrice" : 4230,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12480,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12500
+  }, {
+    "volume" : 989404,
+    "marketCap" : 134349510460,
+    "lowPrice" : 12310,
+    "highPrice" : 13430,
+    "openPrice" : 12710,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12470
   } ],
   "stockCode" : "317830"
 }

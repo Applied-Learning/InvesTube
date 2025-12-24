@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국정보통신",
   "prices" : [ {
-    "volume" : 13095,
-    "marketCap" : 291690871090,
-    "lowPrice" : 7550,
-    "highPrice" : 7900,
-    "openPrice" : 7830,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7790
-  }, {
     "volume" : 11552,
     "marketCap" : 294311970060,
     "lowPrice" : 7760,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7810,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7810
+  }, {
+    "volume" : 11609,
+    "marketCap" : 292814199220,
+    "lowPrice" : 7770,
+    "highPrice" : 7850,
+    "openPrice" : 7780,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7820
   } ],
   "stockCode" : "025770"
 }

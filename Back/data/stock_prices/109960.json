@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "앱토크롬",
   "prices" : [ {
-    "volume" : 772463,
-    "marketCap" : 117260933096,
-    "lowPrice" : 564,
-    "highPrice" : 605,
-    "openPrice" : 590,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 584
-  }, {
     "volume" : 1728943,
     "marketCap" : 102402527190,
     "lowPrice" : 507,
@@ -1937,6 +1929,14 @@
     "openPrice" : 272,
     "tradeDate" : "2025-12-22",
     "closePrice" : 266
+  }, {
+    "volume" : 268540,
+    "marketCap" : 57405209940,
+    "lowPrice" : 259,
+    "highPrice" : 273,
+    "openPrice" : 273,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 260
   } ],
   "stockCode" : "109960"
 }

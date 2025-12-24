@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KT나스미디어",
   "prices" : [ {
-    "volume" : 186130,
-    "marketCap" : 174679261300,
-    "lowPrice" : 15070,
-    "highPrice" : 15880,
-    "openPrice" : 15800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15100
-  }, {
     "volume" : 75801,
     "marketCap" : 172944036850,
     "lowPrice" : 14790,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13370,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13460
+  }, {
+    "volume" : 7787,
+    "marketCap" : 154319294420,
+    "lowPrice" : 13280,
+    "highPrice" : 13520,
+    "openPrice" : 13490,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13340
   } ],
   "stockCode" : "089600"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "두산로보틱스",
   "prices" : [ {
-    "volume" : 161940,
-    "marketCap" : 3292854984000,
-    "lowPrice" : 49950,
-    "highPrice" : 51100,
-    "openPrice" : 50900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 50800
-  }, {
     "volume" : 305986,
     "marketCap" : 3331746972000,
     "lowPrice" : 50500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 80700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 82300
+  }, {
+    "volume" : 723276,
+    "marketCap" : 5367094344000,
+    "lowPrice" : 82000,
+    "highPrice" : 86300,
+    "openPrice" : 83200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 82800
   } ],
   "stockCode" : "454910"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유라클",
   "prices" : [ {
-    "volume" : 64855,
-    "marketCap" : 47197741200,
-    "lowPrice" : 10850,
-    "highPrice" : 11210,
-    "openPrice" : 11000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10900
-  }, {
     "volume" : 67635,
     "marketCap" : 48150356160,
     "lowPrice" : 10770,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14740,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15040
+  }, {
+    "volume" : 58269,
+    "marketCap" : 62058888320,
+    "lowPrice" : 14240,
+    "highPrice" : 15040,
+    "openPrice" : 15040,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14240
   } ],
   "stockCode" : "088340"
 }

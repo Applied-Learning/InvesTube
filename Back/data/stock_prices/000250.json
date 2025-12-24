@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼천당제약",
   "prices" : [ {
-    "volume" : 1020469,
-    "marketCap" : 3600721952000,
-    "lowPrice" : 145000,
-    "highPrice" : 153500,
-    "openPrice" : 151000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 153500
-  }, {
     "volume" : 2146239,
     "marketCap" : 3307503552000,
     "lowPrice" : 138800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 242000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 234500
+  }, {
+    "volume" : 195796,
+    "marketCap" : 5254473728000,
+    "lowPrice" : 223500,
+    "highPrice" : 238500,
+    "openPrice" : 235500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 224000
   } ],
   "stockCode" : "000250"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "씨앤투스",
   "prices" : [ {
-    "volume" : 18944,
-    "marketCap" : 77330008665,
-    "lowPrice" : 2785,
-    "highPrice" : 2835,
-    "openPrice" : 2815,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2835
-  }, {
     "volume" : 54717,
     "marketCap" : 76648086190,
     "lowPrice" : 2785,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2485,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2455
+  }, {
+    "volume" : 41430,
+    "marketCap" : 63852864570,
+    "lowPrice" : 2430,
+    "highPrice" : 2480,
+    "openPrice" : 2480,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2430
   } ],
   "stockCode" : "352700"
 }

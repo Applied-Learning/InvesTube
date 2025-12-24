@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인카금융서비스",
   "prices" : [ {
-    "volume" : 220962,
-    "marketCap" : 282588900000,
-    "lowPrice" : 5400,
-    "highPrice" : 5620,
-    "openPrice" : 5620,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5500
-  }, {
     "volume" : 103805,
     "marketCap" : 282075102000,
     "lowPrice" : 5400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13180
+  }, {
+    "volume" : 77902,
+    "marketCap" : 673075380000,
+    "lowPrice" : 12930,
+    "highPrice" : 13270,
+    "openPrice" : 13200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13100
   } ],
   "stockCode" : "211050"
 }

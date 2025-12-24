@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디지틀조선",
   "prices" : [ {
-    "volume" : 248641,
-    "marketCap" : 64877486716,
-    "lowPrice" : 1705,
-    "highPrice" : 1748,
-    "openPrice" : 1706,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1748
-  }, {
     "volume" : 235413,
     "marketCap" : 63615567638,
     "lowPrice" : 1705,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1699,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1708
+  }, {
+    "volume" : 539812,
+    "marketCap" : 61685573754,
+    "lowPrice" : 1640,
+    "highPrice" : 1703,
+    "openPrice" : 1703,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1662
   } ],
   "stockCode" : "033130"
 }

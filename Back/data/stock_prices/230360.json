@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에코마케팅",
   "prices" : [ {
-    "volume" : 29792,
-    "marketCap" : 314680290000,
-    "lowPrice" : 9980,
-    "highPrice" : 10130,
-    "openPrice" : 10090,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10000
-  }, {
     "volume" : 36089,
     "marketCap" : 319715174640,
     "lowPrice" : 10000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11430,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11440
+  }, {
+    "volume" : 52836,
+    "marketCap" : 351525915720,
+    "lowPrice" : 11190,
+    "highPrice" : 11480,
+    "openPrice" : 11400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11340
   } ],
   "stockCode" : "230360"
 }

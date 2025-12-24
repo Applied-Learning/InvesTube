@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "미래에셋비전스팩4호",
   "prices" : [ {
-    "volume" : 42219,
-    "marketCap" : 15957000000,
-    "lowPrice" : 1958,
-    "highPrice" : 1980,
-    "openPrice" : 1960,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1970
-  }, {
     "volume" : 20393,
     "marketCap" : 15843600000,
     "lowPrice" : 1951,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2055
+  }, {
+    "volume" : 6506,
+    "marketCap" : 16686000000,
+    "lowPrice" : 2060,
+    "highPrice" : 2095,
+    "openPrice" : 2060,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2060
   } ],
   "stockCode" : "477380"
 }

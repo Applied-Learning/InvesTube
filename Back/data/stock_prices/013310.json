@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아진산업",
   "prices" : [ {
-    "volume" : 82552,
-    "marketCap" : 94299994260,
-    "lowPrice" : 2380,
-    "highPrice" : 2455,
-    "openPrice" : 2390,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2430
-  }, {
     "volume" : 60308,
     "marketCap" : 96046290450,
     "lowPrice" : 2430,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2965,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2965
+  }, {
+    "volume" : 90518,
+    "marketCap" : 112927153620,
+    "lowPrice" : 2910,
+    "highPrice" : 3015,
+    "openPrice" : 2965,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2910
   } ],
   "stockCode" : "013310"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "포스코DX",
   "prices" : [ {
-    "volume" : 332153,
-    "marketCap" : 3033092843550,
-    "lowPrice" : 19280,
-    "highPrice" : 20150,
-    "openPrice" : 19510,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 19950
-  }, {
     "volume" : 531171,
     "marketCap" : 3001165550460,
     "lowPrice" : 19740,
@@ -1937,6 +1929,14 @@
     "openPrice" : 26150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 26700
+  }, {
+    "volume" : 8862916,
+    "marketCap" : 4523033187750,
+    "lowPrice" : 26500,
+    "highPrice" : 30750,
+    "openPrice" : 26900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 29750
   } ],
   "stockCode" : "022100"
 }

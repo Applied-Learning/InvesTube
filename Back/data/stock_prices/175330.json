@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "JB금융지주",
   "prices" : [ {
-    "volume" : 367296,
-    "marketCap" : 3255938574620,
-    "lowPrice" : 16390,
-    "highPrice" : 16790,
-    "openPrice" : 16640,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16690
-  }, {
     "volume" : 200579,
     "marketCap" : 3253987742640,
     "lowPrice" : 16470,
@@ -1937,6 +1929,14 @@
     "openPrice" : 25250,
     "tradeDate" : "2025-12-22",
     "closePrice" : 25700
+  }, {
+    "volume" : 426975,
+    "marketCap" : 4936999626000,
+    "lowPrice" : 25700,
+    "highPrice" : 26400,
+    "openPrice" : 25900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 26000
   } ],
   "stockCode" : "175330"
 }

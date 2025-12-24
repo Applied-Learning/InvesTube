@@ -219,7 +219,21 @@ public class StockRestController {
     public ResponseEntity<?> updateMissingStockInfo() {
         try {
             stockService.updateMissingStockInfo();
-            return new ResponseEntity<>("종목 정보(market/industry) 업데이트가 완료되었습니다.", HttpStatus.OK);
+            return new ResponseEntity<>("종목 정보(market) 업데이트가 완료되었습니다.", HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    // CSV로 업종 일괄 업데이트 (예: data/krx_data.csv)
+    @PostMapping("/update-industry-from-csv")
+    public ResponseEntity<?> updateIndustryFromCsv(
+            @RequestParam(name = "path", defaultValue = "data/krx_data.csv") String csvPath) {
+        try {
+            int updated = stockService.updateIndustryFromCsv(csvPath);
+            return new ResponseEntity<>(Map.of("updated", updated, "path", csvPath), HttpStatus.OK);
+        } catch (IllegalArgumentException e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
         } catch (Exception e) {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
         }

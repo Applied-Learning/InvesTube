@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "우리기술",
   "prices" : [ {
-    "volume" : 2896333,
-    "marketCap" : 280386219720,
-    "lowPrice" : 1747,
-    "highPrice" : 1779,
-    "openPrice" : 1770,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1765
-  }, {
     "volume" : 2728141,
     "marketCap" : 273555280656,
     "lowPrice" : 1722,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3875,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3860
+  }, {
+    "volume" : 2596454,
+    "marketCap" : 625825520430,
+    "lowPrice" : 3750,
+    "highPrice" : 3885,
+    "openPrice" : 3875,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3755
   } ],
   "stockCode" : "032820"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이텍모빌리티",
   "prices" : [ {
-    "volume" : 118982,
-    "marketCap" : 99324000000,
-    "lowPrice" : 17540,
-    "highPrice" : 19220,
-    "openPrice" : 18550,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 18600
-  }, {
     "volume" : 199859,
     "marketCap" : 102207600000,
     "lowPrice" : 18170,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9920,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9970
+  }, {
+    "volume" : 15967,
+    "marketCap" : 52919400000,
+    "lowPrice" : 9900,
+    "highPrice" : 10090,
+    "openPrice" : 9920,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9910
   } ],
   "stockCode" : "224110"
 }

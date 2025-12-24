@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "해태제과식품",
   "prices" : [ {
-    "volume" : 64947,
-    "marketCap" : 184309483260,
-    "lowPrice" : 6200,
-    "highPrice" : 6360,
-    "openPrice" : 6200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6330
-  }, {
     "volume" : 29757,
     "marketCap" : 184891819700,
     "lowPrice" : 6270,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7030,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7140
+  }, {
+    "volume" : 127493,
+    "marketCap" : 210223454840,
+    "lowPrice" : 7080,
+    "highPrice" : 7300,
+    "openPrice" : 7140,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7220
   } ],
   "stockCode" : "101530"
 }

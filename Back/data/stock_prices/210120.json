@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "캔버스엔",
   "prices" : [ {
-    "volume" : 26944,
-    "marketCap" : 73426643500,
-    "lowPrice" : 23350,
-    "highPrice" : 25350,
-    "openPrice" : 24400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 23350
-  }, {
     "volume" : 41296,
     "marketCap" : 75470640000,
     "lowPrice" : 22900,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1501,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1402
+  }, {
+    "volume" : 479719,
+    "marketCap" : 33762806854,
+    "lowPrice" : 1388,
+    "highPrice" : 1487,
+    "openPrice" : 1405,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1393
   } ],
   "stockCode" : "210120"
 }

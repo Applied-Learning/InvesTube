@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유진로봇",
   "prices" : [ {
-    "volume" : 98284,
-    "marketCap" : 221321696800,
-    "lowPrice" : 5780,
-    "highPrice" : 5980,
-    "openPrice" : 5810,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5900
-  }, {
     "volume" : 275646,
     "marketCap" : 226573398080,
     "lowPrice" : 5890,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14520,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14380
+  }, {
+    "volume" : 1433287,
+    "marketCap" : 535298409040,
+    "lowPrice" : 14100,
+    "highPrice" : 14900,
+    "openPrice" : 14390,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14270
   } ],
   "stockCode" : "056080"
 }

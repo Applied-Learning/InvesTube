@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한주에이알티",
   "prices" : [ {
-    "volume" : 22798,
-    "marketCap" : 30696763575,
-    "lowPrice" : 2030,
-    "highPrice" : 2125,
-    "openPrice" : 2100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2075
-  }, {
     "volume" : 36001,
     "marketCap" : 29513273895,
     "lowPrice" : 1965,
@@ -1937,6 +1929,14 @@
     "openPrice" : 791,
     "tradeDate" : "2025-12-22",
     "closePrice" : 794
+  }, {
+    "volume" : 74669,
+    "marketCap" : 11657373348,
+    "lowPrice" : 788,
+    "highPrice" : 807,
+    "openPrice" : 794,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 788
   } ],
   "stockCode" : "058450"
 }

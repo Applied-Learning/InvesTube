@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "계룡건설",
   "prices" : [ {
-    "volume" : 34653,
-    "marketCap" : 119138299380,
-    "lowPrice" : 12920,
-    "highPrice" : 13420,
-    "openPrice" : 12920,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13340
-  }, {
     "volume" : 12722,
     "marketCap" : 118245208680,
     "lowPrice" : 13100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 21150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 21100
+  }, {
+    "volume" : 48087,
+    "marketCap" : 185762865600,
+    "lowPrice" : 20700,
+    "highPrice" : 21100,
+    "openPrice" : 21100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 20800
   } ],
   "stockCode" : "013580"
 }

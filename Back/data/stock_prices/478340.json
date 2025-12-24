@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "나라스페이스테크놀로지",
   "prices" : [ {
     "volume" : 43649290,
@@ -33,6 +33,14 @@
     "openPrice" : 38400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 45650
+  }, {
+    "volume" : 6083734,
+    "marketCap" : 401945646350,
+    "lowPrice" : 32600,
+    "highPrice" : 47250,
+    "openPrice" : 45700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 34850
   } ],
   "stockCode" : "478340"
 }

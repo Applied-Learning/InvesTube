@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "기신정기",
   "prices" : [ {
-    "volume" : 7608,
-    "marketCap" : 71832000000,
-    "lowPrice" : 2435,
-    "highPrice" : 2475,
-    "openPrice" : 2440,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2460
-  }, {
     "volume" : 35956,
     "marketCap" : 72270000000,
     "lowPrice" : 2420,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2280,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2310
+  }, {
+    "volume" : 13242,
+    "marketCap" : 67160000000,
+    "lowPrice" : 2295,
+    "highPrice" : 2320,
+    "openPrice" : 2295,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2300
   } ],
   "stockCode" : "092440"
 }

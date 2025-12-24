@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하이퍼코퍼레이션",
   "prices" : [ {
-    "volume" : 329404,
-    "marketCap" : 133138800288,
-    "lowPrice" : 1241,
-    "highPrice" : 1300,
-    "openPrice" : 1283,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1248
-  }, {
     "volume" : 541510,
     "marketCap" : 135592480101,
     "lowPrice" : 1200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2170,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2170
+  }, {
+    "volume" : 41052,
+    "marketCap" : 28137305760,
+    "lowPrice" : 2090,
+    "highPrice" : 2225,
+    "openPrice" : 2170,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2110
   } ],
   "stockCode" : "065650"
 }

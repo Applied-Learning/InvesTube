@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이티엠반도체",
   "prices" : [ {
-    "volume" : 17791,
-    "marketCap" : 312570830520,
-    "lowPrice" : 13350,
-    "highPrice" : 13890,
-    "openPrice" : 13730,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13780
-  }, {
     "volume" : 28214,
     "marketCap" : 300095216820,
     "lowPrice" : 13100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10490,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10130
+  }, {
+    "volume" : 53594,
+    "marketCap" : 226375681320,
+    "lowPrice" : 9810,
+    "highPrice" : 10210,
+    "openPrice" : 10150,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9980
   } ],
   "stockCode" : "084850"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "플라즈맵",
   "prices" : [ {
-    "volume" : 10502,
-    "marketCap" : 35464507840,
-    "lowPrice" : 1347,
-    "highPrice" : 1384,
-    "openPrice" : 1384,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1360
-  }, {
     "volume" : 13477,
     "marketCap" : 35021201492,
     "lowPrice" : 1309,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6460
+  }, {
+    "volume" : 3717,
+    "marketCap" : 24412503840,
+    "lowPrice" : 6360,
+    "highPrice" : 6470,
+    "openPrice" : 6460,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6360
   } ],
   "stockCode" : "405000"
 }

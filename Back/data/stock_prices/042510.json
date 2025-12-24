@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "라온시큐어",
   "prices" : [ {
-    "volume" : 344427,
-    "marketCap" : 114292776840,
-    "lowPrice" : 1997,
-    "highPrice" : 2085,
-    "openPrice" : 2035,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2040
-  }, {
     "volume" : 198974,
     "marketCap" : 113172259420,
     "lowPrice" : 2000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9210,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9510
+  }, {
+    "volume" : 59984,
+    "marketCap" : 103759911240,
+    "lowPrice" : 9260,
+    "highPrice" : 9680,
+    "openPrice" : 9510,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9260
   } ],
   "stockCode" : "042510"
 }

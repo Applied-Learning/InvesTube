@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "까뮤이앤씨",
   "prices" : [ {
-    "volume" : 65114,
-    "marketCap" : 77496826510,
-    "lowPrice" : 1263,
-    "highPrice" : 1315,
-    "openPrice" : 1273,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1297
-  }, {
     "volume" : 106890,
     "marketCap" : 76959069040,
     "lowPrice" : 1270,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1223,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1228
+  }, {
+    "volume" : 115557,
+    "marketCap" : 72537507620,
+    "lowPrice" : 1190,
+    "highPrice" : 1245,
+    "openPrice" : 1245,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1214
   } ],
   "stockCode" : "013700"
 }

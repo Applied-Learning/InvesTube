@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코미코",
   "prices" : [ {
-    "volume" : 74534,
-    "marketCap" : 393844752600,
-    "lowPrice" : 35100,
-    "highPrice" : 38350,
-    "openPrice" : 35100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 37650
-  }, {
     "volume" : 49445,
     "marketCap" : 388614410600,
     "lowPrice" : 36850,
@@ -1937,6 +1929,14 @@
     "openPrice" : 85800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 89500
+  }, {
+    "volume" : 118124,
+    "marketCap" : 907987371200,
+    "lowPrice" : 84700,
+    "highPrice" : 89600,
+    "openPrice" : 89500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 86800
   } ],
   "stockCode" : "183300"
 }

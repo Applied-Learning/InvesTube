@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KCC건설",
   "prices" : [ {
-    "volume" : 5486,
-    "marketCap" : 89559000000,
-    "lowPrice" : 4090,
-    "highPrice" : 4185,
-    "openPrice" : 4100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4185
-  }, {
     "volume" : 9570,
     "marketCap" : 89987000000,
     "lowPrice" : 4175,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5740,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5720
+  }, {
+    "volume" : 18451,
+    "marketCap" : 121980000000,
+    "lowPrice" : 5630,
+    "highPrice" : 5770,
+    "openPrice" : 5710,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5700
   } ],
   "stockCode" : "021320"
 }

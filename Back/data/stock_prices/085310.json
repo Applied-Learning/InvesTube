@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엔케이",
   "prices" : [ {
-    "volume" : 1927284,
-    "marketCap" : 60227464056,
-    "lowPrice" : 724,
-    "highPrice" : 820,
-    "openPrice" : 724,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 753
-  }, {
     "volume" : 964280,
     "marketCap" : 60627380816,
     "lowPrice" : 744,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1198,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1205
+  }, {
+    "volume" : 33349885,
+    "marketCap" : 101282333448,
+    "lowPrice" : 1235,
+    "highPrice" : 1443,
+    "openPrice" : 1240,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1284
   } ],
   "stockCode" : "085310"
 }

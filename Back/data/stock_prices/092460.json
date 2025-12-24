@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한라IMS",
   "prices" : [ {
-    "volume" : 189745,
-    "marketCap" : 140641569600,
-    "lowPrice" : 7960,
-    "highPrice" : 8420,
-    "openPrice" : 8050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8220
-  }, {
     "volume" : 93919,
     "marketCap" : 141325956800,
     "lowPrice" : 8080,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 17630
+  }, {
+    "volume" : 482267,
+    "marketCap" : 300274884000,
+    "lowPrice" : 17550,
+    "highPrice" : 18490,
+    "openPrice" : 18090,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 17550
   } ],
   "stockCode" : "092460"
 }

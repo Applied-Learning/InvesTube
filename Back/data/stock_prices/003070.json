@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코오롱글로벌",
   "prices" : [ {
-    "volume" : 72951,
-    "marketCap" : 172287688300,
-    "lowPrice" : 9070,
-    "highPrice" : 9350,
-    "openPrice" : 9350,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9100
-  }, {
     "volume" : 33416,
     "marketCap" : 172098361170,
     "lowPrice" : 9050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9420,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9300
+  }, {
+    "volume" : 7082,
+    "marketCap" : 236951297880,
+    "lowPrice" : 9280,
+    "highPrice" : 9410,
+    "openPrice" : 9400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9320
   } ],
   "stockCode" : "003070"
 }

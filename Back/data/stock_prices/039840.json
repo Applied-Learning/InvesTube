@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디오",
   "prices" : [ {
-    "volume" : 14965,
-    "marketCap" : 244352424050,
-    "lowPrice" : 16130,
-    "highPrice" : 16400,
-    "openPrice" : 16390,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16310
-  }, {
     "volume" : 11947,
     "marketCap" : 244352424050,
     "lowPrice" : 16130,
@@ -1937,6 +1929,14 @@
     "openPrice" : 16880,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16640
+  }, {
+    "volume" : 21517,
+    "marketCap" : 237188935500,
+    "lowPrice" : 16340,
+    "highPrice" : 16820,
+    "openPrice" : 16820,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16500
   } ],
   "stockCode" : "039840"
 }

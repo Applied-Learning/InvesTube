@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "더라미",
   "prices" : [ {
-    "volume" : 94302,
-    "marketCap" : 52151059133,
-    "lowPrice" : 1288,
-    "highPrice" : 1365,
-    "openPrice" : 1351,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1291
-  }, {
     "volume" : 103418,
     "marketCap" : 50575620476,
     "lowPrice" : 1241,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1430,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1393
+  }, {
+    "volume" : 166513,
+    "marketCap" : 54494019187,
+    "lowPrice" : 1349,
+    "highPrice" : 1402,
+    "openPrice" : 1393,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1349
   } ],
   "stockCode" : "032860"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "홈캐스트",
   "prices" : [ {
-    "volume" : 47326,
-    "marketCap" : 82864898380,
-    "lowPrice" : 2345,
-    "highPrice" : 2435,
-    "openPrice" : 2380,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2365
-  }, {
     "volume" : 111412,
     "marketCap" : 79185907120,
     "lowPrice" : 2260,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1889,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1910
+  }, {
+    "volume" : 92089,
+    "marketCap" : 65451006416,
+    "lowPrice" : 1832,
+    "highPrice" : 1940,
+    "openPrice" : 1940,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1868
   } ],
   "stockCode" : "064240"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대창",
   "prices" : [ {
-    "volume" : 838504,
-    "marketCap" : 116933260217,
-    "lowPrice" : 1245,
-    "highPrice" : 1295,
-    "openPrice" : 1255,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1283
-  }, {
     "volume" : 556519,
     "marketCap" : 116750979219,
     "lowPrice" : 1266,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1230,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1247
+  }, {
+    "volume" : 347948,
+    "marketCap" : 111100268281,
+    "lowPrice" : 1218,
+    "highPrice" : 1253,
+    "openPrice" : 1253,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1219
   } ],
   "stockCode" : "012800"
 }

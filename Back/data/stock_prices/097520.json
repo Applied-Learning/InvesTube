@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엠씨넥스",
   "prices" : [ {
-    "volume" : 47478,
-    "marketCap" : 360453526600,
-    "lowPrice" : 19990,
-    "highPrice" : 20600,
-    "openPrice" : 20600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 20050
-  }, {
     "volume" : 19841,
     "marketCap" : 360453526600,
     "lowPrice" : 19830,
@@ -1937,6 +1929,14 @@
     "openPrice" : 28200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 28400
+  }, {
+    "volume" : 43578,
+    "marketCap" : 493290000000,
+    "lowPrice" : 28200,
+    "highPrice" : 29100,
+    "openPrice" : 29100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 28350
   } ],
   "stockCode" : "097520"
 }

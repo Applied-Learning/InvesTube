@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이티넘인베스트",
   "prices" : [ {
-    "volume" : 157666,
-    "marketCap" : 108960000000,
-    "lowPrice" : 2220,
-    "highPrice" : 2290,
-    "openPrice" : 2220,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2270
-  }, {
     "volume" : 154027,
     "marketCap" : 108960000000,
     "lowPrice" : 2250,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3230,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3345
+  }, {
+    "volume" : 951361,
+    "marketCap" : 150000000000,
+    "lowPrice" : 3060,
+    "highPrice" : 3315,
+    "openPrice" : 3315,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3125
   } ],
   "stockCode" : "021080"
 }

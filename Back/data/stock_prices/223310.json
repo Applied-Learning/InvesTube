@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "사토시홀딩스",
   "prices" : [ {
-    "volume" : 230801,
-    "marketCap" : 51046003125,
-    "lowPrice" : 2055,
-    "highPrice" : 2270,
-    "openPrice" : 2060,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2235
-  }, {
     "volume" : 113228,
     "marketCap" : 48191081250,
     "lowPrice" : 2110,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1974,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2060
+  }, {
+    "volume" : 4478531,
+    "marketCap" : 62195481460,
+    "lowPrice" : 2105,
+    "highPrice" : 2660,
+    "openPrice" : 2155,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2390
   } ],
   "stockCode" : "223310"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이노인스트루먼트",
   "prices" : [ {
-    "volume" : 162858,
-    "marketCap" : 19738743010,
-    "lowPrice" : 453,
-    "highPrice" : 496,
-    "openPrice" : 453,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 490
-  }, {
     "volume" : 90040,
     "marketCap" : 19255345222,
     "lowPrice" : 475,
@@ -1937,6 +1929,14 @@
     "openPrice" : 576,
     "tradeDate" : "2025-12-22",
     "closePrice" : 577
+  }, {
+    "volume" : 171987,
+    "marketCap" : 22558563440,
+    "lowPrice" : 557,
+    "highPrice" : 588,
+    "openPrice" : 588,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 560
   } ],
   "stockCode" : "215790"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "S-Oil",
   "prices" : [ {
-    "volume" : 87137,
-    "marketCap" : 6304636352000,
-    "lowPrice" : 55400,
-    "highPrice" : 56300,
-    "openPrice" : 55600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 56000
-  }, {
     "volume" : 83342,
     "marketCap" : 6315894631200,
     "lowPrice" : 55800,
@@ -1936,6 +1928,14 @@
     "highPrice" : 84800,
     "openPrice" : 82700,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 84000
+  }, {
+    "volume" : 87985,
+    "marketCap" : 9456954528000,
+    "lowPrice" : 83200,
+    "highPrice" : 84900,
+    "openPrice" : 84900,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 84000
   } ],
   "stockCode" : "010950"

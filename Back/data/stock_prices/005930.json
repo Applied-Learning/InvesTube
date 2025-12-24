@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼성전자",
   "prices" : [ {
-    "volume" : 13672650,
-    "marketCap" : 319383366425000,
-    "lowPrice" : 53300,
-    "highPrice" : 54000,
-    "openPrice" : 53400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 53500
-  }, {
     "volume" : 11634677,
     "marketCap" : 324756170720000,
     "lowPrice" : 53600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 109700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 110500
+  }, {
+    "volume" : 20419187,
+    "marketCap" : 660039628303000,
+    "lowPrice" : 110400,
+    "highPrice" : 112500,
+    "openPrice" : 110900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 111500
   } ],
   "stockCode" : "005930"
 }

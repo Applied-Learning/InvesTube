@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "수산세보틱스",
   "prices" : [ {
-    "volume" : 105107,
-    "marketCap" : 118495947870,
-    "lowPrice" : 1873,
-    "highPrice" : 1903,
-    "openPrice" : 1874,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1899
-  }, {
     "volume" : 92791,
     "marketCap" : 117559960920,
     "lowPrice" : 1881,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1752,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1729
+  }, {
+    "volume" : 164849,
+    "marketCap" : 106390516650,
+    "lowPrice" : 1699,
+    "highPrice" : 1753,
+    "openPrice" : 1730,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1705
   } ],
   "stockCode" : "017550"
 }

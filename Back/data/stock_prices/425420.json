@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "티에프이",
   "prices" : [ {
-    "volume" : 44280,
-    "marketCap" : 190745560000,
-    "lowPrice" : 15340,
-    "highPrice" : 16770,
-    "openPrice" : 15340,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16760
-  }, {
     "volume" : 26564,
     "marketCap" : 183234100000,
     "lowPrice" : 16100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 36200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 37750
+  }, {
+    "volume" : 85293,
+    "marketCap" : 437761986000,
+    "lowPrice" : 36600,
+    "highPrice" : 37900,
+    "openPrice" : 37900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 36600
   } ],
   "stockCode" : "425420"
 }

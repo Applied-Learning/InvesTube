@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "포바이포",
   "prices" : [ {
-    "volume" : 23983,
-    "marketCap" : 54896910900,
-    "lowPrice" : 4895,
-    "highPrice" : 5020,
-    "openPrice" : 4920,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4940
-  }, {
     "volume" : 32971,
     "marketCap" : 54174583125,
     "lowPrice" : 4870,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8010,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8000
+  }, {
+    "volume" : 64937,
+    "marketCap" : 86118656850,
+    "lowPrice" : 7690,
+    "highPrice" : 8010,
+    "openPrice" : 8010,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7710
   } ],
   "stockCode" : "389140"
 }

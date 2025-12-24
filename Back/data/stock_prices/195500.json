@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "마니커에프앤지",
   "prices" : [ {
-    "volume" : 36103,
-    "marketCap" : 44978070000,
-    "lowPrice" : 2815,
-    "highPrice" : 2860,
-    "openPrice" : 2860,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2815
-  }, {
     "volume" : 36177,
     "marketCap" : 44418840000,
     "lowPrice" : 2760,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2815,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2825
+  }, {
+    "volume" : 96498,
+    "marketCap" : 45776970000,
+    "lowPrice" : 2835,
+    "highPrice" : 2885,
+    "openPrice" : 2870,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2865
   } ],
   "stockCode" : "195500"
 }

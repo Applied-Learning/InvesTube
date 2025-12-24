@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이에스텍",
   "prices" : [ {
-    "volume" : 15350,
-    "marketCap" : 107487085000,
-    "lowPrice" : 18600,
-    "highPrice" : 19380,
-    "openPrice" : 18600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 19000
-  }, {
     "volume" : 4768,
     "marketCap" : 107204224250,
     "lowPrice" : 18750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 16880,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16550
+  }, {
+    "volume" : 11562,
+    "marketCap" : 90741728600,
+    "lowPrice" : 15980,
+    "highPrice" : 16550,
+    "openPrice" : 16550,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16040
   } ],
   "stockCode" : "453860"
 }

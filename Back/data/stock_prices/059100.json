@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이컴포넌트",
   "prices" : [ {
-    "volume" : 20140,
-    "marketCap" : 33303750600,
-    "lowPrice" : 4655,
-    "highPrice" : 4730,
-    "openPrice" : 4670,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4710
-  }, {
     "volume" : 5526,
     "marketCap" : 33268396300,
     "lowPrice" : 4700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5270,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5240
+  }, {
+    "volume" : 7991,
+    "marketCap" : 36980597800,
+    "lowPrice" : 5180,
+    "highPrice" : 5250,
+    "openPrice" : 5180,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5230
   } ],
   "stockCode" : "059100"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "뉴파워프라즈마",
   "prices" : [ {
-    "volume" : 126069,
-    "marketCap" : 199456828560,
-    "lowPrice" : 4405,
-    "highPrice" : 4615,
-    "openPrice" : 4410,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4565
-  }, {
     "volume" : 149796,
     "marketCap" : 201641459760,
     "lowPrice" : 4520,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5020,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5430
+  }, {
+    "volume" : 481388,
+    "marketCap" : 227201644800,
+    "lowPrice" : 5160,
+    "highPrice" : 5520,
+    "openPrice" : 5500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5200
   } ],
   "stockCode" : "144960"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "체시스",
   "prices" : [ {
-    "volume" : 316617,
-    "marketCap" : 34784000000,
-    "lowPrice" : 1076,
-    "highPrice" : 1127,
-    "openPrice" : 1102,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1087
-  }, {
     "volume" : 285824,
     "marketCap" : 35296000000,
     "lowPrice" : 1082,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1017,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1021
+  }, {
+    "volume" : 175601,
+    "marketCap" : 32256000000,
+    "lowPrice" : 1006,
+    "highPrice" : 1026,
+    "openPrice" : 1026,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1008
   } ],
   "stockCode" : "033250"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼기",
   "prices" : [ {
-    "volume" : 111071,
-    "marketCap" : 47195835868,
-    "lowPrice" : 1187,
-    "highPrice" : 1244,
-    "openPrice" : 1230,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1231
-  }, {
     "volume" : 16080,
     "marketCap" : 47042478156,
     "lowPrice" : 1223,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1273,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1284
+  }, {
+    "volume" : 34769,
+    "marketCap" : 48115982140,
+    "lowPrice" : 1255,
+    "highPrice" : 1293,
+    "openPrice" : 1292,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1255
   } ],
   "stockCode" : "122350"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "휴메딕스",
   "prices" : [ {
-    "volume" : 427390,
-    "marketCap" : 515453787000,
-    "lowPrice" : 42000,
-    "highPrice" : 46200,
-    "openPrice" : 42000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 45900
-  }, {
     "volume" : 410072,
     "marketCap" : 498047395500,
     "lowPrice" : 42950,
@@ -1937,6 +1929,14 @@
     "openPrice" : 42250,
     "tradeDate" : "2025-12-22",
     "closePrice" : 42600
+  }, {
+    "volume" : 101364,
+    "marketCap" : 464357605500,
+    "lowPrice" : 41350,
+    "highPrice" : 43150,
+    "openPrice" : 43100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 41350
   } ],
   "stockCode" : "200670"
 }

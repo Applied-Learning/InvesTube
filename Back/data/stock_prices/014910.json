@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "성문전자",
   "prices" : [ {
-    "volume" : 48615,
-    "marketCap" : 24370168725,
-    "lowPrice" : 1080,
-    "highPrice" : 1150,
-    "openPrice" : 1080,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1085
-  }, {
     "volume" : 54198,
     "marketCap" : 24280324785,
     "lowPrice" : 1074,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1149,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1128
+  }, {
+    "volume" : 41137,
+    "marketCap" : 25021537290,
+    "lowPrice" : 1096,
+    "highPrice" : 1140,
+    "openPrice" : 1135,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1114
   } ],
   "stockCode" : "014910"
 }

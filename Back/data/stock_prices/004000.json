@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "롯데정밀화학",
   "prices" : [ {
-    "volume" : 30212,
-    "marketCap" : 1041030000000,
-    "lowPrice" : 39450,
-    "highPrice" : 40350,
-    "openPrice" : 39900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 40350
-  }, {
     "volume" : 30288,
     "marketCap" : 1030710000000,
     "lowPrice" : 39700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 47200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 47150
+  }, {
+    "volume" : 18703,
+    "marketCap" : 1219050000000,
+    "lowPrice" : 47000,
+    "highPrice" : 47400,
+    "openPrice" : 47000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 47250
   } ],
   "stockCode" : "004000"
 }

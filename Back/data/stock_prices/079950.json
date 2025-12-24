@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인베니아",
   "prices" : [ {
-    "volume" : 55281,
-    "marketCap" : 16796800000,
-    "lowPrice" : 712,
-    "highPrice" : 750,
-    "openPrice" : 741,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 724
-  }, {
     "volume" : 100704,
     "marketCap" : 17400000000,
     "lowPrice" : 724,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1372,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1450
+  }, {
+    "volume" : 94339,
+    "marketCap" : 8073600000,
+    "lowPrice" : 1390,
+    "highPrice" : 1460,
+    "openPrice" : 1460,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1392
   } ],
   "stockCode" : "079950"
 }

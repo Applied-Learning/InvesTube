@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에르코스",
   "prices" : [ {
     "volume" : 9686794,
@@ -1601,6 +1601,14 @@
     "openPrice" : 13030,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12460
+  }, {
+    "volume" : 159056,
+    "marketCap" : 88966361440,
+    "lowPrice" : 11630,
+    "highPrice" : 12430,
+    "openPrice" : 12340,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11680
   } ],
   "stockCode" : "435570"
 }

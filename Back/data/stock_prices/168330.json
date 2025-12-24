@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "내츄럴엔도텍",
   "prices" : [ {
-    "volume" : 53783,
-    "marketCap" : 45663546200,
-    "lowPrice" : 1431,
-    "highPrice" : 1504,
-    "openPrice" : 1500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1438
-  }, {
     "volume" : 17373,
     "marketCap" : 45282487400,
     "lowPrice" : 1422,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3100
+  }, {
+    "volume" : 87248,
+    "marketCap" : 96693670500,
+    "lowPrice" : 2950,
+    "highPrice" : 3180,
+    "openPrice" : 3115,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3045
   } ],
   "stockCode" : "168330"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "국순당",
   "prices" : [ {
-    "volume" : 21205,
-    "marketCap" : 84648360960,
-    "lowPrice" : 4660,
-    "highPrice" : 4780,
-    "openPrice" : 4690,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4740
-  }, {
     "volume" : 22763,
     "marketCap" : 84737652480,
     "lowPrice" : 4720,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4220,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4200
+  }, {
+    "volume" : 10240,
+    "marketCap" : 74290544640,
+    "lowPrice" : 4135,
+    "highPrice" : 4200,
+    "openPrice" : 4195,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4160
   } ],
   "stockCode" : "043650"
 }

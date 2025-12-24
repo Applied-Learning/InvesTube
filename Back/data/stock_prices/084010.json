@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대한제강",
   "prices" : [ {
-    "volume" : 41534,
-    "marketCap" : 388913134170,
-    "lowPrice" : 16410,
-    "highPrice" : 16650,
-    "openPrice" : 16650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16610
-  }, {
     "volume" : 53982,
     "marketCap" : 389615566080,
     "lowPrice" : 16520,
@@ -1937,6 +1929,14 @@
     "openPrice" : 18670,
     "tradeDate" : "2025-12-22",
     "closePrice" : 19700
+  }, {
+    "volume" : 434507,
+    "marketCap" : 476619457600,
+    "lowPrice" : 20200,
+    "highPrice" : 23250,
+    "openPrice" : 22800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 20800
   } ],
   "stockCode" : "084010"
 }

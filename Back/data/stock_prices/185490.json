@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이진",
   "prices" : [ {
-    "volume" : 37138,
-    "marketCap" : 71628927600,
-    "lowPrice" : 2600,
-    "highPrice" : 2785,
-    "openPrice" : 2650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2650
-  }, {
     "volume" : 43572,
     "marketCap" : 70412587320,
     "lowPrice" : 2605,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1566,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1630
+  }, {
+    "volume" : 690517,
+    "marketCap" : 70940075544,
+    "lowPrice" : 1570,
+    "highPrice" : 1658,
+    "openPrice" : 1610,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1641
   } ],
   "stockCode" : "185490"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동진쎄미켐",
   "prices" : [ {
-    "volume" : 252367,
-    "marketCap" : 1107982345700,
-    "lowPrice" : 20800,
-    "highPrice" : 21650,
-    "openPrice" : 21100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 21550
-  }, {
     "volume" : 256943,
     "marketCap" : 1120835969200,
     "lowPrice" : 21450,
@@ -1937,6 +1929,14 @@
     "openPrice" : 37900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 37800
+  }, {
+    "volume" : 327308,
+    "marketCap" : 1948609322600,
+    "lowPrice" : 37600,
+    "highPrice" : 38200,
+    "openPrice" : 38200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 37900
   } ],
   "stockCode" : "005290"
 }

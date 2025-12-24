@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디앤디파마텍",
   "prices" : [ {
-    "volume" : 352709,
-    "marketCap" : 526289836200,
-    "lowPrice" : 47300,
-    "highPrice" : 51300,
-    "openPrice" : 48050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 49800
-  }, {
     "volume" : 410938,
     "marketCap" : 519948994800,
     "lowPrice" : 48800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 94000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 91900
+  }, {
+    "volume" : 1611125,
+    "marketCap" : 3865946184000,
+    "lowPrice" : 87200,
+    "highPrice" : 95400,
+    "openPrice" : 93700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 88800
   } ],
   "stockCode" : "347850"
 }

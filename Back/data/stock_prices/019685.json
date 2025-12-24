@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대교우B",
   "prices" : [ {
-    "volume" : 89480,
-    "marketCap" : 28188562490,
-    "lowPrice" : 1443,
-    "highPrice" : 1489,
-    "openPrice" : 1489,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1451
-  }, {
     "volume" : 22828,
     "marketCap" : 28402259380,
     "lowPrice" : 1411,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1236,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1251
+  }, {
+    "volume" : 13121,
+    "marketCap" : 24322591480,
+    "lowPrice" : 1236,
+    "highPrice" : 1270,
+    "openPrice" : 1270,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1252
   } ],
   "stockCode" : "019685"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "모헨즈",
   "prices" : [ {
-    "volume" : 27820,
-    "marketCap" : 33906600000,
-    "lowPrice" : 2875,
-    "highPrice" : 3140,
-    "openPrice" : 3080,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3105
-  }, {
     "volume" : 22221,
     "marketCap" : 33742800000,
     "lowPrice" : 3000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3215,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3255
+  }, {
+    "volume" : 340773,
+    "marketCap" : 36145200000,
+    "lowPrice" : 3200,
+    "highPrice" : 3355,
+    "openPrice" : 3245,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3310
   } ],
   "stockCode" : "006920"
 }

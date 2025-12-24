@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이닉스",
   "prices" : [ {
-    "volume" : 34134,
-    "marketCap" : 89807137200,
-    "lowPrice" : 9480,
-    "highPrice" : 9990,
-    "openPrice" : 9530,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9900
-  }, {
     "volume" : 27734,
     "marketCap" : 88899994400,
     "lowPrice" : 9640,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10110,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10070
+  }, {
+    "volume" : 1865023,
+    "marketCap" : 118744992520,
+    "lowPrice" : 9800,
+    "highPrice" : 13090,
+    "openPrice" : 10000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13090
   } ],
   "stockCode" : "452400"
 }

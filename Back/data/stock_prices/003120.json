@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "일성아이에스",
   "prices" : [ {
-    "volume" : 8403,
-    "marketCap" : 212800000000,
-    "lowPrice" : 15930,
-    "highPrice" : 16140,
-    "openPrice" : 15960,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16000
-  }, {
     "volume" : 6872,
     "marketCap" : 213598000000,
     "lowPrice" : 15950,
@@ -1937,6 +1929,14 @@
     "openPrice" : 22750,
     "tradeDate" : "2025-12-22",
     "closePrice" : 22300
+  }, {
+    "volume" : 10097,
+    "marketCap" : 297255000000,
+    "lowPrice" : 22100,
+    "highPrice" : 22650,
+    "openPrice" : 22650,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 22350
   } ],
   "stockCode" : "003120"
 }

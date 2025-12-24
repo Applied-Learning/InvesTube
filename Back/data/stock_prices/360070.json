@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "탑머티리얼",
   "prices" : [ {
-    "volume" : 18889,
-    "marketCap" : 222110432500,
-    "lowPrice" : 26550,
-    "highPrice" : 27850,
-    "openPrice" : 27000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 27500
-  }, {
     "volume" : 14081,
     "marketCap" : 218475898150,
     "lowPrice" : 27050,
@@ -1936,6 +1928,14 @@
     "highPrice" : 21900,
     "openPrice" : 21300,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 21450
+  }, {
+    "volume" : 22331,
+    "marketCap" : 174711172350,
+    "lowPrice" : 21200,
+    "highPrice" : 22250,
+    "openPrice" : 21200,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 21450
   } ],
   "stockCode" : "360070"

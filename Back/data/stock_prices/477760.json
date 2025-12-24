@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "DB금융스팩12호",
   "prices" : [ {
-    "volume" : 8023,
-    "marketCap" : 11796800000,
-    "lowPrice" : 2015,
-    "highPrice" : 2055,
-    "openPrice" : 2035,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2020
-  }, {
     "volume" : 557,
     "marketCap" : 11913600000,
     "lowPrice" : 2020,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2110,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2115
+  }, {
+    "volume" : 16627,
+    "marketCap" : 12439200000,
+    "lowPrice" : 2105,
+    "highPrice" : 2140,
+    "openPrice" : 2115,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2130
   } ],
   "stockCode" : "477760"
 }

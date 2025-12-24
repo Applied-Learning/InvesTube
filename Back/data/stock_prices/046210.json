@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HLB파나진",
   "prices" : [ {
-    "volume" : 63405,
-    "marketCap" : 114132146145,
-    "lowPrice" : 2685,
-    "highPrice" : 2795,
-    "openPrice" : 2735,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2685
-  }, {
     "volume" : 41582,
     "marketCap" : 114344682730,
     "lowPrice" : 2650,
@@ -1936,6 +1928,14 @@
     "highPrice" : 1698,
     "openPrice" : 1669,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 1675
+  }, {
+    "volume" : 43400,
+    "marketCap" : 75587252650,
+    "lowPrice" : 1655,
+    "highPrice" : 1699,
+    "openPrice" : 1655,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 1675
   } ],
   "stockCode" : "046210"

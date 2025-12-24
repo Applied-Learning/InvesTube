@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "네온테크",
   "prices" : [ {
-    "volume" : 980583,
-    "marketCap" : 110307630080,
-    "lowPrice" : 2535,
-    "highPrice" : 2595,
-    "openPrice" : 2535,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2560
-  }, {
     "volume" : 6451094,
     "marketCap" : 115909189420,
     "lowPrice" : 2585,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2340,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2415
+  }, {
+    "volume" : 529935,
+    "marketCap" : 103532798000,
+    "lowPrice" : 2260,
+    "highPrice" : 2450,
+    "openPrice" : 2445,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2300
   } ],
   "stockCode" : "306620"
 }

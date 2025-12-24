@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼성물산",
   "prices" : [ {
-    "volume" : 116069,
-    "marketCap" : 21102973500900,
-    "lowPrice" : 115800,
-    "highPrice" : 118700,
-    "openPrice" : 117300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 118700
-  }, {
     "volume" : 88205,
     "marketCap" : 20907410983200,
     "lowPrice" : 117100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 252000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 244500
+  }, {
+    "volume" : 235793,
+    "marketCap" : 40879358832000,
+    "lowPrice" : 239000,
+    "highPrice" : 246000,
+    "openPrice" : 246000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 240500
   } ],
   "stockCode" : "028260"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대양금속",
   "prices" : [ {
-    "volume" : 410585,
-    "marketCap" : 72054336186,
-    "lowPrice" : 1639,
-    "highPrice" : 1758,
-    "openPrice" : 1657,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1701
-  }, {
     "volume" : 265670,
     "marketCap" : 69004417194,
     "lowPrice" : 1607,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1317,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1325
+  }, {
+    "volume" : 41874,
+    "marketCap" : 57057457625,
+    "lowPrice" : 1316,
+    "highPrice" : 1335,
+    "openPrice" : 1325,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1321
   } ],
   "stockCode" : "009190"
 }

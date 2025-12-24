@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "우리엔터프라이즈",
   "prices" : [ {
-    "volume" : 24503,
-    "marketCap" : 27927863490,
-    "lowPrice" : 1042,
-    "highPrice" : 1066,
-    "openPrice" : 1046,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1065
-  }, {
     "volume" : 20892,
     "marketCap" : 27849193452,
     "lowPrice" : 1055,
@@ -1937,6 +1929,14 @@
     "openPrice" : 997,
     "tradeDate" : "2025-12-22",
     "closePrice" : 997
+  }, {
+    "volume" : 32360,
+    "marketCap" : 26013559232,
+    "lowPrice" : 988,
+    "highPrice" : 1003,
+    "openPrice" : 997,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 992
   } ],
   "stockCode" : "037400"
 }

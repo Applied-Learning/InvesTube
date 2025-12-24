@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "DL이앤씨2우(전환)",
   "prices" : [ {
-    "volume" : 1569,
-    "marketCap" : 45618141600,
-    "lowPrice" : 21250,
-    "highPrice" : 21800,
-    "openPrice" : 21500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 21600
-  }, {
     "volume" : 181,
     "marketCap" : 45406946500,
     "lowPrice" : 21450,
@@ -1937,6 +1929,14 @@
     "openPrice" : 31900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 31800
+  }, {
+    "volume" : 1000,
+    "marketCap" : 67476834450,
+    "lowPrice" : 31250,
+    "highPrice" : 31950,
+    "openPrice" : 31750,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 31950
   } ],
   "stockCode" : "37550L"
 }

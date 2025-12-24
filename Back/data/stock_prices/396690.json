@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "미래에셋글로벌리츠",
   "prices" : [ {
-    "volume" : 33944,
-    "marketCap" : 102579384600,
-    "lowPrice" : 2540,
-    "highPrice" : 2590,
-    "openPrice" : 2585,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2590
-  }, {
     "volume" : 21733,
     "marketCap" : 102579384600,
     "lowPrice" : 2540,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2590,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2575
+  }, {
+    "volume" : 145918,
+    "marketCap" : 101589236100,
+    "lowPrice" : 2555,
+    "highPrice" : 2580,
+    "openPrice" : 2575,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2565
   } ],
   "stockCode" : "396690"
 }

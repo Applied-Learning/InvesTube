@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스에이엠티",
   "prices" : [ {
-    "volume" : 471445,
-    "marketCap" : 286485866955,
-    "lowPrice" : 2850,
-    "highPrice" : 2880,
-    "openPrice" : 2850,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2865
-  }, {
     "volume" : 543078,
     "marketCap" : 285985891620,
     "lowPrice" : 2840,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3860,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3810
+  }, {
+    "volume" : 368425,
+    "marketCap" : 379981254600,
+    "lowPrice" : 3740,
+    "highPrice" : 3820,
+    "openPrice" : 3820,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3800
   } ],
   "stockCode" : "031330"
 }

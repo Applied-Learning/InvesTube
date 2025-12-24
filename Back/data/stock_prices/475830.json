@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오름테라퓨틱",
   "prices" : [ {
     "volume" : 19374053,
@@ -1681,6 +1681,14 @@
     "openPrice" : 102600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 97800
+  }, {
+    "volume" : 261956,
+    "marketCap" : 2021321433600,
+    "lowPrice" : 95200,
+    "highPrice" : 99700,
+    "openPrice" : 98300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 95200
   } ],
   "stockCode" : "475830"
 }

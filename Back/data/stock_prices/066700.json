@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "테라젠이텍스",
   "prices" : [ {
-    "volume" : 64034,
-    "marketCap" : 105217169400,
-    "lowPrice" : 3150,
-    "highPrice" : 3245,
-    "openPrice" : 3150,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3240
-  }, {
     "volume" : 122225,
     "marketCap" : 104242936350,
     "lowPrice" : 3055,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3220,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3315
+  }, {
+    "volume" : 496901,
+    "marketCap" : 118144555680,
+    "lowPrice" : 3160,
+    "highPrice" : 3320,
+    "openPrice" : 3285,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3180
   } ],
   "stockCode" : "066700"
 }

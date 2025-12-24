@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한섬",
   "prices" : [ {
-    "volume" : 20151,
-    "marketCap" : 354955245000,
-    "lowPrice" : 14930,
-    "highPrice" : 15180,
-    "openPrice" : 15000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15170
-  }, {
     "volume" : 33496,
     "marketCap" : 355423215000,
     "lowPrice" : 15040,
@@ -1936,6 +1928,14 @@
     "highPrice" : 16400,
     "openPrice" : 16240,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 16380
+  }, {
+    "volume" : 58949,
+    "marketCap" : 367530295860,
+    "lowPrice" : 16290,
+    "highPrice" : 16480,
+    "openPrice" : 16420,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 16380
   } ],
   "stockCode" : "020000"

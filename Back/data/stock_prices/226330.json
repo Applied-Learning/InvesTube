@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신테카바이오",
   "prices" : [ {
-    "volume" : 71195,
-    "marketCap" : 86362968500,
-    "lowPrice" : 5450,
-    "highPrice" : 5720,
-    "openPrice" : 5700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5660
-  }, {
     "volume" : 75983,
     "marketCap" : 86057799000,
     "lowPrice" : 5510,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4430,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4345
+  }, {
+    "volume" : 237338,
+    "marketCap" : 62178285625,
+    "lowPrice" : 4075,
+    "highPrice" : 4225,
+    "openPrice" : 4225,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4075
   } ],
   "stockCode" : "226330"
 }

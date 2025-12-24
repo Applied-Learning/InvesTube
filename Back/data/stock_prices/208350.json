@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "지란지교시큐리티",
   "prices" : [ {
-    "volume" : 1492,
-    "marketCap" : 25366635630,
-    "lowPrice" : 2840,
-    "highPrice" : 2880,
-    "openPrice" : 2870,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2870
-  }, {
     "volume" : 2808,
     "marketCap" : 24747937200,
     "lowPrice" : 2800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2955,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2900
+  }, {
+    "volume" : 12553,
+    "marketCap" : 24569537300,
+    "lowPrice" : 2860,
+    "highPrice" : 2935,
+    "openPrice" : 2890,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2890
   } ],
   "stockCode" : "208350"
 }

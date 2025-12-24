@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "베노티앤알",
   "prices" : [ {
-    "volume" : 220746,
-    "marketCap" : 121532911920,
-    "lowPrice" : 3110,
-    "highPrice" : 3325,
-    "openPrice" : 3135,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3240
-  }, {
     "volume" : 182795,
     "marketCap" : 120407607180,
     "lowPrice" : 3065,
@@ -1936,6 +1928,14 @@
     "highPrice" : 1590,
     "openPrice" : 1497,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 1570
+  }, {
+    "volume" : 99230,
+    "marketCap" : 58890948060,
+    "lowPrice" : 1521,
+    "highPrice" : 1570,
+    "openPrice" : 1570,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 1570
   } ],
   "stockCode" : "206400"

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "토니모리",
   "prices" : [ {
-    "volume" : 179525,
-    "marketCap" : 152747973650,
-    "lowPrice" : 6200,
-    "highPrice" : 6380,
-    "openPrice" : 6300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6350
-  }, {
     "volume" : 194307,
     "marketCap" : 155394001540,
     "lowPrice" : 6310,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8570,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8610
+  }, {
+    "volume" : 105564,
+    "marketCap" : 203263051550,
+    "lowPrice" : 8440,
+    "highPrice" : 8810,
+    "openPrice" : 8610,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8450
   } ],
   "stockCode" : "214420"
 }

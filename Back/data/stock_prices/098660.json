@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스티오",
   "prices" : [ {
-    "volume" : 21713,
-    "marketCap" : 34752713280,
-    "lowPrice" : 2745,
-    "highPrice" : 2810,
-    "openPrice" : 2800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2780
-  }, {
     "volume" : 8195,
     "marketCap" : 35190247440,
     "lowPrice" : 2740,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1806,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1765
+  }, {
+    "volume" : 19911,
+    "marketCap" : 21789201168,
+    "lowPrice" : 1739,
+    "highPrice" : 1779,
+    "openPrice" : 1774,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1743
   } ],
   "stockCode" : "098660"
 }

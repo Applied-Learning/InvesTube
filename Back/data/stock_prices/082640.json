@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동양생명",
   "prices" : [ {
-    "volume" : 275470,
-    "marketCap" : 734988354675,
-    "lowPrice" : 4430,
-    "highPrice" : 4595,
-    "openPrice" : 4450,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4555
-  }, {
     "volume" : 341167,
     "marketCap" : 753544591950,
     "lowPrice" : 4560,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6730,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6670
+  }, {
+    "volume" : 72167,
+    "marketCap" : 1069807418550,
+    "lowPrice" : 6630,
+    "highPrice" : 6720,
+    "openPrice" : 6670,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6630
   } ],
   "stockCode" : "082640"
 }

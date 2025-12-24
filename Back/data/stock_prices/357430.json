@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "마스턴프리미어리츠",
   "prices" : [ {
-    "volume" : 25209,
-    "marketCap" : 40534500000,
-    "lowPrice" : 1504,
-    "highPrice" : 1530,
-    "openPrice" : 1530,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1525
-  }, {
     "volume" : 23549,
     "marketCap" : 40640820000,
     "lowPrice" : 1505,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1623,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1638
+  }, {
+    "volume" : 31249,
+    "marketCap" : 49998198173,
+    "lowPrice" : 1630,
+    "highPrice" : 1639,
+    "openPrice" : 1638,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1639
   } ],
   "stockCode" : "357430"
 }

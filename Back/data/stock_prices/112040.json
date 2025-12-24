@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "위메이드",
   "prices" : [ {
-    "volume" : 136368,
-    "marketCap" : 1244211901950,
-    "lowPrice" : 35800,
-    "highPrice" : 37050,
-    "openPrice" : 36150,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 36650
-  }, {
     "volume" : 111233,
     "marketCap" : 1249304174400,
     "lowPrice" : 36300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 26350,
     "tradeDate" : "2025-12-22",
     "closePrice" : 26050
+  }, {
+    "volume" : 115244,
+    "marketCap" : 865686316500,
+    "lowPrice" : 25450,
+    "highPrice" : 26150,
+    "openPrice" : 26150,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 25500
   } ],
   "stockCode" : "112040"
 }

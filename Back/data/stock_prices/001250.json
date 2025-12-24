@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "GS글로벌",
   "prices" : [ {
-    "volume" : 802732,
-    "marketCap" : 224079169260,
-    "lowPrice" : 2630,
-    "highPrice" : 2740,
-    "openPrice" : 2630,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2715
-  }, {
     "volume" : 634452,
     "marketCap" : 226142513360,
     "lowPrice" : 2690,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2370,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2370
+  }, {
+    "volume" : 295801,
+    "marketCap" : 193541676580,
+    "lowPrice" : 2330,
+    "highPrice" : 2395,
+    "openPrice" : 2375,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2345
   } ],
   "stockCode" : "001250"
 }

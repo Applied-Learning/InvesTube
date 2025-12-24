@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KSS해운",
   "prices" : [ {
-    "volume" : 35306,
-    "marketCap" : 205002614400,
-    "lowPrice" : 8670,
-    "highPrice" : 8880,
-    "openPrice" : 8780,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8880
-  }, {
     "volume" : 26882,
     "marketCap" : 204310038000,
     "lowPrice" : 8790,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9550,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9460
+  }, {
+    "volume" : 58882,
+    "marketCap" : 217007272000,
+    "lowPrice" : 9380,
+    "highPrice" : 9590,
+    "openPrice" : 9440,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9400
   } ],
   "stockCode" : "044450"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KB스타리츠",
   "prices" : [ {
-    "volume" : 70139,
-    "marketCap" : 374725783075,
-    "lowPrice" : 3640,
-    "highPrice" : 3730,
-    "openPrice" : 3640,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3695
-  }, {
     "volume" : 90329,
     "marketCap" : 386388425850,
     "lowPrice" : 3695,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3245
+  }, {
+    "volume" : 154863,
+    "marketCap" : 328582283400,
+    "lowPrice" : 3215,
+    "highPrice" : 3285,
+    "openPrice" : 3285,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3240
   } ],
   "stockCode" : "432320"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한솔아이원스",
   "prices" : [ {
-    "volume" : 49420,
-    "marketCap" : 187779972300,
-    "lowPrice" : 6310,
-    "highPrice" : 6600,
-    "openPrice" : 6310,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6450
-  }, {
     "volume" : 47467,
     "marketCap" : 186906577080,
     "lowPrice" : 6370,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12250,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12610
+  }, {
+    "volume" : 263917,
+    "marketCap" : 351981971940,
+    "lowPrice" : 12080,
+    "highPrice" : 12880,
+    "openPrice" : 12740,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12310
   } ],
   "stockCode" : "114810"
 }

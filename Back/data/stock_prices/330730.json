@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "스톤브릿지벤처스",
   "prices" : [ {
-    "volume" : 33179,
-    "marketCap" : 70878991150,
-    "lowPrice" : 3810,
-    "highPrice" : 3910,
-    "openPrice" : 3830,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3905
-  }, {
     "volume" : 46341,
     "marketCap" : 71968040950,
     "lowPrice" : 3875,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7020,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6730
+  }, {
+    "volume" : 417086,
+    "marketCap" : 111310941300,
+    "lowPrice" : 6050,
+    "highPrice" : 6700,
+    "openPrice" : 6700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6110
   } ],
   "stockCode" : "330730"
 }

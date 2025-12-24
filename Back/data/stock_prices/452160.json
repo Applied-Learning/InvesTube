@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제이엔비",
   "prices" : [ {
-    "volume" : 23908,
-    "marketCap" : 43567397310,
-    "lowPrice" : 4490,
-    "highPrice" : 4670,
-    "openPrice" : 4490,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4530
-  }, {
     "volume" : 11604,
     "marketCap" : 44144448930,
     "lowPrice" : 4530,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5580,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5620
+  }, {
+    "volume" : 41086,
+    "marketCap" : 52896398500,
+    "lowPrice" : 5490,
+    "highPrice" : 5590,
+    "openPrice" : 5530,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5500
   } ],
   "stockCode" : "452160"
 }

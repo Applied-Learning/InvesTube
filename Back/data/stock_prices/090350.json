@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "노루페인트",
   "prices" : [ {
-    "volume" : 28541,
-    "marketCap" : 164600000000,
-    "lowPrice" : 8010,
-    "highPrice" : 8230,
-    "openPrice" : 8010,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8230
-  }, {
     "volume" : 35285,
     "marketCap" : 164800000000,
     "lowPrice" : 8160,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8920,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8780
+  }, {
+    "volume" : 59853,
+    "marketCap" : 176000000000,
+    "lowPrice" : 8730,
+    "highPrice" : 8890,
+    "openPrice" : 8780,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8800
   } ],
   "stockCode" : "090350"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "세코닉스",
   "prices" : [ {
-    "volume" : 34186,
-    "marketCap" : 80768704380,
-    "lowPrice" : 5280,
-    "highPrice" : 5470,
-    "openPrice" : 5280,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5460
-  }, {
     "volume" : 30212,
     "marketCap" : 79881136200,
     "lowPrice" : 5360,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5160,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5160
+  }, {
+    "volume" : 65209,
+    "marketCap" : 74703655150,
+    "lowPrice" : 5000,
+    "highPrice" : 5230,
+    "openPrice" : 5230,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5050
   } ],
   "stockCode" : "053450"
 }

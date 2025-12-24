@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신도리코",
   "prices" : [ {
-    "volume" : 5238,
-    "marketCap" : 386065110700,
-    "lowPrice" : 37250,
-    "highPrice" : 38300,
-    "openPrice" : 37450,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 38300
-  }, {
     "volume" : 4098,
     "marketCap" : 381025096200,
     "lowPrice" : 37700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 51200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 52000
+  }, {
+    "volume" : 4500,
+    "marketCap" : 514081479000,
+    "lowPrice" : 51000,
+    "highPrice" : 52100,
+    "openPrice" : 52100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 51000
   } ],
   "stockCode" : "029530"
 }

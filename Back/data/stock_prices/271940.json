@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "일진하이솔루스",
   "prices" : [ {
-    "volume" : 63003,
-    "marketCap" : 639838407800,
-    "lowPrice" : 17600,
-    "highPrice" : 18490,
-    "openPrice" : 18010,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17620
-  }, {
     "volume" : 64000,
     "marketCap" : 613692911000,
     "lowPrice" : 16770,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14310,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14490
+  }, {
+    "volume" : 25013,
+    "marketCap" : 512379110900,
+    "lowPrice" : 14100,
+    "highPrice" : 14640,
+    "openPrice" : 14640,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14110
   } ],
   "stockCode" : "271940"
 }

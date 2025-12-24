@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "태경산업",
   "prices" : [ {
-    "volume" : 48430,
-    "marketCap" : 149651200000,
-    "lowPrice" : 5070,
-    "highPrice" : 5170,
-    "openPrice" : 5120,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5120
-  }, {
     "volume" : 68805,
     "marketCap" : 150820350000,
     "lowPrice" : 5120,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5280,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5320
+  }, {
+    "volume" : 51127,
+    "marketCap" : 153743225000,
+    "lowPrice" : 5260,
+    "highPrice" : 5340,
+    "openPrice" : 5330,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5260
   } ],
   "stockCode" : "015890"
 }

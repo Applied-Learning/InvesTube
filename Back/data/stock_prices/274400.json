@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이노시뮬레이션",
   "prices" : [ {
-    "volume" : 14653,
-    "marketCap" : 32999665720,
-    "lowPrice" : 4125,
-    "highPrice" : 4320,
-    "openPrice" : 4150,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4220
-  }, {
     "volume" : 13999,
     "marketCap" : 34485432660,
     "lowPrice" : 4180,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3960,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4120
+  }, {
+    "volume" : 27077,
+    "marketCap" : 38299567995,
+    "lowPrice" : 4120,
+    "highPrice" : 4255,
+    "openPrice" : 4120,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4215
   } ],
   "stockCode" : "274400"
 }

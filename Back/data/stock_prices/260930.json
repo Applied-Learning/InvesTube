@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "씨티케이",
   "prices" : [ {
-    "volume" : 61563,
-    "marketCap" : 108119493690,
-    "lowPrice" : 5530,
-    "highPrice" : 5780,
-    "openPrice" : 5780,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5590
-  }, {
     "volume" : 205128,
     "marketCap" : 106378750500,
     "lowPrice" : 5470,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4680,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4765
+  }, {
+    "volume" : 78834,
+    "marketCap" : 89744982240,
+    "lowPrice" : 4620,
+    "highPrice" : 4800,
+    "openPrice" : 4725,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4640
   } ],
   "stockCode" : "260930"
 }

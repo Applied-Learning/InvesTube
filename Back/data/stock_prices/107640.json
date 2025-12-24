@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한중엔시에스",
   "prices" : [ {
-    "volume" : 91615,
-    "marketCap" : 199076812000,
-    "lowPrice" : 21400,
-    "highPrice" : 22600,
-    "openPrice" : 22250,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 22000
-  }, {
     "volume" : 372771,
     "marketCap" : 215817362100,
     "lowPrice" : 22000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 50900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 51400
+  }, {
+    "volume" : 133841,
+    "marketCap" : 450527816200,
+    "lowPrice" : 49300,
+    "highPrice" : 52300,
+    "openPrice" : 51300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 49700
   } ],
   "stockCode" : "107640"
 }

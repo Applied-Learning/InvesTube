@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "경방",
   "prices" : [ {
-    "volume" : 1741,
-    "marketCap" : 172442048300,
-    "lowPrice" : 6250,
-    "highPrice" : 6320,
-    "openPrice" : 6310,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6290
-  }, {
     "volume" : 5208,
     "marketCap" : 172167895600,
     "lowPrice" : 6260,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9170,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9580
+  }, {
+    "volume" : 391379,
+    "marketCap" : 257977690700,
+    "lowPrice" : 9200,
+    "highPrice" : 9560,
+    "openPrice" : 9490,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9410
   } ],
   "stockCode" : "000050"
 }

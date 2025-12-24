@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한농화성",
   "prices" : [ {
-    "volume" : 71872,
-    "marketCap" : 215791179600,
-    "lowPrice" : 13110,
-    "highPrice" : 13840,
-    "openPrice" : 13330,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13800
-  }, {
     "volume" : 108119,
     "marketCap" : 214540216240,
     "lowPrice" : 13700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 15100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15530
+  }, {
+    "volume" : 35016,
+    "marketCap" : 239715853860,
+    "lowPrice" : 15270,
+    "highPrice" : 15530,
+    "openPrice" : 15510,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15330
   } ],
   "stockCode" : "011500"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "뉴로메카",
   "prices" : [ {
-    "volume" : 55355,
-    "marketCap" : 241712376000,
-    "lowPrice" : 21700,
-    "highPrice" : 22900,
-    "openPrice" : 21700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 22800
-  }, {
     "volume" : 1928404,
     "marketCap" : 280407559000,
     "lowPrice" : 22800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 33900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 33650
+  }, {
+    "volume" : 242911,
+    "marketCap" : 365510842300,
+    "lowPrice" : 31500,
+    "highPrice" : 34050,
+    "openPrice" : 33150,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 32150
   } ],
   "stockCode" : "348340"
 }

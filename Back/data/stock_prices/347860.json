@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "알체라",
   "prices" : [ {
-    "volume" : 281597,
-    "marketCap" : 41724588752,
-    "lowPrice" : 1685,
-    "highPrice" : 1900,
-    "openPrice" : 1800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1694
-  }, {
     "volume" : 51870,
     "marketCap" : 41995527640,
     "lowPrice" : 1694,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2385,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2505
+  }, {
+    "volume" : 309000,
+    "marketCap" : 93680525620,
+    "lowPrice" : 2410,
+    "highPrice" : 2550,
+    "openPrice" : 2550,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2420
   } ],
   "stockCode" : "347860"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신라교역",
   "prices" : [ {
-    "volume" : 18076,
-    "marketCap" : 159200000000,
-    "lowPrice" : 9870,
-    "highPrice" : 10060,
-    "openPrice" : 10050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9950
-  }, {
     "volume" : 7944,
     "marketCap" : 159040000000,
     "lowPrice" : 9850,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9380,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9420
+  }, {
+    "volume" : 9445,
+    "marketCap" : 150080000000,
+    "lowPrice" : 9340,
+    "highPrice" : 9410,
+    "openPrice" : 9410,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9380
   } ],
   "stockCode" : "004970"
 }

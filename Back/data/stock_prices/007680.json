@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대원",
   "prices" : [ {
-    "volume" : 5793,
-    "marketCap" : 55802867100,
-    "lowPrice" : 4135,
-    "highPrice" : 4400,
-    "openPrice" : 4230,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4150
-  }, {
     "volume" : 613,
     "marketCap" : 56206261320,
     "lowPrice" : 4155,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4415,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4425
+  }, {
+    "volume" : 7465,
+    "marketCap" : 59702344560,
+    "lowPrice" : 4395,
+    "highPrice" : 4560,
+    "openPrice" : 4400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4440
   } ],
   "stockCode" : "007680"
 }

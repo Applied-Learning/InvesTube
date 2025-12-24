@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼화페인트",
   "prices" : [ {
-    "volume" : 33987,
-    "marketCap" : 177638652570,
-    "lowPrice" : 6380,
-    "highPrice" : 6570,
-    "openPrice" : 6380,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6530
-  }, {
     "volume" : 64067,
     "marketCap" : 179814930090,
     "lowPrice" : 6520,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8530,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8600
+  }, {
+    "volume" : 7474164,
+    "marketCap" : 222524376420,
+    "lowPrice" : 8080,
+    "highPrice" : 9340,
+    "openPrice" : 8910,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8180
   } ],
   "stockCode" : "000390"
 }

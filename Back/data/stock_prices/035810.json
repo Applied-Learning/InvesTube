@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이지홀딩스",
   "prices" : [ {
-    "volume" : 51622,
-    "marketCap" : 194786076550,
-    "lowPrice" : 2940,
-    "highPrice" : 2990,
-    "openPrice" : 2945,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2990
-  }, {
     "volume" : 42608,
     "marketCap" : 194786076550,
     "lowPrice" : 2960,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4585,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4555
+  }, {
+    "volume" : 86264,
+    "marketCap" : 293226060825,
+    "lowPrice" : 4535,
+    "highPrice" : 4645,
+    "openPrice" : 4535,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4545
   } ],
   "stockCode" : "035810"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이씨티케이",
   "prices" : [ {
-    "volume" : 2804918,
-    "marketCap" : 113384350240,
-    "lowPrice" : 8460,
-    "highPrice" : 9130,
-    "openPrice" : 8920,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8540
-  }, {
     "volume" : 1103153,
     "marketCap" : 106878690800,
     "lowPrice" : 8040,
@@ -1937,6 +1929,14 @@
     "openPrice" : 15620,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16330
+  }, {
+    "volume" : 1186616,
+    "marketCap" : 219562259360,
+    "lowPrice" : 15940,
+    "highPrice" : 17940,
+    "openPrice" : 17070,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16360
   } ],
   "stockCode" : "456010"
 }

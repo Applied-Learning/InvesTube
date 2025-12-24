@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이수페타시스",
   "prices" : [ {
-    "volume" : 2663943,
-    "marketCap" : 1666543140650,
-    "lowPrice" : 25100,
-    "highPrice" : 26650,
-    "openPrice" : 25250,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 26350
-  }, {
     "volume" : 8212692,
     "marketCap" : 1751925806300,
     "lowPrice" : 27100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 124900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 122600
+  }, {
+    "volume" : 991214,
+    "marketCap" : 8897197342800,
+    "lowPrice" : 120300,
+    "highPrice" : 125700,
+    "openPrice" : 123400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 121200
   } ],
   "stockCode" : "007660"
 }

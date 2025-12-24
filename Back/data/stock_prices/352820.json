@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하이브",
   "prices" : [ {
-    "volume" : 104578,
-    "marketCap" : 8326254190300,
-    "lowPrice" : 195400,
-    "highPrice" : 201500,
-    "openPrice" : 198000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 199900
-  }, {
     "volume" : 122941,
     "marketCap" : 8142984963500,
     "lowPrice" : 193400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 315500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 309000
+  }, {
+    "volume" : 376991,
+    "marketCap" : 13811352450500,
+    "lowPrice" : 309000,
+    "highPrice" : 326000,
+    "openPrice" : 311500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 324500
   } ],
   "stockCode" : "352820"
 }

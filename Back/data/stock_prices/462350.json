@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이노스페이스",
   "prices" : [ {
-    "volume" : 555868,
-    "marketCap" : 160980665980,
-    "lowPrice" : 16140,
-    "highPrice" : 18860,
-    "openPrice" : 16140,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17170
-  }, {
     "volume" : 118442,
     "marketCap" : 160980665980,
     "lowPrice" : 16870,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15000
+  }, {
+    "volume" : 19823221,
+    "marketCap" : 220851220590,
+    "lowPrice" : 10500,
+    "highPrice" : 18010,
+    "openPrice" : 16380,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10710
   } ],
   "stockCode" : "462350"
 }

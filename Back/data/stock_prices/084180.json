@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "수성웹툰",
   "prices" : [ {
-    "volume" : 0,
-    "marketCap" : 82173440936,
-    "lowPrice" : 0,
-    "highPrice" : 0,
-    "openPrice" : 0,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 508
-  }, {
     "volume" : 367976,
     "marketCap" : 94131666270,
     "lowPrice" : 5100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3375,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3375
+  }, {
+    "volume" : 26928,
+    "marketCap" : 59825876730,
+    "lowPrice" : 3285,
+    "highPrice" : 3415,
+    "openPrice" : 3385,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3310
   } ],
   "stockCode" : "084180"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스퓨얼셀",
   "prices" : [ {
-    "volume" : 8732,
-    "marketCap" : 64558673000,
-    "lowPrice" : 9220,
-    "highPrice" : 9710,
-    "openPrice" : 9710,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9250
-  }, {
     "volume" : 9490,
     "marketCap" : 63581568760,
     "lowPrice" : 9050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10880
+  }, {
+    "volume" : 14279,
+    "marketCap" : 75167233320,
+    "lowPrice" : 10700,
+    "highPrice" : 10990,
+    "openPrice" : 10860,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10770
   } ],
   "stockCode" : "288620"
 }

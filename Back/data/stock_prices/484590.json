@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼양컴텍",
   "prices" : [ {
     "volume" : 45240971,
@@ -689,6 +689,14 @@
     "openPrice" : 13320,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13320
+  }, {
+    "volume" : 535444,
+    "marketCap" : 546450567000,
+    "lowPrice" : 13100,
+    "highPrice" : 13920,
+    "openPrice" : 13410,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13260
   } ],
   "stockCode" : "484590"
 }

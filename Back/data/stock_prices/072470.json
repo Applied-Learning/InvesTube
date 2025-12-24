@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "우리산업홀딩스",
   "prices" : [ {
-    "volume" : 5893,
-    "marketCap" : 45424055105,
-    "lowPrice" : 2380,
-    "highPrice" : 2410,
-    "openPrice" : 2380,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2405
-  }, {
     "volume" : 6657,
     "marketCap" : 45612928515,
     "lowPrice" : 2385,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3450,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3435
+  }, {
+    "volume" : 56786,
+    "marketCap" : 61950478480,
+    "lowPrice" : 3280,
+    "highPrice" : 3425,
+    "openPrice" : 3425,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3280
   } ],
   "stockCode" : "072470"
 }

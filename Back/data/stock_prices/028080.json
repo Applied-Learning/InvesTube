@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "휴맥스홀딩스",
   "prices" : [ {
-    "volume" : 270632,
-    "marketCap" : 32449965480,
-    "lowPrice" : 2575,
-    "highPrice" : 2860,
-    "openPrice" : 2800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2580
-  }, {
     "volume" : 90824,
     "marketCap" : 31443765000,
     "lowPrice" : 2470,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1582,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1593
+  }, {
+    "volume" : 23145,
+    "marketCap" : 20199474636,
+    "lowPrice" : 1556,
+    "highPrice" : 1613,
+    "openPrice" : 1593,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1606
   } ],
   "stockCode" : "028080"
 }

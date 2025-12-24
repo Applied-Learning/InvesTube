@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "덕산네오룩스",
   "prices" : [ {
-    "volume" : 93122,
-    "marketCap" : 711413278350,
-    "lowPrice" : 28350,
-    "highPrice" : 29400,
-    "openPrice" : 29100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 28650
-  }, {
     "volume" : 192937,
     "marketCap" : 720104191000,
     "lowPrice" : 28650,
@@ -1937,6 +1929,14 @@
     "openPrice" : 38650,
     "tradeDate" : "2025-12-22",
     "closePrice" : 38850
+  }, {
+    "volume" : 147986,
+    "marketCap" : 954758832550,
+    "lowPrice" : 38250,
+    "highPrice" : 39600,
+    "openPrice" : 39250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 38450
   } ],
   "stockCode" : "213420"
 }

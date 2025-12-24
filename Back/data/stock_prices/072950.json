@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "빛샘전자",
   "prices" : [ {
-    "volume" : 7076,
-    "marketCap" : 28385450250,
-    "lowPrice" : 3420,
-    "highPrice" : 3580,
-    "openPrice" : 3495,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3525
-  }, {
     "volume" : 19753,
     "marketCap" : 28667291600,
     "lowPrice" : 3460,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5340,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5360
+  }, {
+    "volume" : 25241,
+    "marketCap" : 42517780800,
+    "lowPrice" : 5270,
+    "highPrice" : 5430,
+    "openPrice" : 5430,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5280
   } ],
   "stockCode" : "072950"
 }

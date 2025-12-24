@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하이즈항공",
   "prices" : [ {
-    "volume" : 14051,
-    "marketCap" : 28406152159,
-    "lowPrice" : 1471,
-    "highPrice" : 1522,
-    "openPrice" : 1501,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1519
-  }, {
     "volume" : 8145,
     "marketCap" : 28593157769,
     "lowPrice" : 1497,
@@ -1936,6 +1928,14 @@
     "highPrice" : 2200,
     "openPrice" : 2170,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 2175
+  }, {
+    "volume" : 20316,
+    "marketCap" : 40673720175,
+    "lowPrice" : 2155,
+    "highPrice" : 2215,
+    "openPrice" : 2185,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 2175
   } ],
   "stockCode" : "221840"

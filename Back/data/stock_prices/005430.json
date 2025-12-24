@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국공항",
   "prices" : [ {
-    "volume" : 15473,
-    "marketCap" : 185548403000,
-    "lowPrice" : 56600,
-    "highPrice" : 58700,
-    "openPrice" : 58300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 58600
-  }, {
     "volume" : 12464,
     "marketCap" : 183965225500,
     "lowPrice" : 57700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 64700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 66900
+  }, {
+    "volume" : 10179,
+    "marketCap" : 204863168500,
+    "lowPrice" : 64200,
+    "highPrice" : 66800,
+    "openPrice" : 66300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 64700
   } ],
   "stockCode" : "005430"
 }

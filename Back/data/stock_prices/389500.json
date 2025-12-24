@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스비비테크",
   "prices" : [ {
-    "volume" : 21106,
-    "marketCap" : 89042115680,
-    "lowPrice" : 13800,
-    "highPrice" : 14560,
-    "openPrice" : 13810,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14420
-  }, {
     "volume" : 126932,
     "marketCap" : 96019757200,
     "lowPrice" : 14310,
@@ -1937,6 +1929,14 @@
     "openPrice" : 41550,
     "tradeDate" : "2025-12-22",
     "closePrice" : 41300
+  }, {
+    "volume" : 300003,
+    "marketCap" : 249555817600,
+    "lowPrice" : 39200,
+    "highPrice" : 42050,
+    "openPrice" : 41250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 39400
   } ],
   "stockCode" : "389500"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신세계",
   "prices" : [ {
-    "volume" : 165738,
-    "marketCap" : 1319254254000,
-    "lowPrice" : 132500,
-    "highPrice" : 144000,
-    "openPrice" : 141700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 134000
-  }, {
     "volume" : 49025,
     "marketCap" : 1328114916900,
     "lowPrice" : 133500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 253000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 249500
+  }, {
+    "volume" : 55049,
+    "marketCap" : 2420940431000,
+    "lowPrice" : 247500,
+    "highPrice" : 257500,
+    "openPrice" : 249000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 251000
   } ],
   "stockCode" : "004170"
 }

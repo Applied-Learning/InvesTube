@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동부건설",
   "prices" : [ {
-    "volume" : 7027,
-    "marketCap" : 89949672400,
-    "lowPrice" : 3870,
-    "highPrice" : 3950,
-    "openPrice" : 3950,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3920
-  }, {
     "volume" : 13083,
     "marketCap" : 89490745500,
     "lowPrice" : 3855,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5790,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5800
+  }, {
+    "volume" : 60466,
+    "marketCap" : 132631712140,
+    "lowPrice" : 5750,
+    "highPrice" : 5880,
+    "openPrice" : 5880,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5780
   } ],
   "stockCode" : "005960"
 }

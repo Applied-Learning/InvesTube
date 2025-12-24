@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "PKC",
   "prices" : [ {
-    "volume" : 141730,
-    "marketCap" : 332396211800,
-    "lowPrice" : 7130,
-    "highPrice" : 7400,
-    "openPrice" : 7190,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7400
-  }, {
     "volume" : 141878,
     "marketCap" : 324310898540,
     "lowPrice" : 7170,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5830,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5900
+  }, {
+    "volume" : 59362,
+    "marketCap" : 261425128740,
+    "lowPrice" : 5800,
+    "highPrice" : 5990,
+    "openPrice" : 5900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5820
   } ],
   "stockCode" : "001340"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "팅크웨어",
   "prices" : [ {
-    "volume" : 10055,
-    "marketCap" : 100429192960,
-    "lowPrice" : 8840,
-    "highPrice" : 9080,
-    "openPrice" : 8840,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9040
-  }, {
     "volume" : 6314,
     "marketCap" : 100095910240,
     "lowPrice" : 8940,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8080,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8060
+  }, {
+    "volume" : 14808,
+    "marketCap" : 88431015040,
+    "lowPrice" : 7930,
+    "highPrice" : 8150,
+    "openPrice" : 8150,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7960
   } ],
   "stockCode" : "084730"
 }

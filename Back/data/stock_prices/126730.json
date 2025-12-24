@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코칩",
   "prices" : [ {
-    "volume" : 26466,
-    "marketCap" : 85884946000,
-    "lowPrice" : 9850,
-    "highPrice" : 10280,
-    "openPrice" : 10000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10100
-  }, {
     "volume" : 23023,
     "marketCap" : 85629842200,
     "lowPrice" : 9890,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14660
+  }, {
+    "volume" : 66461,
+    "marketCap" : 121174305000,
+    "lowPrice" : 14180,
+    "highPrice" : 14850,
+    "openPrice" : 14800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14250
   } ],
   "stockCode" : "126730"
 }

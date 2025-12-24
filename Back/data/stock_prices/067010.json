@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이씨에스",
   "prices" : [ {
-    "volume" : 87253,
-    "marketCap" : 39955500000,
-    "lowPrice" : 3100,
-    "highPrice" : 3300,
-    "openPrice" : 3150,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3250
-  }, {
     "volume" : 107514,
     "marketCap" : 39033450000,
     "lowPrice" : 3100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2475,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2490
+  }, {
+    "volume" : 9086,
+    "marketCap" : 30735000000,
+    "lowPrice" : 2480,
+    "highPrice" : 2510,
+    "openPrice" : 2485,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2500
   } ],
   "stockCode" : "067010"
 }

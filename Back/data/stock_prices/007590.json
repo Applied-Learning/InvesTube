@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동방아그로",
   "prices" : [ {
-    "volume" : 6000,
-    "marketCap" : 84837504710,
-    "lowPrice" : 6190,
-    "highPrice" : 6240,
-    "openPrice" : 6200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6230
-  }, {
     "volume" : 21370,
     "marketCap" : 85109856250,
     "lowPrice" : 6230,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6230,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6180
+  }, {
+    "volume" : 33475,
+    "marketCap" : 82658692390,
+    "lowPrice" : 6040,
+    "highPrice" : 6200,
+    "openPrice" : 6190,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6070
   } ],
   "stockCode" : "007590"
 }

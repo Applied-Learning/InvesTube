@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SK텔레콤",
   "prices" : [ {
-    "volume" : 294944,
-    "marketCap" : 12178596005100,
-    "lowPrice" : 56000,
-    "highPrice" : 57100,
-    "openPrice" : 56300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 56700
-  }, {
     "volume" : 303885,
     "marketCap" : 12200075010400,
     "lowPrice" : 56100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 52600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 53200
+  }, {
+    "volume" : 421775,
+    "marketCap" : 11469788830200,
+    "lowPrice" : 52800,
+    "highPrice" : 53400,
+    "openPrice" : 53000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 53400
   } ],
   "stockCode" : "017670"
 }

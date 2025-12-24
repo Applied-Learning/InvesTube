@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유니슨",
   "prices" : [ {
-    "volume" : 1240787,
-    "marketCap" : 130335070536,
-    "lowPrice" : 768,
-    "highPrice" : 800,
-    "openPrice" : 780,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 774
-  }, {
     "volume" : 936231,
     "marketCap" : 130503462100,
     "lowPrice" : 761,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1265,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1300
+  }, {
+    "volume" : 1741910,
+    "marketCap" : 277143053750,
+    "lowPrice" : 1230,
+    "highPrice" : 1292,
+    "openPrice" : 1292,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1250
   } ],
   "stockCode" : "018000"
 }

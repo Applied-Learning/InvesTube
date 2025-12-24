@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "키스트론",
   "prices" : [ {
     "volume" : 41787479,
@@ -1105,6 +1105,14 @@
     "openPrice" : 5040,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5060
+  }, {
+    "volume" : 242725,
+    "marketCap" : 91203842100,
+    "lowPrice" : 5000,
+    "highPrice" : 5260,
+    "openPrice" : 5120,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5110
   } ],
   "stockCode" : "475430"
 }

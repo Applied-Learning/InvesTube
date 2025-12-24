@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하나마이크론",
   "prices" : [ {
-    "volume" : 806625,
-    "marketCap" : 654819164160,
-    "lowPrice" : 9540,
-    "highPrice" : 10180,
-    "openPrice" : 9550,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9960
-  }, {
     "volume" : 341610,
     "marketCap" : 636410593280,
     "lowPrice" : 9560,
@@ -1937,6 +1929,14 @@
     "openPrice" : 24000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 25450
+  }, {
+    "volume" : 1258423,
+    "marketCap" : 1626264699500,
+    "lowPrice" : 24250,
+    "highPrice" : 25700,
+    "openPrice" : 25700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 24500
   } ],
   "stockCode" : "067310"
 }

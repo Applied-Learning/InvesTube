@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "원익",
   "prices" : [ {
-    "volume" : 73385,
-    "marketCap" : 64495000350,
-    "lowPrice" : 3450,
-    "highPrice" : 3595,
-    "openPrice" : 3450,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3545
-  }, {
     "volume" : 58028,
     "marketCap" : 64676932650,
     "lowPrice" : 3505,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7160,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7170
+  }, {
+    "volume" : 133885,
+    "marketCap" : 131718985200,
+    "lowPrice" : 7140,
+    "highPrice" : 7320,
+    "openPrice" : 7250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7240
   } ],
   "stockCode" : "032940"
 }

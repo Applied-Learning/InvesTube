@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "예림당",
   "prices" : [ {
-    "volume" : 79113,
-    "marketCap" : 44456154610,
-    "lowPrice" : 1915,
-    "highPrice" : 1950,
-    "openPrice" : 1930,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1930
-  }, {
     "volume" : 57529,
     "marketCap" : 43672989192,
     "lowPrice" : 1874,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3445,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3350
+  }, {
+    "volume" : 389708,
+    "marketCap" : 75206914405,
+    "lowPrice" : 3240,
+    "highPrice" : 3410,
+    "openPrice" : 3350,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3265
   } ],
   "stockCode" : "036000"
 }

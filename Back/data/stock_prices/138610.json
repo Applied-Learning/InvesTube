@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "나이벡",
   "prices" : [ {
-    "volume" : 220444,
-    "marketCap" : 177775669440,
-    "lowPrice" : 16250,
-    "highPrice" : 16940,
-    "openPrice" : 16250,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16320
-  }, {
     "volume" : 222957,
     "marketCap" : 177775669440,
     "lowPrice" : 16290,
@@ -1937,6 +1929,14 @@
     "openPrice" : 40650,
     "tradeDate" : "2025-12-22",
     "closePrice" : 40200
+  }, {
+    "volume" : 187609,
+    "marketCap" : 449934012000,
+    "lowPrice" : 39400,
+    "highPrice" : 40800,
+    "openPrice" : 40250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 39600
   } ],
   "stockCode" : "138610"
 }

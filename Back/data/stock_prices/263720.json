@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디앤씨미디어",
   "prices" : [ {
-    "volume" : 24123,
-    "marketCap" : 264266380300,
-    "lowPrice" : 20300,
-    "highPrice" : 21400,
-    "openPrice" : 20300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 21100
-  }, {
     "volume" : 28124,
     "marketCap" : 253620578250,
     "lowPrice" : 20200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12530
+  }, {
+    "volume" : 11377,
+    "marketCap" : 153047247030,
+    "lowPrice" : 12310,
+    "highPrice" : 12650,
+    "openPrice" : 12530,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12330
   } ],
   "stockCode" : "263720"
 }

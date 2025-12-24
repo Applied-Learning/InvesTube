@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대제철",
   "prices" : [ {
-    "volume" : 294644,
-    "marketCap" : 2902445823750,
-    "lowPrice" : 21000,
-    "highPrice" : 21800,
-    "openPrice" : 21200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 21750
-  }, {
     "volume" : 184444,
     "marketCap" : 2895773534500,
     "lowPrice" : 21550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 30650,
     "tradeDate" : "2025-12-22",
     "closePrice" : 30650
+  }, {
+    "volume" : 208896,
+    "marketCap" : 4103457888750,
+    "lowPrice" : 30500,
+    "highPrice" : 31100,
+    "openPrice" : 30700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 30750
   } ],
   "stockCode" : "004020"
 }

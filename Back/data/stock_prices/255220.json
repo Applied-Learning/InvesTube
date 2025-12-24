@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SG",
   "prices" : [ {
-    "volume" : 6324513,
-    "marketCap" : 306871702860,
-    "lowPrice" : 3040,
-    "highPrice" : 3300,
-    "openPrice" : 3225,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3165
-  }, {
     "volume" : 4275962,
     "marketCap" : 291843230840,
     "lowPrice" : 2970,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2675,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2645
+  }, {
+    "volume" : 2629131,
+    "marketCap" : 258499209790,
+    "lowPrice" : 2505,
+    "highPrice" : 2635,
+    "openPrice" : 2610,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2515
   } ],
   "stockCode" : "255220"
 }

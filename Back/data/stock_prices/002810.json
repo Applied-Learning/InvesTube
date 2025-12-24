@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼영무역",
   "prices" : [ {
-    "volume" : 14226,
-    "marketCap" : 241917018800,
-    "lowPrice" : 12960,
-    "highPrice" : 13110,
-    "openPrice" : 13050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13100
-  }, {
     "volume" : 5955,
     "marketCap" : 244502391520,
     "lowPrice" : 13060,
@@ -1937,6 +1929,14 @@
     "openPrice" : 16710,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16540
+  }, {
+    "volume" : 15257,
+    "marketCap" : 300641913440,
+    "lowPrice" : 16260,
+    "highPrice" : 16550,
+    "openPrice" : 16550,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16280
   } ],
   "stockCode" : "002810"
 }

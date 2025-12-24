@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에코프로머티",
   "prices" : [ {
-    "volume" : 489654,
-    "marketCap" : 4923542900800,
-    "lowPrice" : 67800,
-    "highPrice" : 72300,
-    "openPrice" : 71200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 70600
-  }, {
     "volume" : 462875,
     "marketCap" : 4853804332800,
     "lowPrice" : 69400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 56100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 57100
+  }, {
+    "volume" : 130945,
+    "marketCap" : 4007737227200,
+    "lowPrice" : 56600,
+    "highPrice" : 57800,
+    "openPrice" : 57500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 56800
   } ],
   "stockCode" : "450080"
 }

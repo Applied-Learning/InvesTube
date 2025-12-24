@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "리튬포어스",
   "prices" : [ {
-    "volume" : 162831,
-    "marketCap" : 54609950973,
-    "lowPrice" : 1474,
-    "highPrice" : 1540,
-    "openPrice" : 1474,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1509
-  }, {
     "volume" : 205738,
     "marketCap" : 53343318578,
     "lowPrice" : 1474,
@@ -1937,6 +1929,14 @@
     "openPrice" : 900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 907
+  }, {
+    "volume" : 283909,
+    "marketCap" : 52723497516,
+    "lowPrice" : 865,
+    "highPrice" : 916,
+    "openPrice" : 907,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 876
   } ],
   "stockCode" : "073570"
 }

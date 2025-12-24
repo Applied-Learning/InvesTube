@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "CJ ENM",
   "prices" : [ {
-    "volume" : 67033,
-    "marketCap" : 1300398832200,
-    "lowPrice" : 58300,
-    "highPrice" : 60500,
-    "openPrice" : 59800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 59300
-  }, {
     "volume" : 117821,
     "marketCap" : 1234611370200,
     "lowPrice" : 56100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 63800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 64600
+  }, {
+    "volume" : 36836,
+    "marketCap" : 1421009179200,
+    "lowPrice" : 64000,
+    "highPrice" : 65600,
+    "openPrice" : 64500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 64800
   } ],
   "stockCode" : "035760"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "알서포트",
   "prices" : [ {
-    "volume" : 135335,
-    "marketCap" : 152343857380,
-    "lowPrice" : 2705,
-    "highPrice" : 2860,
-    "openPrice" : 2705,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2860
-  }, {
     "volume" : 106957,
     "marketCap" : 147549819910,
     "lowPrice" : 2750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2545,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2580
+  }, {
+    "volume" : 51806,
+    "marketCap" : 135032055405,
+    "lowPrice" : 2530,
+    "highPrice" : 2585,
+    "openPrice" : 2580,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2535
   } ],
   "stockCode" : "131370"
 }

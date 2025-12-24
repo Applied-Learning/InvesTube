@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "메디아나",
   "prices" : [ {
-    "volume" : 14153,
-    "marketCap" : 91968212735,
-    "lowPrice" : 4865,
-    "highPrice" : 4945,
-    "openPrice" : 4925,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4945
-  }, {
     "volume" : 20784,
     "marketCap" : 90852319355,
     "lowPrice" : 4840,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8820,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8570
+  }, {
+    "volume" : 731880,
+    "marketCap" : 146925961700,
+    "lowPrice" : 7550,
+    "highPrice" : 8570,
+    "openPrice" : 8570,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7900
   } ],
   "stockCode" : "041920"
 }

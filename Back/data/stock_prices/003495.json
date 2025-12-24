@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대한항공우",
   "prices" : [ {
-    "volume" : 4110,
-    "marketCap" : 25326103200,
-    "lowPrice" : 22750,
-    "highPrice" : 23150,
-    "openPrice" : 23050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 22800
-  }, {
     "volume" : 2380,
     "marketCap" : 25381642900,
     "lowPrice" : 22750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 24500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 24450
+  }, {
+    "volume" : 2505,
+    "marketCap" : 27047833900,
+    "lowPrice" : 24250,
+    "highPrice" : 24750,
+    "openPrice" : 24450,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 24350
   } ],
   "stockCode" : "003495"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "피제이메탈",
   "prices" : [ {
-    "volume" : 95017,
-    "marketCap" : 75898309140,
-    "lowPrice" : 2980,
-    "highPrice" : 3120,
-    "openPrice" : 2990,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3060
-  }, {
     "volume" : 86231,
     "marketCap" : 76146342830,
     "lowPrice" : 3050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2865,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2875
+  }, {
+    "volume" : 33473,
+    "marketCap" : 71061652185,
+    "lowPrice" : 2850,
+    "highPrice" : 2890,
+    "openPrice" : 2875,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2865
   } ],
   "stockCode" : "128660"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이티센엔텍",
   "prices" : [ {
-    "volume" : 31346,
-    "marketCap" : 41874594398,
-    "lowPrice" : 628,
-    "highPrice" : 650,
-    "openPrice" : 636,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 643
-  }, {
     "volume" : 73600,
     "marketCap" : 41418727896,
     "lowPrice" : 612,
@@ -1936,6 +1928,14 @@
     "highPrice" : 1040,
     "openPrice" : 1018,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 1025
+  }, {
+    "volume" : 356202,
+    "marketCap" : 66751880650,
+    "lowPrice" : 1000,
+    "highPrice" : 1042,
+    "openPrice" : 1027,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 1025
   } ],
   "stockCode" : "010280"

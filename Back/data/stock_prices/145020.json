@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "휴젤",
   "prices" : [ {
-    "volume" : 68951,
-    "marketCap" : 3522827223500,
-    "lowPrice" : 276000,
-    "highPrice" : 286000,
-    "openPrice" : 285000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 279500
-  }, {
     "volume" : 99772,
     "marketCap" : 3522827223500,
     "lowPrice" : 277500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 236500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 235000
+  }, {
+    "volume" : 28304,
+    "marketCap" : 2829927590000,
+    "lowPrice" : 228500,
+    "highPrice" : 238000,
+    "openPrice" : 238000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 230000
   } ],
   "stockCode" : "145020"
 }

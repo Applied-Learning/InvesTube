@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대화제약",
   "prices" : [ {
-    "volume" : 152389,
-    "marketCap" : 217814805000,
-    "lowPrice" : 11590,
-    "highPrice" : 11900,
-    "openPrice" : 11590,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11700
-  }, {
     "volume" : 152420,
     "marketCap" : 214091475000,
     "lowPrice" : 11430,
@@ -1937,6 +1929,14 @@
     "openPrice" : 18200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 18000
+  }, {
+    "volume" : 117032,
+    "marketCap" : 328770039000,
+    "lowPrice" : 17580,
+    "highPrice" : 18050,
+    "openPrice" : 18000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 17660
   } ],
   "stockCode" : "067080"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "뷰웍스",
   "prices" : [ {
-    "volume" : 6412,
-    "marketCap" : 215040097500,
-    "lowPrice" : 21000,
-    "highPrice" : 21500,
-    "openPrice" : 21000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 21500
-  }, {
     "volume" : 4297,
     "marketCap" : 213539817750,
     "lowPrice" : 21050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 20100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 20300
+  }, {
+    "volume" : 21664,
+    "marketCap" : 188136000000,
+    "lowPrice" : 19980,
+    "highPrice" : 20600,
+    "openPrice" : 20600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 20100
   } ],
   "stockCode" : "100120"
 }

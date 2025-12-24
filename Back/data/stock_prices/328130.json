@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "루닛",
   "prices" : [ {
-    "volume" : 1477300,
-    "marketCap" : 1800248380000,
-    "lowPrice" : 60500,
-    "highPrice" : 63500,
-    "openPrice" : 62300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 62200
-  }, {
     "volume" : 1549315,
     "marketCap" : 1814719830000,
     "lowPrice" : 61300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 42450,
     "tradeDate" : "2025-12-22",
     "closePrice" : 43850
+  }, {
+    "volume" : 486424,
+    "marketCap" : 1262428589900,
+    "lowPrice" : 40950,
+    "highPrice" : 43400,
+    "openPrice" : 43000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 43150
   } ],
   "stockCode" : "328130"
 }

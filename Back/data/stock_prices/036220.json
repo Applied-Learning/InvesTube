@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오상헬스케어",
   "prices" : [ {
-    "volume" : 29973,
-    "marketCap" : 175611721920,
-    "lowPrice" : 11760,
-    "highPrice" : 12240,
-    "openPrice" : 11860,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12120
-  }, {
     "volume" : 30371,
     "marketCap" : 178074922640,
     "lowPrice" : 12000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11890,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12170
+  }, {
+    "volume" : 13129,
+    "marketCap" : 174548274480,
+    "lowPrice" : 11890,
+    "highPrice" : 12290,
+    "openPrice" : 12170,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12030
   } ],
   "stockCode" : "036220"
 }

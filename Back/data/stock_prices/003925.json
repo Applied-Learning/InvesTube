@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "남양유업우",
   "prices" : [ {
-    "volume" : 3229,
-    "marketCap" : 73900000000,
-    "lowPrice" : 36900,
-    "highPrice" : 36950,
-    "openPrice" : 36900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 36950
-  }, {
     "volume" : 3208,
     "marketCap" : 74000000000,
     "lowPrice" : 36950,
@@ -1937,6 +1929,14 @@
     "openPrice" : 34600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 34450
+  }, {
+    "volume" : 1517,
+    "marketCap" : 68700000000,
+    "lowPrice" : 32500,
+    "highPrice" : 35000,
+    "openPrice" : 35000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 34350
   } ],
   "stockCode" : "003925"
 }

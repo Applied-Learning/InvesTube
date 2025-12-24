@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엠앤씨솔루션",
   "prices" : [ {
-    "volume" : 163700,
-    "marketCap" : 445337235000,
-    "lowPrice" : 48350,
-    "highPrice" : 50800,
-    "openPrice" : 50600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 48650
-  }, {
     "volume" : 167724,
     "marketCap" : 425198655000,
     "lowPrice" : 46350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 139500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 139200
+  }, {
+    "volume" : 22704,
+    "marketCap" : 1273307490000,
+    "lowPrice" : 136900,
+    "highPrice" : 139900,
+    "openPrice" : 139000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 139100
   } ],
   "stockCode" : "484870"
 }

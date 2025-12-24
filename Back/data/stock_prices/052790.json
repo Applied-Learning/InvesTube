@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "액토즈소프트",
   "prices" : [ {
-    "volume" : 34308,
-    "marketCap" : 79427772380,
-    "lowPrice" : 6820,
-    "highPrice" : 7190,
-    "openPrice" : 6900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7010
-  }, {
     "volume" : 108860,
     "marketCap" : 75462049080,
     "lowPrice" : 6410,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6050
+  }, {
+    "volume" : 1970985,
+    "marketCap" : 69230198180,
+    "lowPrice" : 6050,
+    "highPrice" : 6930,
+    "openPrice" : 6050,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6110
   } ],
   "stockCode" : "052790"
 }

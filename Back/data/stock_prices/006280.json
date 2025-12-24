@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "녹십자",
   "prices" : [ {
-    "volume" : 30976,
-    "marketCap" : 1989048767600,
-    "lowPrice" : 165600,
-    "highPrice" : 170900,
-    "openPrice" : 168100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 170200
-  }, {
     "volume" : 54994,
     "marketCap" : 2034626265800,
     "lowPrice" : 168000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 166700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 164100
+  }, {
+    "volume" : 75013,
+    "marketCap" : 1866340118600,
+    "lowPrice" : 158600,
+    "highPrice" : 165500,
+    "openPrice" : 164800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 159700
   } ],
   "stockCode" : "006280"
 }

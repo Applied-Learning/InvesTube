@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "JW생명과학",
   "prices" : [ {
-    "volume" : 19104,
-    "marketCap" : 180197224520,
-    "lowPrice" : 11070,
-    "highPrice" : 11470,
-    "openPrice" : 11470,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11380
-  }, {
     "volume" : 39334,
     "marketCap" : 181147297760,
     "lowPrice" : 11380,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14280,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13950
+  }, {
+    "volume" : 62445,
+    "marketCap" : 215349934400,
+    "lowPrice" : 13600,
+    "highPrice" : 14030,
+    "openPrice" : 14030,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13600
   } ],
   "stockCode" : "234080"
 }

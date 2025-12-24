@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국ANKOR유전",
   "prices" : [ {
-    "volume" : 2541820,
-    "marketCap" : 23106600000,
-    "lowPrice" : 321,
-    "highPrice" : 349,
-    "openPrice" : 348,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 330
-  }, {
     "volume" : 1091866,
     "marketCap" : 22826520000,
     "lowPrice" : 325,
@@ -1937,6 +1929,14 @@
     "openPrice" : 220,
     "tradeDate" : "2025-12-22",
     "closePrice" : 216
+  }, {
+    "volume" : 939490,
+    "marketCap" : 14984280000,
+    "lowPrice" : 212,
+    "highPrice" : 224,
+    "openPrice" : 224,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 214
   } ],
   "stockCode" : "152550"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "율촌",
   "prices" : [ {
-    "volume" : 50084,
-    "marketCap" : 26921481995,
-    "lowPrice" : 1093,
-    "highPrice" : 1152,
-    "openPrice" : 1100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1121
-  }, {
     "volume" : 29081,
     "marketCap" : 26849435210,
     "lowPrice" : 1106,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1143,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1149
+  }, {
+    "volume" : 33562,
+    "marketCap" : 27738012225,
+    "lowPrice" : 1144,
+    "highPrice" : 1160,
+    "openPrice" : 1160,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1155
   } ],
   "stockCode" : "146060"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한창제지",
   "prices" : [ {
-    "volume" : 146740,
-    "marketCap" : 43497597294,
-    "lowPrice" : 718,
-    "highPrice" : 735,
-    "openPrice" : 722,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 729
-  }, {
     "volume" : 105941,
     "marketCap" : 44392609584,
     "lowPrice" : 723,
@@ -1937,6 +1929,14 @@
     "openPrice" : 530,
     "tradeDate" : "2025-12-22",
     "closePrice" : 526
+  }, {
+    "volume" : 65294,
+    "marketCap" : 31027092720,
+    "lowPrice" : 520,
+    "highPrice" : 530,
+    "openPrice" : 530,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 520
   } ],
   "stockCode" : "009460"
 }

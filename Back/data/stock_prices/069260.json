@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "TKG휴켐스",
   "prices" : [ {
-    "volume" : 48187,
-    "marketCap" : 759115379160,
-    "lowPrice" : 18360,
-    "highPrice" : 18590,
-    "openPrice" : 18500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 18570
-  }, {
     "volume" : 59882,
     "marketCap" : 757889021520,
     "lowPrice" : 18450,
@@ -1937,6 +1929,14 @@
     "openPrice" : 19850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 19730
+  }, {
+    "volume" : 68548,
+    "marketCap" : 804081825960,
+    "lowPrice" : 19500,
+    "highPrice" : 19750,
+    "openPrice" : 19750,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 19670
   } ],
   "stockCode" : "069260"
 }

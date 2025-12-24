@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "빅솔론",
   "prices" : [ {
-    "volume" : 19749,
-    "marketCap" : 85132154625,
-    "lowPrice" : 4300,
-    "highPrice" : 4440,
-    "openPrice" : 4330,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4425
-  }, {
     "volume" : 17924,
     "marketCap" : 85613127250,
     "lowPrice" : 4400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6480,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6570
+  }, {
+    "volume" : 23305,
+    "marketCap" : 126976773000,
+    "lowPrice" : 6470,
+    "highPrice" : 6640,
+    "openPrice" : 6570,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6600
   } ],
   "stockCode" : "093190"
 }

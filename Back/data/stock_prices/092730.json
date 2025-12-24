@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "네오팜",
   "prices" : [ {
-    "volume" : 51465,
-    "marketCap" : 195060626130,
-    "lowPrice" : 11830,
-    "highPrice" : 12260,
-    "openPrice" : 11830,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12170
-  }, {
     "volume" : 71978,
     "marketCap" : 197304544590,
     "lowPrice" : 12010,
@@ -1937,6 +1929,14 @@
     "openPrice" : 19260,
     "tradeDate" : "2025-12-22",
     "closePrice" : 19450
+  }, {
+    "volume" : 108057,
+    "marketCap" : 305012630670,
+    "lowPrice" : 18790,
+    "highPrice" : 19850,
+    "openPrice" : 19470,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 19030
   } ],
   "stockCode" : "092730"
 }

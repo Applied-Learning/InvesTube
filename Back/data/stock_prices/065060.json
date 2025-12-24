@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "지엔코",
   "prices" : [ {
-    "volume" : 194818,
-    "marketCap" : 24733842076,
-    "lowPrice" : 226,
-    "highPrice" : 234,
-    "openPrice" : 232,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 229
-  }, {
     "volume" : 167557,
     "marketCap" : 24517825988,
     "lowPrice" : 225,
@@ -1937,6 +1929,14 @@
     "openPrice" : 778,
     "tradeDate" : "2025-12-22",
     "closePrice" : 779
+  }, {
+    "volume" : 73600,
+    "marketCap" : 18255216668,
+    "lowPrice" : 766,
+    "highPrice" : 777,
+    "openPrice" : 771,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 767
   } ],
   "stockCode" : "065060"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "ES큐브",
   "prices" : [ {
-    "volume" : 6518,
-    "marketCap" : 24591687918,
-    "lowPrice" : 1740,
-    "highPrice" : 1819,
-    "openPrice" : 1781,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1813
-  }, {
     "volume" : 13749,
     "marketCap" : 24591687918,
     "lowPrice" : 1735,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3030
+  }, {
+    "volume" : 47928,
+    "marketCap" : 39539310690,
+    "lowPrice" : 2875,
+    "highPrice" : 3060,
+    "openPrice" : 3030,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2915
   } ],
   "stockCode" : "050120"
 }

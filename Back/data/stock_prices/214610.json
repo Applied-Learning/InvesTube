@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "롤링스톤",
   "prices" : [ {
-    "volume" : 808807,
-    "marketCap" : 62129315570,
-    "lowPrice" : 1416,
-    "highPrice" : 1485,
-    "openPrice" : 1460,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1426
-  }, {
     "volume" : 700360,
     "marketCap" : 60822247220,
     "lowPrice" : 1388,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4350,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4220
+  }, {
+    "volume" : 19970,
+    "marketCap" : 32653039190,
+    "lowPrice" : 3870,
+    "highPrice" : 4220,
+    "openPrice" : 4170,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3895
   } ],
   "stockCode" : "214610"
 }

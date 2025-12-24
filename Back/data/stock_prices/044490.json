@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "태웅",
   "prices" : [ {
-    "volume" : 114007,
-    "marketCap" : 224682888630,
-    "lowPrice" : 10710,
-    "highPrice" : 11310,
-    "openPrice" : 10710,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11230
-  }, {
     "volume" : 64762,
     "marketCap" : 222882224340,
     "lowPrice" : 11100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 28000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 27750
+  }, {
+    "volume" : 95530,
+    "marketCap" : 542200025100,
+    "lowPrice" : 27100,
+    "highPrice" : 28300,
+    "openPrice" : 28300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 27100
   } ],
   "stockCode" : "044490"
 }

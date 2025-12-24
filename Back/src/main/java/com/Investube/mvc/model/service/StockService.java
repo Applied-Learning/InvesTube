@@ -55,6 +55,9 @@ public interface StockService {
     // JSON 파일 -> DB 초기 적재/복원
     Map<String, Integer> importStockPricesFromJson();
 
-    // 누락된 market/industry 정보 업데이트
+    // 누락된 market 정보 업데이트
     void updateMissingStockInfo();
+
+    // CSV(종목코드→업종)로 industry 일괄 업데이트
+    int updateIndustryFromCsv(String csvPath);
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아스타",
   "prices" : [ {
-    "volume" : 5816,
-    "marketCap" : 60103139000,
-    "lowPrice" : 4305,
-    "highPrice" : 4580,
-    "openPrice" : 4580,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4430
-  }, {
     "volume" : 20156,
     "marketCap" : 60510158000,
     "lowPrice" : 4335,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8390,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7470
+  }, {
+    "volume" : 64471,
+    "marketCap" : 116187071000,
+    "lowPrice" : 7350,
+    "highPrice" : 7910,
+    "openPrice" : 7520,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7790
   } ],
   "stockCode" : "246720"
 }

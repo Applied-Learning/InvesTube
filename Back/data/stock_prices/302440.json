@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SK바이오사이언스",
   "prices" : [ {
-    "volume" : 276303,
-    "marketCap" : 4113232882500,
-    "lowPrice" : 51500,
-    "highPrice" : 55400,
-    "openPrice" : 54100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 52500
-  }, {
     "volume" : 139965,
     "marketCap" : 3940868837900,
     "lowPrice" : 50300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 51700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 51000
+  }, {
+    "volume" : 50958,
+    "marketCap" : 3973315651500,
+    "lowPrice" : 50500,
+    "highPrice" : 51500,
+    "openPrice" : 51400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 50700
   } ],
   "stockCode" : "302440"
 }

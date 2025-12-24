@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한샘",
   "prices" : [ {
-    "volume" : 22716,
-    "marketCap" : 1207290506400,
-    "lowPrice" : 50400,
-    "highPrice" : 51500,
-    "openPrice" : 50700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 51300
-  }, {
     "volume" : 47934,
     "marketCap" : 1214350684800,
     "lowPrice" : 51000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 46950,
     "tradeDate" : "2025-12-22",
     "closePrice" : 49500
+  }, {
+    "volume" : 400047,
+    "marketCap" : 1159045954000,
+    "lowPrice" : 47600,
+    "highPrice" : 54800,
+    "openPrice" : 54800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 49250
   } ],
   "stockCode" : "009240"
 }

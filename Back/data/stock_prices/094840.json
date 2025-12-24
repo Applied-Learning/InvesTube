@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "슈프리마에이치큐",
   "prices" : [ {
-    "volume" : 249373,
-    "marketCap" : 67124494400,
-    "lowPrice" : 6270,
-    "highPrice" : 6680,
-    "openPrice" : 6570,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6410
-  }, {
     "volume" : 151188,
     "marketCap" : 67857523200,
     "lowPrice" : 6390,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6740,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6720
+  }, {
+    "volume" : 33519,
+    "marketCap" : 70580201600,
+    "lowPrice" : 6650,
+    "highPrice" : 6820,
+    "openPrice" : 6720,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6740
   } ],
   "stockCode" : "094840"
 }

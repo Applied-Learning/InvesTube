@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "리노공업",
   "prices" : [ {
-    "volume" : 97142,
-    "marketCap" : 2963116728000,
-    "lowPrice" : 188600,
-    "highPrice" : 197900,
-    "openPrice" : 192000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 194400
-  }, {
     "volume" : 111132,
     "marketCap" : 3048474000000,
     "lowPrice" : 194400,
@@ -1936,6 +1928,14 @@
     "highPrice" : 61700,
     "openPrice" : 61300,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 61400
+  }, {
+    "volume" : 260399,
+    "marketCap" : 4679407590000,
+    "lowPrice" : 61100,
+    "highPrice" : 62400,
+    "openPrice" : 62000,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 61400
   } ],
   "stockCode" : "058470"

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "와이지-원",
   "prices" : [ {
-    "volume" : 60581,
-    "marketCap" : 177605502510,
-    "lowPrice" : 5230,
-    "highPrice" : 5290,
-    "openPrice" : 5240,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5290
-  }, {
     "volume" : 49203,
     "marketCap" : 177605502510,
     "lowPrice" : 5260,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5610,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5630
+  }, {
+    "volume" : 99997,
+    "marketCap" : 184320266310,
+    "lowPrice" : 5470,
+    "highPrice" : 5640,
+    "openPrice" : 5640,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5490
   } ],
   "stockCode" : "019210"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "넥사다이내믹스",
   "prices" : [ {
-    "volume" : 12146,
-    "marketCap" : 30822240400,
-    "lowPrice" : 1400,
-    "highPrice" : 1436,
-    "openPrice" : 1425,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1400
-  }, {
     "volume" : 6613,
     "marketCap" : 30293859136,
     "lowPrice" : 1363,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1237,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1239
+  }, {
+    "volume" : 237035,
+    "marketCap" : 35078506184,
+    "lowPrice" : 1138,
+    "highPrice" : 1274,
+    "openPrice" : 1251,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1217
   } ],
   "stockCode" : "351320"
 }

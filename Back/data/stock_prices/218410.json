@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "RFHIC",
   "prices" : [ {
-    "volume" : 167301,
-    "marketCap" : 345357123680,
-    "lowPrice" : 12520,
-    "highPrice" : 13170,
-    "openPrice" : 13050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13040
-  }, {
     "volume" : 130495,
     "marketCap" : 346416501360,
     "lowPrice" : 12780,
@@ -1937,6 +1929,14 @@
     "openPrice" : 32450,
     "tradeDate" : "2025-12-22",
     "closePrice" : 36200
+  }, {
+    "volume" : 531576,
+    "marketCap" : 894491167500,
+    "lowPrice" : 32950,
+    "highPrice" : 35900,
+    "openPrice" : 35900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 33750
   } ],
   "stockCode" : "218410"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "넥스턴앤롤코리아",
   "prices" : [ {
-    "volume" : 88278,
-    "marketCap" : 36329285775,
-    "lowPrice" : 2845,
-    "highPrice" : 3030,
-    "openPrice" : 2895,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2985
-  }, {
     "volume" : 77967,
     "marketCap" : 34564546600,
     "lowPrice" : 2835,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2230,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2275
+  }, {
+    "volume" : 79968,
+    "marketCap" : 33263201820,
+    "lowPrice" : 2195,
+    "highPrice" : 2275,
+    "openPrice" : 2275,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2230
   } ],
   "stockCode" : "089140"
 }

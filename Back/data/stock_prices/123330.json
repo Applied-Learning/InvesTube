@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제닉",
   "prices" : [ {
-    "volume" : 178738,
-    "marketCap" : 183279640000,
-    "lowPrice" : 21350,
-    "highPrice" : 23900,
-    "openPrice" : 21350,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 23000
-  }, {
     "volume" : 255580,
     "marketCap" : 191248320000,
     "lowPrice" : 22550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 18300
+  }, {
+    "volume" : 18847,
+    "marketCap" : 140328454800,
+    "lowPrice" : 17600,
+    "highPrice" : 18310,
+    "openPrice" : 18000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 17610
   } ],
   "stockCode" : "123330"
 }

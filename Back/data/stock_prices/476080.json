@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "M83",
   "prices" : [ {
-    "volume" : 529341,
-    "marketCap" : 126350550000,
-    "lowPrice" : 16210,
-    "highPrice" : 17300,
-    "openPrice" : 16850,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16230
-  }, {
     "volume" : 432984,
     "marketCap" : 117553500000,
     "lowPrice" : 15100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9540,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9570
+  }, {
+    "volume" : 172805,
+    "marketCap" : 72815220000,
+    "lowPrice" : 8920,
+    "highPrice" : 9720,
+    "openPrice" : 9510,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9060
   } ],
   "stockCode" : "476080"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이엔알시스템",
   "prices" : [ {
-    "volume" : 19335,
-    "marketCap" : 68140560510,
-    "lowPrice" : 6060,
-    "highPrice" : 6310,
-    "openPrice" : 6060,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6270
-  }, {
     "volume" : 102673,
     "marketCap" : 66836434950,
     "lowPrice" : 6150,
@@ -1937,6 +1929,14 @@
     "openPrice" : 26100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 27250
+  }, {
+    "volume" : 541364,
+    "marketCap" : 306211685300,
+    "lowPrice" : 26500,
+    "highPrice" : 28750,
+    "openPrice" : 27600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 28100
   } ],
   "stockCode" : "199430"
 }

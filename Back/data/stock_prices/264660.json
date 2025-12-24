@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "씨앤지하이테크",
   "prices" : [ {
-    "volume" : 7725,
-    "marketCap" : 94738496640,
-    "lowPrice" : 9600,
-    "highPrice" : 9910,
-    "openPrice" : 9640,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9840
-  }, {
     "volume" : 10747,
     "marketCap" : 94738496640,
     "lowPrice" : 9780,
@@ -1937,6 +1929,14 @@
     "openPrice" : 15390,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15890
+  }, {
+    "volume" : 55891,
+    "marketCap" : 151455859760,
+    "lowPrice" : 15510,
+    "highPrice" : 16040,
+    "openPrice" : 15920,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15580
   } ],
   "stockCode" : "264660"
 }

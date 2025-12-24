@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "휴니드",
   "prices" : [ {
-    "volume" : 466648,
-    "marketCap" : 105870112500,
-    "lowPrice" : 7050,
-    "highPrice" : 7570,
-    "openPrice" : 7070,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7500
-  }, {
     "volume" : 676243,
     "marketCap" : 110951877900,
     "lowPrice" : 7520,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7510,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7880
+  }, {
+    "volume" : 29511,
+    "marketCap" : 109681436550,
+    "lowPrice" : 7720,
+    "highPrice" : 7970,
+    "openPrice" : 7870,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7770
   } ],
   "stockCode" : "005870"
 }

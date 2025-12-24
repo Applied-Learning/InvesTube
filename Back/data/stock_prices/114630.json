@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "폴라리스우노",
   "prices" : [ {
-    "volume" : 85772,
-    "marketCap" : 40278409864,
-    "lowPrice" : 514,
-    "highPrice" : 522,
-    "openPrice" : 518,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 518
-  }, {
     "volume" : 95078,
     "marketCap" : 39734107028,
     "lowPrice" : 509,
@@ -1937,6 +1929,14 @@
     "openPrice" : 503,
     "tradeDate" : "2025-12-22",
     "closePrice" : 507
+  }, {
+    "volume" : 102743,
+    "marketCap" : 44149669096,
+    "lowPrice" : 499,
+    "highPrice" : 509,
+    "openPrice" : 507,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 502
   } ],
   "stockCode" : "114630"
 }

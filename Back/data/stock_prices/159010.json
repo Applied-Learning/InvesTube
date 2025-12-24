@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아스플로",
   "prices" : [ {
-    "volume" : 10261,
-    "marketCap" : 54605756205,
-    "lowPrice" : 4030,
-    "highPrice" : 4120,
-    "openPrice" : 4045,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4095
-  }, {
     "volume" : 27863,
     "marketCap" : 57139356615,
     "lowPrice" : 4090,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4285,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4590
+  }, {
+    "volume" : 62232,
+    "marketCap" : 58672851600,
+    "lowPrice" : 4370,
+    "highPrice" : 4695,
+    "openPrice" : 4695,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4400
   } ],
   "stockCode" : "159010"
 }

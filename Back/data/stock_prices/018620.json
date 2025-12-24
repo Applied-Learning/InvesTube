@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "우진비앤지",
   "prices" : [ {
-    "volume" : 24128,
-    "marketCap" : 26000363700,
-    "lowPrice" : 892,
-    "highPrice" : 902,
-    "openPrice" : 892,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 900
-  }, {
     "volume" : 76048,
     "marketCap" : 25855917235,
     "lowPrice" : 895,
@@ -1937,6 +1929,14 @@
     "openPrice" : 848,
     "tradeDate" : "2025-12-22",
     "closePrice" : 847
+  }, {
+    "volume" : 48496,
+    "marketCap" : 24267006120,
+    "lowPrice" : 826,
+    "highPrice" : 850,
+    "openPrice" : 840,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 840
   } ],
   "stockCode" : "018620"
 }

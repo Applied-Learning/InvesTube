@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "MH에탄올",
   "prices" : [ {
-    "volume" : 17294,
-    "marketCap" : 41319745600,
-    "lowPrice" : 5440,
-    "highPrice" : 5850,
-    "openPrice" : 5800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5600
-  }, {
     "volume" : 7819,
     "marketCap" : 40581893000,
     "lowPrice" : 5350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5070,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5050
+  }, {
+    "volume" : 10858,
+    "marketCap" : 36892630000,
+    "lowPrice" : 4975,
+    "highPrice" : 5080,
+    "openPrice" : 5080,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5000
   } ],
   "stockCode" : "023150"
 }

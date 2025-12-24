@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "JTC",
   "prices" : [ {
-    "volume" : 15288,
-    "marketCap" : 206467928520,
-    "lowPrice" : 3975,
-    "highPrice" : 4050,
-    "openPrice" : 3975,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3990
-  }, {
     "volume" : 20122,
     "marketCap" : 205691733300,
     "lowPrice" : 3955,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4035,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3985
+  }, {
+    "volume" : 99494,
+    "marketCap" : 202069488940,
+    "lowPrice" : 3860,
+    "highPrice" : 3985,
+    "openPrice" : 3985,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3905
   } ],
   "stockCode" : "950170"
 }

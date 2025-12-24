@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동일기연",
   "prices" : [ {
-    "volume" : 1157,
-    "marketCap" : 41098990130,
-    "lowPrice" : 10260,
-    "highPrice" : 10330,
-    "openPrice" : 10260,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10310
-  }, {
     "volume" : 1836,
     "marketCap" : 41577348890,
     "lowPrice" : 10250,
@@ -1937,6 +1929,14 @@
     "openPrice" : 16980,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16760
+  }, {
+    "volume" : 145425,
+    "marketCap" : 71787110850,
+    "lowPrice" : 17190,
+    "highPrice" : 19050,
+    "openPrice" : 19020,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 17430
   } ],
   "stockCode" : "032960"
 }

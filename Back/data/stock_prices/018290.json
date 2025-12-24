@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "브이티",
   "prices" : [ {
-    "volume" : 924061,
-    "marketCap" : 1412231376150,
-    "lowPrice" : 38650,
-    "highPrice" : 40000,
-    "openPrice" : 39850,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 39450
-  }, {
     "volume" : 1388673,
     "marketCap" : 1419390977550,
     "lowPrice" : 39350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 18120
+  }, {
+    "volume" : 171749,
+    "marketCap" : 628953084000,
+    "lowPrice" : 18000,
+    "highPrice" : 18540,
+    "openPrice" : 18500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 18000
   } ],
   "stockCode" : "018290"
 }

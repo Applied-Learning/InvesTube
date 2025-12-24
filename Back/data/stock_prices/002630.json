@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오리엔트바이오",
   "prices" : [ {
-    "volume" : 35050654,
-    "marketCap" : 150244667335,
-    "lowPrice" : 1160,
-    "highPrice" : 1390,
-    "openPrice" : 1359,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1267
-  }, {
     "volume" : 11551328,
     "marketCap" : 145501347135,
     "lowPrice" : 1187,
@@ -1937,6 +1929,14 @@
     "openPrice" : 602,
     "tradeDate" : "2025-12-22",
     "closePrice" : 614
+  }, {
+    "volume" : 972594,
+    "marketCap" : 69726806940,
+    "lowPrice" : 587,
+    "highPrice" : 617,
+    "openPrice" : 615,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 588
   } ],
   "stockCode" : "002630"
 }

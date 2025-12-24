@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엘컴텍",
   "prices" : [ {
-    "volume" : 104683,
-    "marketCap" : 86643154494,
-    "lowPrice" : 1017,
-    "highPrice" : 1029,
-    "openPrice" : 1021,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1026
-  }, {
     "volume" : 128224,
     "marketCap" : 86643154494,
     "lowPrice" : 1026,
@@ -1937,6 +1929,14 @@
     "openPrice" : 751,
     "tradeDate" : "2025-12-22",
     "closePrice" : 776
+  }, {
+    "volume" : 1164411,
+    "marketCap" : 68318042871,
+    "lowPrice" : 778,
+    "highPrice" : 814,
+    "openPrice" : 779,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 809
   } ],
   "stockCode" : "037950"
 }

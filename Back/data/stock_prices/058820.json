@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "CMG제약",
   "prices" : [ {
-    "volume" : 911104,
-    "marketCap" : 245005918416,
-    "lowPrice" : 1732,
-    "highPrice" : 1779,
-    "openPrice" : 1745,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1764
-  }, {
     "volume" : 319765,
     "marketCap" : 244311457196,
     "lowPrice" : 1739,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1925,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1917
+  }, {
+    "volume" : 598481,
+    "marketCap" : 277204093125,
+    "lowPrice" : 1861,
+    "highPrice" : 1917,
+    "openPrice" : 1917,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1875
   } ],
   "stockCode" : "058820"
 }

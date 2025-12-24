@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이지바이오",
   "prices" : [ {
-    "volume" : 107075,
-    "marketCap" : 152324112600,
-    "lowPrice" : 4400,
-    "highPrice" : 4590,
-    "openPrice" : 4580,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4455
-  }, {
     "volume" : 340859,
     "marketCap" : 146169603000,
     "lowPrice" : 4180,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6380,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6190
+  }, {
+    "volume" : 116957,
+    "marketCap" : 202130531200,
+    "lowPrice" : 6080,
+    "highPrice" : 6240,
+    "openPrice" : 6190,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6110
   } ],
   "stockCode" : "353810"
 }

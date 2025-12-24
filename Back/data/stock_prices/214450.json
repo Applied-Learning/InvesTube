@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "파마리서치",
   "prices" : [ {
-    "volume" : 76157,
-    "marketCap" : 2695712400000,
-    "lowPrice" : 249500,
-    "highPrice" : 260000,
-    "openPrice" : 256000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 256500
-  }, {
     "volume" : 127616,
     "marketCap" : 2800808400000,
     "lowPrice" : 254500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 394500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 395500
+  }, {
+    "volume" : 80043,
+    "marketCap" : 4135079904000,
+    "lowPrice" : 394000,
+    "highPrice" : 404000,
+    "openPrice" : 403000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 398000
   } ],
   "stockCode" : "214450"
 }

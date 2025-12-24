@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "링크제니시스",
   "prices" : [ {
-    "volume" : 171920,
-    "marketCap" : 61591252590,
-    "lowPrice" : 5360,
-    "highPrice" : 5600,
-    "openPrice" : 5500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5370
-  }, {
     "volume" : 8408917,
     "marketCap" : 63426373710,
     "lowPrice" : 5350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5060
+  }, {
+    "volume" : 40340,
+    "marketCap" : 57576925140,
+    "lowPrice" : 4950,
+    "highPrice" : 5150,
+    "openPrice" : 5150,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5020
   } ],
   "stockCode" : "219420"
 }

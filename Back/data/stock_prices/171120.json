@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "라이온켐텍",
   "prices" : [ {
-    "volume" : 756264,
-    "marketCap" : 109141350400,
-    "lowPrice" : 2870,
-    "highPrice" : 3090,
-    "openPrice" : 2870,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3040
-  }, {
     "volume" : 243287,
     "marketCap" : 110577420800,
     "lowPrice" : 3055,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2260,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2255
+  }, {
+    "volume" : 75616,
+    "marketCap" : 80599451200,
+    "lowPrice" : 2230,
+    "highPrice" : 2255,
+    "openPrice" : 2255,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2245
   } ],
   "stockCode" : "171120"
 }

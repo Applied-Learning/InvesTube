@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신화인터텍",
   "prices" : [ {
-    "volume" : 244447,
-    "marketCap" : 48568196697,
-    "lowPrice" : 1445,
-    "highPrice" : 1720,
-    "openPrice" : 1692,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1667
-  }, {
     "volume" : 151916,
     "marketCap" : 49063493244,
     "lowPrice" : 1617,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1741,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1745
+  }, {
+    "volume" : 77301,
+    "marketCap" : 50811598704,
+    "lowPrice" : 1736,
+    "highPrice" : 1754,
+    "openPrice" : 1745,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1744
   } ],
   "stockCode" : "056700"
 }

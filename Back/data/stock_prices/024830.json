@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "세원물산",
   "prices" : [ {
-    "volume" : 1783,
-    "marketCap" : 49432000000,
-    "lowPrice" : 5900,
-    "highPrice" : 6100,
-    "openPrice" : 5900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5920
-  }, {
     "volume" : 256,
     "marketCap" : 50768000000,
     "lowPrice" : 5960,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10410,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10260
+  }, {
+    "volume" : 8348,
+    "marketCap" : 85170000000,
+    "lowPrice" : 10190,
+    "highPrice" : 10430,
+    "openPrice" : 10230,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10200
   } ],
   "stockCode" : "024830"
 }

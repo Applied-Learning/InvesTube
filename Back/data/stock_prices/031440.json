@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신세계푸드",
   "prices" : [ {
-    "volume" : 1252896,
-    "marketCap" : 153156584000,
-    "lowPrice" : 34250,
-    "highPrice" : 41600,
-    "openPrice" : 38000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 39550
-  }, {
     "volume" : 2306464,
     "marketCap" : 149864976000,
     "lowPrice" : 34850,
@@ -1937,6 +1929,14 @@
     "openPrice" : 47800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 47850
+  }, {
+    "volume" : 38824,
+    "marketCap" : 185491792000,
+    "lowPrice" : 47850,
+    "highPrice" : 47950,
+    "openPrice" : 47850,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 47900
   } ],
   "stockCode" : "031440"
 }

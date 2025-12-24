@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "젠큐릭스",
   "prices" : [ {
-    "volume" : 40714,
-    "marketCap" : 20990994885,
-    "lowPrice" : 1365,
-    "highPrice" : 1438,
-    "openPrice" : 1366,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1377
-  }, {
     "volume" : 69681,
     "marketCap" : 20015378565,
     "lowPrice" : 1313,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1461
+  }, {
+    "volume" : 108086,
+    "marketCap" : 24176739000,
+    "lowPrice" : 1417,
+    "highPrice" : 1509,
+    "openPrice" : 1504,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1500
   } ],
   "stockCode" : "229000"
 }

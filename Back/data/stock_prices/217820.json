@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "원익피앤이",
   "prices" : [ {
-    "volume" : 42344,
-    "marketCap" : 109145485700,
-    "lowPrice" : 2260,
-    "highPrice" : 2370,
-    "openPrice" : 2290,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2300
-  }, {
     "volume" : 52760,
     "marketCap" : 106772757750,
     "lowPrice" : 2245,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3630,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3730
+  }, {
+    "volume" : 160121,
+    "marketCap" : 174632777120,
+    "lowPrice" : 3635,
+    "highPrice" : 3765,
+    "openPrice" : 3730,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3680
   } ],
   "stockCode" : "217820"
 }

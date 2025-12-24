@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대상우",
   "prices" : [ {
-    "volume" : 11922,
-    "marketCap" : 22170208140,
-    "lowPrice" : 15930,
-    "highPrice" : 16200,
-    "openPrice" : 16120,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16180
-  }, {
     "volume" : 8416,
     "marketCap" : 22156505910,
     "lowPrice" : 16100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 16950,
     "tradeDate" : "2025-12-22",
     "closePrice" : 17030
+  }, {
+    "volume" : 7714,
+    "marketCap" : 23280088770,
+    "lowPrice" : 16900,
+    "highPrice" : 17150,
+    "openPrice" : 17060,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16990
   } ],
   "stockCode" : "001685"
 }

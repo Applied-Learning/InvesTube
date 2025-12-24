@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "듀오백",
   "prices" : [ {
-    "volume" : 11109,
-    "marketCap" : 23409486240,
-    "lowPrice" : 1941,
-    "highPrice" : 1989,
-    "openPrice" : 1958,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1956
-  }, {
     "volume" : 6979,
     "marketCap" : 23086349160,
     "lowPrice" : 1928,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1659,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1643
+  }, {
+    "volume" : 17533,
+    "marketCap" : 19160832040,
+    "lowPrice" : 1601,
+    "highPrice" : 1670,
+    "openPrice" : 1640,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1601
   } ],
   "stockCode" : "073190"
 }

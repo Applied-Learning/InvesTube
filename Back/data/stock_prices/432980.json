@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엠에프씨",
   "prices" : [ {
     "volume" : 27446605,
@@ -1921,6 +1921,14 @@
     "openPrice" : 3590,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3510
+  }, {
+    "volume" : 3762,
+    "marketCap" : 29856303450,
+    "lowPrice" : 3430,
+    "highPrice" : 3510,
+    "openPrice" : 3510,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3475
   } ],
   "stockCode" : "432980"
 }

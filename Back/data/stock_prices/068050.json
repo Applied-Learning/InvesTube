@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "팬엔터테인먼트",
   "prices" : [ {
-    "volume" : 89818,
-    "marketCap" : 60650026440,
-    "lowPrice" : 2035,
-    "highPrice" : 2195,
-    "openPrice" : 2165,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2190
-  }, {
     "volume" : 99278,
     "marketCap" : 59265322640,
     "lowPrice" : 2095,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1924,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1942
+  }, {
+    "volume" : 75663,
+    "marketCap" : 53200319996,
+    "lowPrice" : 1915,
+    "highPrice" : 1954,
+    "openPrice" : 1934,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1921
   } ],
   "stockCode" : "068050"
 }

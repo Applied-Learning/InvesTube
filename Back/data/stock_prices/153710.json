@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "옵티팜",
   "prices" : [ {
-    "volume" : 12180,
-    "marketCap" : 67335107220,
-    "lowPrice" : 4590,
-    "highPrice" : 4735,
-    "openPrice" : 4655,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4590
-  }, {
     "volume" : 15430,
     "marketCap" : 67921905540,
     "lowPrice" : 4480,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5180
+  }, {
+    "volume" : 21537,
+    "marketCap" : 75696983280,
+    "lowPrice" : 5130,
+    "highPrice" : 5240,
+    "openPrice" : 5170,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5160
   } ],
   "stockCode" : "153710"
 }

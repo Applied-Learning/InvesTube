@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "IBKS제25호스팩",
   "prices" : [ {
     "volume" : 78952586,
@@ -17,6 +17,14 @@
     "openPrice" : 2715,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2055
+  }, {
+    "volume" : 605458,
+    "marketCap" : 12348700000,
+    "lowPrice" : 2035,
+    "highPrice" : 2075,
+    "openPrice" : 2055,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2065
   } ],
   "stockCode" : "0099X0"
 }

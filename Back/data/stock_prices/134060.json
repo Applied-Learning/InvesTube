@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이퓨쳐",
   "prices" : [ {
-    "volume" : 2291,
-    "marketCap" : 19387001250,
-    "lowPrice" : 4065,
-    "highPrice" : 4090,
-    "openPrice" : 4075,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4065
-  }, {
     "volume" : 1395,
     "marketCap" : 19410847500,
     "lowPrice" : 4065,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4160,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4240
+  }, {
+    "volume" : 8724,
+    "marketCap" : 19983157500,
+    "lowPrice" : 3930,
+    "highPrice" : 4240,
+    "openPrice" : 4240,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4190
   } ],
   "stockCode" : "134060"
 }

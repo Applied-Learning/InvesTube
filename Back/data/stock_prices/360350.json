@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코셈",
   "prices" : [ {
-    "volume" : 32540,
-    "marketCap" : 42142778000,
-    "lowPrice" : 7250,
-    "highPrice" : 7490,
-    "openPrice" : 7310,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7400
-  }, {
     "volume" : 25342,
     "marketCap" : 41801079800,
     "lowPrice" : 7270,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7060
+  }, {
+    "volume" : 10751,
+    "marketCap" : 40153069700,
+    "lowPrice" : 6960,
+    "highPrice" : 7160,
+    "openPrice" : 7070,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7010
   } ],
   "stockCode" : "360350"
 }

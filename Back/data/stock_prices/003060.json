@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이프로젠바이오로직스",
   "prices" : [ {
-    "volume" : 365798,
-    "marketCap" : 132734848305,
-    "lowPrice" : 669,
-    "highPrice" : 689,
-    "openPrice" : 682,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 669
-  }, {
     "volume" : 527782,
     "marketCap" : 130552362010,
     "lowPrice" : 650,
@@ -1937,6 +1929,14 @@
     "openPrice" : 584,
     "tradeDate" : "2025-12-22",
     "closePrice" : 575
+  }, {
+    "volume" : 351776,
+    "marketCap" : 110909985355,
+    "lowPrice" : 557,
+    "highPrice" : 578,
+    "openPrice" : 575,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 559
   } ],
   "stockCode" : "003060"
 }

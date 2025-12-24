@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신한제12호스팩",
   "prices" : [ {
-    "volume" : 1811,
-    "marketCap" : 11095200000,
-    "lowPrice" : 2010,
-    "highPrice" : 2045,
-    "openPrice" : 2035,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2010
-  }, {
     "volume" : 4041,
     "marketCap" : 11040000000,
     "lowPrice" : 2000,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 2100
+  }, {
+    "volume" : 0,
+    "marketCap" : 11592000000,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 2100
   } ],
   "stockCode" : "474660"

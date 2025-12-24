@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "시공테크",
   "prices" : [ {
-    "volume" : 1857676,
-    "marketCap" : 76683485250,
-    "lowPrice" : 3605,
-    "highPrice" : 4190,
-    "openPrice" : 3610,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3825
-  }, {
     "volume" : 216243,
     "marketCap" : 74077249150,
     "lowPrice" : 3695,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4290,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4290
+  }, {
+    "volume" : 169412,
+    "marketCap" : 85504592050,
+    "lowPrice" : 4260,
+    "highPrice" : 4305,
+    "openPrice" : 4280,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4265
   } ],
   "stockCode" : "020710"
 }

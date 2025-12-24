@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SPC삼립",
   "prices" : [ {
-    "volume" : 4315,
-    "marketCap" : 424547242800,
-    "lowPrice" : 48500,
-    "highPrice" : 49350,
-    "openPrice" : 48700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 49200
-  }, {
     "volume" : 7522,
     "marketCap" : 426704495050,
     "lowPrice" : 49200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 53200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 53700
+  }, {
+    "volume" : 6213,
+    "marketCap" : 457337477000,
+    "lowPrice" : 53000,
+    "highPrice" : 53800,
+    "openPrice" : 53200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 53000
   } ],
   "stockCode" : "005610"
 }

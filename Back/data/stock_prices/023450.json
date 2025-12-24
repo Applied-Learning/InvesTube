@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동남합성",
   "prices" : [ {
-    "volume" : 889,
-    "marketCap" : 111825000000,
-    "lowPrice" : 31400,
-    "highPrice" : 32000,
-    "openPrice" : 32000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 31950
-  }, {
     "volume" : 614,
     "marketCap" : 111825000000,
     "lowPrice" : 31550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 33750,
     "tradeDate" : "2025-12-22",
     "closePrice" : 33600
+  }, {
+    "volume" : 3105,
+    "marketCap" : 118650000000,
+    "lowPrice" : 33250,
+    "highPrice" : 33900,
+    "openPrice" : 33600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 33900
   } ],
   "stockCode" : "023450"
 }

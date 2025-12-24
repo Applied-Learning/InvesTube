@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이에이",
   "prices" : [ {
-    "volume" : 701712,
-    "marketCap" : 57075581062,
-    "lowPrice" : 178,
-    "highPrice" : 188,
-    "openPrice" : 185,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 181
-  }, {
     "volume" : 371333,
     "marketCap" : 55814242254,
     "lowPrice" : 176,
@@ -1937,6 +1929,14 @@
     "openPrice" : 159,
     "tradeDate" : "2025-12-22",
     "closePrice" : 159
+  }, {
+    "volume" : 813757,
+    "marketCap" : 58988224475,
+    "lowPrice" : 156,
+    "highPrice" : 159,
+    "openPrice" : 159,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 157
   } ],
   "stockCode" : "038880"
 }

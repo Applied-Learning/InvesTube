@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "시지메드텍",
   "prices" : [ {
-    "volume" : 187553,
-    "marketCap" : 105840511900,
-    "lowPrice" : 1016,
-    "highPrice" : 1064,
-    "openPrice" : 1022,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1025
-  }, {
     "volume" : 327131,
     "marketCap" : 104188367324,
     "lowPrice" : 990,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1237,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1187
+  }, {
+    "volume" : 1120050,
+    "marketCap" : 118747891400,
+    "lowPrice" : 1140,
+    "highPrice" : 1185,
+    "openPrice" : 1180,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1150
   } ],
   "stockCode" : "056090"
 }

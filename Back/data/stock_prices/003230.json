@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼양식품",
   "prices" : [ {
-    "volume" : 67294,
-    "marketCap" : 5717558385000,
-    "lowPrice" : 730000,
-    "highPrice" : 766000,
-    "openPrice" : 745000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 759000
-  }, {
     "volume" : 99739,
     "marketCap" : 5898350745000,
     "lowPrice" : 756000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1255000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1284000
+  }, {
+    "volume" : 24305,
+    "marketCap" : 9559396035000,
+    "lowPrice" : 1262000,
+    "highPrice" : 1298000,
+    "openPrice" : 1284000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1269000
   } ],
   "stockCode" : "003230"
 }

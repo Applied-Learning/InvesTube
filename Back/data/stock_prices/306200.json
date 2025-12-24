@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "세아제강",
   "prices" : [ {
-    "volume" : 1617,
-    "marketCap" : 343475930000,
-    "lowPrice" : 118500,
-    "highPrice" : 121100,
-    "openPrice" : 118500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 121100
-  }, {
     "volume" : 1901,
     "marketCap" : 340356000000,
     "lowPrice" : 120000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 118700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 118700
+  }, {
+    "volume" : 5059,
+    "marketCap" : 332981620000,
+    "lowPrice" : 117300,
+    "highPrice" : 119200,
+    "openPrice" : 118200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 117400
   } ],
   "stockCode" : "306200"
 }

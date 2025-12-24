@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "호전실업",
   "prices" : [ {
-    "volume" : 16642,
-    "marketCap" : 76927373760,
-    "lowPrice" : 7740,
-    "highPrice" : 8050,
-    "openPrice" : 7830,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7890
-  }, {
     "volume" : 33529,
     "marketCap" : 78682370880,
     "lowPrice" : 7750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8590,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8500
+  }, {
+    "volume" : 21875,
+    "marketCap" : 78195840000,
+    "lowPrice" : 8270,
+    "highPrice" : 8530,
+    "openPrice" : 8500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8340
   } ],
   "stockCode" : "111110"
 }

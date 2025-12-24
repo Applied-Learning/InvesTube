@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "미원홀딩스",
   "prices" : [ {
-    "volume" : 72,
-    "marketCap" : 180032000000,
-    "lowPrice" : 77300,
-    "highPrice" : 77700,
-    "openPrice" : 77700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 77600
-  }, {
     "volume" : 52,
     "marketCap" : 180960000000,
     "lowPrice" : 77400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 67900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 68500
+  }, {
+    "volume" : 315,
+    "marketCap" : 159152000000,
+    "lowPrice" : 68500,
+    "highPrice" : 69300,
+    "openPrice" : 68500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 68600
   } ],
   "stockCode" : "107590"
 }

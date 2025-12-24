@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디지털대성",
   "prices" : [ {
-    "volume" : 26952,
-    "marketCap" : 208118571840,
-    "lowPrice" : 7430,
-    "highPrice" : 7550,
-    "openPrice" : 7530,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7520
-  }, {
     "volume" : 27432,
     "marketCap" : 205904544480,
     "lowPrice" : 7410,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7760
+  }, {
+    "volume" : 41964,
+    "marketCap" : 215867667600,
+    "lowPrice" : 7750,
+    "highPrice" : 7990,
+    "openPrice" : 7810,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7800
   } ],
   "stockCode" : "068930"
 }

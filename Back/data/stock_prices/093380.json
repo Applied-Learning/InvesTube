@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "풍강",
   "prices" : [ {
-    "volume" : 23969,
-    "marketCap" : 23463368375,
-    "lowPrice" : 2350,
-    "highPrice" : 2420,
-    "openPrice" : 2410,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2375
-  }, {
     "volume" : 5728,
     "marketCap" : 24056127155,
     "lowPrice" : 2380,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2780,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2800
+  }, {
+    "volume" : 2357,
+    "marketCap" : 27168110750,
+    "lowPrice" : 2730,
+    "highPrice" : 2795,
+    "openPrice" : 2795,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2750
   } ],
   "stockCode" : "093380"
 }

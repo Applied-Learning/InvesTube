@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유니켐",
   "prices" : [ {
-    "volume" : 127286,
-    "marketCap" : 147144702339,
-    "lowPrice" : 1483,
-    "highPrice" : 1525,
-    "openPrice" : 1524,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1517
-  }, {
     "volume" : 89974,
     "marketCap" : 145398753333,
     "lowPrice" : 1494,
@@ -1936,6 +1928,14 @@
     "highPrice" : 1305,
     "openPrice" : 1251,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 1285
+  }, {
+    "volume" : 395090,
+    "marketCap" : 119844237430,
+    "lowPrice" : 1257,
+    "highPrice" : 1292,
+    "openPrice" : 1285,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 1285
   } ],
   "stockCode" : "011330"

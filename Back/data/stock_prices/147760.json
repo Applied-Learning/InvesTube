@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "피엠티",
   "prices" : [ {
-    "volume" : 9890,
-    "marketCap" : 30728419440,
-    "lowPrice" : 2725,
-    "highPrice" : 2870,
-    "openPrice" : 2745,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2840
-  }, {
     "volume" : 17613,
     "marketCap" : 30079227480,
     "lowPrice" : 2780,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2625,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2575
+  }, {
+    "volume" : 36065,
+    "marketCap" : 26887367010,
+    "lowPrice" : 2485,
+    "highPrice" : 2590,
+    "openPrice" : 2565,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2485
   } ],
   "stockCode" : "147760"
 }

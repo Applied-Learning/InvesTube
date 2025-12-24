@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "멕아이씨에스",
   "prices" : [ {
-    "volume" : 35884,
-    "marketCap" : 32743081200,
-    "lowPrice" : 1987,
-    "highPrice" : 2070,
-    "openPrice" : 1993,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2040
-  }, {
     "volume" : 24458,
     "marketCap" : 32020807350,
     "lowPrice" : 1982,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1950,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1922
+  }, {
+    "volume" : 62450,
+    "marketCap" : 30528108060,
+    "lowPrice" : 1877,
+    "highPrice" : 1942,
+    "openPrice" : 1906,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1902
   } ],
   "stockCode" : "058110"
 }

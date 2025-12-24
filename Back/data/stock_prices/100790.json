@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "미래에셋벤처투자",
   "prices" : [ {
-    "volume" : 280781,
-    "marketCap" : 253138881010,
-    "lowPrice" : 4665,
-    "highPrice" : 4815,
-    "openPrice" : 4675,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4765
-  }, {
     "volume" : 2973044,
     "marketCap" : 254466996860,
     "lowPrice" : 4660,
@@ -1937,6 +1929,14 @@
     "openPrice" : 18440,
     "tradeDate" : "2025-12-22",
     "closePrice" : 22200
+  }, {
+    "volume" : 17690715,
+    "marketCap" : 826088058700,
+    "lowPrice" : 15550,
+    "highPrice" : 21000,
+    "openPrice" : 21000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15550
   } ],
   "stockCode" : "100790"
 }

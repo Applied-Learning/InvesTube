@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "롯데관광개발",
   "prices" : [ {
-    "volume" : 157162,
-    "marketCap" : 611093387660,
-    "lowPrice" : 7880,
-    "highPrice" : 8050,
-    "openPrice" : 7890,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8020
-  }, {
     "volume" : 127571,
     "marketCap" : 605759654850,
     "lowPrice" : 7900,
@@ -1937,6 +1929,14 @@
     "openPrice" : 23000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 23050
+  }, {
+    "volume" : 535985,
+    "marketCap" : 1809523261000,
+    "lowPrice" : 22600,
+    "highPrice" : 23250,
+    "openPrice" : 23100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 22750
   } ],
   "stockCode" : "032350"
 }

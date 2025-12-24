@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제이앤티씨",
   "prices" : [ {
-    "volume" : 614113,
-    "marketCap" : 1127466602340,
-    "lowPrice" : 18980,
-    "highPrice" : 20000,
-    "openPrice" : 19740,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 19490
-  }, {
     "volume" : 939022,
     "marketCap" : 1091600553420,
     "lowPrice" : 18770,
@@ -1937,6 +1929,14 @@
     "openPrice" : 20300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 20100
+  }, {
+    "volume" : 222694,
+    "marketCap" : 1114739939820,
+    "lowPrice" : 19210,
+    "highPrice" : 20200,
+    "openPrice" : 20200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 19270
   } ],
   "stockCode" : "204270"
 }

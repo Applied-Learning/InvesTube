@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "컴투스",
   "prices" : [ {
-    "volume" : 67471,
-    "marketCap" : 659815709000,
-    "lowPrice" : 50000,
-    "highPrice" : 52000,
-    "openPrice" : 51600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 51800
-  }, {
     "volume" : 36606,
     "marketCap" : 653446831500,
     "lowPrice" : 51000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 29300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 29550
+  }, {
+    "volume" : 31069,
+    "marketCap" : 375763772500,
+    "lowPrice" : 29400,
+    "highPrice" : 29850,
+    "openPrice" : 29550,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 29500
   } ],
   "stockCode" : "078340"
 }

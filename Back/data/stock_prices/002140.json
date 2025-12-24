@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "고려산업",
   "prices" : [ {
-    "volume" : 153687,
-    "marketCap" : 67585841750,
-    "lowPrice" : 2670,
-    "highPrice" : 2725,
-    "openPrice" : 2670,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2710
-  }, {
     "volume" : 104773,
     "marketCap" : 66588264750,
     "lowPrice" : 2670,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2570,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2555
+  }, {
+    "volume" : 38427,
+    "marketCap" : 63096745250,
+    "lowPrice" : 2515,
+    "highPrice" : 2565,
+    "openPrice" : 2535,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2530
   } ],
   "stockCode" : "002140"
 }

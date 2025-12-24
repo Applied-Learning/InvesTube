@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "잇츠한불",
   "prices" : [ {
-    "volume" : 12206,
-    "marketCap" : 241222465000,
-    "lowPrice" : 10730,
-    "highPrice" : 11050,
-    "openPrice" : 10730,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11000
-  }, {
     "volume" : 17805,
     "marketCap" : 244073275950,
     "lowPrice" : 10920,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11590,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11540
+  }, {
+    "volume" : 18799,
+    "marketCap" : 251090656750,
+    "lowPrice" : 11450,
+    "highPrice" : 11650,
+    "openPrice" : 11590,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11450
   } ],
   "stockCode" : "226320"
 }

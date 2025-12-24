@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "알엔투테크놀로지",
   "prices" : [ {
-    "volume" : 6672,
-    "marketCap" : 26349578090,
-    "lowPrice" : 3490,
-    "highPrice" : 3565,
-    "openPrice" : 3495,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3565
-  }, {
     "volume" : 2182,
     "marketCap" : 26053930650,
     "lowPrice" : 3520,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4310,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3990
+  }, {
+    "volume" : 3798022,
+    "marketCap" : 37267121040,
+    "lowPrice" : 3660,
+    "highPrice" : 4935,
+    "openPrice" : 4000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3945
   } ],
   "stockCode" : "148250"
 }

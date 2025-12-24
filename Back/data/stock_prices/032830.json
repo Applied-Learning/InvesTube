@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼성생명",
   "prices" : [ {
-    "volume" : 239115,
-    "marketCap" : 20560000000000,
-    "lowPrice" : 98100,
-    "highPrice" : 103100,
-    "openPrice" : 99300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 102800
-  }, {
     "volume" : 160486,
     "marketCap" : 20520000000000,
     "lowPrice" : 102200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 155800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 160300
+  }, {
+    "volume" : 345765,
+    "marketCap" : 32780000000000,
+    "lowPrice" : 160000,
+    "highPrice" : 169300,
+    "openPrice" : 160000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 163900
   } ],
   "stockCode" : "032830"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "윙스풋",
   "prices" : [ {
-    "volume" : 19116,
-    "marketCap" : 19867573602,
-    "lowPrice" : 1184,
-    "highPrice" : 1210,
-    "openPrice" : 1190,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1191
-  }, {
     "volume" : 29311,
     "marketCap" : 19684077960,
     "lowPrice" : 1179,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1647,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1622
+  }, {
+    "volume" : 21353,
+    "marketCap" : 27370272882,
+    "lowPrice" : 1601,
+    "highPrice" : 1643,
+    "openPrice" : 1623,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1634
   } ],
   "stockCode" : "335870"
 }

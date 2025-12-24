@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한화갤러리아",
   "prices" : [ {
-    "volume" : 203158,
-    "marketCap" : 216347324760,
-    "lowPrice" : 1093,
-    "highPrice" : 1117,
-    "openPrice" : 1111,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1116
-  }, {
     "volume" : 244375,
     "marketCap" : 219255218910,
     "lowPrice" : 1111,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1585,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1591
+  }, {
+    "volume" : 17719702,
+    "marketCap" : 284973626700,
+    "lowPrice" : 1465,
+    "highPrice" : 1657,
+    "openPrice" : 1625,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1470
   } ],
   "stockCode" : "452260"
 }

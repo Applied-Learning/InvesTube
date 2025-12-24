@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대신밸류리츠",
   "prices" : [ {
     "volume" : 8779479,
@@ -897,6 +897,14 @@
     "openPrice" : 4550,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4475
+  }, {
+    "volume" : 66512,
+    "marketCap" : 267216600000,
+    "lowPrice" : 4450,
+    "highPrice" : 4510,
+    "openPrice" : 4510,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4470
   } ],
   "stockCode" : "0030R0"
 }

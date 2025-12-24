@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "더코디",
   "prices" : [ {
-    "volume" : 6713,
-    "marketCap" : 21881461280,
-    "lowPrice" : 4120,
-    "highPrice" : 4275,
-    "openPrice" : 4275,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4240
-  }, {
     "volume" : 7413,
     "marketCap" : 21313781860,
     "lowPrice" : 4080,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2595,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2610
+  }, {
+    "volume" : 2224,
+    "marketCap" : 13495288030,
+    "lowPrice" : 2610,
+    "highPrice" : 2625,
+    "openPrice" : 2610,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2615
   } ],
   "stockCode" : "224060"
 }

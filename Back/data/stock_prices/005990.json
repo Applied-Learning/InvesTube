@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "매일홀딩스",
   "prices" : [ {
-    "volume" : 16658,
-    "marketCap" : 116879950080,
-    "lowPrice" : 8500,
-    "highPrice" : 8740,
-    "openPrice" : 8660,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8520
-  }, {
     "volume" : 3920,
     "marketCap" : 117291499200,
     "lowPrice" : 8500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11100
+  }, {
+    "volume" : 2603,
+    "marketCap" : 146414327040,
+    "lowPrice" : 11000,
+    "highPrice" : 11170,
+    "openPrice" : 11150,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11010
   } ],
   "stockCode" : "005990"
 }

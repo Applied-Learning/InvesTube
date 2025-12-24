@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제일테크노스",
   "prices" : [ {
-    "volume" : 37940,
-    "marketCap" : 52650000000,
-    "lowPrice" : 5710,
-    "highPrice" : 5860,
-    "openPrice" : 5710,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5850
-  }, {
     "volume" : 26116,
     "marketCap" : 52830000000,
     "lowPrice" : 5770,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6190,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6140
+  }, {
+    "volume" : 20554,
+    "marketCap" : 54720000000,
+    "lowPrice" : 6060,
+    "highPrice" : 6180,
+    "openPrice" : 6130,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6080
   } ],
   "stockCode" : "038010"
 }

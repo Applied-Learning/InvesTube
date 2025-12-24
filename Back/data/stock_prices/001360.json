@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼성제약",
   "prices" : [ {
-    "volume" : 124142,
-    "marketCap" : 145762898292,
-    "lowPrice" : 1520,
-    "highPrice" : 1569,
-    "openPrice" : 1520,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1548
-  }, {
     "volume" : 85508,
     "marketCap" : 145386249976,
     "lowPrice" : 1541,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1603,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1591
+  }, {
+    "volume" : 1769732,
+    "marketCap" : 144727115423,
+    "lowPrice" : 1521,
+    "highPrice" : 1597,
+    "openPrice" : 1592,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1537
   } ],
   "stockCode" : "001360"
 }

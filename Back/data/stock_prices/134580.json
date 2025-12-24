@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "탑코미디어",
   "prices" : [ {
-    "volume" : 20493,
-    "marketCap" : 33633346209,
-    "lowPrice" : 1497,
-    "highPrice" : 1536,
-    "openPrice" : 1506,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1527
-  }, {
     "volume" : 15193,
     "marketCap" : 33677397743,
     "lowPrice" : 1512,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2065
+  }, {
+    "volume" : 118453,
+    "marketCap" : 99081239490,
+    "lowPrice" : 1974,
+    "highPrice" : 2080,
+    "openPrice" : 2040,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2010
   } ],
   "stockCode" : "134580"
 }

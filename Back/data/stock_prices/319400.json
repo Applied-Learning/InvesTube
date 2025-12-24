@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대무벡스",
   "prices" : [ {
-    "volume" : 469920,
-    "marketCap" : 400319597200,
-    "lowPrice" : 3355,
-    "highPrice" : 3450,
-    "openPrice" : 3405,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3400
-  }, {
     "volume" : 608304,
     "marketCap" : 399142186620,
     "lowPrice" : 3350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13640,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16130
+  }, {
+    "volume" : 30076749,
+    "marketCap" : 1882255059100,
+    "lowPrice" : 16100,
+    "highPrice" : 17430,
+    "openPrice" : 16200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16900
   } ],
   "stockCode" : "319400"
 }

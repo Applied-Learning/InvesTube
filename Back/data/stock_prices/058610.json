@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스피지",
   "prices" : [ {
-    "volume" : 102323,
-    "marketCap" : 447982672000,
-    "lowPrice" : 19440,
-    "highPrice" : 20350,
-    "openPrice" : 19440,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 20200
-  }, {
     "volume" : 541309,
     "marketCap" : 474595504000,
     "lowPrice" : 20050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 86300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 91300
+  }, {
+    "volume" : 1370909,
+    "marketCap" : 1911688432000,
+    "lowPrice" : 85300,
+    "highPrice" : 92000,
+    "openPrice" : 90000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 86200
   } ],
   "stockCode" : "058610"
 }

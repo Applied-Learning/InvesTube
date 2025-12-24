@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "더즌",
   "prices" : [ {
     "volume" : 29077933,
@@ -1481,6 +1481,14 @@
     "openPrice" : 4100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4140
+  }, {
+    "volume" : 588403,
+    "marketCap" : 287374844000,
+    "lowPrice" : 3975,
+    "highPrice" : 4165,
+    "openPrice" : 4140,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4000
   } ],
   "stockCode" : "462860"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "DH오토리드",
   "prices" : [ {
-    "volume" : 5452,
-    "marketCap" : 34753909120,
-    "lowPrice" : 2240,
-    "highPrice" : 2270,
-    "openPrice" : 2240,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2240
-  }, {
     "volume" : 2608,
     "marketCap" : 34909060500,
     "lowPrice" : 2230,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2450,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2420
+  }, {
+    "volume" : 17257,
+    "marketCap" : 38532046315,
+    "lowPrice" : 2390,
+    "highPrice" : 2435,
+    "openPrice" : 2420,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2435
   } ],
   "stockCode" : "290120"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "펩트론",
   "prices" : [ {
-    "volume" : 1337500,
-    "marketCap" : 2201599575000,
-    "lowPrice" : 91700,
-    "highPrice" : 105600,
-    "openPrice" : 97000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 94500
-  }, {
     "volume" : 1116658,
     "marketCap" : 2306437650000,
     "lowPrice" : 93200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 244500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 238000
+  }, {
+    "volume" : 146757,
+    "marketCap" : 5502894600000,
+    "lowPrice" : 234500,
+    "highPrice" : 242000,
+    "openPrice" : 238500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 236000
   } ],
   "stockCode" : "087010"
 }

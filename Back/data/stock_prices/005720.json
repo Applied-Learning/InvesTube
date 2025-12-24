@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "넥센",
   "prices" : [ {
-    "volume" : 50571,
-    "marketCap" : 247640893625,
-    "lowPrice" : 4520,
-    "highPrice" : 4630,
-    "openPrice" : 4525,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4625
-  }, {
     "volume" : 27737,
     "marketCap" : 246034574315,
     "lowPrice" : 4560,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6280,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6270
+  }, {
+    "volume" : 39479,
+    "marketCap" : 327153699470,
+    "lowPrice" : 6100,
+    "highPrice" : 6270,
+    "openPrice" : 6260,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6110
   } ],
   "stockCode" : "005720"
 }

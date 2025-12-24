@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유비온",
   "prices" : [ {
-    "volume" : 251318,
-    "marketCap" : 20816716800,
-    "lowPrice" : 1017,
-    "highPrice" : 1065,
-    "openPrice" : 1025,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1056
-  }, {
     "volume" : 165623,
     "marketCap" : 19969066400,
     "lowPrice" : 1011,
@@ -1937,6 +1929,14 @@
     "openPrice" : 929,
     "tradeDate" : "2025-12-22",
     "closePrice" : 939
+  }, {
+    "volume" : 20352,
+    "marketCap" : 19101703200,
+    "lowPrice" : 930,
+    "highPrice" : 969,
+    "openPrice" : 930,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 969
   } ],
   "stockCode" : "084440"
 }

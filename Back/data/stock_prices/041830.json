@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인바디",
   "prices" : [ {
-    "volume" : 26609,
-    "marketCap" : 298306447600,
-    "lowPrice" : 21350,
-    "highPrice" : 21900,
-    "openPrice" : 21750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 21800
-  }, {
     "volume" : 19725,
     "marketCap" : 297622258500,
     "lowPrice" : 21600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 32150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 32650
+  }, {
+    "volume" : 57392,
+    "marketCap" : 436106532700,
+    "lowPrice" : 31000,
+    "highPrice" : 32850,
+    "openPrice" : 32850,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 32350
   } ],
   "stockCode" : "041830"
 }

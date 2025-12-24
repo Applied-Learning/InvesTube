@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이센스",
   "prices" : [ {
-    "volume" : 59428,
-    "marketCap" : 438390589780,
-    "lowPrice" : 15670,
-    "highPrice" : 16240,
-    "openPrice" : 15750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15860
-  }, {
     "volume" : 45354,
     "marketCap" : 436732113400,
     "lowPrice" : 15500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 16290,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16250
+  }, {
+    "volume" : 54472,
+    "marketCap" : 449733114540,
+    "lowPrice" : 16030,
+    "highPrice" : 16340,
+    "openPrice" : 16270,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16290
   } ],
   "stockCode" : "099190"
 }

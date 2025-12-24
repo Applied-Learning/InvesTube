@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "자이글",
   "prices" : [ {
-    "volume" : 53035,
-    "marketCap" : 57100440200,
-    "lowPrice" : 4115,
-    "highPrice" : 4270,
-    "openPrice" : 4240,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4220
-  }, {
     "volume" : 41170,
     "marketCap" : 57574022050,
     "lowPrice" : 4180,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 5310
+  }, {
+    "volume" : 0,
+    "marketCap" : 71849132100,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 5310
   } ],
   "stockCode" : "234920"

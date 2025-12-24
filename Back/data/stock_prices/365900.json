@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "브이씨",
   "prices" : [ {
-    "volume" : 17412,
-    "marketCap" : 20944009500,
-    "lowPrice" : 2775,
-    "highPrice" : 2930,
-    "openPrice" : 2915,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2865
-  }, {
     "volume" : 3886,
     "marketCap" : 20724700500,
     "lowPrice" : 2835,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2825
+  }, {
+    "volume" : 17344,
+    "marketCap" : 19481949500,
+    "lowPrice" : 2665,
+    "highPrice" : 2825,
+    "openPrice" : 2825,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2665
   } ],
   "stockCode" : "365900"
 }

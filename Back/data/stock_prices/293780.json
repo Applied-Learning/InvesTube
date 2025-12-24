@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "압타바이오",
   "prices" : [ {
-    "volume" : 47084,
-    "marketCap" : 169352568000,
-    "lowPrice" : 6170,
-    "highPrice" : 6380,
-    "openPrice" : 6380,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6300
-  }, {
     "volume" : 26469,
     "marketCap" : 169352568000,
     "lowPrice" : 6140,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10210,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9820
+  }, {
+    "volume" : 295155,
+    "marketCap" : 250803088800,
+    "lowPrice" : 9310,
+    "highPrice" : 9910,
+    "openPrice" : 9820,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9330
   } ],
   "stockCode" : "293780"
 }

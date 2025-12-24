@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "미원상사",
   "prices" : [ {
-    "volume" : 1246,
-    "marketCap" : 882075000000,
-    "lowPrice" : 184600,
-    "highPrice" : 187100,
-    "openPrice" : 186800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 185700
-  }, {
     "volume" : 1152,
     "marketCap" : 895375000000,
     "lowPrice" : 185000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 158100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 155700
+  }, {
+    "volume" : 1822,
+    "marketCap" : 732925000000,
+    "lowPrice" : 154000,
+    "highPrice" : 157300,
+    "openPrice" : 155700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 154300
   } ],
   "stockCode" : "002840"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "태양",
   "prices" : [ {
-    "volume" : 13476,
-    "marketCap" : 56072000000,
-    "lowPrice" : 6450,
-    "highPrice" : 6530,
-    "openPrice" : 6470,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6520
-  }, {
     "volume" : 801,
     "marketCap" : 55556000000,
     "lowPrice" : 6460,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6670,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6640
+  }, {
+    "volume" : 3645,
+    "marketCap" : 57018000000,
+    "lowPrice" : 6620,
+    "highPrice" : 6650,
+    "openPrice" : 6640,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6630
   } ],
   "stockCode" : "053620"
 }

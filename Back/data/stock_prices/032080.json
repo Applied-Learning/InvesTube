@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아즈텍WB",
   "prices" : [ {
-    "volume" : 35929,
-    "marketCap" : 26734840076,
-    "lowPrice" : 1218,
-    "highPrice" : 1275,
-    "openPrice" : 1266,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1244
-  }, {
     "volume" : 21059,
     "marketCap" : 26197564351,
     "lowPrice" : 1206,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1295,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1291
+  }, {
+    "volume" : 15510,
+    "marketCap" : 27637463294,
+    "lowPrice" : 1277,
+    "highPrice" : 1291,
+    "openPrice" : 1291,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1286
   } ],
   "stockCode" : "032080"
 }

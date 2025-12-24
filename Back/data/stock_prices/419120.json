@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "산돌",
   "prices" : [ {
-    "volume" : 1821,
-    "marketCap" : 45713036880,
-    "lowPrice" : 5820,
-    "highPrice" : 5930,
-    "openPrice" : 5850,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5880
-  }, {
     "volume" : 3120,
     "marketCap" : 45868523400,
     "lowPrice" : 5860,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4590,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4520
+  }, {
+    "volume" : 124839,
+    "marketCap" : 65225415170,
+    "lowPrice" : 4270,
+    "highPrice" : 4575,
+    "openPrice" : 4575,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4310
   } ],
   "stockCode" : "419120"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "더네이쳐홀딩스",
   "prices" : [ {
-    "volume" : 22344,
-    "marketCap" : 139094363520,
-    "lowPrice" : 9150,
-    "highPrice" : 9420,
-    "openPrice" : 9150,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9420
-  }, {
     "volume" : 29434,
     "marketCap" : 139980314880,
     "lowPrice" : 9400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9250,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9280
+  }, {
+    "volume" : 16581,
+    "marketCap" : 132985023480,
+    "lowPrice" : 9110,
+    "highPrice" : 9300,
+    "openPrice" : 9280,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9180
   } ],
   "stockCode" : "298540"
 }

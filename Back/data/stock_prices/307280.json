@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "원바이오젠",
   "prices" : [ {
-    "volume" : 24866,
-    "marketCap" : 43242045210,
-    "lowPrice" : 1150,
-    "highPrice" : 1170,
-    "openPrice" : 1164,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1170
-  }, {
     "volume" : 8673,
     "marketCap" : 43389881262,
     "lowPrice" : 1160,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6790,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6780
+  }, {
+    "volume" : 39747,
+    "marketCap" : 48527248680,
+    "lowPrice" : 6710,
+    "highPrice" : 6900,
+    "openPrice" : 6780,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6840
   } ],
   "stockCode" : "307280"
 }

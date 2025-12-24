@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아난티",
   "prices" : [ {
-    "volume" : 685452,
-    "marketCap" : 475054002080,
-    "lowPrice" : 5320,
-    "highPrice" : 5450,
-    "openPrice" : 5420,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5360
-  }, {
     "volume" : 616794,
     "marketCap" : 469736233400,
     "lowPrice" : 5240,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7580,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7820
+  }, {
+    "volume" : 817604,
+    "marketCap" : 726345441120,
+    "lowPrice" : 7620,
+    "highPrice" : 7830,
+    "openPrice" : 7820,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7670
   } ],
   "stockCode" : "025980"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국금융지주우",
   "prices" : [ {
-    "volume" : 21107,
-    "marketCap" : 309315652800,
-    "lowPrice" : 51800,
-    "highPrice" : 53800,
-    "openPrice" : 52200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 52800
-  }, {
     "volume" : 34726,
     "marketCap" : 309901477900,
     "lowPrice" : 52400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 123800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 123000
+  }, {
+    "volume" : 21264,
+    "marketCap" : 723493998500,
+    "lowPrice" : 122400,
+    "highPrice" : 125000,
+    "openPrice" : 123300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 123500
   } ],
   "stockCode" : "071055"
 }

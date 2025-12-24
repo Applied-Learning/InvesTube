@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "흥국",
   "prices" : [ {
-    "volume" : 27409,
-    "marketCap" : 64201246160,
-    "lowPrice" : 5190,
-    "highPrice" : 5280,
-    "openPrice" : 5200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5210
-  }, {
     "volume" : 593680,
     "marketCap" : 67651601040,
     "lowPrice" : 5170,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5530,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5400
+  }, {
+    "volume" : 11901,
+    "marketCap" : 65803196640,
+    "lowPrice" : 5320,
+    "highPrice" : 5440,
+    "openPrice" : 5400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5340
   } ],
   "stockCode" : "010240"
 }

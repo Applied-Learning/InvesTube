@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼성E&A",
   "prices" : [ {
-    "volume" : 541314,
-    "marketCap" : 3339840000000,
-    "lowPrice" : 16950,
-    "highPrice" : 17240,
-    "openPrice" : 17080,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17040
-  }, {
     "volume" : 492747,
     "marketCap" : 3349640000000,
     "lowPrice" : 16970,
@@ -1937,6 +1929,14 @@
     "openPrice" : 25200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 25300
+  }, {
+    "volume" : 557795,
+    "marketCap" : 4870600000000,
+    "lowPrice" : 24700,
+    "highPrice" : 25400,
+    "openPrice" : 25350,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 24850
   } ],
   "stockCode" : "028050"
 }

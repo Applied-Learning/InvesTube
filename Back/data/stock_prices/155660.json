@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "DSR",
   "prices" : [ {
-    "volume" : 210340,
-    "marketCap" : 64880000000,
-    "lowPrice" : 4020,
-    "highPrice" : 4215,
-    "openPrice" : 4020,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4055
-  }, {
     "volume" : 90048,
     "marketCap" : 64880000000,
     "lowPrice" : 4040,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3920,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3895
+  }, {
+    "volume" : 10991,
+    "marketCap" : 62080000000,
+    "lowPrice" : 3870,
+    "highPrice" : 3910,
+    "openPrice" : 3890,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3880
   } ],
   "stockCode" : "155660"
 }

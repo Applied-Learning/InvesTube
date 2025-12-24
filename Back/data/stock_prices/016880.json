@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "웅진",
   "prices" : [ {
-    "volume" : 62024,
-    "marketCap" : 67378528440,
-    "lowPrice" : 834,
-    "highPrice" : 853,
-    "openPrice" : 835,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 843
-  }, {
     "volume" : 197906,
     "marketCap" : 68577434640,
     "lowPrice" : 843,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2330,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2430
+  }, {
+    "volume" : 366814,
+    "marketCap" : 190626085800,
+    "lowPrice" : 2340,
+    "highPrice" : 2450,
+    "openPrice" : 2430,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2385
   } ],
   "stockCode" : "016880"
 }

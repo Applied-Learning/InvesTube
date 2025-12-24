@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "LG헬로비전",
   "prices" : [ {
-    "volume" : 149255,
-    "marketCap" : 190132053575,
-    "lowPrice" : 2415,
-    "highPrice" : 2480,
-    "openPrice" : 2440,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2455
-  }, {
     "volume" : 122437,
     "marketCap" : 195553334125,
     "lowPrice" : 2440,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2410,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2410
+  }, {
+    "volume" : 60202,
+    "marketCap" : 185098007350,
+    "lowPrice" : 2385,
+    "highPrice" : 2415,
+    "openPrice" : 2400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2390
   } ],
   "stockCode" : "037560"
 }

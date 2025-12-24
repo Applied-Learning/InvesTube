@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오늘이엔엠",
   "prices" : [ {
-    "volume" : 88954,
-    "marketCap" : 29609902400,
-    "lowPrice" : 1987,
-    "highPrice" : 2100,
-    "openPrice" : 2095,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2080
-  }, {
     "volume" : 28538,
     "marketCap" : 28399882350,
     "lowPrice" : 1995,
@@ -1937,6 +1929,14 @@
     "openPrice" : 729,
     "tradeDate" : "2025-12-22",
     "closePrice" : 703
+  }, {
+    "volume" : 546520,
+    "marketCap" : 33036393684,
+    "lowPrice" : 689,
+    "highPrice" : 717,
+    "openPrice" : 703,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 708
   } ],
   "stockCode" : "192410"
 }

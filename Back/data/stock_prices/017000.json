@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신원종합개발",
   "prices" : [ {
-    "volume" : 32492,
-    "marketCap" : 33195536815,
-    "lowPrice" : 2770,
-    "highPrice" : 2940,
-    "openPrice" : 2940,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2845
-  }, {
     "volume" : 32015,
     "marketCap" : 33195536815,
     "lowPrice" : 2825,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3210,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3195
+  }, {
+    "volume" : 202326,
+    "marketCap" : 37221006130,
+    "lowPrice" : 3115,
+    "highPrice" : 3255,
+    "openPrice" : 3235,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3190
   } ],
   "stockCode" : "017000"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HJ중공업",
   "prices" : [ {
-    "volume" : 7906151,
-    "marketCap" : 554606711460,
-    "lowPrice" : 6000,
-    "highPrice" : 7190,
-    "openPrice" : 6100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6660
-  }, {
     "volume" : 2460123,
     "marketCap" : 546279283360,
     "lowPrice" : 6090,
@@ -1937,6 +1929,14 @@
     "openPrice" : 22000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 21650
+  }, {
+    "volume" : 3790281,
+    "marketCap" : 2063248610400,
+    "lowPrice" : 22100,
+    "highPrice" : 23400,
+    "openPrice" : 22300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 22850
   } ],
   "stockCode" : "097230"
 }

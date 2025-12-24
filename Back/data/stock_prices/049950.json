@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "미래컴퍼니",
   "prices" : [ {
-    "volume" : 51568,
-    "marketCap" : 165247146160,
-    "lowPrice" : 17500,
-    "highPrice" : 18870,
-    "openPrice" : 17700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 18740
-  }, {
     "volume" : 39689,
     "marketCap" : 161190919520,
     "lowPrice" : 18210,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17660,
     "tradeDate" : "2025-12-22",
     "closePrice" : 18100
+  }, {
+    "volume" : 54919,
+    "marketCap" : 156958335200,
+    "lowPrice" : 17700,
+    "highPrice" : 18680,
+    "openPrice" : 18150,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 17800
   } ],
   "stockCode" : "049950"
 }

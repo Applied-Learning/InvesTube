@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코리아써키트2우B",
   "prices" : [ {
-    "volume" : 666,
-    "marketCap" : 4090908780,
-    "lowPrice" : 4985,
-    "highPrice" : 5220,
-    "openPrice" : 4985,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5220
-  }, {
     "volume" : 126,
     "marketCap" : 4067397810,
     "lowPrice" : 5180,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9250,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9650
+  }, {
+    "volume" : 2513,
+    "marketCap" : 7366770600,
+    "lowPrice" : 9300,
+    "highPrice" : 9460,
+    "openPrice" : 9350,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9400
   } ],
   "stockCode" : "00781K"
 }

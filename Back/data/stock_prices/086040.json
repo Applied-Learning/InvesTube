@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "바이오톡스텍",
   "prices" : [ {
-    "volume" : 13395,
-    "marketCap" : 51864302750,
-    "lowPrice" : 3220,
-    "highPrice" : 3395,
-    "openPrice" : 3320,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3250
-  }, {
     "volume" : 24749,
     "marketCap" : 52103676455,
     "lowPrice" : 3155,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2895
+  }, {
+    "volume" : 22598,
+    "marketCap" : 45321421480,
+    "lowPrice" : 2780,
+    "highPrice" : 2890,
+    "openPrice" : 2870,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2840
   } ],
   "stockCode" : "086040"
 }

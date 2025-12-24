@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "조이웍스앤코",
   "prices" : [ {
-    "volume" : 19312,
-    "marketCap" : 52482290350,
-    "lowPrice" : 2380,
-    "highPrice" : 2470,
-    "openPrice" : 2380,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2465
-  }, {
     "volume" : 13245,
     "marketCap" : 51098376000,
     "lowPrice" : 2380,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1974,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1894
+  }, {
+    "volume" : 36248,
+    "marketCap" : 46182572528,
+    "lowPrice" : 1860,
+    "highPrice" : 1933,
+    "openPrice" : 1933,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1886
   } ],
   "stockCode" : "309930"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "LIG넥스원",
   "prices" : [ {
-    "volume" : 169195,
-    "marketCap" : 4664000000000,
-    "lowPrice" : 203000,
-    "highPrice" : 213000,
-    "openPrice" : 203000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 212000
-  }, {
     "volume" : 120820,
     "marketCap" : 4642000000000,
     "lowPrice" : 209000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 425000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 418000
+  }, {
+    "volume" : 79028,
+    "marketCap" : 9174000000000,
+    "lowPrice" : 413000,
+    "highPrice" : 422000,
+    "openPrice" : 420000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 417000
   } ],
   "stockCode" : "079550"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "진양폴리",
   "prices" : [ {
-    "volume" : 87479,
-    "marketCap" : 67100000000,
-    "lowPrice" : 6560,
-    "highPrice" : 6840,
-    "openPrice" : 6640,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6710
-  }, {
     "volume" : 98211,
     "marketCap" : 65500000000,
     "lowPrice" : 6480,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3610,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3570
+  }, {
+    "volume" : 15276,
+    "marketCap" : 36050000000,
+    "lowPrice" : 3545,
+    "highPrice" : 3605,
+    "openPrice" : 3570,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3605
   } ],
   "stockCode" : "010640"
 }

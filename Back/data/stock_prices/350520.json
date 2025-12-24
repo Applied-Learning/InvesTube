@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이지스레지던스리츠",
   "prices" : [ {
-    "volume" : 37790,
-    "marketCap" : 144515511840,
-    "lowPrice" : 3895,
-    "highPrice" : 3940,
-    "openPrice" : 3920,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3920
-  }, {
     "volume" : 33651,
     "marketCap" : 145805828910,
     "lowPrice" : 3910,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3940,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3905
+  }, {
+    "volume" : 226155,
+    "marketCap" : 145068504870,
+    "lowPrice" : 3895,
+    "highPrice" : 3940,
+    "openPrice" : 3915,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3935
   } ],
   "stockCode" : "350520"
 }

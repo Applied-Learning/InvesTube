@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "덴티움",
   "prices" : [ {
-    "volume" : 26064,
-    "marketCap" : 682946811000,
-    "lowPrice" : 61000,
-    "highPrice" : 62500,
-    "openPrice" : 61000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 61700
-  }, {
     "volume" : 17161,
     "marketCap" : 689588109000,
     "lowPrice" : 61900,
@@ -1937,6 +1929,14 @@
     "openPrice" : 46150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 46550
+  }, {
+    "volume" : 46498,
+    "marketCap" : 503631765000,
+    "lowPrice" : 45400,
+    "highPrice" : 46900,
+    "openPrice" : 46550,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 45500
   } ],
   "stockCode" : "145720"
 }

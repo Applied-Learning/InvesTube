@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대원산업",
   "prices" : [ {
-    "volume" : 29637,
-    "marketCap" : 120826728000,
-    "lowPrice" : 5920,
-    "highPrice" : 6050,
-    "openPrice" : 5970,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6030
-  }, {
     "volume" : 12715,
     "marketCap" : 120626352000,
     "lowPrice" : 5970,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14440,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14450
+  }, {
+    "volume" : 49119,
+    "marketCap" : 289142568000,
+    "lowPrice" : 14070,
+    "highPrice" : 14590,
+    "openPrice" : 14590,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14430
   } ],
   "stockCode" : "005710"
 }

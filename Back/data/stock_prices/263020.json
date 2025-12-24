@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디케이앤디",
   "prices" : [ {
-    "volume" : 420910,
-    "marketCap" : 44441982015,
-    "lowPrice" : 3055,
-    "highPrice" : 3350,
-    "openPrice" : 3340,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3065
-  }, {
     "volume" : 85905,
     "marketCap" : 44151985395,
     "lowPrice" : 3025,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3170,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3165
+  }, {
+    "volume" : 76731,
+    "marketCap" : 43376317710,
+    "lowPrice" : 3105,
+    "highPrice" : 3165,
+    "openPrice" : 3165,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3135
   } ],
   "stockCode" : "263020"
 }

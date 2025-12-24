@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유일로보틱스",
   "prices" : [ {
-    "volume" : 37790,
-    "marketCap" : 298934627400,
-    "lowPrice" : 25850,
-    "highPrice" : 26450,
-    "openPrice" : 26150,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 26100
-  }, {
     "volume" : 65190,
     "marketCap" : 313824091600,
     "lowPrice" : 26100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 88000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 87100
+  }, {
+    "volume" : 194377,
+    "marketCap" : 1019960524000,
+    "lowPrice" : 85300,
+    "highPrice" : 90200,
+    "openPrice" : 87900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 87200
   } ],
   "stockCode" : "388720"
 }

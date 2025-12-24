@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "영림원소프트랩",
   "prices" : [ {
-    "volume" : 46497,
-    "marketCap" : 43012990000,
-    "lowPrice" : 5200,
-    "highPrice" : 5360,
-    "openPrice" : 5250,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5290
-  }, {
     "volume" : 29524,
     "marketCap" : 42850370000,
     "lowPrice" : 5240,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6330,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6460
+  }, {
+    "volume" : 6516,
+    "marketCap" : 52201020000,
+    "lowPrice" : 6390,
+    "highPrice" : 6480,
+    "openPrice" : 6400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6420
   } ],
   "stockCode" : "060850"
 }

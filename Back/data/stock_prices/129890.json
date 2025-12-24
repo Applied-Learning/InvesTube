@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "앱코",
   "prices" : [ {
-    "volume" : 22833,
-    "marketCap" : 50592766590,
-    "lowPrice" : 987,
-    "highPrice" : 1007,
-    "openPrice" : 1007,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 999
-  }, {
     "volume" : 20973,
     "marketCap" : 50643410000,
     "lowPrice" : 990,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1327,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1325
+  }, {
+    "volume" : 1075479,
+    "marketCap" : 58389461764,
+    "lowPrice" : 1275,
+    "highPrice" : 1327,
+    "openPrice" : 1325,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1282
   } ],
   "stockCode" : "129890"
 }

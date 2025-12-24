@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SFA반도체",
   "prices" : [ {
-    "volume" : 377521,
-    "marketCap" : 527917572630,
-    "lowPrice" : 3080,
-    "highPrice" : 3230,
-    "openPrice" : 3090,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3210
-  }, {
     "volume" : 238209,
     "marketCap" : 518049954450,
     "lowPrice" : 3145,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4020,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4215
+  }, {
+    "volume" : 1762020,
+    "marketCap" : 719513825625,
+    "lowPrice" : 4190,
+    "highPrice" : 4530,
+    "openPrice" : 4235,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4375
   } ],
   "stockCode" : "036540"
 }

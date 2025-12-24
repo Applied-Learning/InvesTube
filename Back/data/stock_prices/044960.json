@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이글벳",
   "prices" : [ {
-    "volume" : 60121,
-    "marketCap" : 61439551380,
-    "lowPrice" : 4790,
-    "highPrice" : 4880,
-    "openPrice" : 4830,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4860
-  }, {
     "volume" : 41367,
     "marketCap" : 60681038400,
     "lowPrice" : 4790,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4475,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4500
+  }, {
+    "volume" : 122340,
+    "marketCap" : 56509217010,
+    "lowPrice" : 4450,
+    "highPrice" : 4525,
+    "openPrice" : 4505,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4470
   } ],
   "stockCode" : "044960"
 }

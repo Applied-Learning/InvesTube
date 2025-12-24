@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "세경하이테크",
   "prices" : [ {
-    "volume" : 723998,
-    "marketCap" : 326329903900,
-    "lowPrice" : 8700,
-    "highPrice" : 9180,
-    "openPrice" : 9130,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9100
-  }, {
     "volume" : 2731758,
     "marketCap" : 311985732300,
     "lowPrice" : 8550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5210,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5240
+  }, {
+    "volume" : 62413,
+    "marketCap" : 183605396480,
+    "lowPrice" : 5110,
+    "highPrice" : 5250,
+    "openPrice" : 5250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5120
   } ],
   "stockCode" : "148150"
 }

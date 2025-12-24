@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "혜인",
   "prices" : [ {
-    "volume" : 81436,
-    "marketCap" : 63055225120,
-    "lowPrice" : 4920,
-    "highPrice" : 5000,
-    "openPrice" : 4970,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4960
-  }, {
     "volume" : 94162,
     "marketCap" : 63690862470,
     "lowPrice" : 5000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5410
+  }, {
+    "volume" : 38216,
+    "marketCap" : 68648833800,
+    "lowPrice" : 5330,
+    "highPrice" : 5460,
+    "openPrice" : 5380,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5400
   } ],
   "stockCode" : "003010"
 }

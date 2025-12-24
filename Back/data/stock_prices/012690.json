@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "모나리자",
   "prices" : [ {
-    "volume" : 185929,
-    "marketCap" : 110445190100,
-    "lowPrice" : 2930,
-    "highPrice" : 3025,
-    "openPrice" : 2930,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3020
-  }, {
     "volume" : 205560,
     "marketCap" : 108799483625,
     "lowPrice" : 2935,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2190,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2200
+  }, {
+    "volume" : 99191,
+    "marketCap" : 78628198250,
+    "lowPrice" : 2140,
+    "highPrice" : 2200,
+    "openPrice" : 2200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2150
   } ],
   "stockCode" : "012690"
 }

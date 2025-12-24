@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "저스템",
   "prices" : [ {
-    "volume" : 93744,
-    "marketCap" : 47119637500,
-    "lowPrice" : 6010,
-    "highPrice" : 6860,
-    "openPrice" : 6030,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6500
-  }, {
     "volume" : 30719,
     "marketCap" : 46829670500,
     "lowPrice" : 6360,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14450,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15300
+  }, {
+    "volume" : 551438,
+    "marketCap" : 112427370000,
+    "lowPrice" : 14920,
+    "highPrice" : 15900,
+    "openPrice" : 15530,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15480
   } ],
   "stockCode" : "417840"
 }

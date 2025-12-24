@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이건산업",
   "prices" : [ {
-    "volume" : 12408,
-    "marketCap" : 57063228350,
-    "lowPrice" : 5090,
-    "highPrice" : 5260,
-    "openPrice" : 5090,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5210
-  }, {
     "volume" : 12852,
     "marketCap" : 56734649300,
     "lowPrice" : 5140,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4910,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4910
+  }, {
+    "volume" : 11032,
+    "marketCap" : 53120279750,
+    "lowPrice" : 4830,
+    "highPrice" : 4940,
+    "openPrice" : 4910,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4850
   } ],
   "stockCode" : "008250"
 }

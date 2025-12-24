@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오킨스전자",
   "prices" : [ {
-    "volume" : 133490,
-    "marketCap" : 80794391860,
-    "lowPrice" : 4380,
-    "highPrice" : 4685,
-    "openPrice" : 4380,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4570
-  }, {
     "volume" : 55499,
     "marketCap" : 79380048020,
     "lowPrice" : 4490,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9770
+  }, {
+    "volume" : 231812,
+    "marketCap" : 192326607280,
+    "lowPrice" : 9430,
+    "highPrice" : 9890,
+    "openPrice" : 9890,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9530
   } ],
   "stockCode" : "080580"
 }

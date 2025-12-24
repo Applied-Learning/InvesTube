@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이엠티",
   "prices" : [ {
-    "volume" : 40424,
-    "marketCap" : 61579458020,
-    "lowPrice" : 7580,
-    "highPrice" : 7920,
-    "openPrice" : 7580,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7820
-  }, {
     "volume" : 21106,
     "marketCap" : 61185727470,
     "lowPrice" : 7650,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9450,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9290
+  }, {
+    "volume" : 33675,
+    "marketCap" : 70320276230,
+    "lowPrice" : 8900,
+    "highPrice" : 9380,
+    "openPrice" : 9220,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8930
   } ],
   "stockCode" : "451220"
 }

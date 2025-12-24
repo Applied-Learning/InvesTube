@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "태경케미컬",
   "prices" : [ {
-    "volume" : 90582,
-    "marketCap" : 131892000000,
-    "lowPrice" : 10920,
-    "highPrice" : 11600,
-    "openPrice" : 10920,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11370
-  }, {
     "volume" : 20922,
     "marketCap" : 131428000000,
     "lowPrice" : 11010,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8470,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8410
+  }, {
+    "volume" : 21066,
+    "marketCap" : 95236000000,
+    "lowPrice" : 8200,
+    "highPrice" : 8430,
+    "openPrice" : 8430,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8210
   } ],
   "stockCode" : "006890"
 }

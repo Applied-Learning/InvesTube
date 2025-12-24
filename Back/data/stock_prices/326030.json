@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SK바이오팜",
   "prices" : [ {
-    "volume" : 136361,
-    "marketCap" : 8199397275000,
-    "lowPrice" : 102500,
-    "highPrice" : 105500,
-    "openPrice" : 102500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 104700
-  }, {
     "volume" : 134054,
     "marketCap" : 8183734625000,
     "lowPrice" : 102800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 131000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 129000
+  }, {
+    "volume" : 100336,
+    "marketCap" : 10063252625000,
+    "lowPrice" : 128100,
+    "highPrice" : 129900,
+    "openPrice" : 129700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 128500
   } ],
   "stockCode" : "326030"
 }

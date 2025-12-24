@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "씨유테크",
   "prices" : [ {
-    "volume" : 5274,
-    "marketCap" : 51648187500,
-    "lowPrice" : 2895,
-    "highPrice" : 2955,
-    "openPrice" : 2895,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2925
-  }, {
     "volume" : 3986,
     "marketCap" : 52089625000,
     "lowPrice" : 2890,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3045,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3045
+  }, {
+    "volume" : 22884,
+    "marketCap" : 53590512500,
+    "lowPrice" : 2980,
+    "highPrice" : 3080,
+    "openPrice" : 2980,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3035
   } ],
   "stockCode" : "376290"
 }

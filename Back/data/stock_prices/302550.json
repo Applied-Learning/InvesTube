@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "리메드",
   "prices" : [ {
-    "volume" : 97150,
-    "marketCap" : 114586419200,
-    "lowPrice" : 3740,
-    "highPrice" : 3945,
-    "openPrice" : 3800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3740
-  }, {
     "volume" : 108349,
     "marketCap" : 115505561600,
     "lowPrice" : 3670,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3175,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3120
+  }, {
+    "volume" : 71164,
+    "marketCap" : 96218838040,
+    "lowPrice" : 3040,
+    "highPrice" : 3150,
+    "openPrice" : 3095,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3055
   } ],
   "stockCode" : "302550"
 }

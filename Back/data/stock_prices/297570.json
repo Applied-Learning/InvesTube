@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "알로이스",
   "prices" : [ {
-    "volume" : 114478,
-    "marketCap" : 28043186580,
-    "lowPrice" : 793,
-    "highPrice" : 840,
-    "openPrice" : 798,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 810
-  }, {
     "volume" : 33962,
     "marketCap" : 28389398760,
     "lowPrice" : 808,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1227,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1221
+  }, {
+    "volume" : 645228,
+    "marketCap" : 43103416410,
+    "lowPrice" : 1197,
+    "highPrice" : 1246,
+    "openPrice" : 1220,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1245
   } ],
   "stockCode" : "297570"
 }

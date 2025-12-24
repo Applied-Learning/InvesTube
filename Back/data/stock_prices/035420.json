@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "NAVER",
   "prices" : [ {
-    "volume" : 1169871,
-    "marketCap" : 31845838608000,
-    "lowPrice" : 200000,
-    "highPrice" : 213000,
-    "openPrice" : 212500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 201000
-  }, {
     "volume" : 557658,
     "marketCap" : 32083494120000,
     "lowPrice" : 200500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 238500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 238000
+  }, {
+    "volume" : 689469,
+    "marketCap" : 37174075206000,
+    "lowPrice" : 235500,
+    "highPrice" : 238500,
+    "openPrice" : 238000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 237000
   } ],
   "stockCode" : "035420"
 }
