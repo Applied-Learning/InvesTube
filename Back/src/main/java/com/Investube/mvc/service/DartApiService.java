@@ -267,14 +267,6 @@ public class DartApiService {
     private Map<String, Long> parseFinancialData(JsonNode jsonList) {
         Map<String, Long> data = new HashMap<>();
 
-        // 디버그: 모든 계정과목 출력
-        System.out.println("=== DART 계정과목 목록 ===");
-        for (JsonNode item : jsonList) {
-            String accountName = item.get("account_nm").asText();
-            System.out.println("- " + accountName);
-        }
-        System.out.println("========================");
-
         // 1단계: 연결당기순이익 우선 스캔 (있으면 먼저 설정)
         for (JsonNode item : jsonList) {
             String accountName = item.get("account_nm").asText();
@@ -287,7 +279,6 @@ public class DartApiService {
                                 accountName.equals("당기연결순이익") ||
                                 accountName.equals("당기연결순이익(손실)"))) {
                     data.put("net_income", amount);
-                    System.out.println("[파싱] 연결당기순이익 우선 사용: " + amount);
                     break;
                 }
             } catch (NumberFormatException e) {
