@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신풍제약",
   "prices" : [ {
-    "volume" : 93799,
-    "marketCap" : 539917048100,
-    "lowPrice" : 10100,
-    "highPrice" : 10270,
-    "openPrice" : 10100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10190
-  }, {
     "volume" : 86684,
     "marketCap" : 540446898000,
     "lowPrice" : 10130,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14550,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14590
+  }, {
+    "volume" : 277325,
+    "marketCap" : 758745056800,
+    "lowPrice" : 14150,
+    "highPrice" : 14770,
+    "openPrice" : 14570,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14320
   } ],
   "stockCode" : "019170"
 }

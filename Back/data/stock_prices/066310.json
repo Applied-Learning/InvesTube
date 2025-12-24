@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "큐에스아이",
   "prices" : [ {
-    "volume" : 253083,
-    "marketCap" : 71391481700,
-    "lowPrice" : 7700,
-    "highPrice" : 8290,
-    "openPrice" : 8290,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7700
-  }, {
     "volume" : 161508,
     "marketCap" : 68609995400,
     "lowPrice" : 7300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7240,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7350
+  }, {
+    "volume" : 25874,
+    "marketCap" : 67033819830,
+    "lowPrice" : 7200,
+    "highPrice" : 7560,
+    "openPrice" : 7370,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7230
   } ],
   "stockCode" : "066310"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KG케미칼",
   "prices" : [ {
-    "volume" : 128374,
-    "marketCap" : 259155316400,
-    "lowPrice" : 3730,
-    "highPrice" : 3805,
-    "openPrice" : 3785,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3785
-  }, {
     "volume" : 119802,
     "marketCap" : 261551732800,
     "lowPrice" : 3760,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5710,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5830
+  }, {
+    "volume" : 271371,
+    "marketCap" : 384572931600,
+    "lowPrice" : 5710,
+    "highPrice" : 5870,
+    "openPrice" : 5830,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5720
   } ],
   "stockCode" : "001390"
 }

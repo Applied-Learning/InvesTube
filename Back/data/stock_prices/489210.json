@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "교보17호스팩",
   "prices" : [ {
-    "volume" : 15200,
-    "marketCap" : 10178700000,
-    "lowPrice" : 1961,
-    "highPrice" : 1970,
-    "openPrice" : 1970,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1965
-  }, {
     "volume" : 38094,
     "marketCap" : 10194240000,
     "lowPrice" : 1967,
@@ -1936,6 +1928,14 @@
     "highPrice" : 2100,
     "openPrice" : 2095,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 2100
+  }, {
+    "volume" : 1086,
+    "marketCap" : 10878000000,
+    "lowPrice" : 2085,
+    "highPrice" : 2100,
+    "openPrice" : 2100,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 2100
   } ],
   "stockCode" : "489210"

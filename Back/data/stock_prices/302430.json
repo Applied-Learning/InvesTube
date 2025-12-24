@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이노메트리",
   "prices" : [ {
-    "volume" : 10178,
-    "marketCap" : 73945724160,
-    "lowPrice" : 7420,
-    "highPrice" : 7550,
-    "openPrice" : 7470,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7520
-  }, {
     "volume" : 6581,
     "marketCap" : 73060735440,
     "lowPrice" : 7400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7740,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7790
+  }, {
+    "volume" : 56493,
+    "marketCap" : 73454063760,
+    "lowPrice" : 7470,
+    "highPrice" : 7800,
+    "openPrice" : 7790,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7470
   } ],
   "stockCode" : "302430"
 }

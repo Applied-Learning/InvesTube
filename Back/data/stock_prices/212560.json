@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "네오오토",
   "prices" : [ {
-    "volume" : 30317,
-    "marketCap" : 58668474350,
-    "lowPrice" : 7220,
-    "highPrice" : 7520,
-    "openPrice" : 7220,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7450
-  }, {
     "volume" : 30007,
     "marketCap" : 57880978050,
     "lowPrice" : 7350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8990
+  }, {
+    "volume" : 519553,
+    "marketCap" : 100522170910,
+    "lowPrice" : 8305,
+    "highPrice" : 9200,
+    "openPrice" : 9030,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8510
   } ],
   "stockCode" : "212560"
 }

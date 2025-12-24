@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼성바이오로직스",
   "prices" : [ {
-    "volume" : 33263,
-    "marketCap" : 67544126000000,
-    "lowPrice" : 940000,
-    "highPrice" : 956000,
-    "openPrice" : 946000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 949000
-  }, {
     "volume" : 40596,
     "marketCap" : 66761212000000,
     "lowPrice" : 930000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1785000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1724000
+  }, {
+    "volume" : 36146,
+    "marketCap" : 79620435720000,
+    "lowPrice" : 1714000,
+    "highPrice" : 1745000,
+    "openPrice" : 1731000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1720000
   } ],
   "stockCode" : "207940"
 }

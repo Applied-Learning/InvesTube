@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대지에프홀딩스",
   "prices" : [ {
-    "volume" : 127164,
-    "marketCap" : 791993849080,
-    "lowPrice" : 4995,
-    "highPrice" : 5140,
-    "openPrice" : 4995,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5080
-  }, {
     "volume" : 151584,
     "marketCap" : 795111935100,
     "lowPrice" : 5040,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8540,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8610
+  }, {
+    "volume" : 155381,
+    "marketCap" : 1339217945590,
+    "lowPrice" : 8580,
+    "highPrice" : 8780,
+    "openPrice" : 8650,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8590
   } ],
   "stockCode" : "005440"
 }

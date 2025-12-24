@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하림지주",
   "prices" : [ {
-    "volume" : 542043,
-    "marketCap" : 636191927280,
-    "lowPrice" : 5660,
-    "highPrice" : 5970,
-    "openPrice" : 5970,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5680
-  }, {
     "volume" : 163574,
     "marketCap" : 638432039700,
     "lowPrice" : 5680,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10110,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10040
+  }, {
+    "volume" : 2757943,
+    "marketCap" : 1176059020500,
+    "lowPrice" : 10100,
+    "highPrice" : 10800,
+    "openPrice" : 10100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10500
   } ],
   "stockCode" : "003380"
 }

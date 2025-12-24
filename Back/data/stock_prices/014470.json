@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "부방",
   "prices" : [ {
-    "volume" : 209634,
-    "marketCap" : 95062727580,
-    "lowPrice" : 1576,
-    "highPrice" : 1612,
-    "openPrice" : 1603,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1583
-  }, {
     "volume" : 343293,
     "marketCap" : 92900846220,
     "lowPrice" : 1546,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1455,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1449
+  }, {
+    "volume" : 68352,
+    "marketCap" : 86655411180,
+    "lowPrice" : 1360,
+    "highPrice" : 1450,
+    "openPrice" : 1449,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1443
   } ],
   "stockCode" : "014470"
 }

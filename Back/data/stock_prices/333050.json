@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "모코엠시스",
   "prices" : [ {
-    "volume" : 200123,
-    "marketCap" : 30745372782,
-    "lowPrice" : 1242,
-    "highPrice" : 1318,
-    "openPrice" : 1314,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1257
-  }, {
     "volume" : 95356,
     "marketCap" : 31283477954,
     "lowPrice" : 1258,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1322,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1331
+  }, {
+    "volume" : 91349,
+    "marketCap" : 31677350562,
+    "lowPrice" : 1287,
+    "highPrice" : 1346,
+    "openPrice" : 1320,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1287
   } ],
   "stockCode" : "333050"
 }

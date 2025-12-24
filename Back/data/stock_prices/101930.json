@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인화정공",
   "prices" : [ {
-    "volume" : 50013,
-    "marketCap" : 315876829050,
-    "lowPrice" : 31750,
-    "highPrice" : 33450,
-    "openPrice" : 32800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 32850
-  }, {
     "volume" : 39164,
     "marketCap" : 310588175900,
     "lowPrice" : 32100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 47300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 47000
+  }, {
+    "volume" : 16159,
+    "marketCap" : 442716691900,
+    "lowPrice" : 46850,
+    "highPrice" : 48900,
+    "openPrice" : 47000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 47950
   } ],
   "stockCode" : "101930"
 }

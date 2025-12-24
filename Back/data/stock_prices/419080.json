@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엔젯",
   "prices" : [ {
-    "volume" : 8536,
-    "marketCap" : 100339974180,
-    "lowPrice" : 9340,
-    "highPrice" : 9690,
-    "openPrice" : 9450,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9540
-  }, {
     "volume" : 14395,
     "marketCap" : 100339974180,
     "lowPrice" : 9310,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7760,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7920
+  }, {
+    "volume" : 440210,
+    "marketCap" : 77231618250,
+    "lowPrice" : 7200,
+    "highPrice" : 7920,
+    "openPrice" : 7920,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7250
   } ],
   "stockCode" : "419080"
 }

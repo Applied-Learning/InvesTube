@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "윌비스",
   "prices" : [ {
-    "volume" : 3176962,
-    "marketCap" : 46930755222,
-    "lowPrice" : 620,
-    "highPrice" : 717,
-    "openPrice" : 628,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 698
-  }, {
     "volume" : 995097,
     "marketCap" : 45720506520,
     "lowPrice" : 670,
@@ -1937,6 +1929,14 @@
     "openPrice" : 326,
     "tradeDate" : "2025-12-22",
     "closePrice" : 328
+  }, {
+    "volume" : 130431,
+    "marketCap" : 21650004558,
+    "lowPrice" : 322,
+    "highPrice" : 330,
+    "openPrice" : 328,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 322
   } ],
   "stockCode" : "008600"
 }

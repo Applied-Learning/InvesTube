@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국무브넥스",
   "prices" : [ {
-    "volume" : 247206,
-    "marketCap" : 97289091900,
-    "lowPrice" : 3080,
-    "highPrice" : 3225,
-    "openPrice" : 3220,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3195
-  }, {
     "volume" : 137221,
     "marketCap" : 96375579300,
     "lowPrice" : 3165,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4440,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4620
+  }, {
+    "volume" : 518373,
+    "marketCap" : 135047612700,
+    "lowPrice" : 4400,
+    "highPrice" : 4695,
+    "openPrice" : 4645,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4435
   } ],
   "stockCode" : "010100"
 }

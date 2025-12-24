@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제주은행",
   "prices" : [ {
-    "volume" : 86983,
-    "marketCap" : 251247012680,
-    "lowPrice" : 7720,
-    "highPrice" : 7890,
-    "openPrice" : 7720,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7820
-  }, {
     "volume" : 55660,
     "marketCap" : 250604437200,
     "lowPrice" : 7740,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11680,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11680
+  }, {
+    "volume" : 94073,
+    "marketCap" : 435817362210,
+    "lowPrice" : 11510,
+    "highPrice" : 11760,
+    "openPrice" : 11680,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11530
   } ],
   "stockCode" : "006220"
 }

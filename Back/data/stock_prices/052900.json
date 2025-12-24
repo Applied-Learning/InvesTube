@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KX하이텍",
   "prices" : [ {
-    "volume" : 73347,
-    "marketCap" : 49651872817,
-    "lowPrice" : 880,
-    "highPrice" : 905,
-    "openPrice" : 891,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 901
-  }, {
     "volume" : 71209,
     "marketCap" : 49982517919,
     "lowPrice" : 895,
@@ -1937,6 +1929,14 @@
     "openPrice" : 901,
     "tradeDate" : "2025-12-22",
     "closePrice" : 901
+  }, {
+    "volume" : 70284,
+    "marketCap" : 58837010400,
+    "lowPrice" : 894,
+    "highPrice" : 904,
+    "openPrice" : 897,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 900
   } ],
   "stockCode" : "052900"
 }

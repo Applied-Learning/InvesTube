@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이엔피",
   "prices" : [ {
-    "volume" : 18432,
-    "marketCap" : 28062708068,
-    "lowPrice" : 620,
-    "highPrice" : 634,
-    "openPrice" : 632,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 622
-  }, {
     "volume" : 24269,
     "marketCap" : 26979902612,
     "lowPrice" : 598,
@@ -1937,6 +1929,14 @@
     "openPrice" : 460,
     "tradeDate" : "2025-12-22",
     "closePrice" : 453
+  }, {
+    "volume" : 52832,
+    "marketCap" : 20257485406,
+    "lowPrice" : 449,
+    "highPrice" : 459,
+    "openPrice" : 458,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 449
   } ],
   "stockCode" : "015260"
 }

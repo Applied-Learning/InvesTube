@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "앤씨앤",
   "prices" : [ {
-    "volume" : 17791,
-    "marketCap" : 28193873108,
-    "lowPrice" : 1110,
-    "highPrice" : 1133,
-    "openPrice" : 1133,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1124
-  }, {
     "volume" : 20117,
     "marketCap" : 28369457727,
     "lowPrice" : 1110,
@@ -1937,6 +1929,14 @@
     "openPrice" : 565,
     "tradeDate" : "2025-12-22",
     "closePrice" : 560
+  }, {
+    "volume" : 53330,
+    "marketCap" : 13745767316,
+    "lowPrice" : 535,
+    "highPrice" : 560,
+    "openPrice" : 560,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 548
   } ],
   "stockCode" : "092600"
 }

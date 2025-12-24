@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "나우IB",
   "prices" : [ {
-    "volume" : 6387830,
-    "marketCap" : 124453164450,
-    "lowPrice" : 1240,
-    "highPrice" : 1365,
-    "openPrice" : 1257,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1311
-  }, {
     "volume" : 3269057,
     "marketCap" : 117143558300,
     "lowPrice" : 1232,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1557,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1570
+  }, {
+    "volume" : 5187497,
+    "marketCap" : 137553497550,
+    "lowPrice" : 1429,
+    "highPrice" : 1576,
+    "openPrice" : 1570,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1449
   } ],
   "stockCode" : "293580"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "지노믹트리",
   "prices" : [ {
-    "volume" : 573295,
-    "marketCap" : 511608993000,
-    "lowPrice" : 20700,
-    "highPrice" : 22900,
-    "openPrice" : 22900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 21000
-  }, {
     "volume" : 289286,
     "marketCap" : 505518409750,
     "lowPrice" : 20550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 29600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 30250
+  }, {
+    "volume" : 194346,
+    "marketCap" : 702203644800,
+    "lowPrice" : 28700,
+    "highPrice" : 30500,
+    "openPrice" : 30200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 28800
   } ],
   "stockCode" : "228760"
 }

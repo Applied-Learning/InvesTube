@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼성스팩12호",
   "prices" : [ {
     "volume" : 88239870,
@@ -136,6 +136,14 @@
     "highPrice" : 2025,
     "openPrice" : 2010,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 2010
+  }, {
+    "volume" : 242769,
+    "marketCap" : 13225800000,
+    "lowPrice" : 2005,
+    "highPrice" : 2035,
+    "openPrice" : 2010,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 2010
   } ],
   "stockCode" : "0096B0"

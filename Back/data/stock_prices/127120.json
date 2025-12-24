@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제이에스링크",
   "prices" : [ {
-    "volume" : 383710,
-    "marketCap" : 114442760870,
-    "lowPrice" : 4880,
-    "highPrice" : 5200,
-    "openPrice" : 5000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5090
-  }, {
     "volume" : 407213,
     "marketCap" : 116016629880,
     "lowPrice" : 5050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17630,
     "tradeDate" : "2025-12-22",
     "closePrice" : 17430
+  }, {
+    "volume" : 217762,
+    "marketCap" : 546789985700,
+    "lowPrice" : 16650,
+    "highPrice" : 17520,
+    "openPrice" : 17500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 17150
   } ],
   "stockCode" : "127120"
 }

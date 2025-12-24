@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "비케이홀딩스",
   "prices" : [ {
-    "volume" : 53181,
-    "marketCap" : 13770175560,
-    "lowPrice" : 686,
-    "highPrice" : 737,
-    "openPrice" : 719,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 696
-  }, {
     "volume" : 26228,
     "marketCap" : 13770175560,
     "lowPrice" : 696,
@@ -1936,6 +1928,14 @@
     "highPrice" : 939,
     "openPrice" : 929,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 922
+  }, {
+    "volume" : 24167,
+    "marketCap" : 18241525670,
+    "lowPrice" : 922,
+    "highPrice" : 932,
+    "openPrice" : 924,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 922
   } ],
   "stockCode" : "050090"

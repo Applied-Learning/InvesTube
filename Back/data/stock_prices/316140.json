@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "우리금융지주",
   "prices" : [ {
-    "volume" : 1556364,
-    "marketCap" : 11621556990650,
-    "lowPrice" : 15430,
-    "highPrice" : 15720,
-    "openPrice" : 15630,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15650
-  }, {
     "volume" : 827121,
     "marketCap" : 11688390225740,
     "lowPrice" : 15580,
@@ -1937,6 +1929,14 @@
     "openPrice" : 28100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 28450
+  }, {
+    "volume" : 875595,
+    "marketCap" : 20700952224000,
+    "lowPrice" : 28150,
+    "highPrice" : 28700,
+    "openPrice" : 28450,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 28200
   } ],
   "stockCode" : "316140"
 }

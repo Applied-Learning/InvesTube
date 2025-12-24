@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "카페24",
   "prices" : [ {
-    "volume" : 717722,
-    "marketCap" : 844006279200,
-    "lowPrice" : 34550,
-    "highPrice" : 36600,
-    "openPrice" : 36400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 34800
-  }, {
     "volume" : 606053,
     "marketCap" : 829454446800,
     "lowPrice" : 33650,
@@ -1937,6 +1929,14 @@
     "openPrice" : 31100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 31400
+  }, {
+    "volume" : 87479,
+    "marketCap" : 744568757800,
+    "lowPrice" : 30700,
+    "highPrice" : 31650,
+    "openPrice" : 31500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 30700
   } ],
   "stockCode" : "042000"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국맥널티",
   "prices" : [ {
-    "volume" : 13776,
-    "marketCap" : 38444718255,
-    "lowPrice" : 3435,
-    "highPrice" : 3495,
-    "openPrice" : 3435,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3485
-  }, {
     "volume" : 15014,
     "marketCap" : 37727671860,
     "lowPrice" : 3410,
@@ -1936,6 +1928,14 @@
     "highPrice" : 3265,
     "openPrice" : 3260,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 3240
+  }, {
+    "volume" : 5951,
+    "marketCap" : 35742004920,
+    "lowPrice" : 3200,
+    "highPrice" : 3285,
+    "openPrice" : 3240,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 3240
   } ],
   "stockCode" : "222980"

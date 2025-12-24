@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인스웨이브",
   "prices" : [ {
-    "volume" : 439920,
-    "marketCap" : 62200364940,
-    "lowPrice" : 4115,
-    "highPrice" : 4425,
-    "openPrice" : 4305,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4230
-  }, {
     "volume" : 343572,
     "marketCap" : 57494899980,
     "lowPrice" : 3900,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3395,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3450
+  }, {
+    "volume" : 53984,
+    "marketCap" : 49848519420,
+    "lowPrice" : 3385,
+    "highPrice" : 3465,
+    "openPrice" : 3465,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3390
   } ],
   "stockCode" : "450520"
 }

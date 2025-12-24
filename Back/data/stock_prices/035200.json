@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "프럼파스트",
   "prices" : [ {
-    "volume" : 51608,
-    "marketCap" : 33619188450,
-    "lowPrice" : 3405,
-    "highPrice" : 3570,
-    "openPrice" : 3405,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3455
-  }, {
     "volume" : 42765,
     "marketCap" : 33035353050,
     "lowPrice" : 3340,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3730
+  }, {
+    "volume" : 62624,
+    "marketCap" : 36197794800,
+    "lowPrice" : 3680,
+    "highPrice" : 3810,
+    "openPrice" : 3765,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3720
   } ],
   "stockCode" : "035200"
 }

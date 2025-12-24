@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대모비스",
   "prices" : [ {
-    "volume" : 130390,
-    "marketCap" : 22690802936000,
-    "lowPrice" : 241000,
-    "highPrice" : 245500,
-    "openPrice" : 245500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 244000
-  }, {
     "volume" : 131161,
     "marketCap" : 22597807842000,
     "lowPrice" : 239500,
@@ -1936,6 +1928,14 @@
     "highPrice" : 367000,
     "openPrice" : 367000,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 363000
+  }, {
+    "volume" : 218163,
+    "marketCap" : 32935927629000,
+    "lowPrice" : 360000,
+    "highPrice" : 376000,
+    "openPrice" : 363500,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 363000
   } ],
   "stockCode" : "012330"

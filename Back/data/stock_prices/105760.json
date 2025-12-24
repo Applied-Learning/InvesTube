@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "포스뱅크",
   "prices" : [ {
-    "volume" : 16520,
-    "marketCap" : 56875394600,
-    "lowPrice" : 5950,
-    "highPrice" : 6080,
-    "openPrice" : 5950,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6010
-  }, {
     "volume" : 15570,
     "marketCap" : 56402221600,
     "lowPrice" : 5960,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5170,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5210
+  }, {
+    "volume" : 1192223,
+    "marketCap" : 56049852370,
+    "lowPrice" : 5190,
+    "highPrice" : 5960,
+    "openPrice" : 5190,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5510
   } ],
   "stockCode" : "105760"
 }

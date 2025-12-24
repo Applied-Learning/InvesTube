@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "블랙야크아이앤씨",
   "prices" : [ {
     "volume" : 27556295,
@@ -1793,6 +1793,14 @@
     "openPrice" : 3710,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3715
+  }, {
+    "volume" : 39480,
+    "marketCap" : 96347011540,
+    "lowPrice" : 3695,
+    "highPrice" : 3760,
+    "openPrice" : 3710,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3730
   } ],
   "stockCode" : "478560"
 }

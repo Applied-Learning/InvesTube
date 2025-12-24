@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이상네트웍스",
   "prices" : [ {
-    "volume" : 5179,
-    "marketCap" : 51339070620,
-    "lowPrice" : 5180,
-    "highPrice" : 5240,
-    "openPrice" : 5240,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5220
-  }, {
     "volume" : 13994,
     "marketCap" : 51044018490,
     "lowPrice" : 5140,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7010,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7050
+  }, {
+    "volume" : 3214,
+    "marketCap" : 69140549130,
+    "lowPrice" : 7000,
+    "highPrice" : 7150,
+    "openPrice" : 7140,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7030
   } ],
   "stockCode" : "080010"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "남화토건",
   "prices" : [ {
-    "volume" : 77079,
-    "marketCap" : 50834200000,
-    "lowPrice" : 4090,
-    "highPrice" : 4350,
-    "openPrice" : 4345,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4330
-  }, {
     "volume" : 25411,
     "marketCap" : 50012400000,
     "lowPrice" : 4220,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3920,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3930
+  }, {
+    "volume" : 6269,
+    "marketCap" : 46020800000,
+    "lowPrice" : 3870,
+    "highPrice" : 3945,
+    "openPrice" : 3930,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3920
   } ],
   "stockCode" : "091590"
 }

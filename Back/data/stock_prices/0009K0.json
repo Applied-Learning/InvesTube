@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에임드바이오",
   "prices" : [ {
     "volume" : 3793239,
@@ -105,6 +105,14 @@
     "openPrice" : 69000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 67100
+  }, {
+    "volume" : 1881452,
+    "marketCap" : 3945603901500,
+    "lowPrice" : 60900,
+    "highPrice" : 67800,
+    "openPrice" : 67100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 61500
   } ],
   "stockCode" : "0009K0"
 }

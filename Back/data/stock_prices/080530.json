@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코디",
   "prices" : [ {
-    "volume" : 33704,
-    "marketCap" : 49275885926,
-    "lowPrice" : 1112,
-    "highPrice" : 1150,
-    "openPrice" : 1142,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1138
-  }, {
     "volume" : 22764,
     "marketCap" : 48583079094,
     "lowPrice" : 1115,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1081
+  }, {
+    "volume" : 31604,
+    "marketCap" : 58841527500,
+    "lowPrice" : 1060,
+    "highPrice" : 1083,
+    "openPrice" : 1077,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1060
   } ],
   "stockCode" : "080530"
 }

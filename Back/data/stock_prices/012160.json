@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "영흥",
   "prices" : [ {
-    "volume" : 71232,
-    "marketCap" : 42145114752,
-    "lowPrice" : 413,
-    "highPrice" : 423,
-    "openPrice" : 419,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 416
-  }, {
     "volume" : 41707,
     "marketCap" : 41942494008,
     "lowPrice" : 410,
@@ -1937,6 +1929,14 @@
     "openPrice" : 543,
     "tradeDate" : "2025-12-22",
     "closePrice" : 537
+  }, {
+    "volume" : 215516,
+    "marketCap" : 52681393440,
+    "lowPrice" : 520,
+    "highPrice" : 538,
+    "openPrice" : 537,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 520
   } ],
   "stockCode" : "012160"
 }

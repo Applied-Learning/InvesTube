@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제이케이시냅스",
   "prices" : [ {
-    "volume" : 151382,
-    "marketCap" : 47256948195,
-    "lowPrice" : 994,
-    "highPrice" : 1040,
-    "openPrice" : 1007,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1005
-  }, {
     "volume" : 414779,
     "marketCap" : 49043778077,
     "lowPrice" : 999,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2755,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2745
+  }, {
+    "volume" : 45623,
+    "marketCap" : 20508360740,
+    "lowPrice" : 2590,
+    "highPrice" : 2790,
+    "openPrice" : 2740,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2590
   } ],
   "stockCode" : "060230"
 }

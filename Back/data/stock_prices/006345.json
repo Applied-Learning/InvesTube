@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대원전선우",
   "prices" : [ {
-    "volume" : 3415776,
-    "marketCap" : 12581760000,
-    "lowPrice" : 3810,
-    "highPrice" : 5080,
-    "openPrice" : 3810,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4800
-  }, {
     "volume" : 346638,
     "marketCap" : 10851768000,
     "lowPrice" : 4025,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3720,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3755
+  }, {
+    "volume" : 24873,
+    "marketCap" : 9685334000,
+    "lowPrice" : 3680,
+    "highPrice" : 3780,
+    "openPrice" : 3760,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3695
   } ],
   "stockCode" : "006345"
 }

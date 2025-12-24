@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국특강",
   "prices" : [ {
-    "volume" : 90343,
-    "marketCap" : 97301297600,
-    "lowPrice" : 1522,
-    "highPrice" : 1625,
-    "openPrice" : 1625,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1600
-  }, {
     "volume" : 127653,
     "marketCap" : 98213497265,
     "lowPrice" : 1550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1490,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1496
+  }, {
+    "volume" : 36869,
+    "marketCap" : 90733460012,
+    "lowPrice" : 1481,
+    "highPrice" : 1505,
+    "openPrice" : 1486,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1492
   } ],
   "stockCode" : "007280"
 }

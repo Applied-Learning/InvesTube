@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SGC에너지",
   "prices" : [ {
-    "volume" : 36861,
-    "marketCap" : 381126857850,
-    "lowPrice" : 25900,
-    "highPrice" : 26450,
-    "openPrice" : 26000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 26450
-  }, {
     "volume" : 29674,
     "marketCap" : 381847324500,
     "lowPrice" : 26450,
@@ -1936,6 +1928,14 @@
     "highPrice" : 24100,
     "openPrice" : 24000,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 23650
+  }, {
+    "volume" : 47825,
+    "marketCap" : 340780725450,
+    "lowPrice" : 23500,
+    "highPrice" : 23800,
+    "openPrice" : 23650,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 23650
   } ],
   "stockCode" : "005090"

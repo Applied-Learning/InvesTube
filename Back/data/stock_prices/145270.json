@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이탑리츠",
   "prices" : [ {
-    "volume" : 164180,
-    "marketCap" : 49406475672,
-    "lowPrice" : 1023,
-    "highPrice" : 1034,
-    "openPrice" : 1023,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1028
-  }, {
     "volume" : 194332,
     "marketCap" : 49406475672,
     "lowPrice" : 1026,
@@ -1936,6 +1928,14 @@
     "highPrice" : 972,
     "openPrice" : 969,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 971
+  }, {
+    "volume" : 29288,
+    "marketCap" : 46667011554,
+    "lowPrice" : 968,
+    "highPrice" : 974,
+    "openPrice" : 971,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 971
   } ],
   "stockCode" : "145270"

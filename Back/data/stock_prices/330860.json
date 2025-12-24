@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "네패스아크",
   "prices" : [ {
-    "volume" : 43000,
-    "marketCap" : 132684250050,
-    "lowPrice" : 10270,
-    "highPrice" : 11090,
-    "openPrice" : 10270,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10890
-  }, {
     "volume" : 27848,
     "marketCap" : 130491121950,
     "lowPrice" : 10650,
@@ -1937,6 +1929,14 @@
     "openPrice" : 16000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16350
+  }, {
+    "volume" : 70798,
+    "marketCap" : 188609016600,
+    "lowPrice" : 14880,
+    "highPrice" : 16400,
+    "openPrice" : 16240,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15480
   } ],
   "stockCode" : "330860"
 }

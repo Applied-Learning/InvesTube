@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "스튜디오드래곤",
   "prices" : [ {
-    "volume" : 81988,
-    "marketCap" : 1379685058200,
-    "lowPrice" : 45050,
-    "highPrice" : 46700,
-    "openPrice" : 46500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 45900
-  }, {
     "volume" : 72906,
     "marketCap" : 1346620710400,
     "lowPrice" : 44350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 42000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 42600
+  }, {
+    "volume" : 144668,
+    "marketCap" : 1301532963400,
+    "lowPrice" : 42350,
+    "highPrice" : 43700,
+    "openPrice" : 42350,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 43300
   } ],
   "stockCode" : "253450"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "GS",
   "prices" : [ {
-    "volume" : 253491,
-    "marketCap" : 3874571262600,
-    "lowPrice" : 40600,
-    "highPrice" : 41850,
-    "openPrice" : 40600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 41700
-  }, {
     "volume" : 82855,
     "marketCap" : 3855988187000,
     "lowPrice" : 41200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 55800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 55600
+  }, {
+    "volume" : 226604,
+    "marketCap" : 5119637327800,
+    "lowPrice" : 54800,
+    "highPrice" : 56000,
+    "openPrice" : 55800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 55100
   } ],
   "stockCode" : "078930"
 }

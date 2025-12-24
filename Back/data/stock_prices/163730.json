@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "핑거",
   "prices" : [ {
-    "volume" : 89080,
-    "marketCap" : 79607668000,
-    "lowPrice" : 8480,
-    "highPrice" : 8730,
-    "openPrice" : 8550,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8500
-  }, {
     "volume" : 91955,
     "marketCap" : 78671107200,
     "lowPrice" : 8330,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10490,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10650
+  }, {
+    "volume" : 62576,
+    "marketCap" : 96887650400,
+    "lowPrice" : 10300,
+    "highPrice" : 10740,
+    "openPrice" : 10530,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10300
   } ],
   "stockCode" : "163730"
 }

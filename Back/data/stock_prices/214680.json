@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디알텍",
   "prices" : [ {
-    "volume" : 342112,
-    "marketCap" : 169481191660,
-    "lowPrice" : 2240,
-    "highPrice" : 2300,
-    "openPrice" : 2240,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2290
-  }, {
     "volume" : 301512,
     "marketCap" : 166520821500,
     "lowPrice" : 2250,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2205,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2165
+  }, {
+    "volume" : 1021797,
+    "marketCap" : 164389107500,
+    "lowPrice" : 2120,
+    "highPrice" : 2285,
+    "openPrice" : 2150,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2150
   } ],
   "stockCode" : "214680"
 }

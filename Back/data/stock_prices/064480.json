@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "브리지텍",
   "prices" : [ {
-    "volume" : 25842,
-    "marketCap" : 65141125000,
-    "lowPrice" : 5350,
-    "highPrice" : 5510,
-    "openPrice" : 5400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5450
-  }, {
     "volume" : 19162,
     "marketCap" : 64663025000,
     "lowPrice" : 5370,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4660,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4710
+  }, {
+    "volume" : 13751,
+    "marketCap" : 56236512500,
+    "lowPrice" : 4670,
+    "highPrice" : 4730,
+    "openPrice" : 4725,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4705
   } ],
   "stockCode" : "064480"
 }

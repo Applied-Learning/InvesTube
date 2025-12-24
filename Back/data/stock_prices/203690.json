@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아크솔루션스",
   "prices" : [ {
-    "volume" : 55305,
-    "marketCap" : 82361544840,
-    "lowPrice" : 5800,
-    "highPrice" : 6300,
-    "openPrice" : 6300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6060
-  }, {
     "volume" : 32936,
     "marketCap" : 82633365120,
     "lowPrice" : 5880,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 4425
+  }, {
+    "volume" : 0,
+    "marketCap" : 76921522875,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 4425
   } ],
   "stockCode" : "203690"

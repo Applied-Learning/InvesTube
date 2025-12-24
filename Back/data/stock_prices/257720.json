@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "실리콘투",
   "prices" : [ {
-    "volume" : 822304,
-    "marketCap" : 1893157577400,
-    "lowPrice" : 30900,
-    "highPrice" : 32100,
-    "openPrice" : 31750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 31100
-  }, {
     "volume" : 3147752,
     "marketCap" : 1932725179500,
     "lowPrice" : 31350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 40600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 40750
+  }, {
+    "volume" : 497537,
+    "marketCap" : 2425466152200,
+    "lowPrice" : 39450,
+    "highPrice" : 41050,
+    "openPrice" : 40800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 39650
   } ],
   "stockCode" : "257720"
 }

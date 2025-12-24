@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "자연과환경",
   "prices" : [ {
-    "volume" : 170070,
-    "marketCap" : 68375048571,
-    "lowPrice" : 599,
-    "highPrice" : 610,
-    "openPrice" : 604,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 603
-  }, {
     "volume" : 202110,
     "marketCap" : 68261657114,
     "lowPrice" : 601,
@@ -1937,6 +1929,14 @@
     "openPrice" : 666,
     "tradeDate" : "2025-12-22",
     "closePrice" : 657
+  }, {
+    "volume" : 661993,
+    "marketCap" : 72343749566,
+    "lowPrice" : 637,
+    "highPrice" : 660,
+    "openPrice" : 650,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 638
   } ],
   "stockCode" : "043910"
 }

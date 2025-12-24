@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "청담글로벌",
   "prices" : [ {
-    "volume" : 55945,
-    "marketCap" : 108716324100,
-    "lowPrice" : 5230,
-    "highPrice" : 5340,
-    "openPrice" : 5240,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5290
-  }, {
     "volume" : 195505,
     "marketCap" : 109949401500,
     "lowPrice" : 5250,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6290
+  }, {
+    "volume" : 121361,
+    "marketCap" : 129465433500,
+    "lowPrice" : 6100,
+    "highPrice" : 6300,
+    "openPrice" : 6290,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6150
   } ],
   "stockCode" : "362320"
 }

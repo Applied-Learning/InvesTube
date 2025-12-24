@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이비김영",
   "prices" : [ {
-    "volume" : 257998,
-    "marketCap" : 91915909475,
-    "lowPrice" : 1965,
-    "highPrice" : 2050,
-    "openPrice" : 2025,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2045
-  }, {
     "volume" : 162379,
     "marketCap" : 90792243100,
     "lowPrice" : 1996,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1960,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1979
+  }, {
+    "volume" : 77246,
+    "marketCap" : 89758470035,
+    "lowPrice" : 1966,
+    "highPrice" : 2025,
+    "openPrice" : 1998,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1997
   } ],
   "stockCode" : "339950"
 }

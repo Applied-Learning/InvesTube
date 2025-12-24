@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디케이락",
   "prices" : [ {
-    "volume" : 84497,
-    "marketCap" : 76365532630,
-    "lowPrice" : 7510,
-    "highPrice" : 7790,
-    "openPrice" : 7680,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7510
-  }, {
     "volume" : 64521,
     "marketCap" : 77687439320,
     "lowPrice" : 7480,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10190
+  }, {
+    "volume" : 114739,
+    "marketCap" : 100464908440,
+    "lowPrice" : 9850,
+    "highPrice" : 10380,
+    "openPrice" : 10210,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9880
   } ],
   "stockCode" : "105740"
 }

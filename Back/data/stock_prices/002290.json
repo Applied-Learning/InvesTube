@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼일기업공사",
   "prices" : [ {
-    "volume" : 1744164,
-    "marketCap" : 50840000000,
-    "lowPrice" : 4035,
-    "highPrice" : 4570,
-    "openPrice" : 4040,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4100
-  }, {
     "volume" : 244688,
     "marketCap" : 49104000000,
     "lowPrice" : 3935,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4025,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4030
+  }, {
+    "volume" : 45317,
+    "marketCap" : 49786000000,
+    "lowPrice" : 3975,
+    "highPrice" : 4050,
+    "openPrice" : 4035,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4015
   } ],
   "stockCode" : "002290"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SHD",
   "prices" : [ {
-    "volume" : 843,
-    "marketCap" : 17056887120,
-    "lowPrice" : 13620,
-    "highPrice" : 14060,
-    "openPrice" : 13910,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14040
-  }, {
     "volume" : 2539,
     "marketCap" : 16996143220,
     "lowPrice" : 13780,
@@ -1937,6 +1929,14 @@
     "openPrice" : 18070,
     "tradeDate" : "2025-12-22",
     "closePrice" : 18130
+  }, {
+    "volume" : 712,
+    "marketCap" : 22135077160,
+    "lowPrice" : 18130,
+    "highPrice" : 18280,
+    "openPrice" : 18280,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 18220
   } ],
   "stockCode" : "001770"
 }

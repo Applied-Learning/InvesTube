@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "JW중외제약",
   "prices" : [ {
-    "volume" : 35291,
-    "marketCap" : 558862320000,
-    "lowPrice" : 23450,
-    "highPrice" : 24050,
-    "openPrice" : 23550,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 24000
-  }, {
     "volume" : 50916,
     "marketCap" : 553040837500,
     "lowPrice" : 23650,
@@ -1937,6 +1929,14 @@
     "openPrice" : 28200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 27850
+  }, {
+    "volume" : 63700,
+    "marketCap" : 639198778500,
+    "lowPrice" : 27350,
+    "highPrice" : 28000,
+    "openPrice" : 27950,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 27450
   } ],
   "stockCode" : "001060"
 }

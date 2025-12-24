@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한일단조",
   "prices" : [ {
-    "volume" : 374340,
-    "marketCap" : 67438950450,
-    "lowPrice" : 2005,
-    "highPrice" : 2060,
-    "openPrice" : 2015,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2050
-  }, {
     "volume" : 308905,
     "marketCap" : 67274465205,
     "lowPrice" : 2030,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2135,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2165
+  }, {
+    "volume" : 136168,
+    "marketCap" : 70564170105,
+    "lowPrice" : 2140,
+    "highPrice" : 2180,
+    "openPrice" : 2145,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2145
   } ],
   "stockCode" : "024740"
 }

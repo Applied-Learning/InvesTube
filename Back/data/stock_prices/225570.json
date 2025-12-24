@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "넥슨게임즈",
   "prices" : [ {
-    "volume" : 213723,
-    "marketCap" : 891746755960,
-    "lowPrice" : 13530,
-    "highPrice" : 13800,
-    "openPrice" : 13660,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13540
-  }, {
     "volume" : 139564,
     "marketCap" : 893063959440,
     "lowPrice" : 13460,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12380,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12220
+  }, {
+    "volume" : 68941,
+    "marketCap" : 798225308880,
+    "lowPrice" : 12080,
+    "highPrice" : 12240,
+    "openPrice" : 12220,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12120
   } ],
   "stockCode" : "225570"
 }

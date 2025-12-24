@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이엔솔",
   "prices" : [ {
-    "volume" : 70637,
-    "marketCap" : 170297471700,
-    "lowPrice" : 12700,
-    "highPrice" : 13190,
-    "openPrice" : 12700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13100
-  }, {
     "volume" : 40898,
     "marketCap" : 166527527670,
     "lowPrice" : 12750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11400
+  }, {
+    "volume" : 49379,
+    "marketCap" : 151317753480,
+    "lowPrice" : 11370,
+    "highPrice" : 11660,
+    "openPrice" : 11430,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11640
   } ],
   "stockCode" : "053080"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유진스팩11호",
   "prices" : [ {
-    "volume" : 11405,
-    "marketCap" : 9406960000,
-    "lowPrice" : 1992,
-    "highPrice" : 2000,
-    "openPrice" : 1998,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1993
-  }, {
     "volume" : 1409,
     "marketCap" : 9406960000,
     "lowPrice" : 1988,
@@ -1936,6 +1928,14 @@
     "highPrice" : 2035,
     "openPrice" : 2030,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 2035
+  }, {
+    "volume" : 2137,
+    "marketCap" : 9605200000,
+    "lowPrice" : 2030,
+    "highPrice" : 2035,
+    "openPrice" : 2030,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 2035
   } ],
   "stockCode" : "488060"

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "파인텍",
   "prices" : [ {
-    "volume" : 191794,
-    "marketCap" : 34614971651,
-    "lowPrice" : 797,
-    "highPrice" : 840,
-    "openPrice" : 839,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 797
-  }, {
     "volume" : 146018,
     "marketCap" : 33702908408,
     "lowPrice" : 768,
@@ -1937,6 +1929,14 @@
     "openPrice" : 786,
     "tradeDate" : "2025-12-22",
     "closePrice" : 792
+  }, {
+    "volume" : 128477,
+    "marketCap" : 33876634740,
+    "lowPrice" : 780,
+    "highPrice" : 800,
+    "openPrice" : 796,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 780
   } ],
   "stockCode" : "131760"
 }

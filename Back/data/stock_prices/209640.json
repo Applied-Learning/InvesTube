@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "와이제이링크",
   "prices" : [ {
-    "volume" : 588551,
-    "marketCap" : 176063073740,
-    "lowPrice" : 12020,
-    "highPrice" : 12980,
-    "openPrice" : 12020,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12380
-  }, {
     "volume" : 398983,
     "marketCap" : 171227738920,
     "lowPrice" : 11900,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4220,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4430
+  }, {
+    "volume" : 2770878,
+    "marketCap" : 113772584000,
+    "lowPrice" : 3925,
+    "highPrice" : 4555,
+    "openPrice" : 4550,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4000
   } ],
   "stockCode" : "209640"
 }

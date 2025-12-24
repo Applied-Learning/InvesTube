@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "헬릭스미스",
   "prices" : [ {
-    "volume" : 52340,
-    "marketCap" : 125833335810,
-    "lowPrice" : 2695,
-    "highPrice" : 2760,
-    "openPrice" : 2730,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2730
-  }, {
     "volume" : 39321,
     "marketCap" : 125141943855,
     "lowPrice" : 2700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6750
+  }, {
+    "volume" : 160858,
+    "marketCap" : 304212460200,
+    "lowPrice" : 6580,
+    "highPrice" : 6810,
+    "openPrice" : 6750,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6600
   } ],
   "stockCode" : "084990"
 }

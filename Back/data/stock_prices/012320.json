@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "경동인베스트",
   "prices" : [ {
-    "volume" : 5170,
-    "marketCap" : 153016988100,
-    "lowPrice" : 62900,
-    "highPrice" : 65100,
-    "openPrice" : 63100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 64700
-  }, {
     "volume" : 3963,
     "marketCap" : 152070978900,
     "lowPrice" : 63800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 53200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 53100
+  }, {
+    "volume" : 3610,
+    "marketCap" : 124873214400,
+    "lowPrice" : 52000,
+    "highPrice" : 53100,
+    "openPrice" : 52900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 52800
   } ],
   "stockCode" : "012320"
 }

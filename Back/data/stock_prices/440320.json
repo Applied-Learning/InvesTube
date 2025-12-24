@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오픈놀",
   "prices" : [ {
-    "volume" : 215816,
-    "marketCap" : 59026100000,
-    "lowPrice" : 5720,
-    "highPrice" : 6190,
-    "openPrice" : 5900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6020
-  }, {
     "volume" : 114833,
     "marketCap" : 58928050000,
     "lowPrice" : 5860,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3985,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3945
+  }, {
+    "volume" : 16894,
+    "marketCap" : 37894650000,
+    "lowPrice" : 3805,
+    "highPrice" : 3955,
+    "openPrice" : 3945,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3855
   } ],
   "stockCode" : "440320"
 }

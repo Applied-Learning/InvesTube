@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "덕산테코피아",
   "prices" : [ {
-    "volume" : 205903,
-    "marketCap" : 636821762400,
-    "lowPrice" : 29100,
-    "highPrice" : 31750,
-    "openPrice" : 29700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 31100
-  }, {
     "volume" : 128317,
     "marketCap" : 627607299600,
     "lowPrice" : 30450,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17610,
     "tradeDate" : "2025-12-22",
     "closePrice" : 18200
+  }, {
+    "volume" : 54524,
+    "marketCap" : 364892726880,
+    "lowPrice" : 17740,
+    "highPrice" : 18330,
+    "openPrice" : 18180,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 17820
   } ],
   "stockCode" : "317330"
 }

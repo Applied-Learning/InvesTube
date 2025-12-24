@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼표시멘트",
   "prices" : [ {
-    "volume" : 123225,
-    "marketCap" : 332382222480,
-    "lowPrice" : 3030,
-    "highPrice" : 3085,
-    "openPrice" : 3035,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3080
-  }, {
     "volume" : 80998,
     "marketCap" : 331842640950,
     "lowPrice" : 3070,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4475,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4785
+  }, {
+    "volume" : 5381282,
+    "marketCap" : 520156594920,
+    "lowPrice" : 4760,
+    "highPrice" : 5170,
+    "openPrice" : 4960,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4820
   } ],
   "stockCode" : "038500"
 }

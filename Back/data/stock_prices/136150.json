@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "원일티엔아이",
   "prices" : [ {
     "volume" : 24475337,
@@ -1233,6 +1233,14 @@
     "openPrice" : 20200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 19890
+  }, {
+    "volume" : 39910,
+    "marketCap" : 162927223200,
+    "lowPrice" : 19410,
+    "highPrice" : 20300,
+    "openPrice" : 19950,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 19440
   } ],
   "stockCode" : "136150"
 }

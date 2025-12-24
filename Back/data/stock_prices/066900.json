@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디에이피",
   "prices" : [ {
-    "volume" : 36240,
-    "marketCap" : 52767246960,
-    "lowPrice" : 2235,
-    "highPrice" : 2340,
-    "openPrice" : 2235,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2320
-  }, {
     "volume" : 28100,
     "marketCap" : 53563304565,
     "lowPrice" : 2300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1997,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1915
+  }, {
+    "volume" : 20663,
+    "marketCap" : 45034115940,
+    "lowPrice" : 1934,
+    "highPrice" : 1980,
+    "openPrice" : 1951,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1980
   } ],
   "stockCode" : "066900"
 }

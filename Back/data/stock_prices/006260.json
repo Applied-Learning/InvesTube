@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "LS",
   "prices" : [ {
-    "volume" : 150905,
-    "marketCap" : 3168480000000,
-    "lowPrice" : 94000,
-    "highPrice" : 98800,
-    "openPrice" : 94200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 98400
-  }, {
     "volume" : 136503,
     "marketCap" : 3129840000000,
     "lowPrice" : 95100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 188700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 187700
+  }, {
+    "volume" : 90862,
+    "marketCap" : 5896200000000,
+    "lowPrice" : 185800,
+    "highPrice" : 190400,
+    "openPrice" : 188100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 186000
   } ],
   "stockCode" : "006260"
 }

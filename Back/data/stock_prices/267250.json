@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HD현대",
   "prices" : [ {
-    "volume" : 166583,
-    "marketCap" : 6430037119000,
-    "lowPrice" : 79200,
-    "highPrice" : 81700,
-    "openPrice" : 79300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 81400
-  }, {
     "volume" : 96059,
     "marketCap" : 6358943342500,
     "lowPrice" : 80200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 198900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 195200
+  }, {
+    "volume" : 154212,
+    "marketCap" : 15269363330500,
+    "lowPrice" : 192700,
+    "highPrice" : 195900,
+    "openPrice" : 195700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 193300
   } ],
   "stockCode" : "267250"
 }

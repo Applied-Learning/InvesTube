@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SGC E&C",
   "prices" : [ {
-    "volume" : 1826,
-    "marketCap" : 43366731450,
-    "lowPrice" : 12930,
-    "highPrice" : 13400,
-    "openPrice" : 13060,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13370
-  }, {
     "volume" : 1498,
     "marketCap" : 43853269200,
     "lowPrice" : 13260,
@@ -1937,6 +1929,14 @@
     "openPrice" : 15500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15160
+  }, {
+    "volume" : 12135,
+    "marketCap" : 76108858460,
+    "lowPrice" : 14930,
+    "highPrice" : 15420,
+    "openPrice" : 15170,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15110
   } ],
   "stockCode" : "016250"
 }

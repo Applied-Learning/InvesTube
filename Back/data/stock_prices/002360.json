@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SH에너지화학",
   "prices" : [ {
-    "volume" : 2791819,
-    "marketCap" : 59234278090,
-    "lowPrice" : 513,
-    "highPrice" : 549,
-    "openPrice" : 520,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 533
-  }, {
     "volume" : 380361,
     "marketCap" : 57789539600,
     "lowPrice" : 518,
@@ -1937,6 +1929,14 @@
     "openPrice" : 391,
     "tradeDate" : "2025-12-22",
     "closePrice" : 394
+  }, {
+    "volume" : 136286,
+    "marketCap" : 43231020970,
+    "lowPrice" : 387,
+    "highPrice" : 394,
+    "openPrice" : 388,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 389
   } ],
   "stockCode" : "002360"
 }

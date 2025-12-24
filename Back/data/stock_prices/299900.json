@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "위지윅스튜디오",
   "prices" : [ {
-    "volume" : 7171882,
-    "marketCap" : 319519315312,
-    "lowPrice" : 1847,
-    "highPrice" : 2200,
-    "openPrice" : 2080,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1868
-  }, {
     "volume" : 6672401,
     "marketCap" : 324650781832,
     "lowPrice" : 1770,
@@ -1937,6 +1929,14 @@
     "openPrice" : 625,
     "tradeDate" : "2025-12-22",
     "closePrice" : 640
+  }, {
+    "volume" : 378992,
+    "marketCap" : 106050308080,
+    "lowPrice" : 603,
+    "highPrice" : 645,
+    "openPrice" : 637,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 620
   } ],
   "stockCode" : "299900"
 }

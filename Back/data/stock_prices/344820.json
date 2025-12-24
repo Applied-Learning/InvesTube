@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KCC글라스",
   "prices" : [ {
-    "volume" : 10791,
-    "marketCap" : 610872084000,
-    "lowPrice" : 38000,
-    "highPrice" : 38350,
-    "openPrice" : 38350,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 38250
-  }, {
     "volume" : 20674,
     "marketCap" : 608476507200,
     "lowPrice" : 38000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 26850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 26850
+  }, {
+    "volume" : 15720,
+    "marketCap" : 428009721600,
+    "lowPrice" : 26700,
+    "highPrice" : 26900,
+    "openPrice" : 26850,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 26800
   } ],
   "stockCode" : "344820"
 }

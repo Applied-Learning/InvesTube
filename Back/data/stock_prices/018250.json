@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "애경산업",
   "prices" : [ {
-    "volume" : 20647,
-    "marketCap" : 371323686100,
-    "lowPrice" : 13820,
-    "highPrice" : 14090,
-    "openPrice" : 13940,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14060
-  }, {
     "volume" : 33295,
     "marketCap" : 371587785450,
     "lowPrice" : 13930,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13690,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13650
+  }, {
+    "volume" : 20289,
+    "marketCap" : 359703314700,
+    "lowPrice" : 13580,
+    "highPrice" : 13750,
+    "openPrice" : 13650,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13620
   } ],
   "stockCode" : "018250"
 }

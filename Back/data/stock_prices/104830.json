@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "원익머트리얼즈",
   "prices" : [ {
-    "volume" : 47093,
-    "marketCap" : 224926720000,
-    "lowPrice" : 17300,
-    "highPrice" : 17920,
-    "openPrice" : 17430,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17840
-  }, {
     "volume" : 23549,
     "marketCap" : 223287680000,
     "lowPrice" : 17650,
@@ -1937,6 +1929,14 @@
     "openPrice" : 30050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 31250
+  }, {
+    "volume" : 28646,
+    "marketCap" : 389587200000,
+    "lowPrice" : 30850,
+    "highPrice" : 31450,
+    "openPrice" : 31300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 30900
   } ],
   "stockCode" : "104830"
 }

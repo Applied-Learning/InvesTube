@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대ADM",
   "prices" : [ {
-    "volume" : 146682,
-    "marketCap" : 56745716280,
-    "lowPrice" : 1250,
-    "highPrice" : 1335,
-    "openPrice" : 1315,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1320
-  }, {
     "volume" : 3771972,
     "marketCap" : 73769431164,
     "lowPrice" : 1400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2490,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2545
+  }, {
+    "volume" : 580400,
+    "marketCap" : 136270063440,
+    "lowPrice" : 2485,
+    "highPrice" : 2580,
+    "openPrice" : 2580,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2520
   } ],
   "stockCode" : "187660"
 }

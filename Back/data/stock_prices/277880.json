@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "티에스아이",
   "prices" : [ {
-    "volume" : 14455,
-    "marketCap" : 98082447680,
-    "lowPrice" : 4750,
-    "highPrice" : 4885,
-    "openPrice" : 4775,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4865
-  }, {
     "volume" : 12379,
     "marketCap" : 97175210240,
     "lowPrice" : 4780,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5040
+  }, {
+    "volume" : 77365,
+    "marketCap" : 101233302480,
+    "lowPrice" : 4980,
+    "highPrice" : 5040,
+    "openPrice" : 5040,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5010
   } ],
   "stockCode" : "277880"
 }

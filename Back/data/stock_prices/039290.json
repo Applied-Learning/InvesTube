@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인포뱅크",
   "prices" : [ {
-    "volume" : 105016,
-    "marketCap" : 67813028400,
-    "lowPrice" : 7540,
-    "highPrice" : 7920,
-    "openPrice" : 7700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7800
-  }, {
     "volume" : 117215,
     "marketCap" : 64683196320,
     "lowPrice" : 7400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5860,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5690
+  }, {
+    "volume" : 20577,
+    "marketCap" : 51033650860,
+    "lowPrice" : 5670,
+    "highPrice" : 5870,
+    "openPrice" : 5720,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5870
   } ],
   "stockCode" : "039290"
 }

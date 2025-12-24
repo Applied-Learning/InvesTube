@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엠투아이",
   "prices" : [ {
-    "volume" : 13043,
-    "marketCap" : 90654773440,
-    "lowPrice" : 5280,
-    "highPrice" : 5380,
-    "openPrice" : 5280,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5360
-  }, {
     "volume" : 19056,
     "marketCap" : 90654773440,
     "lowPrice" : 5320,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6350,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6480
+  }, {
+    "volume" : 22312,
+    "marketCap" : 106553185200,
+    "lowPrice" : 6300,
+    "highPrice" : 6570,
+    "openPrice" : 6480,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6300
   } ],
   "stockCode" : "347890"
 }

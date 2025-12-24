@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에코볼트",
   "prices" : [ {
-    "volume" : 78844,
-    "marketCap" : 58993124398,
-    "lowPrice" : 857,
-    "highPrice" : 890,
-    "openPrice" : 860,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 871
-  }, {
     "volume" : 67471,
     "marketCap" : 59060854736,
     "lowPrice" : 840,
@@ -1937,6 +1929,14 @@
     "openPrice" : 907,
     "tradeDate" : "2025-12-22",
     "closePrice" : 894
+  }, {
+    "volume" : 28529,
+    "marketCap" : 59941349130,
+    "lowPrice" : 885,
+    "highPrice" : 903,
+    "openPrice" : 895,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 885
   } ],
   "stockCode" : "097780"
 }

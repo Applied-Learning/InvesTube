@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "파라텍",
   "prices" : [ {
-    "volume" : 378831,
-    "marketCap" : 58287641272,
-    "lowPrice" : 1533,
-    "highPrice" : 1628,
-    "openPrice" : 1600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1544
-  }, {
     "volume" : 226038,
     "marketCap" : 57645873201,
     "lowPrice" : 1517,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1149,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1120
+  }, {
+    "volume" : 160208,
+    "marketCap" : 41828177804,
+    "lowPrice" : 1108,
+    "highPrice" : 1120,
+    "openPrice" : 1120,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1108
   } ],
   "stockCode" : "033540"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "온타이드",
   "prices" : [ {
-    "volume" : 533749,
-    "marketCap" : 29758996774,
-    "lowPrice" : 401,
-    "highPrice" : 448,
-    "openPrice" : 422,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 442
-  }, {
     "volume" : 308241,
     "marketCap" : 30162965056,
     "lowPrice" : 429,
@@ -1937,6 +1929,14 @@
     "openPrice" : 485,
     "tradeDate" : "2025-12-22",
     "closePrice" : 473
+  }, {
+    "volume" : 406500,
+    "marketCap" : 32136574300,
+    "lowPrice" : 449,
+    "highPrice" : 474,
+    "openPrice" : 474,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 470
   } ],
   "stockCode" : "005320"
 }

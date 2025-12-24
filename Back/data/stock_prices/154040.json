@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "다산솔루에타",
   "prices" : [ {
-    "volume" : 16400,
-    "marketCap" : 19834853870,
-    "lowPrice" : 1095,
-    "highPrice" : 1110,
-    "openPrice" : 1095,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1105
-  }, {
     "volume" : 21697,
     "marketCap" : 19529702272,
     "lowPrice" : 1083,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1184,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1127
+  }, {
+    "volume" : 59436,
+    "marketCap" : 20014354810,
+    "lowPrice" : 1109,
+    "highPrice" : 1176,
+    "openPrice" : 1132,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1115
   } ],
   "stockCode" : "154040"
 }

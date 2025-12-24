@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "파인메딕스",
   "prices" : [ {
     "volume" : 31854990,
@@ -1921,6 +1921,14 @@
     "openPrice" : 8000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7870
+  }, {
+    "volume" : 47972,
+    "marketCap" : 43882020000,
+    "lowPrice" : 7700,
+    "highPrice" : 7890,
+    "openPrice" : 7880,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7800
   } ],
   "stockCode" : "387570"
 }

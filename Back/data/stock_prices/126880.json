@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제이엔케이글로벌",
   "prices" : [ {
-    "volume" : 23035,
-    "marketCap" : 77620400535,
-    "lowPrice" : 3335,
-    "highPrice" : 3380,
-    "openPrice" : 3350,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3345
-  }, {
     "volume" : 57289,
     "marketCap" : 76808228930,
     "lowPrice" : 3295,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3845,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3940
+  }, {
+    "volume" : 41294,
+    "marketCap" : 89570925580,
+    "lowPrice" : 3850,
+    "highPrice" : 3985,
+    "openPrice" : 3985,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3860
   } ],
   "stockCode" : "126880"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "마크로젠",
   "prices" : [ {
-    "volume" : 11199,
-    "marketCap" : 178883100000,
-    "lowPrice" : 16340,
-    "highPrice" : 16590,
-    "openPrice" : 16430,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16500
-  }, {
     "volume" : 12786,
     "marketCap" : 178883100000,
     "lowPrice" : 16360,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17890,
     "tradeDate" : "2025-12-22",
     "closePrice" : 18770
+  }, {
+    "volume" : 85453,
+    "marketCap" : 191892780000,
+    "lowPrice" : 17670,
+    "highPrice" : 18720,
+    "openPrice" : 18600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 17700
   } ],
   "stockCode" : "038290"
 }

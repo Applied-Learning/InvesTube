@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이웨더",
   "prices" : [ {
-    "volume" : 13983,
-    "marketCap" : 31210387960,
-    "lowPrice" : 3075,
-    "highPrice" : 3200,
-    "openPrice" : 3145,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3140
-  }, {
     "volume" : 28869,
     "marketCap" : 29918238140,
     "lowPrice" : 3010,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3325,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3165
+  }, {
+    "volume" : 20996,
+    "marketCap" : 30564313050,
+    "lowPrice" : 3075,
+    "highPrice" : 3220,
+    "openPrice" : 3165,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3075
   } ],
   "stockCode" : "068100"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한컴위드",
   "prices" : [ {
-    "volume" : 432981,
-    "marketCap" : 89307061365,
-    "lowPrice" : 3030,
-    "highPrice" : 3215,
-    "openPrice" : 3070,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3165
-  }, {
     "volume" : 752992,
     "marketCap" : 88601634340,
     "lowPrice" : 3095,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3990,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4495
+  }, {
+    "volume" : 2064963,
+    "marketCap" : 117241971555,
+    "lowPrice" : 4155,
+    "highPrice" : 4535,
+    "openPrice" : 4535,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4155
   } ],
   "stockCode" : "054920"
 }

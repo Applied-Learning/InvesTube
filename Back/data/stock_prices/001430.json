@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "세아베스틸지주",
   "prices" : [ {
-    "volume" : 95453,
-    "marketCap" : 733380333550,
-    "lowPrice" : 20000,
-    "highPrice" : 20600,
-    "openPrice" : 20050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 20450
-  }, {
     "volume" : 73732,
     "marketCap" : 728001015700,
     "lowPrice" : 20300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 46100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 51300
+  }, {
+    "volume" : 688013,
+    "marketCap" : 1595864295500,
+    "lowPrice" : 43750,
+    "highPrice" : 48300,
+    "openPrice" : 48300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 44500
   } ],
   "stockCode" : "001430"
 }

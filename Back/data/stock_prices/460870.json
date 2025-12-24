@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스엠씨지",
   "prices" : [ {
     "volume" : 27091479,
@@ -1569,6 +1569,14 @@
     "openPrice" : 3985,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3940
+  }, {
+    "volume" : 63183,
+    "marketCap" : 77299678000,
+    "lowPrice" : 3875,
+    "highPrice" : 3975,
+    "openPrice" : 3975,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3875
   } ],
   "stockCode" : "460870"
 }

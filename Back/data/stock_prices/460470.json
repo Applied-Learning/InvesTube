@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이빔테크놀로지",
   "prices" : [ {
-    "volume" : 163594,
-    "marketCap" : 61695073300,
-    "lowPrice" : 4050,
-    "highPrice" : 4215,
-    "openPrice" : 4100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4090
-  }, {
     "volume" : 110269,
     "marketCap" : 60412901850,
     "lowPrice" : 4000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3105,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3125
+  }, {
+    "volume" : 38270,
+    "marketCap" : 45668031750,
+    "lowPrice" : 3010,
+    "highPrice" : 3150,
+    "openPrice" : 3100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3025
   } ],
   "stockCode" : "460470"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "씨이랩",
   "prices" : [ {
-    "volume" : 3724,
-    "marketCap" : 37041086720,
-    "lowPrice" : 6060,
-    "highPrice" : 6190,
-    "openPrice" : 6110,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6080
-  }, {
     "volume" : 5205,
     "marketCap" : 36370935480,
     "lowPrice" : 5970,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4690
+  }, {
+    "volume" : 43438,
+    "marketCap" : 43862177700,
+    "lowPrice" : 4600,
+    "highPrice" : 4690,
+    "openPrice" : 4690,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4675
   } ],
   "stockCode" : "189330"
 }

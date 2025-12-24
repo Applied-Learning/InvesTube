@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "맵스리얼티",
   "prices" : [ {
-    "volume" : 61133,
-    "marketCap" : 398259279990,
-    "lowPrice" : 4230,
-    "highPrice" : 4295,
-    "openPrice" : 4280,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4290
-  }, {
     "volume" : 106499,
     "marketCap" : 403829339850,
     "lowPrice" : 4265,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5210,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5240
+  }, {
+    "volume" : 43325,
+    "marketCap" : 487380237750,
+    "lowPrice" : 5180,
+    "highPrice" : 5270,
+    "openPrice" : 5250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5250
   } ],
   "stockCode" : "094800"
 }

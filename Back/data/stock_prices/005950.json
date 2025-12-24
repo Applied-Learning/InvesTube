@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이수화학",
   "prices" : [ {
-    "volume" : 30715,
-    "marketCap" : 143607710480,
-    "lowPrice" : 6120,
-    "highPrice" : 6390,
-    "openPrice" : 6220,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6320
-  }, {
     "volume" : 68456,
     "marketCap" : 140880981800,
     "lowPrice" : 6000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8780,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8880
+  }, {
+    "volume" : 242437,
+    "marketCap" : 228233386920,
+    "lowPrice" : 8570,
+    "highPrice" : 8950,
+    "openPrice" : 8900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8680
   } ],
   "stockCode" : "005950"
 }

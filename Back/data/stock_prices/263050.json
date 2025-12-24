@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유틸렉스",
   "prices" : [ {
-    "volume" : 18382,
-    "marketCap" : 73301363440,
-    "lowPrice" : 1960,
-    "highPrice" : 2010,
-    "openPrice" : 2010,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1990
-  }, {
     "volume" : 80737,
     "marketCap" : 73264528584,
     "lowPrice" : 1970,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 991
+  }, {
+    "volume" : 1032447,
+    "marketCap" : 33298709824,
+    "lowPrice" : 810,
+    "highPrice" : 991,
+    "openPrice" : 991,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 904
   } ],
   "stockCode" : "263050"
 }

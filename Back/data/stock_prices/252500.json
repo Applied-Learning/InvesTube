@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "세화피앤씨",
   "prices" : [ {
-    "volume" : 95928,
-    "marketCap" : 34890053990,
-    "lowPrice" : 818,
-    "highPrice" : 841,
-    "openPrice" : 818,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 841
-  }, {
     "volume" : 134350,
     "marketCap" : 35553836230,
     "lowPrice" : 843,
@@ -1937,6 +1929,14 @@
     "openPrice" : 818,
     "tradeDate" : "2025-12-22",
     "closePrice" : 821
+  }, {
+    "volume" : 56134,
+    "marketCap" : 33603975900,
+    "lowPrice" : 805,
+    "highPrice" : 820,
+    "openPrice" : 807,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 810
   } ],
   "stockCode" : "252500"
 }

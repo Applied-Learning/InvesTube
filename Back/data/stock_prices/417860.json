@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오브젠",
   "prices" : [ {
-    "volume" : 4783,
-    "marketCap" : 36286728660,
-    "lowPrice" : 8040,
-    "highPrice" : 8340,
-    "openPrice" : 8200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8190
-  }, {
     "volume" : 2461,
     "marketCap" : 36375340940,
     "lowPrice" : 8180,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12160,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12400
+  }, {
+    "volume" : 7478,
+    "marketCap" : 54916262400,
+    "lowPrice" : 12110,
+    "highPrice" : 12690,
+    "openPrice" : 12410,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12160
   } ],
   "stockCode" : "417860"
 }

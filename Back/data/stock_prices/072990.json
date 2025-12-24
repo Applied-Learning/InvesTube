@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이치시티",
   "prices" : [ {
-    "volume" : 10990,
-    "marketCap" : 59974816430,
-    "lowPrice" : 8120,
-    "highPrice" : 8370,
-    "openPrice" : 8120,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8230
-  }, {
     "volume" : 2532,
     "marketCap" : 59901943020,
     "lowPrice" : 8210,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5800
+  }, {
+    "volume" : 38066,
+    "marketCap" : 82691622440,
+    "lowPrice" : 5740,
+    "highPrice" : 5900,
+    "openPrice" : 5820,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5740
   } ],
   "stockCode" : "072990"
 }

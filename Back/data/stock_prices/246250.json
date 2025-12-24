@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스엘에스바이오",
   "prices" : [ {
-    "volume" : 48650,
-    "marketCap" : 30512233528,
-    "lowPrice" : 1969,
-    "highPrice" : 1998,
-    "openPrice" : 1981,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1988
-  }, {
     "volume" : 40158,
     "marketCap" : 30420144292,
     "lowPrice" : 1947,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 1969
+  }, {
+    "volume" : 0,
+    "marketCap" : 30220617614,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 1969
   } ],
   "stockCode" : "246250"

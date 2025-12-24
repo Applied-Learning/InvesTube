@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한독",
   "prices" : [ {
-    "volume" : 20204,
-    "marketCap" : 167777467270,
-    "lowPrice" : 12100,
-    "highPrice" : 12260,
-    "openPrice" : 12100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12190
-  }, {
     "volume" : 15707,
     "marketCap" : 167639831940,
     "lowPrice" : 12080,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11270,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11540
+  }, {
+    "volume" : 15013,
+    "marketCap" : 158142994170,
+    "lowPrice" : 11390,
+    "highPrice" : 11720,
+    "openPrice" : 11720,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11490
   } ],
   "stockCode" : "002390"
 }

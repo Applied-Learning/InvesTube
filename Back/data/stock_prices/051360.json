@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "토비스",
   "prices" : [ {
-    "volume" : 140912,
-    "marketCap" : 324957865800,
-    "lowPrice" : 19340,
-    "highPrice" : 20550,
-    "openPrice" : 19720,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 20100
-  }, {
     "volume" : 69082,
     "marketCap" : 324149512900,
     "lowPrice" : 19900,
@@ -1937,6 +1929,14 @@
     "openPrice" : 16100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15900
+  }, {
+    "volume" : 68669,
+    "marketCap" : 247060375380,
+    "lowPrice" : 15550,
+    "highPrice" : 15970,
+    "openPrice" : 15900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15610
   } ],
   "stockCode" : "051360"
 }

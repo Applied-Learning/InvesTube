@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "미래에셋증권우",
   "prices" : [ {
-    "volume" : 26715,
-    "marketCap" : 62566708750,
-    "lowPrice" : 4265,
-    "highPrice" : 4460,
-    "openPrice" : 4265,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4445
-  }, {
     "volume" : 56788,
     "marketCap" : 61299891250,
     "lowPrice" : 4200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12020,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11740
+  }, {
+    "volume" : 5637270,
+    "marketCap" : 214795945000,
+    "lowPrice" : 12610,
+    "highPrice" : 15260,
+    "openPrice" : 13400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15260
   } ],
   "stockCode" : "006805"
 }

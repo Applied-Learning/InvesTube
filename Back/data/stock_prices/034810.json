@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "해성산업",
   "prices" : [ {
-    "volume" : 11636,
-    "marketCap" : 188504202030,
-    "lowPrice" : 5640,
-    "highPrice" : 5790,
-    "openPrice" : 5740,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5790
-  }, {
     "volume" : 42612,
     "marketCap" : 192411024870,
     "lowPrice" : 5740,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8650,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8930
+  }, {
+    "volume" : 179387,
+    "marketCap" : 284872498750,
+    "lowPrice" : 8680,
+    "highPrice" : 9090,
+    "openPrice" : 8860,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8750
   } ],
   "stockCode" : "034810"
 }

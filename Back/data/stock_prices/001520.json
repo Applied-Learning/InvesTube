@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동양",
   "prices" : [ {
-    "volume" : 142059,
-    "marketCap" : 180922519754,
-    "lowPrice" : 751,
-    "highPrice" : 759,
-    "openPrice" : 752,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 758
-  }, {
     "volume" : 110886,
     "marketCap" : 181399887880,
     "lowPrice" : 755,
@@ -1937,6 +1929,14 @@
     "openPrice" : 857,
     "tradeDate" : "2025-12-22",
     "closePrice" : 843
+  }, {
+    "volume" : 3763177,
+    "marketCap" : 198346456353,
+    "lowPrice" : 829,
+    "highPrice" : 846,
+    "openPrice" : 843,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 831
   } ],
   "stockCode" : "001520"
 }

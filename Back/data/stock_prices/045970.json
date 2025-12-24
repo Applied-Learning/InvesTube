@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코아시아",
   "prices" : [ {
-    "volume" : 105940,
-    "marketCap" : 110259330440,
-    "lowPrice" : 3900,
-    "highPrice" : 4255,
-    "openPrice" : 3900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4190
-  }, {
     "volume" : 94173,
     "marketCap" : 104075334580,
     "lowPrice" : 3955,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5210,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5340
+  }, {
+    "volume" : 83461,
+    "marketCap" : 136047908920,
+    "lowPrice" : 5125,
+    "highPrice" : 5530,
+    "openPrice" : 5530,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5170
   } ],
   "stockCode" : "045970"
 }

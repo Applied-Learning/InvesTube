@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "메타랩스",
   "prices" : [ {
-    "volume" : 80607,
-    "marketCap" : 32874189480,
-    "lowPrice" : 1251,
-    "highPrice" : 1377,
-    "openPrice" : 1264,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1320
-  }, {
     "volume" : 20651,
     "marketCap" : 32874189480,
     "lowPrice" : 1275,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1930,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1836
+  }, {
+    "volume" : 2112518,
+    "marketCap" : 44479774554,
+    "lowPrice" : 1786,
+    "highPrice" : 2180,
+    "openPrice" : 1863,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1786
   } ],
   "stockCode" : "090370"
 }

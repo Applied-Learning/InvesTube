@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "솔루엠",
   "prices" : [ {
-    "volume" : 85625,
-    "marketCap" : 958606412670,
-    "lowPrice" : 18900,
-    "highPrice" : 19260,
-    "openPrice" : 19060,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 19170
-  }, {
     "volume" : 131390,
     "marketCap" : 975108244500,
     "lowPrice" : 18890,
@@ -1937,6 +1929,14 @@
     "openPrice" : 16680,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16870
+  }, {
+    "volume" : 134914,
+    "marketCap" : 803312764800,
+    "lowPrice" : 16520,
+    "highPrice" : 17040,
+    "openPrice" : 16920,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16800
   } ],
   "stockCode" : "248070"
 }

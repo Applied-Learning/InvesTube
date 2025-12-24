@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이디켐",
   "prices" : [ {
-    "volume" : 5751,
-    "marketCap" : 45391500000,
-    "lowPrice" : 11250,
-    "highPrice" : 11590,
-    "openPrice" : 11400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11250
-  }, {
     "volume" : 3463,
     "marketCap" : 45310804000,
     "lowPrice" : 11200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10870,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10870
+  }, {
+    "volume" : 751,
+    "marketCap" : 43495144000,
+    "lowPrice" : 10670,
+    "highPrice" : 10900,
+    "openPrice" : 10810,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10780
   } ],
   "stockCode" : "221980"
 }

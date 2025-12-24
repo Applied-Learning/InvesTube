@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이피알",
   "prices" : [ {
-    "volume" : 388208,
-    "marketCap" : 1835761603500,
-    "lowPrice" : 47250,
-    "highPrice" : 48750,
-    "openPrice" : 47700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 48150
-  }, {
     "volume" : 520069,
     "marketCap" : 1940607801000,
     "lowPrice" : 47600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 246500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 244000
+  }, {
+    "volume" : 375197,
+    "marketCap" : 8833634580000,
+    "lowPrice" : 235000,
+    "highPrice" : 244500,
+    "openPrice" : 244000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 236000
   } ],
   "stockCode" : "278470"
 }

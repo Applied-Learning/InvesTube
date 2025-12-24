@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이렘",
   "prices" : [ {
-    "volume" : 4013306,
-    "marketCap" : 67313790720,
-    "lowPrice" : 1145,
-    "highPrice" : 1248,
-    "openPrice" : 1150,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1210
-  }, {
     "volume" : 4655371,
     "marketCap" : 60916199040,
     "lowPrice" : 1086,
@@ -1937,6 +1929,14 @@
     "openPrice" : 702,
     "tradeDate" : "2025-12-22",
     "closePrice" : 704
+  }, {
+    "volume" : 141448,
+    "marketCap" : 43066511712,
+    "lowPrice" : 694,
+    "highPrice" : 708,
+    "openPrice" : 704,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 696
   } ],
   "stockCode" : "009730"
 }

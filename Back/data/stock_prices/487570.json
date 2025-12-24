@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HS효성",
   "prices" : [ {
-    "volume" : 10172,
-    "marketCap" : 114385958900,
-    "lowPrice" : 29850,
-    "highPrice" : 31000,
-    "openPrice" : 30000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 30700
-  }, {
     "volume" : 2763,
     "marketCap" : 114944847950,
     "lowPrice" : 30300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 63400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 63300
+  }, {
+    "volume" : 14991,
+    "marketCap" : 226908954300,
+    "lowPrice" : 60300,
+    "highPrice" : 63600,
+    "openPrice" : 63600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 60900
   } ],
   "stockCode" : "487570"
 }

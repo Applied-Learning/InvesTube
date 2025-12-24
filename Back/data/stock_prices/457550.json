@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "우진엔텍",
   "prices" : [ {
-    "volume" : 127647,
-    "marketCap" : 134805269060,
-    "lowPrice" : 14040,
-    "highPrice" : 14680,
-    "openPrice" : 14080,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14540
-  }, {
     "volume" : 255438,
     "marketCap" : 134434415500,
     "lowPrice" : 14500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 21700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 21750
+  }, {
+    "volume" : 51823,
+    "marketCap" : 196164065900,
+    "lowPrice" : 21000,
+    "highPrice" : 21750,
+    "openPrice" : 21700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 21050
   } ],
   "stockCode" : "457550"
 }

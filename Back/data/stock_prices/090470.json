@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제이스텍",
   "prices" : [ {
-    "volume" : 286881,
-    "marketCap" : 87033438120,
-    "lowPrice" : 4785,
-    "highPrice" : 5630,
-    "openPrice" : 4925,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4980
-  }, {
     "volume" : 24506,
     "marketCap" : 86771289210,
     "lowPrice" : 4915,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4855,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4865
+  }, {
+    "volume" : 103958,
+    "marketCap" : 82576906650,
+    "lowPrice" : 4630,
+    "highPrice" : 4805,
+    "openPrice" : 4805,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4725
   } ],
   "stockCode" : "090470"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "푸른저축은행",
   "prices" : [ {
-    "volume" : 80851,
-    "marketCap" : 135594372000,
-    "lowPrice" : 8860,
-    "highPrice" : 9100,
-    "openPrice" : 8930,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8990
-  }, {
     "volume" : 58191,
     "marketCap" : 137102652000,
     "lowPrice" : 9000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10960
+  }, {
+    "volume" : 30375,
+    "marketCap" : 166664940000,
+    "lowPrice" : 10870,
+    "highPrice" : 11080,
+    "openPrice" : 10880,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11050
   } ],
   "stockCode" : "007330"
 }

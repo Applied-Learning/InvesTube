@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엑사이엔씨",
   "prices" : [ {
-    "volume" : 25636,
-    "marketCap" : 23586392628,
-    "lowPrice" : 701,
-    "highPrice" : 713,
-    "openPrice" : 709,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 711
-  }, {
     "volume" : 112644,
     "marketCap" : 23520045532,
     "lowPrice" : 700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 685,
     "tradeDate" : "2025-12-22",
     "closePrice" : 678
+  }, {
+    "volume" : 41941,
+    "marketCap" : 22325797804,
+    "lowPrice" : 670,
+    "highPrice" : 677,
+    "openPrice" : 670,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 673
   } ],
   "stockCode" : "054940"
 }

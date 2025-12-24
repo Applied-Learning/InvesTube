@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "월덱스",
   "prices" : [ {
-    "volume" : 69582,
-    "marketCap" : 273091824220,
-    "lowPrice" : 16110,
-    "highPrice" : 16630,
-    "openPrice" : 16250,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16540
-  }, {
     "volume" : 36912,
     "marketCap" : 272926714290,
     "lowPrice" : 16450,
@@ -1937,6 +1929,14 @@
     "openPrice" : 21700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 22000
+  }, {
+    "volume" : 40600,
+    "marketCap" : 359939647400,
+    "lowPrice" : 21550,
+    "highPrice" : 22000,
+    "openPrice" : 22000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 21800
   } ],
   "stockCode" : "101160"
 }

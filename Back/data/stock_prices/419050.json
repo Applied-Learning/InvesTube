@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼기에너지솔루션즈",
   "prices" : [ {
-    "volume" : 152445,
-    "marketCap" : 97691177920,
-    "lowPrice" : 1700,
-    "highPrice" : 1746,
-    "openPrice" : 1710,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1708
-  }, {
     "volume" : 167652,
     "marketCap" : 97348000480,
     "lowPrice" : 1693,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1789,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1798
+  }, {
+    "volume" : 121202,
+    "marketCap" : 100207812480,
+    "lowPrice" : 1748,
+    "highPrice" : 1824,
+    "openPrice" : 1821,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1752
   } ],
   "stockCode" : "419050"
 }

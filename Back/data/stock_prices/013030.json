@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하이록코리아",
   "prices" : [ {
-    "volume" : 94268,
-    "marketCap" : 326443985100,
-    "lowPrice" : 26000,
-    "highPrice" : 26700,
-    "openPrice" : 26050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 26550
-  }, {
     "volume" : 73160,
     "marketCap" : 325829213000,
     "lowPrice" : 26300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 33150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 33050
+  }, {
+    "volume" : 50907,
+    "marketCap" : 390702380800,
+    "lowPrice" : 32600,
+    "highPrice" : 33450,
+    "openPrice" : 33000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 33200
   } ],
   "stockCode" : "013030"
 }

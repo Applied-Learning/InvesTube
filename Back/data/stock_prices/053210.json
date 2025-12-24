@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "스카이라이프",
   "prices" : [ {
-    "volume" : 40677,
-    "marketCap" : 236426701125,
-    "lowPrice" : 4945,
-    "highPrice" : 4995,
-    "openPrice" : 4985,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4975
-  }, {
     "volume" : 31065,
     "marketCap" : 237377160225,
     "lowPrice" : 4975,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5390,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5380
+  }, {
+    "volume" : 52751,
+    "marketCap" : 255198268350,
+    "lowPrice" : 5330,
+    "highPrice" : 5410,
+    "openPrice" : 5410,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5370
   } ],
   "stockCode" : "053210"
 }

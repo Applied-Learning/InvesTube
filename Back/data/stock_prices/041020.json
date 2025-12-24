@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "폴라리스오피스",
   "prices" : [ {
-    "volume" : 655062,
-    "marketCap" : 283435338600,
-    "lowPrice" : 5570,
-    "highPrice" : 5760,
-    "openPrice" : 5580,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5700
-  }, {
     "volume" : 523779,
     "marketCap" : 279954553740,
     "lowPrice" : 5520,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4515,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4640
+  }, {
+    "volume" : 232637,
+    "marketCap" : 223516113510,
+    "lowPrice" : 4490,
+    "highPrice" : 4655,
+    "openPrice" : 4620,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4495
   } ],
   "stockCode" : "041020"
 }

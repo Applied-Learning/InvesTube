@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "바이오다인",
   "prices" : [ {
-    "volume" : 144483,
-    "marketCap" : 483964314780,
-    "lowPrice" : 16030,
-    "highPrice" : 16530,
-    "openPrice" : 16110,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16260
-  }, {
     "volume" : 134839,
     "marketCap" : 481583186540,
     "lowPrice" : 16100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14340,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14030
+  }, {
+    "volume" : 90823,
+    "marketCap" : 408958775220,
+    "lowPrice" : 13670,
+    "highPrice" : 14270,
+    "openPrice" : 14200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13740
   } ],
   "stockCode" : "314930"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "TYM",
   "prices" : [ {
-    "volume" : 582500,
-    "marketCap" : 204756595020,
-    "lowPrice" : 4545,
-    "highPrice" : 4845,
-    "openPrice" : 4750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4545
-  }, {
     "volume" : 348921,
     "marketCap" : 201828282880,
     "lowPrice" : 4440,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6550,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6550
+  }, {
+    "volume" : 216767,
+    "marketCap" : 262890000000,
+    "lowPrice" : 6320,
+    "highPrice" : 6550,
+    "openPrice" : 6550,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6350
   } ],
   "stockCode" : "002900"
 }

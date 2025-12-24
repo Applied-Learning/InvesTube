@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "팜스코",
   "prices" : [ {
-    "volume" : 91347,
-    "marketCap" : 85208827760,
-    "lowPrice" : 2310,
-    "highPrice" : 2395,
-    "openPrice" : 2370,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2320
-  }, {
     "volume" : 60265,
     "marketCap" : 85025188045,
     "lowPrice" : 2295,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2475,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2485
+  }, {
+    "volume" : 12312,
+    "marketCap" : 90901658925,
+    "lowPrice" : 2475,
+    "highPrice" : 2520,
+    "openPrice" : 2520,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2475
   } ],
   "stockCode" : "036580"
 }

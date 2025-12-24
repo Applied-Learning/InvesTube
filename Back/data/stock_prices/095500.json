@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "미래나노텍",
   "prices" : [ {
-    "volume" : 115152,
-    "marketCap" : 248390091990,
-    "lowPrice" : 7820,
-    "highPrice" : 8170,
-    "openPrice" : 7900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8010
-  }, {
     "volume" : 76522,
     "marketCap" : 245289092090,
     "lowPrice" : 7860,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10830,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11060
+  }, {
+    "volume" : 150829,
+    "marketCap" : 335838289170,
+    "lowPrice" : 10540,
+    "highPrice" : 11170,
+    "openPrice" : 11170,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10830
   } ],
   "stockCode" : "095500"
 }

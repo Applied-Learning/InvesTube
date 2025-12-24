@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "서울식품우",
   "prices" : [ {
-    "volume" : 1231,
-    "marketCap" : 2684971500,
-    "lowPrice" : 1207,
-    "highPrice" : 1250,
-    "openPrice" : 1249,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1207
-  }, {
     "volume" : 6031,
     "marketCap" : 2673849000,
     "lowPrice" : 1202,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1298,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1260
+  }, {
+    "volume" : 8560,
+    "marketCap" : 2691645000,
+    "lowPrice" : 1210,
+    "highPrice" : 1274,
+    "openPrice" : 1274,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1210
   } ],
   "stockCode" : "004415"
 }

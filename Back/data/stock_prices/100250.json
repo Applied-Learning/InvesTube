@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "진양홀딩스",
   "prices" : [ {
-    "volume" : 25122,
-    "marketCap" : 178585457940,
-    "lowPrice" : 3160,
-    "highPrice" : 3200,
-    "openPrice" : 3190,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3195
-  }, {
     "volume" : 37479,
     "marketCap" : 178305981480,
     "lowPrice" : 3165,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3370,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3340
+  }, {
+    "volume" : 76467,
+    "marketCap" : 184174987140,
+    "lowPrice" : 3280,
+    "highPrice" : 3340,
+    "openPrice" : 3340,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3295
   } ],
   "stockCode" : "100250"
 }

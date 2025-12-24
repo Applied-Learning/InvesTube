@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "나라엠앤디",
   "prices" : [ {
-    "volume" : 14279,
-    "marketCap" : 53818000000,
-    "lowPrice" : 3680,
-    "highPrice" : 3800,
-    "openPrice" : 3680,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3790
-  }, {
     "volume" : 11905,
     "marketCap" : 54031000000,
     "lowPrice" : 3785,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4010,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4030
+  }, {
+    "volume" : 43224,
+    "marketCap" : 56232000000,
+    "lowPrice" : 3955,
+    "highPrice" : 4030,
+    "openPrice" : 4030,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3960
   } ],
   "stockCode" : "051490"
 }

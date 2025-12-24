@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "녹십자홀딩스2우",
   "prices" : [ {
-    "volume" : 1417,
-    "marketCap" : 19542369000,
-    "lowPrice" : 22950,
-    "highPrice" : 23750,
-    "openPrice" : 22950,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 23100
-  }, {
     "volume" : 717,
     "marketCap" : 19669267500,
     "lowPrice" : 22750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 27000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 26300
+  }, {
+    "volume" : 1484,
+    "marketCap" : 21657344000,
+    "lowPrice" : 25500,
+    "highPrice" : 26250,
+    "openPrice" : 25900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 25600
   } ],
   "stockCode" : "005257"
 }

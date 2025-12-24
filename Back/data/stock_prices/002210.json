@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동성제약",
   "prices" : [ {
-    "volume" : 168901,
-    "marketCap" : 138857160400,
-    "lowPrice" : 5090,
-    "highPrice" : 5330,
-    "openPrice" : 5090,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5320
-  }, {
     "volume" : 151360,
     "marketCap" : 132331917900,
     "lowPrice" : 5070,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 973
+  }, {
+    "volume" : 0,
+    "marketCap" : 25900780311,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 973
   } ],
   "stockCode" : "002210"

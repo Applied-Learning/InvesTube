@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아시아나IDT",
   "prices" : [ {
-    "volume" : 13473,
-    "marketCap" : 137085000000,
-    "lowPrice" : 12000,
-    "highPrice" : 12480,
-    "openPrice" : 12240,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12350
-  }, {
     "volume" : 19382,
     "marketCap" : 139416000000,
     "lowPrice" : 12280,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11630,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11650
+  }, {
+    "volume" : 7635,
+    "marketCap" : 130314000000,
+    "lowPrice" : 11620,
+    "highPrice" : 11770,
+    "openPrice" : 11620,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11740
   } ],
   "stockCode" : "267850"
 }

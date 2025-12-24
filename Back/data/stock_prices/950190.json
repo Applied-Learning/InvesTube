@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "고스트스튜디오",
   "prices" : [ {
-    "volume" : 17611,
-    "marketCap" : 124391810720,
-    "lowPrice" : 8970,
-    "highPrice" : 9170,
-    "openPrice" : 9170,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9160
-  }, {
     "volume" : 8892,
     "marketCap" : 124120212880,
     "lowPrice" : 9090,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9020,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9070
+  }, {
+    "volume" : 21503,
+    "marketCap" : 117023360410,
+    "lowPrice" : 8920,
+    "highPrice" : 9140,
+    "openPrice" : 9000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8990
   } ],
   "stockCode" : "950190"
 }

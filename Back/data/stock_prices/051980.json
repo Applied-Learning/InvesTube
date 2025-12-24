@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "중앙첨단소재",
   "prices" : [ {
-    "volume" : 2248103,
-    "marketCap" : 880656436430,
-    "lowPrice" : 7740,
-    "highPrice" : 8940,
-    "openPrice" : 7770,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8810
-  }, {
     "volume" : 1231002,
     "marketCap" : 872659556190,
     "lowPrice" : 8530,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2575,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2580
+  }, {
+    "volume" : 845358,
+    "marketCap" : 282728399405,
+    "lowPrice" : 2520,
+    "highPrice" : 2600,
+    "openPrice" : 2590,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2545
   } ],
   "stockCode" : "051980"
 }

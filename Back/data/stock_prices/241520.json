@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "DSC인베스트먼트",
   "prices" : [ {
-    "volume" : 73731,
-    "marketCap" : 81113568750,
-    "lowPrice" : 2900,
-    "highPrice" : 2965,
-    "openPrice" : 2920,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2950
-  }, {
     "volume" : 81961,
     "marketCap" : 80976088125,
     "lowPrice" : 2925,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7820,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7820
+  }, {
+    "volume" : 1435044,
+    "marketCap" : 192240000000,
+    "lowPrice" : 7070,
+    "highPrice" : 7820,
+    "openPrice" : 7820,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7120
   } ],
   "stockCode" : "241520"
 }

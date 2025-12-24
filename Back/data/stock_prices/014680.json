@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한솔케미칼",
   "prices" : [ {
-    "volume" : 20094,
-    "marketCap" : 1126718383000,
-    "lowPrice" : 98000,
-    "highPrice" : 100600,
-    "openPrice" : 98400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 99400
-  }, {
     "volume" : 17221,
     "marketCap" : 1119917266000,
     "lowPrice" : 98300,
@@ -1936,6 +1928,14 @@
     "highPrice" : 225500,
     "openPrice" : 224000,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 224000
+  }, {
+    "volume" : 22175,
+    "marketCap" : 2539083680000,
+    "lowPrice" : 222500,
+    "highPrice" : 226000,
+    "openPrice" : 225000,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 224000
   } ],
   "stockCode" : "014680"

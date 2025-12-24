@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "나노캠텍",
   "prices" : [ {
-    "volume" : 36142,
-    "marketCap" : 25892905156,
-    "lowPrice" : 661,
-    "highPrice" : 700,
-    "openPrice" : 700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 692
-  }, {
     "volume" : 55043,
     "marketCap" : 25481312733,
     "lowPrice" : 649,
@@ -1937,6 +1929,14 @@
     "openPrice" : 612,
     "tradeDate" : "2025-12-22",
     "closePrice" : 613
+  }, {
+    "volume" : 191533,
+    "marketCap" : 22227602770,
+    "lowPrice" : 590,
+    "highPrice" : 635,
+    "openPrice" : 613,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 590
   } ],
   "stockCode" : "091970"
 }

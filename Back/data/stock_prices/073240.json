@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "금호타이어",
   "prices" : [ {
-    "volume" : 376152,
-    "marketCap" : 1410448009170,
-    "lowPrice" : 4865,
-    "highPrice" : 4930,
-    "openPrice" : 4930,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4910
-  }, {
     "volume" : 311549,
     "marketCap" : 1380285679035,
     "lowPrice" : 4770,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6290,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6270
+  }, {
+    "volume" : 594364,
+    "marketCap" : 1746542544960,
+    "lowPrice" : 5960,
+    "highPrice" : 6300,
+    "openPrice" : 6290,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6080
   } ],
   "stockCode" : "073240"
 }

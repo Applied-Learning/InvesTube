@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "씨어스테크놀로지",
   "prices" : [ {
-    "volume" : 23668,
-    "marketCap" : 132922291200,
-    "lowPrice" : 10300,
-    "highPrice" : 10880,
-    "openPrice" : 10420,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10590
-  }, {
     "volume" : 21851,
     "marketCap" : 133047808000,
     "lowPrice" : 10450,
@@ -1937,6 +1929,14 @@
     "openPrice" : 116900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 117600
+  }, {
+    "volume" : 112264,
+    "marketCap" : 1498373604000,
+    "lowPrice" : 115500,
+    "highPrice" : 119700,
+    "openPrice" : 117100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 118300
   } ],
   "stockCode" : "458870"
 }

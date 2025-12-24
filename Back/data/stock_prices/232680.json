@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "라온테크",
   "prices" : [ {
-    "volume" : 10058,
-    "marketCap" : 79843070580,
-    "lowPrice" : 6310,
-    "highPrice" : 6470,
-    "openPrice" : 6320,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6370
-  }, {
     "volume" : 11596,
     "marketCap" : 80219097600,
     "lowPrice" : 6320,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9480,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10270
+  }, {
+    "volume" : 207405,
+    "marketCap" : 127347817440,
+    "lowPrice" : 9940,
+    "highPrice" : 10600,
+    "openPrice" : 10300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10160
   } ],
   "stockCode" : "232680"
 }

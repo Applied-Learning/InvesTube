@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HS화성",
   "prices" : [ {
-    "volume" : 9835,
-    "marketCap" : 101297000000,
-    "lowPrice" : 9930,
-    "highPrice" : 10090,
-    "openPrice" : 9950,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9980
-  }, {
     "volume" : 15664,
     "marketCap" : 100891000000,
     "lowPrice" : 9910,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13020,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13190
+  }, {
+    "volume" : 14698,
+    "marketCap" : 136213000000,
+    "lowPrice" : 13190,
+    "highPrice" : 13500,
+    "openPrice" : 13190,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13420
   } ],
   "stockCode" : "002460"
 }

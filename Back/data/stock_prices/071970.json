@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HD현대마린엔진",
   "prices" : [ {
-    "volume" : 682253,
-    "marketCap" : 802243356750,
-    "lowPrice" : 23500,
-    "highPrice" : 24500,
-    "openPrice" : 23700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 23650
-  }, {
     "volume" : 570283,
     "marketCap" : 814115880000,
     "lowPrice" : 23100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 87800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 91200
+  }, {
+    "volume" : 642180,
+    "marketCap" : 3293777164500,
+    "lowPrice" : 91000,
+    "highPrice" : 98300,
+    "openPrice" : 92700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 97100
   } ],
   "stockCode" : "071970"
 }

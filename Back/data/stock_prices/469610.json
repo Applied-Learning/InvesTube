@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이노테크",
   "prices" : [ {
     "volume" : 6178280,
@@ -257,6 +257,14 @@
     "openPrice" : 27700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 27200
+  }, {
+    "volume" : 326546,
+    "marketCap" : 233462470000,
+    "lowPrice" : 26100,
+    "highPrice" : 27450,
+    "openPrice" : 27250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 26300
   } ],
   "stockCode" : "469610"
 }

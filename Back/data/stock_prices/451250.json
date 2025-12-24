@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삐아",
   "prices" : [ {
-    "volume" : 36530,
-    "marketCap" : 96156527810,
-    "lowPrice" : 9430,
-    "highPrice" : 9640,
-    "openPrice" : 9560,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9530
-  }, {
     "volume" : 139282,
     "marketCap" : 96156527810,
     "lowPrice" : 9530,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9450,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9510
+  }, {
+    "volume" : 20195,
+    "marketCap" : 96736796420,
+    "lowPrice" : 9370,
+    "highPrice" : 9600,
+    "openPrice" : 9450,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9460
   } ],
   "stockCode" : "451250"
 }

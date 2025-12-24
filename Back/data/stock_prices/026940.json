@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "부국철강",
   "prices" : [ {
-    "volume" : 351823,
-    "marketCap" : 49200000000,
-    "lowPrice" : 2420,
-    "highPrice" : 2530,
-    "openPrice" : 2490,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2460
-  }, {
     "volume" : 495393,
     "marketCap" : 50400000000,
     "lowPrice" : 2465,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2095
+  }, {
+    "volume" : 26474,
+    "marketCap" : 41800000000,
+    "lowPrice" : 2080,
+    "highPrice" : 2110,
+    "openPrice" : 2105,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2090
   } ],
   "stockCode" : "026940"
 }

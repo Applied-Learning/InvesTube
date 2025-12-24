@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "성신양회우",
   "prices" : [ {
-    "volume" : 1821,
-    "marketCap" : 7974391800,
-    "lowPrice" : 10650,
-    "highPrice" : 11000,
-    "openPrice" : 11000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10840
-  }, {
     "volume" : 596,
     "marketCap" : 8011174050,
     "lowPrice" : 10720,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12120,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11790
+  }, {
+    "volume" : 24086,
+    "marketCap" : 8511412650,
+    "lowPrice" : 11530,
+    "highPrice" : 11920,
+    "openPrice" : 11820,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11570
   } ],
   "stockCode" : "004985"
 }

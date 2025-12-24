@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대한과학",
   "prices" : [ {
-    "volume" : 38813,
-    "marketCap" : 34365198900,
-    "lowPrice" : 4545,
-    "highPrice" : 4670,
-    "openPrice" : 4545,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4610
-  }, {
     "volume" : 15668,
     "marketCap" : 34439743800,
     "lowPrice" : 4600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4825,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4840
+  }, {
+    "volume" : 12703,
+    "marketCap" : 35371555050,
+    "lowPrice" : 4740,
+    "highPrice" : 4875,
+    "openPrice" : 4855,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4745
   } ],
   "stockCode" : "131220"
 }

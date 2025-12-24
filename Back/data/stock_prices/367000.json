@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "플래티어",
   "prices" : [ {
-    "volume" : 11039,
-    "marketCap" : 34349707665,
-    "lowPrice" : 3960,
-    "highPrice" : 4190,
-    "openPrice" : 4020,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4095
-  }, {
     "volume" : 8743,
     "marketCap" : 34181943525,
     "lowPrice" : 3990,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4345,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4325
+  }, {
+    "volume" : 3361,
+    "marketCap" : 35565997680,
+    "lowPrice" : 4220,
+    "highPrice" : 4390,
+    "openPrice" : 4335,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4240
   } ],
   "stockCode" : "367000"
 }

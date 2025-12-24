@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼영전자",
   "prices" : [ {
-    "volume" : 13725,
-    "marketCap" : 200200000000,
-    "lowPrice" : 9920,
-    "highPrice" : 10090,
-    "openPrice" : 9990,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10010
-  }, {
     "volume" : 16421,
     "marketCap" : 201600000000,
     "lowPrice" : 9950,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10660,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10650
+  }, {
+    "volume" : 17198,
+    "marketCap" : 215000000000,
+    "lowPrice" : 10620,
+    "highPrice" : 10780,
+    "openPrice" : 10660,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10750
   } ],
   "stockCode" : "005680"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대신밸런스제16호스팩",
   "prices" : [ {
-    "volume" : 0,
-    "marketCap" : 15314450000,
-    "lowPrice" : 0,
-    "highPrice" : 0,
-    "openPrice" : 0,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2095
-  }, {
     "volume" : 0,
     "marketCap" : 15314450000,
     "lowPrice" : 0,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2075,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2090
+  }, {
+    "volume" : 15717,
+    "marketCap" : 15241350000,
+    "lowPrice" : 2070,
+    "highPrice" : 2085,
+    "openPrice" : 2080,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2085
   } ],
   "stockCode" : "457630"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼화전자",
   "prices" : [ {
-    "volume" : 51537,
-    "marketCap" : 53328018500,
-    "lowPrice" : 3025,
-    "highPrice" : 3190,
-    "openPrice" : 3065,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3155
-  }, {
     "volume" : 41959,
     "marketCap" : 52144829500,
     "lowPrice" : 3070,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2785,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2765
+  }, {
+    "volume" : 36638,
+    "marketCap" : 52418421975,
+    "lowPrice" : 2665,
+    "highPrice" : 2795,
+    "openPrice" : 2795,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2735
   } ],
   "stockCode" : "011230"
 }

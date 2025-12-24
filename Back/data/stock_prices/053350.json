@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이니텍",
   "prices" : [ {
-    "volume" : 8784,
-    "marketCap" : 68971342260,
-    "lowPrice" : 3350,
-    "highPrice" : 3570,
-    "openPrice" : 3440,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3485
-  }, {
     "volume" : 17179,
     "marketCap" : 67091205240,
     "lowPrice" : 3390,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6170
+  }, {
+    "volume" : 3273377,
+    "marketCap" : 99796316775,
+    "lowPrice" : 4320,
+    "highPrice" : 6270,
+    "openPrice" : 6250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4335
   } ],
   "stockCode" : "053350"
 }

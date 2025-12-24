@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인크로스",
   "prices" : [ {
-    "volume" : 23888,
-    "marketCap" : 96709461660,
-    "lowPrice" : 7390,
-    "highPrice" : 7590,
-    "openPrice" : 7530,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7530
-  }, {
     "volume" : 9345,
     "marketCap" : 97351622760,
     "lowPrice" : 7460,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6910,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6880
+  }, {
+    "volume" : 18246,
+    "marketCap" : 87847638480,
+    "lowPrice" : 6750,
+    "highPrice" : 6910,
+    "openPrice" : 6910,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6840
   } ],
   "stockCode" : "216050"
 }

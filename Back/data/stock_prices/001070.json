@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대한방직",
   "prices" : [ {
-    "volume" : 786,
-    "marketCap" : 28302000000,
-    "lowPrice" : 5280,
-    "highPrice" : 5360,
-    "openPrice" : 5350,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5340
-  }, {
     "volume" : 12280,
     "marketCap" : 28355000000,
     "lowPrice" : 5210,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6730,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6620
+  }, {
+    "volume" : 22697,
+    "marketCap" : 34185000000,
+    "lowPrice" : 6370,
+    "highPrice" : 6800,
+    "openPrice" : 6800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6450
   } ],
   "stockCode" : "001070"
 }

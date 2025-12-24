@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "글로벌텍스프리",
   "prices" : [ {
-    "volume" : 444318,
-    "marketCap" : 234991154575,
-    "lowPrice" : 3730,
-    "highPrice" : 3895,
-    "openPrice" : 3830,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3845
-  }, {
     "volume" : 470519,
     "marketCap" : 227962810550,
     "lowPrice" : 3705,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5130,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5410
+  }, {
+    "volume" : 9901416,
+    "marketCap" : 330331651000,
+    "lowPrice" : 4410,
+    "highPrice" : 4870,
+    "openPrice" : 4865,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4700
   } ],
   "stockCode" : "204620"
 }

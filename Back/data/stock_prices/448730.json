@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼성FN리츠",
   "prices" : [ {
-    "volume" : 98303,
-    "marketCap" : 404717250000,
-    "lowPrice" : 4400,
-    "highPrice" : 4560,
-    "openPrice" : 4440,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4445
-  }, {
     "volume" : 119408,
     "marketCap" : 407448750000,
     "lowPrice" : 4435,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4660,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4680
+  }, {
+    "volume" : 44392,
+    "marketCap" : 427935000000,
+    "lowPrice" : 4630,
+    "highPrice" : 4725,
+    "openPrice" : 4680,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4700
   } ],
   "stockCode" : "448730"
 }

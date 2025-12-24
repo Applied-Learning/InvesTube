@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오리온홀딩스",
   "prices" : [ {
-    "volume" : 51132,
-    "marketCap" : 982280216960,
-    "lowPrice" : 15470,
-    "highPrice" : 15710,
-    "openPrice" : 15630,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15680
-  }, {
     "volume" : 94326,
     "marketCap" : 982280216960,
     "lowPrice" : 15590,
@@ -1937,6 +1929,14 @@
     "openPrice" : 21300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 21100
+  }, {
+    "volume" : 59087,
+    "marketCap" : 1299892506500,
+    "lowPrice" : 20700,
+    "highPrice" : 21300,
+    "openPrice" : 21250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 20750
   } ],
   "stockCode" : "001800"
 }

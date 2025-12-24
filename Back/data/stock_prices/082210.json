@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "옵트론텍",
   "prices" : [ {
-    "volume" : 15063,
-    "marketCap" : 56659351692,
-    "lowPrice" : 1707,
-    "highPrice" : 1803,
-    "openPrice" : 1803,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1707
-  }, {
     "volume" : 18403,
     "marketCap" : 55763158080,
     "lowPrice" : 1676,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1709,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1814
+  }, {
+    "volume" : 96770,
+    "marketCap" : 57821115508,
+    "lowPrice" : 1742,
+    "highPrice" : 1866,
+    "openPrice" : 1809,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1742
   } ],
   "stockCode" : "082210"
 }

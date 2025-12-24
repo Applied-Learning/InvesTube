@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "골프존홀딩스",
   "prices" : [ {
-    "volume" : 36324,
-    "marketCap" : 157211122060,
-    "lowPrice" : 3575,
-    "highPrice" : 3675,
-    "openPrice" : 3590,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3670
-  }, {
     "volume" : 32050,
     "marketCap" : 156996937970,
     "lowPrice" : 3635,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5280,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5300
+  }, {
+    "volume" : 41210,
+    "marketCap" : 227891871760,
+    "lowPrice" : 5290,
+    "highPrice" : 5340,
+    "openPrice" : 5320,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5320
   } ],
   "stockCode" : "121440"
 }

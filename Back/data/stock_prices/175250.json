@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이큐어",
   "prices" : [ {
-    "volume" : 139799,
-    "marketCap" : 72975909024,
-    "lowPrice" : 1925,
-    "highPrice" : 1969,
-    "openPrice" : 1925,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1943
-  }, {
     "volume" : 85189,
     "marketCap" : 72713000448,
     "lowPrice" : 1920,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 2170
+  }, {
+    "volume" : 0,
+    "marketCap" : 81501658560,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 2170
   } ],
   "stockCode" : "175250"

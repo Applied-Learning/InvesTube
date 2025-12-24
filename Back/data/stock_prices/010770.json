@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "평화홀딩스",
   "prices" : [ {
-    "volume" : 6983,
-    "marketCap" : 36856174320,
-    "lowPrice" : 2510,
-    "highPrice" : 2545,
-    "openPrice" : 2540,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2520
-  }, {
     "volume" : 6033,
     "marketCap" : 37368065630,
     "lowPrice" : 2520,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3875,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3895
+  }, {
+    "volume" : 34130,
+    "marketCap" : 56088662110,
+    "lowPrice" : 3830,
+    "highPrice" : 3910,
+    "openPrice" : 3895,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3835
   } ],
   "stockCode" : "010770"
 }

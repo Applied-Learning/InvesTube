@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "세진중공업",
   "prices" : [ {
-    "volume" : 631203,
-    "marketCap" : 482651881440,
-    "lowPrice" : 8250,
-    "highPrice" : 8630,
-    "openPrice" : 8470,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8490
-  }, {
     "volume" : 803873,
     "marketCap" : 485494354240,
     "lowPrice" : 8440,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 18240
+  }, {
+    "volume" : 1043341,
+    "marketCap" : 1052283430560,
+    "lowPrice" : 18300,
+    "highPrice" : 19340,
+    "openPrice" : 18920,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 18510
   } ],
   "stockCode" : "075580"
 }

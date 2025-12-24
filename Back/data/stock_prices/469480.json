@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "IBKS제24호스팩",
   "prices" : [ {
-    "volume" : 2226,
-    "marketCap" : 8798400000,
-    "lowPrice" : 2070,
-    "highPrice" : 2110,
-    "openPrice" : 2110,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2080
-  }, {
     "volume" : 9877,
     "marketCap" : 8713800000,
     "lowPrice" : 2055,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2200
+  }, {
+    "volume" : 1916,
+    "marketCap" : 9327150000,
+    "lowPrice" : 2200,
+    "highPrice" : 2215,
+    "openPrice" : 2205,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2205
   } ],
   "stockCode" : "469480"
 }

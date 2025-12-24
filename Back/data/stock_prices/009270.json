@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신원",
   "prices" : [ {
-    "volume" : 7188450,
-    "marketCap" : 156444192900,
-    "lowPrice" : 1507,
-    "highPrice" : 1579,
-    "openPrice" : 1534,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1525
-  }, {
     "volume" : 3826854,
     "marketCap" : 158188160952,
     "lowPrice" : 1495,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1547,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1558
+  }, {
+    "volume" : 557391,
+    "marketCap" : 169921277952,
+    "lowPrice" : 1523,
+    "highPrice" : 1562,
+    "openPrice" : 1558,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1536
   } ],
   "stockCode" : "009270"
 }

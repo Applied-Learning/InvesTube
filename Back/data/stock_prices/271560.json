@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오리온",
   "prices" : [ {
-    "volume" : 64837,
-    "marketCap" : 4139433020400,
-    "lowPrice" : 103500,
-    "highPrice" : 105500,
-    "openPrice" : 104500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 104700
-  }, {
     "volume" : 81696,
     "marketCap" : 4163154699600,
     "lowPrice" : 104200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 107000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 106800
+  }, {
+    "volume" : 66884,
+    "marketCap" : 4190829992000,
+    "lowPrice" : 105700,
+    "highPrice" : 107600,
+    "openPrice" : 106700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 106000
   } ],
   "stockCode" : "271560"
 }

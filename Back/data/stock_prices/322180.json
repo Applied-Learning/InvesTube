@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "LS티라유텍",
   "prices" : [ {
-    "volume" : 13602,
-    "marketCap" : 94395010185,
-    "lowPrice" : 4410,
-    "highPrice" : 4520,
-    "openPrice" : 4410,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4515
-  }, {
     "volume" : 36354,
     "marketCap" : 92304312285,
     "lowPrice" : 4410,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7440,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7760
+  }, {
+    "volume" : 251819,
+    "marketCap" : 159634737920,
+    "lowPrice" : 7420,
+    "highPrice" : 7960,
+    "openPrice" : 7760,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7630
   } ],
   "stockCode" : "322180"
 }

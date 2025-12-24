@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대구백화점",
   "prices" : [ {
-    "volume" : 13705,
-    "marketCap" : 61791398810,
-    "lowPrice" : 5560,
-    "highPrice" : 5780,
-    "openPrice" : 5600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5710
-  }, {
     "volume" : 43062,
     "marketCap" : 58977779950,
     "lowPrice" : 5450,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5990,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5910
+  }, {
+    "volume" : 17791,
+    "marketCap" : 63522856570,
+    "lowPrice" : 5830,
+    "highPrice" : 5950,
+    "openPrice" : 5910,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5870
   } ],
   "stockCode" : "006370"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "메이슨캐피탈",
   "prices" : [ {
-    "volume" : 219914,
-    "marketCap" : 45503137992,
-    "lowPrice" : 293,
-    "highPrice" : 300,
-    "openPrice" : 300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 299
-  }, {
     "volume" : 178009,
     "marketCap" : 44437847136,
     "lowPrice" : 292,
@@ -1936,6 +1928,14 @@
     "highPrice" : 245,
     "openPrice" : 244,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 242
+  }, {
+    "volume" : 111128,
+    "marketCap" : 51348626736,
+    "lowPrice" : 240,
+    "highPrice" : 244,
+    "openPrice" : 242,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 242
   } ],
   "stockCode" : "021880"

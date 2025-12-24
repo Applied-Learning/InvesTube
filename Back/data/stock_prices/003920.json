@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "남양유업",
   "prices" : [ {
-    "volume" : 33343,
-    "marketCap" : 396962904000,
-    "lowPrice" : 56300,
-    "highPrice" : 60100,
-    "openPrice" : 59700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 58400
-  }, {
     "volume" : 13971,
     "marketCap" : 396283173000,
     "lowPrice" : 58000,
@@ -1936,6 +1928,14 @@
     "highPrice" : 52100,
     "openPrice" : 51300,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 51300
+  }, {
+    "volume" : 3226,
+    "marketCap" : 307800000000,
+    "lowPrice" : 51000,
+    "highPrice" : 51900,
+    "openPrice" : 51500,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 51300
   } ],
   "stockCode" : "003920"

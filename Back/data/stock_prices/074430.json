@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아미노로직스",
   "prices" : [ {
-    "volume" : 64062,
-    "marketCap" : 81591138076,
-    "lowPrice" : 920,
-    "highPrice" : 940,
-    "openPrice" : 936,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 929
-  }, {
     "volume" : 171174,
     "marketCap" : 79219813288,
     "lowPrice" : 898,
@@ -1937,6 +1929,14 @@
     "openPrice" : 913,
     "tradeDate" : "2025-12-22",
     "closePrice" : 922
+  }, {
+    "volume" : 59791,
+    "marketCap" : 80888523324,
+    "lowPrice" : 915,
+    "highPrice" : 932,
+    "openPrice" : 923,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 921
   } ],
   "stockCode" : "074430"
 }

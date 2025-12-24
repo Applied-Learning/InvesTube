@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "빛과전자",
   "prices" : [ {
-    "volume" : 239907,
-    "marketCap" : 45531165631,
-    "lowPrice" : 983,
-    "highPrice" : 1040,
-    "openPrice" : 1011,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 989
-  }, {
     "volume" : 237755,
     "marketCap" : 47510781528,
     "lowPrice" : 989,
@@ -1937,6 +1929,14 @@
     "openPrice" : 678,
     "tradeDate" : "2025-12-22",
     "closePrice" : 691
+  }, {
+    "volume" : 316348,
+    "marketCap" : 39984858818,
+    "lowPrice" : 670,
+    "highPrice" : 695,
+    "openPrice" : 685,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 673
   } ],
   "stockCode" : "069540"
 }

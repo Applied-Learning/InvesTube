@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "지씨셀",
   "prices" : [ {
-    "volume" : 29944,
-    "marketCap" : 379998273200,
-    "lowPrice" : 23550,
-    "highPrice" : 24200,
-    "openPrice" : 23700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 24050
-  }, {
     "volume" : 35466,
     "marketCap" : 378418238800,
     "lowPrice" : 23550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 27700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 26900
+  }, {
+    "volume" : 79995,
+    "marketCap" : 413178995600,
+    "lowPrice" : 25750,
+    "highPrice" : 27200,
+    "openPrice" : 26900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 26150
   } ],
   "stockCode" : "144510"
 }

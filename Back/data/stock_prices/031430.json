@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신세계인터내셔날",
   "prices" : [ {
-    "volume" : 5837651,
-    "marketCap" : 387702000000,
-    "lowPrice" : 10610,
-    "highPrice" : 13290,
-    "openPrice" : 12090,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10860
-  }, {
     "volume" : 2519604,
     "marketCap" : 377349000000,
     "lowPrice" : 10480,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11490,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11380
+  }, {
+    "volume" : 35026,
+    "marketCap" : 397608750000,
+    "lowPrice" : 11180,
+    "highPrice" : 11480,
+    "openPrice" : 11400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11250
   } ],
   "stockCode" : "031430"
 }

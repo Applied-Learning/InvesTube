@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에코프로",
   "prices" : [ {
-    "volume" : 991972,
-    "marketCap" : 8401029254000,
-    "lowPrice" : 61000,
-    "highPrice" : 64500,
-    "openPrice" : 64100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 63100
-  }, {
     "volume" : 862807,
     "marketCap" : 8188007910000,
     "lowPrice" : 61400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 97700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 98000
+  }, {
+    "volume" : 1487391,
+    "marketCap" : 13211019589600,
+    "lowPrice" : 96000,
+    "highPrice" : 99100,
+    "openPrice" : 99000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 97300
   } ],
   "stockCode" : "086520"
 }

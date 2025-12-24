@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "일진다이아",
   "prices" : [ {
-    "volume" : 33200,
-    "marketCap" : 169157432250,
-    "lowPrice" : 11680,
-    "highPrice" : 12000,
-    "openPrice" : 11840,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11910
-  }, {
     "volume" : 19489,
     "marketCap" : 165890748000,
     "lowPrice" : 11610,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12240,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12450
+  }, {
+    "volume" : 24622,
+    "marketCap" : 173418324750,
+    "lowPrice" : 12150,
+    "highPrice" : 12490,
+    "openPrice" : 12410,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12210
   } ],
   "stockCode" : "081000"
 }

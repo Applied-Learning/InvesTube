@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "부스타",
   "prices" : [ {
-    "volume" : 5133,
-    "marketCap" : 32652648000,
-    "lowPrice" : 3805,
-    "highPrice" : 3890,
-    "openPrice" : 3890,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3885
-  }, {
     "volume" : 289,
     "marketCap" : 32610624000,
     "lowPrice" : 3855,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3980,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3995
+  }, {
+    "volume" : 13477,
+    "marketCap" : 34795872000,
+    "lowPrice" : 4005,
+    "highPrice" : 4190,
+    "openPrice" : 4005,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4140
   } ],
   "stockCode" : "008470"
 }

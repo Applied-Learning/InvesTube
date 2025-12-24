@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "옵티코어",
   "prices" : [ {
-    "volume" : 115855,
-    "marketCap" : 38653915608,
-    "lowPrice" : 1298,
-    "highPrice" : 1349,
-    "openPrice" : 1330,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1298
-  }, {
     "volume" : 136639,
     "marketCap" : 38385899244,
     "lowPrice" : 1280,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1937
+  }, {
+    "volume" : 490603,
+    "marketCap" : 88718947348,
+    "lowPrice" : 1821,
+    "highPrice" : 1938,
+    "openPrice" : 1938,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1828
   } ],
   "stockCode" : "380540"
 }

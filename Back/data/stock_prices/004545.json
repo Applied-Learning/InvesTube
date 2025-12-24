@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "깨끗한나라우",
   "prices" : [ {
-    "volume" : 1221,
-    "marketCap" : 4470813600,
-    "lowPrice" : 12010,
-    "highPrice" : 12550,
-    "openPrice" : 12550,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12210
-  }, {
     "volume" : 1328,
     "marketCap" : 4441520800,
     "lowPrice" : 12060,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11580,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11500
+  }, {
+    "volume" : 500,
+    "marketCap" : 4254779200,
+    "lowPrice" : 11450,
+    "highPrice" : 11640,
+    "openPrice" : 11500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11620
   } ],
   "stockCode" : "004545"
 }

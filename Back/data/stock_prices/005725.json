@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "넥센우",
   "prices" : [ {
-    "volume" : 518,
-    "marketCap" : 11125854000,
-    "lowPrice" : 3090,
-    "highPrice" : 3200,
-    "openPrice" : 3090,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3090
-  }, {
     "volume" : 528,
     "marketCap" : 11305884000,
     "lowPrice" : 3040,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4315,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4460
+  }, {
+    "volume" : 222,
+    "marketCap" : 15878646000,
+    "lowPrice" : 4410,
+    "highPrice" : 4520,
+    "openPrice" : 4520,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4410
   } ],
   "stockCode" : "005725"
 }

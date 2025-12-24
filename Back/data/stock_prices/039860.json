@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "나노엔텍",
   "prices" : [ {
-    "volume" : 186145,
-    "marketCap" : 107889875520,
-    "lowPrice" : 3300,
-    "highPrice" : 3395,
-    "openPrice" : 3300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3360
-  }, {
     "volume" : 84082,
     "marketCap" : 105963270600,
     "lowPrice" : 3300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4490,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4975
+  }, {
+    "volume" : 11084998,
+    "marketCap" : 207226208320,
+    "lowPrice" : 4985,
+    "highPrice" : 6110,
+    "openPrice" : 4985,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5440
   } ],
   "stockCode" : "039860"
 }

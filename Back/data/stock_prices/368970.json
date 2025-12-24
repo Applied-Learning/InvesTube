@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오에스피",
   "prices" : [ {
-    "volume" : 9219,
-    "marketCap" : 26636556000,
-    "lowPrice" : 2815,
-    "highPrice" : 2900,
-    "openPrice" : 2870,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2850
-  }, {
     "volume" : 39746,
     "marketCap" : 25888863200,
     "lowPrice" : 2685,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2050
+  }, {
+    "volume" : 14472,
+    "marketCap" : 19253089600,
+    "lowPrice" : 2020,
+    "highPrice" : 2105,
+    "openPrice" : 2050,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2060
   } ],
   "stockCode" : "368970"
 }

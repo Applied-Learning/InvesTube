@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "CJ프레시웨이",
   "prices" : [ {
-    "volume" : 23039,
-    "marketCap" : 214282127300,
-    "lowPrice" : 17920,
-    "highPrice" : 18320,
-    "openPrice" : 18000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 18050
-  }, {
     "volume" : 31351,
     "marketCap" : 214400843160,
     "lowPrice" : 17900,
@@ -1937,6 +1929,14 @@
     "openPrice" : 26750,
     "tradeDate" : "2025-12-22",
     "closePrice" : 27950
+  }, {
+    "volume" : 26264,
+    "marketCap" : 332997987300,
+    "lowPrice" : 27200,
+    "highPrice" : 28550,
+    "openPrice" : 27950,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 28050
   } ],
   "stockCode" : "051500"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이월드",
   "prices" : [ {
-    "volume" : 216830,
-    "marketCap" : 219232374378,
-    "lowPrice" : 1546,
-    "highPrice" : 1588,
-    "openPrice" : 1552,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1546
-  }, {
     "volume" : 196630,
     "marketCap" : 217956118641,
     "lowPrice" : 1525,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1324,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1353
+  }, {
+    "volume" : 169246,
+    "marketCap" : 197819639235,
+    "lowPrice" : 1331,
+    "highPrice" : 1400,
+    "openPrice" : 1353,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1395
   } ],
   "stockCode" : "084680"
 }

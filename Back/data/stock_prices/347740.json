@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "피엔케이피부임상연구센타",
   "prices" : [ {
-    "volume" : 22296,
-    "marketCap" : 65423055680,
-    "lowPrice" : 2150,
-    "highPrice" : 2210,
-    "openPrice" : 2195,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2180
-  }, {
     "volume" : 13041,
     "marketCap" : 65273002800,
     "lowPrice" : 2150,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2545,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2585
+  }, {
+    "volume" : 52028,
+    "marketCap" : 76076810160,
+    "lowPrice" : 2525,
+    "highPrice" : 2580,
+    "openPrice" : 2580,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2535
   } ],
   "stockCode" : "347740"
 }

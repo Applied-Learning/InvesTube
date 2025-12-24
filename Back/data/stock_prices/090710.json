@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "휴림로봇",
   "prices" : [ {
-    "volume" : 751804,
-    "marketCap" : 147991272750,
-    "lowPrice" : 1338,
-    "highPrice" : 1373,
-    "openPrice" : 1345,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1350
-  }, {
     "volume" : 1274011,
     "marketCap" : 149854866555,
     "lowPrice" : 1350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5620,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5820
+  }, {
+    "volume" : 45742903,
+    "marketCap" : 744218337310,
+    "lowPrice" : 5840,
+    "highPrice" : 6720,
+    "openPrice" : 5970,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6230
   } ],
   "stockCode" : "090710"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "세기상사",
   "prices" : [ {
-    "volume" : 4590,
-    "marketCap" : 28628067200,
-    "lowPrice" : 5090,
-    "highPrice" : 5230,
-    "openPrice" : 5130,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5150
-  }, {
     "volume" : 8034,
     "marketCap" : 28572478720,
     "lowPrice" : 5110,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5920
+  }, {
+    "volume" : 65699,
+    "marketCap" : 33610807240,
+    "lowPrice" : 5460,
+    "highPrice" : 6040,
+    "openPrice" : 5980,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5630
   } ],
   "stockCode" : "002420"
 }

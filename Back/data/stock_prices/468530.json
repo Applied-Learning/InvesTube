@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "프로티나",
   "prices" : [ {
     "volume" : 17079617,
@@ -792,6 +792,14 @@
     "highPrice" : 101400,
     "openPrice" : 97700,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 100300
+  }, {
+    "volume" : 441376,
+    "marketCap" : 1097229844000,
+    "lowPrice" : 97000,
+    "highPrice" : 102400,
+    "openPrice" : 100100,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 100300
   } ],
   "stockCode" : "468530"

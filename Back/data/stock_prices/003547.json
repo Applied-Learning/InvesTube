@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대신증권2우B",
   "prices" : [ {
-    "volume" : 25389,
-    "marketCap" : 149400000000,
-    "lowPrice" : 14860,
-    "highPrice" : 14980,
-    "openPrice" : 14880,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14940
-  }, {
     "volume" : 38012,
     "marketCap" : 149800000000,
     "lowPrice" : 14930,
@@ -1937,6 +1929,14 @@
     "openPrice" : 20200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 20200
+  }, {
+    "volume" : 23380,
+    "marketCap" : 204000000000,
+    "lowPrice" : 20200,
+    "highPrice" : 20400,
+    "openPrice" : 20250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 20400
   } ],
   "stockCode" : "003547"
 }

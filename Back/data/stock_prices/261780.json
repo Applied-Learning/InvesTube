@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "차백신연구소",
   "prices" : [ {
-    "volume" : 167767,
-    "marketCap" : 81547233920,
-    "lowPrice" : 2985,
-    "highPrice" : 3175,
-    "openPrice" : 3175,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3040
-  }, {
     "volume" : 57308,
     "marketCap" : 81815481400,
     "lowPrice" : 2980,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2870,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2870
+  }, {
+    "volume" : 77044,
+    "marketCap" : 75222688800,
+    "lowPrice" : 2765,
+    "highPrice" : 2890,
+    "openPrice" : 2890,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2800
   } ],
   "stockCode" : "261780"
 }

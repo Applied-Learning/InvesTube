@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "성우테크론",
   "prices" : [ {
-    "volume" : 3739,
-    "marketCap" : 26343357885,
-    "lowPrice" : 2535,
-    "highPrice" : 2600,
-    "openPrice" : 2535,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2595
-  }, {
     "volume" : 5330,
     "marketCap" : 26292599970,
     "lowPrice" : 2570,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3140,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3095
+  }, {
+    "volume" : 18910,
+    "marketCap" : 32232041975,
+    "lowPrice" : 3070,
+    "highPrice" : 3185,
+    "openPrice" : 3100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3115
   } ],
   "stockCode" : "045300"
 }

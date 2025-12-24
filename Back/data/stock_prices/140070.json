@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "서플러스글로벌",
   "prices" : [ {
-    "volume" : 29724,
-    "marketCap" : 96723620000,
-    "lowPrice" : 2565,
-    "highPrice" : 2625,
-    "openPrice" : 2580,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2615
-  }, {
     "volume" : 17896,
     "marketCap" : 96538680000,
     "lowPrice" : 2610,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2080
+  }, {
+    "volume" : 19298,
+    "marketCap" : 76565160000,
+    "lowPrice" : 2065,
+    "highPrice" : 2120,
+    "openPrice" : 2120,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2070
   } ],
   "stockCode" : "140070"
 }

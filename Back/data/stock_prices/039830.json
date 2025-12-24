@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오로라",
   "prices" : [ {
-    "volume" : 1151,
-    "marketCap" : 65546000100,
-    "lowPrice" : 6050,
-    "highPrice" : 6100,
-    "openPrice" : 6100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6090
-  }, {
     "volume" : 6811,
     "marketCap" : 65438371200,
     "lowPrice" : 6040,
@@ -1937,6 +1929,14 @@
     "openPrice" : 16250,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15920
+  }, {
+    "volume" : 50714,
+    "marketCap" : 168223970700,
+    "lowPrice" : 15540,
+    "highPrice" : 16050,
+    "openPrice" : 16050,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15630
   } ],
   "stockCode" : "039830"
 }

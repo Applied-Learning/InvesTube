@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에프에스티",
   "prices" : [ {
-    "volume" : 96578,
-    "marketCap" : 355288364370,
-    "lowPrice" : 15560,
-    "highPrice" : 16390,
-    "openPrice" : 15620,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16330
-  }, {
     "volume" : 50176,
     "marketCap" : 352459981800,
     "lowPrice" : 16000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 30800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 34100
+  }, {
+    "volume" : 317437,
+    "marketCap" : 741026745000,
+    "lowPrice" : 32900,
+    "highPrice" : 34250,
+    "openPrice" : 33700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 33750
   } ],
   "stockCode" : "036810"
 }

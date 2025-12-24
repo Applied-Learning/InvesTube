@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "솔트룩스",
   "prices" : [ {
-    "volume" : 200504,
-    "marketCap" : 300838086400,
-    "lowPrice" : 24050,
-    "highPrice" : 25400,
-    "openPrice" : 24900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 24800
-  }, {
     "volume" : 269328,
     "marketCap" : 279609592400,
     "lowPrice" : 23000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 28150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 28500
+  }, {
+    "volume" : 109298,
+    "marketCap" : 352627940000,
+    "lowPrice" : 27850,
+    "highPrice" : 28800,
+    "openPrice" : 28500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 28000
   } ],
   "stockCode" : "304100"
 }

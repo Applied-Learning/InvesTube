@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "부광약품",
   "prices" : [ {
-    "volume" : 124542,
-    "marketCap" : 320367860280,
-    "lowPrice" : 4560,
-    "highPrice" : 4725,
-    "openPrice" : 4600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4680
-  }, {
     "volume" : 85960,
     "marketCap" : 314549213245,
     "lowPrice" : 4595,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3950,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3915
+  }, {
+    "volume" : 292143,
+    "marketCap" : 377885689930,
+    "lowPrice" : 3830,
+    "highPrice" : 3945,
+    "openPrice" : 3920,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3830
   } ],
   "stockCode" : "003000"
 }

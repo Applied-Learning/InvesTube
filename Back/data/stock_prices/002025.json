@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코오롱우",
   "prices" : [ {
-    "volume" : 43993,
-    "marketCap" : 14488209400,
-    "lowPrice" : 13130,
-    "highPrice" : 13990,
-    "openPrice" : 13330,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13460
-  }, {
     "volume" : 22658,
     "marketCap" : 14219111900,
     "lowPrice" : 13100,
@@ -1936,6 +1928,14 @@
     "highPrice" : 27100,
     "openPrice" : 26400,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 26850
+  }, {
+    "volume" : 3072,
+    "marketCap" : 28901071500,
+    "lowPrice" : 26300,
+    "highPrice" : 27050,
+    "openPrice" : 26850,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 26850
   } ],
   "stockCode" : "002025"

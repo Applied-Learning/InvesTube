@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "키움히어로제1호스팩",
   "prices" : [ {
     "volume" : 52706598,
@@ -57,6 +57,14 @@
     "openPrice" : 1985,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1992
+  }, {
+    "volume" : 145513,
+    "marketCap" : 10169620000,
+    "lowPrice" : 1991,
+    "highPrice" : 2005,
+    "openPrice" : 1992,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1996
   } ],
   "stockCode" : "466690"
 }

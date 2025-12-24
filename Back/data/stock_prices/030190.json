@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "NICE평가정보",
   "prices" : [ {
-    "volume" : 54707,
-    "marketCap" : 743832412500,
-    "lowPrice" : 12290,
-    "highPrice" : 12590,
-    "openPrice" : 12390,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12500
-  }, {
     "volume" : 141006,
     "marketCap" : 767635049700,
     "lowPrice" : 12390,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 17350
+  }, {
+    "volume" : 89605,
+    "marketCap" : 1019758532370,
+    "lowPrice" : 16600,
+    "highPrice" : 17520,
+    "openPrice" : 17350,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 17310
   } ],
   "stockCode" : "030190"
 }

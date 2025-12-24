@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "후성",
   "prices" : [ {
-    "volume" : 165173,
-    "marketCap" : 548074736300,
-    "lowPrice" : 4965,
-    "highPrice" : 5140,
-    "openPrice" : 5030,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5110
-  }, {
     "volume" : 204844,
     "marketCap" : 536276650000,
     "lowPrice" : 5000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7580,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7810
+  }, {
+    "volume" : 470325,
+    "marketCap" : 839809233900,
+    "lowPrice" : 7620,
+    "highPrice" : 7940,
+    "openPrice" : 7810,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7830
   } ],
   "stockCode" : "093370"
 }

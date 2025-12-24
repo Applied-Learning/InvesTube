@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "파이오링크",
   "prices" : [ {
-    "volume" : 5483,
-    "marketCap" : 60541393900,
-    "lowPrice" : 8620,
-    "highPrice" : 8830,
-    "openPrice" : 8620,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8830
-  }, {
     "volume" : 2636,
     "marketCap" : 61089900300,
     "lowPrice" : 8730,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9030,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9090
+  }, {
+    "volume" : 15206,
+    "marketCap" : 60201245440,
+    "lowPrice" : 8960,
+    "highPrice" : 9130,
+    "openPrice" : 9080,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8960
   } ],
   "stockCode" : "170790"
 }

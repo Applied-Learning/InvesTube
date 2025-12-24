@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "탑엔지니어링",
   "prices" : [ {
-    "volume" : 52999,
-    "marketCap" : 91794503880,
-    "lowPrice" : 5100,
-    "highPrice" : 5440,
-    "openPrice" : 5290,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5340
-  }, {
     "volume" : 14523,
     "marketCap" : 91622604060,
     "lowPrice" : 5210,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3330,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3365
+  }, {
+    "volume" : 10777,
+    "marketCap" : 53613400000,
+    "lowPrice" : 3310,
+    "highPrice" : 3380,
+    "openPrice" : 3365,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3350
   } ],
   "stockCode" : "065130"
 }

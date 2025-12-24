@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이디피",
   "prices" : [ {
-    "volume" : 19636,
-    "marketCap" : 50307421540,
-    "lowPrice" : 3675,
-    "highPrice" : 3805,
-    "openPrice" : 3675,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3790
-  }, {
     "volume" : 12351,
     "marketCap" : 49776472500,
     "lowPrice" : 3695,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5280,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5310
+  }, {
+    "volume" : 2435,
+    "marketCap" : 70085273280,
+    "lowPrice" : 5250,
+    "highPrice" : 5400,
+    "openPrice" : 5250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5280
   } ],
   "stockCode" : "332370"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "필옵틱스",
   "prices" : [ {
-    "volume" : 608978,
-    "marketCap" : 445670441800,
-    "lowPrice" : 19090,
-    "highPrice" : 19890,
-    "openPrice" : 19420,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 19510
-  }, {
     "volume" : 850225,
     "marketCap" : 427167466000,
     "lowPrice" : 18640,
@@ -1937,6 +1929,14 @@
     "openPrice" : 44250,
     "tradeDate" : "2025-12-22",
     "closePrice" : 46150
+  }, {
+    "volume" : 394349,
+    "marketCap" : 1033231280050,
+    "lowPrice" : 43900,
+    "highPrice" : 45850,
+    "openPrice" : 45800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 44150
   } ],
   "stockCode" : "161580"
 }

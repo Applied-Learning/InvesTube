@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "솔루스첨단소재",
   "prices" : [ {
-    "volume" : 56779,
-    "marketCap" : 619316974080,
-    "lowPrice" : 8570,
-    "highPrice" : 8850,
-    "openPrice" : 8680,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8820
-  }, {
     "volume" : 68927,
     "marketCap" : 606677852160,
     "lowPrice" : 8530,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7570,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7630
+  }, {
+    "volume" : 164645,
+    "marketCap" : 531545294080,
+    "lowPrice" : 7470,
+    "highPrice" : 7790,
+    "openPrice" : 7790,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7570
   } ],
   "stockCode" : "336370"
 }

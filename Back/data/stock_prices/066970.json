@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엘앤에프",
   "prices" : [ {
-    "volume" : 154578,
-    "marketCap" : 3277559321400,
-    "lowPrice" : 89100,
-    "highPrice" : 92800,
-    "openPrice" : 91500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 90300
-  }, {
     "volume" : 170733,
     "marketCap" : 3212299899000,
     "lowPrice" : 88500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 108100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 107100
+  }, {
+    "volume" : 254402,
+    "marketCap" : 4286313085600,
+    "lowPrice" : 104800,
+    "highPrice" : 107400,
+    "openPrice" : 107100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 106600
   } ],
   "stockCode" : "066970"
 }

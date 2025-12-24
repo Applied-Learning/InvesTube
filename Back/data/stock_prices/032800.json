@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "판타지오",
   "prices" : [ {
-    "volume" : 66475,
-    "marketCap" : 27068707162,
-    "lowPrice" : 580,
-    "highPrice" : 598,
-    "openPrice" : 580,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 589
-  }, {
     "volume" : 63566,
     "marketCap" : 26930835988,
     "lowPrice" : 585,
@@ -1937,6 +1929,14 @@
     "openPrice" : 500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 496
+  }, {
+    "volume" : 65672,
+    "marketCap" : 22702786652,
+    "lowPrice" : 490,
+    "highPrice" : 498,
+    "openPrice" : 496,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 494
   } ],
   "stockCode" : "032800"
 }

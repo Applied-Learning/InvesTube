@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아우토크립트",
   "prices" : [ {
     "volume" : 20875363,
@@ -873,6 +873,14 @@
     "openPrice" : 17360,
     "tradeDate" : "2025-12-22",
     "closePrice" : 18040
+  }, {
+    "volume" : 302061,
+    "marketCap" : 163562203530,
+    "lowPrice" : 16800,
+    "highPrice" : 18000,
+    "openPrice" : 18000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16830
   } ],
   "stockCode" : "331740"
 }

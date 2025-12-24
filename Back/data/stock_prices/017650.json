@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대림제지",
   "prices" : [ {
-    "volume" : 35104,
-    "marketCap" : 60120000000,
-    "lowPrice" : 6530,
-    "highPrice" : 6750,
-    "openPrice" : 6690,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6680
-  }, {
     "volume" : 278,
     "marketCap" : 60300000000,
     "lowPrice" : 6660,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8140,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8100
+  }, {
+    "volume" : 29635,
+    "marketCap" : 73800000000,
+    "lowPrice" : 8010,
+    "highPrice" : 8210,
+    "openPrice" : 8100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8200
   } ],
   "stockCode" : "017650"
 }

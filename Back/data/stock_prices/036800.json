@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "나이스정보통신",
   "prices" : [ {
-    "volume" : 4007,
-    "marketCap" : 183200000000,
-    "lowPrice" : 18050,
-    "highPrice" : 18450,
-    "openPrice" : 18290,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 18320
-  }, {
     "volume" : 1483,
     "marketCap" : 183100000000,
     "lowPrice" : 18050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 25000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 24850
+  }, {
+    "volume" : 14192,
+    "marketCap" : 256000000000,
+    "lowPrice" : 24800,
+    "highPrice" : 25700,
+    "openPrice" : 24850,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 25600
   } ],
   "stockCode" : "036800"
 }

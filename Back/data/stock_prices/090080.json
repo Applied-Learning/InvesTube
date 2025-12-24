@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "평화산업",
   "prices" : [ {
-    "volume" : 32535,
-    "marketCap" : 49961055690,
-    "lowPrice" : 892,
-    "highPrice" : 916,
-    "openPrice" : 916,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 910
-  }, {
     "volume" : 41028,
     "marketCap" : 49686544395,
     "lowPrice" : 900,
@@ -1937,6 +1929,14 @@
     "openPrice" : 938,
     "tradeDate" : "2025-12-22",
     "closePrice" : 953
+  }, {
+    "volume" : 78138,
+    "marketCap" : 51827732496,
+    "lowPrice" : 944,
+    "highPrice" : 953,
+    "openPrice" : 953,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 944
   } ],
   "stockCode" : "090080"
 }

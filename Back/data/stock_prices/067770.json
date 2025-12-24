@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "세진티에스",
   "prices" : [ {
-    "volume" : 6793,
-    "marketCap" : 18850351285,
-    "lowPrice" : 2235,
-    "highPrice" : 2295,
-    "openPrice" : 2235,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2245
-  }, {
     "volume" : 13627,
     "marketCap" : 19983891340,
     "lowPrice" : 2245,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2260,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2260
+  }, {
+    "volume" : 21719,
+    "marketCap" : 19270180935,
+    "lowPrice" : 2235,
+    "highPrice" : 2345,
+    "openPrice" : 2260,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2295
   } ],
   "stockCode" : "067770"
 }

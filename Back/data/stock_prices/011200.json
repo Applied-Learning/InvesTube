@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HMM",
   "prices" : [ {
-    "volume" : 1084305,
-    "marketCap" : 15832279743120,
-    "lowPrice" : 17770,
-    "highPrice" : 18410,
-    "openPrice" : 18400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17970
-  }, {
     "volume" : 771341,
     "marketCap" : 16008487642320,
     "lowPrice" : 18010,
@@ -1937,6 +1929,14 @@
     "openPrice" : 20700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 20550
+  }, {
+    "volume" : 673012,
+    "marketCap" : 19336378385000,
+    "lowPrice" : 20450,
+    "highPrice" : 20750,
+    "openPrice" : 20600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 20500
   } ],
   "stockCode" : "011200"
 }

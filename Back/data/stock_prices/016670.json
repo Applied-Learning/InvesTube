@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디모아",
   "prices" : [ {
-    "volume" : 10785,
-    "marketCap" : 17271751770,
-    "lowPrice" : 3395,
-    "highPrice" : 3540,
-    "openPrice" : 3440,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3495
-  }, {
     "volume" : 7845,
     "marketCap" : 16925822550,
     "lowPrice" : 3425,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4475,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4470
+  }, {
+    "volume" : 8115,
+    "marketCap" : 33870283640,
+    "lowPrice" : 4425,
+    "highPrice" : 4475,
+    "openPrice" : 4470,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4460
   } ],
   "stockCode" : "016670"
 }

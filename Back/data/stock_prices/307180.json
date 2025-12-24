@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이엘",
   "prices" : [ {
-    "volume" : 62800,
-    "marketCap" : 71122637640,
-    "lowPrice" : 2570,
-    "highPrice" : 2695,
-    "openPrice" : 2600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2630
-  }, {
     "volume" : 21623,
     "marketCap" : 70987423500,
     "lowPrice" : 2560,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3335,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3135
+  }, {
+    "volume" : 1993396,
+    "marketCap" : 98128039200,
+    "lowPrice" : 3060,
+    "highPrice" : 3460,
+    "openPrice" : 3150,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3400
   } ],
   "stockCode" : "307180"
 }

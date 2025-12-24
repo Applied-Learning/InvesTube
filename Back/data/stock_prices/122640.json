@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "예스티",
   "prices" : [ {
-    "volume" : 85436,
-    "marketCap" : 197789520600,
-    "lowPrice" : 9380,
-    "highPrice" : 9750,
-    "openPrice" : 9450,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9450
-  }, {
     "volume" : 119458,
     "marketCap" : 200929036800,
     "lowPrice" : 9430,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 17340
+  }, {
+    "volume" : 92360,
+    "marketCap" : 360171480270,
+    "lowPrice" : 16650,
+    "highPrice" : 17180,
+    "openPrice" : 17180,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16870
   } ],
   "stockCode" : "122640"
 }

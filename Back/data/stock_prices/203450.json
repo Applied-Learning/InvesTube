@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유니온바이오메트릭스",
   "prices" : [ {
-    "volume" : 13932,
-    "marketCap" : 39350824565,
-    "lowPrice" : 2690,
-    "highPrice" : 2795,
-    "openPrice" : 2715,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2795
-  }, {
     "volume" : 9356,
     "marketCap" : 39280429530,
     "lowPrice" : 2750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3090,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3110
+  }, {
+    "volume" : 182211,
+    "marketCap" : 44630452190,
+    "lowPrice" : 3110,
+    "highPrice" : 3250,
+    "openPrice" : 3140,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3170
   } ],
   "stockCode" : "203450"
 }

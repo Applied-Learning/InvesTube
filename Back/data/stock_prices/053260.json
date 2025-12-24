@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "금강철강",
   "prices" : [ {
-    "volume" : 7017,
-    "marketCap" : 74973600000,
-    "lowPrice" : 3950,
-    "highPrice" : 4025,
-    "openPrice" : 3950,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4005
-  }, {
     "volume" : 9044,
     "marketCap" : 74505600000,
     "lowPrice" : 3970,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4135,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4145
+  }, {
+    "volume" : 10300,
+    "marketCap" : 76096800000,
+    "lowPrice" : 4060,
+    "highPrice" : 4155,
+    "openPrice" : 4115,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4065
   } ],
   "stockCode" : "053260"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "와이투솔루션",
   "prices" : [ {
-    "volume" : 42609,
-    "marketCap" : 75343251640,
-    "lowPrice" : 2005,
-    "highPrice" : 2080,
-    "openPrice" : 2055,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2060
-  }, {
     "volume" : 41948,
     "marketCap" : 74794635730,
     "lowPrice" : 1999,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4010,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4085
+  }, {
+    "volume" : 461093,
+    "marketCap" : 146846191910,
+    "lowPrice" : 3960,
+    "highPrice" : 4090,
+    "openPrice" : 4090,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4015
   } ],
   "stockCode" : "011690"
 }

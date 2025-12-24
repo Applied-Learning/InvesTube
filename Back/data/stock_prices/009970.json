@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "영원무역홀딩스",
   "prices" : [ {
-    "volume" : 12402,
-    "marketCap" : 1160388879200,
-    "lowPrice" : 82900,
-    "highPrice" : 85400,
-    "openPrice" : 85400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 85100
-  }, {
     "volume" : 12119,
     "marketCap" : 1139935491200,
     "lowPrice" : 83400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 213000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 215000
+  }, {
+    "volume" : 26290,
+    "marketCap" : 2713346637000,
+    "lowPrice" : 195200,
+    "highPrice" : 215500,
+    "openPrice" : 214000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 201000
   } ],
   "stockCode" : "009970"
 }

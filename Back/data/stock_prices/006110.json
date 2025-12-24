@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼아알미늄",
   "prices" : [ {
-    "volume" : 38535,
-    "marketCap" : 520801826400,
-    "lowPrice" : 33350,
-    "highPrice" : 35600,
-    "openPrice" : 34550,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 35400
-  }, {
     "volume" : 25929,
     "marketCap" : 514917060000,
     "lowPrice" : 35000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 24950,
     "tradeDate" : "2025-12-22",
     "closePrice" : 25350
+  }, {
+    "volume" : 37218,
+    "marketCap" : 361177537800,
+    "lowPrice" : 24450,
+    "highPrice" : 25650,
+    "openPrice" : 25350,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 24550
   } ],
   "stockCode" : "006110"
 }

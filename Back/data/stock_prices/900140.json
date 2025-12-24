@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엘브이엠씨홀딩스",
   "prices" : [ {
-    "volume" : 347784,
-    "marketCap" : 289984414590,
-    "lowPrice" : 1684,
-    "highPrice" : 1763,
-    "openPrice" : 1712,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1690
-  }, {
     "volume" : 196510,
     "marketCap" : 293416182810,
     "lowPrice" : 1694,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1546,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1527
+  }, {
+    "volume" : 489720,
+    "marketCap" : 291599811888,
+    "lowPrice" : 1500,
+    "highPrice" : 1529,
+    "openPrice" : 1527,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1509
   } ],
   "stockCode" : "900140"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "금양그린파워",
   "prices" : [ {
-    "volume" : 52910,
-    "marketCap" : 115498835000,
-    "lowPrice" : 9520,
-    "highPrice" : 9900,
-    "openPrice" : 9550,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9530
-  }, {
     "volume" : 64546,
     "marketCap" : 113559715000,
     "lowPrice" : 9290,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12070,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11900
+  }, {
+    "volume" : 55026,
+    "marketCap" : 141192175000,
+    "lowPrice" : 11580,
+    "highPrice" : 12300,
+    "openPrice" : 12070,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11650
   } ],
   "stockCode" : "282720"
 }

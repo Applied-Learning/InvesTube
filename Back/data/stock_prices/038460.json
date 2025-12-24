@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "바이오스마트",
   "prices" : [ {
-    "volume" : 55801,
-    "marketCap" : 82417979700,
-    "lowPrice" : 3080,
-    "highPrice" : 3190,
-    "openPrice" : 3085,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3150
-  }, {
     "volume" : 39699,
     "marketCap" : 81633046560,
     "lowPrice" : 3105,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3715,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3600
+  }, {
+    "volume" : 5598699,
+    "marketCap" : 94976909940,
+    "lowPrice" : 3530,
+    "highPrice" : 3925,
+    "openPrice" : 3570,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3630
   } ],
   "stockCode" : "038460"
 }

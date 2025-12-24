@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "DL",
   "prices" : [ {
-    "volume" : 31168,
-    "marketCap" : 708308879200,
-    "lowPrice" : 32800,
-    "highPrice" : 33800,
-    "openPrice" : 33100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 33800
-  }, {
     "volume" : 34650,
     "marketCap" : 708308879200,
     "lowPrice" : 33650,
@@ -1937,6 +1929,14 @@
     "openPrice" : 39500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 39150
+  }, {
+    "volume" : 33454,
+    "marketCap" : 815183887600,
+    "lowPrice" : 38650,
+    "highPrice" : 39300,
+    "openPrice" : 39150,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 38900
   } ],
   "stockCode" : "000210"
 }

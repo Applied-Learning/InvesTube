@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대웅",
   "prices" : [ {
-    "volume" : 24536,
-    "marketCap" : 1229702877000,
-    "lowPrice" : 20450,
-    "highPrice" : 21200,
-    "openPrice" : 20600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 21150
-  }, {
     "volume" : 17724,
     "marketCap" : 1218074481000,
     "lowPrice" : 20800,
@@ -1936,6 +1928,14 @@
     "highPrice" : 24150,
     "openPrice" : 24000,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 23750
+  }, {
+    "volume" : 81598,
+    "marketCap" : 1380872025000,
+    "lowPrice" : 23650,
+    "highPrice" : 24200,
+    "openPrice" : 24000,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 23750
   } ],
   "stockCode" : "003090"

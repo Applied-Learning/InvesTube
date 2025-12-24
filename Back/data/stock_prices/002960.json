@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국쉘석유",
   "prices" : [ {
-    "volume" : 5735,
-    "marketCap" : 443300000000,
-    "lowPrice" : 333000,
-    "highPrice" : 341500,
-    "openPrice" : 334000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 341000
-  }, {
     "volume" : 8687,
     "marketCap" : 453700000000,
     "lowPrice" : 341000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 470000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 465500
+  }, {
+    "volume" : 3068,
+    "marketCap" : 607750000000,
+    "lowPrice" : 463000,
+    "highPrice" : 470000,
+    "openPrice" : 465500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 467500
   } ],
   "stockCode" : "002960"
 }

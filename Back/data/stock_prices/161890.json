@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국콜마",
   "prices" : [ {
-    "volume" : 93477,
-    "marketCap" : 1284116188800,
-    "lowPrice" : 53400,
-    "highPrice" : 54600,
-    "openPrice" : 54100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 54400
-  }, {
     "volume" : 244470,
     "marketCap" : 1286476696500,
     "lowPrice" : 53900,
@@ -1937,6 +1929,14 @@
     "openPrice" : 63200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 63000
+  }, {
+    "volume" : 112848,
+    "marketCap" : 1465875281700,
+    "lowPrice" : 62100,
+    "highPrice" : 63400,
+    "openPrice" : 63200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 62100
   } ],
   "stockCode" : "161890"
 }

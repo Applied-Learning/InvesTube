@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한화",
   "prices" : [ {
-    "volume" : 273249,
-    "marketCap" : 2113836327000,
-    "lowPrice" : 27250,
-    "highPrice" : 28300,
-    "openPrice" : 27300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 28200
-  }, {
     "volume" : 96980,
     "marketCap" : 2106340453500,
     "lowPrice" : 27950,
@@ -1937,6 +1929,14 @@
     "openPrice" : 81900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 82000
+  }, {
+    "volume" : 222260,
+    "marketCap" : 6319021360500,
+    "lowPrice" : 83300,
+    "highPrice" : 85500,
+    "openPrice" : 84300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 84300
   } ],
   "stockCode" : "000880"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이전트AI",
   "prices" : [ {
-    "volume" : 32710,
-    "marketCap" : 25662360664,
-    "lowPrice" : 1000,
-    "highPrice" : 1054,
-    "openPrice" : 1005,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1016
-  }, {
     "volume" : 11842,
     "marketCap" : 25586585977,
     "lowPrice" : 1006,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 1201
+  }, {
+    "volume" : 0,
+    "marketCap" : 47932791534,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 1201
   } ],
   "stockCode" : "060900"

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엔브이에이치코리아",
   "prices" : [ {
-    "volume" : 295271,
-    "marketCap" : 106268400000,
-    "lowPrice" : 2445,
-    "highPrice" : 2555,
-    "openPrice" : 2450,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2520
-  }, {
     "volume" : 523606,
     "marketCap" : 106479250000,
     "lowPrice" : 2505,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2410,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2405
+  }, {
+    "volume" : 102476,
+    "marketCap" : 99732050000,
+    "lowPrice" : 2355,
+    "highPrice" : 2410,
+    "openPrice" : 2405,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2365
   } ],
   "stockCode" : "067570"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "지슨",
   "prices" : [ {
-    "volume" : 0,
-    "marketCap" : 12524400000,
-    "lowPrice" : 0,
-    "highPrice" : 0,
-    "openPrice" : 0,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2130
-  }, {
     "volume" : 0,
     "marketCap" : 12524400000,
     "lowPrice" : 0,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1925,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1913
+  }, {
+    "volume" : 127538,
+    "marketCap" : 102738457542,
+    "lowPrice" : 1858,
+    "highPrice" : 1900,
+    "openPrice" : 1900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1874
   } ],
   "stockCode" : "446840"
 }

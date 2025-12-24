@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하나머티리얼즈",
   "prices" : [ {
-    "volume" : 58208,
-    "marketCap" : 471697524900,
-    "lowPrice" : 23050,
-    "highPrice" : 23950,
-    "openPrice" : 23350,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 23850
-  }, {
     "volume" : 51433,
     "marketCap" : 477630827100,
     "lowPrice" : 23650,
@@ -1937,6 +1929,14 @@
     "openPrice" : 42100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 43500
+  }, {
+    "volume" : 99338,
+    "marketCap" : 855384400500,
+    "lowPrice" : 43050,
+    "highPrice" : 44100,
+    "openPrice" : 43700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 43250
   } ],
   "stockCode" : "166090"
 }

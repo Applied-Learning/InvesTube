@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "샌즈랩",
   "prices" : [ {
-    "volume" : 57184,
-    "marketCap" : 99268633380,
-    "lowPrice" : 6290,
-    "highPrice" : 6510,
-    "openPrice" : 6290,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6510
-  }, {
     "volume" : 71062,
     "marketCap" : 98048742340,
     "lowPrice" : 6310,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6960,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7010
+  }, {
+    "volume" : 147882,
+    "marketCap" : 106720789620,
+    "lowPrice" : 6890,
+    "highPrice" : 7300,
+    "openPrice" : 7020,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6990
   } ],
   "stockCode" : "411080"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "씨에스윈드",
   "prices" : [ {
-    "volume" : 342783,
-    "marketCap" : 1775416066300,
-    "lowPrice" : 41050,
-    "highPrice" : 43400,
-    "openPrice" : 42750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 42100
-  }, {
     "volume" : 334808,
     "marketCap" : 1811261758850,
     "lowPrice" : 42200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 46000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 45800
+  }, {
+    "volume" : 387958,
+    "marketCap" : 1823913179750,
+    "lowPrice" : 42700,
+    "highPrice" : 44700,
+    "openPrice" : 44700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 43250
   } ],
   "stockCode" : "112610"
 }

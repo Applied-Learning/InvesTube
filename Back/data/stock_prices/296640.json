@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이노룰스",
   "prices" : [ {
-    "volume" : 47306,
-    "marketCap" : 33865768080,
-    "lowPrice" : 6140,
-    "highPrice" : 6700,
-    "openPrice" : 6290,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6540
-  }, {
     "volume" : 21312,
     "marketCap" : 33503290440,
     "lowPrice" : 6320,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5630,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5700
+  }, {
+    "volume" : 5554,
+    "marketCap" : 29671383960,
+    "lowPrice" : 5620,
+    "highPrice" : 5750,
+    "openPrice" : 5700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5730
   } ],
   "stockCode" : "296640"
 }

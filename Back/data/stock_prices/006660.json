@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼성공조",
   "prices" : [ {
-    "volume" : 50273,
-    "marketCap" : 73868194260,
-    "lowPrice" : 8710,
-    "highPrice" : 9150,
-    "openPrice" : 8710,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9090
-  }, {
     "volume" : 40248,
     "marketCap" : 72649247160,
     "lowPrice" : 8940,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14310,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14620
+  }, {
+    "volume" : 47531,
+    "marketCap" : 116856395320,
+    "lowPrice" : 14140,
+    "highPrice" : 14650,
+    "openPrice" : 14650,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14380
   } ],
   "stockCode" : "006660"
 }

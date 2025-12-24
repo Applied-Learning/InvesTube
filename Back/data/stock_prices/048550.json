@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SM C&C",
   "prices" : [ {
-    "volume" : 82794,
-    "marketCap" : 143814639940,
-    "lowPrice" : 1482,
-    "highPrice" : 1509,
-    "openPrice" : 1491,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1487
-  }, {
     "volume" : 179609,
     "marketCap" : 141686918300,
     "lowPrice" : 1440,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1312,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1299
+  }, {
+    "volume" : 568926,
+    "marketCap" : 126406008340,
+    "lowPrice" : 1275,
+    "highPrice" : 1340,
+    "openPrice" : 1298,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1307
   } ],
   "stockCode" : "048550"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HPSP",
   "prices" : [ {
-    "volume" : 617014,
-    "marketCap" : 2246804352000,
-    "lowPrice" : 25850,
-    "highPrice" : 27400,
-    "openPrice" : 26050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 27000
-  }, {
     "volume" : 445864,
     "marketCap" : 2255125849600,
     "lowPrice" : 26700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 29500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 29950
+  }, {
+    "volume" : 435663,
+    "marketCap" : 2541761267200,
+    "lowPrice" : 29950,
+    "highPrice" : 30600,
+    "openPrice" : 30450,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 30400
   } ],
   "stockCode" : "403870"
 }

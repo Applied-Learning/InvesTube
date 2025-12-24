@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "버넥트",
   "prices" : [ {
-    "volume" : 19797,
-    "marketCap" : 31818660950,
-    "lowPrice" : 2760,
-    "highPrice" : 2935,
-    "openPrice" : 2840,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2855
-  }, {
     "volume" : 9696,
     "marketCap" : 31540038700,
     "lowPrice" : 2805,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3190,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3275
+  }, {
+    "volume" : 31761,
+    "marketCap" : 35385025750,
+    "lowPrice" : 3155,
+    "highPrice" : 3300,
+    "openPrice" : 3275,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3175
   } ],
   "stockCode" : "438700"
 }

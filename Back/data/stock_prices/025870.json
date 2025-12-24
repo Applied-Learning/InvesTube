@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신라에스지",
   "prices" : [ {
-    "volume" : 21756,
-    "marketCap" : 26120000000,
-    "lowPrice" : 6330,
-    "highPrice" : 6530,
-    "openPrice" : 6440,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6530
-  }, {
     "volume" : 38884,
     "marketCap" : 25320000000,
     "lowPrice" : 6300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5590,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5560
+  }, {
+    "volume" : 2681,
+    "marketCap" : 22040000000,
+    "lowPrice" : 5510,
+    "highPrice" : 5640,
+    "openPrice" : 5560,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5510
   } ],
   "stockCode" : "025870"
 }

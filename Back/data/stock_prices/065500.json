@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오리엔트정공",
   "prices" : [ {
-    "volume" : 17312973,
-    "marketCap" : 175538303360,
-    "lowPrice" : 5270,
-    "highPrice" : 5980,
-    "openPrice" : 5850,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5530
-  }, {
     "volume" : 16806559,
     "marketCap" : 179982311040,
     "lowPrice" : 5200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2440,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2455
+  }, {
+    "volume" : 383666,
+    "marketCap" : 74595843200,
+    "lowPrice" : 2335,
+    "highPrice" : 2465,
+    "openPrice" : 2445,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2350
   } ],
   "stockCode" : "065500"
 }

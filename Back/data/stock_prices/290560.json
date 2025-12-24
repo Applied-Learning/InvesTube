@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신시웨이",
   "prices" : [ {
-    "volume" : 11220,
-    "marketCap" : 23267832000,
-    "lowPrice" : 5790,
-    "highPrice" : 6180,
-    "openPrice" : 5790,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6000
-  }, {
     "volume" : 16871,
     "marketCap" : 23461730600,
     "lowPrice" : 6050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7280,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7230
+  }, {
+    "volume" : 8923,
+    "marketCap" : 26499837420,
+    "lowPrice" : 7110,
+    "highPrice" : 7270,
+    "openPrice" : 7250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7110
   } ],
   "stockCode" : "290560"
 }

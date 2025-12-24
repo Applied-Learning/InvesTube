@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "CJ4우(전환)",
   "prices" : [ {
-    "volume" : 4023,
-    "marketCap" : 349532542400,
-    "lowPrice" : 81000,
-    "highPrice" : 82700,
-    "openPrice" : 82300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 82700
-  }, {
     "volume" : 4153,
     "marketCap" : 338120960000,
     "lowPrice" : 80000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 155500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 153300
+  }, {
+    "volume" : 11780,
+    "marketCap" : 643697777600,
+    "lowPrice" : 150300,
+    "highPrice" : 153100,
+    "openPrice" : 153100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 152300
   } ],
   "stockCode" : "00104K"
 }

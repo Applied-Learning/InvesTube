@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "덴티스",
   "prices" : [ {
-    "volume" : 11978,
-    "marketCap" : 96755364000,
-    "lowPrice" : 5950,
-    "highPrice" : 6120,
-    "openPrice" : 5950,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6120
-  }, {
     "volume" : 9801,
     "marketCap" : 95332491000,
     "lowPrice" : 5960,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4565,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4560
+  }, {
+    "volume" : 16947,
+    "marketCap" : 70827456000,
+    "lowPrice" : 4480,
+    "highPrice" : 4585,
+    "openPrice" : 4560,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4480
   } ],
   "stockCode" : "261200"
 }

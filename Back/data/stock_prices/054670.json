@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대한뉴팜",
   "prices" : [ {
-    "volume" : 22565,
-    "marketCap" : 101058636800,
-    "lowPrice" : 6800,
-    "highPrice" : 7080,
-    "openPrice" : 6800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7040
-  }, {
     "volume" : 16210,
     "marketCap" : 101202186000,
     "lowPrice" : 6980,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6890,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6860
+  }, {
+    "volume" : 41916,
+    "marketCap" : 97182808400,
+    "lowPrice" : 6750,
+    "highPrice" : 6910,
+    "openPrice" : 6870,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6770
   } ],
   "stockCode" : "054670"
 }

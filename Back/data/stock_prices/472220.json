@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신영스팩10호",
   "prices" : [ {
-    "volume" : 2815,
-    "marketCap" : 9637950000,
-    "lowPrice" : 2045,
-    "highPrice" : 2075,
-    "openPrice" : 2075,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2055
-  }, {
     "volume" : 27810,
     "marketCap" : 9731750000,
     "lowPrice" : 2045,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2150
+  }, {
+    "volume" : 310,
+    "marketCap" : 10130400000,
+    "lowPrice" : 2150,
+    "highPrice" : 2190,
+    "openPrice" : 2150,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2160
   } ],
   "stockCode" : "472220"
 }

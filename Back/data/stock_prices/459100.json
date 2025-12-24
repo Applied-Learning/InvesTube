@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "위츠",
   "prices" : [ {
-    "volume" : 2822115,
-    "marketCap" : 133640360000,
-    "lowPrice" : 9710,
-    "highPrice" : 11540,
-    "openPrice" : 10000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10630
-  }, {
     "volume" : 424664,
     "marketCap" : 126725760000,
     "lowPrice" : 10000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7210,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7240
+  }, {
+    "volume" : 35654,
+    "marketCap" : 95011980000,
+    "lowPrice" : 7050,
+    "highPrice" : 7240,
+    "openPrice" : 7240,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7140
   } ],
   "stockCode" : "459100"
 }

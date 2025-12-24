@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "금강공업우",
   "prices" : [ {
-    "volume" : 32,
-    "marketCap" : 3999352500,
-    "lowPrice" : 6700,
-    "highPrice" : 6780,
-    "openPrice" : 6700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6780
-  }, {
     "volume" : 1176,
     "marketCap" : 3999352500,
     "lowPrice" : 6710,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10820,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10800
+  }, {
+    "volume" : 14477,
+    "marketCap" : 6170092500,
+    "lowPrice" : 10340,
+    "highPrice" : 11000,
+    "openPrice" : 11000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10460
   } ],
   "stockCode" : "014285"
 }

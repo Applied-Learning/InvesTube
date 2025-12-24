@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼성증권",
   "prices" : [ {
-    "volume" : 376866,
-    "marketCap" : 4322120000000,
-    "lowPrice" : 47300,
-    "highPrice" : 48650,
-    "openPrice" : 47650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 48400
-  }, {
     "volume" : 352738,
     "marketCap" : 4322120000000,
     "lowPrice" : 48150,
@@ -1937,6 +1929,14 @@
     "openPrice" : 79900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 79600
+  }, {
+    "volume" : 334560,
+    "marketCap" : 7099350000000,
+    "lowPrice" : 79200,
+    "highPrice" : 80400,
+    "openPrice" : 80000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 79500
   } ],
   "stockCode" : "016360"
 }

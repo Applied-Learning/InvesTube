@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "웅진씽크빅",
   "prices" : [ {
-    "volume" : 115320,
-    "marketCap" : 183654516150,
-    "lowPrice" : 1577,
-    "highPrice" : 1599,
-    "openPrice" : 1597,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1590
-  }, {
     "volume" : 157257,
     "marketCap" : 183539010165,
     "lowPrice" : 1587,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1342,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1362
+  }, {
+    "volume" : 65937,
+    "marketCap" : 155586561795,
+    "lowPrice" : 1342,
+    "highPrice" : 1374,
+    "openPrice" : 1363,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1347
   } ],
   "stockCode" : "095720"
 }

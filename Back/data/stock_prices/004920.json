@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "씨아이테크",
   "prices" : [ {
-    "volume" : 18328,
-    "marketCap" : 59378030498,
-    "lowPrice" : 1169,
-    "highPrice" : 1194,
-    "openPrice" : 1180,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1186
-  }, {
     "volume" : 86049,
     "marketCap" : 56374082918,
     "lowPrice" : 1126,
@@ -1936,6 +1928,14 @@
     "highPrice" : 1114,
     "openPrice" : 1076,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 1067
+  }, {
+    "volume" : 40940,
+    "marketCap" : 55675923424,
+    "lowPrice" : 1061,
+    "highPrice" : 1080,
+    "openPrice" : 1073,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 1067
   } ],
   "stockCode" : "004920"

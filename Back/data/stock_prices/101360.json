@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에코앤드림",
   "prices" : [ {
-    "volume" : 208062,
-    "marketCap" : 404634093500,
-    "lowPrice" : 21950,
-    "highPrice" : 23000,
-    "openPrice" : 22600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 22750
-  }, {
     "volume" : 380238,
     "marketCap" : 411748539100,
     "lowPrice" : 22600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 19210,
     "tradeDate" : "2025-12-22",
     "closePrice" : 19100
+  }, {
+    "volume" : 58703,
+    "marketCap" : 335979693460,
+    "lowPrice" : 18880,
+    "highPrice" : 19240,
+    "openPrice" : 19210,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 18890
   } ],
   "stockCode" : "101360"
 }

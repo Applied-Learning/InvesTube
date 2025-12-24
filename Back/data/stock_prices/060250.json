@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "NHN KCP",
   "prices" : [ {
-    "volume" : 118997,
-    "marketCap" : 324497736880,
-    "lowPrice" : 8060,
-    "highPrice" : 8300,
-    "openPrice" : 8120,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8080
-  }, {
     "volume" : 165456,
     "marketCap" : 313654371910,
     "lowPrice" : 7810,
@@ -1937,6 +1929,14 @@
     "openPrice" : 15220,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15470
+  }, {
+    "volume" : 266027,
+    "marketCap" : 619678227730,
+    "lowPrice" : 15380,
+    "highPrice" : 15780,
+    "openPrice" : 15510,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15430
   } ],
   "stockCode" : "060250"
 }

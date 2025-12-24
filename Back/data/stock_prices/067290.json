@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "JW신약",
   "prices" : [ {
-    "volume" : 183964,
-    "marketCap" : 80787146678,
-    "lowPrice" : 1589,
-    "highPrice" : 1666,
-    "openPrice" : 1649,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1589
-  }, {
     "volume" : 110406,
     "marketCap" : 81092195690,
     "lowPrice" : 1584,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2120,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2070
+  }, {
+    "volume" : 882902,
+    "marketCap" : 107552893890,
+    "lowPrice" : 2015,
+    "highPrice" : 2060,
+    "openPrice" : 2060,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2015
   } ],
   "stockCode" : "067290"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이삭엔지니어링",
   "prices" : [ {
-    "volume" : 26235,
-    "marketCap" : 52797872400,
-    "lowPrice" : 6130,
-    "highPrice" : 6540,
-    "openPrice" : 6130,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6370
-  }, {
     "volume" : 9508,
     "marketCap" : 53709609600,
     "lowPrice" : 6370,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8540,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8990
+  }, {
+    "volume" : 67169,
+    "marketCap" : 71695698000,
+    "lowPrice" : 8600,
+    "highPrice" : 9070,
+    "openPrice" : 8980,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8650
   } ],
   "stockCode" : "351330"
 }

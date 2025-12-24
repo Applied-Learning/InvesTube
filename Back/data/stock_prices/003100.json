@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "선광",
   "prices" : [ {
-    "volume" : 3161,
-    "marketCap" : 97746000000,
-    "lowPrice" : 14700,
-    "highPrice" : 14830,
-    "openPrice" : 14830,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14810
-  }, {
     "volume" : 4154,
     "marketCap" : 98076000000,
     "lowPrice" : 14750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 19850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 19860
+  }, {
+    "volume" : 7948,
+    "marketCap" : 130152000000,
+    "lowPrice" : 19670,
+    "highPrice" : 19850,
+    "openPrice" : 19810,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 19720
   } ],
   "stockCode" : "003100"
 }

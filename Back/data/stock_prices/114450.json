@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "그린생명과학",
   "prices" : [ {
-    "volume" : 29767,
-    "marketCap" : 33620000000,
-    "lowPrice" : 1666,
-    "highPrice" : 1720,
-    "openPrice" : 1714,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1681
-  }, {
     "volume" : 22484,
     "marketCap" : 33780000000,
     "lowPrice" : 1619,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3140,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3130
+  }, {
+    "volume" : 337104,
+    "marketCap" : 60400000000,
+    "lowPrice" : 3015,
+    "highPrice" : 3130,
+    "openPrice" : 3130,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3020
   } ],
   "stockCode" : "114450"
 }

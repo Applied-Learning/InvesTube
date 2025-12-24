@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SKAI",
   "prices" : [ {
-    "volume" : 412892,
-    "marketCap" : 81753726280,
-    "lowPrice" : 2290,
-    "highPrice" : 2480,
-    "openPrice" : 2480,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2410
-  }, {
     "volume" : 942248,
     "marketCap" : 82432180440,
     "lowPrice" : 2275,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1849,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1880
+  }, {
+    "volume" : 456575,
+    "marketCap" : 67137748648,
+    "lowPrice" : 1802,
+    "highPrice" : 1916,
+    "openPrice" : 1880,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1861
   } ],
   "stockCode" : "357880"
 }

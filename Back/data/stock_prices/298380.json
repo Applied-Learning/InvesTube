@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이비엘바이오",
   "prices" : [ {
-    "volume" : 461368,
-    "marketCap" : 1310854725300,
-    "lowPrice" : 26550,
-    "highPrice" : 27650,
-    "openPrice" : 26900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 27150
-  }, {
     "volume" : 686117,
     "marketCap" : 1373621249900,
     "lowPrice" : 26950,
@@ -1937,6 +1929,14 @@
     "openPrice" : 193900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 185400
+  }, {
+    "volume" : 771170,
+    "marketCap" : 10308405855000,
+    "lowPrice" : 183200,
+    "highPrice" : 191600,
+    "openPrice" : 185100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 187000
   } ],
   "stockCode" : "298380"
 }

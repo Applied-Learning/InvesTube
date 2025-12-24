@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "두산우",
   "prices" : [ {
-    "volume" : 7500,
-    "marketCap" : 430019311200,
-    "lowPrice" : 107300,
-    "highPrice" : 111300,
-    "openPrice" : 110000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 107600
-  }, {
     "volume" : 16274,
     "marketCap" : 443607282000,
     "lowPrice" : 107000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 495000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 504000
+  }, {
+    "volume" : 11207,
+    "marketCap" : 1946276994000,
+    "lowPrice" : 486000,
+    "highPrice" : 509000,
+    "openPrice" : 504000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 487000
   } ],
   "stockCode" : "000155"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "THE E&M",
   "prices" : [ {
-    "volume" : 47456,
-    "marketCap" : 19825955418,
-    "lowPrice" : 891,
-    "highPrice" : 945,
-    "openPrice" : 922,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 906
-  }, {
     "volume" : 33882,
     "marketCap" : 19825955418,
     "lowPrice" : 885,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1205,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1309
+  }, {
+    "volume" : 206989,
+    "marketCap" : 34490387088,
+    "lowPrice" : 1271,
+    "highPrice" : 1350,
+    "openPrice" : 1297,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1296
   } ],
   "stockCode" : "089230"
 }

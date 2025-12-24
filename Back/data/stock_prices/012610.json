@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "경인양행",
   "prices" : [ {
-    "volume" : 19860,
-    "marketCap" : 116525822000,
-    "lowPrice" : 2730,
-    "highPrice" : 2800,
-    "openPrice" : 2765,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2800
-  }, {
     "volume" : 12423,
     "marketCap" : 117150067475,
     "lowPrice" : 2750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3705,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3955
+  }, {
+    "volume" : 8692217,
+    "marketCap" : 173540242050,
+    "lowPrice" : 3820,
+    "highPrice" : 4550,
+    "openPrice" : 3955,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4170
   } ],
   "stockCode" : "012610"
 }

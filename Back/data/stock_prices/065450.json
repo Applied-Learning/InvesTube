@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "빅텍",
   "prices" : [ {
-    "volume" : 509204,
-    "marketCap" : 116760160000,
-    "lowPrice" : 3940,
-    "highPrice" : 4175,
-    "openPrice" : 3940,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4075
-  }, {
     "volume" : 192632,
     "marketCap" : 117476480000,
     "lowPrice" : 4075,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3535,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3620
+  }, {
+    "volume" : 112148,
+    "marketCap" : 102290496000,
+    "lowPrice" : 3550,
+    "highPrice" : 3645,
+    "openPrice" : 3615,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3570
   } ],
   "stockCode" : "065450"
 }

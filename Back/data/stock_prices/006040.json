@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동원산업",
   "prices" : [ {
-    "volume" : 38034,
-    "marketCap" : 1422864852500,
-    "lowPrice" : 37750,
-    "highPrice" : 39600,
-    "openPrice" : 38400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 39500
-  }, {
     "volume" : 35123,
     "marketCap" : 1426467042000,
     "lowPrice" : 39300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 44350,
     "tradeDate" : "2025-12-22",
     "closePrice" : 43650
+  }, {
+    "volume" : 91036,
+    "marketCap" : 1898363398000,
+    "lowPrice" : 42750,
+    "highPrice" : 44050,
+    "openPrice" : 43550,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 43000
   } ],
   "stockCode" : "006040"
 }

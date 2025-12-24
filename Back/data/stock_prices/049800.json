@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "우진플라임",
   "prices" : [ {
-    "volume" : 5535,
-    "marketCap" : 41100000000,
-    "lowPrice" : 2035,
-    "highPrice" : 2070,
-    "openPrice" : 2050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2055
-  }, {
     "volume" : 40336,
     "marketCap" : 39900000000,
     "lowPrice" : 1950,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1957,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1956
+  }, {
+    "volume" : 10922,
+    "marketCap" : 38820000000,
+    "lowPrice" : 1940,
+    "highPrice" : 1970,
+    "openPrice" : 1970,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1941
   } ],
   "stockCode" : "049800"
 }

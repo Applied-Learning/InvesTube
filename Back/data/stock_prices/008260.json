@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "NI스틸",
   "prices" : [ {
-    "volume" : 31208,
-    "marketCap" : 99242405990,
-    "lowPrice" : 3370,
-    "highPrice" : 3510,
-    "openPrice" : 3410,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3470
-  }, {
     "volume" : 40110,
     "marketCap" : 100958413010,
     "lowPrice" : 3445,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3690,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3680
+  }, {
+    "volume" : 91370,
+    "marketCap" : 102817420615,
+    "lowPrice" : 3540,
+    "highPrice" : 3675,
+    "openPrice" : 3675,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3595
   } ],
   "stockCode" : "008260"
 }

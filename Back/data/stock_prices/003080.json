@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SB성보",
   "prices" : [ {
-    "volume" : 10876,
-    "marketCap" : 52052000000,
-    "lowPrice" : 2545,
-    "highPrice" : 2600,
-    "openPrice" : 2570,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2600
-  }, {
     "volume" : 3922,
     "marketCap" : 51651600000,
     "lowPrice" : 2575,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2840,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2820
+  }, {
+    "volume" : 126642,
+    "marketCap" : 58058000000,
+    "lowPrice" : 2800,
+    "highPrice" : 2985,
+    "openPrice" : 2845,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2900
   } ],
   "stockCode" : "003080"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오가닉티코스메틱",
   "prices" : [ {
-    "volume" : 187287,
-    "marketCap" : 24453430242,
-    "lowPrice" : 480,
-    "highPrice" : 515,
-    "openPrice" : 510,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 501
-  }, {
     "volume" : 236508,
     "marketCap" : 24307002516,
     "lowPrice" : 497,
@@ -1937,6 +1929,14 @@
     "openPrice" : 290,
     "tradeDate" : "2025-12-22",
     "closePrice" : 280
+  }, {
+    "volume" : 2642999,
+    "marketCap" : 66516292140,
+    "lowPrice" : 258,
+    "highPrice" : 282,
+    "openPrice" : 282,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 265
   } ],
   "stockCode" : "900300"
 }

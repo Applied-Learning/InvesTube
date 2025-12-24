@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이에스티이",
   "prices" : [ {
     "volume" : 45070738,
@@ -1697,6 +1697,14 @@
     "openPrice" : 8350,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8590
+  }, {
+    "volume" : 83463,
+    "marketCap" : 76977710040,
+    "lowPrice" : 8160,
+    "highPrice" : 8980,
+    "openPrice" : 8980,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8180
   } ],
   "stockCode" : "212710"
 }

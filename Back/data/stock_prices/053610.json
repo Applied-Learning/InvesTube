@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "프로텍",
   "prices" : [ {
-    "volume" : 29651,
-    "marketCap" : 250800000000,
-    "lowPrice" : 21900,
-    "highPrice" : 23000,
-    "openPrice" : 22200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 22800
-  }, {
     "volume" : 18120,
     "marketCap" : 248600000000,
     "lowPrice" : 22400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 32900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 33550
+  }, {
+    "volume" : 11262,
+    "marketCap" : 366850000000,
+    "lowPrice" : 33250,
+    "highPrice" : 33850,
+    "openPrice" : 33800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 33350
   } ],
   "stockCode" : "053610"
 }

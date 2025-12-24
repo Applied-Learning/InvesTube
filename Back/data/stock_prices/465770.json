@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "STX그린로지스",
   "prices" : [ {
-    "volume" : 44701,
-    "marketCap" : 59017593360,
-    "lowPrice" : 7990,
-    "highPrice" : 8510,
-    "openPrice" : 7990,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8230
-  }, {
     "volume" : 35108,
     "marketCap" : 57941938560,
     "lowPrice" : 8080,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6190,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6080
+  }, {
+    "volume" : 23035,
+    "marketCap" : 42882771360,
+    "lowPrice" : 5980,
+    "highPrice" : 6110,
+    "openPrice" : 6110,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5980
   } ],
   "stockCode" : "465770"
 }

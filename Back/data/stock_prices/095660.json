@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "네오위즈",
   "prices" : [ {
-    "volume" : 68749,
-    "marketCap" : 432764956800,
-    "lowPrice" : 19490,
-    "highPrice" : 19890,
-    "openPrice" : 19780,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 19800
-  }, {
     "volume" : 33762,
     "marketCap" : 432983524960,
     "lowPrice" : 19680,
@@ -1937,6 +1929,14 @@
     "openPrice" : 25150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 25150
+  }, {
+    "volume" : 39129,
+    "marketCap" : 556255967200,
+    "lowPrice" : 25000,
+    "highPrice" : 25500,
+    "openPrice" : 25400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 25450
   } ],
   "stockCode" : "095660"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "와이지엔터테인먼트",
   "prices" : [ {
-    "volume" : 135012,
-    "marketCap" : 856984596650,
-    "lowPrice" : 45500,
-    "highPrice" : 47050,
-    "openPrice" : 46800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 45850
-  }, {
     "volume" : 158370,
     "marketCap" : 838293547650,
     "lowPrice" : 44550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 63900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 63500
+  }, {
+    "volume" : 351553,
+    "marketCap" : 1237347443800,
+    "lowPrice" : 63600,
+    "highPrice" : 66600,
+    "openPrice" : 63800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 66200
   } ],
   "stockCode" : "122870"
 }

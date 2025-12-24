@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스투더블유",
   "prices" : [ {
     "volume" : 14992701,
@@ -497,6 +497,14 @@
     "openPrice" : 34300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 37600
+  }, {
+    "volume" : 850898,
+    "marketCap" : 366145684050,
+    "lowPrice" : 34000,
+    "highPrice" : 37850,
+    "openPrice" : 37800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 34350
   } ],
   "stockCode" : "488280"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한솔테크닉스",
   "prices" : [ {
-    "volume" : 26025,
-    "marketCap" : 127476215660,
-    "lowPrice" : 3870,
-    "highPrice" : 3985,
-    "openPrice" : 3885,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3970
-  }, {
     "volume" : 50350,
     "marketCap" : 125389073590,
     "lowPrice" : 3905,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5970,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6100
+  }, {
+    "volume" : 57116,
+    "marketCap" : 191695971660,
+    "lowPrice" : 5970,
+    "highPrice" : 6130,
+    "openPrice" : 6130,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5970
   } ],
   "stockCode" : "004710"
 }

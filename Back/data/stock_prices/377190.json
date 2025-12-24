@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디앤디플랫폼리츠",
   "prices" : [ {
-    "volume" : 94163,
-    "marketCap" : 258128000000,
-    "lowPrice" : 2855,
-    "highPrice" : 2945,
-    "openPrice" : 2855,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2920
-  }, {
     "volume" : 112755,
     "marketCap" : 259896000000,
     "lowPrice" : 2920,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3430,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3395
+  }, {
+    "volume" : 105804,
+    "marketCap" : 295698000000,
+    "lowPrice" : 3340,
+    "highPrice" : 3400,
+    "openPrice" : 3400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3345
   } ],
   "stockCode" : "377190"
 }

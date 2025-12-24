@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "피에이치에이",
   "prices" : [ {
-    "volume" : 12896,
-    "marketCap" : 210000000000,
-    "lowPrice" : 9870,
-    "highPrice" : 10070,
-    "openPrice" : 9900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10000
-  }, {
     "volume" : 18268,
     "marketCap" : 209790000000,
     "lowPrice" : 9920,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12240,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12190
+  }, {
+    "volume" : 21249,
+    "marketCap" : 252840000000,
+    "lowPrice" : 11960,
+    "highPrice" : 12220,
+    "openPrice" : 12220,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12040
   } ],
   "stockCode" : "043370"
 }

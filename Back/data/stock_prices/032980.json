@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "바이온",
   "prices" : [ {
-    "volume" : 142415,
-    "marketCap" : 28837025560,
-    "lowPrice" : 636,
-    "highPrice" : 659,
-    "openPrice" : 647,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 644
-  }, {
     "volume" : 156004,
     "marketCap" : 27538463850,
     "lowPrice" : 611,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 604
+  }, {
+    "volume" : 0,
+    "marketCap" : 18354952980,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 604
   } ],
   "stockCode" : "032980"

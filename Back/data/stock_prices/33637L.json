@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "솔루스첨단소재2우B",
   "prices" : [ {
-    "volume" : 3167,
-    "marketCap" : 15812168760,
-    "lowPrice" : 4070,
-    "highPrice" : 4185,
-    "openPrice" : 4145,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4185
-  }, {
     "volume" : 1922,
     "marketCap" : 15755494320,
     "lowPrice" : 4125,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3755,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3590
+  }, {
+    "volume" : 13297,
+    "marketCap" : 13450733760,
+    "lowPrice" : 3550,
+    "highPrice" : 3625,
+    "openPrice" : 3625,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3560
   } ],
   "stockCode" : "33637L"
 }

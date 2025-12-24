@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동아엘텍",
   "prices" : [ {
-    "volume" : 120471,
-    "marketCap" : 66968752620,
-    "lowPrice" : 3780,
-    "highPrice" : 4025,
-    "openPrice" : 3780,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3830
-  }, {
     "volume" : 84380,
     "marketCap" : 66881326050,
     "lowPrice" : 3765,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4000
+  }, {
+    "volume" : 62035,
+    "marketCap" : 69241843440,
+    "lowPrice" : 3920,
+    "highPrice" : 4035,
+    "openPrice" : 3995,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3960
   } ],
   "stockCode" : "088130"
 }

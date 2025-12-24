@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "메지온",
   "prices" : [ {
-    "volume" : 74717,
-    "marketCap" : 960324950850,
-    "lowPrice" : 31850,
-    "highPrice" : 32550,
-    "openPrice" : 31900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 32050
-  }, {
     "volume" : 63399,
     "marketCap" : 952834116600,
     "lowPrice" : 31400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 91100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 86000
+  }, {
+    "volume" : 481390,
+    "marketCap" : 2465549816800,
+    "lowPrice" : 80800,
+    "highPrice" : 86600,
+    "openPrice" : 86300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 81200
   } ],
   "stockCode" : "140410"
 }

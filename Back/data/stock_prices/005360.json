@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "모나미",
   "prices" : [ {
-    "volume" : 28698,
-    "marketCap" : 41101642725,
-    "lowPrice" : 2145,
-    "highPrice" : 2185,
-    "openPrice" : 2160,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2175
-  }, {
     "volume" : 31613,
     "marketCap" : 41196129260,
     "lowPrice" : 2155,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1960,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1965
+  }, {
+    "volume" : 46528,
+    "marketCap" : 37114310948,
+    "lowPrice" : 1952,
+    "highPrice" : 1979,
+    "openPrice" : 1952,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1964
   } ],
   "stockCode" : "005360"
 }

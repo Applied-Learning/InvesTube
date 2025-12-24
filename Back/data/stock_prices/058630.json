@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엠게임",
   "prices" : [ {
-    "volume" : 80758,
-    "marketCap" : 106123252110,
-    "lowPrice" : 5300,
-    "highPrice" : 5470,
-    "openPrice" : 5360,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5430
-  }, {
     "volume" : 55667,
     "marketCap" : 105927813340,
     "lowPrice" : 5360,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6760,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6710
+  }, {
+    "volume" : 102351,
+    "marketCap" : 133093802370,
+    "lowPrice" : 6600,
+    "highPrice" : 6870,
+    "openPrice" : 6720,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6810
   } ],
   "stockCode" : "058630"
 }

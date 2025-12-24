@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국비엔씨",
   "prices" : [ {
-    "volume" : 219917,
-    "marketCap" : 279120140730,
-    "lowPrice" : 4020,
-    "highPrice" : 4150,
-    "openPrice" : 4020,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4110
-  }, {
     "volume" : 193947,
     "marketCap" : 281497076235,
     "lowPrice" : 4095,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4920,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4875
+  }, {
+    "volume" : 944755,
+    "marketCap" : 324533734070,
+    "lowPrice" : 4740,
+    "highPrice" : 4950,
+    "openPrice" : 4905,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4745
   } ],
   "stockCode" : "256840"
 }

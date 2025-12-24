@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아비코전자",
   "prices" : [ {
-    "volume" : 16776,
-    "marketCap" : 61280425740,
-    "lowPrice" : 4535,
-    "highPrice" : 4665,
-    "openPrice" : 4565,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4610
-  }, {
     "volume" : 17671,
     "marketCap" : 61413355080,
     "lowPrice" : 4540,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7200
+  }, {
+    "volume" : 27572,
+    "marketCap" : 94911548760,
+    "lowPrice" : 7060,
+    "highPrice" : 7280,
+    "openPrice" : 7280,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7140
   } ],
   "stockCode" : "036010"
 }

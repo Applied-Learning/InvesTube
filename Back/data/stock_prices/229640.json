@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "LS에코에너지",
   "prices" : [ {
-    "volume" : 201267,
-    "marketCap" : 983058615900,
-    "lowPrice" : 31850,
-    "highPrice" : 33100,
-    "openPrice" : 32750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 32100
-  }, {
     "volume" : 126101,
     "marketCap" : 964683688500,
     "lowPrice" : 31400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 35700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 35750
+  }, {
+    "volume" : 166722,
+    "marketCap" : 1077995740800,
+    "lowPrice" : 35150,
+    "highPrice" : 35900,
+    "openPrice" : 35900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 35200
   } ],
   "stockCode" : "229640"
 }

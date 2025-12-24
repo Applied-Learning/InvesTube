@@ -3,6 +3,8 @@ package com.Investube.mvc.model.service;
 import java.math.BigDecimal;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -52,12 +54,35 @@ public class StockServiceImpl implements StockService {
                 importStockPricesFromJson();
             }
 
-            // market/industry가 null인 종목이 있으면 자동 업데이트
+            // market이 null인 종목이 있으면 자동 업데이트
             int nullMarketCount = stockDao.countStocksWithNullMarket();
             if (nullMarketCount > 0) {
                 System.out
-                        .println("[StockService] market/industry가 null인 종목 " + nullMarketCount + "개 발견 -> KRX에서 업데이트");
+                        .println("[StockService] market이 null인 종목 " + nullMarketCount + "개 발견 -> KRX에서 업데이트");
                 updateMissingStockInfo();
+            }
+
+            // CSV 업종 매핑 파일이 있고 industry가 비어 있으면 CSV로 보정 (다중 파일 지원)
+            String[] csvCandidates = {
+                    "data/krx_data.csv",
+                    "data/kospi_data.csv",
+                    "data/kosdaq_data.csv"
+            };
+            if (hasNullIndustry()) {
+                for (String csvPath : csvCandidates) {
+                    if (!Files.exists(Paths.get(csvPath))) {
+                        continue;
+                    }
+                    try {
+                        int updated = updateIndustryFromCsv(csvPath);
+                        System.out.println("[StockService] CSV 업종 매핑 반영: " + updated + "건 업데이트 (" + csvPath + ")");
+                        if (!hasNullIndustry()) {
+                            break; // 더 이상 비어있는 industry 없으면 종료
+                        }
+                    } catch (Exception e) {
+                        System.err.println("[StockService] CSV 업종 매핑 실패(" + csvPath + "): " + e.getMessage());
+                    }
+                }
             }
         } catch (Exception e) {
             System.err.println("[StockService] 초기 데이터 로드 실패: " + e.getMessage());
@@ -339,13 +364,11 @@ public class StockServiceImpl implements StockService {
                             stock.setStockCode(item.getISU_CD());
                             stock.setStockName(item.getISU_NM());
                             stock.setMarket("KOSPI");
-                            stock.setIndustry(item.getSECT_TP_NM());
                             stockDao.insertStock(stock);
                         } else {
-                            // 기존 Stock의 market/industry가 없으면 업데이트
-                            if (existingStock.getMarket() == null || existingStock.getIndustry() == null) {
+                            // 기존 Stock의 market이 없으면 업데이트
+                            if (existingStock.getMarket() == null) {
                                 existingStock.setMarket("KOSPI");
-                                existingStock.setIndustry(item.getSECT_TP_NM());
                                 stockDao.updateStock(existingStock);
                             }
                         }
@@ -524,13 +547,11 @@ public class StockServiceImpl implements StockService {
                             stock.setStockCode(item.getISU_CD());
                             stock.setStockName(item.getISU_NM());
                             stock.setMarket("KOSDAQ");
-                            stock.setIndustry(item.getSECT_TP_NM());
                             stockDao.insertStock(stock);
                         } else {
-                            // 기존 Stock의 market/industry가 없으면 업데이트
-                            if (existingStock.getMarket() == null || existingStock.getIndustry() == null) {
+                            // 기존 Stock의 market이 없으면 업데이트
+                            if (existingStock.getMarket() == null) {
                                 existingStock.setMarket("KOSDAQ");
-                                existingStock.setIndustry(item.getSECT_TP_NM());
                                 stockDao.updateStock(existingStock);
                             }
                         }
@@ -650,6 +671,93 @@ public class StockServiceImpl implements StockService {
     }
 
     /**
+     * CSV(종목코드, 업종명)로 industry 필드를 일괄 업데이트
+     * 기본 경로 예시: data/krx_data.csv
+     *
+     * @param csvPath CSV 파일 경로
+     * @return 업데이트된 종목 수
+     */
+    @Override
+    public int updateIndustryFromCsv(String csvPath) {
+        try {
+            java.nio.file.Path path = Paths.get(csvPath);
+            if (!Files.exists(path)) {
+                throw new IllegalArgumentException("CSV 파일이 존재하지 않습니다: " + csvPath);
+            }
+
+            int updatedCount = 0;
+            java.nio.charset.Charset charset = java.nio.charset.StandardCharsets.UTF_8;
+            java.util.List<String> lines;
+            try {
+                lines = Files.readAllLines(path, charset);
+            } catch (java.nio.charset.MalformedInputException mie) {
+                // EUC-KR/CP949 등의 한글 CSV 대응
+                charset = java.nio.charset.Charset.forName("MS949");
+                lines = Files.readAllLines(path, charset);
+            }
+
+            boolean isHeader = true;
+            for (String line : lines) {
+                if (isHeader) { // 헤더 스킵
+                    isHeader = false;
+                    continue;
+                }
+                if (line == null || line.isBlank()) {
+                    continue;
+                }
+                String[] cols = line.split(",", -1);
+                if (cols.length < 4) {
+                    continue; // 최소: 종목코드, 종목명, 시장구분, 업종명
+                }
+                String stockCode = trimQuotes(cols[0]);
+                String industry = trimQuotes(cols[3]);
+                if (stockCode.isEmpty() || industry.isEmpty()) {
+                    continue;
+                }
+                try {
+                    Stock existing = stockDao.selectStockByCode(stockCode);
+                    if (existing != null) {
+                        existing.setIndustry(industry);
+                        stockDao.updateStock(existing);
+                        updatedCount++;
+                    }
+                } catch (Exception ignore) {
+                    // 개별 레코드 오류는 건너뛰고 계속 진행
+                }
+            }
+            System.out.println("CSV 업종 업데이트 완료: " + updatedCount + "건 (" + csvPath + ")");
+            return updatedCount;
+        } catch (Exception e) {
+            throw new RuntimeException("CSV 업종 업데이트 실패: " + e.getMessage(), e);
+        }
+    }
+
+    private String trimQuotes(String value) {
+        if (value == null) {
+            return "";
+        }
+        String v = value.trim();
+        if (v.startsWith("\"") && v.endsWith("\"") && v.length() >= 2) {
+            v = v.substring(1, v.length() - 1);
+        }
+        return v;
+    }
+
+    private boolean hasNullIndustry() {
+        try {
+            List<Stock> all = stockDao.selectAllStocks();
+            for (Stock s : all) {
+                if (s.getIndustry() == null || s.getIndustry().isBlank()) {
+                    return true;
+                }
+            }
+        } catch (Exception e) {
+            // silent, treat as no nulls to avoid blocking startup
+        }
+        return false;
+    }
+
+    /**
      * KRX 지수 정보 조회 (KOSPI, KOSDAQ, KRX 대표지수들)
      */
     @Override
@@ -756,13 +864,13 @@ public class StockServiceImpl implements StockService {
     }
 
     /**
-     * 누락된 market/industry 정보 업데이트
-     * KRX API를 호출하여 DB의 null인 market/industry를 채움
+     * 누락된 market 정보 업데이트
+     * KRX API를 호출하여 DB의 null인 market을 채움
      */
     @Override
     public void updateMissingStockInfo() {
         System.out.println("============================================================");
-        System.out.println("누락된 종목 정보(market/industry) 업데이트 시작");
+                    System.out.println("누락된 종목 정보(market) 업데이트 시작");
         System.out.println("============================================================");
 
         // 최근 영업일들을 순차적으로 시도 (오늘, 어제, 그제...)
@@ -801,7 +909,7 @@ public class StockServiceImpl implements StockService {
     }
 
     /**
-     * KRX API에서 데이터 가져와서 null인 market/industry 업데이트
+     * KRX API에서 데이터 가져와서 null인 market 업데이트
      */
     private int updateStocksFromKrx(String dateStr, String marketName, String marketCode) {
         int updatedCount = 0;
@@ -831,10 +939,8 @@ public class StockServiceImpl implements StockService {
                 for (KrxStockResponse.KrxStockItem item : response.getOutBlock_1()) {
                     try {
                         Stock existingStock = stockDao.selectStockByCode(item.getISU_CD());
-                        if (existingStock != null &&
-                                (existingStock.getMarket() == null || existingStock.getIndustry() == null)) {
+                        if (existingStock != null && existingStock.getMarket() == null) {
                             existingStock.setMarket(marketName);
-                            existingStock.setIndustry(item.getSECT_TP_NM());
                             stockDao.updateStock(existingStock);
                             updatedCount++;
                         }

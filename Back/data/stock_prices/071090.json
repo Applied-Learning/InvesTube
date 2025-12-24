@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하이스틸",
   "prices" : [ {
-    "volume" : 45769,
-    "marketCap" : 57444734995,
-    "lowPrice" : 2825,
-    "highPrice" : 2880,
-    "openPrice" : 2830,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2845
-  }, {
     "volume" : 57233,
     "marketCap" : 56334204090,
     "lowPrice" : 2790,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3570,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3650
+  }, {
+    "volume" : 124782,
+    "marketCap" : 71376849985,
+    "lowPrice" : 3530,
+    "highPrice" : 3650,
+    "openPrice" : 3630,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3535
   } ],
   "stockCode" : "071090"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "CJ씨푸드",
   "prices" : [ {
-    "volume" : 380410,
-    "marketCap" : 109229549920,
-    "lowPrice" : 2975,
-    "highPrice" : 3120,
-    "openPrice" : 3045,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3040
-  }, {
     "volume" : 404136,
     "marketCap" : 113900550410,
     "lowPrice" : 3020,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2885,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2890
+  }, {
+    "volume" : 691529,
+    "marketCap" : 104199241700,
+    "lowPrice" : 2875,
+    "highPrice" : 2925,
+    "openPrice" : 2895,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2900
   } ],
   "stockCode" : "011150"
 }

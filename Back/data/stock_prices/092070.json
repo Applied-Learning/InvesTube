@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디엔에프",
   "prices" : [ {
-    "volume" : 27792,
-    "marketCap" : 100212290280,
-    "lowPrice" : 8550,
-    "highPrice" : 8860,
-    "openPrice" : 8760,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8660
-  }, {
     "volume" : 21931,
     "marketCap" : 100096571700,
     "lowPrice" : 8520,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13450,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14320
+  }, {
+    "volume" : 75866,
+    "marketCap" : 169990594020,
+    "lowPrice" : 14190,
+    "highPrice" : 14810,
+    "openPrice" : 14310,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14690
   } ],
   "stockCode" : "092070"
 }

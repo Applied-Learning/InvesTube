@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코콤",
   "prices" : [ {
-    "volume" : 148090,
-    "marketCap" : 78711945000,
-    "lowPrice" : 4450,
-    "highPrice" : 4600,
-    "openPrice" : 4450,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4490
-  }, {
     "volume" : 303243,
     "marketCap" : 77747767500,
     "lowPrice" : 4405,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3615,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3615
+  }, {
+    "volume" : 12443,
+    "marketCap" : 63460410000,
+    "lowPrice" : 3590,
+    "highPrice" : 3630,
+    "openPrice" : 3615,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3620
   } ],
   "stockCode" : "015710"
 }

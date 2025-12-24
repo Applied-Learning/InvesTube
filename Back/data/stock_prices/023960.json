@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에쓰씨엔지니어링",
   "prices" : [ {
-    "volume" : 123862,
-    "marketCap" : 47188858102,
-    "lowPrice" : 1314,
-    "highPrice" : 1350,
-    "openPrice" : 1330,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1346
-  }, {
     "volume" : 64428,
     "marketCap" : 47188858102,
     "lowPrice" : 1345,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1380,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1387
+  }, {
+    "volume" : 206930,
+    "marketCap" : 52679825375,
+    "lowPrice" : 1356,
+    "highPrice" : 1405,
+    "openPrice" : 1387,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1385
   } ],
   "stockCode" : "023960"
 }

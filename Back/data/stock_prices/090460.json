@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "비에이치",
   "prices" : [ {
-    "volume" : 269295,
-    "marketCap" : 615533808940,
-    "lowPrice" : 17410,
-    "highPrice" : 17940,
-    "openPrice" : 17740,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17860
-  }, {
     "volume" : 218787,
     "marketCap" : 612087371040,
     "lowPrice" : 17610,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17750,
     "tradeDate" : "2025-12-22",
     "closePrice" : 17900
+  }, {
+    "volume" : 249975,
+    "marketCap" : 578489992080,
+    "lowPrice" : 17100,
+    "highPrice" : 17960,
+    "openPrice" : 17960,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 17160
   } ],
   "stockCode" : "090460"
 }

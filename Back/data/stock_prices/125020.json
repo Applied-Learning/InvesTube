@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "티씨머티리얼즈",
   "prices" : [ {
     "volume" : 24687065,
@@ -1201,6 +1201,14 @@
     "openPrice" : 3860,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4365
+  }, {
+    "volume" : 7526746,
+    "marketCap" : 168185040000,
+    "lowPrice" : 4370,
+    "highPrice" : 4950,
+    "openPrice" : 4405,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4800
   } ],
   "stockCode" : "125020"
 }

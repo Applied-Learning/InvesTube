@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유안타증권",
   "prices" : [ {
-    "volume" : 141178,
-    "marketCap" : 536914789440,
-    "lowPrice" : 2680,
-    "highPrice" : 2710,
-    "openPrice" : 2690,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2690
-  }, {
     "volume" : 155111,
     "marketCap" : 539908738080,
     "lowPrice" : 2675,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3760,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3815
+  }, {
+    "volume" : 382549,
+    "marketCap" : 760462954560,
+    "lowPrice" : 3790,
+    "highPrice" : 3840,
+    "openPrice" : 3820,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3810
   } ],
   "stockCode" : "003470"
 }

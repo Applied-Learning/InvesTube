@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이엠텍",
   "prices" : [ {
-    "volume" : 271393,
-    "marketCap" : 470299093200,
-    "lowPrice" : 25350,
-    "highPrice" : 28400,
-    "openPrice" : 26100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 27450
-  }, {
     "volume" : 168052,
     "marketCap" : 455736097600,
     "lowPrice" : 26600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8310,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8340
+  }, {
+    "volume" : 37322,
+    "marketCap" : 137748805440,
+    "lowPrice" : 8040,
+    "highPrice" : 8340,
+    "openPrice" : 8340,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8040
   } ],
   "stockCode" : "091120"
 }

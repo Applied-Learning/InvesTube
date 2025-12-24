@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이직랜드",
   "prices" : [ {
-    "volume" : 1614107,
-    "marketCap" : 386703527400,
-    "lowPrice" : 35750,
-    "highPrice" : 39500,
-    "openPrice" : 36950,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 35900
-  }, {
     "volume" : 997372,
     "marketCap" : 371623167000,
     "lowPrice" : 34100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 26650,
     "tradeDate" : "2025-12-22",
     "closePrice" : 26900
+  }, {
+    "volume" : 29420,
+    "marketCap" : 291360488000,
+    "lowPrice" : 26600,
+    "highPrice" : 27150,
+    "openPrice" : 26750,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 26800
   } ],
   "stockCode" : "445090"
 }

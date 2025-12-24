@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "플레이그램",
   "prices" : [ {
-    "volume" : 643905,
-    "marketCap" : 56198375000,
-    "lowPrice" : 363,
-    "highPrice" : 390,
-    "openPrice" : 363,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 370
-  }, {
     "volume" : 500381,
     "marketCap" : 54375725000,
     "lowPrice" : 358,
@@ -1937,6 +1929,14 @@
     "openPrice" : 254,
     "tradeDate" : "2025-12-22",
     "closePrice" : 254
+  }, {
+    "volume" : 322254,
+    "marketCap" : 38123762500,
+    "lowPrice" : 249,
+    "highPrice" : 256,
+    "openPrice" : 255,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 251
   } ],
   "stockCode" : "009810"
 }

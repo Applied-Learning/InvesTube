@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "나노신소재",
   "prices" : [ {
-    "volume" : 51369,
-    "marketCap" : 762254875000,
-    "lowPrice" : 60300,
-    "highPrice" : 63200,
-    "openPrice" : 61400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 62500
-  }, {
     "volume" : 36510,
     "marketCap" : 756156836000,
     "lowPrice" : 61500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 53500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 53300
+  }, {
+    "volume" : 41170,
+    "marketCap" : 645972003900,
+    "lowPrice" : 52500,
+    "highPrice" : 53700,
+    "openPrice" : 53600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 52900
   } ],
   "stockCode" : "121600"
 }

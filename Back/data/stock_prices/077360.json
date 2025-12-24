@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "덕산하이메탈",
   "prices" : [ {
-    "volume" : 69578,
-    "marketCap" : 178113047840,
-    "lowPrice" : 3775,
-    "highPrice" : 3940,
-    "openPrice" : 3780,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3920
-  }, {
     "volume" : 58425,
     "marketCap" : 174023717660,
     "lowPrice" : 3785,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5870,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6260
+  }, {
+    "volume" : 442540,
+    "marketCap" : 273985122060,
+    "lowPrice" : 5940,
+    "highPrice" : 6360,
+    "openPrice" : 6320,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6030
   } ],
   "stockCode" : "077360"
 }

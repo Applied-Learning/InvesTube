@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코리아나",
   "prices" : [ {
-    "volume" : 176653,
-    "marketCap" : 96400000000,
-    "lowPrice" : 2370,
-    "highPrice" : 2420,
-    "openPrice" : 2400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2410
-  }, {
     "volume" : 268875,
     "marketCap" : 95600000000,
     "lowPrice" : 2390,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2295,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2315
+  }, {
+    "volume" : 160195,
+    "marketCap" : 91800000000,
+    "lowPrice" : 2280,
+    "highPrice" : 2340,
+    "openPrice" : 2300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2295
   } ],
   "stockCode" : "027050"
 }

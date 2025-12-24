@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "더핑크퐁컴퍼니",
   "prices" : [ {
     "volume" : 19682137,
@@ -201,6 +201,14 @@
     "openPrice" : 25700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 27700
+  }, {
+    "volume" : 527164,
+    "marketCap" : 362363002500,
+    "lowPrice" : 25200,
+    "highPrice" : 28050,
+    "openPrice" : 28000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 25250
   } ],
   "stockCode" : "403850"
 }

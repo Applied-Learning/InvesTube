@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동일고무벨트",
   "prices" : [ {
-    "volume" : 36937,
-    "marketCap" : 95910000000,
-    "lowPrice" : 6850,
-    "highPrice" : 7030,
-    "openPrice" : 6880,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6900
-  }, {
     "volume" : 20546,
     "marketCap" : 97022000000,
     "lowPrice" : 6880,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6860,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6930
+  }, {
+    "volume" : 21673,
+    "marketCap" : 95910000000,
+    "lowPrice" : 6870,
+    "highPrice" : 6950,
+    "openPrice" : 6940,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6900
   } ],
   "stockCode" : "163560"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디아이",
   "prices" : [ {
-    "volume" : 831522,
-    "marketCap" : 345260000000,
-    "lowPrice" : 10880,
-    "highPrice" : 12440,
-    "openPrice" : 11050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12200
-  }, {
     "volume" : 514718,
     "marketCap" : 346675000000,
     "lowPrice" : 12060,
@@ -1937,6 +1929,14 @@
     "openPrice" : 20200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 21500
+  }, {
+    "volume" : 415340,
+    "marketCap" : 614110000000,
+    "lowPrice" : 21400,
+    "highPrice" : 22100,
+    "openPrice" : 21700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 21700
   } ],
   "stockCode" : "003160"
 }

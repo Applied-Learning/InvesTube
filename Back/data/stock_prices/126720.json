@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "수산인더스트리",
   "prices" : [ {
-    "volume" : 24479,
-    "marketCap" : 288577200000,
-    "lowPrice" : 19730,
-    "highPrice" : 20200,
-    "openPrice" : 19940,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 20200
-  }, {
     "volume" : 10505,
     "marketCap" : 287148600000,
     "lowPrice" : 20000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 21900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 22000
+  }, {
+    "volume" : 12261,
+    "marketCap" : 310006200000,
+    "lowPrice" : 21650,
+    "highPrice" : 22050,
+    "openPrice" : 22000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 21700
   } ],
   "stockCode" : "126720"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이옥션",
   "prices" : [ {
-    "volume" : 52065,
-    "marketCap" : 97072133650,
-    "lowPrice" : 3500,
-    "highPrice" : 3610,
-    "openPrice" : 3540,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3565
-  }, {
     "volume" : 36028,
     "marketCap" : 95438381050,
     "lowPrice" : 3490,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3580,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3715
+  }, {
+    "volume" : 46223,
+    "marketCap" : 98297448100,
+    "lowPrice" : 3595,
+    "highPrice" : 3745,
+    "openPrice" : 3705,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3610
   } ],
   "stockCode" : "102370"
 }

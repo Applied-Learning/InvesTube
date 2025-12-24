@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동국S&C",
   "prices" : [ {
-    "volume" : 58512,
-    "marketCap" : 139143205000,
-    "lowPrice" : 2370,
-    "highPrice" : 2435,
-    "openPrice" : 2395,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2435
-  }, {
     "volume" : 39281,
     "marketCap" : 136571770000,
     "lowPrice" : 2370,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2115
+  }, {
+    "volume" : 59156,
+    "marketCap" : 118571725000,
+    "lowPrice" : 2060,
+    "highPrice" : 2130,
+    "openPrice" : 2130,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2075
   } ],
   "stockCode" : "100130"
 }

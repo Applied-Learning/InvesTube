@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "블루콤",
   "prices" : [ {
-    "volume" : 22707,
-    "marketCap" : 50616000000,
-    "lowPrice" : 2915,
-    "highPrice" : 2985,
-    "openPrice" : 2985,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2960
-  }, {
     "volume" : 6857,
     "marketCap" : 50872500000,
     "lowPrice" : 2900,
@@ -1936,6 +1928,14 @@
     "highPrice" : 3035,
     "openPrice" : 3010,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 3020
+  }, {
+    "volume" : 13687,
+    "marketCap" : 51642000000,
+    "lowPrice" : 2985,
+    "highPrice" : 3025,
+    "openPrice" : 3005,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 3020
   } ],
   "stockCode" : "033560"

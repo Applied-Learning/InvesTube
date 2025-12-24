@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코미팜",
   "prices" : [ {
-    "volume" : 76019,
-    "marketCap" : 269070707730,
-    "lowPrice" : 3775,
-    "highPrice" : 3840,
-    "openPrice" : 3840,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3810
-  }, {
     "volume" : 88248,
     "marketCap" : 269070707730,
     "lowPrice" : 3785,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6810,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6790
+  }, {
+    "volume" : 70641,
+    "marketCap" : 501559112400,
+    "lowPrice" : 6670,
+    "highPrice" : 6880,
+    "openPrice" : 6790,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6800
   } ],
   "stockCode" : "041960"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "손오공",
   "prices" : [ {
-    "volume" : 1361575,
-    "marketCap" : 36149157130,
-    "lowPrice" : 985,
-    "highPrice" : 1112,
-    "openPrice" : 1005,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1070
-  }, {
     "volume" : 624527,
     "marketCap" : 36622136756,
     "lowPrice" : 1030,
@@ -1937,6 +1929,14 @@
     "openPrice" : 651,
     "tradeDate" : "2025-12-22",
     "closePrice" : 630
+  }, {
+    "volume" : 115722,
+    "marketCap" : 41967093828,
+    "lowPrice" : 624,
+    "highPrice" : 650,
+    "openPrice" : 630,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 627
   } ],
   "stockCode" : "066910"
 }

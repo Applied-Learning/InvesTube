@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "TPC",
   "prices" : [ {
-    "volume" : 12517,
-    "marketCap" : 30469800531,
-    "lowPrice" : 1940,
-    "highPrice" : 1970,
-    "openPrice" : 1970,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1941
-  }, {
     "volume" : 14916,
     "marketCap" : 29998860801,
     "lowPrice" : 1907,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2445,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2520
+  }, {
+    "volume" : 3371658,
+    "marketCap" : 43326455160,
+    "lowPrice" : 2425,
+    "highPrice" : 3200,
+    "openPrice" : 2520,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2760
   } ],
   "stockCode" : "048770"
 }

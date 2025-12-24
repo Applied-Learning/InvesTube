@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "푸른기술",
   "prices" : [ {
-    "volume" : 59327,
-    "marketCap" : 58780543580,
-    "lowPrice" : 6940,
-    "highPrice" : 7090,
-    "openPrice" : 7000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7030
-  }, {
     "volume" : 79634,
     "marketCap" : 58780543580,
     "lowPrice" : 6580,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8280
+  }, {
+    "volume" : 96028,
+    "marketCap" : 67727226600,
+    "lowPrice" : 8070,
+    "highPrice" : 8490,
+    "openPrice" : 8290,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8100
   } ],
   "stockCode" : "094940"
 }

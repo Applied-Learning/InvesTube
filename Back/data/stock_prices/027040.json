@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "서울전자통신",
   "prices" : [ {
-    "volume" : 183032,
-    "marketCap" : 15587901728,
-    "lowPrice" : 217,
-    "highPrice" : 228,
-    "openPrice" : 224,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 224
-  }, {
     "volume" : 147951,
     "marketCap" : 15935845963,
     "lowPrice" : 224,
@@ -1937,6 +1929,14 @@
     "openPrice" : 195,
     "tradeDate" : "2025-12-22",
     "closePrice" : 195
+  }, {
+    "volume" : 81881,
+    "marketCap" : 13361058624,
+    "lowPrice" : 192,
+    "highPrice" : 195,
+    "openPrice" : 195,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 192
   } ],
   "stockCode" : "027040"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "피노",
   "prices" : [ {
-    "volume" : 79397,
-    "marketCap" : 127122996000,
-    "lowPrice" : 5470,
-    "highPrice" : 5850,
-    "openPrice" : 5630,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5570
-  }, {
     "volume" : 131160,
     "marketCap" : 126666540000,
     "lowPrice" : 5340,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5930
+  }, {
+    "volume" : 687348,
+    "marketCap" : 404141686740,
+    "lowPrice" : 5940,
+    "highPrice" : 6200,
+    "openPrice" : 6050,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5940
   } ],
   "stockCode" : "033790"
 }

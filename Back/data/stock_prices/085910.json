@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "네오티스",
   "prices" : [ {
-    "volume" : 15495,
-    "marketCap" : 45497180770,
-    "lowPrice" : 3255,
-    "highPrice" : 3320,
-    "openPrice" : 3260,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3265
-  }, {
     "volume" : 37153,
     "marketCap" : 46193921670,
     "lowPrice" : 3270,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8030,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8950
+  }, {
+    "volume" : 441042,
+    "marketCap" : 114126159420,
+    "lowPrice" : 7960,
+    "highPrice" : 8930,
+    "openPrice" : 8930,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8190
   } ],
   "stockCode" : "085910"
 }

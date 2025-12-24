@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "BGF에코머티리얼즈",
   "prices" : [ {
-    "volume" : 61356,
-    "marketCap" : 177316489675,
-    "lowPrice" : 2740,
-    "highPrice" : 2825,
-    "openPrice" : 2750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2825
-  }, {
     "volume" : 62742,
     "marketCap" : 179513331140,
     "lowPrice" : 2805,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3890,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3855
+  }, {
+    "volume" : 129172,
+    "marketCap" : 243535568120,
+    "lowPrice" : 3815,
+    "highPrice" : 3955,
+    "openPrice" : 3865,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3880
   } ],
   "stockCode" : "126600"
 }

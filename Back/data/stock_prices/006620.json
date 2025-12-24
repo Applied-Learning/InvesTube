@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동구바이오제약",
   "prices" : [ {
-    "volume" : 62157,
-    "marketCap" : 137912886240,
-    "lowPrice" : 4810,
-    "highPrice" : 4920,
-    "openPrice" : 4825,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4845
-  }, {
     "volume" : 44882,
     "marketCap" : 138055211200,
     "lowPrice" : 4815,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5930,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5830
+  }, {
+    "volume" : 246389,
+    "marketCap" : 159119305280,
+    "lowPrice" : 5570,
+    "highPrice" : 5890,
+    "openPrice" : 5830,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5590
   } ],
   "stockCode" : "006620"
 }

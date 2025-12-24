@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "지엔씨에너지",
   "prices" : [ {
-    "volume" : 502938,
-    "marketCap" : 151823430070,
-    "lowPrice" : 9080,
-    "highPrice" : 9670,
-    "openPrice" : 9660,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9230
-  }, {
     "volume" : 841051,
     "marketCap" : 143105508300,
     "lowPrice" : 8560,
@@ -1937,6 +1929,14 @@
     "openPrice" : 31450,
     "tradeDate" : "2025-12-22",
     "closePrice" : 31500
+  }, {
+    "volume" : 170310,
+    "marketCap" : 521430415300,
+    "lowPrice" : 30700,
+    "highPrice" : 31900,
+    "openPrice" : 31500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 31700
   } ],
   "stockCode" : "119850"
 }

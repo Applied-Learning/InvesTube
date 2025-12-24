@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인크레더블버즈",
   "prices" : [ {
-    "volume" : 65649,
-    "marketCap" : 149974376175,
-    "lowPrice" : 3000,
-    "highPrice" : 3140,
-    "openPrice" : 3140,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3015
-  }, {
     "volume" : 123885,
     "marketCap" : 153207654600,
     "lowPrice" : 2930,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1368,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1320
+  }, {
+    "volume" : 213381,
+    "marketCap" : 62675858700,
+    "lowPrice" : 1260,
+    "highPrice" : 1344,
+    "openPrice" : 1320,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1260
   } ],
   "stockCode" : "064090"
 }

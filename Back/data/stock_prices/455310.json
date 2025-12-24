@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한화플러스제4호스팩",
   "prices" : [ {
-    "volume" : 6569,
-    "marketCap" : 10195900000,
-    "lowPrice" : 2000,
-    "highPrice" : 2015,
-    "openPrice" : 2000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2015
-  }, {
     "volume" : 21012,
     "marketCap" : 10221200000,
     "lowPrice" : 2005,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2075,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2077
+  }, {
+    "volume" : 2206,
+    "marketCap" : 10484320000,
+    "lowPrice" : 2070,
+    "highPrice" : 2080,
+    "openPrice" : 2080,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2072
   } ],
   "stockCode" : "455310"
 }

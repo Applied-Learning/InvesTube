@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신풍",
   "prices" : [ {
-    "volume" : 284887,
-    "marketCap" : 51529123800,
-    "lowPrice" : 1450,
-    "highPrice" : 1546,
-    "openPrice" : 1538,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1474
-  }, {
     "volume" : 98921,
     "marketCap" : 50829949800,
     "lowPrice" : 1429,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1180,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1162
+  }, {
+    "volume" : 85619,
+    "marketCap" : 40587050700,
+    "lowPrice" : 1150,
+    "highPrice" : 1173,
+    "openPrice" : 1172,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1161
   } ],
   "stockCode" : "002870"
 }

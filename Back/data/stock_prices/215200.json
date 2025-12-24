@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "메가스터디교육",
   "prices" : [ {
-    "volume" : 34828,
-    "marketCap" : 499741238000,
-    "lowPrice" : 42650,
-    "highPrice" : 44000,
-    "openPrice" : 42900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 43600
-  }, {
     "volume" : 39756,
     "marketCap" : 514641779500,
     "lowPrice" : 43550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 44600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 44050
+  }, {
+    "volume" : 32327,
+    "marketCap" : 458142547200,
+    "lowPrice" : 43350,
+    "highPrice" : 44700,
+    "openPrice" : 44700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 44200
   } ],
   "stockCode" : "215200"
 }

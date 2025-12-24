@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "상신브레이크",
   "prices" : [ {
-    "volume" : 30691,
-    "marketCap" : 63877563750,
-    "lowPrice" : 2925,
-    "highPrice" : 2975,
-    "openPrice" : 2930,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2975
-  }, {
     "volume" : 32600,
     "marketCap" : 63984921000,
     "lowPrice" : 2970,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2780,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2770
+  }, {
+    "volume" : 22950,
+    "marketCap" : 58831773000,
+    "lowPrice" : 2695,
+    "highPrice" : 2800,
+    "openPrice" : 2780,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2740
   } ],
   "stockCode" : "041650"
 }

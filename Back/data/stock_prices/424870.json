@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이뮨온시아",
   "prices" : [ {
     "volume" : 199182296,
@@ -1185,6 +1185,14 @@
     "openPrice" : 13850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13580
+  }, {
+    "volume" : 1041988,
+    "marketCap" : 987137068390,
+    "lowPrice" : 13080,
+    "highPrice" : 13610,
+    "openPrice" : 13580,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13310
   } ],
   "stockCode" : "424870"
 }

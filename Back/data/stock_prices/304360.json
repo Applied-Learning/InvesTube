@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스바이오메딕스",
   "prices" : [ {
-    "volume" : 166558,
-    "marketCap" : 209192626760,
-    "lowPrice" : 16610,
-    "highPrice" : 18380,
-    "openPrice" : 16800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17810
-  }, {
     "volume" : 89620,
     "marketCap" : 200265821800,
     "lowPrice" : 17050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 30650,
     "tradeDate" : "2025-12-22",
     "closePrice" : 30400
+  }, {
+    "volume" : 59844,
+    "marketCap" : 366838321700,
+    "lowPrice" : 30000,
+    "highPrice" : 31300,
+    "openPrice" : 30300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 30700
   } ],
   "stockCode" : "304360"
 }

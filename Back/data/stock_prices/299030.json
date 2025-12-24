@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하나기술",
   "prices" : [ {
-    "volume" : 17419,
-    "marketCap" : 145987056600,
-    "lowPrice" : 17820,
-    "highPrice" : 18390,
-    "openPrice" : 17940,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 18260
-  }, {
     "volume" : 20590,
     "marketCap" : 141829703400,
     "lowPrice" : 17700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 33850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 33700
+  }, {
+    "volume" : 91297,
+    "marketCap" : 272626431000,
+    "lowPrice" : 33350,
+    "highPrice" : 35200,
+    "openPrice" : 34700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 34100
   } ],
   "stockCode" : "299030"
 }

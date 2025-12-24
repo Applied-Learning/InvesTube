@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스앤에스텍",
   "prices" : [ {
-    "volume" : 99056,
-    "marketCap" : 547011898500,
-    "lowPrice" : 25100,
-    "highPrice" : 26100,
-    "openPrice" : 25350,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 25500
-  }, {
     "volume" : 92375,
     "marketCap" : 549157043200,
     "lowPrice" : 25250,
@@ -1937,6 +1929,14 @@
     "openPrice" : 46900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 48600
+  }, {
+    "volume" : 148566,
+    "marketCap" : 1029407911750,
+    "lowPrice" : 48000,
+    "highPrice" : 50600,
+    "openPrice" : 48700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 48250
   } ],
   "stockCode" : "101490"
 }

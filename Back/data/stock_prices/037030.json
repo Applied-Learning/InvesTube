@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "파워넷",
   "prices" : [ {
-    "volume" : 22353,
-    "marketCap" : 49446481240,
-    "lowPrice" : 2210,
-    "highPrice" : 2260,
-    "openPrice" : 2230,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2260
-  }, {
     "volume" : 98286,
     "marketCap" : 50321640200,
     "lowPrice" : 2215,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2685
+  }, {
+    "volume" : 133414,
+    "marketCap" : 65519786800,
+    "lowPrice" : 2600,
+    "highPrice" : 2690,
+    "openPrice" : 2685,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2600
   } ],
   "stockCode" : "037030"
 }

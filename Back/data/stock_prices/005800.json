@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신영와코루",
   "prices" : [ {
-    "volume" : 5248,
-    "marketCap" : 82170000000,
-    "lowPrice" : 9000,
-    "highPrice" : 9280,
-    "openPrice" : 9000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9130
-  }, {
     "volume" : 5506,
     "marketCap" : 82260000000,
     "lowPrice" : 9050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16700
+  }, {
+    "volume" : 26759,
+    "marketCap" : 147600000000,
+    "lowPrice" : 16210,
+    "highPrice" : 17020,
+    "openPrice" : 16780,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16400
   } ],
   "stockCode" : "005800"
 }

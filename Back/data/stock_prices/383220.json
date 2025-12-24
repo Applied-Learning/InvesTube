@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "F&F",
   "prices" : [ {
-    "volume" : 73170,
-    "marketCap" : 2103058417500,
-    "lowPrice" : 53500,
-    "highPrice" : 55100,
-    "openPrice" : 54600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 54900
-  }, {
     "volume" : 97916,
     "marketCap" : 2057089927500,
     "lowPrice" : 53000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 79100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 78200
+  }, {
+    "volume" : 120907,
+    "marketCap" : 2892184162500,
+    "lowPrice" : 74700,
+    "highPrice" : 78500,
+    "openPrice" : 78100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 75500
   } ],
   "stockCode" : "383220"
 }

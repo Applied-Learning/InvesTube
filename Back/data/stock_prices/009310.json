@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "참엔지니어링",
   "prices" : [ {
-    "volume" : 341544,
-    "marketCap" : 29279259555,
-    "lowPrice" : 338,
-    "highPrice" : 353,
-    "openPrice" : 353,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 345
-  }, {
     "volume" : 298716,
     "marketCap" : 29024657298,
     "lowPrice" : 339,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1114,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1117
+  }, {
+    "volume" : 23081,
+    "marketCap" : 18891486579,
+    "lowPrice" : 1110,
+    "highPrice" : 1123,
+    "openPrice" : 1120,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1113
   } ],
   "stockCode" : "009310"
 }

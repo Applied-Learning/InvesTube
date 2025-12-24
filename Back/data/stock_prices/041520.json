@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이엘씨",
   "prices" : [ {
-    "volume" : 19134,
-    "marketCap" : 62406297600,
-    "lowPrice" : 4935,
-    "highPrice" : 5210,
-    "openPrice" : 5210,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5120
-  }, {
     "volume" : 6122,
     "marketCap" : 62650072200,
     "lowPrice" : 5060,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7260,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7070
+  }, {
+    "volume" : 17402,
+    "marketCap" : 86905644900,
+    "lowPrice" : 7010,
+    "highPrice" : 7210,
+    "openPrice" : 7210,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7130
   } ],
   "stockCode" : "041520"
 }

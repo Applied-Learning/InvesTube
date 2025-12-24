@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디비금융제13호스팩",
   "prices" : [ {
-    "volume" : 80244,
-    "marketCap" : 12265084000,
-    "lowPrice" : 1935,
-    "highPrice" : 1952,
-    "openPrice" : 1945,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1937
-  }, {
     "volume" : 30222,
     "marketCap" : 12265084000,
     "lowPrice" : 1933,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2010,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2035
+  }, {
+    "volume" : 7462,
+    "marketCap" : 12822300000,
+    "lowPrice" : 2020,
+    "highPrice" : 2030,
+    "openPrice" : 2030,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2025
   } ],
   "stockCode" : "489730"
 }

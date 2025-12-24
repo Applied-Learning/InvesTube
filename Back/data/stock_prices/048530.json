@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인트론바이오",
   "prices" : [ {
-    "volume" : 134344,
-    "marketCap" : 195342358640,
-    "lowPrice" : 5450,
-    "highPrice" : 5880,
-    "openPrice" : 5490,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5720
-  }, {
     "volume" : 40761,
     "marketCap" : 193976328160,
     "lowPrice" : 5590,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3545,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3520
+  }, {
+    "volume" : 93889,
+    "marketCap" : 119186159380,
+    "lowPrice" : 3480,
+    "highPrice" : 3560,
+    "openPrice" : 3525,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3490
   } ],
   "stockCode" : "048530"
 }

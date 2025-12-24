@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "핸디소프트",
   "prices" : [ {
-    "volume" : 9075,
-    "marketCap" : 54342400000,
-    "lowPrice" : 2740,
-    "highPrice" : 2870,
-    "openPrice" : 2835,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2800
-  }, {
     "volume" : 6953,
     "marketCap" : 54148320000,
     "lowPrice" : 2785,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2005
+  }, {
+    "volume" : 13767,
+    "marketCap" : 47478790528,
+    "lowPrice" : 1982,
+    "highPrice" : 2020,
+    "openPrice" : 2005,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1984
   } ],
   "stockCode" : "220180"
 }

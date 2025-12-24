@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동국씨엠",
   "prices" : [ {
-    "volume" : 47003,
-    "marketCap" : 182381801600,
-    "lowPrice" : 5980,
-    "highPrice" : 6110,
-    "openPrice" : 5980,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6100
-  }, {
     "volume" : 14443,
     "marketCap" : 181783828480,
     "lowPrice" : 6040,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5470,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5440
+  }, {
+    "volume" : 25630,
+    "marketCap" : 161751728960,
+    "lowPrice" : 5400,
+    "highPrice" : 5460,
+    "openPrice" : 5450,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5410
   } ],
   "stockCode" : "460850"
 }

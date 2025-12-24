@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "노루홀딩스",
   "prices" : [ {
-    "volume" : 9263,
-    "marketCap" : 175443193200,
-    "lowPrice" : 12830,
-    "highPrice" : 13200,
-    "openPrice" : 12890,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13200
-  }, {
     "volume" : 14638,
     "marketCap" : 174645724140,
     "lowPrice" : 13020,
@@ -1937,6 +1929,14 @@
     "openPrice" : 22900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 22950
+  }, {
+    "volume" : 16990,
+    "marketCap" : 302373685250,
+    "lowPrice" : 22450,
+    "highPrice" : 23050,
+    "openPrice" : 22750,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 22750
   } ],
   "stockCode" : "000320"
 }

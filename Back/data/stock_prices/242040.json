@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "나무기술",
   "prices" : [ {
-    "volume" : 80173,
-    "marketCap" : 51355695776,
-    "lowPrice" : 1425,
-    "highPrice" : 1490,
-    "openPrice" : 1425,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1484
-  }, {
     "volume" : 48838,
     "marketCap" : 50213689064,
     "lowPrice" : 1449,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1402,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1403
+  }, {
+    "volume" : 129716,
+    "marketCap" : 47514400472,
+    "lowPrice" : 1356,
+    "highPrice" : 1401,
+    "openPrice" : 1389,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1373
   } ],
   "stockCode" : "242040"
 }

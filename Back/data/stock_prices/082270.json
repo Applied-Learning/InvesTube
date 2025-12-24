@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "젬백스",
   "prices" : [ {
-    "volume" : 432368,
-    "marketCap" : 595913192600,
-    "lowPrice" : 13900,
-    "highPrice" : 15270,
-    "openPrice" : 14050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14900
-  }, {
     "volume" : 295944,
     "marketCap" : 587514416060,
     "lowPrice" : 14520,
@@ -1937,6 +1929,14 @@
     "openPrice" : 27850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 28250
+  }, {
+    "volume" : 594295,
+    "marketCap" : 1143834425200,
+    "lowPrice" : 25450,
+    "highPrice" : 28650,
+    "openPrice" : 28250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 26800
   } ],
   "stockCode" : "082270"
 }

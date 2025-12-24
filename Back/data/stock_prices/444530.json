@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "심플랫폼",
   "prices" : [ {
     "volume" : 18308224,
@@ -1489,6 +1489,14 @@
     "openPrice" : 8440,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8590
+  }, {
+    "volume" : 43393,
+    "marketCap" : 52980420070,
+    "lowPrice" : 8140,
+    "highPrice" : 8900,
+    "openPrice" : 8870,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8290
   } ],
   "stockCode" : "444530"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동양2우B",
   "prices" : [ {
-    "volume" : 354,
-    "marketCap" : 2647522020,
-    "lowPrice" : 8450,
-    "highPrice" : 8640,
-    "openPrice" : 8510,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8580
-  }, {
     "volume" : 962,
     "marketCap" : 2699978750,
     "lowPrice" : 8500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9050
+  }, {
+    "volume" : 24586,
+    "marketCap" : 2696893060,
+    "lowPrice" : 8740,
+    "highPrice" : 9050,
+    "openPrice" : 9050,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8740
   } ],
   "stockCode" : "001527"
 }

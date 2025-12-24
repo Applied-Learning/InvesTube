@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아진전자부품",
   "prices" : [ {
-    "volume" : 8304,
-    "marketCap" : 49496969080,
-    "lowPrice" : 1000,
-    "highPrice" : 1008,
-    "openPrice" : 1001,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1004
-  }, {
     "volume" : 48662,
     "marketCap" : 49447669310,
     "lowPrice" : 960,
@@ -1937,6 +1929,14 @@
     "openPrice" : 932,
     "tradeDate" : "2025-12-22",
     "closePrice" : 947
+  }, {
+    "volume" : 29526,
+    "marketCap" : 46736181960,
+    "lowPrice" : 937,
+    "highPrice" : 952,
+    "openPrice" : 942,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 948
   } ],
   "stockCode" : "009320"
 }

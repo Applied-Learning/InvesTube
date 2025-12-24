@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국화장품제조",
   "prices" : [ {
-    "volume" : 39294,
-    "marketCap" : 224787200000,
-    "lowPrice" : 48800,
-    "highPrice" : 50900,
-    "openPrice" : 49750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 49600
-  }, {
     "volume" : 95951,
     "marketCap" : 226600000000,
     "lowPrice" : 49650,
@@ -1937,6 +1929,14 @@
     "openPrice" : 49600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 49800
+  }, {
+    "volume" : 7467,
+    "marketCap" : 225240400000,
+    "lowPrice" : 49300,
+    "highPrice" : 50200,
+    "openPrice" : 49650,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 49700
   } ],
   "stockCode" : "003350"
 }

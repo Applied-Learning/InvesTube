@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "씨에스베어링",
   "prices" : [ {
-    "volume" : 136368,
-    "marketCap" : 116988300000,
-    "lowPrice" : 4245,
-    "highPrice" : 4535,
-    "openPrice" : 4500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4290
-  }, {
     "volume" : 94438,
     "marketCap" : 117124650000,
     "lowPrice" : 4200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6870
+  }, {
+    "volume" : 186463,
+    "marketCap" : 174255300000,
+    "lowPrice" : 6060,
+    "highPrice" : 6630,
+    "openPrice" : 6630,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6390
   } ],
   "stockCode" : "297090"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "LS ELECTRIC",
   "prices" : [ {
-    "volume" : 185453,
-    "marketCap" : 4722000000000,
-    "lowPrice" : 153000,
-    "highPrice" : 158200,
-    "openPrice" : 154200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 157400
-  }, {
     "volume" : 289449,
     "marketCap" : 4887000000000,
     "lowPrice" : 156200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 482500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 475000
+  }, {
+    "volume" : 114607,
+    "marketCap" : 13920000000000,
+    "lowPrice" : 462000,
+    "highPrice" : 479000,
+    "openPrice" : 479000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 464000
   } ],
   "stockCode" : "010120"
 }

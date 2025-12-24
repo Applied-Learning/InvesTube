@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KISCO홀딩스",
   "prices" : [ {
-    "volume" : 23512,
-    "marketCap" : 348600989000,
-    "lowPrice" : 21200,
-    "highPrice" : 21550,
-    "openPrice" : 21200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 21550
-  }, {
     "volume" : 28745,
     "marketCap" : 354262722000,
     "lowPrice" : 21400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 26750,
     "tradeDate" : "2025-12-22",
     "closePrice" : 26100
+  }, {
+    "volume" : 10898,
+    "marketCap" : 370712337000,
+    "lowPrice" : 25950,
+    "highPrice" : 26600,
+    "openPrice" : 26600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 26150
   } ],
   "stockCode" : "001940"
 }

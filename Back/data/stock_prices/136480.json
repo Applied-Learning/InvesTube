@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하림",
   "prices" : [ {
-    "volume" : 150067,
-    "marketCap" : 299511359640,
-    "lowPrice" : 2795,
-    "highPrice" : 2830,
-    "openPrice" : 2825,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2820
-  }, {
     "volume" : 95141,
     "marketCap" : 300042408150,
     "lowPrice" : 2820,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3040,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3030
+  }, {
+    "volume" : 327228,
+    "marketCap" : 321284348550,
+    "lowPrice" : 3010,
+    "highPrice" : 3040,
+    "openPrice" : 3020,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3025
   } ],
   "stockCode" : "136480"
 }

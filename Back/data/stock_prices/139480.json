@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이마트",
   "prices" : [ {
-    "volume" : 904388,
-    "marketCap" : 1940157002400,
-    "lowPrice" : 67100,
-    "highPrice" : 70500,
-    "openPrice" : 70400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 69600
-  }, {
     "volume" : 502964,
     "marketCap" : 1995908640400,
     "lowPrice" : 68100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 86300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 86800
+  }, {
+    "volume" : 186009,
+    "marketCap" : 2353923360700,
+    "lowPrice" : 84700,
+    "highPrice" : 87800,
+    "openPrice" : 87200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 85300
   } ],
   "stockCode" : "139480"
 }

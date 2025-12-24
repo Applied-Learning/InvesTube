@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이블씨엔씨",
   "prices" : [ {
-    "volume" : 68175,
-    "marketCap" : 191724366570,
-    "lowPrice" : 7310,
-    "highPrice" : 7460,
-    "openPrice" : 7460,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7370
-  }, {
     "volume" : 85665,
     "marketCap" : 195366349110,
     "lowPrice" : 7350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11220,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11040
+  }, {
+    "volume" : 413575,
+    "marketCap" : 282773930070,
+    "lowPrice" : 10690,
+    "highPrice" : 11230,
+    "openPrice" : 11110,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10870
   } ],
   "stockCode" : "078520"
 }

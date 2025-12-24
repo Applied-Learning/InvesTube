@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "모델솔루션",
   "prices" : [ {
-    "volume" : 33528,
-    "marketCap" : 58273937000,
-    "lowPrice" : 9110,
-    "highPrice" : 9530,
-    "openPrice" : 9320,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9110
-  }, {
     "volume" : 38512,
     "marketCap" : 56418894000,
     "lowPrice" : 8820,
@@ -1937,6 +1929,14 @@
     "openPrice" : 25000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 25650
+  }, {
+    "volume" : 166909,
+    "marketCap" : 154800140000,
+    "lowPrice" : 24200,
+    "highPrice" : 26050,
+    "openPrice" : 25250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 24200
   } ],
   "stockCode" : "417970"
 }

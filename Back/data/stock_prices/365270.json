@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "큐라클",
   "prices" : [ {
-    "volume" : 396538,
-    "marketCap" : 86296080960,
-    "lowPrice" : 6140,
-    "highPrice" : 6660,
-    "openPrice" : 6170,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6220
-  }, {
     "volume" : 69133,
     "marketCap" : 85324903200,
     "lowPrice" : 6090,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7220
+  }, {
+    "volume" : 219469,
+    "marketCap" : 147694359650,
+    "lowPrice" : 6950,
+    "highPrice" : 7380,
+    "openPrice" : 7380,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7030
   } ],
   "stockCode" : "365270"
 }

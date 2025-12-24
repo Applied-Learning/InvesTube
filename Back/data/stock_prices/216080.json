@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제테마",
   "prices" : [ {
-    "volume" : 88989,
-    "marketCap" : 254785768160,
-    "lowPrice" : 14230,
-    "highPrice" : 14650,
-    "openPrice" : 14650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14240
-  }, {
     "volume" : 56783,
     "marketCap" : 263910820250,
     "lowPrice" : 14240,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5920,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6470
+  }, {
+    "volume" : 440419,
+    "marketCap" : 236929468440,
+    "lowPrice" : 6380,
+    "highPrice" : 6890,
+    "openPrice" : 6480,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6580
   } ],
   "stockCode" : "216080"
 }

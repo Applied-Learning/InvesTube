@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "다우데이타",
   "prices" : [ {
-    "volume" : 143719,
-    "marketCap" : 405980000000,
-    "lowPrice" : 10330,
-    "highPrice" : 10650,
-    "openPrice" : 10460,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10600
-  }, {
     "volume" : 42472,
     "marketCap" : 407895000000,
     "lowPrice" : 10550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 19800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 19850
+  }, {
+    "volume" : 85052,
+    "marketCap" : 752978000000,
+    "lowPrice" : 19490,
+    "highPrice" : 20050,
+    "openPrice" : 19960,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 19660
   } ],
   "stockCode" : "032190"
 }

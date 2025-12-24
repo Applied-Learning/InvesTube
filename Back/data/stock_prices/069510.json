@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스텍",
   "prices" : [ {
-    "volume" : 8445,
-    "marketCap" : 116627900000,
-    "lowPrice" : 10580,
-    "highPrice" : 10840,
-    "openPrice" : 10840,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10690
-  }, {
     "volume" : 28712,
     "marketCap" : 117828000000,
     "lowPrice" : 10520,
@@ -1936,6 +1928,14 @@
     "highPrice" : 16400,
     "openPrice" : 16230,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 16170
+  }, {
+    "volume" : 22694,
+    "marketCap" : 176414700000,
+    "lowPrice" : 15980,
+    "highPrice" : 16670,
+    "openPrice" : 16520,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 16170
   } ],
   "stockCode" : "069510"

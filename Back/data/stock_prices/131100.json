@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "티엔엔터테인먼트",
   "prices" : [ {
-    "volume" : 105325,
-    "marketCap" : 36546872356,
-    "lowPrice" : 1256,
-    "highPrice" : 1345,
-    "openPrice" : 1336,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1303
-  }, {
     "volume" : 23980,
     "marketCap" : 36462727600,
     "lowPrice" : 1290,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1272,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1279
+  }, {
+    "volume" : 7267,
+    "marketCap" : 40985586204,
+    "lowPrice" : 1270,
+    "highPrice" : 1290,
+    "openPrice" : 1290,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1271
   } ],
   "stockCode" : "131100"
 }

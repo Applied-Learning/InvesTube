@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "카카오게임즈",
   "prices" : [ {
-    "volume" : 349083,
-    "marketCap" : 1477776917360,
-    "lowPrice" : 17290,
-    "highPrice" : 17970,
-    "openPrice" : 17750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17840
-  }, {
     "volume" : 328587,
     "marketCap" : 1482747019100,
     "lowPrice" : 17720,
@@ -1937,6 +1929,14 @@
     "openPrice" : 15500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15510
+  }, {
+    "volume" : 136303,
+    "marketCap" : 1373739738300,
+    "lowPrice" : 15250,
+    "highPrice" : 15640,
+    "openPrice" : 15500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15300
   } ],
   "stockCode" : "293490"
 }

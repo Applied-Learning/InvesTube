@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "ISC",
   "prices" : [ {
-    "volume" : 409103,
-    "marketCap" : 1468956119400,
-    "lowPrice" : 65000,
-    "highPrice" : 70200,
-    "openPrice" : 65200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 69300
-  }, {
     "volume" : 391385,
     "marketCap" : 1526188176000,
     "lowPrice" : 69900,
@@ -1937,6 +1929,14 @@
     "openPrice" : 106000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 106700
+  }, {
+    "volume" : 128729,
+    "marketCap" : 2274444323400,
+    "lowPrice" : 106400,
+    "highPrice" : 110300,
+    "openPrice" : 106700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 107300
   } ],
   "stockCode" : "095340"
 }

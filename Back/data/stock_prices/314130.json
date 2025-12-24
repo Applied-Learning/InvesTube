@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "지놈앤컴퍼니",
   "prices" : [ {
-    "volume" : 73957,
-    "marketCap" : 85052048985,
-    "lowPrice" : 2570,
-    "highPrice" : 2760,
-    "openPrice" : 2680,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2745
-  }, {
     "volume" : 61995,
     "marketCap" : 83657753100,
     "lowPrice" : 2690,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7090,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6780
+  }, {
+    "volume" : 859327,
+    "marketCap" : 204536833410,
+    "lowPrice" : 6350,
+    "highPrice" : 6970,
+    "openPrice" : 6740,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6370
   } ],
   "stockCode" : "314130"
 }

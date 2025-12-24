@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "휴엠앤씨",
   "prices" : [ {
-    "volume" : 50896,
-    "marketCap" : 48358502124,
-    "lowPrice" : 949,
-    "highPrice" : 986,
-    "openPrice" : 977,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 986
-  }, {
     "volume" : 18607,
     "marketCap" : 48407547258,
     "lowPrice" : 978,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4005,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4015
+  }, {
+    "volume" : 3488,
+    "marketCap" : 38843742960,
+    "lowPrice" : 3960,
+    "highPrice" : 4035,
+    "openPrice" : 4015,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3960
   } ],
   "stockCode" : "263920"
 }

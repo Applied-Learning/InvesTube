@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신라젠",
   "prices" : [ {
-    "volume" : 414160,
-    "marketCap" : 332428442500,
-    "lowPrice" : 2420,
-    "highPrice" : 2465,
-    "openPrice" : 2455,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2420
-  }, {
     "volume" : 423314,
     "marketCap" : 339983634375,
     "lowPrice" : 2415,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3520,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3560
+  }, {
+    "volume" : 865830,
+    "marketCap" : 488288970260,
+    "lowPrice" : 3520,
+    "highPrice" : 3625,
+    "openPrice" : 3570,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3535
   } ],
   "stockCode" : "215600"
 }

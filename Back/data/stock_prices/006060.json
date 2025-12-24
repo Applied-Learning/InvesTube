@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "화승인더",
   "prices" : [ {
-    "volume" : 537517,
-    "marketCap" : 253918800000,
-    "lowPrice" : 4295,
-    "highPrice" : 4590,
-    "openPrice" : 4455,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4590
-  }, {
     "volume" : 212885,
     "marketCap" : 254195400000,
     "lowPrice" : 4545,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3870,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3900
+  }, {
+    "volume" : 76591,
+    "marketCap" : 212705400000,
+    "lowPrice" : 3835,
+    "highPrice" : 3920,
+    "openPrice" : 3890,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3845
   } ],
   "stockCode" : "006060"
 }

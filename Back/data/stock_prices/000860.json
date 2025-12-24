@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "강남제비스코",
   "prices" : [ {
-    "volume" : 2261,
-    "marketCap" : 169325000000,
-    "lowPrice" : 25800,
-    "highPrice" : 26100,
-    "openPrice" : 25800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 26050
-  }, {
     "volume" : 5415,
     "marketCap" : 169000000000,
     "lowPrice" : 25750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12920,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12820
+  }, {
+    "volume" : 12428,
+    "marketCap" : 166010000000,
+    "lowPrice" : 12680,
+    "highPrice" : 12980,
+    "openPrice" : 12820,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12770
   } ],
   "stockCode" : "000860"
 }

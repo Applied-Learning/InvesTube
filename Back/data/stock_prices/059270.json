@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "해성에어로보틱스",
   "prices" : [ {
-    "volume" : 386912,
-    "marketCap" : 58934826710,
-    "lowPrice" : 5290,
-    "highPrice" : 5980,
-    "openPrice" : 5800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5290
-  }, {
     "volume" : 191218,
     "marketCap" : 60605946560,
     "lowPrice" : 5190,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8530,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8990
+  }, {
+    "volume" : 428215,
+    "marketCap" : 99817773060,
+    "lowPrice" : 8630,
+    "highPrice" : 9410,
+    "openPrice" : 9040,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8940
   } ],
   "stockCode" : "059270"
 }

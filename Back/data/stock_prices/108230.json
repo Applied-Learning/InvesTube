@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "톱텍",
   "prices" : [ {
-    "volume" : 23614,
-    "marketCap" : 180040065075,
-    "lowPrice" : 4580,
-    "highPrice" : 4750,
-    "openPrice" : 4635,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4735
-  }, {
     "volume" : 15827,
     "marketCap" : 180800529975,
     "lowPrice" : 4730,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4935
+  }, {
+    "volume" : 35032,
+    "marketCap" : 184412738250,
+    "lowPrice" : 4820,
+    "highPrice" : 4935,
+    "openPrice" : 4935,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4850
   } ],
   "stockCode" : "108230"
 }

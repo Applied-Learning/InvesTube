@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국비티비",
   "prices" : [ {
-    "volume" : 0,
-    "marketCap" : 63267797795,
-    "lowPrice" : 0,
-    "highPrice" : 0,
-    "openPrice" : 0,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 967
-  }, {
     "volume" : 0,
     "marketCap" : 63267797795,
     "lowPrice" : 0,
@@ -1937,6 +1929,14 @@
     "openPrice" : 872,
     "tradeDate" : "2025-12-22",
     "closePrice" : 854
+  }, {
+    "volume" : 113118,
+    "marketCap" : 53388338160,
+    "lowPrice" : 780,
+    "highPrice" : 848,
+    "openPrice" : 848,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 816
   } ],
   "stockCode" : "219750"
 }

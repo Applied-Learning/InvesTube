@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "네오셈",
   "prices" : [ {
-    "volume" : 486217,
-    "marketCap" : 408421916840,
-    "lowPrice" : 9020,
-    "highPrice" : 9550,
-    "openPrice" : 9020,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9310
-  }, {
     "volume" : 326291,
     "marketCap" : 399648084040,
     "lowPrice" : 9090,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9450,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9890
+  }, {
+    "volume" : 163865,
+    "marketCap" : 422460049320,
+    "lowPrice" : 9590,
+    "highPrice" : 10060,
+    "openPrice" : 9930,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9630
   } ],
   "stockCode" : "253590"
 }

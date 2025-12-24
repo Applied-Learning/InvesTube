@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스에프에이",
   "prices" : [ {
-    "volume" : 35793,
-    "marketCap" : 719970638000,
-    "lowPrice" : 19810,
-    "highPrice" : 20250,
-    "openPrice" : 20150,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 20050
-  }, {
     "volume" : 31365,
     "marketCap" : 712070710800,
     "lowPrice" : 19830,
@@ -1937,6 +1929,14 @@
     "openPrice" : 23650,
     "tradeDate" : "2025-12-22",
     "closePrice" : 23950
+  }, {
+    "volume" : 53951,
+    "marketCap" : 870787430000,
+    "lowPrice" : 23800,
+    "highPrice" : 24300,
+    "openPrice" : 24200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 24250
   } ],
   "stockCode" : "056190"
 }

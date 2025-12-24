@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "쏘닉스",
   "prices" : [ {
-    "volume" : 28733,
-    "marketCap" : 41016381300,
-    "lowPrice" : 2270,
-    "highPrice" : 2430,
-    "openPrice" : 2270,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2370
-  }, {
     "volume" : 30600,
     "marketCap" : 42314368050,
     "lowPrice" : 2305,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1768,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1740
+  }, {
+    "volume" : 77057,
+    "marketCap" : 29784469290,
+    "lowPrice" : 1720,
+    "highPrice" : 1800,
+    "openPrice" : 1758,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1721
   } ],
   "stockCode" : "088280"
 }

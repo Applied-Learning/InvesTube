@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "루미르",
   "prices" : [ {
-    "volume" : 5810163,
-    "marketCap" : 179049729600,
-    "lowPrice" : 8640,
-    "highPrice" : 10420,
-    "openPrice" : 8670,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10100
-  }, {
     "volume" : 960026,
     "marketCap" : 172845036000,
     "lowPrice" : 9620,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9340
+  }, {
+    "volume" : 2845410,
+    "marketCap" : 156083016960,
+    "lowPrice" : 8610,
+    "highPrice" : 10190,
+    "openPrice" : 10120,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8760
   } ],
   "stockCode" : "474170"
 }

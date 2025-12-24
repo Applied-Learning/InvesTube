@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "기산텔레콤",
   "prices" : [ {
-    "volume" : 15015,
-    "marketCap" : 25554077020,
-    "lowPrice" : 1727,
-    "highPrice" : 1757,
-    "openPrice" : 1756,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1753
-  }, {
     "volume" : 18749,
     "marketCap" : 26005974560,
     "lowPrice" : 1746,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1935,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1923
+  }, {
+    "volume" : 39784,
+    "marketCap" : 27901028760,
+    "lowPrice" : 1912,
+    "highPrice" : 1936,
+    "openPrice" : 1936,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1914
   } ],
   "stockCode" : "035460"
 }

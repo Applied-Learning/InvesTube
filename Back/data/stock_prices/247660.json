@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "나노씨엠에스",
   "prices" : [ {
-    "volume" : 4470,
-    "marketCap" : 28365797600,
-    "lowPrice" : 6450,
-    "highPrice" : 6590,
-    "openPrice" : 6520,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6530
-  }, {
     "volume" : 11950,
     "marketCap" : 28843628800,
     "lowPrice" : 6420,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5210,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5250
+  }, {
+    "volume" : 21948,
+    "marketCap" : 22544944800,
+    "lowPrice" : 5150,
+    "highPrice" : 5250,
+    "openPrice" : 5250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5190
   } ],
   "stockCode" : "247660"
 }

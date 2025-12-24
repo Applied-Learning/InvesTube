@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "AP시스템",
   "prices" : [ {
-    "volume" : 103159,
-    "marketCap" : 247711834410,
-    "lowPrice" : 15400,
-    "highPrice" : 16290,
-    "openPrice" : 15500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16210
-  }, {
     "volume" : 54585,
     "marketCap" : 246794949150,
     "lowPrice" : 15960,
@@ -1937,6 +1929,14 @@
     "openPrice" : 19350,
     "tradeDate" : "2025-12-22",
     "closePrice" : 20150
+  }, {
+    "volume" : 67834,
+    "marketCap" : 294845583390,
+    "lowPrice" : 19580,
+    "highPrice" : 20250,
+    "openPrice" : 20200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 19590
   } ],
   "stockCode" : "265520"
 }

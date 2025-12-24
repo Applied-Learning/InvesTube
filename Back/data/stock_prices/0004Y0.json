@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디비금융제14호스팩",
   "prices" : [ {
     "volume" : 21889900,
@@ -833,6 +833,14 @@
     "openPrice" : 2000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2010
+  }, {
+    "volume" : 14757,
+    "marketCap" : 10656575000,
+    "lowPrice" : 2000,
+    "highPrice" : 2015,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2005
   } ],
   "stockCode" : "0004Y0"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "링크드",
   "prices" : [ {
-    "volume" : 677446,
-    "marketCap" : 32168275516,
-    "lowPrice" : 498,
-    "highPrice" : 532,
-    "openPrice" : 498,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 508
-  }, {
     "volume" : 744095,
     "marketCap" : 30268574206,
     "lowPrice" : 471,
@@ -1937,6 +1929,14 @@
     "openPrice" : 416,
     "tradeDate" : "2025-12-22",
     "closePrice" : 405
+  }, {
+    "volume" : 105313,
+    "marketCap" : 26741258982,
+    "lowPrice" : 406,
+    "highPrice" : 416,
+    "openPrice" : 410,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 414
   } ],
   "stockCode" : "193250"
 }

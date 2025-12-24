@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "키움제11호스팩",
   "prices" : [ {
-    "volume" : 77876,
-    "marketCap" : 12738000000,
-    "lowPrice" : 1925,
-    "highPrice" : 1934,
-    "openPrice" : 1934,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1930
-  }, {
     "volume" : 51099,
     "marketCap" : 12731400000,
     "lowPrice" : 1924,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2035,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2040
+  }, {
+    "volume" : 110,
+    "marketCap" : 13431000000,
+    "lowPrice" : 2035,
+    "highPrice" : 2045,
+    "openPrice" : 2040,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2035
   } ],
   "stockCode" : "489480"
 }

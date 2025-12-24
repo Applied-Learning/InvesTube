@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "CSA 코스믹",
   "prices" : [ {
-    "volume" : 11074,
-    "marketCap" : 63513326697,
-    "lowPrice" : 1000,
-    "highPrice" : 1047,
-    "openPrice" : 1040,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1037
-  }, {
     "volume" : 10460,
     "marketCap" : 64922011860,
     "lowPrice" : 1024,
@@ -1937,6 +1929,14 @@
     "openPrice" : 554,
     "tradeDate" : "2025-12-22",
     "closePrice" : 563
+  }, {
+    "volume" : 1101884,
+    "marketCap" : 33550931106,
+    "lowPrice" : 529,
+    "highPrice" : 572,
+    "openPrice" : 572,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 534
   } ],
   "stockCode" : "083660"
 }

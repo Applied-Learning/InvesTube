@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼성에피스홀딩스",
   "prices" : [ {
     "volume" : 1178683,
@@ -169,6 +169,14 @@
     "openPrice" : 686000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 663000
+  }, {
+    "volume" : 411504,
+    "marketCap" : 16223747948000,
+    "lowPrice" : 640000,
+    "highPrice" : 672000,
+    "openPrice" : 668000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 652000
   } ],
   "stockCode" : "0126Z0"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엔지켐생명과학",
   "prices" : [ {
-    "volume" : 176536,
-    "marketCap" : 113477459708,
-    "lowPrice" : 1294,
-    "highPrice" : 1379,
-    "openPrice" : 1328,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1334
-  }, {
     "volume" : 301695,
     "marketCap" : 115263836510,
     "lowPrice" : 1328,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1616,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1656
+  }, {
+    "volume" : 948481,
+    "marketCap" : 140953636234,
+    "lowPrice" : 1574,
+    "highPrice" : 1727,
+    "openPrice" : 1633,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1657
   } ],
   "stockCode" : "183490"
 }

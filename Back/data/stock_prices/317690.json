@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "퀀타매트릭스",
   "prices" : [ {
-    "volume" : 145407,
-    "marketCap" : 96909228460,
-    "lowPrice" : 5750,
-    "highPrice" : 6030,
-    "openPrice" : 5860,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5860
-  }, {
     "volume" : 106977,
     "marketCap" : 95751609690,
     "lowPrice" : 5770,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4515
+  }, {
+    "volume" : 511107,
+    "marketCap" : 82615028620,
+    "lowPrice" : 4220,
+    "highPrice" : 4745,
+    "openPrice" : 4600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4220
   } ],
   "stockCode" : "317690"
 }

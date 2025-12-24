@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이비젼웍스",
   "prices" : [ {
-    "volume" : 207112,
-    "marketCap" : 36142352265,
-    "lowPrice" : 1036,
-    "highPrice" : 1093,
-    "openPrice" : 1036,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1065
-  }, {
     "volume" : 92155,
     "marketCap" : 35293940240,
     "lowPrice" : 1040,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1368,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1329
+  }, {
+    "volume" : 445957,
+    "marketCap" : 43897556794,
+    "lowPrice" : 1268,
+    "highPrice" : 1325,
+    "openPrice" : 1322,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1274
   } ],
   "stockCode" : "469750"
 }

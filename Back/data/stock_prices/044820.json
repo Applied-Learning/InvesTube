@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코스맥스비티아이",
   "prices" : [ {
-    "volume" : 4349,
-    "marketCap" : 83746191120,
-    "lowPrice" : 8570,
-    "highPrice" : 8790,
-    "openPrice" : 8700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8720
-  }, {
     "volume" : 4853,
     "marketCap" : 83746191120,
     "lowPrice" : 8650,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13880,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13920
+  }, {
+    "volume" : 12171,
+    "marketCap" : 131861835330,
+    "lowPrice" : 13700,
+    "highPrice" : 13950,
+    "openPrice" : 13950,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13730
   } ],
   "stockCode" : "044820"
 }

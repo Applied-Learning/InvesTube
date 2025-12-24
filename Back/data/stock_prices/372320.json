@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "큐로셀",
   "prices" : [ {
-    "volume" : 166183,
-    "marketCap" : 412103220800,
-    "lowPrice" : 28800,
-    "highPrice" : 31300,
-    "openPrice" : 31200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 29200
-  }, {
     "volume" : 157178,
     "marketCap" : 409280596000,
     "lowPrice" : 27800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 44950,
     "tradeDate" : "2025-12-22",
     "closePrice" : 45000
+  }, {
+    "volume" : 155828,
+    "marketCap" : 641529692300,
+    "lowPrice" : 42600,
+    "highPrice" : 45150,
+    "openPrice" : 45000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 44450
   } ],
   "stockCode" : "372320"
 }

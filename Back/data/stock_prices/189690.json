@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "포시에스",
   "prices" : [ {
-    "volume" : 128938,
-    "marketCap" : 55736816760,
-    "lowPrice" : 2025,
-    "highPrice" : 2090,
-    "openPrice" : 2090,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2040
-  }, {
     "volume" : 51226,
     "marketCap" : 55190377380,
     "lowPrice" : 2010,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2080,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2080
+  }, {
+    "volume" : 52258,
+    "marketCap" : 56010036450,
+    "lowPrice" : 2050,
+    "highPrice" : 2085,
+    "openPrice" : 2080,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2050
   } ],
   "stockCode" : "189690"
 }

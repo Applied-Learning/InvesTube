@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "넥써쓰",
   "prices" : [ {
-    "volume" : 268308,
-    "marketCap" : 108010489600,
-    "lowPrice" : 2000,
-    "highPrice" : 2165,
-    "openPrice" : 2125,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2080
-  }, {
     "volume" : 1865262,
     "marketCap" : 119434676000,
     "lowPrice" : 2060,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2040,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2030
+  }, {
+    "volume" : 86115,
+    "marketCap" : 120941490825,
+    "lowPrice" : 1989,
+    "highPrice" : 2050,
+    "openPrice" : 2050,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2025
   } ],
   "stockCode" : "205500"
 }

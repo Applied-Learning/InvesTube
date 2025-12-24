@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이팩트",
   "prices" : [ {
-    "volume" : 192474,
-    "marketCap" : 93408415065,
-    "lowPrice" : 2080,
-    "highPrice" : 2270,
-    "openPrice" : 2100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2205
-  }, {
     "volume" : 95867,
     "marketCap" : 90019447625,
     "lowPrice" : 2100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6230,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6200
+  }, {
+    "volume" : 992144,
+    "marketCap" : 264339460320,
+    "lowPrice" : 6140,
+    "highPrice" : 6340,
+    "openPrice" : 6290,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6240
   } ],
   "stockCode" : "200470"
 }

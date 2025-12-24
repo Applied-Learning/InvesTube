@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "센서뷰",
   "prices" : [ {
-    "volume" : 170389,
-    "marketCap" : 43388148015,
-    "lowPrice" : 1600,
-    "highPrice" : 1690,
-    "openPrice" : 1644,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1647
-  }, {
     "volume" : 159583,
     "marketCap" : 41991929530,
     "lowPrice" : 1592,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1172,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1261
+  }, {
+    "volume" : 3316669,
+    "marketCap" : 50244565245,
+    "lowPrice" : 1079,
+    "highPrice" : 1350,
+    "openPrice" : 1301,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1113
   } ],
   "stockCode" : "321370"
 }

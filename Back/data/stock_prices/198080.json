@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "캐프",
   "prices" : [ {
-    "volume" : 35274,
-    "marketCap" : 51361416225,
-    "lowPrice" : 2355,
-    "highPrice" : 2415,
-    "openPrice" : 2355,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2385
-  }, {
     "volume" : 38871,
     "marketCap" : 51361416225,
     "lowPrice" : 2375,
@@ -1936,6 +1928,14 @@
     "highPrice" : 2240,
     "openPrice" : 2210,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 2230
+  }, {
+    "volume" : 39148,
+    "marketCap" : 48023462550,
+    "lowPrice" : 2200,
+    "highPrice" : 2250,
+    "openPrice" : 2225,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 2230
   } ],
   "stockCode" : "198080"

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대원화성",
   "prices" : [ {
-    "volume" : 53605,
-    "marketCap" : 41661643520,
-    "lowPrice" : 998,
-    "highPrice" : 1029,
-    "openPrice" : 1001,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1010
-  }, {
     "volume" : 25151,
     "marketCap" : 41455397760,
     "lowPrice" : 1002,
@@ -1937,6 +1929,14 @@
     "openPrice" : 711,
     "tradeDate" : "2025-12-22",
     "closePrice" : 712
+  }, {
+    "volume" : 71424,
+    "marketCap" : 29410645376,
+    "lowPrice" : 712,
+    "highPrice" : 722,
+    "openPrice" : 718,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 713
   } ],
   "stockCode" : "024890"
 }

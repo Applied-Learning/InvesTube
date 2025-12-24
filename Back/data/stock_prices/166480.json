@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코아스템켐온",
   "prices" : [ {
-    "volume" : 6074809,
-    "marketCap" : 155805582240,
-    "lowPrice" : 4515,
-    "highPrice" : 5060,
-    "openPrice" : 4730,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4740
-  }, {
     "volume" : 2513155,
     "marketCap" : 144629654400,
     "lowPrice" : 4280,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1890,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1845
+  }, {
+    "volume" : 815830,
+    "marketCap" : 94267880408,
+    "lowPrice" : 1720,
+    "highPrice" : 1877,
+    "openPrice" : 1847,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1783
   } ],
   "stockCode" : "166480"
 }

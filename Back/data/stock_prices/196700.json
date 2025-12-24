@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "웹스",
   "prices" : [ {
-    "volume" : 223586,
-    "marketCap" : 22264423200,
-    "lowPrice" : 1482,
-    "highPrice" : 1584,
-    "openPrice" : 1521,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1550
-  }, {
     "volume" : 183773,
     "marketCap" : 21215840688,
     "lowPrice" : 1455,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1974,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2235
+  }, {
+    "volume" : 3522609,
+    "marketCap" : 31098371760,
+    "lowPrice" : 2095,
+    "highPrice" : 2670,
+    "openPrice" : 2235,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2165
   } ],
   "stockCode" : "196700"
 }

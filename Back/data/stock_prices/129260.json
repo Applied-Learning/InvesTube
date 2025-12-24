@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인터지스",
   "prices" : [ {
-    "volume" : 256779,
-    "marketCap" : 72287333820,
-    "lowPrice" : 2330,
-    "highPrice" : 2440,
-    "openPrice" : 2330,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2430
-  }, {
     "volume" : 246878,
     "marketCap" : 73625988150,
     "lowPrice" : 2410,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2595,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2570
+  }, {
+    "volume" : 86103,
+    "marketCap" : 76154557440,
+    "lowPrice" : 2535,
+    "highPrice" : 2575,
+    "openPrice" : 2565,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2560
   } ],
   "stockCode" : "129260"
 }

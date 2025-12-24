@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동일스틸럭스",
   "prices" : [ {
-    "volume" : 8894,
-    "marketCap" : 21258161700,
-    "lowPrice" : 1010,
-    "highPrice" : 1030,
-    "openPrice" : 1030,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1020
-  }, {
     "volume" : 6400,
     "marketCap" : 21445733715,
     "lowPrice" : 1018,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1550,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1511
+  }, {
+    "volume" : 22053377,
+    "marketCap" : 42633715327,
+    "lowPrice" : 1518,
+    "highPrice" : 1964,
+    "openPrice" : 1518,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1631
   } ],
   "stockCode" : "023790"
 }

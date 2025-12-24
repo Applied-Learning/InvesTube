@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한라캐스트",
   "prices" : [ {
     "volume" : 67557589,
@@ -673,6 +673,14 @@
     "openPrice" : 17110,
     "tradeDate" : "2025-12-22",
     "closePrice" : 17290
+  }, {
+    "volume" : 4411098,
+    "marketCap" : 612144443040,
+    "lowPrice" : 16700,
+    "highPrice" : 18140,
+    "openPrice" : 17170,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16770
   } ],
   "stockCode" : "125490"
 }

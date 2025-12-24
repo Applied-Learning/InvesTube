@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아셈스",
   "prices" : [ {
-    "volume" : 131113,
-    "marketCap" : 79117181080,
-    "lowPrice" : 6890,
-    "highPrice" : 7250,
-    "openPrice" : 6890,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7180
-  }, {
     "volume" : 36699,
     "marketCap" : 78345843660,
     "lowPrice" : 7040,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10330,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10240
+  }, {
+    "volume" : 14742,
+    "marketCap" : 112615263320,
+    "lowPrice" : 10110,
+    "highPrice" : 10320,
+    "openPrice" : 10200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10220
   } ],
   "stockCode" : "136410"
 }

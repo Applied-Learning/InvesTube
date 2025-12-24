@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한텍",
   "prices" : [ {
     "volume" : 23860525,
@@ -1497,6 +1497,14 @@
     "openPrice" : 34300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 33900
+  }, {
+    "volume" : 56118,
+    "marketCap" : 364217367750,
+    "lowPrice" : 32650,
+    "highPrice" : 34100,
+    "openPrice" : 33900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 32750
   } ],
   "stockCode" : "098070"
 }

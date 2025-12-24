@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엑스플러스",
   "prices" : [ {
-    "volume" : 775264,
-    "marketCap" : 47845975224,
-    "lowPrice" : 624,
-    "highPrice" : 663,
-    "openPrice" : 627,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 632
-  }, {
     "volume" : 2215920,
     "marketCap" : 44969160258,
     "lowPrice" : 570,
@@ -1937,6 +1929,14 @@
     "openPrice" : 456,
     "tradeDate" : "2025-12-22",
     "closePrice" : 452
+  }, {
+    "volume" : 129482,
+    "marketCap" : 48732363848,
+    "lowPrice" : 435,
+    "highPrice" : 463,
+    "openPrice" : 452,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 443
   } ],
   "stockCode" : "373200"
 }

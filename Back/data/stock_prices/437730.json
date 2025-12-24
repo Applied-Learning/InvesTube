@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼현",
   "prices" : [ {
-    "volume" : 85076,
-    "marketCap" : 197538142410,
-    "lowPrice" : 6020,
-    "highPrice" : 6250,
-    "openPrice" : 6020,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6230
-  }, {
     "volume" : 104346,
     "marketCap" : 197221066740,
     "lowPrice" : 6180,
@@ -1937,6 +1929,14 @@
     "openPrice" : 48450,
     "tradeDate" : "2025-12-22",
     "closePrice" : 56600
+  }, {
+    "volume" : 4131409,
+    "marketCap" : 1959527640600,
+    "lowPrice" : 54400,
+    "highPrice" : 65600,
+    "openPrice" : 55200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 61800
   } ],
   "stockCode" : "437730"
 }

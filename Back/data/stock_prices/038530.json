@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이바이오",
   "prices" : [ {
-    "volume" : 474981,
-    "marketCap" : 26382871116,
-    "lowPrice" : 222,
-    "highPrice" : 229,
-    "openPrice" : 222,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 228
-  }, {
     "volume" : 265885,
     "marketCap" : 25920013728,
     "lowPrice" : 221,
@@ -1936,6 +1928,14 @@
     "highPrice" : 245,
     "openPrice" : 239,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 241
+  }, {
+    "volume" : 282170,
+    "marketCap" : 27887157627,
+    "lowPrice" : 238,
+    "highPrice" : 243,
+    "openPrice" : 241,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 241
   } ],
   "stockCode" : "038530"

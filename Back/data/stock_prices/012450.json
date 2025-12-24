@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한화에어로스페이스",
   "prices" : [ {
-    "volume" : 336668,
-    "marketCap" : 14859458486000,
-    "lowPrice" : 306500,
-    "highPrice" : 328500,
-    "openPrice" : 306500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 326000
-  }, {
     "volume" : 179574,
     "marketCap" : 14768296164000,
     "lowPrice" : 320500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 900000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 886000
+  }, {
+    "volume" : 88326,
+    "marketCap" : 46407060900000,
+    "lowPrice" : 887000,
+    "highPrice" : 906000,
+    "openPrice" : 891000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 900000
   } ],
   "stockCode" : "012450"
 }

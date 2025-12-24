@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이화산업",
   "prices" : [ {
-    "volume" : 622,
-    "marketCap" : 28560000000,
-    "lowPrice" : 10160,
-    "highPrice" : 10610,
-    "openPrice" : 10600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10200
-  }, {
     "volume" : 203,
     "marketCap" : 29092000000,
     "lowPrice" : 10070,
@@ -1937,6 +1929,14 @@
     "openPrice" : 15630,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15440
+  }, {
+    "volume" : 11323,
+    "marketCap" : 42924000000,
+    "lowPrice" : 15030,
+    "highPrice" : 15740,
+    "openPrice" : 15440,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15330
   } ],
   "stockCode" : "000760"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "바텍",
   "prices" : [ {
-    "volume" : 18893,
-    "marketCap" : 287578396160,
-    "lowPrice" : 19180,
-    "highPrice" : 19460,
-    "openPrice" : 19190,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 19360
-  }, {
     "volume" : 6033,
     "marketCap" : 286984225920,
     "lowPrice" : 19290,
@@ -1937,6 +1929,14 @@
     "openPrice" : 19760,
     "tradeDate" : "2025-12-22",
     "closePrice" : 19840
+  }, {
+    "volume" : 59765,
+    "marketCap" : 300798684000,
+    "lowPrice" : 19870,
+    "highPrice" : 20450,
+    "openPrice" : 19930,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 20250
   } ],
   "stockCode" : "043150"
 }

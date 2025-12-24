@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아바텍",
   "prices" : [ {
-    "volume" : 4467,
-    "marketCap" : 125328225000,
-    "lowPrice" : 7710,
-    "highPrice" : 8270,
-    "openPrice" : 8270,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8030
-  }, {
     "volume" : 11675,
     "marketCap" : 126108600000,
     "lowPrice" : 7800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10120,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10060
+  }, {
+    "volume" : 23104,
+    "marketCap" : 133260104250,
+    "lowPrice" : 9690,
+    "highPrice" : 10060,
+    "openPrice" : 9960,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9750
   } ],
   "stockCode" : "149950"
 }

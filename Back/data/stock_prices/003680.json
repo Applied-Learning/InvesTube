@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한성기업",
   "prices" : [ {
-    "volume" : 19462,
-    "marketCap" : 31979002250,
-    "lowPrice" : 5010,
-    "highPrice" : 5150,
-    "openPrice" : 5060,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5150
-  }, {
     "volume" : 16250,
     "marketCap" : 31792716800,
     "lowPrice" : 5050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5870,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5860
+  }, {
+    "volume" : 101707,
+    "marketCap" : 35332140350,
+    "lowPrice" : 5660,
+    "highPrice" : 5870,
+    "openPrice" : 5870,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5690
   } ],
   "stockCode" : "003680"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "텔코웨어",
   "prices" : [ {
-    "volume" : 2709,
-    "marketCap" : 90275552290,
-    "lowPrice" : 9770,
-    "highPrice" : 9940,
-    "openPrice" : 9930,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9770
-  }, {
     "volume" : 3252,
     "marketCap" : 91014758450,
     "lowPrice" : 9660,
@@ -1937,6 +1929,14 @@
     "openPrice" : 15380,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15200
+  }, {
+    "volume" : 38909,
+    "marketCap" : 141927582720,
+    "lowPrice" : 15040,
+    "highPrice" : 15360,
+    "openPrice" : 15350,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15360
   } ],
   "stockCode" : "078000"
 }

@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "위너스",
   "prices" : [ {
     "volume" : 28851701,
@@ -1633,6 +1633,14 @@
     "openPrice" : 11020,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11120
+  }, {
+    "volume" : 5259,
+    "marketCap" : 74333350000,
+    "lowPrice" : 10820,
+    "highPrice" : 11130,
+    "openPrice" : 11130,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10850
   } ],
   "stockCode" : "479960"
 }

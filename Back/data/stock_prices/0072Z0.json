@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KB제33호스팩",
   "prices" : [ {
     "volume" : 6121523,
@@ -440,6 +440,14 @@
     "highPrice" : 1993,
     "openPrice" : 1987,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 1988
+  }, {
+    "volume" : 16736,
+    "marketCap" : 15675380000,
+    "lowPrice" : 1986,
+    "highPrice" : 1996,
+    "openPrice" : 1988,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 1988
   } ],
   "stockCode" : "0072Z0"

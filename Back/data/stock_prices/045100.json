@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한양이엔지",
   "prices" : [ {
-    "volume" : 60522,
-    "marketCap" : 310320000000,
-    "lowPrice" : 16620,
-    "highPrice" : 17350,
-    "openPrice" : 16620,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17240
-  }, {
     "volume" : 15937,
     "marketCap" : 307800000000,
     "lowPrice" : 17000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 21300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 21600
+  }, {
+    "volume" : 49533,
+    "marketCap" : 386100000000,
+    "lowPrice" : 21300,
+    "highPrice" : 21850,
+    "openPrice" : 21750,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 21450
   } ],
   "stockCode" : "045100"
 }

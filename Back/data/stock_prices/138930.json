@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "BNK금융지주",
   "prices" : [ {
-    "volume" : 724953,
-    "marketCap" : 3406242408010,
-    "lowPrice" : 10300,
-    "highPrice" : 10660,
-    "openPrice" : 10360,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10630
-  }, {
     "volume" : 706949,
     "marketCap" : 3438286080710,
     "lowPrice" : 10560,
@@ -1937,6 +1929,14 @@
     "openPrice" : 16030,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16230
+  }, {
+    "volume" : 2149271,
+    "marketCap" : 5074821985560,
+    "lowPrice" : 15970,
+    "highPrice" : 16520,
+    "openPrice" : 16250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16140
   } ],
   "stockCode" : "138930"
 }

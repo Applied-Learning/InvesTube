@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "그리티",
   "prices" : [ {
-    "volume" : 36042,
-    "marketCap" : 59434918500,
-    "lowPrice" : 2840,
-    "highPrice" : 2960,
-    "openPrice" : 2840,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2950
-  }, {
     "volume" : 31860,
     "marketCap" : 58830495600,
     "lowPrice" : 2910,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2320,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2300
+  }, {
+    "volume" : 69352,
+    "marketCap" : 44250642800,
+    "lowPrice" : 2255,
+    "highPrice" : 2315,
+    "openPrice" : 2300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2275
   } ],
   "stockCode" : "204020"
 }

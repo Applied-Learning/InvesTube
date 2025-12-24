@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "모비릭스",
   "prices" : [ {
-    "volume" : 17076,
-    "marketCap" : 50804102000,
-    "lowPrice" : 5080,
-    "highPrice" : 5350,
-    "openPrice" : 5100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5290
-  }, {
     "volume" : 9547,
     "marketCap" : 49363532000,
     "lowPrice" : 4960,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3170,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3100
+  }, {
+    "volume" : 13578,
+    "marketCap" : 30924236000,
+    "lowPrice" : 3110,
+    "highPrice" : 3330,
+    "openPrice" : 3120,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3220
   } ],
   "stockCode" : "348030"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디와이덕양",
   "prices" : [ {
-    "volume" : 36946,
-    "marketCap" : 98183414700,
-    "lowPrice" : 2970,
-    "highPrice" : 3025,
-    "openPrice" : 2970,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3015
-  }, {
     "volume" : 43848,
     "marketCap" : 96880815500,
     "lowPrice" : 2970,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2285,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2200
+  }, {
+    "volume" : 46112,
+    "marketCap" : 70177531900,
+    "lowPrice" : 2140,
+    "highPrice" : 2200,
+    "openPrice" : 2200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2155
   } ],
   "stockCode" : "024900"
 }

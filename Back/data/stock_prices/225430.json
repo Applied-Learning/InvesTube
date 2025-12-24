@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이엠제약",
   "prices" : [ {
-    "volume" : 14218,
-    "marketCap" : 18461227100,
-    "lowPrice" : 655,
-    "highPrice" : 665,
-    "openPrice" : 665,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 662
-  }, {
     "volume" : 27945,
     "marketCap" : 18154469550,
     "lowPrice" : 650,
@@ -1937,6 +1929,14 @@
     "openPrice" : 560,
     "tradeDate" : "2025-12-22",
     "closePrice" : 551
+  }, {
+    "volume" : 42804,
+    "marketCap" : 15282103400,
+    "lowPrice" : 548,
+    "highPrice" : 572,
+    "openPrice" : 551,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 548
   } ],
   "stockCode" : "225430"
 }

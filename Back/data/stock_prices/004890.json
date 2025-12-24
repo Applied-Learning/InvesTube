@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동일산업",
   "prices" : [ {
-    "volume" : 901,
-    "marketCap" : 95674731750,
-    "lowPrice" : 38750,
-    "highPrice" : 39550,
-    "openPrice" : 39200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 39450
-  }, {
     "volume" : 731,
     "marketCap" : 95310949500,
     "lowPrice" : 38800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 39200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 39450
+  }, {
+    "volume" : 664,
+    "marketCap" : 95432210250,
+    "lowPrice" : 39100,
+    "highPrice" : 39500,
+    "openPrice" : 39500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 39350
   } ],
   "stockCode" : "004890"
 }

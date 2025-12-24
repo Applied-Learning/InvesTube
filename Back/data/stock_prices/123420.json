@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "위메이드플레이",
   "prices" : [ {
-    "volume" : 17871,
-    "marketCap" : 81779973460,
-    "lowPrice" : 7010,
-    "highPrice" : 7180,
-    "openPrice" : 7030,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7130
-  }, {
     "volume" : 15572,
     "marketCap" : 81665275040,
     "lowPrice" : 7110,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7880,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7830
+  }, {
+    "volume" : 23435,
+    "marketCap" : 81041925120,
+    "lowPrice" : 7670,
+    "highPrice" : 7890,
+    "openPrice" : 7760,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7680
   } ],
   "stockCode" : "123420"
 }

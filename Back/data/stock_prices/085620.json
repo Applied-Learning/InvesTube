@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "미래에셋생명",
   "prices" : [ {
-    "volume" : 9278,
-    "marketCap" : 931105154140,
-    "lowPrice" : 5260,
-    "highPrice" : 5350,
-    "openPrice" : 5350,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5260
-  }, {
     "volume" : 23947,
     "marketCap" : 938185801700,
     "lowPrice" : 5210,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9320,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9270
+  }, {
+    "volume" : 91958,
+    "marketCap" : 1630319100690,
+    "lowPrice" : 9060,
+    "highPrice" : 9360,
+    "openPrice" : 9200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9210
   } ],
   "stockCode" : "085620"
 }

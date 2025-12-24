@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "캐스텍코리아",
   "prices" : [ {
-    "volume" : 21424,
-    "marketCap" : 51311883870,
-    "lowPrice" : 2050,
-    "highPrice" : 2160,
-    "openPrice" : 2115,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2115
-  }, {
     "volume" : 15147,
     "marketCap" : 51190579180,
     "lowPrice" : 2050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1533,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1534
+  }, {
+    "volume" : 2876,
+    "marketCap" : 37192017954,
+    "lowPrice" : 1508,
+    "highPrice" : 1540,
+    "openPrice" : 1509,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1533
   } ],
   "stockCode" : "071850"
 }

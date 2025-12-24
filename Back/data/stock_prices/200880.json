@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "서연이화",
   "prices" : [ {
-    "volume" : 56308,
-    "marketCap" : 324341244000,
-    "lowPrice" : 11800,
-    "highPrice" : 12080,
-    "openPrice" : 11870,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12000
-  }, {
     "volume" : 53854,
     "marketCap" : 321908684670,
     "lowPrice" : 11900,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13130
+  }, {
+    "volume" : 83180,
+    "marketCap" : 346504562340,
+    "lowPrice" : 12800,
+    "highPrice" : 13140,
+    "openPrice" : 13130,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12820
   } ],
   "stockCode" : "200880"
 }

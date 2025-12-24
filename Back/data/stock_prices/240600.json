@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유진테크놀로지",
   "prices" : [ {
-    "volume" : 11210,
-    "marketCap" : 34398269715,
-    "lowPrice" : 4900,
-    "highPrice" : 5090,
-    "openPrice" : 5000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4965
-  }, {
     "volume" : 12859,
     "marketCap" : 33982580655,
     "lowPrice" : 4790,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4015,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4050
+  }, {
+    "volume" : 16122,
+    "marketCap" : 27574040980,
+    "lowPrice" : 3970,
+    "highPrice" : 4150,
+    "openPrice" : 4150,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3980
   } ],
   "stockCode" : "240600"
 }

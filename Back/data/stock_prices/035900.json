@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "JYP Ent.",
   "prices" : [ {
-    "volume" : 360254,
-    "marketCap" : 2522806932000,
-    "lowPrice" : 69200,
-    "highPrice" : 71600,
-    "openPrice" : 71100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 71000
-  }, {
     "volume" : 578963,
     "marketCap" : 2426869203600,
     "lowPrice" : 67900,
@@ -1937,6 +1929,14 @@
     "openPrice" : 70600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 70000
+  }, {
+    "volume" : 683726,
+    "marketCap" : 2565445922400,
+    "lowPrice" : 70300,
+    "highPrice" : 73200,
+    "openPrice" : 70700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 72200
   } ],
   "stockCode" : "035900"
 }

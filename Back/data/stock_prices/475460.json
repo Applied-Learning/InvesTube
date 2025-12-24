@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "미트박스",
   "prices" : [ {
     "volume" : 9449577,
@@ -1777,6 +1777,14 @@
     "openPrice" : 8760,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8630
+  }, {
+    "volume" : 20495,
+    "marketCap" : 48047494000,
+    "lowPrice" : 8500,
+    "highPrice" : 8680,
+    "openPrice" : 8630,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8560
   } ],
   "stockCode" : "475460"
 }

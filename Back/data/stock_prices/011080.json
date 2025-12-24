@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "형지I&C",
   "prices" : [ {
-    "volume" : 754417,
-    "marketCap" : 19739603736,
-    "lowPrice" : 771,
-    "highPrice" : 812,
-    "openPrice" : 804,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 774
-  }, {
     "volume" : 739392,
     "marketCap" : 19127523000,
     "lowPrice" : 750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 702,
     "tradeDate" : "2025-12-22",
     "closePrice" : 698
+  }, {
+    "volume" : 612438,
+    "marketCap" : 29062387284,
+    "lowPrice" : 678,
+    "highPrice" : 702,
+    "openPrice" : 702,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 678
   } ],
   "stockCode" : "011080"
 }

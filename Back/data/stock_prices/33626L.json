@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "두산퓨얼셀2우B",
   "prices" : [ {
-    "volume" : 1245,
-    "marketCap" : 23979989000,
-    "lowPrice" : 8000,
-    "highPrice" : 8040,
-    "openPrice" : 8030,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8030
-  }, {
     "volume" : 1663,
     "marketCap" : 22815332000,
     "lowPrice" : 7640,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10760,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10730
+  }, {
+    "volume" : 776,
+    "marketCap" : 31804095000,
+    "lowPrice" : 10590,
+    "highPrice" : 11050,
+    "openPrice" : 11050,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10650
   } ],
   "stockCode" : "33626L"
 }

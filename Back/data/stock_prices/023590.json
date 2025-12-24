@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "다우기술",
   "prices" : [ {
-    "volume" : 39511,
-    "marketCap" : 804907108980,
-    "lowPrice" : 17740,
-    "highPrice" : 17990,
-    "openPrice" : 17740,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17940
-  }, {
     "volume" : 33248,
     "marketCap" : 804458442810,
     "lowPrice" : 17830,
@@ -1937,6 +1929,14 @@
     "openPrice" : 39700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 39750
+  }, {
+    "volume" : 39541,
+    "marketCap" : 1778961364050,
+    "lowPrice" : 39300,
+    "highPrice" : 40250,
+    "openPrice" : 39800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 39650
   } ],
   "stockCode" : "023590"
 }

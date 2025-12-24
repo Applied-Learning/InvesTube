@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스케이증권제12호스팩",
   "prices" : [ {
-    "volume" : 3683,
-    "marketCap" : 6802050000,
-    "lowPrice" : 2035,
-    "highPrice" : 2055,
-    "openPrice" : 2035,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2055
-  }, {
     "volume" : 1737,
     "marketCap" : 6802050000,
     "lowPrice" : 2030,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2045,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2045
+  }, {
+    "volume" : 5560,
+    "marketCap" : 6735850000,
+    "lowPrice" : 2035,
+    "highPrice" : 2050,
+    "openPrice" : 2040,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2035
   } ],
   "stockCode" : "473000"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이피에프",
   "prices" : [ {
-    "volume" : 34145,
-    "marketCap" : 79421944320,
-    "lowPrice" : 3775,
-    "highPrice" : 3870,
-    "openPrice" : 3775,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3840
-  }, {
     "volume" : 137056,
     "marketCap" : 80662912200,
     "lowPrice" : 3790,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5320,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5420
+  }, {
+    "volume" : 384566,
+    "marketCap" : 111092085600,
+    "lowPrice" : 5360,
+    "highPrice" : 5580,
+    "openPrice" : 5420,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5550
   } ],
   "stockCode" : "024880"
 }

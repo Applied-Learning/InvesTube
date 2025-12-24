@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "어보브반도체",
   "prices" : [ {
-    "volume" : 93662,
-    "marketCap" : 140645756230,
-    "lowPrice" : 7740,
-    "highPrice" : 8130,
-    "openPrice" : 7740,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7910
-  }, {
     "volume" : 44912,
     "marketCap" : 139578911050,
     "lowPrice" : 7810,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10790
+  }, {
+    "volume" : 64908,
+    "marketCap" : 191143094750,
+    "lowPrice" : 10660,
+    "highPrice" : 10860,
+    "openPrice" : 10850,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10750
   } ],
   "stockCode" : "102120"
 }

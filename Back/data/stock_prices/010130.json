@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "고려아연",
   "prices" : [ {
-    "volume" : 87083,
-    "marketCap" : 22815017866000,
-    "lowPrice" : 982000,
-    "highPrice" : 1126000,
-    "openPrice" : 992000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1102000
-  }, {
     "volume" : 91935,
     "marketCap" : 23477522922000,
     "lowPrice" : 1044000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1333000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1383000
+  }, {
+    "volume" : 28527,
+    "marketCap" : 26229464628000,
+    "lowPrice" : 1331000,
+    "highPrice" : 1409000,
+    "openPrice" : 1409000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1356000
   } ],
   "stockCode" : "010130"
 }

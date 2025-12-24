@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼성출판사",
   "prices" : [ {
-    "volume" : 24289,
-    "marketCap" : 156000000000,
-    "lowPrice" : 15400,
-    "highPrice" : 15900,
-    "openPrice" : 15460,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 15600
-  }, {
     "volume" : 24818,
     "marketCap" : 154400000000,
     "lowPrice" : 15100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11570,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11600
+  }, {
+    "volume" : 16434,
+    "marketCap" : 115900000000,
+    "lowPrice" : 11510,
+    "highPrice" : 11750,
+    "openPrice" : 11700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11590
   } ],
   "stockCode" : "068290"
 }

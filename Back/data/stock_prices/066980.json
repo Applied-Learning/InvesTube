@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한성크린텍",
   "prices" : [ {
-    "volume" : 95463,
-    "marketCap" : 89328415000,
-    "lowPrice" : 1676,
-    "highPrice" : 1779,
-    "openPrice" : 1676,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1720
-  }, {
     "volume" : 33762,
     "marketCap" : 87978101750,
     "lowPrice" : 1692,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1305,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1288
+  }, {
+    "volume" : 456174,
+    "marketCap" : 63672463250,
+    "lowPrice" : 1221,
+    "highPrice" : 1288,
+    "openPrice" : 1288,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1226
   } ],
   "stockCode" : "066980"
 }

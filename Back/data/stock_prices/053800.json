@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "안랩",
   "prices" : [ {
-    "volume" : 110616,
-    "marketCap" : 755489757400,
-    "lowPrice" : 66600,
-    "highPrice" : 68700,
-    "openPrice" : 66800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 67900
-  }, {
     "volume" : 85571,
     "marketCap" : 746588552600,
     "lowPrice" : 67000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 63000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 63500
+  }, {
+    "volume" : 63655,
+    "marketCap" : 707645781600,
+    "lowPrice" : 63000,
+    "highPrice" : 64100,
+    "openPrice" : 63400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 63600
   } ],
   "stockCode" : "053800"
 }

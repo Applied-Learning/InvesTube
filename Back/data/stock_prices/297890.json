@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HB솔루션",
   "prices" : [ {
-    "volume" : 468828,
-    "marketCap" : 210645832320,
-    "lowPrice" : 2715,
-    "highPrice" : 2920,
-    "openPrice" : 2800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2880
-  }, {
     "volume" : 382418,
     "marketCap" : 204794559200,
     "lowPrice" : 2785,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2070,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2090
+  }, {
+    "volume" : 211316,
+    "marketCap" : 150304578270,
+    "lowPrice" : 2045,
+    "highPrice" : 2095,
+    "openPrice" : 2090,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2055
   } ],
   "stockCode" : "297890"
 }

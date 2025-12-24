@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "황금에스티",
   "prices" : [ {
-    "volume" : 13482,
-    "marketCap" : 82875000000,
-    "lowPrice" : 4835,
-    "highPrice" : 4890,
-    "openPrice" : 4835,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4875
-  }, {
     "volume" : 9031,
     "marketCap" : 83640000000,
     "lowPrice" : 4875,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6100
+  }, {
+    "volume" : 7864,
+    "marketCap" : 103020000000,
+    "lowPrice" : 6000,
+    "highPrice" : 6110,
+    "openPrice" : 6100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6060
   } ],
   "stockCode" : "032560"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "우림피티에스",
   "prices" : [ {
-    "volume" : 53890,
-    "marketCap" : 64530000000,
-    "lowPrice" : 4695,
-    "highPrice" : 4830,
-    "openPrice" : 4695,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4780
-  }, {
     "volume" : 42956,
     "marketCap" : 64260000000,
     "lowPrice" : 4600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10370,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11140
+  }, {
+    "volume" : 1015465,
+    "marketCap" : 143910000000,
+    "lowPrice" : 10590,
+    "highPrice" : 11860,
+    "openPrice" : 11170,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10660
   } ],
   "stockCode" : "101170"
 }

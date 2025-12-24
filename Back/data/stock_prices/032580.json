@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "피델릭스",
   "prices" : [ {
-    "volume" : 200008,
-    "marketCap" : 41050627296,
-    "lowPrice" : 1213,
-    "highPrice" : 1252,
-    "openPrice" : 1213,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1239
-  }, {
     "volume" : 279110,
     "marketCap" : 40189193632,
     "lowPrice" : 1212,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1102,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1104
+  }, {
+    "volume" : 142015,
+    "marketCap" : 36113949760,
+    "lowPrice" : 1086,
+    "highPrice" : 1119,
+    "openPrice" : 1108,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1090
   } ],
   "stockCode" : "032580"
 }

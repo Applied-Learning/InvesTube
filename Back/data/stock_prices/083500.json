@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에프엔에스테크",
   "prices" : [ {
-    "volume" : 38280,
-    "marketCap" : 67319417700,
-    "lowPrice" : 7720,
-    "highPrice" : 8180,
-    "openPrice" : 8180,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7850
-  }, {
     "volume" : 67023,
     "marketCap" : 66033059400,
     "lowPrice" : 7620,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14460,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14340
+  }, {
+    "volume" : 122661,
+    "marketCap" : 121346466300,
+    "lowPrice" : 13980,
+    "highPrice" : 14490,
+    "openPrice" : 14490,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14150
   } ],
   "stockCode" : "083500"
 }

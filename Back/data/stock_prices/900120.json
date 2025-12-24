@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "씨엑스아이",
   "prices" : [ {
-    "volume" : 410796,
-    "marketCap" : 20138715615,
-    "lowPrice" : 66,
-    "highPrice" : 68,
-    "openPrice" : 66,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 67
-  }, {
     "volume" : 952108,
     "marketCap" : 19838137770,
     "lowPrice" : 66,
@@ -1937,6 +1929,14 @@
     "openPrice" : 552,
     "tradeDate" : "2025-12-22",
     "closePrice" : 527
+  }, {
+    "volume" : 426027,
+    "marketCap" : 15058949784,
+    "lowPrice" : 500,
+    "highPrice" : 533,
+    "openPrice" : 527,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 501
   } ],
   "stockCode" : "900120"
 }

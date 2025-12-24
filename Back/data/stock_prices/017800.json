@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대엘리베이터",
   "prices" : [ {
-    "volume" : 232146,
-    "marketCap" : 2310359953500,
-    "lowPrice" : 58700,
-    "highPrice" : 60500,
-    "openPrice" : 58900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 59100
-  }, {
     "volume" : 152368,
     "marketCap" : 2325996907500,
     "lowPrice" : 58200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 90100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 89200
+  }, {
+    "volume" : 208629,
+    "marketCap" : 3502677696000,
+    "lowPrice" : 89000,
+    "highPrice" : 90200,
+    "openPrice" : 89800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 89600
   } ],
   "stockCode" : "017800"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "티케이케미칼",
   "prices" : [ {
-    "volume" : 25769339,
-    "marketCap" : 168065657466,
-    "lowPrice" : 1845,
-    "highPrice" : 2050,
-    "openPrice" : 1981,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1849
-  }, {
     "volume" : 8580279,
     "marketCap" : 168429239202,
     "lowPrice" : 1820,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1614,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1629
+  }, {
+    "volume" : 305836,
+    "marketCap" : 145160008098,
+    "lowPrice" : 1594,
+    "highPrice" : 1645,
+    "openPrice" : 1631,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1597
   } ],
   "stockCode" : "104480"
 }

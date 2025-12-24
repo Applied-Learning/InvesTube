@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "형지글로벌",
   "prices" : [ {
-    "volume" : 9551,
-    "marketCap" : 19542962350,
-    "lowPrice" : 2915,
-    "highPrice" : 2965,
-    "openPrice" : 2930,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2950
-  }, {
     "volume" : 3642,
     "marketCap" : 19774828005,
     "lowPrice" : 2915,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1313,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1308
+  }, {
+    "volume" : 296424,
+    "marketCap" : 30341059104,
+    "lowPrice" : 1255,
+    "highPrice" : 1328,
+    "openPrice" : 1320,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1263
   } ],
   "stockCode" : "308100"
 }

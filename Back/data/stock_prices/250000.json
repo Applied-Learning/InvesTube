@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "보라티알",
   "prices" : [ {
-    "volume" : 36268,
-    "marketCap" : 67237300680,
-    "lowPrice" : 9830,
-    "highPrice" : 10010,
-    "openPrice" : 9930,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9960
-  }, {
     "volume" : 40595,
     "marketCap" : 67034778690,
     "lowPrice" : 9860,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7970,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8000
+  }, {
+    "volume" : 11485,
+    "marketCap" : 54140878660,
+    "lowPrice" : 7840,
+    "highPrice" : 8030,
+    "openPrice" : 7900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8020
   } ],
   "stockCode" : "250000"
 }

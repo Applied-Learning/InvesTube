@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "올리패스",
   "prices" : [ {
-    "volume" : 91550,
-    "marketCap" : 20467690840,
-    "lowPrice" : 4800,
-    "highPrice" : 5880,
-    "openPrice" : 5880,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5080
-  }, {
     "volume" : 41620,
     "marketCap" : 20145365000,
     "lowPrice" : 5000,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 1651
+  }, {
+    "volume" : 0,
+    "marketCap" : 13402000755,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 1651
   } ],
   "stockCode" : "244460"

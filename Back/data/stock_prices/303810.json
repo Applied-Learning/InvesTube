@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동국생명과학",
   "prices" : [ {
     "volume" : 29325634,
@@ -1673,6 +1673,14 @@
     "openPrice" : 3780,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3715
+  }, {
+    "volume" : 190874,
+    "marketCap" : 116422269600,
+    "lowPrice" : 3610,
+    "highPrice" : 3735,
+    "openPrice" : 3735,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3640
   } ],
   "stockCode" : "303810"
 }

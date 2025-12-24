@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엔씨소프트",
   "prices" : [ {
-    "volume" : 47259,
-    "marketCap" : 4434712444000,
-    "lowPrice" : 200000,
-    "highPrice" : 205500,
-    "openPrice" : 205000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 202000
-  }, {
     "volume" : 50747,
     "marketCap" : 4511551521000,
     "lowPrice" : 200500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 195300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 198400
+  }, {
+    "volume" : 68622,
+    "marketCap" : 4306649997800,
+    "lowPrice" : 198300,
+    "highPrice" : 202500,
+    "openPrice" : 198900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 199900
   } ],
   "stockCode" : "036570"
 }

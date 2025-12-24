@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동성케미컬",
   "prices" : [ {
-    "volume" : 32654,
-    "marketCap" : 197516668800,
-    "lowPrice" : 3920,
-    "highPrice" : 3980,
-    "openPrice" : 3925,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3975
-  }, {
     "volume" : 106970,
     "marketCap" : 198013566080,
     "lowPrice" : 3920,
@@ -1936,6 +1928,14 @@
     "highPrice" : 4550,
     "openPrice" : 4535,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 4510
+  }, {
+    "volume" : 97973,
+    "marketCap" : 226297327410,
+    "lowPrice" : 4475,
+    "highPrice" : 4520,
+    "openPrice" : 4510,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 4510
   } ],
   "stockCode" : "102260"

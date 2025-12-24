@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "THE CUBE&",
   "prices" : [ {
-    "volume" : 92934,
-    "marketCap" : 36371930840,
-    "lowPrice" : 803,
-    "highPrice" : 838,
-    "openPrice" : 820,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 815
-  }, {
     "volume" : 134904,
     "marketCap" : 36595071520,
     "lowPrice" : 805,
@@ -1937,6 +1929,14 @@
     "openPrice" : 752,
     "tradeDate" : "2025-12-22",
     "closePrice" : 712
+  }, {
+    "volume" : 59756,
+    "marketCap" : 42579700100,
+    "lowPrice" : 696,
+    "highPrice" : 712,
+    "openPrice" : 712,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 700
   } ],
   "stockCode" : "013720"
 }

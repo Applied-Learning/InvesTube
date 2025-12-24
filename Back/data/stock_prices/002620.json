@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제일파마홀딩스",
   "prices" : [ {
-    "volume" : 1791,
-    "marketCap" : 127307639350,
-    "lowPrice" : 7780,
-    "highPrice" : 8050,
-    "openPrice" : 7980,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7970
-  }, {
     "volume" : 9137,
     "marketCap" : 126508971600,
     "lowPrice" : 7880,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8210,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8150
+  }, {
+    "volume" : 1952,
+    "marketCap" : 129863376150,
+    "lowPrice" : 8060,
+    "highPrice" : 8150,
+    "openPrice" : 8150,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8130
   } ],
   "stockCode" : "002620"
 }

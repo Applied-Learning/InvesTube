@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "포스코엠텍",
   "prices" : [ {
-    "volume" : 125489,
-    "marketCap" : 519700933440,
-    "lowPrice" : 12220,
-    "highPrice" : 12590,
-    "openPrice" : 12410,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12480
-  }, {
     "volume" : 82037,
     "marketCap" : 511788819870,
     "lowPrice" : 12270,
@@ -1937,6 +1929,14 @@
     "openPrice" : 15430,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16110
+  }, {
+    "volume" : 713380,
+    "marketCap" : 679192485930,
+    "lowPrice" : 16040,
+    "highPrice" : 16760,
+    "openPrice" : 16220,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16310
   } ],
   "stockCode" : "009520"
 }

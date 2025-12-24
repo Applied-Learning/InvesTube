@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼륭물산",
   "prices" : [ {
-    "volume" : 645,
-    "marketCap" : 51651875000,
-    "lowPrice" : 3380,
-    "highPrice" : 3420,
-    "openPrice" : 3420,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3415
-  }, {
     "volume" : 2775,
     "marketCap" : 51349375000,
     "lowPrice" : 3345,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8740,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8760
+  }, {
+    "volume" : 509255,
+    "marketCap" : 121302500000,
+    "lowPrice" : 8005,
+    "highPrice" : 8810,
+    "openPrice" : 8780,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8020
   } ],
   "stockCode" : "014970"
 }

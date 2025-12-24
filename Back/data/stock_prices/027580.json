@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "상보",
   "prices" : [ {
-    "volume" : 842249,
-    "marketCap" : 75278586888,
-    "lowPrice" : 1266,
-    "highPrice" : 1304,
-    "openPrice" : 1272,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1272
-  }, {
     "volume" : 620978,
     "marketCap" : 74331686424,
     "lowPrice" : 1252,
@@ -1937,6 +1929,14 @@
     "openPrice" : 765,
     "tradeDate" : "2025-12-22",
     "closePrice" : 759
+  }, {
+    "volume" : 346515,
+    "marketCap" : 44030871576,
+    "lowPrice" : 736,
+    "highPrice" : 763,
+    "openPrice" : 759,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 744
   } ],
   "stockCode" : "027580"
 }

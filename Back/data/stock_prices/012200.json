@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "계양전기",
   "prices" : [ {
-    "volume" : 56359,
-    "marketCap" : 38901422641,
-    "lowPrice" : 1398,
-    "highPrice" : 1429,
-    "openPrice" : 1400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1429
-  }, {
     "volume" : 7264110,
     "marketCap" : 41787042515,
     "lowPrice" : 1430,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3270,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3445
+  }, {
+    "volume" : 1106935,
+    "marketCap" : 121822159775,
+    "lowPrice" : 4475,
+    "highPrice" : 4475,
+    "openPrice" : 4475,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4475
   } ],
   "stockCode" : "012200"
 }

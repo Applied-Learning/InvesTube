@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "스코넥",
   "prices" : [ {
-    "volume" : 19308,
-    "marketCap" : 41555308940,
-    "lowPrice" : 3205,
-    "highPrice" : 3395,
-    "openPrice" : 3370,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3310
-  }, {
     "volume" : 12834,
     "marketCap" : 40425406280,
     "lowPrice" : 3155,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1610,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1626
+  }, {
+    "volume" : 189752,
+    "marketCap" : 34565275330,
+    "lowPrice" : 1560,
+    "highPrice" : 1630,
+    "openPrice" : 1630,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1598
   } ],
   "stockCode" : "276040"
 }

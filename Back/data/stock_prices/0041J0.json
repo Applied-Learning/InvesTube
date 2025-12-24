@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엘에스스팩1호",
   "prices" : [ {
     "volume" : 95872950,
@@ -833,6 +833,14 @@
     "openPrice" : 1998,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1998
+  }, {
+    "volume" : 24311,
+    "marketCap" : 8220000000,
+    "lowPrice" : 2000,
+    "highPrice" : 2005,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2000
   } ],
   "stockCode" : "0041J0"
 }

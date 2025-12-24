@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "메타바이오메드",
   "prices" : [ {
-    "volume" : 88050,
-    "marketCap" : 86858957640,
-    "lowPrice" : 3580,
-    "highPrice" : 3690,
-    "openPrice" : 3580,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3640
-  }, {
     "volume" : 150783,
     "marketCap" : 88290698700,
     "lowPrice" : 3640,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4950,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5010
+  }, {
+    "volume" : 341846,
+    "marketCap" : 135133587810,
+    "lowPrice" : 4795,
+    "highPrice" : 5020,
+    "openPrice" : 4980,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4810
   } ],
   "stockCode" : "059210"
 }

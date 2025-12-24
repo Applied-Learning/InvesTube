@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "와이랩",
   "prices" : [ {
-    "volume" : 15083,
-    "marketCap" : 70775577600,
-    "lowPrice" : 4210,
-    "highPrice" : 4440,
-    "openPrice" : 4255,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4305
-  }, {
     "volume" : 22630,
     "marketCap" : 70117964800,
     "lowPrice" : 4230,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4230,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4210
+  }, {
+    "volume" : 46258,
+    "marketCap" : 68509528000,
+    "lowPrice" : 4085,
+    "highPrice" : 4195,
+    "openPrice" : 4195,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4150
   } ],
   "stockCode" : "432430"
 }

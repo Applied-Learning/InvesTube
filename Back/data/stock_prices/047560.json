@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이스트소프트",
   "prices" : [ {
-    "volume" : 8126559,
-    "marketCap" : 325491975600,
-    "lowPrice" : 23600,
-    "highPrice" : 28500,
-    "openPrice" : 23700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 28050
-  }, {
     "volume" : 2155398,
     "marketCap" : 302384284100,
     "lowPrice" : 25350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17180,
     "tradeDate" : "2025-12-22",
     "closePrice" : 17300
+  }, {
+    "volume" : 34759,
+    "marketCap" : 198395425120,
+    "lowPrice" : 16890,
+    "highPrice" : 17800,
+    "openPrice" : 17800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16910
   } ],
   "stockCode" : "047560"
 }

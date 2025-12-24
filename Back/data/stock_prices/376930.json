@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "노을",
   "prices" : [ {
-    "volume" : 1313588,
-    "marketCap" : 102158620900,
-    "lowPrice" : 2635,
-    "highPrice" : 2815,
-    "openPrice" : 2760,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2765
-  }, {
     "volume" : 1350612,
     "marketCap" : 105299121000,
     "lowPrice" : 2740,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2115,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2110
+  }, {
+    "volume" : 414080,
+    "marketCap" : 75372002400,
+    "lowPrice" : 2030,
+    "highPrice" : 2150,
+    "openPrice" : 2110,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2040
   } ],
   "stockCode" : "376930"
 }

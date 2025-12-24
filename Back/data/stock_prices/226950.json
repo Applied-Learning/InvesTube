@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "올릭스",
   "prices" : [ {
-    "volume" : 441993,
-    "marketCap" : 292877408770,
-    "lowPrice" : 16990,
-    "highPrice" : 17750,
-    "openPrice" : 17300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16990
-  }, {
     "volume" : 476032,
     "marketCap" : 310288014000,
     "lowPrice" : 16730,
@@ -1937,6 +1929,14 @@
     "openPrice" : 137900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 128300
+  }, {
+    "volume" : 376645,
+    "marketCap" : 2543925258000,
+    "lowPrice" : 125100,
+    "highPrice" : 130100,
+    "openPrice" : 129200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 126000
   } ],
   "stockCode" : "226950"
 }

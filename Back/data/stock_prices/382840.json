@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "원준",
   "prices" : [ {
-    "volume" : 50726,
-    "marketCap" : 147828904080,
-    "lowPrice" : 9460,
-    "highPrice" : 9760,
-    "openPrice" : 9490,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9680
-  }, {
     "volume" : 47869,
     "marketCap" : 146454461790,
     "lowPrice" : 9580,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7880,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7920
+  }, {
+    "volume" : 17142,
+    "marketCap" : 119729195040,
+    "lowPrice" : 7830,
+    "highPrice" : 8020,
+    "openPrice" : 8020,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7840
   } ],
   "stockCode" : "382840"
 }

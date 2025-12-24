@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "강원에너지",
   "prices" : [ {
-    "volume" : 2375286,
-    "marketCap" : 263320223040,
-    "lowPrice" : 9810,
-    "highPrice" : 12030,
-    "openPrice" : 9830,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10080
-  }, {
     "volume" : 299109,
     "marketCap" : 248952552140,
     "lowPrice" : 9510,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13950
+  }, {
+    "volume" : 373611,
+    "marketCap" : 358408081360,
+    "lowPrice" : 13440,
+    "highPrice" : 14000,
+    "openPrice" : 13950,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13720
   } ],
   "stockCode" : "114190"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "솔루스첨단소재1우",
   "prices" : [ {
-    "volume" : 15536,
-    "marketCap" : 33056637530,
-    "lowPrice" : 1908,
-    "highPrice" : 1956,
-    "openPrice" : 1932,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1955
-  }, {
     "volume" : 15062,
     "marketCap" : 32803006040,
     "lowPrice" : 1936,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1995,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1991
+  }, {
+    "volume" : 24040,
+    "marketCap" : 33716079404,
+    "lowPrice" : 1972,
+    "highPrice" : 1996,
+    "openPrice" : 1980,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1994
   } ],
   "stockCode" : "33637K"
 }

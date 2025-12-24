@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "일진디스플",
   "prices" : [ {
-    "volume" : 24829,
-    "marketCap" : 43065487476,
-    "lowPrice" : 808,
-    "highPrice" : 857,
-    "openPrice" : 808,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 836
-  }, {
     "volume" : 6850,
     "marketCap" : 42859432512,
     "lowPrice" : 831,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 902
+  }, {
+    "volume" : 0,
+    "marketCap" : 46465394382,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 902
   } ],
   "stockCode" : "020760"

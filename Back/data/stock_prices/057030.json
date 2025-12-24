@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "YBM넷",
   "prices" : [ {
-    "volume" : 622029,
-    "marketCap" : 71204922405,
-    "lowPrice" : 4110,
-    "highPrice" : 4660,
-    "openPrice" : 4190,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4365
-  }, {
     "volume" : 201700,
     "marketCap" : 70144597100,
     "lowPrice" : 4285,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3090,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3095
+  }, {
+    "volume" : 35954,
+    "marketCap" : 50406233730,
+    "lowPrice" : 3030,
+    "highPrice" : 3150,
+    "openPrice" : 3090,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3090
   } ],
   "stockCode" : "057030"
 }

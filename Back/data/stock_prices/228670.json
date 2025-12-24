@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "레이",
   "prices" : [ {
-    "volume" : 35539,
-    "marketCap" : 94939884360,
-    "lowPrice" : 6020,
-    "highPrice" : 6260,
-    "openPrice" : 6020,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6120
-  }, {
     "volume" : 94800,
     "marketCap" : 91837273760,
     "lowPrice" : 5830,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6920
+  }, {
+    "volume" : 102316,
+    "marketCap" : 106874042500,
+    "lowPrice" : 6760,
+    "highPrice" : 7000,
+    "openPrice" : 6920,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6850
   } ],
   "stockCode" : "228670"
 }

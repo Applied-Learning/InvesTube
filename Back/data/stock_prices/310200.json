@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "애니플러스",
   "prices" : [ {
-    "volume" : 74469,
-    "marketCap" : 120402989455,
-    "lowPrice" : 2585,
-    "highPrice" : 2680,
-    "openPrice" : 2590,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2645
-  }, {
     "volume" : 56440,
     "marketCap" : 120402989455,
     "lowPrice" : 2605,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3550,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3525
+  }, {
+    "volume" : 243797,
+    "marketCap" : 177092828220,
+    "lowPrice" : 3385,
+    "highPrice" : 3560,
+    "openPrice" : 3520,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3395
   } ],
   "stockCode" : "310200"
 }

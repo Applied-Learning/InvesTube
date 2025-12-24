@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "티웨이항공",
   "prices" : [ {
-    "volume" : 634125,
-    "marketCap" : 542755019520,
-    "lowPrice" : 2480,
-    "highPrice" : 2535,
-    "openPrice" : 2485,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2520
-  }, {
     "volume" : 539275,
     "marketCap" : 539524334880,
     "lowPrice" : 2490,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1424,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1483
+  }, {
+    "volume" : 328221,
+    "marketCap" : 388927821925,
+    "lowPrice" : 1428,
+    "highPrice" : 1483,
+    "openPrice" : 1483,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1429
   } ],
   "stockCode" : "091810"
 }

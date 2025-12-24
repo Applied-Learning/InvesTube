@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오르비텍",
   "prices" : [ {
-    "volume" : 71079,
-    "marketCap" : 54624477140,
-    "lowPrice" : 1965,
-    "highPrice" : 2005,
-    "openPrice" : 1983,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1990
-  }, {
     "volume" : 37133,
     "marketCap" : 54679376112,
     "lowPrice" : 1980,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4195
+  }, {
+    "volume" : 869268,
+    "marketCap" : 111368809680,
+    "lowPrice" : 3965,
+    "highPrice" : 4225,
+    "openPrice" : 4195,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4020
   } ],
   "stockCode" : "046120"
 }

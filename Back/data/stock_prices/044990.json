@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이치엔에스하이텍",
   "prices" : [ {
-    "volume" : 11991,
-    "marketCap" : 132836137920,
-    "lowPrice" : 16380,
-    "highPrice" : 16890,
-    "openPrice" : 16590,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16530
-  }, {
     "volume" : 16593,
     "marketCap" : 130505679360,
     "lowPrice" : 16090,
@@ -1937,6 +1929,14 @@
     "openPrice" : 16650,
     "tradeDate" : "2025-12-22",
     "closePrice" : 17530
+  }, {
+    "volume" : 191991,
+    "marketCap" : 124196468000,
+    "lowPrice" : 16150,
+    "highPrice" : 17390,
+    "openPrice" : 17220,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16160
   } ],
   "stockCode" : "044990"
 }

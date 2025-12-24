@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "다스코",
   "prices" : [ {
-    "volume" : 65397,
-    "marketCap" : 55169021835,
-    "lowPrice" : 2900,
-    "highPrice" : 2970,
-    "openPrice" : 2920,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2935
-  }, {
     "volume" : 35687,
     "marketCap" : 54981052425,
     "lowPrice" : 2895,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3355,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3370
+  }, {
+    "volume" : 140730,
+    "marketCap" : 62029905300,
+    "lowPrice" : 3290,
+    "highPrice" : 3420,
+    "openPrice" : 3350,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3300
   } ],
   "stockCode" : "058730"
 }

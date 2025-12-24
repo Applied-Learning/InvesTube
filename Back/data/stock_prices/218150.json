@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "미래생명자원",
   "prices" : [ {
-    "volume" : 63548,
-    "marketCap" : 79621627800,
-    "lowPrice" : 3835,
-    "highPrice" : 3920,
-    "openPrice" : 3835,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3900
-  }, {
     "volume" : 41247,
     "marketCap" : 79927864830,
     "lowPrice" : 3885,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3080,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3065
+  }, {
+    "volume" : 57866,
+    "marketCap" : 61757801050,
+    "lowPrice" : 3020,
+    "highPrice" : 3080,
+    "openPrice" : 3080,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3025
   } ],
   "stockCode" : "218150"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "넥스트바이오메디컬",
   "prices" : [ {
-    "volume" : 830720,
-    "marketCap" : 356622852600,
-    "lowPrice" : 37500,
-    "highPrice" : 44750,
-    "openPrice" : 37500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 44100
-  }, {
     "volume" : 225667,
     "marketCap" : 355814184000,
     "lowPrice" : 43150,
@@ -1937,6 +1929,14 @@
     "openPrice" : 85100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 84100
+  }, {
+    "volume" : 51219,
+    "marketCap" : 689126424000,
+    "lowPrice" : 82100,
+    "highPrice" : 84600,
+    "openPrice" : 84500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 84000
   } ],
   "stockCode" : "389650"
 }

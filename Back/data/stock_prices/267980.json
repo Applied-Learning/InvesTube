@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "매일유업",
   "prices" : [ {
-    "volume" : 6437,
-    "marketCap" : 283939695600,
-    "lowPrice" : 35500,
-    "highPrice" : 36350,
-    "openPrice" : 35950,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 36200
-  }, {
     "volume" : 9995,
     "marketCap" : 280017876600,
     "lowPrice" : 35700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 36050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 36400
+  }, {
+    "volume" : 4613,
+    "marketCap" : 276657331800,
+    "lowPrice" : 35900,
+    "highPrice" : 36600,
+    "openPrice" : 36500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 36100
   } ],
   "stockCode" : "267980"
 }

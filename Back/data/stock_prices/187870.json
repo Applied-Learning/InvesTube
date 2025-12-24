@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디바이스",
   "prices" : [ {
-    "volume" : 8628,
-    "marketCap" : 86057728070,
-    "lowPrice" : 12230,
-    "highPrice" : 12700,
-    "openPrice" : 12550,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12230
-  }, {
     "volume" : 6742,
     "marketCap" : 85776263710,
     "lowPrice" : 12100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14090,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14410
+  }, {
+    "volume" : 15914,
+    "marketCap" : 103015955760,
+    "lowPrice" : 14410,
+    "highPrice" : 14930,
+    "openPrice" : 14930,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14640
   } ],
   "stockCode" : "187870"
 }

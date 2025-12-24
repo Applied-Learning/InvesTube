@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "성광벤드",
   "prices" : [ {
-    "volume" : 586414,
-    "marketCap" : 671681555350,
-    "lowPrice" : 23150,
-    "highPrice" : 24400,
-    "openPrice" : 23500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 24050
-  }, {
     "volume" : 428315,
     "marketCap" : 667492273300,
     "lowPrice" : 23750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 27100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 26600
+  }, {
+    "volume" : 102354,
+    "marketCap" : 722360300800,
+    "lowPrice" : 26700,
+    "highPrice" : 27500,
+    "openPrice" : 27450,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 27200
   } ],
   "stockCode" : "014620"
 }

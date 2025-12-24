@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "화천기계",
   "prices" : [ {
-    "volume" : 582971,
-    "marketCap" : 55220000000,
-    "lowPrice" : 2475,
-    "highPrice" : 2545,
-    "openPrice" : 2510,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2510
-  }, {
     "volume" : 548028,
     "marketCap" : 55550000000,
     "lowPrice" : 2505,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5250,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5370
+  }, {
+    "volume" : 226886,
+    "marketCap" : 114620000000,
+    "lowPrice" : 5210,
+    "highPrice" : 5460,
+    "openPrice" : 5390,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5210
   } ],
   "stockCode" : "010660"
 }

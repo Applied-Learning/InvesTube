@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "웰크론",
   "prices" : [ {
-    "volume" : 143307,
-    "marketCap" : 58156482120,
-    "lowPrice" : 2005,
-    "highPrice" : 2070,
-    "openPrice" : 2035,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2060
-  }, {
     "volume" : 30179,
     "marketCap" : 57450699570,
     "lowPrice" : 2035,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1749,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1738
+  }, {
+    "volume" : 22312,
+    "marketCap" : 48275526420,
+    "lowPrice" : 1710,
+    "highPrice" : 1750,
+    "openPrice" : 1750,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1710
   } ],
   "stockCode" : "065950"
 }

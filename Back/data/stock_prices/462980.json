@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이지넷",
   "prices" : [ {
     "volume" : 12334987,
@@ -1745,6 +1745,14 @@
     "openPrice" : 1888,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1905
+  }, {
+    "volume" : 26957,
+    "marketCap" : 34499554804,
+    "lowPrice" : 1882,
+    "highPrice" : 1915,
+    "openPrice" : 1915,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1892
   } ],
   "stockCode" : "462980"
 }

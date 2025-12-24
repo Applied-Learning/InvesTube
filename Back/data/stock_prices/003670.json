@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "포스코퓨처엠",
   "prices" : [ {
-    "volume" : 324786,
-    "marketCap" : 11642721966000,
-    "lowPrice" : 142400,
-    "highPrice" : 151300,
-    "openPrice" : 147000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 150300
-  }, {
     "volume" : 226540,
     "marketCap" : 11441317594000,
     "lowPrice" : 147500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 192500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 196100
+  }, {
+    "volume" : 276101,
+    "marketCap" : 17477932230000,
+    "lowPrice" : 194100,
+    "highPrice" : 201000,
+    "openPrice" : 196300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 196500
   } ],
   "stockCode" : "003670"
 }

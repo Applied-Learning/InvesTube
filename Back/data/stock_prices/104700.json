@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국철강",
   "prices" : [ {
-    "volume" : 45018,
-    "marketCap" : 412614000000,
-    "lowPrice" : 9330,
-    "highPrice" : 9730,
-    "openPrice" : 9410,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9720
-  }, {
     "volume" : 25708,
     "marketCap" : 407944500000,
     "lowPrice" : 9470,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10060,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9990
+  }, {
+    "volume" : 13543,
+    "marketCap" : 365229000000,
+    "lowPrice" : 9970,
+    "highPrice" : 10030,
+    "openPrice" : 9990,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10020
   } ],
   "stockCode" : "104700"
 }

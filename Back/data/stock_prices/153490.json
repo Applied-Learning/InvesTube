@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "우리이앤엘",
   "prices" : [ {
-    "volume" : 48133,
-    "marketCap" : 36962640000,
-    "lowPrice" : 710,
-    "highPrice" : 722,
-    "openPrice" : 722,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 718
-  }, {
     "volume" : 141084,
     "marketCap" : 36808200000,
     "lowPrice" : 709,
@@ -1937,6 +1929,14 @@
     "openPrice" : 699,
     "tradeDate" : "2025-12-22",
     "closePrice" : 700
+  }, {
+    "volume" : 16433,
+    "marketCap" : 35727120000,
+    "lowPrice" : 694,
+    "highPrice" : 703,
+    "openPrice" : 700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 694
   } ],
   "stockCode" : "153490"
 }

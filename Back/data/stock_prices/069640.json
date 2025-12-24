@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한세엠케이",
   "prices" : [ {
-    "volume" : 11495,
-    "marketCap" : 36639612934,
-    "lowPrice" : 1217,
-    "highPrice" : 1270,
-    "openPrice" : 1235,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1217
-  }, {
     "volume" : 7091,
     "marketCap" : 36428867420,
     "lowPrice" : 1206,
@@ -1937,6 +1929,14 @@
     "openPrice" : 648,
     "tradeDate" : "2025-12-22",
     "closePrice" : 654
+  }, {
+    "volume" : 29040,
+    "marketCap" : 28810580786,
+    "lowPrice" : 639,
+    "highPrice" : 655,
+    "openPrice" : 655,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 643
   } ],
   "stockCode" : "069640"
 }

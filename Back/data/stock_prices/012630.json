@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HDC",
   "prices" : [ {
-    "volume" : 116430,
-    "marketCap" : 724667075730,
-    "lowPrice" : 11980,
-    "highPrice" : 12220,
-    "openPrice" : 12060,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12130
-  }, {
     "volume" : 70784,
     "marketCap" : 727654161780,
     "lowPrice" : 11990,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17550,
     "tradeDate" : "2025-12-22",
     "closePrice" : 17950
+  }, {
+    "volume" : 66684,
+    "marketCap" : 1077740646840,
+    "lowPrice" : 17770,
+    "highPrice" : 18180,
+    "openPrice" : 18120,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 18040
   } ],
   "stockCode" : "012630"
 }

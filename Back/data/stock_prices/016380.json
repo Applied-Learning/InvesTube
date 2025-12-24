@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KG스틸",
   "prices" : [ {
-    "volume" : 126056,
-    "marketCap" : 569050623930,
-    "lowPrice" : 5650,
-    "highPrice" : 5720,
-    "openPrice" : 5650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5690
-  }, {
     "volume" : 141737,
     "marketCap" : 573050979810,
     "lowPrice" : 5660,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5460,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5500
+  }, {
+    "volume" : 113503,
+    "marketCap" : 551049022470,
+    "lowPrice" : 5470,
+    "highPrice" : 5550,
+    "openPrice" : 5500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5510
   } ],
   "stockCode" : "016380"
 }

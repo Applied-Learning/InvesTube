@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "알루코",
   "prices" : [ {
-    "volume" : 136907,
-    "marketCap" : 199954222580,
-    "lowPrice" : 2025,
-    "highPrice" : 2085,
-    "openPrice" : 2035,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2065
-  }, {
     "volume" : 164554,
     "marketCap" : 198985921260,
     "lowPrice" : 2040,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2170,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2230
+  }, {
+    "volume" : 2280293,
+    "marketCap" : 203827427860,
+    "lowPrice" : 2085,
+    "highPrice" : 2310,
+    "openPrice" : 2280,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2105
   } ],
   "stockCode" : "001780"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "알비더블유",
   "prices" : [ {
-    "volume" : 83141,
-    "marketCap" : 75307422420,
-    "lowPrice" : 2510,
-    "highPrice" : 2690,
-    "openPrice" : 2635,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2620
-  }, {
     "volume" : 74878,
     "marketCap" : 73007959140,
     "lowPrice" : 2540,
@@ -1936,6 +1928,14 @@
     "highPrice" : 1967,
     "openPrice" : 1925,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 1951
+  }, {
+    "volume" : 193940,
+    "marketCap" : 56078160741,
+    "lowPrice" : 1928,
+    "highPrice" : 1990,
+    "openPrice" : 1951,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 1951
   } ],
   "stockCode" : "361570"

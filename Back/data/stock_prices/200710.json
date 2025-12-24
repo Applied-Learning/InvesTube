@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이디테크놀로지",
   "prices" : [ {
-    "volume" : 378041,
-    "marketCap" : 231316546620,
-    "lowPrice" : 17050,
-    "highPrice" : 17920,
-    "openPrice" : 17520,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17210
-  }, {
     "volume" : 245107,
     "marketCap" : 222042379440,
     "lowPrice" : 16480,
@@ -1937,6 +1929,14 @@
     "openPrice" : 27700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 28700
+  }, {
+    "volume" : 123591,
+    "marketCap" : 378359139300,
+    "lowPrice" : 27800,
+    "highPrice" : 28800,
+    "openPrice" : 28700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 28150
   } ],
   "stockCode" : "200710"
 }

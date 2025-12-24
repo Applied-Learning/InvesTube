@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "풍원정밀",
   "prices" : [ {
-    "volume" : 14127,
-    "marketCap" : 175267265040,
-    "lowPrice" : 8250,
-    "highPrice" : 8600,
-    "openPrice" : 8600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8330
-  }, {
     "volume" : 23847,
     "marketCap" : 178844148000,
     "lowPrice" : 8300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9330,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9280
+  }, {
+    "volume" : 81701,
+    "marketCap" : 214161078600,
+    "lowPrice" : 9310,
+    "highPrice" : 10200,
+    "openPrice" : 9310,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9450
   } ],
   "stockCode" : "371950"
 }

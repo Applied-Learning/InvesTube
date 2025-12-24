@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "파버나인",
   "prices" : [ {
-    "volume" : 28592,
-    "marketCap" : 40132034060,
-    "lowPrice" : 2980,
-    "highPrice" : 3070,
-    "openPrice" : 2980,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3020
-  }, {
     "volume" : 10800,
     "marketCap" : 39866259000,
     "lowPrice" : 3000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2840,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2825
+  }, {
+    "volume" : 14010,
+    "marketCap" : 38322820840,
+    "lowPrice" : 2810,
+    "highPrice" : 2840,
+    "openPrice" : 2825,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2840
   } ],
   "stockCode" : "177830"
 }

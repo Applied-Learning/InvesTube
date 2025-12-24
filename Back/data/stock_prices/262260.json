@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이프로",
   "prices" : [ {
-    "volume" : 18832,
-    "marketCap" : 74510982800,
-    "lowPrice" : 4890,
-    "highPrice" : 5240,
-    "openPrice" : 5130,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5150
-  }, {
     "volume" : 19087,
     "marketCap" : 73498212160,
     "lowPrice" : 5070,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5600
+  }, {
+    "volume" : 42094,
+    "marketCap" : 78562065360,
+    "lowPrice" : 5420,
+    "highPrice" : 5590,
+    "openPrice" : 5550,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5430
   } ],
   "stockCode" : "262260"
 }

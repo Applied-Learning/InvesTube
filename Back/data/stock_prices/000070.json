@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼양홀딩스",
   "prices" : [ {
-    "volume" : 8448,
-    "marketCap" : 585796136400,
-    "lowPrice" : 67300,
-    "highPrice" : 68700,
-    "openPrice" : 67500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 68400
-  }, {
     "volume" : 5198,
     "marketCap" : 584939709300,
     "lowPrice" : 67800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 62000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 62200
+  }, {
+    "volume" : 26165,
+    "marketCap" : 482094161100,
+    "lowPrice" : 61700,
+    "highPrice" : 62300,
+    "openPrice" : 61900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 62100
   } ],
   "stockCode" : "000070"
 }

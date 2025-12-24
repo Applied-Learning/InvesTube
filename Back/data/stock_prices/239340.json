@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이스트에이드",
   "prices" : [ {
-    "volume" : 2974519,
-    "marketCap" : 53311756784,
-    "lowPrice" : 1846,
-    "highPrice" : 2175,
-    "openPrice" : 1846,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1976
-  }, {
     "volume" : 565094,
     "marketCap" : 47565094742,
     "lowPrice" : 1749,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1585,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1600
+  }, {
+    "volume" : 20482,
+    "marketCap" : 42331045746,
+    "lowPrice" : 1565,
+    "highPrice" : 1601,
+    "openPrice" : 1601,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1569
   } ],
   "stockCode" : "239340"
 }

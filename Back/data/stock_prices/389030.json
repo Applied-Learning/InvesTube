@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "지니너스",
   "prices" : [ {
-    "volume" : 42700,
-    "marketCap" : 47559730970,
-    "lowPrice" : 1400,
-    "highPrice" : 1430,
-    "openPrice" : 1430,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1426
-  }, {
     "volume" : 60350,
     "marketCap" : 46359064550,
     "lowPrice" : 1359,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3160,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3030
+  }, {
+    "volume" : 749506,
+    "marketCap" : 97387387400,
+    "lowPrice" : 2835,
+    "highPrice" : 3010,
+    "openPrice" : 3010,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2920
   } ],
   "stockCode" : "389030"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제노코",
   "prices" : [ {
-    "volume" : 30970,
-    "marketCap" : 103585896090,
-    "lowPrice" : 13300,
-    "highPrice" : 14430,
-    "openPrice" : 13310,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13810
-  }, {
     "volume" : 25430,
     "marketCap" : 101635690950,
     "lowPrice" : 13500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17210,
     "tradeDate" : "2025-12-22",
     "closePrice" : 18110
+  }, {
+    "volume" : 300584,
+    "marketCap" : 142836805470,
+    "lowPrice" : 15470,
+    "highPrice" : 18790,
+    "openPrice" : 18670,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16230
   } ],
   "stockCode" : "361390"
 }

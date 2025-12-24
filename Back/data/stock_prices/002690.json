@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동일제강",
   "prices" : [ {
-    "volume" : 2903,
-    "marketCap" : 27730291760,
-    "lowPrice" : 1363,
-    "highPrice" : 1372,
-    "openPrice" : 1363,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1366
-  }, {
     "volume" : 13290,
     "marketCap" : 26999478800,
     "lowPrice" : 1312,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1648,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1637
+  }, {
+    "volume" : 18382,
+    "marketCap" : 33211388960,
+    "lowPrice" : 1612,
+    "highPrice" : 1639,
+    "openPrice" : 1637,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1636
   } ],
   "stockCode" : "002690"
 }

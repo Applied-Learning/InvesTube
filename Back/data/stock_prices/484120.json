@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "도우인시스",
   "prices" : [ {
     "volume" : 13015112,
@@ -825,6 +825,14 @@
     "openPrice" : 27100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 26350
+  }, {
+    "volume" : 193051,
+    "marketCap" : 305981518200,
+    "lowPrice" : 26500,
+    "highPrice" : 28450,
+    "openPrice" : 26800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 28100
   } ],
   "stockCode" : "484120"
 }

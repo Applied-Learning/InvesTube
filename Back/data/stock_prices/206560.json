@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "덱스터",
   "prices" : [ {
-    "volume" : 1306428,
-    "marketCap" : 220065633760,
-    "lowPrice" : 8530,
-    "highPrice" : 9880,
-    "openPrice" : 9850,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8660
-  }, {
     "volume" : 7643940,
     "marketCap" : 258945589840,
     "lowPrice" : 8050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4155,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4210
+  }, {
+    "volume" : 22076,
+    "marketCap" : 103934000240,
+    "lowPrice" : 4090,
+    "highPrice" : 4250,
+    "openPrice" : 4250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4090
   } ],
   "stockCode" : "206560"
 }

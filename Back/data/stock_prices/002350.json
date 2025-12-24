@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "넥센타이어",
   "prices" : [ {
-    "volume" : 37113,
-    "marketCap" : 625074412800,
-    "lowPrice" : 6290,
-    "highPrice" : 6420,
-    "openPrice" : 6310,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6400
-  }, {
     "volume" : 36189,
     "marketCap" : 618237661410,
     "lowPrice" : 6310,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7970,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7990
+  }, {
+    "volume" : 146399,
+    "marketCap" : 754972689210,
+    "lowPrice" : 7650,
+    "highPrice" : 8000,
+    "openPrice" : 7990,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7730
   } ],
   "stockCode" : "002350"
 }

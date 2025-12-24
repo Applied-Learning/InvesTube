@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "미래에셋증권2우B",
   "prices" : [ {
-    "volume" : 148285,
-    "marketCap" : 555800000000,
-    "lowPrice" : 3885,
-    "highPrice" : 3980,
-    "openPrice" : 3885,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3970
-  }, {
     "volume" : 79435,
     "marketCap" : 556500000000,
     "lowPrice" : 3950,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10820,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10800
+  }, {
+    "volume" : 7576007,
+    "marketCap" : 1612806087600,
+    "lowPrice" : 11020,
+    "highPrice" : 12970,
+    "openPrice" : 11300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11800
   } ],
   "stockCode" : "00680K"
 }

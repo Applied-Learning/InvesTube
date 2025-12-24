@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스오에스랩",
   "prices" : [ {
-    "volume" : 9342659,
-    "marketCap" : 227388333800,
-    "lowPrice" : 11910,
-    "highPrice" : 13050,
-    "openPrice" : 12000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12860
-  }, {
     "volume" : 7058235,
     "marketCap" : 227211515500,
     "lowPrice" : 12210,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11260
+  }, {
+    "volume" : 291969,
+    "marketCap" : 195767385000,
+    "lowPrice" : 10950,
+    "highPrice" : 11330,
+    "openPrice" : 11330,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11000
   } ],
   "stockCode" : "464080"
 }

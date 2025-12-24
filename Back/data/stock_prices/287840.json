@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인투셀",
   "prices" : [ {
     "volume" : 14562947,
@@ -1153,6 +1153,14 @@
     "openPrice" : 59100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 58600
+  }, {
+    "volume" : 279821,
+    "marketCap" : 859362480000,
+    "lowPrice" : 57100,
+    "highPrice" : 59200,
+    "openPrice" : 58600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 57300
   } ],
   "stockCode" : "287840"
 }

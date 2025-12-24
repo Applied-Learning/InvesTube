@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에코바이오",
   "prices" : [ {
-    "volume" : 3450177,
-    "marketCap" : 61035102895,
-    "lowPrice" : 4140,
-    "highPrice" : 4565,
-    "openPrice" : 4465,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4355
-  }, {
     "volume" : 6189440,
     "marketCap" : 61525626110,
     "lowPrice" : 4235,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3190,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3205
+  }, {
+    "volume" : 62268,
+    "marketCap" : 44287238840,
+    "lowPrice" : 3150,
+    "highPrice" : 3300,
+    "openPrice" : 3215,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3160
   } ],
   "stockCode" : "038870"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "사이냅소프트",
   "prices" : [ {
-    "volume" : 182075,
-    "marketCap" : 87795310890,
-    "lowPrice" : 17430,
-    "highPrice" : 18450,
-    "openPrice" : 18120,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17430
-  }, {
     "volume" : 171918,
     "marketCap" : 84722726860,
     "lowPrice" : 16590,
@@ -1937,6 +1929,14 @@
     "openPrice" : 12970,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13090
+  }, {
+    "volume" : 21308,
+    "marketCap" : 64171673020,
+    "lowPrice" : 12710,
+    "highPrice" : 13120,
+    "openPrice" : 13120,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12740
   } ],
   "stockCode" : "466410"
 }

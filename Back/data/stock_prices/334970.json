@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "프레스티지바이오로직스",
   "prices" : [ {
-    "volume" : 139824,
-    "marketCap" : 362314541160,
-    "lowPrice" : 4570,
-    "highPrice" : 4770,
-    "openPrice" : 4570,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4680
-  }, {
     "volume" : 60685,
     "marketCap" : 362314541160,
     "lowPrice" : 4640,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3125,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3125
+  }, {
+    "volume" : 144420,
+    "marketCap" : 234812963740,
+    "lowPrice" : 3000,
+    "highPrice" : 3150,
+    "openPrice" : 3125,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3020
   } ],
   "stockCode" : "334970"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "iMBC",
   "prices" : [ {
-    "volume" : 1022862,
-    "marketCap" : 73485000000,
-    "lowPrice" : 3075,
-    "highPrice" : 3260,
-    "openPrice" : 3185,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3195
-  }, {
     "volume" : 751426,
     "marketCap" : 74060000000,
     "lowPrice" : 3140,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3105,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3110
+  }, {
+    "volume" : 133425,
+    "marketCap" : 71070000000,
+    "lowPrice" : 3085,
+    "highPrice" : 3115,
+    "openPrice" : 3095,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3090
   } ],
   "stockCode" : "052220"
 }

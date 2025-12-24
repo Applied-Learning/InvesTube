@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "씨피시스템",
   "prices" : [ {
-    "volume" : 55283,
-    "marketCap" : 74929830800,
-    "lowPrice" : 1922,
-    "highPrice" : 1968,
-    "openPrice" : 1960,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1936
-  }, {
     "volume" : 53027,
     "marketCap" : 76659357775,
     "lowPrice" : 1853,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4265,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4270
+  }, {
+    "volume" : 20880792,
+    "marketCap" : 168337212120,
+    "lowPrice" : 4370,
+    "highPrice" : 5050,
+    "openPrice" : 4400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4620
   } ],
   "stockCode" : "413630"
 }

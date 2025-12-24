@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "노타",
   "prices" : [ {
     "volume" : 31550573,
@@ -289,6 +289,14 @@
     "openPrice" : 40050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 39600
+  }, {
+    "volume" : 665093,
+    "marketCap" : 812445543000,
+    "lowPrice" : 38050,
+    "highPrice" : 40000,
+    "openPrice" : 39650,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 38100
   } ],
   "stockCode" : "486990"
 }

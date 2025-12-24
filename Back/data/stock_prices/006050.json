@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "국영지앤엠",
   "prices" : [ {
-    "volume" : 1520711,
-    "marketCap" : 62462484970,
-    "lowPrice" : 1770,
-    "highPrice" : 1857,
-    "openPrice" : 1822,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1790
-  }, {
     "volume" : 1169243,
     "marketCap" : 61066675250,
     "lowPrice" : 1720,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1307,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1328
+  }, {
+    "volume" : 179559,
+    "marketCap" : 45817454059,
+    "lowPrice" : 1286,
+    "highPrice" : 1335,
+    "openPrice" : 1335,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1313
   } ],
   "stockCode" : "006050"
 }

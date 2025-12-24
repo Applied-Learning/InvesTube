@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엘티씨",
   "prices" : [ {
-    "volume" : 59620,
-    "marketCap" : 86681680800,
-    "lowPrice" : 8400,
-    "highPrice" : 9040,
-    "openPrice" : 8470,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8840
-  }, {
     "volume" : 21836,
     "marketCap" : 86289456000,
     "lowPrice" : 8680,
@@ -1937,6 +1929,14 @@
     "openPrice" : 17940,
     "tradeDate" : "2025-12-22",
     "closePrice" : 19210
+  }, {
+    "volume" : 90982,
+    "marketCap" : 197020949900,
+    "lowPrice" : 18250,
+    "highPrice" : 19110,
+    "openPrice" : 19110,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 18650
   } ],
   "stockCode" : "170920"
 }

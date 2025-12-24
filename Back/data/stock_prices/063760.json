@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이엘피",
   "prices" : [ {
-    "volume" : 11911,
-    "marketCap" : 18743511300,
-    "lowPrice" : 2005,
-    "highPrice" : 2045,
-    "openPrice" : 2005,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2010
-  }, {
     "volume" : 18688,
     "marketCap" : 19256393450,
     "lowPrice" : 2000,
@@ -1936,6 +1928,14 @@
     "highPrice" : 2445,
     "openPrice" : 2355,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 2435
+  }, {
+    "volume" : 35953,
+    "marketCap" : 22706691550,
+    "lowPrice" : 2390,
+    "highPrice" : 2475,
+    "openPrice" : 2400,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 2435
   } ],
   "stockCode" : "063760"

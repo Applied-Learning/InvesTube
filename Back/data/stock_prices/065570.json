@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼영이엔씨",
   "prices" : [ {
-    "volume" : 113773,
-    "marketCap" : 24173589858,
-    "lowPrice" : 1498,
-    "highPrice" : 1705,
-    "openPrice" : 1498,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1518
-  }, {
     "volume" : 110939,
     "marketCap" : 24683178050,
     "lowPrice" : 1482,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 764
+  }, {
+    "volume" : 0,
+    "marketCap" : 12295692232,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 764
   } ],
   "stockCode" : "065570"

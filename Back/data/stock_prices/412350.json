@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "레이저쎌",
   "prices" : [ {
-    "volume" : 753912,
-    "marketCap" : 34296999960,
-    "lowPrice" : 3470,
-    "highPrice" : 4145,
-    "openPrice" : 3470,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3930
-  }, {
     "volume" : 94264,
     "marketCap" : 33860651360,
     "lowPrice" : 3765,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1912,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1907
+  }, {
+    "volume" : 90553,
+    "marketCap" : 16459069192,
+    "lowPrice" : 1878,
+    "highPrice" : 1954,
+    "openPrice" : 1907,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1886
   } ],
   "stockCode" : "412350"
 }

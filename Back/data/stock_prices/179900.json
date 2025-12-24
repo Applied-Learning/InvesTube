@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유티아이",
   "prices" : [ {
-    "volume" : 165056,
-    "marketCap" : 390885480000,
-    "lowPrice" : 22000,
-    "highPrice" : 24600,
-    "openPrice" : 23000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 24000
-  }, {
     "volume" : 649833,
     "marketCap" : 439746165000,
     "lowPrice" : 24050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 20500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 19170
+  }, {
+    "volume" : 156700,
+    "marketCap" : 379205191200,
+    "lowPrice" : 18690,
+    "highPrice" : 19710,
+    "openPrice" : 19670,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 19360
   } ],
   "stockCode" : "179900"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "DSR제강",
   "prices" : [ {
-    "volume" : 101475,
-    "marketCap" : 53784000000,
-    "lowPrice" : 3700,
-    "highPrice" : 3910,
-    "openPrice" : 3700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3735
-  }, {
     "volume" : 34463,
     "marketCap" : 54432000000,
     "lowPrice" : 3695,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3890,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3945
+  }, {
+    "volume" : 26282,
+    "marketCap" : 56664000000,
+    "lowPrice" : 3920,
+    "highPrice" : 4020,
+    "openPrice" : 3935,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3935
   } ],
   "stockCode" : "069730"
 }

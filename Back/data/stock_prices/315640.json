@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "딥노이드",
   "prices" : [ {
-    "volume" : 119784,
-    "marketCap" : 124213824720,
-    "lowPrice" : 5350,
-    "highPrice" : 5540,
-    "openPrice" : 5400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5540
-  }, {
     "volume" : 124839,
     "marketCap" : 122420123280,
     "lowPrice" : 5430,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3540,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3645
+  }, {
+    "volume" : 154818,
+    "marketCap" : 81921224380,
+    "lowPrice" : 3635,
+    "highPrice" : 3840,
+    "openPrice" : 3840,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3635
   } ],
   "stockCode" : "315640"
 }

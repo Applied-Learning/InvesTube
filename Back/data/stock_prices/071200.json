@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인피니트헬스케어",
   "prices" : [ {
-    "volume" : 30758,
-    "marketCap" : 102953052760,
-    "lowPrice" : 4175,
-    "highPrice" : 4240,
-    "openPrice" : 4175,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4220
-  }, {
     "volume" : 22044,
     "marketCap" : 102465123600,
     "lowPrice" : 4170,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 5860
+  }, {
+    "volume" : 0,
+    "marketCap" : 142963243880,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 5860
   } ],
   "stockCode" : "071200"

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "재영솔루텍",
   "prices" : [ {
-    "volume" : 232375,
-    "marketCap" : 56643579239,
-    "lowPrice" : 672,
-    "highPrice" : 683,
-    "openPrice" : 672,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 677
-  }, {
     "volume" : 268394,
     "marketCap" : 55806894169,
     "lowPrice" : 664,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2855,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3100
+  }, {
+    "volume" : 8566607,
+    "marketCap" : 360628972600,
+    "lowPrice" : 3000,
+    "highPrice" : 3165,
+    "openPrice" : 3160,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3085
   } ],
   "stockCode" : "049630"
 }

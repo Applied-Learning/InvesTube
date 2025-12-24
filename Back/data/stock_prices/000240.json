@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국앤컴퍼니",
   "prices" : [ {
-    "volume" : 133804,
-    "marketCap" : 1729720072800,
-    "lowPrice" : 17520,
-    "highPrice" : 18220,
-    "openPrice" : 17710,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 18220
-  }, {
     "volume" : 119257,
     "marketCap" : 1693644681600,
     "lowPrice" : 17690,
@@ -1937,6 +1929,14 @@
     "openPrice" : 27150,
     "tradeDate" : "2025-12-22",
     "closePrice" : 27150
+  }, {
+    "volume" : 52392,
+    "marketCap" : 2487303288000,
+    "lowPrice" : 26050,
+    "highPrice" : 27150,
+    "openPrice" : 27000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 26200
   } ],
   "stockCode" : "000240"
 }

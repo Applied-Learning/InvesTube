@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오상자이엘",
   "prices" : [ {
-    "volume" : 45780,
-    "marketCap" : 64731290030,
-    "lowPrice" : 3350,
-    "highPrice" : 3410,
-    "openPrice" : 3370,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3410
-  }, {
     "volume" : 16075,
     "marketCap" : 64161806540,
     "lowPrice" : 3380,
@@ -1936,6 +1928,14 @@
     "highPrice" : 3770,
     "openPrice" : 3725,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 3730
+  }, {
+    "volume" : 58513,
+    "marketCap" : 70805780590,
+    "lowPrice" : 3705,
+    "highPrice" : 3760,
+    "openPrice" : 3750,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 3730
   } ],
   "stockCode" : "053980"

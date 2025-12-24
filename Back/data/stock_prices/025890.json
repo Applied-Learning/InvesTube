@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국주강",
   "prices" : [ {
-    "volume" : 15101,
-    "marketCap" : 22426260597,
-    "lowPrice" : 1979,
-    "highPrice" : 2000,
-    "openPrice" : 1982,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1983
-  }, {
     "volume" : 38613,
     "marketCap" : 22154838381,
     "lowPrice" : 1951,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1716,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1706
+  }, {
+    "volume" : 3110222,
+    "marketCap" : 25050008685,
+    "lowPrice" : 1644,
+    "highPrice" : 2215,
+    "openPrice" : 1706,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2215
   } ],
   "stockCode" : "025890"
 }

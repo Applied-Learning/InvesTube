@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "마이크로투나노",
   "prices" : [ {
-    "volume" : 32205,
-    "marketCap" : 35927662300,
-    "lowPrice" : 5750,
-    "highPrice" : 6480,
-    "openPrice" : 5750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6070
-  }, {
     "volume" : 29866,
     "marketCap" : 36874684700,
     "lowPrice" : 6020,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8010,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8090
+  }, {
+    "volume" : 12945,
+    "marketCap" : 46463286500,
+    "lowPrice" : 7850,
+    "highPrice" : 8250,
+    "openPrice" : 8250,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7850
   } ],
   "stockCode" : "424980"
 }

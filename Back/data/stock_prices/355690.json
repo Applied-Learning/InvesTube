@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이텀",
   "prices" : [ {
-    "volume" : 9165,
-    "marketCap" : 27511348200,
-    "lowPrice" : 5080,
-    "highPrice" : 5340,
-    "openPrice" : 5130,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5090
-  }, {
     "volume" : 4460,
     "marketCap" : 27511348200,
     "lowPrice" : 4985,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4405
+  }, {
+    "volume" : 39417,
+    "marketCap" : 23538687900,
+    "lowPrice" : 4355,
+    "highPrice" : 4595,
+    "openPrice" : 4415,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4355
   } ],
   "stockCode" : "355690"
 }

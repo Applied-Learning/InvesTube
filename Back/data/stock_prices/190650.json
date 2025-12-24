@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코리아에셋투자증권",
   "prices" : [ {
-    "volume" : 3985,
-    "marketCap" : 35772800000,
-    "lowPrice" : 5540,
-    "highPrice" : 5680,
-    "openPrice" : 5550,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5600
-  }, {
     "volume" : 4333,
     "marketCap" : 35453400000,
     "lowPrice" : 5500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7090,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7090
+  }, {
+    "volume" : 7803,
+    "marketCap" : 45546440000,
+    "lowPrice" : 7000,
+    "highPrice" : 7130,
+    "openPrice" : 7090,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7130
   } ],
   "stockCode" : "190650"
 }

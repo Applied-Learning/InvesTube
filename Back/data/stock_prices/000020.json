@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동화약품",
   "prices" : [ {
-    "volume" : 46480,
-    "marketCap" : 176806205100,
-    "lowPrice" : 6250,
-    "highPrice" : 6370,
-    "openPrice" : 6300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6330
-  }, {
     "volume" : 36534,
     "marketCap" : 180437296200,
     "lowPrice" : 6330,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6390,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6400
+  }, {
+    "volume" : 78336,
+    "marketCap" : 179040722700,
+    "lowPrice" : 6370,
+    "highPrice" : 6490,
+    "openPrice" : 6430,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6410
   } ],
   "stockCode" : "000020"
 }

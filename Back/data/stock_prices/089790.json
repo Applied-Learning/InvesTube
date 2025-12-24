@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제이티",
   "prices" : [ {
-    "volume" : 26624,
-    "marketCap" : 38167398100,
-    "lowPrice" : 3470,
-    "highPrice" : 3715,
-    "openPrice" : 3485,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3700
-  }, {
     "volume" : 7377,
     "marketCap" : 38528441055,
     "lowPrice" : 3670,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4340,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4445
+  }, {
+    "volume" : 80376,
+    "marketCap" : 43789352685,
+    "lowPrice" : 4220,
+    "highPrice" : 4520,
+    "openPrice" : 4425,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4245
   } ],
   "stockCode" : "089790"
 }

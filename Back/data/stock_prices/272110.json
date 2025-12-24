@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이엔제이",
   "prices" : [ {
-    "volume" : 30021,
-    "marketCap" : 103990081050,
-    "lowPrice" : 12270,
-    "highPrice" : 13120,
-    "openPrice" : 12450,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12990
-  }, {
     "volume" : 25180,
     "marketCap" : 101428354650,
     "lowPrice" : 12570,
@@ -1937,6 +1929,14 @@
     "openPrice" : 23100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 23200
+  }, {
+    "volume" : 54437,
+    "marketCap" : 179768848000,
+    "lowPrice" : 22100,
+    "highPrice" : 23200,
+    "openPrice" : 23000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 22400
   } ],
   "stockCode" : "272110"
 }

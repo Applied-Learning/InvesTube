@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이치피오",
   "prices" : [ {
-    "volume" : 18261,
-    "marketCap" : 107749086720,
-    "lowPrice" : 2525,
-    "highPrice" : 2560,
-    "openPrice" : 2535,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2560
-  }, {
     "volume" : 13639,
     "marketCap" : 106907296980,
     "lowPrice" : 2515,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2445,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2470
+  }, {
+    "volume" : 29604,
+    "marketCap" : 100343146680,
+    "lowPrice" : 2415,
+    "highPrice" : 2465,
+    "openPrice" : 2440,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2430
   } ],
   "stockCode" : "357230"
 }

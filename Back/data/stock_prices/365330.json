@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스와이스틸텍",
   "prices" : [ {
-    "volume" : 4047048,
-    "marketCap" : 245492200000,
-    "lowPrice" : 8020,
-    "highPrice" : 8700,
-    "openPrice" : 8650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8020
-  }, {
     "volume" : 2233659,
     "marketCap" : 236921400000,
     "lowPrice" : 7700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3415,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3395
+  }, {
+    "volume" : 697886,
+    "marketCap" : 165313445000,
+    "lowPrice" : 3285,
+    "highPrice" : 3395,
+    "openPrice" : 3390,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3295
   } ],
   "stockCode" : "365330"
 }

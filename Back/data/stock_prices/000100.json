@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유한양행",
   "prices" : [ {
-    "volume" : 1459213,
-    "marketCap" : 9472690458400,
-    "lowPrice" : 111200,
-    "highPrice" : 119000,
-    "openPrice" : 111200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 118100
-  }, {
     "volume" : 1073627,
     "marketCap" : 9368418675200,
     "lowPrice" : 113300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 116800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 116000
+  }, {
+    "volume" : 232551,
+    "marketCap" : 9292332379400,
+    "lowPrice" : 116000,
+    "highPrice" : 117300,
+    "openPrice" : 116300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 116200
   } ],
   "stockCode" : "000100"
 }

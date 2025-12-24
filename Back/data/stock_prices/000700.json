@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유수홀딩스",
   "prices" : [ {
-    "volume" : 30736,
-    "marketCap" : 141146621040,
-    "lowPrice" : 5310,
-    "highPrice" : 5420,
-    "openPrice" : 5330,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5420
-  }, {
     "volume" : 27875,
     "marketCap" : 140625784800,
     "lowPrice" : 5370,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6170,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6160
+  }, {
+    "volume" : 31543,
+    "marketCap" : 156771708240,
+    "lowPrice" : 6020,
+    "highPrice" : 6120,
+    "openPrice" : 6110,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6020
   } ],
   "stockCode" : "000700"
 }

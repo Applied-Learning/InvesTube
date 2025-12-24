@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국타이어앤테크놀로지",
   "prices" : [ {
-    "volume" : 267073,
-    "marketCap" : 4905452732400,
-    "lowPrice" : 37700,
-    "highPrice" : 39700,
-    "openPrice" : 38050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 39600
-  }, {
     "volume" : 151141,
     "marketCap" : 4855902704800,
     "lowPrice" : 38950,
@@ -1937,6 +1929,14 @@
     "openPrice" : 62400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 60600
+  }, {
+    "volume" : 131810,
+    "marketCap" : 7358179098600,
+    "lowPrice" : 58500,
+    "highPrice" : 61300,
+    "openPrice" : 61200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 59400
   } ],
   "stockCode" : "161390"
 }

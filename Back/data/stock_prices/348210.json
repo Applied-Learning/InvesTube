@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "넥스틴",
   "prices" : [ {
-    "volume" : 35813,
-    "marketCap" : 553174250000,
-    "lowPrice" : 49700,
-    "highPrice" : 53700,
-    "openPrice" : 51400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 53000
-  }, {
     "volume" : 27678,
     "marketCap" : 555261700000,
     "lowPrice" : 51700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 66700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 67700
+  }, {
+    "volume" : 88624,
+    "marketCap" : 732342649500,
+    "lowPrice" : 66800,
+    "highPrice" : 70400,
+    "openPrice" : 68200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 69900
   } ],
   "stockCode" : "348210"
 }

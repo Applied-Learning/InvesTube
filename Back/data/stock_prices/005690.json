@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "파미셀",
   "prices" : [ {
-    "volume" : 1468565,
-    "marketCap" : 489138256600,
-    "lowPrice" : 7800,
-    "highPrice" : 8410,
-    "openPrice" : 8250,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8150
-  }, {
     "volume" : 865639,
     "marketCap" : 491538935160,
     "lowPrice" : 7800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 15290,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15170
+  }, {
+    "volume" : 829601,
+    "marketCap" : 891852085040,
+    "lowPrice" : 14790,
+    "highPrice" : 15200,
+    "openPrice" : 15190,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14860
   } ],
   "stockCode" : "005690"
 }

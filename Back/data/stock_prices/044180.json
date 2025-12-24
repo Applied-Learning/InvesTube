@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KD",
   "prices" : [ {
-    "volume" : 1082550,
-    "marketCap" : 15950526003,
-    "lowPrice" : 578,
-    "highPrice" : 617,
-    "openPrice" : 598,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 597
-  }, {
     "volume" : 1209010,
     "marketCap" : 16030679400,
     "lowPrice" : 571,
@@ -1937,6 +1929,14 @@
     "openPrice" : 600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 601
+  }, {
+    "volume" : 228351,
+    "marketCap" : 15549759018,
+    "lowPrice" : 579,
+    "highPrice" : 609,
+    "openPrice" : 603,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 582
   } ],
   "stockCode" : "044180"
 }

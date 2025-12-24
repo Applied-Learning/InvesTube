@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한미약품",
   "prices" : [ {
-    "volume" : 20689,
-    "marketCap" : 3414129101500,
-    "lowPrice" : 264000,
-    "highPrice" : 269000,
-    "openPrice" : 269000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 266500
-  }, {
     "volume" : 19785,
     "marketCap" : 3426940092500,
     "lowPrice" : 264000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 447000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 438000
+  }, {
+    "volume" : 59367,
+    "marketCap" : 5636836040000,
+    "lowPrice" : 433500,
+    "highPrice" : 443000,
+    "openPrice" : 437500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 440000
   } ],
   "stockCode" : "128940"
 }

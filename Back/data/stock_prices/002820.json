@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SUN&L",
   "prices" : [ {
-    "volume" : 6894,
-    "marketCap" : 36437088210,
-    "lowPrice" : 2760,
-    "highPrice" : 2900,
-    "openPrice" : 2785,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2890
-  }, {
     "volume" : 11305,
     "marketCap" : 36878367825,
     "lowPrice" : 2820,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2625
+  }, {
+    "volume" : 25173,
+    "marketCap" : 32654691510,
+    "lowPrice" : 2535,
+    "highPrice" : 2655,
+    "openPrice" : 2630,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2590
   } ],
   "stockCode" : "002820"
 }

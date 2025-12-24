@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "휴먼테크놀로지",
   "prices" : [ {
-    "volume" : 41262,
-    "marketCap" : 102520366380,
-    "lowPrice" : 4630,
-    "highPrice" : 4860,
-    "openPrice" : 4680,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4765
-  }, {
     "volume" : 51000,
     "marketCap" : 101121872400,
     "lowPrice" : 4685,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4370,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4220
+  }, {
+    "volume" : 75848,
+    "marketCap" : 107623372080,
+    "lowPrice" : 4215,
+    "highPrice" : 4385,
+    "openPrice" : 4300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4340
   } ],
   "stockCode" : "175140"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "종근당",
   "prices" : [ {
-    "volume" : 22368,
-    "marketCap" : 1221268734000,
-    "lowPrice" : 91300,
-    "highPrice" : 93100,
-    "openPrice" : 91700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 92700
-  }, {
     "volume" : 13736,
     "marketCap" : 1229173386000,
     "lowPrice" : 92200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 87900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 85500
+  }, {
+    "volume" : 21202,
+    "marketCap" : 1174616578000,
+    "lowPrice" : 85000,
+    "highPrice" : 86300,
+    "openPrice" : 85900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 85100
   } ],
   "stockCode" : "185750"
 }

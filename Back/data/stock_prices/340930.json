@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유일에너테크",
   "prices" : [ {
-    "volume" : 38088,
-    "marketCap" : 44807829500,
-    "lowPrice" : 1261,
-    "highPrice" : 1339,
-    "openPrice" : 1311,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1310
-  }, {
     "volume" : 64478,
     "marketCap" : 43679082650,
     "lowPrice" : 1252,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1720,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1787
+  }, {
+    "volume" : 395991,
+    "marketCap" : 57634498250,
+    "lowPrice" : 1655,
+    "highPrice" : 1815,
+    "openPrice" : 1815,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1685
   } ],
   "stockCode" : "340930"
 }

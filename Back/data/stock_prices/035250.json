@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "강원랜드",
   "prices" : [ {
-    "volume" : 398227,
-    "marketCap" : 3557830515000,
-    "lowPrice" : 16450,
-    "highPrice" : 16670,
-    "openPrice" : 16570,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16630
-  }, {
     "volume" : 237811,
     "marketCap" : 3579224565000,
     "lowPrice" : 16600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 18550,
     "tradeDate" : "2025-12-22",
     "closePrice" : 18720
+  }, {
+    "volume" : 473692,
+    "marketCap" : 4024220805000,
+    "lowPrice" : 18700,
+    "highPrice" : 18980,
+    "openPrice" : 18750,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 18810
   } ],
   "stockCode" : "035250"
 }

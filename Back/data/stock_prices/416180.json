@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신성에스티",
   "prices" : [ {
-    "volume" : 60733,
-    "marketCap" : 262153562000,
-    "lowPrice" : 29000,
-    "highPrice" : 30250,
-    "openPrice" : 30250,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 29000
-  }, {
     "volume" : 55888,
     "marketCap" : 254921739600,
     "lowPrice" : 28200,
@@ -1937,6 +1929,14 @@
     "openPrice" : 33000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 34400
+  }, {
+    "volume" : 52678,
+    "marketCap" : 312776318800,
+    "lowPrice" : 34000,
+    "highPrice" : 35000,
+    "openPrice" : 34800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 34600
   } ],
   "stockCode" : "416180"
 }

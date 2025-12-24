@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이엠더블유",
   "prices" : [ {
-    "volume" : 75495,
-    "marketCap" : 322549152300,
-    "lowPrice" : 7840,
-    "highPrice" : 8300,
-    "openPrice" : 7850,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8100
-  }, {
     "volume" : 61207,
     "marketCap" : 318965272830,
     "lowPrice" : 8000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 15900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16400
+  }, {
+    "volume" : 396961,
+    "marketCap" : 615179538270,
+    "lowPrice" : 14810,
+    "highPrice" : 16400,
+    "openPrice" : 16400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15030
   } ],
   "stockCode" : "032500"
 }

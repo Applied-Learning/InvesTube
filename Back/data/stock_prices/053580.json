@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "웹케시",
   "prices" : [ {
-    "volume" : 195322,
-    "marketCap" : 126953468880,
-    "lowPrice" : 8830,
-    "highPrice" : 9350,
-    "openPrice" : 9350,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9310
-  }, {
     "volume" : 182253,
     "marketCap" : 128180731200,
     "lowPrice" : 9010,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10470
+  }, {
+    "volume" : 29540,
+    "marketCap" : 137726104800,
+    "lowPrice" : 10100,
+    "highPrice" : 10530,
+    "openPrice" : 10380,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10100
   } ],
   "stockCode" : "053580"
 }

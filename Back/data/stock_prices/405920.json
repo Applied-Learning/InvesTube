@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "나라셀라",
   "prices" : [ {
-    "volume" : 7927,
-    "marketCap" : 41016672060,
-    "lowPrice" : 3090,
-    "highPrice" : 3185,
-    "openPrice" : 3090,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3185
-  }, {
     "volume" : 8216,
     "marketCap" : 40501549020,
     "lowPrice" : 3145,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2330,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2385
+  }, {
+    "volume" : 11480,
+    "marketCap" : 30778601640,
+    "lowPrice" : 2375,
+    "highPrice" : 2495,
+    "openPrice" : 2420,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2390
   } ],
   "stockCode" : "405920"
 }

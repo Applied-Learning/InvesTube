@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코스맥스엔비티",
   "prices" : [ {
-    "volume" : 38419,
-    "marketCap" : 63843660000,
-    "lowPrice" : 3030,
-    "highPrice" : 3150,
-    "openPrice" : 3085,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3095
-  }, {
     "volume" : 17197,
     "marketCap" : 63740520000,
     "lowPrice" : 3045,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3405,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3555
+  }, {
+    "volume" : 32245,
+    "marketCap" : 71991720000,
+    "lowPrice" : 3475,
+    "highPrice" : 3590,
+    "openPrice" : 3590,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3490
   } ],
   "stockCode" : "222040"
 }

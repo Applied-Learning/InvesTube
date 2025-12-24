@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "오픈엣지테크놀로지",
   "prices" : [ {
-    "volume" : 235352,
-    "marketCap" : 298358045480,
-    "lowPrice" : 13000,
-    "highPrice" : 13880,
-    "openPrice" : 13330,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13640
-  }, {
     "volume" : 176121,
     "marketCap" : 290264755390,
     "lowPrice" : 13110,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11360,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11750
+  }, {
+    "volume" : 151495,
+    "marketCap" : 266920905900,
+    "lowPrice" : 11820,
+    "highPrice" : 12520,
+    "openPrice" : 12000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12100
   } ],
   "stockCode" : "394280"
 }

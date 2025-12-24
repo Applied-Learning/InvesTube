@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아세아제지",
   "prices" : [ {
-    "volume" : 111535,
-    "marketCap" : 322152300300,
-    "lowPrice" : 7350,
-    "highPrice" : 7530,
-    "openPrice" : 7370,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7530
-  }, {
     "volume" : 78140,
     "marketCap" : 322580125400,
     "lowPrice" : 7450,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8320,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8390
+  }, {
+    "volume" : 61653,
+    "marketCap" : 336004833000,
+    "lowPrice" : 8230,
+    "highPrice" : 8390,
+    "openPrice" : 8340,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8300
   } ],
   "stockCode" : "002310"
 }

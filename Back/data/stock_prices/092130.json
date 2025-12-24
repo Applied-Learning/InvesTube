@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이크레더블",
   "prices" : [ {
-    "volume" : 14422,
-    "marketCap" : 164033832000,
-    "lowPrice" : 13380,
-    "highPrice" : 13650,
-    "openPrice" : 13380,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13620
-  }, {
     "volume" : 12128,
     "marketCap" : 163431652000,
     "lowPrice" : 13510,
@@ -1937,6 +1929,14 @@
     "openPrice" : 18100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 17870
+  }, {
+    "volume" : 27359,
+    "marketCap" : 215460004000,
+    "lowPrice" : 16600,
+    "highPrice" : 17900,
+    "openPrice" : 17870,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 17890
   } ],
   "stockCode" : "092130"
 }

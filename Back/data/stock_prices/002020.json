@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코오롱",
   "prices" : [ {
-    "volume" : 92693,
-    "marketCap" : 183335705520,
-    "lowPrice" : 14270,
-    "highPrice" : 14730,
-    "openPrice" : 14270,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14520
-  }, {
     "volume" : 55322,
     "marketCap" : 185608462200,
     "lowPrice" : 14400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 51500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 51900
+  }, {
+    "volume" : 35525,
+    "marketCap" : 651523581600,
+    "lowPrice" : 51400,
+    "highPrice" : 53200,
+    "openPrice" : 52100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 51600
   } ],
   "stockCode" : "002020"
 }

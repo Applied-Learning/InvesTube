@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "소룩스",
   "prices" : [ {
-    "volume" : 196505,
-    "marketCap" : 438784594200,
-    "lowPrice" : 9480,
-    "highPrice" : 9820,
-    "openPrice" : 9620,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9630
-  }, {
     "volume" : 313882,
     "marketCap" : 441974098000,
     "lowPrice" : 9620,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4250,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4350
+  }, {
+    "volume" : 1757763,
+    "marketCap" : 215249598740,
+    "lowPrice" : 4230,
+    "highPrice" : 4610,
+    "openPrice" : 4345,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4415
   } ],
   "stockCode" : "290690"
 }

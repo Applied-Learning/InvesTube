@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인지디스플레",
   "prices" : [ {
-    "volume" : 36715,
-    "marketCap" : 61483198824,
-    "lowPrice" : 1400,
-    "highPrice" : 1412,
-    "openPrice" : 1401,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1401
-  }, {
     "volume" : 23550,
     "marketCap" : 61922051064,
     "lowPrice" : 1400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1401,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1415
+  }, {
+    "volume" : 37482,
+    "marketCap" : 61878165840,
+    "lowPrice" : 1402,
+    "highPrice" : 1418,
+    "openPrice" : 1415,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1410
   } ],
   "stockCode" : "037330"
 }

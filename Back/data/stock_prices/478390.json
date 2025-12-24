@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KB제29호스팩",
   "prices" : [ {
-    "volume" : 5875,
-    "marketCap" : 12440000000,
-    "lowPrice" : 2000,
-    "highPrice" : 2020,
-    "openPrice" : 2005,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2000
-  }, {
     "volume" : 5273,
     "marketCap" : 12427560000,
     "lowPrice" : 1998,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2070,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2070
+  }, {
+    "volume" : 2711,
+    "marketCap" : 12844300000,
+    "lowPrice" : 2060,
+    "highPrice" : 2070,
+    "openPrice" : 2060,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2065
   } ],
   "stockCode" : "478390"
 }

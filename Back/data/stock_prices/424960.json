@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "스마트레이더시스템",
   "prices" : [ {
-    "volume" : 150028,
-    "marketCap" : 161532148800,
-    "lowPrice" : 9870,
-    "highPrice" : 10540,
-    "openPrice" : 10050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10320
-  }, {
     "volume" : 3963363,
     "marketCap" : 191428118200,
     "lowPrice" : 10360,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8550,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8440
+  }, {
+    "volume" : 102778,
+    "marketCap" : 132540284400,
+    "lowPrice" : 8010,
+    "highPrice" : 8640,
+    "openPrice" : 8640,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8040
   } ],
   "stockCode" : "424960"
 }

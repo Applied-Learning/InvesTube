@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "덕성",
   "prices" : [ {
-    "volume" : 241319,
-    "marketCap" : 105212800000,
-    "lowPrice" : 6630,
-    "highPrice" : 6750,
-    "openPrice" : 6660,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6710
-  }, {
     "volume" : 161772,
     "marketCap" : 105212800000,
     "lowPrice" : 6680,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5030
+  }, {
+    "volume" : 70966,
+    "marketCap" : 77694400000,
+    "lowPrice" : 4945,
+    "highPrice" : 5050,
+    "openPrice" : 5040,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4955
   } ],
   "stockCode" : "004830"
 }

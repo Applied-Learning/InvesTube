@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "크라우드웍스",
   "prices" : [ {
-    "volume" : 78599,
-    "marketCap" : 71592867360,
-    "lowPrice" : 15350,
-    "highPrice" : 16680,
-    "openPrice" : 16600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 16020
-  }, {
     "volume" : 66765,
     "marketCap" : 70118107920,
     "lowPrice" : 15250,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3820,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3865
+  }, {
+    "volume" : 270985,
+    "marketCap" : 47679131880,
+    "lowPrice" : 3455,
+    "highPrice" : 3935,
+    "openPrice" : 3935,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3505
   } ],
   "stockCode" : "355390"
 }

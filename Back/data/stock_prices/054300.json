@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "팬스타엔터프라이즈",
   "prices" : [ {
-    "volume" : 55900,
-    "marketCap" : 32421173180,
-    "lowPrice" : 469,
-    "highPrice" : 490,
-    "openPrice" : 479,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 484
-  }, {
     "volume" : 100228,
     "marketCap" : 32354187285,
     "lowPrice" : 471,
@@ -1937,6 +1929,14 @@
     "openPrice" : 659,
     "tradeDate" : "2025-12-22",
     "closePrice" : 679
+  }, {
+    "volume" : 271758,
+    "marketCap" : 76621131180,
+    "lowPrice" : 656,
+    "highPrice" : 695,
+    "openPrice" : 680,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 662
   } ],
   "stockCode" : "054300"
 }

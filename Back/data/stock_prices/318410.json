@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "비비씨",
   "prices" : [ {
-    "volume" : 2924,
-    "marketCap" : 43608657550,
-    "lowPrice" : 7730,
-    "highPrice" : 7890,
-    "openPrice" : 7740,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7850
-  }, {
     "volume" : 5052,
     "marketCap" : 43719762410,
     "lowPrice" : 7810,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8000
+  }, {
+    "volume" : 11575,
+    "marketCap" : 43886419700,
+    "lowPrice" : 7820,
+    "highPrice" : 7950,
+    "openPrice" : 7880,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7900
   } ],
   "stockCode" : "318410"
 }

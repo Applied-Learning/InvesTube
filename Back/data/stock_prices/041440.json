@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대에버다임",
   "prices" : [ {
-    "volume" : 775866,
-    "marketCap" : 156227031680,
-    "lowPrice" : 8640,
-    "highPrice" : 8960,
-    "openPrice" : 8900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8720
-  }, {
     "volume" : 573882,
     "marketCap" : 152285524000,
     "lowPrice" : 8370,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8320,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8330
+  }, {
+    "volume" : 105976,
+    "marketCap" : 148164856880,
+    "lowPrice" : 8220,
+    "highPrice" : 8400,
+    "openPrice" : 8350,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8270
   } ],
   "stockCode" : "041440"
 }

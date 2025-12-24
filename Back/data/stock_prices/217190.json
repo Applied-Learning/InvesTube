@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제너셈",
   "prices" : [ {
-    "volume" : 12809,
-    "marketCap" : 61384218000,
-    "lowPrice" : 6810,
-    "highPrice" : 7110,
-    "openPrice" : 6810,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7000
-  }, {
     "volume" : 19551,
     "marketCap" : 61208834520,
     "lowPrice" : 6820,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4630,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4785
+  }, {
+    "volume" : 37067,
+    "marketCap" : 62283058335,
+    "lowPrice" : 4670,
+    "highPrice" : 4800,
+    "openPrice" : 4750,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4735
   } ],
   "stockCode" : "217190"
 }

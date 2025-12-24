@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대현",
   "prices" : [ {
-    "volume" : 124571,
-    "marketCap" : 103620605400,
-    "lowPrice" : 2290,
-    "highPrice" : 2360,
-    "openPrice" : 2300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2340
-  }, {
     "volume" : 107727,
     "marketCap" : 104063428500,
     "lowPrice" : 2330,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1771,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1766
+  }, {
+    "volume" : 77689,
+    "marketCap" : 77804018670,
+    "lowPrice" : 1746,
+    "highPrice" : 1766,
+    "openPrice" : 1766,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1757
   } ],
   "stockCode" : "016090"
 }

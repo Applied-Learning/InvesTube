@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "파수",
   "prices" : [ {
-    "volume" : 16268,
-    "marketCap" : 59361943760,
-    "lowPrice" : 4835,
-    "highPrice" : 5080,
-    "openPrice" : 4970,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5080
-  }, {
     "volume" : 13345,
     "marketCap" : 58660818440,
     "lowPrice" : 4945,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4525,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4545
+  }, {
+    "volume" : 16223,
+    "marketCap" : 52354913450,
+    "lowPrice" : 4425,
+    "highPrice" : 4555,
+    "openPrice" : 4550,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4475
   } ],
   "stockCode" : "150900"
 }

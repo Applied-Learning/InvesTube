@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "디지캡",
   "prices" : [ {
-    "volume" : 6517,
-    "marketCap" : 30645977670,
-    "lowPrice" : 2315,
-    "highPrice" : 2360,
-    "openPrice" : 2335,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2355
-  }, {
     "volume" : 8671,
     "marketCap" : 30645977670,
     "lowPrice" : 2310,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2235,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2245
+  }, {
+    "volume" : 142265,
+    "marketCap" : 31491832680,
+    "lowPrice" : 2220,
+    "highPrice" : 2425,
+    "openPrice" : 2220,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2420
   } ],
   "stockCode" : "197140"
 }

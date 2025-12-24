@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "덕성우",
   "prices" : [ {
-    "volume" : 23550,
-    "marketCap" : 12472320000,
-    "lowPrice" : 8950,
-    "highPrice" : 9280,
-    "openPrice" : 9070,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8960
-  }, {
     "volume" : 16069,
     "marketCap" : 12722880000,
     "lowPrice" : 8970,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7680,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7570
+  }, {
+    "volume" : 7796,
+    "marketCap" : 10328640000,
+    "lowPrice" : 7410,
+    "highPrice" : 7590,
+    "openPrice" : 7590,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7420
   } ],
   "stockCode" : "004835"
 }

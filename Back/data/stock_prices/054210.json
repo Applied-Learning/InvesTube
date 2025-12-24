@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이랜텍",
   "prices" : [ {
-    "volume" : 40895,
-    "marketCap" : 129743907300,
-    "lowPrice" : 5020,
-    "highPrice" : 5140,
-    "openPrice" : 5020,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5130
-  }, {
     "volume" : 21340,
     "marketCap" : 126708962100,
     "lowPrice" : 5000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9040,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9420
+  }, {
+    "volume" : 109830,
+    "marketCap" : 227873802100,
+    "lowPrice" : 8970,
+    "highPrice" : 9420,
+    "openPrice" : 9350,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9010
   } ],
   "stockCode" : "054210"
 }

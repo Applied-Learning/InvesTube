@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대한해운",
   "prices" : [ {
-    "volume" : 3044967,
-    "marketCap" : 547662964750,
-    "lowPrice" : 1694,
-    "highPrice" : 1748,
-    "openPrice" : 1700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1705
-  }, {
     "volume" : 3673195,
     "marketCap" : 549911434400,
     "lowPrice" : 1710,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1825,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1819
+  }, {
+    "volume" : 1651697,
+    "marketCap" : 578040485940,
+    "lowPrice" : 1789,
+    "highPrice" : 1825,
+    "openPrice" : 1822,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1791
   } ],
   "stockCode" : "005880"
 }

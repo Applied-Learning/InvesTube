@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제이스코홀딩스",
   "prices" : [ {
-    "volume" : 280956,
-    "marketCap" : 106258100775,
-    "lowPrice" : 1708,
-    "highPrice" : 1771,
-    "openPrice" : 1762,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1725
-  }, {
     "volume" : 353134,
     "marketCap" : 107120485361,
     "lowPrice" : 1706,
@@ -1937,6 +1929,14 @@
     "openPrice" : 690,
     "tradeDate" : "2025-12-22",
     "closePrice" : 677
+  }, {
+    "volume" : 670290,
+    "marketCap" : 58309356952,
+    "lowPrice" : 641,
+    "highPrice" : 695,
+    "openPrice" : 690,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 658
   } ],
   "stockCode" : "023440"
 }

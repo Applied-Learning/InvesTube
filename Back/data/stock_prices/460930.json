@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대힘스",
   "prices" : [ {
-    "volume" : 774745,
-    "marketCap" : 484520189990,
-    "lowPrice" : 13610,
-    "highPrice" : 14200,
-    "openPrice" : 13930,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13690
-  }, {
     "volume" : 292295,
     "marketCap" : 482396653730,
     "lowPrice" : 13360,
@@ -1936,6 +1928,14 @@
     "highPrice" : 18980,
     "openPrice" : 18500,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 18800
+  }, {
+    "volume" : 245862,
+    "marketCap" : 667600614800,
+    "lowPrice" : 18660,
+    "highPrice" : 19250,
+    "openPrice" : 18960,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 18800
   } ],
   "stockCode" : "460930"

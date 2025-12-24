@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "농심",
   "prices" : [ {
-    "volume" : 8872,
-    "marketCap" : 2347899812000,
-    "lowPrice" : 378000,
-    "highPrice" : 389500,
-    "openPrice" : 383000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 386000
-  }, {
     "volume" : 8022,
     "marketCap" : 2344858491000,
     "lowPrice" : 382000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 433500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 435000
+  }, {
+    "volume" : 15959,
+    "marketCap" : 2636825307000,
+    "lowPrice" : 432000,
+    "highPrice" : 439500,
+    "openPrice" : 435000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 433500
   } ],
   "stockCode" : "004370"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "정원엔시스",
   "prices" : [ {
-    "volume" : 12918,
-    "marketCap" : 24511271212,
-    "lowPrice" : 761,
-    "highPrice" : 785,
-    "openPrice" : 765,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 761
-  }, {
     "volume" : 2385,
     "marketCap" : 24189178292,
     "lowPrice" : 750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 912,
     "tradeDate" : "2025-12-22",
     "closePrice" : 914
+  }, {
+    "volume" : 9771,
+    "marketCap" : 29278246428,
+    "lowPrice" : 904,
+    "highPrice" : 914,
+    "openPrice" : 905,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 909
   } ],
   "stockCode" : "045510"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엔피케이",
   "prices" : [ {
-    "volume" : 13450,
-    "marketCap" : 20558867454,
-    "lowPrice" : 1080,
-    "highPrice" : 1105,
-    "openPrice" : 1099,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1098
-  }, {
     "volume" : 8478,
     "marketCap" : 20521419608,
     "lowPrice" : 1081,
@@ -1936,6 +1928,14 @@
     "highPrice" : 975,
     "openPrice" : 957,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 975
+  }, {
+    "volume" : 54869,
+    "marketCap" : 18255824925,
+    "lowPrice" : 965,
+    "highPrice" : 984,
+    "openPrice" : 975,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 975
   } ],
   "stockCode" : "048830"

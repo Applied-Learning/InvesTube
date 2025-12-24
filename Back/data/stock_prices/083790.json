@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "CG인바이츠",
   "prices" : [ {
-    "volume" : 143287,
-    "marketCap" : 190697571360,
-    "lowPrice" : 2420,
-    "highPrice" : 2500,
-    "openPrice" : 2500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2480
-  }, {
     "volume" : 71509,
     "marketCap" : 186852862260,
     "lowPrice" : 2400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1499
+  }, {
+    "volume" : 124025,
+    "marketCap" : 113034447540,
+    "lowPrice" : 1458,
+    "highPrice" : 1504,
+    "openPrice" : 1500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1470
   } ],
   "stockCode" : "083790"
 }

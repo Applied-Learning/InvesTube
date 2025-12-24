@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엑스큐어",
   "prices" : [ {
-    "volume" : 67208,
-    "marketCap" : 26707724180,
-    "lowPrice" : 2630,
-    "highPrice" : 2985,
-    "openPrice" : 2870,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2690
-  }, {
     "volume" : 13680,
     "marketCap" : 26955937230,
     "lowPrice" : 2665,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1254,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1285
+  }, {
+    "volume" : 141987,
+    "marketCap" : 29786445684,
+    "lowPrice" : 1269,
+    "highPrice" : 1360,
+    "openPrice" : 1279,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1278
   } ],
   "stockCode" : "070300"
 }

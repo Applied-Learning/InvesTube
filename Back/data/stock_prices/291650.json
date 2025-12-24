@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "압타머사이언스",
   "prices" : [ {
-    "volume" : 916775,
-    "marketCap" : 19459368792,
-    "lowPrice" : 1133,
-    "highPrice" : 1170,
-    "openPrice" : 1148,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1146
-  }, {
     "volume" : 532699,
     "marketCap" : 33584449044,
     "lowPrice" : 1133,
@@ -1937,6 +1929,14 @@
     "openPrice" : 744,
     "tradeDate" : "2025-12-22",
     "closePrice" : 784
+  }, {
+    "volume" : 109043,
+    "marketCap" : 31158989208,
+    "lowPrice" : 767,
+    "highPrice" : 798,
+    "openPrice" : 798,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 774
   } ],
   "stockCode" : "291650"
 }

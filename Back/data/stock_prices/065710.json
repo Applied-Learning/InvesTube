@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "서호전기",
   "prices" : [ {
-    "volume" : 4016,
-    "marketCap" : 117420000000,
-    "lowPrice" : 22600,
-    "highPrice" : 22900,
-    "openPrice" : 22750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 22800
-  }, {
     "volume" : 11511,
     "marketCap" : 114072500000,
     "lowPrice" : 22050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 55300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 58200
+  }, {
+    "volume" : 21243,
+    "marketCap" : 301790000000,
+    "lowPrice" : 57500,
+    "highPrice" : 59100,
+    "openPrice" : 58200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 58600
   } ],
   "stockCode" : "065710"
 }

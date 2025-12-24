@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KG이니시스",
   "prices" : [ {
-    "volume" : 41637,
-    "marketCap" : 266208300360,
-    "lowPrice" : 9350,
-    "highPrice" : 9540,
-    "openPrice" : 9450,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9540
-  }, {
     "volume" : 58239,
     "marketCap" : 267603522060,
     "lowPrice" : 9490,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10830,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10780
+  }, {
+    "volume" : 219631,
+    "marketCap" : 298138975880,
+    "lowPrice" : 10670,
+    "highPrice" : 10910,
+    "openPrice" : 10770,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10820
   } ],
   "stockCode" : "035600"
 }

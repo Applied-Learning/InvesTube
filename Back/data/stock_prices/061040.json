@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "알에프텍",
   "prices" : [ {
-    "volume" : 346036,
-    "marketCap" : 129961498950,
-    "lowPrice" : 3865,
-    "highPrice" : 4060,
-    "openPrice" : 3865,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4050
-  }, {
     "volume" : 205138,
     "marketCap" : 128998821180,
     "lowPrice" : 3975,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1995,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2000
+  }, {
+    "volume" : 97693,
+    "marketCap" : 62092716165,
+    "lowPrice" : 1934,
+    "highPrice" : 2005,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1935
   } ],
   "stockCode" : "061040"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "백산",
   "prices" : [ {
-    "volume" : 23821,
-    "marketCap" : 285305000000,
-    "lowPrice" : 13140,
-    "highPrice" : 13340,
-    "openPrice" : 13140,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13270
-  }, {
     "volume" : 44649,
     "marketCap" : 288745000000,
     "lowPrice" : 13210,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13600
+  }, {
+    "volume" : 21653,
+    "marketCap" : 274255285780,
+    "lowPrice" : 13320,
+    "highPrice" : 13740,
+    "openPrice" : 13580,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13340
   } ],
   "stockCode" : "035150"
 }

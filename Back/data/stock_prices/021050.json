@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "서원",
   "prices" : [ {
-    "volume" : 399454,
-    "marketCap" : 56494762100,
-    "lowPrice" : 1180,
-    "highPrice" : 1231,
-    "openPrice" : 1185,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1190
-  }, {
     "volume" : 268505,
     "marketCap" : 55497795710,
     "lowPrice" : 1156,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1080,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1080
+  }, {
+    "volume" : 126260,
+    "marketCap" : 50512963760,
+    "lowPrice" : 1063,
+    "highPrice" : 1086,
+    "openPrice" : 1081,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1064
   } ],
   "stockCode" : "021050"
 }

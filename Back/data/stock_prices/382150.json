@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "온코크로스",
   "prices" : [ {
-    "volume" : 3259522,
-    "marketCap" : 99488091430,
-    "lowPrice" : 8200,
-    "highPrice" : 8990,
-    "openPrice" : 8430,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8390
-  }, {
     "volume" : 1522675,
     "marketCap" : 88104471910,
     "lowPrice" : 7380,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10160,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10300
+  }, {
+    "volume" : 148958,
+    "marketCap" : 121606487070,
+    "lowPrice" : 10050,
+    "highPrice" : 10530,
+    "openPrice" : 10530,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10110
   } ],
   "stockCode" : "382150"
 }

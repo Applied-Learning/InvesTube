@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스케이증권제9호스팩",
   "prices" : [ {
-    "volume" : 4419,
-    "marketCap" : 10366300000,
-    "lowPrice" : 2030,
-    "highPrice" : 2095,
-    "openPrice" : 2075,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2065
-  }, {
     "volume" : 8316,
     "marketCap" : 10291000000,
     "lowPrice" : 2045,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2090,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2095
+  }, {
+    "volume" : 883,
+    "marketCap" : 10491800000,
+    "lowPrice" : 2090,
+    "highPrice" : 2090,
+    "openPrice" : 2090,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2090
   } ],
   "stockCode" : "455910"
 }

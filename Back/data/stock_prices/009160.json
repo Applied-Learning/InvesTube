@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SIMPAC",
   "prices" : [ {
-    "volume" : 73875,
-    "marketCap" : 251576489020,
-    "lowPrice" : 3780,
-    "highPrice" : 3915,
-    "openPrice" : 3780,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3845
-  }, {
     "volume" : 25914,
     "marketCap" : 252557931760,
     "lowPrice" : 3795,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5580,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5660
+  }, {
+    "volume" : 164980,
+    "marketCap" : 365750994440,
+    "lowPrice" : 5580,
+    "highPrice" : 5780,
+    "openPrice" : 5660,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5590
   } ],
   "stockCode" : "009160"
 }

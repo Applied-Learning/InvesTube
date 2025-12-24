@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국경제TV",
   "prices" : [ {
-    "volume" : 9606,
-    "marketCap" : 140300000000,
-    "lowPrice" : 6030,
-    "highPrice" : 6100,
-    "openPrice" : 6050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6100
-  }, {
     "volume" : 53631,
     "marketCap" : 140990000000,
     "lowPrice" : 6060,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5590,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5660
+  }, {
+    "volume" : 48683,
+    "marketCap" : 122400000000,
+    "lowPrice" : 5380,
+    "highPrice" : 5710,
+    "openPrice" : 5710,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5440
   } ],
   "stockCode" : "039340"
 }

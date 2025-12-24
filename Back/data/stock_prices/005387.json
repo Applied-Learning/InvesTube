@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대차2우B",
   "prices" : [ {
-    "volume" : 56823,
-    "marketCap" : 5617800326100,
-    "lowPrice" : 155700,
-    "highPrice" : 158000,
-    "openPrice" : 156300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 157100
-  }, {
     "volume" : 39777,
     "marketCap" : 5621376265200,
     "lowPrice" : 156200,
@@ -1936,6 +1928,14 @@
     "highPrice" : 210000,
     "openPrice" : 210000,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 208500
+  }, {
+    "volume" : 60488,
+    "marketCap" : 7289979405000,
+    "lowPrice" : 206500,
+    "highPrice" : 210000,
+    "openPrice" : 209500,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 208500
   } ],
   "stockCode" : "005387"

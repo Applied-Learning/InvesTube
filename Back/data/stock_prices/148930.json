@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이치와이티씨",
   "prices" : [ {
-    "volume" : 9546,
-    "marketCap" : 37800916295,
-    "lowPrice" : 3635,
-    "highPrice" : 3830,
-    "openPrice" : 3635,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3715
-  }, {
     "volume" : 3698,
     "marketCap" : 37953544490,
     "lowPrice" : 3710,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3120,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3115
+  }, {
+    "volume" : 13441,
+    "marketCap" : 31492284235,
+    "lowPrice" : 3060,
+    "highPrice" : 3135,
+    "openPrice" : 3115,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3095
   } ],
   "stockCode" : "148930"
 }

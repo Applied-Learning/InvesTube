@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이스침대",
   "prices" : [ {
-    "volume" : 4826,
-    "marketCap" : 287231000000,
-    "lowPrice" : 25450,
-    "highPrice" : 25950,
-    "openPrice" : 25500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 25900
-  }, {
     "volume" : 1733,
     "marketCap" : 287231000000,
     "lowPrice" : 25700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 31400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 31500
+  }, {
+    "volume" : 5577,
+    "marketCap" : 347117000000,
+    "lowPrice" : 30850,
+    "highPrice" : 31500,
+    "openPrice" : 31200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 31300
   } ],
   "stockCode" : "003800"
 }

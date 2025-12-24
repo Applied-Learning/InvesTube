@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "인콘",
   "prices" : [ {
-    "volume" : 177775,
-    "marketCap" : 22461181439,
-    "lowPrice" : 287,
-    "highPrice" : 299,
-    "openPrice" : 293,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 289
-  }, {
     "volume" : 47525,
     "marketCap" : 22694342492,
     "lowPrice" : 289,
@@ -1937,6 +1929,14 @@
     "openPrice" : 271,
     "tradeDate" : "2025-12-22",
     "closePrice" : 269
+  }, {
+    "volume" : 253286,
+    "marketCap" : 20518172664,
+    "lowPrice" : 262,
+    "highPrice" : 270,
+    "openPrice" : 270,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 264
   } ],
   "stockCode" : "083640"
 }

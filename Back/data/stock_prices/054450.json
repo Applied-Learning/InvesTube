@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "텔레칩스",
   "prices" : [ {
-    "volume" : 186368,
-    "marketCap" : 202478395210,
-    "lowPrice" : 13010,
-    "highPrice" : 13900,
-    "openPrice" : 13010,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13370
-  }, {
     "volume" : 116726,
     "marketCap" : 194754836380,
     "lowPrice" : 12790,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13250,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13870
+  }, {
+    "volume" : 84250,
+    "marketCap" : 209293300060,
+    "lowPrice" : 13600,
+    "highPrice" : 14080,
+    "openPrice" : 13880,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13820
   } ],
   "stockCode" : "054450"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국가스공사",
   "prices" : [ {
-    "volume" : 1027470,
-    "marketCap" : 3318652350000,
-    "lowPrice" : 34350,
-    "highPrice" : 36000,
-    "openPrice" : 34650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 35950
-  }, {
     "volume" : 698501,
     "marketCap" : 3304805400000,
     "lowPrice" : 35150,
@@ -1937,6 +1929,14 @@
     "openPrice" : 40950,
     "tradeDate" : "2025-12-22",
     "closePrice" : 40900
+  }, {
+    "volume" : 312562,
+    "marketCap" : 3780217350000,
+    "lowPrice" : 40750,
+    "highPrice" : 41400,
+    "openPrice" : 41050,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 40950
   } ],
   "stockCode" : "036460"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유진기업",
   "prices" : [ {
-    "volume" : 45371,
-    "marketCap" : 261310716940,
-    "lowPrice" : 3355,
-    "highPrice" : 3385,
-    "openPrice" : 3360,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3380
-  }, {
     "volume" : 79963,
     "marketCap" : 263630042830,
     "lowPrice" : 3385,
@@ -1936,6 +1928,14 @@
     "highPrice" : 3740,
     "openPrice" : 3710,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 3715
+  }, {
+    "volume" : 179981,
+    "marketCap" : 287209856045,
+    "lowPrice" : 3690,
+    "highPrice" : 3745,
+    "openPrice" : 3720,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 3715
   } ],
   "stockCode" : "023410"

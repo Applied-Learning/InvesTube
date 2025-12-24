@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제룡전기",
   "prices" : [ {
-    "volume" : 625659,
-    "marketCap" : 749311379850,
-    "lowPrice" : 44400,
-    "highPrice" : 47600,
-    "openPrice" : 44400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 46650
-  }, {
     "volume" : 1313470,
     "marketCap" : 761358186600,
     "lowPrice" : 45600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 36850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 37850
+  }, {
+    "volume" : 106572,
+    "marketCap" : 593506012550,
+    "lowPrice" : 36800,
+    "highPrice" : 37800,
+    "openPrice" : 37600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 36950
   } ],
   "stockCode" : "033100"
 }

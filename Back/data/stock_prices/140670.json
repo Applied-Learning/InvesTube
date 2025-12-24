@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "알에스오토메이션",
   "prices" : [ {
-    "volume" : 67277,
-    "marketCap" : 98241158400,
-    "lowPrice" : 10180,
-    "highPrice" : 10670,
-    "openPrice" : 10180,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10560
-  }, {
     "volume" : 163803,
     "marketCap" : 100753006200,
     "lowPrice" : 10560,
@@ -1937,6 +1929,14 @@
     "openPrice" : 15030,
     "tradeDate" : "2025-12-22",
     "closePrice" : 17650
+  }, {
+    "volume" : 806465,
+    "marketCap" : 157595191600,
+    "lowPrice" : 16500,
+    "highPrice" : 18040,
+    "openPrice" : 18010,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16940
   } ],
   "stockCode" : "140670"
 }

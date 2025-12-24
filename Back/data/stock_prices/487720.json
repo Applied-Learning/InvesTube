@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "키움제10호스팩",
   "prices" : [ {
-    "volume" : 385993,
-    "marketCap" : 8189280000,
-    "lowPrice" : 1930,
-    "highPrice" : 1937,
-    "openPrice" : 1933,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1936
-  }, {
     "volume" : 204180,
     "marketCap" : 8218890000,
     "lowPrice" : 1936,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2075,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2095
+  }, {
+    "volume" : 82,
+    "marketCap" : 8798400000,
+    "lowPrice" : 2075,
+    "highPrice" : 2095,
+    "openPrice" : 2085,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2080
   } ],
   "stockCode" : "487720"
 }

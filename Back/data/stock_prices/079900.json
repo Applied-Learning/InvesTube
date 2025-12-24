@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "전진건설로봇",
   "prices" : [ {
-    "volume" : 1385498,
-    "marketCap" : 539924165000,
-    "lowPrice" : 36800,
-    "highPrice" : 38300,
-    "openPrice" : 37750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 37000
-  }, {
     "volume" : 2291098,
     "marketCap" : 554516710000,
     "lowPrice" : 36100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 48300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 47700
+  }, {
+    "volume" : 66637,
+    "marketCap" : 682201478750,
+    "lowPrice" : 46500,
+    "highPrice" : 47750,
+    "openPrice" : 47700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 46750
   } ],
   "stockCode" : "079900"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "국일신동",
   "prices" : [ {
-    "volume" : 9311,
-    "marketCap" : 19252240000,
-    "lowPrice" : 1726,
-    "highPrice" : 1773,
-    "openPrice" : 1727,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1736
-  }, {
     "volume" : 5259,
     "marketCap" : 19385320000,
     "lowPrice" : 1736,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1574,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1580
+  }, {
+    "volume" : 13980,
+    "marketCap" : 17322580000,
+    "lowPrice" : 1561,
+    "highPrice" : 1613,
+    "openPrice" : 1596,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1562
   } ],
   "stockCode" : "060480"
 }

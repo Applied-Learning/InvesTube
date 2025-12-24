@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엑세스바이오",
   "prices" : [ {
-    "volume" : 74351,
-    "marketCap" : 196184726400,
-    "lowPrice" : 5150,
-    "highPrice" : 5260,
-    "openPrice" : 5150,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5200
-  }, {
     "volume" : 38148,
     "marketCap" : 194298334800,
     "lowPrice" : 5150,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3615,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4000
+  }, {
+    "volume" : 997899,
+    "marketCap" : 156004585320,
+    "lowPrice" : 3980,
+    "highPrice" : 4620,
+    "openPrice" : 4040,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4135
   } ],
   "stockCode" : "950130"
 }

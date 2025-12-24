@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "카카오페이",
   "prices" : [ {
-    "volume" : 390847,
-    "marketCap" : 3634940556000,
-    "lowPrice" : 26350,
-    "highPrice" : 27300,
-    "openPrice" : 26800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 27000
-  }, {
     "volume" : 229271,
     "marketCap" : 3594552327600,
     "lowPrice" : 26650,
@@ -1937,6 +1929,14 @@
     "openPrice" : 46050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 47850
+  }, {
+    "volume" : 494490,
+    "marketCap" : 6628847535000,
+    "lowPrice" : 47300,
+    "highPrice" : 49400,
+    "openPrice" : 48000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 49050
   } ],
   "stockCode" : "377300"
 }

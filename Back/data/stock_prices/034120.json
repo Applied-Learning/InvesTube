@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SBS",
   "prices" : [ {
-    "volume" : 1401866,
-    "marketCap" : 482332188000,
-    "lowPrice" : 24500,
-    "highPrice" : 26000,
-    "openPrice" : 25050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 26000
-  }, {
     "volume" : 6574386,
     "marketCap" : 483259749900,
     "lowPrice" : 23600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 19250,
     "tradeDate" : "2025-12-22",
     "closePrice" : 19070
+  }, {
+    "volume" : 41265,
+    "marketCap" : 352659034380,
+    "lowPrice" : 18950,
+    "highPrice" : 19950,
+    "openPrice" : 19070,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 19010
   } ],
   "stockCode" : "034120"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "우리산업",
   "prices" : [ {
-    "volume" : 21203,
-    "marketCap" : 91595594890,
-    "lowPrice" : 9750,
-    "highPrice" : 10040,
-    "openPrice" : 9790,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10030
-  }, {
     "volume" : 14612,
     "marketCap" : 91321630000,
     "lowPrice" : 9910,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8090,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8100
+  }, {
+    "volume" : 16029,
+    "marketCap" : 73513912150,
+    "lowPrice" : 8000,
+    "highPrice" : 8190,
+    "openPrice" : 8190,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8050
   } ],
   "stockCode" : "215360"
 }

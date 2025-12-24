@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "딜리",
   "prices" : [ {
-    "volume" : 23536,
-    "marketCap" : 25329050000,
-    "lowPrice" : 842,
-    "highPrice" : 865,
-    "openPrice" : 842,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 863
-  }, {
     "volume" : 17352,
     "marketCap" : 25211650000,
     "lowPrice" : 853,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 986
+  }, {
+    "volume" : 7153,
+    "marketCap" : 28909750000,
+    "lowPrice" : 978,
+    "highPrice" : 998,
+    "openPrice" : 998,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 985
   } ],
   "stockCode" : "131180"
 }

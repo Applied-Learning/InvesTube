@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엠아이큐브솔루션",
   "prices" : [ {
-    "volume" : 5029,
-    "marketCap" : 34409061900,
-    "lowPrice" : 6690,
-    "highPrice" : 7200,
-    "openPrice" : 6690,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6830
-  }, {
     "volume" : 2093,
     "marketCap" : 34409061900,
     "lowPrice" : 6710,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6950,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7290
+  }, {
+    "volume" : 10015,
+    "marketCap" : 35315889300,
+    "lowPrice" : 7000,
+    "highPrice" : 7360,
+    "openPrice" : 7360,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7010
   } ],
   "stockCode" : "373170"
 }

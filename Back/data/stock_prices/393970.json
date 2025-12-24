@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대진첨단소재",
   "prices" : [ {
     "volume" : 42087185,
@@ -1577,6 +1577,14 @@
     "openPrice" : 4940,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4800
+  }, {
+    "volume" : 527233,
+    "marketCap" : 68091823800,
+    "lowPrice" : 4590,
+    "highPrice" : 4810,
+    "openPrice" : 4805,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4590
   } ],
   "stockCode" : "393970"
 }

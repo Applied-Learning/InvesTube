@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼성스팩11호",
   "prices" : [ {
     "volume" : 14885987,
@@ -441,6 +441,14 @@
     "openPrice" : 2005,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2000
+  }, {
+    "volume" : 45401,
+    "marketCap" : 11548800000,
+    "lowPrice" : 2000,
+    "highPrice" : 2010,
+    "openPrice" : 2000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2005
   } ],
   "stockCode" : "0071M0"
 }

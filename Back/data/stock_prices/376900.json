@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "로킷헬스케어",
   "prices" : [ {
     "volume" : 42739710,
@@ -1225,6 +1225,14 @@
     "openPrice" : 67000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 61200
+  }, {
+    "volume" : 1155661,
+    "marketCap" : 939689340000,
+    "lowPrice" : 59000,
+    "highPrice" : 63200,
+    "openPrice" : 61900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 60000
   } ],
   "stockCode" : "376900"
 }

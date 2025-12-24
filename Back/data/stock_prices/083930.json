@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아바코",
   "prices" : [ {
-    "volume" : 31038,
-    "marketCap" : 186260847020,
-    "lowPrice" : 12240,
-    "highPrice" : 12590,
-    "openPrice" : 12520,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12490
-  }, {
     "volume" : 14310,
     "marketCap" : 183874799340,
     "lowPrice" : 12290,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14430,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14710
+  }, {
+    "volume" : 24263,
+    "marketCap" : 213113655480,
+    "lowPrice" : 14430,
+    "highPrice" : 14780,
+    "openPrice" : 14780,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14520
   } ],
   "stockCode" : "083930"
 }

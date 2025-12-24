@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "티디에스팜",
   "prices" : [ {
-    "volume" : 103071,
-    "marketCap" : 77032900000,
-    "lowPrice" : 13000,
-    "highPrice" : 14190,
-    "openPrice" : 13120,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13930
-  }, {
     "volume" : 59090,
     "marketCap" : 74102000000,
     "lowPrice" : 13400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10530,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10270
+  }, {
+    "volume" : 24733,
+    "marketCap" : 55300000000,
+    "lowPrice" : 9990,
+    "highPrice" : 10320,
+    "openPrice" : 10270,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10000
   } ],
   "stockCode" : "464280"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제일일렉트릭",
   "prices" : [ {
-    "volume" : 766310,
-    "marketCap" : 200202200000,
-    "lowPrice" : 8460,
-    "highPrice" : 9230,
-    "openPrice" : 8460,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9010
-  }, {
     "volume" : 395677,
     "marketCap" : 199091200000,
     "lowPrice" : 8830,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8910,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9060
+  }, {
+    "volume" : 72072,
+    "marketCap" : 197535800000,
+    "lowPrice" : 8870,
+    "highPrice" : 9110,
+    "openPrice" : 9060,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8890
   } ],
   "stockCode" : "199820"
 }

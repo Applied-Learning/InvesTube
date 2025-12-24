@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이카",
   "prices" : [ {
-    "volume" : 38450,
-    "marketCap" : 648048881850,
-    "lowPrice" : 13220,
-    "highPrice" : 13480,
-    "openPrice" : 13270,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13450
-  }, {
     "volume" : 49198,
     "marketCap" : 650457985500,
     "lowPrice" : 13280,
@@ -1937,6 +1929,14 @@
     "openPrice" : 16660,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16480
+  }, {
+    "volume" : 42804,
+    "marketCap" : 799197281760,
+    "lowPrice" : 16360,
+    "highPrice" : 16530,
+    "openPrice" : 16530,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16370
   } ],
   "stockCode" : "381970"
 }

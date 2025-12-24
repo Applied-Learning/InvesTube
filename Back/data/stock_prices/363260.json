@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "모비데이즈",
   "prices" : [ {
-    "volume" : 3800882,
-    "marketCap" : 58891861039,
-    "lowPrice" : 1610,
-    "highPrice" : 1831,
-    "openPrice" : 1610,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1831
-  }, {
     "volume" : 4653797,
     "marketCap" : 54935717452,
     "lowPrice" : 1708,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1659,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1654
+  }, {
+    "volume" : 146151,
+    "marketCap" : 51751504321,
+    "lowPrice" : 1604,
+    "highPrice" : 1666,
+    "openPrice" : 1642,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1609
   } ],
   "stockCode" : "363260"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "스맥",
   "prices" : [ {
-    "volume" : 328118,
-    "marketCap" : 135419020810,
-    "lowPrice" : 3270,
-    "highPrice" : 3415,
-    "openPrice" : 3270,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3365
-  }, {
     "volume" : 447775,
     "marketCap" : 135620237780,
     "lowPrice" : 3350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6730
+  }, {
+    "volume" : 1750261,
+    "marketCap" : 466784814960,
+    "lowPrice" : 6500,
+    "highPrice" : 6890,
+    "openPrice" : 6720,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6840
   } ],
   "stockCode" : "099440"
 }

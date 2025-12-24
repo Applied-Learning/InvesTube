@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "파라다이스",
   "prices" : [ {
-    "volume" : 151707,
-    "marketCap" : 892937891790,
-    "lowPrice" : 9650,
-    "highPrice" : 9810,
-    "openPrice" : 9690,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9730
-  }, {
     "volume" : 98487,
     "marketCap" : 897526472940,
     "lowPrice" : 9750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 16780,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16980
+  }, {
+    "volume" : 921472,
+    "marketCap" : 1515451167600,
+    "lowPrice" : 16320,
+    "highPrice" : 17030,
+    "openPrice" : 16980,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16400
   } ],
   "stockCode" : "034230"
 }

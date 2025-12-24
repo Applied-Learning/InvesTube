@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "앱튼",
   "prices" : [ {
-    "volume" : 996806,
-    "marketCap" : 240726831576,
-    "lowPrice" : 1505,
-    "highPrice" : 1584,
-    "openPrice" : 1531,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1516
-  }, {
     "volume" : 939627,
     "marketCap" : 236598271140,
     "lowPrice" : 1487,
@@ -1937,6 +1929,14 @@
     "openPrice" : 374,
     "tradeDate" : "2025-12-22",
     "closePrice" : 355
+  }, {
+    "volume" : 1896574,
+    "marketCap" : 66840309980,
+    "lowPrice" : 338,
+    "highPrice" : 361,
+    "openPrice" : 358,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 340
   } ],
   "stockCode" : "270520"
 }

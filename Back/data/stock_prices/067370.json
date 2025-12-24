@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "선바이오",
   "prices" : [ {
-    "volume" : 9760,
-    "marketCap" : 92967340250,
-    "lowPrice" : 7430,
-    "highPrice" : 7740,
-    "openPrice" : 7710,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7550
-  }, {
     "volume" : 7077,
     "marketCap" : 92228526950,
     "lowPrice" : 7280,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5820
+  }, {
+    "volume" : 24385,
+    "marketCap" : 70600683450,
+    "lowPrice" : 5490,
+    "highPrice" : 5800,
+    "openPrice" : 5780,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5790
   } ],
   "stockCode" : "067370"
 }

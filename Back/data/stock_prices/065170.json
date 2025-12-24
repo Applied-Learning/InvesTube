@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "비엘팜텍",
   "prices" : [ {
-    "volume" : 0,
-    "marketCap" : 20819110806,
-    "lowPrice" : 0,
-    "highPrice" : 0,
-    "openPrice" : 0,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 234
-  }, {
     "volume" : 0,
     "marketCap" : 20819110806,
     "lowPrice" : 0,
@@ -1937,6 +1929,14 @@
     "openPrice" : 562,
     "tradeDate" : "2025-12-22",
     "closePrice" : 574
+  }, {
+    "volume" : 97885,
+    "marketCap" : 14729029800,
+    "lowPrice" : 550,
+    "highPrice" : 579,
+    "openPrice" : 574,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 552
   } ],
   "stockCode" : "065170"
 }

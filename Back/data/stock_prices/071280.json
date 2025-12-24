@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "로체시스템즈",
   "prices" : [ {
-    "volume" : 47198,
-    "marketCap" : 284363849770,
-    "lowPrice" : 17890,
-    "highPrice" : 18590,
-    "openPrice" : 18470,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 18590
-  }, {
     "volume" : 31430,
     "marketCap" : 271820635310,
     "lowPrice" : 17770,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9050,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8960
+  }, {
+    "volume" : 227869,
+    "marketCap" : 130632989620,
+    "lowPrice" : 8480,
+    "highPrice" : 8970,
+    "openPrice" : 8910,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8540
   } ],
   "stockCode" : "071280"
 }

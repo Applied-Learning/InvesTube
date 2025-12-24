@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엔바이오니아",
   "prices" : [ {
-    "volume" : 1854,
-    "marketCap" : 122241997500,
-    "lowPrice" : 14210,
-    "highPrice" : 14590,
-    "openPrice" : 14590,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14370
-  }, {
     "volume" : 6468,
     "marketCap" : 119945175000,
     "lowPrice" : 13990,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11740,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11790
+  }, {
+    "volume" : 20372,
+    "marketCap" : 98712294450,
+    "lowPrice" : 11420,
+    "highPrice" : 11960,
+    "openPrice" : 11720,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11550
   } ],
   "stockCode" : "317870"
 }

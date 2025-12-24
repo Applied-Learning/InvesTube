@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "뉴인텍",
   "prices" : [ {
-    "volume" : 44269,
-    "marketCap" : 25097230866,
-    "lowPrice" : 485,
-    "highPrice" : 497,
-    "openPrice" : 489,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 493
-  }, {
     "volume" : 56493,
     "marketCap" : 24842695056,
     "lowPrice" : 485,
@@ -1937,6 +1929,14 @@
     "openPrice" : 556,
     "tradeDate" : "2025-12-22",
     "closePrice" : 527
+  }, {
+    "volume" : 396294,
+    "marketCap" : 28410713232,
+    "lowPrice" : 514,
+    "highPrice" : 536,
+    "openPrice" : 527,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 536
   } ],
   "stockCode" : "012340"
 }

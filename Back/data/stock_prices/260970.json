@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스앤디",
   "prices" : [ {
-    "volume" : 91316,
-    "marketCap" : 141166395200,
-    "lowPrice" : 47350,
-    "highPrice" : 49800,
-    "openPrice" : 48500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 48800
-  }, {
     "volume" : 65659,
     "marketCap" : 140009293600,
     "lowPrice" : 47550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 75100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 72700
+  }, {
+    "volume" : 30764,
+    "marketCap" : 205964084800,
+    "lowPrice" : 69800,
+    "highPrice" : 72900,
+    "openPrice" : 72900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 71200
   } ],
   "stockCode" : "260970"
 }

@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엠디바이스",
   "prices" : [ {
     "volume" : 36531304,
@@ -1569,6 +1569,14 @@
     "openPrice" : 12550,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12660
+  }, {
+    "volume" : 155314,
+    "marketCap" : 129801872640,
+    "lowPrice" : 12080,
+    "highPrice" : 12780,
+    "openPrice" : 12680,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 12210
   } ],
   "stockCode" : "226590"
 }

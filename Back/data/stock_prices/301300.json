@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "바이브컴퍼니",
   "prices" : [ {
-    "volume" : 94481,
-    "marketCap" : 48649829425,
-    "lowPrice" : 3800,
-    "highPrice" : 4095,
-    "openPrice" : 3870,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3925
-  }, {
     "volume" : 21075,
     "marketCap" : 47658240545,
     "lowPrice" : 3825,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3510,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3530
+  }, {
+    "volume" : 33013,
+    "marketCap" : 45120662160,
+    "lowPrice" : 3415,
+    "highPrice" : 3555,
+    "openPrice" : 3555,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3430
   } ],
   "stockCode" : "301300"
 }

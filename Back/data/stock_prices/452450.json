@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "피아이이",
   "prices" : [ {
     "volume" : 66399344,
@@ -1745,6 +1745,14 @@
     "openPrice" : 6780,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6940
+  }, {
+    "volume" : 134889,
+    "marketCap" : 243256230000,
+    "lowPrice" : 6760,
+    "highPrice" : 6930,
+    "openPrice" : 6910,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6780
   } ],
   "stockCode" : "452450"
 }

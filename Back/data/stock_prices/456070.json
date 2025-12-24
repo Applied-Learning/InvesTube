@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이엔셀",
   "prices" : [ {
-    "volume" : 322183,
-    "marketCap" : 157056578360,
-    "lowPrice" : 14580,
-    "highPrice" : 15300,
-    "openPrice" : 14750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14680
-  }, {
     "volume" : 216664,
     "marketCap" : 152991081100,
     "lowPrice" : 14160,
@@ -1937,6 +1929,14 @@
     "openPrice" : 20300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 20150
+  }, {
+    "volume" : 708469,
+    "marketCap" : 201844238550,
+    "lowPrice" : 18240,
+    "highPrice" : 19530,
+    "openPrice" : 19310,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 18510
   } ],
   "stockCode" : "456070"
 }

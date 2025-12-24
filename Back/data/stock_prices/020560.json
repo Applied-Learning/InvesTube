@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아시아나항공",
   "prices" : [ {
-    "volume" : 138963,
-    "marketCap" : 744117640000,
-    "lowPrice" : 9920,
-    "highPrice" : 10080,
-    "openPrice" : 9920,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10000
-  }, {
     "volume" : 160539,
     "marketCap" : 739652934160,
     "lowPrice" : 9920,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8160,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8140
+  }, {
+    "volume" : 67971,
+    "marketCap" : 1666464851990,
+    "lowPrice" : 8090,
+    "highPrice" : 8170,
+    "openPrice" : 8130,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8090
   } ],
   "stockCode" : "020560"
 }

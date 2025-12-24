@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HRS",
   "prices" : [ {
-    "volume" : 25540,
-    "marketCap" : 77276430000,
-    "lowPrice" : 4645,
-    "highPrice" : 4740,
-    "openPrice" : 4650,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4725
-  }, {
     "volume" : 18033,
     "marketCap" : 77930622000,
     "lowPrice" : 4725,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5630,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5590
+  }, {
+    "volume" : 67585,
+    "marketCap" : 91096236000,
+    "lowPrice" : 5540,
+    "highPrice" : 5600,
+    "openPrice" : 5590,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5570
   } ],
   "stockCode" : "036640"
 }

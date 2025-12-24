@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "메리츠금융지주",
   "prices" : [ {
-    "volume" : 407489,
-    "marketCap" : 19415307605200,
-    "lowPrice" : 99300,
-    "highPrice" : 102300,
-    "openPrice" : 99300,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 101800
-  }, {
     "volume" : 216604,
     "marketCap" : 19110155422800,
     "lowPrice" : 99400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 110500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 109700
+  }, {
+    "volume" : 159971,
+    "marketCap" : 19186784143500,
+    "lowPrice" : 109300,
+    "highPrice" : 110700,
+    "openPrice" : 109900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 109500
   } ],
   "stockCode" : "138040"
 }

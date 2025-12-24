@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한솔로지스틱스",
   "prices" : [ {
-    "volume" : 28321,
-    "marketCap" : 59549569875,
-    "lowPrice" : 2065,
-    "highPrice" : 2125,
-    "openPrice" : 2070,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2115
-  }, {
     "volume" : 32622,
     "marketCap" : 59549569875,
     "lowPrice" : 2100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3020,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3030
+  }, {
+    "volume" : 219773,
+    "marketCap" : 86156824500,
+    "lowPrice" : 3010,
+    "highPrice" : 3075,
+    "openPrice" : 3030,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3060
   } ],
   "stockCode" : "009180"
 }

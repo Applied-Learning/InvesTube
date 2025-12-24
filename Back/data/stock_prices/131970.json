@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "두산테스나",
   "prices" : [ {
-    "volume" : 43462,
-    "marketCap" : 513138168900,
-    "lowPrice" : 26300,
-    "highPrice" : 27000,
-    "openPrice" : 26900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 26550
-  }, {
     "volume" : 46695,
     "marketCap" : 508306359400,
     "lowPrice" : 25950,
@@ -1937,6 +1929,14 @@
     "openPrice" : 43950,
     "tradeDate" : "2025-12-22",
     "closePrice" : 45650
+  }, {
+    "volume" : 147162,
+    "marketCap" : 868759348100,
+    "lowPrice" : 44550,
+    "highPrice" : 46200,
+    "openPrice" : 46200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 44950
   } ],
   "stockCode" : "131970"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "쏠리드",
   "prices" : [ {
-    "volume" : 1157182,
-    "marketCap" : 339689484360,
-    "lowPrice" : 5460,
-    "highPrice" : 5640,
-    "openPrice" : 5530,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5560
-  }, {
     "volume" : 3208656,
     "marketCap" : 345188055150,
     "lowPrice" : 5650,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7860,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8340
+  }, {
+    "volume" : 1908987,
+    "marketCap" : 470863138500,
+    "lowPrice" : 7730,
+    "highPrice" : 8300,
+    "openPrice" : 8300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7750
   } ],
   "stockCode" : "050890"
 }

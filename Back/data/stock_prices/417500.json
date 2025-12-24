@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제이아이테크",
   "prices" : [ {
-    "volume" : 175017,
-    "marketCap" : 105566875680,
-    "lowPrice" : 3210,
-    "highPrice" : 3350,
-    "openPrice" : 3215,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3220
-  }, {
     "volume" : 456145,
     "marketCap" : 102288401280,
     "lowPrice" : 3120,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3260,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3280
+  }, {
+    "volume" : 40251,
+    "marketCap" : 106058646840,
+    "lowPrice" : 3185,
+    "highPrice" : 3295,
+    "openPrice" : 3280,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3235
   } ],
   "stockCode" : "417500"
 }

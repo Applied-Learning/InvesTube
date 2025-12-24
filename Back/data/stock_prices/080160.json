@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "모두투어",
   "prices" : [ {
-    "volume" : 30442,
-    "marketCap" : 189378000000,
-    "lowPrice" : 9860,
-    "highPrice" : 10090,
-    "openPrice" : 9860,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10020
-  }, {
     "volume" : 27576,
     "marketCap" : 188811000000,
     "lowPrice" : 9960,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10290,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10380
+  }, {
+    "volume" : 34300,
+    "marketCap" : 194670000000,
+    "lowPrice" : 10290,
+    "highPrice" : 10430,
+    "openPrice" : 10380,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10300
   } ],
   "stockCode" : "080160"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KC그린홀딩스",
   "prices" : [ {
-    "volume" : 252262,
-    "marketCap" : 20483136740,
-    "lowPrice" : 888,
-    "highPrice" : 1053,
-    "openPrice" : 1039,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 913
-  }, {
     "volume" : 189068,
     "marketCap" : 20594306384,
     "lowPrice" : 878,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 756
+  }, {
+    "volume" : 0,
+    "marketCap" : 17568790596,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 756
   } ],
   "stockCode" : "009440"

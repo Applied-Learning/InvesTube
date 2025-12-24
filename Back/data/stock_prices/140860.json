@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "파크시스템스",
   "prices" : [ {
-    "volume" : 27327,
-    "marketCap" : 1439028862000,
-    "lowPrice" : 199800,
-    "highPrice" : 208500,
-    "openPrice" : 207000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 206000
-  }, {
     "volume" : 28623,
     "marketCap" : 1395019726900,
     "lowPrice" : 198100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 211000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 211500
+  }, {
+    "volume" : 24898,
+    "marketCap" : 1497246078000,
+    "lowPrice" : 211500,
+    "highPrice" : 216500,
+    "openPrice" : 212000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 214000
   } ],
   "stockCode" : "140860"
 }

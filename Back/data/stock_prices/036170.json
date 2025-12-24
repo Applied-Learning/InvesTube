@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이치엠넥스",
   "prices" : [ {
-    "volume" : 274403,
-    "marketCap" : 55719988408,
-    "lowPrice" : 870,
-    "highPrice" : 930,
-    "openPrice" : 903,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 908
-  }, {
     "volume" : 89472,
     "marketCap" : 55167697774,
     "lowPrice" : 879,
@@ -1937,6 +1929,14 @@
     "openPrice" : 870,
     "tradeDate" : "2025-12-22",
     "closePrice" : 861
+  }, {
+    "volume" : 33719,
+    "marketCap" : 52099416474,
+    "lowPrice" : 849,
+    "highPrice" : 864,
+    "openPrice" : 861,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 849
   } ],
   "stockCode" : "036170"
 }

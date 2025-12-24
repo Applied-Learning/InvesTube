@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "피코그램",
   "prices" : [ {
-    "volume" : 20293,
-    "marketCap" : 43547195190,
-    "lowPrice" : 2335,
-    "highPrice" : 2390,
-    "openPrice" : 2335,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2355
-  }, {
     "volume" : 24527,
     "marketCap" : 44194393420,
     "lowPrice" : 2335,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2395,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2445
+  }, {
+    "volume" : 55015,
+    "marketCap" : 43896854870,
+    "lowPrice" : 2355,
+    "highPrice" : 2445,
+    "openPrice" : 2425,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2365
   } ],
   "stockCode" : "376180"
 }

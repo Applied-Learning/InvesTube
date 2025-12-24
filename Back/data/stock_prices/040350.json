@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "크레오에스지",
   "prices" : [ {
-    "volume" : 212920,
-    "marketCap" : 108604297986,
-    "lowPrice" : 572,
-    "highPrice" : 585,
-    "openPrice" : 581,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 582
-  }, {
     "volume" : 424121,
     "marketCap" : 111776588477,
     "lowPrice" : 563,
@@ -1937,6 +1929,14 @@
     "openPrice" : 686,
     "tradeDate" : "2025-12-22",
     "closePrice" : 630
+  }, {
+    "volume" : 503068,
+    "marketCap" : 62270497718,
+    "lowPrice" : 611,
+    "highPrice" : 640,
+    "openPrice" : 640,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 638
   } ],
   "stockCode" : "040350"
 }

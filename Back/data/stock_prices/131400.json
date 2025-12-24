@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이브이첨단소재",
   "prices" : [ {
-    "volume" : 222946,
-    "marketCap" : 111969388278,
-    "lowPrice" : 1827,
-    "highPrice" : 1893,
-    "openPrice" : 1827,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1879
-  }, {
     "volume" : 192150,
     "marketCap" : 110718000756,
     "lowPrice" : 1855,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1489,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1427
+  }, {
+    "volume" : 297433,
+    "marketCap" : 83011491626,
+    "lowPrice" : 1391,
+    "highPrice" : 1440,
+    "openPrice" : 1427,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1393
   } ],
   "stockCode" : "131400"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "포메탈",
   "prices" : [ {
-    "volume" : 137147,
-    "marketCap" : 35482459840,
-    "lowPrice" : 2855,
-    "highPrice" : 3005,
-    "openPrice" : 2895,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2995
-  }, {
     "volume" : 104838,
     "marketCap" : 34949334400,
     "lowPrice" : 2915,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3480
+  }, {
+    "volume" : 230004,
+    "marketCap" : 40754478080,
+    "lowPrice" : 3400,
+    "highPrice" : 3515,
+    "openPrice" : 3450,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3440
   } ],
   "stockCode" : "119500"
 }

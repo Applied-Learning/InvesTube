@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아티스트컴퍼니",
   "prices" : [ {
-    "volume" : 1952269,
-    "marketCap" : 242340265300,
-    "lowPrice" : 18060,
-    "highPrice" : 21000,
-    "openPrice" : 20800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 18130
-  }, {
     "volume" : 1031914,
     "marketCap" : 221755377900,
     "lowPrice" : 15320,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4085,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4125
+  }, {
+    "volume" : 14166,
+    "marketCap" : 64704210400,
+    "lowPrice" : 4075,
+    "highPrice" : 4185,
+    "openPrice" : 4185,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4150
   } ],
   "stockCode" : "321820"
 }

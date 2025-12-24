@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "효성티앤씨",
   "prices" : [ {
-    "volume" : 13045,
-    "marketCap" : 1036479839000,
-    "lowPrice" : 239500,
-    "highPrice" : 247000,
-    "openPrice" : 243000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 239500
-  }, {
     "volume" : 15486,
     "marketCap" : 1062445931000,
     "lowPrice" : 238500,
@@ -1936,6 +1928,14 @@
     "highPrice" : 239000,
     "openPrice" : 236500,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 238000
+  }, {
+    "volume" : 17210,
+    "marketCap" : 1029988316000,
+    "lowPrice" : 237000,
+    "highPrice" : 241000,
+    "openPrice" : 237500,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 238000
   } ],
   "stockCode" : "298020"

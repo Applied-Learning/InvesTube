@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "해성옵틱스",
   "prices" : [ {
-    "volume" : 106399,
-    "marketCap" : 25605917188,
-    "lowPrice" : 1001,
-    "highPrice" : 1040,
-    "openPrice" : 1030,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1006
-  }, {
     "volume" : 76834,
     "marketCap" : 24689602060,
     "lowPrice" : 970,
@@ -1937,6 +1929,14 @@
     "openPrice" : 562,
     "tradeDate" : "2025-12-22",
     "closePrice" : 571
+  }, {
+    "volume" : 137635,
+    "marketCap" : 25873616448,
+    "lowPrice" : 551,
+    "highPrice" : 576,
+    "openPrice" : 575,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 576
   } ],
   "stockCode" : "076610"
 }

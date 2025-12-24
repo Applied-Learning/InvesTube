@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "중앙백신",
   "prices" : [ {
-    "volume" : 35239,
-    "marketCap" : 95041480080,
-    "lowPrice" : 9610,
-    "highPrice" : 9860,
-    "openPrice" : 9820,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9840
-  }, {
     "volume" : 11460,
     "marketCap" : 94848306340,
     "lowPrice" : 9750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 10000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9930
+  }, {
+    "volume" : 17468,
+    "marketCap" : 94944893210,
+    "lowPrice" : 9800,
+    "highPrice" : 9930,
+    "openPrice" : 9930,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9830
   } ],
   "stockCode" : "072020"
 }

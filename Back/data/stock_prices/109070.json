@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "주성코퍼레이션",
   "prices" : [ {
-    "volume" : 0,
-    "marketCap" : 216521943000,
-    "lowPrice" : 0,
-    "highPrice" : 0,
-    "openPrice" : 0,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4100
-  }, {
     "volume" : 0,
     "marketCap" : 216521943000,
     "lowPrice" : 0,
@@ -1937,6 +1929,14 @@
     "openPrice" : 812,
     "tradeDate" : "2025-12-22",
     "closePrice" : 813
+  }, {
+    "volume" : 47701,
+    "marketCap" : 42406614690,
+    "lowPrice" : 801,
+    "highPrice" : 813,
+    "openPrice" : 813,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 803
   } ],
   "stockCode" : "109070"
 }

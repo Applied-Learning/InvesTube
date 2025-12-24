@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코람코더원리츠",
   "prices" : [ {
-    "volume" : 55308,
-    "marketCap" : 167054000000,
-    "lowPrice" : 4075,
-    "highPrice" : 4220,
-    "openPrice" : 4220,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4135
-  }, {
     "volume" : 65763,
     "marketCap" : 170690000000,
     "lowPrice" : 4115,
@@ -1936,6 +1928,14 @@
     "highPrice" : 8660,
     "openPrice" : 8380,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 8640
+  }, {
+    "volume" : 201267,
+    "marketCap" : 349056000000,
+    "lowPrice" : 8450,
+    "highPrice" : 8690,
+    "openPrice" : 8650,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 8640
   } ],
   "stockCode" : "417310"

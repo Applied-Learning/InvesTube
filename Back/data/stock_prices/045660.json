@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이텍",
   "prices" : [ {
-    "volume" : 414464,
-    "marketCap" : 237062000000,
-    "lowPrice" : 27150,
-    "highPrice" : 28850,
-    "openPrice" : 27850,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 28700
-  }, {
     "volume" : 461509,
     "marketCap" : 237888000000,
     "lowPrice" : 28000,
@@ -1936,6 +1928,14 @@
     "highPrice" : 10290,
     "openPrice" : 10100,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 10220
+  }, {
+    "volume" : 17879,
+    "marketCap" : 84417200000,
+    "lowPrice" : 10100,
+    "highPrice" : 10300,
+    "openPrice" : 10230,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 10220
   } ],
   "stockCode" : "045660"

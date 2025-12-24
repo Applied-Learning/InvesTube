@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한진",
   "prices" : [ {
-    "volume" : 22251,
-    "marketCap" : 289386078080,
-    "lowPrice" : 19050,
-    "highPrice" : 19420,
-    "openPrice" : 19120,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 19360
-  }, {
     "volume" : 7589,
     "marketCap" : 289983983200,
     "lowPrice" : 19230,
@@ -1937,6 +1929,14 @@
     "openPrice" : 20450,
     "tradeDate" : "2025-12-22",
     "closePrice" : 20550
+  }, {
+    "volume" : 25154,
+    "marketCap" : 309270703000,
+    "lowPrice" : 20000,
+    "highPrice" : 20700,
+    "openPrice" : 20700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 20300
   } ],
   "stockCode" : "002320"
 }

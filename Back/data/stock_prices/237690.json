@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스티팜",
   "prices" : [ {
-    "volume" : 175588,
-    "marketCap" : 1717541943000,
-    "lowPrice" : 85300,
-    "highPrice" : 88400,
-    "openPrice" : 85600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 85300
-  }, {
     "volume" : 92077,
     "marketCap" : 1733650191000,
     "lowPrice" : 84700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 130300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 125500
+  }, {
+    "volume" : 103372,
+    "marketCap" : 2585640331600,
+    "lowPrice" : 123500,
+    "highPrice" : 126400,
+    "openPrice" : 125500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 124900
   } ],
   "stockCode" : "237690"
 }

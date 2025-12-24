@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SK",
   "prices" : [ {
-    "volume" : 98659,
-    "marketCap" : 10135877879400,
-    "lowPrice" : 134700,
-    "highPrice" : 140200,
-    "openPrice" : 134900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 139800
-  }, {
     "volume" : 59497,
     "marketCap" : 9983622203100,
     "lowPrice" : 137400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 253000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 251000
+  }, {
+    "volume" : 82532,
+    "marketCap" : 18016921695500,
+    "lowPrice" : 248500,
+    "highPrice" : 252500,
+    "openPrice" : 252500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 248500
   } ],
   "stockCode" : "034730"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "새론오토모티브",
   "prices" : [ {
-    "volume" : 6259,
-    "marketCap" : 64896000000,
-    "lowPrice" : 3330,
-    "highPrice" : 3410,
-    "openPrice" : 3410,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3380
-  }, {
     "volume" : 8074,
     "marketCap" : 62208000000,
     "lowPrice" : 3240,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3360,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3360
+  }, {
+    "volume" : 2190,
+    "marketCap" : 65856000000,
+    "lowPrice" : 3340,
+    "highPrice" : 3430,
+    "openPrice" : 3360,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3430
   } ],
   "stockCode" : "075180"
 }

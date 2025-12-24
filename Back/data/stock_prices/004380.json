@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼익THK",
   "prices" : [ {
-    "volume" : 39052,
-    "marketCap" : 169050000000,
-    "lowPrice" : 7830,
-    "highPrice" : 8120,
-    "openPrice" : 7830,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8050
-  }, {
     "volume" : 35468,
     "marketCap" : 170520000000,
     "lowPrice" : 8020,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 9960
+  }, {
+    "volume" : 0,
+    "marketCap" : 209160000000,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 9960
   } ],
   "stockCode" : "004380"

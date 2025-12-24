@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "신도기연",
   "prices" : [ {
-    "volume" : 12300,
-    "marketCap" : 37513647510,
-    "lowPrice" : 2355,
-    "highPrice" : 2405,
-    "openPrice" : 2370,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2355
-  }, {
     "volume" : 17194,
     "marketCap" : 37672941130,
     "lowPrice" : 2320,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1645,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1754
+  }, {
+    "volume" : 151722,
+    "marketCap" : 28258688188,
+    "lowPrice" : 1766,
+    "highPrice" : 1890,
+    "openPrice" : 1853,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1774
   } ],
   "stockCode" : "290520"
 }

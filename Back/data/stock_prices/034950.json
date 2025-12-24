@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국기업평가",
   "prices" : [ {
-    "volume" : 1756,
-    "marketCap" : 402289540400,
-    "lowPrice" : 88300,
-    "highPrice" : 88900,
-    "openPrice" : 88900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 88600
-  }, {
     "volume" : 1330,
     "marketCap" : 401381437600,
     "lowPrice" : 88400,
@@ -1937,6 +1929,14 @@
     "openPrice" : 99500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 100200
+  }, {
+    "volume" : 1729,
+    "marketCap" : 454505451400,
+    "lowPrice" : 99500,
+    "highPrice" : 100300,
+    "openPrice" : 100300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 100100
   } ],
   "stockCode" : "034950"
 }

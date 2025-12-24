@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유엔젤",
   "prices" : [ {
-    "volume" : 293328,
-    "marketCap" : 82207678420,
-    "lowPrice" : 5860,
-    "highPrice" : 6370,
-    "openPrice" : 5880,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 6230
-  }, {
     "volume" : 897945,
     "marketCap" : 89729087200,
     "lowPrice" : 6080,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4910,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4945
+  }, {
+    "volume" : 43122,
+    "marketCap" : 63187724600,
+    "lowPrice" : 4880,
+    "highPrice" : 4985,
+    "openPrice" : 4945,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4900
   } ],
   "stockCode" : "072130"
 }

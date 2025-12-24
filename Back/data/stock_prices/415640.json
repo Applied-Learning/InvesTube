@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KB발해인프라",
   "prices" : [ {
-    "volume" : 134039,
-    "marketCap" : 990168027840,
-    "lowPrice" : 8040,
-    "highPrice" : 8080,
-    "openPrice" : 8050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8080
-  }, {
     "volume" : 143682,
     "marketCap" : 988942572360,
     "lowPrice" : 8060,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9980,
     "tradeDate" : "2025-12-22",
     "closePrice" : 10250
+  }, {
+    "volume" : 163311,
+    "marketCap" : 1242611856720,
+    "lowPrice" : 10020,
+    "highPrice" : 10240,
+    "openPrice" : 10240,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 10140
   } ],
   "stockCode" : "415640"
 }

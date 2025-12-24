@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동아에스티",
   "prices" : [ {
-    "volume" : 15604,
-    "marketCap" : 550373400000,
-    "lowPrice" : 59200,
-    "highPrice" : 61000,
-    "openPrice" : 60500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 60000
-  }, {
     "volume" : 8995,
     "marketCap" : 545786955000,
     "lowPrice" : 59100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 56000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 55300
+  }, {
+    "volume" : 13788,
+    "marketCap" : 505043154000,
+    "lowPrice" : 53900,
+    "highPrice" : 55800,
+    "openPrice" : 55800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 54000
   } ],
   "stockCode" : "170900"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "소노스퀘어",
   "prices" : [ {
-    "volume" : 506768,
-    "marketCap" : 88603595550,
-    "lowPrice" : 834,
-    "highPrice" : 892,
-    "openPrice" : 836,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 879
-  }, {
     "volume" : 419220,
     "marketCap" : 86184384750,
     "lowPrice" : 855,
@@ -1937,6 +1929,14 @@
     "openPrice" : 667,
     "tradeDate" : "2025-12-22",
     "closePrice" : 668
+  }, {
+    "volume" : 149610,
+    "marketCap" : 65621092950,
+    "lowPrice" : 649,
+    "highPrice" : 674,
+    "openPrice" : 672,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 651
   } ],
   "stockCode" : "007720"
 }

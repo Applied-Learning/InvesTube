@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코츠테크놀로지",
   "prices" : [ {
-    "volume" : 51124,
-    "marketCap" : 74548675710,
-    "lowPrice" : 13800,
-    "highPrice" : 14490,
-    "openPrice" : 13800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14390
-  }, {
     "volume" : 18752,
     "marketCap" : 74082422700,
     "lowPrice" : 14190,
@@ -1937,6 +1929,14 @@
     "openPrice" : 16650,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16750
+  }, {
+    "volume" : 32722,
+    "marketCap" : 87430989180,
+    "lowPrice" : 16260,
+    "highPrice" : 16800,
+    "openPrice" : 16580,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16620
   } ],
   "stockCode" : "448710"
 }

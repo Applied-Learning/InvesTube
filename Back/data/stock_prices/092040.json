@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아미코젠",
   "prices" : [ {
-    "volume" : 245306,
-    "marketCap" : 217322470650,
-    "lowPrice" : 3665,
-    "highPrice" : 4025,
-    "openPrice" : 3665,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3950
-  }, {
     "volume" : 152360,
     "marketCap" : 216497195445,
     "lowPrice" : 3850,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2035,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1945
+  }, {
+    "volume" : 1711037,
+    "marketCap" : 107168814999,
+    "lowPrice" : 1879,
+    "highPrice" : 1991,
+    "openPrice" : 1944,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1923
   } ],
   "stockCode" : "092040"
 }

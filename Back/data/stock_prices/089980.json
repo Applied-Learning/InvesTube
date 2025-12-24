@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "상아프론테크",
   "prices" : [ {
-    "volume" : 50395,
-    "marketCap" : 308588414100,
-    "lowPrice" : 19090,
-    "highPrice" : 19770,
-    "openPrice" : 19120,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 19300
-  }, {
     "volume" : 22774,
     "marketCap" : 306190058550,
     "lowPrice" : 19050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 16600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16720
+  }, {
+    "volume" : 26302,
+    "marketCap" : 266377356420,
+    "lowPrice" : 16420,
+    "highPrice" : 16800,
+    "openPrice" : 16800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16660
   } ],
   "stockCode" : "089980"
 }

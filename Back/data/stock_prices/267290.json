@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "경동도시가스",
   "prices" : [ {
-    "volume" : 6045,
-    "marketCap" : 108239654160,
-    "lowPrice" : 18130,
-    "highPrice" : 18380,
-    "openPrice" : 18140,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 18360
-  }, {
     "volume" : 4875,
     "marketCap" : 108239654160,
     "lowPrice" : 18270,
@@ -1937,6 +1929,14 @@
     "openPrice" : 21850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 21700
+  }, {
+    "volume" : 5591,
+    "marketCap" : 127045999300,
+    "lowPrice" : 21550,
+    "highPrice" : 21700,
+    "openPrice" : 21700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 21550
   } ],
   "stockCode" : "267290"
 }

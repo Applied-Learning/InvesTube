@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "기아",
   "prices" : [ {
-    "volume" : 778490,
-    "marketCap" : 40125168568800,
-    "lowPrice" : 99500,
-    "highPrice" : 102700,
-    "openPrice" : 101200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 100900
-  }, {
     "volume" : 588138,
     "marketCap" : 40005866779200,
     "lowPrice" : 99500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 121700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 121100
+  }, {
+    "volume" : 398278,
+    "marketCap" : 46927642359600,
+    "lowPrice" : 119800,
+    "highPrice" : 121900,
+    "openPrice" : 121400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 120200
   } ],
   "stockCode" : "000270"
 }

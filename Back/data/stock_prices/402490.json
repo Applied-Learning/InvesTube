@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "그린리소스",
   "prices" : [ {
-    "volume" : 3037741,
-    "marketCap" : 158375487040,
-    "lowPrice" : 18310,
-    "highPrice" : 20350,
-    "openPrice" : 18870,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 19160
-  }, {
     "volume" : 740479,
     "marketCap" : 154325174480,
     "lowPrice" : 18650,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7780,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7900
+  }, {
+    "volume" : 136043,
+    "marketCap" : 128165793120,
+    "lowPrice" : 7670,
+    "highPrice" : 7990,
+    "openPrice" : 7900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7740
   } ],
   "stockCode" : "402490"
 }

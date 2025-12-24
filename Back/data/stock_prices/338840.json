@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "와이바이오로직스",
   "prices" : [ {
-    "volume" : 32943,
-    "marketCap" : 112790597080,
-    "lowPrice" : 7410,
-    "highPrice" : 7650,
-    "openPrice" : 7410,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7630
-  }, {
     "volume" : 25542,
     "marketCap" : 114268848680,
     "lowPrice" : 7500,
@@ -1936,6 +1928,14 @@
     "highPrice" : 24800,
     "openPrice" : 24500,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 23950
+  }, {
+    "volume" : 477746,
+    "marketCap" : 358032884950,
+    "lowPrice" : 22600,
+    "highPrice" : 24300,
+    "openPrice" : 24000,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 23950
   } ],
   "stockCode" : "338840"

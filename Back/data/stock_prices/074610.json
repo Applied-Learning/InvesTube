@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "이엔플러스",
   "prices" : [ {
-    "volume" : 153561,
-    "marketCap" : 81079075545,
-    "lowPrice" : 1097,
-    "highPrice" : 1122,
-    "openPrice" : 1097,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1105
-  }, {
     "volume" : 249498,
     "marketCap" : 80858951358,
     "lowPrice" : 1083,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 511
+  }, {
+    "volume" : 0,
+    "marketCap" : 37494486519,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 511
   } ],
   "stockCode" : "074610"

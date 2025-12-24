@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "로보스타",
   "prices" : [ {
-    "volume" : 31985,
-    "marketCap" : 195487500000,
-    "lowPrice" : 19630,
-    "highPrice" : 20200,
-    "openPrice" : 19750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 20050
-  }, {
     "volume" : 75967,
     "marketCap" : 200362500000,
     "lowPrice" : 20000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 75300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 77400
+  }, {
+    "volume" : 777676,
+    "marketCap" : 767325000000,
+    "lowPrice" : 75800,
+    "highPrice" : 82800,
+    "openPrice" : 77500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 78700
   } ],
   "stockCode" : "090360"
 }

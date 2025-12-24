@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "두산에너빌리티",
   "prices" : [ {
-    "volume" : 4139796,
-    "marketCap" : 11632590411360,
-    "lowPrice" : 17770,
-    "highPrice" : 18330,
-    "openPrice" : 17830,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 18160
-  }, {
     "volume" : 4603391,
     "marketCap" : 11709457748880,
     "lowPrice" : 18160,
@@ -1937,6 +1929,14 @@
     "openPrice" : 79400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 78000
+  }, {
+    "volume" : 2742514,
+    "marketCap" : 49707544929600,
+    "lowPrice" : 77500,
+    "highPrice" : 79000,
+    "openPrice" : 78600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 77600
   } ],
   "stockCode" : "034020"
 }

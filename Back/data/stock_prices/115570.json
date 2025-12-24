@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "스타플렉스",
   "prices" : [ {
-    "volume" : 113994,
-    "marketCap" : 21558171600,
-    "lowPrice" : 2530,
-    "highPrice" : 2750,
-    "openPrice" : 2530,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2700
-  }, {
     "volume" : 27355,
     "marketCap" : 21318636360,
     "lowPrice" : 2610,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3225,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3180
+  }, {
+    "volume" : 8109,
+    "marketCap" : 26069418620,
+    "lowPrice" : 3185,
+    "highPrice" : 3270,
+    "openPrice" : 3235,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3265
   } ],
   "stockCode" : "115570"
 }

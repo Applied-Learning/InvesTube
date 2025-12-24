@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "금양",
   "prices" : [ {
-    "volume" : 1062292,
-    "marketCap" : 1583188101000,
-    "lowPrice" : 24000,
-    "highPrice" : 25950,
-    "openPrice" : 24750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 24750
-  }, {
     "volume" : 4446745,
     "marketCap" : 1372096354200,
     "lowPrice" : 21400,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 9900
+  }, {
+    "volume" : 0,
+    "marketCap" : 633275240400,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 9900
   } ],
   "stockCode" : "001570"

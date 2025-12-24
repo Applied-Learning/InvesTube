@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "듀켐바이오",
   "prices" : [ {
-    "volume" : 1360273,
-    "marketCap" : 236178326000,
-    "lowPrice" : 8270,
-    "highPrice" : 9320,
-    "openPrice" : 8970,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8300
-  }, {
     "volume" : 820647,
     "marketCap" : 225934446800,
     "lowPrice" : 7760,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9820
+  }, {
+    "volume" : 175781,
+    "marketCap" : 262926232800,
+    "lowPrice" : 9210,
+    "highPrice" : 9730,
+    "openPrice" : 9630,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9240
   } ],
   "stockCode" : "176750"
 }

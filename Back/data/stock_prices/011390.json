@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "부산산업",
   "prices" : [ {
-    "volume" : 22625,
-    "marketCap" : 81840000000,
-    "lowPrice" : 77000,
-    "highPrice" : 79600,
-    "openPrice" : 78600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 77500
-  }, {
     "volume" : 13291,
     "marketCap" : 81523200000,
     "lowPrice" : 75600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 76500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 77900
+  }, {
+    "volume" : 1616,
+    "marketCap" : 81312000000,
+    "lowPrice" : 76900,
+    "highPrice" : 78800,
+    "openPrice" : 77700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 77000
   } ],
   "stockCode" : "011390"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동양우",
   "prices" : [ {
-    "volume" : 2159,
-    "marketCap" : 2693307160,
-    "lowPrice" : 4325,
-    "highPrice" : 4410,
-    "openPrice" : 4330,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4360
-  }, {
     "volume" : 1595,
     "marketCap" : 2711839090,
     "lowPrice" : 4325,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6370,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6330
+  }, {
+    "volume" : 90685,
+    "marketCap" : 3459293600,
+    "lowPrice" : 5500,
+    "highPrice" : 6010,
+    "openPrice" : 6010,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5600
   } ],
   "stockCode" : "001525"
 }

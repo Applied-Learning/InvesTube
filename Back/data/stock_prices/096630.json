@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에스코넥",
   "prices" : [ {
-    "volume" : 278030,
-    "marketCap" : 55889908935,
-    "lowPrice" : 689,
-    "highPrice" : 713,
-    "openPrice" : 697,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 707
-  }, {
     "volume" : 421959,
     "marketCap" : 53439290580,
     "lowPrice" : 676,
@@ -1937,6 +1929,14 @@
     "openPrice" : 611,
     "tradeDate" : "2025-12-22",
     "closePrice" : 610
+  }, {
+    "volume" : 119652,
+    "marketCap" : 47628969600,
+    "lowPrice" : 600,
+    "highPrice" : 616,
+    "openPrice" : 606,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 600
   } ],
   "stockCode" : "096630"
 }

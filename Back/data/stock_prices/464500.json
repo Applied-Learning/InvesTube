@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아이언디바이스",
   "prices" : [ {
-    "volume" : 1169363,
-    "marketCap" : 57738092505,
-    "lowPrice" : 4135,
-    "highPrice" : 4570,
-    "openPrice" : 4235,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4135
-  }, {
     "volume" : 587973,
     "marketCap" : 53130215715,
     "lowPrice" : 3805,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2840,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2915
+  }, {
+    "volume" : 77498,
+    "marketCap" : 40074564810,
+    "lowPrice" : 2825,
+    "highPrice" : 2940,
+    "openPrice" : 2920,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2870
   } ],
   "stockCode" : "464500"
 }

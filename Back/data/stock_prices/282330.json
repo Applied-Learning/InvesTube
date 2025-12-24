@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "BGF리테일",
   "prices" : [ {
-    "volume" : 21090,
-    "marketCap" : 1861476676200,
-    "lowPrice" : 106600,
-    "highPrice" : 109000,
-    "openPrice" : 108900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 107700
-  }, {
     "volume" : 20314,
     "marketCap" : 1849377942000,
     "lowPrice" : 106600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 112400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 110600
+  }, {
+    "volume" : 26722,
+    "marketCap" : 1904686441200,
+    "lowPrice" : 109400,
+    "highPrice" : 110900,
+    "openPrice" : 110200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 110200
   } ],
   "stockCode" : "282330"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이씨피드",
   "prices" : [ {
-    "volume" : 132812,
-    "marketCap" : 45467133760,
-    "lowPrice" : 2595,
-    "highPrice" : 2800,
-    "openPrice" : 2675,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2720
-  }, {
     "volume" : 31400,
     "marketCap" : 45216395890,
     "lowPrice" : 2665,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2745,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2780
+  }, {
+    "volume" : 33575,
+    "marketCap" : 46052188790,
+    "lowPrice" : 2735,
+    "highPrice" : 2780,
+    "openPrice" : 2775,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2755
   } ],
   "stockCode" : "025880"
 }

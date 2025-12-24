@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "TP",
   "prices" : [ {
-    "volume" : 599072,
-    "marketCap" : 75739192400,
-    "lowPrice" : 1423,
-    "highPrice" : 1489,
-    "openPrice" : 1450,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1480
-  }, {
     "volume" : 337931,
     "marketCap" : 75739192400,
     "lowPrice" : 1466,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1965,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1940
+  }, {
+    "volume" : 434873,
+    "marketCap" : 98256249600,
+    "lowPrice" : 1901,
+    "highPrice" : 1968,
+    "openPrice" : 1940,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1920
   } ],
   "stockCode" : "007980"
 }

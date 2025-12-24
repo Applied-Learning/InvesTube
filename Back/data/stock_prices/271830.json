@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "팸텍",
   "prices" : [ {
-    "volume" : 57867,
-    "marketCap" : 47095852594,
-    "lowPrice" : 1585,
-    "highPrice" : 1620,
-    "openPrice" : 1599,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1597
-  }, {
     "volume" : 18747,
     "marketCap" : 47302284008,
     "lowPrice" : 1580,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1864,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1895
+  }, {
+    "volume" : 507792,
+    "marketCap" : 53229814610,
+    "lowPrice" : 1805,
+    "highPrice" : 1910,
+    "openPrice" : 1910,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1805
   } ],
   "stockCode" : "271830"
 }

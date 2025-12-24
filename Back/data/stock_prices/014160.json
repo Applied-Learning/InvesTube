@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대영포장",
   "prices" : [ {
-    "volume" : 8180253,
-    "marketCap" : 110779229078,
-    "lowPrice" : 1007,
-    "highPrice" : 1135,
-    "openPrice" : 1007,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1022
-  }, {
     "volume" : 605525,
     "marketCap" : 109044916294,
     "lowPrice" : 1006,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1090,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1080
+  }, {
+    "volume" : 277203,
+    "marketCap" : 115982167430,
+    "lowPrice" : 1062,
+    "highPrice" : 1086,
+    "openPrice" : 1075,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1070
   } ],
   "stockCode" : "014160"
 }

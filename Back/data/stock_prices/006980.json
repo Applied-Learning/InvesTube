@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "우성",
   "prices" : [ {
-    "volume" : 5438,
-    "marketCap" : 45979200000,
-    "lowPrice" : 14610,
-    "highPrice" : 15150,
-    "openPrice" : 15100,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14880
-  }, {
     "volume" : 506,
     "marketCap" : 46350000000,
     "lowPrice" : 14830,
@@ -1937,6 +1929,14 @@
     "openPrice" : 16850,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16650
+  }, {
+    "volume" : 4412,
+    "marketCap" : 51015900000,
+    "lowPrice" : 16000,
+    "highPrice" : 17130,
+    "openPrice" : 16810,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16510
   } ],
   "stockCode" : "006980"
 }

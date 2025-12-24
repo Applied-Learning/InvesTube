@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SKC",
   "prices" : [ {
-    "volume" : 304101,
-    "marketCap" : 4161725950200,
-    "lowPrice" : 104000,
-    "highPrice" : 111600,
-    "openPrice" : 107400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 109900
-  }, {
     "volume" : 298873,
     "marketCap" : 3964810800600,
     "lowPrice" : 104500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 106000,
     "tradeDate" : "2025-12-22",
     "closePrice" : 108400
+  }, {
+    "volume" : 103949,
+    "marketCap" : 4059481545600,
+    "lowPrice" : 107000,
+    "highPrice" : 109000,
+    "openPrice" : 109000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 107200
   } ],
   "stockCode" : "011790"
 }

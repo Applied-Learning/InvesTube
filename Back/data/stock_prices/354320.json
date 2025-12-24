@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "알멕",
   "prices" : [ {
-    "volume" : 1309639,
-    "marketCap" : 197174103850,
-    "lowPrice" : 23750,
-    "highPrice" : 30850,
-    "openPrice" : 23800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 30850
-  }, {
     "volume" : 947811,
     "marketCap" : 179597806100,
     "lowPrice" : 27300,
@@ -1937,6 +1929,14 @@
     "openPrice" : 19880,
     "tradeDate" : "2025-12-22",
     "closePrice" : 20350
+  }, {
+    "volume" : 6861,
+    "marketCap" : 128466758100,
+    "lowPrice" : 20000,
+    "highPrice" : 20250,
+    "openPrice" : 20050,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 20100
   } ],
   "stockCode" : "354320"
 }

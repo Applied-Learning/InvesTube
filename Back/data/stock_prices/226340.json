@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "본느",
   "prices" : [ {
-    "volume" : 100506,
-    "marketCap" : 58146054120,
-    "lowPrice" : 1360,
-    "highPrice" : 1432,
-    "openPrice" : 1376,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1386
-  }, {
     "volume" : 180019,
     "marketCap" : 58397768640,
     "lowPrice" : 1375,
@@ -1937,6 +1929,14 @@
     "openPrice" : 634,
     "tradeDate" : "2025-12-22",
     "closePrice" : 664
+  }, {
+    "volume" : 64589,
+    "marketCap" : 27562739940,
+    "lowPrice" : 652,
+    "highPrice" : 668,
+    "openPrice" : 658,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 657
   } ],
   "stockCode" : "226340"
 }

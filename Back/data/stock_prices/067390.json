@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "아스트",
   "prices" : [ {
-    "volume" : 144124,
-    "marketCap" : 178471434268,
-    "lowPrice" : 498,
-    "highPrice" : 514,
-    "openPrice" : 501,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 508
-  }, {
     "volume" : 91170,
     "marketCap" : 179174077710,
     "lowPrice" : 508,
@@ -1937,6 +1929,14 @@
     "openPrice" : 618,
     "tradeDate" : "2025-12-22",
     "closePrice" : 583
+  }, {
+    "volume" : 2407398,
+    "marketCap" : 243104020137,
+    "lowPrice" : 584,
+    "highPrice" : 642,
+    "openPrice" : 584,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 603
   } ],
   "stockCode" : "067390"
 }

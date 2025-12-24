@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "누리플렉스",
   "prices" : [ {
-    "volume" : 14270,
-    "marketCap" : 33574664975,
-    "lowPrice" : 2725,
-    "highPrice" : 2815,
-    "openPrice" : 2725,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2785
-  }, {
     "volume" : 7628,
     "marketCap" : 33634942650,
     "lowPrice" : 2760,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3885,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3840
+  }, {
+    "volume" : 15286,
+    "marketCap" : 45268533925,
+    "lowPrice" : 3755,
+    "highPrice" : 3890,
+    "openPrice" : 3840,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3755
   } ],
   "stockCode" : "040160"
 }

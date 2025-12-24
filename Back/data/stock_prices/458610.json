@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한국제12호스팩",
   "prices" : [ {
-    "volume" : 3560,
-    "marketCap" : 8777250000,
-    "lowPrice" : 2065,
-    "highPrice" : 2075,
-    "openPrice" : 2075,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2075
-  }, {
     "volume" : 566,
     "marketCap" : 8777250000,
     "lowPrice" : 2070,
@@ -1936,6 +1928,14 @@
     "highPrice" : 2090,
     "openPrice" : 2090,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 2085
+  }, {
+    "volume" : 10620,
+    "marketCap" : 8819550000,
+    "lowPrice" : 2075,
+    "highPrice" : 2085,
+    "openPrice" : 2085,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 2085
   } ],
   "stockCode" : "458610"

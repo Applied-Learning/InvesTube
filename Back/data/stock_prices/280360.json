@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "롯데웰푸드",
   "prices" : [ {
-    "volume" : 8219,
-    "marketCap" : 1101958243200,
-    "lowPrice" : 115500,
-    "highPrice" : 117700,
-    "openPrice" : 116500,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 116800
-  }, {
     "volume" : 10756,
     "marketCap" : 1086862924800,
     "lowPrice" : 114800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 120600,
     "tradeDate" : "2025-12-22",
     "closePrice" : 118600
+  }, {
+    "volume" : 11001,
+    "marketCap" : 1099800646800,
+    "lowPrice" : 117200,
+    "highPrice" : 118800,
+    "openPrice" : 118600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 118200
   } ],
   "stockCode" : "280360"
 }

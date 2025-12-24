@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SV인베스트먼트",
   "prices" : [ {
-    "volume" : 77548,
-    "marketCap" : 70747986000,
-    "lowPrice" : 1329,
-    "highPrice" : 1350,
-    "openPrice" : 1330,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1329
-  }, {
     "volume" : 71253,
     "marketCap" : 70641518000,
     "lowPrice" : 1311,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1873,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1893
+  }, {
+    "volume" : 538363,
+    "marketCap" : 96141055010,
+    "lowPrice" : 1746,
+    "highPrice" : 1910,
+    "openPrice" : 1909,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1771
   } ],
   "stockCode" : "289080"
 }

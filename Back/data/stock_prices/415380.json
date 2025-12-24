@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "스튜디오삼익",
   "prices" : [ {
-    "volume" : 19939,
-    "marketCap" : 34860358500,
-    "lowPrice" : 8100,
-    "highPrice" : 8300,
-    "openPrice" : 8200,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8250
-  }, {
     "volume" : 12208,
     "marketCap" : 34733593560,
     "lowPrice" : 8150,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2465,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2430
+  }, {
+    "volume" : 68864,
+    "marketCap" : 28092503625,
+    "lowPrice" : 2430,
+    "highPrice" : 2490,
+    "openPrice" : 2430,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2455
   } ],
   "stockCode" : "415380"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "웹젠",
   "prices" : [ {
-    "volume" : 46634,
-    "marketCap" : 513078977120,
-    "lowPrice" : 14450,
-    "highPrice" : 14790,
-    "openPrice" : 14740,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14680
-  }, {
     "volume" : 36127,
     "marketCap" : 508884871040,
     "lowPrice" : 14550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13690,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13740
+  }, {
+    "volume" : 46538,
+    "marketCap" : 472302066600,
+    "lowPrice" : 13390,
+    "highPrice" : 13860,
+    "openPrice" : 13750,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13650
   } ],
   "stockCode" : "069080"
 }

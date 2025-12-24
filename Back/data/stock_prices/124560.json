@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "태웅로직스",
   "prices" : [ {
-    "volume" : 50991,
-    "marketCap" : 113136839880,
-    "lowPrice" : 2880,
-    "highPrice" : 2965,
-    "openPrice" : 2880,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2945
-  }, {
     "volume" : 55669,
     "marketCap" : 113328922800,
     "lowPrice" : 2915,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2715,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2695
+  }, {
+    "volume" : 96612,
+    "marketCap" : 103578169425,
+    "lowPrice" : 2660,
+    "highPrice" : 2705,
+    "openPrice" : 2700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2675
   } ],
   "stockCode" : "124560"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "동일금속",
   "prices" : [ {
-    "volume" : 1406,
-    "marketCap" : 71981000000,
-    "lowPrice" : 7860,
-    "highPrice" : 7940,
-    "openPrice" : 7880,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7910
-  }, {
     "volume" : 3272,
     "marketCap" : 73619000000,
     "lowPrice" : 7920,
@@ -1937,6 +1929,14 @@
     "openPrice" : 8040,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7960
+  }, {
+    "volume" : 968,
+    "marketCap" : 72345000000,
+    "lowPrice" : 7940,
+    "highPrice" : 7990,
+    "openPrice" : 7990,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7950
   } ],
   "stockCode" : "109860"
 }

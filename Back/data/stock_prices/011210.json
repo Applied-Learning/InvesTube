@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "현대위아",
   "prices" : [ {
-    "volume" : 36605,
-    "marketCap" : 1070126516050,
-    "lowPrice" : 38500,
-    "highPrice" : 39350,
-    "openPrice" : 38550,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 39350
-  }, {
     "volume" : 34773,
     "marketCap" : 1067407007750,
     "lowPrice" : 39000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 71800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 73000
+  }, {
+    "volume" : 195013,
+    "marketCap" : 1955326467700,
+    "lowPrice" : 71100,
+    "highPrice" : 74600,
+    "openPrice" : 74400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 71900
   } ],
   "stockCode" : "011210"
 }

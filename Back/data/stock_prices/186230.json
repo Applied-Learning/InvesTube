@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "그린플러스",
   "prices" : [ {
-    "volume" : 34445,
-    "marketCap" : 83640053240,
-    "lowPrice" : 7500,
-    "highPrice" : 7980,
-    "openPrice" : 7570,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7730
-  }, {
     "volume" : 28408,
     "marketCap" : 84938475800,
     "lowPrice" : 7680,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5960,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6000
+  }, {
+    "volume" : 10136,
+    "marketCap" : 64975118600,
+    "lowPrice" : 5920,
+    "highPrice" : 6020,
+    "openPrice" : 6020,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5950
   } ],
   "stockCode" : "186230"
 }

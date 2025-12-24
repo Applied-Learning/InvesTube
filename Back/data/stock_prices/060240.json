@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "스타코링크",
   "prices" : [ {
-    "volume" : 73318,
-    "marketCap" : 14767579803,
-    "lowPrice" : 457,
-    "highPrice" : 468,
-    "openPrice" : 461,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 457
-  }, {
     "volume" : 48982,
     "marketCap" : 14767579803,
     "lowPrice" : 450,
@@ -1936,6 +1928,14 @@
     "highPrice" : 0,
     "openPrice" : 0,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 1976
+  }, {
+    "volume" : 0,
+    "marketCap" : 11502414560,
+    "lowPrice" : 0,
+    "highPrice" : 0,
+    "openPrice" : 0,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 1976
   } ],
   "stockCode" : "060240"

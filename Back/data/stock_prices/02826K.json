@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼성물산우B",
   "prices" : [ {
-    "volume" : 2976,
-    "marketCap" : 131496064000,
-    "lowPrice" : 88600,
-    "highPrice" : 89700,
-    "openPrice" : 89000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 89600
-  }, {
     "volume" : 2859,
     "marketCap" : 130909028000,
     "lowPrice" : 88600,
@@ -1937,6 +1929,14 @@
     "openPrice" : 149900,
     "tradeDate" : "2025-12-22",
     "closePrice" : 144900
+  }, {
+    "volume" : 13047,
+    "marketCap" : 212947309000,
+    "lowPrice" : 144000,
+    "highPrice" : 147100,
+    "openPrice" : 146900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 145100
   } ],
   "stockCode" : "02826K"
 }

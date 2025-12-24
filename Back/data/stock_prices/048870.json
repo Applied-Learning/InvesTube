@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "시너지이노베이션",
   "prices" : [ {
-    "volume" : 311310,
-    "marketCap" : 224966695680,
-    "lowPrice" : 2700,
-    "highPrice" : 2830,
-    "openPrice" : 2710,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2720
-  }, {
     "volume" : 204659,
     "marketCap" : 223312528800,
     "lowPrice" : 2700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2400
+  }, {
+    "volume" : 459809,
+    "marketCap" : 206610828235,
+    "lowPrice" : 2340,
+    "highPrice" : 2410,
+    "openPrice" : 2400,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2345
   } ],
   "stockCode" : "048870"
 }

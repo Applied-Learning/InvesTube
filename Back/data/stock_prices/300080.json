@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "플리토",
   "prices" : [ {
-    "volume" : 41048,
-    "marketCap" : 103434159600,
-    "lowPrice" : 18360,
-    "highPrice" : 19150,
-    "openPrice" : 18950,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 18800
-  }, {
     "volume" : 50235,
     "marketCap" : 100353142080,
     "lowPrice" : 17910,
@@ -1937,6 +1929,14 @@
     "openPrice" : 16700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 16980
+  }, {
+    "volume" : 131083,
+    "marketCap" : 267718415220,
+    "lowPrice" : 16200,
+    "highPrice" : 17000,
+    "openPrice" : 17000,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 16220
   } ],
   "stockCode" : "300080"
 }

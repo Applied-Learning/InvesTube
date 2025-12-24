@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "유아이엘",
   "prices" : [ {
-    "volume" : 23971,
-    "marketCap" : 111538872320,
-    "lowPrice" : 5020,
-    "highPrice" : 5220,
-    "openPrice" : 5070,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5120
-  }, {
     "volume" : 21351,
     "marketCap" : 111103173600,
     "lowPrice" : 5030,
@@ -1937,6 +1929,14 @@
     "openPrice" : 3190,
     "tradeDate" : "2025-12-22",
     "closePrice" : 3240
+  }, {
+    "volume" : 615981,
+    "marketCap" : 109963647640,
+    "lowPrice" : 3210,
+    "highPrice" : 3410,
+    "openPrice" : 3215,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 3410
   } ],
   "stockCode" : "049520"
 }

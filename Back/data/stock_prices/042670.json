@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HD현대인프라코어",
   "prices" : [ {
-    "volume" : 815131,
-    "marketCap" : 1369783214370,
-    "lowPrice" : 6930,
-    "highPrice" : 7110,
-    "openPrice" : 6980,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7110
-  }, {
     "volume" : 534662,
     "marketCap" : 1352444186340,
     "lowPrice" : 6990,
@@ -1937,6 +1929,14 @@
     "openPrice" : 15300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14260
+  }, {
+    "volume" : 2212964,
+    "marketCap" : 2621255183440,
+    "lowPrice" : 13820,
+    "highPrice" : 14340,
+    "openPrice" : 14320,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13880
   } ],
   "stockCode" : "042670"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "KBI메탈",
   "prices" : [ {
-    "volume" : 882984,
-    "marketCap" : 71389311955,
-    "lowPrice" : 1925,
-    "highPrice" : 2050,
-    "openPrice" : 1925,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2045
-  }, {
     "volume" : 387033,
     "marketCap" : 69469306010,
     "lowPrice" : 1979,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1740,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1765
+  }, {
+    "volume" : 412398,
+    "marketCap" : 59345638300,
+    "lowPrice" : 1696,
+    "highPrice" : 1770,
+    "openPrice" : 1753,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1700
   } ],
   "stockCode" : "024840"
 }

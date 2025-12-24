@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "선진",
   "prices" : [ {
-    "volume" : 73300,
-    "marketCap" : 137208315080,
-    "lowPrice" : 5750,
-    "highPrice" : 5850,
-    "openPrice" : 5840,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5770
-  }, {
     "volume" : 56004,
     "marketCap" : 136257130920,
     "lowPrice" : 5700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9770,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9720
+  }, {
+    "volume" : 57081,
+    "marketCap" : 228997586520,
+    "lowPrice" : 9470,
+    "highPrice" : 9790,
+    "openPrice" : 9790,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9630
   } ],
   "stockCode" : "136490"
 }

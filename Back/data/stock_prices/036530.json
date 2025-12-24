@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SNT홀딩스",
   "prices" : [ {
-    "volume" : 46662,
-    "marketCap" : 390478069700,
-    "lowPrice" : 22750,
-    "highPrice" : 24100,
-    "openPrice" : 22750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 23950
-  }, {
     "volume" : 20807,
     "marketCap" : 390478069700,
     "lowPrice" : 23750,
@@ -1937,6 +1929,14 @@
     "openPrice" : 60200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 58700
+  }, {
+    "volume" : 20238,
+    "marketCap" : 950516553800,
+    "lowPrice" : 57900,
+    "highPrice" : 59200,
+    "openPrice" : 58800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 58300
   } ],
   "stockCode" : "036530"
 }

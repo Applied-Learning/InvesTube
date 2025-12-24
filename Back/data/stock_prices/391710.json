@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코닉오토메이션",
   "prices" : [ {
-    "volume" : 29681,
-    "marketCap" : 60741984184,
-    "lowPrice" : 1393,
-    "highPrice" : 1444,
-    "openPrice" : 1401,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 1444
-  }, {
     "volume" : 15483,
     "marketCap" : 60153072980,
     "lowPrice" : 1421,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2280,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2400
+  }, {
+    "volume" : 302131,
+    "marketCap" : 99731899800,
+    "lowPrice" : 2310,
+    "highPrice" : 2455,
+    "openPrice" : 2375,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2340
   } ],
   "stockCode" : "391710"
 }

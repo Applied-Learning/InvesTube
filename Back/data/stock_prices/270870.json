@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "뉴트리",
   "prices" : [ {
-    "volume" : 21876,
-    "marketCap" : 54741332800,
-    "lowPrice" : 5890,
-    "highPrice" : 6000,
-    "openPrice" : 6000,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5950
-  }, {
     "volume" : 12804,
     "marketCap" : 54373323840,
     "lowPrice" : 5900,
@@ -1936,6 +1928,14 @@
     "highPrice" : 5440,
     "openPrice" : 5340,
     "tradeDate" : "2025-12-22",
+    "closePrice" : 5350
+  }, {
+    "volume" : 19761,
+    "marketCap" : 49221198400,
+    "lowPrice" : 5290,
+    "highPrice" : 5430,
+    "openPrice" : 5380,
+    "tradeDate" : "2025-12-23",
     "closePrice" : 5350
   } ],
   "stockCode" : "270870"

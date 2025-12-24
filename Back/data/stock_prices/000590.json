@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "CS홀딩스",
   "prices" : [ {
-    "volume" : 236,
-    "marketCap" : 79428361600,
-    "lowPrice" : 67400,
-    "highPrice" : 68800,
-    "openPrice" : 67400,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 68800
-  }, {
     "volume" : 1863,
     "marketCap" : 79774706200,
     "lowPrice" : 68100,
@@ -1937,6 +1929,14 @@
     "openPrice" : 80100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 81900
+  }, {
+    "volume" : 1315,
+    "marketCap" : 91781319000,
+    "lowPrice" : 79500,
+    "highPrice" : 82600,
+    "openPrice" : 81800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 79500
   } ],
   "stockCode" : "000590"
 }

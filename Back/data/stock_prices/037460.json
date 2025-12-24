@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "삼지전자",
   "prices" : [ {
-    "volume" : 24538,
-    "marketCap" : 144418919700,
-    "lowPrice" : 8700,
-    "highPrice" : 8880,
-    "openPrice" : 8700,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 8850
-  }, {
     "volume" : 66260,
     "marketCap" : 147356253660,
     "lowPrice" : 8870,
@@ -1937,6 +1929,14 @@
     "openPrice" : 14260,
     "tradeDate" : "2025-12-22",
     "closePrice" : 14510
+  }, {
+    "volume" : 27340,
+    "marketCap" : 235802642900,
+    "lowPrice" : 14320,
+    "highPrice" : 14680,
+    "openPrice" : 14520,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 14450
   } ],
   "stockCode" : "037460"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "에이비온",
   "prices" : [ {
-    "volume" : 38737,
-    "marketCap" : 183133347000,
-    "lowPrice" : 6990,
-    "highPrice" : 7280,
-    "openPrice" : 7010,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7250
-  }, {
     "volume" : 16423,
     "marketCap" : 180607369800,
     "lowPrice" : 7080,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2465,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2955
+  }, {
+    "volume" : 2650344,
+    "marketCap" : 139406739800,
+    "lowPrice" : 2735,
+    "highPrice" : 2985,
+    "openPrice" : 2965,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2785
   } ],
   "stockCode" : "203400"
 }

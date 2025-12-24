@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대한전선",
   "prices" : [ {
-    "volume" : 1186823,
-    "marketCap" : 2192620248000,
-    "lowPrice" : 11450,
-    "highPrice" : 11860,
-    "openPrice" : 11450,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11760
-  }, {
     "volume" : 724585,
     "marketCap" : 2181433410000,
     "lowPrice" : 11550,
@@ -1937,6 +1929,14 @@
     "openPrice" : 23100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 23350
+  }, {
+    "volume" : 1640968,
+    "marketCap" : 4232353710000,
+    "lowPrice" : 22600,
+    "highPrice" : 23550,
+    "openPrice" : 23450,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 22700
   } ],
   "stockCode" : "001440"
 }

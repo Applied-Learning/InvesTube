@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "메가스터디",
   "prices" : [ {
-    "volume" : 213521,
-    "marketCap" : 137806286040,
-    "lowPrice" : 11490,
-    "highPrice" : 11610,
-    "openPrice" : 11520,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11560
-  }, {
     "volume" : 25118,
     "marketCap" : 139475220300,
     "lowPrice" : 11570,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 11620
+  }, {
+    "volume" : 45995,
+    "marketCap" : 136733399730,
+    "lowPrice" : 11400,
+    "highPrice" : 11670,
+    "openPrice" : 11630,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11470
   } ],
   "stockCode" : "072870"
 }

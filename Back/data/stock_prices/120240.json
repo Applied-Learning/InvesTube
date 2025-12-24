@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대정화금",
   "prices" : [ {
-    "volume" : 5323,
-    "marketCap" : 94913161200,
-    "lowPrice" : 13050,
-    "highPrice" : 13230,
-    "openPrice" : 13050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 13200
-  }, {
     "volume" : 7187,
     "marketCap" : 96135527670,
     "lowPrice" : 13190,
@@ -1937,6 +1929,14 @@
     "openPrice" : 13310,
     "tradeDate" : "2025-12-22",
     "closePrice" : 13320
+  }, {
+    "volume" : 11560,
+    "marketCap" : 95344584660,
+    "lowPrice" : 13200,
+    "highPrice" : 13380,
+    "openPrice" : 13300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 13260
   } ],
   "stockCode" : "120240"
 }

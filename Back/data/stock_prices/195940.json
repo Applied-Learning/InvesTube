@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "HK이노엔",
   "prices" : [ {
-    "volume" : 95017,
-    "marketCap" : 1022709065100,
-    "lowPrice" : 35750,
-    "highPrice" : 36350,
-    "openPrice" : 35950,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 36100
-  }, {
     "volume" : 68659,
     "marketCap" : 1029791537850,
     "lowPrice" : 35800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 52100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 52100
+  }, {
+    "volume" : 134403,
+    "marketCap" : 1450490419200,
+    "lowPrice" : 51000,
+    "highPrice" : 52600,
+    "openPrice" : 52200,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 51200
   } ],
   "stockCode" : "195940"
 }

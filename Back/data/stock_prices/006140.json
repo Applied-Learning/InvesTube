@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "피제이전자",
   "prices" : [ {
-    "volume" : 6315,
-    "marketCap" : 67950000000,
-    "lowPrice" : 4445,
-    "highPrice" : 4540,
-    "openPrice" : 4445,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4530
-  }, {
     "volume" : 5601,
     "marketCap" : 69075000000,
     "lowPrice" : 4510,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5630,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5700
+  }, {
+    "volume" : 18469,
+    "marketCap" : 83550000000,
+    "lowPrice" : 5550,
+    "highPrice" : 5720,
+    "openPrice" : 5720,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5570
   } ],
   "stockCode" : "006140"
 }

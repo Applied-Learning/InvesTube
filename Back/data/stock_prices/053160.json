@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "프리엠스",
   "prices" : [ {
-    "volume" : 263045,
-    "marketCap" : 87840000000,
-    "lowPrice" : 14280,
-    "highPrice" : 14920,
-    "openPrice" : 14800,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 14640
-  }, {
     "volume" : 368284,
     "marketCap" : 84900000000,
     "lowPrice" : 14110,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7010,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6910
+  }, {
+    "volume" : 15636,
+    "marketCap" : 41700000000,
+    "lowPrice" : 6820,
+    "highPrice" : 6960,
+    "openPrice" : 6930,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6950
   } ],
   "stockCode" : "053160"
 }

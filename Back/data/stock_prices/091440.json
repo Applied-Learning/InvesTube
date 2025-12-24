@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한울소재과학",
   "prices" : [ {
-    "volume" : 91589,
-    "marketCap" : 73617621840,
-    "lowPrice" : 4985,
-    "highPrice" : 5240,
-    "openPrice" : 5120,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5040
-  }, {
     "volume" : 36563,
     "marketCap" : 73763688550,
     "lowPrice" : 4990,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2945,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2920
+  }, {
+    "volume" : 80208,
+    "marketCap" : 88520687150,
+    "lowPrice" : 2780,
+    "highPrice" : 2920,
+    "openPrice" : 2920,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2870
   } ],
   "stockCode" : "091440"
 }

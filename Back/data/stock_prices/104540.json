@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "코렌텍",
   "prices" : [ {
-    "volume" : 7395,
-    "marketCap" : 69937997800,
-    "lowPrice" : 5350,
-    "highPrice" : 5530,
-    "openPrice" : 5420,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5470
-  }, {
     "volume" : 2763,
     "marketCap" : 69170853400,
     "lowPrice" : 5360,
@@ -1937,6 +1929,14 @@
     "openPrice" : 6400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 6840
+  }, {
+    "volume" : 221907,
+    "marketCap" : 85280885800,
+    "lowPrice" : 6510,
+    "highPrice" : 7020,
+    "openPrice" : 6860,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 6670
   } ],
   "stockCode" : "104540"
 }

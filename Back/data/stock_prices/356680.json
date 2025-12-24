@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "엑스게이트",
   "prices" : [ {
-    "volume" : 3824351,
-    "marketCap" : 266310780360,
-    "lowPrice" : 9010,
-    "highPrice" : 9810,
-    "openPrice" : 9430,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 9330
-  }, {
     "volume" : 2419495,
     "marketCap" : 273446653360,
     "lowPrice" : 9070,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7860,
     "tradeDate" : "2025-12-22",
     "closePrice" : 8040
+  }, {
+    "volume" : 472830,
+    "marketCap" : 225779021720,
+    "lowPrice" : 7880,
+    "highPrice" : 8400,
+    "openPrice" : 8390,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7910
   } ],
   "stockCode" : "356680"
 }

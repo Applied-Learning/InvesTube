@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "트윔",
   "prices" : [ {
-    "volume" : 5917,
-    "marketCap" : 58046013080,
-    "lowPrice" : 7310,
-    "highPrice" : 8000,
-    "openPrice" : 7310,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7810
-  }, {
     "volume" : 2019,
     "marketCap" : 58714917200,
     "lowPrice" : 7650,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7480,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7510
+  }, {
+    "volume" : 4373,
+    "marketCap" : 54611567120,
+    "lowPrice" : 7280,
+    "highPrice" : 7590,
+    "openPrice" : 7590,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7340
   } ],
   "stockCode" : "290090"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한솔홈데코",
   "prices" : [ {
-    "volume" : 468844,
-    "marketCap" : 52447911999,
-    "lowPrice" : 617,
-    "highPrice" : 673,
-    "openPrice" : 651,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 651
-  }, {
     "volume" : 166824,
     "marketCap" : 52689607446,
     "lowPrice" : 643,
@@ -1937,6 +1929,14 @@
     "openPrice" : 640,
     "tradeDate" : "2025-12-22",
     "closePrice" : 641
+  }, {
+    "volume" : 183884,
+    "marketCap" : 51158869615,
+    "lowPrice" : 631,
+    "highPrice" : 643,
+    "openPrice" : 640,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 635
   } ],
   "stockCode" : "025750"
 }

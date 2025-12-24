@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "명신산업",
   "prices" : [ {
-    "volume" : 60564,
-    "marketCap" : 565103332410,
-    "lowPrice" : 10630,
-    "highPrice" : 10830,
-    "openPrice" : 10740,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 10770
-  }, {
     "volume" : 75460,
     "marketCap" : 562479825760,
     "lowPrice" : 10710,
@@ -1937,6 +1929,14 @@
     "openPrice" : 9100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 9160
+  }, {
+    "volume" : 111363,
+    "marketCap" : 473805300990,
+    "lowPrice" : 8940,
+    "highPrice" : 9190,
+    "openPrice" : 9180,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 9030
   } ],
   "stockCode" : "009900"
 }

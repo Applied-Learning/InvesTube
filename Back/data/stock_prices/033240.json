@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "자화전자",
   "prices" : [ {
-    "volume" : 64714,
-    "marketCap" : 276062140200,
-    "lowPrice" : 12020,
-    "highPrice" : 12510,
-    "openPrice" : 12020,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12460
-  }, {
     "volume" : 62047,
     "marketCap" : 272517201000,
     "lowPrice" : 12230,
@@ -1937,6 +1929,14 @@
     "openPrice" : 23200,
     "tradeDate" : "2025-12-22",
     "closePrice" : 22900
+  }, {
+    "volume" : 69182,
+    "marketCap" : 488436478200,
+    "lowPrice" : 21800,
+    "highPrice" : 23050,
+    "openPrice" : 22900,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 22450
   } ],
   "stockCode" : "033240"
 }

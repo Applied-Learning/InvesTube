@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "벨로크",
   "prices" : [ {
-    "volume" : 18487,
-    "marketCap" : 15574681584,
-    "lowPrice" : 785,
-    "highPrice" : 809,
-    "openPrice" : 785,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 792
-  }, {
     "volume" : 28706,
     "marketCap" : 15790996606,
     "lowPrice" : 792,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1099,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1128
+  }, {
+    "volume" : 125776,
+    "marketCap" : 21434852180,
+    "lowPrice" : 1090,
+    "highPrice" : 1141,
+    "openPrice" : 1129,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1090
   } ],
   "stockCode" : "424760"
 }

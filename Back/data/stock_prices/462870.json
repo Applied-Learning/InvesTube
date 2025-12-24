@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "시프트업",
   "prices" : [ {
-    "volume" : 117294,
-    "marketCap" : 3599252224000,
-    "lowPrice" : 60200,
-    "highPrice" : 62200,
-    "openPrice" : 60900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 61700
-  }, {
     "volume" : 134164,
     "marketCap" : 3628419584000,
     "lowPrice" : 61900,
@@ -1937,6 +1929,14 @@
     "openPrice" : 36500,
     "tradeDate" : "2025-12-22",
     "closePrice" : 37050
+  }, {
+    "volume" : 21430,
+    "marketCap" : 2163884848000,
+    "lowPrice" : 36650,
+    "highPrice" : 37300,
+    "openPrice" : 37300,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 36700
   } ],
   "stockCode" : "462870"
 }

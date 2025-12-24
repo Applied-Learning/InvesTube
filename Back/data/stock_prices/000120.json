@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "CJ대한통운",
   "prices" : [ {
-    "volume" : 38073,
-    "marketCap" : 1882018380000,
-    "lowPrice" : 80400,
-    "highPrice" : 82800,
-    "openPrice" : 81600,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 82500
-  }, {
     "volume" : 30324,
     "marketCap" : 1875174676800,
     "lowPrice" : 81800,
@@ -1937,6 +1929,14 @@
     "openPrice" : 97400,
     "tradeDate" : "2025-12-22",
     "closePrice" : 94900
+  }, {
+    "volume" : 42768,
+    "marketCap" : 2137516632800,
+    "lowPrice" : 92900,
+    "highPrice" : 95700,
+    "openPrice" : 95500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 93700
   } ],
   "stockCode" : "000120"
 }

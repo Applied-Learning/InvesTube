@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "고려제약",
   "prices" : [ {
-    "volume" : 8589,
-    "marketCap" : 52470000000,
-    "lowPrice" : 4715,
-    "highPrice" : 4785,
-    "openPrice" : 4730,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4770
-  }, {
     "volume" : 5338,
     "marketCap" : 51810000000,
     "lowPrice" : 4700,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4465,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4430
+  }, {
+    "volume" : 24328,
+    "marketCap" : 47575000000,
+    "lowPrice" : 4310,
+    "highPrice" : 4430,
+    "openPrice" : 4430,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4325
   } ],
   "stockCode" : "014570"
 }

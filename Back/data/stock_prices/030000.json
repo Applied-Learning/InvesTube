@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "제일기획",
   "prices" : [ {
-    "volume" : 287960,
-    "marketCap" : 2157022968750,
-    "lowPrice" : 18690,
-    "highPrice" : 18900,
-    "openPrice" : 18900,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 18750
-  }, {
     "volume" : 467929,
     "marketCap" : 2150120495250,
     "lowPrice" : 18500,
@@ -1937,6 +1929,14 @@
     "openPrice" : 23300,
     "tradeDate" : "2025-12-22",
     "closePrice" : 23100
+  }, {
+    "volume" : 332989,
+    "marketCap" : 2622939930000,
+    "lowPrice" : 22650,
+    "highPrice" : 23150,
+    "openPrice" : 23150,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 22800
   } ],
   "stockCode" : "030000"
 }

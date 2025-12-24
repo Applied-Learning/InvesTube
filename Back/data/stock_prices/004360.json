@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "세방",
   "prices" : [ {
-    "volume" : 31140,
-    "marketCap" : 219539805300,
-    "lowPrice" : 11200,
-    "highPrice" : 11370,
-    "openPrice" : 11220,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 11370
-  }, {
     "volume" : 15209,
     "marketCap" : 220505239800,
     "lowPrice" : 11350,
@@ -1937,6 +1929,14 @@
     "openPrice" : 15700,
     "tradeDate" : "2025-12-22",
     "closePrice" : 15380
+  }, {
+    "volume" : 123992,
+    "marketCap" : 289601385450,
+    "lowPrice" : 15020,
+    "highPrice" : 15370,
+    "openPrice" : 15310,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 15150
   } ],
   "stockCode" : "004360"
 }

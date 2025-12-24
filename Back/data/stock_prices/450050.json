@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "하이제8호스팩",
   "prices" : [ {
-    "volume" : 7361,
-    "marketCap" : 10178420000,
-    "lowPrice" : 2025,
-    "highPrice" : 2045,
-    "openPrice" : 2025,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2030
-  }, {
     "volume" : 11792,
     "marketCap" : 10178420000,
     "lowPrice" : 2020,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2100
+  }, {
+    "volume" : 3578,
+    "marketCap" : 10504330000,
+    "lowPrice" : 2095,
+    "highPrice" : 2095,
+    "openPrice" : 2095,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2095
   } ],
   "stockCode" : "450050"
 }

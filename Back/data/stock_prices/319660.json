@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "피에스케이",
   "prices" : [ {
-    "volume" : 186718,
-    "marketCap" : 493013472280,
-    "lowPrice" : 16610,
-    "highPrice" : 17180,
-    "openPrice" : 16740,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 17020
-  }, {
     "volume" : 122549,
     "marketCap" : 492434138000,
     "lowPrice" : 16850,
@@ -1937,6 +1929,14 @@
     "openPrice" : 32350,
     "tradeDate" : "2025-12-22",
     "closePrice" : 34550
+  }, {
+    "volume" : 428583,
+    "marketCap" : 1026870011300,
+    "lowPrice" : 34450,
+    "highPrice" : 35650,
+    "openPrice" : 35150,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 35450
   } ],
   "stockCode" : "319660"
 }

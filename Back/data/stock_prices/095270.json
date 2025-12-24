@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "웨이브일렉트로",
   "prices" : [ {
-    "volume" : 6815,
-    "marketCap" : 57938760720,
-    "lowPrice" : 3865,
-    "highPrice" : 3970,
-    "openPrice" : 3885,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3870
-  }, {
     "volume" : 6203,
     "marketCap" : 58687323520,
     "lowPrice" : 3835,
@@ -1937,6 +1929,14 @@
     "openPrice" : 4575,
     "tradeDate" : "2025-12-22",
     "closePrice" : 4595
+  }, {
+    "volume" : 12713,
+    "marketCap" : 64675827000,
+    "lowPrice" : 4495,
+    "highPrice" : 4610,
+    "openPrice" : 4595,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 4500
   } ],
   "stockCode" : "095270"
 }

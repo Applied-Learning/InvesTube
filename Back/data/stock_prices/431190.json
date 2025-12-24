@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "케이쓰리아이",
   "prices" : [ {
-    "volume" : 69494,
-    "marketCap" : 36908159060,
-    "lowPrice" : 4865,
-    "highPrice" : 5040,
-    "openPrice" : 4960,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 4930
-  }, {
     "volume" : 596914,
     "marketCap" : 40052464700,
     "lowPrice" : 4860,
@@ -1937,6 +1929,14 @@
     "openPrice" : 5040,
     "tradeDate" : "2025-12-22",
     "closePrice" : 5210
+  }, {
+    "volume" : 66621,
+    "marketCap" : 37656803260,
+    "lowPrice" : 5020,
+    "highPrice" : 5240,
+    "openPrice" : 5210,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 5030
   } ],
   "stockCode" : "431190"
 }

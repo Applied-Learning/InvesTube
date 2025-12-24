@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "우수AMS",
   "prices" : [ {
-    "volume" : 89846,
-    "marketCap" : 117414677520,
-    "lowPrice" : 2990,
-    "highPrice" : 3020,
-    "openPrice" : 3015,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 3005
-  }, {
     "volume" : 76975,
     "marketCap" : 118000774080,
     "lowPrice" : 3000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2505,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2490
+  }, {
+    "volume" : 135002,
+    "marketCap" : 93020438485,
+    "lowPrice" : 2405,
+    "highPrice" : 2525,
+    "openPrice" : 2500,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2405
   } ],
   "stockCode" : "066590"
 }

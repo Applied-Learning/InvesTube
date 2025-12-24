@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "한화투자증권우",
   "prices" : [ {
-    "volume" : 12758,
-    "marketCap" : 33936000000,
-    "lowPrice" : 6700,
-    "highPrice" : 7120,
-    "openPrice" : 6750,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 7070
-  }, {
     "volume" : 6564,
     "marketCap" : 33600000000,
     "lowPrice" : 6910,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7780,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7800
+  }, {
+    "volume" : 18076,
+    "marketCap" : 38784000000,
+    "lowPrice" : 7800,
+    "highPrice" : 8300,
+    "openPrice" : 7800,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 8080
   } ],
   "stockCode" : "003535"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "로스웰",
   "prices" : [ {
-    "volume" : 108292,
-    "marketCap" : 20754021888,
-    "lowPrice" : 560,
-    "highPrice" : 577,
-    "openPrice" : 570,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 576
-  }, {
     "volume" : 14808,
     "marketCap" : 20754021888,
     "lowPrice" : 565,
@@ -1937,6 +1929,14 @@
     "openPrice" : 1569,
     "tradeDate" : "2025-12-22",
     "closePrice" : 1570
+  }, {
+    "volume" : 376840,
+    "marketCap" : 72312668126,
+    "lowPrice" : 1570,
+    "highPrice" : 1571,
+    "openPrice" : 1570,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 1571
   } ],
   "stockCode" : "900260"
 }

@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "DL우",
   "prices" : [ {
-    "volume" : 260,
-    "marketCap" : 34143828750,
-    "lowPrice" : 19940,
-    "highPrice" : 20400,
-    "openPrice" : 19950,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 20250
-  }, {
     "volume" : 2221,
     "marketCap" : 33671716550,
     "lowPrice" : 19970,
@@ -1937,6 +1929,14 @@
     "openPrice" : 25100,
     "tradeDate" : "2025-12-22",
     "closePrice" : 24550
+  }, {
+    "volume" : 13598,
+    "marketCap" : 40803983000,
+    "lowPrice" : 23950,
+    "highPrice" : 24600,
+    "openPrice" : 24600,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 24200
   } ],
   "stockCode" : "000215"
 }

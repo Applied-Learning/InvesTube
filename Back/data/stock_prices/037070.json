@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "파세코",
   "prices" : [ {
-    "volume" : 20563,
-    "marketCap" : 101000000000,
-    "lowPrice" : 4995,
-    "highPrice" : 5200,
-    "openPrice" : 5050,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 5050
-  }, {
     "volume" : 7142,
     "marketCap" : 100600000000,
     "lowPrice" : 5000,
@@ -1937,6 +1929,14 @@
     "openPrice" : 7810,
     "tradeDate" : "2025-12-22",
     "closePrice" : 7570
+  }, {
+    "volume" : 122402,
+    "marketCap" : 158400000000,
+    "lowPrice" : 7570,
+    "highPrice" : 7930,
+    "openPrice" : 7580,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 7920
   } ],
   "stockCode" : "037070"
 }

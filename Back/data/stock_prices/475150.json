@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "SK이터닉스",
   "prices" : [ {
-    "volume" : 148335,
-    "marketCap" : 427550147550,
-    "lowPrice" : 12640,
-    "highPrice" : 12960,
-    "openPrice" : 12860,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12690
-  }, {
     "volume" : 162090,
     "marketCap" : 422496363300,
     "lowPrice" : 12440,
@@ -1937,6 +1929,14 @@
     "openPrice" : 22450,
     "tradeDate" : "2025-12-22",
     "closePrice" : 22000
+  }, {
+    "volume" : 279943,
+    "marketCap" : 729087307200,
+    "lowPrice" : 21400,
+    "highPrice" : 22100,
+    "openPrice" : 22100,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 21600
   } ],
   "stockCode" : "475150"
 }

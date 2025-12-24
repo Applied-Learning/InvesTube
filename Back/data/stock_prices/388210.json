@@ -1,5 +1,5 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "씨엠티엑스",
   "prices" : [ {
     "volume" : 5534092,
@@ -185,6 +185,14 @@
     "openPrice" : 93800,
     "tradeDate" : "2025-12-22",
     "closePrice" : 99700
+  }, {
+    "volume" : 928841,
+    "marketCap" : 965286820800,
+    "lowPrice" : 98800,
+    "highPrice" : 107300,
+    "openPrice" : 100700,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 104100
   } ],
   "stockCode" : "388210"
 }

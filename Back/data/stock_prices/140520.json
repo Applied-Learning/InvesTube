@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "대창스틸",
   "prices" : [ {
-    "volume" : 12043,
-    "marketCap" : 44646048945,
-    "lowPrice" : 2100,
-    "highPrice" : 2160,
-    "openPrice" : 2160,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 2115
-  }, {
     "volume" : 45797,
     "marketCap" : 44012771655,
     "lowPrice" : 2050,
@@ -1937,6 +1929,14 @@
     "openPrice" : 2235,
     "tradeDate" : "2025-12-22",
     "closePrice" : 2245
+  }, {
+    "volume" : 9944,
+    "marketCap" : 47284704320,
+    "lowPrice" : 2225,
+    "highPrice" : 2245,
+    "openPrice" : 2240,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 2240
   } ],
   "stockCode" : "140520"
 }

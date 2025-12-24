@@ -1,15 +1,7 @@
 {
-  "lastUpdated" : "2025-12-23",
+  "lastUpdated" : "2025-12-24",
   "stockName" : "AP위성",
   "prices" : [ {
-    "volume" : 156858,
-    "marketCap" : 193053491200,
-    "lowPrice" : 12150,
-    "highPrice" : 12840,
-    "openPrice" : 12160,
-    "tradeDate" : "2024-12-23",
-    "closePrice" : 12800
-  }, {
     "volume" : 112925,
     "marketCap" : 189132092160,
     "lowPrice" : 12340,
@@ -1937,6 +1929,14 @@
     "openPrice" : 11920,
     "tradeDate" : "2025-12-22",
     "closePrice" : 12630
+  }, {
+    "volume" : 1386304,
+    "marketCap" : 176613779840,
+    "lowPrice" : 11710,
+    "highPrice" : 13940,
+    "openPrice" : 13630,
+    "tradeDate" : "2025-12-23",
+    "closePrice" : 11710
   } ],
   "stockCode" : "211270"
 }
