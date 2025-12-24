@@ -108,7 +108,7 @@
             </button>
           </div>
           
-          <div v-if="financialData.totalScore" class="score-card">
+          <div v-if="financialData.totalScore != null" class="score-card">
             <div class="score-label">투자 점수</div>
             <div class="score-value" :class="getScoreClass(financialData.totalScore)">
               {{ financialData.totalScore.toFixed(1) }}
@@ -1595,7 +1595,10 @@ export default {
 }
 
 .score-adjustment.negative {
-  color: #fca5a5;
+  color: #ffffff;
+  background-color: rgba(220, 38, 38, 0.6);
+  padding: 2px 8px;
+  border-radius: 12px;
 }
 
 .score-arrow {
