@@ -7,24 +7,30 @@ import java.math.BigDecimal;
  * AI 분석 결과
  */
 public class AiAnalysisResult {
-    
+
     @JsonProperty("scoreAdjustment")
     private BigDecimal scoreAdjustment = BigDecimal.ZERO; // -10 ~ +10
-    
+
     @JsonProperty("weightAdjustment")
     private AiWeightAdjustment weightAdjustment;
-    
+
     @JsonProperty("summary")
     private String summary;
-    
+
     @JsonProperty("riskLevel")
     private String riskLevel; // LOW / MEDIUM / HIGH
-    
+
     // 최종 점수 (기본 점수 + AI 보정)
     private BigDecimal finalScore;
-    
+
     // 기본 점수 (참고용)
     private BigDecimal baseScore;
+
+    // 업종 정보
+    private String industry;
+
+    // 동종업계 통계 (프론트엔드 표시용)
+    private PeerStats peerStats;
 
     public AiAnalysisResult() {
         this.weightAdjustment = new AiWeightAdjustment();
@@ -77,5 +83,21 @@ public class AiAnalysisResult {
 
     public void setBaseScore(BigDecimal baseScore) {
         this.baseScore = baseScore;
+    }
+
+    public String getIndustry() {
+        return industry;
+    }
+
+    public void setIndustry(String industry) {
+        this.industry = industry;
+    }
+
+    public PeerStats getPeerStats() {
+        return peerStats;
+    }
+
+    public void setPeerStats(PeerStats peerStats) {
+        this.peerStats = peerStats;
     }
 }

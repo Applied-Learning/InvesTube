@@ -16,7 +16,7 @@ import java.math.RoundingMode;
  * 역할:
  * 1. 기존 rule-based 점수 계산 유지
  * 2. AI는 점수/가중치 보정 + 해석만 담당
- * 3. 확장 가능한 구조 (나중에 챗봇 추가)
+ * 3. 업종별 맞춤 분석 및 동종업계 비교 지원
  */
 @Service
 public class AIAnalysisService {
@@ -30,13 +30,17 @@ public class AIAnalysisService {
     @Autowired
     private FinancialAnalysisService financialAnalysisService;
 
+    @Autowired
+    private PeerComparisonService peerComparisonService;
+
     private final ObjectMapper objectMapper = new ObjectMapper();
 
     /**
-     * AI 기반 재무 분석 수행
+     * AI 기반 재무 분석 수행 (업종별 분석 + 동종업계 비교 포함)
      * 
      * @param stockCode     종목 코드
      * @param stockName     종목명
+     * @param industry      업종명
      * @param financialData 재무 데이터
      * @param profile       투자 성향 프로필
      * @return AI 분석 결과
@@ -44,33 +48,50 @@ public class AIAnalysisService {
     public AiAnalysisResult analyzeFinancials(
             String stockCode,
             String stockName,
+            String industry,
             FinancialData financialData,
             InvestmentProfile profile) {
         try {
             // 1. 기본 점수 계산 (rule-based)
             BigDecimal baseScore = financialAnalysisService.calculateInvestmentScore(financialData, profile);
 
-            // 2. AI 프롬프트 생성 (시스템 프롬프트와 유저 프롬프트 분리)
+            // 2. 동종업계 통계 조회
+            PeerStats peerStats = null;
+            if (industry != null && !industry.isEmpty()) {
+                try {
+                    peerStats = peerComparisonService.getPeerStats(stockCode, industry, financialData);
+                    System.out.println("[AI분석] 동종업계(" + industry + ") 기업 수: " +
+                            (peerStats != null ? peerStats.getPeerCount() : 0));
+                } catch (Exception e) {
+                    System.err.println("[AI분석] 동종업계 통계 조회 실패: " + e.getMessage());
+                }
+            }
+
+            // 3. AI 프롬프트 생성 (업종 정보 + 동종업계 비교 포함)
             String[] prompts = promptBuilder.buildFinancialAnalysisPromptWithRoles(
                     stockCode,
                     stockName,
+                    industry,
                     financialData,
                     baseScore,
-                    profile);
+                    profile,
+                    peerStats);
             String systemPrompt = prompts[0];
             String userPrompt = prompts[1];
 
-            // 3. OpenAI GPT API 호출 (system/user 역할 분리)
+            System.out.println("[AI분석] 업종별 분석 시작 - 업종: " + industry);
+
+            // 4. Gemini API 호출 (system/user 역할 분리)
             String aiResponse = geminiClient.callGemini(systemPrompt, userPrompt);
 
-            // 4. JSON 응답 파싱
+            // 5. JSON 응답 파싱
             String jsonResponse = geminiClient.extractJsonFromResponse(aiResponse);
             AiAnalysisResult result = objectMapper.readValue(jsonResponse, AiAnalysisResult.class);
 
-            // 5. 보정 범위 검증 및 제한
+            // 6. 보정 범위 검증 및 제한
             validateAndClampAdjustments(result);
 
-            // 6. 최종 점수 계산
+            // 7. 최종 점수 계산
             BigDecimal finalScore = baseScore.add(result.getScoreAdjustment());
 
             // 0~100 범위로 제한
@@ -83,6 +104,8 @@ public class AIAnalysisService {
 
             result.setBaseScore(baseScore);
             result.setFinalScore(finalScore);
+            result.setIndustry(industry);
+            result.setPeerStats(peerStats);
 
             return result;
 
@@ -91,8 +114,26 @@ public class AIAnalysisService {
             e.printStackTrace();
 
             // AI 실패 시 기본 점수만 반환
-            return createFallbackResult(financialData, profile);
+            return createFallbackResult(financialData, profile, industry);
         }
+    }
+
+    /**
+     * AI 기반 재무 분석 수행 (기존 호환용 - 업종 정보 없음)
+     * 
+     * @param stockCode     종목 코드
+     * @param stockName     종목명
+     * @param financialData 재무 데이터
+     * @param profile       투자 성향 프로필
+     * @return AI 분석 결과
+     */
+    public AiAnalysisResult analyzeFinancials(
+            String stockCode,
+            String stockName,
+            FinancialData financialData,
+            InvestmentProfile profile) {
+        // 업종 없이 기본 분석 수행
+        return analyzeFinancials(stockCode, stockName, null, financialData, profile);
     }
 
     /**
@@ -141,9 +182,10 @@ public class AIAnalysisService {
     }
 
     /**
-     * AI 실패 시 폴백 결과 생성
+     * AI 실패 시 폴백 결과 생성 (업종별 리스크 기준 적용)
      */
-    private AiAnalysisResult createFallbackResult(FinancialData financialData, InvestmentProfile profile) {
+    private AiAnalysisResult createFallbackResult(FinancialData financialData, InvestmentProfile profile,
+            String industry) {
         AiAnalysisResult result = new AiAnalysisResult();
 
         BigDecimal baseScore = financialAnalysisService.calculateInvestmentScore(financialData, profile);
@@ -151,7 +193,14 @@ public class AIAnalysisService {
         result.setFinalScore(baseScore);
         result.setScoreAdjustment(BigDecimal.ZERO);
         result.setSummary("AI 분석을 사용할 수 없습니다. 기본 점수를 참고하세요.");
-        result.setRiskLevel("MEDIUM");
+
+        // 업종별 리스크 기준으로 리스크 레벨 결정
+        String riskLevel = com.Investube.mvc.util.IndustryRiskCriteria.determineRiskLevel(
+                industry,
+                financialData.getDebtRatio(),
+                financialData.getOperatingMargin(),
+                financialData.getRoe());
+        result.setRiskLevel(riskLevel);
 
         return result;
     }

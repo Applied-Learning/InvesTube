@@ -49,7 +49,11 @@ public class WebConfig implements WebMvcConfigurer {
                 .excludePathPatterns(
                         "/auth/**",
                         "/reviews/video/*/",
-                        "/profiles/survey/questions" // 설문 질문 조회는 인증 불필요
+                        "/profiles/survey/questions", // 설문 질문 조회는 인증 불필요
+                        "/financial/sync-all", // 배치 동기화 API (관리자용)
+                        "/financial/sync-status", // 동기화 상태 확인
+                        "/financial/export-csv", // CSV 내보내기
+                        "/financial/load-csv" // CSV 로드
                 );
     }
 

@@ -2,6 +2,7 @@ package com.Investube.mvc.util;
 
 import com.Investube.mvc.model.dto.FinancialData;
 import com.Investube.mvc.model.dto.InvestmentProfile;
+import com.Investube.mvc.model.dto.PeerStats;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Component;
 
@@ -19,14 +20,24 @@ public class AiPromptBuilder {
   private final ObjectMapper objectMapper = new ObjectMapper();
 
   /**
-   * 재무 분석용 프롬프트 생성 (system/user 분리)
+   * 재무 분석용 프롬프트 생성 (system/user 분리) - 업종별 분석 포함
+   * 
+   * @param stockCode     종목 코드
+   * @param stockName     종목명
+   * @param industry      업종명
+   * @param financialData 재무 데이터
+   * @param baseScore     기본 점수
+   * @param profile       투자 성향 프로필
+   * @param peerStats     동종업계 통계 (null 가능)
    */
   public String[] buildFinancialAnalysisPromptWithRoles(
       String stockCode,
       String stockName,
+      String industry,
       FinancialData financialData,
       BigDecimal baseScore,
-      InvestmentProfile profile) {
+      InvestmentProfile profile,
+      PeerStats peerStats) {
     try {
       // 재무 지표를 Map으로 변환
       Map<String, Object> financials = new HashMap<>();
@@ -40,30 +51,66 @@ public class AiPromptBuilder {
 
       String financialsJson = objectMapper.writeValueAsString(financials);
 
-      // System 프롬프트 (AI의 역할과 규칙 정의)
-      String systemPrompt = "너는 투자 분석 보조 AI다. 너의 역할은 점수를 계산하는 것이 아니라, 이미 계산된 기본 점수를 해석하고 보정하는 것이다. 규칙: 1. 절대 최종 점수를 직접 계산하지 마라. 2. 보정 점수는 -10 ~ +10 범위만 허용된다. 3. 가중치 보정은 각 항목당 -10 ~ +10 사이 정수만 가능하다. 4. 출력은 반드시 JSON 형식이어야 한다. 5. 감정적 표현, 투자 권유 문구 사용 금지. 6. 요약은 2줄 이내로 작성하라. 7. riskLevel 판단 기준: HIGH(부채비율>200% 또는 영업이익률<-10% 또는 ROE<-20%), LOW(부채비율<50% 그리고 영업이익률>10% 그리고 ROE>10%), MEDIUM(그 외). 8. JSON만 출력하고 다른 텍스트는 포함하지 마라.";
+      // 업종별 리스크 기준 가져오기
+      String riskCriteriaPrompt = IndustryRiskCriteria.getRiskCriteriaPrompt(industry);
+
+      // System 프롬프트 (AI의 역할과 규칙 정의) - 업종별 기준 포함
+      String systemPrompt = String.format(
+          "너는 투자 분석 보조 AI다. 너의 역할은 점수를 계산하는 것이 아니라, 이미 계산된 기본 점수를 해석하고 보정하는 것이다. " +
+              "규칙: 1. 절대 최종 점수를 직접 계산하지 마라. 2. 보정 점수는 -10 ~ +10 범위만 허용된다. " +
+              "3. 가중치 보정은 각 항목당 -10 ~ +10 사이 정수만 가능하다. 4. 출력은 반드시 JSON 형식이어야 한다. " +
+              "5. 감정적 표현, 투자 권유 문구 사용 금지. 6. 요약은 2줄 이내로 작성하되, 동종업계 비교 결과를 포함하라. " +
+              "7. %s " +
+              "8. JSON만 출력하고 다른 텍스트는 포함하지 마라.",
+          riskCriteriaPrompt);
 
       // Pre-revenue 기업 컨텍스트 (매출 1억 미만)
       String preRevenueContext = "";
       if (financialData.getRevenue() == null || financialData.getRevenue() < 100_000_000L) {
-        preRevenueContext = " [주의: Pre-revenue 기업 - 매출 1억 미만으로 성장률 지표 없음. 기술력, R&D, 자금 상황 중심으로 분석 필요. 바이오/테크 스타트업 특성 고려.]";
+        preRevenueContext = " [주의: Pre-revenue 기업 - 매출 1억 미만으로 성장률 지표 없음. 기술력, R&D, 자금 상황 중심으로 분석 필요.]";
+      }
+
+      // 동종업계 비교 정보
+      String peerComparisonContext = "";
+      if (peerStats != null && peerStats.getPeerCount() >= 2) {
+        peerComparisonContext = " " + peerStats.toPeerComparisonPrompt(financialData);
       }
 
       // User 프롬프트 (실제 분석할 데이터)
       String userPrompt = String.format(
-          "기업: %s (%s) 회계 연도: %s 투자 성향: %s 기본 점수: %.2f%s 재무 지표: %s 위 정보를 바탕으로 다음 JSON 형식으로 응답하라: {\"scoreAdjustment\": 0, \"weightAdjustment\": {\"revenueGrowth\": 0, \"operatingMargin\": 0, \"roe\": 0, \"debtRatio\": 0, \"per\": 0, \"pbr\": 0}, \"summary\": \"재무 분석 요약 (2줄 이내)\", \"riskLevel\": \"MEDIUM\"}",
+          "기업: %s (%s) 업종: %s 회계 연도: %s 투자 성향: %s 기본 점수: %.2f%s%s 재무 지표: %s " +
+              "위 정보를 바탕으로 다음 JSON 형식으로 응답하라: " +
+              "{\"scoreAdjustment\": 0, \"weightAdjustment\": {\"revenueGrowth\": 0, \"operatingMargin\": 0, " +
+              "\"roe\": 0, \"debtRatio\": 0, \"per\": 0, \"pbr\": 0}, " +
+              "\"summary\": \"재무 분석 요약 (동종업계 비교 포함, 2줄 이내)\", \"riskLevel\": \"MEDIUM\"}",
           stockName,
           stockCode,
+          industry != null ? industry : "미분류",
           financialData.getFiscalYear(),
           profile.getProfileName(),
           baseScore,
           preRevenueContext,
+          peerComparisonContext,
           financialsJson);
       return new String[] { systemPrompt, userPrompt };
 
     } catch (Exception e) {
       throw new RuntimeException("프롬프트 생성 실패", e);
     }
+  }
+
+  /**
+   * 재무 분석용 프롬프트 생성 (system/user 분리) - 기존 호환용
+   */
+  public String[] buildFinancialAnalysisPromptWithRoles(
+      String stockCode,
+      String stockName,
+      FinancialData financialData,
+      BigDecimal baseScore,
+      InvestmentProfile profile) {
+    // 업종 없이 기본 기준 사용
+    return buildFinancialAnalysisPromptWithRoles(
+        stockCode, stockName, null, financialData, baseScore, profile, null);
   }
 
   /**

@@ -85,4 +85,35 @@
         WHERE financial_id = #{financialId}
     </delete>
 
+    <!-- 동종업계 재무 데이터 조회 (각 기업의 최신 연도 데이터) -->
+    <select id="getFinancialDataByIndustry" resultType="FinancialData">
+        SELECT fd.*
+        FROM financial_data fd
+        INNER JOIN stock s ON fd.stock_code = s.stock_code
+        INNER JOIN (
+            SELECT stock_code, MAX(fiscal_year) as max_year
+            FROM financial_data
+            GROUP BY stock_code
+        ) latest ON fd.stock_code = latest.stock_code AND fd.fiscal_year = latest.max_year
+        WHERE s.industry = #{industry}
+        ORDER BY fd.stock_code
+    </select>
+
+    <!-- 동종업계 재무 데이터 조회 (여러 업종 - 카테고리 기반) -->
+    <select id="getFinancialDataByIndustries" resultType="FinancialData">
+        SELECT fd.*
+        FROM financial_data fd
+        INNER JOIN stock s ON fd.stock_code = s.stock_code
+        INNER JOIN (
+            SELECT stock_code, MAX(fiscal_year) as max_year
+            FROM financial_data
+            GROUP BY stock_code
+        ) latest ON fd.stock_code = latest.stock_code AND fd.fiscal_year = latest.max_year
+        WHERE s.industry IN
+        <foreach item="industry" collection="industries" open="(" separator="," close=")">
+            #{industry}
+        </foreach>
+        ORDER BY fd.stock_code
+    </select>
+
 </mapper>
