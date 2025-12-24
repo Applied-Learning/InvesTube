@@ -42,7 +42,8 @@ public class WebConfig implements WebMvcConfigurer {
                         "/stocks/wished",
                         "/stocks/*/wished",
                         "/stocks/*/wish",
-                        "/profiles/**" // 프로필 관련 API 인증 필요
+                        "/profiles/**", // 프로필 관련 API 인증 필요
+                        "/chat/**" // 챗봇 API 인증 필요 (투자 성향 반영)
                 )
                 // ⭐ 인증 불필요 + CORS 문제 방지
                 .excludePathPatterns(

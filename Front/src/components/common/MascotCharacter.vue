@@ -25,26 +25,102 @@
           </path>
         </template>
 
-        <!-- 고양이: 길고 우아한 꼬리 -->
+        <!-- 고양이: 통통하고 부드러운 꼬리 -->
         <template v-else-if="type === 'cat'">
-          <path d="M35 85 Q15 85 15 60 Q15 40 25 35" stroke="#95A5A6" stroke-width="4" stroke-linecap="round" fill="none">
-             <animate v-if="state !== 'shock'" attributeName="d" values="M35 85 Q15 85 15 60 Q15 40 25 35; M35 85 Q15 85 20 60 Q25 40 35 45; M35 85 Q15 85 15 60 Q15 40 25 35" dur="4s" repeatCount="indefinite" />
+          <path d="M35 85 Q18 90 15 70 Q12 55 20 50" stroke="#F5A623" stroke-width="6" stroke-linecap="round" fill="none">
+             <animate v-if="state !== 'shock'" attributeName="d" values="M35 85 Q18 90 15 70 Q12 55 20 50; M35 85 Q18 88 18 68 Q18 52 28 50; M35 85 Q18 90 15 70 Q12 55 20 50" dur="3s" repeatCount="indefinite" />
           </path>
+          <!-- 꼬리 끝 오렌지 무늬 -->
+          <circle cx="20" cy="50" r="4" fill="#E8912D" />
         </template>
       </g>
 
-      <!-- 몸통 (공통 정장) -->
+      <!-- 몸통 -->
       <g class="body-group">
         <!-- 다리 색상 (캐릭터별) -->
         <path d="M45 100 L45 80 L55 80 L55 100 A3 3 0 0 1 45 100" :fill="bodyColor"/>
         <path d="M65 100 L65 80 L75 80 L75 100 A3 3 0 0 1 65 100" :fill="bodyColor"/>
         
-        <path d="M40 90 L80 90 L75 60 L45 60 Z" fill="#2C3E50"/>
-        <rect x="38" y="55" width="44" height="40" rx="8" fill="#2C3E50"/>
-        <path d="M60 55 L60 85" stroke="#1a2530" stroke-width="1"/>
+        <!-- 고양이: 귀여운 크리스마스 스웨터 -->
+        <template v-if="type === 'cat'">
+          <!-- 스웨터 몸통 (빨간 니트) -->
+          <rect x="38" y="55" width="44" height="40" rx="10" fill="#E74C3C"/>
+          <!-- 니트 질감 패턴 -->
+          <path d="M40 62 L80 62" stroke="#C0392B" stroke-width="1.5" opacity="0.5"/>
+          <path d="M40 68 L80 68" stroke="#C0392B" stroke-width="1.5" opacity="0.5"/>
+          <path d="M40 74 L80 74" stroke="#C0392B" stroke-width="1.5" opacity="0.5"/>
+          <path d="M40 80 L80 80" stroke="#C0392B" stroke-width="1.5" opacity="0.5"/>
+          <path d="M40 86 L80 86" stroke="#C0392B" stroke-width="1.5" opacity="0.5"/>
+          
+          <!-- 눈꽃 무늬 장식 -->
+          <g fill="white" opacity="0.9">
+            <!-- 왼쪽 눈꽃 -->
+            <circle cx="48" cy="70" r="1.5"/>
+            <line x1="48" y1="66" x2="48" y2="74" stroke="white" stroke-width="1"/>
+            <line x1="44" y1="70" x2="52" y2="70" stroke="white" stroke-width="1"/>
+            <line x1="45" y1="67" x2="51" y2="73" stroke="white" stroke-width="0.8"/>
+            <line x1="51" y1="67" x2="45" y2="73" stroke="white" stroke-width="0.8"/>
+            
+            <!-- 오른쪽 눈꽃 -->
+            <circle cx="72" cy="70" r="1.5"/>
+            <line x1="72" y1="66" x2="72" y2="74" stroke="white" stroke-width="1"/>
+            <line x1="68" y1="70" x2="76" y2="70" stroke="white" stroke-width="1"/>
+            <line x1="69" y1="67" x2="75" y2="73" stroke="white" stroke-width="0.8"/>
+            <line x1="75" y1="67" x2="69" y2="73" stroke="white" stroke-width="0.8"/>
+          </g>
+          
+          <!-- 중앙 하트 무늬 -->
+          <path d="M57 78 Q57 75 60 77 Q63 75 63 78 Q63 81 60 84 Q57 81 57 78" fill="#FFD93D"/>
+          
+          <!-- 목 부분 (터틀넥 스타일) -->
+          <ellipse cx="60" cy="56" rx="14" ry="5" fill="#C0392B"/>
+          <path d="M46 56 Q60 52 74 56" stroke="#A93226" stroke-width="1" fill="none"/>
+          
+          <!-- 귀여운 방울 장식 -->
+          <circle cx="60" cy="58" r="3" fill="#F1C40F" stroke="#D4AC0D" stroke-width="0.5"/>
+          <ellipse cx="60" cy="57" rx="1" ry="0.5" fill="white" opacity="0.6"/>
+        </template>
         
-        <path d="M50 55 L60 70 L70 55 Z" fill="white"/>
-        <path d="M60 55 L57 60 L60 72 L63 60 Z" fill="#FF6B6B"/> 
+        <!-- 강아지: 귀여운 크리스마스 후드티 -->
+        <template v-else-if="type === 'dog'">
+          <!-- 후드티 몸통 (초록색) -->
+          <rect x="38" y="55" width="44" height="40" rx="10" fill="#27AE60"/>
+          <!-- 후드티 질감 패턴 -->
+          <path d="M40 62 L80 62" stroke="#1E8449" stroke-width="1.5" opacity="0.5"/>
+          <path d="M40 70 L80 70" stroke="#1E8449" stroke-width="1.5" opacity="0.5"/>
+          <path d="M40 78 L80 78" stroke="#1E8449" stroke-width="1.5" opacity="0.5"/>
+          <path d="M40 86 L80 86" stroke="#1E8449" stroke-width="1.5" opacity="0.5"/>
+          
+          <!-- 중앙 눈사람 무늬 -->
+          <circle cx="60" cy="70" r="4" fill="white"/>
+          <circle cx="60" cy="78" r="5" fill="white"/>
+          <circle cx="58" cy="69" r="0.8" fill="#333"/>
+          <circle cx="62" cy="69" r="0.8" fill="#333"/>
+          <path d="M59 71 L61 71" stroke="#E67E22" stroke-width="1.5" stroke-linecap="round"/>
+          
+          <!-- 캥거루 포켓 -->
+          <path d="M45 82 Q60 88 75 82" stroke="#1E8449" stroke-width="2" fill="none"/>
+          
+          <!-- 후드 칼라 부분 -->
+          <ellipse cx="60" cy="57" rx="16" ry="6" fill="#1E8449"/>
+          <path d="M44 57 Q60 50 76 57" stroke="#145A32" stroke-width="1.5" fill="none"/>
+          
+          <!-- 후드 끈 -->
+          <line x1="52" y1="58" x2="52" y2="68" stroke="#F9E79F" stroke-width="2"/>
+          <line x1="68" y1="58" x2="68" y2="68" stroke="#F9E79F" stroke-width="2"/>
+          <circle cx="52" cy="68" r="2" fill="#F1C40F"/>
+          <circle cx="68" cy="68" r="2" fill="#F1C40F"/>
+        </template>
+        
+        <!-- 사자: 원래 정장 -->
+        <template v-else>
+          <path d="M40 90 L80 90 L75 60 L45 60 Z" fill="#2C3E50"/>
+          <rect x="38" y="55" width="44" height="40" rx="8" fill="#2C3E50"/>
+          <path d="M60 55 L60 85" stroke="#1a2530" stroke-width="1"/>
+          
+          <path d="M50 55 L60 70 L70 55 Z" fill="white"/>
+          <path d="M60 55 L57 60 L60 72 L63 60 Z" fill="#FF6B6B"/>
+        </template>
       </g>
 
       <!-- 머리 -->
@@ -65,49 +141,61 @@
           <circle cx="60" cy="42" r="22" fill="#F4D03F" />
         </template>
 
-        <!-- 2. 강아지 머리 (누렁이) -->
+        <!-- 2. 강아지 머리 (귀여운 시바견 스타일) -->
         <template v-else-if="type === 'dog'">
-           <!-- 귀 (축 처진 귀 - 머리에 딱 붙임) -->
+           <!-- 귀 (작고 통통한 삼각 귀) -->
            <g class="ears">
-              <!-- 왼쪽 귀: 머리 중심(60,40) 기준으로 위치 수정 -->
-              <path d="M40 30 Q30 30 25 45 Q30 55 45 45" fill="#8D6E63" stroke="#5D4037" stroke-width="2" />
+              <!-- 왼쪽 귀 -->
+              <path d="M36 32 Q32 15 41 12 Q50 15 46 32 Z" fill="#D4A574" stroke="#B8956E" stroke-width="1.5" />
+              <path d="M38 29 Q35 18 42 16 Q49 18 45 29 Z" fill="#FFE4C4" />
               <!-- 오른쪽 귀 -->
-              <path d="M80 30 Q90 30 95 45 Q90 55 75 45" fill="#8D6E63" stroke="#5D4037" stroke-width="2" />
+              <path d="M84 32 Q88 15 79 12 Q70 15 74 32 Z" fill="#D4A574" stroke="#B8956E" stroke-width="1.5" />
+              <path d="M82 29 Q85 18 78 16 Q71 18 75 29 Z" fill="#FFE4C4" />
            </g>
-           <!-- 머리 (귀 위로 덮어서 연결 부위 자연스럽게) -->
-           <circle cx="60" cy="40" r="28" fill="#E6C288" stroke="#D7CCC8" stroke-width="1"/>
-           <ellipse cx="60" cy="50" rx="12" ry="9" fill="#FFF3E0" /> <!-- 주둥이 주변 -->
+           
+           <!-- 머리 (도톰하고 귀여운 형태) -->
+           <ellipse cx="60" cy="42" rx="28" ry="26" fill="#F5D5A0" stroke="#D4A574" stroke-width="1.5"/>
+           
+           <!-- 볼 마킹 (시바 특유의 흰색 마킹) -->
+           <ellipse cx="45" cy="48" rx="10" ry="8" fill="#FFF8EE" />
+           <ellipse cx="75" cy="48" rx="10" ry="8" fill="#FFF8EE" />
+           
+           <!-- 주둥이 (도톰하고 귀여운) -->
+           <ellipse cx="60" cy="52" rx="14" ry="10" fill="#FFF3E0" />
+           
+           <!-- 눈썹 느낌의 마킹 -->
+           <ellipse cx="48" cy="34" rx="4" ry="2" fill="#D4A574" opacity="0.6" />
+           <ellipse cx="72" cy="34" rx="4" ry="2" fill="#D4A574" opacity="0.6" />
         </template>
 
-        <!-- 3. 고양이 머리 (회색냥) -->
-        <!-- 3. 고양이 머리 (회색냥) -->
-        <!-- 3. 고양이 머리 (회색냥 - 최종 수정) -->
+        <!-- 3. 고양이 머리 (오렌지 치즈냥) -->
         <template v-else-if="type === 'cat'">
-           <!-- 귀 (정석적인 삼각형 귀) -->
+           <!-- 귀 (적당한 크기의 귀여운 귀) -->
            <g class="ears">
-              <path d="M35 35 L28 10 L55 25 Z" fill="#95A5A6" stroke="#7F8C8D" stroke-width="2" />
-              <path d="M85 35 L92 10 L65 25 Z" fill="#95A5A6" stroke="#7F8C8D" stroke-width="2" />
-              <!-- 귓속 -->
-              <path d="M36 32 L32 16 L48 24 Z" fill="#FFAB91" />
-              <path d="M84 32 L88 16 L72 24 Z" fill="#FFAB91" />
+              <path d="M38 32 L32 12 L50 25 Z" fill="#F5A623" stroke="#E8912D" stroke-width="2" />
+              <path d="M82 32 L88 12 L70 25 Z" fill="#F5A623" stroke="#E8912D" stroke-width="2" />
+              <!-- 귓속 (분홍) -->
+              <path d="M39 28 L35 16 L46 24 Z" fill="#FFB7B2" />
+              <path d="M81 28 L85 16 L74 24 Z" fill="#FFB7B2" />
            </g>
            
-           <!-- 머리 (약간 둥글넙적한 귀여운 형태) -->
-           <ellipse cx="60" cy="45" rx="32" ry="26" fill="#ECF0F1" stroke="#BDC3C7" stroke-width="1.5" />
+           <!-- 머리 (통통하고 귀여운 형태) -->
+           <ellipse cx="60" cy="44" rx="30" ry="27" fill="#FFCC80" stroke="#F5A623" stroke-width="1.5" />
            
-           <!-- 이마 무늬 (심플한 줄무늬) -->
-           <path d="M60 22 L60 30" stroke="#BDC3C7" stroke-width="2" stroke-linecap="round" />
-           <path d="M54 24 L54 28" stroke="#BDC3C7" stroke-width="2" stroke-linecap="round" />
-           <path d="M66 24 L66 28" stroke="#BDC3C7" stroke-width="2" stroke-linecap="round" />
+           <!-- 이마 치즈 무늬 (M자 무늬) -->
+           <path d="M50 20 L53 28 L60 22 L67 28 L70 20" stroke="#E8912D" stroke-width="2.5" stroke-linecap="round" fill="none" />
+           <path d="M60 22 L60 30" stroke="#E8912D" stroke-width="2" stroke-linecap="round" />
 
-           <!-- 수염 (옆으로 시원하게 뻗음) -->
-           <g stroke="#95A5A6" stroke-width="1.5" stroke-linecap="round">
+           <!-- 수염 (부드러운 수염) -->
+           <g stroke="#A1887F" stroke-width="1.5" stroke-linecap="round">
               <!-- 왼쪽 -->
-              <line x1="28" y1="46" x2="15" y2="44" />
-              <line x1="28" y1="50" x2="18" y2="50" />
+              <line x1="30" y1="44" x2="12" y2="40" />
+              <line x1="30" y1="48" x2="10" y2="48" />
+              <line x1="30" y1="52" x2="12" y2="56" />
               <!-- 오른쪽 -->
-              <line x1="92" y1="46" x2="105" y2="44" />
-              <line x1="92" y1="50" x2="102" y2="50" />
+              <line x1="90" y1="44" x2="108" y2="40" />
+              <line x1="90" y1="48" x2="110" y2="48" />
+              <line x1="90" y1="52" x2="108" y2="56" />
            </g>
         </template>
 
@@ -150,10 +238,10 @@
            <ellipse cx="60" cy="48" rx="8" ry="6" fill="#3E2723" /> <!-- 개코 -->
         </template>
         <template v-else-if="type === 'cat'">
-           <!-- 고양이 코 (아주 작게) -->
-           <path d="M58.5 48 Q60 47 61.5 48 Q60 49.5 58.5 48" fill="#FFAB91" /> 
-           <!-- 고양이 입 (작게) -->
-           <path d="M60 49 Q58 51 56 50 M60 49 Q62 51 64 50" stroke="#7F8C8D" stroke-width="1" fill="none" />
+           <!-- 고양이 코 (하트 모양) -->
+           <path d="M56 46 Q60 44 64 46 Q60 50 56 46" fill="#FF8A80" />
+           <!-- 고양이 입 (w 모양) -->
+           <path d="M54 52 Q57 55 60 52 Q63 55 66 52" stroke="#8D6E63" stroke-width="1.5" fill="none" stroke-linecap="round" />
         </template>
 
         <!-- 눈 (공통 로직 사용) -->
@@ -202,13 +290,13 @@
       <g class="arms">
         <!-- 1. 기본/인사 -->
         <template v-if="state === 'idle' || state === 'greeting'">
-          <path d="M40 65 Q35 75 35 85" stroke="#2C3E50" stroke-width="7" stroke-linecap="round" />
+          <path d="M40 65 Q35 75 35 85" :stroke="armColor" stroke-width="7" stroke-linecap="round" />
           <rect x="25" y="80" width="18" height="14" rx="2" fill="#5D4037" stroke="#3E2723" />
           <path d="M31 80 Q34 75 37 80" stroke="#3E2723" stroke-width="2" fill="none"/>
           
           <g class="right-arm">
             <template v-if="state === 'greeting'">
-              <path d="M80 65 Q95 55 95 30" stroke="#2C3E50" stroke-width="7" stroke-linecap="round">
+              <path d="M80 65 Q95 55 95 30" :stroke="armColor" stroke-width="7" stroke-linecap="round">
                 <animate attributeName="d" values="M80 65 Q95 55 95 30; M80 65 Q98 55 98 25; M80 65 Q95 55 95 30" dur="0.8s" repeatCount="indefinite" />
               </path>
               <circle cx="95" cy="30" r="6" :fill="handColor">
@@ -217,7 +305,7 @@
               </circle>
             </template>
             <template v-else>
-               <path d="M80 65 Q90 75 90 85" stroke="#2C3E50" stroke-width="7" stroke-linecap="round" />
+               <path d="M80 65 Q90 75 90 85" :stroke="armColor" stroke-width="7" stroke-linecap="round" />
                <circle cx="90" cy="85" r="5" :fill="handColor" />
             </template>
           </g>
@@ -225,8 +313,8 @@
 
         <!-- 2. 고민 -->
         <template v-if="state === 'thinking'">
-           <path d="M40 65 Q38 75 48 80" stroke="#2C3E50" stroke-width="7" stroke-linecap="round" />
-           <path d="M80 65 Q82 75 72 80" stroke="#2C3E50" stroke-width="7" stroke-linecap="round" />
+           <path d="M40 65 Q38 75 48 80" :stroke="armColor" stroke-width="7" stroke-linecap="round" />
+           <path d="M80 65 Q82 75 72 80" :stroke="armColor" stroke-width="7" stroke-linecap="round" />
            <rect x="45" y="70" width="30" height="22" rx="2" fill="#333" transform="rotate(-5 60 81)" />
            <rect x="47" y="72" width="26" height="18" rx="1" fill="#81D4FA" transform="rotate(-5 60 81)" />
            <polyline points="48,85 55,80 62,82 70,75" fill="none" stroke="red" stroke-width="2" transform="rotate(-5 60 81)" />
@@ -234,8 +322,8 @@
 
         <!-- 3. 성공 -->
         <template v-if="state === 'success'">
-           <path d="M40 65 Q30 55 25 35" stroke="#2C3E50" stroke-width="7" stroke-linecap="round" />
-           <path d="M80 65 Q90 55 95 35" stroke="#2C3E50" stroke-width="7" stroke-linecap="round" />
+           <path d="M40 65 Q30 55 25 35" :stroke="armColor" stroke-width="7" stroke-linecap="round" />
+           <path d="M80 65 Q90 55 95 35" :stroke="armColor" stroke-width="7" stroke-linecap="round" />
            <circle cx="25" cy="35" r="12" fill="#F1C40F" stroke="#F39C12" />
            <text x="20" y="40" font-size="14" fill="#D35400">$</text>
            <circle cx="95" cy="35" r="12" fill="#F1C40F" stroke="#F39C12" />
@@ -244,10 +332,10 @@
 
         <!-- 4. 충격 -->
         <template v-if="state === 'shock'">
-           <path d="M40 70 Q30 50 45 35" stroke="#2C3E50" stroke-width="7" stroke-linecap="round">
+           <path d="M40 70 Q30 50 45 35" :stroke="armColor" stroke-width="7" stroke-linecap="round">
             <animate attributeName="d" values="M40 70 Q30 50 45 35; M40 70 Q28 52 43 37; M40 70 Q30 50 45 35" dur="0.2s" repeatCount="indefinite" />
            </path>
-           <path d="M80 70 Q90 50 75 35" stroke="#2C3E50" stroke-width="7" stroke-linecap="round">
+           <path d="M80 70 Q90 50 75 35" :stroke="armColor" stroke-width="7" stroke-linecap="round">
             <animate attributeName="d" values="M80 70 Q90 50 75 35; M80 70 Q92 52 77 37; M80 70 Q90 50 75 35" dur="0.2s" repeatCount="indefinite" />
            </path>
            <circle cx="45" cy="35" r="6" :fill="handColor" />
@@ -256,9 +344,9 @@
 
         <!-- 5. 신중/애매 -->
         <template v-if="state === 'caution'">
-           <path d="M40 65 Q35 75 35 85" stroke="#2C3E50" stroke-width="7" stroke-linecap="round" />
+           <path d="M40 65 Q35 75 35 85" :stroke="armColor" stroke-width="7" stroke-linecap="round" />
            <circle cx="35" cy="85" r="5" :fill="handColor" />
-           <path d="M80 65 Q100 50 85 25" stroke="#2C3E50" stroke-width="7" stroke-linecap="round">
+           <path d="M80 65 Q100 50 85 25" :stroke="armColor" stroke-width="7" stroke-linecap="round">
               <animate attributeName="d" values="M80 65 Q100 50 85 25; M80 65 Q102 52 87 27; M80 65 Q100 50 85 25" dur="1s" repeatCount="indefinite" />
            </path>
            <circle cx="85" cy="25" r="5" :fill="handColor" />
@@ -285,15 +373,21 @@ export default {
   },
   computed: {
     bodyColor() {
-       if (this.type === 'dog') return '#E6C288' // 베이지
-       if (this.type === 'cat') return '#BDC3C7' // 회색
+       if (this.type === 'dog') return '#F5D5A0' // 시바견 (황금빛)
+       if (this.type === 'cat') return '#FFCC80' // 오렌지
        return '#E6A800' // 사자 (노랑)
     },
     handColor() {
        // 손 색깔은 몸 색깔과 맞춤
-       if (this.type === 'dog') return '#E6C288'
-       if (this.type === 'cat') return '#BDC3C7'
+       if (this.type === 'dog') return '#F5D5A0'
+       if (this.type === 'cat') return '#FFCC80'
        return '#E6A800'
+    },
+    armColor() {
+       // 고양이는 빨간 스웨터, 강아지는 초록 후드티, 사자는 네이비 정장
+       if (this.type === 'cat') return '#E74C3C'
+       if (this.type === 'dog') return '#27AE60'
+       return '#2C3E50'
     }
   }
 }

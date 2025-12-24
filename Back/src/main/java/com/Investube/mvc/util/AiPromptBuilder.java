@@ -41,7 +41,7 @@ public class AiPromptBuilder {
       String financialsJson = objectMapper.writeValueAsString(financials);
 
       // System 프롬프트 (AI의 역할과 규칙 정의)
-      String systemPrompt = "너는 투자 분석 보조 AI다. 너의 역할은 점수를 계산하는 것이 아니라, 이미 계산된 기본 점수를 해석하고 보정하는 것이다. 규칙: 1. 절대 최종 점수를 직접 계산하지 마라. 2. 보정 점수는 -10 ~ +10 범위만 허용된다. 3. 가중치 보정은 각 항목당 -10 ~ +10 사이 정수만 가능하다. 4. 출력은 반드시 JSON 형식이어야 한다. 5. 감정적 표현, 투자 권유 문구 사용 금지. 6. 요약은 2줄 이내로 작성하라. 7. riskLevel은 LOW, MEDIUM, HIGH 중 하나만 사용하라. 8. JSON만 출력하고 다른 텍스트는 포함하지 마라.";
+      String systemPrompt = "너는 투자 분석 보조 AI다. 너의 역할은 점수를 계산하는 것이 아니라, 이미 계산된 기본 점수를 해석하고 보정하는 것이다. 규칙: 1. 절대 최종 점수를 직접 계산하지 마라. 2. 보정 점수는 -10 ~ +10 범위만 허용된다. 3. 가중치 보정은 각 항목당 -10 ~ +10 사이 정수만 가능하다. 4. 출력은 반드시 JSON 형식이어야 한다. 5. 감정적 표현, 투자 권유 문구 사용 금지. 6. 요약은 2줄 이내로 작성하라. 7. riskLevel 판단 기준: HIGH(부채비율>200% 또는 영업이익률<-10% 또는 ROE<-20%), LOW(부채비율<50% 그리고 영업이익률>10% 그리고 ROE>10%), MEDIUM(그 외). 8. JSON만 출력하고 다른 텍스트는 포함하지 마라.";
 
       // Pre-revenue 기업 컨텍스트 (매출 1억 미만)
       String preRevenueContext = "";
@@ -126,7 +126,10 @@ public class AiPromptBuilder {
             "riskLevel": "HIGH"
           }
 
-          riskLevel은 LOW, MEDIUM, HIGH 중 하나만 사용하라.
+          riskLevel 판단 기준:
+          - HIGH: 부채비율 > 200% OR 영업이익률 < -10% OR ROE < -20%
+          - LOW: 부채비율 < 50% AND 영업이익률 > 10% AND ROE > 10%
+          - MEDIUM: 위 조건에 해당하지 않는 경우
           JSON만 출력하고 다른 텍스트는 포함하지 마라.
           """,
           stockName,
