@@ -361,7 +361,7 @@
                   <div class="stat-header">
                     <span class="stat-label">부채비율</span>
                     <span class="percentile-badge" v-if="aiResult.peerStats.debtRatioPercentile" :class="getPercentileClass(aiResult.peerStats.debtRatioPercentile, false)">
-                      하위 {{ aiResult.peerStats.debtRatioPercentile }}%
+                      상위 {{ aiResult.peerStats.debtRatioPercentile }}%
                     </span>
                   </div>
                   <div class="stat-comparison">
@@ -382,7 +382,7 @@
                   <div class="stat-header">
                     <span class="stat-label">PER</span>
                     <span class="percentile-badge" v-if="aiResult.peerStats.perPercentile" :class="getPercentileClass(aiResult.peerStats.perPercentile, false)">
-                      하위 {{ aiResult.peerStats.perPercentile }}%
+                      상위 {{ aiResult.peerStats.perPercentile }}%
                     </span>
                   </div>
                   <div class="stat-comparison">

@@ -9,6 +9,7 @@ import com.Investube.mvc.model.service.FinancialService;
 import com.Investube.mvc.model.service.StockService;
 import com.Investube.mvc.service.AIAnalysisService;
 import com.Investube.mvc.service.FinancialAnalysisService;
+import com.Investube.mvc.service.FinancialDataBatchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -40,6 +41,9 @@ public class FinancialRestController {
 
     @Autowired
     private StockService stockService;
+
+    @Autowired
+    private FinancialDataBatchService batchService;
 
     /**
      * userId 추출 헬퍼 메서드
@@ -206,6 +210,89 @@ public class FinancialRestController {
             e.printStackTrace(); // 서버 로그에 스택 트레이스 출력
             Map<String, String> error = new HashMap<>();
             error.put("error", "AI 분석 실패 (" + e.getClass().getSimpleName() + "): " + e.getMessage());
+            return new ResponseEntity<>(error, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    // ==================== 일괄 동기화 API ====================
+
+    /**
+     * 전체 종목 재무 데이터 일괄 동기화 시작 (백그라운드)
+     * POST /financial/sync-all
+     */
+    @PostMapping("/sync-all")
+    public ResponseEntity<?> startSyncAll() {
+        if (batchService.isSyncing()) {
+            Map<String, Object> status = new HashMap<>();
+            status.put("message", "이미 동기화가 진행 중입니다.");
+            status.put("progress", batchService.getSyncProgress());
+            status.put("total", batchService.getSyncTotal());
+            return new ResponseEntity<>(status, HttpStatus.CONFLICT);
+        }
+
+        batchService.syncAllFinancialData();
+
+        Map<String, String> response = new HashMap<>();
+        response.put("message", "전체 동기화가 백그라운드에서 시작되었습니다. /financial/sync-status에서 진행 상황을 확인하세요.");
+        return new ResponseEntity<>(response, HttpStatus.ACCEPTED);
+    }
+
+    /**
+     * 동기화 진행 상황 조회
+     * GET /financial/sync-status
+     */
+    @GetMapping("/sync-status")
+    public ResponseEntity<?> getSyncStatus() {
+        Map<String, Object> status = new HashMap<>();
+        status.put("isSyncing", batchService.isSyncing());
+        status.put("progress", batchService.getSyncProgress());
+        status.put("total", batchService.getSyncTotal());
+        status.put("status", batchService.getSyncStatus());
+        status.put("hasCsvCache", batchService.hasCsvCache());
+
+        if (!batchService.getSyncErrors().isEmpty()) {
+            status.put("recentErrors", batchService.getSyncErrors().subList(0,
+                    Math.min(10, batchService.getSyncErrors().size())));
+            status.put("totalErrors", batchService.getSyncErrors().size());
+        }
+
+        return new ResponseEntity<>(status, HttpStatus.OK);
+    }
+
+    /**
+     * 현재 DB 데이터를 CSV로 내보내기
+     * POST /financial/export-csv
+     */
+    @PostMapping("/export-csv")
+    public ResponseEntity<?> exportToCsv() {
+        try {
+            batchService.exportToCsv();
+            Map<String, String> response = new HashMap<>();
+            response.put("message", "CSV 내보내기가 완료되었습니다.");
+            response.put("path", "data/financial_data_cache.csv");
+            return new ResponseEntity<>(response, HttpStatus.OK);
+        } catch (Exception e) {
+            Map<String, String> error = new HashMap<>();
+            error.put("error", "CSV 내보내기 실패: " + e.getMessage());
+            return new ResponseEntity<>(error, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    /**
+     * CSV 파일에서 DB로 로드
+     * POST /financial/load-csv
+     */
+    @PostMapping("/load-csv")
+    public ResponseEntity<?> loadFromCsv() {
+        try {
+            int loadedCount = batchService.loadFromCsv();
+            Map<String, Object> response = new HashMap<>();
+            response.put("message", "CSV 로드가 완료되었습니다.");
+            response.put("loadedCount", loadedCount);
+            return new ResponseEntity<>(response, HttpStatus.OK);
+        } catch (Exception e) {
+            Map<String, String> error = new HashMap<>();
+            error.put("error", "CSV 로드 실패: " + e.getMessage());
             return new ResponseEntity<>(error, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
