@@ -302,6 +302,7 @@ public class DartApiService {
                         (accountName.contains("매출액") ||
                                 accountName.contains("영업수익") ||
                                 accountName.equals("매출") ||
+                                accountName.equals("수익 합계") || // 대한전선 등
                                 accountName.equals("매출및지분법손익") || // 지주회사 전체 매출
                                 accountName.equals("제품및상품매출"))) { // 제조업 세부 매출
                     data.put("revenue", amount);

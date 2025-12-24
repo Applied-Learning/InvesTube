@@ -26,5 +26,6 @@ public interface FinancialDao {
         List<FinancialData> getFinancialDataByIndustry(@Param("industry") String industry);
 
         // 동종업계 재무 데이터 조회 (여러 업종 - 카테고리 기반)
+        // 동종업계 재무 데이터 조회 (여러 업종 - 카테고리 기반)
         List<FinancialData> getFinancialDataByIndustries(@Param("industries") List<String> industries);
 }

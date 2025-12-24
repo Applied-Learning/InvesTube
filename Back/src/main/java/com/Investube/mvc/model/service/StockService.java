@@ -52,6 +52,9 @@ public interface StockService {
     // DB 데이터 -> JSON 파일로 백업/캐시
     void exportDbToJson();
 
+    // 주식 데이터 초기화 (JSON 적재 및 보정)
+    void initializeStockData();
+
     // JSON 파일 -> DB 초기 적재/복원
     Map<String, Integer> importStockPricesFromJson();
 
